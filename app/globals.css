@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Reid One — premium Christian design tokens                         */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Surfaces */
+  --color-ivory: #faf7f1;
+  --color-cream: #f3ede2;
+  --color-parchment: #fffdf9;
+
+  /* Ink / text */
+  --color-ink: #20242e;
+  --color-ink-soft: #4a4f5c;
+  --color-muted: #8a8578;
+
+  /* Primary accent — refined gold */
+  --color-gold: #b08a3e;
+  --color-gold-deep: #8c6d2c;
+  --color-gold-soft: #e7d4a6;
+
+  /* Pillar accents */
+  --color-spiritual: #41618f; /* soft, reverent blue */
+  --color-spiritual-soft: #e3e9f2;
+  --color-physical: #5f7d5a; /* muted sage */
+  --color-physical-soft: #e3ecdf;
+  --color-financial: #a06b3c; /* warm bronze */
+  --color-financial-soft: #f0e2d2;
+
+  /* Fonts (CSS variables injected by next/font) */
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* Typographic rhythm */
+  --tracking-widest-plus: 0.22em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Serif display headings */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Small uppercase eyebrow label used across the site */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-widest-plus);
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+}
+
+/* Subtle decorative divider */
+.rule {
+  height: 1px;
+  width: 4rem;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-gold),
+    transparent
+  );
+}
