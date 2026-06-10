@@ -1,103 +1,54 @@
-# Reid One
+# ReidOne — Journey Together
 
-A Christian ministry website dedicated to glorifying the God of the Bible and
-helping believers faithfully steward what He has entrusted to them — their
-**spiritual** life, **physical** health, and **financial** resources.
+Static website for the **ReidOne** ministry (reidone.org). Built with plain HTML, CSS,
+and a small amount of vanilla JavaScript — no framework, no build step — so it hosts
+directly on **GitHub Pages**.
 
-The centerpiece is **Reid Shepherd**, a stewardship framework built on exactly
-three pillars, with a **Weekly Review** to keep your stewardship before the Lord.
+## Structure
 
----
-
-## Tech stack
-
-- **Next.js 15** (App Router)
-- **TypeScript** (strict)
-- **Tailwind CSS v4**
-- **Static export** (`output: "export"`) — deployable to any static host
-- Fonts: Playfair Display (serif headings) + Inter (body), via `next/font`
-
-## Pages
-
-| Route | Purpose |
-| --- | --- |
-| `/` | Home — hero, three-pillar preview, guiding question |
-| `/about` | Mission and values |
-| `/statement-of-faith` | Core biblical convictions |
-| `/resources` | Practices and reading by pillar |
-| `/reid-shepherd` | **Primary page** — pillars + Weekly Review prototype |
-| `/contact` | Contact form (composes a `mailto:`) |
-
-## The Reid Shepherd framework
-
-Exactly **three** primary pillars (defined once in [`lib/pillars.ts`](lib/pillars.ts)):
-
-1. **Spiritual** — Prayer, Scripture, Church, Worship, Service, Gratitude
-2. **Physical** — Exercise, Sleep, Nutrition, Energy, Discipline
-3. **Financial** — Budgeting, Saving, Giving, Stewardship, Debt Reduction
-
-**Guiding question:** _“Am I faithfully stewarding what God has entrusted to me?”_
-
-### Weekly Review prototype
-
-A client-side form (no backend) that saves to `localStorage` and renders a
-summary card on submit. Fields: Spiritual / Physical / Financial scores (1–10
-button pills), Biggest Win, Biggest Struggle, One Focus For Next Week, and
-Prayer Reflection.
-
----
-
-## Local development
-
-```bash
-npm install
-npm run dev      # http://localhost:3000
+```
+index.html        Home
+watch.html        Sermons & video
+listen.html       Audio sermons & radio
+read.html         Daily devotions & articles
+about.html        Mission, leadership, what we do
+connect.html      Contact / give / prayer / subscribe
+css/styles.css    Single shared stylesheet
+js/main.js        Single shared script (menu, active nav, year, demo forms)
+.nojekyll         Serve files as-is on GitHub Pages
+CNAME             Custom domain (reidone.org)
+old/              Preserved previous Next.js site (not served)
 ```
 
-## Build & static export
+## Design
+
+- **Fonts:** Fraunces (serif headings) + Inter (sans body), loaded from Google Fonts.
+- **Palette:** warm cream neutrals with a single terracotta accent (`#BD5B36`).
+  All colors live as CSS custom properties at the top of `css/styles.css` — change them
+  in one place to re-skin the whole site.
+
+## Editing content
+
+- Text and images are inline in each `.html` file — search for the heading and replace.
+- Placeholder images use [placehold.co](https://placehold.co). Swap the `src` URLs for
+  your own images (e.g. an `images/` folder).
+- Forms are **front-end demos** (`data-demo` in the markup). To actually receive
+  submissions, point each `<form>` at a provider such as Formspree, Netlify Forms, or
+  your own endpoint, and remove the `data-demo` attribute.
+
+## Local preview
+
+Open `index.html` in a browser, or run a tiny local server:
 
 ```bash
-npm run build    # outputs static site to ./out
+python3 -m http.server 8000
+# then visit http://localhost:8000
 ```
 
-`npm run build` runs `next build`, which (with `output: "export"`) writes a fully
-static site to the `out/` directory.
+## Deploy to GitHub Pages
 
-## Lint
-
-```bash
-npm run lint
+1. Commit and push to the `main` branch of `github.com/Oakaloke/ReidOne`.
+2. In the repo: **Settings → Pages → Source → Deploy from branch → `main` / root**.
+3. Add the custom domain `reidone.org` (the `CNAME` file is already included) and point
+   your DNS at GitHub Pages.
 ```
-
----
-
-## Deploy to Cloudflare Pages
-
-This site is a pure static export, so Cloudflare Pages needs no adapter.
-
-### Option A — Git integration (recommended)
-
-1. Push this repo to GitHub.
-2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select the repository, then set:
-   - **Framework preset:** `Next.js (Static HTML Export)`
-   - **Build command:** `npm run build`
-   - **Build output directory:** `out`
-   - **Node version:** set env var `NODE_VERSION` = `20` (or higher)
-4. **Save and Deploy.** Every push to `main` redeploys automatically.
-
-### Option B — Direct upload via Wrangler
-
-```bash
-npm run build
-npx wrangler pages deploy out --project-name reid-one
-```
-
-> **Note on the project folder name:** the on-disk folder contains an apostrophe
-> (`Matt's Projects`). Next's favicon metadata-route loader can't handle an
-> apostrophe in the absolute path, so the favicon is served from `public/favicon.ico`
-> instead of `app/favicon.ico`. This does not affect deployment.
-
----
-
-_Soli Deo Gloria — to God alone be the glory._
