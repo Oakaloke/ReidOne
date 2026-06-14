@@ -29,11 +29,15 @@
 
   /* ---- Active nav highlighting (no-JS fallback: nothing breaks) ---- */
   var path = window.location.pathname.split("/").pop() || "index.html";
-  // Chapter pages (study/acts-N.html) should highlight the "Bible Study" link.
-  var isChapter = /^acts-\d+\.html$/.test(path);
+  // Acts chapter pages (study/acts-N.html) highlight the original "Bible Study" → study.html link.
+  var isActsChapter = /^acts-\d+\.html$/.test(path);
+  // Other study pages (book chapters, overviews, landings, hub) highlight "Bible Study" → bible.html.
+  var isStudyPage = /-\d+\.html$/.test(path) || /-overview\.html$/.test(path) || path === "bible.html";
   document.querySelectorAll(".nav__menu a").forEach(function (link) {
     var href = (link.getAttribute("href") || "").split("/").pop();
-    if (href === path || (isChapter && href === "study.html")) {
+    if (href === path ||
+        (isActsChapter && href === "study.html") ||
+        (isStudyPage && href === "bible.html")) {
       link.setAttribute("aria-current", "page");
     }
   });
@@ -72,8 +76,10 @@
      localStorage (nothing leaves their device). One-line change, no backend:
      ========================================================= */
   var USE_LOCAL_STORAGE = false;            // ← set to true to persist progress
-  var STUDY_KEY = "reidone-acts-progress";
-  var TOTAL_CHAPTERS = 28;
+  // Per-book pages set data-study-key / data-study-total on <body>; Acts pages omit
+  // them, so these defaults keep the original Acts behavior exactly unchanged.
+  var STUDY_KEY = document.body.getAttribute("data-study-key") || "reidone-acts-progress";
+  var TOTAL_CHAPTERS = parseInt(document.body.getAttribute("data-study-total"), 10) || 28;
   var memoryStore = {};                     // in-memory fallback (resets on refresh)
 
   function loadProgress() {
