@@ -8,13 +8,19 @@ Reproducing the Acts study format (gold template) across all 66 books of the Bib
 - Scripture is the public-domain WEB / KJV / ASV text (same sources and attribution as the Acts pages).
 - Each book is committed and pushed on completion.
 
+## Current scope
+
+Per the latest direction, the active scope is **Genesis only** for now (plus the
+pre-existing Acts study). The hub lists exactly those two books; more books can be
+added later using the same pipeline. The full 66-book roadmap is kept below.
+
 ## Status
 
 Status legend: ✅ done · ⬜ not started
 
 | # | Book | Chapters | Section | Status |
 |---|------|---------:|---------|--------|
-| 1 | Genesis | 50 | Pentateuch | ⬜ |
+| 1 | Genesis | 50 | Pentateuch | ✅ (50 chapters + overview + landing) |
 | 2 | Exodus | 40 | Pentateuch | ⬜ |
 | 3 | Leviticus | 27 | Pentateuch | ⬜ |
 | 4 | Numbers | 36 | Pentateuch | ⬜ |
@@ -81,5 +87,5 @@ Status legend: ✅ done · ⬜ not started
 | 65 | Jude | 1 | Epistles | ⬜ |
 | 66 | Revelation | 22 | Revelation | ⬜ |
 
-**Books complete: 1 / 66 (Acts, pre-existing).**
-**New books built this run: 0 / 65.**
+**Books complete: 2 / 66 — Acts (pre-existing) and Genesis.**
+**New books built this run: 1 (Genesis: 50 chapter pages + 1 overview + 1 landing = 52 pages).**
