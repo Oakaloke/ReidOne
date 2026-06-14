@@ -55,14 +55,15 @@
         <!-- Progress tracker.
              NOTE: progress is in-memory by default and resets on refresh. To make it
              persist across visits, set USE_LOCAL_STORAGE = true in js/main.js. -->
-        <div class="study-progress" data-progress>
+        <div class="study-progress study-progress--soon">
           <div class="study-progress__head">
-            <strong data-progress-count>0 of 28 chapters complete</strong>
-            <button class="btn btn--ghost" type="button" data-progress-reset>Reset progress</button>
+            <strong>Progress tracking <span class="coming-soon-tag">Coming soon</span></strong>
+            <button class="btn btn--ghost" type="button" disabled aria-disabled="true">Reset progress</button>
           </div>
           <div class="study-progress__bar">
-            <span class="study-progress__fill" data-progress-fill style="width:0%"></span>
+            <span class="study-progress__fill" style="width:0%"></span>
           </div>
+          <p class="study-progress__note">Marking chapters complete and saving your progress across visits will arrive with member sign-in.</p>
         </div>
 
         <div class="study-grid">
