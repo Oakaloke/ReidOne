@@ -767,6 +767,35 @@ p { margin: 0 0 1rem; }
 .collapse-panel { padding: 1.2rem 0.2rem 0; }
 .collapse-panel[hidden] { display: none; }
 
+/* Translation tab switcher (WEB | KJV | ASV) — lives inside the scripture
+   panel. Reuses the site's surface/line/accent palette so it stays subtle. */
+.scripture-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+.scripture-tab {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 1.15rem;
+  cursor: pointer;
+  transition: var(--ease);
+}
+.scripture-tab:hover { border-color: var(--accent); color: var(--accent-dark); }
+.scripture-tab.is-active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+.scripture-text[hidden] { display: none; }
+
 /* Prev / next chapter nav */
 .chapter-nav {
   display: flex; flex-wrap: wrap; gap: 0.8rem;
@@ -828,6 +857,19 @@ p { margin: 0 0 1rem; }
 
   /* More breathing room between collapsible/tappable blocks */
   .study-page .study-section { margin-bottom: 2rem; }
+
+  /* Translation tabs: easy 44px tap targets that share the row and wrap
+     gracefully — never wide enough to force horizontal scrolling. */
+  .study-page .scripture-tab {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* iPhone-class phones */

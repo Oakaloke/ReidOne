@@ -148,4 +148,26 @@
       if (panel) panel.hidden = open;
     });
   });
+
+  /* ---- Translation tabs (WEB | KJV | ASV) ----
+     All three texts are embedded in the HTML; clicking a tab just toggles
+     visibility, so it works on static hosting with no runtime fetching. */
+  document.querySelectorAll(".scripture-tabs").forEach(function (tabs) {
+    var scope = tabs.parentNode; // the .collapse-panel holding the three texts
+    var tabBtns = tabs.querySelectorAll("[data-trans-tab]");
+    tabBtns.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var trans = tab.getAttribute("data-trans-tab");
+        tabBtns.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle("is-active", on);
+          t.setAttribute("aria-selected", on ? "true" : "false");
+          t.setAttribute("tabindex", on ? "0" : "-1");
+        });
+        scope.querySelectorAll("[data-trans-panel]").forEach(function (p) {
+          p.hidden = p.getAttribute("data-trans-panel") !== trans;
+        });
+      });
+    });
+  });
 })();
