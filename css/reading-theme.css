@@ -1,0 +1,236 @@
+/* ============================================================
+   ReidOne — Reading personalization (Bible study pages only)
+   Loaded only on study pages. Works by REMAPPING the site's core
+   design tokens (--bg, --ink, --accent, …) to a set of reading
+   variables (--rs-*) inside .study-page, so every existing study
+   component recolors automatically. Themes set the three base
+   values (--rs-bg / --rs-text / --rs-accent / --rs-heading); the
+   rest are derived with color-mix(). The inline <head> script sets
+   the chosen values before first paint (no flash).
+   ============================================================ */
+
+:root {
+  /* Defaults = "Light" preset. The inline head script overrides these
+     (per saved choice or OS dark-mode) before the page paints. */
+  --rs-bg: #FBF8F3;
+  --rs-text: #2A2521;
+  --rs-accent: #9A4527;
+  --rs-heading: #2A2521;
+  --rs-font: var(--font-sans);
+  --rs-fontsize: 17px;
+  --rs-leading: 1.65;
+}
+
+/* Derived tokens + remap of the site palette — scoped to study pages. */
+body.study-page {
+  --rs-surface:   color-mix(in srgb, var(--rs-bg) 93%, var(--rs-text));
+  --rs-bg-alt:    color-mix(in srgb, var(--rs-bg) 88%, var(--rs-text));
+  --rs-border:    color-mix(in srgb, var(--rs-bg) 80%, var(--rs-text));
+  --rs-muted:     color-mix(in srgb, var(--rs-text) 66%, var(--rs-bg));
+  --rs-soft:      color-mix(in srgb, var(--rs-accent) 15%, var(--rs-bg));
+  --rs-accent-2:  color-mix(in srgb, var(--rs-accent) 80%, var(--rs-text));
+  --rs-header-bg: color-mix(in srgb, var(--rs-bg) 90%, var(--rs-text));
+  --rs-footer-bg: color-mix(in srgb, var(--rs-bg) 84%, var(--rs-text));
+
+  /* Remap core tokens — existing components inherit the theme for free. */
+  --bg: var(--rs-bg);
+  --bg-alt: var(--rs-bg-alt);
+  --surface: var(--rs-surface);
+  --ink: var(--rs-text);
+  --muted: var(--rs-muted);
+  --line: var(--rs-border);
+  --accent: var(--rs-accent);
+  --accent-dark: var(--rs-accent-2);
+  --accent-soft: var(--rs-soft);
+
+  background: var(--rs-bg);
+  color: var(--rs-text);
+  font-family: var(--rs-font);
+}
+
+/* High-contrast accessibility theme: force crisp borders/surfaces. */
+html[data-rs-theme="contrast"] body.study-page {
+  --rs-surface: #000000;
+  --rs-bg-alt: #000000;
+  --rs-border: #FFFFFF;
+  --rs-muted: #F2F2F2;
+  --rs-soft: color-mix(in srgb, var(--rs-accent) 30%, #000);
+  --rs-header-bg: #000000;
+  --rs-footer-bg: #000000;
+}
+
+/* Headings + heading-like elements follow the dedicated heading token. */
+body.study-page h1,
+body.study-page h2,
+body.study-page h3,
+body.study-page h4,
+body.study-page .study-card__title,
+body.study-page .collapse-toggle,
+body.study-page .hub-testament { color: var(--rs-heading); }
+
+/* Reading text: font scale + line spacing apply to the chapter body. */
+body.study-page .study-body { font-size: var(--rs-fontsize); line-height: var(--rs-leading); }
+
+/* Sticky header + footer follow the theme (they don't use the remapped
+   tokens for their backgrounds, so set them explicitly). */
+body.study-page .site-header { background: var(--rs-header-bg); border-bottom-color: var(--rs-border); }
+body.study-page .site-footer { background: var(--rs-footer-bg); color: var(--rs-muted); }
+body.study-page .site-footer h4,
+body.study-page .footer-brand .brand__mark { color: var(--rs-heading); }
+body.study-page .footer-brand p,
+body.study-page .footer-nav a,
+body.study-page .footer-bottom,
+body.study-page .footer-dedication,
+body.study-page .footer-bottom a,
+body.study-page .socials a { color: var(--rs-muted); }
+body.study-page .footer-nav a:hover,
+body.study-page .footer-bottom a:hover,
+body.study-page .footer-dedication:hover { color: var(--rs-heading); }
+body.study-page .footer-bottom { border-top-color: var(--rs-border); }
+body.study-page .socials a { background: var(--rs-surface); border: 1px solid var(--rs-border); }
+
+/* "Study together" band: a calm themed panel instead of a loud accent block
+   (keeps text readable under every theme, incl. light accents). */
+body.study-page .cta-band { background: var(--rs-surface); border: 1px solid var(--rs-border); }
+body.study-page .cta-band h2 { color: var(--rs-heading); }
+body.study-page .cta-band p { color: var(--rs-muted); }
+
+/* Subtle, quick cross-fade when switching themes. */
+body.study-page,
+body.study-page .site-header,
+body.study-page .site-footer,
+body.study-page .page-hero,
+body.study-page .cta-band,
+body.study-page .study-card,
+body.study-page .collapse-toggle,
+body.study-page .scripture-tab,
+body.study-page .verse,
+body.study-page .study-progress {
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  body.study-page * { transition: none !important; }
+}
+
+/* ============================================================
+   Floating "Reading settings" button + slide-in panel
+   ============================================================ */
+.rs-fab {
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.6rem);
+  bottom: clamp(1rem, 3vw, 1.6rem);
+  z-index: 1200;
+  width: 52px; height: 52px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  border: 1.5px solid var(--rs-accent);
+  background: var(--rs-surface);
+  color: var(--rs-accent);
+  font-family: var(--font-serif);
+  font-weight: 600; font-size: 1.15rem; line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, background-color .2s ease, color .2s ease;
+}
+.rs-fab:hover { transform: translateY(-2px); background: var(--rs-accent); color: var(--rs-bg); }
+.rs-fab:focus-visible { outline: 3px solid var(--rs-accent); outline-offset: 2px; }
+
+.rs-panel {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  z-index: 1300;
+  width: min(360px, 92vw);
+  display: flex; flex-direction: column;
+  background: var(--rs-surface);
+  color: var(--rs-text);
+  border-left: 1px solid var(--rs-border);
+  box-shadow: -14px 0 40px rgba(0,0,0,0.18);
+  transform: translateX(100%);
+  transition: transform .28s ease;
+  overflow: hidden;
+}
+.rs-panel.is-open { transform: translateX(0); }
+.rs-panel[hidden] { display: flex; }   /* keep transform animatable; visibility handled by transform + inert */
+.rs-panel__head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid var(--rs-border);
+}
+.rs-panel__head h2 { margin: 0; font-size: 1.15rem; color: var(--rs-heading); }
+.rs-close {
+  appearance: none; border: 1px solid var(--rs-border); background: transparent;
+  color: var(--rs-text); width: 34px; height: 34px; border-radius: 8px;
+  font-size: 1rem; cursor: pointer; line-height: 1;
+}
+.rs-close:hover { background: var(--rs-bg-alt); }
+.rs-close:focus-visible { outline: 3px solid var(--rs-accent); outline-offset: 2px; }
+.rs-panel__body { padding: 1.1rem 1.25rem 2rem; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+
+.rs-group { margin-bottom: 1.6rem; }
+.rs-group__title {
+  font-family: var(--font-sans); font-weight: 600; font-size: 0.74rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--rs-muted);
+  margin: 0 0 0.7rem;
+}
+.rs-swatches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+.rs-swatch {
+  position: relative;
+  display: flex; flex-direction: column; gap: 0.25rem;
+  padding: 0.6rem 0.7rem; border-radius: 10px; cursor: pointer; text-align: left;
+  border: 1.5px solid var(--rs-border);
+  /* swatch preview colors are set inline per theme via CSS custom props */
+  background: var(--sw-bg, #fff);
+  color: var(--sw-text, #222);
+  transition: transform .15s ease, box-shadow .15s ease;
+  font: inherit;
+}
+.rs-swatch:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.rs-swatch:focus-visible { outline: 3px solid var(--rs-accent); outline-offset: 2px; }
+.rs-swatch__name { font-size: 0.86rem; font-weight: 600; }
+.rs-swatch__demo { font-size: 0.74rem; opacity: 0.85; }
+.rs-swatch__dot {
+  position: absolute; top: 0.55rem; right: 0.6rem;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--sw-accent, #888);
+  border: 1px solid rgba(0,0,0,0.15);
+}
+.rs-swatch[aria-pressed="true"] { outline: 2.5px solid var(--rs-accent); outline-offset: 1px; }
+.rs-swatch[aria-pressed="true"]::after {
+  content: "✓"; position: absolute; bottom: 0.45rem; right: 0.6rem;
+  font-size: 0.8rem; font-weight: 700; color: var(--sw-accent, #888);
+}
+
+.rs-field { margin-bottom: 1.05rem; }
+.rs-field > label, .rs-field__label {
+  display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--rs-text);
+}
+.rs-color-row { display: flex; align-items: center; gap: 0.6rem; }
+.rs-color-row input[type="color"] {
+  appearance: none; -webkit-appearance: none; border: 1px solid var(--rs-border);
+  width: 46px; height: 32px; border-radius: 8px; background: none; cursor: pointer; padding: 2px;
+}
+.rs-color-row input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+.rs-color-row input[type="color"]::-webkit-color-swatch { border: none; border-radius: 6px; }
+.rs-color-row output { font-size: 0.8rem; color: var(--rs-muted); font-variant-numeric: tabular-nums; }
+
+.rs-segmented { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.rs-segmented button {
+  flex: 1 1 auto; min-width: 56px;
+  border: 1px solid var(--rs-border); background: var(--rs-bg);
+  color: var(--rs-text); border-radius: 8px; padding: 0.5rem 0.4rem;
+  font: inherit; font-size: 0.85rem; cursor: pointer;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.rs-segmented button:hover { border-color: var(--rs-accent); }
+.rs-segmented button[aria-pressed="true"] {
+  background: var(--rs-accent); color: var(--rs-bg); border-color: var(--rs-accent);
+}
+.rs-segmented button:focus-visible { outline: 3px solid var(--rs-accent); outline-offset: 2px; }
+
+.rs-reset {
+  width: 100%; margin-top: 0.4rem;
+  border: 1.5px solid var(--rs-border); background: transparent; color: var(--rs-text);
+  border-radius: 999px; padding: 0.65rem 1rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+.rs-reset:hover { border-color: var(--rs-accent); color: var(--rs-accent); }
+.rs-reset:focus-visible { outline: 3px solid var(--rs-accent); outline-offset: 2px; }
