@@ -1012,6 +1012,19 @@ p { margin: 0 0 1rem; }
 }
 .study-card--soon .study-card__cta { color: var(--muted); font-style: italic; }
 
+/* Quiet "back" link at the top of each study chapter page */
+.chapter-back {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.15rem;       /* comfortable tap target, no box */
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+  line-height: 1.3;
+}
+.chapter-back:hover,
+.chapter-back:focus-visible { color: var(--accent-dark); text-decoration: underline; }
+
 /* Quiet chapter-to-chapter pager at the foot of each study chapter page */
 .chapter-pager {
   display: grid;
