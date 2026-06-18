@@ -54,7 +54,22 @@
             <span class="eyebrow">Contact Us</span>
             <h2>Send us a message</h2>
             <p class="muted">Questions, feedback, or just want to say hello? We read every message.</p>
-            <form class="form-card" data-demo data-success="Thank you for reaching out! We'll be in touch soon. (Demo form — connect it to your email provider to receive messages.)">
+            <!--
+              CONTACT FORM — submissions are delivered to your inbox by Formspree,
+              which keeps your email address OFF this page and out of the HTML source.
+
+              ONE-TIME SETUP:
+                1. Go to https://formspree.io and sign up with your own email
+                   (the inbox where you want messages delivered)
+                2. Create a new form; copy the form ID it gives you
+                3. Replace YOUR_FORM_ID in the action below with that ID, e.g.
+                   action="https://formspree.io/f/abcdwxyz"
+              Until you do that, the form politely says it isn't connected yet
+              instead of sending. Your email address is never written here.
+            -->
+            <form class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree data-success="Thank you for reaching out! Your message is on its way, and we'll be in touch soon.">
+              <!-- Formspree: subject line of the notification email you receive -->
+              <input type="hidden" name="_subject" value="New message from the reidone.org contact form" />
               <div class="form-grid">
                 <div class="field--row">
                   <div class="field">
@@ -74,6 +89,8 @@
                   <label for="c-message">Message</label>
                   <textarea id="c-message" name="message" placeholder="Write your message…" required></textarea>
                 </div>
+                <!-- Anti-spam honeypot: hidden from people, tempting to bots; Formspree drops anything that fills it -->
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
                 <button class="btn btn--accent" type="submit">Send Message</button>
                 <p class="form-status" role="status" hidden></p>
               </div>
