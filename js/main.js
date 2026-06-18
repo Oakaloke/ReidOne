@@ -62,56 +62,6 @@
     });
   });
 
-  /* ---- Real form handling via Formspree (AJAX; stays on the page) ----
-     Opt-in: only forms marked [data-formspree] are handled here, so every
-     other (demo) form on the site is untouched. Submits to the form's
-     action endpoint and shows the friendly in-page success state. */
-  document.querySelectorAll("form[data-formspree]").forEach(function (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var status = form.querySelector(".form-status");
-      var btn = form.querySelector("[type=submit]");
-      var endpoint = form.getAttribute("action") || "";
-      function show(msg, ok) {
-        if (!status) return;
-        status.hidden = false;
-        status.textContent = msg;
-        status.classList.toggle("form-status--error", !ok);
-      }
-      if (endpoint.indexOf("YOUR_FORM_ID") !== -1) {
-        show("This form isn't connected yet. (Add your Formspree form ID to start receiving messages.)", false);
-        return;
-      }
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var label = btn ? btn.textContent : "";
-      if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
-      fetch(endpoint, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" }
-      }).then(function (res) {
-        if (res.ok) {
-          show(form.getAttribute("data-success") ||
-               "Thank you for reaching out! We'll be in touch soon.", true);
-          form.reset();
-        } else {
-          return res.json().then(function (d) {
-            var msg = (d && d.errors && d.errors.length)
-              ? d.errors.map(function (x) { return x.message; }).join(", ")
-              : "Sorry — something went wrong sending your message. Please try again.";
-            show(msg, false);
-          }).catch(function () {
-            show("Sorry — something went wrong sending your message. Please try again.", false);
-          });
-        }
-      }).catch(function () {
-        show("Network error — please check your connection and try again.", false);
-      }).then(function () {
-        if (btn) { btn.disabled = false; btn.textContent = label; }
-      });
-    });
-  });
-
   /* =========================================================
      Bible Study — Acts: progress tracking + collapsibles
      ---------------------------------------------------------

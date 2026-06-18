@@ -55,46 +55,30 @@
             <h2>Send us a message</h2>
             <p class="muted">Questions, feedback, or just want to say hello? We read every message.</p>
             <!--
-              CONTACT FORM — submissions are delivered to your inbox by Formspree,
-              which keeps your email address OFF this page and out of the HTML source.
-
-              ONE-TIME SETUP:
-                1. Go to https://formspree.io and sign up with your own email
-                   (the inbox where you want messages delivered)
-                2. Create a new form; copy the form ID it gives you
-                3. Replace YOUR_FORM_ID in the action below with that ID, e.g.
-                   action="https://formspree.io/f/abcdwxyz"
-              Until you do that, the form politely says it isn't connected yet
-              instead of sending. Your email address is never written here.
+              CONTACT — a simple "Email Me" button (no form, no third-party service).
+              The address is NOT written here in plain text; the small script below
+              assembles the mailto link from parts at load time to cut down on spam
+              scraping. Real visitors just click and their mail app opens, already
+              addressed and ready to write.
             -->
-            <form class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree data-success="Thank you for reaching out! Your message is on its way, and we'll be in touch soon.">
-              <!-- Formspree: subject line of the notification email you receive -->
-              <input type="hidden" name="_subject" value="New message from the reidone.org contact form" />
-              <div class="form-grid">
-                <div class="field--row">
-                  <div class="field">
-                    <label for="c-name">Name</label>
-                    <input id="c-name" name="name" type="text" placeholder="Your name" required />
-                  </div>
-                  <div class="field">
-                    <label for="c-email">Email</label>
-                    <input id="c-email" name="email" type="email" placeholder="you@example.com" required />
-                  </div>
-                </div>
-                <div class="field">
-                  <label for="c-subject">Subject</label>
-                  <input id="c-subject" name="subject" type="text" placeholder="How can we help?" />
-                </div>
-                <div class="field">
-                  <label for="c-message">Message</label>
-                  <textarea id="c-message" name="message" placeholder="Write your message…" required></textarea>
-                </div>
-                <!-- Anti-spam honeypot: hidden from people, tempting to bots; Formspree drops anything that fills it -->
-                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
-                <button class="btn btn--accent" type="submit">Send Message</button>
-                <p class="form-status" role="status" hidden></p>
-              </div>
-            </form>
+            <div class="form-card">
+              <a class="btn btn--accent" id="email-link" href="#" rel="nofollow">Email Me</a>
+              <p class="form-note" style="margin-top:1rem;margin-bottom:0">Click and your email app opens with a message already addressed to us — just write and send.</p>
+              <noscript><p class="form-note" style="margin-top:1rem;margin-bottom:0">Please enable JavaScript to open the email link, or reach us through the social links in the footer.</p></noscript>
+            </div>
+            <script>
+              /* Lightly obfuscated mailto: the address is split into parts and joined
+                 in JavaScript, so the full address never sits in the HTML as plain
+                 text for spam bots — while still working for real visitors. */
+              (function () {
+                var user = "ireid", domain = "icloud.com";
+                var link = document.getElementById("email-link");
+                if (link) {
+                  link.href = "mailto:" + user + "@" + domain +
+                    "?subject=" + encodeURIComponent("Hello from reidone.org");
+                }
+              })();
+            </script>
           </div>
 
           <!-- Other ways to connect -->
@@ -102,7 +86,7 @@
             <span class="eyebrow">Reach Us</span>
             <h2>Other ways to connect</h2>
             <div class="form-card stack-sm" style="margin-bottom:1.2rem">
-              <p>The quickest way to reach us is the message form — we read every note and aim to reply soon.</p>
+              <p>The quickest way to reach us is the Email Me button — we read every note and aim to reply soon.</p>
               <p class="muted">You can also follow ReidOne on social media (links in the footer) or subscribe below for updates and daily encouragement.</p>
               <a class="btn btn--outline" href="#subscribe">Subscribe for updates</a>
             </div>
