@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Proverbs 14: Wisdom Builds, Folly Tears Down — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Proverbs 14: The wise build their house and fear Yahweh, while folly, anger, and pride invite collapse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-proverbs-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Proverbs, Chapter 14
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="proverbs.html">← All Chapters</a>
+        <span class="study-meta">The Book of Proverbs · Chapter 14</span>
+        <h1>Proverbs 14: Wisdom Builds, Folly Tears Down</h1>
+        <p class="lead">The wise build their house and fear Yahweh, while folly, anger, and pride invite collapse.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-14">
+            <span>Scripture — Proverbs Chapter 14</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-14">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-14-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-14-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-14-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-14-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Proverbs 14 (WEB)</p>
+            <p><strong>1</strong> Every wise woman builds her house, but the foolish one tears it down with her own hands.</p>
+            <p><strong>2</strong> He who walks in his uprightness fears Yahweh, but he who is perverse in his ways despises him.</p>
+            <p><strong>3</strong> The fool’s talk brings a rod to his back, but the lips of the wise protect them.</p>
+            <p><strong>4</strong> Where no oxen are, the crib is clean, but much increase is by the strength of the ox.</p>
+            <p><strong>5</strong> A truthful witness will not lie, but a false witness pours out lies.</p>
+            <p><strong>6</strong> A scoffer seeks wisdom, and doesn’t find it, but knowledge comes easily to a discerning person.</p>
+            <p><strong>7</strong> Stay away from a foolish man, for you won’t find knowledge on his lips.</p>
+            <p><strong>8</strong> The wisdom of the prudent is to think about his way, but the folly of fools is deceit.</p>
+            <p><strong>9</strong> Fools mock at making atonement for sins, but among the upright there is good will.</p>
+            <p><strong>10</strong> The heart knows its own bitterness and joy; he will not share these with a stranger.</p>
+            <p><strong>11</strong> The house of the wicked will be overthrown, but the tent of the upright will flourish.</p>
+            <p><strong>12</strong> There is a way which seems right to a man, but in the end it leads to death.</p>
+            <p><strong>13</strong> Even in laughter the heart may be sorrowful, and mirth may end in heaviness.</p>
+            <p><strong>14</strong> The unfaithful will be repaid for his own ways; likewise a good man will be rewarded for his ways.</p>
+            <p><strong>15</strong> A simple man believes everything, but the prudent man carefully considers his ways.</p>
+            <p><strong>16</strong> A wise man fears, and shuns evil, but the fool is hot headed and reckless.</p>
+            <p><strong>17</strong> He who is quick to become angry will commit folly, and a crafty man is hated.</p>
+            <p><strong>18</strong> The simple inherit folly, but the prudent are crowned with knowledge.</p>
+            <p><strong>19</strong> The evil bow down before the good, and the wicked at the gates of the righteous.</p>
+            <p><strong>20</strong> The poor person is shunned even by his own neighbor, but the rich person has many friends.</p>
+            <p><strong>21</strong> He who despises his neighbor sins, but blessed is he who has pity on the poor.</p>
+            <p><strong>22</strong> Don’t they go astray who plot evil? But love and faithfulness belong to those who plan good.</p>
+            <p><strong>23</strong> In all hard work there is profit, but the talk of the lips leads only to poverty.</p>
+            <p><strong>24</strong> The crown of the wise is their riches, but the folly of fools crowns them with folly.</p>
+            <p><strong>25</strong> A truthful witness saves souls, but a false witness is deceitful.</p>
+            <p><strong>26</strong> In the fear of Yahweh is a secure fortress, and he will be a refuge for his children.</p>
+            <p><strong>27</strong> The fear of Yahweh is a fountain of life, turning people from the snares of death.</p>
+            <p><strong>28</strong> In the multitude of people is the king’s glory, but in the lack of people is the destruction of the prince.</p>
+            <p><strong>29</strong> He who is slow to anger has great understanding, but he who has a quick temper displays folly.</p>
+            <p><strong>30</strong> The life of the body is a heart at peace, but envy rots the bones.</p>
+            <p><strong>31</strong> He who oppresses the poor shows contempt for his Maker, but he who is kind to the needy honors him.</p>
+            <p><strong>32</strong> The wicked is brought down in his calamity, but in death, the righteous has a refuge.</p>
+            <p><strong>33</strong> Wisdom rests in the heart of one who has understanding, and is even made known in the inward part of fools.</p>
+            <p><strong>34</strong> Righteousness exalts a nation, but sin is a disgrace to any people.</p>
+            <p><strong>35</strong> The king’s favor is toward a servant who deals wisely, but his wrath is toward one who causes shame.</p>
+            </div>
+            <div class="scripture-text" id="web-14-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Proverbs 14 (KJV)</p>
+            <p><strong>1</strong> Every wise woman buildeth her house: but the foolish plucketh it down with her hands.</p>
+            <p><strong>2</strong> He that walketh in his uprightness feareth the Lord: but he that is perverse in his ways despiseth him.</p>
+            <p><strong>3</strong> In the mouth of the foolish is a rod of pride: but the lips of the wise shall preserve them.</p>
+            <p><strong>4</strong> Where no oxen are, the crib is clean: but much increase is by the strength of the ox.</p>
+            <p><strong>5</strong> A faithful witness will not lie: but a false witness will utter lies.</p>
+            <p><strong>6</strong> A scorner seeketh wisdom, and findeth it not: but knowledge is easy unto him that understandeth.</p>
+            <p><strong>7</strong> Go from the presence of a foolish man, when thou perceivest not in him the lips of knowledge.</p>
+            <p><strong>8</strong> The wisdom of the prudent is to understand his way: but the folly of fools is deceit.</p>
+            <p><strong>9</strong> Fools make a mock at sin: but among the righteous there is favour.</p>
+            <p><strong>10</strong> The heart knoweth his own bitterness; and a stranger doth not intermeddle with his joy.</p>
+            <p><strong>11</strong> The house of the wicked shall be overthrown: but the tabernacle of the upright shall flourish.</p>
+            <p><strong>12</strong> There is a way which seemeth right unto a man, but the end thereof are the ways of death.</p>
+            <p><strong>13</strong> Even in laughter the heart is sorrowful; and the end of that mirth is heaviness.</p>
+            <p><strong>14</strong> The backslider in heart shall be filled with his own ways: and a good man shall be satisfied from himself.</p>
+            <p><strong>15</strong> The simple believeth every word: but the prudent man looketh well to his going.</p>
+            <p><strong>16</strong> A wise man feareth, and departeth from evil: but the fool rageth, and is confident.</p>
+            <p><strong>17</strong> He that is soon angry dealeth foolishly: and a man of wicked devices is hated.</p>
+            <p><strong>18</strong> The simple inherit folly: but the prudent are crowned with knowledge.</p>
+            <p><strong>19</strong> The evil bow before the good; and the wicked at the gates of the righteous.</p>
+            <p><strong>20</strong> The poor is hated even of his own neighbour: but the rich hath many friends.</p>
+            <p><strong>21</strong> He that despiseth his neighbour sinneth: but he that hath mercy on the poor, happy is he.</p>
+            <p><strong>22</strong> Do they not err that devise evil? but mercy and truth shall be to them that devise good.</p>
+            <p><strong>23</strong> In all labour there is profit: but the talk of the lips tendeth only to penury.</p>
+            <p><strong>24</strong> The crown of the wise is their riches: but the foolishness of fools is folly.</p>
+            <p><strong>25</strong> A true witness delivereth souls: but a deceitful witness speaketh lies.</p>
+            <p><strong>26</strong> In the fear of the Lord is strong confidence: and his children shall have a place of refuge.</p>
+            <p><strong>27</strong> The fear of the Lord is a fountain of life, to depart from the snares of death.</p>
+            <p><strong>28</strong> In the multitude of people is the king’s honour: but in the want of people is the destruction of the prince.</p>
+            <p><strong>29</strong> He that is slow to wrath is of great understanding: but he that is hasty of spirit exalteth folly.</p>
+            <p><strong>30</strong> A sound heart is the life of the flesh: but envy the rottenness of the bones.</p>
+            <p><strong>31</strong> He that oppresseth the poor reproacheth his Maker: but he that honoureth him hath mercy on the poor.</p>
+            <p><strong>32</strong> The wicked is driven away in his wickedness: but the righteous hath hope in his death.</p>
+            <p><strong>33</strong> Wisdom resteth in the heart of him that hath understanding: but that which is in the midst of fools is made known.</p>
+            <p><strong>34</strong> Righteousness exalteth a nation: but sin is a reproach to any people.</p>
+            <p><strong>35</strong> The king’s favour is toward a wise servant: but his wrath is against him that causeth shame.</p>
+            </div>
+            <div class="scripture-text" id="web-14-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Proverbs 14 (ASV)</p>
+            <p><strong>1</strong> Every wise woman buildeth her house; But the foolish plucketh it down with her own hands.</p>
+            <p><strong>2</strong> He that walketh in his uprightness feareth Jehovah; But he that is perverse in his ways despiseth him.</p>
+            <p><strong>3</strong> In the mouth of the foolish is a rod forhispride; But the lips of the wise shall preserve them.</p>
+            <p><strong>4</strong> Where no oxen are, the crib is clean; But much increase is by the strength of the ox.</p>
+            <p><strong>5</strong> A faithful witness will not lie; But a false witness uttereth lies.</p>
+            <p><strong>6</strong> A scoffer seeketh wisdom, and findeth it not; But knowledge is easy unto him that hath understanding.</p>
+            <p><strong>7</strong> Go into the presence of a foolish man, And thou shalt not perceive in him the lips of knowledge.</p>
+            <p><strong>8</strong> The wisdom of the prudent is to understand his way; But the folly of fools is deceit.</p>
+            <p><strong>9</strong> A trespass-offering mocketh fools; But among the upright there is good will.</p>
+            <p><strong>10</strong> The heart knoweth its own bitterness; And a stranger doth not intermeddle with its joy.</p>
+            <p><strong>11</strong> The house of the wicked shall be overthrown; But the tent of the upright shall flourish.</p>
+            <p><strong>12</strong> There is a way which seemeth right unto a man; But the end thereof are the ways of death.</p>
+            <p><strong>13</strong> Even in laughter the heart is sorrowful; And the end of mirth is heaviness.</p>
+            <p><strong>14</strong> The backslider in heart shall be filled with his own ways; And a good manshall be satisfiedfrom himself.</p>
+            <p><strong>15</strong> The simple believeth every word; But the prudent man looketh well to his going.</p>
+            <p><strong>16</strong> A wise man feareth, and departeth from evil; But the fool beareth himself insolently, and is confident.</p>
+            <p><strong>17</strong> He that is soon angry will deal foolishly; And a man of wicked devices is hated.</p>
+            <p><strong>18</strong> The simple inherit folly; But the prudent are crowned with knowledge.</p>
+            <p><strong>19</strong> The evil bow down before the good; And the wicked, at the gates of the righteous.</p>
+            <p><strong>20</strong> The poor is hated even of his own neighbor; But the rich hath many friends.</p>
+            <p><strong>21</strong> He that despiseth his neighbor sinneth; But he that hath pity on the poor, happy is he.</p>
+            <p><strong>22</strong> Do they not err that devise evil? But mercy and truth shall be to them that devise good.</p>
+            <p><strong>23</strong> In all labor there is profit; But the talk of the lipstendethonly to penury.</p>
+            <p><strong>24</strong> The crown of the wise is their riches; But the folly of fools is only folly.</p>
+            <p><strong>25</strong> A true witness delivereth souls; But he that uttereth lies causeth deceit.</p>
+            <p><strong>26</strong> In the fear of Jehovah is strong confidence; And his children shall have a place of refuge.</p>
+            <p><strong>27</strong> The fear of Jehovah is a fountain of life, That one may depart from the snares of death.</p>
+            <p><strong>28</strong> In the multitude of people is the king’s glory; But in the want of people is the destruction of the prince.</p>
+            <p><strong>29</strong> He that is slow to anger is of great understanding; But he that is hasty of spirit exalteth folly.</p>
+            <p><strong>30</strong> A tranquil heart is the life of the flesh; But envy is the rottenness of the bones.</p>
+            <p><strong>31</strong> He that oppresseth the poor reproacheth his Maker; But he that hath mercy on the needy honoreth him.</p>
+            <p><strong>32</strong> The wicked is thrust down in his evil-doing; But the righteous hath a refuge in his death.</p>
+            <p><strong>33</strong> Wisdom resteth in the heart of him that hath understanding; Butthat which isin the inward part of fools is made known.</p>
+            <p><strong>34</strong> Righteousness exalteth a nation; But sin is a reproach to any people.</p>
+            <p><strong>35</strong> The king’s favor is toward a servant that dealeth wisely; But his wrath will beagainsthim that causeth shame.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This chapter sets the constructive way of wisdom against the destructive way of folly across home, speech, temper, and national life. The wise woman builds her house while the foolish tears it down; the upright fear Yahweh while the perverse despise him. A recurring warning sounds twice: there is a way that seems right to a man, but in the end it leads to death. The chapter prizes prudent self-examination over naive credulity, slowness to anger over hot-headed recklessness, and a peaceful heart over envy that rots the bones. It calls kindness to the poor an honoring of their Maker and oppression of them contempt for him. The fear of Yahweh appears as a secure fortress and a fountain of life, and the chapter rises to a national scale: righteousness exalts a nation, but sin is a disgrace to any people.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The wise</strong> — Those who build their house, consider their ways, are slow to anger, and find a fortress in the fear of Yahweh.</li>
+          <li><strong>The fool</strong> — The hot-headed, reckless, deceived person whose folly only crowns him with more folly.</li>
+          <li><strong>The upright</strong> — Those who walk in uprightness, fear Yahweh, and find a refuge even in death.</li>
+          <li><strong>Yahweh</strong> — The LORD whose fear is a fountain of life and secure fortress, honored by kindness to the needy.</li>
+          <li><strong>The king</strong> — The ruler whose glory lies in his people and whose favor rests on the servant who deals wisely.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Proverbs 14:12 (WEB)</p>
+          <p class="verse__text">There is a way which seems right to a man, but in the end it leads to death.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Wisdom builds up a household and a life that folly only tears down.</li>
+          <li>A path can feel right and still lead to death, so we need more than our own instincts.</li>
+          <li>Slowness to anger reflects understanding, while a quick temper displays folly.</li>
+          <li>How we treat the poor reveals our true posture toward their Maker.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-14">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-14">
+            <ul class="lesson-list">
+            <li><strong>Wisdom constructs what folly demolishes.</strong> Every wise woman builds her house, but the foolish one tears it down with her own hands (Proverbs 14:1, WEB).</li>
+            <li><strong>What feels right can still be deadly.</strong> There is a way which seems right to a man, but in the end it leads to death (Proverbs 14:12, WEB).</li>
+            <li><strong>Patience reveals understanding.</strong> He who is slow to anger has great understanding, but he who has a quick temper displays folly (Proverbs 14:29, WEB).</li>
+            <li><strong>The fear of Yahweh is life and refuge.</strong> The fear of Yahweh is a fountain of life, turning people from the snares of death (Proverbs 14:27, WEB).</li>
+            <li><strong>Kindness to the poor honors their Maker.</strong> He who oppresses the poor shows contempt for his Maker, but he who is kind to the needy honors him (Proverbs 14:31, WEB).</li>
+            <li><strong>Righteousness lifts up a whole people.</strong> Righteousness exalts a nation, but sin is a disgrace to any people (Proverbs 14:34, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-14">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-14">
+            <ol class="study-questions">
+            <li>What contrast opens the chapter between the wise woman and the foolish one (Proverbs 14:1)?</li>
+            <li>What sobering warning does the chapter repeat about a way that seems right (Proverbs 14:12)?</li>
+            <li>How does the chapter link our treatment of the poor to our relationship with God (Proverbs 14:31)?</li>
+            <li>Where might a path that 'seems right' to you actually need testing against God's wisdom?</li>
+            <li>How does the call to be slow to anger speak to a relationship or situation you face now?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-14">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-14">
+            <ol class="study-questions">
+            <li>The wise woman builds her house, but the foolish one tears it down with her own hands. The same hands can construct or demolish a household, and wisdom is what makes the difference.</li>
+            <li>Twice the chapter warns that there is a way that seems right to a man but in the end leads to death. It cautions against trusting mere appearances or instincts apart from true wisdom.</li>
+            <li>Oppressing the poor shows contempt for their Maker, while kindness to the needy honors him. How we treat the vulnerable is treated as a direct reflection of our reverence for God himself.</li>
+            <li>Personal: invite members to examine a path that currently feels obviously right to them. Encourage them to test it against Scripture and counsel, mindful that what seems right can still mislead.</li>
+            <li>Personal: let members name a relationship strained by quick temper. Encourage them to pursue the understanding that comes with slowness to anger and a heart at peace rather than envy.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="proverbs-13.html">← Proverbs 13</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="proverbs.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="proverbs-15.html">Proverbs 15 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

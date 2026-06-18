@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Proverbs 1: The Fear of the Lord Begins Wisdom — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Proverbs 1: Solomon opens his proverbs with their purpose, then Wisdom herself cries out, warning the simple to choose her." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-proverbs-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Proverbs, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="proverbs.html">← All Chapters</a>
+        <span class="study-meta">The Book of Proverbs · Chapter 1</span>
+        <h1>Proverbs 1: The Fear of the Lord Begins Wisdom</h1>
+        <p class="lead">Solomon opens his proverbs with their purpose, then Wisdom herself cries out, warning the simple to choose her.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Proverbs Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Proverbs 1 (WEB)</p>
+            <p><strong>1</strong> The proverbs of Solomon, the son of David, king of Israel:</p>
+            <p><strong>2</strong> to know wisdom and instruction; to discern the words of understanding;</p>
+            <p><strong>3</strong> to receive instruction in wise dealing, in righteousness, justice, and equity;</p>
+            <p><strong>4</strong> to give prudence to the simple, knowledge and discretion to the young man:</p>
+            <p><strong>5</strong> that the wise man may hear, and increase in learning; that the man of understanding may attain to sound counsel:</p>
+            <p><strong>6</strong> to understand a proverb, and parables, the words and riddles of the wise.</p>
+            <p><strong>7</strong> The fear of Yahweh is the beginning of knowledge; but the foolish despise wisdom and instruction.</p>
+            <p><strong>8</strong> My son, listen to your father’s instruction, and don’t forsake your mother’s teaching:</p>
+            <p><strong>9</strong> for they will be a garland to grace your head, and chains around your neck.</p>
+            <p><strong>10</strong> My son, if sinners entice you, don’t consent.</p>
+            <p><strong>11</strong> If they say, “Come with us, Let’s lay in wait for blood; let’s lurk secretly for the innocent without cause;</p>
+            <p><strong>12</strong> let’s swallow them up alive like Sheol, and whole, like those who go down into the pit.</p>
+            <p><strong>13</strong> We’ll find all valuable wealth. We’ll fill our houses with plunder.</p>
+            <p><strong>14</strong> You shall cast your lot among us. We’ll all have one purse.”</p>
+            <p><strong>15</strong> My son, don’t walk on the path with them. Keep your foot from their path,</p>
+            <p><strong>16</strong> for their feet run to evil. They hurry to shed blood.</p>
+            <p><strong>17</strong> For in vain is the net spread in the sight of any bird:</p>
+            <p><strong>18</strong> but these lay wait for their own blood. They lurk secretly for their own lives.</p>
+            <p><strong>19</strong> So are the ways of everyone who is greedy for gain. It takes away the life of its owners.</p>
+            <p><strong>20</strong> Wisdom calls aloud in the street. She utters her voice in the public squares.</p>
+            <p><strong>21</strong> She calls at the head of noisy places. At the entrance of the city gates, she utters her words:</p>
+            <p><strong>22</strong> “How long, you simple ones, will you love simplicity? How long will mockers delight themselves in mockery, and fools hate knowledge?</p>
+            <p><strong>23</strong> Turn at my reproof. Behold, I will pour out my spirit on you. I will make known my words to you.</p>
+            <p><strong>24</strong> Because I have called, and you have refused; I have stretched out my hand, and no one has paid attention;</p>
+            <p><strong>25</strong> but you have ignored all my counsel, and wanted none of my reproof;</p>
+            <p><strong>26</strong> I also will laugh at your disaster. I will mock when calamity overtakes you;</p>
+            <p><strong>27</strong> when calamity overtakes you like a storm, when your disaster comes on like a whirlwind; when distress and anguish come on you.</p>
+            <p><strong>28</strong> Then will they call on me, but I will not answer. They will seek me diligently, but they will not find me;</p>
+            <p><strong>29</strong> because they hated knowledge, and didn’t choose the fear of Yahweh.</p>
+            <p><strong>30</strong> They wanted none of my counsel. They despised all my reproof.</p>
+            <p><strong>31</strong> Therefore they will eat of the fruit of their own way, and be filled with their own schemes.</p>
+            <p><strong>32</strong> For the backsliding of the simple will kill them. The careless ease of fools will destroy them.</p>
+            <p><strong>33</strong> But whoever listens to me will dwell securely, and will be at ease, without fear of harm.”</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Proverbs 1 (KJV)</p>
+            <p><strong>1</strong> The proverbs of Solomon the son of David, king of Israel;</p>
+            <p><strong>2</strong> To know wisdom and instruction; to perceive the words of understanding;</p>
+            <p><strong>3</strong> To receive the instruction of wisdom, justice, and judgment, and equity;</p>
+            <p><strong>4</strong> To give subtilty to the simple, to the young man knowledge and discretion.</p>
+            <p><strong>5</strong> A wise man will hear, and will increase learning; and a man of understanding shall attain unto wise counsels:</p>
+            <p><strong>6</strong> To understand a proverb, and the interpretation; the words of the wise, and their dark sayings.</p>
+            <p><strong>7</strong> The fear of the Lord is the beginning of knowledge: but fools despise wisdom and instruction.</p>
+            <p><strong>8</strong> My son, hear the instruction of thy father, and forsake not the law of thy mother:</p>
+            <p><strong>9</strong> For they shall be an ornament of grace unto thy head, and chains about thy neck.</p>
+            <p><strong>10</strong> My son, if sinners entice thee, consent thou not.</p>
+            <p><strong>11</strong> If they say, Come with us, let us lay wait for blood, let us lurk privily for the innocent without cause:</p>
+            <p><strong>12</strong> Let us swallow them up alive as the grave; and whole, as those that go down into the pit:</p>
+            <p><strong>13</strong> We shall find all precious substance, we shall fill our houses with spoil:</p>
+            <p><strong>14</strong> Cast in thy lot among us; let us all have one purse:</p>
+            <p><strong>15</strong> My son, walk not thou in the way with them; refrain thy foot from their path:</p>
+            <p><strong>16</strong> For their feet run to evil, and make haste to shed blood.</p>
+            <p><strong>17</strong> Surely in vain the net is spread in the sight of any bird.</p>
+            <p><strong>18</strong> And they lay wait for their own blood; they lurk privily for their own lives.</p>
+            <p><strong>19</strong> So are the ways of every one that is greedy of gain; which taketh away the life of the owners thereof.</p>
+            <p><strong>20</strong> Wisdom crieth without; she uttereth her voice in the streets:</p>
+            <p><strong>21</strong> She crieth in the chief place of concourse, in the openings of the gates: in the city she uttereth her words, saying,</p>
+            <p><strong>22</strong> How long, ye simple ones, will ye love simplicity? and the scorners delight in their scorning, and fools hate knowledge?</p>
+            <p><strong>23</strong> Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you.</p>
+            <p><strong>24</strong> Because I have called, and ye refused; I have stretched out my hand, and no man regarded;</p>
+            <p><strong>25</strong> But ye have set at nought all my counsel, and would none of my reproof:</p>
+            <p><strong>26</strong> I also will laugh at your calamity; I will mock when your fear cometh;</p>
+            <p><strong>27</strong> When your fear cometh as desolation, and your destruction cometh as a whirlwind; when distress and anguish cometh upon you.</p>
+            <p><strong>28</strong> Then shall they call upon me, but I will not answer; they shall seek me early, but they shall not find me:</p>
+            <p><strong>29</strong> For that they hated knowledge, and did not choose the fear of the Lord:</p>
+            <p><strong>30</strong> They would none of my counsel: they despised all my reproof.</p>
+            <p><strong>31</strong> Therefore shall they eat of the fruit of their own way, and be filled with their own devices.</p>
+            <p><strong>32</strong> For the turning away of the simple shall slay them, and the prosperity of fools shall destroy them.</p>
+            <p><strong>33</strong> But whoso hearkeneth unto me shall dwell safely, and shall be quiet from fear of evil.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Proverbs 1 (ASV)</p>
+            <p><strong>1</strong> The proverbs of Solomon the son of David, king of Israel:</p>
+            <p><strong>2</strong> To know wisdom and instruction; To discern the words of understanding;</p>
+            <p><strong>3</strong> To receive instruction in wise dealing, In righteousness and justice and equity;</p>
+            <p><strong>4</strong> To give prudence to the simple, To the young man knowledge and discretion:</p>
+            <p><strong>5</strong> That the wise man may hear, and increase in learning; And that the man of understanding may attain unto sound counsels:</p>
+            <p><strong>6</strong> To understand a proverb, and a figure, The words of the wise, and their dark sayings.</p>
+            <p><strong>7</strong> The fear of Jehovah is the beginning of knowledge; Butthe foolish despise wisdom and instruction.</p>
+            <p><strong>8</strong> My son, hear the instruction of thy father, And forsake not the law of thy mother:</p>
+            <p><strong>9</strong> For they shall be a chaplet of grace unto thy head, And chains about thy neck.</p>
+            <p><strong>10</strong> My son, if sinners entice thee, Consent thou not.</p>
+            <p><strong>11</strong> If they say, Come with us, Let us lay wait for blood; Let us lurk privily for the innocent without cause;</p>
+            <p><strong>12</strong> Let us swallow them up alive as Sheol, And whole, as those that go down into the pit;</p>
+            <p><strong>13</strong> We shall find all precious substance; We shall fill our houses with spoil;</p>
+            <p><strong>14</strong> Thou shalt cast thy lot among us; We will all have one purse:</p>
+            <p><strong>15</strong> My son, walk not thou in the way with them; Refrain thy foot from their path:</p>
+            <p><strong>16</strong> For their feet run to evil, And they make haste to shed blood.</p>
+            <p><strong>17</strong> For in vain is the net spread  In the sight of any bird:</p>
+            <p><strong>18</strong> And these lay wait for their own blood; They lurk privily for their own lives.</p>
+            <p><strong>19</strong> So are the ways of every one that is greedy of gain; It taketh away the life of the owners thereof.</p>
+            <p><strong>20</strong> Wisdom crieth aloud in the street; She uttereth her voice in the broad places;</p>
+            <p><strong>21</strong> She crieth in the chief place of concourse; At the entrance of the gates, In the city, she uttereth her words:</p>
+            <p><strong>22</strong> How long, ye simple ones, will ye love simplicity? And scoffers delight them in scoffing, And fools hate knowledge?</p>
+            <p><strong>23</strong> Turn you at my reproof: Behold, I will pour out my spirit upon you; I will make known my words unto you.</p>
+            <p><strong>24</strong> Because I have called, and ye have refused; I have stretched out my hand, and no man hath regarded;</p>
+            <p><strong>25</strong> But ye have set at nought all my counsel, And would none of my reproof:</p>
+            <p><strong>26</strong> I also will laugh inthe day ofyour calamity; I will mock when your fear cometh;</p>
+            <p><strong>27</strong> When your fear cometh as a storm, And your calamity cometh on as a whirlwind; When distress and anguish come upon you.</p>
+            <p><strong>28</strong> Then will they call upon me, but I will not answer; They will seek me diligently, but they shall not find me:</p>
+            <p><strong>29</strong> For that they hated knowledge, And did not choose the fear of Jehovah,</p>
+            <p><strong>30</strong> They would none of my counsel, They despised all my reproof.</p>
+            <p><strong>31</strong> Therefore shall they eat of the fruit of their own way, And be filled with their own devices.</p>
+            <p><strong>32</strong> For the backsliding of the simple shall slay them, And the careless ease of fools shall destroy them.</p>
+            <p><strong>33</strong> But whoso hearkeneth unto me shall dwell securely, And shall be quiet without fear of evil.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Solomon names the purpose of his proverbs: to give wisdom, instruction, prudence, and discernment to the simple and the young. He sets the cornerstone of the whole book by declaring that the fear of Yahweh is the beginning of knowledge, while fools despise wisdom. A father urges his son to heed his parents' teaching and to refuse the invitation of sinners who lure others into ambush and violent gain, warning that such greed destroys its own owners. Then Wisdom is pictured as a woman crying aloud in the streets and city gates, calling the simple to turn at her reproof. She warns that those who reject her counsel will one day call out in calamity and not be answered, but whoever listens to her will dwell securely, at ease and without fear.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Solomon</strong> — The son of David and king of Israel, who gives these proverbs to impart wisdom and discernment.</li>
+          <li><strong>The father</strong> — The teacher who pleads with his son to heed parental instruction and to refuse the path of sinners.</li>
+          <li><strong>Sinners who entice</strong> — Those who invite the young into ambush, bloodshed, and plunder, only to ruin their own lives.</li>
+          <li><strong>Lady Wisdom</strong> — Wisdom personified as a woman who calls aloud in the streets, offering reproof, security, and life to all who turn to her.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Proverbs 1:7 (WEB)</p>
+          <p class="verse__text">The fear of Yahweh is the beginning of knowledge; but the foolish despise wisdom and instruction.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>True knowledge begins not with information but with reverent fear of the Lord.</li>
+          <li>The voices that entice us toward easy gain often lead to ruin we cannot foresee.</li>
+          <li>Wisdom is not hidden away; it calls out plainly to anyone willing to listen.</li>
+          <li>Refusing wisdom's reproof has lasting consequences, while heeding it brings security and peace.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>Wisdom starts with reverence for God.</strong> 'The fear of Yahweh is the beginning of knowledge; but the foolish despise wisdom and instruction' (Proverbs 1:7, WEB). All true understanding is rooted in honoring God rightly.</li>
+            <li><strong>Honor the instruction of those God has placed over you.</strong> 'My son, listen to your father's instruction, and don't forsake your mother's teaching' (Proverbs 1:8, WEB). Godly counsel from family is a grace to adorn and guide a life.</li>
+            <li><strong>Refuse the invitations that lead to sin.</strong> 'My son, if sinners entice you, don't consent' (Proverbs 1:10, WEB). Wisdom often shows itself first in what we are willing to say no to.</li>
+            <li><strong>Greed turns back on the one who pursues it.</strong> 'So are the ways of everyone who is greedy for gain. It takes away the life of its owners' (Proverbs 1:19, WEB). Schemes for ill-gotten gain ensnare the schemer.</li>
+            <li><strong>Wisdom calls openly and must be answered in time.</strong> Wisdom 'calls aloud in the street' (Proverbs 1:20, WEB), yet warns that those who refuse her will call and not be answered (Proverbs 1:28, WEB). There is an urgency to responding while she calls.</li>
+            <li><strong>Listening to wisdom brings true security.</strong> 'Whoever listens to me will dwell securely, and will be at ease, without fear of harm' (Proverbs 1:33, WEB). A life ordered by wisdom rests in peace rather than dread.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>According to verses 2 to 6, what is the stated purpose of these proverbs, and who are they meant to help?</li>
+            <li>Why does Solomon say 'the fear of Yahweh is the beginning of knowledge,' and what does that imply about how we learn wisdom?</li>
+            <li>How do the sinners in verses 10 to 19 make their invitation appealing, and how does the father expose its real outcome?</li>
+            <li>What does Wisdom's public crying out in the streets reveal about how available true wisdom is to ordinary people?</li>
+            <li>Where in your life are you most tempted to ignore wise reproof, and what would it look like to 'turn' at it instead?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Verses 2 to 6 say the proverbs are to give wisdom, instruction, discernment, righteousness, justice, and equity, granting prudence to the simple and knowledge to the young, while also helping the wise grow further (Proverbs 1:2-5, WEB). They are aimed at both the inexperienced and the already wise.</li>
+            <li>Solomon calls the fear of Yahweh 'the beginning of knowledge' (Proverbs 1:7, WEB) because reverence for God orients the whole heart and mind. It implies that wisdom is moral and relational, beginning with humility before God rather than mere cleverness.</li>
+            <li>The sinners promise excitement, shared plunder, and belonging in their company (Proverbs 1:11-14, WEB), but the father warns their feet 'run to evil' and that they actually 'lay wait for their own blood' (Proverbs 1:16-18, WEB). The enticement hides a self-destructive end.</li>
+            <li>Wisdom 'calls aloud in the street' and 'at the entrance of the city gates' (Proverbs 1:20-21, WEB), the most public places. This shows wisdom is not reserved for elites but freely offered to every passerby who will listen.</li>
+            <li>This is a personal-application question; invite voluntary sharing rather than requiring it. Use Wisdom's appeal to 'turn at my reproof' (Proverbs 1:23, WEB) to discuss humbly receiving correction from Scripture, godly friends, and conscience.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="proverbs.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="proverbs-2.html">Proverbs 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

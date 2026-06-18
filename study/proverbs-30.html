@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Proverbs 30: The Words of Agur — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Proverbs 30: Agur confesses his ignorance, exalts God's flawless word, and marvels at wonders too great for him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-proverbs-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Proverbs, Chapter 30
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="proverbs.html">← All Chapters</a>
+        <span class="study-meta">The Book of Proverbs · Chapter 30</span>
+        <h1>Proverbs 30: The Words of Agur</h1>
+        <p class="lead">Agur confesses his ignorance, exalts God's flawless word, and marvels at wonders too great for him.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-30">
+            <span>Scripture — Proverbs Chapter 30</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-30">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-30-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-30-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-30-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-30-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Proverbs 30 (WEB)</p>
+            <p><strong>1</strong> The words of Agur the son of Jakeh, the oracle:  the man says to Ithiel, to Ithiel and Ucal:</p>
+            <p><strong>2</strong> “Surely I am the most ignorant man, and don’t have a man’s understanding.</p>
+            <p><strong>3</strong> I have not learned wisdom, neither do I have the knowledge of the Holy One.</p>
+            <p><strong>4</strong> Who has ascended up into heaven, and descended? Who has gathered the wind in his fists? Who has bound the waters in his garment? Who has established all the ends of the earth? What is his name, and what is his son’s name, if you know?</p>
+            <p><strong>5</strong> “Every word of God is flawless. He is a shield to those who take refuge in him.</p>
+            <p><strong>6</strong> Don’t you add to his words, lest he reprove you, and you be found a liar.</p>
+            <p><strong>7</strong> “Two things I have asked of you; don’t deny me before I die:</p>
+            <p><strong>8</strong> Remove far from me falsehood and lies. Give me neither poverty nor riches. Feed me with the food that is needful for me;</p>
+            <p><strong>9</strong> lest I be full, deny you, and say, ‘Who is Yahweh?’ or lest I be poor, and steal, and so dishonor the name of my God.</p>
+            <p><strong>10</strong> “Don’t slander a servant to his master, lest he curse you, and you be held guilty.</p>
+            <p><strong>11</strong> There is a generation that curses their father, and doesn’t bless their mother.</p>
+            <p><strong>12</strong> There is a generation that is pure in their own eyes, yet are not washed from their filthiness.</p>
+            <p><strong>13</strong> There is a generation, oh how lofty are their eyes! Their eyelids are lifted up.</p>
+            <p><strong>14</strong> There is a generation whose teeth are like swords, and their jaws like knives, to devour the poor from the earth, and the needy from among men.</p>
+            <p><strong>15</strong> “The leach has two daughters: ‘Give, give.’   “There are three things that are never satisfied; four that don’t say, ‘Enough:’</p>
+            <p><strong>16</strong> Sheol, the barren womb; the earth that is not satisfied with water; and the fire that doesn’t say, ‘Enough.’</p>
+            <p><strong>17</strong> “The eye that mocks at his father, and scorns obedience to his mother: the ravens of the valley shall pick it out, the young eagles shall eat it.</p>
+            <p><strong>18</strong> “There are three things which are too amazing for me, four which I don’t understand:</p>
+            <p><strong>19</strong> The way of an eagle in the air; the way of a serpent on a rock; the way of a ship in the midst of the sea; and the way of a man with a maiden.</p>
+            <p><strong>20</strong> “So is the way of an adulterous woman: she eats and wipes her mouth, and says, ‘I have done nothing wrong.’</p>
+            <p><strong>21</strong> “For three things the earth tremble, and under four, it can’t bear up:</p>
+            <p><strong>22</strong> For a servant when he is king; a fool when he is filled with food;</p>
+            <p><strong>23</strong> for an unloved woman when she is married; and a handmaid who is heir to her mistress.</p>
+            <p><strong>24</strong> “There are four things which are little on the earth, but they are exceedingly wise:</p>
+            <p><strong>25</strong> the ants are not a strong people, yet they provide their food in the summer.</p>
+            <p><strong>26</strong> The conies are but a feeble folk, yet make they their houses in the rocks.</p>
+            <p><strong>27</strong> The locusts have no king, yet they advance in ranks.</p>
+            <p><strong>28</strong> You can catch a lizard with your hands, yet it is in kings’ palaces.</p>
+            <p><strong>29</strong> “There are three things which are stately in their march, four which are stately in going:</p>
+            <p><strong>30</strong> The lion, which is mightiest among animals, and doesn’t turn away for any;</p>
+            <p><strong>31</strong> the greyhound, the male goat also; and the king against whom there is no rising up.</p>
+            <p><strong>32</strong> “If you have done foolishly in lifting up yourself, or if you have thought evil, put your hand over your mouth.</p>
+            <p><strong>33</strong> For as the churning of milk produces butter, and the wringing of the nose produces blood; so the forcing of wrath produces strife.”</p>
+            </div>
+            <div class="scripture-text" id="web-30-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Proverbs 30 (KJV)</p>
+            <p><strong>1</strong> The words of Agur the son of Jakeh, even the prophecy: the man spake unto Ithiel, even unto Ithiel and Ucal,</p>
+            <p><strong>2</strong> Surely I am more brutish than any man, and have not the understanding of a man.</p>
+            <p><strong>3</strong> I neither learned wisdom, nor have the knowledge of the holy.</p>
+            <p><strong>4</strong> Who hath ascended up into heaven, or descended? who hath gathered the wind in his fists? who hath bound the waters in a garment? who hath established all the ends of the earth? what is his name, and what is his son’s name, if thou canst tell?</p>
+            <p><strong>5</strong> Every word of God is pure: he is a shield unto them that put their trust in him.</p>
+            <p><strong>6</strong> Add thou not unto his words, lest he reprove thee, and thou be found a liar.</p>
+            <p><strong>7</strong> Two things have I required of thee; deny me them not before I die:</p>
+            <p><strong>8</strong> Remove far from me vanity and lies: give me neither poverty nor riches; feed me with food convenient for me:</p>
+            <p><strong>9</strong> Lest I be full, and deny thee, and say, Who is the Lord? or lest I be poor, and steal, and take the name of my God in vain.</p>
+            <p><strong>10</strong> Accuse not a servant unto his master, lest he curse thee, and thou be found guilty.</p>
+            <p><strong>11</strong> There is a generation that curseth their father, and doth not bless their mother.</p>
+            <p><strong>12</strong> There is a generation that are pure in their own eyes, and yet is not washed from their filthiness.</p>
+            <p><strong>13</strong> There is a generation, O how lofty are their eyes! and their eyelids are lifted up.</p>
+            <p><strong>14</strong> There is a generation, whose teeth are as swords, and their jaw teeth as knives, to devour the poor from off the earth, and the needy from among men.</p>
+            <p><strong>15</strong> The horseleach hath two daughters, crying, Give, give. There are three things that are never satisfied, yea, four things say not, It is enough:</p>
+            <p><strong>16</strong> The grave; and the barren womb; the earth that is not filled with water; and the fire that saith not, It is enough.</p>
+            <p><strong>17</strong> The eye that mocketh at his father, and despiseth to obey his mother, the ravens of the valley shall pick it out, and the young eagles shall eat it.</p>
+            <p><strong>18</strong> There be three things which are too wonderful for me, yea, four which I know not:</p>
+            <p><strong>19</strong> The way of an eagle in the air; the way of a serpent upon a rock; the way of a ship in the midst of the sea; and the way of a man with a maid.</p>
+            <p><strong>20</strong> Such is the way of an adulterous woman; she eateth, and wipeth her mouth, and saith, I have done no wickedness.</p>
+            <p><strong>21</strong> For three things the earth is disquieted, and for four which it cannot bear:</p>
+            <p><strong>22</strong> For a servant when he reigneth; and a fool when he is filled with meat;</p>
+            <p><strong>23</strong> For an odious woman when she is married; and an handmaid that is heir to her mistress.</p>
+            <p><strong>24</strong> There be four things which are little upon the earth, but they are exceeding wise:</p>
+            <p><strong>25</strong> The ants are a people not strong, yet they prepare their meat in the summer;</p>
+            <p><strong>26</strong> The conies are but a feeble folk, yet make they their houses in the rocks;</p>
+            <p><strong>27</strong> The locusts have no king, yet go they forth all of them by bands;</p>
+            <p><strong>28</strong> The spider taketh hold with her hands, and is in kings’ palaces.</p>
+            <p><strong>29</strong> There be three things which go well, yea, four are comely in going:</p>
+            <p><strong>30</strong> A lion which is strongest among beasts, and turneth not away for any;</p>
+            <p><strong>31</strong> A greyhound; an he goat also; and a king, against whom there is no rising up.</p>
+            <p><strong>32</strong> If thou hast done foolishly in lifting up thyself, or if thou hast thought evil, lay thine hand upon thy mouth.</p>
+            <p><strong>33</strong> Surely the churning of milk bringeth forth butter, and the wringing of the nose bringeth forth blood: so the forcing of wrath bringeth forth strife.</p>
+            </div>
+            <div class="scripture-text" id="web-30-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Proverbs 30 (ASV)</p>
+            <p><strong>1</strong> The words of Agur the son of Jakeh; the oracle.   The man saith unto Ithiel, unto Ithiel and Ucal:</p>
+            <p><strong>2</strong> Surely I am more brutish than any man, And have not the understanding of a man;</p>
+            <p><strong>3</strong> And I have not learned wisdom, Neither have I the knowledge of the Holy One.</p>
+            <p><strong>4</strong> Who hath ascended up into heaven, and descended? Who hath gathered the wind in his fists? Who hath bound the waters in his garment? Who hath established all the ends of the earth? What is his name, and what is his son’s name, if thou knowest?</p>
+            <p><strong>5</strong> Every word of God is tried: He is a shield unto them that take refuge in him.</p>
+            <p><strong>6</strong> Add thou not unto his words, Lest he reprove thee, and thou be found a liar.</p>
+            <p><strong>7</strong> Two things have I asked of thee; Deny methemnot before I die:</p>
+            <p><strong>8</strong> Remove far from me falsehood and lies; Give me neither poverty nor riches; Feed me with the food that is needful for me:</p>
+            <p><strong>9</strong> Lest I be full, and denythee, and say, Who is Jehovah? Or lest I be poor, and steal, And use profanely the name of my God.</p>
+            <p><strong>10</strong> Slander not a servant unto his master, Lest he curse thee, and thou be held guilty.</p>
+            <p><strong>11</strong> There is a generation that curse their father, And bless not their mother.</p>
+            <p><strong>12</strong> There is a generation that are pure in their own eyes, Andyetare not washed from their filthiness.</p>
+            <p><strong>13</strong> There is a generation, oh how lofty are their eyes! And their eyelids are lifted up.</p>
+            <p><strong>14</strong> There is a generation whose teeth areasswords, and their jaw teethasknives, To devour the poor from off the earth, and the needy from among men.</p>
+            <p><strong>15</strong> The horseleach hath two daughters, crying, Give, give. There are three things that are never satisfied, Yea, four that say not, Enough:</p>
+            <p><strong>16</strong> Sheol; and the barren womb; The earth that is not satisfied with water; And the fire that saith not, Enough.</p>
+            <p><strong>17</strong> The eye that mocketh at his father, And despiseth to obey his mother, The ravens of the valley shall pick it out, And the young eagles shall eat it.</p>
+            <p><strong>18</strong> There are three things which are too wonderful for me, Yea, four which I know not:</p>
+            <p><strong>19</strong> The way of an eagle in the air; The way of a serpent upon a rock; The way of a ship in the midst of the sea; And the way of a man with a maiden.</p>
+            <p><strong>20</strong> So is the way of an adulterous woman; She eateth, and wipeth her mouth, And saith, I have done no wickedness.</p>
+            <p><strong>21</strong> For three things the earth doth tremble, And for four, whichit cannot bear:</p>
+            <p><strong>22</strong> For a servant when he is king; And a fool when he is filled with food;</p>
+            <p><strong>23</strong> For an odious woman when she is married; And a handmaid that is heir to her mistress.</p>
+            <p><strong>24</strong> There are four things which are little upon the earth, But they are exceeding wise:</p>
+            <p><strong>25</strong> The ants are a people not strong, Yet they provide their food in the summer;</p>
+            <p><strong>26</strong> The conies are but a feeble folk, Yet make they their houses in the rocks;</p>
+            <p><strong>27</strong> The locusts have no king, Yet go they forth all of them by bands;</p>
+            <p><strong>28</strong> The lizard taketh hold with her hands, Yet is she in kings’ palaces.</p>
+            <p><strong>29</strong> There are three things which are stately in their march, Yea, four which are stately in going:</p>
+            <p><strong>30</strong> The lion, which is mightiest among beasts, And turneth not away for any;</p>
+            <p><strong>31</strong> The greyhound; the he-goat also; And the king against whom there is no rising up.</p>
+            <p><strong>32</strong> If thou hast done foolishly in lifting up thyself, Or if thou hast thought evil, Lay thy hand upon thy mouth.</p>
+            <p><strong>33</strong> For the churning of milk bringeth forth butter, And the wringing of the nose bringeth forth blood; So the forcing of wrath bringeth forth strife.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This chapter records the words of Agur the son of Jakeh, spoken to Ithiel and Ucal. Agur opens with humility, confessing he is the most ignorant of men and lacks the knowledge of the Holy One, then asks who has ascended to heaven, gathered the wind, or established the earth, pointing to God whose name and son's name surpass us. He declares every word of God flawless and a shield, warning against adding to it. He prays for two things: to be kept from falsehood and given neither poverty nor riches, but only his needful food, lest he deny God or steal. The rest unfolds in numerical sayings, three things and four, naming things never satisfied, wonders too amazing to understand, things that make the earth tremble, four small creatures that are exceedingly wise, and four that are stately in march. He ends warning that forcing wrath produces strife.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Agur the son of Jakeh</strong> — The humble teacher who confesses his ignorance, praises God's flawless word, and arranges wisdom in numerical sayings.</li>
+          <li><strong>Yahweh (the Holy One)</strong> — The LORD whose every word is flawless, who shields those who take refuge in him, and whose works exceed human understanding.</li>
+          <li><strong>The four small creatures</strong> — The ants, conies, locusts, and lizard, little yet exceedingly wise in how they live and provide.</li>
+          <li><strong>Ithiel and Ucal</strong> — The hearers to whom Agur addresses his oracle of humble, God-fearing wisdom.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Proverbs 30:5 (WEB)</p>
+          <p class="verse__text">“Every word of God is flawless. He is a shield to those who take refuge in him.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>True wisdom begins with humbly admitting how little we know before the God who made all things.</li>
+          <li>Every word of God is flawless and a shield, so we must not add to it or trust our own additions.</li>
+          <li>Contentment with daily provision, neither poverty nor riches, guards the heart from both denying God and stealing.</li>
+          <li>God has woven wisdom even into small and humble creatures, teaching us through what is little and overlooked.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-30">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-30">
+            <ul class="lesson-list">
+            <li><strong>Wisdom starts with humility.</strong> Agur confesses he is the most ignorant man and has not the knowledge of the Holy One, modeling the lowliness that opens us to true understanding (Proverbs 30:2-3, WEB).</li>
+            <li><strong>God's word is perfect and protective.</strong> Every word of God is flawless; he is a shield to those who take refuge in him, so Scripture both guides and guards us (Proverbs 30:5, WEB).</li>
+            <li><strong>Don't tamper with God's revelation.</strong> Don't add to his words, lest he reprove you and you be found a liar, warning us to receive his word as it stands (Proverbs 30:6, WEB).</li>
+            <li><strong>Contentment guards the heart.</strong> Agur prays for neither poverty nor riches but his needful food, lest he be full and deny God, or poor and steal (Proverbs 30:8-9, WEB).</li>
+            <li><strong>God teaches through the small.</strong> Four things are little on the earth but exceedingly wise, showing that God's wisdom shines even in ants, conies, locusts, and lizards (Proverbs 30:24, WEB).</li>
+            <li><strong>Restrain pride and provocation.</strong> If you have done foolishly in lifting up yourself, put your hand over your mouth, for forcing wrath produces strife (Proverbs 30:32-33, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-30">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-30">
+            <ol class="study-questions">
+            <li>Why does Agur begin by confessing his own ignorance (Proverbs 30:2-3)?</li>
+            <li>What does Agur mean when he says every word of God is flawless (Proverbs 30:5)?</li>
+            <li>Why does Agur pray for neither poverty nor riches, but only his needful food (Proverbs 30:8-9)?</li>
+            <li>What do the four small but exceedingly wise creatures teach us (Proverbs 30:24-28)?</li>
+            <li>How does Agur's prayer for contentment challenge your own attitude toward what you have?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-30">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-30">
+            <ol class="study-questions">
+            <li>Agur begins with humility because genuine wisdom recognizes how small our understanding is next to the God who gathers the wind and establishes the earth (30:2-4); admitting our ignorance is the doorway to learning.</li>
+            <li>He means that God's word is without flaw or error and serves as a shield to those who take refuge in him, so it can be fully trusted and must not be added to (30:5-6).</li>
+            <li>He fears that abundance might make him self-sufficient and deny God, while poverty might tempt him to steal and dishonor God's name; daily provision keeps him dependent and honest (30:8-9).</li>
+            <li>Though ants, conies, locusts, and lizards are small and feeble, they live with foresight, security, order, and boldness, teaching that wisdom is not about size or strength but how one lives (30:24-28).</li>
+            <li>Personal: encourage members to weigh Agur's prayer against their own desires for more, and to ask God for a contented heart that trusts him for daily needs (30:8-9).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="proverbs-29.html">← Proverbs 29</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="proverbs.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="proverbs-31.html">Proverbs 31 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

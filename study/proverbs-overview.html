@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Proverbs: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="A bird's-eye overview of Proverbs: the fear of Yahweh, Lady Wisdom's call, Solomon's sayings, and a portrait of wisdom lived out." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-proverbs-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Proverbs, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Proverbs · Whole-Book Overview</span>
+        <h1>Proverbs: The Whole Story</h1>
+        <p class="lead">From a father's earnest pleas to a portrait of a wise woman at work, Proverbs shows how the fear of Yahweh shapes a whole life.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Proverbs is a book of practical wisdom — short, memorable sayings and longer appeals that teach God's people how to live well in the ordinary world of work, money, speech, family, friendship, and the heart. It does not begin with rules so much as with a center of gravity: "The fear of Yahweh is the beginning of knowledge" (1:7). Wisdom, in Proverbs, is not mainly cleverness or information; it is the skill of living rightly before God, and it grows in those who revere him and listen to his instruction.</p>
+          <p>The book opens with ten chapters of warm, urgent fatherly speeches. A teacher pleads with his "son" to choose the path of wisdom over folly, picturing wisdom as a noble woman who calls aloud in the streets (1:20-21; 8:1-4) and folly as a seductress who leads to death (9:13-18). From chapter ten onward the tone shifts to hundreds of compact sayings — collected from Solomon, from "the wise," and from the men of Hezekiah — that hold up the contrast between the wise and the foolish, the righteous and the wicked, the diligent and the lazy, again and again from every angle.</p>
+          <p>Proverbs closes with two voices from outside Israel's court and one final portrait. Agur confesses his own smallness before God's greatness (30:1-4), and King Lemuel passes on his mother's charge to rule justly and defend the weak (31:1-9). Then the book ends not with a maxim but a picture: the worthy woman whose strong, generous, God-fearing life embodies everything wisdom has been teaching (31:10-31). For Christians, this whole pursuit of wisdom points beyond itself to Christ, in whom "all the treasures of wisdom and knowledge are hidden," the wisdom of God made flesh.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>The Call of Wisdom (chs 1-9)</strong> — A father urges his son toward wisdom and away from folly. The fear of Yahweh is set as the foundation, sinners' enticements and the forbidden woman are warned against, and Wisdom herself cries out in the streets, present with God at creation and offering life to all who find her.</li>
+          <li><strong>The Proverbs of Solomon (chs 10-22:16)</strong> — Hundreds of short, two-line sayings contrast the wise with the fool and the righteous with the wicked, touching speech, work, wealth, honesty, anger, and the heart, and pressing home that the way of righteousness leads to life.</li>
+          <li><strong>The Words of the Wise (chs 22:17-24:34)</strong> — Two collections of "sayings of the wise" offer longer counsel on generosity, self-control, justice, fearing the LORD and the king, and the ruin that follows laziness, warning against envy of the wicked.</li>
+          <li><strong>The Hezekiah Collection (chs 25-29)</strong> — More proverbs of Solomon, copied out by the men of King Hezekiah, with vivid pictures from court and countryside on kings, neighbors, quarrels, the fool, the sluggard, and the danger of pride.</li>
+          <li><strong>The Words of Agur (ch 30)</strong> — Agur the son of Jakeh humbly confesses his ignorance before the God whose every word is flawless, then teaches through numbered sayings that marvel at God's creation and warn against pride and greed.</li>
+          <li><strong>Lemuel and the Worthy Woman (ch 31)</strong> — King Lemuel relays his mother's charge to avoid what destroys kings and to defend the poor, and the book ends with an acrostic poem praising the worthy woman whose industrious, generous, God-fearing life crowns the whole pursuit of wisdom.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh</strong> — The LORD whose fear is the beginning of wisdom; he made the world by wisdom, weighs the heart, directs every step, and is the source and goal of all true knowledge in the book.</li>
+          <li><strong>Solomon</strong> — The son of David and king of Israel named at the head of the book, whose collected proverbs form its great central core and whose wisdom gives Proverbs its voice.</li>
+          <li><strong>The father (teacher)</strong> — The instructing voice of chapters 1-9, who pleads tenderly and urgently with his son to embrace wisdom, guard his heart, and avoid the paths that lead to ruin.</li>
+          <li><strong>Lady Wisdom</strong> — Wisdom personified as a woman who calls aloud in the streets, was present with God at creation, and offers life and favor to all who find her, set against the rival woman Folly.</li>
+          <li><strong>Agur and King Lemuel</strong> — Two later voices: Agur, who confesses his smallness before God and teaches in numbered sayings, and Lemuel, who passes on his mother's charge to rule justly and defend the weak.</li>
+          <li><strong>The worthy woman</strong> — The closing portrait of chapter 31 — a strong, industrious, generous wife and mother who fears Yahweh, embodying in flesh-and-blood form the wisdom the whole book commends.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Proverbs 1:7 (WEB)</p>
+          <p class="verse__text">The fear of Yahweh is the beginning of knowledge; but the foolish despise wisdom and instruction.</p>
+        </blockquote>
+        <p>This verse is the doorway and the thesis of the whole book. Before any saying about money, speech, or work, Proverbs sets its foundation: real wisdom does not begin with intelligence or experience but with reverent awe before Yahweh. To "fear" him is to take him seriously as God — to trust, honor, and obey him — and only there does true knowledge start to grow. The same claim returns at the heart of the opening section (9:10), framing everything in between. Those who despise this beginning, the verse warns, are not merely uninformed but foolish at the root.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>True wisdom is not mere cleverness but the skill of living rightly before God, and it begins with reverent fear of him.</li>
+          <li>The choices of daily life — our words, money, work, and friendships — are deeply spiritual, shaping the path our whole life takes.</li>
+          <li>Wisdom and folly are pictured as two women calling out to us; every day we answer one and refuse the other.</li>
+          <li>Small habits matter: diligence, honesty, humility, and self-control build a life, while laziness, pride, and loose speech tear one down.</li>
+          <li>God is sovereign over our plans and steps; we make our way wisely, yet it is the LORD who establishes the outcome.</li>
+          <li>Wisdom is meant to be lived, not just admired — embodied in a generous, faithful, God-fearing life like the worthy woman's.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>Wisdom begins with the fear of the LORD.</strong> Everything in Proverbs rests on one starting point: "The fear of Yahweh is the beginning of knowledge" (Proverbs 1:7, WEB). Reverence for God is not the end of learning but its very foundation.</li>
+            <li><strong>Trust God rather than your own understanding.</strong> The wise life leans not on its own cleverness but on the LORD: "Trust in Yahweh with all your heart, and don't lean on your own understanding" (Proverbs 3:5, WEB). Humble dependence on God is itself wisdom.</li>
+            <li><strong>Wisdom is older than the world and offers life.</strong> Wisdom was present when God made everything: "Yahweh possessed me in the beginning of his work" (Proverbs 8:22, WEB). To find wisdom is to find life and favor from the God who made all things by it.</li>
+            <li><strong>Guard your heart, for it shapes your whole life.</strong> The inner life is the wellspring of everything we do, so it must be watched and kept (Proverbs 4:23, WEB). Wisdom works from the inside out, tending the heart before the hands.</li>
+            <li><strong>We plan, but the LORD directs our steps.</strong> Human intention meets divine sovereignty in the wise life: "A man's heart plans his course, but Yahweh directs his steps" (Proverbs 16:9, WEB). We act responsibly and trust God to establish the outcome.</li>
+            <li><strong>True beauty is a life that fears the LORD.</strong> The book's closing portrait values what lasts over what merely impresses: "Charm is deceitful, and beauty is vain; but a woman who fears Yahweh, she shall be praised" (Proverbs 31:30, WEB). Reverent wisdom, lived out, is the real glory.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>Proverbs says wisdom begins with "the fear of Yahweh" (1:7). What do you think that fear means, and how is it different from being merely smart or well-informed?</li>
+            <li>Chapters 1-9 picture Wisdom and Folly as two women both calling out in the street. Where do you hear those competing voices in your own life?</li>
+            <li>So many proverbs deal with everyday things — speech, money, work, anger. Why might God care so much about these ordinary matters?</li>
+            <li>Proverbs often promises that the wise prosper and fools come to ruin. How do we hold those general truths honestly when life seems more tangled?</li>
+            <li>Several proverbs say we make our plans but the LORD directs our steps. How does that shape the way you make decisions?</li>
+            <li>The book ends not with a saying but with a portrait of a worthy woman at work. Why do you think wisdom is finally shown as a life rather than a list?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Help the group see that "fear" here is not terror but reverent awe — taking God seriously as God, and therefore trusting, honoring, and obeying him. Contrast it with mere intelligence: a person can be brilliant and still foolish if they leave God out. Point to 1:7 and 9:10 as the frame around the whole opening section, and let people share how reverence for God reshapes ordinary decisions.</li>
+            <li>Invite honest sharing. The point of chapters 1-9 is that both Wisdom (1:20-21; 8:1-4) and Folly (9:13-18) appeal to the same person, often with similar promises. Examples might include the pull of quick gain, easy pleasure, or the crowd that entices in 1:10-14. Encourage the group to name where they hear each voice, without pressuring anyone to overshare.</li>
+            <li>Lead the group to see that Proverbs refuses to split life into sacred and secular. How we speak, spend, work, and handle anger reveals and shapes the heart that God is after. Because we walk with God in the everyday, the everyday is exactly where wisdom is tested and grown. Nothing ordinary is too small for God's care.</li>
+            <li>This is a real tension, and the group should feel free to wrestle with it. Proverbs gives general truths about how life usually works, not iron guarantees for every case; books like Job and Ecclesiastes guard against reading them as a formula. Encourage trust that God's ways are good and just over the long run, while being honest that the righteous can still suffer in this life.</li>
+            <li>Point to 16:9 and similar sayings: we are genuinely responsible to plan, work, and choose wisely, yet the final outcome rests with God. This frees us from both anxious control and lazy fatalism. Invite the group to share how holding plans loosely, while still acting faithfully, has played out in their own decisions.</li>
+            <li>There is no single right answer, so let the group explore it. The worthy woman of 31:10-31 gathers up the book's teaching into a single, admirable life — strength, diligence, generosity, wise speech, and the fear of Yahweh all on display. Wisdom is finally shown as a person living well, which reminds us that the goal is not to collect maxims but to become wise, and points us toward Christ, the wisdom of God in the flesh.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="proverbs.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="proverbs.html">All Chapters</a>
+          <a class="btn btn--accent" href="proverbs-1.html">Start with Proverbs 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
