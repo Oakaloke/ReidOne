@@ -53,30 +53,104 @@
           <div id="contact">
             <span class="eyebrow">Contact Us</span>
             <h2>Send us a message</h2>
-            <p class="muted">Questions, feedback, or just want to say hello? We read every message.</p>
+            <p class="muted">Questions, feedback, or just want to say hello? We read every message and aim to reply soon.</p>
             <!--
-              CONTACT — a simple "Email Me" button (no form, no third-party service).
-              The address is NOT written here in plain text; the small script below
-              assembles the mailto link from parts at load time to cut down on spam
-              scraping. Real visitors just click and their mail app opens, already
-              addressed and ready to write.
+              ============================================================
+              CONTACT FORM — powered by Formspree (free tier, no server needed).
+
+              >>> ACTION REQUIRED <<<
+              Replace FORMSPREE_ENDPOINT_URL_HERE in the form's action below with your
+              real Formspree endpoint. It looks like:  https://formspree.io/f/xxxxxxxx
+              (Sign up free at formspree.io, create a form, copy the endpoint URL.)
+
+              How it behaves:
+                • With JavaScript: submits in-place via fetch and shows an inline
+                  thank-you; errors are handled gracefully.
+                • Without JavaScript: posts normally to Formspree, which shows its
+                  own thank-you page. Either way it works.
+              The endpoint only needs to be set in ONE place: the action attribute.
+              ============================================================
             -->
-            <div class="form-card">
-              <a class="btn btn--accent" id="email-link" href="#" rel="nofollow">Email Me</a>
-              <p class="form-note" style="margin-top:1rem;margin-bottom:0">Click and your email app opens with a message already addressed to us — just write and send.</p>
-              <noscript><p class="form-note" style="margin-top:1rem;margin-bottom:0">Please enable JavaScript to open the email link, or reach us through the social links in the footer.</p></noscript>
-            </div>
+            <form class="form-card" id="contact-form" method="POST" action="FORMSPREE_ENDPOINT_URL_HERE">
+              <div class="form-grid">
+                <!-- Subject line for the emails you'll receive -->
+                <input type="hidden" name="_subject" value="New message from reidone.org" />
+                <!-- Honeypot: bots fill this hidden field; Formspree silently drops them -->
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+                <div class="field">
+                  <label for="c-name">Name</label>
+                  <input id="c-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                  <label for="c-email">Email</label>
+                  <input id="c-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                </div>
+                <div class="field">
+                  <label for="c-message">Message</label>
+                  <textarea id="c-message" name="message" placeholder="How can we help, or what would you like to share?" required></textarea>
+                </div>
+                <button class="btn btn--accent" type="submit">Send Message</button>
+                <p class="form-status" role="status" aria-live="polite" hidden></p>
+                <p class="form-note" style="margin:0">Prefer email? You can also <a id="email-link" href="#" rel="nofollow">email us directly</a>.</p>
+              </div>
+            </form>
             <script>
-              /* Lightly obfuscated mailto: the address is split into parts and joined
-                 in JavaScript, so the full address never sits in the HTML as plain
-                 text for spam bots — while still working for real visitors. */
+              /* Contact form: progressive enhancement over a standard Formspree POST.
+                 With JS we submit via fetch so the visitor stays on the page and sees an
+                 inline confirmation; without JS the plain form posts straight to Formspree.
+                 The small secondary mailto link is assembled from parts so the address is
+                 never sitting in the HTML as plain text for spam scrapers. */
               (function () {
-                var user = "ireid", domain = "icloud.com";
-                var link = document.getElementById("email-link");
-                if (link) {
-                  link.href = "mailto:" + user + "@" + domain +
+                var emailUser = "ireid", emailDomain = "icloud.com";
+                var mail = document.getElementById("email-link");
+                if (mail) {
+                  mail.href = "mailto:" + emailUser + "@" + emailDomain +
                     "?subject=" + encodeURIComponent("Hello from reidone.org");
                 }
+                var form = document.getElementById("contact-form");
+                if (!form || !window.fetch) return; // no-JS / old browsers fall back to native POST
+                var status = form.querySelector(".form-status");
+                function show(msg, isError) {
+                  if (!status) return;
+                  status.hidden = false;
+                  status.textContent = msg;
+                  status.style.background = isError ? "#fbe6e1" : "";
+                  status.style.color = isError ? "#8a2b14" : "";
+                }
+                form.addEventListener("submit", function (e) {
+                  var action = form.getAttribute("action") || "";
+                  if (action.indexOf("formspree.io") === -1) {
+                    // Endpoint not configured yet — guide the visitor instead of failing silently.
+                    e.preventDefault();
+                    show("This contact form isn’t connected yet — please use the “email us directly” link above.", true);
+                    return;
+                  }
+                  e.preventDefault();
+                  var btn = form.querySelector("button[type=submit]");
+                  if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+                  function fail(msg) {
+                    show(msg || "Sorry, something went wrong sending your message. Please try the email link above.", true);
+                    if (btn) { btn.disabled = false; btn.textContent = "Send Message"; }
+                  }
+                  fetch(action, {
+                    method: "POST",
+                    body: new FormData(form),
+                    headers: { "Accept": "application/json" }
+                  }).then(function (res) {
+                    if (res.ok) {
+                      form.reset();
+                      form.querySelectorAll(".field, button[type=submit]").forEach(function (el) { el.style.display = "none"; });
+                      show("Thanks! Your message has been sent — we’ll be in touch soon.", false);
+                    } else {
+                      res.json().then(function (data) {
+                        var m = (data && data.errors && data.errors.length) ? data.errors[0].message : null;
+                        fail(m);
+                      }).catch(function () { fail(); });
+                    }
+                  }).catch(function () {
+                    fail("Network error — please check your connection, or use the email link above.");
+                  });
+                });
               })();
             </script>
           </div>
@@ -86,7 +160,7 @@
             <span class="eyebrow">Reach Us</span>
             <h2>Other ways to connect</h2>
             <div class="form-card stack-sm" style="margin-bottom:1.2rem">
-              <p>The quickest way to reach us is the Email Me button — we read every note and aim to reply soon.</p>
+              <p>The quickest way to reach us is the <a href="#contact">contact form</a> — we read every note and aim to reply soon.</p>
               <p class="muted">You can also follow ReidOne on social media (links in the footer) or subscribe below for updates and daily encouragement.</p>
               <a class="btn btn--outline" href="#subscribe">Subscribe for updates</a>
             </div>
