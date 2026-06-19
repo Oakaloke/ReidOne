@@ -52,27 +52,22 @@
             <p class="muted" style="text-align:center;margin:0 0 1.4rem">Questions, feedback, or just want to say hello? We read every message and aim to reply soon.</p>
             <!--
               ============================================================
-              CONTACT FORM — powered by Formspree (free tier, no server needed).
+              CONTACT FORM — powered by Web3Forms (free, no account/server needed).
+              Submissions are emailed to the inbox tied to the access_key below.
 
-              >>> ACTION REQUIRED <<<
-              Replace FORMSPREE_ENDPOINT_URL_HERE in the form's action below with your
-              real Formspree endpoint. It looks like:  https://formspree.io/f/xxxxxxxx
-              (Sign up free at formspree.io, create a form, copy the endpoint URL.)
-
-              How it behaves:
-                • With JavaScript: submits in-place via fetch and shows an inline
-                  thank-you; errors are handled gracefully.
-                • Without JavaScript: posts normally to Formspree, which shows its
-                  own thank-you page. Either way it works.
-              The endpoint only needs to be set in ONE place: the action attribute.
+              With JavaScript the form submits in-place (fetch) and shows an inline
+              thank-you; without JavaScript it posts normally to Web3Forms, which
+              shows its own confirmation page. Either way it works.
               ============================================================
             -->
-            <form class="form-card" id="contact-form" method="POST" action="FORMSPREE_ENDPOINT_URL_HERE">
+            <form class="form-card" id="contact-form" method="POST" action="https://api.web3forms.com/submit">
               <div class="form-grid">
+                <!-- Web3Forms access key — ties submissions to the destination inbox -->
+                <input type="hidden" name="access_key" value="a1a90b26-fb16-495e-a5b1-7b711d7a30e6" />
                 <!-- Subject line for the emails you'll receive -->
-                <input type="hidden" name="_subject" value="New message from reidone.org" />
-                <!-- Honeypot: bots fill this hidden field; Formspree silently drops them -->
-                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+                <input type="hidden" name="subject" value="New message from reidone.org" />
+                <!-- Honeypot: hidden from people; bots that tick it are dropped by Web3Forms -->
+                <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
                 <div class="field">
                   <label for="c-name">Name</label>
                   <input id="c-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
@@ -91,9 +86,9 @@
               </div>
             </form>
             <script>
-              /* Contact form: progressive enhancement over a standard Formspree POST.
+              /* Contact form: progressive enhancement over a standard Web3Forms POST.
                  With JS we submit via fetch so the visitor stays on the page and sees an
-                 inline confirmation; without JS the plain form posts straight to Formspree.
+                 inline confirmation; without JS the plain form posts straight to Web3Forms.
                  The small secondary mailto link is assembled from parts so the address is
                  never sitting in the HTML as plain text for spam scrapers. */
               (function () {
@@ -114,13 +109,6 @@
                   status.style.color = isError ? "#8a2b14" : "";
                 }
                 form.addEventListener("submit", function (e) {
-                  var action = form.getAttribute("action") || "";
-                  if (action.indexOf("formspree.io") === -1) {
-                    // Endpoint not configured yet — guide the visitor instead of failing silently.
-                    e.preventDefault();
-                    show("This contact form isn’t connected yet — please use the “email us directly” link above.", true);
-                    return;
-                  }
                   e.preventDefault();
                   var btn = form.querySelector("button[type=submit]");
                   if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
@@ -128,20 +116,19 @@
                     show(msg || "Sorry, something went wrong sending your message. Please try the email link above.", true);
                     if (btn) { btn.disabled = false; btn.textContent = "Send Message"; }
                   }
-                  fetch(action, {
+                  fetch(form.getAttribute("action"), {
                     method: "POST",
                     body: new FormData(form),
                     headers: { "Accept": "application/json" }
                   }).then(function (res) {
-                    if (res.ok) {
+                    return res.json().then(function (data) { return { ok: res.ok, data: data }; });
+                  }).then(function (r) {
+                    if (r.ok && r.data && r.data.success) {
                       form.reset();
                       form.querySelectorAll(".field, button[type=submit]").forEach(function (el) { el.style.display = "none"; });
                       show("Thanks! Your message has been sent — we’ll be in touch soon.", false);
                     } else {
-                      res.json().then(function (data) {
-                        var m = (data && data.errors && data.errors.length) ? data.errors[0].message : null;
-                        fail(m);
-                      }).catch(function () { fail(); });
+                      fail(r.data && r.data.message);
                     }
                   }).catch(function () {
                     fail("Network error — please check your connection, or use the email link above.");
