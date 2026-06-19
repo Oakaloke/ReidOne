@@ -2,21 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReidOne — Journey Together</title>
-  <meta name="description" content="ReidOne is a faith ministry sharing daily devotions, sermons, audio teaching, and articles to help you journey together in faith." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Bible Study: All 66 Books — ReidOne</title>
+  <meta name="description" content="Study the whole Bible with ReidOne — chapter-by-chapter studies of all 66 books, grouped by section, each with summaries, characters, key verses, lessons, and discussion questions." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
 </head>
-<body>
+<body class="study-page">
+<!-- ReidOne Bible Study — top-level hub linking studies for all 66 books. -->
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="index.html">
+        <a class="brand" href="home.html">
           <span class="brand__mark">Reid<b>One</b></span>
           <span class="brand__tag">Journey Together</span>
         </a>
@@ -38,262 +82,405 @@
   </header>
 
   <main>
-
-    <!-- HERO -->
-    <section class="hero">
+    <section class="page-hero">
       <div class="container">
-        <div class="hero__inner">
-          <div class="hero__copy">
-            <span class="eyebrow">Welcome to ReidOne</span>
-            <h1 class="hero__title">Journey Together</h1>
-            <p class="hero__tag">Faith, hope, and everyday encouragement — for the road we walk together.</p>
-            <p class="lead">Daily devotions, sermons, audio teaching, and articles to help you grow closer to God and to one another.</p>
-            <div class="hero__actions">
-              <a class="btn btn--accent" href="read.html">Start with Today's Devotion</a>
-              <a class="btn btn--outline" href="about.html">Learn More</a>
-            </div>
-          </div>
-
-          <!-- Today's Devotion feature -->
-          <article class="devotion" aria-label="Today's Devotion">
-            <div class="devotion__media">
-              <img src="https://placehold.co/720x480/BD5B36/FFFFFF?text=Today%27s+Devotion" alt="Today's devotion feature image" />
-              <span class="devotion__badge">Today's Devotion</span>
-            </div>
-            <div class="devotion__body">
-              <p class="devotion__date">Tuesday, June 9, 2026</p>
-              <h3>Be Still and Know</h3>
-              <p class="muted">In a world that never slows down, God invites us into rest. Today we explore what it means to trust Him fully — to let go of the hurry and remember who holds tomorrow.</p>
-              <a class="btn btn--ghost" href="read.html">Read today's devotion →</a>
-            </div>
-          </article>
-        </div>
+        <span class="eyebrow">Bible Study</span>
+        <h1>Study the Whole Bible</h1>
+        <p class="lead study-intro mx-auto">A chapter-by-chapter journey through all 66 books of the Bible. Each book has a whole-book overview and a study for every chapter — with the full scripture text, a summary, the main characters, a key verse, lessons, discussion questions, and a leader's guide.</p>
+        <p style="margin-top:1rem"><a class="btn btn--ghost" href="biblestudy/">Browse all 66 book overviews →</a> <a class="btn btn--ghost" href="devotionals/">Verse &amp; video devotionals →</a></p>
       </div>
     </section>
 
-    <!-- FEATURE ROW: This Week's Sermon / Today's Audio / Featured Article -->
-    <section class="container">
-      <div class="grid grid--3 feature-row">
-        <article class="feature">
-          <span class="feature__kicker">This Week's Sermon</span>
-          <h3>Anchored in Hope</h3>
-          <p class="muted">A message on holding fast to the promises of God when the seas of life grow rough.</p>
-          <a class="btn btn--ghost" href="watch.html">Watch now →</a>
-        </article>
-        <article class="feature">
-          <span class="feature__kicker">Today's Audio</span>
-          <h3>Morning Prayer &amp; Word</h3>
-          <p class="muted">Begin your day with Scripture and a short reflection you can carry with you.</p>
-          <a class="btn btn--ghost" href="listen.html">Listen now →</a>
-        </article>
-        <article class="feature">
-          <span class="feature__kicker">Featured Article</span>
-          <h3>Walking by Faith</h3>
-          <p class="muted">What does it really look like to trust God one step at a time? A practical reflection.</p>
-          <a class="btn btn--ghost" href="read.html">Read article →</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- WELCOME / MISSION -->
     <section class="section">
       <div class="container">
-        <div class="split">
-          <div>
-            <span class="eyebrow">Our Mission</span>
-            <h2>A ministry for the journey of faith</h2>
-            <p>ReidOne exists to share the hope of the gospel in a way that meets people right where they are. Through teaching, encouragement, and authentic community, we help one another take the next faithful step — together.</p>
-            <p class="muted">Whether you're exploring faith for the first time or have walked with God for decades, there's a place for you here.</p>
-            <a class="btn btn--accent mt-2" href="about.html">Learn More</a>
-          </div>
-          <div class="split__media">
-            <img src="https://placehold.co/720x540/F3EDE3/9A4527?text=Community+%26+Faith" alt="People gathered in community" />
-          </div>
+
+        <h2 class="hub-testament">Old Testament</h2>
+
+        <h3 class="hub-section-title">Pentateuch</h3>
+        <div class="study-grid">
+          <a class="study-card" href="study/genesis.html">
+            <span class="study-card__num">50 chapters</span>
+            <h3 class="study-card__title">Genesis</h3>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="biblestudy/exodus/">
+            <span class="study-card__num">40 chapters</span>
+            <h3 class="study-card__title">Exodus</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/leviticus/">
+            <span class="study-card__num">27 chapters</span>
+            <h3 class="study-card__title">Leviticus</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/numbers/">
+            <span class="study-card__num">36 chapters</span>
+            <h3 class="study-card__title">Numbers</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/deuteronomy/">
+            <span class="study-card__num">34 chapters</span>
+            <h3 class="study-card__title">Deuteronomy</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
         </div>
+
+        <h3 class="hub-section-title">History</h3>
+        <div class="study-grid">
+          <a class="study-card" href="biblestudy/joshua/">
+            <span class="study-card__num">24 chapters</span>
+            <h3 class="study-card__title">Joshua</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/judges/">
+            <span class="study-card__num">21 chapters</span>
+            <h3 class="study-card__title">Judges</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/ruth/">
+            <span class="study-card__num">4 chapters</span>
+            <h3 class="study-card__title">Ruth</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-samuel/">
+            <span class="study-card__num">31 chapters</span>
+            <h3 class="study-card__title">1 Samuel</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-samuel/">
+            <span class="study-card__num">24 chapters</span>
+            <h3 class="study-card__title">2 Samuel</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-kings/">
+            <span class="study-card__num">22 chapters</span>
+            <h3 class="study-card__title">1 Kings</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-kings/">
+            <span class="study-card__num">25 chapters</span>
+            <h3 class="study-card__title">2 Kings</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-chronicles/">
+            <span class="study-card__num">29 chapters</span>
+            <h3 class="study-card__title">1 Chronicles</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-chronicles/">
+            <span class="study-card__num">36 chapters</span>
+            <h3 class="study-card__title">2 Chronicles</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/ezra/">
+            <span class="study-card__num">10 chapters</span>
+            <h3 class="study-card__title">Ezra</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/nehemiah/">
+            <span class="study-card__num">13 chapters</span>
+            <h3 class="study-card__title">Nehemiah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/esther/">
+            <span class="study-card__num">10 chapters</span>
+            <h3 class="study-card__title">Esther</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+        </div>
+
+        <h3 class="hub-section-title">Wisdom &amp; Poetry</h3>
+        <div class="study-grid">
+          <a class="study-card" href="biblestudy/job/">
+            <span class="study-card__num">42 chapters</span>
+            <h3 class="study-card__title">Job</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/psalms/">
+            <span class="study-card__num">150 chapters</span>
+            <h3 class="study-card__title">Psalms</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="study/proverbs.html">
+            <span class="study-card__num">31 chapters</span>
+            <h3 class="study-card__title">Proverbs</h3>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="biblestudy/ecclesiastes/">
+            <span class="study-card__num">12 chapters</span>
+            <h3 class="study-card__title">Ecclesiastes</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/song-of-solomon/">
+            <span class="study-card__num">8 chapters</span>
+            <h3 class="study-card__title">Song of Solomon</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="study/psalm-91.html">
+            <span class="study-card__num">Single psalm</span>
+            <h3 class="study-card__title">Psalm 91</h3>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+        </div>
+
+        <h3 class="hub-section-title">Major Prophets</h3>
+        <div class="study-grid">
+          <a class="study-card" href="biblestudy/isaiah/">
+            <span class="study-card__num">66 chapters</span>
+            <h3 class="study-card__title">Isaiah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/jeremiah/">
+            <span class="study-card__num">52 chapters</span>
+            <h3 class="study-card__title">Jeremiah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/lamentations/">
+            <span class="study-card__num">5 chapters</span>
+            <h3 class="study-card__title">Lamentations</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/ezekiel/">
+            <span class="study-card__num">48 chapters</span>
+            <h3 class="study-card__title">Ezekiel</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/daniel/">
+            <span class="study-card__num">12 chapters</span>
+            <h3 class="study-card__title">Daniel</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+        </div>
+
+        <h3 class="hub-section-title">Minor Prophets</h3>
+        <div class="study-grid">
+          <a class="study-card" href="biblestudy/hosea/">
+            <span class="study-card__num">14 chapters</span>
+            <h3 class="study-card__title">Hosea</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/joel/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">Joel</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/amos/">
+            <span class="study-card__num">9 chapters</span>
+            <h3 class="study-card__title">Amos</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/obadiah/">
+            <span class="study-card__num">1 chapter</span>
+            <h3 class="study-card__title">Obadiah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/jonah/">
+            <span class="study-card__num">4 chapters</span>
+            <h3 class="study-card__title">Jonah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/micah/">
+            <span class="study-card__num">7 chapters</span>
+            <h3 class="study-card__title">Micah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/nahum/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">Nahum</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/habakkuk/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">Habakkuk</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/zephaniah/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">Zephaniah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/haggai/">
+            <span class="study-card__num">2 chapters</span>
+            <h3 class="study-card__title">Haggai</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/zechariah/">
+            <span class="study-card__num">14 chapters</span>
+            <h3 class="study-card__title">Zechariah</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/malachi/">
+            <span class="study-card__num">4 chapters</span>
+            <h3 class="study-card__title">Malachi</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+        </div>
+
+        <h2 class="hub-testament">New Testament</h2>
+
+        <h3 class="hub-section-title">Gospels</h3>
+        <div class="study-grid">
+          <a class="study-card" href="study/matthew.html">
+            <span class="study-card__num">28 chapters</span>
+            <h3 class="study-card__title">Matthew</h3>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="biblestudy/mark/">
+            <span class="study-card__num">16 chapters</span>
+            <h3 class="study-card__title">Mark</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/luke/">
+            <span class="study-card__num">24 chapters</span>
+            <h3 class="study-card__title">Luke</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/john/">
+            <span class="study-card__num">21 chapters</span>
+            <h3 class="study-card__title">John</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+        </div>
+
+        <h3 class="hub-section-title">Acts</h3>
+        <div class="study-grid">
+          <a class="study-card" href="study.html">
+            <span class="study-card__num">28 chapters</span>
+            <h3 class="study-card__title">Acts</h3>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+        </div>
+
+        <h3 class="hub-section-title">Epistles</h3>
+        <div class="study-grid">
+          <a class="study-card" href="biblestudy/romans/">
+            <span class="study-card__num">16 chapters</span>
+            <h3 class="study-card__title">Romans</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-corinthians/">
+            <span class="study-card__num">16 chapters</span>
+            <h3 class="study-card__title">1 Corinthians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-corinthians/">
+            <span class="study-card__num">13 chapters</span>
+            <h3 class="study-card__title">2 Corinthians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/galatians/">
+            <span class="study-card__num">6 chapters</span>
+            <h3 class="study-card__title">Galatians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/ephesians/">
+            <span class="study-card__num">6 chapters</span>
+            <h3 class="study-card__title">Ephesians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/philippians/">
+            <span class="study-card__num">4 chapters</span>
+            <h3 class="study-card__title">Philippians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/colossians/">
+            <span class="study-card__num">4 chapters</span>
+            <h3 class="study-card__title">Colossians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-thessalonians/">
+            <span class="study-card__num">5 chapters</span>
+            <h3 class="study-card__title">1 Thessalonians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-thessalonians/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">2 Thessalonians</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-timothy/">
+            <span class="study-card__num">6 chapters</span>
+            <h3 class="study-card__title">1 Timothy</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-timothy/">
+            <span class="study-card__num">4 chapters</span>
+            <h3 class="study-card__title">2 Timothy</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/titus/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">Titus</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/philemon/">
+            <span class="study-card__num">1 chapter</span>
+            <h3 class="study-card__title">Philemon</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/hebrews/">
+            <span class="study-card__num">13 chapters</span>
+            <h3 class="study-card__title">Hebrews</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/james/">
+            <span class="study-card__num">5 chapters</span>
+            <h3 class="study-card__title">James</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-peter/">
+            <span class="study-card__num">5 chapters</span>
+            <h3 class="study-card__title">1 Peter</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-peter/">
+            <span class="study-card__num">3 chapters</span>
+            <h3 class="study-card__title">2 Peter</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/1-john/">
+            <span class="study-card__num">5 chapters</span>
+            <h3 class="study-card__title">1 John</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/2-john/">
+            <span class="study-card__num">1 chapter</span>
+            <h3 class="study-card__title">2 John</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/3-john/">
+            <span class="study-card__num">1 chapter</span>
+            <h3 class="study-card__title">3 John</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+          <a class="study-card" href="biblestudy/jude/">
+            <span class="study-card__num">1 chapter</span>
+            <h3 class="study-card__title">Jude</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+        </div>
+
+        <h3 class="hub-section-title">Revelation</h3>
+        <div class="study-grid">
+          <a class="study-card" href="biblestudy/revelation/">
+            <span class="study-card__num">22 chapters</span>
+            <h3 class="study-card__title">Revelation</h3>
+            <span class="study-card__cta">Read overview →</span>
+          </a>
+        </div>
+
       </div>
     </section>
-
-    <!-- FEATURED ARTICLES (4 cards) -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Read</span>
-          <h2>Featured Articles</h2>
-          <p class="lead mx-auto maxw-prose">Encouragement, teaching, and reflection for everyday faith.</p>
-        </div>
-        <div class="grid grid--4">
-          <article class="card">
-            <a class="card__media" href="read.html" aria-label="Read article">
-              <img src="https://placehold.co/600x338/BD5B36/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Devotional</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">June 8, 2026</p>
-              <h3 class="card__title">Finding Peace in the Storm</h3>
-              <p class="card__text">Three truths to hold onto when life feels overwhelming.</p>
-              <a class="btn btn--ghost" href="read.html">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="read.html" aria-label="Read article">
-              <img src="https://placehold.co/600x338/C99A3F/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Family</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">June 5, 2026</p>
-              <h3 class="card__title">Raising Faith at Home</h3>
-              <p class="card__text">Simple, grace-filled rhythms for households of every season.</p>
-              <a class="btn btn--ghost" href="read.html">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="read.html" aria-label="Read article">
-              <img src="https://placehold.co/600x338/9A4527/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Prayer</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">June 2, 2026</p>
-              <h3 class="card__title">Learning to Pray Boldly</h3>
-              <p class="card__text">How honest, expectant prayer reshapes the way we see God.</p>
-              <a class="btn btn--ghost" href="read.html">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="read.html" aria-label="Read article">
-              <img src="https://placehold.co/600x338/6F665B/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Discipleship</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">May 28, 2026</p>
-              <h3 class="card__title">The Next Faithful Step</h3>
-              <p class="card__text">Why growth in faith is less about leaps and more about steps.</p>
-              <a class="btn btn--ghost" href="read.html">Read more →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED VIDEO (3 cards) -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Watch</span>
-          <h2>Featured Video</h2>
-          <p class="lead mx-auto maxw-prose">Sermons and teaching to watch anytime, anywhere.</p>
-        </div>
-        <div class="grid grid--3">
-          <article class="card">
-            <a class="card__media" href="watch.html" aria-label="Watch video">
-              <img src="https://placehold.co/600x338/2A2521/FFFFFF?text=Sermon" alt="" />
-              <span class="card__tag">Sermon</span>
-              <span class="card__play" aria-hidden="true">▶</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Series: Anchored · 38 min</p>
-              <h3 class="card__title">Anchored in Hope</h3>
-              <p class="card__text">Holding fast to God's promises through every season.</p>
-              <a class="btn btn--ghost" href="watch.html">Watch →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="watch.html" aria-label="Watch video">
-              <img src="https://placehold.co/600x338/41382F/FFFFFF?text=Teaching" alt="" />
-              <span class="card__tag">Teaching</span>
-              <span class="card__play" aria-hidden="true">▶</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Series: Foundations · 26 min</p>
-              <h3 class="card__title">Who God Says You Are</h3>
-              <p class="card__text">Your identity is secure in the love of the Father.</p>
-              <a class="btn btn--ghost" href="watch.html">Watch →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="watch.html" aria-label="Watch video">
-              <img src="https://placehold.co/600x338/9A4527/FFFFFF?text=Story" alt="" />
-              <span class="card__tag">Testimony</span>
-              <span class="card__play" aria-hidden="true">▶</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Stories of Grace · 12 min</p>
-              <h3 class="card__title">From Doubt to Faith</h3>
-              <p class="card__text">One person's honest journey back to hope.</p>
-              <a class="btn btn--ghost" href="watch.html">Watch →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED AUDIO (3 cards) -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Listen</span>
-          <h2>Featured Audio</h2>
-          <p class="lead mx-auto maxw-prose">Teaching and prayer for your commute, walk, or quiet moments.</p>
-        </div>
-        <div class="grid grid--3">
-          <article class="card">
-            <a class="card__media" href="listen.html" aria-label="Listen to audio">
-              <img src="https://placehold.co/600x338/BD5B36/FFFFFF?text=Audio" alt="" />
-              <span class="card__tag">Podcast</span>
-              <span class="card__play" aria-hidden="true">▶</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Episode 42 · 24 min</p>
-              <h3 class="card__title">Morning Prayer &amp; Word</h3>
-              <p class="card__text">Start the day grounded in Scripture and prayer.</p>
-              <a class="btn btn--ghost" href="listen.html">Listen →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="listen.html" aria-label="Listen to audio">
-              <img src="https://placehold.co/600x338/C99A3F/FFFFFF?text=Audio" alt="" />
-              <span class="card__tag">Series</span>
-              <span class="card__play" aria-hidden="true">▶</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Part 3 of 6 · 31 min</p>
-              <h3 class="card__title">The Heart of Worship</h3>
-              <p class="card__text">Rediscovering worship as a way of life.</p>
-              <a class="btn btn--ghost" href="listen.html">Listen →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="listen.html" aria-label="Listen to audio">
-              <img src="https://placehold.co/600x338/6F665B/FFFFFF?text=Audio" alt="" />
-              <span class="card__tag">Devotional</span>
-              <span class="card__play" aria-hidden="true">▶</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">Daily · 8 min</p>
-              <h3 class="card__title">Quiet Moments</h3>
-              <p class="card__text">A short daily pause to breathe and reflect.</p>
-              <a class="btn btn--ghost" href="listen.html">Listen →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GET INVOLVED CTA BAND -->
-    <section class="section cta-band">
-      <div class="container">
-        <span class="eyebrow" style="color:#ffe6da">Journey Together</span>
-        <h2>You're not meant to walk this road alone</h2>
-        <p>Join the ReidOne community — give, pray, subscribe, or simply say hello. There's a place for you on this journey.</p>
-        <div class="btn-group">
-          <a class="btn btn--light" href="connect.html#give">Give Today</a>
-          <a class="btn btn--outline" href="connect.html" style="color:#fff;border-color:rgba(255,255,255,.6)">Get Connected</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -333,5 +520,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/reading-settings.js"></script>
 </body>
 </html>
