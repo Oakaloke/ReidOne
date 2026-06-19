@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 7: Two Ways, Two Trees, Two Houses — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 7: Jesus closes his sermon by urging genuine, fruitful obedience and a life built on his words." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 7</span>
+        <h1>Matthew 7: Two Ways, Two Trees, Two Houses</h1>
+        <p class="lead">Jesus closes his sermon by urging genuine, fruitful obedience and a life built on his words.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — Matthew Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 7 (WEB)</p>
+            <p><strong>1</strong> “Don’t judge, so that you won’t be judged.</p>
+            <p><strong>2</strong> For with whatever judgment you judge, you will be judged; and with whatever measure you measure, it will be measured to you.</p>
+            <p><strong>3</strong> Why do you see the speck that is in your brother’s eye, but don’t consider the beam that is in your own eye?</p>
+            <p><strong>4</strong> Or how will you tell your brother, ‘Let me remove the speck from your eye;’ and behold, the beam is in your own eye?</p>
+            <p><strong>5</strong> You hypocrite! First remove the beam out of your own eye, and then you can see clearly to remove the speck out of your brother’s eye.</p>
+            <p><strong>6</strong> “Don’t give that which is holy to the dogs, neither throw your pearls before the pigs, lest perhaps they trample them under their feet, and turn and tear you to pieces.</p>
+            <p><strong>7</strong> “Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.</p>
+            <p><strong>8</strong> For everyone who asks receives. He who seeks finds. To him who knocks it will be opened.</p>
+            <p><strong>9</strong> Or who is there among you, who, if his son asks him for bread, will give him a stone?</p>
+            <p><strong>10</strong> Or if he asks for a fish, who will give him a serpent?</p>
+            <p><strong>11</strong> If you then, being evil, know how to give good gifts to your children, how much more will your Father who is in heaven give good things to those who ask him!</p>
+            <p><strong>12</strong> Therefore whatever you desire for men to do to you, you shall also do to them; for this is the law and the prophets.</p>
+            <p><strong>13</strong> “Enter in by the narrow gate; for wide is the gate and broad is the way that leads to destruction, and many are those who enter in by it.</p>
+            <p><strong>14</strong> Hownarrow is the gate, and restricted is the way that leads to life! Few are those who find it.</p>
+            <p><strong>15</strong> “Beware of false prophets, who come to you in sheep’s clothing, but inwardly are ravening wolves.</p>
+            <p><strong>16</strong> By their fruits you will know them. Do you gather grapes from thorns, or figs from thistles?</p>
+            <p><strong>17</strong> Even so, every good tree produces good fruit; but the corrupt tree produces evil fruit.</p>
+            <p><strong>18</strong> A good tree can’t produce evil fruit, neither can a corrupt tree produce good fruit.</p>
+            <p><strong>19</strong> Every tree that doesn’t grow good fruit is cut down, and thrown into the fire.</p>
+            <p><strong>20</strong> Therefore by their fruits you will know them.</p>
+            <p><strong>21</strong> Not everyone who says to me, ‘Lord, Lord,’ will enter into the Kingdom of Heaven; but he who does the will of my Father who is in heaven.</p>
+            <p><strong>22</strong> Many will tell me in that day, ‘Lord, Lord, didn’t we prophesy in your name, in your name cast out demons, and in your name do many mighty works?’</p>
+            <p><strong>23</strong> Then I will tell them, ‘I never knew you. Depart from me, you who work iniquity.’</p>
+            <p><strong>24</strong> “Everyone therefore who hears these words of mine, and does them, I will liken him to a wise man, who built his house on a rock.</p>
+            <p><strong>25</strong> The rain came down, the floods came, and the winds blew, and beat on that house; and it didn’t fall, for it was founded on the rock.</p>
+            <p><strong>26</strong> Everyone who hears these words of mine, and doesn’t do them will be like a foolish man, who built his house on the sand.</p>
+            <p><strong>27</strong> The rain came down, the floods came, and the winds blew, and beat on that house; and it fell—and great was its fall.”</p>
+            <p><strong>28</strong> When Jesus had finished saying these things, the multitudes were astonished at his teaching,</p>
+            <p><strong>29</strong> for he taught them with authority, and not like the scribes.</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 7 (KJV)</p>
+            <p><strong>1</strong> Judge not, that ye be not judged.</p>
+            <p><strong>2</strong> For with what judgment ye judge, ye shall be judged: and with what measure ye mete, it shall be measured to you again.</p>
+            <p><strong>3</strong> And why beholdest thou the mote that is in thy brother’s eye, but considerest not the beam that is in thine own eye?</p>
+            <p><strong>4</strong> Or how wilt thou say to thy brother, Let me pull out the mote out of thine eye; and, behold, a beam is in thine own eye?</p>
+            <p><strong>5</strong> Thou hypocrite, first cast out the beam out of thine own eye; and then shalt thou see clearly to cast out the mote out of thy brother’s eye.</p>
+            <p><strong>6</strong> Give not that which is holy unto the dogs, neither cast ye your pearls before swine, lest they trample them under their feet, and turn again and rend you.</p>
+            <p><strong>7</strong> Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:</p>
+            <p><strong>8</strong> For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.</p>
+            <p><strong>9</strong> Or what man is there of you, whom if his son ask bread, will he give him a stone?</p>
+            <p><strong>10</strong> Or if he ask a fish, will he give him a serpent?</p>
+            <p><strong>11</strong> If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?</p>
+            <p><strong>12</strong> Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.</p>
+            <p><strong>13</strong> Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat:</p>
+            <p><strong>14</strong> Because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it.</p>
+            <p><strong>15</strong> Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves.</p>
+            <p><strong>16</strong> Ye shall know them by their fruits. Do men gather grapes of thorns, or figs of thistles?</p>
+            <p><strong>17</strong> Even so every good tree bringeth forth good fruit; but a corrupt tree bringeth forth evil fruit.</p>
+            <p><strong>18</strong> A good tree cannot bring forth evil fruit, neither can a corrupt tree bring forth good fruit.</p>
+            <p><strong>19</strong> Every tree that bringeth not forth good fruit is hewn down, and cast into the fire.</p>
+            <p><strong>20</strong> Wherefore by their fruits ye shall know them.</p>
+            <p><strong>21</strong> Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but he that doeth the will of my Father which is in heaven.</p>
+            <p><strong>22</strong> Many will say to me in that day, Lord, Lord, have we not prophesied in thy name? and in thy name have cast out devils? and in thy name done many wonderful works?</p>
+            <p><strong>23</strong> And then will I profess unto them, I never knew you: depart from me, ye that work iniquity.</p>
+            <p><strong>24</strong> Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock:</p>
+            <p><strong>25</strong> And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell not: for it was founded upon a rock.</p>
+            <p><strong>26</strong> And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand:</p>
+            <p><strong>27</strong> And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell: and great was the fall of it.</p>
+            <p><strong>28</strong> And it came to pass, when Jesus had ended these sayings, the people were astonished at his doctrine:</p>
+            <p><strong>29</strong> For he taught them as one having authority, and not as the scribes.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 7 (ASV)</p>
+            <p><strong>1</strong> Judge not, that ye be not judged.</p>
+            <p><strong>2</strong> For with what judgment ye judge, ye shall be judged: and with what measure ye mete, it shall be measured unto you.</p>
+            <p><strong>3</strong> And why beholdest thou the mote that is in thy brother’s eye, but considerest not the beam that is in thine own eye?</p>
+            <p><strong>4</strong> Or how wilt thou say to thy brother, Let me cast out the mote out of thine eye; and lo, the beam is in thine own eye?</p>
+            <p><strong>5</strong> Thou hypocrite, cast out first the beam out of thine own eye; and then shalt thou see clearly to cast out the mote out of thy brother’s eye.</p>
+            <p><strong>6</strong> Give not that which is holy unto the dogs, neither cast your pearls before the swine, lest haply they trample them under their feet, and turn and rend you.</p>
+            <p><strong>7</strong> Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:</p>
+            <p><strong>8</strong> for every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.</p>
+            <p><strong>9</strong> Or what man is there of you, who, if his son shall ask him for a loaf, will give him a stone;</p>
+            <p><strong>10</strong> or if he shall ask for a fish, will give him a serpent?</p>
+            <p><strong>11</strong> If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father who is in heaven give good things to them that ask him?</p>
+            <p><strong>12</strong> All things therefore whatsoever ye would that men should do unto you, even so do ye also unto them: for this is the law and the prophets.</p>
+            <p><strong>13</strong> Enter ye in by the narrow gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many are they that enter in thereby.</p>
+            <p><strong>14</strong> For narrow is the gate, and straitened the way, that leadeth unto life, and few are they that find it.</p>
+            <p><strong>15</strong> Beware of false prophets, who come to you in sheep’s clothing, but inwardly are ravening wolves.</p>
+            <p><strong>16</strong> By their fruits ye shall know them. Do men gather grapes of thorns, or figs of thistles?</p>
+            <p><strong>17</strong> Even so every good tree bringeth forth good fruit; but the corrupt tree bringeth forth evil fruit.</p>
+            <p><strong>18</strong> A good tree cannot bring forth evil fruit, neither can a corrupt tree bring forth good fruit.</p>
+            <p><strong>19</strong> Every tree that bringeth not forth good fruit is hewn down, and cast into the fire.</p>
+            <p><strong>20</strong> Therefore by their fruits ye shall know them.</p>
+            <p><strong>21</strong> Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but he that doeth the will of my Father who is in heaven.</p>
+            <p><strong>22</strong> Many will say to me in that day, Lord, Lord, did we not prophesy by thy name, and by thy name cast out demons, and by thy name do many mighty works?</p>
+            <p><strong>23</strong> And then will I profess unto them, I never knew you: depart from me, ye that work iniquity.</p>
+            <p><strong>24</strong> Every one therefore that heareth these words of mine, and doeth them, shall be likened unto a wise man, who built his house upon the rock:</p>
+            <p><strong>25</strong> and the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell not: for it was founded upon the rock.</p>
+            <p><strong>26</strong> And every one that heareth these words of mine, and doeth them not, shall be likened unto a foolish man, who built his house upon the sand:</p>
+            <p><strong>27</strong> and the rain descended, and the floods came, and the winds blew, and smote upon that house; and it fell: and great was the fall thereof.</p>
+            <p><strong>28</strong> And it came to pass, when Jesus had finished these words, the multitudes were astonished at his teaching:</p>
+            <p><strong>29</strong> for he taught them asonehaving authority, and not as their scribes.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus warns against hypocritical judging, telling his hearers to remove the beam from their own eye before addressing the speck in another's. He encourages persistent prayer, promising that the Father gives good things to those who ask, seek, and knock. He sums up the law and prophets in the Golden Rule: do to others what you would have them do to you. Then he sets before them choices. There are two gates: the narrow one leading to life and the broad one to destruction. There are two kinds of trees, known by their fruit, warning against false prophets. There are two confessions, for not everyone who says 'Lord, Lord' will enter the kingdom, but only those who do the Father's will. Finally there are two builders, wise and foolish, and the crowds are astonished, for he teaches with authority.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The authoritative teacher who calls hearers to the narrow gate and to build their lives on his words.</li>
+          <li><strong>The Father in heaven</strong> — The good God who gives good gifts to those who ask and whose will must be done to enter the kingdom.</li>
+          <li><strong>False prophets</strong> — Wolves in sheep's clothing whom Jesus says will be known by their fruit.</li>
+          <li><strong>The wise and foolish builders</strong> — Two men, one building on rock and one on sand, picturing those who do or ignore Jesus' words.</li>
+          <li><strong>The multitudes</strong> — The astonished crowds who recognize that Jesus teaches with authority unlike the scribes.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 7:24 (WEB)</p>
+          <p class="verse__text">“Everyone therefore who hears these words of mine, and does them, I will liken him to a wise man, who built his house on a rock.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>We must judge ourselves before we presume to correct others.</li>
+          <li>God invites persistent prayer and delights to give good gifts to his children.</li>
+          <li>Genuine faith is known by its fruit and proven by doing the Father's will.</li>
+          <li>Hearing Jesus' words is not enough; a stable life is built by doing them.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>Examine yourself before others.</strong> Jesus says first remove the beam from your own eye, then you can see clearly to help your brother (Matthew 7:5, WEB).</li>
+            <li><strong>Keep asking the good Father.</strong> 'Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you' (Matthew 7:7, WEB).</li>
+            <li><strong>Treat others as you wish to be treated.</strong> The Golden Rule sums up the law and the prophets: do to others what you would have them do to you (Matthew 7:12, WEB).</li>
+            <li><strong>Choose the narrow way.</strong> Few find the gate that leads to life, while broad is the road to destruction (Matthew 7:14, WEB).</li>
+            <li><strong>Fruit reveals the heart.</strong> True and false teachers are exposed over time, for 'by their fruits you will know them' (Matthew 7:20, WEB).</li>
+            <li><strong>Build your life on doing his words.</strong> Everyone who hears and does Jesus' words is like a wise man whose house stands the storm (Matthew 7:24, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>How does removing the beam from our own eye change the way we approach a brother or sister's faults?</li>
+            <li>What encouragement do you find in Jesus' promise about asking, seeking, and knocking, and how does the picture of a good father shape it?</li>
+            <li>Why is the gate narrow and the way hard, and what makes the broad road so appealing by comparison?</li>
+            <li>Jesus says some who call him 'Lord, Lord' will not enter the kingdom; how does this challenge a faith that is words only?</li>
+            <li>What is one area where you have been hearing Jesus' words but not yet doing them, and what step would build your house on the rock?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>It moves us from a stance of superiority to humility. Once we honestly face our own larger faults, we can help a brother 'see clearly' rather than condemning him (vv.3-5). Self-examination turns correction into gentle, credible help rather than hypocrisy.</li>
+            <li>Jesus promises that everyone who asks receives and invites bold persistence (vv.7-8). The picture of a father who gives bread, not a stone, assures us that God is even better than the best earthly parent, giving 'good things to those who ask him' (v.11). Let the group share what this stirs in their prayer life.</li>
+            <li>The narrow way is hard because it means doing the Father's will and following Jesus against the current (vv.13-14, 21). The broad road is appealing because it requires no repentance and many travel it together, but it ends in destruction. Jesus urges a deliberate, costly choice.</li>
+            <li>It challenges us because saying the right words, or even doing mighty works, is not the same as belonging to Christ (vv.21-23). Real faith does the Father's will and is known to Jesus personally. Invite the group to weigh whether their faith is mere profession or living obedience.</li>
+            <li>This is a personal-application question. Let members reflect quietly and name one concrete area of obedience they have postponed. Encourage a single, specific step this week, and remind them that doing his words, not just admiring them, is what makes a life stand when storms come (vv.24-27).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-6.html">← Matthew 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-8.html">Matthew 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

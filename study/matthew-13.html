@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 13: Parables of the Kingdom — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 13: Jesus teaches the secrets of the Kingdom in parables, sowing the word among hearts that hear or harden." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 13
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 13</span>
+        <h1>Matthew 13: Parables of the Kingdom</h1>
+        <p class="lead">Jesus teaches the secrets of the Kingdom in parables, sowing the word among hearts that hear or harden.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-13">
+            <span>Scripture — Matthew Chapter 13</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-13">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-13-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-13-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-13-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-13-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 13 (WEB)</p>
+            <p><strong>1</strong> On that day Jesus went out of the house, and sat by the seaside.</p>
+            <p><strong>2</strong> Great multitudes gathered to him, so that he entered into a boat, and sat, and all the multitude stood on the beach.</p>
+            <p><strong>3</strong> He spoke to them many things in parables, saying, “Behold, a farmer went out to sow.</p>
+            <p><strong>4</strong> As he sowed, some seeds fell by the roadside, and the birds came and devoured them.</p>
+            <p><strong>5</strong> Others fell on rocky ground, where they didn’t have much soil, and immediately they sprang up, because they had no depth of earth.</p>
+            <p><strong>6</strong> When the sun had risen, they were scorched. Because they had no root, they withered away.</p>
+            <p><strong>7</strong> Others fell among thorns. The thorns grew up and choked them.</p>
+            <p><strong>8</strong> Others fell on good soil, and yielded fruit: some one hundred times as much, some sixty, and some thirty.</p>
+            <p><strong>9</strong> He who has ears to hear, let him hear.”</p>
+            <p><strong>10</strong> The disciples came, and said to him, “Why do you speak to them in parables?”</p>
+            <p><strong>11</strong> He answered them, “To you it is given to know the mysteries of the Kingdom of Heaven, but it is not given to them.</p>
+            <p><strong>12</strong> For whoever has, to him will be given, and he will have abundance, but whoever doesn’t have, from him will be taken away even that which he has.</p>
+            <p><strong>13</strong> Therefore I speak to them in parables, because seeing they don’t see, and hearing, they don’t hear, neither do they understand.</p>
+            <p><strong>14</strong> In them the prophecy of Isaiah is fulfilled, which says,   ‘By hearing you will hear, and will in no way understand; Seeing you will see, and will in no way perceive:</p>
+            <p><strong>15</strong> for this people’s heart has grown callous, their ears are dull of hearing, they have closed their eyes; or else perhaps they might perceive with their eyes, hear with their ears, understand with their heart, and should turn again; and I would heal them.’</p>
+            <p><strong>16</strong> “But blessed are your eyes, for they see; and your ears, for they hear.</p>
+            <p><strong>17</strong> For most certainly I tell you that many prophets and righteous men desired to see the things which you see, and didn’t see them; and to hear the things which you hear, and didn’t hear them.</p>
+            <p><strong>18</strong> “Hear, then, the parable of the farmer.</p>
+            <p><strong>19</strong> When anyone hears the word of the Kingdom, and doesn’t understand it, the evil one comes, and snatches away that which has been sown in his heart. This is what was sown by the roadside.</p>
+            <p><strong>20</strong> What was sown on the rocky places, this is he who hears the word, and immediately with joy receives it;</p>
+            <p><strong>21</strong> yet he has no root in himself, but endures for a while. When oppression or persecution arises because of the word, immediately he stumbles.</p>
+            <p><strong>22</strong> What was sown among the thorns, this is he who hears the word, but the cares of this age and the deceitfulness of riches choke the word, and he becomes unfruitful.</p>
+            <p><strong>23</strong> What was sown on the good ground, this is he who hears the word, and understands it, who most certainly bears fruit, and produces, some one hundred times as much, some sixty, and some thirty.”</p>
+            <p><strong>24</strong> He set another parable before them, saying, “The Kingdom of Heaven is like a man who sowed good seed in his field,</p>
+            <p><strong>25</strong> but while people slept, his enemy came and sowed darnel weeds also among the wheat, and went away.</p>
+            <p><strong>26</strong> But when the blade sprang up and produced fruit, then the darnel weeds appeared also.</p>
+            <p><strong>27</strong> The servants of the householder came and said to him, ‘Sir, didn’t you sow good seed in your field? Where did this darnel come from?’</p>
+            <p><strong>28</strong> “He said to them, ‘An enemy has done this.’   “The servants asked him, ‘Do you want us to go and gather them up?’</p>
+            <p><strong>29</strong> “But he said, ‘No, lest perhaps while you gather up the darnel weeds, you root up the wheat with them.</p>
+            <p><strong>30</strong> Let both grow together until the harvest, and in the harvest time I will tell the reapers, “First, gather up the darnel weeds, and bind them in bundles to burn them; but gather the wheat into my barn.”’”</p>
+            <p><strong>31</strong> He set another parable before them, saying, “The Kingdom of Heaven is like a grain of mustard seed, which a man took, and sowed in his field;</p>
+            <p><strong>32</strong> which indeed is smaller than all seeds. But when it is grown, it is greater than the herbs, and becomes a tree, so that the birds of the air come and lodge in its branches.”</p>
+            <p><strong>33</strong> He spoke another parable to them. “The Kingdom of Heaven is like yeast, which a woman took, and hid in three measuresof meal, until it was all leavened.”</p>
+            <p><strong>34</strong> Jesus spoke all these things in parables to the multitudes; and without a parable, he didn’t speak to them,</p>
+            <p><strong>35</strong> that it might be fulfilled which was spoken through the prophet, saying,  “I will open my mouth in parables; I will utter things hidden from the foundation of the world.”</p>
+            <p><strong>36</strong> Then Jesus sent the multitudes away, and went into the house. His disciples came to him, saying, “Explain to us the parable of the darnel weeds of the field.”</p>
+            <p><strong>37</strong> He answered them, “He who sows the good seed is the Son of Man,</p>
+            <p><strong>38</strong> the field is the world; and the good seed, these are the children of the Kingdom; and the darnel weeds are the children of the evil one.</p>
+            <p><strong>39</strong> The enemy who sowed them is the devil. The harvest is the end of the age, and the reapers are angels.</p>
+            <p><strong>40</strong> As therefore the darnel weeds are gathered up and burned with fire; so will it be at the end of this age.</p>
+            <p><strong>41</strong> The Son of Man will send out his angels, and they will gather out of his Kingdom all things that cause stumbling, and those who do iniquity,</p>
+            <p><strong>42</strong> and will cast them into the furnace of fire. There will be weeping and the gnashing of teeth.</p>
+            <p><strong>43</strong> Then the righteous will shine like the sun in the Kingdom of their Father. He who has ears to hear, let him hear.</p>
+            <p><strong>44</strong> “Again, the Kingdom of Heaven is like a treasure hidden in the field, which a man found, and hid. In his joy, he goes and sells all that he has, and buys that field.</p>
+            <p><strong>45</strong> “Again, the Kingdom of Heaven is like a man who is a merchant seeking fine pearls,</p>
+            <p><strong>46</strong> who having found one pearl of great price, he went and sold all that he had, and bought it.</p>
+            <p><strong>47</strong> “Again, the Kingdom of Heaven is like a dragnet, that was cast into the sea, and gathered some fish of every kind,</p>
+            <p><strong>48</strong> which, when it was filled, they drew up on the beach. They sat down, and gathered the good into containers, but the bad they threw away.</p>
+            <p><strong>49</strong> So will it be in the end of the world. The angels will come and separate the wicked from among the righteous,</p>
+            <p><strong>50</strong> and will cast them into the furnace of fire. There will be the weeping and the gnashing of teeth.”</p>
+            <p><strong>51</strong> Jesus said to them, “Have you understood all these things?”    They answered him, “Yes, Lord.”</p>
+            <p><strong>52</strong> He said to them, “Therefore every scribe who has been made a disciple in the Kingdom of Heaven is like a man who is a householder, who brings out of his treasure new and old things.”</p>
+            <p><strong>53</strong> When Jesus had finished these parables, he departed from there.</p>
+            <p><strong>54</strong> Coming into his own country, he taught them in their synagogue, so that they were astonished, and said, “Where did this man get this wisdom, and these mighty works?</p>
+            <p><strong>55</strong> Isn’t this the carpenter’s son? Isn’t his mother called Mary, and his brothers, James, Joses, Simon, and Judas?</p>
+            <p><strong>56</strong> Aren’t all of his sisters with us? Where then did this man get all of these things?”</p>
+            <p><strong>57</strong> They were offended by him.   But Jesus said to them, “A prophet is not without honor, except in his own country, and in his own house.”</p>
+            <p><strong>58</strong> He didn’t do many mighty works there because of their unbelief.</p>
+            </div>
+            <div class="scripture-text" id="web-13-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 13 (KJV)</p>
+            <p><strong>1</strong> The same day went Jesus out of the house, and sat by the sea side.</p>
+            <p><strong>2</strong> And great multitudes were gathered together unto him, so that he went into a ship, and sat; and the whole multitude stood on the shore.</p>
+            <p><strong>3</strong> And he spake many things unto them in parables, saying, Behold, a sower went forth to sow;</p>
+            <p><strong>4</strong> And when he sowed, some seeds fell by the way side, and the fowls came and devoured them up:</p>
+            <p><strong>5</strong> Some fell upon stony places, where they had not much earth: and forthwith they sprung up, because they had no deepness of earth:</p>
+            <p><strong>6</strong> And when the sun was up, they were scorched; and because they had no root, they withered away.</p>
+            <p><strong>7</strong> And some fell among thorns; and the thorns sprung up, and choked them:</p>
+            <p><strong>8</strong> But other fell into good ground, and brought forth fruit, some an hundredfold, some sixtyfold, some thirtyfold.</p>
+            <p><strong>9</strong> Who hath ears to hear, let him hear.</p>
+            <p><strong>10</strong> And the disciples came, and said unto him, Why speakest thou unto them in parables?</p>
+            <p><strong>11</strong> He answered and said unto them, Because it is given unto you to know the mysteries of the kingdom of heaven, but to them it is not given.</p>
+            <p><strong>12</strong> For whosoever hath, to him shall be given, and he shall have more abundance: but whosoever hath not, from him shall be taken away even that he hath.</p>
+            <p><strong>13</strong> Therefore speak I to them in parables: because they seeing see not; and hearing they hear not, neither do they understand.</p>
+            <p><strong>14</strong> And in them is fulfilled the prophecy of Esaias, which saith, By hearing ye shall hear, and shall not understand; and seeing ye shall see, and shall not perceive:</p>
+            <p><strong>15</strong> For this people’s heart is waxed gross, and their ears are dull of hearing, and their eyes they have closed; lest at any time they should see with their eyes, and hear with their ears, and should understand with their heart, and should be converted, and I should heal them.</p>
+            <p><strong>16</strong> But blessed are your eyes, for they see: and your ears, for they hear.</p>
+            <p><strong>17</strong> For verily I say unto you, That many prophets and righteous men have desired to see those things which ye see, and have not seen them; and to hear those things which ye hear, and have not heard them.</p>
+            <p><strong>18</strong> Hear ye therefore the parable of the sower.</p>
+            <p><strong>19</strong> When any one heareth the word of the kingdom, and understandeth it not, then cometh the wicked one, and catcheth away that which was sown in his heart. This is he which received seed by the way side.</p>
+            <p><strong>20</strong> But he that received the seed into stony places, the same is he that heareth the word, and anon with joy receiveth it;</p>
+            <p><strong>21</strong> Yet hath he not root in himself, but dureth for a while: for when tribulation or persecution ariseth because of the word, by and by he is offended.</p>
+            <p><strong>22</strong> He also that received seed among the thorns is he that heareth the word; and the care of this world, and the deceitfulness of riches, choke the word, and he becometh unfruitful.</p>
+            <p><strong>23</strong> But he that received seed into the good ground is he that heareth the word, and understandeth it; which also beareth fruit, and bringeth forth, some an hundredfold, some sixty, some thirty.</p>
+            <p><strong>24</strong> Another parable put he forth unto them, saying, The kingdom of heaven is likened unto a man which sowed good seed in his field:</p>
+            <p><strong>25</strong> But while men slept, his enemy came and sowed tares among the wheat, and went his way.</p>
+            <p><strong>26</strong> But when the blade was sprung up, and brought forth fruit, then appeared the tares also.</p>
+            <p><strong>27</strong> So the servants of the householder came and said unto him, Sir, didst not thou sow good seed in thy field? from whence then hath it tares?</p>
+            <p><strong>28</strong> He said unto them, An enemy hath done this. The servants said unto him, Wilt thou then that we go and gather them up?</p>
+            <p><strong>29</strong> But he said, Nay; lest while ye gather up the tares, ye root up also the wheat with them.</p>
+            <p><strong>30</strong> Let both grow together until the harvest: and in the time of harvest I will say to the reapers, Gather ye together first the tares, and bind them in bundles to burn them: but gather the wheat into my barn.</p>
+            <p><strong>31</strong> Another parable put he forth unto them, saying, The kingdom of heaven is like to a grain of mustard seed, which a man took, and sowed in his field:</p>
+            <p><strong>32</strong> Which indeed is the least of all seeds: but when it is grown, it is the greatest among herbs, and becometh a tree, so that the birds of the air come and lodge in the branches thereof.</p>
+            <p><strong>33</strong> Another parable spake he unto them; The kingdom of heaven is like unto leaven, which a woman took, and hid in three measures of meal, till the whole was leavened.</p>
+            <p><strong>34</strong> All these things spake Jesus unto the multitude in parables; and without a parable spake he not unto them:</p>
+            <p><strong>35</strong> That it might be fulfilled which was spoken by the prophet, saying, I will open my mouth in parables; I will utter things which have been kept secret from the foundation of the world.</p>
+            <p><strong>36</strong> Then Jesus sent the multitude away, and went into the house: and his disciples came unto him, saying, Declare unto us the parable of the tares of the field.</p>
+            <p><strong>37</strong> He answered and said unto them, He that soweth the good seed is the Son of man;</p>
+            <p><strong>38</strong> The field is the world; the good seed are the children of the kingdom; but the tares are the children of the wicked one;</p>
+            <p><strong>39</strong> The enemy that sowed them is the devil; the harvest is the end of the world; and the reapers are the angels.</p>
+            <p><strong>40</strong> As therefore the tares are gathered and burned in the fire; so shall it be in the end of this world.</p>
+            <p><strong>41</strong> The Son of man shall send forth his angels, and they shall gather out of his kingdom all things that offend, and them which do iniquity;</p>
+            <p><strong>42</strong> And shall cast them into a furnace of fire: there shall be wailing and gnashing of teeth.</p>
+            <p><strong>43</strong> Then shall the righteous shine forth as the sun in the kingdom of their Father. Who hath ears to hear, let him hear.</p>
+            <p><strong>44</strong> Again, the kingdom of heaven is like unto treasure hid in a field; the which when a man hath found, he hideth, and for joy thereof goeth and selleth all that he hath, and buyeth that field.</p>
+            <p><strong>45</strong> Again, the kingdom of heaven is like unto a merchant man, seeking goodly pearls:</p>
+            <p><strong>46</strong> Who, when he had found one pearl of great price, went and sold all that he had, and bought it.</p>
+            <p><strong>47</strong> Again, the kingdom of heaven is like unto a net, that was cast into the sea, and gathered of every kind:</p>
+            <p><strong>48</strong> Which, when it was full, they drew to shore, and sat down, and gathered the good into vessels, but cast the bad away.</p>
+            <p><strong>49</strong> So shall it be at the end of the world: the angels shall come forth, and sever the wicked from among the just,</p>
+            <p><strong>50</strong> And shall cast them into the furnace of fire: there shall be wailing and gnashing of teeth.</p>
+            <p><strong>51</strong> Jesus saith unto them, Have ye understood all these things? They say unto him, Yea, Lord.</p>
+            <p><strong>52</strong> Then said he unto them, Therefore every scribe which is instructed unto the kingdom of heaven is like unto a man that is an householder, which bringeth forth out of his treasure things new and old.</p>
+            <p><strong>53</strong> And it came to pass, that when Jesus had finished these parables, he departed thence.</p>
+            <p><strong>54</strong> And when he was come into his own country, he taught them in their synagogue, insomuch that they were astonished, and said, Whence hath this man this wisdom, and these mighty works?</p>
+            <p><strong>55</strong> Is not this the carpenter’s son? is not his mother called Mary? and his brethren, James, and Joses, and Simon, and Judas?</p>
+            <p><strong>56</strong> And his sisters, are they not all with us? Whence then hath this man all these things?</p>
+            <p><strong>57</strong> And they were offended in him. But Jesus said unto them, A prophet is not without honour, save in his own country, and in his own house.</p>
+            <p><strong>58</strong> And he did not many mighty works there because of their unbelief.</p>
+            </div>
+            <div class="scripture-text" id="web-13-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 13 (ASV)</p>
+            <p><strong>1</strong> On that day went Jesus out of the house, and sat by the sea side.</p>
+            <p><strong>2</strong> And there were gathered unto him great multitudes, so that he entered into a boat, and sat; and all the multitude stood on the beach.</p>
+            <p><strong>3</strong> And he spake to them many things in parables, saying, Behold, the sower went forth to sow;</p>
+            <p><strong>4</strong> and as he sowed, some seeds fell by the way side, and the birds came and devoured them:</p>
+            <p><strong>5</strong> and others fell upon the rocky places, where they had not much earth: and straightway they sprang up, because they had no deepness of earth:</p>
+            <p><strong>6</strong> and when the sun was risen, they were scorched; and because they had no root, they withered away.</p>
+            <p><strong>7</strong> And others fell upon the thorns; and the thorns grew up and choked them:</p>
+            <p><strong>8</strong> and others fell upon the good ground, and yielded fruit, some a hundredfold, some sixty, some thirty.</p>
+            <p><strong>9</strong> He that hath ears, let him hear.</p>
+            <p><strong>10</strong> And the disciples came, and said unto him, Why speakest thou unto them in parables?</p>
+            <p><strong>11</strong> And he answered and said unto them, Unto you it is given to know the mysteries of the kingdom of heaven, but to them it is not given.</p>
+            <p><strong>12</strong> For whosoever hath, to him shall be given, and he shall have abundance: but whosoever hath not, from him shall be taken away even that which he hath.</p>
+            <p><strong>13</strong> Therefore speak I to them in parables; because seeing they see not, and hearing they hear not, neither do they understand.</p>
+            <p><strong>14</strong> And unto them is fulfilled the prophecy of Isaiah, which saith,  By hearing ye shall hear, and shall in no wise understand; And seeing ye shall see, and shall in no wise perceive:</p>
+            <p><strong>15</strong> For this people’s heart is waxed gross, And their ears are dull of hearing, And their eyes they have closed; Lest haply they should perceive with their eyes, And hear with their ears, And understand with their heart, And should turn again, And I should heal them.</p>
+            <p><strong>16</strong> But blessed are your eyes, for they see; and your ears, for they hear.</p>
+            <p><strong>17</strong> For verily I say unto you, that many prophets and righteous men desired to see the things which ye see, and saw them not; and to hear the things which ye hear, and heard them not.</p>
+            <p><strong>18</strong> Hear then ye the parable of the sower.</p>
+            <p><strong>19</strong> When any one heareth the word of the kingdom, and understandeth it not, then cometh the evil one, and snatcheth away that which hath been sown in his heart. This is he that was sown by the way side.</p>
+            <p><strong>20</strong> And he that was sown upon the rocky places, this is he that heareth the word, and straightway with joy receiveth it;</p>
+            <p><strong>21</strong> yet hath he not root in himself, but endureth for a while; and when tribulation or persecution ariseth because of the word, straightway he stumbleth.</p>
+            <p><strong>22</strong> And he that was sown among the thorns, this is he that heareth the word; and the care of the world, and the deceitfulness of riches, choke the word, and he becometh unfruitful.</p>
+            <p><strong>23</strong> And he that was sown upon the good ground, this is he that heareth the word, and understandeth it; who verily beareth fruit, and bringeth forth, some a hundredfold, some sixty, some thirty.</p>
+            <p><strong>24</strong> Another parable set he before them, saying, The kingdom of heaven is likened unto a man that sowed good seed in his field:</p>
+            <p><strong>25</strong> but while men slept, his enemy came and sowed tares also among the wheat, and went away.</p>
+            <p><strong>26</strong> But when the blade sprang up and brought forth fruit, then appeared the tares also.</p>
+            <p><strong>27</strong> And the servants of the householder came and said unto him, Sir, didst thou not sow good seed in thy field? whence then hath it tares?</p>
+            <p><strong>28</strong> And he said unto them, An enemy hath done this. And the servants say unto him, Wilt thou then that we go and gather them up?</p>
+            <p><strong>29</strong> But he saith, Nay; lest haply while ye gather up the tares, ye root up the wheat with them.</p>
+            <p><strong>30</strong> Let both grow together until the harvest: and in the time of the harvest I will say to the reapers, Gather up first the tares, and bind them in bundles to burn them; but gather the wheat into my barn.</p>
+            <p><strong>31</strong> Another parable set he before them, saying, The kingdom of heaven is like unto a grain of mustard seed, which a man took, and sowed in his field:</p>
+            <p><strong>32</strong> which indeed is less than all seeds; but when it is grown, it is greater than the herbs, and becometh a tree, so that the birds of the heaven come and lodge in the branches thereof.</p>
+            <p><strong>33</strong> Another parable spake he unto them; The kingdom of heaven is like unto leaven, which a woman took, and hid in three measures of meal, till it was all leavened.</p>
+            <p><strong>34</strong> All these things spake Jesus in parables unto the multitudes; and without a parable spake he nothing unto them:</p>
+            <p><strong>35</strong> that it might be fulfilled which was spoken through the prophet, saying,  I will open my mouth in parables; I will utter things hidden from the foundation of the world.</p>
+            <p><strong>36</strong> Then he left the multitudes, and went into the house: and his disciples came unto him, saying, Explain unto us the parable of the tares of the field.</p>
+            <p><strong>37</strong> And he answered and said, He that soweth the good seed is the Son of man;</p>
+            <p><strong>38</strong> and the field is the world; and the good seed, these are the sons of the kingdom; and the tares are the sons of the evil one;</p>
+            <p><strong>39</strong> and the enemy that sowed them is the devil: and the harvest is the end of the world; and the reapers are angels.</p>
+            <p><strong>40</strong> As therefore the tares are gathered up and burned with fire; so shall it be in the end of the world.</p>
+            <p><strong>41</strong> The Son of man shall send forth his angels, and they shall gather out of his kingdom all things that cause stumbling, and them that do iniquity,</p>
+            <p><strong>42</strong> and shall cast them into the furnace of fire: there shall be the weeping and the gnashing of teeth.</p>
+            <p><strong>43</strong> Then shall the righteous shine forth as the sun in the kingdom of their Father. He that hath ears, let him hear.</p>
+            <p><strong>44</strong> The kingdom of heaven is like unto a treasure hidden in the field; which a man found, and hid; and in his joy he goeth and selleth all that he hath, and buyeth that field.</p>
+            <p><strong>45</strong> Again, the kingdom of heaven is like unto a man that is a merchant seeking goodly pearls:</p>
+            <p><strong>46</strong> and having found one pearl of great price, he went and sold all that he had, and bought it.</p>
+            <p><strong>47</strong> Again, the kingdom of heaven is like unto a net, that was cast into the sea, and gathered of every kind:</p>
+            <p><strong>48</strong> which, when it was filled, they drew up on the beach; and they sat down, and gathered the good into vessels, but the bad they cast away.</p>
+            <p><strong>49</strong> So shall it be in the end of the world: the angels shall come forth, and sever the wicked from among the righteous,</p>
+            <p><strong>50</strong> and shall cast them into the furnace of fire: there shall be the weeping and the gnashing of teeth.</p>
+            <p><strong>51</strong> Have ye understood all these things? They say unto him, Yea.</p>
+            <p><strong>52</strong> And he said unto them, Therefore every scribe who hath been made a disciple to the kingdom of heaven is like unto a man that is a householder, who bringeth forth out of his treasure things new and old.</p>
+            <p><strong>53</strong> And it came to pass, when Jesus had finished these parables, he departed thence.</p>
+            <p><strong>54</strong> And coming into his own country he taught them in their synagogue, insomuch that they were astonished, and said, Whence hath this man this wisdom, and these mighty works?</p>
+            <p><strong>55</strong> Is not this the carpenter’s son? is not his mother called Mary? and his brethren, James, and Joseph, and Simon, and Judas?</p>
+            <p><strong>56</strong> And his sisters, are they not all with us? Whence then hath this man all these things?</p>
+            <p><strong>57</strong> And they were offended in him. But Jesus said unto them, A prophet is not without honor, save in his own country, and in his own house.</p>
+            <p><strong>58</strong> And he did not many mighty works there because of their unbelief.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus sits by the sea and teaches great crowds in parables. The farmer scatters seed that falls on the roadside, rocky ground, thorns, and good soil, picturing how people receive the word of the Kingdom. Privately he explains why he speaks in parables and unfolds the meaning to his disciples. More Kingdom pictures follow: wheat and darnel growing together until the harvest, a tiny mustard seed becoming a tree, and yeast hidden in meal. He tells of treasure hidden in a field and a pearl of great price, each worth selling everything to gain, and a dragnet gathering every kind of fish to be sorted at the end of the age. Returning to his hometown of Nazareth, Jesus is met with offense and unbelief, and he does few mighty works there.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The teacher who reveals the mysteries of the Kingdom in parables and explains them to his disciples.</li>
+          <li><strong>The disciples</strong> — Those given to know the Kingdom's secrets, who ask Jesus to explain his parables.</li>
+          <li><strong>The crowds</strong> — Great multitudes who hear the parables but, with dull hearts, often see without perceiving.</li>
+          <li><strong>The people of Nazareth</strong> — Jesus' own townsfolk, who are astonished yet offended, and limit his mighty works through unbelief.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 13:23 (WEB)</p>
+          <p class="verse__text">What was sown on the good ground, this is he who hears the word, and understands it, who most certainly bears fruit, and produces, some one hundred times as much, some sixty, and some thirty.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>How we receive the word matters; the same seed bears fruit or withers depending on the soil of the heart.</li>
+          <li>God's Kingdom grows quietly and patiently, often small and hidden before it becomes great.</li>
+          <li>The Kingdom is worth more than everything else, a treasure and pearl worth selling all to gain.</li>
+          <li>A final separation is coming; good and evil grow together now but will be sorted at the end of the age.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-13">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-13">
+            <ul class="lesson-list">
+            <li><strong>The word bears fruit in a heart that hears and understands.</strong> The seed on good ground is the one who hears the word and understands it, who 'most certainly bears fruit' (Matthew 13:23, WEB).</li>
+            <li><strong>The cares of life and the deceitfulness of riches can choke God's word.</strong> The seed among thorns is the one in whom 'the cares of this age and the deceitfulness of riches choke the word, and he becomes unfruitful' (Matthew 13:22, WEB).</li>
+            <li><strong>God's Kingdom begins small but grows beyond expectation.</strong> The mustard seed, 'smaller than all seeds,' becomes greater than the herbs so that the birds lodge in its branches (Matthew 13:31-32, WEB).</li>
+            <li><strong>The Kingdom is worth losing everything to gain.</strong> Finding the treasure, in his joy a man 'goes and sells all that he has, and buys that field' (Matthew 13:44, WEB).</li>
+            <li><strong>A day of separation and joy is coming for the righteous.</strong> At the end of the age, 'the righteous will shine like the sun in the Kingdom of their Father' (Matthew 13:43, WEB).</li>
+            <li><strong>Unbelief shuts the door on Christ's saving works.</strong> In his own country, Jesus 'didn't do many mighty works there because of their unbelief' (Matthew 13:58, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-13">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-13">
+            <ol class="study-questions">
+            <li>What are the four kinds of soil in the parable of the farmer, and what does each represent (Matthew 13:18-23)?</li>
+            <li>Why does Jesus tell the servants to let the wheat and darnel grow together until the harvest (Matthew 13:24-30)?</li>
+            <li>What do the parables of the mustard seed and the yeast teach about how the Kingdom of Heaven grows (Matthew 13:31-33)?</li>
+            <li>In the parables of the treasure and the pearl, what does the man's joyful selling of everything reveal about the Kingdom's worth (Matthew 13:44-46)?</li>
+            <li>Which kind of soil best describes your own heart toward God's word right now, and what would help it bear more fruit?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-13">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-13">
+            <ol class="study-questions">
+            <li>The roadside seed is the word snatched away before it is understood; the rocky ground is shallow joy that withers under trouble; the thorns are the cares of life and riches that choke the word; the good soil is the one who hears, understands, and bears fruit a hundred, sixty, or thirty times over (13:18-23).</li>
+            <li>Pulling up the darnel early would uproot the wheat with it (13:29). God patiently allows good and evil to grow side by side until the harvest, the end of the age, when his angels will gather and separate them (13:30, 39-43). It teaches patience and trust in God's final justice.</li>
+            <li>Both begin almost invisibly, a tiny seed and hidden yeast, yet they spread and grow until the seed becomes a tree and the meal is all leavened (13:31-33). The Kingdom advances quietly and pervasively, often unseen, until its great result is unmistakable.</li>
+            <li>The man and the merchant both gladly sell everything they own to obtain the treasure and the pearl (13:44-46). The Kingdom is supremely valuable, surpassing all we possess, and finding it brings such joy that letting go of everything else feels like gain.</li>
+            <li>This is a personal application question. Invite members to reflect honestly on which soil fits them today and what chokes or feeds the word in their lives. As leader, keep the tone gentle and hopeful, and point to the steady help of Scripture, prayer, and fellowship rather than pressing anyone to expose private struggles.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-12.html">← Matthew 12</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-14.html">Matthew 14 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

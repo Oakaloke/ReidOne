@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 14: Feeding Many, Walking on Water — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 14: Jesus feeds thousands from a few loaves, then walks on the sea and calms the fears of his disciples." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 14
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 14</span>
+        <h1>Matthew 14: Feeding Many, Walking on Water</h1>
+        <p class="lead">Jesus feeds thousands from a few loaves, then walks on the sea and calms the fears of his disciples.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-14">
+            <span>Scripture — Matthew Chapter 14</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-14">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-14-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-14-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-14-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-14-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 14 (WEB)</p>
+            <p><strong>1</strong> At that time, Herod the tetrarch heard the report concerning Jesus,</p>
+            <p><strong>2</strong> and said to his servants, “This is John the Baptizer. He is risen from the dead. That is why these powers work in him.”</p>
+            <p><strong>3</strong> For Herod had laid hold of John, and bound him, and put him in prison for the sake of Herodias, his brother Philip’s wife.</p>
+            <p><strong>4</strong> For John said to him, “It is not lawful for you to have her.”</p>
+            <p><strong>5</strong> When he would have put him to death, he feared the multitude, because they counted him as a prophet.</p>
+            <p><strong>6</strong> But when Herod’s birthday came, the daughter of Herodias danced among them and pleased Herod.</p>
+            <p><strong>7</strong> Whereupon he promised with an oath to give her whatever she should ask.</p>
+            <p><strong>8</strong> She, being prompted by her mother, said, “Give me here on a platter the head of John the Baptizer.”</p>
+            <p><strong>9</strong> The king was grieved, but for the sake of his oaths, and of those who sat at the table with him, he commanded it to be given,</p>
+            <p><strong>10</strong> and he sent and beheaded John in the prison.</p>
+            <p><strong>11</strong> His head was brought on a platter, and given to the young lady: and she brought it to her mother.</p>
+            <p><strong>12</strong> His disciples came, and took the body, and buried it; and they went and told Jesus.</p>
+            <p><strong>13</strong> Now when Jesus heard this, he withdrew from there in a boat, to a deserted place apart. When the multitudes heard it, they followed him on foot from the cities.</p>
+            <p><strong>14</strong> Jesus went out, and he saw a great multitude. He had compassion on them, and healed their sick.</p>
+            <p><strong>15</strong> When evening had come, his disciples came to him, saying, “This place is deserted, and the hour is already late. Send the multitudes away, that they may go into the villages, and buy themselves food.”</p>
+            <p><strong>16</strong> But Jesus said to them, “They don’t need to go away. You give them something to eat.”</p>
+            <p><strong>17</strong> They told him, “We only have here five loaves and two fish.”</p>
+            <p><strong>18</strong> He said, “Bring them here to me.”</p>
+            <p><strong>19</strong> He commanded the multitudes to sit down on the grass; and he took the five loaves and the two fish, and looking up to heaven, he blessed, broke and gave the loaves to the disciples, and the disciples gave to the multitudes.</p>
+            <p><strong>20</strong> They all ate, and were filled. They took up twelve baskets full of that which remained left over from the broken pieces.</p>
+            <p><strong>21</strong> Those who ate were about five thousand men, besides women and children.</p>
+            <p><strong>22</strong> Immediately Jesus made the disciples get into the boat, and to go ahead of him to the other side, while he sent the multitudes away.</p>
+            <p><strong>23</strong> After he had sent the multitudes away, he went up into the mountain by himself to pray. When evening had come, he was there alone.</p>
+            <p><strong>24</strong> But the boat was now in the middle of the sea, distressed by the waves, for the wind was contrary.</p>
+            <p><strong>25</strong> In the fourth watch of the night, Jesus came to them, walking on the sea.</p>
+            <p><strong>26</strong> When the disciples saw him walking on the sea, they were troubled, saying, “It’s a ghost!” and they cried out for fear.</p>
+            <p><strong>27</strong> But immediately Jesus spoke to them, saying “Cheer up! It is I! Don’t be afraid.”</p>
+            <p><strong>28</strong> Peter answered him and said, “Lord, if it is you, command me to come to you on the waters.”</p>
+            <p><strong>29</strong> He said, “Come!”   Peter stepped down from the boat, and walked on the waters to come to Jesus.</p>
+            <p><strong>30</strong> But when he saw that the wind was strong, he was afraid, and beginning to sink, he cried out, saying, “Lord, save me!”</p>
+            <p><strong>31</strong> Immediately Jesus stretched out his hand, took hold of him, and said to him, “You of little faith, why did you doubt?”</p>
+            <p><strong>32</strong> When they got up into the boat, the wind ceased.</p>
+            <p><strong>33</strong> Those who were in the boat came and worshiped him, saying, “You are truly the Son of God!”</p>
+            <p><strong>34</strong> When they had crossed over, they came to the land of Gennesaret.</p>
+            <p><strong>35</strong> When the people of that place recognized him, they sent into all that surrounding region, and brought to him all who were sick,</p>
+            <p><strong>36</strong> and they begged him that they might just touch the fringe of his garment. As many as touched it were made whole.</p>
+            </div>
+            <div class="scripture-text" id="web-14-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 14 (KJV)</p>
+            <p><strong>1</strong> At that time Herod the tetrarch heard of the fame of Jesus,</p>
+            <p><strong>2</strong> And said unto his servants, This is John the Baptist; he is risen from the dead; and therefore mighty works do shew forth themselves in him.</p>
+            <p><strong>3</strong> For Herod had laid hold on John, and bound him, and put him in prison for Herodias’ sake, his brother Philip’s wife.</p>
+            <p><strong>4</strong> For John said unto him, It is not lawful for thee to have her.</p>
+            <p><strong>5</strong> And when he would have put him to death, he feared the multitude, because they counted him as a prophet.</p>
+            <p><strong>6</strong> But when Herod’s birthday was kept, the daughter of Herodias danced before them, and pleased Herod.</p>
+            <p><strong>7</strong> Whereupon he promised with an oath to give her whatsoever she would ask.</p>
+            <p><strong>8</strong> And she, being before instructed of her mother, said, Give me here John Baptist’s head in a charger.</p>
+            <p><strong>9</strong> And the king was sorry: nevertheless for the oath’s sake, and them which sat with him at meat, he commanded it to be given her.</p>
+            <p><strong>10</strong> And he sent, and beheaded John in the prison.</p>
+            <p><strong>11</strong> And his head was brought in a charger, and given to the damsel: and she brought it to her mother.</p>
+            <p><strong>12</strong> And his disciples came, and took up the body, and buried it, and went and told Jesus.</p>
+            <p><strong>13</strong> When Jesus heard of it, he departed thence by ship into a desert place apart: and when the people had heard thereof, they followed him on foot out of the cities.</p>
+            <p><strong>14</strong> And Jesus went forth, and saw a great multitude, and was moved with compassion toward them, and he healed their sick.</p>
+            <p><strong>15</strong> And when it was evening, his disciples came to him, saying, This is a desert place, and the time is now past; send the multitude away, that they may go into the villages, and buy themselves victuals.</p>
+            <p><strong>16</strong> But Jesus said unto them, They need not depart; give ye them to eat.</p>
+            <p><strong>17</strong> And they say unto him, We have here but five loaves, and two fishes.</p>
+            <p><strong>18</strong> He said, Bring them hither to me.</p>
+            <p><strong>19</strong> And he commanded the multitude to sit down on the grass, and took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake, and gave the loaves to his disciples, and the disciples to the multitude.</p>
+            <p><strong>20</strong> And they did all eat, and were filled: and they took up of the fragments that remained twelve baskets full.</p>
+            <p><strong>21</strong> And they that had eaten were about five thousand men, beside women and children.</p>
+            <p><strong>22</strong> And straightway Jesus constrained his disciples to get into a ship, and to go before him unto the other side, while he sent the multitudes away.</p>
+            <p><strong>23</strong> And when he had sent the multitudes away, he went up into a mountain apart to pray: and when the evening was come, he was there alone.</p>
+            <p><strong>24</strong> But the ship was now in the midst of the sea, tossed with waves: for the wind was contrary.</p>
+            <p><strong>25</strong> And in the fourth watch of the night Jesus went unto them, walking on the sea.</p>
+            <p><strong>26</strong> And when the disciples saw him walking on the sea, they were troubled, saying, It is a spirit; and they cried out for fear.</p>
+            <p><strong>27</strong> But straightway Jesus spake unto them, saying, Be of good cheer; it is I; be not afraid.</p>
+            <p><strong>28</strong> And Peter answered him and said, Lord, if it be thou, bid me come unto thee on the water.</p>
+            <p><strong>29</strong> And he said, Come. And when Peter was come down out of the ship, he walked on the water, to go to Jesus.</p>
+            <p><strong>30</strong> But when he saw the wind boisterous, he was afraid; and beginning to sink, he cried, saying, Lord, save me.</p>
+            <p><strong>31</strong> And immediately Jesus stretched forth his hand, and caught him, and said unto him, O thou of little faith, wherefore didst thou doubt?</p>
+            <p><strong>32</strong> And when they were come into the ship, the wind ceased.</p>
+            <p><strong>33</strong> Then they that were in the ship came and worshipped him, saying, Of a truth thou art the Son of God.</p>
+            <p><strong>34</strong> And when they were gone over, they came into the land of Gennesaret.</p>
+            <p><strong>35</strong> And when the men of that place had knowledge of him, they sent out into all that country round about, and brought unto him all that were diseased;</p>
+            <p><strong>36</strong> And besought him that they might only touch the hem of his garment: and as many as touched were made perfectly whole.</p>
+            </div>
+            <div class="scripture-text" id="web-14-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 14 (ASV)</p>
+            <p><strong>1</strong> At that season Herod the tetrarch heard the report concerning Jesus,</p>
+            <p><strong>2</strong> and said unto his servants, This is John the Baptist; he is risen from the dead; and therefore do these powers work in him.</p>
+            <p><strong>3</strong> For Herod had laid hold on John, and bound him, and put him in prison for the sake of Herodias, his brother Philip’s wife.</p>
+            <p><strong>4</strong> For John said unto him, It is not lawful for thee to have her.</p>
+            <p><strong>5</strong> And when he would have put him to death, he feared the multitude, because they counted him as a prophet.</p>
+            <p><strong>6</strong> But when Herod’s birthday came, the daughter of Herodias danced in the midst, and pleased Herod.</p>
+            <p><strong>7</strong> Whereupon he promised with an oath to give her whatsoever she should ask.</p>
+            <p><strong>8</strong> And she, being put forward by her mother, saith, Give me here on a platter the head of John the Baptist.</p>
+            <p><strong>9</strong> And the king was grieved; but for the sake of his oaths, and of them that sat at meat with him, he commanded it to be given;</p>
+            <p><strong>10</strong> and he sent and beheaded John in the prison.</p>
+            <p><strong>11</strong> And his head was brought on a platter, and given to the damsel: and she brought it to her mother.</p>
+            <p><strong>12</strong> And his disciples came, and took up the corpse, and buried him; and they went and told Jesus.</p>
+            <p><strong>13</strong> Now when Jesus heardit, he withdrew from thence in a boat, to a desert place apart: and when the multitudes heard thereof, they followed him on foot from the cities.</p>
+            <p><strong>14</strong> And he came forth, and saw a great multitude, and he had compassion on them, and healed their sick.</p>
+            <p><strong>15</strong> And when even was come, the disciples came to him, saying, The place is desert, and the time is already past; send the multitudes away, that they may go into the villages, and buy themselves food.</p>
+            <p><strong>16</strong> But Jesus said unto them, They have no need to go away; give ye them to eat.</p>
+            <p><strong>17</strong> And they say unto him, We have here but five loaves, and two fishes.</p>
+            <p><strong>18</strong> And he said, Bring them hither to me.</p>
+            <p><strong>19</strong> And he commanded the multitudes to sit down on the grass; and he took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake and gave the loaves to the disciples, and the disciples to the multitudes.</p>
+            <p><strong>20</strong> And they all ate, and were filled: and they took up that which remained over of the broken pieces, twelve baskets full.</p>
+            <p><strong>21</strong> And they that did eat were about five thousand men, besides women and children.</p>
+            <p><strong>22</strong> And straightway he constrained the disciples to enter into the boat, and to go before him unto the other side, till he should send the multitudes away.</p>
+            <p><strong>23</strong> And after he had sent the multitudes away, he went up into the mountain apart to pray: and when even was come, he was there alone.</p>
+            <p><strong>24</strong> But the boat was now in the midst of the sea, distressed by the waves; for the wind was contrary.</p>
+            <p><strong>25</strong> And in the fourth watch of the night he came unto them, walking upon the sea.</p>
+            <p><strong>26</strong> And when the disciples saw him walking on the sea, they were troubled, saying, It is a ghost; and they cried out for fear.</p>
+            <p><strong>27</strong> But straightway Jesus spake unto them, saying, Be of good cheer; it is I; be not afraid.</p>
+            <p><strong>28</strong> And Peter answered him and said, Lord, if it be thou, bid me come unto thee upon the waters.</p>
+            <p><strong>29</strong> And he said, Come. And Peter went down from the boat, and walked upon the waters to come to Jesus.</p>
+            <p><strong>30</strong> But when he saw the wind, he was afraid; and beginning to sink, he cried out, saying, Lord, save me.</p>
+            <p><strong>31</strong> And immediately Jesus stretched forth his hand, and took hold of him, and saith unto him, O thou of little faith, wherefore didst thou doubt?</p>
+            <p><strong>32</strong> And when they were gone up into the boat, the wind ceased.</p>
+            <p><strong>33</strong> And they that were in the boat worshipped him, saying, Of a truth thou art the Son of God.</p>
+            <p><strong>34</strong> And when they had crossed over, they came to the land, unto Gennesaret.</p>
+            <p><strong>35</strong> And when the men of that place knew him, they sent into all that region round about, and brought unto him all that were sick;</p>
+            <p><strong>36</strong> and they besought him that they might only touch the border of his garment: and as many as touched were made whole.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Herod the tetrarch, who had beheaded John the Baptizer to keep a reckless oath, hears of Jesus and fears John has risen. Grieved, Jesus withdraws to a deserted place, but the crowds follow on foot. Moved with compassion, he heals their sick. As evening falls, he takes five loaves and two fish, gives thanks, and feeds about five thousand men besides women and children, with twelve baskets left over. He sends the disciples ahead by boat and goes up the mountain to pray. In the night the boat is battered by contrary winds, and Jesus comes walking on the sea. Peter steps out toward him, then sinks in fear, and Jesus catches him, gently questioning his little faith. When they climb into the boat the wind ceases, and those aboard worship him as the Son of God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The compassionate Lord who feeds the multitude, walks on the sea, and rescues sinking Peter.</li>
+          <li><strong>The disciples</strong> — Followers who distribute the loaves, struggle against the storm, and finally worship Jesus as the Son of God.</li>
+          <li><strong>Peter</strong> — The disciple who steps out onto the water toward Jesus, falters in fear, and cries out to be saved.</li>
+          <li><strong>Herod the tetrarch</strong> — The fearful ruler who beheads John the Baptizer for the sake of a rash oath.</li>
+          <li><strong>John the Baptizer</strong> — The prophet imprisoned and put to death by Herod for rebuking his unlawful marriage.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 14:27 (WEB)</p>
+          <p class="verse__text">But immediately Jesus spoke to them, saying “Cheer up! It is I! Don’t be afraid.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus has compassion on the crowds and meets both their spiritual and physical needs.</li>
+          <li>What seems too little in our hands becomes more than enough when placed in Christ's.</li>
+          <li>Jesus comes to his people in their storms and tells them not to be afraid.</li>
+          <li>Faith keeps its eyes on Jesus; when we look at the wind and waves, we begin to sink.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-14">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-14">
+            <ul class="lesson-list">
+            <li><strong>Christ meets us with compassion even when we feel like an interruption.</strong> Though he sought a deserted place, Jesus 'had compassion on them, and healed their sick' (Matthew 14:14, WEB).</li>
+            <li><strong>Jesus makes our little into more than enough.</strong> From five loaves and two fish, 'they all ate, and were filled,' with twelve baskets left over (Matthew 14:20, WEB).</li>
+            <li><strong>Jesus comes to us in the storm and quiets our fear.</strong> He says, 'Cheer up! It is I! Don't be afraid' (Matthew 14:27, WEB).</li>
+            <li><strong>When we look away from Christ to the danger, we begin to sink.</strong> When Peter 'saw that the wind was strong, he was afraid, and beginning to sink' (Matthew 14:30, WEB).</li>
+            <li><strong>Christ's hand reaches out to catch the sinking.</strong> 'Immediately Jesus stretched out his hand, took hold of him' (Matthew 14:31, WEB).</li>
+            <li><strong>Jesus is rightly worshiped as the Son of God.</strong> Those in the boat worshiped him, saying, 'You are truly the Son of God' (Matthew 14:33, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-14">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-14">
+            <ol class="study-questions">
+            <li>How does Jesus respond to the great crowd when he is seeking solitude after John's death (Matthew 14:13-14)?</li>
+            <li>What do the disciples have, and what happens when they bring their five loaves and two fish to Jesus (Matthew 14:16-21)?</li>
+            <li>What does Jesus say to the frightened disciples as he comes to them on the sea (Matthew 14:26-27)?</li>
+            <li>Why does Peter begin to sink, and how does Jesus respond to him (Matthew 14:29-31)?</li>
+            <li>Where in your life are you facing a 'contrary wind,' and what would it look like to keep your eyes on Jesus rather than the storm?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-14">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-14">
+            <ol class="study-questions">
+            <li>Though Jesus withdraws after learning of John's death, the crowds follow on foot, and rather than turning them away he goes out, sees them, has compassion, and heals their sick (14:13-14). His grief does not shut off his mercy.</li>
+            <li>The disciples have only five loaves and two fish (14:17). When they bring them to Jesus, he blesses and breaks them, and about five thousand men besides women and children eat and are filled, with twelve baskets left over (14:19-21). Little given to Jesus becomes abundance.</li>
+            <li>Seeing him walk on the sea, they are terrified and cry out, 'It's a ghost!' Jesus immediately reassures them, 'Cheer up! It is I! Don't be afraid' (14:26-27). His presence and voice are the answer to their fear.</li>
+            <li>Peter walks toward Jesus but, seeing the strong wind, grows afraid and begins to sink, crying, 'Lord, save me!' Jesus at once stretches out his hand and catches him, asking, 'You of little faith, why did you doubt?' (14:29-31). His rescue comes before his gentle rebuke.</li>
+            <li>This is a personal application question. Invite members to name a real fear or trial without pressure to give details, and to consider what 'keeping eyes on Jesus' would mean practically. As leader, point back to Jesus' words 'Don't be afraid' and his ready hand, and let the group encourage one another.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-13.html">← Matthew 13</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-15.html">Matthew 15 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

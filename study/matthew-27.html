@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 27: The King Crucified — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 27: Jesus is condemned before Pilate, mocked, crucified, and buried as darkness covers the land." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 27
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 27</span>
+        <h1>Matthew 27: The King Crucified</h1>
+        <p class="lead">Jesus is condemned before Pilate, mocked, crucified, and buried as darkness covers the land.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-27">
+            <span>Scripture — Matthew Chapter 27</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-27">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-27-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-27-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-27-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-27-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 27 (WEB)</p>
+            <p><strong>1</strong> Now when morning had come, all the chief priests and the elders of the people took counsel against Jesus to put him to death:</p>
+            <p><strong>2</strong> and they bound him, and led him away, and delivered him up to Pontius Pilate, the governor.</p>
+            <p><strong>3</strong> Then Judas, who betrayed him, when he saw that Jesus was condemned, felt remorse, and brought back the thirty pieces of silver to the chief priests and elders,</p>
+            <p><strong>4</strong> saying, “I have sinned in that I betrayed innocent blood.”   But they said, “What is that to us? You see to it.”</p>
+            <p><strong>5</strong> He threw down the pieces of silver in the sanctuary, and departed. He went away and hanged himself.</p>
+            <p><strong>6</strong> The chief priests took the pieces of silver, and said, “It’s not lawful to put them into the treasury, since it is the price of blood.”</p>
+            <p><strong>7</strong> They took counsel, and bought the potter’s field with them, to bury strangers in.</p>
+            <p><strong>8</strong> Therefore that field was called “The Field of Blood” to this day.</p>
+            <p><strong>9</strong> Then that which was spoken through Jeremiah the prophet was fulfilled, saying,  “They took the thirty pieces of silver, the price of him upon whom a price had been set, whom some of the children of Israel priced,</p>
+            <p><strong>10</strong> and they gave them for the potter’s field, as the Lord commanded me.”</p>
+            <p><strong>11</strong> Now Jesus stood before the governor: and the governor asked him, saying, “Are you the King of the Jews?”   Jesus said to him, “So you say.”</p>
+            <p><strong>12</strong> When he was accused by the chief priests and elders, he answered nothing.</p>
+            <p><strong>13</strong> Then Pilate said to him, “Don’t you hear how many things they testify against you?”</p>
+            <p><strong>14</strong> He gave him no answer, not even one word, so that the governor marveled greatly.</p>
+            <p><strong>15</strong> Now at the feast the governor was accustomed to release to the multitude one prisoner, whom they desired.</p>
+            <p><strong>16</strong> They had then a notable prisoner, called Barabbas.</p>
+            <p><strong>17</strong> When therefore they were gathered together, Pilate said to them, “Whom do you want me to release to you? Barabbas, or Jesus, who is called Christ?”</p>
+            <p><strong>18</strong> For he knew that because of envy they had delivered him up.</p>
+            <p><strong>19</strong> While he was sitting on the judgment seat, his wife sent to him, saying, “Have nothing to do with that righteous man, for I have suffered many things this day in a dream because of him.”</p>
+            <p><strong>20</strong> Now the chief priests and the elders persuaded the multitudes to ask for Barabbas, and destroy Jesus.</p>
+            <p><strong>21</strong> But the governor answered them, “Which of the two do you want me to release to you?”   They said, “Barabbas!”</p>
+            <p><strong>22</strong> Pilate said to them, “What then shall I do to Jesus, who is called Christ?”   They all said to him, “Let him be crucified!”</p>
+            <p><strong>23</strong> But the governor said, “Why? What evil has he done?”   But they cried out exceedingly, saying, “Let him be crucified!”</p>
+            <p><strong>24</strong> So when Pilate saw that nothing was being gained, but rather that a disturbance was starting, he took water, and washed his hands before the multitude, saying, “I am innocent of the blood of this righteous person. You see to it.”</p>
+            <p><strong>25</strong> All the people answered, “May his blood be on us, and on our children!”</p>
+            <p><strong>26</strong> Then he released to them Barabbas, but Jesus he flogged and delivered to be crucified.</p>
+            <p><strong>27</strong> Then the governor’s soldiers took Jesus into the Praetorium, and gathered the whole garrison together against him.</p>
+            <p><strong>28</strong> They stripped him, and put a scarlet robe on him.</p>
+            <p><strong>29</strong> They braided a crown of thorns and put it on his head, and a reed in his right hand; and they kneeled down before him, and mocked him, saying, “Hail, King of the Jews!”</p>
+            <p><strong>30</strong> They spat on him, and took the reed and struck him on the head.</p>
+            <p><strong>31</strong> When they had mocked him, they took the robe off of him, and put his clothes on him, and led him away to crucify him.</p>
+            <p><strong>32</strong> As they came out, they found a man of Cyrene, Simon by name, and they compelled him to go with them, that he might carry his cross.</p>
+            <p><strong>33</strong> They came to a place called “Golgotha”, that is to say, “The place of a skull.”</p>
+            <p><strong>34</strong> They gave him sour wine to drink mixed with gall. When he had tasted it, he would not drink.</p>
+            <p><strong>35</strong> When they had crucified him, they divided his clothing among them, casting lots,</p>
+            <p><strong>36</strong> and they sat and watched him there.</p>
+            <p><strong>37</strong> They set up over his head the accusation against him written, “THIS IS JESUS, THE KING OF THE JEWS.”</p>
+            <p><strong>38</strong> Then there were two robbers crucified with him, one on his right hand and one on the left.</p>
+            <p><strong>39</strong> Those who passed by blasphemed him, wagging their heads,</p>
+            <p><strong>40</strong> and saying, “You who destroy the temple, and build it in three days, save yourself! If you are the Son of God, come down from the cross!”</p>
+            <p><strong>41</strong> Likewise the chief priests also mocking, with the scribes, the Pharisees, and the elders, said,</p>
+            <p><strong>42</strong> “He saved others, but he can’t save himself. If he is the King of Israel, let him come down from the cross now, and we will believe in him.</p>
+            <p><strong>43</strong> He trusts in God. Let God deliver him now, if he wants him; for he said, ‘I am the Son of God.’”</p>
+            <p><strong>44</strong> The robbers also who were crucified with him cast on him the same reproach.</p>
+            <p><strong>45</strong> Now from the sixth hour there was darkness over all the land until the ninth hour.</p>
+            <p><strong>46</strong> About the ninth hour Jesus cried with a loud voice, saying, “Eli, Eli, limasabachthani?”  That is, “My God, my God, why have you forsaken me?”</p>
+            <p><strong>47</strong> Some of them who stood there, when they heard it, said, “This man is calling Elijah.”</p>
+            <p><strong>48</strong> Immediately one of them ran, and took a sponge, and filled it with vinegar, and put it on a reed, and gave him a drink.</p>
+            <p><strong>49</strong> The rest said, “Let him be. Let’s see whether Elijah comes to save him.”</p>
+            <p><strong>50</strong> Jesus cried again with a loud voice, and yielded up his spirit.</p>
+            <p><strong>51</strong> Behold, the veil of the temple was torn in two from the top to the bottom. The earth quaked and the rocks were split.</p>
+            <p><strong>52</strong> The tombs were opened, and many bodies of the saints who had fallen asleep were raised;</p>
+            <p><strong>53</strong> and coming out of the tombs after his resurrection, they entered into the holy city and appeared to many.</p>
+            <p><strong>54</strong> Now the centurion, and those who were with him watching Jesus, when they saw the earthquake, and the things that were done, feared exceedingly, saying, “Truly this was the Son of God.”</p>
+            <p><strong>55</strong> Many women were there watching from afar, who had followed Jesus from Galilee, serving him.</p>
+            <p><strong>56</strong> Among them were Mary Magdalene, Mary the mother of James and Joses, and the mother of the sons of Zebedee.</p>
+            <p><strong>57</strong> When evening had come, a rich man from Arimathaea, named Joseph, who himself was also Jesus’ disciple came.</p>
+            <p><strong>58</strong> This man went to Pilate, and asked for Jesus’ body. Then Pilate commanded the body to be given up.</p>
+            <p><strong>59</strong> Joseph took the body, and wrapped it in a clean linen cloth,</p>
+            <p><strong>60</strong> and laid it in his own new tomb, which he had cut out in the rock, and he rolled a great stone to the door of the tomb, and departed.</p>
+            <p><strong>61</strong> Mary Magdalene was there, and the other Mary, sitting opposite the tomb.</p>
+            <p><strong>62</strong> Now on the next day, which was the day after the Preparation Day, the chief priests and the Pharisees were gathered together to Pilate,</p>
+            <p><strong>63</strong> saying, “Sir, we remember what that deceiver said while he was still alive: ‘After three days I will rise again.’</p>
+            <p><strong>64</strong> Command therefore that the tomb be made secure until the third day, lest perhaps his disciples come at night and steal him away, and tell the people, ‘He is risen from the dead;’ and the last deception will be worse than the first.”</p>
+            <p><strong>65</strong> Pilate said to them, “You have a guard. Go, make it as secure as you can.”</p>
+            <p><strong>66</strong> So they went with the guard and made the tomb secure, sealing the stone.</p>
+            </div>
+            <div class="scripture-text" id="web-27-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 27 (KJV)</p>
+            <p><strong>1</strong> When the morning was come, all the chief priests and elders of the people took counsel against Jesus to put him to death:</p>
+            <p><strong>2</strong> And when they had bound him, they led him away, and delivered him to Pontius Pilate the governor.</p>
+            <p><strong>3</strong> Then Judas, which had betrayed him, when he saw that he was condemned, repented himself, and brought again the thirty pieces of silver to the chief priests and elders,</p>
+            <p><strong>4</strong> Saying, I have sinned in that I have betrayed the innocent blood. And they said, What is that to us? see thou to that.</p>
+            <p><strong>5</strong> And he cast down the pieces of silver in the temple, and departed, and went and hanged himself.</p>
+            <p><strong>6</strong> And the chief priests took the silver pieces, and said, It is not lawful for to put them into the treasury, because it is the price of blood.</p>
+            <p><strong>7</strong> And they took counsel, and bought with them the potter’s field, to bury strangers in.</p>
+            <p><strong>8</strong> Wherefore that field was called, The field of blood, unto this day.</p>
+            <p><strong>9</strong> Then was fulfilled that which was spoken by Jeremy the prophet, saying, And they took the thirty pieces of silver, the price of him that was valued, whom they of the children of Israel did value;</p>
+            <p><strong>10</strong> And gave them for the potter’s field, as the Lord appointed me.</p>
+            <p><strong>11</strong> And Jesus stood before the governor: and the governor asked him, saying, Art thou the King of the Jews? And Jesus said unto him, Thou sayest.</p>
+            <p><strong>12</strong> And when he was accused of the chief priests and elders, he answered nothing.</p>
+            <p><strong>13</strong> Then said Pilate unto him, Hearest thou not how many things they witness against thee?</p>
+            <p><strong>14</strong> And he answered him to never a word; insomuch that the governor marvelled greatly.</p>
+            <p><strong>15</strong> Now at that feast the governor was wont to release unto the people a prisoner, whom they would.</p>
+            <p><strong>16</strong> And they had then a notable prisoner, called Barabbas.</p>
+            <p><strong>17</strong> Therefore when they were gathered together, Pilate said unto them, Whom will ye that I release unto you? Barabbas, or Jesus which is called Christ?</p>
+            <p><strong>18</strong> For he knew that for envy they had delivered him.</p>
+            <p><strong>19</strong> When he was set down on the judgment seat, his wife sent unto him, saying, Have thou nothing to do with that just man: for I have suffered many things this day in a dream because of him.</p>
+            <p><strong>20</strong> But the chief priests and elders persuaded the multitude that they should ask Barabbas, and destroy Jesus.</p>
+            <p><strong>21</strong> The governor answered and said unto them, Whether of the twain will ye that I release unto you? They said, Barabbas.</p>
+            <p><strong>22</strong> Pilate saith unto them, What shall I do then with Jesus which is called Christ? They all say unto him, Let him be crucified.</p>
+            <p><strong>23</strong> And the governor said, Why, what evil hath he done? But they cried out the more, saying, Let him be crucified.</p>
+            <p><strong>24</strong> When Pilate saw that he could prevail nothing, but that rather a tumult was made, he took water, and washed his hands before the multitude, saying, I am innocent of the blood of this just person: see ye to it.</p>
+            <p><strong>25</strong> Then answered all the people, and said, His blood be on us, and on our children.</p>
+            <p><strong>26</strong> Then released he Barabbas unto them: and when he had scourged Jesus, he delivered him to be crucified.</p>
+            <p><strong>27</strong> Then the soldiers of the governor took Jesus into the common hall, and gathered unto him the whole band of soldiers.</p>
+            <p><strong>28</strong> And they stripped him, and put on him a scarlet robe.</p>
+            <p><strong>29</strong> And when they had platted a crown of thorns, they put it upon his head, and a reed in his right hand: and they bowed the knee before him, and mocked him, saying, Hail, King of the Jews!</p>
+            <p><strong>30</strong> And they spit upon him, and took the reed, and smote him on the head.</p>
+            <p><strong>31</strong> And after that they had mocked him, they took the robe off from him, and put his own raiment on him, and led him away to crucify him.</p>
+            <p><strong>32</strong> And as they came out, they found a man of Cyrene, Simon by name: him they compelled to bear his cross.</p>
+            <p><strong>33</strong> And when they were come unto a place called Golgotha, that is to say, a place of a skull,</p>
+            <p><strong>34</strong> They gave him vinegar to drink mingled with gall: and when he had tasted thereof, he would not drink.</p>
+            <p><strong>35</strong> And they crucified him, and parted his garments, casting lots: that it might be fulfilled which was spoken by the prophet, They parted my garments among them, and upon my vesture did they cast lots.</p>
+            <p><strong>36</strong> And sitting down they watched him there;</p>
+            <p><strong>37</strong> And set up over his head his accusation written, THIS IS JESUS THE KING OF THE JEWS.</p>
+            <p><strong>38</strong> Then were there two thieves crucified with him, one on the right hand, and another on the left.</p>
+            <p><strong>39</strong> And they that passed by reviled him, wagging their heads,</p>
+            <p><strong>40</strong> And saying, Thou that destroyest the temple, and buildest it in three days, save thyself. If thou be the Son of God, come down from the cross.</p>
+            <p><strong>41</strong> Likewise also the chief priests mocking him, with the scribes and elders, said,</p>
+            <p><strong>42</strong> He saved others; himself he cannot save. If he be the King of Israel, let him now come down from the cross, and we will believe him.</p>
+            <p><strong>43</strong> He trusted in God; let him deliver him now, if he will have him: for he said, I am the Son of God.</p>
+            <p><strong>44</strong> The thieves also, which were crucified with him, cast the same in his teeth.</p>
+            <p><strong>45</strong> Now from the sixth hour there was darkness over all the land unto the ninth hour.</p>
+            <p><strong>46</strong> And about the ninth hour Jesus cried with a loud voice, saying, Eli, Eli, lama sabachthani? that is to say, My God, my God, why hast thou forsaken me?</p>
+            <p><strong>47</strong> Some of them that stood there, when they heard that, said, This man calleth for Elias.</p>
+            <p><strong>48</strong> And straightway one of them ran, and took a spunge, and filled it with vinegar, and put it on a reed, and gave him to drink.</p>
+            <p><strong>49</strong> The rest said, Let be, let us see whether Elias will come to save him.</p>
+            <p><strong>50</strong> Jesus, when he had cried again with a loud voice, yielded up the ghost.</p>
+            <p><strong>51</strong> And, behold, the veil of the temple was rent in twain from the top to the bottom; and the earth did quake, and the rocks rent;</p>
+            <p><strong>52</strong> And the graves were opened; and many bodies of the saints which slept arose,</p>
+            <p><strong>53</strong> And came out of the graves after his resurrection, and went into the holy city, and appeared unto many.</p>
+            <p><strong>54</strong> Now when the centurion, and they that were with him, watching Jesus, saw the earthquake, and those things that were done, they feared greatly, saying, Truly this was the Son of God.</p>
+            <p><strong>55</strong> And many women were there beholding afar off, which followed Jesus from Galilee, ministering unto him:</p>
+            <p><strong>56</strong> Among which was Mary Magdalene, and Mary the mother of James and Joses, and the mother of Zebedee’s children.</p>
+            <p><strong>57</strong> When the even was come, there came a rich man of Arimathea, named Joseph, who also himself was Jesus’ disciple:</p>
+            <p><strong>58</strong> He went to Pilate, and begged the body of Jesus. Then Pilate commanded the body to be delivered.</p>
+            <p><strong>59</strong> And when Joseph had taken the body, he wrapped it in a clean linen cloth,</p>
+            <p><strong>60</strong> And laid it in his own new tomb, which he had hewn out in the rock: and he rolled a great stone to the door of the sepulchre, and departed.</p>
+            <p><strong>61</strong> And there was Mary Magdalene, and the other Mary, sitting over against the sepulchre.</p>
+            <p><strong>62</strong> Now the next day, that followed the day of the preparation, the chief priests and Pharisees came together unto Pilate,</p>
+            <p><strong>63</strong> Saying, Sir, we remember that that deceiver said, while he was yet alive, After three days I will rise again.</p>
+            <p><strong>64</strong> Command therefore that the sepulchre be made sure until the third day, lest his disciples come by night, and steal him away, and say unto the people, He is risen from the dead: so the last error shall be worse than the first.</p>
+            <p><strong>65</strong> Pilate said unto them, Ye have a watch: go your way, make it as sure as ye can.</p>
+            <p><strong>66</strong> So they went, and made the sepulchre sure, sealing the stone, and setting a watch.</p>
+            </div>
+            <div class="scripture-text" id="web-27-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 27 (ASV)</p>
+            <p><strong>1</strong> Now when morning was come, all the chief priests and the elders of the people took counsel against Jesus to put him to death:</p>
+            <p><strong>2</strong> and they bound him, and led him away, and delivered him up to Pilate the governor.</p>
+            <p><strong>3</strong> Then Judas, who betrayed him, when he saw that he was condemned, repented himself, and brought back the thirty pieces of silver to the chief priests and elders,</p>
+            <p><strong>4</strong> saying, I have sinned in that I betrayed innocent blood. But they said, What is that to us? see thou to it.</p>
+            <p><strong>5</strong> And he cast down the pieces of silver into the sanctuary, and departed; and he went away and hanged himself.</p>
+            <p><strong>6</strong> And the chief priests took the pieces of silver, and said, It is not lawful to put them into the treasury, since it is the price of blood.</p>
+            <p><strong>7</strong> And they took counsel, and bought with them the potter’s field, to bury strangers in.</p>
+            <p><strong>8</strong> Wherefore that field was called, The field of blood, unto this day.</p>
+            <p><strong>9</strong> Then was fulfilled that which was spoken through Jeremiah the prophet, saying, And they took the thirty pieces of silver, the price of him that was priced, whom certain of the children of Israel did price;</p>
+            <p><strong>10</strong> and they gave them for the potter’s field, as the Lord appointed me.</p>
+            <p><strong>11</strong> Now Jesus stood before the governor: and the governor asked him, saying, Art thou the King of the Jews? And Jesus said unto him, Thou sayest.</p>
+            <p><strong>12</strong> And when he was accused by the chief priests and elders, he answered nothing.</p>
+            <p><strong>13</strong> Then saith Pilate unto him, Hearest thou not how many things they witness against thee?</p>
+            <p><strong>14</strong> And he gave him no answer, not even to one word: insomuch that the governor marvelled greatly.</p>
+            <p><strong>15</strong> Now at the feast the governor was wont to release unto the multitude one prisoner, whom they would.</p>
+            <p><strong>16</strong> And they had then a notable prisoner, called Barabbas.</p>
+            <p><strong>17</strong> When therefore they were gathered together, Pilate said unto them, Whom will ye that I release unto you? Barabbas, or Jesus who is called Christ?</p>
+            <p><strong>18</strong> For he knew that for envy they had delivered him up.</p>
+            <p><strong>19</strong> And while he was sitting on the judgment-seat, his wife sent unto him, saying, Have thou nothing to do with that righteous man; for I have suffered many things this day in a dream because of him.</p>
+            <p><strong>20</strong> Now the chief priests and the elders persuaded the multitudes that they should ask for Barabbas, and destroy Jesus.</p>
+            <p><strong>21</strong> But the governor answered and said unto them, Which of the two will ye that I release unto you? And they said, Barabbas.</p>
+            <p><strong>22</strong> Pilate saith unto them, What then shall I do unto Jesus who is called Christ? They all say, Let him be crucified.</p>
+            <p><strong>23</strong> And he said, Why, what evil hath he done? But they cried out exceedingly, saying, Let him be crucified.</p>
+            <p><strong>24</strong> So when Pilate saw that he prevailed nothing, but rather that a tumult was arising, he took water, and washed his hands before the multitude, saying, I am innocent of the blood of this righteous man; see ye to it.</p>
+            <p><strong>25</strong> And all the people answered and said, His blood be on us, and on our children.</p>
+            <p><strong>26</strong> Then released he unto them Barabbas; but Jesus he scourged and delivered to be crucified.</p>
+            <p><strong>27</strong> Then the soldiers of the governor took Jesus into the Prætorium, and gathered unto him the whole band.</p>
+            <p><strong>28</strong> And they stripped him, and put on him a scarlet robe.</p>
+            <p><strong>29</strong> And they platted a crown of thorns and put it upon his head, and a reed in his right hand; and they kneeled down before him, and mocked him, saying, Hail, King of the Jews!</p>
+            <p><strong>30</strong> And they spat upon him, and took the reed and smote him on the head.</p>
+            <p><strong>31</strong> And when they had mocked him, they took off from him the robe, and put on him his garments, and led him away to crucify him.</p>
+            <p><strong>32</strong> And as they came out, they found a man of Cyrene, Simon by name: him they compelled to go with them, that he might bear his cross.</p>
+            <p><strong>33</strong> And when they were come unto a place called Golgotha, that is to say, The place of a skull,</p>
+            <p><strong>34</strong> they gave him wine to drink mingled with gall: and when he had tasted it, he would not drink.</p>
+            <p><strong>35</strong> And when they had crucified him, they parted his garments among them, casting lots;</p>
+            <p><strong>36</strong> and they sat and watched him there.</p>
+            <p><strong>37</strong> And they set up over his head his accusation written, THIS IS JESUS THE KING OF THE JEWS.</p>
+            <p><strong>38</strong> Then are there crucified with him two robbers, one on the right hand and one on the left.</p>
+            <p><strong>39</strong> And they that passed by railed on him, wagging their heads,</p>
+            <p><strong>40</strong> and saying, Thou that destroyest the temple, and buildest it in three days, save thyself: if thou art the Son of God, come down from the cross.</p>
+            <p><strong>41</strong> In like manner also the chief priests mocking him, with the scribes and elders, said,</p>
+            <p><strong>42</strong> He saved others; himself he cannot save. He is the King of Israel; let him now come down from the cross, and we will believe on him.</p>
+            <p><strong>43</strong> He trusteth on God; let him deliver him now, if he desireth him: for he said, I am the Son of God.</p>
+            <p><strong>44</strong> And the robbers also that were crucified with him cast upon him the same reproach.</p>
+            <p><strong>45</strong> Now from the sixth hour there was darkness over all the land until the ninth hour.</p>
+            <p><strong>46</strong> And about the ninth hour Jesus cried with a loud voice, saying, Eli, Eli, lama sabachthani? that is, My God, my God, why hast thou forsaken me?</p>
+            <p><strong>47</strong> And some of them that stood there, when they heard it, said, This man calleth Elijah.</p>
+            <p><strong>48</strong> And straightway one of them ran, and took a sponge, and filled it with vinegar, and put it on a reed, and gave him to drink.</p>
+            <p><strong>49</strong> And the rest said, Let be; let us see whether Elijah cometh to save him.</p>
+            <p><strong>50</strong> And Jesus cried again with a loud voice, and yielded up his spirit.</p>
+            <p><strong>51</strong> And behold, the veil of the temple was rent in two from the top to the bottom; and the earth did quake; and the rocks were rent;</p>
+            <p><strong>52</strong> and the tombs were opened; and many bodies of the saints that had fallen asleep were raised;</p>
+            <p><strong>53</strong> and coming forth out of the tombs after his resurrection they entered into the holy city and appeared unto many.</p>
+            <p><strong>54</strong> Now the centurion, and they that were with him watching Jesus, when they saw the earthquake, and the things that were done, feared exceedingly, saying, Truly this was the Son of God.</p>
+            <p><strong>55</strong> And many women were there beholding from afar, who had followed Jesus from Galilee, ministering unto him:</p>
+            <p><strong>56</strong> among whom was Mary Magdalene, and Mary the mother of James and Joses, and the mother of the sons of Zebedee.</p>
+            <p><strong>57</strong> And when even was come, there came a rich man from Arimathæa, named Joseph, who also himself was Jesus’ disciple:</p>
+            <p><strong>58</strong> this man went to Pilate, and asked for the body of Jesus. Then Pilate commanded it to be given up.</p>
+            <p><strong>59</strong> And Joseph took the body, and wrapped it in a clean linen cloth,</p>
+            <p><strong>60</strong> and laid it in his own new tomb, which he had hewn out in the rock: and he rolled a great stone to the door of the tomb, and departed.</p>
+            <p><strong>61</strong> And Mary Magdalene was there, and the other Mary, sitting over against the sepulchre.</p>
+            <p><strong>62</strong> Now on the morrow, which is the day after the Preparation, the chief priests and the Pharisees were gathered together unto Pilate,</p>
+            <p><strong>63</strong> saying, Sir, we remember that that deceiver said while he was yet alive, After three days I rise again.</p>
+            <p><strong>64</strong> Command therefore that the sepulchre be made sure until the third day, lest haply his disciples come and steal him away, and say unto the people, He is risen from the dead: and the last error will be worse than the first.</p>
+            <p><strong>65</strong> Pilate said unto them, Ye have a guard: go, make it as sure as ye can.</p>
+            <p><strong>66</strong> So they went, and made the sepulchre sure, sealing the stone, the guard being with them.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The chief priests hand Jesus over to Pilate. Judas, full of remorse, returns the silver and hangs himself. Pilate questions Jesus, who answers little, and tries to release him by offering the crowd a choice between Jesus and Barabbas. Stirred by the leaders, the crowd demands crucifixion, and Pilate washes his hands. Soldiers mock Jesus with a crown of thorns and a scarlet robe, then lead him to Golgotha, compelling Simon of Cyrene to carry his cross. They crucify him between two robbers under the charge, King of the Jews, and passersby mock him. Darkness falls from noon until three, and Jesus cries out and yields up his spirit. The temple veil tears in two, the earth quakes, and a centurion confesses he was the Son of God. Joseph of Arimathaea buries him in his own new tomb, which the leaders seal and guard.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The righteous King who is condemned, mocked, and crucified, and who yields up his spirit for sinners.</li>
+          <li><strong>Pontius Pilate</strong> — The governor who finds no evil in Jesus yet washes his hands and hands him over to be crucified.</li>
+          <li><strong>Barabbas</strong> — The notable prisoner released in Jesus' place at the crowd's demand.</li>
+          <li><strong>Simon of Cyrene</strong> — The bystander compelled to carry Jesus' cross on the way to Golgotha.</li>
+          <li><strong>Joseph of Arimathaea</strong> — A rich disciple who asks for Jesus' body and lays it in his own new tomb.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 27:54 (WEB)</p>
+          <p class="verse__text">Now the centurion, and those who were with him watching Jesus, when they saw the earthquake, and the things that were done, feared exceedingly, saying, “Truly this was the Son of God.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus dies as the innocent in the place of the guilty, just as Barabbas goes free.</li>
+          <li>The torn veil shows that Christ's death opens the way into God's presence.</li>
+          <li>Even hardened soldiers and a Roman centurion are confronted with the truth of who Jesus is.</li>
+          <li>God's saving purpose is fulfilled even through human injustice and cruelty.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-27">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-27">
+            <ul class="lesson-list">
+            <li><strong>The innocent dies so the guilty go free.</strong> Barabbas is released while Jesus, in whom Pilate finds no evil, is delivered to be crucified (Matthew 27:26, WEB).</li>
+            <li><strong>Jesus bears mockery for our sake.</strong> Soldiers crown him with thorns and hail him as King of the Jews in scorn (Matthew 27:29, WEB).</li>
+            <li><strong>On the cross Jesus enters the depths of forsakenness.</strong> He cries out, 'My God, my God, why have you forsaken me?' (Matthew 27:46, WEB).</li>
+            <li><strong>Christ's death opens the way to God.</strong> At the moment he yields up his spirit, the veil of the temple is torn in two from top to bottom (Matthew 27:50-51, WEB).</li>
+            <li><strong>The cross reveals Jesus' true identity.</strong> The centurion and his companions confess, 'Truly this was the Son of God' (Matthew 27:54, WEB).</li>
+            <li><strong>Faithful disciples honor Jesus even in death.</strong> Joseph of Arimathaea boldly asks for the body and lays it in his own new tomb (Matthew 27:57-60, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-27">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-27">
+            <ol class="study-questions">
+            <li>Why is it significant that Barabbas, a guilty prisoner, goes free while the innocent Jesus is crucified?</li>
+            <li>What does Pilate's hand-washing reveal about the danger of avoiding moral responsibility?</li>
+            <li>What is the meaning of the temple veil tearing in two at the moment Jesus dies?</li>
+            <li>The centurion confessed 'Truly this was the Son of God'; what moves you most as you consider the cross?</li>
+            <li>How does Jesus' silence before his accusers challenge the way you respond when treated unjustly?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-27">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-27">
+            <ol class="study-questions">
+            <li>The release of the guilty Barabbas while the innocent Jesus is condemned pictures the gospel itself: Christ takes the place of sinners so that they may go free (Matthew 27:26).</li>
+            <li>Pilate knows Jesus is righteous yet washes his hands to escape blame; the passage warns that we cannot wash away responsibility by passing it to others (Matthew 27:24).</li>
+            <li>The torn veil signals that the barrier between God and people is removed through Christ's death; access to God's presence is now opened by his sacrifice (Matthew 27:51).</li>
+            <li>This is a personal-application question. Encourage reflective, worshipful sharing; there is no wrong answer, and the goal is to let the group dwell on the cross together (Matthew 27:54).</li>
+            <li>This is a personal-application question. Invite honest reflection on injustice and self-defense; point to Jesus' trust in the Father rather than retaliation as the model (Matthew 27:12-14).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-26.html">← Matthew 26</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-28.html">Matthew 28 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

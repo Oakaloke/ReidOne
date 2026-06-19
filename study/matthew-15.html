@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 15: The Heart and the Crumbs — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 15: Jesus exposes hollow tradition, honors a Gentile woman's bold faith, and feeds a hungry multitude again." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 15</span>
+        <h1>Matthew 15: The Heart and the Crumbs</h1>
+        <p class="lead">Jesus exposes hollow tradition, honors a Gentile woman's bold faith, and feeds a hungry multitude again.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — Matthew Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 15 (WEB)</p>
+            <p><strong>1</strong> Then Pharisees and scribes came to Jesus from Jerusalem, saying,</p>
+            <p><strong>2</strong> “Why do your disciples disobey the tradition of the elders? For they don’t wash their hands when they eat bread.”</p>
+            <p><strong>3</strong> He answered them, “Why do you also disobey the commandment of God because of your tradition?</p>
+            <p><strong>4</strong> For God commanded, ‘Honor your father and your mother,’and, ‘He who speaks evil of father or mother, let him be put to death.’</p>
+            <p><strong>5</strong> But you say, ‘Whoever may tell his father or his mother, “Whatever help you might otherwise have gotten from me is a gift devoted to God,”</p>
+            <p><strong>6</strong> he shall not honor his father or mother.’ You have made the commandment of God void because of your tradition.</p>
+            <p><strong>7</strong> You hypocrites! Well did Isaiah prophesy of you, saying,</p>
+            <p><strong>8</strong> ‘These people draw near to me with their mouth, and honor me with their lips; but their heart is far from me.</p>
+            <p><strong>9</strong> And in vain do they worship me, teaching as doctrine rules made by men.’”</p>
+            <p><strong>10</strong> He summoned the multitude, and said to them, “Hear, and understand.</p>
+            <p><strong>11</strong> That which enters into the mouth doesn’t defile the man; but that which proceeds out of the mouth, this defiles the man.”</p>
+            <p><strong>12</strong> Then the disciples came, and said to him, “Do you know that the Pharisees were offended, when they heard this saying?”</p>
+            <p><strong>13</strong> But he answered, “Every plant which my heavenly Father didn’t plant will be uprooted.</p>
+            <p><strong>14</strong> Leave them alone. They are blind guides of the blind. If the blind guide the blind, both will fall into a pit.”</p>
+            <p><strong>15</strong> Peter answered him, “Explain the parable to us.”</p>
+            <p><strong>16</strong> So Jesus said, “Do you also still not understand?</p>
+            <p><strong>17</strong> Don’t you understand that whatever goes into the mouth passes into the belly, and then out of the body?</p>
+            <p><strong>18</strong> But the things which proceed out of the mouth come out of the heart, and they defile the man.</p>
+            <p><strong>19</strong> For out of the heart come evil thoughts, murders, adulteries, sexual sins, thefts, false testimony, and blasphemies.</p>
+            <p><strong>20</strong> These are the things which defile the man; but to eat with unwashed hands doesn’t defile the man.”</p>
+            <p><strong>21</strong> Jesus went out from there, and withdrew into the region of Tyre and Sidon.</p>
+            <p><strong>22</strong> Behold, a Canaanite woman came out from those borders, and cried, saying, “Have mercy on me, Lord, you son of David! My daughter is severely possessed by a demon!”</p>
+            <p><strong>23</strong> But he answered her not a word.   His disciples came and begged him, saying, “Send her away; for she cries after us.”</p>
+            <p><strong>24</strong> But he answered, “I wasn’t sent to anyone but the lost sheep of the house of Israel.”</p>
+            <p><strong>25</strong> But she came and worshiped him, saying, “Lord, help me.”</p>
+            <p><strong>26</strong> But he answered, “It is not appropriate to take the children’s bread and throw it to the dogs.”</p>
+            <p><strong>27</strong> But she said, “Yes, Lord, but even the dogs eat the crumbs which fall from their masters’ table.”</p>
+            <p><strong>28</strong> Then Jesus answered her, “Woman, great is your faith! Be it done to you even as you desire.” And her daughter was healed from that hour.</p>
+            <p><strong>29</strong> Jesus departed there, and came near to the sea of Galilee; and he went up into the mountain, and sat there.</p>
+            <p><strong>30</strong> Great multitudes came to him, having with them the lame, blind, mute, maimed, and many others, and they put them down at his feet. He healed them,</p>
+            <p><strong>31</strong> so that the multitude wondered when they saw the mute speaking, injured whole, lame walking, and blind seeing—and they glorified the God of Israel.</p>
+            <p><strong>32</strong> Jesus summoned his disciples and said, “I have compassion on the multitude, because they continue with me now three days and have nothing to eat. I don’t want to send them away fasting, or they might faint on the way.”</p>
+            <p><strong>33</strong> The disciples said to him, “Where should we get so many loaves in a deserted place as to satisfy so great a multitude?”</p>
+            <p><strong>34</strong> Jesus said to them, “How many loaves do you have?”   They said, “Seven, and a few small fish.”</p>
+            <p><strong>35</strong> He commanded the multitude to sit down on the ground;</p>
+            <p><strong>36</strong> and he took the seven loaves and the fish. He gave thanks and broke them, and gave to the disciples, and the disciples to the multitudes.</p>
+            <p><strong>37</strong> They all ate, and were filled. They took up seven baskets full of the broken pieces that were left over.</p>
+            <p><strong>38</strong> Those who ate were four thousand men, besides women and children.</p>
+            <p><strong>39</strong> Then he sent away the multitudes, got into the boat, and came into the borders of Magdala.</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 15 (KJV)</p>
+            <p><strong>1</strong> Then came to Jesus scribes and Pharisees, which were of Jerusalem, saying,</p>
+            <p><strong>2</strong> Why do thy disciples transgress the tradition of the elders? for they wash not their hands when they eat bread.</p>
+            <p><strong>3</strong> But he answered and said unto them, Why do ye also transgress the commandment of God by your tradition?</p>
+            <p><strong>4</strong> For God commanded, saying, Honour thy father and mother: and, He that curseth father or mother, let him die the death.</p>
+            <p><strong>5</strong> But ye say, Whosoever shall say to his father or his mother, It is a gift, by whatsoever thou mightest be profited by me;</p>
+            <p><strong>6</strong> And honour not his father or his mother, he shall be free. Thus have ye made the commandment of God of none effect by your tradition.</p>
+            <p><strong>7</strong> Ye hypocrites, well did Esaias prophesy of you, saying,</p>
+            <p><strong>8</strong> This people draweth nigh unto me with their mouth, and honoureth me with their lips; but their heart is far from me.</p>
+            <p><strong>9</strong> But in vain they do worship me, teaching for doctrines the commandments of men.</p>
+            <p><strong>10</strong> And he called the multitude, and said unto them, Hear, and understand:</p>
+            <p><strong>11</strong> Not that which goeth into the mouth defileth a man; but that which cometh out of the mouth, this defileth a man.</p>
+            <p><strong>12</strong> Then came his disciples, and said unto him, Knowest thou that the Pharisees were offended, after they heard this saying?</p>
+            <p><strong>13</strong> But he answered and said, Every plant, which my heavenly Father hath not planted, shall be rooted up.</p>
+            <p><strong>14</strong> Let them alone: they be blind leaders of the blind. And if the blind lead the blind, both shall fall into the ditch.</p>
+            <p><strong>15</strong> Then answered Peter and said unto him, Declare unto us this parable.</p>
+            <p><strong>16</strong> And Jesus said, Are ye also yet without understanding?</p>
+            <p><strong>17</strong> Do not ye yet understand, that whatsoever entereth in at the mouth goeth into the belly, and is cast out into the draught?</p>
+            <p><strong>18</strong> But those things which proceed out of the mouth come forth from the heart; and they defile the man.</p>
+            <p><strong>19</strong> For out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, blasphemies:</p>
+            <p><strong>20</strong> These are the things which defile a man: but to eat with unwashen hands defileth not a man.</p>
+            <p><strong>21</strong> Then Jesus went thence, and departed into the coasts of Tyre and Sidon.</p>
+            <p><strong>22</strong> And, behold, a woman of Canaan came out of the same coasts, and cried unto him, saying, Have mercy on me, O Lord, thou Son of David; my daughter is grievously vexed with a devil.</p>
+            <p><strong>23</strong> But he answered her not a word. And his disciples came and besought him, saying, Send her away; for she crieth after us.</p>
+            <p><strong>24</strong> But he answered and said, I am not sent but unto the lost sheep of the house of Israel.</p>
+            <p><strong>25</strong> Then came she and worshipped him, saying, Lord, help me.</p>
+            <p><strong>26</strong> But he answered and said, It is not meet to take the children’s bread, and to cast it to dogs.</p>
+            <p><strong>27</strong> And she said, Truth, Lord: yet the dogs eat of the crumbs which fall from their masters’ table.</p>
+            <p><strong>28</strong> Then Jesus answered and said unto her, O woman, great is thy faith: be it unto thee even as thou wilt. And her daughter was made whole from that very hour.</p>
+            <p><strong>29</strong> And Jesus departed from thence, and came nigh unto the sea of Galilee; and went up into a mountain, and sat down there.</p>
+            <p><strong>30</strong> And great multitudes came unto him, having with them those that were lame, blind, dumb, maimed, and many others, and cast them down at Jesus’ feet; and he healed them:</p>
+            <p><strong>31</strong> Insomuch that the multitude wondered, when they saw the dumb to speak, the maimed to be whole, the lame to walk, and the blind to see: and they glorified the God of Israel.</p>
+            <p><strong>32</strong> Then Jesus called his disciples unto him, and said, I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way.</p>
+            <p><strong>33</strong> And his disciples say unto him, Whence should we have so much bread in the wilderness, as to fill so great a multitude?</p>
+            <p><strong>34</strong> And Jesus saith unto them, How many loaves have ye? And they said, Seven, and a few little fishes.</p>
+            <p><strong>35</strong> And he commanded the multitude to sit down on the ground.</p>
+            <p><strong>36</strong> And he took the seven loaves and the fishes, and gave thanks, and brake them, and gave to his disciples, and the disciples to the multitude.</p>
+            <p><strong>37</strong> And they did all eat, and were filled: and they took up of the broken meat that was left seven baskets full.</p>
+            <p><strong>38</strong> And they that did eat were four thousand men, beside women and children.</p>
+            <p><strong>39</strong> And he sent away the multitude, and took ship, and came into the coasts of Magdala.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 15 (ASV)</p>
+            <p><strong>1</strong> Then there come to Jesus from Jerusalem Pharisees and scribes, saying,</p>
+            <p><strong>2</strong> Why do thy disciples transgress the tradition of the elders? for they wash not their hands when they eat bread.</p>
+            <p><strong>3</strong> And he answered and said unto them, Why do ye also transgress the commandment of God because of your tradition?</p>
+            <p><strong>4</strong> For God said, Honor thy father and thy mother: and, He that speaketh evil of father or mother, let him die the death.</p>
+            <p><strong>5</strong> But ye say, Whosoever shall say to his father or his mother, That wherewith thou mightest have been profited by me is given to God;</p>
+            <p><strong>6</strong> he shall not honor his father. And ye have made void the word of God because of your tradition.</p>
+            <p><strong>7</strong> Ye hypocrites, well did Isaiah prophesy of you, saying,</p>
+            <p><strong>8</strong> This people honoreth me with their lips; But their heart is far from me.</p>
+            <p><strong>9</strong> But in vain do they worship me, Teachingas theirdoctrines the precepts of men.</p>
+            <p><strong>10</strong> And he called to him the multitude, and said unto them, Hear, and understand:</p>
+            <p><strong>11</strong> Not that which entereth into the mouth defileth the man; but that which proceedeth out of the mouth, this defileth the man.</p>
+            <p><strong>12</strong> Then came the disciples, and said unto him, Knowest thou that the Pharisees were offended, when they heard this saying?</p>
+            <p><strong>13</strong> But he answered and said, Every plant which my heavenly Father planted not, shall be rooted up.</p>
+            <p><strong>14</strong> Let them alone: they are blind guides. And if the blind guide the blind, both shall fall into a pit.</p>
+            <p><strong>15</strong> And Peter answered and said unto him, Declare unto us the parable.</p>
+            <p><strong>16</strong> And he said, Are ye also even yet without understanding?</p>
+            <p><strong>17</strong> Perceive ye not, that whatsoever goeth into the mouth passeth into the belly, and is cast out into the draught?</p>
+            <p><strong>18</strong> But the things which proceed out of the mouth come forth out of the heart; and they defile the man.</p>
+            <p><strong>19</strong> For out of the heart come forth evil thoughts, murders, adulteries, fornications, thefts, false witness, railings:</p>
+            <p><strong>20</strong> these are the things which defile the man; but to eat with unwashen hands defileth not the man.</p>
+            <p><strong>21</strong> And Jesus went out thence, and withdrew into the parts of Tyre and Sidon.</p>
+            <p><strong>22</strong> And behold, a Canaanitish woman came out from those borders, and cried, saying, Have mercy on me, O Lord, thou son of David; my daughter is grievously vexed with a demon.</p>
+            <p><strong>23</strong> But he answered her not a word. And his disciples came and besought him, saying, Send her away; for she crieth after us.</p>
+            <p><strong>24</strong> But he answered and said, I was not sent but unto the lost sheep of the house of Israel.</p>
+            <p><strong>25</strong> But she came and worshipped him, saying, Lord, help me.</p>
+            <p><strong>26</strong> And he answered and said, It is not meet to take the children’s bread and cast it to the dogs.</p>
+            <p><strong>27</strong> But she said, Yea, Lord: for even the dogs eat of the crumbs which fall from their masters’ table.</p>
+            <p><strong>28</strong> Then Jesus answered and said unto her, O woman, great is thy faith: be it done unto thee even as thou wilt. And her daughter was healed from that hour.</p>
+            <p><strong>29</strong> And Jesus departed thence, and came nigh unto the sea of Galilee; and he went up into the mountain, and sat there.</p>
+            <p><strong>30</strong> And there came unto him great multitudes, having with them the lame, blind, dumb, maimed, and many others, and they cast them down at his feet; and he healed them:</p>
+            <p><strong>31</strong> insomuch that the multitude wondered, when they saw the dumb speaking, the maimed whole, and the lame walking, and the blind seeing: and they glorified the God of Israel.</p>
+            <p><strong>32</strong> And Jesus called unto him his disciples, and said, I have compassion on the multitude, because they continue with me now three days and have nothing to eat: and I would not send them away fasting, lest haply they faint on the way.</p>
+            <p><strong>33</strong> And the disciples say unto him, Whence should we have so many loaves in a desert place as to fill so great a multitude?</p>
+            <p><strong>34</strong> And Jesus said unto them, How many loaves have ye? And they said, Seven, and a few small fishes.</p>
+            <p><strong>35</strong> And he commanded the multitude to sit down on the ground;</p>
+            <p><strong>36</strong> and he took the seven loaves and the fishes; and he gave thanks and brake, and gave to the disciples, and the disciples to the multitudes.</p>
+            <p><strong>37</strong> And they all ate, and were filled: and they took up that which remained over of the broken pieces, seven baskets full.</p>
+            <p><strong>38</strong> And they that did eat were four thousand men, besides women and children.</p>
+            <p><strong>39</strong> And he sent away the multitudes, and entered into the boat, and came into the borders of Magadan.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Pharisees and scribes from Jerusalem challenge Jesus because his disciples do not keep the tradition of handwashing. Jesus answers that they nullify God's command for the sake of their tradition and quotes Isaiah against worship that is all lips and no heart. He teaches the crowd that defilement comes not from what enters the mouth but from what proceeds out of the heart. Withdrawing toward Tyre and Sidon, he meets a Canaanite woman pleading for her demon-possessed daughter. Through a testing exchange about children's bread and crumbs, she answers with humble, persistent faith, and Jesus praises her and heals her daughter. Returning to Galilee, he heals the lame, blind, mute, and maimed, and the crowd glorifies the God of Israel. With compassion on a multitude who have been with him three days, he feeds four thousand men from seven loaves and a few fish, with seven baskets left over.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord who exposes empty tradition, commends great faith, and feeds and heals the multitudes with compassion.</li>
+          <li><strong>The Pharisees and scribes</strong> — Religious leaders from Jerusalem who prize their traditions above God's commandment and are called hypocrites.</li>
+          <li><strong>The Canaanite woman</strong> — A Gentile mother whose humble, persistent faith for her daughter Jesus praises and rewards with healing.</li>
+          <li><strong>The disciples</strong> — Followers who urge Jesus to send the woman away and wonder how to feed so great a crowd.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 15:28 (WEB)</p>
+          <p class="verse__text">Then Jesus answered her, “Woman, great is your faith! Be it done to you even as you desire.” And her daughter was healed from that hour.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God looks at the heart; outward religion without inward love is empty worship.</li>
+          <li>Human traditions must never be allowed to set aside the clear commands of God.</li>
+          <li>True defilement comes from within, from the sins that proceed out of the heart.</li>
+          <li>Humble, persistent faith honors Christ, and he delights to answer it, even from unlikely people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Worship that honors God comes from the heart, not just the lips.</strong> Jesus warns of those who 'honor me with their lips; but their heart is far from me' (Matthew 15:8, WEB).</li>
+            <li><strong>No tradition may be allowed to void God's command.</strong> 'You have made the commandment of God void because of your tradition' (Matthew 15:6, WEB).</li>
+            <li><strong>Sin's source is the human heart.</strong> 'The things which proceed out of the mouth come out of the heart, and they defile the man' (Matthew 15:18, WEB).</li>
+            <li><strong>Humble faith persists even when answers seem delayed.</strong> The woman came and worshiped him, saying, 'Lord, help me' (Matthew 15:25, WEB).</li>
+            <li><strong>Christ delights in and rewards great faith.</strong> 'Woman, great is your faith! Be it done to you even as you desire' (Matthew 15:28, WEB).</li>
+            <li><strong>Jesus has compassion on the hungry and provides for them.</strong> 'I have compassion on the multitude... I don't want to send them away fasting' (Matthew 15:32, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>How do the Pharisees and scribes use tradition to set aside God's command, according to Jesus (Matthew 15:3-6)?</li>
+            <li>Where does Jesus say true defilement comes from, and what does this teach about the heart (Matthew 15:18-20)?</li>
+            <li>How does the Canaanite woman respond to Jesus' testing words, and what does Jesus say about her faith (Matthew 15:25-28)?</li>
+            <li>How is the feeding of the four thousand similar to and different from the earlier feeding of the crowd (Matthew 15:32-38)?</li>
+            <li>Are there ways your own worship can become 'lips far from the heart,' and what would it look like to draw near to God in heart again?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>They teach that a gift devoted to God excuses a person from honoring and helping father and mother (15:5-6). By exalting their tradition they actually break the commandment to honor parents, making God's word void and exposing their hypocrisy (15:3-9).</li>
+            <li>Jesus says defilement comes not from unwashed hands or food but from the heart, out of which come evil thoughts, murders, adulteries, thefts, false testimony, and blasphemies (15:18-19). The real problem is internal, not ceremonial, and only a changed heart cleanses a person.</li>
+            <li>Though Jesus first answers her not a word and speaks of children's bread and dogs, she humbly persists, saying even the dogs eat the crumbs from the table (15:25-27). Jesus marvels, 'Woman, great is your faith,' and heals her daughter that very hour (15:28).</li>
+            <li>Both show Jesus' compassion feeding a hungry crowd with a few loaves and fish, with baskets left over. Here he uses seven loaves and a few fish to feed four thousand men besides women and children, with seven baskets remaining (15:34-38), while earlier five loaves fed five thousand with twelve baskets. His abundant provision is consistent.</li>
+            <li>This is a personal application question. Invite members to examine where routine or appearances may have replaced heartfelt love for God, without inviting self-condemnation. As leader, encourage practical steps toward sincerity in prayer and worship, and remind the group that God welcomes the returning heart.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-14.html">← Matthew 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-16.html">Matthew 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

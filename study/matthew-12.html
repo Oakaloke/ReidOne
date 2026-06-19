@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 12: Lord of the Sabbath — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 12: Jesus shows himself Lord of the Sabbath, confronts hardened critics, and names his true family." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 12
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 12</span>
+        <h1>Matthew 12: Lord of the Sabbath</h1>
+        <p class="lead">Jesus shows himself Lord of the Sabbath, confronts hardened critics, and names his true family.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-12">
+            <span>Scripture — Matthew Chapter 12</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-12">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-12-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-12-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-12-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-12-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 12 (WEB)</p>
+            <p><strong>1</strong> At that time, Jesus went on the Sabbath day through the grain fields. His disciples were hungry and began to pluck heads of grain and to eat.</p>
+            <p><strong>2</strong> But the Pharisees, when they saw it, said to him, “Behold, your disciples do what is not lawful to do on the Sabbath.”</p>
+            <p><strong>3</strong> But he said to them, “Haven’t you read what David did, when he was hungry, and those who were with him;</p>
+            <p><strong>4</strong> how he entered into God’s house, and ate the show bread, which was not lawful for him to eat, neither for those who were with him, but only for the priests?</p>
+            <p><strong>5</strong> Or have you not read in the law, that on the Sabbath day, the priests in the temple profane the Sabbath, and are guiltless?</p>
+            <p><strong>6</strong> But I tell you that one greater than the temple is here.</p>
+            <p><strong>7</strong> But if you had known what this means, ‘I desire mercy, and not sacrifice,’you would not have condemned the guiltless.</p>
+            <p><strong>8</strong> For the Son of Man is Lord of the Sabbath.”</p>
+            <p><strong>9</strong> He departed there, and went into their synagogue.</p>
+            <p><strong>10</strong> And behold there was a man with a withered hand. They asked him, “Is it lawful to heal on the Sabbath day?” that they might accuse him.</p>
+            <p><strong>11</strong> He said to them, “What man is there among you, who has one sheep, and if this one falls into a pit on the Sabbath day, won’t he grab on to it, and lift it out?</p>
+            <p><strong>12</strong> Of how much more value then is a man than a sheep! Therefore it is lawful to do good on the Sabbath day.”</p>
+            <p><strong>13</strong> Then he told the man, “Stretch out your hand.” He stretched it out; and it was restored whole, just like the other.</p>
+            <p><strong>14</strong> But the Pharisees went out, and conspired against him, how they might destroy him.</p>
+            <p><strong>15</strong> Jesus, perceiving that, withdrew from there. Great multitudes followed him; and he healed them all,</p>
+            <p><strong>16</strong> and commanded them that they should not make him known:</p>
+            <p><strong>17</strong> that it might be fulfilled which was spoken through Isaiah the prophet, saying,</p>
+            <p><strong>18</strong> “Behold, my servant whom I have chosen; my beloved in whom my soul is well pleased: I will put my Spirit on him. He will proclaim justice to the nations.</p>
+            <p><strong>19</strong> He will not strive, nor shout; neither will anyone hear his voice in the streets.</p>
+            <p><strong>20</strong> He won’t break a bruised reed. He won’t quench a smoking flax, until he leads justice to victory.</p>
+            <p><strong>21</strong> In his name, the nations will hope.”</p>
+            <p><strong>22</strong> Then one possessed by a demon, blind and mute, was brought to him and he healed him, so that the blind and mute man both spoke and saw.</p>
+            <p><strong>23</strong> All the multitudes were amazed, and said, “Can this be the son of David?”</p>
+            <p><strong>24</strong> But when the Pharisees heard it, they said, “This man does not cast out demons, except by Beelzebul, the prince of the demons.”</p>
+            <p><strong>25</strong> Knowing their thoughts, Jesus said to them, “Every kingdom divided against itself is brought to desolation, and every city or house divided against itself will not stand.</p>
+            <p><strong>26</strong> If Satan casts out Satan, he is divided against himself. How then will his kingdom stand?</p>
+            <p><strong>27</strong> If I by Beelzebul cast out demons, by whom do your children cast them out? Therefore they will be your judges.</p>
+            <p><strong>28</strong> But if I by the Spirit of God cast out demons, then the Kingdom of God has come upon you.</p>
+            <p><strong>29</strong> Or how can one enter into the house of the strong man, and plunder his goods, unless he first bind the strong man? Then he will plunder his house.</p>
+            <p><strong>30</strong> “He who is not with me is against me, and he who doesn’t gather with me, scatters.</p>
+            <p><strong>31</strong> Therefore I tell you, every sin and blasphemy will be forgiven men, but the blasphemy against the Spirit will not be forgiven men.</p>
+            <p><strong>32</strong> Whoever speaks a word against the Son of Man, it will be forgiven him; but whoever speaks against the Holy Spirit, it will not be forgiven him, neither in this age, nor in that which is to come.</p>
+            <p><strong>33</strong> “Either make the tree good, and its fruit good, or make the tree corrupt, and its fruit corrupt; for the tree is known by its fruit.</p>
+            <p><strong>34</strong> You offspring of vipers, how can you, being evil, speak good things? For out of the abundance of the heart, the mouth speaks.</p>
+            <p><strong>35</strong> The good man out of his good treasure brings out good things, and the evil man out of his evil treasure brings out evil things.</p>
+            <p><strong>36</strong> I tell you that every idle word that men speak, they will give account of it in the day of judgment.</p>
+            <p><strong>37</strong> For by your words you will be justified, and by your words you will be condemned.”</p>
+            <p><strong>38</strong> Then certain of the scribes and Pharisees answered, “Teacher, we want to see a sign from you.”</p>
+            <p><strong>39</strong> But he answered them, “An evil and adulterous generation seeks after a sign, but no sign will be given it but the sign of Jonah the prophet.</p>
+            <p><strong>40</strong> For as Jonah was three days and three nights in the belly of the whale, so will the Son of Man be three days and three nights in the heart of the earth.</p>
+            <p><strong>41</strong> The men of Nineveh will stand up in the judgment with this generation, and will condemn it, for they repented at the preaching of Jonah; and behold, someone greater than Jonah is here.</p>
+            <p><strong>42</strong> The queen of the south will rise up in the judgment with this generation, and will condemn it, for she came from the ends of the earth to hear the wisdom of Solomon; and behold, someone greater than Solomon is here.</p>
+            <p><strong>43</strong> But the unclean spirit, when he is gone out of the man, passes through waterless places, seeking rest, and doesn’t find it.</p>
+            <p><strong>44</strong> Then he says, ‘I will return into my house from which I came out,’ and when he has come back, he finds it empty, swept, and put in order.</p>
+            <p><strong>45</strong> Then he goes, and takes with himself seven other spirits more evil than he is, and they enter in and dwell there. The last state of that man becomes worse than the first. Even so will it be also to this evil generation.”</p>
+            <p><strong>46</strong> While he was yet speaking to the multitudes, behold, his mother and his brothers stood outside, seeking to speak to him.</p>
+            <p><strong>47</strong> One said to him, “Behold, your mother and your brothers stand outside, seeking to speak to you.”</p>
+            <p><strong>48</strong> But he answered him who spoke to him, “Who is my mother? Who are my brothers?”</p>
+            <p><strong>49</strong> He stretched out his hand towards his disciples, and said, “Behold, my mother and my brothers!</p>
+            <p><strong>50</strong> For whoever does the will of my Father who is in heaven, he is my brother, and sister, and mother.”</p>
+            </div>
+            <div class="scripture-text" id="web-12-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 12 (KJV)</p>
+            <p><strong>1</strong> At that time Jesus went on the sabbath day through the corn; and his disciples were an hungred, and began to pluck the ears of corn, and to eat.</p>
+            <p><strong>2</strong> But when the Pharisees saw it, they said unto him, Behold, thy disciples do that which is not lawful to do upon the sabbath day.</p>
+            <p><strong>3</strong> But he said unto them, Have ye not read what David did, when he was an hungred, and they that were with him;</p>
+            <p><strong>4</strong> How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests?</p>
+            <p><strong>5</strong> Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless?</p>
+            <p><strong>6</strong> But I say unto you, That in this place is one greater than the temple.</p>
+            <p><strong>7</strong> But if ye had known what this meaneth, I will have mercy, and not sacrifice, ye would not have condemned the guiltless.</p>
+            <p><strong>8</strong> For the Son of man is Lord even of the sabbath day.</p>
+            <p><strong>9</strong> And when he was departed thence, he went into their synagogue:</p>
+            <p><strong>10</strong> And, behold, there was a man which had his hand withered. And they asked him, saying, Is it lawful to heal on the sabbath days? that they might accuse him.</p>
+            <p><strong>11</strong> And he said unto them, What man shall there be among you, that shall have one sheep, and if it fall into a pit on the sabbath day, will he not lay hold on it, and lift it out?</p>
+            <p><strong>12</strong> How much then is a man better than a sheep? Wherefore it is lawful to do well on the sabbath days.</p>
+            <p><strong>13</strong> Then saith he to the man, Stretch forth thine hand. And he stretched it forth; and it was restored whole, like as the other.</p>
+            <p><strong>14</strong> Then the Pharisees went out, and held a council against him, how they might destroy him.</p>
+            <p><strong>15</strong> But when Jesus knew it, he withdrew himself from thence: and great multitudes followed him, and he healed them all;</p>
+            <p><strong>16</strong> And charged them that they should not make him known:</p>
+            <p><strong>17</strong> That it might be fulfilled which was spoken by Esaias the prophet, saying,</p>
+            <p><strong>18</strong> Behold my servant, whom I have chosen; my beloved, in whom my soul is well pleased: I will put my spirit upon him, and he shall shew judgment to the Gentiles.</p>
+            <p><strong>19</strong> He shall not strive, nor cry; neither shall any man hear his voice in the streets.</p>
+            <p><strong>20</strong> A bruised reed shall he not break, and smoking flax shall he not quench, till he send forth judgment unto victory.</p>
+            <p><strong>21</strong> And in his name shall the Gentiles trust.</p>
+            <p><strong>22</strong> Then was brought unto him one possessed with a devil, blind, and dumb: and he healed him, insomuch that the blind and dumb both spake and saw.</p>
+            <p><strong>23</strong> And all the people were amazed, and said, Is not this the son of David?</p>
+            <p><strong>24</strong> But when the Pharisees heard it, they said, This fellow doth not cast out devils, but by Beelzebub the prince of the devils.</p>
+            <p><strong>25</strong> And Jesus knew their thoughts, and said unto them, Every kingdom divided against itself is brought to desolation; and every city or house divided against itself shall not stand:</p>
+            <p><strong>26</strong> And if Satan cast out Satan, he is divided against himself; how shall then his kingdom stand?</p>
+            <p><strong>27</strong> And if I by Beelzebub cast out devils, by whom do your children cast them out? therefore they shall be your judges.</p>
+            <p><strong>28</strong> But if I cast out devils by the Spirit of God, then the kingdom of God is come unto you.</p>
+            <p><strong>29</strong> Or else how can one enter into a strong man’s house, and spoil his goods, except he first bind the strong man? and then he will spoil his house.</p>
+            <p><strong>30</strong> He that is not with me is against me; and he that gathereth not with me scattereth abroad.</p>
+            <p><strong>31</strong> Wherefore I say unto you, All manner of sin and blasphemy shall be forgiven unto men: but the blasphemy against the Holy Ghost shall not be forgiven unto men.</p>
+            <p><strong>32</strong> And whosoever speaketh a word against the Son of man, it shall be forgiven him: but whosoever speaketh against the Holy Ghost, it shall not be forgiven him, neither in this world, neither in the world to come.</p>
+            <p><strong>33</strong> Either make the tree good, and his fruit good; or else make the tree corrupt, and his fruit corrupt: for the tree is known by his fruit.</p>
+            <p><strong>34</strong> O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh.</p>
+            <p><strong>35</strong> A good man out of the good treasure of the heart bringeth forth good things: and an evil man out of the evil treasure bringeth forth evil things.</p>
+            <p><strong>36</strong> But I say unto you, That every idle word that men shall speak, they shall give account thereof in the day of judgment.</p>
+            <p><strong>37</strong> For by thy words thou shalt be justified, and by thy words thou shalt be condemned.</p>
+            <p><strong>38</strong> Then certain of the scribes and of the Pharisees answered, saying, Master, we would see a sign from thee.</p>
+            <p><strong>39</strong> But he answered and said unto them, An evil and adulterous generation seeketh after a sign; and there shall no sign be given to it, but the sign of the prophet Jonas:</p>
+            <p><strong>40</strong> For as Jonas was three days and three nights in the whale’s belly; so shall the Son of man be three days and three nights in the heart of the earth.</p>
+            <p><strong>41</strong> The men of Nineveh shall rise in judgment with this generation, and shall condemn it: because they repented at the preaching of Jonas; and, behold, a greater than Jonas is here.</p>
+            <p><strong>42</strong> The queen of the south shall rise up in the judgment with this generation, and shall condemn it: for she came from the uttermost parts of the earth to hear the wisdom of Solomon; and, behold, a greater than Solomon is here.</p>
+            <p><strong>43</strong> When the unclean spirit is gone out of a man, he walketh through dry places, seeking rest, and findeth none.</p>
+            <p><strong>44</strong> Then he saith, I will return into my house from whence I came out; and when he is come, he findeth it empty, swept, and garnished.</p>
+            <p><strong>45</strong> Then goeth he, and taketh with himself seven other spirits more wicked than himself, and they enter in and dwell there: and the last state of that man is worse than the first. Even so shall it be also unto this wicked generation.</p>
+            <p><strong>46</strong> While he yet talked to the people, behold, his mother and his brethren stood without, desiring to speak with him.</p>
+            <p><strong>47</strong> Then one said unto him, Behold, thy mother and thy brethren stand without, desiring to speak with thee.</p>
+            <p><strong>48</strong> But he answered and said unto him that told him, Who is my mother? and who are my brethren?</p>
+            <p><strong>49</strong> And he stretched forth his hand toward his disciples, and said, Behold my mother and my brethren!</p>
+            <p><strong>50</strong> For whosoever shall do the will of my Father which is in heaven, the same is my brother, and sister, and mother.</p>
+            </div>
+            <div class="scripture-text" id="web-12-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 12 (ASV)</p>
+            <p><strong>1</strong> At that season Jesus went on the sabbath day through the grainfields; and his disciples were hungry and began to pluck ears and to eat.</p>
+            <p><strong>2</strong> But the Pharisees, when they saw it, said unto him, Behold, thy disciples do that which it is not lawful to do upon the sabbath.</p>
+            <p><strong>3</strong> But he said unto them, Have ye not read what David did, when he was hungry, and they that were with him;</p>
+            <p><strong>4</strong> how he entered into the house of God, and ate the showbread, which it was not lawful for him to eat, neither for them that were with him, but only for the priests?</p>
+            <p><strong>5</strong> Or have ye not read in the law, that on the sabbath day the priests in the temple profane the sabbath, and are guiltless?</p>
+            <p><strong>6</strong> But I say unto you, that one greater than the temple is here.</p>
+            <p><strong>7</strong> But if ye had known what this meaneth, I desire mercy, and not sacrifice, ye would not have condemned the guiltless.</p>
+            <p><strong>8</strong> For the Son of man is lord of the sabbath.</p>
+            <p><strong>9</strong> And he departed thence, and went into their synagogue:</p>
+            <p><strong>10</strong> and behold, a man having a withered hand. And they asked him, saying, Is it lawful to heal on the sabbath day? that they might accuse him.</p>
+            <p><strong>11</strong> And he said unto them, What man shall there be of you, that shall have one sheep, and if this fall into a pit on the sabbath day, will he not lay hold on it, and lift it out?</p>
+            <p><strong>12</strong> How much then is a man of more value than a sheep! Wherefore it is lawful to do good on the sabbath day.</p>
+            <p><strong>13</strong> Then saith he to the man, Stretch forth thy hand. And he stretched it forth; and it was restored whole, as the other.</p>
+            <p><strong>14</strong> But the Pharisees went out, and took counsel against him, how they might destroy him.</p>
+            <p><strong>15</strong> And Jesus perceivingitwithdrew from thence: and many followed him; and he healed them all,</p>
+            <p><strong>16</strong> and charged them that they should not make him known:</p>
+            <p><strong>17</strong> that it might be fulfilled which was spoken through Isaiah the prophet, saying,</p>
+            <p><strong>18</strong> Behold, my servant whom I have chosen; My beloved in whom my soul is well pleased: I will put my Spirit upon him, And he shall declare judgment to the Gentiles.</p>
+            <p><strong>19</strong> He shall not strive, nor cry aloud; Neither shall any one hear his voice in the streets.</p>
+            <p><strong>20</strong> A bruised reed shall he not break, And smoking flax shall he not quench, Till he send forth judgment unto victory.</p>
+            <p><strong>21</strong> And in his name shall the Gentiles hope.</p>
+            <p><strong>22</strong> Then was brought unto him one possessed with a demon, blind and dumb: and he healed him, insomuch that the dumb man spake and saw.</p>
+            <p><strong>23</strong> And all the multitudes were amazed, and said, Can this be the son of David?</p>
+            <p><strong>24</strong> But when the Pharisees heard it, they said, This man doth not cast out demons, but by Beelzebub the prince of the demons.</p>
+            <p><strong>25</strong> And knowing their thoughts he said unto them, Every kingdom divided against itself is brought to desolation; and every city or house divided against itself shall not stand:</p>
+            <p><strong>26</strong> and if Satan casteth out Satan, he is divided against himself; how then shall his kingdom stand?</p>
+            <p><strong>27</strong> And if I by Beelzebub cast out demons, by whom do your sons cast them out? therefore shall they be your judges.</p>
+            <p><strong>28</strong> But if I by the Spirit of God cast out demons, then is the kingdom of God come upon you.</p>
+            <p><strong>29</strong> Or how can one enter into the house of the strong man, and spoil his goods, except he first bind the strong man? and then he will spoil his house.</p>
+            <p><strong>30</strong> He that is not with me is against me; and he that gathereth not with me scattereth.</p>
+            <p><strong>31</strong> Therefore I say unto you, Every sin and blasphemy shall be forgiven unto men; but the blasphemy against the Spirit shall not be forgiven.</p>
+            <p><strong>32</strong> And whosoever shall speak a word against the Son of man, it shall be forgiven him; but whosoever shall speak against the Holy Spirit, it shall not be forgiven him, neither in this world, nor in that which is to come.</p>
+            <p><strong>33</strong> Either make the tree good, and its fruit good; or make the tree corrupt, and its fruit corrupt: for the tree is known by its fruit.</p>
+            <p><strong>34</strong> Ye offspring of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh.</p>
+            <p><strong>35</strong> The good man out of his good treasure bringeth forth good things: and the evil man out of his evil treasure bringeth forth evil things.</p>
+            <p><strong>36</strong> And I say unto you, that every idle word that men shall speak, they shall give account thereof in the day of judgment.</p>
+            <p><strong>37</strong> For by thy words thou shalt be justified, and by thy words thou shalt be condemned.</p>
+            <p><strong>38</strong> Then certain of the scribes and Pharisees answered him, saying, Teacher, we would see a sign from thee.</p>
+            <p><strong>39</strong> But he answered and said unto them, An evil and adulterous generation seeketh after a sign; and there shall no sign be given to it but the sign of Jonah the prophet:</p>
+            <p><strong>40</strong> for as Jonah was three days and three nights in the belly of the whale; so shall the Son of man be three days and three nights in the heart of the earth.</p>
+            <p><strong>41</strong> The men of Nineveh shall stand up in the judgment with this generation, and shall condemn it: for they repented at the preaching of Jonah; and behold, a greater than Jonah is here.</p>
+            <p><strong>42</strong> The queen of the south shall rise up in the judgment with this generation, and shall condemn it: for she came from the ends of the earth to hear the wisdom of Solomon; and behold, a greater than Solomon is here.</p>
+            <p><strong>43</strong> But the unclean spirit, when he is gone out of the man, passeth through waterless places, seeking rest, and findeth it not.</p>
+            <p><strong>44</strong> Then he saith, I will return into my house whence I came out; and when he is come, he findeth it empty, swept, and garnished.</p>
+            <p><strong>45</strong> Then goeth he, and taketh with himself seven other spirits more evil than himself, and they enter in and dwell there: and the last state of that man becometh worse than the first. Even so shall it be also unto this evil generation.</p>
+            <p><strong>46</strong> While he was yet speaking to the multitudes, behold, his mother and his brethren stood without, seeking to speak to him.</p>
+            <p><strong>47</strong> And one said unto him, Behold, thy mother and thy brethren stand without, seeking to speak to thee.</p>
+            <p><strong>48</strong> But he answered and said unto him that told him, Who is my mother? and who are my brethren?</p>
+            <p><strong>49</strong> And he stretched forth his hand towards his disciples, and said, Behold, my mother and my brethren!</p>
+            <p><strong>50</strong> For whosoever shall do the will of my Father who is in heaven, he is my brother, and sister, and mother.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>When the Pharisees accuse his hungry disciples of breaking the Sabbath by plucking grain, Jesus appeals to David and the temple priests, declares that he desires mercy and not sacrifice, and announces that the Son of Man is Lord of the Sabbath. In their synagogue he heals a man with a withered hand, insisting it is lawful to do good on the Sabbath, and the Pharisees begin plotting his death. He withdraws and heals quietly, fulfilling Isaiah's portrait of the gentle servant who will not break a bruised reed. When he frees a blind and mute man, the Pharisees charge that he casts out demons by Beelzebul; Jesus warns that a kingdom divided cannot stand and that blasphemy against the Spirit is unforgivable. He speaks of trees known by their fruit and words that justify or condemn, refuses a sign but the sign of Jonah, and declares that whoever does the Father's will is his brother, sister, and mother.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord of the Sabbath, greater than the temple, who heals, fulfills Isaiah's servant prophecy, and defines his true family.</li>
+          <li><strong>The Pharisees</strong> — Critics who accuse the disciples, plot Jesus' death, and attribute his miracles to Beelzebul.</li>
+          <li><strong>The man with the withered hand</strong> — A sufferer whom Jesus heals on the Sabbath to show it is lawful to do good.</li>
+          <li><strong>Jesus' mother and brothers</strong> — Family standing outside, whom Jesus uses to teach that doing the Father's will makes one his kin.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 12:8 (WEB)</p>
+          <p class="verse__text">For the Son of Man is Lord of the Sabbath.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus is Lord of the Sabbath, and God values mercy and doing good above rigid rule-keeping.</li>
+          <li>Opposition to Christ can harden into plotting and even crediting his work to the enemy.</li>
+          <li>Our words flow from the heart and reveal what truly fills us, so they matter before God.</li>
+          <li>True kinship with Jesus is found not in blood ties but in doing the will of the Father.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-12">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-12">
+            <ul class="lesson-list">
+            <li><strong>The Son of Man is Lord of the Sabbath.</strong> Jesus claims authority over the Sabbath itself, for he is greater than the temple (Matthew 12:6-8, WEB).</li>
+            <li><strong>It is lawful to do good on the Sabbath.</strong> Jesus heals the withered hand and teaches that doing good honors the day God gave (Matthew 12:12-13, WEB).</li>
+            <li><strong>Jesus is the gentle servant of Isaiah.</strong> He will not break a bruised reed nor quench smoking flax until he leads justice to victory (Matthew 12:20, WEB).</li>
+            <li><strong>A divided kingdom cannot stand.</strong> Jesus answers the Beelzebul charge by showing that Satan would not cast out Satan; his power comes by the Spirit of God (Matthew 12:25-28, WEB).</li>
+            <li><strong>Words reveal the heart.</strong> Out of the abundance of the heart the mouth speaks, and by our words we are justified or condemned (Matthew 12:34-37, WEB).</li>
+            <li><strong>Doing God's will makes us Jesus' family.</strong> Whoever does the will of the Father in heaven is Jesus' brother, sister, and mother (Matthew 12:50, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-12">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-12">
+            <ol class="study-questions">
+            <li>How does Jesus defend his disciples and reveal his own authority in the dispute over the Sabbath grain fields (Matthew 12:3-8)?</li>
+            <li>How does Jesus respond to the charge that he casts out demons by Beelzebul, and what does he say about a kingdom divided (Matthew 12:25-28)?</li>
+            <li>What does Jesus teach about the connection between the heart, the mouth, and our words (Matthew 12:33-37)?</li>
+            <li>Jesus says he desires mercy and not sacrifice; where might you be tempted to keep rules while neglecting mercy toward others?</li>
+            <li>How does it shape your identity to know that whoever does the will of the Father is counted as Jesus' brother, sister, and mother (Matthew 12:50)?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-12">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-12">
+            <ol class="study-questions">
+            <li>Jesus cites David eating the showbread and the priests working on the Sabbath, then declares that one greater than the temple is here and that the Son of Man is Lord of the Sabbath (Matthew 12:3-8). He repeats that God desires mercy, not sacrifice.</li>
+            <li>Jesus shows that if he cast out demons by Satan, Satan's kingdom would be divided and could not stand (Matthew 12:25-26). Instead, casting out demons by the Spirit of God proves the kingdom of God has come upon them.</li>
+            <li>Jesus teaches that a tree is known by its fruit and that the mouth speaks out of the heart's abundance (Matthew 12:33-34). Our words expose our inner condition, and we will give account for every idle word in the day of judgment.</li>
+            <li>This is a personal-application question. Help the group distinguish healthy obedience from cold legalism. Invite honest examples of valuing being right over being merciful, and discuss concrete ways to let mercy guide their treatment of others this week.</li>
+            <li>This is a personal-application question. Encourage members to reflect on belonging to Jesus' family through obedience rather than heritage or status. Discuss how this identity brings both security and responsibility, and invite each to name one way they will do the Father's will.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-11.html">← Matthew 11</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-13.html">Matthew 13 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 25: Ready, Faithful, and Merciful — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 25: Jesus calls his servants to stay ready, invest what they are given, and serve the least." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 25
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 25</span>
+        <h1>Matthew 25: Ready, Faithful, and Merciful</h1>
+        <p class="lead">Jesus calls his servants to stay ready, invest what they are given, and serve the least.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-25">
+            <span>Scripture — Matthew Chapter 25</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-25">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-25-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-25-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-25-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-25-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 25 (WEB)</p>
+            <p><strong>1</strong> “Then the Kingdom of Heaven will be like ten virgins, who took their lamps, and went out to meet the bridegroom.</p>
+            <p><strong>2</strong> Five of them were foolish, and five were wise.</p>
+            <p><strong>3</strong> Those who were foolish, when they took their lamps, took no oil with them,</p>
+            <p><strong>4</strong> but the wise took oil in their vessels with their lamps.</p>
+            <p><strong>5</strong> Now while the bridegroom delayed, they all slumbered and slept.</p>
+            <p><strong>6</strong> But at midnight there was a cry, ‘Behold! The bridegroom is coming! Come out to meet him!’</p>
+            <p><strong>7</strong> Then all those virgins arose, and trimmed their lamps.</p>
+            <p><strong>8</strong> The foolish said to the wise, ‘Give us some of your oil, for our lamps are going out.’</p>
+            <p><strong>9</strong> But the wise answered, saying, ‘What if there isn’t enough for us and you? You go rather to those who sell, and buy for yourselves.’</p>
+            <p><strong>10</strong> While they went away to buy, the bridegroom came, and those who were ready went in with him to the marriage feast, and the door was shut.</p>
+            <p><strong>11</strong> Afterward the other virgins also came, saying, ‘Lord, Lord, open to us.’</p>
+            <p><strong>12</strong> But he answered, ‘Most certainly I tell you, I don’t know you.’</p>
+            <p><strong>13</strong> Watch therefore, for you don’t know the day nor the hour in which the Son of Man is coming.</p>
+            <p><strong>14</strong> “For it is like a man, going into another country, who called his own servants, and entrusted his goods to them.</p>
+            <p><strong>15</strong> To one he gave five talents, to another two, to another one; to each according to his own ability. Then he went on his journey.</p>
+            <p><strong>16</strong> Immediately he who received the five talents went and traded with them, and made another five talents.</p>
+            <p><strong>17</strong> In the same way, he also who got the two gained another two.</p>
+            <p><strong>18</strong> But he who received the one went away and dug in the earth, and hid his lord’s money.</p>
+            <p><strong>19</strong> “Now after a long time the lord of those servants came, and reconciled accounts with them.</p>
+            <p><strong>20</strong> He who received the five talents came and brought another five talents, saying, ‘Lord, you delivered to me five talents. Behold, I have gained another five talents besides them.’</p>
+            <p><strong>21</strong> “His lord said to him, ‘Well done, good and faithful servant. You have been faithful over a few things, I will set you over many things. Enter into the joy of your lord.’</p>
+            <p><strong>22</strong> “He also who got the two talents came and said, ‘Lord, you delivered to me two talents. Behold, I have gained another two talents besides them.’</p>
+            <p><strong>23</strong> “His lord said to him, ‘Well done, good and faithful servant. You have been faithful over a few things, I will set you over many things. Enter into the joy of your lord.’</p>
+            <p><strong>24</strong> “He also who had received the one talent came and said, ‘Lord, I knew you that you are a hard man, reaping where you did not sow, and gathering where you did not scatter.</p>
+            <p><strong>25</strong> I was afraid, and went away and hid your talent in the earth. Behold, you have what is yours.’</p>
+            <p><strong>26</strong> “But his lord answered him, ‘You wicked and slothful servant. You knew that I reap where I didn’t sow, and gather where I didn’t scatter.</p>
+            <p><strong>27</strong> You ought therefore to have deposited my money with the bankers, and at my coming I should have received back my own with interest.</p>
+            <p><strong>28</strong> Take away therefore the talent from him, and give it to him who has the ten talents.</p>
+            <p><strong>29</strong> For to everyone who has will be given, and he will have abundance, but from him who doesn’t have, even that which he has will be taken away.</p>
+            <p><strong>30</strong> Throw out the unprofitable servant into the outer darkness, where there will be weeping and gnashing of teeth.’</p>
+            <p><strong>31</strong> “But when the Son of Man comes in his glory, and all the holy angels with him, then he will sit on the throne of his glory.</p>
+            <p><strong>32</strong> Before him all the nations will be gathered, and he will separate them one from another, as a shepherd separates the sheep from the goats.</p>
+            <p><strong>33</strong> He will set the sheep on his right hand, but the goats on the left.</p>
+            <p><strong>34</strong> Then the King will tell those on his right hand, ‘Come, blessed of my Father, inherit the Kingdom prepared for you from the foundation of the world;</p>
+            <p><strong>35</strong> for I was hungry, and you gave me food to eat. I was thirsty, and you gave me drink. I was a stranger, and you took me in.</p>
+            <p><strong>36</strong> I was naked, and you clothed me. I was sick, and you visited me. I was in prison, and you came to me.’</p>
+            <p><strong>37</strong> “Then the righteous will answer him, saying, ‘Lord, when did we see you hungry, and feed you; or thirsty, and give you a drink?</p>
+            <p><strong>38</strong> When did we see you as a stranger, and take you in; or naked, and clothe you?</p>
+            <p><strong>39</strong> When did we see you sick, or in prison, and come to you?’</p>
+            <p><strong>40</strong> “The King will answer them, ‘Most certainly I tell you, because you did it to one of the least of these my brothers, you did it to me.’</p>
+            <p><strong>41</strong> Then he will say also to those on the left hand, ‘Depart from me, you cursed, into the eternal fire which is prepared for the devil and his angels;</p>
+            <p><strong>42</strong> for I was hungry, and you didn’t give me food to eat; I was thirsty, and you gave me no drink;</p>
+            <p><strong>43</strong> I was a stranger, and you didn’t take me in; naked, and you didn’t clothe me; sick, and in prison, and you didn’t visit me.’</p>
+            <p><strong>44</strong> “Then they will also answer, saying, ‘Lord, when did we see you hungry, or thirsty, or a stranger, or naked, or sick, or in prison, and didn’t help you?’</p>
+            <p><strong>45</strong> “Then he will answer them, saying, ‘Most certainly I tell you, because you didn’t do it to one of the least of these, you didn’t do it to me.’</p>
+            <p><strong>46</strong> These will go away into eternal punishment, but the righteous into eternal life.”</p>
+            </div>
+            <div class="scripture-text" id="web-25-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 25 (KJV)</p>
+            <p><strong>1</strong> Then shall the kingdom of heaven be likened unto ten virgins, which took their lamps, and went forth to meet the bridegroom.</p>
+            <p><strong>2</strong> And five of them were wise, and five were foolish.</p>
+            <p><strong>3</strong> They that were foolish took their lamps, and took no oil with them:</p>
+            <p><strong>4</strong> But the wise took oil in their vessels with their lamps.</p>
+            <p><strong>5</strong> While the bridegroom tarried, they all slumbered and slept.</p>
+            <p><strong>6</strong> And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him.</p>
+            <p><strong>7</strong> Then all those virgins arose, and trimmed their lamps.</p>
+            <p><strong>8</strong> And the foolish said unto the wise, Give us of your oil; for our lamps are gone out.</p>
+            <p><strong>9</strong> But the wise answered, saying, Not so; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves.</p>
+            <p><strong>10</strong> And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut.</p>
+            <p><strong>11</strong> Afterward came also the other virgins, saying, Lord, Lord, open to us.</p>
+            <p><strong>12</strong> But he answered and said, Verily I say unto you, I know you not.</p>
+            <p><strong>13</strong> Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh.</p>
+            <p><strong>14</strong> For the kingdom of heaven is as a man travelling into a far country, who called his own servants, and delivered unto them his goods.</p>
+            <p><strong>15</strong> And unto one he gave five talents, to another two, and to another one; to every man according to his several ability; and straightway took his journey.</p>
+            <p><strong>16</strong> Then he that had received the five talents went and traded with the same, and made them other five talents.</p>
+            <p><strong>17</strong> And likewise he that had received two, he also gained other two.</p>
+            <p><strong>18</strong> But he that had received one went and digged in the earth, and hid his lord’s money.</p>
+            <p><strong>19</strong> After a long time the lord of those servants cometh, and reckoneth with them.</p>
+            <p><strong>20</strong> And so he that had received five talents came and brought other five talents, saying, Lord, thou deliveredst unto me five talents: behold, I have gained beside them five talents more.</p>
+            <p><strong>21</strong> His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.</p>
+            <p><strong>22</strong> He also that had received two talents came and said, Lord, thou deliveredst unto me two talents: behold, I have gained two other talents beside them.</p>
+            <p><strong>23</strong> His lord said unto him, Well done, good and faithful servant; thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.</p>
+            <p><strong>24</strong> Then he which had received the one talent came and said, Lord, I knew thee that thou art an hard man, reaping where thou hast not sown, and gathering where thou hast not strawed:</p>
+            <p><strong>25</strong> And I was afraid, and went and hid thy talent in the earth: lo, there thou hast that is thine.</p>
+            <p><strong>26</strong> His lord answered and said unto him, Thou wicked and slothful servant, thou knewest that I reap where I sowed not, and gather where I have not strawed:</p>
+            <p><strong>27</strong> Thou oughtest therefore to have put my money to the exchangers, and then at my coming I should have received mine own with usury.</p>
+            <p><strong>28</strong> Take therefore the talent from him, and give it unto him which hath ten talents.</p>
+            <p><strong>29</strong> For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.</p>
+            <p><strong>30</strong> And cast ye the unprofitable servant into outer darkness: there shall be weeping and gnashing of teeth.</p>
+            <p><strong>31</strong> When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory:</p>
+            <p><strong>32</strong> And before him shall be gathered all nations: and he shall separate them one from another, as a shepherd divideth his sheep from the goats:</p>
+            <p><strong>33</strong> And he shall set the sheep on his right hand, but the goats on the left.</p>
+            <p><strong>34</strong> Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world:</p>
+            <p><strong>35</strong> For I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink: I was a stranger, and ye took me in:</p>
+            <p><strong>36</strong> Naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me.</p>
+            <p><strong>37</strong> Then shall the righteous answer him, saying, Lord, when saw we thee an hungred, and fed thee? or thirsty, and gave thee drink?</p>
+            <p><strong>38</strong> When saw we thee a stranger, and took thee in? or naked, and clothed thee?</p>
+            <p><strong>39</strong> Or when saw we thee sick, or in prison, and came unto thee?</p>
+            <p><strong>40</strong> And the King shall answer and say unto them, Verily I say unto you, Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me.</p>
+            <p><strong>41</strong> Then shall he say also unto them on the left hand, Depart from me, ye cursed, into everlasting fire, prepared for the devil and his angels:</p>
+            <p><strong>42</strong> For I was an hungred, and ye gave me no meat: I was thirsty, and ye gave me no drink:</p>
+            <p><strong>43</strong> I was a stranger, and ye took me not in: naked, and ye clothed me not: sick, and in prison, and ye visited me not.</p>
+            <p><strong>44</strong> Then shall they also answer him, saying, Lord, when saw we thee an hungred, or athirst, or a stranger, or naked, or sick, or in prison, and did not minister unto thee?</p>
+            <p><strong>45</strong> Then shall he answer them, saying, Verily I say unto you, Inasmuch as ye did it not to one of the least of these, ye did it not to me.</p>
+            <p><strong>46</strong> And these shall go away into everlasting punishment: but the righteous into life eternal.</p>
+            </div>
+            <div class="scripture-text" id="web-25-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 25 (ASV)</p>
+            <p><strong>1</strong> Then shall the kingdom of heaven be likened unto ten virgins, who took their lamps, and went forth to meet the bridegroom.</p>
+            <p><strong>2</strong> And five of them were foolish, and five were wise.</p>
+            <p><strong>3</strong> For the foolish, when they took their lamps, took no oil with them:</p>
+            <p><strong>4</strong> but the wise took oil in their vessels with their lamps.</p>
+            <p><strong>5</strong> Now while the bridegroom tarried, they all slumbered and slept.</p>
+            <p><strong>6</strong> But at midnight there is a cry, Behold, the bridegroom! Come ye forth to meet him.</p>
+            <p><strong>7</strong> Then all those virgins arose, and trimmed their lamps.</p>
+            <p><strong>8</strong> And the foolish said unto the wise, Give us of your oil; for our lamps are going out.</p>
+            <p><strong>9</strong> But the wise answered, saying, Peradventure there will not be enough for us and you: go ye rather to them that sell, and buy for yourselves.</p>
+            <p><strong>10</strong> And while they went away to buy, the bridegroom came; and they that were ready went in with him to the marriage feast: and the door was shut.</p>
+            <p><strong>11</strong> Afterward came also the other virgins, saying, Lord, Lord, open to us.</p>
+            <p><strong>12</strong> But he answered and said, Verily I say unto you, I know you not.</p>
+            <p><strong>13</strong> Watch therefore, for ye know not the day nor the hour.</p>
+            <p><strong>14</strong> Forit isaswhena man, going into another country, called his own servants, and delivered unto them his goods.</p>
+            <p><strong>15</strong> And unto one he gave five talents, to another two, to another one; to each according to his several ability; and he went on his journey.</p>
+            <p><strong>16</strong> Straightway he that received the five talents went and traded with them, and made other five talents.</p>
+            <p><strong>17</strong> In like manner he also that received the two gained other two.</p>
+            <p><strong>18</strong> But he that received the one went away and digged in the earth, and hid his lord’s money.</p>
+            <p><strong>19</strong> Now after a long time the lord of those servants cometh, and maketh a reckoning with them.</p>
+            <p><strong>20</strong> And he that received the five talents came and brought other five talents, saying, Lord, thou deliveredst unto me five talents: lo, I have gained other five talents.</p>
+            <p><strong>21</strong> His lord said unto him, Well done, good and faithful servant: thou hast been faithful over a few things, I will set thee over many things; enter thou into the joy of thy lord.</p>
+            <p><strong>22</strong> And he also that received the two talents came and said, Lord, thou deliveredst unto me two talents: lo, I have gained other two talents.</p>
+            <p><strong>23</strong> His lord said unto him, Well done, good and faithful servant: thou hast been faithful over a few things, I will set thee over many things; enter thou into the joy of thy lord.</p>
+            <p><strong>24</strong> And he also that had received the one talent came and said, Lord, I knew thee that thou art a hard man, reaping where thou didst not sow, and gathering where thou didst not scatter;</p>
+            <p><strong>25</strong> and I was afraid, and went away and hid thy talent in the earth: lo, thou hast thine own.</p>
+            <p><strong>26</strong> But his lord answered and said unto him, Thou wicked and slothful servant, thou knewest that I reap where I sowed not, and gather where I did not scatter;</p>
+            <p><strong>27</strong> thou oughtest therefore to have put my money to the bankers, and at my coming I should have received back mine own with interest.</p>
+            <p><strong>28</strong> Take ye away therefore the talent from him, and give it unto him that hath the ten talents.</p>
+            <p><strong>29</strong> For unto every one that hath shall be given, and he shall have abundance: but from him that hath not, even that which he hath shall be taken away.</p>
+            <p><strong>30</strong> And cast ye out the unprofitable servant into the outer darkness: there shall be the weeping and the gnashing of teeth.</p>
+            <p><strong>31</strong> But when the Son of man shall come in his glory, and all the angels with him, then shall he sit on the throne of his glory:</p>
+            <p><strong>32</strong> and before him shall be gathered all the nations: and he shall separate them one from another, as the shepherd separateth the sheep from the goats;</p>
+            <p><strong>33</strong> and he shall set the sheep on his right hand, but the goats on the left.</p>
+            <p><strong>34</strong> Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world:</p>
+            <p><strong>35</strong> for I was hungry, and ye gave me to eat; I was thirsty, and ye gave me drink; I was a stranger, and ye took me in;</p>
+            <p><strong>36</strong> naked, and ye clothed me; I was sick, and ye visited me; I was in prison, and ye came unto me.</p>
+            <p><strong>37</strong> Then shall the righteous answer him, saying, Lord, when saw we thee hungry, and fed thee? or athirst, and gave thee drink?</p>
+            <p><strong>38</strong> And when saw we thee a stranger, and took thee in? or naked, and clothed thee?</p>
+            <p><strong>39</strong> And when saw we thee sick, or in prison, and came unto thee?</p>
+            <p><strong>40</strong> And the King shall answer and say unto them, Verily I say unto you, Inasmuch as ye did it unto one of these my brethren, even these least, ye did it unto me.</p>
+            <p><strong>41</strong> Then shall he say also unto them on the left hand, Depart from me, ye cursed, into the eternal fire which is prepared for the devil and his angels:</p>
+            <p><strong>42</strong> for I was hungry, and ye did not give me to eat; I was thirsty, and ye gave me no drink;</p>
+            <p><strong>43</strong> I was a stranger, and ye took me not in; naked, and ye clothed me not; sick, and in prison, and ye visited me not.</p>
+            <p><strong>44</strong> Then shall they also answer, saying, Lord, when saw we thee hungry, or athirst, or a stranger, or naked, or sick, or in prison, and did not minister unto thee?</p>
+            <p><strong>45</strong> Then shall he answer them, saying, Verily I say unto you, Inasmuch as ye did it not unto one of these least, ye did it not unto me.</p>
+            <p><strong>46</strong> And these shall go away into eternal punishment: but the righteous into eternal life.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus continues teaching about his return with three pictures. Ten virgins go out to meet a bridegroom, but only five bring extra oil; when he arrives at midnight, the unprepared find the door shut. A man journeys abroad and entrusts his servants with talents according to their ability; two trade and double their master's money and are welcomed into his joy, but the one who buries his talent in fear is condemned as wicked and slothful. Finally, the Son of Man comes in glory to judge all nations, separating the sheep from the goats. The King welcomes those who fed the hungry, clothed the naked, and visited the sick and imprisoned, for in caring for the least of his brothers they cared for him. Readiness, faithful stewardship, and active mercy mark those who belong to him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The bridegroom</strong> — The delayed yet certain figure whose midnight arrival exposes who was truly ready to meet him.</li>
+          <li><strong>The faithful servants</strong> — Those who trade their master's talents and are welcomed into his joy for being faithful over a little.</li>
+          <li><strong>The one-talent servant</strong> — The fearful servant who buries his master's money and is judged as wicked and slothful.</li>
+          <li><strong>The King, the Son of Man</strong> — Jesus, who comes in glory to sit on his throne and separate the nations as a shepherd divides sheep from goats.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 25:13 (WEB)</p>
+          <p class="verse__text">Watch therefore, for you don’t know the day nor the hour in which the Son of Man is coming.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Readiness for Christ's return cannot be borrowed at the last moment; it is cultivated now.</li>
+          <li>God entrusts every servant with something and looks for faithful use of it, not fearful hiding.</li>
+          <li>True faith shows itself in concrete mercy toward the hungry, the stranger, the sick, and the imprisoned.</li>
+          <li>Christ identifies himself so closely with the least that kindness shown to them is shown to him.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-25">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-25">
+            <ul class="lesson-list">
+            <li><strong>Stay ready, because the day is unknown.</strong> Jesus urges constant watchfulness since no one knows the hour of his coming (Matthew 25:13, WEB).</li>
+            <li><strong>Faithfulness over little earns greater trust.</strong> The master commends the servant who was faithful over a few things and sets him over many (Matthew 25:21, WEB).</li>
+            <li><strong>Fear of God can become an excuse for doing nothing.</strong> The servant who hid his talent blamed his master's hardness rather than risk faithful obedience (Matthew 25:25, WEB).</li>
+            <li><strong>Christ comes as the glorious King and Judge.</strong> The Son of Man will sit on the throne of his glory and gather all the nations before him (Matthew 25:31, WEB).</li>
+            <li><strong>Mercy to the least is service to the King.</strong> Whatever is done for one of the least of his brothers is done to Jesus himself (Matthew 25:40, WEB).</li>
+            <li><strong>Our response to Christ carries eternal weight.</strong> The chapter ends with eternal punishment and eternal life set before us (Matthew 25:46, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-25">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-25">
+            <ol class="study-questions">
+            <li>Why were the five wise virgins unable to share their oil, and what might the oil represent for our own readiness?</li>
+            <li>What is the difference between how the faithful servants and the one-talent servant viewed their master?</li>
+            <li>Both the sheep and the goats are surprised by the King's words; what does that surprise reveal about genuine service?</li>
+            <li>What has God entrusted to you, and are you investing it or burying it out of fear?</li>
+            <li>Who are 'the least of these' in your life right now, and how might you serve Christ by serving them this week?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-25">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-25">
+            <ol class="study-questions">
+            <li>The oil could not be transferred because readiness is personal and prepared in advance; each must come to the bridegroom prepared, not borrowing another's spiritual life at the door (Matthew 25:8-10).</li>
+            <li>The faithful servants trusted and honored their master enough to act, while the one-talent servant saw him as harsh and unfair, and that distorted view produced fearful paralysis (Matthew 25:24-25).</li>
+            <li>Genuine service is humble and unselfconscious; the righteous were not keeping score but simply loved, while the goats assumed they would have helped a recognizable Christ (Matthew 25:37-44).</li>
+            <li>This is a personal-application question. Invite group members to name specific gifts, time, or resources without comparison, and encourage one small step of faithful investment this week.</li>
+            <li>This is a personal-application question. Let people identify real people, not abstractions; ask the group to share one concrete act of mercy and follow up next time to encourage accountability.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-24.html">← Matthew 24</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-26.html">Matthew 26 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

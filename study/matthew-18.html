@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 18: Greatness, Stumbling, and Forgiveness — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 18: Jesus redefines greatness as childlike humility and calls his people to seek and forgive one another." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 18
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 18</span>
+        <h1>Matthew 18: Greatness, Stumbling, and Forgiveness</h1>
+        <p class="lead">Jesus redefines greatness as childlike humility and calls his people to seek and forgive one another.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-18">
+            <span>Scripture — Matthew Chapter 18</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-18">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-18-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-18-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-18-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-18-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 18 (WEB)</p>
+            <p><strong>1</strong> In that hour the disciples came to Jesus, saying, “Who then is greatest in the Kingdom of Heaven?”</p>
+            <p><strong>2</strong> Jesus called a little child to himself, and set him in their midst,</p>
+            <p><strong>3</strong> and said, “Most certainly I tell you, unless you turn, and become as little children, you will in no way enter into the Kingdom of Heaven.</p>
+            <p><strong>4</strong> Whoever therefore humbles himself as this little child, the same is the greatest in the Kingdom of Heaven.</p>
+            <p><strong>5</strong> Whoever receives one such little child in my name receives me,</p>
+            <p><strong>6</strong> but whoever causes one of these little ones who believe in me to stumble, it would be better for him that a huge millstone should be hung around his neck, and that he should be sunk in the depths of the sea.</p>
+            <p><strong>7</strong> “Woe to the world because of occasions of stumbling! For it must be that the occasions come, but woe to that person through whom the occasion comes!</p>
+            <p><strong>8</strong> If your hand or your foot causes you to stumble, cut it off, and cast it from you. It is better for you to enter into life maimed or crippled, rather than having two hands or two feet to be cast into the eternal fire.</p>
+            <p><strong>9</strong> If your eye causes you to stumble, pluck it out, and cast it from you. It is better for you to enter into life with one eye, rather than having two eyes to be cast into the Gehennaof fire.</p>
+            <p><strong>10</strong> See that you don’t despise one of these little ones, for I tell you that in heaven their angels always see the face of my Father who is in heaven.</p>
+            <p><strong>11</strong> For the Son of Man came to save that which was lost.</p>
+            <p><strong>12</strong> “What do you think? If a man has one hundred sheep, and one of them goes astray, doesn’t he leave the ninety-nine, go to the mountains, and seek that which has gone astray?</p>
+            <p><strong>13</strong> If he finds it, most certainly I tell you, he rejoices over it more than over the ninety-nine which have not gone astray.</p>
+            <p><strong>14</strong> Even so it is not the will of your Father who is in heaven that one of these little ones should perish.</p>
+            <p><strong>15</strong> “If your brother sins against you, go, show him his fault between you and him alone. If he listens to you, you have gained back your brother.</p>
+            <p><strong>16</strong> But if he doesn’t listen, take one or two more with you, that at the mouth of two or three witnesses every word may be established.</p>
+            <p><strong>17</strong> If he refuses to listen to them, tell it to the assembly. If he refuses to hear the assembly also, let him be to you as a Gentile or a tax collector.</p>
+            <p><strong>18</strong> Most certainly I tell you, whatever things you bind on earth will have been bound in heaven, and whatever things you release on earth will have been released in heaven.</p>
+            <p><strong>19</strong> Again, assuredly I tell you, that if two of you will agree on earth concerning anything that they will ask, it will be done for them by my Father who is in heaven.</p>
+            <p><strong>20</strong> For where two or three are gathered together in my name, there I am in their midst.”</p>
+            <p><strong>21</strong> Then Peter came and said to him, “Lord, how often shall my brother sin against me, and I forgive him? Until seven times?”</p>
+            <p><strong>22</strong> Jesus said to him, “I don’t tell you until seven times, but, until seventy times seven.</p>
+            <p><strong>23</strong> Therefore the Kingdom of Heaven is like a certain king, who wanted to reconcile accounts with his servants.</p>
+            <p><strong>24</strong> When he had begun to reconcile, one was brought to him who owed him ten thousand talents.</p>
+            <p><strong>25</strong> But because he couldn’t pay, his lord commanded him to be sold, with his wife, his children, and all that he had, and payment to be made.</p>
+            <p><strong>26</strong> The servant therefore fell down and kneeled before him, saying, ‘Lord, have patience with me, and I will repay you all!’</p>
+            <p><strong>27</strong> The lord of that servant, being moved with compassion, released him, and forgave him the debt.</p>
+            <p><strong>28</strong> “But that servant went out, and found one of his fellow servants, who owed him one hundred denarii,and he grabbed him, and took him by the throat, saying, ‘Pay me what you owe!’</p>
+            <p><strong>29</strong> “So his fellow servant fell down at his feet and begged him, saying, ‘Have patience with me, and I will repay you!’</p>
+            <p><strong>30</strong> He would not, but went and cast him into prison, until he should pay back that which was due.</p>
+            <p><strong>31</strong> So when his fellow servants saw what was done, they were exceedingly sorry, and came and told to their lord all that was done.</p>
+            <p><strong>32</strong> Then his lord called him in, and said to him, ‘You wicked servant! I forgave you all that debt, because you begged me.</p>
+            <p><strong>33</strong> Shouldn’t you also have had mercy on your fellow servant, even as I had mercy on you?’</p>
+            <p><strong>34</strong> His lord was angry, and delivered him to the tormentors, until he should pay all that was due to him.</p>
+            <p><strong>35</strong> So my heavenly Father will also do to you, if you don’t each forgive your brother from your hearts for his misdeeds.”</p>
+            </div>
+            <div class="scripture-text" id="web-18-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 18 (KJV)</p>
+            <p><strong>1</strong> At the same time came the disciples unto Jesus, saying, Who is the greatest in the kingdom of heaven?</p>
+            <p><strong>2</strong> And Jesus called a little child unto him, and set him in the midst of them,</p>
+            <p><strong>3</strong> And said, Verily I say unto you, Except ye be converted, and become as little children, ye shall not enter into the kingdom of heaven.</p>
+            <p><strong>4</strong> Whosoever therefore shall humble himself as this little child, the same is greatest in the kingdom of heaven.</p>
+            <p><strong>5</strong> And whoso shall receive one such little child in my name receiveth me.</p>
+            <p><strong>6</strong> But whoso shall offend one of these little ones which believe in me, it were better for him that a millstone were hanged about his neck, and that he were drowned in the depth of the sea.</p>
+            <p><strong>7</strong> Woe unto the world because of offences! for it must needs be that offences come; but woe to that man by whom the offence cometh!</p>
+            <p><strong>8</strong> Wherefore if thy hand or thy foot offend thee, cut them off, and cast them from thee: it is better for thee to enter into life halt or maimed, rather than having two hands or two feet to be cast into everlasting fire.</p>
+            <p><strong>9</strong> And if thine eye offend thee, pluck it out, and cast it from thee: it is better for thee to enter into life with one eye, rather than having two eyes to be cast into hell fire.</p>
+            <p><strong>10</strong> Take heed that ye despise not one of these little ones; for I say unto you, That in heaven their angels do always behold the face of my Father which is in heaven.</p>
+            <p><strong>11</strong> For the Son of man is come to save that which was lost.</p>
+            <p><strong>12</strong> How think ye? if a man have an hundred sheep, and one of them be gone astray, doth he not leave the ninety and nine, and goeth into the mountains, and seeketh that which is gone astray?</p>
+            <p><strong>13</strong> And if so be that he find it, verily I say unto you, he rejoiceth more of that sheep, than of the ninety and nine which went not astray.</p>
+            <p><strong>14</strong> Even so it is not the will of your Father which is in heaven, that one of these little ones should perish.</p>
+            <p><strong>15</strong> Moreover if thy brother shall trespass against thee, go and tell him his fault between thee and him alone: if he shall hear thee, thou hast gained thy brother.</p>
+            <p><strong>16</strong> But if he will not hear thee, then take with thee one or two more, that in the mouth of two or three witnesses every word may be established.</p>
+            <p><strong>17</strong> And if he shall neglect to hear them, tell it unto the church: but if he neglect to hear the church, let him be unto thee as an heathen man and a publican.</p>
+            <p><strong>18</strong> Verily I say unto you, Whatsoever ye shall bind on earth shall be bound in heaven: and whatsoever ye shall loose on earth shall be loosed in heaven.</p>
+            <p><strong>19</strong> Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven.</p>
+            <p><strong>20</strong> For where two or three are gathered together in my name, there am I in the midst of them.</p>
+            <p><strong>21</strong> Then came Peter to him, and said, Lord, how oft shall my brother sin against me, and I forgive him? till seven times?</p>
+            <p><strong>22</strong> Jesus saith unto him, I say not unto thee, Until seven times: but, Until seventy times seven.</p>
+            <p><strong>23</strong> Therefore is the kingdom of heaven likened unto a certain king, which would take account of his servants.</p>
+            <p><strong>24</strong> And when he had begun to reckon, one was brought unto him, which owed him ten thousand talents.</p>
+            <p><strong>25</strong> But forasmuch as he had not to pay, his lord commanded him to be sold, and his wife, and children, and all that he had, and payment to be made.</p>
+            <p><strong>26</strong> The servant therefore fell down, and worshipped him, saying, Lord, have patience with me, and I will pay thee all.</p>
+            <p><strong>27</strong> Then the lord of that servant was moved with compassion, and loosed him, and forgave him the debt.</p>
+            <p><strong>28</strong> But the same servant went out, and found one of his fellowservants, which owed him an hundred pence: and he laid hands on him, and took him by the throat, saying, Pay me that thou owest.</p>
+            <p><strong>29</strong> And his fellowservant fell down at his feet, and besought him, saying, Have patience with me, and I will pay thee all.</p>
+            <p><strong>30</strong> And he would not: but went and cast him into prison, till he should pay the debt.</p>
+            <p><strong>31</strong> So when his fellowservants saw what was done, they were very sorry, and came and told unto their lord all that was done.</p>
+            <p><strong>32</strong> Then his lord, after that he had called him, said unto him, O thou wicked servant, I forgave thee all that debt, because thou desiredst me:</p>
+            <p><strong>33</strong> Shouldest not thou also have had compassion on thy fellowservant, even as I had pity on thee?</p>
+            <p><strong>34</strong> And his lord was wroth, and delivered him to the tormentors, till he should pay all that was due unto him.</p>
+            <p><strong>35</strong> So likewise shall my heavenly Father do also unto you, if ye from your hearts forgive not every one his brother their trespasses.</p>
+            </div>
+            <div class="scripture-text" id="web-18-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 18 (ASV)</p>
+            <p><strong>1</strong> In that hour came the disciples unto Jesus, saying, Who then is greatest in the kingdom of heaven?</p>
+            <p><strong>2</strong> And he called to him a little child, and set him in the midst of them,</p>
+            <p><strong>3</strong> and said, Verily I say unto you, Except ye turn, and become as little children, ye shall in no wise enter into the kingdom of heaven.</p>
+            <p><strong>4</strong> Whosoever therefore shall humble himself as this little child, the same is the greatest in the kingdom of heaven.</p>
+            <p><strong>5</strong> And whoso shall receive one such little child in my name receiveth me:</p>
+            <p><strong>6</strong> but whoso shall cause one of these little ones that believe on me to stumble, it is profitable for him that a great millstone should be hanged about his neck, and that he should be sunk in the depth of the sea.</p>
+            <p><strong>7</strong> Woe unto the world because of occasions of stumbling! for it must needs be that the occasions come; but woe to that man through whom the occasion cometh!</p>
+            <p><strong>8</strong> And if thy hand or thy foot causeth thee to stumble, cut it off, and cast it from thee: it is good for thee to enter into life maimed or halt, rather than having two hands or two feet to be cast into the eternal fire.</p>
+            <p><strong>9</strong> And if thine eye causeth thee to stumble, pluck it out, and cast it from thee: it is good for thee to enter into life with one eye, rather than having two eyes to be cast into the hell of fire.</p>
+            <p><strong>10</strong> See that ye despise not one of these little ones: for I say unto you, that in heaven their angels do always behold the face of my Father who is in heaven.</p>
+            <p><strong>11</strong> How think ye? if any man have a hundred sheep, and one of them be gone astray, doth he not leave the ninety and nine, and go unto the mountains, and seek that which goeth astray?</p>
+            <p><strong>12</strong> And if so be that he find it, verily I say unto you, he rejoiceth over it more than over the ninety and nine which have not gone astray.</p>
+            <p><strong>13</strong> Even so it is not the will of your Father who is in heaven, that one of these little ones should perish.</p>
+            <p><strong>14</strong> And if thy brother sin against thee, go, show him his fault between thee and him alone: if he hear thee, thou hast gained thy brother.</p>
+            <p><strong>15</strong> But if he hear thee not, take with thee one or two more, that at the mouth of two witnesses or three every word may be established.</p>
+            <p><strong>16</strong> And if he refuse to hear them, tell it unto the church: and if he refuse to hear the church also, let him be unto thee as the Gentile and the publican.</p>
+            <p><strong>17</strong> Verily I say unto you, What things soever ye shall bind on earth shall be bound in heaven; and what things soever ye shall loose on earth shall be loosed in heaven.</p>
+            <p><strong>18</strong> Again I say unto you, that if two of you shall agree on earth as touching anything that they shall ask, it shall be done for them of my Father who is in heaven.</p>
+            <p><strong>19</strong> For where two or three are gathered together in my name, there am I in the midst of them.</p>
+            <p><strong>20</strong> Then came Peter and said to him, Lord, how oft shall my brother sin against me, and I forgive him? until seven times?</p>
+            <p><strong>21</strong> Jesus saith unto him, I say not unto thee, Until seven times; but, Until seventy times seven.</p>
+            <p><strong>22</strong> Therefore is the kingdom of heaven likened unto a certain king, who would make a reckoning with his servants.</p>
+            <p><strong>23</strong> And when he had begun to reckon, one was brought unto him, that owed him ten thousand talents.</p>
+            <p><strong>24</strong> But forasmuch as he had not wherewith to pay, his lord commanded him to be sold, and his wife, and children, and all that he had, and payment to be made.</p>
+            <p><strong>25</strong> The servant therefore fell down and worshipped him, saying, Lord, have patience with me, and I will pay thee all.</p>
+            <p><strong>26</strong> And the lord of that servant, being moved with compassion, released him, and forgave him the debt.</p>
+            <p><strong>27</strong> But that servant went out, and found one of his fellow-servants, who owed him a hundred shillings: and he laid hold on him, and took him by the throat, saying, Pay what thou owest.</p>
+            <p><strong>28</strong> So his fellow-servant fell down and besought him, saying, Have patience with me, and I will pay thee.</p>
+            <p><strong>29</strong> And he would not: but went and cast him into prison, till he should pay that which was due.</p>
+            <p><strong>30</strong> So when his fellow-servants saw what was done, they were exceeding sorry, and came and told unto their lord all that was done.</p>
+            <p><strong>31</strong> Then his lord called him unto him, and saith to him, Thou wicked servant, I forgave thee all that debt, because thou besoughtest me:</p>
+            <p><strong>32</strong> shouldest not thou also have had mercy on thy fellow-servant, even as I had mercy on thee?</p>
+            <p><strong>33</strong> And his lord was wroth, and delivered him to the tormentors, till he should pay all that was due.</p>
+            <p><strong>34</strong> So shall also my heavenly Father do unto you, if ye forgive not every one his brother from your hearts.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>When the disciples ask who is greatest in the kingdom, Jesus sets a little child among them and says greatness belongs to those who humble themselves like children. He warns severely against causing little ones to stumble and against despising them, for the Son of Man came to save the lost. Like a shepherd seeking one straying sheep, the Father wills that none of these little ones perish. Jesus then gives instruction for restoring a brother who sins, step by step, and promises his presence where two or three gather in his name. When Peter asks how often to forgive, Jesus answers seventy times seven and tells of a servant forgiven an enormous debt who refuses to forgive a small one. The forgiven must forgive from the heart.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Teaches the way of humility, warns against causing stumbling, and commands wholehearted forgiveness.</li>
+          <li><strong>The little child</strong> — Set in the disciples' midst as the living picture of the humility that enters the kingdom.</li>
+          <li><strong>Peter</strong> — Asks how many times he must forgive a sinning brother, prompting the parable of mercy.</li>
+          <li><strong>The unforgiving servant</strong> — Forgiven a vast debt by his lord, yet he seizes a fellow servant over a small one and is condemned.</li>
+          <li><strong>The king</strong> — Moved with compassion, he forgives the great debt, then judges the servant who would not show mercy.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 18:20 (WEB)</p>
+          <p class="verse__text">For where two or three are gathered together in my name, there I am in their midst.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Greatness in God's kingdom is measured by humility, not by status or ambition.</li>
+          <li>God takes seriously how we treat the weak and 'little ones' who belong to him.</li>
+          <li>Like a shepherd, God pursues the one who strays and rejoices to bring them home.</li>
+          <li>Those who have received vast mercy are called to forgive others from the heart.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-18">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-18">
+            <ul class="lesson-list">
+            <li><strong>Humility, not status, marks the great in God's kingdom.</strong> Whoever humbles himself as a little child is the greatest in the Kingdom of Heaven (Matthew 18:4, WEB).</li>
+            <li><strong>God treasures the little ones and the lost.</strong> The Son of Man came to save that which was lost, and the Father wills that none of these little ones perish (Matthew 18:11, WEB).</li>
+            <li><strong>Reconciliation seeks to win the brother, not merely to be right.</strong> If he listens to you, you have gained back your brother (Matthew 18:15, WEB).</li>
+            <li><strong>Christ is present with his gathered people.</strong> Where two or three are gathered together in my name, there I am in their midst (Matthew 18:20, WEB).</li>
+            <li><strong>Forgiveness is to be extravagant, not counted.</strong> Jesus said to forgive not seven times, but 'until seventy times seven' (Matthew 18:22, WEB).</li>
+            <li><strong>Received mercy must overflow into mercy given.</strong> The lord asked, 'Shouldn't you also have had mercy on your fellow servant, even as I had mercy on you?' (Matthew 18:33, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-18">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-18">
+            <ol class="study-questions">
+            <li>How does setting a child in their midst answer the disciples' question about greatness?</li>
+            <li>What do Jesus' warnings about stumbling teach about the value God places on 'little ones'?</li>
+            <li>What steps does Jesus give for seeking out a brother or sister who has sinned, and what is the goal?</li>
+            <li>How does the size of the forgiven debt in the parable shape the way you think about forgiving others?</li>
+            <li>Is there someone you are finding hard to forgive, and what would forgiving 'from the heart' look like there?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-18">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-18">
+            <ol class="study-questions">
+            <li>Jesus answers their ambition with a child (vv.2-4): greatness is turning and becoming low and dependent, not climbing. The very question exposes a heart Jesus must reorient.</li>
+            <li>Jesus says it would be better to be drowned than to cause one little one to stumble, and that their angels see the Father's face (vv.6,10); God guards the weak and the young with fierce care.</li>
+            <li>Go privately, then with one or two witnesses, then tell the assembly (vv.15-17); the aim throughout is to 'gain back your brother,' restoration rather than mere condemnation.</li>
+            <li>The servant was forgiven ten thousand talents, an unpayable sum, yet would not forgive a hundred denarii (vv.24-28); seeing how much God forgives us makes our refusal to forgive look small and wicked.</li>
+            <li>This is a personal application question. Handle it gently and without pressure; point to v.35, forgiving 'from your hearts,' and invite a small, concrete next step rather than a forced declaration.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-17.html">← Matthew 17</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-19.html">Matthew 19 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

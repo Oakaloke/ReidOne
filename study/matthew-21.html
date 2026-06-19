@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 21: The Humble King Enters Jerusalem — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 21: Jesus rides into Jerusalem as the promised King, cleanses the temple, and faces the leaders' challenge to his authority." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 21
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 21</span>
+        <h1>Matthew 21: The Humble King Enters Jerusalem</h1>
+        <p class="lead">Jesus rides into Jerusalem as the promised King, cleanses the temple, and faces the leaders' challenge to his authority.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-21">
+            <span>Scripture — Matthew Chapter 21</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-21">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-21-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-21-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-21-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-21-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 21 (WEB)</p>
+            <p><strong>1</strong> When they drew near to Jerusalem, and came to Bethsphage, to the Mount of Olives, then Jesus sent two disciples,</p>
+            <p><strong>2</strong> saying to them, “Go into the village that is opposite you, and immediately you will find a donkey tied, and a colt with her. Untie them, and bring them to me.</p>
+            <p><strong>3</strong> If anyone says anything to you, you shall say, ‘The Lord needs them,’ and immediately he will send them.”</p>
+            <p><strong>4</strong> All this was done, that it might be fulfilled which was spoken through the prophet, saying,</p>
+            <p><strong>5</strong> “Tell the daughter of Zion, behold, your King comes to you, humble, and riding on a donkey, on a colt, the foal of a donkey.”</p>
+            <p><strong>6</strong> The disciples went, and did just as Jesus commanded them,</p>
+            <p><strong>7</strong> and brought the donkey and the colt, and laid their clothes on them; and he sat on them.</p>
+            <p><strong>8</strong> A very great multitude spread their clothes on the road. Others cut branches from the trees, and spread them on the road.</p>
+            <p><strong>9</strong> The multitudes who went before him, and who followed kept shouting, “Hosanna  to the son of David! Blessed is he who comes in the name of the Lord! Hosanna in the highest!”</p>
+            <p><strong>10</strong> When he had come into Jerusalem, all the city was stirred up, saying, “Who is this?”</p>
+            <p><strong>11</strong> The multitudes said, “This is the prophet, Jesus, from Nazareth of Galilee.”</p>
+            <p><strong>12</strong> Jesus entered into the temple of God, and drove out all of those who sold and bought in the temple, and overthrew the money changers’ tables and the seats of those who sold the doves.</p>
+            <p><strong>13</strong> He said to them, “It is written, ‘My house shall be called a house of prayer,’but you have made it a den of robbers!”</p>
+            <p><strong>14</strong> The blind and the lame came to him in the temple, and he healed them.</p>
+            <p><strong>15</strong> But when the chief priests and the scribes saw the wonderful things that he did, and the children who were crying in the temple and saying, “Hosanna to the son of David!” they were indignant,</p>
+            <p><strong>16</strong> and said to him, “Do you hear what these are saying?”   Jesus said to them, “Yes. Did you never read, ‘Out of the mouth of babes and nursing babies you have perfected praise?’”</p>
+            <p><strong>17</strong> He left them, and went out of the city to Bethany, and lodged there.</p>
+            <p><strong>18</strong> Now in the morning, as he returned to the city, he was hungry.</p>
+            <p><strong>19</strong> Seeing a fig tree by the road, he came to it, and found nothing on it but leaves. He said to it, “Let there be no fruit from you forever!”    Immediately the fig tree withered away.</p>
+            <p><strong>20</strong> When the disciples saw it, they marveled, saying, “How did the fig tree immediately wither away?”</p>
+            <p><strong>21</strong> Jesus answered them, “Most certainly I tell you, if you have faith, and don’t doubt, you will not only do what was done to the fig tree, but even if you told this mountain, ‘Be taken up and cast into the sea,’ it would be done.</p>
+            <p><strong>22</strong> All things, whatever you ask in prayer, believing, you will receive.”</p>
+            <p><strong>23</strong> When he had come into the temple, the chief priests and the elders of the people came to him as he was teaching, and said, “By what authority do you do these things? Who gave you this authority?”</p>
+            <p><strong>24</strong> Jesus answered them, “I also will ask you one question, which if you tell me, I likewise will tell you by what authority I do these things.</p>
+            <p><strong>25</strong> The baptism of John, where was it from? From heaven or from men?”    They reasoned with themselves, saying, “If we say, ‘From heaven,’ he will ask us, ‘Why then did you not believe him?’</p>
+            <p><strong>26</strong> But if we say, ‘From men,’ we fear the multitude, for all hold John as a prophet.”</p>
+            <p><strong>27</strong> They answered Jesus, and said, “We don’t know.”   He also said to them, “Neither will I tell you by what authority I do these things.</p>
+            <p><strong>28</strong> But what do you think? A man had two sons, and he came to the first, and said, ‘Son, go work today in my vineyard.’</p>
+            <p><strong>29</strong> He answered, ‘I will not,’ but afterward he changed his mind, and went.</p>
+            <p><strong>30</strong> He came to the second, and said the same thing. He answered, ‘I go, sir,’ but he didn’t go.</p>
+            <p><strong>31</strong> Which of the two did the will of his father?”   They said to him, “The first.”   Jesus said to them, “Most certainly I tell you that the tax collectors and the prostitutes are entering into the Kingdom of God before you.</p>
+            <p><strong>32</strong> For John came to you in the way of righteousness, and you didn’t believe him, but the tax collectors and the prostitutes believed him. When you saw it, you didn’t even repent afterward, that you might believe him.</p>
+            <p><strong>33</strong> “Hear another parable. There was a man who was a master of a household, who planted a vineyard, set a hedge about it, dug a wine press in it, built a tower, leased it out to farmers, and went into another country.</p>
+            <p><strong>34</strong> When the season for the fruit drew near, he sent his servants to the farmers, to receive his fruit.</p>
+            <p><strong>35</strong> The farmers took his servants, beat one, killed another, and stoned another.</p>
+            <p><strong>36</strong> Again, he sent other servants more than the first: and they treated them the same way.</p>
+            <p><strong>37</strong> But afterward he sent to them his son, saying, ‘They will respect my son.’</p>
+            <p><strong>38</strong> But the farmers, when they saw the son, said among themselves, ‘This is the heir. Come, let’s kill him, and seize his inheritance.’</p>
+            <p><strong>39</strong> So they took him, and threw him out of the vineyard, and killed him.</p>
+            <p><strong>40</strong> When therefore the lord of the vineyard comes, what will he do to those farmers?”</p>
+            <p><strong>41</strong> They told him, “He will miserably destroy those miserable men, and will lease out the vineyard to other farmers, who will give him the fruit in its season.”</p>
+            <p><strong>42</strong> Jesus said to them, “Did you never read in the Scriptures,   ‘The stone which the builders rejected, the same was made the head of the corner. This was from the Lord. It is marvelous in our eyes?’</p>
+            <p><strong>43</strong> “Therefore I tell you, the Kingdom of God will be taken away from you, and will be given to a nation producing its fruit.</p>
+            <p><strong>44</strong> He who falls on this stone will be broken to pieces, but on whomever it will fall, it will scatter him as dust.”</p>
+            <p><strong>45</strong> When the chief priests and the Pharisees heard his parables, they perceived that he spoke about them.</p>
+            <p><strong>46</strong> When they sought to seize him, they feared the multitudes, because they considered him to be a prophet.</p>
+            </div>
+            <div class="scripture-text" id="web-21-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 21 (KJV)</p>
+            <p><strong>1</strong> And when they drew nigh unto Jerusalem, and were come to Bethphage, unto the mount of Olives, then sent Jesus two disciples,</p>
+            <p><strong>2</strong> Saying unto them, Go into the village over against you, and straightway ye shall find an ass tied, and a colt with her: loose them, and bring them unto me.</p>
+            <p><strong>3</strong> And if any man say ought unto you, ye shall say, The Lord hath need of them; and straightway he will send them.</p>
+            <p><strong>4</strong> All this was done, that it might be fulfilled which was spoken by the prophet, saying,</p>
+            <p><strong>5</strong> Tell ye the daughter of Sion, Behold, thy King cometh unto thee, meek, and sitting upon an ass, and a colt the foal of an ass.</p>
+            <p><strong>6</strong> And the disciples went, and did as Jesus commanded them,</p>
+            <p><strong>7</strong> And brought the ass, and the colt, and put on them their clothes, and they set him thereon.</p>
+            <p><strong>8</strong> And a very great multitude spread their garments in the way; others cut down branches from the trees, and strawed them in the way.</p>
+            <p><strong>9</strong> And the multitudes that went before, and that followed, cried, saying, Hosanna to the Son of David: Blessed is he that cometh in the name of the Lord; Hosanna in the highest.</p>
+            <p><strong>10</strong> And when he was come into Jerusalem, all the city was moved, saying, Who is this?</p>
+            <p><strong>11</strong> And the multitude said, This is Jesus the prophet of Nazareth of Galilee.</p>
+            <p><strong>12</strong> And Jesus went into the temple of God, and cast out all them that sold and bought in the temple, and overthrew the tables of the moneychangers, and the seats of them that sold doves,</p>
+            <p><strong>13</strong> And said unto them, It is written, My house shall be called the house of prayer; but ye have made it a den of thieves.</p>
+            <p><strong>14</strong> And the blind and the lame came to him in the temple; and he healed them.</p>
+            <p><strong>15</strong> And when the chief priests and scribes saw the wonderful things that he did, and the children crying in the temple, and saying, Hosanna to the Son of David; they were sore displeased,</p>
+            <p><strong>16</strong> And said unto him, Hearest thou what these say? And Jesus saith unto them, Yea; have ye never read, Out of the mouth of babes and sucklings thou hast perfected praise?</p>
+            <p><strong>17</strong> And he left them, and went out of the city into Bethany; and he lodged there.</p>
+            <p><strong>18</strong> Now in the morning as he returned into the city, he hungered.</p>
+            <p><strong>19</strong> And when he saw a fig tree in the way, he came to it, and found nothing thereon, but leaves only, and said unto it, Let no fruit grow on thee henceforward for ever. And presently the fig tree withered away.</p>
+            <p><strong>20</strong> And when the disciples saw it, they marvelled, saying, How soon is the fig tree withered away!</p>
+            <p><strong>21</strong> Jesus answered and said unto them, Verily I say unto you, If ye have faith, and doubt not, ye shall not only do this which is done to the fig tree, but also if ye shall say unto this mountain, Be thou removed, and be thou cast into the sea; it shall be done.</p>
+            <p><strong>22</strong> And all things, whatsoever ye shall ask in prayer, believing, ye shall receive.</p>
+            <p><strong>23</strong> And when he was come into the temple, the chief priests and the elders of the people came unto him as he was teaching, and said, By what authority doest thou these things? and who gave thee this authority?</p>
+            <p><strong>24</strong> And Jesus answered and said unto them, I also will ask you one thing, which if ye tell me, I in like wise will tell you by what authority I do these things.</p>
+            <p><strong>25</strong> The baptism of John, whence was it? from heaven, or of men? And they reasoned with themselves, saying, If we shall say, From heaven; he will say unto us, Why did ye not then believe him?</p>
+            <p><strong>26</strong> But if we shall say, Of men; we fear the people; for all hold John as a prophet.</p>
+            <p><strong>27</strong> And they answered Jesus, and said, We cannot tell. And he said unto them, Neither tell I you by what authority I do these things.</p>
+            <p><strong>28</strong> But what think ye? A certain man had two sons; and he came to the first, and said, Son, go work to day in my vineyard.</p>
+            <p><strong>29</strong> He answered and said, I will not: but afterward he repented, and went.</p>
+            <p><strong>30</strong> And he came to the second, and said likewise. And he answered and said, I go, sir: and went not.</p>
+            <p><strong>31</strong> Whether of them twain did the will of his father? They say unto him, The first. Jesus saith unto them, Verily I say unto you, That the publicans and the harlots go into the kingdom of God before you.</p>
+            <p><strong>32</strong> For John came unto you in the way of righteousness, and ye believed him not: but the publicans and the harlots believed him: and ye, when ye had seen it, repented not afterward, that ye might believe him.</p>
+            <p><strong>33</strong> Hear another parable: There was a certain householder, which planted a vineyard, and hedged it round about, and digged a winepress in it, and built a tower, and let it out to husbandmen, and went into a far country:</p>
+            <p><strong>34</strong> And when the time of the fruit drew near, he sent his servants to the husbandmen, that they might receive the fruits of it.</p>
+            <p><strong>35</strong> And the husbandmen took his servants, and beat one, and killed another, and stoned another.</p>
+            <p><strong>36</strong> Again, he sent other servants more than the first: and they did unto them likewise.</p>
+            <p><strong>37</strong> But last of all he sent unto them his son, saying, They will reverence my son.</p>
+            <p><strong>38</strong> But when the husbandmen saw the son, they said among themselves, This is the heir; come, let us kill him, and let us seize on his inheritance.</p>
+            <p><strong>39</strong> And they caught him, and cast him out of the vineyard, and slew him.</p>
+            <p><strong>40</strong> When the lord therefore of the vineyard cometh, what will he do unto those husbandmen?</p>
+            <p><strong>41</strong> They say unto him, He will miserably destroy those wicked men, and will let out his vineyard unto other husbandmen, which shall render him the fruits in their seasons.</p>
+            <p><strong>42</strong> Jesus saith unto them, Did ye never read in the scriptures, The stone which the builders rejected, the same is become the head of the corner: this is the Lord’s doing, and it is marvellous in our eyes?</p>
+            <p><strong>43</strong> Therefore say I unto you, The kingdom of God shall be taken from you, and given to a nation bringing forth the fruits thereof.</p>
+            <p><strong>44</strong> And whosoever shall fall on this stone shall be broken: but on whomsoever it shall fall, it will grind him to powder.</p>
+            <p><strong>45</strong> And when the chief priests and Pharisees had heard his parables, they perceived that he spake of them.</p>
+            <p><strong>46</strong> But when they sought to lay hands on him, they feared the multitude, because they took him for a prophet.</p>
+            </div>
+            <div class="scripture-text" id="web-21-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 21 (ASV)</p>
+            <p><strong>1</strong> And when they drew nigh unto Jerusalem, and came unto Bethphage, unto the mount of Olives, then Jesus sent two disciples,</p>
+            <p><strong>2</strong> saying unto them, Go into the village that is over against you, and straightway ye shall find an ass tied, and a colt with her: loose them, and bring them unto me.</p>
+            <p><strong>3</strong> And if any one say aught unto you, ye shall say, The Lord hath need of them; and straightway he will send them.</p>
+            <p><strong>4</strong> Now this is come to pass, that it might be fulfilled which was spoken through the prophet, saying,</p>
+            <p><strong>5</strong> Tell ye the daughter of Zion, Behold, thy King cometh unto thee, Meek, and riding upon an ass, And upon a colt the foal of an ass.</p>
+            <p><strong>6</strong> And the disciples went, and did even as Jesus appointed them,</p>
+            <p><strong>7</strong> and brought the ass, and the colt, and put on them their garments; and he sat thereon.</p>
+            <p><strong>8</strong> And the most part of the multitude spread their garments in the way; and others cut branches from the trees, and spread them in the way.</p>
+            <p><strong>9</strong> And the multitudes that went before him, and that followed, cried, saying, Hosanna to the son of David: Blessed is he that cometh in the name of the Lord; Hosanna in the highest.</p>
+            <p><strong>10</strong> And when he was come into Jerusalem, all the city was stirred, saying, Who is this?</p>
+            <p><strong>11</strong> And the multitudes said, This is the prophet, Jesus, from Nazareth of Galilee.</p>
+            <p><strong>12</strong> And Jesus entered into the temple of God, and cast out all them that sold and bought in the temple, and overthrew the tables of the money-changers, and the seats of them that sold the doves;</p>
+            <p><strong>13</strong> and he saith unto them, It is written, My house shall be called a house of prayer: but ye make it a den of robbers.</p>
+            <p><strong>14</strong> And the blind and the lame came to him in the temple; and he healed them.</p>
+            <p><strong>15</strong> But when the chief priests and the scribes saw the wonderful things that he did, and the children that were crying in the temple and saying, Hosanna to the son of David; they were moved with indignation,</p>
+            <p><strong>16</strong> and said unto him, Hearest thou what these are saying? And Jesus saith unto them, Yea: did ye never read, Out of the mouth of babes and sucklings thou hast perfected praise?</p>
+            <p><strong>17</strong> And he left them, and went forth out of the city to Bethany, and lodged there.</p>
+            <p><strong>18</strong> Now in the morning as he returned to the city, he hungered.</p>
+            <p><strong>19</strong> And seeing a fig tree by the way side, he came to it, and found nothing thereon, but leaves only; and he saith unto it, Let there be no fruit from thee henceforward for ever. And immediately the fig tree withered away.</p>
+            <p><strong>20</strong> And when the disciples saw it, they marvelled, saying, How did the fig tree immediately wither away?</p>
+            <p><strong>21</strong> And Jesus answered and said unto them, Verily I say unto you, If ye have faith, and doubt not, ye shall not only do what is done to the fig tree, but even if ye shall say unto this mountain, Be thou taken up and cast into the sea, it shall be done.</p>
+            <p><strong>22</strong> And all things, whatsoever ye shall ask in prayer, believing, ye shall receive.</p>
+            <p><strong>23</strong> And when he was come into the temple, the chief priests and the elders of the people came unto him as he was teaching, and said, By what authority doest thou these things? and who gave thee this authority?</p>
+            <p><strong>24</strong> And Jesus answered and said unto them, I also will ask you one question, which if ye tell me, I likewise will tell you by what authority I do these things.</p>
+            <p><strong>25</strong> The baptism of John, whence was it? from heaven or from men? And they reasoned with themselves, saying, If we shall say, From heaven; he will say unto us, Why then did ye not believe him?</p>
+            <p><strong>26</strong> But if we shall say, From men; we fear the multitude; for all hold John as a prophet.</p>
+            <p><strong>27</strong> And they answered Jesus, and said, We know not. He also said unto them, Neither tell I you by what authority I do these things.</p>
+            <p><strong>28</strong> But what think ye? A man had two sons; and he came to the first, and said, Son, go work to-day in the vineyard.</p>
+            <p><strong>29</strong> And he answered and said, I will not: but afterward he repented himself, and went.</p>
+            <p><strong>30</strong> And he came to the second, and said likewise. And he answered and said, I go, sir: and went not.</p>
+            <p><strong>31</strong> Which of the two did the will of his father? They say, The first. Jesus saith unto them, Verily I say unto you, that the publicans and the harlots go into the kingdom of God before you.</p>
+            <p><strong>32</strong> For John came unto you in the way of righteousness, and ye believed him not; but the publicans and the harlots believed him: and ye, when ye saw it, did not even repent yourselves afterward, that ye might believe him.</p>
+            <p><strong>33</strong> Hear another parable: There was a man that was a householder, who planted a vineyard, and set a hedge about it, and digged a winepress in it, and built a tower, and let it out to husbandmen, and went into another country.</p>
+            <p><strong>34</strong> And when the season of the fruits drew near, he sent his servants to the husbandmen, to receive his fruits.</p>
+            <p><strong>35</strong> And the husbandmen took his servants, and beat one, and killed another, and stoned another.</p>
+            <p><strong>36</strong> Again, he sent other servants more than the first: and they did unto them in like manner.</p>
+            <p><strong>37</strong> But afterward he sent unto them his son, saying, They will reverence my son.</p>
+            <p><strong>38</strong> But the husbandmen, when they saw the son, said among themselves, This is the heir; come, let us kill him, and take his inheritance.</p>
+            <p><strong>39</strong> And they took him, and cast him forth out of the vineyard, and killed him.</p>
+            <p><strong>40</strong> When therefore the lord of the vineyard shall come, what will he do unto those husbandmen?</p>
+            <p><strong>41</strong> They say unto him, He will miserably destroy those miserable men, and will let out the vineyard unto other husbandmen, who shall render him the fruits in their seasons.</p>
+            <p><strong>42</strong> Jesus saith unto them, Did ye never read in the scriptures,  The stone which the builders rejected, The same was made the head of the corner; This was from the Lord, And it is marvellous in our eyes?</p>
+            <p><strong>43</strong> Therefore say I unto you, The kingdom of God shall be taken away from you, and shall be given to a nation bringing forth the fruits thereof.</p>
+            <p><strong>44</strong> And he that falleth on this stone shall be broken to pieces: but on whomsoever it shall fall, it will scatter him as dust.</p>
+            <p><strong>45</strong> And when the chief priests and the Pharisees heard his parables, they perceived that he spake of them.</p>
+            <p><strong>46</strong> And when they sought to lay hold on him, they feared the multitudes, because they took him for a prophet.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus approaches Jerusalem and sends two disciples for a donkey and colt, fulfilling the prophecy of a humble King coming to the daughter of Zion. The crowds spread their clothes and branches, shouting, Hosanna to the son of David. He enters the temple, drives out the buyers and sellers, overturns the money changers' tables, and declares it a house of prayer made a den of robbers. He heals the blind and lame, and children cry out praise, angering the chief priests and scribes. The next morning he curses a fruitless fig tree, teaching the disciples about believing prayer. Back in the temple, the leaders demand by what authority he acts, but he answers with a question about John's baptism. He then tells the parables of the two sons and the wicked tenants, warning that the kingdom will be given to a fruit-bearing people.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The humble King who enters Jerusalem, cleanses the temple, and answers the leaders with searching questions and parables.</li>
+          <li><strong>The crowds</strong> — Multitudes who spread clothes and branches and shout Hosanna to the son of David as he enters the city.</li>
+          <li><strong>The chief priests and elders</strong> — Leaders who challenge Jesus' authority and perceive that his parables of judgment are spoken about them.</li>
+          <li><strong>The children in the temple</strong> — Young voices crying Hosanna to the son of David, whose praise Jesus defends from Scripture.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 21:9 (WEB)</p>
+          <p class="verse__text">The multitudes who went before him, and who followed kept shouting, “Hosanna  to the son of David! Blessed is he who comes in the name of the Lord! Hosanna in the highest!”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus comes as a King who is humble and gentle, not by force but riding on a donkey.</li>
+          <li>God desires his house, and our hearts, to be marked by prayer and reverence rather than self-interest.</li>
+          <li>Real obedience is shown by doing the Father's will, not merely by saying the right words.</li>
+          <li>Christ is the rejected stone whom God has made the cornerstone of his kingdom.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-21">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-21">
+            <ul class="lesson-list">
+            <li><strong>Christ reigns through humility, not pride.</strong> He comes 'humble, and riding on a donkey, on a colt, the foal of a donkey' (Matthew 21:5, WEB), fulfilling prophecy of a gentle King.</li>
+            <li><strong>God's house is meant for prayer.</strong> Jesus declares, 'My house shall be called a house of prayer, but you have made it a den of robbers' (Matthew 21:13, WEB).</li>
+            <li><strong>Obedience is proved by action, not words.</strong> The son who first refused 'afterward he changed his mind, and went' (Matthew 21:29, WEB), and he, not the polite son, did the father's will.</li>
+            <li><strong>Grace welcomes the unlikely who repent.</strong> Jesus says 'the tax collectors and the prostitutes are entering into the Kingdom of God before you' (Matthew 21:31, WEB), for they believed John.</li>
+            <li><strong>The rejected Christ is God's cornerstone.</strong> 'The stone which the builders rejected, the same was made the head of the corner' (Matthew 21:42, WEB); to reject him is to refuse the kingdom's foundation.</li>
+            <li><strong>God seeks a people who bear fruit.</strong> The kingdom 'will be given to a nation producing its fruit' (Matthew 21:43, WEB), calling us to lives that yield what God desires.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-21">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-21">
+            <ol class="study-questions">
+            <li>How does Jesus' choice to ride a donkey shape the way we understand his kingship?</li>
+            <li>What does Jesus' cleansing of the temple reveal about what he expects of God's house?</li>
+            <li>In the parable of the two sons, which son did the father's will, and why does that matter?</li>
+            <li>Why do the chief priests and elders refuse to answer Jesus' question about John's baptism?</li>
+            <li>Where in your life are you tempted to say yes to God with your words but no with your actions?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-21">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-21">
+            <ol class="study-questions">
+            <li>The donkey, drawn from Zechariah's prophecy quoted in verse 5, shows a King who is humble and peaceable rather than a warring conqueror. He receives the crowd's praise yet comes lowly, revealing that his throne is won by self-giving love.</li>
+            <li>By driving out the merchants and overturning the tables (21:12-13), Jesus shows that God's house is for prayer and worship, not profit. He grieves when sacred things are used for gain, and he longs for hearts and gatherings centered on God.</li>
+            <li>The first son refused but later went; he did the father's will (21:29-31). Jesus teaches that genuine repentance and obedience matter more than a quick verbal yes. Heartfelt action, even after failure, is what pleases the Father.</li>
+            <li>They reason that admitting John was from heaven condemns their unbelief, while denying it angers the crowd (21:25-26). Fearing both truth and people, they answer, We don't know. Their evasion exposes hearts unwilling to submit to God's authority.</li>
+            <li>This is a personal application question. Invite members to name areas of half-hearted obedience, comparing themselves to the two sons. As leader, share gently first, keep it grace-filled, and let no one feel pressured to confess beyond what they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-20.html">← Matthew 20</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-22.html">Matthew 22 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

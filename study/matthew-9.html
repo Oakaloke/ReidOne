@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 9: Authority to Forgive and Heal — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 9: Jesus forgives sins, calls a tax collector, and heals the sick because he came for sinners." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 9
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 9</span>
+        <h1>Matthew 9: Authority to Forgive and Heal</h1>
+        <p class="lead">Jesus forgives sins, calls a tax collector, and heals the sick because he came for sinners.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-9">
+            <span>Scripture — Matthew Chapter 9</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-9">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-9-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-9-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-9-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-9-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 9 (WEB)</p>
+            <p><strong>1</strong> He entered into a boat, and crossed over, and came into his own city.</p>
+            <p><strong>2</strong> Behold, they brought to him a man who was paralyzed, lying on a bed. Jesus, seeing their faith, said to the paralytic, “Son, cheer up! Your sins are forgiven you.”</p>
+            <p><strong>3</strong> Behold, some of the scribes said to themselves, “This man blasphemes.”</p>
+            <p><strong>4</strong> Jesus, knowing their thoughts, said, “Why do you think evil in your hearts?</p>
+            <p><strong>5</strong> For which is easier, to say, ‘Your sins are forgiven;’ or to say, ‘Get up, and walk?’</p>
+            <p><strong>6</strong> But that you may know that the Son of Man has authority on earth to forgive sins...” (then he said to the paralytic), “Get up, and take up your mat, and go up to your house.”</p>
+            <p><strong>7</strong> He arose and departed to his house.</p>
+            <p><strong>8</strong> But when the multitudes saw it, they marveled and glorified God, who had given such authority to men.</p>
+            <p><strong>9</strong> As Jesus passed by from there, he saw a man called Matthew sitting at the tax collection office. He said to him, “Follow me.” He got up and followed him.</p>
+            <p><strong>10</strong> As he sat in the house, behold, many tax collectors and sinners came and sat down with Jesus and his disciples.</p>
+            <p><strong>11</strong> When the Pharisees saw it, they said to his disciples, “Why does your teacher eat with tax collectors and sinners?”</p>
+            <p><strong>12</strong> When Jesus heard it, he said to them, “Those who are healthy have no need for a physician, but those who are sick do.</p>
+            <p><strong>13</strong> But you go and learn what this means: ‘I desire mercy, and not sacrifice,’for I came not to call the righteous, but sinners to repentance.”</p>
+            <p><strong>14</strong> Then John’s disciples came to him, saying, “Why do we and the Pharisees fast often, but your disciples don’t fast?”</p>
+            <p><strong>15</strong> Jesus said to them, “Can the friends of the bridegroom mourn, as long as the bridegroom is with them? But the days will come when the bridegroom will be taken away from them, and then they will fast.</p>
+            <p><strong>16</strong> No one puts a piece of unshrunk cloth on an old garment; for the patch would tear away from the garment, and a worse hole is made.</p>
+            <p><strong>17</strong> Neither do people put new wine into old wine skins, or else the skins would burst, and the wine be spilled, and the skins ruined. No, they put new wine into fresh wine skins, and both are preserved.”</p>
+            <p><strong>18</strong> While he told these things to them, behold, a ruler came and worshiped him, saying, “My daughter has just died, but come and lay your hand on her, and she will live.”</p>
+            <p><strong>19</strong> Jesus got up and followed him, as did his disciples.</p>
+            <p><strong>20</strong> Behold, a woman who had an issue of blood for twelve years came behind him, and touched the fringe of his garment;</p>
+            <p><strong>21</strong> for she said within herself, “If I just touch his garment, I will be made well.”</p>
+            <p><strong>22</strong> But Jesus, turning around and seeing her, said, “Daughter, cheer up! Your faith has made you well.” And the woman was made well from that hour.</p>
+            <p><strong>23</strong> When Jesus came into the ruler’s house, and saw the flute players, and the crowd in noisy disorder,</p>
+            <p><strong>24</strong> he said to them, “Make room, because the girl isn’t dead, but sleeping.”   They were ridiculing him.</p>
+            <p><strong>25</strong> But when the crowd was put out, he entered in, took her by the hand, and the girl arose.</p>
+            <p><strong>26</strong> The report of this went out into all that land.</p>
+            <p><strong>27</strong> As Jesus passed by from there, two blind men followed him, calling out and saying, “Have mercy on us, son of David!”</p>
+            <p><strong>28</strong> When he had come into the house, the blind men came to him. Jesus said to them, “Do you believe that I am able to do this?”   They told him, “Yes, Lord.”</p>
+            <p><strong>29</strong> Then he touched their eyes, saying, “According to your faith be it done to you.”</p>
+            <p><strong>30</strong> Their eyes were opened. Jesus strictly commanded them, saying, “See that no one knows about this.”</p>
+            <p><strong>31</strong> But they went out and spread abroad his fame in all that land.</p>
+            <p><strong>32</strong> As they went out, behold, a mute man who was demon possessed was brought to him.</p>
+            <p><strong>33</strong> When the demon was cast out, the mute man spoke. The multitudes marveled, saying, “Nothing like this has ever been seen in Israel!”</p>
+            <p><strong>34</strong> But the Pharisees said, “By the prince of the demons, he casts out demons.”</p>
+            <p><strong>35</strong> Jesus went about all the cities and the villages, teaching in their synagogues, and preaching the Good News of the Kingdom, and healing every disease and every sickness among the people.</p>
+            <p><strong>36</strong> But when he saw the multitudes, he was moved with compassion for them, because they were harassed and scattered, like sheep without a shepherd.</p>
+            <p><strong>37</strong> Then he said to his disciples, “The harvest indeed is plentiful, but the laborers are few.</p>
+            <p><strong>38</strong> Pray therefore that the Lord of the harvest will send out laborers into his harvest.”</p>
+            </div>
+            <div class="scripture-text" id="web-9-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 9 (KJV)</p>
+            <p><strong>1</strong> And he entered into a ship, and passed over, and came into his own city.</p>
+            <p><strong>2</strong> And, behold, they brought to him a man sick of the palsy, lying on a bed: and Jesus seeing their faith said unto the sick of the palsy; Son, be of good cheer; thy sins be forgiven thee.</p>
+            <p><strong>3</strong> And, behold, certain of the scribes said within themselves, This man blasphemeth.</p>
+            <p><strong>4</strong> And Jesus knowing their thoughts said, Wherefore think ye evil in your hearts?</p>
+            <p><strong>5</strong> For whether is easier, to say, Thy sins be forgiven thee; or to say, Arise, and walk?</p>
+            <p><strong>6</strong> But that ye may know that the Son of man hath power on earth to forgive sins, (then saith he to the sick of the palsy,) Arise, take up thy bed, and go unto thine house.</p>
+            <p><strong>7</strong> And he arose, and departed to his house.</p>
+            <p><strong>8</strong> But when the multitudes saw it, they marvelled, and glorified God, which had given such power unto men.</p>
+            <p><strong>9</strong> And as Jesus passed forth from thence, he saw a man, named Matthew, sitting at the receipt of custom: and he saith unto him, Follow me. And he arose, and followed him.</p>
+            <p><strong>10</strong> And it came to pass, as Jesus sat at meat in the house, behold, many publicans and sinners came and sat down with him and his disciples.</p>
+            <p><strong>11</strong> And when the Pharisees saw it, they said unto his disciples, Why eateth your Master with publicans and sinners?</p>
+            <p><strong>12</strong> But when Jesus heard that, he said unto them, They that be whole need not a physician, but they that are sick.</p>
+            <p><strong>13</strong> But go ye and learn what that meaneth, I will have mercy, and not sacrifice: for I am not come to call the righteous, but sinners to repentance.</p>
+            <p><strong>14</strong> Then came to him the disciples of John, saying, Why do we and the Pharisees fast oft, but thy disciples fast not?</p>
+            <p><strong>15</strong> And Jesus said unto them, Can the children of the bridechamber mourn, as long as the bridegroom is with them? but the days will come, when the bridegroom shall be taken from them, and then shall they fast.</p>
+            <p><strong>16</strong> No man putteth a piece of new cloth unto an old garment, for that which is put in to fill it up taketh from the garment, and the rent is made worse.</p>
+            <p><strong>17</strong> Neither do men put new wine into old bottles: else the bottles break, and the wine runneth out, and the bottles perish: but they put new wine into new bottles, and both are preserved.</p>
+            <p><strong>18</strong> While he spake these things unto them, behold, there came a certain ruler, and worshipped him, saying, My daughter is even now dead: but come and lay thy hand upon her, and she shall live.</p>
+            <p><strong>19</strong> And Jesus arose, and followed him, and so did his disciples.</p>
+            <p><strong>20</strong> And, behold, a woman, which was diseased with an issue of blood twelve years, came behind him, and touched the hem of his garment:</p>
+            <p><strong>21</strong> For she said within herself, If I may but touch his garment, I shall be whole.</p>
+            <p><strong>22</strong> But Jesus turned him about, and when he saw her, he said, Daughter, be of good comfort; thy faith hath made thee whole. And the woman was made whole from that hour.</p>
+            <p><strong>23</strong> And when Jesus came into the ruler’s house, and saw the minstrels and the people making a noise,</p>
+            <p><strong>24</strong> He said unto them, Give place: for the maid is not dead, but sleepeth. And they laughed him to scorn.</p>
+            <p><strong>25</strong> But when the people were put forth, he went in, and took her by the hand, and the maid arose.</p>
+            <p><strong>26</strong> And the fame hereof went abroad into all that land.</p>
+            <p><strong>27</strong> And when Jesus departed thence, two blind men followed him, crying, and saying, Thou Son of David, have mercy on us.</p>
+            <p><strong>28</strong> And when he was come into the house, the blind men came to him: and Jesus saith unto them, Believe ye that I am able to do this? They said unto him, Yea, Lord.</p>
+            <p><strong>29</strong> Then touched he their eyes, saying, According to your faith be it unto you.</p>
+            <p><strong>30</strong> And their eyes were opened; and Jesus straitly charged them, saying, See that no man know it.</p>
+            <p><strong>31</strong> But they, when they were departed, spread abroad his fame in all that country.</p>
+            <p><strong>32</strong> As they went out, behold, they brought to him a dumb man possessed with a devil.</p>
+            <p><strong>33</strong> And when the devil was cast out, the dumb spake: and the multitudes marvelled, saying, It was never so seen in Israel.</p>
+            <p><strong>34</strong> But the Pharisees said, He casteth out devils through the prince of the devils.</p>
+            <p><strong>35</strong> And Jesus went about all the cities and villages, teaching in their synagogues, and preaching the gospel of the kingdom, and healing every sickness and every disease among the people.</p>
+            <p><strong>36</strong> But when he saw the multitudes, he was moved with compassion on them, because they fainted, and were scattered abroad, as sheep having no shepherd.</p>
+            <p><strong>37</strong> Then saith he unto his disciples, The harvest truly is plenteous, but the labourers are few;</p>
+            <p><strong>38</strong> Pray ye therefore the Lord of the harvest, that he will send forth labourers into his harvest.</p>
+            </div>
+            <div class="scripture-text" id="web-9-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 9 (ASV)</p>
+            <p><strong>1</strong> And he entered into a boat, and crossed over, and came into his own city.</p>
+            <p><strong>2</strong> And behold, they brought to him a man sick of the palsy, lying on a bed: and Jesus seeing their faith said unto the sick of the palsy, Son, be of good cheer; thy sins are forgiven.</p>
+            <p><strong>3</strong> And behold, certain of the scribes said within themselves, This man blasphemeth.</p>
+            <p><strong>4</strong> And Jesus knowing their thoughts said, Wherefore think ye evil in your hearts?</p>
+            <p><strong>5</strong> For which is easier, to say, Thy sins are forgiven; or to say, Arise, and walk?</p>
+            <p><strong>6</strong> But that ye may know that the Son of man hath authority on earth to forgive sins (then saith he to the sick of the palsy), Arise, and take up thy bed, and go unto thy house.</p>
+            <p><strong>7</strong> And he arose, and departed to his house.</p>
+            <p><strong>8</strong> But when the multitudes saw it, they were afraid, and glorified God, who had given such authority unto men.</p>
+            <p><strong>9</strong> And as Jesus passed by from thence, he saw a man, called Matthew, sitting at the place of toll: and he saith unto him, Follow me. And he arose, and followed him.</p>
+            <p><strong>10</strong> And it came to pass, as he sat at meat in the house, behold, many publicans and sinners came and sat down with Jesus and his disciples.</p>
+            <p><strong>11</strong> And when the Pharisees saw it, they said unto his disciples, Why eateth your Teacher with the publicans and sinners?</p>
+            <p><strong>12</strong> But when he heard it, he said, They that are whole have no need of a physician, but they that are sick.</p>
+            <p><strong>13</strong> But go ye and learn what this meaneth, I desire mercy, and not sacrifice: for I came not to call the righteous, but sinners.</p>
+            <p><strong>14</strong> Then come to him the disciples of John, saying, Why do we and the Pharisees fast oft, but thy disciples fast not?</p>
+            <p><strong>15</strong> And Jesus said unto them, Can the sons of the bridechamber mourn, as long as the bridegroom is with them? but the days will come, when the bridegroom shall be taken away from them, and then will they fast.</p>
+            <p><strong>16</strong> And no man putteth a piece of undressed cloth upon an old garment; for that which should fill it up taketh from the garment, and a worse rent is made.</p>
+            <p><strong>17</strong> Neither do men put new wine into old wine-skins: else the skins burst, and the wine is spilled, and the skins perish: but they put new wine into fresh wine-skins, and both are preserved.</p>
+            <p><strong>18</strong> While he spake these things unto them, behold, there came a ruler, and worshipped him, saying, My daughter is even now dead: but come and lay thy hand upon her, and she shall live.</p>
+            <p><strong>19</strong> And Jesus arose, and followed him, and so did his disciples.</p>
+            <p><strong>20</strong> And behold, a woman, who had an issue of blood twelve years, came behind him, and touched the border of his garment:</p>
+            <p><strong>21</strong> for she said within herself, If I do but touch his garment, I shall be made whole.</p>
+            <p><strong>22</strong> But Jesus turning and seeing her said, Daughter, be of good cheer; thy faith hath made thee whole. And the woman was made whole from that hour.</p>
+            <p><strong>23</strong> And when Jesus came into the ruler’s house, and saw the flute-players, and the crowd making a tumult,</p>
+            <p><strong>24</strong> he said, Give place: for the damsel is not dead, but sleepeth. And they laughed him to scorn.</p>
+            <p><strong>25</strong> But when the crowd was put forth, he entered in, and took her by the hand; and the damsel arose.</p>
+            <p><strong>26</strong> And the fame hereof went forth into all that land.</p>
+            <p><strong>27</strong> And as Jesus passed by from thence, two blind men followed him, crying out, and saying, Have mercy on us, thou son of David.</p>
+            <p><strong>28</strong> And when he was come into the house, the blind men came to him: and Jesus saith unto them, Believe ye that I am able to do this? They say unto him, Yea, Lord.</p>
+            <p><strong>29</strong> Then touched he their eyes, saying, According to your faith be it done unto you.</p>
+            <p><strong>30</strong> And their eyes were opened. And Jesus strictly charged them, saying, See that no man know it.</p>
+            <p><strong>31</strong> But they went forth, and spread abroad his fame in all that land.</p>
+            <p><strong>32</strong> And as they went forth, behold, there was brought to him a dumb man possessed with a demon.</p>
+            <p><strong>33</strong> And when the demon was cast out, the dumb man spake: and the multitudes marvelled, saying, It was never so seen in Israel.</p>
+            <p><strong>34</strong> But the Pharisees said, By the prince of the demons casteth he out demons.</p>
+            <p><strong>35</strong> And Jesus went about all the cities and the villages, teaching in their synagogues, and preaching the gospel of the kingdom, and healing all manner of disease and all manner of sickness.</p>
+            <p><strong>36</strong> But when he saw the multitudes, he was moved with compassion for them, because they were distressed and scattered, as sheep not having a shepherd.</p>
+            <p><strong>37</strong> Then saith he unto his disciples, The harvest indeed is plenteous, but the laborers are few.</p>
+            <p><strong>38</strong> Pray ye therefore the Lord of the harvest, that he send forth laborers into his harvest.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus crosses back to his own city, where a paralyzed man is brought to him. Seeing the faith of those who carry him, Jesus forgives the man's sins, and when scribes accuse him of blasphemy, he heals the man to show that the Son of Man has authority on earth to forgive sins. He then calls Matthew from the tax office and eats with tax collectors and sinners, declaring that he came not to call the righteous but sinners to repentance. He answers a question about fasting with the picture of the bridegroom and new wineskins. A ruler's daughter is raised, a woman with a long illness is healed by touching his garment, blind men receive sight, and a mute man speaks. Moved with compassion for the harassed crowds, Jesus calls his disciples to pray for laborers for the plentiful harvest.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Son of Man who forgives sins, heals every disease, and shows compassion to harassed crowds.</li>
+          <li><strong>Matthew</strong> — A tax collector who rises and follows Jesus at his call from the tax office.</li>
+          <li><strong>The ruler</strong> — A man who worships Jesus and pleads for his dead daughter, who is then raised.</li>
+          <li><strong>The woman with the issue of blood</strong> — A sufferer of twelve years made well when she touches the fringe of Jesus' garment in faith.</li>
+          <li><strong>The Pharisees</strong> — Religious leaders who question why Jesus eats with sinners and charge that he casts out demons by their prince.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 9:13 (WEB)</p>
+          <p class="verse__text">But you go and learn what this means: ‘I desire mercy, and not sacrifice,’for I came not to call the righteous, but sinners to repentance.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus has authority not only to heal bodies but to forgive sins, the deeper need of every person.</li>
+          <li>Christ welcomes sinners and outcasts; no one is too far gone to be called and changed.</li>
+          <li>God desires mercy more than mere outward religion, and faith reaches out to touch him even in weakness.</li>
+          <li>Jesus looks on the lost with compassion and calls his people to pray for more laborers.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-9">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-9">
+            <ul class="lesson-list">
+            <li><strong>Jesus heals the soul before the body.</strong> To the paralytic Jesus first says his sins are forgiven, then commands him to walk, showing that forgiveness is the greater miracle (Matthew 9:2, WEB).</li>
+            <li><strong>Christ calls sinners, not the self-righteous.</strong> Jesus came not to call the righteous but sinners to repentance, so the door stands open to all who know they are sick (Matthew 9:13, WEB).</li>
+            <li><strong>God desires mercy, not mere sacrifice.</strong> Jesus sends the Pharisees back to Scripture to learn that God prizes mercy above outward religious performance (Matthew 9:13, WEB).</li>
+            <li><strong>Faith reaches out to touch Jesus.</strong> The woman is made well because she believes that even touching his garment will heal her, and Jesus credits her faith (Matthew 9:22, WEB).</li>
+            <li><strong>Compassion moves us to pray for workers.</strong> Seeing the crowds as sheep without a shepherd, Jesus tells his disciples to pray the Lord of the harvest to send laborers (Matthew 9:37-38, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-9">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-9">
+            <ol class="study-questions">
+            <li>What does Jesus say and do to prove that the Son of Man has authority on earth to forgive sins (Matthew 9:5-7)?</li>
+            <li>Why does Jesus eat with tax collectors and sinners, and how does he answer the Pharisees' objection (Matthew 9:11-13)?</li>
+            <li>How do the paralytic's friends and the woman with the issue of blood each show faith, and what do their stories teach you about coming to Jesus?</li>
+            <li>Where in your own life do you most need to hear Jesus say, 'Cheer up,' whether for forgiveness or for healing of a long burden?</li>
+            <li>Jesus is moved with compassion for the harassed and scattered crowds; who are the 'sheep without a shepherd' around you, and how might you pray and labor for them?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-9">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-9">
+            <ol class="study-questions">
+            <li>Jesus asks which is easier, to forgive or to heal, then heals the paralytic so the crowd may know the Son of Man has authority to forgive sins (Matthew 9:5-7). The visible healing confirms the invisible forgiveness, and the multitudes glorify God.</li>
+            <li>Jesus answers that the healthy need no physician but the sick do; he came for sinners (Matthew 9:12-13). He quotes 'I desire mercy, and not sacrifice,' showing the Pharisees that loving the lost is the heart of God, not a compromise of holiness.</li>
+            <li>The friends carry the paralytic and Jesus sees their faith (Matthew 9:2); the woman believes one touch will heal her (Matthew 9:21). Both teach that faith brings the needy to Jesus in whatever way it can, and he honors it.</li>
+            <li>This is a personal question. Invite group members to name a specific area, whether guilt that needs forgiveness or a long-standing burden. Encourage honesty without pressure to share, and close by praying Jesus' words of comfort over one another.</li>
+            <li>This is a personal-application question. Encourage members to name actual people or groups who feel shepherdless, then move from discussion to action: pray together for laborers, and ask how each person might be an answer to that prayer this week.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-8.html">← Matthew 8</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-10.html">Matthew 10 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

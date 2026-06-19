@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Matthew 24: Signs of the End of the Age — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Matthew 24: On the Mount of Olives Jesus foretells the temple's fall and the signs leading to his return." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-matthew-progress" data-study-total="28">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Matthew, Chapter 24
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="matthew.html">← All Chapters</a>
+        <span class="study-meta">The Book of Matthew · Chapter 24</span>
+        <h1>Matthew 24: Signs of the End of the Age</h1>
+        <p class="lead">On the Mount of Olives Jesus foretells the temple's fall and the signs leading to his return.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-24">
+            <span>Scripture — Matthew Chapter 24</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-24">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-24-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-24-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-24-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-24-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Matthew 24 (WEB)</p>
+            <p><strong>1</strong> Jesus went out from the temple, and was going on his way. His disciples came to him to show him the buildings of the temple.</p>
+            <p><strong>2</strong> But he answered them, “You see all of these things, don’t you? Most certainly I tell you, there will not be left here one stone on another, that will not be thrown down.”</p>
+            <p><strong>3</strong> As he sat on the Mount of Olives, the disciples came to him privately, saying, “Tell us, when will these things be? What is the sign of your coming, and of the end of the age?”</p>
+            <p><strong>4</strong> Jesus answered them, “Be careful that no one leads you astray.</p>
+            <p><strong>5</strong> For many will come in my name, saying, ‘I am the Christ,’ and will lead many astray.</p>
+            <p><strong>6</strong> You will hear of wars and rumors of wars. See that you aren’t troubled, for all this must happen, but the end is not yet.</p>
+            <p><strong>7</strong> For nation will rise against nation, and kingdom against kingdom; and there will be famines, plagues, and earthquakes in various places.</p>
+            <p><strong>8</strong> But all these things are the beginning of birth pains.</p>
+            <p><strong>9</strong> Then they will deliver you up to oppression, and will kill you. You will be hated by all of the nations for my name’s sake.</p>
+            <p><strong>10</strong> Then many will stumble, and will deliver up one another, and will hate one another.</p>
+            <p><strong>11</strong> Many false prophets will arise, and will lead many astray.</p>
+            <p><strong>12</strong> Because iniquity will be multiplied, the love of many will grow cold.</p>
+            <p><strong>13</strong> But he who endures to the end, the same will be saved.</p>
+            <p><strong>14</strong> This Good News of the Kingdom will be preached in the whole world for a testimony to all the nations, and then the end will come.</p>
+            <p><strong>15</strong> “When, therefore, you see the abomination of desolation, which was spoken of through Daniel the prophet, standing in the holy place (let the reader understand),</p>
+            <p><strong>16</strong> then let those who are in Judea flee to the mountains.</p>
+            <p><strong>17</strong> Let him who is on the housetop not go down to take out things that are in his house.</p>
+            <p><strong>18</strong> Let him who is in the field not return back to get his clothes.</p>
+            <p><strong>19</strong> But woe to those who are with child and to nursing mothers in those days!</p>
+            <p><strong>20</strong> Pray that your flight will not be in the winter, nor on a Sabbath,</p>
+            <p><strong>21</strong> for then there will be great oppression, such as has not been from the beginning of the world until now, no, nor ever will be.</p>
+            <p><strong>22</strong> Unless those days had been shortened, no flesh would have been saved. But for the sake of the chosen ones, those days will be shortened.</p>
+            <p><strong>23</strong> “Then if any man tells you, ‘Behold, here is the Christ,’ or, ‘There,’ don’t believe it.</p>
+            <p><strong>24</strong> For there will arise false christs, and false prophets, and they will show great signs and wonders, so as to lead astray, if possible, even the chosen ones.</p>
+            <p><strong>25</strong> “Behold, I have told you beforehand.</p>
+            <p><strong>26</strong> If therefore they tell you, ‘Behold, he is in the wilderness,’ don’t go out; ‘Behold, he is in the inner rooms,’ don’t believe it.</p>
+            <p><strong>27</strong> For as the lightning flashes from the east, and is seen even to the west, so will be the coming of the Son of Man.</p>
+            <p><strong>28</strong> For wherever the carcass is, there is where the vultures gather together.</p>
+            <p><strong>29</strong> But immediately after the oppression of those days, the sun will be darkened, the moon will not give its light, the stars will fall from the sky, and the powers of the heavens will be shaken;</p>
+            <p><strong>30</strong> and then the sign of the Son of Man will appear in the sky. Then all the tribes of the earth will mourn, and they will see the Son of Man coming on the clouds of the sky with power and great glory.</p>
+            <p><strong>31</strong> He will send out his angels with a great sound of a trumpet, and they will gather together his chosen ones from the four winds, from one end of the sky to the other.</p>
+            <p><strong>32</strong> “Now from the fig tree learn this parable. When its branch has now become tender, and produces its leaves, you know that the summer is near.</p>
+            <p><strong>33</strong> Even so you also, when you see all these things, know that it is near, even at the doors.</p>
+            <p><strong>34</strong> Most certainly I tell you, this generationwill not pass away, until all these things are accomplished.</p>
+            <p><strong>35</strong> Heaven and earth will pass away, but my words will not pass away.</p>
+            <p><strong>36</strong> But no one knows of that day and hour, not even the angels of heaven,but my Father only.</p>
+            <p><strong>37</strong> “As the days of Noah were, so will be the coming of the Son of Man.</p>
+            <p><strong>38</strong> For as in those days which were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered into the ship,</p>
+            <p><strong>39</strong> and they didn’t know until the flood came, and took them all away, so will be the coming of the Son of Man.</p>
+            <p><strong>40</strong> Then two men will be in the field: one will be taken and one will be left;</p>
+            <p><strong>41</strong> two women grinding at the mill, one will be taken and one will be left.</p>
+            <p><strong>42</strong> Watch therefore, for you don’t know in what hour your Lord comes.</p>
+            <p><strong>43</strong> But know this, that if the master of the house had known in what watch of the night the thief was coming, he would have watched, and would not have allowed his house to be broken into.</p>
+            <p><strong>44</strong> Therefore also be ready, for in an hour that you don’t expect, the Son of Man will come.</p>
+            <p><strong>45</strong> “Who then is the faithful and wise servant, whom his lord has set over his household, to give them their food in due season?</p>
+            <p><strong>46</strong> Blessed is that servant whom his lord finds doing so when he comes.</p>
+            <p><strong>47</strong> Most certainly I tell you that he will set him over all that he has.</p>
+            <p><strong>48</strong> But if that evil servant should say in his heart, ‘My lord is delaying his coming,’</p>
+            <p><strong>49</strong> and begins to beat his fellow servants, and eat and drink with the drunkards,</p>
+            <p><strong>50</strong> the lord of that servant will come in a day when he doesn’t expect it, and in an hour when he doesn’t know it,</p>
+            <p><strong>51</strong> and will cut him in pieces, and appoint his portion with the hypocrites. There is where the weeping and grinding of teeth will be.</p>
+            </div>
+            <div class="scripture-text" id="web-24-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Matthew 24 (KJV)</p>
+            <p><strong>1</strong> And Jesus went out, and departed from the temple: and his disciples came to him for to shew him the buildings of the temple.</p>
+            <p><strong>2</strong> And Jesus said unto them, See ye not all these things? verily I say unto you, There shall not be left here one stone upon another, that shall not be thrown down.</p>
+            <p><strong>3</strong> And as he sat upon the mount of Olives, the disciples came unto him privately, saying, Tell us, when shall these things be? and what shall be the sign of thy coming, and of the end of the world?</p>
+            <p><strong>4</strong> And Jesus answered and said unto them, Take heed that no man deceive you.</p>
+            <p><strong>5</strong> For many shall come in my name, saying, I am Christ; and shall deceive many.</p>
+            <p><strong>6</strong> And ye shall hear of wars and rumours of wars: see that ye be not troubled: for all these things must come to pass, but the end is not yet.</p>
+            <p><strong>7</strong> For nation shall rise against nation, and kingdom against kingdom: and there shall be famines, and pestilences, and earthquakes, in divers places.</p>
+            <p><strong>8</strong> All these are the beginning of sorrows.</p>
+            <p><strong>9</strong> Then shall they deliver you up to be afflicted, and shall kill you: and ye shall be hated of all nations for my name’s sake.</p>
+            <p><strong>10</strong> And then shall many be offended, and shall betray one another, and shall hate one another.</p>
+            <p><strong>11</strong> And many false prophets shall rise, and shall deceive many.</p>
+            <p><strong>12</strong> And because iniquity shall abound, the love of many shall wax cold.</p>
+            <p><strong>13</strong> But he that shall endure unto the end, the same shall be saved.</p>
+            <p><strong>14</strong> And this gospel of the kingdom shall be preached in all the world for a witness unto all nations; and then shall the end come.</p>
+            <p><strong>15</strong> When ye therefore shall see the abomination of desolation, spoken of by Daniel the prophet, stand in the holy place, (whoso readeth, let him understand:)</p>
+            <p><strong>16</strong> Then let them which be in Judea flee into the mountains:</p>
+            <p><strong>17</strong> Let him which is on the housetop not come down to take any thing out of his house:</p>
+            <p><strong>18</strong> Neither let him which is in the field return back to take his clothes.</p>
+            <p><strong>19</strong> And woe unto them that are with child, and to them that give suck in those days!</p>
+            <p><strong>20</strong> But pray ye that your flight be not in the winter, neither on the sabbath day:</p>
+            <p><strong>21</strong> For then shall be great tribulation, such as was not since the beginning of the world to this time, no, nor ever shall be.</p>
+            <p><strong>22</strong> And except those days should be shortened, there should no flesh be saved: but for the elect’s sake those days shall be shortened.</p>
+            <p><strong>23</strong> Then if any man shall say unto you, Lo, here is Christ, or there; believe it not.</p>
+            <p><strong>24</strong> For there shall arise false Christs, and false prophets, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.</p>
+            <p><strong>25</strong> Behold, I have told you before.</p>
+            <p><strong>26</strong> Wherefore if they shall say unto you, Behold, he is in the desert; go not forth: behold, he is in the secret chambers; believe it not.</p>
+            <p><strong>27</strong> For as the lightning cometh out of the east, and shineth even unto the west; so shall also the coming of the Son of man be.</p>
+            <p><strong>28</strong> For wheresoever the carcase is, there will the eagles be gathered together.</p>
+            <p><strong>29</strong> Immediately after the tribulation of those days shall the sun be darkened, and the moon shall not give her light, and the stars shall fall from heaven, and the powers of the heavens shall be shaken:</p>
+            <p><strong>30</strong> And then shall appear the sign of the Son of man in heaven: and then shall all the tribes of the earth mourn, and they shall see the Son of man coming in the clouds of heaven with power and great glory.</p>
+            <p><strong>31</strong> And he shall send his angels with a great sound of a trumpet, and they shall gather together his elect from the four winds, from one end of heaven to the other.</p>
+            <p><strong>32</strong> Now learn a parable of the fig tree; When his branch is yet tender, and putteth forth leaves, ye know that summer is nigh:</p>
+            <p><strong>33</strong> So likewise ye, when ye shall see all these things, know that it is near, even at the doors.</p>
+            <p><strong>34</strong> Verily I say unto you, This generation shall not pass, till all these things be fulfilled.</p>
+            <p><strong>35</strong> Heaven and earth shall pass away, but my words shall not pass away.</p>
+            <p><strong>36</strong> But of that day and hour knoweth no man, no, not the angels of heaven, but my Father only.</p>
+            <p><strong>37</strong> But as the days of Noe were, so shall also the coming of the Son of man be.</p>
+            <p><strong>38</strong> For as in the days that were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noe entered into the ark,</p>
+            <p><strong>39</strong> And knew not until the flood came, and took them all away; so shall also the coming of the Son of man be.</p>
+            <p><strong>40</strong> Then shall two be in the field; the one shall be taken, and the other left.</p>
+            <p><strong>41</strong> Two women shall be grinding at the mill; the one shall be taken, and the other left.</p>
+            <p><strong>42</strong> Watch therefore: for ye know not what hour your Lord doth come.</p>
+            <p><strong>43</strong> But know this, that if the goodman of the house had known in what watch the thief would come, he would have watched, and would not have suffered his house to be broken up.</p>
+            <p><strong>44</strong> Therefore be ye also ready: for in such an hour as ye think not the Son of man cometh.</p>
+            <p><strong>45</strong> Who then is a faithful and wise servant, whom his lord hath made ruler over his household, to give them meat in due season?</p>
+            <p><strong>46</strong> Blessed is that servant, whom his lord when he cometh shall find so doing.</p>
+            <p><strong>47</strong> Verily I say unto you, That he shall make him ruler over all his goods.</p>
+            <p><strong>48</strong> But and if that evil servant shall say in his heart, My lord delayeth his coming;</p>
+            <p><strong>49</strong> And shall begin to smite his fellowservants, and to eat and drink with the drunken;</p>
+            <p><strong>50</strong> The lord of that servant shall come in a day when he looketh not for him, and in an hour that he is not aware of,</p>
+            <p><strong>51</strong> And shall cut him asunder, and appoint him his portion with the hypocrites: there shall be weeping and gnashing of teeth.</p>
+            </div>
+            <div class="scripture-text" id="web-24-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Matthew 24 (ASV)</p>
+            <p><strong>1</strong> And Jesus went out from the temple, and was going on his way; and his disciples came to him to show him the buildings of the temple.</p>
+            <p><strong>2</strong> But he answered and said unto them, See ye not all these things? verily I say unto you, There shall not be left here one stone upon another, that shall not be thrown down.</p>
+            <p><strong>3</strong> And as he sat on the mount of Olives, the disciples came unto him privately, saying, Tell us, when shall these things be? and what shall be the sign of thy coming, and of the end of the world?</p>
+            <p><strong>4</strong> And Jesus answered and said unto them, Take heed that no man lead you astray.</p>
+            <p><strong>5</strong> For many shall come in my name, saying, I am the Christ; and shall lead many astray.</p>
+            <p><strong>6</strong> And ye shall hear of wars and rumors of wars; see that ye be not troubled: for these things must needs come to pass; but the end is not yet.</p>
+            <p><strong>7</strong> For nation shall rise against nation, and kingdom against kingdom; and there shall be famines and earthquakes in divers places.</p>
+            <p><strong>8</strong> But all these things are the beginning of travail.</p>
+            <p><strong>9</strong> Then shall they deliver you up unto tribulation, and shall kill you: and ye shall be hated of all the nations for my name’s sake.</p>
+            <p><strong>10</strong> And then shall many stumble, and shall deliver up one another, and shall hate one another.</p>
+            <p><strong>11</strong> And many false prophets shall arise, and shall lead many astray.</p>
+            <p><strong>12</strong> And because iniquity shall be multiplied, the love of the many shall wax cold.</p>
+            <p><strong>13</strong> But he that endureth to the end, the same shall be saved.</p>
+            <p><strong>14</strong> And this gospel of the kingdom shall be preached in the whole world for a testimony unto all the nations; and then shall the end come.</p>
+            <p><strong>15</strong> When therefore ye see the abomination of desolation, which was spoken of through Daniel the prophet, standing in the holy place (let him that readeth understand),</p>
+            <p><strong>16</strong> then let them that are in Judæa flee unto the mountains:</p>
+            <p><strong>17</strong> let him that is on the housetop not go down to take out the things that are in his house:</p>
+            <p><strong>18</strong> and let him that is in the field not return back to take his cloak.</p>
+            <p><strong>19</strong> But woe unto them that are with child and to them that give suck in those days!</p>
+            <p><strong>20</strong> And pray ye that your flight be not in the winter, neither on a sabbath:</p>
+            <p><strong>21</strong> for then shall be great tribulation, such as hath not been from the beginning of the world until now, no, nor ever shall be.</p>
+            <p><strong>22</strong> And except those days had been shortened, no flesh would have been saved: but for the elect’s sake those days shall be shortened.</p>
+            <p><strong>23</strong> Then if any man shall say unto you, Lo, here is the Christ, or, Here; believe it not.</p>
+            <p><strong>24</strong> For there shall arise false Christs, and false prophets, and shall show great signs and wonders; so as to lead astray, if possible, even the elect.</p>
+            <p><strong>25</strong> Behold, I have told you beforehand.</p>
+            <p><strong>26</strong> If therefore they shall say unto you, Behold, he is in the wilderness; go not forth: Behold, he is in the inner chambers; believe it not.</p>
+            <p><strong>27</strong> For as the lightning cometh forth from the east, and is seen even unto the west; so shall be the coming of the Son of man.</p>
+            <p><strong>28</strong> Wheresoever the carcase is, there will the eagles be gathered together.</p>
+            <p><strong>29</strong> But immediately after the tribulation of those days the sun shall be darkened, and the moon shall not give her light, and the stars shall fall from heaven, and the powers of the heavens shall be shaken:</p>
+            <p><strong>30</strong> and then shall appear the sign of the Son of man in heaven: and then shall all the tribes of the earth mourn, and they shall see the Son of man coming on the clouds of heaven with power and great glory.</p>
+            <p><strong>31</strong> And he shall send forth his angels with a great sound of a trumpet, and they shall gather together his elect from the four winds, from one end of heaven to the other.</p>
+            <p><strong>32</strong> Now from the fig tree learn her parable: when her branch is now become tender, and putteth forth its leaves, ye know that the summer is nigh;</p>
+            <p><strong>33</strong> even so ye also, when ye see all these things, know ye that he is nigh, even at the doors.</p>
+            <p><strong>34</strong> Verily I say unto you, This generation shall not pass away, till all these things be accomplished.</p>
+            <p><strong>35</strong> Heaven and earth shall pass away, but my words shall not pass away.</p>
+            <p><strong>36</strong> But of that day and hour knoweth no one, not even the angels of heaven, neither the Son, but the Father only.</p>
+            <p><strong>37</strong> And as were the days of Noah, so shall be the coming of the Son of man.</p>
+            <p><strong>38</strong> For as in those days which were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noah entered into the ark,</p>
+            <p><strong>39</strong> and they knew not until the flood came, and took them all away; so shall be the coming of the Son of man.</p>
+            <p><strong>40</strong> Then shall two men be in the field; one is taken, and one is left:</p>
+            <p><strong>41</strong> two women shall be grinding at the mill; one is taken, and one is left.</p>
+            <p><strong>42</strong> Watch therefore: for ye know not on what day your Lord cometh.</p>
+            <p><strong>43</strong> But know this, that if the master of the house had known in what watch the thief was coming, he would have watched, and would not have suffered his house to be broken through.</p>
+            <p><strong>44</strong> Therefore be ye also ready; for in an hour that ye think not the Son of man cometh.</p>
+            <p><strong>45</strong> Who then is the faithful and wise servant, whom his lord hath set over his household, to give them their food in due season?</p>
+            <p><strong>46</strong> Blessed is that servant, whom his lord when he cometh shall find so doing.</p>
+            <p><strong>47</strong> Verily I say unto you, that he will set him over all that he hath.</p>
+            <p><strong>48</strong> But if that evil servant shall say in his heart, My lord tarrieth;</p>
+            <p><strong>49</strong> and shall begin to beat his fellow-servants, and shall eat and drink with the drunken;</p>
+            <p><strong>50</strong> the lord of that servant shall come in a day when he expecteth not, and in an hour when he knoweth not,</p>
+            <p><strong>51</strong> and shall cut him asunder, and appoint his portion with the hypocrites: there shall be the weeping and the gnashing of teeth.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>As Jesus leaves the temple, the disciples point out its buildings, and he foretells that not one stone will be left on another. On the Mount of Olives they ask when these things will be and what will signal his coming and the end of the age. Jesus warns them not to be led astray: false christs will come, with wars, famines, and earthquakes as the beginning of birth pains. His followers will face persecution, yet the gospel will be preached to all nations before the end. He speaks of the abomination of desolation, urging flight, and warns against false christs and prophets. His coming will be unmistakable, like lightning across the sky, with the Son of Man appearing in glory to gather his chosen ones. He teaches from the fig tree, affirms that his words will never pass away, and calls his servants to watch and stay faithful, since no one knows the day or hour.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord who foretells the temple's destruction, the signs of the age, and his glorious return as Son of Man.</li>
+          <li><strong>The disciples</strong> — Followers who ask privately about the timing and signs of Jesus' coming and the end of the age.</li>
+          <li><strong>The Son of Man</strong> — Jesus' title for himself, who will come on the clouds with power and glory to gather the chosen.</li>
+          <li><strong>The faithful and wise servant</strong> — A pictured steward who keeps doing his Lord's will, ready for his master's unexpected return.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Matthew 24:35 (WEB)</p>
+          <p class="verse__text">Heaven and earth will pass away, but my words will not pass away.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus' words are more certain and enduring than heaven and earth themselves.</li>
+          <li>Believers are called to endurance and watchfulness amid trials and deception.</li>
+          <li>No one knows the day or hour of Christ's return, so we live ready at all times.</li>
+          <li>Faithfulness in our given tasks is how we await our Lord's coming.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-24">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-24">
+            <ul class="lesson-list">
+            <li><strong>Christ's words are utterly trustworthy.</strong> 'Heaven and earth will pass away, but my words will not pass away' (Matthew 24:35, WEB).</li>
+            <li><strong>Endurance marks the faithful.</strong> 'He who endures to the end, the same will be saved' (Matthew 24:13, WEB), even through trials and persecution.</li>
+            <li><strong>The gospel reaches the whole world.</strong> 'This Good News of the Kingdom will be preached in the whole world for a testimony to all the nations' (Matthew 24:14, WEB).</li>
+            <li><strong>Christ's return will be unmistakable.</strong> 'As the lightning flashes from the east, and is seen even to the west, so will be the coming of the Son of Man' (Matthew 24:27, WEB).</li>
+            <li><strong>We must watch, for the hour is hidden.</strong> 'Watch therefore, for you don't know in what hour your Lord comes' (Matthew 24:42, WEB).</li>
+            <li><strong>Readiness means faithful service.</strong> 'Blessed is that servant whom his lord finds doing so when he comes' (Matthew 24:46, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-24">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-24">
+            <ol class="study-questions">
+            <li>What signs does Jesus give, and how does he warn against being led astray?</li>
+            <li>How does Jesus describe his coming, and what makes it unmistakable?</li>
+            <li>Why does Jesus emphasize that no one knows the day or hour of his return?</li>
+            <li>What distinguishes the faithful servant from the evil servant in Jesus' closing words?</li>
+            <li>How does the truth that Christ may return at any hour shape the way you live today?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-24">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-24">
+            <ol class="study-questions">
+            <li>Jesus speaks of false christs, wars, famines, earthquakes, persecution, and false prophets, calling these the beginning of birth pains (24:4-11). He repeatedly warns, Be careful that no one leads you astray (24:4), urging discernment and steadfast trust rather than panic or deception.</li>
+            <li>His coming will be as visible as lightning flashing from east to west (24:27). The Son of Man will appear on the clouds with power and great glory (24:30), gathering his chosen with a trumpet (24:31). It will be public and unmistakable, not hidden in secret places.</li>
+            <li>Because not even the angels know the day or hour, only the Father (24:36), Jesus calls his people to constant watchfulness rather than date-setting. The uncertainty keeps us humble and alert, living each day ready, like a household guarding against a thief in the night.</li>
+            <li>The faithful servant keeps doing his Lord's work, feeding the household in due season (24:45-46). The evil servant assumes his Lord delays, mistreats others, and indulges himself (24:48-49). The difference is faithfulness in the master's absence, expecting his return at any moment.</li>
+            <li>This is a personal application question. Invite members to consider what changes if Christ might return today, focusing on hope and faithfulness rather than fear. As leader, encourage practical, joyful readiness, share your own reflection first, and welcome a range of honest responses.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="matthew-23.html">← Matthew 23</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="matthew.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="matthew-25.html">Matthew 25 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
