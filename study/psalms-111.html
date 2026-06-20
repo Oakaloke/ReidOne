@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 111: Great Are the Lord's Works — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 111: an acrostic psalm of praise for God's great works, faithful covenant, and the fear of the Lord as the beginning of wisdom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 111
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 111</span>
+        <h1>Psalms 111: Great Are the Lord's Works</h1>
+        <p class="lead">An acrostic hymn of wholehearted thanks that ponders God's mighty, gracious works and names the fear of the Lord as the beginning of wisdom.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-111">
+            <span>Scripture — Psalms Chapter 111</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-111">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-111-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-111-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-111-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-111-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 111 (WEB)</p>
+            <p><strong>1</strong> Praise Yah! I will give thanks to Yahweh with my whole heart, in the council of the upright, and in the congregation.</p>
+            <p><strong>2</strong> Yahweh’s works are great, pondered by all those who delight in them.</p>
+            <p><strong>3</strong> His work is honor and majesty. His righteousness endures forever.</p>
+            <p><strong>4</strong> He has caused his wonderful works to be remembered. Yahweh is gracious and merciful.</p>
+            <p><strong>5</strong> He has given food to those who fear him. He always remembers his covenant.</p>
+            <p><strong>6</strong> He has shown his people the power of his works, in giving them the heritage of the nations.</p>
+            <p><strong>7</strong> The works of his hands are truth and justice. All his precepts are sure.</p>
+            <p><strong>8</strong> They are established forever and ever. They are done in truth and uprightness.</p>
+            <p><strong>9</strong> He has sent redemption to his people. He has ordained his covenant forever. His name is holy and awesome!</p>
+            <p><strong>10</strong> The fear of Yahweh is the beginning of wisdom. All those who do his work have a good understanding. His praise endures forever!</p>
+            </div>
+            <div class="scripture-text" id="web-111-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 111 (KJV)</p>
+            <p><strong>1</strong> Praise ye the Lord. I will praise the Lord with my whole heart, in the assembly of the upright, and in the congregation.</p>
+            <p><strong>2</strong> The works of the Lord are great, sought out of all them that have pleasure therein.</p>
+            <p><strong>3</strong> His work is honourable and glorious: and his righteousness endureth for ever.</p>
+            <p><strong>4</strong> He hath made his wonderful works to be remembered: the Lord is gracious and full of compassion.</p>
+            <p><strong>5</strong> He hath given meat unto them that fear him: he will ever be mindful of his covenant.</p>
+            <p><strong>6</strong> He hath shewed his people the power of his works, that he may give them the heritage of the heathen.</p>
+            <p><strong>7</strong> The works of his hands are verity and judgment; all his commandments are sure.</p>
+            <p><strong>8</strong> They stand fast for ever and ever, and are done in truth and uprightness.</p>
+            <p><strong>9</strong> He sent redemption unto his people: he hath commanded his covenant for ever: holy and reverend is his name.</p>
+            <p><strong>10</strong> The fear of the Lord is the beginning of wisdom: a good understanding have all they that do his commandments: his praise endureth for ever.</p>
+            </div>
+            <div class="scripture-text" id="web-111-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 111 (ASV)</p>
+            <p><strong>1</strong> Praise ye Jehovah. I will give thanks unto Jehovah with my whole heart, In the council of the upright, and in the congregation.</p>
+            <p><strong>2</strong> The works of Jehovah are great, Sought out of all them that have pleasure therein.</p>
+            <p><strong>3</strong> His work is honor and majesty; And his righteousness endureth for ever.</p>
+            <p><strong>4</strong> He hath made his wonderful works to be remembered: Jehovah is gracious and merciful.</p>
+            <p><strong>5</strong> He hath given food unto them that fear him: He will ever be mindful of his covenant.</p>
+            <p><strong>6</strong> He hath showed his people the power of his works, In giving them the heritage of the nations.</p>
+            <p><strong>7</strong> The works of his hands are truth and justice; All his precepts are sure.</p>
+            <p><strong>8</strong> They are established for ever and ever; They are done in truth and uprightness.</p>
+            <p><strong>9</strong> He hath sent redemption unto his people; He hath commanded his covenant for ever: Holy and reverend is his name.</p>
+            <p><strong>10</strong> The fear of Jehovah is the beginning of wisdom; A good understanding have all they that dohis commandments: His praise endureth for ever.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 111 is an acrostic hymn, each line beginning with a successive letter of the Hebrew alphabet, giving an orderly fullness to its praise. The psalmist resolves to thank the Lord with his whole heart in the assembly of the upright. He marvels at the greatness of God's works, which are studied and delighted in by all who love them—works full of honor, majesty, and enduring righteousness. God has made his wonders to be remembered, for he is gracious and merciful, providing food for those who fear him and always remembering his covenant. He showed his power by giving Israel the heritage of the nations, and all his precepts are trustworthy, established forever and done in truth. The center of the psalm is redemption: God has sent redemption to his people and ordained his covenant forever, and his name is holy and awesome. The psalm closes with one of Scripture's great proverbs: "The fear of Yahweh is the beginning of wisdom," and those who do his works gain good understanding. This sister psalm to 112 reminds us that true wisdom begins in reverent worship of the God whose greatest work is the redemption we have in Christ.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The worshiper</strong> — The voice giving wholehearted thanks in the assembly, pondering and praising the great works of the Lord.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The gracious and merciful God whose works are great, whose covenant is forever, and whose redemption is holy and awesome.</li>
+          <li><strong>Those who fear the Lord</strong> — The upright congregation who delight in God's works and gain good understanding by doing his will.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 111:10 (WEB)</p>
+          <p class="verse__text">The fear of Yahweh is the beginning of wisdom. All those who do his work have a good understanding. His praise endures forever!</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Wholehearted thanksgiving belongs in the gathered community of God's people (Psalm 111:1).</li>
+          <li>God's works reward careful study by those who delight in them (Psalm 111:2).</li>
+          <li>God ensures his wonders are remembered because he is gracious and merciful (Psalm 111:4).</li>
+          <li>Redemption is the climactic work of God, sealed by an everlasting covenant (Psalm 111:9).</li>
+          <li>Wisdom begins not with information but with the reverent fear of the Lord (Psalm 111:10).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-111">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-111">
+            <ul class="lesson-list">
+            <li><strong>Praise engages the whole heart.</strong> "I will give thanks to Yahweh with my whole heart" (Psalm 111:1, WEB). Worship is not half-hearted but wholehearted.</li>
+            <li><strong>God's works invite study.</strong> "Yahweh’s works are great, pondered by all those who delight in them" (Psalm 111:2, WEB). The more we look, the more we love.</li>
+            <li><strong>God makes himself memorable.</strong> "He has caused his wonderful works to be remembered" (Psalm 111:4, WEB). His grace gives us reasons we cannot forget.</li>
+            <li><strong>Redemption crowns his works.</strong> "He has sent redemption to his people. He has ordained his covenant forever" (Psalm 111:9, WEB)—fulfilled in Christ's redeeming work.</li>
+            <li><strong>Wisdom starts with reverence.</strong> "The fear of Yahweh is the beginning of wisdom" (Psalm 111:10, WEB). Right knowledge of God reorders all other knowledge.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-111">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-111">
+            <ol class="study-questions">
+            <li>What does it look like to give thanks to God "with my whole heart"?</li>
+            <li>Why does the psalmist say God's works are "pondered by all those who delight in them"?</li>
+            <li>How has God made his works "to be remembered" in your own life?</li>
+            <li>Verse 9 says God "has sent redemption to his people." How is this fulfilled in Jesus?</li>
+            <li>What would change in your life if the "fear of the Lord" truly became the starting point of your wisdom?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-111">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-111">
+            <ol class="study-questions">
+            <li>Wholehearted thanks (111:1) means our worship engages mind, will, and affections, not just words. Help the group consider what distracts their hearts in worship and how to bring the whole self before God.</li>
+            <li>Verse 2 ties pondering to delighting: those who love God's works study them gladly. The point is that devotion fuels learning. Encourage members to grow in joyful attention to what God has done.</li>
+            <li>This is partly personal. God gives us memorials of grace—answered prayers, deliverances, his Word. Invite members to name works of God they want to keep remembering, and ways to mark them.</li>
+            <li>Redemption in the Old Testament looked back to the exodus and forward to a greater rescue. Jesus is the redemption God "sent" (111:9), securing an everlasting covenant in his blood. Draw the line warmly to the cross.</li>
+            <li>This is a personal-application question. The fear of the Lord reorders our priorities and decisions. Invite members to name one area where reverence for God should reshape their choices, and close in worship.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-110.html">← Psalms 110</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-112.html">Psalms 112 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

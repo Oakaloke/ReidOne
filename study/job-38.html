@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Job 38: Out of the Whirlwind — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Job 38: The LORD answers Job from the whirlwind, questioning him about the earth's foundations, the sea, light, stars, and wild beasts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-job-progress" data-study-total="42">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Job, Chapter 38
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="job.html">← All Chapters</a>
+        <span class="study-meta">The Book of Job · Chapter 38</span>
+        <h1>Job 38: Out of the Whirlwind</h1>
+        <p class="lead">The LORD finally answers Job, not with explanations but with questions about creation, the foundations of the earth, the sea, light, the stars, and the wild.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-38">
+            <span>Scripture — Job Chapter 38</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-38">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-38-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-38-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-38-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-38-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Job 38 (WEB)</p>
+            <p><strong>1</strong> Then Yahweh answered Job out of the whirlwind,</p>
+            <p><strong>2</strong> “Who is this who darkens counsel by words without knowledge?</p>
+            <p><strong>3</strong> Brace yourself like a man, for I will question you, then you answer me!</p>
+            <p><strong>4</strong> “Where were you when I laid the foundations of the earth? Declare, if you have understanding.</p>
+            <p><strong>5</strong> Who determined its measures, if you know? Or who stretched the line on it?</p>
+            <p><strong>6</strong> Whereupon were its foundations fastened? Or who laid its cornerstone,</p>
+            <p><strong>7</strong> when the morning stars sang together, and all the sons of God shouted for joy?</p>
+            <p><strong>8</strong> “Or who shut up the sea with doors, when it broke out of the womb,</p>
+            <p><strong>9</strong> when I made clouds its garment, and wrapped it in thick darkness,</p>
+            <p><strong>10</strong> marked out for it my bound, set bars and doors,</p>
+            <p><strong>11</strong> and said, ‘Here you may come, but no further. Here your proud waves shall be stayed?’</p>
+            <p><strong>12</strong> “Have you commanded the morning in your days, and caused the dawn to know its place;</p>
+            <p><strong>13</strong> that it might take hold of the ends of the earth, and shake the wicked out of it?</p>
+            <p><strong>14</strong> It is changed as clay under the seal, and presented as a garment.</p>
+            <p><strong>15</strong> From the wicked, their light is withheld. The high arm is broken.</p>
+            <p><strong>16</strong> “Have you entered into the springs of the sea? Or have you walked in the recesses of the deep?</p>
+            <p><strong>17</strong> Have the gates of death been revealed to you? Or have you seen the gates of the shadow of death?</p>
+            <p><strong>18</strong> Have you comprehended the earth in its breadth? Declare, if you know it all.</p>
+            <p><strong>19</strong> “What is the way to the dwelling of light? As for darkness, where is its place,</p>
+            <p><strong>20</strong> that you should take it to its bound, that you should discern the paths to its house?</p>
+            <p><strong>21</strong> Surely you know, for you were born then, and the number of your days is great!</p>
+            <p><strong>22</strong> Have you entered the treasuries of the snow, or have you seen the treasures of the hail,</p>
+            <p><strong>23</strong> which I have reserved against the time of trouble, against the day of battle and war?</p>
+            <p><strong>24</strong> By what way is the lightning distributed, or the east wind scattered on the earth?</p>
+            <p><strong>25</strong> Who has cut a channel for the flood water, or the path for the thunderstorm;</p>
+            <p><strong>26</strong> To cause it to rain on a land where no man is; on the wilderness, in which there is no man;</p>
+            <p><strong>27</strong> to satisfy the waste and desolate ground, to cause the tender grass to grow?</p>
+            <p><strong>28</strong> Does the rain have a father? Or who fathers the drops of dew?</p>
+            <p><strong>29</strong> Out of whose womb came the ice? The gray frost of the sky, who has given birth to it?</p>
+            <p><strong>30</strong> The waters become hard like stone, when the surface of the deep is frozen.</p>
+            <p><strong>31</strong> “Can you bind the cluster of the Pleiades, or loosen the cords of Orion?</p>
+            <p><strong>32</strong> Can you lead the constellations out in their season? Or can you guide the Bear with her cubs?</p>
+            <p><strong>33</strong> Do you know the laws of the heavens? Can you establish its dominion over the earth?</p>
+            <p><strong>34</strong> “Can you lift up your voice to the clouds, That abundance of waters may cover you?</p>
+            <p><strong>35</strong> Can you send out lightnings, that they may go? Do they report to you, ‘Here we are?’</p>
+            <p><strong>36</strong> Who has put wisdom in the inward parts? Or who has given understanding to the mind?</p>
+            <p><strong>37</strong> Who can number the clouds by wisdom? Or who can pour out the bottles of the sky,</p>
+            <p><strong>38</strong> when the dust runs into a mass, and the clods of earth stick together?</p>
+            <p><strong>39</strong> “Can you hunt the prey for the lioness, or satisfy the appetite of the young lions,</p>
+            <p><strong>40</strong> when they crouch in their dens, and lie in wait in the thicket?</p>
+            <p><strong>41</strong> Who provides for the raven his prey, when his young ones cry to God, and wander for lack of food?</p>
+            </div>
+            <div class="scripture-text" id="web-38-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Job 38 (KJV)</p>
+            <p><strong>1</strong> Then the Lord answered Job out of the whirlwind, and said,</p>
+            <p><strong>2</strong> Who is this that darkeneth counsel by words without knowledge?</p>
+            <p><strong>3</strong> Gird up now thy loins like a man; for I will demand of thee, and answer thou me.</p>
+            <p><strong>4</strong> Where wast thou when I laid the foundations of the earth? declare, if thou hast understanding.</p>
+            <p><strong>5</strong> Who hath laid the measures thereof, if thou knowest? or who hath stretched the line upon it?</p>
+            <p><strong>6</strong> Whereupon are the foundations thereof fastened? or who laid the corner stone thereof;</p>
+            <p><strong>7</strong> When the morning stars sang together, and all the sons of God shouted for joy?</p>
+            <p><strong>8</strong> Or who shut up the sea with doors, when it brake forth, as if it had issued out of the womb?</p>
+            <p><strong>9</strong> When I made the cloud the garment thereof, and thick darkness a swaddlingband for it,</p>
+            <p><strong>10</strong> And brake up for it my decreed place, and set bars and doors,</p>
+            <p><strong>11</strong> And said, Hitherto shalt thou come, but no further: and here shall thy proud waves be stayed?</p>
+            <p><strong>12</strong> Hast thou commanded the morning since thy days; and caused the dayspring to know his place;</p>
+            <p><strong>13</strong> That it might take hold of the ends of the earth, that the wicked might be shaken out of it?</p>
+            <p><strong>14</strong> It is turned as clay to the seal; and they stand as a garment.</p>
+            <p><strong>15</strong> And from the wicked their light is withholden, and the high arm shall be broken.</p>
+            <p><strong>16</strong> Hast thou entered into the springs of the sea? or hast thou walked in the search of the depth?</p>
+            <p><strong>17</strong> Have the gates of death been opened unto thee? or hast thou seen the doors of the shadow of death?</p>
+            <p><strong>18</strong> Hast thou perceived the breadth of the earth? declare if thou knowest it all.</p>
+            <p><strong>19</strong> Where is the way where light dwelleth? and as for darkness, where is the place thereof,</p>
+            <p><strong>20</strong> That thou shouldest take it to the bound thereof, and that thou shouldest know the paths to the house thereof?</p>
+            <p><strong>21</strong> Knowest thou it, because thou wast then born? or because the number of thy days is great?</p>
+            <p><strong>22</strong> Hast thou entered into the treasures of the snow? or hast thou seen the treasures of the hail,</p>
+            <p><strong>23</strong> Which I have reserved against the time of trouble, against the day of battle and war?</p>
+            <p><strong>24</strong> By what way is the light parted, which scattereth the east wind upon the earth?</p>
+            <p><strong>25</strong> Who hath divided a watercourse for the overflowing of waters, or a way for the lightning of thunder;</p>
+            <p><strong>26</strong> To cause it to rain on the earth, where no man is; on the wilderness, wherein there is no man;</p>
+            <p><strong>27</strong> To satisfy the desolate and waste ground; and to cause the bud of the tender herb to spring forth?</p>
+            <p><strong>28</strong> Hath the rain a father? or who hath begotten the drops of dew?</p>
+            <p><strong>29</strong> Out of whose womb came the ice? and the hoary frost of heaven, who hath gendered it?</p>
+            <p><strong>30</strong> The waters are hid as with a stone, and the face of the deep is frozen.</p>
+            <p><strong>31</strong> Canst thou bind the sweet influences of Pleiades, or loose the bands of Orion?</p>
+            <p><strong>32</strong> Canst thou bring forth Mazzaroth in his season? or canst thou guide Arcturus with his sons?</p>
+            <p><strong>33</strong> Knowest thou the ordinances of heaven? canst thou set the dominion thereof in the earth?</p>
+            <p><strong>34</strong> Canst thou lift up thy voice to the clouds, that abundance of waters may cover thee?</p>
+            <p><strong>35</strong> Canst thou send lightnings, that they may go, and say unto thee, Here we are?</p>
+            <p><strong>36</strong> Who hath put wisdom in the inward parts? or who hath given understanding to the heart?</p>
+            <p><strong>37</strong> Who can number the clouds in wisdom? or who can stay the bottles of heaven,</p>
+            <p><strong>38</strong> When the dust groweth into hardness, and the clods cleave fast together?</p>
+            <p><strong>39</strong> Wilt thou hunt the prey for the lion? or fill the appetite of the young lions,</p>
+            <p><strong>40</strong> When they couch in their dens, and abide in the covert to lie in wait?</p>
+            <p><strong>41</strong> Who provideth for the raven his food? when his young ones cry unto God, they wander for lack of meat.</p>
+            </div>
+            <div class="scripture-text" id="web-38-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Job 38 (ASV)</p>
+            <p><strong>1</strong> Then Jehovah answered Job out of the whirlwind, and said,</p>
+            <p><strong>2</strong> Who is this that darkeneth counsel By words without knowledge?</p>
+            <p><strong>3</strong> Gird up now thy loins like a man; For I will demand of thee, and declare thou unto me.</p>
+            <p><strong>4</strong> Where wast thou when I laid the foundations of the earth? Declare, if thou hast understanding.</p>
+            <p><strong>5</strong> Who determined the measures thereof, if thou knowest? Or who stretched the line upon it?</p>
+            <p><strong>6</strong> Whereupon were the foundations thereof fastened? Or who laid the corner-stone thereof,</p>
+            <p><strong>7</strong> When the morning stars sang together, And all the sons of God shouted for joy?</p>
+            <p><strong>8</strong> Orwho shut up the sea with doors, When it brake forth, as if it had issued out of the womb;</p>
+            <p><strong>9</strong> When I made clouds the garment thereof, And thick darkness a swaddling-band for it,</p>
+            <p><strong>10</strong> And marked out for it my bound, And set bars and doors,</p>
+            <p><strong>11</strong> And said, Hitherto shalt thou come, but no further; And here shall thy proud waves be stayed?</p>
+            <p><strong>12</strong> Hast thou commanded the morning since thy days began, And caused the dayspring to know its place;</p>
+            <p><strong>13</strong> That it might take hold of the ends of the earth, And the wicked be shaken out of it?</p>
+            <p><strong>14</strong> It is changed as clay under the seal; Andall thingsstand forth as a garment:</p>
+            <p><strong>15</strong> And from the wicked their light is withholden, And the high arm is broken.</p>
+            <p><strong>16</strong> Hast thou entered into the springs of the sea? Or hast thou walked in the recesses of the deep?</p>
+            <p><strong>17</strong> Have the gates of death been revealed unto thee? Or hast thou seen the gates of the shadow of death?</p>
+            <p><strong>18</strong> Hast thou comprehended the earth in its breadth? Declare, if thou knowest it all.</p>
+            <p><strong>19</strong> Where is the way to the dwelling of light? And as for darkness, where is the place thereof,</p>
+            <p><strong>20</strong> That thou shouldest take it to the bound thereof, And that thou shouldest discern the paths to the house thereof?</p>
+            <p><strong>21</strong> Doubtless, thou knowest, for thou wast then born, And the number of thy days is great!</p>
+            <p><strong>22</strong> Hast thou entered the treasuries of the snow, Or hast thou seen the treasures of the hail,</p>
+            <p><strong>23</strong> Which I have reserved against the time of trouble, Against the day of battle and war?</p>
+            <p><strong>24</strong> By what way is the light parted, Or the east wind scattered upon the earth?</p>
+            <p><strong>25</strong> Who hath cleft a channel for the waterflood, Or the way for the lightning of the thunder;</p>
+            <p><strong>26</strong> To cause it to rain on a land where no man is; On the wilderness, wherein there is no man;</p>
+            <p><strong>27</strong> To satisfy the waste and desolate ground, And to cause the tender grass to spring forth?</p>
+            <p><strong>28</strong> Hath the rain a father? Or who hath begotten the drops of dew?</p>
+            <p><strong>29</strong> Out of whose womb came the ice? And the hoary frost of heaven, who hath gendered it?</p>
+            <p><strong>30</strong> The waters hide themselvesand becomelike stone, And the face of the deep is frozen.</p>
+            <p><strong>31</strong> Canst thou bind the cluster of the Pleiades, Or loose the bands of Orion?</p>
+            <p><strong>32</strong> Canst thou lead forth the Mazzaroth in their season? Or canst thou guide the Bear with her train?</p>
+            <p><strong>33</strong> Knowest thou the ordinances of the heavens? Canst thou establish the dominion thereof in the earth?</p>
+            <p><strong>34</strong> Canst thou lift up thy voice to the clouds, That abundance of waters may cover thee?</p>
+            <p><strong>35</strong> Canst thou send forth lightnings, that they may go, And say unto thee, Here we are?</p>
+            <p><strong>36</strong> Who hath put wisdom in the inward parts? Or who hath given understanding to the mind?</p>
+            <p><strong>37</strong> Who can number the clouds by wisdom? Or who can pour out the bottles of heaven,</p>
+            <p><strong>38</strong> When the dust runneth into a mass, And the clods cleave fast together?</p>
+            <p><strong>39</strong> Canst thou hunt the prey for the lioness, Or satisfy the appetite of the young lions,</p>
+            <p><strong>40</strong> When they couch in their dens, Andabide in the covert to lie in wait?</p>
+            <p><strong>41</strong> Who provideth for the raven his prey, When his young ones cry unto God, Andwander for lack of food?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>At last the LORD himself answers Job out of the whirlwind, not with an explanation of his suffering but with a torrent of questions that reveal God's incomparable wisdom and power. “Who is this who darkens counsel by words without knowledge?” he begins, calling Job to brace himself like a man and answer. God asks where Job was when the foundations of the earth were laid, when the morning stars sang together and the sons of God shouted for joy. He recalls shutting up the sea with doors, wrapping it in clouds, and setting bounds for its proud waves; he asks whether Job has commanded the morning, entered the springs of the sea, or seen the gates of death. The LORD probes the dwelling of light and darkness, the treasuries of snow and hail, the channels for rain that fall even where no one lives, and the father of the dew and the womb of the ice. He points to the binding of the Pleiades and the cords of Orion, the laws of the heavens, the clouds, and the lightning that reports for duty. Finally he turns to the wild creatures, providing prey for the lioness and food for the young ravens that cry to God. The questions are not cruel but humbling, lifting Job's eyes from his own case to the vast, ordered, sustained creation that he could never make or manage. God's answer is, in the end, not a reason but a Person.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The LORD (Yahweh)</strong> — The Creator who answers from the whirlwind, questioning Job about the wonders of the world he made and sustains.</li>
+          <li><strong>Job</strong> — The sufferer summoned to answer for his words and confronted with the limits of his knowledge.</li>
+          <li><strong>The morning stars and sons of God</strong> — The heavenly hosts who sang and shouted for joy at the laying of the earth's foundations.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Job 38:4 (WEB)</p>
+          <p class="verse__text">“Where were you when I laid the foundations of the earth? Declare, if you have understanding.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's answer to suffering is not always an explanation, but the revelation of himself.</li>
+          <li>The order and beauty of creation testify to a wisdom far beyond our understanding.</li>
+          <li>We were not present at the world's making, and humility befits creatures before their Creator.</li>
+          <li>The God who feeds young ravens that cry to him is attentive to the smallest of his creatures.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-38">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-38">
+            <ul class="lesson-list">
+            <li><strong>God answers with himself.</strong> The LORD speaks “out of the whirlwind” (Job 38:1, WEB) and gives Job his presence rather than a tidy explanation; the deepest comfort is God himself.</li>
+            <li><strong>We are creatures, not the Creator.</strong> “Where were you when I laid the foundations of the earth?” (Job 38:4, WEB); remembering our place dissolves much of our pride and complaint.</li>
+            <li><strong>Creation sang at its birth.</strong> “the morning stars sang together, and all the sons of God shouted for joy” (Job 38:7, WEB); the universe was made amid worship, and it still declares God's glory.</li>
+            <li><strong>God sets bounds on chaos.</strong> To the sea he says, “Here you may come, but no further” (Job 38:11, WEB); the same God who limits the waves sets limits on the trials we face.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-38">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-38">
+            <ol class="study-questions">
+            <li>Why might God answer Job's questions about suffering with questions of his own rather than explanations?</li>
+            <li>What aspects of creation does God highlight, and what do they reveal about him?</li>
+            <li>How does the image of the sea bounded by doors comfort us about the limits of our trials?</li>
+            <li>What does God's care for the lioness and the young ravens show about his attentiveness?</li>
+            <li>How does encountering the greatness of God in creation reshape the way you bring your own struggles to him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-38">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-38">
+            <ol class="study-questions">
+            <li>God's questions confront Job with the limits of his knowledge and lift his eyes from his own case to the Creator's wisdom (38:2-4). The answer to suffering is ultimately trust in God's character, not a full explanation.</li>
+            <li>God points to the earth's foundations, the sea, light and darkness, snow and hail, the stars, and wild creatures (38:4-41). Each reveals a wisdom, power, and care far beyond human reach.</li>
+            <li>God set bounds for the proud waves, saying they may come no further (38:11). This assures us that the same God limits the storms of our lives; chaos is never out of his control.</li>
+            <li>God hunts prey for the lioness and feeds the ravens' young when they cry to him (38:39-41). His attentiveness to small creatures assures us he does not overlook our needs either.</li>
+            <li>This is a personal-application question. Encourage members to let the vastness of God enlarge their trust rather than diminish their worth. As leader, point ahead to the One who calmed a literal storm, Jesus, in whom God's power and tender care meet.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="job-37.html">← Job 37</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="job.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="job-39.html">Job 39 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

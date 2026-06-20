@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ecclesiastes 7: The House of Mourning — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ecclesiastes 7: proverbs on the value of mourning, the worth of wisdom, the call to balance, and the universal reality of sin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ecclesiastes-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ecclesiastes, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ecclesiastes.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ecclesiastes · Chapter 7</span>
+        <h1>Ecclesiastes 7: The House of Mourning</h1>
+        <p class="lead">The Preacher gathers proverbs on wisdom and sorrow, showing that adversity teaches the heart and that no one on earth is wholly righteous.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — Ecclesiastes Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ecclesiastes 7 (WEB)</p>
+            <p><strong>1</strong> A good name is better than fine perfume; and the day of death better than the day of one’s birth.</p>
+            <p><strong>2</strong> It is better to go to the house of mourning than to go to the house of feasting: for that is the end of all men, and the living should take this to heart.</p>
+            <p><strong>3</strong> Sorrow is better than laughter; for by the sadness of the face the heart is made good.</p>
+            <p><strong>4</strong> The heart of the wise is in the house of mourning; but the heart of fools is in the house of mirth.</p>
+            <p><strong>5</strong> It is better to hear the rebuke of the wise, than for a man to hear the song of fools.</p>
+            <p><strong>6</strong> For as the crackling of thorns under a pot, so is the laughter of the fool. This also is vanity.</p>
+            <p><strong>7</strong> Surely extortion makes the wise man foolish; and a bribe destroys the understanding.</p>
+            <p><strong>8</strong> Better is the end of a thing than its beginning. The patient in spirit is better than the proud in spirit.</p>
+            <p><strong>9</strong> Don’t be hasty in your spirit to be angry, for anger rests in the bosom of fools.</p>
+            <p><strong>10</strong> Don’t say, “Why were the former days better than these?” For you do not ask wisely about this.</p>
+            <p><strong>11</strong> Wisdom is as good as an inheritance. Yes, it is more excellent for those who see the sun.</p>
+            <p><strong>12</strong> For wisdom is a defense, even as money is a defense; but the excellency of knowledge is that wisdom preserves the life of him who has it.</p>
+            <p><strong>13</strong> Consider the work of God, for who can make that straight, which he has made crooked?</p>
+            <p><strong>14</strong> In the day of prosperity be joyful, and in the day of adversity consider; yes, God has made the one side by side with the other, to the end that man should not find out anything after him.</p>
+            <p><strong>15</strong> All this have I seen in my days of vanity: there is a righteous man who perishes in his righteousness, and there is a wicked man who lives long in his evildoing.</p>
+            <p><strong>16</strong> Don’t be overly righteous, neither make yourself overly wise. Why should you destroy yourself?</p>
+            <p><strong>17</strong> Don’t be too wicked, neither be foolish. Why should you die before your time?</p>
+            <p><strong>18</strong> It is good that you should take hold of this. Yes, also from that don’t withdraw your hand; for he who fears God will come out of them all.</p>
+            <p><strong>19</strong> Wisdom is a strength to the wise man more than ten rulers who are in a city.</p>
+            <p><strong>20</strong> Surely there is not a righteous man on earth, who does good and doesn’t sin.</p>
+            <p><strong>21</strong> Also don’t take heed to all words that are spoken, lest you hear your servant curse you;</p>
+            <p><strong>22</strong> for often your own heart knows that you yourself have likewise cursed others.</p>
+            <p><strong>23</strong> All this have I proved in wisdom. I said, “I will be wise”; but it was far from me.</p>
+            <p><strong>24</strong> That which is, is far off and exceedingly deep. Who can find it out?</p>
+            <p><strong>25</strong> I turned around, and my heart sought to know and to search out, and to seek wisdom and the scheme of things, and to know that wickedness is stupidity, and that foolishness is madness.</p>
+            <p><strong>26</strong> I find more bitter than death the woman whose heart is snares and traps, whose hands are chains. Whoever pleases God shall escape from her; but the sinner will be ensnared by her.</p>
+            <p><strong>27</strong> “Behold, I have found this,” says the Preacher, “one to another, to find out the scheme;</p>
+            <p><strong>28</strong> which my soul still seeks; but I have not found. One man among a thousand have I found; but I have not found a woman among all those.</p>
+            <p><strong>29</strong> Behold, this only have I found: that God made man upright; but they search for many schemes.”</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ecclesiastes 7 (KJV)</p>
+            <p><strong>1</strong> A good name is better than precious ointment; and the day of death than the day of one’s birth.</p>
+            <p><strong>2</strong> It is better to go to the house of mourning, than to go to the house of feasting: for that is the end of all men; and the living will lay it to his heart.</p>
+            <p><strong>3</strong> Sorrow is better than laughter: for by the sadness of the countenance the heart is made better.</p>
+            <p><strong>4</strong> The heart of the wise is in the house of mourning; but the heart of fools is in the house of mirth.</p>
+            <p><strong>5</strong> It is better to hear the rebuke of the wise, than for a man to hear the song of fools.</p>
+            <p><strong>6</strong> For as the crackling of thorns under a pot, so is the laughter of the fool: this also is vanity.</p>
+            <p><strong>7</strong> Surely oppression maketh a wise man mad; and a gift destroyeth the heart.</p>
+            <p><strong>8</strong> Better is the end of a thing than the beginning thereof: and the patient in spirit is better than the proud in spirit.</p>
+            <p><strong>9</strong> Be not hasty in thy spirit to be angry: for anger resteth in the bosom of fools.</p>
+            <p><strong>10</strong> Say not thou, What is the cause that the former days were better than these? for thou dost not enquire wisely concerning this.</p>
+            <p><strong>11</strong> Wisdom is good with an inheritance: and by it there is profit to them that see the sun.</p>
+            <p><strong>12</strong> For wisdom is a defence, and money is a defence: but the excellency of knowledge is, that wisdom giveth life to them that have it.</p>
+            <p><strong>13</strong> Consider the work of God: for who can make that straight, which he hath made crooked?</p>
+            <p><strong>14</strong> In the day of prosperity be joyful, but in the day of adversity consider: God also hath set the one over against the other, to the end that man should find nothing after him.</p>
+            <p><strong>15</strong> All things have I seen in the days of my vanity: there is a just man that perisheth in his righteousness, and there is a wicked man that prolongeth his life in his wickedness.</p>
+            <p><strong>16</strong> Be not righteous over much; neither make thyself over wise: why shouldest thou destroy thyself?</p>
+            <p><strong>17</strong> Be not over much wicked, neither be thou foolish: why shouldest thou die before thy time?</p>
+            <p><strong>18</strong> It is good that thou shouldest take hold of this; yea, also from this withdraw not thine hand: for he that feareth God shall come forth of them all.</p>
+            <p><strong>19</strong> Wisdom strengtheneth the wise more than ten mighty men which are in the city.</p>
+            <p><strong>20</strong> For there is not a just man upon earth, that doeth good, and sinneth not.</p>
+            <p><strong>21</strong> Also take no heed unto all words that are spoken; lest thou hear thy servant curse thee:</p>
+            <p><strong>22</strong> For oftentimes also thine own heart knoweth that thou thyself likewise hast cursed others.</p>
+            <p><strong>23</strong> All this have I proved by wisdom: I said, I will be wise; but it was far from me.</p>
+            <p><strong>24</strong> That which is far off, and exceeding deep, who can find it out?</p>
+            <p><strong>25</strong> I applied mine heart to know, and to search, and to seek out wisdom, and the reason of things, and to know the wickedness of folly, even of foolishness and madness:</p>
+            <p><strong>26</strong> And I find more bitter than death the woman, whose heart is snares and nets, and her hands as bands: whoso pleaseth God shall escape from her; but the sinner shall be taken by her.</p>
+            <p><strong>27</strong> Behold, this have I found, saith the preacher, counting one by one, to find out the account:</p>
+            <p><strong>28</strong> Which yet my soul seeketh, but I find not: one man among a thousand have I found; but a woman among all those have I not found.</p>
+            <p><strong>29</strong> Lo, this only have I found, that God hath made man upright; but they have sought out many inventions.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ecclesiastes 7 (ASV)</p>
+            <p><strong>1</strong> Agoodname is better than precious oil; and the day of death, than the day of one’s birth.</p>
+            <p><strong>2</strong> It is better to go to the house of mourning than to go to the house of feasting: for that is the end of all men; and the living will lay it to his heart.</p>
+            <p><strong>3</strong> Sorrow is better than laughter; for by the sadness of the countenance the heart is made glad.</p>
+            <p><strong>4</strong> The heart of the wise is in the house of mourning; but the heart of fools is in the house of mirth.</p>
+            <p><strong>5</strong> It is better to hear the rebuke of the wise, than for a man to hear the song of fools.</p>
+            <p><strong>6</strong> For as the crackling of thorns under a pot, so is the laughter of the fool: this also is vanity.</p>
+            <p><strong>7</strong> Surely extortion maketh the wise man foolish; and a bribe destroyeth the understanding.</p>
+            <p><strong>8</strong> Better is the end of a thing than the beginning thereof; and the patient in spirit is better than the proud in spirit.</p>
+            <p><strong>9</strong> Be not hasty in thy spirit to be angry; for anger resteth in the bosom of fools.</p>
+            <p><strong>10</strong> Say not thou, What is the cause that the former days were better than these? for thou dost not inquire wisely concerning this.</p>
+            <p><strong>11</strong> Wisdom is as good as an inheritance; yea, more excellent is it for them that see the sun.</p>
+            <p><strong>12</strong> For wisdom is a defence, even as money is a defence; but the excellency of knowledge is, that wisdom preserveth the life of him that hath it.</p>
+            <p><strong>13</strong> Consider the work of God: for who can make that straight, which he hath made crooked?</p>
+            <p><strong>14</strong> In the day of prosperity be joyful, and in the day of adversity consider; yea, God hath made the one side by side with the other, to the end that man should not find out anything that shall be after him.</p>
+            <p><strong>15</strong> All this have I seen in my days of vanity: there is a righteous man that perisheth in his righteousness, and there is a wicked man that prolongeth his life in his evil-doing.</p>
+            <p><strong>16</strong> Be not righteous overmuch; neither make thyself overwise: why shouldest thou destroy thyself?</p>
+            <p><strong>17</strong> Be not overmuch wicked, neither be thou foolish: why shouldest thou die before thy time?</p>
+            <p><strong>18</strong> It is good that thou shouldest take hold of this; yea, also from that withdraw not thy hand: for he that feareth God shall come forth from them all.</p>
+            <p><strong>19</strong> Wisdom is a strength to the wise man more than ten rulers that are in a city.</p>
+            <p><strong>20</strong> Surely there is not a righteous man upon earth, that doeth good, and sinneth not.</p>
+            <p><strong>21</strong> Also take not heed unto all words that are spoken, lest thou hear thy servant curse thee;</p>
+            <p><strong>22</strong> for oftentimes also thine own heart knoweth that thou thyself likewise hast cursed others.</p>
+            <p><strong>23</strong> All this have I proved in wisdom: I said, I will be wise; but it was far from me.</p>
+            <p><strong>24</strong> That which is, is far off and exceeding deep; who can find it out?</p>
+            <p><strong>25</strong> I turned about, and my heart was set to know and to search out, and to seek wisdom and the reason of things, and to know that wickedness is folly, and that foolishness is madness.</p>
+            <p><strong>26</strong> And I find more bitter than death the woman whose heart is snares and nets, and whose hands are bands: whoso pleaseth God shall escape from her; but the sinner shall be taken by her.</p>
+            <p><strong>27</strong> Behold, this have I found, saith the Preacher, laying one thing to another, to find out the account;</p>
+            <p><strong>28</strong> which my soul still seeketh, but I have not found: one man among a thousand have I found; but a woman among all those have I not found.</p>
+            <p><strong>29</strong> Behold, this only have I found: that God made man upright; but they have sought out many inventions.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The Preacher shifts into proverbs, and his counsel runs against the grain of our instincts. A good name is better than fine perfume, and surprisingly the day of death is better than the day of birth, for it focuses the heart. It is better to enter the house of mourning than the house of feasting, because death is the end of all and the living should take it to heart; sorrow can do the heart more good than laughter. Wisdom, like an inheritance, is a defense and even preserves the life of the one who has it, yet it must reckon honestly with God's ways: who can straighten what God has made crooked? So in prosperity be joyful and in adversity consider, knowing God has set the one alongside the other. The Preacher counsels balance, warning against being either self-destructively overrighteous or recklessly wicked, for the one who fears God avoids both extremes. He confesses that true wisdom remained far off and exceedingly deep, beyond his reach, and arrives at a sober truth: there is not a righteous person on earth who does only good and never sins. His final word is that God made humanity upright, but we have gone searching after many schemes of our own.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The Preacher (Qoheleth)</strong> — The wise teacher who collects proverbs on sorrow, wisdom, and balance, and confesses both the depth of true wisdom and the universal reality of human sin.</li>
+          <li><strong>God</strong> — The maker who fashions both prosperity and adversity, who made humanity upright, and before whom no one on earth is found wholly righteous.</li>
+          <li><strong>The wise and the fool</strong> — Contrasting figures throughout the proverbs—the wise drawn to mourning and rebuke, the fool to mirth and flattery—illustrating two ways to live.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ecclesiastes 7:20 (WEB)</p>
+          <p class="verse__text">Surely there is not a righteous man on earth, who does good and doesn’t sin.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Facing death and sorrow honestly does the heart more lasting good than the distraction of constant mirth.</li>
+          <li>Wisdom is a true defense, yet it must humbly accept what God has ordained and cannot change.</li>
+          <li>Both prosperity and adversity come from God, and each has something to teach us.</li>
+          <li>No one on earth is righteous enough to never sin, which leaves us all in need of grace.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>Mourning teaches the heart.</strong> “It is better to go to the house of mourning than to go to the house of feasting” (Ecclesiastes 7:2, WEB). Facing our mortality, rather than fleeing it, makes us wise.</li>
+            <li><strong>Receive both prosperity and adversity from God.</strong> “In the day of prosperity be joyful, and in the day of adversity consider; yes, God has made the one side by side with the other” (Ecclesiastes 7:14, WEB). Both seasons are in his hands.</li>
+            <li><strong>Wisdom accepts God's mysterious ways.</strong> “Consider the work of God, for who can make that straight, which he has made crooked?” (Ecclesiastes 7:13, WEB). Humble trust bows to what we cannot change.</li>
+            <li><strong>No one is without sin.</strong> “There is not a righteous man on earth, who does good and doesn't sin” (Ecclesiastes 7:20, WEB). This honest verdict drives us to seek a righteousness beyond our own.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>Why would the Preacher say the day of death is better than the day of birth (7:1) and mourning better than feasting (7:2-4)?</li>
+            <li>How can sorrow be better for the heart than laughter (7:3), and have you found this to be true?</li>
+            <li>What does it mean to “be joyful” in prosperity and to “consider” in adversity (7:14), and how does knowing both come from God help?</li>
+            <li>Verse 20 says no one on earth is fully righteous. How does this honest verdict prepare us for the gospel?</li>
+            <li>Where might God be using a season of difficulty to teach your heart something joy alone could not?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>The Preacher is not glorifying death but its clarifying power. The end of life forces us to weigh what truly matters, while constant feasting can dull us to it (7:1-4). Sitting with grief and mortality makes us wise in a way that endless celebration never can.</li>
+            <li>Sorrow strips away illusions and softens the heart, drawing us toward what is real and lasting; laughter can numb us to it (7:3). Invite members to share, if they wish, how a painful season deepened their faith or reordered their priorities in ways comfort never did.</li>
+            <li>We are to receive good times with grateful joy and hard times with thoughtful reflection, recognizing that God has set them side by side (7:14). Knowing both come from his hand frees us from despair in adversity and from presumption in prosperity, teaching us to trust him in every season.</li>
+            <li>By declaring that no one does good without sinning, the verse demolishes any hope of self-made righteousness. It exposes our universal need and points beyond Ecclesiastes to the gospel, where the righteousness we cannot achieve is given to us in Christ. Let the group feel both the weight and the grace of this truth.</li>
+            <li>This is a personal-application question. Invite members to name, if they are willing, a current or past hardship and to consider what God might be teaching through it—patience, humility, dependence, compassion. As leader, hold space for honesty and avoid rushing anyone past their pain toward a tidy lesson.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ecclesiastes-6.html">← Ecclesiastes 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ecclesiastes.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ecclesiastes-8.html">Ecclesiastes 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

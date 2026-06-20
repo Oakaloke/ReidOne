@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ecclesiastes 2: Testing Pleasure and Toil — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ecclesiastes 2: the Preacher tests pleasure, great works, and riches, compares wisdom with folly, despairs over death, and finds joy as God's gift." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ecclesiastes-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ecclesiastes, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ecclesiastes.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ecclesiastes · Chapter 2</span>
+        <h1>Ecclesiastes 2: Testing Pleasure and Toil</h1>
+        <p class="lead">The Preacher pours himself into pleasure, building, and wealth, then weighs wisdom against folly, and finds enjoyment is finally a gift from God's hand.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Ecclesiastes Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ecclesiastes 2 (WEB)</p>
+            <p><strong>1</strong> I said in my heart, “Come now, I will test you with mirth: therefore enjoy pleasure”; and behold, this also was vanity.</p>
+            <p><strong>2</strong> I said of laughter, “It is foolishness”; and of mirth, “What does it accomplish?”</p>
+            <p><strong>3</strong> I searched in my heart how to cheer my flesh with wine, my heart yet guiding me with wisdom, and how to lay hold of folly, until I might see what it was good for the sons of men that they should do under heaven all the days of their lives.</p>
+            <p><strong>4</strong> I made myself great works. I built myself houses. I planted myself vineyards.</p>
+            <p><strong>5</strong> I made myself gardens and parks, and I planted trees in them of all kinds of fruit.</p>
+            <p><strong>6</strong> I made myself pools of water, to water from it the forest where trees were reared.</p>
+            <p><strong>7</strong> I bought male servants and female servants, and had servants born in my house. I also had great possessions of herds and flocks, above all who were before me in Jerusalem;</p>
+            <p><strong>8</strong> I also gathered silver and gold for myself, and the treasure of kings and of the provinces. I got myself male and female singers, and the delights of the sons of men—musical instruments, and that of all sorts.</p>
+            <p><strong>9</strong> So I was great, and increased more than all who were before me in Jerusalem. My wisdom also remained with me.</p>
+            <p><strong>10</strong> Whatever my eyes desired, I didn’t keep from them. I didn’t withhold my heart from any joy, for my heart rejoiced because of all my labor, and this was my portion from all my labor.</p>
+            <p><strong>11</strong> Then I looked at all the works that my hands had worked, and at the labor that I had labored to do; and behold, all was vanity and a chasing after wind, and there was no profit under the sun.</p>
+            <p><strong>12</strong> I turned myself to consider wisdom, madness, and folly: for what can the king’s successor do? Just that which has been done long ago.</p>
+            <p><strong>13</strong> Then I saw that wisdom excels folly, as far as light excels darkness.</p>
+            <p><strong>14</strong> The wise man’s eyes are in his head, and the fool walks in darkness—and yet I perceived that one event happens to them all.</p>
+            <p><strong>15</strong> Then I said in my heart, “As it happens to the fool, so will it happen even to me; and why was I then more wise?” Then I said in my heart that this also is vanity.</p>
+            <p><strong>16</strong> For of the wise man, even as of the fool, there is no memory for ever, since in the days to come all will have been long forgotten. Indeed, the wise man must die just like the fool!</p>
+            <p><strong>17</strong> So I hated life, because the work that is worked under the sun was grievous to me; for all is vanity and a chasing after wind.</p>
+            <p><strong>18</strong> I hated all my labor in which I labored under the sun, because I must leave it to the man who comes after me.</p>
+            <p><strong>19</strong> Who knows whether he will be a wise man or a fool? Yet he will have rule over all of my labor in which I have labored, and in which I have shown myself wise under the sun. This also is vanity.</p>
+            <p><strong>20</strong> Therefore I began to cause my heart to despair concerning all the labor in which I had labored under the sun.</p>
+            <p><strong>21</strong> For there is a man whose labor is with wisdom, with knowledge, and with skillfulness; yet he shall leave it for his portion to a man who has not labored for it. This also is vanity and a great evil.</p>
+            <p><strong>22</strong> For what has a man of all his labor, and of the striving of his heart, in which he labors under the sun?</p>
+            <p><strong>23</strong> For all his days are sorrows, and his travail is grief; yes, even in the night his heart takes no rest. This also is vanity.</p>
+            <p><strong>24</strong> There is nothing better for a man than that he should eat and drink, and make his soul enjoy good in his labor. This also I saw, that it is from the hand of God.</p>
+            <p><strong>25</strong> For who can eat, or who can have enjoyment, more than I?</p>
+            <p><strong>26</strong> For to the man who pleases him, God gives wisdom, knowledge, and joy; but to the sinner he gives travail, to gather and to heap up, that he may give to him who pleases God. This also is vanity and a chasing after wind.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ecclesiastes 2 (KJV)</p>
+            <p><strong>1</strong> I said in mine heart, Go to now, I will prove thee with mirth, therefore enjoy pleasure: and, behold, this also is vanity.</p>
+            <p><strong>2</strong> I said of laughter, It is mad: and of mirth, What doeth it?</p>
+            <p><strong>3</strong> I sought in mine heart to give myself unto wine, yet acquainting mine heart with wisdom; and to lay hold on folly, till I might see what was that good for the sons of men, which they should do under the heaven all the days of their life.</p>
+            <p><strong>4</strong> I made me great works; I builded me houses; I planted me vineyards:</p>
+            <p><strong>5</strong> I made me gardens and orchards, and I planted trees in them of all kind of fruits:</p>
+            <p><strong>6</strong> I made me pools of water, to water therewith the wood that bringeth forth trees:</p>
+            <p><strong>7</strong> I got me servants and maidens, and had servants born in my house; also I had great possessions of great and small cattle above all that were in Jerusalem before me:</p>
+            <p><strong>8</strong> I gathered me also silver and gold, and the peculiar treasure of kings and of the provinces: I gat me men singers and women singers, and the delights of the sons of men, as musical instruments, and that of all sorts.</p>
+            <p><strong>9</strong> So I was great, and increased more than all that were before me in Jerusalem: also my wisdom remained with me.</p>
+            <p><strong>10</strong> And whatsoever mine eyes desired I kept not from them, I withheld not my heart from any joy; for my heart rejoiced in all my labour: and this was my portion of all my labour.</p>
+            <p><strong>11</strong> Then I looked on all the works that my hands had wrought, and on the labour that I had laboured to do: and, behold, all was vanity and vexation of spirit, and there was no profit under the sun.</p>
+            <p><strong>12</strong> And I turned myself to behold wisdom, and madness, and folly: for what can the man do that cometh after the king? even that which hath been already done.</p>
+            <p><strong>13</strong> Then I saw that wisdom excelleth folly, as far as light excelleth darkness.</p>
+            <p><strong>14</strong> The wise man’s eyes are in his head; but the fool walketh in darkness: and I myself perceived also that one event happeneth to them all.</p>
+            <p><strong>15</strong> Then said I in my heart, As it happeneth to the fool, so it happeneth even to me; and why was I then more wise? Then I said in my heart, that this also is vanity.</p>
+            <p><strong>16</strong> For there is no remembrance of the wise more than of the fool for ever; seeing that which now is in the days to come shall all be forgotten. And how dieth the wise man? as the fool.</p>
+            <p><strong>17</strong> Therefore I hated life; because the work that is wrought under the sun is grievous unto me: for all is vanity and vexation of spirit.</p>
+            <p><strong>18</strong> Yea, I hated all my labour which I had taken under the sun: because I should leave it unto the man that shall be after me.</p>
+            <p><strong>19</strong> And who knoweth whether he shall be a wise man or a fool? yet shall he have rule over all my labour wherein I have laboured, and wherein I have shewed myself wise under the sun. This is also vanity.</p>
+            <p><strong>20</strong> Therefore I went about to cause my heart to despair of all the labour which I took under the sun.</p>
+            <p><strong>21</strong> For there is a man whose labour is in wisdom, and in knowledge, and in equity; yet to a man that hath not laboured therein shall he leave it for his portion. This also is vanity and a great evil.</p>
+            <p><strong>22</strong> For what hath man of all his labour, and of the vexation of his heart, wherein he hath laboured under the sun?</p>
+            <p><strong>23</strong> For all his days are sorrows, and his travail grief; yea, his heart taketh not rest in the night. This is also vanity.</p>
+            <p><strong>24</strong> There is nothing better for a man, than that he should eat and drink, and that he should make his soul enjoy good in his labour. This also I saw, that it was from the hand of God.</p>
+            <p><strong>25</strong> For who can eat, or who else can hasten hereunto, more than I?</p>
+            <p><strong>26</strong> For God giveth to a man that is good in his sight wisdom, and knowledge, and joy: but to the sinner he giveth travail, to gather and to heap up, that he may give to him that is good before God. This also is vanity and vexation of spirit.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ecclesiastes 2 (ASV)</p>
+            <p><strong>1</strong> I said in my heart, Come now, I will prove thee with mirth; therefore enjoy pleasure: and, behold, this also was vanity.</p>
+            <p><strong>2</strong> I said of laughter, It is mad; and of mirth, What doeth it?</p>
+            <p><strong>3</strong> I searched in my heart how to cheer my flesh with wine, my heart yet guiding me with wisdom, and how to lay hold on folly, till I might see what it was good for the sons of men that they should do under heaven all the days of their life.</p>
+            <p><strong>4</strong> I made me great works; I builded me houses; I planted me vineyards;</p>
+            <p><strong>5</strong> I made me gardens and parks, and I planted trees in them of all kinds of fruit;</p>
+            <p><strong>6</strong> I made me pools of water, to water therefrom the forest where trees were reared;</p>
+            <p><strong>7</strong> I bought men-servants and maid-servants, and had servants born in my house; also I had great possessions of herds and flocks, above all that were before me in Jerusalem;</p>
+            <p><strong>8</strong> I gathered me also silver and gold, and the treasure of kings and of the provinces; I gat me men-singers and women-singers, and the delights of the sons of men, musical instruments, and that of all sorts.</p>
+            <p><strong>9</strong> So I was great, and increased more than all that were before me in Jerusalem: also my wisdom remained with me.</p>
+            <p><strong>10</strong> And whatsoever mine eyes desired I kept not from them; I withheld not my heart from any joy; for my heart rejoiced because of all my labor; and this was my portion from all my labor.</p>
+            <p><strong>11</strong> Then I looked on all the works that my hands had wrought, and on the labor that I had labored to do; and, behold, all was vanity and a striving after wind, and there was no profit under the sun.</p>
+            <p><strong>12</strong> And I turned myself to behold wisdom, and madness, and folly: for whatcanthe mandothat cometh after the king? even that which hath been done long ago.</p>
+            <p><strong>13</strong> Then I saw that wisdom excelleth folly, as far as light excelleth darkness.</p>
+            <p><strong>14</strong> The wise man’s eyes are in his head, and the fool walketh in darkness: and yet I perceived that one event happeneth to them all.</p>
+            <p><strong>15</strong> Then said I in my heart, As it happeneth to the fool, so will it happen even to me; and why was I then more wise? Then said I in my heart, that this also is vanity.</p>
+            <p><strong>16</strong> For of the wise man, even as of the fool, there is no remembrance for ever; seeing that in the days to come all will have been long forgotten. And how doth the wise man die even as the fool!</p>
+            <p><strong>17</strong> So I hated life, because the work that is wrought under the sun was grievous unto me; for all is vanity and a striving after wind.</p>
+            <p><strong>18</strong> And I hated all my labor wherein I labored under the sun, seeing that I must leave it unto the man that shall be after me.</p>
+            <p><strong>19</strong> And who knoweth whether he will be a wise man or a fool? yet will he have rule over all my labor wherein I have labored, and wherein I have showed myself wise under the sun. This also is vanity.</p>
+            <p><strong>20</strong> Therefore I turned about to cause my heart to despair concerning all the labor wherein I had labored under the sun.</p>
+            <p><strong>21</strong> For there is a man whose labor is with wisdom, and with knowledge, and with skilfulness; yet to a man that hath not labored therein shall he leave it for his portion. This also is vanity and a great evil.</p>
+            <p><strong>22</strong> For what hath a man of all his labor, and of the striving of his heart, wherein he laboreth under the sun?</p>
+            <p><strong>23</strong> For all his days are but sorrows, and his travail is grief; yea, even in the night his heart taketh no rest. This also is vanity.</p>
+            <p><strong>24</strong> There is nothing better for a manthanthat he should eat and drink, and make his soul enjoy good in his labor. This also I saw, that it is from the hand of God.</p>
+            <p><strong>25</strong> For who can eat, or who can have enjoyment, more than I?</p>
+            <p><strong>26</strong> For to the man that pleaseth him God giveth wisdom, and knowledge, and joy; but to the sinner he giveth travail, to gather and to heap up, that he may give to him that pleaseth God. This also is vanity and a striving after wind.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The Preacher now conducts his grand experiment. He tries pleasure—mirth, wine, laughter—and finds it accomplishes nothing. He pours himself into great works: houses, vineyards, gardens, pools, herds, silver and gold, singers and every delight. He withholds from himself nothing his eyes desire, and for a moment his labor brings him joy. But when he surveys all that his hands have done, he sees only vanity and a chasing after wind, with no lasting profit under the sun. He turns to compare wisdom and folly and admits that wisdom truly excels folly as light excels darkness; yet the same fate—death—falls on the wise and the fool alike, and both are soon forgotten. This levels his hope, and he comes to hate his toil, knowing he must leave everything to a successor who may squander it. His heart despairs. Then, almost surprisingly, the chapter turns: there is nothing better than to eat, drink, and find enjoyment in one's work, and even this, the Preacher sees, comes from the hand of God. To the one who pleases him, God gives wisdom, knowledge, and joy. The experiment that ends in despair opens, at its close, onto grace.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The Preacher (Qoheleth)</strong> — The king who tests every pleasure and achievement, weighs wisdom against folly, despairs over death and toil, then glimpses joy as God's gift.</li>
+          <li><strong>God</strong> — Revealed as the source of true enjoyment, who gives wisdom, knowledge, and joy to those who please him, even amid the vanity of toil.</li>
+          <li><strong>The successor</strong> — The unknown heir—wise or foolish—who will inherit all the Preacher's labor, exposing how little control we have over what we leave behind.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ecclesiastes 2:24 (WEB)</p>
+          <p class="verse__text">There is nothing better for a man than that he should eat and drink, and make his soul enjoy good in his labor. This also I saw, that it is from the hand of God.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Pleasure pursued for its own sake leaves us empty, no matter how abundant.</li>
+          <li>Even great achievements cannot give lasting profit when death erases every memory.</li>
+          <li>Wisdom genuinely surpasses folly, yet it cannot deliver us from the grave.</li>
+          <li>True enjoyment of ordinary things is a gift to be received from the hand of God, not a prize to be seized.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Pleasure cannot fill the soul.</strong> After testing mirth and every delight, he concludes, “this also was vanity” (Ecclesiastes 2:1, WEB). What promises to satisfy us most fully leaves us most empty when made an end in itself.</li>
+            <li><strong>Achievement leaves no lasting profit.</strong> Surveying all his works, he found “all was vanity and a chasing after wind, and there was no profit under the sun” (Ecclesiastes 2:11, WEB). We cannot build our way to meaning.</li>
+            <li><strong>Death humbles every advantage.</strong> “The wise man must die just like the fool!” (Ecclesiastes 2:16, WEB). The grave levels wisdom and folly alike, exposing the limits of every human strength.</li>
+            <li><strong>Joy is the gift of God.</strong> To eat, drink, and enjoy our work is good, and “it is from the hand of God” (Ecclesiastes 2:24, WEB). Contentment is received, not manufactured.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>What does the Preacher try in his search for meaning (2:1-10), and what is striking about the scale of his experiment?</li>
+            <li>He admits wisdom excels folly “as far as light excels darkness” (2:13), yet still despairs. Why?</li>
+            <li>How does the prospect of leaving everything to a successor (2:18-21) expose the vanity of toil?</li>
+            <li>After so much despair, why does the Preacher land on eating, drinking, and enjoying work as good—and what makes that different from the pleasure-seeking he just rejected?</li>
+            <li>What is one good gift in your ordinary life that you have been treating as a burden or taking for granted, and how might you receive it from God's hand this week?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>He holds nothing back—wine and laughter, houses, vineyards, gardens, pools, servants, herds, silver, gold, music, and every delight (2:1-10). The scale is the point: no one could test the promise of pleasure and achievement more fully, and yet it all comes up empty, so we need not run the experiment ourselves.</li>
+            <li>Wisdom really is better than folly, but it cannot stop death, and one event comes to wise and fool alike (2:14-16). Because both are forgotten, the Preacher sees that even his prized wisdom cannot secure lasting meaning, and his hope in it collapses.</li>
+            <li>He must leave the fruit of his labor to someone who has not worked for it and may prove a fool (2:18-19). This robs his toil of its security and significance; we cannot control or keep what we work so hard to build, which makes laboring for its own sake a kind of grief.</li>
+            <li>The shift is the giver. Earlier he seized pleasure as an end to master; here he receives food, drink, and work as gifts “from the hand of God” (2:24). The same activities become joyful when held gratefully before God rather than grasped as substitutes for him.</li>
+            <li>This is a personal-application question. Invite members to name a daily gift—a meal, a job, a relationship—that has become a chore, and to practice gratitude. As leader, model receiving small things with thanks, and let the group rest in the idea that joy is given, not earned.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ecclesiastes-1.html">← Ecclesiastes 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ecclesiastes.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ecclesiastes-3.html">Ecclesiastes 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

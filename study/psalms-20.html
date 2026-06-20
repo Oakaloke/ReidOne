@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 20: Some Trust in Chariots — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 20: the people pray for their king in the day of trouble, declaring that salvation belongs not to chariots and horses but to the name of God." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 20
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 20</span>
+        <h1>Psalms 20: Some Trust in Chariots</h1>
+        <p class="lead">A congregational prayer for the king before battle, trusting not in horses or chariots but in the name of the LORD for victory.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-20">
+            <span>Scripture — Psalms Chapter 20</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-20">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-20-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-20-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-20-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-20-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 20 (WEB)</p>
+            <p><strong>1</strong> May Yahweh answer you in the day of trouble. May the name of the God of Jacob set you up on high,</p>
+            <p><strong>2</strong> send you help from the sanctuary, grant you support from Zion,</p>
+            <p><strong>3</strong> remember all your offerings, and accept your burnt sacrifice. Selah.</p>
+            <p><strong>4</strong> May He grant you your heart’s desire, and fulfill all your counsel.</p>
+            <p><strong>5</strong> We will triumph in your salvation. In the name of our God, we will set up our banners. May Yahweh grant all your requests.</p>
+            <p><strong>6</strong> Now I know that Yahweh saves his anointed. He will answer him from his holy heaven, with the saving strength of his right hand.</p>
+            <p><strong>7</strong> Some trust in chariots, and some in horses, but we trust the name of Yahweh our God.</p>
+            <p><strong>8</strong> They are bowed down and fallen, but we rise up, and stand upright.</p>
+            <p><strong>9</strong> Save, Yahweh! Let the King answer us when we call!</p>
+            </div>
+            <div class="scripture-text" id="web-20-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 20 (KJV)</p>
+            <p><strong>1</strong> The Lord hear thee in the day of trouble; the name of the God of Jacob defend thee;</p>
+            <p><strong>2</strong> Send thee help from the sanctuary, and strengthen thee out of Zion;</p>
+            <p><strong>3</strong> Remember all thy offerings, and accept thy burnt sacrifice; Selah.</p>
+            <p><strong>4</strong> Grant thee according to thine own heart, and fulfil all thy counsel.</p>
+            <p><strong>5</strong> We will rejoice in thy salvation, and in the name of our God we will set up our banners: the Lord fulfil all thy petitions.</p>
+            <p><strong>6</strong> Now know I that the Lord saveth his anointed; he will hear him from his holy heaven with the saving strength of his right hand.</p>
+            <p><strong>7</strong> Some trust in chariots, and some in horses: but we will remember the name of the Lord our God.</p>
+            <p><strong>8</strong> They are brought down and fallen: but we are risen, and stand upright.</p>
+            <p><strong>9</strong> Save, Lord: let the king hear us when we call.</p>
+            </div>
+            <div class="scripture-text" id="web-20-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 20 (ASV)</p>
+            <p><strong>1</strong> Jehovah answer thee in the day of trouble; The name of the God of Jacob set thee up on high;</p>
+            <p><strong>2</strong> Send thee help from the sanctuary, And strengthen thee out of Zion;</p>
+            <p><strong>3</strong> Remember all thy offerings, And accept thy burnt-sacrifice; [Selah</p>
+            <p><strong>4</strong> Grant thee thy heart’s desire, And fulfil all thy counsel.</p>
+            <p><strong>5</strong> We will triumph in thy salvation, And in the name of our God we will set up our banners: Jehovah fulfil all thy petitions.</p>
+            <p><strong>6</strong> Now know I that Jehovah saveth his anointed; He will answer him from his holy heaven With the saving strength of his right hand.</p>
+            <p><strong>7</strong> Some trustin chariots, and some in horses; But we will make mention of the name of Jehovah our God.</p>
+            <p><strong>8</strong> They are bowed down and fallen; But we are risen, and stand upright.</p>
+            <p><strong>9</strong> Save, Jehovah: Let the King answer us when we call.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This is a royal psalm, a prayer of the people for their king as he prepares for battle. The congregation calls down blessing upon him: may the LORD answer him in the day of trouble, set him on high, send help from the sanctuary, and support him from Zion. They ask God to remember his offerings, accept his sacrifices, and grant the desire of his heart, so that they might triumph and raise their banners in the name of God. The mood then shifts to confident assurance: “Now I know that Yahweh saves his anointed,” the king who will be answered from God's holy heaven with the saving strength of his right hand. The heart of the psalm is its great contrast: some trust in chariots and some in horses, but God's people trust in the name of the LORD their God. Those who rely on military might are bowed down and fall, while those who trust God rise and stand upright. The psalm ends with a final cry for the LORD to save and to answer the king when his people call. For Christians it directs our deepest confidence to the true Anointed King, Jesus, whose victory the Father has secured.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The congregation</strong> — God's people who pray for their king, declare their trust in the name of the LORD, and look for victory from heaven rather than from arms.</li>
+          <li><strong>The king (the anointed)</strong> — God's chosen ruler facing the day of trouble, for whom the people intercede and whom the LORD saves from his holy heaven.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God of Jacob who answers from the sanctuary, saves his anointed, and gives the victory that chariots and horses cannot.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 20:7 (WEB)</p>
+          <p class="verse__text">Some trust in chariots, and some in horses, but we trust the name of Yahweh our God.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>It is good and right to pray for those who lead and serve us in their day of trouble.</li>
+          <li>Our confidence belongs not in resources or strength but in the name of the LORD.</li>
+          <li>Those who trust in worldly power fall, while those who trust God rise and stand.</li>
+          <li>God answers his anointed from heaven with the saving strength of his right hand.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-20">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-20">
+            <ul class="lesson-list">
+            <li><strong>Intercession is a labor of love.</strong> “May Yahweh answer you in the day of trouble” (Psalm 20:1, WEB). The whole congregation lifts their king before God, modeling prayer for one another.</li>
+            <li><strong>Salvation comes from the sanctuary.</strong> God sends “help from the sanctuary” and grants “support from Zion” (Psalm 20:2, WEB). Real aid descends from God's presence, not from human reserves.</li>
+            <li><strong>Choose your trust carefully.</strong> “Some trust in chariots… but we trust the name of Yahweh our God” (Psalm 20:7, WEB). What we lean on in crisis reveals where our hearts truly rest.</li>
+            <li><strong>Trust determines who stands.</strong> “They are bowed down and fallen, but we rise up, and stand upright” (Psalm 20:8, WEB). Misplaced confidence collapses; faith in God holds firm.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-20">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-20">
+            <ol class="study-questions">
+            <li>What specific blessings does the congregation ask for their king in verses 1-5?</li>
+            <li>What does the contrast in verse 7 reveal about where people put their confidence?</li>
+            <li>Why do those who trust chariots fall while those who trust God stand (20:8)?</li>
+            <li>How does this psalm shape the way we pray for our leaders and one another?</li>
+            <li>Where in your own life are you tempted to trust in your own “chariots,” and what would it look like to trust the name of the LORD instead?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-20">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-20">
+            <ol class="study-questions">
+            <li>They pray that God would answer him, set him on high, send help from the sanctuary, remember his offerings, and grant his heart's desire (20:1-5). It is full-hearted intercession, asking God to be the king's strength in his hour of need.</li>
+            <li>The verse exposes two kinds of trust: the visible power of chariots and horses, and the unseen but greater name of the LORD. It calls God's people to a confidence the world cannot understand or supply.</li>
+            <li>Worldly strength has no power before God and gives way under pressure, while those who rest in God are upheld by him. The image of standing versus falling pictures the difference faith makes when the testing comes.</li>
+            <li>It teaches us to surround leaders and one another with prayer in times of trouble, asking God for help rather than merely offering advice. Intercession becomes an act of love and a confession that victory is God's to give.</li>
+            <li>This is a personal-application question. Help members name the resources, plans, or strengths they instinctively lean on, and invite them to consciously transfer that trust to God. Keep it gentle; the aim is to redirect confidence, not to shame.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-19.html">← Psalms 19</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-21.html">Psalms 21 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Bible Study: The Book of Psalms — ReidOne</title>
+  <meta name="description" content="An interactive study of Psalms, the inspired songbook and prayer book of God's people, where praise and lament, thanksgiving and wisdom meet, and where the Son of David is foreshadowed throughout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ReidOne Bible Study — Psalms landing / index page.
+  Teaching content prepared for this site; scripture is public domain (WEB/KJV/ASV).
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Bible Study · Wisdom & Poetry</span>
+        <h1>The Book of Psalms</h1>
+        <p class="lead study-intro mx-auto">Psalms is the great hymnal and prayer book of the Bible, one hundred and fifty inspired songs that give voice to the full range of human life before God. Here the people of God learn to praise and to lament, to give thanks and to confess, to wait and to hope. The Psalms are astonishingly honest, holding nothing back from the LORD, yet they always draw the heart upward to trust in his steadfast love. Composed across centuries by David, the sons of Korah, Asaph, Solomon, Moses, and others, the collection is gathered into five Books that mirror the five books of Moses. Again and again the Psalms reach beyond their first singers to the coming King, so that Jesus himself read these songs as words about him. To pray the Psalms is to be taught how to worship.</p>
+        <p style="margin-top:1rem"><a class="btn btn--ghost" href="../bible.html">← All 66 Books</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="study-progress study-progress--soon">
+          <div class="study-progress__head">
+            <strong>Progress tracking <span class="coming-soon-tag">Coming soon</span></strong>
+            <button class="btn btn--ghost" type="button" disabled aria-disabled="true">Reset progress</button>
+          </div>
+          <div class="study-progress__bar">
+            <span class="study-progress__fill" style="width:0%"></span>
+          </div>
+          <p class="study-progress__note">Marking chapters complete and saving your progress across visits will arrive with member sign-in.</p>
+        </div>
+
+        <div class="study-grid">
+          <a class="study-card study-card--overview" href="psalms-overview.html">
+            <span class="study-card__num">Start Here</span>
+            <h3 class="study-card__title">Whole-Book Overview</h3>
+            <p class="study-card__summary">Psalms is the Spirit-given songbook that teaches God's people to pray and praise through every season of life, and points forward to Christ the Son of David.</p>
+            <span class="study-card__cta">Open overview →</span>
+          </a>
+          <a class="study-card" href="psalms-1.html" data-chapter-card="1">
+            <span class="study-card__num">Chapter 1</span>
+            <h3 class="study-card__title">The Two Ways</h3>
+            <p class="study-card__summary">A wisdom psalm sets the whole Psalter before us, contrasting the blessed man rooted in God's law with the wicked who blow away like chaff.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-2.html" data-chapter-card="2">
+            <span class="study-card__num">Chapter 2</span>
+            <h3 class="study-card__title">The Anointed King</h3>
+            <p class="study-card__summary">A royal and messianic psalm shows the nations raging in vain against the LORD and his Anointed, whom God installs as King and Son over all the earth.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-3.html" data-chapter-card="3">
+            <span class="study-card__num">Chapter 3</span>
+            <h3 class="study-card__title">A Shield Around Me</h3>
+            <p class="study-card__summary">Fleeing from Absalom and surrounded by enemies, David turns his fear into prayer and rests in the LORD who shields him and sustains his sleep.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-4.html" data-chapter-card="4">
+            <span class="study-card__num">Chapter 4</span>
+            <h3 class="study-card__title">Peace When I Lie Down</h3>
+            <p class="study-card__summary">An evening prayer, David asks God to hear his cry, rebukes those who chase empty things, and finds a gladness and peaceful sleep the world cannot give.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-5.html" data-chapter-card="5">
+            <span class="study-card__num">Chapter 5</span>
+            <h3 class="study-card__title">Lead Me in Your Righteousness</h3>
+            <p class="study-card__summary">A morning prayer, David lays his requests before his King and God, contrasting the hatefulness of evil to the LORD with the joy of all who take refuge in him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-6.html" data-chapter-card="6">
+            <span class="study-card__num">Chapter 6</span>
+            <h3 class="study-card__title">Out of the Depths of Grief</h3>
+            <p class="study-card__summary">Worn out by suffering and tears, David pleads for mercy rather than wrath, then rises in confidence that the LORD has heard the voice of his weeping.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-7.html" data-chapter-card="7">
+            <span class="study-card__num">Chapter 7</span>
+            <h3 class="study-card__title">The Righteous Judge</h3>
+            <p class="study-card__summary">Falsely accused, David takes refuge in God, appeals to the righteous Judge of all the earth, and trusts that the wicked fall into the pit they dig.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-8.html" data-chapter-card="8">
+            <span class="study-card__num">Chapter 8</span>
+            <h3 class="study-card__title">How Majestic Is Your Name</h3>
+            <p class="study-card__summary">A praise psalm marvels at the glory of God set above the heavens and the astonishing dignity God gives to frail humanity, crowned to rule his works.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-9.html" data-chapter-card="9">
+            <span class="study-card__num">Chapter 9</span>
+            <h3 class="study-card__title">I Will Give Thanks</h3>
+            <p class="study-card__summary">A psalm of thanksgiving praises Yahweh as the righteous King who judges the nations, remembers the afflicted, and is a high tower for the oppressed.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-10.html" data-chapter-card="10">
+            <span class="study-card__num">Chapter 10</span>
+            <h3 class="study-card__title">Why Do You Stand Far Off</h3>
+            <p class="study-card__summary">A lament wrestles with the apparent triumph of the arrogant wicked, then rests in the truth that Yahweh is King forever and hears the desire of the humble.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-11.html" data-chapter-card="11">
+            <span class="study-card__num">Chapter 11</span>
+            <h3 class="study-card__title">In the Lord I Take Refuge</h3>
+            <p class="study-card__summary">Urged to flee like a bird, David refuses to panic, declaring that the LORD reigns from his holy temple and tests both the righteous and the wicked.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-12.html" data-chapter-card="12">
+            <span class="study-card__num">Chapter 12</span>
+            <h3 class="study-card__title">The Words of the Lord Are Pure</h3>
+            <p class="study-card__summary">In a world of flattering lips and double hearts, David pleads for help and rests in the flawless, refining words of the LORD who rises to protect the weak.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-13.html" data-chapter-card="13">
+            <span class="study-card__num">Chapter 13</span>
+            <h3 class="study-card__title">How Long, O Lord</h3>
+            <p class="study-card__summary">From the brink of despair David asks four agonized 'how long' questions, then turns to trust in God's loving kindness and sings of his salvation.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-14.html" data-chapter-card="14">
+            <span class="study-card__num">Chapter 14</span>
+            <h3 class="study-card__title">The Fool Says No God</h3>
+            <p class="study-card__summary">A wisdom psalm exposes the corruption of those who deny God, declares that none does good, and longs for salvation to come out of Zion.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-15.html" data-chapter-card="15">
+            <span class="study-card__num">Chapter 15</span>
+            <h3 class="study-card__title">Who May Dwell With God</h3>
+            <p class="study-card__summary">A wisdom psalm asks who may dwell on God's holy hill and answers with a portrait of integrity in heart, word, and deed that cannot be shaken.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-16.html" data-chapter-card="16">
+            <span class="study-card__num">Chapter 16</span>
+            <h3 class="study-card__title">The Path of Life</h3>
+            <p class="study-card__summary">A psalm of trust in which David finds his whole portion and inheritance in the LORD, and rejoices that God will not abandon his soul to the grave.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-17.html" data-chapter-card="17">
+            <span class="study-card__num">Chapter 17</span>
+            <h3 class="study-card__title">The Apple of His Eye</h3>
+            <p class="study-card__summary">A prayer for vindication in which David, surrounded by deadly enemies, pleads to be kept as the apple of God's eye and looks forward to seeing his face.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-18.html" data-chapter-card="18">
+            <span class="study-card__num">Chapter 18</span>
+            <h3 class="study-card__title">My Rock and Deliverer</h3>
+            <p class="study-card__summary">A royal song of thanksgiving in which David recounts how the LORD thundered from heaven, reached down, and rescued him from death and every enemy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-19.html" data-chapter-card="19">
+            <span class="study-card__num">Chapter 19</span>
+            <h3 class="study-card__title">The Heavens Declare</h3>
+            <p class="study-card__summary">A psalm of creation and Scripture in which the silent skies and the perfect law of God together proclaim his glory and search the human heart.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-20.html" data-chapter-card="20">
+            <span class="study-card__num">Chapter 20</span>
+            <h3 class="study-card__title">Some Trust in Chariots</h3>
+            <p class="study-card__summary">A congregational prayer for the king before battle, trusting not in horses or chariots but in the name of the LORD for victory.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-21.html" data-chapter-card="21">
+            <span class="study-card__num">Chapter 21</span>
+            <h3 class="study-card__title">The King Rejoices</h3>
+            <p class="study-card__summary">A royal thanksgiving celebrating the LORD's answered blessing upon his king, with strength, crown, and joy in God's presence.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-22.html" data-chapter-card="22">
+            <span class="study-card__num">Chapter 22</span>
+            <h3 class="study-card__title">Why Have You Forsaken Me</h3>
+            <p class="study-card__summary">A psalm of suffering that opens in the depths of forsakenness and ends in worldwide praise, foretelling the cross and triumph of Christ.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-23.html" data-chapter-card="23">
+            <span class="study-card__num">Chapter 23</span>
+            <h3 class="study-card__title">The LORD Is My Shepherd</h3>
+            <p class="study-card__summary">The beloved shepherd psalm, in which the LORD leads, restores, and provides, walking with his own through the valley of the shadow of death.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-24.html" data-chapter-card="24">
+            <span class="study-card__num">Chapter 24</span>
+            <h3 class="study-card__title">The King of Glory</h3>
+            <p class="study-card__summary">A psalm of ascent celebrating the LORD as Creator and King, asking who may ascend his hill and welcoming the King of glory through the everlasting doors.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-25.html" data-chapter-card="25">
+            <span class="study-card__num">Chapter 25</span>
+            <h3 class="study-card__title">Show Me Your Ways</h3>
+            <p class="study-card__summary">An acrostic prayer for guidance, pardon, and protection, in which David lifts up his soul to God and waits in humble trust.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-26.html" data-chapter-card="26">
+            <span class="study-card__num">Chapter 26</span>
+            <h3 class="study-card__title">I Walk in Integrity</h3>
+            <p class="study-card__summary">A prayer in which David invites God's searching examination, professing his love for God's house and his refusal to keep company with the wicked.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-27.html" data-chapter-card="27">
+            <span class="study-card__num">Chapter 27</span>
+            <h3 class="study-card__title">The LORD My Light</h3>
+            <p class="study-card__summary">A psalm of fearless confidence and longing, in which David seeks one thing above all: to dwell in the house of the LORD and behold his beauty.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-28.html" data-chapter-card="28">
+            <span class="study-card__num">Chapter 28</span>
+            <h3 class="study-card__title">Do Not Be Silent</h3>
+            <p class="study-card__summary">A prayer and thanksgiving in which David cries to God not to stay silent, and then rejoices that his petitions have been heard.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-29.html" data-chapter-card="29">
+            <span class="study-card__num">Chapter 29</span>
+            <h3 class="study-card__title">The Voice of the LORD</h3>
+            <p class="study-card__summary">A psalm of God's majesty in the storm, where the thunderous voice of the LORD shakes creation while he reigns as King and blesses his people with peace.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-30.html" data-chapter-card="30">
+            <span class="study-card__num">Chapter 30</span>
+            <h3 class="study-card__title">Joy Comes in the Morning</h3>
+            <p class="study-card__summary">A thanksgiving for healing and rescue, celebrating how God turns mourning into dancing and weeping into morning joy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-31.html" data-chapter-card="31">
+            <span class="study-card__num">Chapter 31</span>
+            <h3 class="study-card__title">Into Your Hand I Commit</h3>
+            <p class="study-card__summary">Hunted and wasting away with grief, David flees to Yahweh as his rock and fortress and entrusts his very spirit to the God of truth.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-32.html" data-chapter-card="32">
+            <span class="study-card__num">Chapter 32</span>
+            <h3 class="study-card__title">Blessed Is the Forgiven</h3>
+            <p class="study-card__summary">After the agony of hidden sin, David discovers the deep blessing of confession and the relief of being a forgiven, covered, and counseled child of God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-33.html" data-chapter-card="33">
+            <span class="study-card__num">Chapter 33</span>
+            <h3 class="study-card__title">Sing a New Song</h3>
+            <p class="study-card__summary">The upright are called to praise the God whose word made the heavens, whose counsel stands forever, and whose eye watches over those who hope in his loving kindness.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-34.html" data-chapter-card="34">
+            <span class="study-card__num">Chapter 34</span>
+            <h3 class="study-card__title">Taste and See</h3>
+            <p class="study-card__summary">Delivered from his fears, David invites the humble to magnify the Lord with him and to discover by experience that Yahweh is good.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-35.html" data-chapter-card="35">
+            <span class="study-card__num">Chapter 35</span>
+            <h3 class="study-card__title">Contend for My Cause</h3>
+            <p class="study-card__summary">Falsely accused and repaid evil for good, David asks the Lord himself to take up shield and spear and defend the soul of his servant.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-36.html" data-chapter-card="36">
+            <span class="study-card__num">Chapter 36</span>
+            <h3 class="study-card__title">Fountain of Life</h3>
+            <p class="study-card__summary">Against the dark portrait of the wicked who do not fear God, David lifts up the boundless, heaven-high loving kindness of the Lord in whose light we see light.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-37.html" data-chapter-card="37">
+            <span class="study-card__num">Chapter 37</span>
+            <h3 class="study-card__title">Fret Not, Trust Instead</h3>
+            <p class="study-card__summary">When evildoers seem to prosper, David counsels the righteous to stop fretting, trust the Lord, delight in him, and patiently wait for the future he secures.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-38.html" data-chapter-card="38">
+            <span class="study-card__num">Chapter 38</span>
+            <h3 class="study-card__title">Wounds of My Sin</h3>
+            <p class="study-card__summary">Crushed under the weight of guilt and sickness, abandoned by friends, David confesses his iniquity and hopes only in the Lord his salvation.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-39.html" data-chapter-card="39">
+            <span class="study-card__num">Chapter 39</span>
+            <h3 class="study-card__title">Show Me My End</h3>
+            <p class="study-card__summary">Holding his tongue until his heart burns, David asks God to teach him how fleeting life is, and finds his only hope in the Lord.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-40.html" data-chapter-card="40">
+            <span class="study-card__num">Chapter 40</span>
+            <h3 class="study-card__title">He Put a New Song</h3>
+            <p class="study-card__summary">Lifted from the miry pit and given a new song, David delights to do God's will and then cries again for help amid surrounding troubles.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-41.html" data-chapter-card="41">
+            <span class="study-card__num">Chapter 41</span>
+            <h3 class="study-card__title">Betrayed Yet Upheld</h3>
+            <p class="study-card__summary">Sick and betrayed by a trusted friend, David clings to the God who delivers the one who considers the poor and upholds him in his integrity.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-42.html" data-chapter-card="42">
+            <span class="study-card__num">Chapter 42</span>
+            <h3 class="study-card__title">As the Deer Pants</h3>
+            <p class="study-card__summary">Cut off from God's house and taunted by his enemies, the psalmist thirsts for the living God and preaches hope to his own downcast soul.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-43.html" data-chapter-card="43">
+            <span class="study-card__num">Chapter 43</span>
+            <h3 class="study-card__title">Send Your Light</h3>
+            <p class="study-card__summary">Pleading for vindication against deceitful men, the psalmist asks God to send out his light and truth to lead him back to the altar of his exceeding joy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-44.html" data-chapter-card="44">
+            <span class="study-card__num">Chapter 44</span>
+            <h3 class="study-card__title">Yet We Have Not Forgotten</h3>
+            <p class="study-card__summary">Remembering God's mighty deeds of old, the people cry out in bewildered faith over a present defeat they have not deserved, and beg God to rise and redeem.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-45.html" data-chapter-card="45">
+            <span class="study-card__num">Chapter 45</span>
+            <h3 class="study-card__title">A Song for the King</h3>
+            <p class="study-card__summary">A royal wedding song praises a glorious king whose throne is forever, addressing him as God, and points beyond every earthly monarch to Christ the eternal Bridegroom.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-46.html" data-chapter-card="46">
+            <span class="study-card__num">Chapter 46</span>
+            <h3 class="study-card__title">God Our Refuge and Strength</h3>
+            <p class="study-card__summary">When the earth itself shakes and nations rage, the people of God find unshakable safety in his presence and his peace.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-47.html" data-chapter-card="47">
+            <span class="study-card__num">Chapter 47</span>
+            <h3 class="study-card__title">God the King Ascends</h3>
+            <p class="study-card__summary">All nations are summoned to clap and shout, for the LORD Most High has gone up with a trumpet blast to reign over all the earth.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-48.html" data-chapter-card="48">
+            <span class="study-card__num">Chapter 48</span>
+            <h3 class="study-card__title">City of the Great King</h3>
+            <p class="study-card__summary">Mount Zion, the joy of the whole earth, stands secure because God himself is her refuge, her guide, and her everlasting King.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-49.html" data-chapter-card="49">
+            <span class="study-card__num">Chapter 49</span>
+            <h3 class="study-card__title">The Riddle of Riches</h3>
+            <p class="study-card__summary">Wisdom for low and high alike: no amount of wealth can ransom a soul from death, but God will redeem his people from the grave.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-50.html" data-chapter-card="50">
+            <span class="study-card__num">Chapter 50</span>
+            <h3 class="study-card__title">God Summons His People</h3>
+            <p class="study-card__summary">The Mighty One calls heaven and earth as witnesses, desiring not empty sacrifices but thankful hearts and lives that match their lips.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-51.html" data-chapter-card="51">
+            <span class="study-card__num">Chapter 51</span>
+            <h3 class="study-card__title">Create in Me a Clean Heart</h3>
+            <p class="study-card__summary">David's deepest confession, pleading for mercy, cleansing, and a renewed heart, knowing God desires not sacrifice but a broken and contrite spirit.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-52.html" data-chapter-card="52">
+            <span class="study-card__num">Chapter 52</span>
+            <h3 class="study-card__title">The Boast That Withers</h3>
+            <p class="study-card__summary">Against a tyrant who trusts in wealth and a deceitful tongue, the righteous flourish like a green olive tree in the house of God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-53.html" data-chapter-card="53">
+            <span class="study-card__num">Chapter 53</span>
+            <h3 class="study-card__title">The Fool Says No God</h3>
+            <p class="study-card__summary">God looks down from heaven and finds no one righteous, yet the psalm ends longing for the salvation that will come out of Zion.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-54.html" data-chapter-card="54">
+            <span class="study-card__num">Chapter 54</span>
+            <h3 class="study-card__title">Saved by Your Name</h3>
+            <p class="study-card__summary">Surrounded by violent men, David appeals to the name and might of God, confident that the LORD is the helper who sustains his soul.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-55.html" data-chapter-card="55">
+            <span class="study-card__num">Chapter 55</span>
+            <h3 class="study-card__title">Cast Your Burden on Him</h3>
+            <p class="study-card__summary">Crushed by a friend's betrayal and longing to fly away, David learns to cast his burden on the Lord who will sustain him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-56.html" data-chapter-card="56">
+            <span class="study-card__num">Chapter 56</span>
+            <h3 class="study-card__title">When I Am Afraid</h3>
+            <p class="study-card__summary">Hunted and slandered, David turns fear into trust, confident that God treasures his tears and is for him, so no flesh can harm him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-57.html" data-chapter-card="57">
+            <span class="study-card__num">Chapter 57</span>
+            <h3 class="study-card__title">In the Shadow of Your Wings</h3>
+            <p class="study-card__summary">Hidden in a cave from his enemies, David takes refuge under God's wings and rises with a steadfast heart to sing God's praise among the nations.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-58.html" data-chapter-card="58">
+            <span class="study-card__num">Chapter 58</span>
+            <h3 class="study-card__title">The God Who Judges the Earth</h3>
+            <p class="study-card__summary">Against corrupt rulers who deal out injustice, David appeals to the righteous Judge, assured there is a God who judges the earth.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-59.html" data-chapter-card="59">
+            <span class="study-card__num">Chapter 59</span>
+            <h3 class="study-card__title">My God, My High Tower</h3>
+            <p class="study-card__summary">Surrounded by enemies who prowl like dogs, David sings of God's strength and steadfast love, calling him his high tower and his refuge.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-60.html" data-chapter-card="60">
+            <span class="study-card__num">Chapter 60</span>
+            <h3 class="study-card__title">Through God We Shall Do Valiantly</h3>
+            <p class="study-card__summary">After defeat and a sense of God's rejection, the people plead for restoration, for the help of man is vain but through God they will triumph.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-61.html" data-chapter-card="61">
+            <span class="study-card__num">Chapter 61</span>
+            <h3 class="study-card__title">The Rock That Is Higher</h3>
+            <p class="study-card__summary">From the ends of the earth a weary heart cries out to be led to the rock that is higher than himself, finding refuge in God's tent forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-62.html" data-chapter-card="62">
+            <span class="study-card__num">Chapter 62</span>
+            <h3 class="study-card__title">Wait in Silence</h3>
+            <p class="study-card__summary">Surrounded by enemies who flatter and scheme, the psalmist quiets his soul before God alone, his rock and salvation, and calls all people to pour out their hearts to him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-63.html" data-chapter-card="63">
+            <span class="study-card__num">Chapter 63</span>
+            <h3 class="study-card__title">My Soul Thirsts for You</h3>
+            <p class="study-card__summary">In a dry and weary land, the psalmist's whole being thirsts and longs for God, whose loving kindness is better than life itself.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-64.html" data-chapter-card="64">
+            <span class="study-card__num">Chapter 64</span>
+            <h3 class="study-card__title">Hidden From the Conspiracy</h3>
+            <p class="study-card__summary">Threatened by tongues sharpened like swords and ambushes of secret words, the psalmist trusts that God will shoot the wicked down with their own weapons.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-65.html" data-chapter-card="65">
+            <span class="study-card__num">Chapter 65</span>
+            <h3 class="study-card__title">Crowned With Your Bounty</h3>
+            <p class="study-card__summary">A psalm of praise to the God who answers prayer, atones for sin, stills the seas, and crowns the year with goodness until the hills sing for joy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-66.html" data-chapter-card="66">
+            <span class="study-card__num">Chapter 66</span>
+            <h3 class="study-card__title">Come and See God's Deeds</h3>
+            <p class="study-card__summary">All the earth is summoned to shout to God, who tested and refined his people, and the psalmist declares what God has done for his own soul.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-67.html" data-chapter-card="67">
+            <span class="study-card__num">Chapter 67</span>
+            <h3 class="study-card__title">Let All the Peoples Praise You</h3>
+            <p class="study-card__summary">A prayer that God's blessing on his people would make his saving way known among all nations, until the ends of the earth fear him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-68.html" data-chapter-card="68">
+            <span class="study-card__num">Chapter 68</span>
+            <h3 class="study-card__title">Let God Arise</h3>
+            <p class="study-card__summary">A triumphant procession psalm celebrating the God who scatters his enemies, fathers the fatherless, ascends on high, and daily bears his people's burdens.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-69.html" data-chapter-card="69">
+            <span class="study-card__num">Chapter 69</span>
+            <h3 class="study-card__title">The Waters Up to My Neck</h3>
+            <p class="study-card__summary">Sinking in deep waters and bearing reproach for God's sake, the psalmist pleads for rescue in words the Gospels apply to the suffering Christ.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-70.html" data-chapter-card="70">
+            <span class="study-card__num">Chapter 70</span>
+            <h3 class="study-card__title">Hurry to Help Me</h3>
+            <p class="study-card__summary">A short, urgent cry for God to come quickly, that those who seek him may rejoice and the poor and needy may not be abandoned.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-71.html" data-chapter-card="71">
+            <span class="study-card__num">Chapter 71</span>
+            <h3 class="study-card__title">Even When I Am Old</h3>
+            <p class="study-card__summary">An aging believer who has trusted God since birth asks not to be forsaken in old age, vowing to declare God's strength to the next generation.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-72.html" data-chapter-card="72">
+            <span class="study-card__num">Chapter 72</span>
+            <h3 class="study-card__title">A King Whose Name Endures</h3>
+            <p class="study-card__summary">A royal prayer for a king who judges the poor with justice, reigns from sea to sea, and whose name endures forever, pointing beyond Solomon to Christ.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-73.html" data-chapter-card="73">
+            <span class="study-card__num">Chapter 73</span>
+            <h3 class="study-card__title">Until I Entered the Sanctuary</h3>
+            <p class="study-card__summary">Asaph nearly slips when he envies the prosperous wicked, until worship gives him an eternal perspective and he finds God his portion forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-74.html" data-chapter-card="74">
+            <span class="study-card__num">Chapter 74</span>
+            <h3 class="study-card__title">Remember Your Congregation</h3>
+            <p class="study-card__summary">Amid a ruined sanctuary and a silent God, Asaph pleads for God to remember his people and recalls the Creator who broke the heads of Leviathan.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-75.html" data-chapter-card="75">
+            <span class="study-card__num">Chapter 75</span>
+            <h3 class="study-card__title">God Is the Judge</h3>
+            <p class="study-card__summary">A psalm of thanksgiving that God alone exalts and abases, holding the earth steady and the cup of judgment for the proud while the righteous are lifted up.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-76.html" data-chapter-card="76">
+            <span class="study-card__num">Chapter 76</span>
+            <h3 class="study-card__title">The God Who Is Feared</h3>
+            <p class="study-card__summary">A song of Zion that celebrates God shattering the weapons of war, judging the proud, and saving the afflicted of the earth.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-77.html" data-chapter-card="77">
+            <span class="study-card__num">Chapter 77</span>
+            <h3 class="study-card__title">I Will Remember His Deeds</h3>
+            <p class="study-card__summary">A lament that climbs from sleepless anguish and unanswered questions to deliberate remembrance of God's mighty works of old.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-78.html" data-chapter-card="78">
+            <span class="study-card__num">Chapter 78</span>
+            <h3 class="study-card__title">Tell the Next Generation</h3>
+            <p class="study-card__summary">A long historical psalm that retells Israel's rebellion and God's patient mercy, so that children yet unborn will set their hope in God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-79.html" data-chapter-card="79">
+            <span class="study-card__num">Chapter 79</span>
+            <h3 class="study-card__title">How Long, O Lord?</h3>
+            <p class="study-card__summary">A communal lament over a ruined Jerusalem that pleads for God to forgive his people, avenge his servants, and act for his own name's sake.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-80.html" data-chapter-card="80">
+            <span class="study-card__num">Chapter 80</span>
+            <h3 class="study-card__title">Restore Us, O God</h3>
+            <p class="study-card__summary">A national lament that pictures Israel as a ruined vine and pleads three times for God to make his face shine so they may be saved.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-81.html" data-chapter-card="81">
+            <span class="study-card__num">Chapter 81</span>
+            <h3 class="study-card__title">Open Your Mouth Wide</h3>
+            <p class="study-card__summary">A festival psalm that summons Israel to joyful worship and then voices God's grieving plea that his people would only listen to him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-82.html" data-chapter-card="82">
+            <span class="study-card__num">Chapter 82</span>
+            <h3 class="study-card__title">Judge of the Judges</h3>
+            <p class="study-card__summary">A psalm that pictures God presiding over corrupt rulers, indicting their injustice and calling on him to arise and judge the whole earth.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-83.html" data-chapter-card="83">
+            <span class="study-card__num">Chapter 83</span>
+            <h3 class="study-card__title">Do Not Keep Silent</h3>
+            <p class="study-card__summary">A communal lament against a conspiracy of nations that asks God to act so that his enemies will know he alone is the Most High.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-84.html" data-chapter-card="84">
+            <span class="study-card__num">Chapter 84</span>
+            <h3 class="study-card__title">How Lovely Your Dwelling Place</h3>
+            <p class="study-card__summary">A pilgrim's song of longing for the courts of God, where even a sparrow finds a home and a single day surpasses a thousand elsewhere.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-85.html" data-chapter-card="85">
+            <span class="study-card__num">Chapter 85</span>
+            <h3 class="study-card__title">Mercy and Truth Meet</h3>
+            <p class="study-card__summary">A communal prayer for revival that beholds the day when love and faithfulness, righteousness and peace, embrace in the land.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-86.html" data-chapter-card="86">
+            <span class="study-card__num">Chapter 86</span>
+            <h3 class="study-card__title">You Are Good and Forgiving</h3>
+            <p class="study-card__summary">A personal prayer of the poor and needy that leans on God's mercy, asks for an undivided heart, and trusts him to answer.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-87.html" data-chapter-card="87">
+            <span class="study-card__num">Chapter 87</span>
+            <h3 class="study-card__title">Born in Zion</h3>
+            <p class="study-card__summary">A short song of Zion celebrating the city God loves, where peoples of every nation are recorded as citizens born within her.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-88.html" data-chapter-card="88">
+            <span class="study-card__num">Chapter 88</span>
+            <h3 class="study-card__title">Out of the Depths</h3>
+            <p class="study-card__summary">The darkest lament in the Psalter, a relentless cry from one overwhelmed by suffering who keeps praying though no light comes.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-89.html" data-chapter-card="89">
+            <span class="study-card__num">Chapter 89</span>
+            <h3 class="study-card__title">Your Love Stands Firm Forever</h3>
+            <p class="study-card__summary">A long psalm that exalts God's covenant with David and his steadfast love, then wrestles with the apparent collapse of that promise.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-90.html" data-chapter-card="90">
+            <span class="study-card__num">Chapter 90</span>
+            <h3 class="study-card__title">Teach Us to Number Our Days</h3>
+            <p class="study-card__summary">Moses' prayer that contrasts our brief, fragile lives with the eternal God, and asks for wisdom and lasting joy in him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-91.html" data-chapter-card="91">
+            <span class="study-card__num">Chapter 91</span>
+            <h3 class="study-card__title">Dwelling in the Shelter</h3>
+            <p class="study-card__summary">A psalm of confident trust, promising that the one who makes the Most High his refuge will be guarded, delivered, and satisfied with God's salvation.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-92.html" data-chapter-card="92">
+            <span class="study-card__num">Chapter 92</span>
+            <h3 class="study-card__title">Good to Give Thanks</h3>
+            <p class="study-card__summary">A psalm for the Sabbath, praising the works of God and contrasting the fleeting prosperity of the wicked with the lasting flourishing of the righteous.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-93.html" data-chapter-card="93">
+            <span class="study-card__num">Chapter 93</span>
+            <h3 class="study-card__title">The Lord Reigns</h3>
+            <p class="study-card__summary">A short enthronement psalm declaring that Yahweh reigns, robed in majesty, his throne established from of old above the roaring of the seas.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-94.html" data-chapter-card="94">
+            <span class="study-card__num">Chapter 94</span>
+            <h3 class="study-card__title">God Who Avenges</h3>
+            <p class="study-card__summary">A psalm crying out to the God of justice to rise against the proud who crush his people, with confidence that he will repay and not forsake his own.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-95.html" data-chapter-card="95">
+            <span class="study-card__num">Chapter 95</span>
+            <h3 class="study-card__title">Come, Let Us Worship</h3>
+            <p class="study-card__summary">An enthronement psalm calling us to sing to the rock of our salvation and to worship our Maker, with a solemn warning not to harden our hearts.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-96.html" data-chapter-card="96">
+            <span class="study-card__num">Chapter 96</span>
+            <h3 class="study-card__title">Sing a New Song</h3>
+            <p class="study-card__summary">An enthronement psalm calling all the earth to sing a new song to Yahweh, to declare his glory among the nations, for he comes to judge the world in righteousness.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-97.html" data-chapter-card="97">
+            <span class="study-card__num">Chapter 97</span>
+            <h3 class="study-card__title">The Lord Reigns Supreme</h3>
+            <p class="study-card__summary">An enthronement psalm picturing Yahweh's majestic reign in clouds and fire, calling the righteous to rejoice and to hate evil while idols are put to shame.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-98.html" data-chapter-card="98">
+            <span class="study-card__num">Chapter 98</span>
+            <h3 class="study-card__title">His Right Hand Has Saved</h3>
+            <p class="study-card__summary">An enthronement psalm celebrating the salvation God has worked with his holy arm, calling all the earth to make a joyful noise before the coming King.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-99.html" data-chapter-card="99">
+            <span class="study-card__num">Chapter 99</span>
+            <h3 class="study-card__title">Holy Is the Lord</h3>
+            <p class="study-card__summary">An enthronement psalm exalting the King who reigns among the cherubim, loving justice and answering those who call on him, repeating that he is holy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-100.html" data-chapter-card="100">
+            <span class="study-card__num">Chapter 100</span>
+            <h3 class="study-card__title">Enter With Thanksgiving</h3>
+            <p class="study-card__summary">A short, joyful psalm of thanksgiving calling all lands to serve the Lord with gladness, knowing he made us, for his loving kindness endures forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-101.html" data-chapter-card="101">
+            <span class="study-card__num">Chapter 101</span>
+            <h3 class="study-card__title">A King's Resolve</h3>
+            <p class="study-card__summary">A royal psalm in which the king vows to live a blameless life, to surround himself with the faithful, and to drive out wickedness from God's city.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-102.html" data-chapter-card="102">
+            <span class="study-card__num">Chapter 102</span>
+            <h3 class="study-card__title">Prayer of the Afflicted</h3>
+            <p class="study-card__summary">A lament of a suffering soul that turns to the eternal, unchanging God, who will arise to have mercy on Zion and endures when all creation wears out.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-103.html" data-chapter-card="103">
+            <span class="study-card__num">Chapter 103</span>
+            <h3 class="study-card__title">Bless the Lord, My Soul</h3>
+            <p class="study-card__summary">A psalm of David that summons the soul to bless the Lord and recount his benefits—forgiveness, healing, redemption, and steadfast love as high as the heavens.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-104.html" data-chapter-card="104">
+            <span class="study-card__num">Chapter 104</span>
+            <h3 class="study-card__title">How Many Your Works</h3>
+            <p class="study-card__summary">A psalm of creation that blesses the Lord clothed in light, who provides for every living thing and renews the face of the earth by his Spirit.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-105.html" data-chapter-card="105">
+            <span class="study-card__num">Chapter 105</span>
+            <h3 class="study-card__title">Remember His Covenant</h3>
+            <p class="study-card__summary">A psalm of thanksgiving retelling Israel's story from Abraham to the Exodus, celebrating the God who keeps his covenant to a thousand generations.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-106.html" data-chapter-card="106">
+            <span class="study-card__num">Chapter 106</span>
+            <h3 class="study-card__title">We Have Sinned Like Our Fathers</h3>
+            <p class="study-card__summary">A confessional history psalm that retells Israel's repeated rebellion in the wilderness and Canaan, met again and again by God's covenant mercy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-107.html" data-chapter-card="107">
+            <span class="study-card__num">Chapter 107</span>
+            <h3 class="study-card__title">Let the Redeemed Say So</h3>
+            <p class="study-card__summary">Opening Book V, four pictures of people in trouble who cried to the Lord and were delivered, each calling us to thank him for his steadfast love.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-108.html" data-chapter-card="108">
+            <span class="study-card__num">Chapter 108</span>
+            <h3 class="study-card__title">My Heart Is Steadfast</h3>
+            <p class="study-card__summary">A confident psalm of David that weaves earlier songs together, praising God's love above the heavens and trusting him for victory over every foe.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-109.html" data-chapter-card="109">
+            <span class="study-card__num">Chapter 109</span>
+            <h3 class="study-card__title">God of My Praise</h3>
+            <p class="study-card__summary">An imprecatory psalm of David who, slandered and repaid evil for good, hands his cause over to God and trusts the Lord to stand at the needy's side.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-110.html" data-chapter-card="110">
+            <span class="study-card__num">Chapter 110</span>
+            <h3 class="study-card__title">Sit at My Right Hand</h3>
+            <p class="study-card__summary">A royal and messianic psalm in which the LORD enthrones David's Lord as priest-king forever, ruling his enemies and reigning in the order of Melchizedek.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-111.html" data-chapter-card="111">
+            <span class="study-card__num">Chapter 111</span>
+            <h3 class="study-card__title">Great Are the Lord's Works</h3>
+            <p class="study-card__summary">An acrostic hymn of wholehearted thanks that ponders God's mighty, gracious works and names the fear of the Lord as the beginning of wisdom.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-112.html" data-chapter-card="112">
+            <span class="study-card__num">Chapter 112</span>
+            <h3 class="study-card__title">The Blessing of the God-Fearer</h3>
+            <p class="study-card__summary">A companion acrostic to Psalm 111 describing the steady, generous, fearless life of the one who delights greatly in the Lord's commandments.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-113.html" data-chapter-card="113">
+            <span class="study-card__num">Chapter 113</span>
+            <h3 class="study-card__title">He Raises the Poor</h3>
+            <p class="study-card__summary">The first of the Hallel psalms, praising the exalted Lord who stoops down to lift the lowly and seat them with princes.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-114.html" data-chapter-card="114">
+            <span class="study-card__num">Chapter 114</span>
+            <h3 class="study-card__title">When Israel Went Out of Egypt</h3>
+            <p class="study-card__summary">A vivid Hallel poem on the exodus, where sea and river flee and mountains skip at the presence of the God who turns rock into water.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-115.html" data-chapter-card="115">
+            <span class="study-card__num">Chapter 115</span>
+            <h3 class="study-card__title">Not to Us, but Your Name</h3>
+            <p class="study-card__summary">A Hallel psalm that exposes the emptiness of idols and calls God's people to trust the living God who is their help and shield.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-116.html" data-chapter-card="116">
+            <span class="study-card__num">Chapter 116</span>
+            <h3 class="study-card__title">I Love the Lord</h3>
+            <p class="study-card__summary">A heartfelt Hallel psalm of thanksgiving from one delivered from death, who vows to repay the Lord by taking up the cup of salvation.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-117.html" data-chapter-card="117">
+            <span class="study-card__num">Chapter 117</span>
+            <h3 class="study-card__title">Praise the Lord, All Nations</h3>
+            <p class="study-card__summary">The shortest psalm and chapter in the Bible, a two-verse summons for every nation to praise the Lord for his steadfast love and faithfulness.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-118.html" data-chapter-card="118">
+            <span class="study-card__num">Chapter 118</span>
+            <h3 class="study-card__title">The Stone the Builders Rejected</h3>
+            <p class="study-card__summary">The climactic Hallel psalm of thanksgiving, celebrating the Lord's enduring love, the gate of the righteous, and the rejected stone made the cornerstone.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-119.html" data-chapter-card="119">
+            <span class="study-card__num">Chapter 119</span>
+            <h3 class="study-card__title">Your Word Is a Lamp</h3>
+            <p class="study-card__summary">The longest psalm, a vast acrostic celebrating God's word as the joy, guide, comfort, and life of the one who loves and obeys it.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-120.html" data-chapter-card="120">
+            <span class="study-card__num">Chapter 120</span>
+            <h3 class="study-card__title">A Cry From Among the Hostile</h3>
+            <p class="study-card__summary">The first Song of Ascents, a pilgrim's plea for deliverance from lying lips while dwelling far away among those who hate peace.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-121.html" data-chapter-card="121">
+            <span class="study-card__num">Chapter 121</span>
+            <h3 class="study-card__title">My Help Comes From God</h3>
+            <p class="study-card__summary">A pilgrim lifts his eyes to the hills and finds his help not in the heights but in the LORD who never sleeps and keeps him forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-122.html" data-chapter-card="122">
+            <span class="study-card__num">Chapter 122</span>
+            <h3 class="study-card__title">Glad To Go Home</h3>
+            <p class="study-card__summary">The pilgrim rejoices to enter Jerusalem, the city where the tribes gather to worship, and prays for the peace of God's dwelling place.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-123.html" data-chapter-card="123">
+            <span class="study-card__num">Chapter 123</span>
+            <h3 class="study-card__title">Eyes Lifted For Mercy</h3>
+            <p class="study-card__summary">Like a servant watching his master's hand, the people fix their eyes on the LORD enthroned in heaven, waiting for his mercy amid contempt.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-124.html" data-chapter-card="124">
+            <span class="study-card__num">Chapter 124</span>
+            <h3 class="study-card__title">On Our Side</h3>
+            <p class="study-card__summary">Israel looks back on a near disaster and confesses that only because the LORD was on their side did they escape the flood and the snare alive.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-125.html" data-chapter-card="125">
+            <span class="study-card__num">Chapter 125</span>
+            <h3 class="study-card__title">Mountains Around His People</h3>
+            <p class="study-card__summary">Those who trust the LORD are as unshakable as Mount Zion, and as Jerusalem is ringed by hills, so God himself surrounds his people forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-126.html" data-chapter-card="126">
+            <span class="study-card__num">Chapter 126</span>
+            <h3 class="study-card__title">Sowing In Tears</h3>
+            <p class="study-card__summary">Those who returned to Zion were like dreamers filled with laughter, and the psalm promises that tearful sowing will give way to joyful reaping.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-127.html" data-chapter-card="127">
+            <span class="study-card__num">Chapter 127</span>
+            <h3 class="study-card__title">Unless The Lord Builds</h3>
+            <p class="study-card__summary">Unless the LORD builds the house, the builders labor in vain; he gives rest to his loved ones and children as a heritage from his hand.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-128.html" data-chapter-card="128">
+            <span class="study-card__num">Chapter 128</span>
+            <h3 class="study-card__title">Blessed Are The God-Fearers</h3>
+            <p class="study-card__summary">Everyone who fears the LORD and walks in his ways is blessed in his labor, his family, and the peace that flows from Zion all his days.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-129.html" data-chapter-card="129">
+            <span class="study-card__num">Chapter 129</span>
+            <h3 class="study-card__title">Afflicted But Not Overcome</h3>
+            <p class="study-card__summary">Israel looks back on a lifetime of affliction and declares that, though enemies plowed deep furrows on her back, they have never prevailed.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-130.html" data-chapter-card="130">
+            <span class="study-card__num">Chapter 130</span>
+            <h3 class="study-card__title">Out Of The Depths</h3>
+            <p class="study-card__summary">From the depths of guilt and despair the psalmist cries to God, finding hope in forgiveness, waiting for the Lord like watchmen for the morning.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-131.html" data-chapter-card="131">
+            <span class="study-card__num">Chapter 131</span>
+            <h3 class="study-card__title">A Quieted Soul</h3>
+            <p class="study-card__summary">The psalmist lays down pride and ambition, stilling his soul like a weaned child resting content with its mother, and calls Israel to hope.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-132.html" data-chapter-card="132">
+            <span class="study-card__num">Chapter 132</span>
+            <h3 class="study-card__title">A Lamp For The Anointed</h3>
+            <p class="study-card__summary">The psalm remembers David's vow to find a house for God and God's greater vow to David, promising an everlasting throne and a budding horn.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-133.html" data-chapter-card="133">
+            <span class="study-card__num">Chapter 133</span>
+            <h3 class="study-card__title">When Brothers Dwell In Unity</h3>
+            <p class="study-card__summary">Like precious oil running down Aaron's beard and the dew of Hermon falling on Zion, the unity of God's people is good, pleasant, and blessed.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-134.html" data-chapter-card="134">
+            <span class="study-card__num">Chapter 134</span>
+            <h3 class="study-card__title">Bless The Lord By Night</h3>
+            <p class="study-card__summary">A final pilgrim song calls the servants who stand by night in God's house to lift their hands and bless the LORD, who blesses them from Zion.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-135.html" data-chapter-card="135">
+            <span class="study-card__num">Chapter 135</span>
+            <h3 class="study-card__title">Praise The Lord Who Reigns</h3>
+            <p class="study-card__summary">A grand call to praise the LORD who chose Israel, rules heaven and earth, redeemed his people from Egypt, and stands above all lifeless idols.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-136.html" data-chapter-card="136">
+            <span class="study-card__num">Chapter 136</span>
+            <h3 class="study-card__title">His Love Endures Forever</h3>
+            <p class="study-card__summary">A great litany of thanksgiving where every line of creation and redemption returns to one refrain: his loving kindness endures forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-137.html" data-chapter-card="137">
+            <span class="study-card__num">Chapter 137</span>
+            <h3 class="study-card__title">By the Rivers of Babylon</h3>
+            <p class="study-card__summary">Exiles weep beside foreign waters, refusing to forget Jerusalem, pouring raw grief and a longing for justice into the hands of God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-138.html" data-chapter-card="138">
+            <span class="study-card__num">Chapter 138</span>
+            <h3 class="study-card__title">Before the Gods I Praise</h3>
+            <p class="study-card__summary">A wholehearted thanksgiving for answered prayer, confident that the high God who regards the lowly will finish all that concerns his servant.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-139.html" data-chapter-card="139">
+            <span class="study-card__num">Chapter 139</span>
+            <h3 class="study-card__title">Searched and Fully Known</h3>
+            <p class="study-card__summary">An awed meditation on a God who knows us completely, is present everywhere, and lovingly formed us, inviting his searching, sanctifying gaze.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-140.html" data-chapter-card="140">
+            <span class="study-card__num">Chapter 140</span>
+            <h3 class="study-card__title">Deliver Me From Violence</h3>
+            <p class="study-card__summary">A prayer for rescue from cruel and scheming enemies, confident that the Lord defends the afflicted and the upright will dwell in his presence.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-141.html" data-chapter-card="141">
+            <span class="study-card__num">Chapter 141</span>
+            <h3 class="study-card__title">Set a Guard, O Lord</h3>
+            <p class="study-card__summary">An evening prayer asking God to guard the lips, keep the heart from evil, and welcome the wounds of a righteous friend's correction.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-142.html" data-chapter-card="142">
+            <span class="study-card__num">Chapter 142</span>
+            <h3 class="study-card__title">When No One Cares</h3>
+            <p class="study-card__summary">A prayer from a cave of despair, where the overwhelmed soul pours out its complaint and calls God its refuge in the land of the living.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-143.html" data-chapter-card="143">
+            <span class="study-card__num">Chapter 143</span>
+            <h3 class="study-card__title">Teach Me Your Way</h3>
+            <p class="study-card__summary">An overwhelmed servant pleads on the basis of grace, not merit, asking God to revive him, teach him, and lead him on level ground.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-144.html" data-chapter-card="144">
+            <span class="study-card__num">Chapter 144</span>
+            <h3 class="study-card__title">Blessed Be My Rock</h3>
+            <p class="study-card__summary">A king praises God his rock and trainer for battle, marvels that God cares for fleeting man, and prays for rescue and a flourishing people.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-145.html" data-chapter-card="145">
+            <span class="study-card__num">Chapter 145</span>
+            <h3 class="study-card__title">Great Is the Lord</h3>
+            <p class="study-card__summary">An alphabetic hymn extolling God's greatness, goodness, and gracious kingdom, promising that every generation will declare his mighty acts.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-146.html" data-chapter-card="146">
+            <span class="study-card__num">Chapter 146</span>
+            <h3 class="study-card__title">Put No Trust in Princes</h3>
+            <p class="study-card__summary">The first Hallelujah psalm contrasts fleeting human help with the Maker who keeps faith forever and lifts the oppressed, blind, and bowed down.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-147.html" data-chapter-card="147">
+            <span class="study-card__num">Chapter 147</span>
+            <h3 class="study-card__title">He Heals the Brokenhearted</h3>
+            <p class="study-card__summary">A Hallelujah hymn praising the God who counts the stars yet binds up wounds, ruling the weather and feeding the world by his swift word.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-148.html" data-chapter-card="148">
+            <span class="study-card__num">Chapter 148</span>
+            <h3 class="study-card__title">Let All Creation Praise</h3>
+            <p class="study-card__summary">A cosmic summons calling heaven and earth, angels and stars, weather and creatures, kings and children to praise the name of the Lord.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-149.html" data-chapter-card="149">
+            <span class="study-card__num">Chapter 149</span>
+            <h3 class="study-card__title">A New Song of Joy</h3>
+            <p class="study-card__summary">God's people sing a new song, rejoicing in their King who crowns the humble with salvation and entrusts his saints with high praise and justice.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="psalms-150.html" data-chapter-card="150">
+            <span class="study-card__num">Chapter 150</span>
+            <h3 class="study-card__title">Let Everything Praise Him</h3>
+            <p class="study-card__summary">The Psalter's grand finale, summoning every instrument and every breathing creature to praise God for his mighty acts and excellent greatness.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container">
+        <h2>Study together</h2>
+        <p>Gather a group, work through a chapter at a time, and journey through Psalms together. Invite a friend to join you.</p>
+        <div class="btn-group">
+          <a class="btn btn--light" href="psalms-1.html">Start with Psalms 1</a>
+          <a class="btn btn--outline" href="../connect.html" style="color:#fff;border-color:rgba(255,255,255,.6)">Get Connected</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

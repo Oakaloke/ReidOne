@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 48: City of the Great King — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 48: a Song of Zion praising the city of the great King, where God shows himself a sure refuge and promises to be our guide even to death." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 48
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 48</span>
+        <h1>Psalms 48: City of the Great King</h1>
+        <p class="lead">Mount Zion, the joy of the whole earth, stands secure because God himself is her refuge, her guide, and her everlasting King.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-48">
+            <span>Scripture — Psalms Chapter 48</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-48">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-48-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-48-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-48-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-48-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 48 (WEB)</p>
+            <p><strong>1</strong> Great is Yahweh, and greatly to be praised, in the city of our God, in his holy mountain.</p>
+            <p><strong>2</strong> Beautiful in elevation, the joy of the whole earth, is Mount Zion, on the north sides, the city of the great King.</p>
+            <p><strong>3</strong> God has shown himself in her citadels as a refuge.</p>
+            <p><strong>4</strong> For, behold, the kings assembled themselves, they passed by together.</p>
+            <p><strong>5</strong> They saw it, then they were amazed. They were dismayed. They hurried away.</p>
+            <p><strong>6</strong> Trembling took hold of them there, pain, as of a woman in travail.</p>
+            <p><strong>7</strong> With the east wind, you break the ships of Tarshish.</p>
+            <p><strong>8</strong> As we have heard, so we have seen, in the city of Yahweh of Armies, in the city of our God. God will establish it forever. Selah.</p>
+            <p><strong>9</strong> We have thought about your loving kindness, God, in the midst of your temple.</p>
+            <p><strong>10</strong> As is your name, God, so is your praise to the ends of the earth. Your right hand is full of righteousness.</p>
+            <p><strong>11</strong> Let Mount Zion be glad! Let the daughters of Judah rejoice, Because of your judgments.</p>
+            <p><strong>12</strong> Walk about Zion, and go around her. Number its towers.</p>
+            <p><strong>13</strong> Mark well her bulwarks. Consider her palaces, that you may tell it to the next generation.</p>
+            <p><strong>14</strong> For this God is our God forever and ever. He will be our guide even to death.</p>
+            </div>
+            <div class="scripture-text" id="web-48-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 48 (KJV)</p>
+            <p><strong>1</strong> Great is the Lord, and greatly to be praised in the city of our God, in the mountain of his holiness.</p>
+            <p><strong>2</strong> Beautiful for situation, the joy of the whole earth, is mount Zion, on the sides of the north, the city of the great King.</p>
+            <p><strong>3</strong> God is known in her palaces for a refuge.</p>
+            <p><strong>4</strong> For, lo, the kings were assembled, they passed by together.</p>
+            <p><strong>5</strong> They saw it, and so they marvelled; they were troubled, and hasted away.</p>
+            <p><strong>6</strong> Fear took hold upon them there, and pain, as of a woman in travail.</p>
+            <p><strong>7</strong> Thou breakest the ships of Tarshish with an east wind.</p>
+            <p><strong>8</strong> As we have heard, so have we seen in the city of the Lord of hosts, in the city of our God: God will establish it for ever. Selah.</p>
+            <p><strong>9</strong> We have thought of thy lovingkindness, O God, in the midst of thy temple.</p>
+            <p><strong>10</strong> According to thy name, O God, so is thy praise unto the ends of the earth: thy right hand is full of righteousness.</p>
+            <p><strong>11</strong> Let mount Zion rejoice, let the daughters of Judah be glad, because of thy judgments.</p>
+            <p><strong>12</strong> Walk about Zion, and go round about her: tell the towers thereof.</p>
+            <p><strong>13</strong> Mark ye well her bulwarks, consider her palaces; that ye may tell it to the generation following.</p>
+            <p><strong>14</strong> For this God is our God for ever and ever: he will be our guide even unto death.</p>
+            </div>
+            <div class="scripture-text" id="web-48-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 48 (ASV)</p>
+            <p><strong>1</strong> Great is Jehovah, and greatly to be praised, In the city of our God, in his holy mountain.</p>
+            <p><strong>2</strong> Beautiful in elevation, the joy of the whole earth, Is mount Zion, on the sides of the north, The city of the great King.</p>
+            <p><strong>3</strong> God hath made himself known in her palaces for a refuge.</p>
+            <p><strong>4</strong> For, lo, the kings assembled themselves, They passed by together.</p>
+            <p><strong>5</strong> They saw it, then were they amazed; They were dismayed, they hasted away.</p>
+            <p><strong>6</strong> Trembling took hold of them there, Pain, as of a woman in travail.</p>
+            <p><strong>7</strong> With the east wind Thou breakest the ships of Tarshish.</p>
+            <p><strong>8</strong> As we have heard, so have we seen In the city of Jehovah of hosts, in the city of our God: God will establish it for ever. [Selah</p>
+            <p><strong>9</strong> We have thought on thy lovingkindness, O God, In the midst of thy temple.</p>
+            <p><strong>10</strong> As is thy name, O God, So is thy praise unto the ends of the earth: Thy right hand is full of righteousness.</p>
+            <p><strong>11</strong> Let mount Zion be glad, Let the daughters of Judah rejoice, Because of thy judgments.</p>
+            <p><strong>12</strong> Walk about Zion, and go round about her; Number the towers thereof;</p>
+            <p><strong>13</strong> Mark ye well her bulwarks; Consider her palaces: That ye may tell it to the generation following.</p>
+            <p><strong>14</strong> For this God is our God for ever and ever: He will be our guide even unto death.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 48 is a Song of Zion, a hymn praising Jerusalem not for her own glory but as the dwelling place of the great King. It opens by declaring God great and greatly to be praised in the city of our God, his holy mountain. Zion is called beautiful in elevation and the joy of the whole earth, for there God has shown himself to be a refuge within her citadels. The psalmist recalls a moment of crisis: hostile kings assembled and advanced, but at the sight of the city they were seized with amazement, dismay, and trembling like a woman in labor, scattered as ships of Tarshish shattered by the east wind. What the people had only heard about God's deliverance they now see with their own eyes, for God establishes his city forever. In response they meditate on his loving kindness in the midst of his temple, and his praise, like his name, reaches to the ends of the earth. The psalm ends with a charge to walk about Zion, count her towers, and tell the next generation, so that they too may know that this God is our God forever, our guide even to death. For Christians, Zion becomes a picture of the church and the heavenly city to come.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The sons of Korah</strong> — The temple singers who lead Israel in praising God as the glory and security of Zion, teaching the next generation to know him.</li>
+          <li><strong>God, the great King</strong> — The LORD who dwells in Zion, shows himself a refuge in her citadels, establishes her forever, and promises to be our guide even to death.</li>
+          <li><strong>The hostile kings</strong> — Rulers who assemble against the city but are struck with terror at the sight of God's protection and flee in dismay.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 48:14 (WEB)</p>
+          <p class="verse__text">For this God is our God forever and ever. He will be our guide even to death.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>What makes any place glorious is not its architecture but the presence of God dwelling there.</li>
+          <li>God's deliverance can turn the confident advance of his enemies into sudden terror and flight.</li>
+          <li>Faith moves from hearing about God's faithfulness to seeing it firsthand in our own experience.</li>
+          <li>The God who is our refuge promises to remain our guide all the way through death itself.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-48">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-48">
+            <ul class="lesson-list">
+            <li><strong>God's presence is a city's true glory.</strong> "Great is Yahweh, and greatly to be praised, in the city of our God" (Psalm 48:1, WEB); Zion is beautiful because the King is there.</li>
+            <li><strong>God himself is the refuge of his people.</strong> "God has shown himself in her citadels as a refuge" (Psalm 48:3, WEB); the safety of the city rests in him, not in her walls.</li>
+            <li><strong>What we hear by faith we come to see by experience.</strong> "As we have heard, so we have seen, in the city of Yahweh of Armies" (Psalm 48:8, WEB); God confirms his promises in the lives of those who trust him.</li>
+            <li><strong>God's faithfulness must be passed on.</strong> "Consider her palaces, that you may tell it to the next generation" (Psalm 48:13, WEB); each generation is to recount what God has done.</li>
+            <li><strong>God guides his people through death itself.</strong> "He will be our guide even to death" (Psalm 48:14, WEB); his care does not abandon us at the grave but leads us through it.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-48">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-48">
+            <ol class="study-questions">
+            <li>Why is Mount Zion called "the joy of the whole earth" (48:2)? What truly makes the city glorious?</li>
+            <li>Describe what happens to the hostile kings in verses 4-7. What causes their terror?</li>
+            <li>What is the significance of moving from "we have heard" to "we have seen" in verse 8?</li>
+            <li>What does the promise that God will be "our guide even to death" (48:14) mean for the way we face our own mortality?</li>
+            <li>How can you, like the psalmist, "tell it to the next generation" what God has done in your life?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-48">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-48">
+            <ol class="study-questions">
+            <li>Zion is the joy of the whole earth not because of its location or buildings but because God dwells there as the great King (48:1-3). The city's glory is borrowed from the presence of God; it is praiseworthy only because he is in her midst.</li>
+            <li>The kings assemble and advance together, but when they see the city they are amazed, dismayed, and flee, gripped by trembling like a woman in labor and shattered like ships in the east wind (48:4-7). Their terror comes from encountering the God who defends his people, not from the city's defenses alone.</li>
+            <li>It marks the move from secondhand testimony to firsthand experience. The people had heard the stories of God's deliverance; now they have witnessed it themselves. God graciously confirms his promises in the lived experience of his people, deepening hearsay into personal confidence.</li>
+            <li>It means God does not abandon us at life's hardest border. As a faithful guide he leads his people all the way through death, which for the Christian is fulfilled in Christ who conquered the grave and walks with us through the valley into everlasting life.</li>
+            <li>This is the personal-application question. Invite members to recall a specific instance of God's faithfulness and to think of one person, perhaps a child, friend, or younger believer, to whom they could tell it. As leader, model this by briefly sharing your own example.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-47.html">← Psalms 47</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-49.html">Psalms 49 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 139: Searched and Fully Known — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 139: David marvels that God knows him completely, is present everywhere, formed him in the womb, and invites God to search his heart." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 139
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 139</span>
+        <h1>Psalms 139: Searched and Fully Known</h1>
+        <p class="lead">An awed meditation on a God who knows us completely, is present everywhere, and lovingly formed us, inviting his searching, sanctifying gaze.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-139">
+            <span>Scripture — Psalms Chapter 139</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-139">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-139-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-139-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-139-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-139-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 139 (WEB)</p>
+            <p><strong>1</strong> Yahweh, you have searched me, and you know me.</p>
+            <p><strong>2</strong> You know my sitting down and my rising up. You perceive my thoughts from afar.</p>
+            <p><strong>3</strong> You search out my path and my lying down, and are acquainted with all my ways.</p>
+            <p><strong>4</strong> For there is not a word on my tongue, but, behold, Yahweh, you know it altogether.</p>
+            <p><strong>5</strong> You hem me in behind and before. You laid your hand on me.</p>
+            <p><strong>6</strong> This knowledge is beyond me. It’s lofty. I can’t attain it.</p>
+            <p><strong>7</strong> Where could I go from your Spirit? Or where could I flee from your presence?</p>
+            <p><strong>8</strong> If I ascend up into heaven, you are there. If I make my bed in Sheol, behold, you are there!</p>
+            <p><strong>9</strong> If I take the wings of the dawn, and settle in the uttermost parts of the sea;</p>
+            <p><strong>10</strong> Even there your hand will lead me, and your right hand will hold me.</p>
+            <p><strong>11</strong> If I say, “Surely the darkness will overwhelm me; the light around me will be night”;</p>
+            <p><strong>12</strong> even the darkness doesn’t hide from you, but the night shines as the day. The darkness is like light to you.</p>
+            <p><strong>13</strong> For you formed my inmost being. You knit me together in my mother’s womb.</p>
+            <p><strong>14</strong> I will give thanks to you, for I am fearfully and wonderfully made. Your works are wonderful. My soul knows that very well.</p>
+            <p><strong>15</strong> My frame wasn’t hidden from you, when I was made in secret, woven together in the depths of the earth.</p>
+            <p><strong>16</strong> Your eyes saw my body. In your book they were all written, the days that were ordained for me, when as yet there were none of them.</p>
+            <p><strong>17</strong> How precious to me are your thoughts, God! How vast is their sum!</p>
+            <p><strong>18</strong> If I would count them, they are more in number than the sand. When I wake up, I am still with you.</p>
+            <p><strong>19</strong> If only you, God, would kill the wicked. Get away from me, you bloodthirsty men!</p>
+            <p><strong>20</strong> For they speak against you wickedly. Your enemies take your name in vain.</p>
+            <p><strong>21</strong> Yahweh, don’t I hate those who hate you? Am I not grieved with those who rise up against you?</p>
+            <p><strong>22</strong> I hate them with perfect hatred. They have become my enemies.</p>
+            <p><strong>23</strong> Search me, God, and know my heart. Try me, and know my thoughts.</p>
+            <p><strong>24</strong> See if there is any wicked way in me, and lead me in the everlasting way.</p>
+            </div>
+            <div class="scripture-text" id="web-139-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 139 (KJV)</p>
+            <p><strong>1</strong> O Lord, thou hast searched me, and known me.</p>
+            <p><strong>2</strong> Thou knowest my downsitting and mine uprising, thou understandest my thought afar off.</p>
+            <p><strong>3</strong> Thou compassest my path and my lying down, and art acquainted with all my ways.</p>
+            <p><strong>4</strong> For there is not a word in my tongue, but, lo, O Lord, thou knowest it altogether.</p>
+            <p><strong>5</strong> Thou hast beset me behind and before, and laid thine hand upon me.</p>
+            <p><strong>6</strong> Such knowledge is too wonderful for me; it is high, I cannot attain unto it.</p>
+            <p><strong>7</strong> Whither shall I go from thy spirit? or whither shall I flee from thy presence?</p>
+            <p><strong>8</strong> If I ascend up into heaven, thou art there: if I make my bed in hell, behold, thou art there.</p>
+            <p><strong>9</strong> If I take the wings of the morning, and dwell in the uttermost parts of the sea;</p>
+            <p><strong>10</strong> Even there shall thy hand lead me, and thy right hand shall hold me.</p>
+            <p><strong>11</strong> If I say, Surely the darkness shall cover me; even the night shall be light about me.</p>
+            <p><strong>12</strong> Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee.</p>
+            <p><strong>13</strong> For thou hast possessed my reins: thou hast covered me in my mother’s womb.</p>
+            <p><strong>14</strong> I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.</p>
+            <p><strong>15</strong> My substance was not hid from thee, when I was made in secret, and curiously wrought in the lowest parts of the earth.</p>
+            <p><strong>16</strong> Thine eyes did see my substance, yet being unperfect; and in thy book all my members were written, which in continuance were fashioned, when as yet there was none of them.</p>
+            <p><strong>17</strong> How precious also are thy thoughts unto me, O God! how great is the sum of them!</p>
+            <p><strong>18</strong> If I should count them, they are more in number than the sand: when I awake, I am still with thee.</p>
+            <p><strong>19</strong> Surely thou wilt slay the wicked, O God: depart from me therefore, ye bloody men.</p>
+            <p><strong>20</strong> For they speak against thee wickedly, and thine enemies take thy name in vain.</p>
+            <p><strong>21</strong> Do not I hate them, O Lord, that hate thee? and am not I grieved with those that rise up against thee?</p>
+            <p><strong>22</strong> I hate them with perfect hatred: I count them mine enemies.</p>
+            <p><strong>23</strong> Search me, O God, and know my heart: try me, and know my thoughts:</p>
+            <p><strong>24</strong> And see if there be any wicked way in me, and lead me in the way everlasting.</p>
+            </div>
+            <div class="scripture-text" id="web-139-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 139 (ASV)</p>
+            <p><strong>1</strong> O Jehovah, thou hast searched me, and knownme.</p>
+            <p><strong>2</strong> Thou knowest my downsitting and mine uprising; Thou understandest my thought afar off.</p>
+            <p><strong>3</strong> Thou searchest out my path and my lying down, And art acquainted with all my ways.</p>
+            <p><strong>4</strong> For there is not a word in my tongue, But, lo, O Jehovah, thou knowest it altogether.</p>
+            <p><strong>5</strong> Thou hast beset me behind and before, And laid thy hand upon me.</p>
+            <p><strong>6</strong> Suchknowledge is too wonderful for me; It is high, I cannot attain unto it.</p>
+            <p><strong>7</strong> Whither shall I go from thy Spirit? Or whither shall I flee from thy presence?</p>
+            <p><strong>8</strong> If I ascend up into heaven, thou art there: If I make my bed in Sheol, behold, thou art there.</p>
+            <p><strong>9</strong> If I take the wings of the morning, And dwell in the uttermost parts of the sea;</p>
+            <p><strong>10</strong> Even there shall thy hand lead me, And thy right hand shall hold me.</p>
+            <p><strong>11</strong> If I say, Surely the darkness shall overwhelm me, And the light about me shall be night;</p>
+            <p><strong>12</strong> Even the darkness hideth not from thee, But the night shineth as the day: The darkness and the light are both aliketo thee.</p>
+            <p><strong>13</strong> For thou didst form my inward parts: Thou didst cover me in my mother’s womb.</p>
+            <p><strong>14</strong> I will give thanks unto thee; for I am fearfully and wonderfully made: Wonderful are thy works; And that my soul knoweth right well.</p>
+            <p><strong>15</strong> My frame was not hidden from thee, When I was made in secret, And curiously wrought in the lowest parts of the earth.</p>
+            <p><strong>16</strong> Thine eyes did see mine unformed substance; And in thy book they were all written, Eventhe days that were ordainedfor me, When as yet there was none of them.</p>
+            <p><strong>17</strong> How precious also are thy thoughts unto me, O God! How great is the sum of them!</p>
+            <p><strong>18</strong> If I should count them, they are more in number than the sand: When I awake, I am still with thee.</p>
+            <p><strong>19</strong> Surely thou wilt slay the wicked, O God: Depart from me therefore, ye bloodthirsty men.</p>
+            <p><strong>20</strong> For they speak against thee wickedly, And thine enemies take thy name in vain.</p>
+            <p><strong>21</strong> Do not I hate them, O Jehovah, that hate thee? And am not I grieved with those that rise up against thee?</p>
+            <p><strong>22</strong> I hate them with perfect hatred: They are become mine enemies.</p>
+            <p><strong>23</strong> Search me, O God, and know my heart: Try me, and know my thoughts;</p>
+            <p><strong>24</strong> And see if there be any wicked way in me, And lead me in the way everlasting.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 139 is one of the most intimate meditations in all of Scripture, a wisdom psalm of David on the all-knowing, ever-present, all-creating God. It opens with the wonder that Yahweh has searched and knows him—his sitting down and rising up, his thoughts from afar, every word before it is spoken. This knowledge is too high for David to attain. He then explores God's inescapable presence: there is nowhere he can flee, for if he ascends to heaven God is there, and if he makes his bed in Sheol God is there too; even the darkness is as light to him. The psalm turns to creation, marveling that God formed his inmost being and knit him together in his mother's womb, so that he is fearfully and wonderfully made, with all his days written in God's book before one of them came to be. David is overwhelmed that God's thoughts toward him are more numerous than the sand. The mood shifts as he recoils from the wicked who hate God, declaring a zealous loyalty to the Lord. Yet he ends not in self-righteousness but in humble surrender, asking God to search him, know his heart, expose any wicked way, and lead him in the everlasting way. For the Christian this searching is no threat but grace, for the One who knows us fully has loved us fully in Christ and leads us into life.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The psalmist who marvels at being fully known, finds God inescapably present, and surrenders his heart to God's searching gaze.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The all-knowing, ever-present God who formed David in the womb, ordained his days, and is invited to lead him in the everlasting way.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 139:14 (WEB)</p>
+          <p class="verse__text">I will give thanks to you, for I am fearfully and wonderfully made. Your works are wonderful. My soul knows that very well.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>To be fully known by God is not a threat to flee but a comfort to rest in.</li>
+          <li>There is no place—not the heights, the depths, or the darkness—where God's presence does not hold us.</li>
+          <li>Every human life is a deliberate work of God, knit together in the womb and known before birth.</li>
+          <li>Mature faith does not hide from God's gaze but invites it, asking him to search and cleanse the heart.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-139">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-139">
+            <ul class="lesson-list">
+            <li><strong>God knows us completely.</strong> "Yahweh, you have searched me, and you know me" (Psalm 139:1, WEB)—nothing in us is hidden or unloved by him.</li>
+            <li><strong>God is inescapably present.</strong> "If I make my bed in Sheol, behold, you are there!" (Psalm 139:8, WEB)—no darkness or distance can separate us from him.</li>
+            <li><strong>Every life is God's intentional work.</strong> "You knit me together in my mother's womb" (Psalm 139:13, WEB)—we are not accidents but craftsmanship.</li>
+            <li><strong>The searched heart asks to be searched.</strong> "Search me, God, and know my heart... lead me in the everlasting way" (Psalm 139:23-24, WEB)—surrender, not concealment, is the path to life.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-139">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-139">
+            <ol class="study-questions">
+            <li>How does it feel to be told that God knows your every thought and word before you speak it?</li>
+            <li>What comfort is there in knowing there is nowhere you can go from God's presence?</li>
+            <li>What does "fearfully and wonderfully made" (v. 14) mean for how we view ourselves and others?</li>
+            <li>Why does David end a psalm of such wonder with a prayer to be searched and corrected?</li>
+            <li>Would you be willing to pray verses 23-24 over your own life this week, and what might God uncover?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-139">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-139">
+            <ol class="study-questions">
+            <li>For some, being fully known is frightening; for the believer it is profoundly safe, because the One who sees everything also loves us in Christ. Discuss the difference between exposure that shames and knowledge that loves.</li>
+            <li>God's omnipresence means we are never abandoned, even in Sheol or darkness. The same truth that no one escapes God's justice also means no sufferer is ever beyond his reach. Invite members to locate their own "far country."</li>
+            <li>It affirms that human beings are the deliberate, wonderful work of God, giving every life dignity from the womb. Discuss how this shapes our view of our own worth and our treatment of others, especially the vulnerable.</li>
+            <li>Because being known by God leads naturally to wanting to be made right by him. David's wonder produces humility, not pride. He trusts the God who knows him to also cleanse and guide him into the everlasting way.</li>
+            <li>This is a gentle personal-application question. Encourage members to pray verses 23-24 honestly, expecting God's searching to be kind rather than condemning. As leader, frame it as an invitation to freedom, not interrogation.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-138.html">← Psalms 138</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-140.html">Psalms 140 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

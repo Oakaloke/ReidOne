@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 7: The Righteous Judge — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 7: pursued and slandered, David takes refuge in Yahweh, appeals to the righteous Judge, and trusts that evil recoils on its maker." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 7</span>
+        <h1>Psalms 7: The Righteous Judge</h1>
+        <p class="lead">Falsely accused, David takes refuge in God, appeals to the righteous Judge of all the earth, and trusts that the wicked fall into the pit they dig.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — Psalms Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 7 (WEB)</p>
+            <p><strong>1</strong> Yahweh, my God, I take refuge in you. Save me from all those who pursue me, and deliver me,</p>
+            <p><strong>2</strong> lest they tear apart my soul like a lion, ripping it in pieces, while there is no one to deliver.</p>
+            <p><strong>3</strong> Yahweh, my God, if I have done this, if there is iniquity in my hands,</p>
+            <p><strong>4</strong> if I have rewarded evil to him who was at peace with me (yes, if I have delivered him who without cause was my adversary),</p>
+            <p><strong>5</strong> let the enemy pursue my soul, and overtake it; yes, let him tread my life down to the earth, and lay my glory in the dust. Selah.</p>
+            <p><strong>6</strong> Arise, Yahweh, in your anger. Lift up yourself against the rage of my adversaries. Awake for me. You have commanded judgment.</p>
+            <p><strong>7</strong> Let the congregation of the peoples surround you. Rule over them on high.</p>
+            <p><strong>8</strong> Yahweh administers judgment to the peoples. Judge me, Yahweh, according to my righteousness, and to my integrity that is in me.</p>
+            <p><strong>9</strong> Oh let the wickedness of the wicked come to an end, but establish the righteous; their minds and hearts are searched by the righteous God.</p>
+            <p><strong>10</strong> My shield is with God, who saves the upright in heart.</p>
+            <p><strong>11</strong> God is a righteous judge, yes, a God who has indignation every day.</p>
+            <p><strong>12</strong> If a man doesn’t relent, he will sharpen his sword; he has bent and strung his bow.</p>
+            <p><strong>13</strong> He has also prepared for himself the instruments of death. He makes ready his flaming arrows.</p>
+            <p><strong>14</strong> Behold, he travails with iniquity. Yes, he has conceived mischief, and brought out falsehood.</p>
+            <p><strong>15</strong> He has dug a hole, and has fallen into the pit which he made.</p>
+            <p><strong>16</strong> The trouble he causes shall return to his own head. His violence shall come down on the crown of his own head.</p>
+            <p><strong>17</strong> I will give thanks to Yahweh according to his righteousness, and will sing praise to the name of Yahweh Most High.</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 7 (KJV)</p>
+            <p><strong>1</strong> O Lord my God, in thee do I put my trust: save me from all them that persecute me, and deliver me:</p>
+            <p><strong>2</strong> Lest he tear my soul like a lion, rending it in pieces, while there is none to deliver.</p>
+            <p><strong>3</strong> O Lord my God, if I have done this; if there be iniquity in my hands;</p>
+            <p><strong>4</strong> If I have rewarded evil unto him that was at peace with me; (yea, I have delivered him that without cause is mine enemy:)</p>
+            <p><strong>5</strong> Let the enemy persecute my soul, and take it; yea, let him tread down my life upon the earth, and lay mine honour in the dust. Selah.</p>
+            <p><strong>6</strong> Arise, O Lord, in thine anger, lift up thyself because of the rage of mine enemies: and awake for me to the judgment that thou hast commanded.</p>
+            <p><strong>7</strong> So shall the congregation of the people compass thee about: for their sakes therefore return thou on high.</p>
+            <p><strong>8</strong> The Lord shall judge the people: judge me, O Lord, according to my righteousness, and according to mine integrity that is in me.</p>
+            <p><strong>9</strong> Oh let the wickedness of the wicked come to an end; but establish the just: for the righteous God trieth the hearts and reins.</p>
+            <p><strong>10</strong> My defence is of God, which saveth the upright in heart.</p>
+            <p><strong>11</strong> God judgeth the righteous, and God is angry with the wicked every day.</p>
+            <p><strong>12</strong> If he turn not, he will whet his sword; he hath bent his bow, and made it ready.</p>
+            <p><strong>13</strong> He hath also prepared for him the instruments of death; he ordaineth his arrows against the persecutors.</p>
+            <p><strong>14</strong> Behold, he travaileth with iniquity, and hath conceived mischief, and brought forth falsehood.</p>
+            <p><strong>15</strong> He made a pit, and digged it, and is fallen into the ditch which he made.</p>
+            <p><strong>16</strong> His mischief shall return upon his own head, and his violent dealing shall come down upon his own pate.</p>
+            <p><strong>17</strong> I will praise the Lord according to his righteousness: and will sing praise to the name of the Lord most high.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 7 (ASV)</p>
+            <p><strong>1</strong> O Jehovah my God, in thee do I take refuge: Save me from all them that pursue me, and deliver me,</p>
+            <p><strong>2</strong> Lest they tear my soul like a lion, Rending it in pieces, while there is none to deliver.</p>
+            <p><strong>3</strong> O Jehovah my God, if I have done this; If there be iniquity in my hands;</p>
+            <p><strong>4</strong> If I have rewarded evil unto him that was at peace with me (Yea, I have delivered him that without cause was mine adversary);</p>
+            <p><strong>5</strong> Let the enemy pursue my soul, and overtake it; Yea, let him tread my life down to the earth, And lay my glory in the dust. [Selah</p>
+            <p><strong>6</strong> Arise, O Jehovah, in thine anger; Lift up thyself against the rage of mine adversaries, And awake for me; thou hast commanded judgment.</p>
+            <p><strong>7</strong> And let the congregation of the peoples compass thee about; And over them return thou on high.</p>
+            <p><strong>8</strong> Jehovah ministereth judgment to the peoples: Judge me, O Jehovah, according to my righteousness, and to mine integrity that is in me.</p>
+            <p><strong>9</strong> Oh let the wickedness of the wicked come to an end, but establish thou the righteous: For the righteous God trieth the minds and hearts.</p>
+            <p><strong>10</strong> My shield is with God, Who saveth the upright in heart.</p>
+            <p><strong>11</strong> God is a righteous judge, Yea, a God that hath indignation every day.</p>
+            <p><strong>12</strong> If a man turn not, he will whet his sword; He hath bent his bow, and made it ready;</p>
+            <p><strong>13</strong> He hath also prepared for him the instruments of death; He maketh his arrows fiery shafts.</p>
+            <p><strong>14</strong> Behold, he travaileth with iniquity; Yea, he hath conceived mischief, and brought forth falsehood.</p>
+            <p><strong>15</strong> He hath made a pit, and digged it, And is fallen into the ditch which he made.</p>
+            <p><strong>16</strong> His mischief shall return upon his own head, And his violence shall come down upon his own pate.</p>
+            <p><strong>17</strong> I will give thanks unto Jehovah according to his righteousness, And will sing praise to the name of Jehovah Most High.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 7 is a lament of one who has been falsely accused and pursued. David begins by taking refuge in Yahweh and asking to be saved from those who would tear his soul like a lion. He makes a striking oath of innocence: if he has truly done the evil charged against him, then let his enemy overtake him. He calls God to arise in judgment and to gather the peoples around his throne, asking the Lord to judge him according to his righteousness and integrity. David affirms that God is a righteous judge who tests minds and hearts and feels indignation against evil every day. He then describes the self-destructive nature of wickedness: the unrepentant sharpen swords and ready arrows, but the one who digs a pit falls into it, and his violence returns onto his own head. The psalm ends in thanksgiving, vowing to praise Yahweh Most High for his righteousness. As a lament it teaches us to entrust both our vindication and our enemies to the perfectly just Judge, rather than taking matters into our own hands—a trust the New Testament urges as we look to Christ the coming Judge.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The falsely accused psalmist who takes refuge in God, pleads his integrity, and entrusts his cause to the righteous Judge.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The righteous Judge who tests hearts, saves the upright, and feels indignation against evil every day.</li>
+          <li><strong>The wicked enemy</strong> — The pursuer who conceives mischief and readies weapons, only to fall into the pit he himself has dug.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 7:11 (WEB)</p>
+          <p class="verse__text">God is a righteous judge, yes, a God who has indignation every day.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>When falsely accused, we can take refuge in God rather than retaliate.</li>
+          <li>God judges righteously, testing the minds and hearts of all people.</li>
+          <li>We may appeal to God to vindicate us while leaving justice in his hands.</li>
+          <li>Wickedness is self-destructive; evil recoils onto the head of its maker.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>Refuge in God comes before any defense.</strong> “Yahweh, my God, I take refuge in you. Save me from all those who pursue me” (Psalm 7:1, WEB). David's first move under attack is to run to the Lord.</li>
+            <li><strong>God searches the inmost person.</strong> “Their minds and hearts are searched by the righteous God” (Psalm 7:9, WEB). The Judge sees what no human court can, so we need not justify ourselves to all.</li>
+            <li><strong>God's anger against evil is steady, not erratic.</strong> “God is a righteous judge… who has indignation every day” (Psalm 7:11, WEB). His justice is consistent, never indifferent to wrong.</li>
+            <li><strong>Sin entraps the sinner.</strong> “He has dug a hole, and has fallen into the pit which he made” (Psalm 7:15, WEB). The wicked are caught in their own schemes, so vengeance can be left to God.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>What is David's first response to being pursued and accused (vv. 1-2)?</li>
+            <li>What is David claiming in his oath of innocence in verses 3-5?</li>
+            <li>How does the psalm describe God as a judge, and why is that comforting when we are wronged?</li>
+            <li>What does the image of digging a pit and falling into it teach about the nature of evil?</li>
+            <li>When you are misjudged or slandered, how can entrusting your case to the righteous Judge change your response?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>Before defending himself, David takes refuge in God and asks to be saved from those who would tear him like a lion (7:1-2). His instinct is flight to God, not counterattack against his accusers.</li>
+            <li>He swears that if he has actually committed the evil charged—repaying friends with treachery—then he deserves to be overtaken (7:3-5). It is a solemn appeal to God's knowledge of his true innocence in this matter.</li>
+            <li>God is a righteous judge who tests minds and hearts and feels steady indignation against evil (7:9-11). This comforts the wronged because a perfect Judge sees the truth we cannot prove and will set things right.</li>
+            <li>The wicked sharpen weapons and dig pits, yet their schemes recoil onto themselves (7:14-16). Evil is ultimately self-defeating, which frees the believer from the need to repay wrong with wrong.</li>
+            <li>This is a gentle personal-application question. Invite members to recall a time they were misjudged, and to consider how trusting the righteous Judge can replace bitterness or self-justification with peace.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-6.html">← Psalms 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-8.html">Psalms 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

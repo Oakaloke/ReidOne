@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 119: Your Word Is a Lamp — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 119: the great acrostic on God's word, praising the law of the Lord as the believer's delight, guide, comfort, and life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 119
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 119</span>
+        <h1>Psalms 119: Your Word Is a Lamp</h1>
+        <p class="lead">The longest psalm, a vast acrostic celebrating God's word as the joy, guide, comfort, and life of the one who loves and obeys it.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-119">
+            <span>Scripture — Psalms Chapter 119</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-119">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-119-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-119-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-119-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-119-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 119 (WEB)</p>
+            <p><strong>1</strong> Blessed are those whose ways are blameless, who walk according to Yahweh’s law.</p>
+            <p><strong>2</strong> Blessed are those who keep his statutes, who seek him with their whole heart.</p>
+            <p><strong>3</strong> Yes, they do nothing wrong. They walk in his ways.</p>
+            <p><strong>4</strong> You have commanded your precepts, that we should fully obey them.</p>
+            <p><strong>5</strong> Oh that my ways were steadfast to obey your statutes!</p>
+            <p><strong>6</strong> Then I wouldn’t be disappointed, when I consider all of your commandments.</p>
+            <p><strong>7</strong> I will give thanks to you with uprightness of heart, when I learn your righteous judgments.</p>
+            <p><strong>8</strong> I will observe your statutes. Don’t utterly forsake me.</p>
+            <p><strong>9</strong> How can a young man keep his way pure? By living according to your word.</p>
+            <p><strong>10</strong> With my whole heart, I have sought you. Don’t let me wander from your commandments.</p>
+            <p><strong>11</strong> I have hidden your word in my heart, that I might not sin against you.</p>
+            <p><strong>12</strong> Blessed are you, Yahweh. Teach me your statutes.</p>
+            <p><strong>13</strong> With my lips, I have declared all the ordinances of your mouth.</p>
+            <p><strong>14</strong> I have rejoiced in the way of your testimonies, as much as in all riches.</p>
+            <p><strong>15</strong> I will meditate on your precepts, and consider your ways.</p>
+            <p><strong>16</strong> I will delight myself in your statutes. I will not forget your word.</p>
+            <p><strong>17</strong> Do good to your servant. I will live and I will obey your word.</p>
+            <p><strong>18</strong> Open my eyes, that I may see wondrous things out of your law.</p>
+            <p><strong>19</strong> I am a stranger on the earth. Don’t hide your commandments from me.</p>
+            <p><strong>20</strong> My soul is consumed with longing for your ordinances at all times.</p>
+            <p><strong>21</strong> You have rebuked the proud who are cursed, who wander from your commandments.</p>
+            <p><strong>22</strong> Take reproach and contempt away from me, for I have kept your statutes.</p>
+            <p><strong>23</strong> Though princes sit and slander me, your servant will meditate on your statutes.</p>
+            <p><strong>24</strong> Indeed your statutes are my delight, and my counselors.</p>
+            <p><strong>25</strong> My soul is laid low in the dust. Revive me according to your word!</p>
+            <p><strong>26</strong> I declared my ways, and you answered me. Teach me your statutes.</p>
+            <p><strong>27</strong> Let me understand the teaching of your precepts! Then I will meditate on your wondrous works.</p>
+            <p><strong>28</strong> My soul is weary with sorrow: strengthen me according to your word.</p>
+            <p><strong>29</strong> Keep me from the way of deceit. Grant me your law graciously!</p>
+            <p><strong>30</strong> I have chosen the way of truth. I have set your ordinances before me.</p>
+            <p><strong>31</strong> I cling to your statutes, Yahweh. Don’t let me be disappointed.</p>
+            <p><strong>32</strong> I run in the path of your commandments, for you have set my heart free.</p>
+            <p><strong>33</strong> Teach me, Yahweh, the way of your statutes. I will keep them to the end.</p>
+            <p><strong>34</strong> Give me understanding, and I will keep your law. Yes, I will obey it with my whole heart.</p>
+            <p><strong>35</strong> Direct me in the path of your commandments, for I delight in them.</p>
+            <p><strong>36</strong> Turn my heart toward your statutes, not toward selfish gain.</p>
+            <p><strong>37</strong> Turn my eyes away from looking at worthless things. Revive me in your ways.</p>
+            <p><strong>38</strong> Fulfill your promise to your servant, that you may be feared.</p>
+            <p><strong>39</strong> Take away my disgrace that I dread, for your ordinances are good.</p>
+            <p><strong>40</strong> Behold, I long for your precepts! Revive me in your righteousness.</p>
+            <p><strong>41</strong> Let your loving kindness also come to me, Yahweh, your salvation, according to your word.</p>
+            <p><strong>42</strong> So I will have an answer for him who reproaches me, for I trust in your word.</p>
+            <p><strong>43</strong> Don’t snatch the word of truth out of my mouth, for I put my hope in your ordinances.</p>
+            <p><strong>44</strong> So I will obey your law continually, forever and ever.</p>
+            <p><strong>45</strong> I will walk in liberty, for I have sought your precepts.</p>
+            <p><strong>46</strong> I will also speak of your statutes before kings, and will not be disappointed.</p>
+            <p><strong>47</strong> I will delight myself in your commandments, because I love them.</p>
+            <p><strong>48</strong> I reach out my hands for your commandments, which I love. I will meditate on your statutes.</p>
+            <p><strong>49</strong> Remember your word to your servant, because you gave me hope.</p>
+            <p><strong>50</strong> This is my comfort in my affliction, for your word has revived me.</p>
+            <p><strong>51</strong> The arrogant mock me excessively, but I don’t swerve from your law.</p>
+            <p><strong>52</strong> I remember your ordinances of old, Yahweh, and have comforted myself.</p>
+            <p><strong>53</strong> Indignation has taken hold on me, because of the wicked who forsake your law.</p>
+            <p><strong>54</strong> Your statutes have been my songs, in the house where I live.</p>
+            <p><strong>55</strong> I have remembered your name, Yahweh, in the night, and I obey your law.</p>
+            <p><strong>56</strong> This is my way, that I keep your precepts.</p>
+            <p><strong>57</strong> Yahweh is my portion. I promised to obey your words.</p>
+            <p><strong>58</strong> I sought your favor with my whole heart. Be merciful to me according to your word.</p>
+            <p><strong>59</strong> I considered my ways, and turned my steps to your statutes.</p>
+            <p><strong>60</strong> I will hurry, and not delay, to obey your commandments.</p>
+            <p><strong>61</strong> The ropes of the wicked bind me, but I won’t forget your law.</p>
+            <p><strong>62</strong> At midnight I will rise to give thanks to you, because of your righteous ordinances.</p>
+            <p><strong>63</strong> I am a friend of all those who fear you, of those who observe your precepts.</p>
+            <p><strong>64</strong> The earth is full of your loving kindness, Yahweh. Teach me your statutes.</p>
+            <p><strong>65</strong> Do good to your servant, according to your word, Yahweh.</p>
+            <p><strong>66</strong> Teach me good judgment and knowledge, for I believe in your commandments.</p>
+            <p><strong>67</strong> Before I was afflicted, I went astray; but now I observe your word.</p>
+            <p><strong>68</strong> You are good, and do good. Teach me your statutes.</p>
+            <p><strong>69</strong> The proud have smeared a lie upon me. With my whole heart, I will keep your precepts.</p>
+            <p><strong>70</strong> Their heart is as callous as the fat, but I delight in your law.</p>
+            <p><strong>71</strong> It is good for me that I have been afflicted, that I may learn your statutes.</p>
+            <p><strong>72</strong> The law of your mouth is better to me than thousands of pieces of gold and silver.</p>
+            <p><strong>73</strong> Your hands have made me and formed me. Give me understanding, that I may learn your commandments.</p>
+            <p><strong>74</strong> Those who fear you will see me and be glad, because I have put my hope in your word.</p>
+            <p><strong>75</strong> Yahweh, I know that your judgments are righteous, that in faithfulness you have afflicted me.</p>
+            <p><strong>76</strong> Please let your loving kindness be for my comfort, according to your word to your servant.</p>
+            <p><strong>77</strong> Let your tender mercies come to me, that I may live; for your law is my delight.</p>
+            <p><strong>78</strong> Let the proud be disappointed, for they have overthrown me wrongfully. I will meditate on your precepts.</p>
+            <p><strong>79</strong> Let those who fear you turn to me. They will know your statutes.</p>
+            <p><strong>80</strong> Let my heart be blameless toward your decrees, that I may not be disappointed.</p>
+            <p><strong>81</strong> My soul faints for your salvation. I hope in your word.</p>
+            <p><strong>82</strong> My eyes fail for your word. I say, “When will you comfort me?”</p>
+            <p><strong>83</strong> For I have become like a wineskin in the smoke. I don’t forget your statutes.</p>
+            <p><strong>84</strong> How many are the days of your servant? When will you execute judgment on those who persecute me?</p>
+            <p><strong>85</strong> The proud have dug pits for me, contrary to your law.</p>
+            <p><strong>86</strong> All of your commandments are faithful. They persecute me wrongfully. Help me!</p>
+            <p><strong>87</strong> They had almost wiped me from the earth, but I didn’t forsake your precepts.</p>
+            <p><strong>88</strong> Preserve my life according to your loving kindness, so I will obey the statutes of your mouth.</p>
+            <p><strong>89</strong> Yahweh, your word is settled in heaven forever.</p>
+            <p><strong>90</strong> Your faithfulness is to all generations. You have established the earth, and it remains.</p>
+            <p><strong>91</strong> Your laws remain to this day, for all things serve you.</p>
+            <p><strong>92</strong> Unless your law had been my delight, I would have perished in my affliction.</p>
+            <p><strong>93</strong> I will never forget your precepts, for with them, you have revived me.</p>
+            <p><strong>94</strong> I am yours. Save me, for I have sought your precepts.</p>
+            <p><strong>95</strong> The wicked have waited for me, to destroy me. I will consider your statutes.</p>
+            <p><strong>96</strong> I have seen a limit to all perfection, but your commands are boundless.</p>
+            <p><strong>97</strong> How I love your law! It is my meditation all day.</p>
+            <p><strong>98</strong> Your commandments make me wiser than my enemies, for your commandments are always with me.</p>
+            <p><strong>99</strong> I have more understanding than all my teachers, for your testimonies are my meditation.</p>
+            <p><strong>100</strong> I understand more than the aged, because I have kept your precepts.</p>
+            <p><strong>101</strong> I have kept my feet from every evil way, that I might observe your word.</p>
+            <p><strong>102</strong> I have not turned aside from your ordinances, for you have taught me.</p>
+            <p><strong>103</strong> How sweet are your promises to my taste, more than honey to my mouth!</p>
+            <p><strong>104</strong> Through your precepts, I get understanding; therefore I hate every false way.</p>
+            <p><strong>105</strong> Your word is a lamp to my feet, and a light for my path.</p>
+            <p><strong>106</strong> I have sworn, and have confirmed it, that I will obey your righteous ordinances.</p>
+            <p><strong>107</strong> I am afflicted very much. Revive me, Yahweh, according to your word.</p>
+            <p><strong>108</strong> Accept, I beg you, the willing offerings of my mouth. Yahweh, teach me your ordinances.</p>
+            <p><strong>109</strong> My soul is continually in my hand, yet I won’t forget your law.</p>
+            <p><strong>110</strong> The wicked have laid a snare for me, yet I haven’t gone astray from your precepts.</p>
+            <p><strong>111</strong> I have taken your testimonies as a heritage forever, for they are the joy of my heart.</p>
+            <p><strong>112</strong> I have set my heart to perform your statutes forever, even to the end.</p>
+            <p><strong>113</strong> I hate double-minded men, but I love your law.</p>
+            <p><strong>114</strong> You are my hiding place and my shield. I hope in your word.</p>
+            <p><strong>115</strong> Depart from me, you evildoers, that I may keep the commandments of my God.</p>
+            <p><strong>116</strong> Uphold me according to your word, that I may live. Let me not be ashamed of my hope.</p>
+            <p><strong>117</strong> Hold me up, and I will be safe, and will have respect for your statutes continually.</p>
+            <p><strong>118</strong> You reject all those who stray from your statutes, for their deceit is in vain.</p>
+            <p><strong>119</strong> You put away all the wicked of the earth like dross. Therefore I love your testimonies.</p>
+            <p><strong>120</strong> My flesh trembles for fear of you. I am afraid of your judgments.</p>
+            <p><strong>121</strong> I have done what is just and righteous. Don’t leave me to my oppressors.</p>
+            <p><strong>122</strong> Ensure your servant’s well-being. Don’t let the proud oppress me.</p>
+            <p><strong>123</strong> My eyes fail looking for your salvation, for your righteous word.</p>
+            <p><strong>124</strong> Deal with your servant according to your loving kindness. Teach me your statutes.</p>
+            <p><strong>125</strong> I am your servant. Give me understanding, that I may know your testimonies.</p>
+            <p><strong>126</strong> It is time to act, Yahweh, for they break your law.</p>
+            <p><strong>127</strong> Therefore I love your commandments more than gold, yes, more than pure gold.</p>
+            <p><strong>128</strong> Therefore I consider all of your precepts to be right. I hate every false way.</p>
+            <p><strong>129</strong> Your testimonies are wonderful, therefore my soul keeps them.</p>
+            <p><strong>130</strong> The entrance of your words gives light. It gives understanding to the simple.</p>
+            <p><strong>131</strong> I opened my mouth wide and panted, for I longed for your commandments.</p>
+            <p><strong>132</strong> Turn to me, and have mercy on me, as you always do to those who love your name.</p>
+            <p><strong>133</strong> Establish my footsteps in your word. Don’t let any iniquity have dominion over me.</p>
+            <p><strong>134</strong> Redeem me from the oppression of man, so I will observe your precepts.</p>
+            <p><strong>135</strong> Make your face shine on your servant. Teach me your statutes.</p>
+            <p><strong>136</strong> Streams of tears run down my eyes, because they don’t observe your law.</p>
+            <p><strong>137</strong> You are righteous, Yahweh. Your judgments are upright.</p>
+            <p><strong>138</strong> You have commanded your statutes in righteousness. They are fully trustworthy.</p>
+            <p><strong>139</strong> My zeal wears me out, because my enemies ignore your words.</p>
+            <p><strong>140</strong> Your promises have been thoroughly tested, and your servant loves them.</p>
+            <p><strong>141</strong> I am small and despised. I don’t forget your precepts.</p>
+            <p><strong>142</strong> Your righteousness is an everlasting righteousness. Your law is truth.</p>
+            <p><strong>143</strong> Trouble and anguish have taken hold of me. Your commandments are my delight.</p>
+            <p><strong>144</strong> Your testimonies are righteous forever. Give me understanding, that I may live.</p>
+            <p><strong>145</strong> I have called with my whole heart. Answer me, Yahweh! I will keep your statutes.</p>
+            <p><strong>146</strong> I have called to you. Save me! I will obey your statutes.</p>
+            <p><strong>147</strong> I rise before dawn and cry for help. I put my hope in your words.</p>
+            <p><strong>148</strong> My eyes stay open through the night watches, that I might meditate on your word.</p>
+            <p><strong>149</strong> Hear my voice according to your loving kindness. Revive me, Yahweh, according to your ordinances.</p>
+            <p><strong>150</strong> They draw near who follow after wickedness. They are far from your law.</p>
+            <p><strong>151</strong> You are near, Yahweh. All your commandments are truth.</p>
+            <p><strong>152</strong> Of old I have known from your testimonies, that you have founded them forever.</p>
+            <p><strong>153</strong> Consider my affliction, and deliver me, for I don’t forget your law.</p>
+            <p><strong>154</strong> Plead my cause, and redeem me! Revive me according to your promise.</p>
+            <p><strong>155</strong> Salvation is far from the wicked, for they don’t seek your statutes.</p>
+            <p><strong>156</strong> Great are your tender mercies, Yahweh. Revive me according to your ordinances.</p>
+            <p><strong>157</strong> Many are my persecutors and my adversaries. I haven’t swerved from your testimonies.</p>
+            <p><strong>158</strong> I look at the faithless with loathing, because they don’t observe your word.</p>
+            <p><strong>159</strong> Consider how I love your precepts. Revive me, Yahweh, according to your loving kindness.</p>
+            <p><strong>160</strong> All of your words are truth. Every one of your righteous ordinances endures forever.</p>
+            <p><strong>161</strong> Princes have persecuted me without a cause, but my heart stands in awe of your words.</p>
+            <p><strong>162</strong> I rejoice at your word, as one who finds great plunder.</p>
+            <p><strong>163</strong> I hate and abhor falsehood. I love your law.</p>
+            <p><strong>164</strong> Seven times a day, I praise you, because of your righteous ordinances.</p>
+            <p><strong>165</strong> Those who love your law have great peace. Nothing causes them to stumble.</p>
+            <p><strong>166</strong> I have hoped for your salvation, Yahweh. I have done your commandments.</p>
+            <p><strong>167</strong> My soul has observed your testimonies. I love them exceedingly.</p>
+            <p><strong>168</strong> I have obeyed your precepts and your testimonies, for all my ways are before you.</p>
+            <p><strong>169</strong> Let my cry come before you, Yahweh. Give me understanding according to your word.</p>
+            <p><strong>170</strong> Let my supplication come before you. Deliver me according to your word.</p>
+            <p><strong>171</strong> Let my lips utter praise, for you teach me your statutes.</p>
+            <p><strong>172</strong> Let my tongue sing of your word, for all your commandments are righteousness.</p>
+            <p><strong>173</strong> Let your hand be ready to help me, for I have chosen your precepts.</p>
+            <p><strong>174</strong> I have longed for your salvation, Yahweh. Your law is my delight.</p>
+            <p><strong>175</strong> Let my soul live, that I may praise you. Let your ordinances help me.</p>
+            <p><strong>176</strong> I have gone astray like a lost sheep. Seek your servant, for I don’t forget your commandments.</p>
+            </div>
+            <div class="scripture-text" id="web-119-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 119 (KJV)</p>
+            <p><strong>1</strong> Blessed are the undefiled in the way, who walk in the law of the Lord.</p>
+            <p><strong>2</strong> Blessed are they that keep his testimonies, and that seek him with the whole heart.</p>
+            <p><strong>3</strong> They also do no iniquity: they walk in his ways.</p>
+            <p><strong>4</strong> Thou hast commanded us to keep thy precepts diligently.</p>
+            <p><strong>5</strong> O that my ways were directed to keep thy statutes!</p>
+            <p><strong>6</strong> Then shall I not be ashamed, when I have respect unto all thy commandments.</p>
+            <p><strong>7</strong> I will praise thee with uprightness of heart, when I shall have learned thy righteous judgments.</p>
+            <p><strong>8</strong> I will keep thy statutes: O forsake me not utterly.</p>
+            <p><strong>9</strong> Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word.</p>
+            <p><strong>10</strong> With my whole heart have I sought thee: O let me not wander from thy commandments.</p>
+            <p><strong>11</strong> Thy word have I hid in mine heart, that I might not sin against thee.</p>
+            <p><strong>12</strong> Blessed art thou, O Lord: teach me thy statutes.</p>
+            <p><strong>13</strong> With my lips have I declared all the judgments of thy mouth.</p>
+            <p><strong>14</strong> I have rejoiced in the way of thy testimonies, as much as in all riches.</p>
+            <p><strong>15</strong> I will meditate in thy precepts, and have respect unto thy ways.</p>
+            <p><strong>16</strong> I will delight myself in thy statutes: I will not forget thy word.</p>
+            <p><strong>17</strong> Deal bountifully with thy servant, that I may live, and keep thy word.</p>
+            <p><strong>18</strong> Open thou mine eyes, that I may behold wondrous things out of thy law.</p>
+            <p><strong>19</strong> I am a stranger in the earth: hide not thy commandments from me.</p>
+            <p><strong>20</strong> My soul breaketh for the longing that it hath unto thy judgments at all times.</p>
+            <p><strong>21</strong> Thou hast rebuked the proud that are cursed, which do err from thy commandments.</p>
+            <p><strong>22</strong> Remove from me reproach and contempt; for I have kept thy testimonies.</p>
+            <p><strong>23</strong> Princes also did sit and speak against me: but thy servant did meditate in thy statutes.</p>
+            <p><strong>24</strong> Thy testimonies also are my delight and my counsellors.</p>
+            <p><strong>25</strong> My soul cleaveth unto the dust: quicken thou me according to thy word.</p>
+            <p><strong>26</strong> I have declared my ways, and thou heardest me: teach me thy statutes.</p>
+            <p><strong>27</strong> Make me to understand the way of thy precepts: so shall I talk of thy wondrous works.</p>
+            <p><strong>28</strong> My soul melteth for heaviness: strengthen thou me according unto thy word.</p>
+            <p><strong>29</strong> Remove from me the way of lying: and grant me thy law graciously.</p>
+            <p><strong>30</strong> I have chosen the way of truth: thy judgments have I laid before me.</p>
+            <p><strong>31</strong> I have stuck unto thy testimonies: O Lord, put me not to shame.</p>
+            <p><strong>32</strong> I will run the way of thy commandments, when thou shalt enlarge my heart.</p>
+            <p><strong>33</strong> Teach me, O Lord, the way of thy statutes; and I shall keep it unto the end.</p>
+            <p><strong>34</strong> Give me understanding, and I shall keep thy law; yea, I shall observe it with my whole heart.</p>
+            <p><strong>35</strong> Make me to go in the path of thy commandments; for therein do I delight.</p>
+            <p><strong>36</strong> Incline my heart unto thy testimonies, and not to covetousness.</p>
+            <p><strong>37</strong> Turn away mine eyes from beholding vanity; and quicken thou me in thy way.</p>
+            <p><strong>38</strong> Stablish thy word unto thy servant, who is devoted to thy fear.</p>
+            <p><strong>39</strong> Turn away my reproach which I fear: for thy judgments are good.</p>
+            <p><strong>40</strong> Behold, I have longed after thy precepts: quicken me in thy righteousness.</p>
+            <p><strong>41</strong> Let thy mercies come also unto me, O Lord, even thy salvation, according to thy word.</p>
+            <p><strong>42</strong> So shall I have wherewith to answer him that reproacheth me: for I trust in thy word.</p>
+            <p><strong>43</strong> And take not the word of truth utterly out of my mouth; for I have hoped in thy judgments.</p>
+            <p><strong>44</strong> So shall I keep thy law continually for ever and ever.</p>
+            <p><strong>45</strong> And I will walk at liberty: for I seek thy precepts.</p>
+            <p><strong>46</strong> I will speak of thy testimonies also before kings, and will not be ashamed.</p>
+            <p><strong>47</strong> And I will delight myself in thy commandments, which I have loved.</p>
+            <p><strong>48</strong> My hands also will I lift up unto thy commandments, which I have loved; and I will meditate in thy statutes.</p>
+            <p><strong>49</strong> Remember the word unto thy servant, upon which thou hast caused me to hope.</p>
+            <p><strong>50</strong> This is my comfort in my affliction: for thy word hath quickened me.</p>
+            <p><strong>51</strong> The proud have had me greatly in derision: yet have I not declined from thy law.</p>
+            <p><strong>52</strong> I remembered thy judgments of old, O Lord; and have comforted myself.</p>
+            <p><strong>53</strong> Horror hath taken hold upon me because of the wicked that forsake thy law.</p>
+            <p><strong>54</strong> Thy statutes have been my songs in the house of my pilgrimage.</p>
+            <p><strong>55</strong> I have remembered thy name, O Lord, in the night, and have kept thy law.</p>
+            <p><strong>56</strong> This I had, because I kept thy precepts.</p>
+            <p><strong>57</strong> Thou art my portion, O Lord: I have said that I would keep thy words.</p>
+            <p><strong>58</strong> I intreated thy favour with my whole heart: be merciful unto me according to thy word.</p>
+            <p><strong>59</strong> I thought on my ways, and turned my feet unto thy testimonies.</p>
+            <p><strong>60</strong> I made haste, and delayed not to keep thy commandments.</p>
+            <p><strong>61</strong> The bands of the wicked have robbed me: but I have not forgotten thy law.</p>
+            <p><strong>62</strong> At midnight I will rise to give thanks unto thee because of thy righteous judgments.</p>
+            <p><strong>63</strong> I am a companion of all them that fear thee, and of them that keep thy precepts.</p>
+            <p><strong>64</strong> The earth, O Lord, is full of thy mercy: teach me thy statutes.</p>
+            <p><strong>65</strong> Thou hast dealt well with thy servant, O Lord, according unto thy word.</p>
+            <p><strong>66</strong> Teach me good judgment and knowledge: for I have believed thy commandments.</p>
+            <p><strong>67</strong> Before I was afflicted I went astray: but now have I kept thy word.</p>
+            <p><strong>68</strong> Thou art good, and doest good; teach me thy statutes.</p>
+            <p><strong>69</strong> The proud have forged a lie against me: but I will keep thy precepts with my whole heart.</p>
+            <p><strong>70</strong> Their heart is as fat as grease; but I delight in thy law.</p>
+            <p><strong>71</strong> It is good for me that I have been afflicted; that I might learn thy statutes.</p>
+            <p><strong>72</strong> The law of thy mouth is better unto me than thousands of gold and silver.</p>
+            <p><strong>73</strong> Thy hands have made me and fashioned me: give me understanding, that I may learn thy commandments.</p>
+            <p><strong>74</strong> They that fear thee will be glad when they see me; because I have hoped in thy word.</p>
+            <p><strong>75</strong> I know, O Lord, that thy judgments are right, and that thou in faithfulness hast afflicted me.</p>
+            <p><strong>76</strong> Let, I pray thee, thy merciful kindness be for my comfort, according to thy word unto thy servant.</p>
+            <p><strong>77</strong> Let thy tender mercies come unto me, that I may live: for thy law is my delight.</p>
+            <p><strong>78</strong> Let the proud be ashamed; for they dealt perversely with me without a cause: but I will meditate in thy precepts.</p>
+            <p><strong>79</strong> Let those that fear thee turn unto me, and those that have known thy testimonies.</p>
+            <p><strong>80</strong> Let my heart be sound in thy statutes; that I be not ashamed.</p>
+            <p><strong>81</strong> My soul fainteth for thy salvation: but I hope in thy word.</p>
+            <p><strong>82</strong> Mine eyes fail for thy word, saying, When wilt thou comfort me?</p>
+            <p><strong>83</strong> For I am become like a bottle in the smoke; yet do I not forget thy statutes.</p>
+            <p><strong>84</strong> How many are the days of thy servant? when wilt thou execute judgment on them that persecute me?</p>
+            <p><strong>85</strong> The proud have digged pits for me, which are not after thy law.</p>
+            <p><strong>86</strong> All thy commandments are faithful: they persecute me wrongfully; help thou me.</p>
+            <p><strong>87</strong> They had almost consumed me upon earth; but I forsook not thy precepts.</p>
+            <p><strong>88</strong> Quicken me after thy lovingkindness; so shall I keep the testimony of thy mouth.</p>
+            <p><strong>89</strong> For ever, O Lord, thy word is settled in heaven.</p>
+            <p><strong>90</strong> Thy faithfulness is unto all generations: thou hast established the earth, and it abideth.</p>
+            <p><strong>91</strong> They continue this day according to thine ordinances: for all are thy servants.</p>
+            <p><strong>92</strong> Unless thy law had been my delights, I should then have perished in mine affliction.</p>
+            <p><strong>93</strong> I will never forget thy precepts: for with them thou hast quickened me.</p>
+            <p><strong>94</strong> I am thine, save me; for I have sought thy precepts.</p>
+            <p><strong>95</strong> The wicked have waited for me to destroy me: but I will consider thy testimonies.</p>
+            <p><strong>96</strong> I have seen an end of all perfection: but thy commandment is exceeding broad.</p>
+            <p><strong>97</strong> O how love I thy law! it is my meditation all the day.</p>
+            <p><strong>98</strong> Thou through thy commandments hast made me wiser than mine enemies: for they are ever with me.</p>
+            <p><strong>99</strong> I have more understanding than all my teachers: for thy testimonies are my meditation.</p>
+            <p><strong>100</strong> I understand more than the ancients, because I keep thy precepts.</p>
+            <p><strong>101</strong> I have refrained my feet from every evil way, that I might keep thy word.</p>
+            <p><strong>102</strong> I have not departed from thy judgments: for thou hast taught me.</p>
+            <p><strong>103</strong> How sweet are thy words unto my taste! yea, sweeter than honey to my mouth!</p>
+            <p><strong>104</strong> Through thy precepts I get understanding: therefore I hate every false way.</p>
+            <p><strong>105</strong> Thy word is a lamp unto my feet, and a light unto my path.</p>
+            <p><strong>106</strong> I have sworn, and I will perform it, that I will keep thy righteous judgments.</p>
+            <p><strong>107</strong> I am afflicted very much: quicken me, O Lord, according unto thy word.</p>
+            <p><strong>108</strong> Accept, I beseech thee, the freewill offerings of my mouth, O Lord, and teach me thy judgments.</p>
+            <p><strong>109</strong> My soul is continually in my hand: yet do I not forget thy law.</p>
+            <p><strong>110</strong> The wicked have laid a snare for me: yet I erred not from thy precepts.</p>
+            <p><strong>111</strong> Thy testimonies have I taken as an heritage for ever: for they are the rejoicing of my heart.</p>
+            <p><strong>112</strong> I have inclined mine heart to perform thy statutes alway, even unto the end.</p>
+            <p><strong>113</strong> I hate vain thoughts: but thy law do I love.</p>
+            <p><strong>114</strong> Thou art my hiding place and my shield: I hope in thy word.</p>
+            <p><strong>115</strong> Depart from me, ye evildoers: for I will keep the commandments of my God.</p>
+            <p><strong>116</strong> Uphold me according unto thy word, that I may live: and let me not be ashamed of my hope.</p>
+            <p><strong>117</strong> Hold thou me up, and I shall be safe: and I will have respect unto thy statutes continually.</p>
+            <p><strong>118</strong> Thou hast trodden down all them that err from thy statutes: for their deceit is falsehood.</p>
+            <p><strong>119</strong> Thou puttest away all the wicked of the earth like dross: therefore I love thy testimonies.</p>
+            <p><strong>120</strong> My flesh trembleth for fear of thee; and I am afraid of thy judgments.</p>
+            <p><strong>121</strong> I have done judgment and justice: leave me not to mine oppressors.</p>
+            <p><strong>122</strong> Be surety for thy servant for good: let not the proud oppress me.</p>
+            <p><strong>123</strong> Mine eyes fail for thy salvation, and for the word of thy righteousness.</p>
+            <p><strong>124</strong> Deal with thy servant according unto thy mercy, and teach me thy statutes.</p>
+            <p><strong>125</strong> I am thy servant; give me understanding, that I may know thy testimonies.</p>
+            <p><strong>126</strong> It is time for thee, Lord, to work: for they have made void thy law.</p>
+            <p><strong>127</strong> Therefore I love thy commandments above gold; yea, above fine gold.</p>
+            <p><strong>128</strong> Therefore I esteem all thy precepts concerning all things to be right; and I hate every false way.</p>
+            <p><strong>129</strong> Thy testimonies are wonderful: therefore doth my soul keep them.</p>
+            <p><strong>130</strong> The entrance of thy words giveth light; it giveth understanding unto the simple.</p>
+            <p><strong>131</strong> I opened my mouth, and panted: for I longed for thy commandments.</p>
+            <p><strong>132</strong> Look thou upon me, and be merciful unto me, as thou usest to do unto those that love thy name.</p>
+            <p><strong>133</strong> Order my steps in thy word: and let not any iniquity have dominion over me.</p>
+            <p><strong>134</strong> Deliver me from the oppression of man: so will I keep thy precepts.</p>
+            <p><strong>135</strong> Make thy face to shine upon thy servant; and teach me thy statutes.</p>
+            <p><strong>136</strong> Rivers of waters run down mine eyes, because they keep not thy law.</p>
+            <p><strong>137</strong> Righteous art thou, O Lord, and upright are thy judgments.</p>
+            <p><strong>138</strong> Thy testimonies that thou hast commanded are righteous and very faithful.</p>
+            <p><strong>139</strong> My zeal hath consumed me, because mine enemies have forgotten thy words.</p>
+            <p><strong>140</strong> Thy word is very pure: therefore thy servant loveth it.</p>
+            <p><strong>141</strong> I am small and despised: yet do not I forget thy precepts.</p>
+            <p><strong>142</strong> Thy righteousness is an everlasting righteousness, and thy law is the truth.</p>
+            <p><strong>143</strong> Trouble and anguish have taken hold on me: yet thy commandments are my delights.</p>
+            <p><strong>144</strong> The righteousness of thy testimonies is everlasting: give me understanding, and I shall live.</p>
+            <p><strong>145</strong> I cried with my whole heart; hear me, O Lord: I will keep thy statutes.</p>
+            <p><strong>146</strong> I cried unto thee; save me, and I shall keep thy testimonies.</p>
+            <p><strong>147</strong> I prevented the dawning of the morning, and cried: I hoped in thy word.</p>
+            <p><strong>148</strong> Mine eyes prevent the night watches, that I might meditate in thy word.</p>
+            <p><strong>149</strong> Hear my voice according unto thy lovingkindness: O Lord, quicken me according to thy judgment.</p>
+            <p><strong>150</strong> They draw nigh that follow after mischief: they are far from thy law.</p>
+            <p><strong>151</strong> Thou art near, O Lord; and all thy commandments are truth.</p>
+            <p><strong>152</strong> Concerning thy testimonies, I have known of old that thou hast founded them for ever.</p>
+            <p><strong>153</strong> Consider mine affliction, and deliver me: for I do not forget thy law.</p>
+            <p><strong>154</strong> Plead my cause, and deliver me: quicken me according to thy word.</p>
+            <p><strong>155</strong> Salvation is far from the wicked: for they seek not thy statutes.</p>
+            <p><strong>156</strong> Great are thy tender mercies, O Lord: quicken me according to thy judgments.</p>
+            <p><strong>157</strong> Many are my persecutors and mine enemies; yet do I not decline from thy testimonies.</p>
+            <p><strong>158</strong> I beheld the transgressors, and was grieved; because they kept not thy word.</p>
+            <p><strong>159</strong> Consider how I love thy precepts: quicken me, O Lord, according to thy lovingkindness.</p>
+            <p><strong>160</strong> Thy word is true from the beginning: and every one of thy righteous judgments endureth for ever.</p>
+            <p><strong>161</strong> Princes have persecuted me without a cause: but my heart standeth in awe of thy word.</p>
+            <p><strong>162</strong> I rejoice at thy word, as one that findeth great spoil.</p>
+            <p><strong>163</strong> I hate and abhor lying: but thy law do I love.</p>
+            <p><strong>164</strong> Seven times a day do I praise thee because of thy righteous judgments.</p>
+            <p><strong>165</strong> Great peace have they which love thy law: and nothing shall offend them.</p>
+            <p><strong>166</strong> Lord, I have hoped for thy salvation, and done thy commandments.</p>
+            <p><strong>167</strong> My soul hath kept thy testimonies; and I love them exceedingly.</p>
+            <p><strong>168</strong> I have kept thy precepts and thy testimonies: for all my ways are before thee.</p>
+            <p><strong>169</strong> Let my cry come near before thee, O Lord: give me understanding according to thy word.</p>
+            <p><strong>170</strong> Let my supplication come before thee: deliver me according to thy word.</p>
+            <p><strong>171</strong> My lips shall utter praise, when thou hast taught me thy statutes.</p>
+            <p><strong>172</strong> My tongue shall speak of thy word: for all thy commandments are righteousness.</p>
+            <p><strong>173</strong> Let thine hand help me; for I have chosen thy precepts.</p>
+            <p><strong>174</strong> I have longed for thy salvation, O Lord; and thy law is my delight.</p>
+            <p><strong>175</strong> Let my soul live, and it shall praise thee; and let thy judgments help me.</p>
+            <p><strong>176</strong> I have gone astray like a lost sheep; seek thy servant; for I do not forget thy commandments.</p>
+            </div>
+            <div class="scripture-text" id="web-119-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 119 (ASV)</p>
+            <p><strong>1</strong> Blessed are they that are perfect in the way, Who walk in the law of Jehovah.</p>
+            <p><strong>2</strong> Blessed are they that keep his testimonies, That seek him with the whole heart.</p>
+            <p><strong>3</strong> Yea, they do no unrighteousness; They walk in his ways.</p>
+            <p><strong>4</strong> Thou hast commandedus thy precepts, That we should observe them diligently.</p>
+            <p><strong>5</strong> Oh that my ways were established To observe thy statutes!</p>
+            <p><strong>6</strong> Then shall I not be put to shame, When I have respect unto all thy commandments.</p>
+            <p><strong>7</strong> I will give thanks unto thee with uprightness of heart, When I learn thy righteous judgments.</p>
+            <p><strong>8</strong> I will observe thy statutes: Oh forsake me not utterly. ב BETH.</p>
+            <p><strong>9</strong> Wherewith shall a young man cleanse his way? By taking heed thereto according to thy word.</p>
+            <p><strong>10</strong> With my whole heart have I sought thee: Oh let me not wander from thy commandments.</p>
+            <p><strong>11</strong> Thy word have I laid up in my heart, That I might not sin against thee.</p>
+            <p><strong>12</strong> Blessed art thou, O Jehovah: Teach me thy statutes.</p>
+            <p><strong>13</strong> With my lips have I declared All the ordinances of thy mouth.</p>
+            <p><strong>14</strong> I have rejoiced in the way of thy testimonies, As much as in all riches.</p>
+            <p><strong>15</strong> I will meditate on thy precepts, And have respect unto thy ways.</p>
+            <p><strong>16</strong> I will delight myself in thy statutes: I will not forget thy word. ג GIMEL.</p>
+            <p><strong>17</strong> Deal bountifully with thy servant, that I may live; So will I observe thy word.</p>
+            <p><strong>18</strong> Open thou mine eyes, that I may behold Wondrous things out of thy law.</p>
+            <p><strong>19</strong> I am a sojourner in the earth: Hide not thy commandments from me.</p>
+            <p><strong>20</strong> My soul breaketh for the longing That it hath unto thine ordinances at all times.</p>
+            <p><strong>21</strong> Thou hast rebuked the proud that are cursed, That do wander from thy commandments.</p>
+            <p><strong>22</strong> Take away from me reproach and contempt; For I have kept thy testimonies.</p>
+            <p><strong>23</strong> Princes also sat and talked against me; But thy servant did meditate on thy statutes.</p>
+            <p><strong>24</strong> Thy testimonies also are my delight Andmy counsellors. ד DALETH.</p>
+            <p><strong>25</strong> My soul cleaveth unto the dust: Quicken thou me according to thy word.</p>
+            <p><strong>26</strong> I declared my ways, and thou answeredst me: Teach me thy statutes.</p>
+            <p><strong>27</strong> Make me to understand the way of thy precepts: So shall I meditate on thy wondrous works.</p>
+            <p><strong>28</strong> My soul melteth for heaviness: Strengthen thou me according unto thy word.</p>
+            <p><strong>29</strong> Remove from me the way of falsehood; And grant me thy law graciously.</p>
+            <p><strong>30</strong> I have chosen the way of faithfulness: Thine ordinances have I set before me.</p>
+            <p><strong>31</strong> I cleave unto thy testimonies: O Jehovah, put me not to shame.</p>
+            <p><strong>32</strong> I will run the way of thy commandments, When thou shalt enlarge my heart. ה HE.</p>
+            <p><strong>33</strong> Teach me, O Jehovah, the way of thy statutes; And I shall keep it unto the end.</p>
+            <p><strong>34</strong> Give me understanding, and I shall keep thy law; Yea, I shall observe it with my whole heart.</p>
+            <p><strong>35</strong> Make me to go in the path of thy commandments; For therein do I delight.</p>
+            <p><strong>36</strong> Incline my heart unto thy testimonies, And not to covetousness.</p>
+            <p><strong>37</strong> Turn away mine eyes from beholding vanity, And quicken me in thy ways.</p>
+            <p><strong>38</strong> Confirm unto thy servant thy word, Whichis in order unto the fear of thee.</p>
+            <p><strong>39</strong> Turn away my reproach whereof I am afraid; For thine ordinances are good.</p>
+            <p><strong>40</strong> Behold, I have longed after thy precepts: Quicken me in thy righteousness. ו VAV.</p>
+            <p><strong>41</strong> Let thy lovingkindnesses also come unto me, O Jehovah, Even thy salvation, according to thy word.</p>
+            <p><strong>42</strong> So shall I have an answer for him that reproacheth me; For I trust in thy word.</p>
+            <p><strong>43</strong> And take not the word of truth utterly out of my mouth; For I have hoped in thine ordinances.</p>
+            <p><strong>44</strong> So shall I observe thy law continually For ever and ever.</p>
+            <p><strong>45</strong> And I shall walk at liberty; For I have sought thy precepts.</p>
+            <p><strong>46</strong> I will also speak of thy testimonies before kings, And shall not be put to shame.</p>
+            <p><strong>47</strong> And I will delight myself in thy commandments, Which I have loved.</p>
+            <p><strong>48</strong> I will lift up my hands also unto thy commandments, which I have loved; And I will meditate on thy statutes. ז ZAYIN.</p>
+            <p><strong>49</strong> Remember the word unto thy servant, Because thou hast made me to hope.</p>
+            <p><strong>50</strong> This is my comfort in my affliction; For thy word hath quickened me.</p>
+            <p><strong>51</strong> The proud have had me greatly in derision: Yethave I not swerved from thy law.</p>
+            <p><strong>52</strong> I have remembered thine ordinances of old, O Jehovah, And have comforted myself.</p>
+            <p><strong>53</strong> Hot indignation hath taken hold upon me, Because of the wicked that forsake thy law.</p>
+            <p><strong>54</strong> Thy statutes have been my songs In the house of my pilgrimage.</p>
+            <p><strong>55</strong> I have remembered thy name, O Jehovah, in the night, And have observed thy law.</p>
+            <p><strong>56</strong> This I have had, Because I have kept thy precepts. ח HHETH.</p>
+            <p><strong>57</strong> Jehovah is my portion: I have said that I would observe thy words.</p>
+            <p><strong>58</strong> I entreated thy favor with my whole heart: Be merciful unto me according to thy word.</p>
+            <p><strong>59</strong> I thought on my ways, And turned my feet unto thy testimonies.</p>
+            <p><strong>60</strong> I made haste, and delayed not, To observe thy commandments.</p>
+            <p><strong>61</strong> The cords of the wicked have wrapped me round; ButI have not forgotten thy law.</p>
+            <p><strong>62</strong> At midnight I will rise to give thanks unto thee Because of thy righteous ordinances.</p>
+            <p><strong>63</strong> I am a companion of all them that fear thee, And of them that observe thy precepts.</p>
+            <p><strong>64</strong> The earth, O Jehovah, is full of thy lovingkindness: Teach me thy statutes. ט TETH.</p>
+            <p><strong>65</strong> Thou hast dealt well with thy servant, O Jehovah, according unto thy word.</p>
+            <p><strong>66</strong> Teach me good judgment and knowledge; For I have believed in thy commandments.</p>
+            <p><strong>67</strong> Before I was afflicted I went astray; But now I observe thy word.</p>
+            <p><strong>68</strong> Thou art good, and doest good; Teach me thy statutes.</p>
+            <p><strong>69</strong> The proud have forged a lie against me: With my whole heart will I keep thy precepts.</p>
+            <p><strong>70</strong> Their heart is as fat as grease; But I delight in thy law.</p>
+            <p><strong>71</strong> It is good for me that I have been afflicted; That I may learn thy statutes.</p>
+            <p><strong>72</strong> The law of thy mouth is better unto me Than thousands of gold and silver. י YODH.</p>
+            <p><strong>73</strong> Thy hands have made me and fashioned me: Give me understanding, that I may learn thy commandments.</p>
+            <p><strong>74</strong> They that fear thee shall see me and be glad, Because I have hoped in thy word.</p>
+            <p><strong>75</strong> I know, O Jehovah, that thy judgments are righteous, And that in faithfulness thou hast afflicted me.</p>
+            <p><strong>76</strong> Let, I pray thee, thy lovingkindness be for my comfort, According to thy word unto thy servant.</p>
+            <p><strong>77</strong> Let thy tender mercies come unto me, that I may live; For thy law is my delight.</p>
+            <p><strong>78</strong> Let the proud be put to shame; for they have overthrown me wrongfully: ButI will meditate on thy precepts.</p>
+            <p><strong>79</strong> Let those that fear thee turn unto me; And they shall know thy testimonies.</p>
+            <p><strong>80</strong> Let my heart be perfect in thy statutes, That I be not put to shame. כ KAPH.</p>
+            <p><strong>81</strong> My soul fainteth for thy salvation; ButI hope in thy word.</p>
+            <p><strong>82</strong> Mine eyes fail for thy word, While I say, When wilt thou comfort me?</p>
+            <p><strong>83</strong> For I am become like a wine-skin in the smoke; Yet do I not forget thy statutes.</p>
+            <p><strong>84</strong> How many are the days of thy servant? When wilt thou execute judgment on them that persecute me?</p>
+            <p><strong>85</strong> The proud have digged pits for me, Who are not according to thy law.</p>
+            <p><strong>86</strong> All thy commandments are faithful: They persecute me wrongfully; help thou me.</p>
+            <p><strong>87</strong> They had almost consumed me upon earth; But I forsook not thy precepts.</p>
+            <p><strong>88</strong> Quicken me after thy lovingkindness; So shall I observe the testimony of thy mouth. ל LAMEDH.</p>
+            <p><strong>89</strong> For ever, O Jehovah, Thy word is settled in heaven.</p>
+            <p><strong>90</strong> Thy faithfulness is unto all generations: Thou hast established the earth, and it abideth.</p>
+            <p><strong>91</strong> They abide this day according to thine ordinances; For all things are thy servants.</p>
+            <p><strong>92</strong> Unless thy law had been my delight, I should then have perished in mine affliction.</p>
+            <p><strong>93</strong> I will never forget thy precepts; For with them thou hast quickened me.</p>
+            <p><strong>94</strong> I am thine, save me; For I have sought thy precepts.</p>
+            <p><strong>95</strong> The wicked have waited for me, to destroy me; But I will consider thy testimonies.</p>
+            <p><strong>96</strong> I have seen an end of all perfection; But thy commandment is exceeding broad. מ MEM.</p>
+            <p><strong>97</strong> Oh how love I thy law! It is my meditation all the day.</p>
+            <p><strong>98</strong> Thy commandments make me wiser than mine enemies; For they are ever with me.</p>
+            <p><strong>99</strong> I have more understanding than all my teachers; For thy testimonies are my meditation.</p>
+            <p><strong>100</strong> I understand more than the aged, Because I have kept thy precepts.</p>
+            <p><strong>101</strong> I have refrained my feet from every evil way, That I might observe thy word.</p>
+            <p><strong>102</strong> I have not turned aside from thine ordinances; For thou hast taught me.</p>
+            <p><strong>103</strong> How sweet are thy words unto my taste! Yea, sweeter than honey to my mouth!</p>
+            <p><strong>104</strong> Through thy precepts I get understanding: Therefore I hate every false way. נ NUN.</p>
+            <p><strong>105</strong> Thy word is a lamp unto my feet, And light unto my path.</p>
+            <p><strong>106</strong> I have sworn, and have confirmed it, That I will observe thy righteous ordinances.</p>
+            <p><strong>107</strong> I am afflicted very much: Quicken me, O Jehovah, according unto thy word.</p>
+            <p><strong>108</strong> Accept, I beseech thee, the freewill-offerings of my mouth, O Jehovah, And teach me thine ordinances.</p>
+            <p><strong>109</strong> My soul is continually in my hand; Yet do I not forget thy law.</p>
+            <p><strong>110</strong> The wicked have laid a snare for me; Yet have I not gone astray from thy precepts.</p>
+            <p><strong>111</strong> Thy testimonies have I taken as a heritage for ever; For they are the rejoicing of my heart.</p>
+            <p><strong>112</strong> I have inclined my heart to perform thy statutes For ever, even unto the end. ס SAMEKH.</p>
+            <p><strong>113</strong> I hate them that are of a double mind; But thy law do I love.</p>
+            <p><strong>114</strong> Thou art my hiding-place and my shield: I hope in thy word.</p>
+            <p><strong>115</strong> Depart from me, ye evil-doers, That I may keep the commandments of my God.</p>
+            <p><strong>116</strong> Uphold me according unto thy word, that I may live; And let me not be ashamed of my hope.</p>
+            <p><strong>117</strong> Hold thou me up, and I shall be safe, And shall have respect unto thy statutes continually.</p>
+            <p><strong>118</strong> Thou hast set at nought all them that err from thy statutes; For their deceit is falsehood.</p>
+            <p><strong>119</strong> Thou puttest away all the wicked of the earth like dross: Therefore I love thy testimonies.</p>
+            <p><strong>120</strong> My flesh trembleth for fear of thee; And I am afraid of thy judgments. ע AYIN.</p>
+            <p><strong>121</strong> I have done justice and righteousness: Leave me not to mine oppressors.</p>
+            <p><strong>122</strong> Be surety for thy servant for good: Let not the proud oppress me.</p>
+            <p><strong>123</strong> Mine eyes fail for thy salvation, And for thy righteous word.</p>
+            <p><strong>124</strong> Deal with thy servant according unto thy lovingkindness, And teach me thy statutes.</p>
+            <p><strong>125</strong> I am thy servant; give me understanding, That I may know thy testimonies.</p>
+            <p><strong>126</strong> It is time for Jehovah to work; Forthey have made void thy law.</p>
+            <p><strong>127</strong> Therefore I love thy commandments Above gold, yea, above fine gold.</p>
+            <p><strong>128</strong> Therefore I esteem allthyprecepts concerning allthingsto be right; AndI hate every false way. פ PE.</p>
+            <p><strong>129</strong> Thy testimonies are wonderful; Therefore doth my soul keep them.</p>
+            <p><strong>130</strong> The opening of thy words giveth light; It giveth understanding unto the simple.</p>
+            <p><strong>131</strong> I opened wide my mouth, and panted; For I longed for thy commandments.</p>
+            <p><strong>132</strong> Turn thee unto me, and have mercy upon me, As thou usest to do unto those that love thy name.</p>
+            <p><strong>133</strong> Establish my footsteps in thy word; And let not any iniquity have dominion over me.</p>
+            <p><strong>134</strong> Redeem me from the oppression of man: So will I observe thy precepts.</p>
+            <p><strong>135</strong> Make thy face to shine upon thy servant; And teach me thy statutes.</p>
+            <p><strong>136</strong> Streams of water run down mine eyes, Because they observe not thy law. צ TSADHE.</p>
+            <p><strong>137</strong> Righteous art thou, O Jehovah, And upright are thy judgments.</p>
+            <p><strong>138</strong> Thou hast commanded thy testimonies in righteousness And very faithfulness.</p>
+            <p><strong>139</strong> My zeal hath consumed me, Because mine adversaries have forgotten thy words.</p>
+            <p><strong>140</strong> Thy word is very pure; Therefore thy servant loveth it.</p>
+            <p><strong>141</strong> I am small and despised; Yet do I not forget thy precepts.</p>
+            <p><strong>142</strong> Thy righteousness is an everlasting righteousness, And thy law is truth.</p>
+            <p><strong>143</strong> Trouble and anguish have taken hold on me; Yet thy commandments are my delight.</p>
+            <p><strong>144</strong> Thy testimonies are righteous for ever: Give me understanding, and I shall live. ק QOPH.</p>
+            <p><strong>145</strong> I have called with my whole heart; answer me, O Jehovah: I will keep thy statutes.</p>
+            <p><strong>146</strong> I have called unto thee; save me, And I shall observe thy testimonies.</p>
+            <p><strong>147</strong> I anticipated the dawning of the morning, and cried: I hoped in thy words.</p>
+            <p><strong>148</strong> Mine eyes anticipated the night-watches, That I might meditate on thy word.</p>
+            <p><strong>149</strong> Hear my voice according unto thy lovingkindness: Quicken me, O Jehovah, according to thine ordinances.</p>
+            <p><strong>150</strong> They draw nigh that follow after wickedness; They are far from thy law.</p>
+            <p><strong>151</strong> Thou art nigh, O Jehovah; And all thy commandments are truth.</p>
+            <p><strong>152</strong> Of old have I known from thy testimonies, That thou hast founded them for ever. ר RESH.</p>
+            <p><strong>153</strong> Consider mine affliction, and deliver me; For I do not forget thy law.</p>
+            <p><strong>154</strong> Plead thou my cause, and redeem me: Quicken me according to thy word.</p>
+            <p><strong>155</strong> Salvation is far from the wicked; For they seek not thy statutes.</p>
+            <p><strong>156</strong> Great are thy tender mercies, O Jehovah: Quicken me according to thine ordinances.</p>
+            <p><strong>157</strong> Many are my persecutors and mine adversaries; Yethave I not swerved from thy testimonies.</p>
+            <p><strong>158</strong> I beheld the treacherous, and was grieved, Because they observe not thy word.</p>
+            <p><strong>159</strong> Consider how I love thy precepts: Quicken me, O Jehovah, according to thy lovingkindness.</p>
+            <p><strong>160</strong> The sum of thy word is truth; And every one of thy righteous ordinances endureth for ever. ש SHIN.</p>
+            <p><strong>161</strong> Princes have persecuted me without a cause; But my heart standeth in awe of thy words.</p>
+            <p><strong>162</strong> I rejoice at thy word, As one that findeth great spoil.</p>
+            <p><strong>163</strong> I hate and abhor falsehood; But thy law do I love.</p>
+            <p><strong>164</strong> Seven times a day do I praise thee, Because of thy righteous ordinances.</p>
+            <p><strong>165</strong> Great peace have they that love thy law; And they have no occasion of stumbling.</p>
+            <p><strong>166</strong> I have hoped for thy salvation, O Jehovah, And have done thy commandments.</p>
+            <p><strong>167</strong> My soul hath observed thy testimonies; And I love them exceedingly.</p>
+            <p><strong>168</strong> I have observed thy precepts and thy testimonies; For all my ways are before thee. ת TAV.</p>
+            <p><strong>169</strong> Let my cry come near before thee, O Jehovah: Give me understanding according to thy word.</p>
+            <p><strong>170</strong> Let my supplication come before thee: Deliver me according to thy word.</p>
+            <p><strong>171</strong> Let my lips utter praise; For thou teachest me thy statutes.</p>
+            <p><strong>172</strong> Let my tongue sing of thy word; For all thy commandments are righteousness.</p>
+            <p><strong>173</strong> Let thy hand be ready to help me; For I have chosen thy precepts.</p>
+            <p><strong>174</strong> I have longed for thy salvation, O Jehovah; And thy law is my delight.</p>
+            <p><strong>175</strong> Let my soul live, and it shall praise thee; And let thine ordinances help me.</p>
+            <p><strong>176</strong> I have gone astray like a lost sheep; seek thy servant; For I do not forget thy commandments.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 119 is the longest psalm and the longest chapter in the Bible, an elaborate acrostic of twenty-two sections, one for each Hebrew letter, with eight verses apiece. Nearly every verse refers to God's word under a variety of names—law, statutes, precepts, commandments, ordinances, testimonies, word, and promise. Far from a dry meditation on rules, the psalm is a passionate love song to Scripture as the voice of the God who made and redeemed the psalmist. He hides God's word in his heart that he might not sin, calls it sweeter than honey and more precious than gold, and confesses that it has revived him in affliction. The psalm is intensely honest: the writer is mocked by the proud, persecuted by princes, laid low in the dust, and weary with sorrow, yet again and again he returns to God's word for comfort, direction, and life. Famous verses light the way: "Your word is a lamp to my feet, and a light for my path," and "I have hidden your word in my heart, that I might not sin against you." The psalm closes humbly with a confession of straying like a lost sheep and a plea for God to seek his servant. For the Christian, this love for God's word leads finally to the living Word, Jesus, in whom all God's promises are yes and amen.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The devoted psalmist</strong> — The afflicted yet faithful lover of God's word, who meditates on it day and night, treasures it above gold, and pleads for understanding and life.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who gives his word and is sought through it—teacher, deliverer, and faithful keeper of his promises.</li>
+          <li><strong>The proud and the wicked</strong> — The arrogant mockers, slanderers, and persecutors who forsake God's law and oppress the one who loves it.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 119:105 (WEB)</p>
+          <p class="verse__text">Your word is a lamp to my feet, and a light for my path.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's word is to be loved and delighted in, not merely studied (Psalm 119:97).</li>
+          <li>Hiding Scripture in our hearts guards us against sin (Psalm 119:11).</li>
+          <li>God's word gives light and direction for the path of life (Psalm 119:105).</li>
+          <li>Scripture revives and comforts us in seasons of affliction (Psalm 119:50, 92).</li>
+          <li>Even the most devoted believer remains a straying sheep in need of the Shepherd (Psalm 119:176).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-119">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-119">
+            <ul class="lesson-list">
+            <li><strong>Scripture keeps us from sin.</strong> "I have hidden your word in my heart, that I might not sin against you" (Psalm 119:11, WEB). A heart full of God's word resists temptation.</li>
+            <li><strong>God's word lights the way.</strong> "Your word is a lamp to my feet, and a light for my path" (Psalm 119:105, WEB). Scripture guides our daily steps and our whole direction.</li>
+            <li><strong>Affliction can be a teacher.</strong> "It is good for me that I have been afflicted, that I may learn your statutes" (Psalm 119:71, WEB). Hardship can drive us deeper into God's word.</li>
+            <li><strong>God's word is sweet and precious.</strong> "How sweet are your promises to my taste, more than honey to my mouth!" (Psalm 119:103, WEB). Scripture delights, not just instructs.</li>
+            <li><strong>Even the faithful need seeking.</strong> "I have gone astray like a lost sheep. Seek your servant" (Psalm 119:176, WEB), pointing to the Shepherd who seeks the lost.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-119">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-119">
+            <ol class="study-questions">
+            <li>The psalm uses many words for Scripture—law, precepts, testimonies, promises. What does this variety teach us about God's word?</li>
+            <li>What does it mean practically to "hide" God's word in your heart (verse 11)?</li>
+            <li>How has Scripture been "a lamp to your feet and a light for your path" in a decision you faced?</li>
+            <li>The psalmist says affliction taught him God's statutes (verse 71). How have hard seasons deepened your love for God's word?</li>
+            <li>The psalm ends with a confession of straying like a lost sheep. How does this point you to Jesus, the Shepherd who seeks the lost?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-119">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-119">
+            <ol class="study-questions">
+            <li>The many names show the richness of God's word: it commands, testifies, promises, and guides. Each angle reveals a facet of how God speaks. Help the group appreciate Scripture as a living, many-sided gift, not a single flat category.</li>
+            <li>Hiding God's word means memorizing and internalizing it so it shapes us from within (119:11). It is the stored treasure that surfaces in temptation. Encourage practical habits of memorization and meditation.</li>
+            <li>This is partly personal. Verse 105 pictures Scripture as a lamp that lights the next step and the whole path. Invite members to share a decision where God's word gave clarity, and encourage seeking it before big choices.</li>
+            <li>Verse 71 reframes affliction as a classroom. Suffering often slows us down enough to listen to God. Handle this tenderly; affirm that God can use pain to deepen love for his word without minimizing real hurt.</li>
+            <li>The psalm's humble ending (119:176) confesses ongoing need for God to seek the straying. This points straight to Jesus, the Good Shepherd who seeks lost sheep (Luke 15). Even our love for Scripture leads us back to the Savior, not to self-sufficiency.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-118.html">← Psalms 118</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-120.html">Psalms 120 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive overview of Psalms: its five Books, its rich genres of praise and lament, its great singers, and how its songs point to Jesus the Son of David." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Psalms · Whole-Book Overview</span>
+        <h1>Psalms: The Whole Story</h1>
+        <p class="lead">The inspired songbook and prayer book of God's people, leading the heart through praise, lament, and hope to the coming King.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalms is unlike any other book of the Bible. Where most of Scripture is God speaking to his people, the Psalms are largely God's people speaking back to him, yet they are no less inspired for it. The LORD gave his people these very words so that they would know how to come to him. Across one hundred and fifty songs we find praise that overflows in worship, laments that pour out grief and even complaint, thanksgivings that recount God's rescue, songs of trust that rest in his care, wisdom psalms that contrast the two ways of life, and royal psalms that celebrate the king God has set on his throne. Whatever the human heart can feel, the Psalms have a song for it.</p>
+          <p>The collection is not a random anthology but a carefully arranged book in five parts, often called the five Books of the Psalter, deliberately echoing the five books of Moses. Each Book closes with a burst of praise, and the whole collection rises toward an unbroken crescendo of hallelujahs at the end. The journey moves from the trouble and conflict of the early Books, through the crisis of a fallen kingdom, toward the renewed confidence that the LORD reigns and will reign forever. Psalm 1 opens the whole book by setting the blessed, law-loving person against the wicked, and Psalm 2 immediately introduces the LORD's anointed King, framing everything that follows.</p>
+          <p>Above all, the Psalms are about the LORD and his Messiah. Many psalms speak of David and the kings in his line, but their language so often overflows the bounds of any earthly king that they reach forward to David's greater Son. Jesus quoted the Psalms more than any other Old Testament book, applying songs like Psalm 2, Psalm 22, and Psalm 110 to himself, and on the cross he prayed their words. To read the Psalms in the light of the whole canon is to hear the voice of Christ in them, the suffering and victorious King who leads his people in praise. In learning to pray the Psalms, the church learns to pray with him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>Book I (Pss 1-41): The Two Ways and the Anointed King</strong> — The Psalter opens with Psalm 1's blessed man and Psalm 2's enthroned Messiah, then gives a long sequence of mostly Davidic psalms. Here the cries of the righteous sufferer rise amid enemies and betrayal, yet always lean on the LORD's covenant faithfulness, anticipating the King who will suffer and be vindicated.</li>
+          <li><strong>Book II (Pss 42-72): Longing for God and the Reign of the King</strong> — This Book broadens beyond David to the sons of Korah and others, marked by deep thirst for God and prayers from distance and distress. It closes with Psalm 72, a royal prayer for the king's just and worldwide reign, ending the first half of the Psalter with a vision of a kingdom that fills the earth.</li>
+          <li><strong>Book III (Pss 73-89): Crisis and the Faithfulness of God</strong> — Dominated by the psalms of Asaph and the sons of Korah, this Book is the darkest stretch of the Psalter, wrestling with the prosperity of the wicked, the apparent silence of God, and the collapse of the kingdom. Psalm 89 ends in anguished questions about the covenant with David, leaving the reader longing for an answer.</li>
+          <li><strong>Book IV (Pss 90-106): The LORD Reigns</strong> — Answering the crisis of Book III, this Book returns to Moses (Psalm 90) and proclaims again and again that the LORD himself is King, enthroned above the nations and from everlasting to everlasting. Even when human kings fail, the eternal God reigns, and his people find their true refuge in him alone.</li>
+          <li><strong>Book V (Pss 107-150): Redemption, Pilgrimage, and Endless Praise</strong> — The final Book gathers thanksgiving for redemption, the great Psalm 119 on God's word, the Songs of Ascents for pilgrims (Pss 120-134), the messianic Psalm 110, and the Hallel psalms, building to the closing Hallelujah chorus of Psalms 146-150 where everything that has breath praises the LORD.</li>
+          <li><strong>The Genres: How the Psalms Sing</strong> — Across all five Books run recognizable kinds of song: hymns of praise, laments individual and communal, thanksgivings, psalms of trust, wisdom psalms, royal and messianic psalms, and pilgrimage songs. Learning these genres helps the reader feel how each psalm works and how it teaches us to bring our whole life to God.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh, the LORD</strong> — The God of the covenant is the center and the great theme of every psalm: he is the LORD who hears, the King who reigns, the Shepherd who leads, the Rock and Refuge, the Judge of the earth, and the One whose steadfast love endures forever. Whether praised or pleaded with, he is always the One to whom the Psalms turn.</li>
+          <li><strong>David</strong> — The shepherd-king of Israel is named in the titles of more psalms than any other, the sweet singer who poured out his joys, fears, sins, and triumphs in song. His life of suffering before glory makes his psalms a pattern of faith, and his throne becomes the seed of messianic hope.</li>
+          <li><strong>The Sons of Korah</strong> — A guild of Levitical temple singers descended from Korah, credited with a cluster of psalms (such as 42-49 and 84-88) marked by deep longing for God's presence and love for his dwelling place, voices of those who served in worship.</li>
+          <li><strong>Asaph</strong> — A chief musician appointed in David's day, named over a group of psalms (50 and 73-83) that wrestle honestly with the justice of God, the suffering of the faithful, and the history of Israel, often speaking as a prophet calling the people back to the LORD.</li>
+          <li><strong>The Messiah, the Son of David</strong> — Throughout the Psalms a figure emerges who is more than any earthly king: the LORD's Anointed, the suffering and exalted Lord at God's right hand. The New Testament reads psalms like 2, 22, and 110 as fulfilled in Jesus, the true King who prays, suffers, reigns, and leads his people in praise.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 23:1 (WEB)</p>
+          <p class="verse__text">Yahweh is my shepherd: I shall lack nothing.</p>
+        </blockquote>
+          <p>No verse captures the heart of the Psalms more simply than this. In the middle of a book full of enemies, danger, and the valley of the shadow of death, the believer can still say that the LORD himself is his shepherd, and therefore he lacks nothing. This is faith stripped to its core: not the absence of trouble, but the presence of God. The same Shepherd who led David is the Good Shepherd who lays down his life for the sheep, so that all who follow him can sing this song with confidence. The Psalms teach us to rest here, in the sufficient and faithful care of God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>God invites his people to bring every emotion to him in honest prayer, from highest joy to deepest grief, without pretense.</li>
+          <li>Praise is the proper response of all creation to the LORD, who is good and whose steadfast love endures forever.</li>
+          <li>Lament is an act of faith, not unbelief: it carries pain to God rather than away from him.</li>
+          <li>The LORD reigns as King over all the earth, so his people can trust him even when human kings and powers fail.</li>
+          <li>God's word is a treasure to be loved, meditated on, and obeyed as a lamp for the believer's path.</li>
+          <li>The Psalms point beyond David to Christ, the suffering and victorious King who leads his people in worship.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>Delight in God's word shapes a flourishing life</strong> The blessed person meditates on the LORD's law day and night and becomes like a fruitful tree planted by water (Psalm 1:2-3, WEB).</li>
+            <li><strong>The LORD shepherds his people through every valley</strong> Even in the valley of the shadow of death, the believer fears no evil because God is present to comfort and guide (Psalm 23:4, WEB).</li>
+            <li><strong>Worship is a glad command for all the earth</strong> Every land is called to shout for joy and serve the LORD with gladness, coming before his presence with singing (Psalm 100:1-2, WEB).</li>
+            <li><strong>Honest lament still ends in hope</strong> The Psalms pour out raw complaint to God, yet repeatedly turn the soul back to hope in him as Savior and refuge (Psalm 42:5, WEB).</li>
+            <li><strong>The Anointed King will rule the nations</strong> God sets his King on Zion and gives him the nations as an inheritance, a promise fulfilled in Christ (Psalm 2:6-8, WEB).</li>
+            <li><strong>All breath exists to praise the LORD</strong> The Psalter ends with the call for everything that has breath to praise Yahweh, the goal of every redeemed life (Psalm 150:6, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>What different kinds of psalms have you noticed (praise, lament, thanksgiving, wisdom, royal), and how does each one help you pray?</li>
+            <li>How does the honesty of the Psalms, including their laments and complaints, change the way you think you are allowed to come to God?</li>
+            <li>Why is it significant that the whole Psalter is arranged to rise toward unending praise in Psalms 146-150?</li>
+            <li>What does Psalm 23 teach us about who God is and what it means to trust him through hardship?</li>
+            <li>How do the messianic psalms (such as 2, 22, and 110) deepen your understanding of who Jesus is?</li>
+            <li>Which psalm has God used most in your own life, and how could you make praying the Psalms a regular practice this week?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Help the group name the genres they have met and notice how each gives language for a different season; praise lifts us up, lament gives words to pain, thanksgiving recalls God's rescue, and wisdom shows the two ways of living.</li>
+            <li>Draw out how the Psalms model a faith bold enough to tell God everything; encourage members that bringing grief and even anger to God is an act of trust, not rebellion, because it keeps the conversation with him going.</li>
+            <li>Point to the shape of the book: it begins amid trouble and conflict and ends in a chorus of hallelujahs, picturing the journey of faith that moves through suffering toward the everlasting praise of God.</li>
+            <li>Let the group sit in the comfort of Psalm 23: God is a personal Shepherd who provides, leads, protects, and welcomes us home; connect this to Jesus as the Good Shepherd who lays down his life for the sheep.</li>
+            <li>Show how the New Testament applies these psalms to Jesus, the King enthroned (Ps 2), the sufferer forsaken and vindicated (Ps 22), and the Lord at God's right hand (Ps 110); the Psalms were on Jesus' own lips.</li>
+            <li>This is the personal-application question, so keep it gentle and unhurried. Invite members to share a treasured psalm without pressure, and suggest a simple rhythm of praying one psalm a day as a way to let Scripture teach them to pray.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="psalms.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="psalms.html">All Chapters</a>
+          <a class="btn btn--accent" href="psalms-1.html">Start with Psalms 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ecclesiastes 10: Wisdom and Folly — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ecclesiastes 10: proverbs contrasting wisdom and folly in speech, work, and leadership, and the power of small things to undo great good." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ecclesiastes-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ecclesiastes, Chapter 10
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ecclesiastes.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ecclesiastes · Chapter 10</span>
+        <h1>Ecclesiastes 10: Wisdom and Folly</h1>
+        <p class="lead">A collection of proverbs contrasts the steady ways of wisdom with the self-defeating speech and conduct of the fool.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-10">
+            <span>Scripture — Ecclesiastes Chapter 10</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-10">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-10-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-10-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-10-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-10-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ecclesiastes 10 (WEB)</p>
+            <p><strong>1</strong> Dead flies cause the oil of the perfumer to produce an evil odor; so does a little folly outweigh wisdom and honor.</p>
+            <p><strong>2</strong> A wise man’s heart is at his right hand, but a fool’s heart at his left.</p>
+            <p><strong>3</strong> Yes also, when the fool walks by the way, his understanding fails him, and he says to everyone that he is a fool.</p>
+            <p><strong>4</strong> If the spirit of the ruler rises up against you, don’t leave your place; for gentleness lays great offenses to rest.</p>
+            <p><strong>5</strong> There is an evil which I have seen under the sun, the sort of error which proceeds from the ruler.</p>
+            <p><strong>6</strong> Folly is set in great dignity, and the rich sit in a low place.</p>
+            <p><strong>7</strong> I have seen servants on horses, and princes walking like servants on the earth.</p>
+            <p><strong>8</strong> He who digs a pit may fall into it; and whoever breaks through a wall may be bitten by a snake.</p>
+            <p><strong>9</strong> Whoever carves out stones may be injured by them. Whoever splits wood may be endangered thereby.</p>
+            <p><strong>10</strong> If the ax is blunt, and one doesn’t sharpen the edge, then he must use more strength; but skill brings success.</p>
+            <p><strong>11</strong> If the snake bites before it is charmed, then is there no profit for the charmer’s tongue.</p>
+            <p><strong>12</strong> The words of a wise man’s mouth are gracious; but a fool is swallowed by his own lips.</p>
+            <p><strong>13</strong> The beginning of the words of his mouth is foolishness; and the end of his talk is mischievous madness.</p>
+            <p><strong>14</strong> A fool also multiplies words. Man doesn’t know what will be; and that which will be after him, who can tell him?</p>
+            <p><strong>15</strong> The labor of fools wearies every one of them; for he doesn’t know how to go to the city.</p>
+            <p><strong>16</strong> Woe to you, land, when your king is a child, and your princes eat in the morning!</p>
+            <p><strong>17</strong> Happy are you, land, when your king is the son of nobles, and your princes eat in due season, for strength, and not for drunkenness!</p>
+            <p><strong>18</strong> By slothfulness the roof sinks in; and through idleness of the hands the house leaks.</p>
+            <p><strong>19</strong> A feast is made for laughter, and wine makes the life glad; and money is the answer for all things.</p>
+            <p><strong>20</strong> Don’t curse the king, no, not in your thoughts; and don’t curse the rich in your bedroom: for a bird of the sky may carry your voice, and that which has wings may tell the matter.</p>
+            </div>
+            <div class="scripture-text" id="web-10-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ecclesiastes 10 (KJV)</p>
+            <p><strong>1</strong> Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.</p>
+            <p><strong>2</strong> A wise man’s heart is at his right hand; but a fool’s heart at his left.</p>
+            <p><strong>3</strong> Yea also, when he that is a fool walketh by the way, his wisdom faileth him, and he saith to every one that he is a fool.</p>
+            <p><strong>4</strong> If the spirit of the ruler rise up against thee, leave not thy place; for yielding pacifieth great offences.</p>
+            <p><strong>5</strong> There is an evil which I have seen under the sun, as an error which proceedeth from the ruler:</p>
+            <p><strong>6</strong> Folly is set in great dignity, and the rich sit in low place.</p>
+            <p><strong>7</strong> I have seen servants upon horses, and princes walking as servants upon the earth.</p>
+            <p><strong>8</strong> He that diggeth a pit shall fall into it; and whoso breaketh an hedge, a serpent shall bite him.</p>
+            <p><strong>9</strong> Whoso removeth stones shall be hurt therewith; and he that cleaveth wood shall be endangered thereby.</p>
+            <p><strong>10</strong> If the iron be blunt, and he do not whet the edge, then must he put to more strength: but wisdom is profitable to direct.</p>
+            <p><strong>11</strong> Surely the serpent will bite without enchantment; and a babbler is no better.</p>
+            <p><strong>12</strong> The words of a wise man’s mouth are gracious; but the lips of a fool will swallow up himself.</p>
+            <p><strong>13</strong> The beginning of the words of his mouth is foolishness: and the end of his talk is mischievous madness.</p>
+            <p><strong>14</strong> A fool also is full of words: a man cannot tell what shall be; and what shall be after him, who can tell him?</p>
+            <p><strong>15</strong> The labour of the foolish wearieth every one of them, because he knoweth not how to go to the city.</p>
+            <p><strong>16</strong> Woe to thee, O land, when thy king is a child, and thy princes eat in the morning!</p>
+            <p><strong>17</strong> Blessed art thou, O land, when thy king is the son of nobles, and thy princes eat in due season, for strength, and not for drunkenness!</p>
+            <p><strong>18</strong> By much slothfulness the building decayeth; and through idleness of the hands the house droppeth through.</p>
+            <p><strong>19</strong> A feast is made for laughter, and wine maketh merry: but money answereth all things.</p>
+            <p><strong>20</strong> Curse not the king, no not in thy thought; and curse not the rich in thy bedchamber: for a bird of the air shall carry the voice, and that which hath wings shall tell the matter.</p>
+            </div>
+            <div class="scripture-text" id="web-10-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ecclesiastes 10 (ASV)</p>
+            <p><strong>1</strong> Dead flies cause the oil of the perfumer to send forth an evil odor; so doth a little folly outweigh wisdom and honor.</p>
+            <p><strong>2</strong> A wise man’s heart is at his right hand; but a fool’s heart at his left.</p>
+            <p><strong>3</strong> Yea also, when the fool walketh by the way, his understanding faileth him, and he saith to every one that he is a fool.</p>
+            <p><strong>4</strong> If the spirit of the ruler rise up against thee, leave not thy place; for gentleness allayeth great offences.</p>
+            <p><strong>5</strong> There is an evil which I have seen under the sun, as it were an error which proceedeth from the ruler:</p>
+            <p><strong>6</strong> folly is set in great dignity, and the rich sit in a low place.</p>
+            <p><strong>7</strong> I have seen servants upon horses, and princes walking like servants upon the earth.</p>
+            <p><strong>8</strong> He that diggeth a pit shall fall into it; and whoso breaketh through a wall, a serpent shall bite him.</p>
+            <p><strong>9</strong> Whoso heweth out stones shall be hurt therewith; and he that cleaveth wood is endangered thereby.</p>
+            <p><strong>10</strong> If the iron be blunt, and one do not whet the edge, then must he put to more strength: but wisdom is profitable to direct.</p>
+            <p><strong>11</strong> If the serpent bite before it is charmed, then is there no advantage in the charmer.</p>
+            <p><strong>12</strong> The words of a wise man’s mouth are gracious; but the lips of a fool will swallow up himself.</p>
+            <p><strong>13</strong> The beginning of the words of his mouth is foolishness; and the end of his talk is mischievous madness.</p>
+            <p><strong>14</strong> A fool also multiplieth words: yet man knoweth not what shall be; and that which shall be after him, who can tell him?</p>
+            <p><strong>15</strong> The labor of fools wearieth every one of them; for he knoweth not how to go to the city.</p>
+            <p><strong>16</strong> Woe to thee, O land, when thy king is a child, and thy princes eat in the morning!</p>
+            <p><strong>17</strong> Happy art thou, O land, when thy king is the son of nobles, and thy princes eat in due season, for strength, and not for drunkenness!</p>
+            <p><strong>18</strong> By slothfulness the roof sinketh in; and through idleness of the hands the house leaketh.</p>
+            <p><strong>19</strong> A feast is made for laughter, and wine maketh glad the life; and money answereth all things.</p>
+            <p><strong>20</strong> Revile not the king, no, not in thy thought; and revile not the rich in thy bedchamber: for a bird of the heavens shall carry the voice, and that which hath wings shall tell the matter.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This chapter is a string of proverbs sharpening the contrast between wisdom and folly. As dead flies spoil the perfumer's ointment, so a little folly outweighs great wisdom and honor—small failings can ruin a good reputation. The wise heart inclines rightly, the fool's wrongly, and the fool announces his folly to everyone simply by the way he walks. The Preacher counsels calm before an angry ruler, for gentleness can quiet great offenses, and he laments the topsy-turvy world where fools are exalted and the worthy are brought low, servants ride while princes walk. Several proverbs warn that careless work carries its own dangers—digging a pit, breaking a wall, quarrying stones, splitting wood—while skill and forethought bring success; a blunt ax means harder labor. The fool multiplies words, his talk beginning in foolishness and ending in madness, and he wearies himself because he does not even know the way to town. The Preacher pronounces woe on a land whose leaders feast and indulge, and blessing on one whose rulers are noble and disciplined. He closes with prudent counsel: do not curse the king or the rich even in private, for word has a way of carrying on wings.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The Preacher (Qoheleth)</strong> — The wise teacher who gathers proverbs contrasting the steady, skillful ways of wisdom with the careless speech and conduct of folly.</li>
+          <li><strong>The fool</strong> — The one whose folly betrays him in his walk and his words, who multiplies speech, lacks skill, and undoes his own good with a little foolishness.</li>
+          <li><strong>Rulers and princes</strong> — Leaders whose character shapes a whole land—blessing when noble and disciplined, woe when childish and self-indulgent.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ecclesiastes 10:12 (WEB)</p>
+          <p class="verse__text">The words of a wise man’s mouth are gracious; but a fool is swallowed by his own lips.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>A little folly can spoil a great deal of wisdom and honor, so small failings matter.</li>
+          <li>Our speech reveals our hearts—gracious words mark the wise, while fools are undone by their own lips.</li>
+          <li>Skill and forethought make our labor more effective than brute force.</li>
+          <li>The character of leaders shapes the wellbeing of a whole community.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-10">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-10">
+            <ul class="lesson-list">
+            <li><strong>Small failings can ruin great good.</strong> “Dead flies cause the oil of the perfumer to produce an evil odor; so does a little folly outweigh wisdom and honor” (Ecclesiastes 10:1, WEB). Guard the small things that can spoil a life of integrity.</li>
+            <li><strong>Gentleness disarms anger.</strong> “Gentleness lays great offenses to rest” (Ecclesiastes 10:4, WEB). A calm, measured response can defuse conflict that hot words would only inflame.</li>
+            <li><strong>Wise words are gracious.</strong> “The words of a wise man's mouth are gracious; but a fool is swallowed by his own lips” (Ecclesiastes 10:12, WEB). Our speech either builds others up or brings ruin on ourselves.</li>
+            <li><strong>Skill brings success.</strong> When the ax is blunt one must use more strength, “but skill brings success” (Ecclesiastes 10:10, WEB). Wisdom applies thought and preparation, not just effort.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-10">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-10">
+            <ol class="study-questions">
+            <li>What does the image of dead flies in perfume (10:1) teach about the power of small failings?</li>
+            <li>How do a person's words and walk reveal whether they are wise or foolish (10:2-3, 12-14)?</li>
+            <li>Why does the Preacher commend gentleness before an angry ruler (10:4), and how does that apply to conflict today?</li>
+            <li>What is the difference between effort and skill in the proverb of the blunt ax (10:10)?</li>
+            <li>Where in your own speech do you most need the grace and restraint of wisdom rather than the careless words of folly?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-10">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-10">
+            <ol class="study-questions">
+            <li>Just as a few dead flies can spoil a whole jar of costly perfume, a small amount of folly can outweigh and undo a reputation built on wisdom and honor (10:1). The proverb warns us to take the little things seriously—small compromises, careless words, minor lapses—because they can corrupt much good.</li>
+            <li>The fool's heart inclines the wrong way, and his folly shows even in how he walks, while his words multiply into madness; the wise speak graciously (10:2-3, 12-14). Both conduct and speech are windows into the heart. What overflows from our mouths and is displayed in our daily manner reveals our true wisdom or folly.</li>
+            <li>He counsels staying calm rather than storming off, because a gentle, composed response can quiet even great offenses (10:4). Today this applies to handling conflict with bosses, authorities, and one another: a soft answer and patient bearing often defuse tension that angry reaction would only escalate.</li>
+            <li>Effort alone, like chopping with a blunt ax, wastes energy and yields poor results; skill—sharpening the ax, planning wisely—makes the same work far more effective (10:10). Wisdom is not merely working harder but working thoughtfully, applying forethought and preparation to the tasks God gives.</li>
+            <li>This is a personal-application question. Invite members to reflect honestly on their habits of speech—gossip, harshness, careless humor, too many words—and to name one area where gracious restraint is needed. As leader, keep the tone humble and self-examining rather than accusatory, since all of us stumble in what we say.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ecclesiastes-9.html">← Ecclesiastes 9</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ecclesiastes.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ecclesiastes-11.html">Ecclesiastes 11 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 147: He Heals the Brokenhearted — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 147: a Hallelujah hymn praising the God who names the stars, heals the brokenhearted, rules the weather, and feeds the world by his word." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 147
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 147</span>
+        <h1>Psalms 147: He Heals the Brokenhearted</h1>
+        <p class="lead">A Hallelujah hymn praising the God who counts the stars yet binds up wounds, ruling the weather and feeding the world by his swift word.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-147">
+            <span>Scripture — Psalms Chapter 147</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-147">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-147-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-147-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-147-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-147-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 147 (WEB)</p>
+            <p><strong>1</strong> Praise Yah, for it is good to sing praises to our God; for it is pleasant and fitting to praise him.</p>
+            <p><strong>2</strong> Yahweh builds up Jerusalem. He gathers together the outcasts of Israel.</p>
+            <p><strong>3</strong> He heals the broken in heart, and binds up their wounds.</p>
+            <p><strong>4</strong> He counts the number of the stars. He calls them all by their names.</p>
+            <p><strong>5</strong> Great is our Lord, and mighty in power. His understanding is infinite.</p>
+            <p><strong>6</strong> Yahweh upholds the humble. He brings the wicked down to the ground.</p>
+            <p><strong>7</strong> Sing to Yahweh with thanksgiving. Sing praises on the harp to our God,</p>
+            <p><strong>8</strong> who covers the sky with clouds, who prepares rain for the earth, who makes grass grow on the mountains.</p>
+            <p><strong>9</strong> He provides food for the livestock, and for the young ravens when they call.</p>
+            <p><strong>10</strong> He doesn’t delight in the strength of the horse. He takes no pleasure in the legs of a man.</p>
+            <p><strong>11</strong> Yahweh takes pleasure in those who fear him, in those who hope in his loving kindness.</p>
+            <p><strong>12</strong> Praise Yahweh, Jerusalem! Praise your God, Zion!</p>
+            <p><strong>13</strong> For he has strengthened the bars of your gates. He has blessed your children within you.</p>
+            <p><strong>14</strong> He makes peace in your borders. He fills you with the finest of the wheat.</p>
+            <p><strong>15</strong> He sends out his commandment to the earth. His word runs very swiftly.</p>
+            <p><strong>16</strong> He gives snow like wool, and scatters frost like ashes.</p>
+            <p><strong>17</strong> He hurls down his hail like pebbles. Who can stand before his cold?</p>
+            <p><strong>18</strong> He sends out his word, and melts them. He causes his wind to blow, and the waters flow.</p>
+            <p><strong>19</strong> He shows his word to Jacob; his statutes and his ordinances to Israel.</p>
+            <p><strong>20</strong> He has not done this for just any nation. They don’t know his ordinances. Praise Yah!</p>
+            </div>
+            <div class="scripture-text" id="web-147-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 147 (KJV)</p>
+            <p><strong>1</strong> Praise ye the Lord: for it is good to sing praises unto our God; for it is pleasant; and praise is comely.</p>
+            <p><strong>2</strong> The Lord doth build up Jerusalem: he gathereth together the outcasts of Israel.</p>
+            <p><strong>3</strong> He healeth the broken in heart, and bindeth up their wounds.</p>
+            <p><strong>4</strong> He telleth the number of the stars; he calleth them all by their names.</p>
+            <p><strong>5</strong> Great is our Lord, and of great power: his understanding is infinite.</p>
+            <p><strong>6</strong> The Lord lifteth up the meek: he casteth the wicked down to the ground.</p>
+            <p><strong>7</strong> Sing unto the Lord with thanksgiving; sing praise upon the harp unto our God:</p>
+            <p><strong>8</strong> Who covereth the heaven with clouds, who prepareth rain for the earth, who maketh grass to grow upon the mountains.</p>
+            <p><strong>9</strong> He giveth to the beast his food, and to the young ravens which cry.</p>
+            <p><strong>10</strong> He delighteth not in the strength of the horse: he taketh not pleasure in the legs of a man.</p>
+            <p><strong>11</strong> The Lord taketh pleasure in them that fear him, in those that hope in his mercy.</p>
+            <p><strong>12</strong> Praise the Lord, O Jerusalem; praise thy God, O Zion.</p>
+            <p><strong>13</strong> For he hath strengthened the bars of thy gates; he hath blessed thy children within thee.</p>
+            <p><strong>14</strong> He maketh peace in thy borders, and filleth thee with the finest of the wheat.</p>
+            <p><strong>15</strong> He sendeth forth his commandment upon earth: his word runneth very swiftly.</p>
+            <p><strong>16</strong> He giveth snow like wool: he scattereth the hoarfrost like ashes.</p>
+            <p><strong>17</strong> He casteth forth his ice like morsels: who can stand before his cold?</p>
+            <p><strong>18</strong> He sendeth out his word, and melteth them: he causeth his wind to blow, and the waters flow.</p>
+            <p><strong>19</strong> He sheweth his word unto Jacob, his statutes and his judgments unto Israel.</p>
+            <p><strong>20</strong> He hath not dealt so with any nation: and as for his judgments, they have not known them. Praise ye the Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-147-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 147 (ASV)</p>
+            <p><strong>1</strong> Praise ye Jehovah; For it is good to sing praises unto our God; For it is pleasant, andpraise is comely.</p>
+            <p><strong>2</strong> Jehovah doth build up Jerusalem; He gathereth together the outcasts of Israel.</p>
+            <p><strong>3</strong> He healeth the broken in heart, And bindeth up their wounds.</p>
+            <p><strong>4</strong> He counteth the number of the stars; He calleth them all by their names.</p>
+            <p><strong>5</strong> Great is our Lord, and mighty in power; His understanding is infinite.</p>
+            <p><strong>6</strong> Jehovah upholdeth the meek: He bringeth the wicked down to the ground.</p>
+            <p><strong>7</strong> Sing unto Jehovah with thanksgiving; Sing praises upon the harp unto our God,</p>
+            <p><strong>8</strong> Who covereth the heavens with clouds, Who prepareth rain for the earth, Who maketh grass to grow upon the mountains.</p>
+            <p><strong>9</strong> He giveth to the beast his food, Andto the young ravens which cry.</p>
+            <p><strong>10</strong> He delighteth not in the strength of the horse: He taketh no pleasure in the legs of a man.</p>
+            <p><strong>11</strong> Jehovah taketh pleasure in them that fear him, In those that hope in his lovingkindness.</p>
+            <p><strong>12</strong> Praise Jehovah, O Jerusalem; Praise thy God, O Zion.</p>
+            <p><strong>13</strong> For he hath strengthened the bars of thy gates; He hath blessed thy children within thee.</p>
+            <p><strong>14</strong> He maketh peace in thy borders; He filleth thee with the finest of the wheat.</p>
+            <p><strong>15</strong> He sendeth out his commandment upon earth; His word runneth very swiftly.</p>
+            <p><strong>16</strong> He giveth snow like wool; He scattereth the hoar-frost like ashes.</p>
+            <p><strong>17</strong> He casteth forth his ice like morsels: Who can stand before his cold?</p>
+            <p><strong>18</strong> He sendeth out his word, and melteth them: He causeth his wind to blow, and the waters flow.</p>
+            <p><strong>19</strong> He showeth his word unto Jacob, His statutes and his ordinances unto Israel.</p>
+            <p><strong>20</strong> He hath not dealt so with any nation; And as for his ordinances, they have not known them. Praise ye Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 147 is a Hallelujah hymn that praises God for joining cosmic power with personal tenderness. It calls praise good, pleasant, and fitting, then celebrates Yahweh who builds up Jerusalem and gathers the outcasts of Israel. In one of Scripture's most tender lines, the God who heals the brokenhearted and binds up their wounds is the very same God who counts the number of the stars and calls them all by name—his understanding is infinite. He upholds the humble and brings the wicked to the ground. The psalm summons thanksgiving and song, describing how God covers the sky with clouds, prepares rain, makes grass grow, and provides food for the livestock and the young ravens when they call. Strikingly, God takes no pleasure in the strength of the horse or the legs of a man, but delights in those who fear him and hope in his loving kindness. The psalm then turns to Jerusalem and Zion, praising God for strengthening her gates, blessing her children, making peace in her borders, and filling her with the finest wheat. It marvels at the swift power of his word, which commands the snow, frost, hail, and wind. Above all, God has shown his word to Jacob, his statutes to Israel, a privilege given to no other nation. For believers, the God who names every star and heals every broken heart is the same Lord who came near in Christ.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The worshiping congregation</strong> — The gathered people called to sing praise to God as good, pleasant, and fitting.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who names the stars and heals the brokenhearted, rules the weather, feeds creation, and gave his word to Israel.</li>
+          <li><strong>Jerusalem and Zion</strong> — The city and people whom God builds up, gathers, strengthens, and fills with the finest of the wheat.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 147:3 (WEB)</p>
+          <p class="verse__text">He heals the broken in heart, and binds up their wounds.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The God who counts and names the stars also tends to the wounds of broken hearts.</li>
+          <li>Praise is not a chore but something good, pleasant, and fitting for God's people.</li>
+          <li>God delights not in human strength or speed but in those who fear him and hope in his love.</li>
+          <li>The same word that commands snow, frost, and wind is the word God graciously revealed to his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-147">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-147">
+            <ul class="lesson-list">
+            <li><strong>Cosmic power serves personal tenderness.</strong> "He heals the broken in heart... He counts the number of the stars" (Psalm 147:3-4, WEB)—the same God does both.</li>
+            <li><strong>Praise is fitting and good.</strong> "It is pleasant and fitting to praise him" (Psalm 147:1, WEB)—worship suits us, like a thing made for its purpose.</li>
+            <li><strong>God delights in trusting hearts, not raw strength.</strong> "Yahweh takes pleasure in those who fear him, in those who hope in his loving kindness" (Psalm 147:11, WEB).</li>
+            <li><strong>God's word is powerful and revealed.</strong> "He sends out his commandment to the earth. His word runs very swiftly" (Psalm 147:15, WEB)—the word that rules nature is given to us.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-147">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-147">
+            <ol class="study-questions">
+            <li>Why is it striking that the same verse-cluster speaks of healing hearts and counting stars?</li>
+            <li>What does it mean that praise is "pleasant and fitting" rather than merely required?</li>
+            <li>Why does God take no pleasure in human strength or speed, and what does he delight in instead?</li>
+            <li>How does it encourage you that God's powerful word over creation is the same word he revealed to his people?</li>
+            <li>What broken or wounded place in your life would you bring to the God who "binds up their wounds"?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-147">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-147">
+            <ol class="study-questions">
+            <li>It joins God's infinite power with intimate care, refusing to let us imagine that a God big enough to name the stars is too busy for our wounds. Discuss how this guards us from both a distant God and a small one.</li>
+            <li>Praise is described as suiting God's people, like the right activity for which we were made. It is good for us, not just owed by us. Explore how reframing worship as fitting changes our motivation to praise.</li>
+            <li>Human horsepower and ability cannot earn or impress God; he treasures reverent trust instead. This levels the strong and lifts the weak. Discuss where the group is tempted to rely on their own strength rather than hope in God.</li>
+            <li>The word that commands snow and wind is the same word God spoke to Israel and speaks to us in Scripture. This gives weight and trust to the word we read. Encourage members to approach the Bible as that same powerful word.</li>
+            <li>This is a gentle personal-application question. Invite members to name a wound—grief, betrayal, failure—and bring it to the God who heals the brokenhearted. As leader, hold space gently and point to Christ, who was wounded for us.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-146.html">← Psalms 146</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-148.html">Psalms 148 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

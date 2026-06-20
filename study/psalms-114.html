@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 114: When Israel Went Out of Egypt — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 114: a poetic Hallel psalm celebrating the exodus, when the sea fled, the Jordan turned back, and rock became water." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 114
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 114</span>
+        <h1>Psalms 114: When Israel Went Out of Egypt</h1>
+        <p class="lead">A vivid Hallel poem on the exodus, where sea and river flee and mountains skip at the presence of the God who turns rock into water.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-114">
+            <span>Scripture — Psalms Chapter 114</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-114">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-114-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-114-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-114-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-114-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 114 (WEB)</p>
+            <p><strong>1</strong> When Israel went out of Egypt, the house of Jacob from a people of foreign language;</p>
+            <p><strong>2</strong> Judah became his sanctuary, Israel his dominion.</p>
+            <p><strong>3</strong> The sea saw it, and fled. The Jordan was driven back.</p>
+            <p><strong>4</strong> The mountains skipped like rams, the little hills like lambs.</p>
+            <p><strong>5</strong> What was it, you sea, that you fled? You Jordan, that you turned back?</p>
+            <p><strong>6</strong> You mountains, that you skipped like rams; you little hills, like lambs?</p>
+            <p><strong>7</strong> Tremble, you earth, at the presence of the Lord, at the presence of the God of Jacob,</p>
+            <p><strong>8</strong> who turned the rock into a pool of water, the flint into a spring of waters.</p>
+            </div>
+            <div class="scripture-text" id="web-114-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 114 (KJV)</p>
+            <p><strong>1</strong> When Israel went out of Egypt, the house of Jacob from a people of strange language;</p>
+            <p><strong>2</strong> Judah was his sanctuary, and Israel his dominion.</p>
+            <p><strong>3</strong> The sea saw it, and fled: Jordan was driven back.</p>
+            <p><strong>4</strong> The mountains skipped like rams, and the little hills like lambs.</p>
+            <p><strong>5</strong> What ailed thee, O thou sea, that thou fleddest? thou Jordan, that thou wast driven back?</p>
+            <p><strong>6</strong> Ye mountains, that ye skipped like rams; and ye little hills, like lambs?</p>
+            <p><strong>7</strong> Tremble, thou earth, at the presence of the Lord, at the presence of the God of Jacob;</p>
+            <p><strong>8</strong> Which turned the rock into a standing water, the flint into a fountain of waters.</p>
+            </div>
+            <div class="scripture-text" id="web-114-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 114 (ASV)</p>
+            <p><strong>1</strong> When Israel went forth out of Egypt, The house of Jacob from a people of strange language;</p>
+            <p><strong>2</strong> Judah became his sanctuary, Israel his dominion.</p>
+            <p><strong>3</strong> The sea saw it, and fled; The Jordan was driven back.</p>
+            <p><strong>4</strong> The mountains skipped like rams, The little hills like lambs.</p>
+            <p><strong>5</strong> What aileth thee, O thou sea, that thou fleest? Thou Jordan, that thou turnest back?</p>
+            <p><strong>6</strong> Ye mountains, that ye skip like rams; Ye little hills, like lambs?</p>
+            <p><strong>7</strong> Tremble, thou earth, at the presence of the Lord, At the presence of the God of Jacob,</p>
+            <p><strong>8</strong> Who turned the rock into a pool of water, The flint into a fountain of waters.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 114 is a short, vivid poem celebrating the exodus, the foundational rescue at the heart of Israel's story and of the Passover Hallel. It recalls the moment Israel went out of Egypt, the house of Jacob from a people of foreign tongue, and Judah became God's sanctuary and Israel his dominion. The psalm then personifies creation responding to God's presence: the sea saw it and fled, the Jordan was driven back, the mountains skipped like rams and the little hills like lambs. With playful poetic questions, the psalmist asks the sea why it fled and the mountains why they skipped, only to answer with a summons: "Tremble, you earth, at the presence of the Lord." The closing image is the God who turned the rock into a pool of water and the flint into a spring—a reminder of his provision in the wilderness. The whole earth shakes before the God of Jacob, the same God who in Christ leads his people out of a greater bondage, parts the waters of judgment, and gives living water to all who thirst. Creation itself bows before the Redeemer.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>Israel (the house of Jacob)</strong> — God's redeemed people brought out of Egypt, becoming his sanctuary and dominion.</li>
+          <li><strong>Yahweh / the God of Jacob</strong> — The Lord at whose presence the sea flees, the river turns back, and the mountains tremble and skip.</li>
+          <li><strong>Creation</strong> — The sea, the Jordan, mountains, and hills personified as fleeing, turning, and skipping before their Maker.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 114:7 (WEB)</p>
+          <p class="verse__text">Tremble, you earth, at the presence of the Lord, at the presence of the God of Jacob,</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The exodus is the great picture of God's saving power, worth remembering and singing (Psalm 114:1-2).</li>
+          <li>All creation responds to the presence of its Maker (Psalm 114:3-4).</li>
+          <li>Reverent awe—trembling at God's presence—is a fitting response to who he is (Psalm 114:7).</li>
+          <li>God provides for his people even in the wilderness, turning rock into water (Psalm 114:8).</li>
+          <li>The exodus foreshadows the greater redemption Christ accomplishes for his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-114">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-114">
+            <ul class="lesson-list">
+            <li><strong>Redemption makes a people God's home.</strong> "Judah became his sanctuary, Israel his dominion" (Psalm 114:2, WEB). God saves a people in order to dwell among them.</li>
+            <li><strong>Creation obeys its Maker.</strong> "The sea saw it, and fled. The Jordan was driven back" (Psalm 114:3, WEB). Nature itself answers to God's presence.</li>
+            <li><strong>God's presence calls for awe.</strong> "Tremble, you earth, at the presence of the Lord" (Psalm 114:7, WEB). The right response to his nearness is reverent wonder.</li>
+            <li><strong>God provides in the desert.</strong> He "turned the rock into a pool of water, the flint into a spring of waters" (Psalm 114:8, WEB), and Christ is that rock who gives us living water (1 Corinthians 10:4).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-114">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-114">
+            <ol class="study-questions">
+            <li>Why do you think this psalm pictures the sea, river, and mountains reacting to God?</li>
+            <li>What does it mean for us that God made Israel his "sanctuary" and "dominion"?</li>
+            <li>How should the call to "tremble" at God's presence shape our worship?</li>
+            <li>The rock became water in the wilderness; how does Paul connect that rock to Christ (1 Corinthians 10:4)?</li>
+            <li>When have you seen God provide unexpectedly, as water from a rock, in a dry season of your life?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-114">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-114">
+            <ol class="study-questions">
+            <li>The vivid poetry shows that all creation recognizes and responds to its Lord (114:3-4). If sea and mountain tremble before him, how much more should we. Help the group feel the wonder of a God before whom nature itself moves.</li>
+            <li>By redemption God made Israel the place of his presence and rule (114:2). He saves a people to dwell with them—a purpose fulfilled as the church becomes God's temple in Christ. Encourage members that we are saved into God's near presence.</li>
+            <li>Trembling here is reverent awe, not terror that drives us away (114:7). Worship that has lost its sense of God's awesome presence has lost something vital. Invite reflection on recovering holy reverence.</li>
+            <li>Paul says the rock that gave water "was Christ" (1 Corinthians 10:4). The provision in the wilderness pointed to Jesus, who gives living water to all who thirst (John 7:37-38). Draw the line gently from the exodus to the gospel.</li>
+            <li>This is a personal-application question. Invite members to recall a dry season where God provided unexpectedly, and to give thanks. As leader, close by praising the God who still brings water from the rock.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-113.html">← Psalms 113</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-115.html">Psalms 115 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 37: Fret Not, Trust Instead — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 37: David urges the righteous not to fret over evildoers but to trust, delight, commit, and rest in Yahweh, who upholds the just." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 37
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 37</span>
+        <h1>Psalms 37: Fret Not, Trust Instead</h1>
+        <p class="lead">When evildoers seem to prosper, David counsels the righteous to stop fretting, trust the Lord, delight in him, and patiently wait for the future he secures.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-37">
+            <span>Scripture — Psalms Chapter 37</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-37">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-37-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-37-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-37-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-37-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 37 (WEB)</p>
+            <p><strong>1</strong> Don’t fret because of evildoers, neither be envious against those who work unrighteousness.</p>
+            <p><strong>2</strong> For they shall soon be cut down like the grass, and wither like the green herb.</p>
+            <p><strong>3</strong> Trust in Yahweh, and do good. Dwell in the land, and enjoy safe pasture.</p>
+            <p><strong>4</strong> Also delight yourself in Yahweh, and he will give you the desires of your heart.</p>
+            <p><strong>5</strong> Commit your way to Yahweh. Trust also in him, and he will do this:</p>
+            <p><strong>6</strong> he will make your righteousness go out as the light, and your justice as the noon day sun.</p>
+            <p><strong>7</strong> Rest in Yahweh, and wait patiently for him. Don’t fret because of him who prospers in his way, because of the man who makes wicked plots happen.</p>
+            <p><strong>8</strong> Cease from anger, and forsake wrath. Don’t fret, it leads only to evildoing.</p>
+            <p><strong>9</strong> For evildoers shall be cut off, but those who wait for Yahweh shall inherit the land.</p>
+            <p><strong>10</strong> For yet a little while, and the wicked will be no more. Yes, though you look for his place, he isn’t there.</p>
+            <p><strong>11</strong> But the humble shall inherit the land, and shall delight themselves in the abundance of peace.</p>
+            <p><strong>12</strong> The wicked plots against the just, and gnashes at him with his teeth.</p>
+            <p><strong>13</strong> The Lord will laugh at him, for he sees that his day is coming.</p>
+            <p><strong>14</strong> The wicked have drawn out the sword, and have bent their bow, to cast down the poor and needy, to kill those who are upright on the path.</p>
+            <p><strong>15</strong> Their sword shall enter into their own heart. Their bows shall be broken.</p>
+            <p><strong>16</strong> Better is a little that the righteous has, than the abundance of many wicked.</p>
+            <p><strong>17</strong> For the arms of the wicked shall be broken, but Yahweh upholds the righteous.</p>
+            <p><strong>18</strong> Yahweh knows the days of the perfect. Their inheritance shall be forever.</p>
+            <p><strong>19</strong> They shall not be disappointed in the time of evil. In the days of famine they shall be satisfied.</p>
+            <p><strong>20</strong> But the wicked shall perish. The enemies of Yahweh shall be like the beauty of the fields. They will vanish— vanish like smoke.</p>
+            <p><strong>21</strong> The wicked borrow, and don’t pay back, but the righteous give generously.</p>
+            <p><strong>22</strong> For such as are blessed by him shall inherit the land. Those who are cursed by him shall be cut off.</p>
+            <p><strong>23</strong> A man’s goings are established by Yahweh. He delights in his way.</p>
+            <p><strong>24</strong> Though he stumble, he shall not fall, for Yahweh holds him up with his hand.</p>
+            <p><strong>25</strong> I have been young, and now am old, yet I have not seen the righteous forsaken, nor his children begging for bread.</p>
+            <p><strong>26</strong> All day long he deals graciously, and lends. His seed is blessed.</p>
+            <p><strong>27</strong> Depart from evil, and do good. Live securely forever.</p>
+            <p><strong>28</strong> For Yahweh loves justice, and doesn’t forsake his saints. They are preserved forever, but the children of the wicked shall be cut off.</p>
+            <p><strong>29</strong> The righteous shall inherit the land, and live in it forever.</p>
+            <p><strong>30</strong> The mouth of the righteous talks of wisdom. His tongue speaks justice.</p>
+            <p><strong>31</strong> The law of his God is in his heart. None of his steps shall slide.</p>
+            <p><strong>32</strong> The wicked watches the righteous, and seeks to kill him.</p>
+            <p><strong>33</strong> Yahweh will not leave him in his hand, nor condemn him when he is judged.</p>
+            <p><strong>34</strong> Wait for Yahweh, and keep his way, and he will exalt you to inherit the land. When the wicked are cut off, you shall see it.</p>
+            <p><strong>35</strong> I have seen the wicked in great power, spreading himself like a green tree in its native soil.</p>
+            <p><strong>36</strong> But he passed away, and behold, he was not. Yes, I sought him, but he could not be found.</p>
+            <p><strong>37</strong> Mark the perfect man, and see the upright, for there is a future for the man of peace.</p>
+            <p><strong>38</strong> As for transgressors, they shall be destroyed together. The future of the wicked shall be cut off.</p>
+            <p><strong>39</strong> But the salvation of the righteous is from Yahweh. He is their stronghold in the time of trouble.</p>
+            <p><strong>40</strong> Yahweh helps them, and rescues them. He rescues them from the wicked, and saves them, Because they have taken refuge in him.</p>
+            </div>
+            <div class="scripture-text" id="web-37-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 37 (KJV)</p>
+            <p><strong>1</strong> Fret not thyself because of evildoers, neither be thou envious against the workers of iniquity.</p>
+            <p><strong>2</strong> For they shall soon be cut down like the grass, and wither as the green herb.</p>
+            <p><strong>3</strong> Trust in the Lord, and do good; so shalt thou dwell in the land, and verily thou shalt be fed.</p>
+            <p><strong>4</strong> Delight thyself also in the Lord; and he shall give thee the desires of thine heart.</p>
+            <p><strong>5</strong> Commit thy way unto the Lord; trust also in him; and he shall bring it to pass.</p>
+            <p><strong>6</strong> And he shall bring forth thy righteousness as the light, and thy judgment as the noonday.</p>
+            <p><strong>7</strong> Rest in the Lord, and wait patiently for him: fret not thyself because of him who prospereth in his way, because of the man who bringeth wicked devices to pass.</p>
+            <p><strong>8</strong> Cease from anger, and forsake wrath: fret not thyself in any wise to do evil.</p>
+            <p><strong>9</strong> For evildoers shall be cut off: but those that wait upon the Lord, they shall inherit the earth.</p>
+            <p><strong>10</strong> For yet a little while, and the wicked shall not be: yea, thou shalt diligently consider his place, and it shall not be.</p>
+            <p><strong>11</strong> But the meek shall inherit the earth; and shall delight themselves in the abundance of peace.</p>
+            <p><strong>12</strong> The wicked plotteth against the just, and gnasheth upon him with his teeth.</p>
+            <p><strong>13</strong> The Lord shall laugh at him: for he seeth that his day is coming.</p>
+            <p><strong>14</strong> The wicked have drawn out the sword, and have bent their bow, to cast down the poor and needy, and to slay such as be of upright conversation.</p>
+            <p><strong>15</strong> Their sword shall enter into their own heart, and their bows shall be broken.</p>
+            <p><strong>16</strong> A little that a righteous man hath is better than the riches of many wicked.</p>
+            <p><strong>17</strong> For the arms of the wicked shall be broken: but the Lord upholdeth the righteous.</p>
+            <p><strong>18</strong> The Lord knoweth the days of the upright: and their inheritance shall be for ever.</p>
+            <p><strong>19</strong> They shall not be ashamed in the evil time: and in the days of famine they shall be satisfied.</p>
+            <p><strong>20</strong> But the wicked shall perish, and the enemies of the Lord shall be as the fat of lambs: they shall consume; into smoke shall they consume away.</p>
+            <p><strong>21</strong> The wicked borroweth, and payeth not again: but the righteous sheweth mercy, and giveth.</p>
+            <p><strong>22</strong> For such as be blessed of him shall inherit the earth; and they that be cursed of him shall be cut off.</p>
+            <p><strong>23</strong> The steps of a good man are ordered by the Lord: and he delighteth in his way.</p>
+            <p><strong>24</strong> Though he fall, he shall not be utterly cast down: for the Lord upholdeth him with his hand.</p>
+            <p><strong>25</strong> I have been young, and now am old; yet have I not seen the righteous forsaken, nor his seed begging bread.</p>
+            <p><strong>26</strong> He is ever merciful, and lendeth; and his seed is blessed.</p>
+            <p><strong>27</strong> Depart from evil, and do good; and dwell for evermore.</p>
+            <p><strong>28</strong> For the Lord loveth judgment, and forsaketh not his saints; they are preserved for ever: but the seed of the wicked shall be cut off.</p>
+            <p><strong>29</strong> The righteous shall inherit the land, and dwell therein for ever.</p>
+            <p><strong>30</strong> The mouth of the righteous speaketh wisdom, and his tongue talketh of judgment.</p>
+            <p><strong>31</strong> The law of his God is in his heart; none of his steps shall slide.</p>
+            <p><strong>32</strong> The wicked watcheth the righteous, and seeketh to slay him.</p>
+            <p><strong>33</strong> The Lord will not leave him in his hand, nor condemn him when he is judged.</p>
+            <p><strong>34</strong> Wait on the Lord, and keep his way, and he shall exalt thee to inherit the land: when the wicked are cut off, thou shalt see it.</p>
+            <p><strong>35</strong> I have seen the wicked in great power, and spreading himself like a green bay tree.</p>
+            <p><strong>36</strong> Yet he passed away, and, lo, he was not: yea, I sought him, but he could not be found.</p>
+            <p><strong>37</strong> Mark the perfect man, and behold the upright: for the end of that man is peace.</p>
+            <p><strong>38</strong> But the transgressors shall be destroyed together: the end of the wicked shall be cut off.</p>
+            <p><strong>39</strong> But the salvation of the righteous is of the Lord: he is their strength in the time of trouble.</p>
+            <p><strong>40</strong> And the Lord shall help them, and deliver them: he shall deliver them from the wicked, and save them, because they trust in him.</p>
+            </div>
+            <div class="scripture-text" id="web-37-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 37 (ASV)</p>
+            <p><strong>1</strong> Fret not thyself because of evil-doers, Neither be thou envious against them that work unrighteousness.</p>
+            <p><strong>2</strong> For they shall soon be cut down like the grass, And wither as the green herb.</p>
+            <p><strong>3</strong> Trust in Jehovah, and do good; Dwell in the land, and feed onhisfaithfulness.</p>
+            <p><strong>4</strong> Delight thyself also in Jehovah; And he will give thee the desires of thy heart.</p>
+            <p><strong>5</strong> Commit thy way unto Jehovah; Trust also in him, and he will bring it to pass.</p>
+            <p><strong>6</strong> And he will make thy righteousness to go forth as the light, And thy justice as the noonday.</p>
+            <p><strong>7</strong> Rest in Jehovah, and wait patiently for him: Fret not thyself because of him who prospereth in his way, Because of the man who bringeth wicked devices to pass.</p>
+            <p><strong>8</strong> Cease from anger, and forsake wrath: Fret not thyself, it tendeth only to evil-doing.</p>
+            <p><strong>9</strong> For evil-doers shall be cut off; But those that wait for Jehovah, they shall inherit the land.</p>
+            <p><strong>10</strong> For yet a little while, and the wicked shall not be: Yea, thou shalt diligently consider his place, and he shall not be.</p>
+            <p><strong>11</strong> But the meek shall inherit the land, And shall delight themselves in the abundance of peace.</p>
+            <p><strong>12</strong> The wicked plotteth against the just, And gnasheth upon him with his teeth.</p>
+            <p><strong>13</strong> The Lord will laugh at him; For he seeth that his day is coming.</p>
+            <p><strong>14</strong> The wicked have drawn out the sword, and have bent their bow, To cast down the poor and needy, To slay such as are upright in the way.</p>
+            <p><strong>15</strong> Their sword shall enter into their own heart, And their bows shall be broken.</p>
+            <p><strong>16</strong> Better is a little that the righteous hath Than the abundance of many wicked.</p>
+            <p><strong>17</strong> For the arms of the wicked shall be broken; But Jehovah upholdeth the righteous.</p>
+            <p><strong>18</strong> Jehovah knoweth the days of the perfect; And their inheritance shall be for ever.</p>
+            <p><strong>19</strong> They shall not be put to shame in the time of evil; And in the days of famine they shall be satisfied.</p>
+            <p><strong>20</strong> But the wicked shall perish, And the enemies of Jehovah shall be as the fat of lambs: They shall consume; in smoke shall they consume away.</p>
+            <p><strong>21</strong> The wicked borroweth, and payeth not again; But the righteous dealeth graciously, and giveth.</p>
+            <p><strong>22</strong> For such as are blessed of him shall inherit the land; And they that are cursed of him shall be cut off.</p>
+            <p><strong>23</strong> A man’s goings are established of Jehovah; And he delighteth in his way.</p>
+            <p><strong>24</strong> Though he fall, he shall not be utterly cast down; For Jehovah upholdeth him with his hand.</p>
+            <p><strong>25</strong> I have been young, and now am old; Yet have I not seen the righteous forsaken, Nor his seed begging bread.</p>
+            <p><strong>26</strong> All the day long he dealeth graciously, and lendeth; And his seed is blessed.</p>
+            <p><strong>27</strong> Depart from evil, and do good; And dwell for evermore.</p>
+            <p><strong>28</strong> For Jehovah loveth justice, And forsaketh not his saints; They are preserved for ever: But the seed of the wicked shall be cut off.</p>
+            <p><strong>29</strong> The righteous shall inherit the land, And dwell therein for ever.</p>
+            <p><strong>30</strong> The mouth of the righteous talketh of wisdom, And his tongue speaketh justice.</p>
+            <p><strong>31</strong> The law of his God is in his heart; None of his steps shall slide.</p>
+            <p><strong>32</strong> The wicked watcheth the righteous, And seeketh to slay him.</p>
+            <p><strong>33</strong> Jehovah will not leave him in his hand, Nor condemn him when he is judged.</p>
+            <p><strong>34</strong> Wait for Jehovah, and keep his way, And he will exalt thee to inherit the land: When the wicked are cut off, thou shalt see it.</p>
+            <p><strong>35</strong> I have seen the wicked in great power, And spreading himself like a green tree in its native soil.</p>
+            <p><strong>36</strong> But one passed by, and, lo, he was not: Yea, I sought him, but he could not be found.</p>
+            <p><strong>37</strong> Mark the perfect man, and behold the upright; For there is ahappyend to the man of peace.</p>
+            <p><strong>38</strong> As for transgressors, they shall be destroyed together: The end of the wicked shall be cut off.</p>
+            <p><strong>39</strong> But the salvation of the righteous is of Jehovah: He is their stronghold in the time of trouble.</p>
+            <p><strong>40</strong> And Jehovah helpeth them, and rescueth them: He rescueth them from the wicked, and saveth them, Because they have taken refuge in him.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This is a wisdom psalm, an acrostic written by an old man passing on the lessons of a long life. Its great theme is the puzzle of why the wicked prosper while the righteous struggle, and its repeated answer is: do not fret. Three times David says "don't fret," pairing each warning with a positive command—trust in the Lord and do good, delight yourself in the Lord, commit your way to him, and rest in him and wait patiently. He insists that the prosperity of evildoers is brief; they will soon be cut down like grass and wither, while the meek will inherit the land and delight in abundant peace. Drawing on decades of observation, David testifies that he has never seen the righteous forsaken nor their children begging bread, for though a good man stumble he shall not fall, because the Lord upholds him with his hand. The psalm contrasts again and again the lasting future of the upright with the certain end of the wicked, who pass away and cannot be found. It closes with assurance that salvation belongs to the righteous and that the Lord is their stronghold in trouble. Jesus took up its central promise in the Beatitudes: "the meek shall inherit the earth."</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The aged psalmist sharing the settled wisdom of a lifetime: trust God and do not fret over the wicked.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who upholds the righteous, secures their inheritance, and laughs at the doomed schemes of the wicked.</li>
+          <li><strong>The righteous and the meek</strong> — Those who trust, delight, and wait, and who will inherit the land and dwell in peace.</li>
+          <li><strong>The wicked</strong> — The prosperous evildoers who plot against the just but will soon be cut down like grass and vanish like smoke.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 37:4 (WEB)</p>
+          <p class="verse__text">Also delight yourself in Yahweh, and he will give you the desires of your heart.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Envy of the wicked is a needless fret, since their prosperity is short-lived.</li>
+          <li>Trust, delight, commitment, and patient rest are the antidotes to anxious comparison.</li>
+          <li>When we delight in the Lord, he reshapes the very desires he then fulfills.</li>
+          <li>Even when the righteous stumble, the Lord holds them up and secures their future.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-37">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-37">
+            <ul class="lesson-list">
+            <li><strong>Fretting solves nothing.</strong> "Don't fret, it leads only to evildoing" (Psalm 37:8, WEB). Anxious comparison with the wicked corrodes the heart and never changes the outcome.</li>
+            <li><strong>Delight reorders desire.</strong> "Delight yourself in Yahweh, and he will give you the desires of your heart" (Psalm 37:4, WEB). When God becomes our joy, our wants are transformed into things he loves to grant.</li>
+            <li><strong>Commit your way and let God act.</strong> "Commit your way to Yahweh. Trust also in him, and he will do this" (Psalm 37:5, WEB). We hand him the path and the outcome and stop carrying both ourselves.</li>
+            <li><strong>The meek inherit, not the mighty.</strong> "The humble shall inherit the land, and shall delight themselves in the abundance of peace" (Psalm 37:11, WEB)—words Jesus made his own in the Beatitudes.</li>
+            <li><strong>The righteous are upheld through stumbling.</strong> "Though he stumble, he shall not fall, for Yahweh holds him up with his hand" (Psalm 37:24, WEB). Falling is not the end when God's hand is beneath you.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-37">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-37">
+            <ol class="study-questions">
+            <li>Why does David tell us "don't fret" three times, and what does he tell us to do instead?</li>
+            <li>What does it mean to "delight yourself in Yahweh," and how does that shape our desires (verse 4)?</li>
+            <li>How does taking the long view of the wicked's future help us stop envying them?</li>
+            <li>What life experience does David offer in verses 25-26, and how does it encourage you?</li>
+            <li>Where are you tempted to fret or compare, and how could you trust and delight instead?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-37">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-37">
+            <ol class="study-questions">
+            <li>David repeats "don't fret" (37:1, 7, 8) because envy of the wicked is a persistent temptation. In place of fretting he commands trust, delight, commitment, and patient rest (37:3-7). The cure for anxiety is not gritted teeth but a reorientation of the heart toward God.</li>
+            <li>To delight in the Lord is to find our deepest joy in him, not merely in his gifts (37:4). As he becomes our treasure, our desires are gradually conformed to his, so the promise is not a blank check but a transformed heart whose wants God gladly fulfills.</li>
+            <li>The wicked will soon be cut down like grass, vanish like smoke, and be sought but not found (37:2, 20, 36). Seeing their end strips away the illusion that their prosperity is enviable. The patient, eternal perspective makes present injustice bearable.</li>
+            <li>David says that across a long life he never saw the righteous forsaken or their children begging bread (37:25-26). This is the testimony of experience, not naive optimism. It encourages us that God's faithfulness to his people is dependable across generations, even when seasons are hard.</li>
+            <li>This is a personal-application question. Invite members to name where they feel the pull of envy or worry, and to choose one of David's antidotes—trust, delight, commit, or rest—to practice this week. As leader, keep it gentle; fretting is a habit unlearned slowly through renewed delight in God.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-36.html">← Psalms 36</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-38.html">Psalms 38 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

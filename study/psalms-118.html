@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 118: The Stone the Builders Rejected — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 118: a thanksgiving psalm where the Lord's steadfast love rescues, the rejected stone becomes the cornerstone, and we rejoice in the day he has made." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 118
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 118</span>
+        <h1>Psalms 118: The Stone the Builders Rejected</h1>
+        <p class="lead">The climactic Hallel psalm of thanksgiving, celebrating the Lord's enduring love, the gate of the righteous, and the rejected stone made the cornerstone.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-118">
+            <span>Scripture — Psalms Chapter 118</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-118">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-118-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-118-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-118-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-118-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 118 (WEB)</p>
+            <p><strong>1</strong> Give thanks to Yahweh, for he is good, for his loving kindness endures forever.</p>
+            <p><strong>2</strong> Let Israel now say that his loving kindness endures forever.</p>
+            <p><strong>3</strong> Let the house of Aaron now say that his loving kindness endures forever.</p>
+            <p><strong>4</strong> Now let those who fear Yahweh say that his loving kindness endures forever.</p>
+            <p><strong>5</strong> Out of my distress, I called on Yah. Yah answered me with freedom.</p>
+            <p><strong>6</strong> Yahweh is on my side. I will not be afraid. What can man do to me?</p>
+            <p><strong>7</strong> Yahweh is on my side among those who help me. Therefore I will look in triumph at those who hate me.</p>
+            <p><strong>8</strong> It is better to take refuge in Yahweh, than to put confidence in man.</p>
+            <p><strong>9</strong> It is better to take refuge in Yahweh, than to put confidence in princes.</p>
+            <p><strong>10</strong> All the nations surrounded me, but in Yahweh’s name, I cut them off.</p>
+            <p><strong>11</strong> They surrounded me, yes, they surrounded me. In Yahweh’s name I indeed cut them off.</p>
+            <p><strong>12</strong> They surrounded me like bees. They are quenched like the burning thorns. In Yahweh’s name I cut them off.</p>
+            <p><strong>13</strong> You pushed me back hard, to make me fall, but Yahweh helped me.</p>
+            <p><strong>14</strong> Yah is my strength and song. He has become my salvation.</p>
+            <p><strong>15</strong> The voice of rejoicing and salvation is in the tents of the righteous. “The right hand of Yahweh does valiantly.</p>
+            <p><strong>16</strong> The right hand of Yahweh is exalted! The right hand of Yahweh does valiantly!”</p>
+            <p><strong>17</strong> I will not die, but live, and declare Yah’s works.</p>
+            <p><strong>18</strong> Yah has punished me severely, but he has not given me over to death.</p>
+            <p><strong>19</strong> Open to me the gates of righteousness. I will enter into them. I will give thanks to Yah.</p>
+            <p><strong>20</strong> This is the gate of Yahweh; the righteous will enter into it.</p>
+            <p><strong>21</strong> I will give thanks to you, for you have answered me, and have become my salvation.</p>
+            <p><strong>22</strong> The stone which the builders rejected has become the head of the corner.</p>
+            <p><strong>23</strong> This is Yahweh’s doing. It is marvelous in our eyes.</p>
+            <p><strong>24</strong> This is the day that Yahweh has made. We will rejoice and be glad in it!</p>
+            <p><strong>25</strong> Save us now, we beg you, Yahweh! Yahweh, we beg you, send prosperity now.</p>
+            <p><strong>26</strong> Blessed is he who comes in Yahweh’s name! We have blessed you out of Yahweh’s house.</p>
+            <p><strong>27</strong> Yahweh is God, and he has given us light. Bind the sacrifice with cords, even to the horns of the altar.</p>
+            <p><strong>28</strong> You are my God, and I will give thanks to you. You are my God, I will exalt you.</p>
+            <p><strong>29</strong> Oh give thanks to Yahweh, for he is good, for his loving kindness endures forever.</p>
+            </div>
+            <div class="scripture-text" id="web-118-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 118 (KJV)</p>
+            <p><strong>1</strong> O give thanks unto the Lord; for he is good: because his mercy endureth for ever.</p>
+            <p><strong>2</strong> Let Israel now say, that his mercy endureth for ever.</p>
+            <p><strong>3</strong> Let the house of Aaron now say, that his mercy endureth for ever.</p>
+            <p><strong>4</strong> Let them now that fear the Lord say, that his mercy endureth for ever.</p>
+            <p><strong>5</strong> I called upon the Lord in distress: the Lord answered me, and set me in a large place.</p>
+            <p><strong>6</strong> The Lord is on my side; I will not fear: what can man do unto me?</p>
+            <p><strong>7</strong> The Lord taketh my part with them that help me: therefore shall I see my desire upon them that hate me.</p>
+            <p><strong>8</strong> It is better to trust in the Lord than to put confidence in man.</p>
+            <p><strong>9</strong> It is better to trust in the Lord than to put confidence in princes.</p>
+            <p><strong>10</strong> All nations compassed me about: but in the name of the Lord will I destroy them.</p>
+            <p><strong>11</strong> They compassed me about; yea, they compassed me about: but in the name of the Lord I will destroy them.</p>
+            <p><strong>12</strong> They compassed me about like bees; they are quenched as the fire of thorns: for in the name of the Lord I will destroy them.</p>
+            <p><strong>13</strong> Thou hast thrust sore at me that I might fall: but the Lord helped me.</p>
+            <p><strong>14</strong> The Lord is my strength and song, and is become my salvation.</p>
+            <p><strong>15</strong> The voice of rejoicing and salvation is in the tabernacles of the righteous: the right hand of the Lord doeth valiantly.</p>
+            <p><strong>16</strong> The right hand of the Lord is exalted: the right hand of the Lord doeth valiantly.</p>
+            <p><strong>17</strong> I shall not die, but live, and declare the works of the Lord.</p>
+            <p><strong>18</strong> The Lord hath chastened me sore: but he hath not given me over unto death.</p>
+            <p><strong>19</strong> Open to me the gates of righteousness: I will go into them, and I will praise the Lord:</p>
+            <p><strong>20</strong> This gate of the Lord, into which the righteous shall enter.</p>
+            <p><strong>21</strong> I will praise thee: for thou hast heard me, and art become my salvation.</p>
+            <p><strong>22</strong> The stone which the builders refused is become the head stone of the corner.</p>
+            <p><strong>23</strong> This is the Lord’s doing; it is marvellous in our eyes.</p>
+            <p><strong>24</strong> This is the day which the Lord hath made; we will rejoice and be glad in it.</p>
+            <p><strong>25</strong> Save now, I beseech thee, O Lord: O Lord, I beseech thee, send now prosperity.</p>
+            <p><strong>26</strong> Blessed be he that cometh in the name of the Lord: we have blessed you out of the house of the Lord.</p>
+            <p><strong>27</strong> God is the Lord, which hath shewed us light: bind the sacrifice with cords, even unto the horns of the altar.</p>
+            <p><strong>28</strong> Thou art my God, and I will praise thee: thou art my God, I will exalt thee.</p>
+            <p><strong>29</strong> O give thanks unto the Lord; for he is good: for his mercy endureth for ever.</p>
+            </div>
+            <div class="scripture-text" id="web-118-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 118 (ASV)</p>
+            <p><strong>1</strong> Oh give thanks unto Jehovah; for he is good; For his lovingkindness endureth for ever.</p>
+            <p><strong>2</strong> Let Israel now say, That his lovingkindness endureth for ever.</p>
+            <p><strong>3</strong> Let the house of Aaron now say, That his lovingkindness endureth for ever.</p>
+            <p><strong>4</strong> Let them now that fear Jehovah say, That his lovingkindness endureth for ever.</p>
+            <p><strong>5</strong> Out of my distress I called upon Jehovah: Jehovah answered me and set me in a large place.</p>
+            <p><strong>6</strong> Jehovah is on my side; I will not fear: What can man do unto me?</p>
+            <p><strong>7</strong> Jehovah is on my side among them that help me: Therefore shall I seemy desireupon them that hate me.</p>
+            <p><strong>8</strong> It is better to take refuge in Jehovah Than to put confidence in man.</p>
+            <p><strong>9</strong> It is better to take refuge in Jehovah Than to put confidence in princes.</p>
+            <p><strong>10</strong> All nations compassed me about: In the name of Jehovah I will cut them off.</p>
+            <p><strong>11</strong> They compassed me about; yea, they compassed me about: In the name of Jehovah I will cut them off.</p>
+            <p><strong>12</strong> They compassed me about like bees; they are quenched as the fire of thorns: In the name of Jehovah I will cut them off.</p>
+            <p><strong>13</strong> Thou didst thrust sore at me that I might fall; But Jehovah helped me.</p>
+            <p><strong>14</strong> Jehovah is my strength and song; And he is become my salvation.</p>
+            <p><strong>15</strong> The voice of rejoicing and salvation is in the tents of the righteous: The right hand of Jehovah doeth valiantly.</p>
+            <p><strong>16</strong> The right hand of Jehovah is exalted: The right hand of Jehovah doeth valiantly.</p>
+            <p><strong>17</strong> I shall not die, but live, And declare the works of Jehovah.</p>
+            <p><strong>18</strong> Jehovah hath chastened me sore; But he hath not given me over unto death.</p>
+            <p><strong>19</strong> Open to me the gates of righteousness: I will enter into them, I will give thanks unto Jehovah.</p>
+            <p><strong>20</strong> This is the gate of Jehovah; The righteous shall enter into it.</p>
+            <p><strong>21</strong> I will give thanks unto thee; for thou hast answered me, And art become my salvation.</p>
+            <p><strong>22</strong> The stone which the builders rejected Is become the head of the corner.</p>
+            <p><strong>23</strong> This is Jehovah’s doing; It is marvellous in our eyes.</p>
+            <p><strong>24</strong> This is the day which Jehovah hath made; We will rejoice and be glad in it.</p>
+            <p><strong>25</strong> Save now, we beseech thee, O Jehovah: O Jehovah, we beseech thee, send now prosperity.</p>
+            <p><strong>26</strong> Blessed be he that cometh in the name of Jehovah: We have blessed you out of the house of Jehovah.</p>
+            <p><strong>27</strong> Jehovah is God, and he hath given us light: Bind the sacrifice with cords, even unto the horns of the altar.</p>
+            <p><strong>28</strong> Thou art my God, and I will give thanks unto thee: Thou art my God, I will exalt thee.</p>
+            <p><strong>29</strong> Oh give thanks unto Jehovah; for he is good; For his lovingkindness endureth for ever.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Psalm 118 is the final psalm of the Egyptian Hallel and the climactic thanksgiving sung at Passover—likely the last hymn Jesus sang with his disciples before Gethsemane. It opens and closes with the refrain, "Give thanks to Yahweh, for he is good, for his loving kindness endures forever," summoning Israel, the house of Aaron, and all who fear God to declare it. The psalmist recounts being surrounded by enemies and pushed hard to fall, yet the Lord answered and became his salvation. Two of the psalm's lines became cornerstones of Christian faith. First, "The stone which the builders rejected has become the head of the corner"—a verse Jesus applied to himself, and Peter preached as the heart of the gospel: the rejected one is now the cornerstone of God's saving work. Second, "This is the day that Yahweh has made. We will rejoice and be glad in it!"—words that have shaped Christian worship and especially the celebration of resurrection. The crowds cried "Blessed is he who comes in Yahweh’s name" as Jesus entered Jerusalem. The psalm ends in festal joy at the gates of righteousness, pointing to Christ, the rejected stone, the gate, the salvation, and the very reason for our gladness.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>The delivered psalmist</strong> — The one surrounded by enemies and pushed to fall, who finds the Lord his strength, song, and salvation, and enters the gates with thanksgiving.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The good God whose loving kindness endures forever, who answers the cry of the distressed and makes the rejected stone the cornerstone.</li>
+          <li><strong>The rejected stone</strong> — The cornerstone the builders refused, fulfilled in Christ, rejected by men yet exalted by God (Matthew 21:42; Acts 4:11).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 118:22 (WEB)</p>
+          <p class="verse__text">The stone which the builders rejected has become the head of the corner.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's steadfast love endures forever and is worth declaring again and again (Psalm 118:1-4).</li>
+          <li>It is better to take refuge in the Lord than to trust in people or princes (Psalm 118:8-9).</li>
+          <li>The rejected stone becoming the cornerstone is fulfilled in Christ (Psalm 118:22; Matthew 21:42).</li>
+          <li>Every new day is a gift from God to be received with rejoicing (Psalm 118:24).</li>
+          <li>Salvation belongs to the Lord, who turns distress into songs of victory (Psalm 118:14).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-118">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-118">
+            <ul class="lesson-list">
+            <li><strong>His love endures forever.</strong> "Give thanks to Yahweh, for he is good, for his loving kindness endures forever" (Psalm 118:1, WEB). This unchanging love frames all our thanksgiving.</li>
+            <li><strong>Refuge in God beats trust in man.</strong> "It is better to take refuge in Yahweh, than to put confidence in man" (Psalm 118:8, WEB). God never fails those who shelter in him.</li>
+            <li><strong>The rejected stone is the cornerstone.</strong> "The stone which the builders rejected has become the head of the corner" (Psalm 118:22, WEB). Christ, refused by men, is God's foundation.</li>
+            <li><strong>Every day is God's gift.</strong> "This is the day that Yahweh has made. We will rejoice and be glad in it!" (Psalm 118:24, WEB). Joy is the fitting response to God's good gifts.</li>
+            <li><strong>Blessed is the coming King.</strong> "Blessed is he who comes in Yahweh’s name!" (Psalm 118:26, WEB), cried by the crowds as Jesus entered Jerusalem (Matthew 21:9).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-118">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-118">
+            <ol class="study-questions">
+            <li>Why does the psalm repeat that God's "loving kindness endures forever" so many times?</li>
+            <li>What is the difference between taking refuge in the Lord and putting confidence in people?</li>
+            <li>Jesus applied verse 22 to himself. How is he the "stone which the builders rejected"?</li>
+            <li>How can the truth that "this is the day that Yahweh has made" reshape an ordinary or difficult day?</li>
+            <li>Where do you most need to move your confidence from people or circumstances onto the Lord?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-118">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-118">
+            <ol class="study-questions">
+            <li>The fourfold refrain (118:1-4, 29) drives the truth deep: God's love does not run out. Repetition is for our hearts, which forget quickly. Help the group make this refrain a steady confession in changing seasons.</li>
+            <li>Refuge in God is dependable; confidence in people, even good leaders, can fail (118:8-9). The psalm does not despise human help but refuses to ultimately rest in it. Encourage members to locate their final trust in God.</li>
+            <li>Jesus quoted verse 22 against the leaders who rejected him (Matthew 21:42), and Peter preached it boldly (Acts 4:11). The one crucified and refused by the builders is the cornerstone God laid for salvation. Draw the line clearly to Christ.</li>
+            <li>This is partly personal. Verse 24 frames each day as God's own gift, inviting joy regardless of circumstance. Help members receive even hard days from God's hand with gladness rooted in his goodness.</li>
+            <li>This is a personal-application question. Invite members to name where they lean on people or circumstances and to shift that trust to the Lord, their refuge. As leader, close by giving thanks for the cornerstone and the day God has made.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-117.html">← Psalms 117</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-119.html">Psalms 119 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

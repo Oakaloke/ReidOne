@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 38: Wounds of My Sin — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 38: David, burdened by sin and sickness and deserted by friends, confesses his iniquity and waits in hope for the Lord his salvation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 38
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 38</span>
+        <h1>Psalms 38: Wounds of My Sin</h1>
+        <p class="lead">Crushed under the weight of guilt and sickness, abandoned by friends, David confesses his iniquity and hopes only in the Lord his salvation.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-38">
+            <span>Scripture — Psalms Chapter 38</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-38">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-38-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-38-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-38-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-38-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 38 (WEB)</p>
+            <p><strong>1</strong> Yahweh, don’t rebuke me in your wrath, neither chasten me in your hot displeasure.</p>
+            <p><strong>2</strong> For your arrows have pierced me, your hand presses hard on me.</p>
+            <p><strong>3</strong> There is no soundness in my flesh because of your indignation, neither is there any health in my bones because of my sin.</p>
+            <p><strong>4</strong> For my iniquities have gone over my head. As a heavy burden, they are too heavy for me.</p>
+            <p><strong>5</strong> My wounds are loathsome and corrupt, because of my foolishness.</p>
+            <p><strong>6</strong> I am pained and bowed down greatly. I go mourning all day long.</p>
+            <p><strong>7</strong> For my waist is filled with burning. There is no soundness in my flesh.</p>
+            <p><strong>8</strong> I am faint and severely bruised. I have groaned by reason of the anguish of my heart.</p>
+            <p><strong>9</strong> Lord, all my desire is before you. My groaning is not hidden from you.</p>
+            <p><strong>10</strong> My heart throbs. My strength fails me. As for the light of my eyes, it has also left me.</p>
+            <p><strong>11</strong> My lovers and my friends stand aloof from my plague. My kinsmen stand far away.</p>
+            <p><strong>12</strong> They also who seek after my life lay snares. Those who seek my hurt speak mischievous things, and meditate deceits all day long.</p>
+            <p><strong>13</strong> But I, as a deaf man, don’t hear. I am as a mute man who doesn’t open his mouth.</p>
+            <p><strong>14</strong> Yes, I am as a man who doesn’t hear, in whose mouth are no reproofs.</p>
+            <p><strong>15</strong> For in you, Yahweh, do I hope. You will answer, Lord my God.</p>
+            <p><strong>16</strong> For I said, “Don’t let them gloat over me, or exalt themselves over me when my foot slips.”</p>
+            <p><strong>17</strong> For I am ready to fall. My pain is continually before me.</p>
+            <p><strong>18</strong> For I will declare my iniquity. I will be sorry for my sin.</p>
+            <p><strong>19</strong> But my enemies are vigorous and many. Those who hate me without reason are numerous.</p>
+            <p><strong>20</strong> They who also render evil for good are adversaries to me, because I follow what is good.</p>
+            <p><strong>21</strong> Don’t forsake me, Yahweh. My God, don’t be far from me.</p>
+            <p><strong>22</strong> Hurry to help me, Lord, my salvation.</p>
+            </div>
+            <div class="scripture-text" id="web-38-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 38 (KJV)</p>
+            <p><strong>1</strong> O Lord, rebuke me not in thy wrath: neither chasten me in thy hot displeasure.</p>
+            <p><strong>2</strong> For thine arrows stick fast in me, and thy hand presseth me sore.</p>
+            <p><strong>3</strong> There is no soundness in my flesh because of thine anger; neither is there any rest in my bones because of my sin.</p>
+            <p><strong>4</strong> For mine iniquities are gone over mine head: as an heavy burden they are too heavy for me.</p>
+            <p><strong>5</strong> My wounds stink and are corrupt because of my foolishness.</p>
+            <p><strong>6</strong> I am troubled; I am bowed down greatly; I go mourning all the day long.</p>
+            <p><strong>7</strong> For my loins are filled with a loathsome disease: and there is no soundness in my flesh.</p>
+            <p><strong>8</strong> I am feeble and sore broken: I have roared by reason of the disquietness of my heart.</p>
+            <p><strong>9</strong> Lord, all my desire is before thee; and my groaning is not hid from thee.</p>
+            <p><strong>10</strong> My heart panteth, my strength faileth me: as for the light of mine eyes, it also is gone from me.</p>
+            <p><strong>11</strong> My lovers and my friends stand aloof from my sore; and my kinsmen stand afar off.</p>
+            <p><strong>12</strong> They also that seek after my life lay snares for me: and they that seek my hurt speak mischievous things, and imagine deceits all the day long.</p>
+            <p><strong>13</strong> But I, as a deaf man, heard not; and I was as a dumb man that openeth not his mouth.</p>
+            <p><strong>14</strong> Thus I was as a man that heareth not, and in whose mouth are no reproofs.</p>
+            <p><strong>15</strong> For in thee, O Lord, do I hope: thou wilt hear, O Lord my God.</p>
+            <p><strong>16</strong> For I said, Hear me, lest otherwise they should rejoice over me: when my foot slippeth, they magnify themselves against me.</p>
+            <p><strong>17</strong> For I am ready to halt, and my sorrow is continually before me.</p>
+            <p><strong>18</strong> For I will declare mine iniquity; I will be sorry for my sin.</p>
+            <p><strong>19</strong> But mine enemies are lively, and they are strong: and they that hate me wrongfully are multiplied.</p>
+            <p><strong>20</strong> They also that render evil for good are mine adversaries; because I follow the thing that good is.</p>
+            <p><strong>21</strong> Forsake me not, O Lord: O my God, be not far from me.</p>
+            <p><strong>22</strong> Make haste to help me, O Lord my salvation.</p>
+            </div>
+            <div class="scripture-text" id="web-38-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 38 (ASV)</p>
+            <p><strong>1</strong> O Jehovah, rebuke me not in thy wrath; Neither chasten me in thy hot displeasure.</p>
+            <p><strong>2</strong> For thine arrows stick fast in me, And thy hand presseth me sore.</p>
+            <p><strong>3</strong> There is no soundness in my flesh because of thine indignation; Neither is there any health in my bones because of my sin.</p>
+            <p><strong>4</strong> For mine iniquities are gone over my head: As a heavy burden they are too heavy for me.</p>
+            <p><strong>5</strong> My wounds are loathsome and corrupt, Because of my foolishness.</p>
+            <p><strong>6</strong> I am pained and bowed down greatly; I go mourning all the day long.</p>
+            <p><strong>7</strong> For my loins are filled with burning; And there is no soundness in my flesh.</p>
+            <p><strong>8</strong> I am faint and sore bruised: I have groaned by reason of the disquietness of my heart.</p>
+            <p><strong>9</strong> Lord, all my desire is before thee; And my groaning is not hid from thee.</p>
+            <p><strong>10</strong> My heart throbbeth, my strength faileth me: As for the light of mine eyes, it also is gone from me.</p>
+            <p><strong>11</strong> My lovers and my friends stand aloof from my plague; And my kinsmen stand afar off.</p>
+            <p><strong>12</strong> They also that seek after my life lay snares for me; And they that seek my hurt speak mischievous things, And meditate deceits all the day long.</p>
+            <p><strong>13</strong> But I, as a deaf man, hear not; And I am as a dumb man that openeth not his mouth.</p>
+            <p><strong>14</strong> Yea, I am as a man that heareth not, And in whose mouth are no reproofs.</p>
+            <p><strong>15</strong> For in thee, O Jehovah, do I hope: Thou wilt answer, O Lord my God.</p>
+            <p><strong>16</strong> For I said, Lest they rejoice over me: When my foot slippeth, they magnify themselves against me.</p>
+            <p><strong>17</strong> For I am ready to fall, And my sorrow is continually before me.</p>
+            <p><strong>18</strong> For I will declare mine iniquity; I will be sorry for my sin.</p>
+            <p><strong>19</strong> But mine enemies are lively, and are strong; And they that hate me wrongfully are multiplied.</p>
+            <p><strong>20</strong> They also that render evil for good Are adversaries unto me, because I follow the thing that is good.</p>
+            <p><strong>21</strong> Forsake me not, O Jehovah: O my God, be not far from me.</p>
+            <p><strong>22</strong> Make haste to help me, O Lord, my salvation.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This is a penitential psalm and a lament, the prayer of a man broken by the weight of his own sin. David begs the Lord not to rebuke him in wrath, for God's arrows have pierced him and his hand presses hard upon him. He describes his suffering in vivid bodily terms: there is no soundness in his flesh, his wounds are loathsome, he is faint and severely bruised, and his iniquities have gone over his head like a burden too heavy to bear. His friends and loved ones stand aloof from his plague, while those who seek his life lay snares and speak deceits all day long. Yet in the midst of it David grows strangely silent, like a deaf and mute man who does not answer his accusers, because he is waiting on the Lord. He freely declares his iniquity and is sorry for his sin, refusing to defend himself. The psalm ends in urgent petition: do not forsake me, do not be far from me, hurry to help me, Lord my salvation. It is a model of how a guilty believer can come to God honestly, owning sin without despairing, because the Lord is still his salvation—a hope that finds its rest in Christ who bore our iniquities.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The sin-burdened sufferer who confesses his iniquity, falls silent before his accusers, and waits in hope on the Lord.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God whose discipline David feels yet whose salvation he begs for, the only one he asks to draw near and help.</li>
+          <li><strong>The distant friends and enemies</strong> — Loved ones who stand aloof from his plague and adversaries who lay snares and seek his hurt.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 38:18 (WEB)</p>
+          <p class="verse__text">For I will declare my iniquity. I will be sorry for my sin.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Sin carries a real weight that can press on body, soul, and relationships alike.</li>
+          <li>Honest confession—declaring our iniquity—is the right response to the burden of guilt.</li>
+          <li>We can choose silence before our accusers and entrust our defense to God.</li>
+          <li>Even under God's discipline, we may still call him "my salvation" and ask him to draw near.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-38">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-38">
+            <ul class="lesson-list">
+            <li><strong>Sin is a burden too heavy to carry.</strong> "For my iniquities have gone over my head. As a heavy burden, they are too heavy for me" (Psalm 38:4, WEB). Unaddressed guilt presses down on the whole person.</li>
+            <li><strong>Confess rather than defend.</strong> "For I will declare my iniquity. I will be sorry for my sin" (Psalm 38:18, WEB). David owns his guilt instead of arguing his innocence.</li>
+            <li><strong>Silence can be an act of trust.</strong> "But I, as a deaf man, don't hear" (Psalm 38:13, WEB). David stops answering his accusers because his hope is in God, who will answer for him.</li>
+            <li><strong>Hope endures under discipline.</strong> "For in you, Yahweh, do I hope. You will answer, Lord my God" (Psalm 38:15, WEB). Even while feeling God's heavy hand, David still hopes in him.</li>
+            <li><strong>God is still our salvation.</strong> "Hurry to help me, Lord, my salvation" (Psalm 38:22, WEB). The disciplining hand and the saving hand belong to the same merciful God.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-38">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-38">
+            <ol class="study-questions">
+            <li>How does David describe the effects of his sin on his body and his relationships?</li>
+            <li>Why does David choose to be silent before his accusers (verses 13-14)?</li>
+            <li>What is the significance of David openly declaring his iniquity in verse 18?</li>
+            <li>How can David still call God "my salvation" while feeling God's heavy hand?</li>
+            <li>When guilt weighs on you, how might you bring it to God honestly rather than hiding it?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-38">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-38">
+            <ol class="study-questions">
+            <li>David's iniquities feel like arrows piercing him, a burden over his head, loathsome wounds, and groaning of heart, while friends stand aloof and enemies lay snares (38:2-12). The psalm shows how guilt can affect body, mind, and community together—and yet it is brought into the open before God rather than buried.</li>
+            <li>David falls silent because his hope is in the Lord, not in winning the argument (38:13-15). By refusing to retaliate, he leaves room for God to answer for him. This restraint, born of trust, anticipates Christ, who was silent before his accusers.</li>
+            <li>Declaring his iniquity means owning his sin without excuse (38:18). Rather than defending himself or shifting blame, he confesses and grieves. This honesty is the doorway to mercy; God resists the self-justifying but draws near to the contrite.</li>
+            <li>David knows that God's discipline flows from love, not abandonment, so the same God who chastens is the one who saves (38:22). He does not flee from God in his guilt; he runs toward him. This is the heart of repentance—turning to the Savior even in shame.</li>
+            <li>This is a personal-application question. Gently encourage members to name, even privately, a burden of guilt they have been carrying, and to bring it openly to God who is their salvation. As leader, emphasize that confession leads to relief and nearness, and point to Christ who carried our iniquities so the burden need not crush us.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-37.html">← Psalms 37</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-39.html">Psalms 39 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

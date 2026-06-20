@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Psalms 78: Tell the Next Generation — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Psalm 78: a teaching psalm retelling Israel's history of rebellion and God's mercy, urging each generation to pass on his works and set their hope in him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-psalms-progress" data-study-total="150">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Psalms, Chapter 78
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="psalms.html">← All Chapters</a>
+        <span class="study-meta">The Book of Psalms · Chapter 78</span>
+        <h1>Psalms 78: Tell the Next Generation</h1>
+        <p class="lead">A long historical psalm that retells Israel's rebellion and God's patient mercy, so that children yet unborn will set their hope in God.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-78">
+            <span>Scripture — Psalms Chapter 78</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-78">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-78-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-78-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-78-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-78-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Psalms 78 (WEB)</p>
+            <p><strong>1</strong> Hear my teaching, my people. Turn your ears to the words of my mouth.</p>
+            <p><strong>2</strong> I will open my mouth in a parable. I will utter dark sayings of old,</p>
+            <p><strong>3</strong> Which we have heard and known, and our fathers have told us.</p>
+            <p><strong>4</strong> We will not hide them from their children, telling to the generation to come the praises of Yahweh, his strength, and his wondrous works that he has done.</p>
+            <p><strong>5</strong> For he established a testimony in Jacob, and appointed a teaching in Israel, which he commanded our fathers, that they should make them known to their children;</p>
+            <p><strong>6</strong> that the generation to come might know, even the children who should be born; who should arise and tell their children,</p>
+            <p><strong>7</strong> that they might set their hope in God, and not forget the works of God, but keep his commandments,</p>
+            <p><strong>8</strong> and might not be as their fathers, a stubborn and rebellious generation, a generation that didn’t make their hearts loyal, whose spirit was not steadfast with God.</p>
+            <p><strong>9</strong> The children of Ephraim, being armed and carrying bows, turned back in the day of battle.</p>
+            <p><strong>10</strong> They didn’t keep God’s covenant, and refused to walk in his law.</p>
+            <p><strong>11</strong> They forgot his doings, his wondrous works that he had shown them.</p>
+            <p><strong>12</strong> He did marvelous things in the sight of their fathers, in the land of Egypt, in the field of Zoan.</p>
+            <p><strong>13</strong> He split the sea, and caused them to pass through. He made the waters stand as a heap.</p>
+            <p><strong>14</strong> In the daytime he also led them with a cloud, and all night with a light of fire.</p>
+            <p><strong>15</strong> He split rocks in the wilderness, and gave them drink abundantly as out of the depths.</p>
+            <p><strong>16</strong> He brought streams also out of the rock, and caused waters to run down like rivers.</p>
+            <p><strong>17</strong> Yet they still went on to sin against him, to rebel against the Most High in the desert.</p>
+            <p><strong>18</strong> They tempted God in their heart by asking food according to their desire.</p>
+            <p><strong>19</strong> Yes, they spoke against God. They said, “Can God prepare a table in the wilderness?</p>
+            <p><strong>20</strong> Behold, he struck the rock, so that waters gushed out, and streams overflowed. Can he give bread also? Will he provide flesh for his people?”</p>
+            <p><strong>21</strong> Therefore Yahweh heard, and was angry. A fire was kindled against Jacob, anger also went up against Israel,</p>
+            <p><strong>22</strong> because they didn’t believe in God, and didn’t trust in his salvation.</p>
+            <p><strong>23</strong> Yet he commanded the skies above, and opened the doors of heaven.</p>
+            <p><strong>24</strong> He rained down manna on them to eat, and gave them food from the sky.</p>
+            <p><strong>25</strong> Man ate the bread of angels. He sent them food to the full.</p>
+            <p><strong>26</strong> He caused the east wind to blow in the sky. By his power he guided the south wind.</p>
+            <p><strong>27</strong> He rained also flesh on them as the dust; winged birds as the sand of the seas.</p>
+            <p><strong>28</strong> He let them fall in the midst of their camp, around their habitations.</p>
+            <p><strong>29</strong> So they ate, and were well filled. He gave them their own desire.</p>
+            <p><strong>30</strong> They didn’t turn from their cravings. Their food was yet in their mouths,</p>
+            <p><strong>31</strong> when the anger of God went up against them, killed some of their fattest, and struck down the young men of Israel.</p>
+            <p><strong>32</strong> For all this they still sinned, and didn’t believe in his wondrous works.</p>
+            <p><strong>33</strong> Therefore he consumed their days in vanity, and their years in terror.</p>
+            <p><strong>34</strong> When he killed them, then they inquired after him. They returned and sought God earnestly.</p>
+            <p><strong>35</strong> They remembered that God was their rock, the Most High God, their redeemer.</p>
+            <p><strong>36</strong> But they flattered him with their mouth, and lied to him with their tongue.</p>
+            <p><strong>37</strong> For their heart was not right with him, neither were they faithful in his covenant.</p>
+            <p><strong>38</strong> But he, being merciful, forgave iniquity, and didn’t destroy them. Yes, many times he turned his anger away, and didn’t stir up all his wrath.</p>
+            <p><strong>39</strong> He remembered that they were but flesh, a wind that passes away, and doesn’t come again.</p>
+            <p><strong>40</strong> How often they rebelled against him in the wilderness, and grieved him in the desert!</p>
+            <p><strong>41</strong> They turned again and tempted God, and provoked the Holy One of Israel.</p>
+            <p><strong>42</strong> They didn’t remember his hand, nor the day when he redeemed them from the adversary;</p>
+            <p><strong>43</strong> how he set his signs in Egypt, his wonders in the field of Zoan,</p>
+            <p><strong>44</strong> he turned their rivers into blood, and their streams, so that they could not drink.</p>
+            <p><strong>45</strong> He sent among them swarms of flies, which devoured them; and frogs, which destroyed them.</p>
+            <p><strong>46</strong> He gave also their increase to the caterpillar, and their labor to the locust.</p>
+            <p><strong>47</strong> He destroyed their vines with hail, their sycamore fig trees with frost.</p>
+            <p><strong>48</strong> He gave over their livestock also to the hail, and their flocks to hot thunderbolts.</p>
+            <p><strong>49</strong> He threw on them the fierceness of his anger, wrath, indignation, and trouble, and a band of angels of evil.</p>
+            <p><strong>50</strong> He made a path for his anger. He didn’t spare their soul from death, but gave their life over to the pestilence,</p>
+            <p><strong>51</strong> and struck all the firstborn in Egypt, the chief of their strength in the tents of Ham.</p>
+            <p><strong>52</strong> But he led out his own people like sheep, and guided them in the wilderness like a flock.</p>
+            <p><strong>53</strong> He led them safely, so that they weren’t afraid, but the sea overwhelmed their enemies.</p>
+            <p><strong>54</strong> He brought them to the border of his sanctuary, to this mountain, which his right hand had taken.</p>
+            <p><strong>55</strong> He also drove out the nations before them, allotted them for an inheritance by line, and made the tribes of Israel to dwell in their tents.</p>
+            <p><strong>56</strong> Yet they tempted and rebelled against the Most High God, and didn’t keep his testimonies;</p>
+            <p><strong>57</strong> but turned back, and dealt treacherously like their fathers. They were turned aside like a deceitful bow.</p>
+            <p><strong>58</strong> For they provoked him to anger with their high places, and moved him to jealousy with their engraved images.</p>
+            <p><strong>59</strong> When God heard this, he was angry, and greatly abhorred Israel;</p>
+            <p><strong>60</strong> So that he abandoned the tent of Shiloh, the tent which he placed among men;</p>
+            <p><strong>61</strong> and delivered his strength into captivity, his glory into the adversary’s hand.</p>
+            <p><strong>62</strong> He also gave his people over to the sword, and was angry with his inheritance.</p>
+            <p><strong>63</strong> Fire devoured their young men. Their virgins had no wedding song.</p>
+            <p><strong>64</strong> Their priests fell by the sword, and their widows couldn’t weep.</p>
+            <p><strong>65</strong> Then the Lord awakened as one out of sleep, like a mighty man who shouts by reason of wine.</p>
+            <p><strong>66</strong> He struck his adversaries backward. He put them to a perpetual reproach.</p>
+            <p><strong>67</strong> Moreover he rejected the tent of Joseph, and didn’t choose the tribe of Ephraim,</p>
+            <p><strong>68</strong> But chose the tribe of Judah, Mount Zion which he loved.</p>
+            <p><strong>69</strong> He built his sanctuary like the heights, like the earth which he has established forever.</p>
+            <p><strong>70</strong> He also chose David his servant, and took him from the sheepfolds;</p>
+            <p><strong>71</strong> from following the ewes that have their young, he brought him to be the shepherd of Jacob, his people, and Israel, his inheritance.</p>
+            <p><strong>72</strong> So he was their shepherd according to the integrity of his heart, and guided them by the skillfulness of his hands.</p>
+            </div>
+            <div class="scripture-text" id="web-78-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Psalms 78 (KJV)</p>
+            <p><strong>1</strong> Give ear, O my people, to my law: incline your ears to the words of my mouth.</p>
+            <p><strong>2</strong> I will open my mouth in a parable: I will utter dark sayings of old:</p>
+            <p><strong>3</strong> Which we have heard and known, and our fathers have told us.</p>
+            <p><strong>4</strong> We will not hide them from their children, shewing to the generation to come the praises of the Lord, and his strength, and his wonderful works that he hath done.</p>
+            <p><strong>5</strong> For he established a testimony in Jacob, and appointed a law in Israel, which he commanded our fathers, that they should make them known to their children:</p>
+            <p><strong>6</strong> That the generation to come might know them, even the children which should be born; who should arise and declare them to their children:</p>
+            <p><strong>7</strong> That they might set their hope in God, and not forget the works of God, but keep his commandments:</p>
+            <p><strong>8</strong> And might not be as their fathers, a stubborn and rebellious generation; a generation that set not their heart aright, and whose spirit was not stedfast with God.</p>
+            <p><strong>9</strong> The children of Ephraim, being armed, and carrying bows, turned back in the day of battle.</p>
+            <p><strong>10</strong> They kept not the covenant of God, and refused to walk in his law;</p>
+            <p><strong>11</strong> And forgat his works, and his wonders that he had shewed them.</p>
+            <p><strong>12</strong> Marvellous things did he in the sight of their fathers, in the land of Egypt, in the field of Zoan.</p>
+            <p><strong>13</strong> He divided the sea, and caused them to pass through; and he made the waters to stand as an heap.</p>
+            <p><strong>14</strong> In the daytime also he led them with a cloud, and all the night with a light of fire.</p>
+            <p><strong>15</strong> He clave the rocks in the wilderness, and gave them drink as out of the great depths.</p>
+            <p><strong>16</strong> He brought streams also out of the rock, and caused waters to run down like rivers.</p>
+            <p><strong>17</strong> And they sinned yet more against him by provoking the most High in the wilderness.</p>
+            <p><strong>18</strong> And they tempted God in their heart by asking meat for their lust.</p>
+            <p><strong>19</strong> Yea, they spake against God; they said, Can God furnish a table in the wilderness?</p>
+            <p><strong>20</strong> Behold, he smote the rock, that the waters gushed out, and the streams overflowed; can he give bread also? can he provide flesh for his people?</p>
+            <p><strong>21</strong> Therefore the Lord heard this, and was wroth: so a fire was kindled against Jacob, and anger also came up against Israel;</p>
+            <p><strong>22</strong> Because they believed not in God, and trusted not in his salvation:</p>
+            <p><strong>23</strong> Though he had commanded the clouds from above, and opened the doors of heaven,</p>
+            <p><strong>24</strong> And had rained down manna upon them to eat, and had given them of the corn of heaven.</p>
+            <p><strong>25</strong> Man did eat angels’ food: he sent them meat to the full.</p>
+            <p><strong>26</strong> He caused an east wind to blow in the heaven: and by his power he brought in the south wind.</p>
+            <p><strong>27</strong> He rained flesh also upon them as dust, and feathered fowls like as the sand of the sea:</p>
+            <p><strong>28</strong> And he let it fall in the midst of their camp, round about their habitations.</p>
+            <p><strong>29</strong> So they did eat, and were well filled: for he gave them their own desire;</p>
+            <p><strong>30</strong> They were not estranged from their lust. But while their meat was yet in their mouths,</p>
+            <p><strong>31</strong> The wrath of God came upon them, and slew the fattest of them, and smote down the chosen men of Israel.</p>
+            <p><strong>32</strong> For all this they sinned still, and believed not for his wondrous works.</p>
+            <p><strong>33</strong> Therefore their days did he consume in vanity, and their years in trouble.</p>
+            <p><strong>34</strong> When he slew them, then they sought him: and they returned and enquired early after God.</p>
+            <p><strong>35</strong> And they remembered that God was their rock, and the high God their redeemer.</p>
+            <p><strong>36</strong> Nevertheless they did flatter him with their mouth, and they lied unto him with their tongues.</p>
+            <p><strong>37</strong> For their heart was not right with him, neither were they stedfast in his covenant.</p>
+            <p><strong>38</strong> But he, being full of compassion, forgave their iniquity, and destroyed them not: yea, many a time turned he his anger away, and did not stir up all his wrath.</p>
+            <p><strong>39</strong> For he remembered that they were but flesh; a wind that passeth away, and cometh not again.</p>
+            <p><strong>40</strong> How oft did they provoke him in the wilderness, and grieve him in the desert!</p>
+            <p><strong>41</strong> Yea, they turned back and tempted God, and limited the Holy One of Israel.</p>
+            <p><strong>42</strong> They remembered not his hand, nor the day when he delivered them from the enemy.</p>
+            <p><strong>43</strong> How he had wrought his signs in Egypt, and his wonders in the field of Zoan:</p>
+            <p><strong>44</strong> And had turned their rivers into blood; and their floods, that they could not drink.</p>
+            <p><strong>45</strong> He sent divers sorts of flies among them, which devoured them; and frogs, which destroyed them.</p>
+            <p><strong>46</strong> He gave also their increase unto the caterpiller, and their labour unto the locust.</p>
+            <p><strong>47</strong> He destroyed their vines with hail, and their sycomore trees with frost.</p>
+            <p><strong>48</strong> He gave up their cattle also to the hail, and their flocks to hot thunderbolts.</p>
+            <p><strong>49</strong> He cast upon them the fierceness of his anger, wrath, and indignation, and trouble, by sending evil angels among them.</p>
+            <p><strong>50</strong> He made a way to his anger; he spared not their soul from death, but gave their life over to the pestilence;</p>
+            <p><strong>51</strong> And smote all the firstborn in Egypt; the chief of their strength in the tabernacles of Ham:</p>
+            <p><strong>52</strong> But made his own people to go forth like sheep, and guided them in the wilderness like a flock.</p>
+            <p><strong>53</strong> And he led them on safely, so that they feared not: but the sea overwhelmed their enemies.</p>
+            <p><strong>54</strong> And he brought them to the border of his sanctuary, even to this mountain, which his right hand had purchased.</p>
+            <p><strong>55</strong> He cast out the heathen also before them, and divided them an inheritance by line, and made the tribes of Israel to dwell in their tents.</p>
+            <p><strong>56</strong> Yet they tempted and provoked the most high God, and kept not his testimonies:</p>
+            <p><strong>57</strong> But turned back, and dealt unfaithfully like their fathers: they were turned aside like a deceitful bow.</p>
+            <p><strong>58</strong> For they provoked him to anger with their high places, and moved him to jealousy with their graven images.</p>
+            <p><strong>59</strong> When God heard this, he was wroth, and greatly abhorred Israel:</p>
+            <p><strong>60</strong> So that he forsook the tabernacle of Shiloh, the tent which he placed among men;</p>
+            <p><strong>61</strong> And delivered his strength into captivity, and his glory into the enemy’s hand.</p>
+            <p><strong>62</strong> He gave his people over also unto the sword; and was wroth with his inheritance.</p>
+            <p><strong>63</strong> The fire consumed their young men; and their maidens were not given to marriage.</p>
+            <p><strong>64</strong> Their priests fell by the sword; and their widows made no lamentation.</p>
+            <p><strong>65</strong> Then the Lord awaked as one out of sleep, and like a mighty man that shouteth by reason of wine.</p>
+            <p><strong>66</strong> And he smote his enemies in the hinder parts: he put them to a perpetual reproach.</p>
+            <p><strong>67</strong> Moreover he refused the tabernacle of Joseph, and chose not the tribe of Ephraim:</p>
+            <p><strong>68</strong> But chose the tribe of Judah, the mount Zion which he loved.</p>
+            <p><strong>69</strong> And he built his sanctuary like high palaces, like the earth which he hath established for ever.</p>
+            <p><strong>70</strong> He chose David also his servant, and took him from the sheepfolds:</p>
+            <p><strong>71</strong> From following the ewes great with young he brought him to feed Jacob his people, and Israel his inheritance.</p>
+            <p><strong>72</strong> So he fed them according to the integrity of his heart; and guided them by the skilfulness of his hands.</p>
+            </div>
+            <div class="scripture-text" id="web-78-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Psalms 78 (ASV)</p>
+            <p><strong>1</strong> Give ear, O my people, to my law: Incline your ears to the words of my mouth.</p>
+            <p><strong>2</strong> I will open my mouth in a parable; I will utter dark sayings of old,</p>
+            <p><strong>3</strong> Which we have heard and known, And our fathers have told us.</p>
+            <p><strong>4</strong> We will not hide them from their children, Telling to the generation to come the praises of Jehovah, And his strength, and his wondrous works that he hath done.</p>
+            <p><strong>5</strong> For he established a testimony in Jacob, And appointed a law in Israel, Which he commanded our fathers, That they should make them known to their children;</p>
+            <p><strong>6</strong> That the generation to come might knowthem, even the children that should be born; Who should arise and tellthemto their children,</p>
+            <p><strong>7</strong> That they might set their hope in God, And not forget the works of God, But keep his commandments,</p>
+            <p><strong>8</strong> And might not be as their fathers, A stubborn and rebellious generation, A generation that set not their heart aright, And whose spirit was not stedfast with God.</p>
+            <p><strong>9</strong> The children of Ephraim, being armed and carrying bows, Turned back in the day of battle.</p>
+            <p><strong>10</strong> They kept not the covenant of God, And refused to walk in his law;</p>
+            <p><strong>11</strong> And they forgat his doings, And his wondrous works that he had showed them.</p>
+            <p><strong>12</strong> Marvellous things did he in the sight of their fathers, In the land of Egypt, in the field of Zoan.</p>
+            <p><strong>13</strong> He clave the sea, and caused them to pass through; And he made the waters to stand as a heap.</p>
+            <p><strong>14</strong> In the day-time also he led them with a cloud, And all the night with a light of fire.</p>
+            <p><strong>15</strong> He clave rocks in the wilderness, And gave them drink abundantly as out of the depths.</p>
+            <p><strong>16</strong> He brought streams also out of the rock, And caused waters to run down like rivers.</p>
+            <p><strong>17</strong> Yet went they on still to sin against him, To rebel against the Most High in the desert.</p>
+            <p><strong>18</strong> And they tempted God in their heart By asking food according to their desire.</p>
+            <p><strong>19</strong> Yea, they spake against God; They said, Can God prepare a table in the wilderness?</p>
+            <p><strong>20</strong> Behold, he smote the rock, so that waters gushed out, And streams overflowed; Can he give bread also? Will he provide flesh for his people?</p>
+            <p><strong>21</strong> Therefore Jehovah heard, and was wroth; And a fire was kindled against Jacob, And anger also went up against Israel;</p>
+            <p><strong>22</strong> Because they believed not in God, And trusted not in his salvation.</p>
+            <p><strong>23</strong> Yet he commanded the skies above, And opened the doors of heaven;</p>
+            <p><strong>24</strong> And he rained down manna upon them to eat, And gave them food from heaven.</p>
+            <p><strong>25</strong> Man did eat the bread of the mighty: He sent them food to the full.</p>
+            <p><strong>26</strong> He caused the east wind to blow in the heavens; And by his power he guided the south wind.</p>
+            <p><strong>27</strong> He rained flesh also upon them as the dust, And winged birds as the sand of the seas:</p>
+            <p><strong>28</strong> And he let it fall in the midst of their camp, Round about their habitations.</p>
+            <p><strong>29</strong> So they did eat, and were well filled; And he gave them their own desire.</p>
+            <p><strong>30</strong> They were not estranged from that which they desired, Their food was yet in their mouths,</p>
+            <p><strong>31</strong> When the anger of God went up against them, And slew of the fattest of them, And smote down the young men of Israel.</p>
+            <p><strong>32</strong> For all this they sinned still, And believed not in his wondrous works.</p>
+            <p><strong>33</strong> Therefore their days did he consume in vanity, And their years in terror.</p>
+            <p><strong>34</strong> When he slew them, then they inquired after him; And they returned and sought God earnestly.</p>
+            <p><strong>35</strong> And they remembered that God was their rock, And the Most High God their redeemer.</p>
+            <p><strong>36</strong> But they flattered him with their mouth, And lied unto him with their tongue.</p>
+            <p><strong>37</strong> For their heart was not right with him, Neither were they faithful in his covenant.</p>
+            <p><strong>38</strong> But he, being merciful, forgave theiriniquity, and destroyedthemnot: Yea, many a time turned he his anger away, And did not stir up all his wrath.</p>
+            <p><strong>39</strong> And he remembered that they were but flesh, A wind that passeth away, and cometh not again.</p>
+            <p><strong>40</strong> How oft did they rebel against him in the wilderness, And grieve him in the desert!</p>
+            <p><strong>41</strong> And they turned again and tempted God, And provoked the Holy One of Israel.</p>
+            <p><strong>42</strong> They remembered not his hand, Nor the day when he redeemed them from the adversary;</p>
+            <p><strong>43</strong> How he set his signs in Egypt, And his wonders in the field of Zoan,</p>
+            <p><strong>44</strong> And turned their rivers into blood, And their streams, so that they could not drink.</p>
+            <p><strong>45</strong> He sent among them swarms of flies, which devoured them; And frogs, which destroyed them.</p>
+            <p><strong>46</strong> He gave also their increase unto the caterpillar, And their labor unto the locust.</p>
+            <p><strong>47</strong> He destroyed their vines with hail, And their sycomore-trees with frost.</p>
+            <p><strong>48</strong> He gave over their cattle also to the hail, And their flocks to hot thunderbolts.</p>
+            <p><strong>49</strong> He cast upon them the fierceness of his anger, Wrath, and indignation, and trouble, A band of angels of evil.</p>
+            <p><strong>50</strong> He made a path for his anger; He spared not their soul from death, But gave their life over to the pestilence,</p>
+            <p><strong>51</strong> And smote all the first-born in Egypt, The chief of their strength in the tents of Ham.</p>
+            <p><strong>52</strong> But he led forth his own people like sheep, And guided them in the wilderness like a flock.</p>
+            <p><strong>53</strong> And he led them safely, so that they feared not; But the sea overwhelmed their enemies.</p>
+            <p><strong>54</strong> And he brought them to the border of his sanctuary, To this mountain, which his right hand had gotten.</p>
+            <p><strong>55</strong> He drove out the nations also before them, And allotted them for an inheritance by line, And made the tribes of Israel to dwell in their tents.</p>
+            <p><strong>56</strong> Yet they tempted and rebelled against the Most High God, And kept not his testimonies;</p>
+            <p><strong>57</strong> But turned back, and dealt treacherously like their fathers: They were turned aside like a deceitful bow.</p>
+            <p><strong>58</strong> For they provoked him to anger with their high places, And moved him to jealousy with their graven images.</p>
+            <p><strong>59</strong> When God heardthis, he was wroth, And greatly abhorred Israel;</p>
+            <p><strong>60</strong> So that he forsook the tabernacle of Shiloh, The tent which he placed among men;</p>
+            <p><strong>61</strong> And delivered his strength into captivity, And his glory into the adversary’s hand.</p>
+            <p><strong>62</strong> He gave his people over also unto the sword, And was wroth with his inheritance.</p>
+            <p><strong>63</strong> Fire devoured their young men; And their virgins had no marriage-song.</p>
+            <p><strong>64</strong> Their priests fell by the sword; And their widows made no lamentation.</p>
+            <p><strong>65</strong> Then the Lord awaked as one out of sleep, Like a mighty man that shouteth by reason of wine.</p>
+            <p><strong>66</strong> And he smote his adversaries backward: He put them to a perpetual reproach.</p>
+            <p><strong>67</strong> Moreover he refused the tent of Joseph, And chose not the tribe of Ephraim,</p>
+            <p><strong>68</strong> But chose the tribe of Judah, The mount Zion which he loved.</p>
+            <p><strong>69</strong> And he built his sanctuary like the heights, Like the earth which he hath established for ever.</p>
+            <p><strong>70</strong> He chose David also his servant, And took him from the sheepfolds:</p>
+            <p><strong>71</strong> From following the ewes that have their young he brought him, To be the shepherd of Jacob his people, and Israel his inheritance.</p>
+            <p><strong>72</strong> So he was their shepherd according to the integrity of his heart, And guided them by the skilfulness of his hands.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This long teaching psalm of Asaph is a sermon in song, written so that one generation will tell the next the praises of Yahweh and his wondrous works. The psalmist opens like a wisdom teacher, promising to utter dark sayings of old that the fathers handed down, so that children yet unborn might set their hope in God and not forget his works. He then traces Israel's history as a painful cycle: God split the sea, led them by cloud and fire, gave water from the rock, and rained down manna, the very bread of angels—yet they kept on sinning, doubting whether God could spread a table in the wilderness. Again and again they rebelled, tempted God, and provoked the Holy One of Israel, and again and again God, being merciful, forgave their iniquity and turned his anger away, remembering that they were but flesh. The psalm recounts the plagues on Egypt, the conquest of the land, the loss of the ark at Shiloh, and finally God's choice of Judah, of Mount Zion, and of David his servant, taken from the sheepfolds to shepherd God's people with integrity of heart. The whole sweep points beyond David to the true Shepherd-King, Jesus, who never rebels and never fails.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>Asaph the teacher</strong> — The psalmist who tells Israel's story as instruction, determined to pass God's deeds to the generations to come.</li>
+          <li><strong>The rebellious generations of Israel</strong> — The fathers and children who saw God's wonders yet forgot them, tempted God, and broke his covenant again and again.</li>
+          <li><strong>Yahweh, the patient Redeemer</strong> — The God who delivered, fed, and forgave his people, restraining his anger because he remembered they were but flesh.</li>
+          <li><strong>David the shepherd-king</strong> — God's chosen servant, taken from the sheepfolds to shepherd Jacob with integrity, a foreshadowing of Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Psalm 78:7 (WEB)</p>
+          <p class="verse__text">that they might set their hope in God, and not forget the works of God, but keep his commandments,</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Faith is meant to be handed on; what God has done must be told to the children who come after us.</li>
+          <li>Forgetting God's works is the root of rebellion; remembrance is the soil of obedience and hope.</li>
+          <li>Receiving God's gifts is no guarantee of a faithful heart; Israel ate manna and still distrusted him.</li>
+          <li>God's mercy is staggering: he forgave iniquity again and again, remembering our frailty.</li>
+          <li>God's choice of David the shepherd points forward to the greater Shepherd-King who never fails.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-78">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-78">
+            <ul class="lesson-list">
+            <li><strong>Truth is passed across generations.</strong> "We will not hide them from their children, telling to the generation to come the praises of Yahweh" (Psalm 78:4, WEB). Each generation is a link in a chain of testimony.</li>
+            <li><strong>Forgetting leads to falling.</strong> "They forgot his doings, his wondrous works that he had shown them" (Psalm 78:11, WEB). Spiritual amnesia is the seedbed of rebellion.</li>
+            <li><strong>God's mercy outlasts our sin.</strong> "But he, being merciful, forgave iniquity, and didn’t destroy them" (Psalm 78:38, WEB). His patience with frail, faithless people is the wonder of the psalm.</li>
+            <li><strong>God provides a faithful shepherd.</strong> "He also chose David his servant, and took him from the sheepfolds" (Psalm 78:70, WEB). God's answer to a wayward flock is a shepherd-king, fulfilled in Christ.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-78">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-78">
+            <ol class="study-questions">
+            <li>Why does the psalmist begin by stressing that this history must be told to the children (78:1-8)?</li>
+            <li>Trace the cycle of God's kindness and Israel's rebellion. What pattern keeps repeating?</li>
+            <li>How could the people eat the "bread of angels" (78:25) and still not trust God? What does that reveal about the human heart?</li>
+            <li>What is so remarkable about God's response in verse 38, and how does it shape your view of God?</li>
+            <li>What works of God do you most want to pass on to the next generation in your family or church?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-78">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-78">
+            <ol class="study-questions">
+            <li>He wants the children to know, hope in God, remember his works, and keep his commandments rather than become a stubborn generation like their fathers (78:5-8). Faith is not self-sustaining; it must be deliberately taught and retold to survive across generations.</li>
+            <li>God saves, provides, and forgives; Israel forgets, doubts, rebels, and provokes him—then God forgives again (78:11-39). The relentless cycle exposes how short-lived gratitude is and how long-suffering God's mercy is.</li>
+            <li>They received the miracle yet hardened their hearts because their problem was unbelief, not lack of evidence (78:22, 32). The heart can witness God's gifts and still demand more, proving that signs alone cannot create trust.</li>
+            <li>Verse 38 says God, being merciful, forgave iniquity, did not destroy them, and many times turned his anger away. After endless provocation, mercy still prevails. Let the group sit with how patient God is with frail, faithless people like us.</li>
+            <li>This is a gentle personal-application question. Invite members to name specific testimonies, Scriptures, or practices they want to hand down. As leader, affirm that even small, consistent acts of telling God's works shape the faith of those who come after.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="psalms-77.html">← Psalms 77</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="psalms.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="psalms-79.html">Psalms 79 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

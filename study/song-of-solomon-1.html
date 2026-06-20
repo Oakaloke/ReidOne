@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Song of Solomon 1: Better Than Wine — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Song of Solomon 1: the Bride longs for her beloved, the daughters of Jerusalem respond, and the lovers begin praising each other's beauty." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-song-of-solomon-progress" data-study-total="8">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Song of Solomon, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="song-of-solomon.html">← All Chapters</a>
+        <span class="study-meta">The Book of Song of Solomon · Chapter 1</span>
+        <h1>Song of Solomon 1: Better Than Wine</h1>
+        <p class="lead">The Bride awakens to longing, praises her beloved above all, and the lovers begin to sing of one another's beauty and delight.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Song of Solomon Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Song of Solomon 1 (WEB)</p>
+            <p><strong>1</strong> The Song of songs, which is Solomon’s. Beloved</p>
+            <p><strong>2</strong> Let him kiss me with the kisses of his mouth; for your love is better than wine.</p>
+            <p><strong>3</strong> Your oils have a pleasing fragrance. Your name is oil poured out, therefore the virgins love you.</p>
+            <p><strong>4</strong> Take me away with you. Let us hurry. The king has brought me into his rooms. Friends We will be glad and rejoice in you. We will praise your love more than wine! Beloved They are right to love you.</p>
+            <p><strong>5</strong> I am dark, but lovely, you daughters of Jerusalem, like Kedar’s tents, like Solomon’s curtains.</p>
+            <p><strong>6</strong> Don’t stare at me because I am dark, because the sun has scorched me. My mother’s sons were angry with me. They made me keeper of the vineyards. I haven’t kept my own vineyard.</p>
+            <p><strong>7</strong> Tell me, you whom my soul loves, where you graze your flock, where you rest them at noon; For why should I be as one who is veiled beside the flocks of your companions? Lover</p>
+            <p><strong>8</strong> If you don’t know, most beautiful among women, follow the tracks of the sheep. Graze your young goats beside the shepherds’ tents.</p>
+            <p><strong>9</strong> I have compared you, my love, to a steed in Pharaoh’s chariots.</p>
+            <p><strong>10</strong> Your cheeks are beautiful with earrings, your neck with strings of jewels.</p>
+            <p><strong>11</strong> We will make you earrings of gold, with studs of silver. Beloved</p>
+            <p><strong>12</strong> While the king sat at his table, my perfume spread its fragrance.</p>
+            <p><strong>13</strong> My beloved is to me a sachet of myrrh, that lies between my breasts.</p>
+            <p><strong>14</strong> My beloved is to me a cluster of henna blossoms from the vineyards of En Gedi. Lover</p>
+            <p><strong>15</strong> Behold, you are beautiful, my love. Behold, you are beautiful. Your eyes are doves. Beloved</p>
+            <p><strong>16</strong> Behold, you are beautiful, my beloved, yes, pleasant; and our couch is verdant. Lover</p>
+            <p><strong>17</strong> The beams of our house are cedars. Our rafters are firs.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Song of Solomon 1 (KJV)</p>
+            <p><strong>1</strong> The song of songs, which is Solomon’s.</p>
+            <p><strong>2</strong> Let him kiss me with the kisses of his mouth: for thy love is better than wine.</p>
+            <p><strong>3</strong> Because of the savour of thy good ointments thy name is as ointment poured forth, therefore do the virgins love thee.</p>
+            <p><strong>4</strong> Draw me, we will run after thee: the king hath brought me into his chambers: we will be glad and rejoice in thee, we will remember thy love more than wine: the upright love thee.</p>
+            <p><strong>5</strong> I am black, but comely, O ye daughters of Jerusalem, as the tents of Kedar, as the curtains of Solomon.</p>
+            <p><strong>6</strong> Look not upon me, because I am black, because the sun hath looked upon me: my mother’s children were angry with me; they made me the keeper of the vineyards; but mine own vineyard have I not kept.</p>
+            <p><strong>7</strong> Tell me, O thou whom my soul loveth, where thou feedest, where thou makest thy flock to rest at noon: for why should I be as one that turneth aside by the flocks of thy companions?</p>
+            <p><strong>8</strong> If thou know not, O thou fairest among women, go thy way forth by the footsteps of the flock, and feed thy kids beside the shepherds’ tents.</p>
+            <p><strong>9</strong> I have compared thee, O my love, to a company of horses in Pharaoh’s chariots.</p>
+            <p><strong>10</strong> Thy cheeks are comely with rows of jewels, thy neck with chains of gold.</p>
+            <p><strong>11</strong> We will make thee borders of gold with studs of silver.</p>
+            <p><strong>12</strong> While the king sitteth at his table, my spikenard sendeth forth the smell thereof.</p>
+            <p><strong>13</strong> A bundle of myrrh is my wellbeloved unto me; he shall lie all night betwixt my breasts.</p>
+            <p><strong>14</strong> My beloved is unto me as a cluster of camphire in the vineyards of En–gedi.</p>
+            <p><strong>15</strong> Behold, thou art fair, my love; behold, thou art fair; thou hast doves’ eyes.</p>
+            <p><strong>16</strong> Behold, thou art fair, my beloved, yea, pleasant: also our bed is green.</p>
+            <p><strong>17</strong> The beams of our house are cedar, and our rafters of fir.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Song of Solomon 1 (ASV)</p>
+            <p><strong>1</strong> The Song of songs, which is Solomon’s.</p>
+            <p><strong>2</strong> Let him kiss me with the kisses of his mouth; For thy love is better than wine.</p>
+            <p><strong>3</strong> Thine oils have a goodly fragrance; Thy name is as oil poured forth; Therefore do the virgins love thee.</p>
+            <p><strong>4</strong> Draw me; we will run after thee: The king hath brought me into his chambers; We will be glad and rejoice in thee; We will make mention of thy love more than of wine: Rightly do they love thee.</p>
+            <p><strong>5</strong> I am black, but comely, Oh ye daughters of Jerusalem, As the tents of Kedar, As the curtains of Solomon.</p>
+            <p><strong>6</strong> Look not upon me, because I am swarthy, Because the sun hath scorched me. My mother’s sons were incensed against me; They made me keeper of the vineyards; But mine own vineyard have I not kept.</p>
+            <p><strong>7</strong> Tell me, O thou whom my soul loveth, Where thou feedest thy flock, Where thou makest it to rest at noon: For why should I be as one that is veiled Beside the flocks of thy companions?</p>
+            <p><strong>8</strong> If thou know not, O thou fairest among women, Go thy way forth by the footsteps of the flock, And feed thy kids beside the shepherds’ tents.</p>
+            <p><strong>9</strong> I have compared thee, O my love, To a steed in Pharaoh’s chariots.</p>
+            <p><strong>10</strong> Thy cheeks are comely with plaits of hair, Thy neck with strings of jewels.</p>
+            <p><strong>11</strong> We will make thee plaits of gold With studs of silver.</p>
+            <p><strong>12</strong> While the king sat at his table, My spikenard sent forth its fragrance.</p>
+            <p><strong>13</strong> My beloved is unto me as a bundle of myrrh, That lieth betwixt my breasts.</p>
+            <p><strong>14</strong> My beloved is unto me as a cluster of henna-flowers In the vineyards of En-gedi.</p>
+            <p><strong>15</strong> Behold, thou art fair, my love; Behold thou art fair; Thine eyes are as doves.</p>
+            <p><strong>16</strong> Behold, thou art fair, my beloved, yea, pleasant: Also our couch is green.</p>
+            <p><strong>17</strong> The beams of our house are cedars, And our rafters are firs.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The book opens by naming itself the song of songs, the finest of all, attributed to Solomon. At once the Bride bursts into longing, wishing for her beloved's kiss and declaring his love better than wine and his name like fragrant oil poured out. She asks to be drawn away with him, and the friends rejoice with her, praising his love. Turning to the daughters of Jerusalem, the Bride speaks honestly of herself—dark from working in the sun, set by her brothers to keep the vineyards while neglecting her own. She seeks her shepherd-beloved, asking where he grazes his flock at noon, and he answers with the first of many tender praises, comparing her beauty to a mare among Pharaoh's chariots and promising her ornaments of gold and silver. The two trade adoring words: he calls her beautiful, her eyes like doves; she calls him pleasant, their couch verdant and the beams of their house cedar. From the very first chapter the Song establishes its themes of desire, mutual praise, and the goodness of love between the two.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The Bride (the Beloved)</strong> — The young woman who opens the Song with longing, speaks candidly of herself to the daughters of Jerusalem, and seeks her shepherd-beloved.</li>
+          <li><strong>The Bridegroom (the Lover)</strong> — The beloved, both king and shepherd, who answers her seeking and praises her beauty, likening her to a mare among Pharaoh's chariots.</li>
+          <li><strong>The daughters of Jerusalem (Friends)</strong> — The chorus of young women who rejoice with the Bride and praise the beloved's love along with her.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Song of Solomon 1:2 (WEB)</p>
+          <p class="verse__text">Let him kiss me with the kisses of his mouth; for your love is better than wine.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Longing and desire within covenant love are good and worthy of celebration.</li>
+          <li>Love speaks honestly, even about insecurities and the marks life has left on us.</li>
+          <li>Mutual praise builds up the beloved and delights in the whole person.</li>
+          <li>True love seeks out the beloved rather than waiting passively.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>Love delights openly.</strong> The Bride sings, “your love is better than wine” (Song 1:2, WEB). Covenant love is not embarrassed to rejoice in the beloved.</li>
+            <li><strong>A good name is fragrant.</strong> “Your name is oil poured out” (Song 1:3, WEB). The beloved's character and reputation are as attractive as his presence.</li>
+            <li><strong>Honesty has a place in love.</strong> The Bride admits, “I am dark, but lovely” (Song 1:5, WEB), and speaks of neglected vineyards. Love welcomes the truth about ourselves.</li>
+            <li><strong>Praise is mutual.</strong> He says, “you are beautiful, my love” (Song 1:15, WEB), and she answers, “you are beautiful, my beloved” (1:16). Love returns honor for honor.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>How does the Bride describe her longing for her beloved in the opening verses?</li>
+            <li>What does the Bride reveal about herself to the daughters of Jerusalem, and why might she speak so honestly?</li>
+            <li>How do the beloved and the Bride praise one another in this chapter?</li>
+            <li>What does it mean that the beloved's love is “better than wine” and his name “oil poured out” (1:2-3)?</li>
+            <li>Where in your own relationships might you grow in honest, generous praise of those you love?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>The Bride longs for her beloved's kiss and declares his love better than wine and his name fragrant as oil (1:2-3). Her desire is open and unashamed, setting the tone for a book that celebrates love as a good gift.</li>
+            <li>She admits she is dark from the sun, set by her brothers to keep the vineyards while neglecting her own (1:5-6). Her candor models a love that does not hide behind a false image but speaks truthfully, trusting in the beloved's regard.</li>
+            <li>He likens her to a mare among Pharaoh's chariots and calls her eyes doves; she calls him pleasant and their home one of cedar and fir (1:9-17). The praise flows both ways, each honoring the other.</li>
+            <li>Wine gladdens and oil refreshes and lingers; so does the beloved's love and reputation. Help the group see that what attracts in true love is both presence and character—the person and the good name.</li>
+            <li>This is a personal-application question. Invite members to consider a relationship where they could speak more honest and more generous words of affirmation. As leader, keep the tone warm and avoid pressing anyone to disclose more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="song-of-solomon.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="song-of-solomon-2.html">Song of Solomon 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
