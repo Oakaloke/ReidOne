@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 1: Counting the Lord's Army — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 1: the Lord commands a census of Israel's fighting men tribe by tribe, while the Levites are set apart for the tabernacle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 1</span>
+        <h1>Numbers 1: Counting the Lord's Army</h1>
+        <p class="lead">At Sinai, God commands a census of every man able to go to war, ordering Israel for the journey to the land of promise.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Numbers Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 1 (WEB)</p>
+            <p><strong>1</strong> Yahweh spoke to Moses in the wilderness of Sinai, in the Tent of Meeting, on the first day of the second month, in the second year after they had come out of the land of Egypt, saying,</p>
+            <p><strong>2</strong> “Take a census of all the congregation of the children of Israel, by their families, by their fathers’ houses, according to the number of the names, every male, one by one;</p>
+            <p><strong>3</strong> from twenty years old and upward, all who are able to go out to war in Israel. You and Aaron shall number them by their divisions.</p>
+            <p><strong>4</strong> With you there shall be a man of every tribe; everyone head of his fathers’ house.</p>
+            <p><strong>5</strong> These are the names of the men who shall stand with you: Of Reuben: Elizur the son of Shedeur.</p>
+            <p><strong>6</strong> Of Simeon: Shelumiel the son of Zurishaddai.</p>
+            <p><strong>7</strong> Of Judah: Nahshon the son of Amminadab.</p>
+            <p><strong>8</strong> Of Issachar: Nethanel the son of Zuar.</p>
+            <p><strong>9</strong> Of Zebulun: Eliab the son of Helon.</p>
+            <p><strong>10</strong> Of the children of Joseph: Of Ephraim: Elishama the son of Ammihud. Of Manasseh: Gamaliel the son of Pedahzur.</p>
+            <p><strong>11</strong> Of Benjamin: Abidan the son of Gideoni.</p>
+            <p><strong>12</strong> Of Dan: Ahiezer the son of Ammishaddai.</p>
+            <p><strong>13</strong> Of Asher: Pagiel the son of Ochran.</p>
+            <p><strong>14</strong> Of Gad: Eliasaph the son of Deuel.</p>
+            <p><strong>15</strong> Of Naphtali: Ahira the son of Enan.”</p>
+            <p><strong>16</strong> These are those who were called of the congregation, the princes of the tribes of their fathers; they were the heads of the thousands of Israel.</p>
+            <p><strong>17</strong> Moses and Aaron took these men who are mentioned by name.</p>
+            <p><strong>18</strong> They assembled all the congregation together on the first day of the second month; and they declared their ancestry by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, one by one.</p>
+            <p><strong>19</strong> As Yahweh commanded Moses, so he numbered them in the wilderness of Sinai.</p>
+            <p><strong>20</strong> The children of Reuben, Israel’s firstborn, their generations, by their families, by their fathers’ houses, according to the number of the names, one by one, every male from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>21</strong> those who were numbered of them, of the tribe of Reuben, were forty-six thousand five hundred.</p>
+            <p><strong>22</strong> Of the children of Simeon, their generations, by their families, by their fathers’ houses, those who were numbered of it, according to the number of the names, one by one, every male from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>23</strong> those who were numbered of them, of the tribe of Simeon, were fifty-nine thousand three hundred.</p>
+            <p><strong>24</strong> Of the children of Gad, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>25</strong> those who were numbered of them, of the tribe of Gad, were forty-five thousand six hundred fifty.</p>
+            <p><strong>26</strong> Of the children of Judah, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>27</strong> those who were numbered of them, of the tribe of Judah, were seventy-four thousand six hundred.</p>
+            <p><strong>28</strong> Of the children of Issachar, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>29</strong> those who were numbered of them, of the tribe of Issachar, were fifty-four thousand four hundred.</p>
+            <p><strong>30</strong> Of the children of Zebulun, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>31</strong> those who were numbered of them, of the tribe of Zebulun, were fifty-seven thousand four hundred.</p>
+            <p><strong>32</strong> Of the children of Joseph, of the children of Ephraim, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>33</strong> those who were numbered of them, of the tribe of Ephraim, were forty thousand five hundred.</p>
+            <p><strong>34</strong> Of the children of Manasseh, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>35</strong> those who were numbered of them, of the tribe of Manasseh, were thirty-two thousand two hundred.</p>
+            <p><strong>36</strong> Of the children of Benjamin, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>37</strong> those who were numbered of them, of the tribe of Benjamin, were thirty-five thousand four hundred.</p>
+            <p><strong>38</strong> Of the children of Dan, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>39</strong> those who were numbered of them, of the tribe of Dan, were sixty-two thousand seven hundred.</p>
+            <p><strong>40</strong> Of the children of Asher, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>41</strong> those who were numbered of them, of the tribe of Asher, were forty-one thousand five hundred.</p>
+            <p><strong>42</strong> Of the children of Naphtali, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war;</p>
+            <p><strong>43</strong> those who were numbered of them, of the tribe of Naphtali, were fifty-three thousand four hundred.</p>
+            <p><strong>44</strong> These are those who were numbered, whom Moses and Aaron numbered, and the princes of Israel, being twelve men: they were each one for his fathers’ house.</p>
+            <p><strong>45</strong> So all those who were numbered of the children of Israel by their fathers’ houses, from twenty years old and upward, all who were able to go out to war in Israel;</p>
+            <p><strong>46</strong> even all those who were numbered were six hundred three thousand five hundred fifty.</p>
+            <p><strong>47</strong> But the Levites after the tribe of their fathers were not numbered among them.</p>
+            <p><strong>48</strong> For Yahweh spoke to Moses, saying,</p>
+            <p><strong>49</strong> “Only the tribe of Levi you shall not number, neither shall you take a census of them among the children of Israel;</p>
+            <p><strong>50</strong> but appoint the Levites over the Tabernacle of the Testimony, and over all its furnishings, and over all that belongs to it. They shall carry the tabernacle, and all its furnishings; and they shall take care of it, and shall encamp around it.</p>
+            <p><strong>51</strong> When the tabernacle is to move, the Levites shall take it down; and when the tabernacle is to be set up, the Levites shall set it up. The stranger who comes near shall be put to death.</p>
+            <p><strong>52</strong> The children of Israel shall pitch their tents, every man by his own camp, and every man by his own standard, according to their divisions.</p>
+            <p><strong>53</strong> But the Levites shall encamp around the Tabernacle of the Testimony, that there may be no wrath on the congregation of the children of Israel: and the Levites shall be responsible for the Tabernacle of the Testimony.”</p>
+            <p><strong>54</strong> Thus the children of Israel did. According to all that Yahweh commanded Moses, so they did.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 1 (KJV)</p>
+            <p><strong>1</strong> And the Lord spake unto Moses in the wilderness of Sinai, in the tabernacle of the congregation, on the first day of the second month, in the second year after they were come out of the land of Egypt, saying,</p>
+            <p><strong>2</strong> Take ye the sum of all the congregation of the children of Israel, after their families, by the house of their fathers, with the number of their names, every male by their polls;</p>
+            <p><strong>3</strong> From twenty years old and upward, all that are able to go forth to war in Israel: thou and Aaron shall number them by their armies.</p>
+            <p><strong>4</strong> And with you there shall be a man of every tribe; every one head of the house of his fathers.</p>
+            <p><strong>5</strong> And these are the names of the men that shall stand with you: of the tribe of Reuben; Elizur the son of Shedeur.</p>
+            <p><strong>6</strong> Of Simeon; Shelumiel the son of Zurishaddai.</p>
+            <p><strong>7</strong> Of Judah; Nahshon the son of Amminadab.</p>
+            <p><strong>8</strong> Of Issachar; Nethaneel the son of Zuar.</p>
+            <p><strong>9</strong> Of Zebulun; Eliab the son of Helon.</p>
+            <p><strong>10</strong> Of the children of Joseph: of Ephraim; Elishama the son of Ammihud: of Manasseh; Gamaliel the son of Pedahzur.</p>
+            <p><strong>11</strong> Of Benjamin; Abidan the son of Gideoni.</p>
+            <p><strong>12</strong> Of Dan; Ahiezer the son of Ammishaddai.</p>
+            <p><strong>13</strong> Of Asher; Pagiel the son of Ocran.</p>
+            <p><strong>14</strong> Of Gad; Eliasaph the son of Deuel.</p>
+            <p><strong>15</strong> Of Naphtali; Ahira the son of Enan.</p>
+            <p><strong>16</strong> These were the renowned of the congregation, princes of the tribes of their fathers, heads of thousands in Israel.</p>
+            <p><strong>17</strong> And Moses and Aaron took these men which are expressed by their names:</p>
+            <p><strong>18</strong> And they assembled all the congregation together on the first day of the second month, and they declared their pedigrees after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, by their polls.</p>
+            <p><strong>19</strong> As the Lord commanded Moses, so he numbered them in the wilderness of Sinai.</p>
+            <p><strong>20</strong> And the children of Reuben, Israel’s eldest son, by their generations, after their families, by the house of their fathers, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>21</strong> Those that were numbered of them, even of the tribe of Reuben, were forty and six thousand and five hundred.</p>
+            <p><strong>22</strong> Of the children of Simeon, by their generations, after their families, by the house of their fathers, those that were numbered of them, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>23</strong> Those that were numbered of them, even of the tribe of Simeon, were fifty and nine thousand and three hundred.</p>
+            <p><strong>24</strong> Of the children of Gad, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>25</strong> Those that were numbered of them, even of the tribe of Gad, were forty and five thousand six hundred and fifty.</p>
+            <p><strong>26</strong> Of the children of Judah, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>27</strong> Those that were numbered of them, even of the tribe of Judah, were threescore and fourteen thousand and six hundred.</p>
+            <p><strong>28</strong> Of the children of Issachar, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>29</strong> Those that were numbered of them, even of the tribe of Issachar, were fifty and four thousand and four hundred.</p>
+            <p><strong>30</strong> Of the children of Zebulun, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>31</strong> Those that were numbered of them, even of the tribe of Zebulun, were fifty and seven thousand and four hundred.</p>
+            <p><strong>32</strong> Of the children of Joseph, namely, of the children of Ephraim, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>33</strong> Those that were numbered of them, even of the tribe of Ephraim, were forty thousand and five hundred.</p>
+            <p><strong>34</strong> Of the children of Manasseh, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>35</strong> Those that were numbered of them, even of the tribe of Manasseh, were thirty and two thousand and two hundred.</p>
+            <p><strong>36</strong> Of the children of Benjamin, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>37</strong> Those that were numbered of them, even of the tribe of Benjamin, were thirty and five thousand and four hundred.</p>
+            <p><strong>38</strong> Of the children of Dan, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>39</strong> Those that were numbered of them, even of the tribe of Dan, were threescore and two thousand and seven hundred.</p>
+            <p><strong>40</strong> Of the children of Asher, by their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>41</strong> Those that were numbered of them, even of the tribe of Asher, were forty and one thousand and five hundred.</p>
+            <p><strong>42</strong> Of the children of Naphtali, throughout their generations, after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>43</strong> Those that were numbered of them, even of the tribe of Naphtali, were fifty and three thousand and four hundred.</p>
+            <p><strong>44</strong> These are those that were numbered, which Moses and Aaron numbered, and the princes of Israel, being twelve men: each one was for the house of his fathers.</p>
+            <p><strong>45</strong> So were all those that were numbered of the children of Israel, by the house of their fathers, from twenty years old and upward, all that were able to go forth to war in Israel;</p>
+            <p><strong>46</strong> Even all they that were numbered were six hundred thousand and three thousand and five hundred and fifty.</p>
+            <p><strong>47</strong> But the Levites after the tribe of their fathers were not numbered among them.</p>
+            <p><strong>48</strong> For the Lord had spoken unto Moses, saying,</p>
+            <p><strong>49</strong> Only thou shalt not number the tribe of Levi, neither take the sum of them among the children of Israel:</p>
+            <p><strong>50</strong> But thou shalt appoint the Levites over the tabernacle of testimony, and over all the vessels thereof, and over all things that belong to it: they shall bear the tabernacle, and all the vessels thereof; and they shall minister unto it, and shall encamp round about the tabernacle.</p>
+            <p><strong>51</strong> And when the tabernacle setteth forward, the Levites shall take it down: and when the tabernacle is to be pitched, the Levites shall set it up: and the stranger that cometh nigh shall be put to death.</p>
+            <p><strong>52</strong> And the children of Israel shall pitch their tents, every man by his own camp, and every man by his own standard, throughout their hosts.</p>
+            <p><strong>53</strong> But the Levites shall pitch round about the tabernacle of testimony, that there be no wrath upon the congregation of the children of Israel: and the Levites shall keep the charge of the tabernacle of testimony.</p>
+            <p><strong>54</strong> And the children of Israel did according to all that the Lord commanded Moses, so did they.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 1 (ASV)</p>
+            <p><strong>1</strong> And Jehovah spake unto Moses in the wilderness of Sinai, in the tent of meeting, on the first day of the second month, in the second year after they were come out of the land of Egypt, saying,</p>
+            <p><strong>2</strong> Take ye the sum of all the congregation of the children of Israel, by their families, by their fathers’ houses, according to the number of the names, every male, by their polls;</p>
+            <p><strong>3</strong> from twenty years old and upward, all that are able to go forth to war in Israel, thou and Aaron shall number them by their hosts.</p>
+            <p><strong>4</strong> And with you there shall be a man of every tribe; every one head of his fathers’ house.</p>
+            <p><strong>5</strong> And these are the names of the men that shall stand with you. Of Reuben: Elizur the son of Shedeur.</p>
+            <p><strong>6</strong> Of Simeon: Shelumiel the son of Zurishaddai.</p>
+            <p><strong>7</strong> Of Judah: Nahshon the son of Amminadab.</p>
+            <p><strong>8</strong> Of Issachar: Nethanel the son of Zuar.</p>
+            <p><strong>9</strong> Of Zebulun: Eliab the son of Helon.</p>
+            <p><strong>10</strong> Of the children of Joseph: Of Ephraim: Elishama the son of Ammihud. Of Manasseh: Gamaliel the son of Pedahzur.</p>
+            <p><strong>11</strong> Of Benjamin: Abidan the son of Gideoni.</p>
+            <p><strong>12</strong> Of Dan: Ahiezer the son of Ammishaddai.</p>
+            <p><strong>13</strong> Of Asher: Pagiel the son of Ochran.</p>
+            <p><strong>14</strong> Of Gad: Eliasaph the son of Deuel.</p>
+            <p><strong>15</strong> Of Naphtali: Ahira the son of Enan.</p>
+            <p><strong>16</strong> These are they that were called of the congregation, the princes of the tribes of their fathers; they were the heads of the thousands of Israel.</p>
+            <p><strong>17</strong> And Moses and Aaron took these men that are mentioned by name:</p>
+            <p><strong>18</strong> and they assembled all the congregation together on the first day of the second month; and they declared their pedigrees after their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, by their polls.</p>
+            <p><strong>19</strong> As Jehovah commanded Moses, so he numbered them in the wilderness of Sinai.</p>
+            <p><strong>20</strong> And the children of Reuben, Israel’s first-born, their generations, by their families, by their fathers’ houses, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>21</strong> those that were numbered of them, of the tribe of Reuben, were forty and six thousand and five hundred.</p>
+            <p><strong>22</strong> Of the children of Simeon, their generations, by their families, by their fathers’ houses, those that were numbered thereof, according to the number of the names, by their polls, every male from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>23</strong> those that were numbered of them, of the tribe of Simeon, were fifty and nine thousand and three hundred.</p>
+            <p><strong>24</strong> Of the children of Gad, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>25</strong> those that were numbered of them, of the tribe of Gad, were forty and five thousand six hundred and fifty.</p>
+            <p><strong>26</strong> Of the children of Judah, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>27</strong> those that were numbered of them, of the tribe of Judah, were threescore and fourteen thousand and six hundred.</p>
+            <p><strong>28</strong> Of the children of Issachar, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>29</strong> those that were numbered of them, of the tribe of Issachar, were fifty and four thousand and four hundred.</p>
+            <p><strong>30</strong> Of the children of Zebulun, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>31</strong> those that were numbered of them, of the tribe of Zebulun, were fifty and seven thousand and four hundred.</p>
+            <p><strong>32</strong> Of the children of Joseph, namely, of the children of Ephraim, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>33</strong> those that were numbered of them, of the tribe of Ephraim, were forty thousand and five hundred.</p>
+            <p><strong>34</strong> Of the children of Manasseh, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>35</strong> those that were numbered of them, of the tribe of Manasseh, were thirty and two thousand and two hundred.</p>
+            <p><strong>36</strong> Of the children of Benjamin, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>37</strong> those that were numbered of them, of the tribe of Benjamin, were thirty and five thousand and four hundred.</p>
+            <p><strong>38</strong> Of the children of Dan, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>39</strong> those that were numbered of them, of the tribe of Dan, were threescore and two thousand and seven hundred.</p>
+            <p><strong>40</strong> Of the children of Asher, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>41</strong> those that were numbered of them, of the tribe of Asher, were forty and one thousand and five hundred.</p>
+            <p><strong>42</strong> Of the children of Naphtali, their generations, by their families, by their fathers’ houses, according to the number of the names, from twenty years old and upward, all that were able to go forth to war;</p>
+            <p><strong>43</strong> those that were numbered of them, of the tribe of Naphtali, were fifty and three thousand and four hundred.</p>
+            <p><strong>44</strong> These are they that were numbered, whom Moses and Aaron numbered, and the princes of Israel, being twelve men: they were each one for his fathers’ house.</p>
+            <p><strong>45</strong> So all they that were numbered of the children of Israel by their fathers’ houses, from twenty years old and upward, all that were able to go forth to war in Israel;</p>
+            <p><strong>46</strong> even all they that were numbered were six hundred thousand and three thousand and five hundred and fifty.</p>
+            <p><strong>47</strong> But the Levites after the tribe of their fathers were not numbered among them.</p>
+            <p><strong>48</strong> For Jehovah spake unto Moses, saying,</p>
+            <p><strong>49</strong> Only the tribe of Levi thou shalt not number, neither shalt thou take the sum of them among the children of Israel;</p>
+            <p><strong>50</strong> but appoint thou the Levites over the tabernacle of the testimony, and over all the furniture thereof, and over all that belongeth to it: they shall bear the tabernacle, and all the furniture thereof; and they shall minister unto it, and shall encamp round about the tabernacle.</p>
+            <p><strong>51</strong> And when the tabernacle setteth forward, the Levites shall take it down; and when the tabernacle is to be pitched, the Levites shall set it up: and the stranger that cometh nigh shall be put to death.</p>
+            <p><strong>52</strong> And the children of Israel shall pitch their tents, every man by his own camp, and every man by his own standard, according to their hosts.</p>
+            <p><strong>53</strong> But the Levites shall encamp round about the tabernacle of the testimony, that there be no wrath upon the congregation of the children of Israel: and the Levites shall keep the charge of the tabernacle of the testimony.</p>
+            <p><strong>54</strong> Thus did the children of Israel; according to all that Jehovah commanded Moses, so did they.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>On the first day of the second month in the second year after the exodus, Yahweh speaks to Moses in the wilderness of Sinai and commands a census of the whole congregation. Every male twenty years old and upward who is able to go out to war is to be numbered, family by family and father's house by father's house. A leader from each tribe is appointed to help Moses and Aaron, and the people declare their ancestry one by one. Tribe by tribe the totals are recorded, and the sum of all who are numbered comes to six hundred three thousand five hundred fifty. The tribe of Levi, however, is not counted among the rest, for they are appointed over the tabernacle of the Testimony, to carry it, care for it, and camp around it. The Levites are to guard the sanctuary so that no wrath comes on the congregation. This careful ordering shows a God of purpose, forming a redeemed people into a disciplined community ready to follow him. The book that begins with counting will trace whether this great host trusts the One who redeemed them.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who redeemed Israel from Egypt and now orders his people for the journey, numbering them, assigning the Levites, and dwelling among them in the tabernacle.</li>
+          <li><strong>Moses</strong> — God's appointed leader who receives the command to take the census and faithfully numbers the people as the Lord directs.</li>
+          <li><strong>Aaron</strong> — Moses' brother and high priest, who stands with him to number the tribes by their divisions.</li>
+          <li><strong>The tribal leaders</strong> — One head from each father's house, named by God to assist in the census as princes of the tribes of Israel.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 1:2 (WEB)</p>
+          <p class="verse__text">“Take a census of all the congregation of the children of Israel, by their families, by their fathers’ houses, according to the number of the names, every male, one by one;</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God knows and numbers his people individually; no one is overlooked in the great congregation (Numbers 1:2).</li>
+          <li>The Lord is a God of order, forming the redeemed into a disciplined community ready to follow him.</li>
+          <li>Service to God comes in different forms; the Levites are set apart while the rest are mustered for war (Numbers 1:50).</li>
+          <li>Guarding the holiness of God's dwelling protects the whole people from wrath (Numbers 1:53).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>God redeems a people, not just individuals.</strong> The census counts “all the congregation of the children of Israel” (Numbers 1:2, WEB); the Lord is forming a covenant nation from those he brought out of Egypt.</li>
+            <li><strong>Every name matters to God.</strong> The people are numbered “according to the number of the names, every male, one by one” (Numbers 1:2, WEB). God's care is personal even in a host of hundreds of thousands.</li>
+            <li><strong>God assigns different callings.</strong> Levi is set “over the tabernacle of the Testimony” rather than mustered for battle (Numbers 1:50, WEB). Faithfulness is found in the place God appoints, not only in the visible front lines.</li>
+            <li><strong>Holiness must be guarded.</strong> The Levites encamp around the tabernacle so that “there be no wrath on the congregation” (Numbers 1:53, WEB). Reverence for God's presence protects the whole community.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>Why do you think God begins this stage of the journey by counting his people so carefully?</li>
+            <li>What does the census suggest about how God views the individuals within his redeemed congregation?</li>
+            <li>Why are the Levites set apart from the fighting men, and what does this teach about varieties of service?</li>
+            <li>What does it mean that the Levites guard the tabernacle so that no wrath comes on the people?</li>
+            <li>Where in your own life is God calling you to a particular place of service, even if it is not the role you would have chosen?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>The census prepares a redeemed but disorganized multitude to move toward the promised land as the Lord's ordered army. It signals that God has a purpose for his people and intends to lead them forward, not leave them wandering aimlessly at the mountain.</li>
+            <li>Counting each man “one by one” (1:2) shows that God's redemption is corporate yet deeply personal. Encourage the group to see that belonging to the people of God never makes us anonymous to him; he knows each of us by name.</li>
+            <li>The Levites are devoted to the tabernacle rather than to war (1:50), showing that God's work needs guardians of his presence as well as soldiers. Help the group value callings that are quiet or behind the scenes as no less honoring to God.</li>
+            <li>The Levites form a protective boundary around the holy things (1:53). Their service shields Israel from the danger of treating God's presence carelessly, a reminder that reverence is itself an act of love toward the whole community.</li>
+            <li>This is a personal-application question. Invite members to name a place of service—visible or hidden—where God seems to be setting them, and to embrace it as a genuine calling. As leader, affirm that faithfulness in an assigned role is itself worship.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-2.html">Numbers 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

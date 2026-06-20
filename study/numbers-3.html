@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 3: The Levites Belong to God — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 3: the Lord takes the Levites in place of Israel's firstborn and assigns the families of Levi their duties around the tabernacle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 3</span>
+        <h1>Numbers 3: The Levites Belong to God</h1>
+        <p class="lead">In place of Israel's firstborn, the Lord claims the tribe of Levi for himself, assigning each family its care of the sanctuary.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — Numbers Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 3 (WEB)</p>
+            <p><strong>1</strong> Now this is the history of the generations of Aaron and Moses in the day that Yahweh spoke with Moses in Mount Sinai.</p>
+            <p><strong>2</strong> These are the names of the sons of Aaron: Nadab the firstborn, and Abihu, Eleazar, and Ithamar.</p>
+            <p><strong>3</strong> These are the names of the sons of Aaron, the priests who were anointed, whom he consecrated to minister in the priest’s office.</p>
+            <p><strong>4</strong> Nadab and Abihu died before Yahweh, when they offered strange fire before Yahweh, in the wilderness of Sinai, and they had no children. Eleazar and Ithamar ministered in the priest’s office in the presence of Aaron their father.</p>
+            <p><strong>5</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>6</strong> “Bring the tribe of Levi near, and set them before Aaron the priest, that they may minister to him.</p>
+            <p><strong>7</strong> They shall keep his requirements, and the requirements of the whole congregation before the Tent of Meeting, to do the service of the tabernacle.</p>
+            <p><strong>8</strong> They shall keep all the furnishings of the Tent of Meeting, and the obligations of the children of Israel, to do the service of the tabernacle.</p>
+            <p><strong>9</strong> You shall give the Levites to Aaron and to his sons. They are wholly given to him on the behalf of the children of Israel.</p>
+            <p><strong>10</strong> You shall appoint Aaron and his sons, and they shall keep their priesthood. The stranger who comes near shall be put to death.”</p>
+            <p><strong>11</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>12</strong> “Behold, I have taken the Levites from among the children of Israel instead of all the firstborn who open the womb among the children of Israel; and the Levites shall be mine:</p>
+            <p><strong>13</strong> for all the firstborn are mine. On the day that I struck down all the firstborn in the land of Egypt I made holy to me all the firstborn in Israel, both man and animal. They shall be mine. I am Yahweh.”</p>
+            <p><strong>14</strong> Yahweh spoke to Moses in the wilderness of Sinai, saying,</p>
+            <p><strong>15</strong> “Count the children of Levi by their fathers’ houses, by their families. You shall count every male from a month old and upward.”</p>
+            <p><strong>16</strong> Moses numbered them according to Yahweh’s word, as he was commanded.</p>
+            <p><strong>17</strong> These were the sons of Levi by their names: Gershon, and Kohath, and Merari.</p>
+            <p><strong>18</strong> These are the names of the sons of Gershon by their families: Libni and Shimei.</p>
+            <p><strong>19</strong> The sons of Kohath by their families: Amram, and Izhar, Hebron, and Uzziel.</p>
+            <p><strong>20</strong> The sons of Merari by their families: Mahli and Mushi. These are the families of the Levites according to their fathers’ houses.</p>
+            <p><strong>21</strong> Of Gershon was the family of the Libnites, and the family of the Shimeites: these are the families of the Gershonites.</p>
+            <p><strong>22</strong> Those who were numbered of them, according to the number of all the males, from a month old and upward, even those who were numbered of them were seven thousand five hundred.</p>
+            <p><strong>23</strong> The families of the Gershonites shall encamp behind the tabernacle westward.</p>
+            <p><strong>24</strong> The prince of the fathers’ house of the Gershonites shall be Eliasaph the son of Lael.</p>
+            <p><strong>25</strong> The duty of the sons of Gershon in the Tent of Meeting shall be the tabernacle, and the tent, its covering, and the screen for the door of the Tent of Meeting,</p>
+            <p><strong>26</strong> and the hangings of the court, and the screen for the door of the court, which is by the tabernacle, and around the altar, and its cords for all of its service.</p>
+            <p><strong>27</strong> Of Kohath was the family of the Amramites, and the family of the Izharites, and the family of the Hebronites, and the family of the Uzzielites: these are the families of the Kohathites.</p>
+            <p><strong>28</strong> According to the number of all the males, from a month old and upward, there were eight thousand six hundred, keeping the requirements of the sanctuary.</p>
+            <p><strong>29</strong> The families of the sons of Kohath shall encamp on the south side of the tabernacle.</p>
+            <p><strong>30</strong> The prince of the fathers’ house of the families of the Kohathites shall be Elizaphan the son of Uzziel.</p>
+            <p><strong>31</strong> Their duty shall be the ark, the table, the lamp stand, the altars, the vessels of the sanctuary with which they minister, and the screen, and all its service.</p>
+            <p><strong>32</strong> Eleazar the son of Aaron the priest shall be prince of the princes of the Levites, with the oversight of those who keep the requirements of the sanctuary.</p>
+            <p><strong>33</strong> Of Merari was the family of the Mahlites, and the family of the Mushites. These are the families of Merari.</p>
+            <p><strong>34</strong> Those who were numbered of them, according to the number of all the males, from a month old and upward, were six thousand two hundred.</p>
+            <p><strong>35</strong> The prince of the fathers’ house of the families of Merari was Zuriel the son of Abihail. They shall encamp on the north side of the tabernacle.</p>
+            <p><strong>36</strong> The appointed duty of the sons of Merari shall be the tabernacle’s boards, its bars, its pillars, its sockets, all its instruments, all its service,</p>
+            <p><strong>37</strong> the pillars of the court around it, their sockets, their pins, and their cords.</p>
+            <p><strong>38</strong> Those who encamp before the tabernacle eastward, in front of the Tent of Meeting toward the sunrise, shall be Moses, and Aaron and his sons, keeping the requirements of the sanctuary for the duty of the children of Israel. The stranger who comes near shall be put to death.</p>
+            <p><strong>39</strong> All who were numbered of the Levites, whom Moses and Aaron numbered at the commandment of Yahweh, by their families, all the males from a month old and upward, were twenty-two thousand.</p>
+            <p><strong>40</strong> Yahweh said to Moses, “Number all the firstborn males of the children of Israel from a month old and upward, and take the number of their names.</p>
+            <p><strong>41</strong> You shall take the Levites for me (I am Yahweh) instead of all the firstborn among the children of Israel; and the livestock of the Levites instead of all the firstborn among the livestock of the children of Israel.”</p>
+            <p><strong>42</strong> Moses numbered, as Yahweh commanded him, all the firstborn among the children of Israel.</p>
+            <p><strong>43</strong> All the firstborn males according to the number of names, from a month old and upward, of those who were numbered of them, were twenty-two thousand two hundred seventy-three.</p>
+            <p><strong>44</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>45</strong> “Take the Levites instead of all the firstborn among the children of Israel, and the livestock of the Levites instead of their livestock; and the Levites shall be mine. I am Yahweh.</p>
+            <p><strong>46</strong> For the redemption of the two hundred seventy-three of the firstborn of the children of Israel, who exceed the number of the Levites,</p>
+            <p><strong>47</strong> you shall take five shekels apiece for each one; after the shekel of the sanctuary you shall take them (the shekel is twenty gerahs):</p>
+            <p><strong>48</strong> and you shall give the money, with which their remainder is redeemed, to Aaron and to his sons.”</p>
+            <p><strong>49</strong> Moses took the redemption money from those who exceeded the number of those who were redeemed by the Levites;</p>
+            <p><strong>50</strong> from the firstborn of the children of Israel he took the money, one thousand three hundred sixty-five shekels, after the shekel of the sanctuary:</p>
+            <p><strong>51</strong> and Moses gave the redemption money to Aaron and to his sons, according to Yahweh’s word, as Yahweh commanded Moses.</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 3 (KJV)</p>
+            <p><strong>1</strong> These also are the generations of Aaron and Moses in the day that the Lord spake with Moses in mount Sinai.</p>
+            <p><strong>2</strong> And these are the names of the sons of Aaron; Nadab the firstborn, and Abihu, Eleazar, and Ithamar.</p>
+            <p><strong>3</strong> These are the names of the sons of Aaron, the priests which were anointed, whom he consecrated to minister in the priest’s office.</p>
+            <p><strong>4</strong> And Nadab and Abihu died before the Lord, when they offered strange fire before the Lord, in the wilderness of Sinai, and they had no children: and Eleazar and Ithamar ministered in the priest’s office in the sight of Aaron their father.</p>
+            <p><strong>5</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>6</strong> Bring the tribe of Levi near, and present them before Aaron the priest, that they may minister unto him.</p>
+            <p><strong>7</strong> And they shall keep his charge, and the charge of the whole congregation before the tabernacle of the congregation, to do the service of the tabernacle.</p>
+            <p><strong>8</strong> And they shall keep all the instruments of the tabernacle of the congregation, and the charge of the children of Israel, to do the service of the tabernacle.</p>
+            <p><strong>9</strong> And thou shalt give the Levites unto Aaron and to his sons: they are wholly given unto him out of the children of Israel.</p>
+            <p><strong>10</strong> And thou shalt appoint Aaron and his sons, and they shall wait on their priest’s office: and the stranger that cometh nigh shall be put to death.</p>
+            <p><strong>11</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>12</strong> And I, behold, I have taken the Levites from among the children of Israel instead of all the firstborn that openeth the matrix among the children of Israel: therefore the Levites shall be mine;</p>
+            <p><strong>13</strong> Because all the firstborn are mine; for on the day that I smote all the firstborn in the land of Egypt I hallowed unto me all the firstborn in Israel, both man and beast: mine shall they be: I am the Lord.</p>
+            <p><strong>14</strong> And the Lord spake unto Moses in the wilderness of Sinai, saying,</p>
+            <p><strong>15</strong> Number the children of Levi after the house of their fathers, by their families: every male from a month old and upward shalt thou number them.</p>
+            <p><strong>16</strong> And Moses numbered them according to the word of the Lord, as he was commanded.</p>
+            <p><strong>17</strong> And these were the sons of Levi by their names; Gershon, and Kohath, and Merari.</p>
+            <p><strong>18</strong> And these are the names of the sons of Gershon by their families; Libni, and Shimei.</p>
+            <p><strong>19</strong> And the sons of Kohath by their families; Amram, and Izehar, Hebron, and Uzziel.</p>
+            <p><strong>20</strong> And the sons of Merari by their families; Mahli, and Mushi. These are the families of the Levites according to the house of their fathers.</p>
+            <p><strong>21</strong> Of Gershon was the family of the Libnites, and the family of the Shimites: these are the families of the Gershonites.</p>
+            <p><strong>22</strong> Those that were numbered of them, according to the number of all the males, from a month old and upward, even those that were numbered of them were seven thousand and five hundred.</p>
+            <p><strong>23</strong> The families of the Gershonites shall pitch behind the tabernacle westward.</p>
+            <p><strong>24</strong> And the chief of the house of the father of the Gershonites shall be Eliasaph the son of Lael.</p>
+            <p><strong>25</strong> And the charge of the sons of Gershon in the tabernacle of the congregation shall be the tabernacle, and the tent, the covering thereof, and the hanging for the door of the tabernacle of the congregation,</p>
+            <p><strong>26</strong> And the hangings of the court, and the curtain for the door of the court, which is by the tabernacle, and by the altar round about, and the cords of it for all the service thereof.</p>
+            <p><strong>27</strong> And of Kohath was the family of the Amramites, and the family of the Izeharites, and the family of the Hebronites, and the family of the Uzzielites: these are the families of the Kohathites.</p>
+            <p><strong>28</strong> In the number of all the males, from a month old and upward, were eight thousand and six hundred, keeping the charge of the sanctuary.</p>
+            <p><strong>29</strong> The families of the sons of Kohath shall pitch on the side of the tabernacle southward.</p>
+            <p><strong>30</strong> And the chief of the house of the father of the families of the Kohathites shall be Elizaphan the son of Uzziel.</p>
+            <p><strong>31</strong> And their charge shall be the ark, and the table, and the candlestick, and the altars, and the vessels of the sanctuary wherewith they minister, and the hanging, and all the service thereof.</p>
+            <p><strong>32</strong> And Eleazar the son of Aaron the priest shall be chief over the chief of the Levites, and have the oversight of them that keep the charge of the sanctuary.</p>
+            <p><strong>33</strong> Of Merari was the family of the Mahlites, and the family of the Mushites: these are the families of Merari.</p>
+            <p><strong>34</strong> And those that were numbered of them, according to the number of all the males, from a month old and upward, were six thousand and two hundred.</p>
+            <p><strong>35</strong> And the chief of the house of the father of the families of Merari was Zuriel the son of Abihail: these shall pitch on the side of the tabernacle northward.</p>
+            <p><strong>36</strong> And under the custody and charge of the sons of Merari shall be the boards of the tabernacle, and the bars thereof, and the pillars thereof, and the sockets thereof, and all the vessels thereof, and all that serveth thereto,</p>
+            <p><strong>37</strong> And the pillars of the court round about, and their sockets, and their pins, and their cords.</p>
+            <p><strong>38</strong> But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death.</p>
+            <p><strong>39</strong> All that were numbered of the Levites, which Moses and Aaron numbered at the commandment of the Lord, throughout their families, all the males from a month old and upward, were twenty and two thousand.</p>
+            <p><strong>40</strong> And the Lord said unto Moses, Number all the firstborn of the males of the children of Israel from a month old and upward, and take the number of their names.</p>
+            <p><strong>41</strong> And thou shalt take the Levites for me (I am the Lord) instead of all the firstborn among the children of Israel; and the cattle of the Levites instead of all the firstlings among the cattle of the children of Israel.</p>
+            <p><strong>42</strong> And Moses numbered, as the Lord commanded him, all the firstborn among the children of Israel.</p>
+            <p><strong>43</strong> And all the firstborn males by the number of names, from a month old and upward, of those that were numbered of them, were twenty and two thousand two hundred and threescore and thirteen.</p>
+            <p><strong>44</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>45</strong> Take the Levites instead of all the firstborn among the children of Israel, and the cattle of the Levites instead of their cattle; and the Levites shall be mine: I am the Lord.</p>
+            <p><strong>46</strong> And for those that are to be redeemed of the two hundred and threescore and thirteen of the firstborn of the children of Israel, which are more than the Levites;</p>
+            <p><strong>47</strong> Thou shalt even take five shekels apiece by the poll, after the shekel of the sanctuary shalt thou take them: (the shekel is twenty gerahs:)</p>
+            <p><strong>48</strong> And thou shalt give the money, wherewith the odd number of them is to be redeemed, unto Aaron and to his sons.</p>
+            <p><strong>49</strong> And Moses took the redemption money of them that were over and above them that were redeemed by the Levites:</p>
+            <p><strong>50</strong> Of the firstborn of the children of Israel took he the money; a thousand three hundred and threescore and five shekels, after the shekel of the sanctuary:</p>
+            <p><strong>51</strong> And Moses gave the money of them that were redeemed unto Aaron and to his sons, according to the word of the Lord, as the Lord commanded Moses.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 3 (ASV)</p>
+            <p><strong>1</strong> Now these are the generations of Aaron and Moses in the day that Jehovah spake with Moses in mount Sinai.</p>
+            <p><strong>2</strong> And these are the names of the sons of Aaron: Nadab the first-born, and Abihu, Eleazar, and Ithamar.</p>
+            <p><strong>3</strong> These are the names of the sons of Aaron, the priests that were anointed, whom he consecrated to minister in the priest’s office.</p>
+            <p><strong>4</strong> And Nadab and Abihu died before Jehovah, when they offered strange fire before Jehovah, in the wilderness of Sinai, and they had no children; and Eleazar and Ithamar ministered in the priest’s office in the presence of Aaron their father.</p>
+            <p><strong>5</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>6</strong> Bring the tribe of Levi near, and set them before Aaron the priest, that they may minister unto him.</p>
+            <p><strong>7</strong> And they shall keep his charge, and the charge of the whole congregation before the tent of meeting, to do the service of the tabernacle.</p>
+            <p><strong>8</strong> And they shall keep all the furniture of the tent of meeting, and the charge of the children of Israel, to do the service of the tabernacle.</p>
+            <p><strong>9</strong> And thou shalt give the Levites unto Aaron and to his sons: they are wholly given unto him on the behalf of the children of Israel.</p>
+            <p><strong>10</strong> And thou shalt appoint Aaron and his sons, and they shall keep their priesthood: and the stranger that cometh nigh shall be put to death.</p>
+            <p><strong>11</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>12</strong> And I, behold, I have taken the Levites from among the children of Israel instead of all the first-born that openeth the womb among the children of Israel; and the Levites shall be mine:</p>
+            <p><strong>13</strong> for all the first-born are mine; on the day that I smote all the first-born in the land of Egypt I hallowed unto me all the first-born in Israel, both man and beast; mine they shall be: I am Jehovah.</p>
+            <p><strong>14</strong> And Jehovah spake unto Moses in the wilderness of Sinai, saying,</p>
+            <p><strong>15</strong> Number the children of Levi by their fathers’ houses, by their families: every male from a month old and upward shalt thou number them.</p>
+            <p><strong>16</strong> And Moses numbered them according to the word of Jehovah, as he was commanded.</p>
+            <p><strong>17</strong> And these were the sons of Levi by their names: Gershon, and Kohath, and Merari.</p>
+            <p><strong>18</strong> And these are the names of the sons of Gershon by their families: Libni and Shimei.</p>
+            <p><strong>19</strong> And the sons of Kohath by their families: Amram, and Izhar, Hebron, and Uzziel.</p>
+            <p><strong>20</strong> And the sons of Merari by their families: Mahli and Mushi. These are the families of the Levites according to their fathers’ houses.</p>
+            <p><strong>21</strong> Of Gershon was the family of the Libnites, and the family of the Shimeites: these are the families of the Gershonites.</p>
+            <p><strong>22</strong> Those that were numbered of them, according to the number of all the males, from a month old and upward, even those that were numbered of them were seven thousand and five hundred.</p>
+            <p><strong>23</strong> The families of the Gershonites shall encamp behind the tabernacle westward.</p>
+            <p><strong>24</strong> And the prince of the fathers’ house of the Gershonites shall be Eliasaph the son of Lael.</p>
+            <p><strong>25</strong> And the charge of the sons of Gershon in the tent of meeting shall be the tabernacle, and the Tent, the covering thereof, and the screen for the door of the tent of meeting,</p>
+            <p><strong>26</strong> and the hangings of the court, and the screen for the door of the court, which is by the tabernacle, and by the altar round about, and the cords of it for all the service thereof.</p>
+            <p><strong>27</strong> And of Kohath was the family of the Amramites, and the family of the Izharites, and the family of the Hebronites, and the family of the Uzzielites: these are the families of the Kohathites.</p>
+            <p><strong>28</strong> According to the number of all the males, from a month old and upward, there were eight thousand and six hundred, keeping the charge of the sanctuary.</p>
+            <p><strong>29</strong> The families of the sons of Kohath shall encamp on the side of the tabernacle southward.</p>
+            <p><strong>30</strong> And the prince of the fathers’ house of the families of the Kohathites shall be Elizaphan the son of Uzziel.</p>
+            <p><strong>31</strong> And their charge shall be the ark, and the table, and the candlestick, and the altars, and the vessels of the sanctuary wherewith they minister, and the screen, and all the service thereof.</p>
+            <p><strong>32</strong> And Eleazar the son of Aaron the priest shall be prince of the princes of the Levites, and have the oversight of them that keep the charge of the sanctuary.</p>
+            <p><strong>33</strong> Of Merari was the family of the Mahlites, and the family of the Mushites: these are the families of Merari.</p>
+            <p><strong>34</strong> And those that were numbered of them, according to the number of all the males, from a month old and upward, were six thousand and two hundred.</p>
+            <p><strong>35</strong> And the prince of the fathers’ house of the families of Merari was Zuriel the son of Abihail: they shall encamp on the side of the tabernacle northward.</p>
+            <p><strong>36</strong> And the appointed charge of the sons of Merari shall be the boards of the tabernacle, and the bars thereof, and the pillars thereof, and the sockets thereof, and all the instruments thereof, and all the service thereof,</p>
+            <p><strong>37</strong> and the pillars of the court round about, and their sockets, and their pins, and their cords.</p>
+            <p><strong>38</strong> And those that encamp before the tabernacle eastward, before the tent of meeting toward the sunrising, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death.</p>
+            <p><strong>39</strong> All that were numbered of the Levites, whom Moses and Aaron numbered at the commandment of Jehovah, by their families, all the males from a month old and upward, were twenty and two thousand.</p>
+            <p><strong>40</strong> And Jehovah said unto Moses, Number all the first-born males of the children of Israel from a month old and upward, and take the number of their names.</p>
+            <p><strong>41</strong> And thou shalt take the Levites for me (I am Jehovah) instead of all the first-born among the children of Israel; and the cattle of the Levites instead of all the firstlings among the cattle of the children of Israel.</p>
+            <p><strong>42</strong> And Moses numbered, as Jehovah commanded him, all the first-born among the children of Israel.</p>
+            <p><strong>43</strong> And all the first-born males according to the number of names, from a month old and upward, of those that were numbered of them, were twenty and two thousand two hundred and threescore and thirteen.</p>
+            <p><strong>44</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>45</strong> Take the Levites instead of all the first-born among the children of Israel, and the cattle of the Levites instead of their cattle; and the Levites shall be mine: I am Jehovah.</p>
+            <p><strong>46</strong> And for the redemption of the two hundred and threescore and thirteen of the first-born of the children of Israel, that are over and above the number of the Levites,</p>
+            <p><strong>47</strong> thou shalt take five shekels apiece by the poll; after the shekel of the sanctuary shalt thou take them (the shekel is twenty gerahs):</p>
+            <p><strong>48</strong> and thou shalt give the money, wherewith the odd number of them is redeemed, unto Aaron and to his sons.</p>
+            <p><strong>49</strong> And Moses took the redemption-money from them that were over and above them that were redeemed by the Levites;</p>
+            <p><strong>50</strong> from the first-born of the children of Israel took he the money, a thousand three hundred and threescore and five shekels, after the shekel of the sanctuary:</p>
+            <p><strong>51</strong> and Moses gave the redemption-money unto Aaron and to his sons, according to the word of Jehovah, as Jehovah commanded Moses.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>After recording the line of Aaron, including his sons Nadab and Abihu who died before the Lord offering strange fire, God gives the tribe of Levi to Aaron and his sons to assist in the service of the tabernacle. The Levites are the Lord's special possession, taken in place of all the firstborn of Israel, whom God claimed as his own on the night he struck down Egypt's firstborn. The tribe is organized by its three families: the Gershonites care for the tabernacle's coverings and hangings, the Kohathites for the most holy furnishings, and the Merarites for the frames, bars, and pillars. Each family camps on an assigned side of the tabernacle, while Moses, Aaron, and the priests camp before it on the east. A census of Levite males a month old and upward is taken and compared with the firstborn of Israel; because the firstborn outnumber the Levites, the surplus is redeemed with silver. The chapter shows that all the redeemed belong to God, and that he graciously provides a substitute to bear his service. It points forward to the One who would be given in our place.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who claims the firstborn as his own and takes the Levites in their place to serve at the tabernacle.</li>
+          <li><strong>Aaron and his sons</strong> — The priestly line to whom the Levites are given as helpers, remembered also for Nadab and Abihu who died offering unauthorized fire.</li>
+          <li><strong>The Levites</strong> — The tribe set apart as God's possession, organized into the families of Gershon, Kohath, and Merari, each with its duties.</li>
+          <li><strong>The firstborn of Israel</strong> — Those whom God claimed on the night of the exodus, now represented and replaced by the Levites, with the surplus redeemed by silver.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 3:13 (WEB)</p>
+          <p class="verse__text">for all the firstborn are mine. On the day that I struck down all the firstborn in the land of Egypt I made holy to me all the firstborn in Israel, both man and animal. They shall be mine. I am Yahweh.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>All whom God redeems belong to him; the firstborn are his by right of deliverance (Numbers 3:13).</li>
+          <li>God graciously provides a substitute, taking the Levites in place of the firstborn.</li>
+          <li>Serving God is a privilege entrusted to particular people for the good of all.</li>
+          <li>The careful division of duties shows that every part of God's work has dignity and order.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>The redeemed belong to God.</strong> “All the firstborn are mine” (Numbers 3:13, WEB), claimed on the night of the exodus. Redemption establishes God's rightful ownership of those he saves.</li>
+            <li><strong>God provides a substitute.</strong> The Levites are taken “instead of all the firstborn” (Numbers 3:12, WEB). Where his people owe their lives, God himself supplies the one who stands in their place.</li>
+            <li><strong>Approaching God carelessly is deadly.</strong> Nadab and Abihu “died before Yahweh, when they offered strange fire” (Numbers 3:4, WEB). Service to a holy God must be on his terms, not ours.</li>
+            <li><strong>Every task in God's house has a place.</strong> Gershon, Kohath, and Merari each receive their charge of the tabernacle (Numbers 3:25-37, WEB). No service for God is too small to be assigned and valued.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>What does it mean that God claims all the firstborn of Israel as his own?</li>
+            <li>How does taking the Levites in place of the firstborn illustrate the idea of substitution?</li>
+            <li>Why might God assign each Levite family a specific duty and a specific place in the camp?</li>
+            <li>What warning do Nadab and Abihu offer about approaching God in worship and service?</li>
+            <li>Knowing that you belong to God by redemption, how does that shape the way you offer your life to him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>By sparing Israel's firstborn while striking Egypt's, God established a claim on them; they are his by right of deliverance (3:13). Help the group see that redemption is not only rescue from danger but being made God's own possession.</li>
+            <li>The Levites are accepted in place of the firstborn, who would otherwise be owed to God. This substitution points forward to Christ, who is given in our place so that we, the redeemed, may be presented to God. Draw the line gently toward the gospel.</li>
+            <li>Assigned duties and locations give order, accountability, and dignity to the work (3:25-37). Each family knows its charge. Encourage the group to value clearly given responsibilities in the church and home as part of God's design.</li>
+            <li>Nadab and Abihu's death warns that worship must honor God's holiness and follow his word (3:4). It is a sobering reminder that nearness to God is a privilege never to be treated lightly, even as we approach boldly through Christ.</li>
+            <li>This is a personal-application question. Invite members to reflect on what it means to be owned by a gracious God, not as bondage but as belonging. As leader, encourage one concrete way to offer time, gifts, or service back to the One who redeemed them.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-2.html">← Numbers 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-4.html">Numbers 4 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

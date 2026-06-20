@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 32: An Inheritance East of Jordan — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 32: Reuben, Gad, and half of Manasseh ask to settle east of the Jordan, and Moses requires them to help win Canaan first." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 32
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 32</span>
+        <h1>Numbers 32: An Inheritance East of Jordan</h1>
+        <p class="lead">Reuben, Gad, and half-Manasseh seek land east of the Jordan, and Moses binds them to fight for their brothers before settling down.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-32">
+            <span>Scripture — Numbers Chapter 32</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-32">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-32-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-32-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-32-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-32-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 32 (WEB)</p>
+            <p><strong>1</strong> Now the children of Reuben and the children of Gad had a very great multitude of livestock. When they saw the land of Jazer, and the land of Gilead, that behold, the place was a place for livestock;</p>
+            <p><strong>2</strong> the children of Gad and the children of Reuben came and spoke to Moses, and to Eleazar the priest, and to the princes of the congregation, saying,</p>
+            <p><strong>3</strong> “Ataroth, Dibon, Jazer, Nimrah, Heshbon, Elealeh, Sebam, Nebo, and Beon,</p>
+            <p><strong>4</strong> the land which Yahweh struck before the congregation of Israel, is a land for livestock; and your servants have livestock.”</p>
+            <p><strong>5</strong> They said, “If we have found favor in your sight, let this land be given to your servants for a possession. Don’t bring us over the Jordan.”</p>
+            <p><strong>6</strong> Moses said to the children of Gad, and to the children of Reuben, “Shall your brothers go to the war, and shall you sit here?</p>
+            <p><strong>7</strong> Why do you discourage the heart of the children of Israel from going over into the land which Yahweh has given them?</p>
+            <p><strong>8</strong> Your fathers did so when I sent them from Kadesh Barnea to see the land.</p>
+            <p><strong>9</strong> For when they went up to the valley of Eshcol, and saw the land, they discouraged the heart of the children of Israel, that they should not go into the land which Yahweh had given them.</p>
+            <p><strong>10</strong> Yahweh’s anger was kindled in that day, and he swore, saying,</p>
+            <p><strong>11</strong> ‘Surely none of the men who came up out of Egypt, from twenty years old and upward, shall see the land which I swore to Abraham, to Isaac, and to Jacob; because they have not wholly followed me,</p>
+            <p><strong>12</strong> except Caleb the son of Jephunneh the Kenizzite, and Joshua the son of Nun; because they have followed Yahweh completely.’</p>
+            <p><strong>13</strong> Yahweh’s anger was kindled against Israel, and he made them wander back and forth in the wilderness forty years, until all the generation, who had done evil in the sight of Yahweh, was consumed.</p>
+            <p><strong>14</strong> “Behold, you have risen up in your fathers’ place, an increase of sinful men, to increase the fierce anger of Yahweh toward Israel.</p>
+            <p><strong>15</strong> For if you turn away from after him, he will yet again leave them in the wilderness; and you will destroy all of these people.”</p>
+            <p><strong>16</strong> They came near to him, and said, “We will build sheepfolds here for our livestock, and cities for our little ones;</p>
+            <p><strong>17</strong> but we ourselves will be ready armed to go before the children of Israel, until we have brought them to their place. Our little ones shall dwell in the fortified cities because of the inhabitants of the land.</p>
+            <p><strong>18</strong> We will not return to our houses, until the children of Israel have each inherited their inheritance.</p>
+            <p><strong>19</strong> For we will not inherit with them on the other side of the Jordan, and forward; because our inheritance has come to us on this side of the Jordan eastward.”</p>
+            <p><strong>20</strong> Moses said to them, “If you will do this thing, if you will arm yourselves to go before Yahweh to the war,</p>
+            <p><strong>21</strong> and every armed man of you will pass over the Jordan before Yahweh, until he has driven out his enemies from before him,</p>
+            <p><strong>22</strong> and the land is subdued before Yahweh; then afterward you shall return, and be guiltless towards Yahweh, and towards Israel; and this land shall be to you for a possession before Yahweh.</p>
+            <p><strong>23</strong> “But if you will not do so, behold, you have sinned against Yahweh; and be sure your sin will find you out.</p>
+            <p><strong>24</strong> Build cities for your little ones, and folds for your sheep; and do that which has proceeded out of your mouth.”</p>
+            <p><strong>25</strong> The children of Gad and the children of Reuben spoke to Moses, saying, “Your servants will do as my lord commands.</p>
+            <p><strong>26</strong> Our little ones, our wives, our flocks, and all our livestock, shall be there in the cities of Gilead;</p>
+            <p><strong>27</strong> but your servants will pass over, every man who is armed for war, before Yahweh to battle, as my lord says.”</p>
+            <p><strong>28</strong> So Moses commanded concerning them to Eleazar the priest, and to Joshua the son of Nun, and to the heads of the fathers’ households of the tribes of the children of Israel.</p>
+            <p><strong>29</strong> Moses said to them, “If the children of Gad and the children of Reuben will pass with you over the Jordan, every man who is armed to battle, before Yahweh, and the land is subdued before you, then you shall give them the land of Gilead for a possession;</p>
+            <p><strong>30</strong> but if they will not pass over with you armed, they shall have possessions among you in the land of Canaan.”</p>
+            <p><strong>31</strong> The children of Gad and the children of Reuben answered, saying, “As Yahweh has said to your servants, so will we do.</p>
+            <p><strong>32</strong> We will pass over armed before Yahweh into the land of Canaan, and the possession of our inheritance shall remain with us beyond the Jordan.”</p>
+            <p><strong>33</strong> Moses gave to them, even to the children of Gad, and to the children of Reuben, and to the half-tribe of Manasseh the son of Joseph, the kingdom of Sihon king of the Amorites, and the kingdom of Og king of Bashan, the land, according to its cities and borders, even the cities of the surrounding land.</p>
+            <p><strong>34</strong> The children of Gad built Dibon, Ataroth, Aroer,</p>
+            <p><strong>35</strong> Atrothshophan, Jazer, Jogbehah,</p>
+            <p><strong>36</strong> Beth Nimrah, and Beth Haran: fortified cities, and folds for sheep.</p>
+            <p><strong>37</strong> The children of Reuben built Heshbon, Elealeh, Kiriathaim,</p>
+            <p><strong>38</strong> Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.</p>
+            <p><strong>39</strong> The children of Machir the son of Manasseh went to Gilead, took it, and dispossessed the Amorites who were therein.</p>
+            <p><strong>40</strong> Moses gave Gilead to Machir the son of Manasseh; and he lived therein.</p>
+            <p><strong>41</strong> Jair the son of Manasseh went and took its towns, and called them Havvoth Jair.</p>
+            <p><strong>42</strong> Nobah went and took Kenath, and its villages, and called it Nobah, after his own name.</p>
+            </div>
+            <div class="scripture-text" id="web-32-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 32 (KJV)</p>
+            <p><strong>1</strong> Now the children of Reuben and the children of Gad had a very great multitude of cattle: and when they saw the land of Jazer, and the land of Gilead, that, behold, the place was a place for cattle;</p>
+            <p><strong>2</strong> The children of Gad and the children of Reuben came and spake unto Moses, and to Eleazar the priest, and unto the princes of the congregation, saying,</p>
+            <p><strong>3</strong> Ataroth, and Dibon, and Jazer, and Nimrah, and Heshbon, and Elealeh, and Shebam, and Nebo, and Beon,</p>
+            <p><strong>4</strong> Even the country which the Lord smote before the congregation of Israel, is a land for cattle, and thy servants have cattle:</p>
+            <p><strong>5</strong> Wherefore, said they, if we have found grace in thy sight, let this land be given unto thy servants for a possession, and bring us not over Jordan.</p>
+            <p><strong>6</strong> And Moses said unto the children of Gad and to the children of Reuben, Shall your brethren go to war, and shall ye sit here?</p>
+            <p><strong>7</strong> And wherefore discourage ye the heart of the children of Israel from going over into the land which the Lord hath given them?</p>
+            <p><strong>8</strong> Thus did your fathers, when I sent them from Kadesh–barnea to see the land.</p>
+            <p><strong>9</strong> For when they went up unto the valley of Eshcol, and saw the land, they discouraged the heart of the children of Israel, that they should not go into the land which the Lord had given them.</p>
+            <p><strong>10</strong> And the Lord’s anger was kindled the same time, and he sware, saying,</p>
+            <p><strong>11</strong> Surely none of the men that came up out of Egypt, from twenty years old and upward, shall see the land which I sware unto Abraham, unto Isaac, and unto Jacob; because they have not wholly followed me:</p>
+            <p><strong>12</strong> Save Caleb the son of Jephunneh the Kenezite, and Joshua the son of Nun: for they have wholly followed the Lord.</p>
+            <p><strong>13</strong> And the Lord’s anger was kindled against Israel, and he made them wander in the wilderness forty years, until all the generation, that had done evil in the sight of the Lord, was consumed.</p>
+            <p><strong>14</strong> And, behold, ye are risen up in your fathers’ stead, an increase of sinful men, to augment yet the fierce anger of the Lord toward Israel.</p>
+            <p><strong>15</strong> For if ye turn away from after him, he will yet again leave them in the wilderness; and ye shall destroy all this people.</p>
+            <p><strong>16</strong> And they came near unto him, and said, We will build sheepfolds here for our cattle, and cities for our little ones:</p>
+            <p><strong>17</strong> But we ourselves will go ready armed before the children of Israel, until we have brought them unto their place: and our little ones shall dwell in the fenced cities because of the inhabitants of the land.</p>
+            <p><strong>18</strong> We will not return unto our houses, until the children of Israel have inherited every man his inheritance.</p>
+            <p><strong>19</strong> For we will not inherit with them on yonder side Jordan, or forward; because our inheritance is fallen to us on this side Jordan eastward.</p>
+            <p><strong>20</strong> And Moses said unto them, If ye will do this thing, if ye will go armed before the Lord to war,</p>
+            <p><strong>21</strong> And will go all of you armed over Jordan before the Lord, until he hath driven out his enemies from before him,</p>
+            <p><strong>22</strong> And the land be subdued before the Lord: then afterward ye shall return, and be guiltless before the Lord, and before Israel; and this land shall be your possession before the Lord.</p>
+            <p><strong>23</strong> But if ye will not do so, behold, ye have sinned against the Lord: and be sure your sin will find you out.</p>
+            <p><strong>24</strong> Build you cities for your little ones, and folds for your sheep; and do that which hath proceeded out of your mouth.</p>
+            <p><strong>25</strong> And the children of Gad and the children of Reuben spake unto Moses, saying, Thy servants will do as my lord commandeth.</p>
+            <p><strong>26</strong> Our little ones, our wives, our flocks, and all our cattle, shall be there in the cities of Gilead:</p>
+            <p><strong>27</strong> But thy servants will pass over, every man armed for war, before the Lord to battle, as my lord saith.</p>
+            <p><strong>28</strong> So concerning them Moses commanded Eleazar the priest, and Joshua the son of Nun, and the chief fathers of the tribes of the children of Israel:</p>
+            <p><strong>29</strong> And Moses said unto them, If the children of Gad and the children of Reuben will pass with you over Jordan, every man armed to battle, before the Lord, and the land shall be subdued before you; then ye shall give them the land of Gilead for a possession:</p>
+            <p><strong>30</strong> But if they will not pass over with you armed, they shall have possessions among you in the land of Canaan.</p>
+            <p><strong>31</strong> And the children of Gad and the children of Reuben answered, saying, As the Lord hath said unto thy servants, so will we do.</p>
+            <p><strong>32</strong> We will pass over armed before the Lord into the land of Canaan, that the possession of our inheritance on this side Jordan may be ours.</p>
+            <p><strong>33</strong> And Moses gave unto them, even to the children of Gad, and to the children of Reuben, and unto half the tribe of Manasseh the son of Joseph, the kingdom of Sihon king of the Amorites, and the kingdom of Og king of Bashan, the land, with the cities thereof in the coasts, even the cities of the country round about.</p>
+            <p><strong>34</strong> And the children of Gad built Dibon, and Ataroth, and Aroer,</p>
+            <p><strong>35</strong> And Atroth, Shophan, and Jaazer, and Jogbehah,</p>
+            <p><strong>36</strong> And Beth–nimrah, and Beth–haran, fenced cities: and folds for sheep.</p>
+            <p><strong>37</strong> And the children of Reuben built Heshbon, and Elealeh, and Kirjathaim,</p>
+            <p><strong>38</strong> And Nebo, and Baal–meon, (their names being changed,) and Shibmah: and gave other names unto the cities which they builded.</p>
+            <p><strong>39</strong> And the children of Machir the son of Manasseh went to Gilead, and took it, and dispossessed the Amorite which was in it.</p>
+            <p><strong>40</strong> And Moses gave Gilead unto Machir the son of Manasseh; and he dwelt therein.</p>
+            <p><strong>41</strong> And Jair the son of Manasseh went and took the small towns thereof, and called them Havoth–jair.</p>
+            <p><strong>42</strong> And Nobah went and took Kenath, and the villages thereof, and called it Nobah, after his own name.</p>
+            </div>
+            <div class="scripture-text" id="web-32-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 32 (ASV)</p>
+            <p><strong>1</strong> Now the children of Reuben and the children of Gad had a very great multitude of cattle: and when they saw the land of Jazer, and the land of Gilead, that, behold, the place was a place for cattle;</p>
+            <p><strong>2</strong> the children of Gad and the children of Reuben came and spake unto Moses, and to Eleazar the priest, and unto the princes of the congregation, saying,</p>
+            <p><strong>3</strong> Ataroth, and Dibon, and Jazer, and Nimrah, and Heshbon, and Elealeh, and Sebam, and Nebo, and Beon,</p>
+            <p><strong>4</strong> the land which Jehovah smote before the congregation of Israel, is a land for cattle; and thy servants have cattle.</p>
+            <p><strong>5</strong> And they said, If we have found favor in thy sight, let this land be given unto thy servants for a possession; bring us not over the Jordan.</p>
+            <p><strong>6</strong> And Moses said unto the children of Gad, and to the children of Reuben, Shall your brethren go to the war, and shall ye sit here?</p>
+            <p><strong>7</strong> And wherefore discourage ye the heart of the children of Israel from going over into the land which Jehovah hath given them?</p>
+            <p><strong>8</strong> Thus did your fathers, when I sent them from Kadesh-barnea to see the land.</p>
+            <p><strong>9</strong> For when they went up unto the valley of Eshcol, and saw the land, they discouraged the heart of the children of Israel, that they should not go into the land which Jehovah had given them.</p>
+            <p><strong>10</strong> And Jehovah’s anger was kindled in that day, and he sware, saying,</p>
+            <p><strong>11</strong> Surely none of the men that came up out of Egypt, from twenty years old and upward, shall see the land which I sware unto Abraham, unto Isaac, and unto Jacob; because they have not wholly followed me:</p>
+            <p><strong>12</strong> save Caleb the son of Jephunneh the Kenizzite, and Joshua the son of Nun; because they have wholly followed Jehovah.</p>
+            <p><strong>13</strong> And Jehovah’s anger was kindled against Israel, and he made them wander to and fro in the wilderness forty years, until all the generation, that had done evil in the sight of Jehovah, was consumed.</p>
+            <p><strong>14</strong> And, behold, ye are risen up in your fathers’ stead, an increase of sinful men, to augment yet the fierce anger of Jehovah toward Israel.</p>
+            <p><strong>15</strong> For if ye turn away from after him, he will yet again leave them in the wilderness; and ye will destroy all this people.</p>
+            <p><strong>16</strong> And they came near unto him, and said, We will build sheepfolds here for our cattle, and cities for our little ones:</p>
+            <p><strong>17</strong> but we ourselves will be ready armed to go before the children of Israel, until we have brought them unto their place: and our little ones shall dwell in the fortified cities because of the inhabitants of the land.</p>
+            <p><strong>18</strong> We will not return unto our houses, until the children of Israel have inherited every man his inheritance.</p>
+            <p><strong>19</strong> For we will not inherit with them on the other side of the Jordan, and forward; because our inheritance is fallen to us on this side of the Jordan eastward.</p>
+            <p><strong>20</strong> And Moses said unto them, If ye will do this thing, if ye will arm yourselves to go before Jehovah to the war,</p>
+            <p><strong>21</strong> and every armed man of you will pass over the Jordan before Jehovah, until he hath driven out his enemies from before him,</p>
+            <p><strong>22</strong> and the land is subdued before Jehovah; then afterward ye shall return, and be guiltless towards Jehovah, and towards Israel; and this land shall be unto you for a possession before Jehovah.</p>
+            <p><strong>23</strong> But if ye will not do so, behold, ye have sinned against Jehovah; and be sure your sin will find you out.</p>
+            <p><strong>24</strong> Build you cities for your little ones, and folds for your sheep; and do that which hath proceeded out of your mouth.</p>
+            <p><strong>25</strong> And the children of Gad and the children of Reuben spake unto Moses, saying, Thy servants will do as my lord commandeth.</p>
+            <p><strong>26</strong> Our little ones, our wives, our flocks, and all our cattle, shall be there in the cities of Gilead;</p>
+            <p><strong>27</strong> but thy servants will pass over, every man that is armed for war, before Jehovah to battle, as my lord saith.</p>
+            <p><strong>28</strong> So Moses gave charge concerning them to Eleazar the priest, and to Joshua the son of Nun, and to the heads of the fathers’housesof the tribes of the children of Israel.</p>
+            <p><strong>29</strong> And Moses said unto them, If the children of Gad and the children of Reuben will pass with you over the Jordan, every man that is armed to battle, before Jehovah, and the land shall be subdued before you; then ye shall give them the land of Gilead for a possession:</p>
+            <p><strong>30</strong> but if they will not pass over with you armed, they shall have possessions among you in the land of Canaan.</p>
+            <p><strong>31</strong> And the children of Gad and the children of Reuben answered, saying, As Jehovah hath said unto thy servants, so will we do.</p>
+            <p><strong>32</strong> We will pass over armed before Jehovah into the land of Canaan, and the possession of our inheritance shall remain with us beyond the Jordan.</p>
+            <p><strong>33</strong> And Moses gave unto them, even to the children of Gad, and to the children of Reuben, and unto the half-tribe of Manasseh the son of Joseph, the kingdom of Sihon king of the Amorites, and the kingdom of Og king of Bashan, the land, according to the cities thereof with their borders, even the cities of the land round about.</p>
+            <p><strong>34</strong> And the children of Gad built Dibon, and Ataroth, and Aroer,</p>
+            <p><strong>35</strong> and Atroth-shophan, and Jazer, and Jogbehah,</p>
+            <p><strong>36</strong> and Beth-nimrah, and Beth-haran: fortified cities, and folds for sheep.</p>
+            <p><strong>37</strong> And the children of Reuben built Heshbon, and Elealeh, and Kiriathaim,</p>
+            <p><strong>38</strong> and Nebo, and Baal-meon, (their names being changed,) and Sibmah: and they gave other names unto the cities which they builded.</p>
+            <p><strong>39</strong> And the children of Machir the son of Manasseh went to Gilead, and took it, and dispossessed the Amorites that were therein.</p>
+            <p><strong>40</strong> And Moses gave Gilead unto Machir the son of Manasseh; and he dwelt therein.</p>
+            <p><strong>41</strong> And Jair the son of Manasseh went and took the towns thereof, and called them Havvoth-jair.</p>
+            <p><strong>42</strong> And Nobah went and took Kenath, and the villages thereof, and called it Nobah, after his own name.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The tribes of Reuben and Gad, owning vast herds, see that the lands of Jazer and Gilead east of the Jordan are ideal for livestock, and they ask Moses to grant them this region as their possession rather than crossing the Jordan. Moses reacts sharply, fearing they are repeating the sin of their fathers, the spies whose unbelief discouraged Israel and brought forty years of wandering; he warns that if they turn away, they will destroy the whole people. The tribes answer with a pledge: they will build folds for their flocks and cities for their families here, but they themselves will arm and go ahead of their brothers into battle, not returning home until every Israelite has received an inheritance. Moses accepts their commitment but binds it solemnly, warning that if they fail, their sin will find them out. He charges Eleazar, Joshua, and the tribal heads to grant them Gilead once the conquest is complete, and the tribes again affirm they will cross over armed before the Lord. So Moses gives Reuben, Gad, and the half-tribe of Manasseh the conquered kingdoms of Sihon and Og, and they rebuild and rename the cities. The chapter teaches that personal blessing must not be pursued at the expense of one's brothers, and that promises before God carry weight.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The children of Reuben and Gad</strong> — The tribes rich in livestock who request the land east of the Jordan and pledge to fight for their brothers before settling.</li>
+          <li><strong>Moses</strong> — The leader who initially fears another act of unbelief, then binds the tribes to their commitment with solemn warning.</li>
+          <li><strong>The half-tribe of Manasseh</strong> — The descendants of Machir and Jair who take Gilead and its towns and receive an inheritance east of the Jordan.</li>
+          <li><strong>Eleazar and Joshua</strong> — The priest and the new leader charged with ensuring the eastern tribes keep their promise and receive their land.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 32:23 (WEB)</p>
+          <p class="verse__text">“But if you will not do so, behold, you have sinned against Yahweh; and be sure your sin will find you out.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Personal blessing should never be sought at the cost of abandoning our brothers and sisters.</li>
+          <li>Past failures can teach us, but we must not repeat the unbelief of those before us.</li>
+          <li>Commitments made before God are binding and must be carried out.</li>
+          <li>Hidden disobedience does not stay hidden; our sin will find us out.</li>
+          <li>Genuine community shares the burden until everyone has received their portion.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-32">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-32">
+            <ul class="lesson-list">
+            <li><strong>Do not let others fight alone.</strong> Moses asks, “Shall your brothers go to the war, and shall you sit here?” (Numbers 32:6, WEB). God's people bear one another's burdens rather than seeking ease while others struggle.</li>
+            <li><strong>Learn from the failures of the past.</strong> Moses recalls how the spies “discouraged the heart of the children of Israel” (Numbers 32:9, WEB). We are to learn from prior unbelief, not repeat it.</li>
+            <li><strong>Keep your commitments.</strong> The tribes promise, “We will not return to our houses, until the children of Israel have each inherited” (Numbers 32:18, WEB). Faithfulness means following through on what we pledge.</li>
+            <li><strong>Sin will surface.</strong> “Be sure your sin will find you out” (Numbers 32:23, WEB). Disobedience cannot be permanently hidden; it has a way of coming to light.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-32">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-32">
+            <ol class="study-questions">
+            <li>Why does Moses react so strongly to the request of Reuben and Gad at first?</li>
+            <li>How do the tribes resolve Moses' concern, and what does their pledge reveal about true community?</li>
+            <li>What does Moses mean by the warning, “be sure your sin will find you out”?</li>
+            <li>How does this chapter hold together personal blessing and responsibility to others?</li>
+            <li>Where might you be tempted to settle for your own comfort while neglecting the needs of your brothers and sisters?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-32">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-32">
+            <ol class="study-questions">
+            <li>Moses fears a repeat of the spies' unbelief, which discouraged the people and led to forty years of wandering (32:6-13). A request to stay behind looked, at first, like the same faithless retreat that had cost the previous generation the land. He is jealous to protect Israel from another such failure.</li>
+            <li>The tribes pledge to arm themselves and go ahead of their brothers into battle, not returning home until all Israel has its inheritance (32:16-19). Their answer shows that they do not intend to abandon the others; true community shares the danger and the labor until everyone is provided for.</li>
+            <li>Moses warns that if they break their promise, they sin against the Lord and that sin will inevitably come to light (32:23). The principle is sobering and universal: disobedience cannot be permanently concealed. Encourage the group to live with integrity before the God who sees.</li>
+            <li>The chapter affirms that it can be right to receive a particular blessing—the eastern land—so long as it does not come at the expense of one's responsibility to others. Blessing and duty are held together: the tribes may settle, but only after fighting for their brothers' inheritance.</li>
+            <li>This is a personal-application question. Invite members to examine whether they pursue their own comfort while others around them struggle, and how they might step in to help. As leader, commend the model of the eastern tribes who enjoyed their portion only after serving the whole community.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-31.html">← Numbers 31</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-33.html">Numbers 33 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 22: The Donkey Speaks — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 22: King Balak hires Balaam to curse Israel, but God intervenes, and Balaam's donkey sees the angel and speaks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 22
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 22</span>
+        <h1>Numbers 22: The Donkey Speaks</h1>
+        <p class="lead">Frightened by Israel, King Balak hires the seer Balaam to curse them, but God turns him back, and even his donkey sees what the prophet cannot.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-22">
+            <span>Scripture — Numbers Chapter 22</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-22">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-22-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-22-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-22-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-22-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 22 (WEB)</p>
+            <p><strong>1</strong> The children of Israel traveled, and encamped in the plains of Moab beyond the Jordan at Jericho.</p>
+            <p><strong>2</strong> Balak the son of Zippor saw all that Israel had done to the Amorites.</p>
+            <p><strong>3</strong> Moab was very afraid of the people, because they were many. Moab was distressed because of the children of Israel.</p>
+            <p><strong>4</strong> Moab said to the elders of Midian, “Now this multitude will lick up all that is around us, as the ox licks up the grass of the field.” Balak the son of Zippor was king of Moab at that time.</p>
+            <p><strong>5</strong> He sent messengers to Balaam the son of Beor, to Pethor, which is by the River, to the land of the children of his people, to call him, saying, “Behold, there is a people who came out of Egypt. Behold, they cover the surface of the earth, and they are staying opposite me.</p>
+            <p><strong>6</strong> Please come now therefore curse me this people; for they are too mighty for me. Perhaps I shall prevail, that we may strike them, and that I may drive them out of the land; for I know that he whom you bless is blessed, and he whom you curse is cursed.”</p>
+            <p><strong>7</strong> The elders of Moab and the elders of Midian departed with the rewards of divination in their hand. They came to Balaam, and spoke to him the words of Balak.</p>
+            <p><strong>8</strong> He said to them, “Lodge here this night, and I will bring you word again, as Yahweh shall speak to me.” The princes of Moab stayed with Balaam.</p>
+            <p><strong>9</strong> God came to Balaam, and said, “Who are these men with you?”</p>
+            <p><strong>10</strong> Balaam said to God, “Balak the son of Zippor, king of Moab, has said to me,</p>
+            <p><strong>11</strong> ‘Behold, the people that has come out of Egypt covers the surface of the earth. Now, come curse me them. Perhaps I shall be able to fight against them, and shall drive them out.’”</p>
+            <p><strong>12</strong> God said to Balaam, “You shall not go with them. You shall not curse the people; for they are blessed.”</p>
+            <p><strong>13</strong> Balaam rose up in the morning, and said to the princes of Balak, “Go to your land; for Yahweh refuses to permit me to go with you.”</p>
+            <p><strong>14</strong> The princes of Moab rose up, and they went to Balak, and said, “Balaam refuses to come with us.”</p>
+            <p><strong>15</strong> Balak again sent princes, more, and more honorable than they.</p>
+            <p><strong>16</strong> They came to Balaam, and said to him, “Thus says Balak the son of Zippor, ‘Please let nothing hinder you from coming to me,</p>
+            <p><strong>17</strong> for I will promote you to very great honor, and whatever you say to me I will do. Please come therefore, and curse this people for me.’”</p>
+            <p><strong>18</strong> Balaam answered the servants of Balak, “If Balak would give me his house full of silver and gold, I can’t go beyond the word of Yahweh my God, to do less or more.</p>
+            <p><strong>19</strong> Now therefore, please wait also here this night, that I may know what Yahweh will speak to me more.”</p>
+            <p><strong>20</strong> God came to Balaam at night, and said to him, “If the men have come to call you, rise up, go with them; but only the word which I speak to you, that you shall do.”</p>
+            <p><strong>21</strong> Balaam rose up in the morning, and saddled his donkey, and went with the princes of Moab.</p>
+            <p><strong>22</strong> God’s anger was kindled because he went; and Yahweh’s angel placed himself in the way for an adversary against him. Now he was riding on his donkey, and his two servants were with him.</p>
+            <p><strong>23</strong> The donkey saw Yahweh’s angel standing in the way, with his sword drawn in his hand; and the donkey turned aside out of the way, and went into the field. Balaam struck the donkey, to turn her into the way.</p>
+            <p><strong>24</strong> Then Yahweh’s angel stood in a narrow path between the vineyards, a wall being on this side, and a wall on that side.</p>
+            <p><strong>25</strong> The donkey saw Yahweh’s angel, and she thrust herself to the wall, and crushed Balaam’s foot against the wall. He struck her again.</p>
+            <p><strong>26</strong> Yahweh’s angel went further, and stood in a narrow place, where there was no way to turn either to the right hand or to the left.</p>
+            <p><strong>27</strong> The donkey saw Yahweh’s angel, and she lay down under Balaam. Balaam’s anger was kindled, and he struck the donkey with his staff.</p>
+            <p><strong>28</strong> Yahweh opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?”</p>
+            <p><strong>29</strong> Balaam said to the donkey, “Because you have mocked me, I wish there were a sword in my hand, for now I would have killed you.”</p>
+            <p><strong>30</strong> The donkey said to Balaam, “Am I not your donkey, on which you have ridden all your life long to this day? Was I ever in the habit of doing so to you?” He said, “No.”</p>
+            <p><strong>31</strong> Then Yahweh opened the eyes of Balaam, and he saw Yahweh’s angel standing in the way, with his sword drawn in his hand; and he bowed his head, and fell on his face.</p>
+            <p><strong>32</strong> Yahweh’s angel said to him, “Why have you struck your donkey these three times? Behold, I have come out as an adversary, because your way is perverse before me.</p>
+            <p><strong>33</strong> The donkey saw me, and turned aside before me these three times. Unless she had turned aside from me, surely now I would have killed you, and saved her alive.”</p>
+            <p><strong>34</strong> Balaam said to Yahweh’s angel, “I have sinned; for I didn’t know that you stood in the way against me. Now therefore, if it displeases you, I will go back again.”</p>
+            <p><strong>35</strong> Yahweh’s angel said to Balaam, “Go with the men; but only the word that I shall speak to you, that you shall speak.” So Balaam went with the princes of Balak.</p>
+            <p><strong>36</strong> When Balak heard that Balaam had come, he went out to meet him to the City of Moab, which is on the border of the Arnon, which is in the utmost part of the border.</p>
+            <p><strong>37</strong> Balak said to Balaam, “Didn’t I earnestly send to you to call you? Why didn’t you come to me? Am I not able indeed to promote you to honor?”</p>
+            <p><strong>38</strong> Balaam said to Balak, “Behold, I have come to you. Have I now any power at all to speak anything? The word that God puts in my mouth, that shall I speak.”</p>
+            <p><strong>39</strong> Balaam went with Balak, and they came to Kiriath Huzoth.</p>
+            <p><strong>40</strong> Balak sacrificed cattle and sheep, and sent to Balaam, and to the princes who were with him.</p>
+            <p><strong>41</strong> In the morning, Balak took Balaam, and brought him up into the high places of Baal; and he saw from there part of the people.</p>
+            </div>
+            <div class="scripture-text" id="web-22-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 22 (KJV)</p>
+            <p><strong>1</strong> And the children of Israel set forward, and pitched in the plains of Moab on this side Jordan by Jericho.</p>
+            <p><strong>2</strong> And Balak the son of Zippor saw all that Israel had done to the Amorites.</p>
+            <p><strong>3</strong> And Moab was sore afraid of the people, because they were many: and Moab was distressed because of the children of Israel.</p>
+            <p><strong>4</strong> And Moab said unto the elders of Midian, Now shall this company lick up all that are round about us, as the ox licketh up the grass of the field. And Balak the son of Zippor was king of the Moabites at that time.</p>
+            <p><strong>5</strong> He sent messengers therefore unto Balaam the son of Beor to Pethor, which is by the river of the land of the children of his people, to call him, saying, Behold, there is a people come out from Egypt: behold, they cover the face of the earth, and they abide over against me:</p>
+            <p><strong>6</strong> Come now therefore, I pray thee, curse me this people; for they are too mighty for me: peradventure I shall prevail, that we may smite them, and that I may drive them out of the land: for I wot that he whom thou blessest is blessed, and he whom thou cursest is cursed.</p>
+            <p><strong>7</strong> And the elders of Moab and the elders of Midian departed with the rewards of divination in their hand; and they came unto Balaam, and spake unto him the words of Balak.</p>
+            <p><strong>8</strong> And he said unto them, Lodge here this night, and I will bring you word again, as the Lord shall speak unto me: and the princes of Moab abode with Balaam.</p>
+            <p><strong>9</strong> And God came unto Balaam, and said, What men are these with thee?</p>
+            <p><strong>10</strong> And Balaam said unto God, Balak the son of Zippor, king of Moab, hath sent unto me, saying,</p>
+            <p><strong>11</strong> Behold, there is a people come out of Egypt, which covereth the face of the earth: come now, curse me them; peradventure I shall be able to overcome them, and drive them out.</p>
+            <p><strong>12</strong> And God said unto Balaam, Thou shalt not go with them; thou shalt not curse the people: for they are blessed.</p>
+            <p><strong>13</strong> And Balaam rose up in the morning, and said unto the princes of Balak, Get you into your land: for the Lord refuseth to give me leave to go with you.</p>
+            <p><strong>14</strong> And the princes of Moab rose up, and they went unto Balak, and said, Balaam refuseth to come with us.</p>
+            <p><strong>15</strong> And Balak sent yet again princes, more, and more honourable than they.</p>
+            <p><strong>16</strong> And they came to Balaam, and said to him, Thus saith Balak the son of Zippor, Let nothing, I pray thee, hinder thee from coming unto me:</p>
+            <p><strong>17</strong> For I will promote thee unto very great honour, and I will do whatsoever thou sayest unto me: come therefore, I pray thee, curse me this people.</p>
+            <p><strong>18</strong> And Balaam answered and said unto the servants of Balak, If Balak would give me his house full of silver and gold, I cannot go beyond the word of the Lord my God, to do less or more.</p>
+            <p><strong>19</strong> Now therefore, I pray you, tarry ye also here this night, that I may know what the Lord will say unto me more.</p>
+            <p><strong>20</strong> And God came unto Balaam at night, and said unto him, If the men come to call thee, rise up, and go with them; but yet the word which I shall say unto thee, that shalt thou do.</p>
+            <p><strong>21</strong> And Balaam rose up in the morning, and saddled his ass, and went with the princes of Moab.</p>
+            <p><strong>22</strong> And God’s anger was kindled because he went: and the angel of the Lord stood in the way for an adversary against him. Now he was riding upon his ass, and his two servants were with him.</p>
+            <p><strong>23</strong> And the ass saw the angel of the Lord standing in the way, and his sword drawn in his hand: and the ass turned aside out of the way, and went into the field: and Balaam smote the ass, to turn her into the way.</p>
+            <p><strong>24</strong> But the angel of the Lord stood in a path of the vineyards, a wall being on this side, and a wall on that side.</p>
+            <p><strong>25</strong> And when the ass saw the angel of the Lord, she thrust herself unto the wall, and crushed Balaam’s foot against the wall: and he smote her again.</p>
+            <p><strong>26</strong> And the angel of the Lord went further, and stood in a narrow place, where was no way to turn either to the right hand or to the left.</p>
+            <p><strong>27</strong> And when the ass saw the angel of the Lord, she fell down under Balaam: and Balaam’s anger was kindled, and he smote the ass with a staff.</p>
+            <p><strong>28</strong> And the Lord opened the mouth of the ass, and she said unto Balaam, What have I done unto thee, that thou hast smitten me these three times?</p>
+            <p><strong>29</strong> And Balaam said unto the ass, Because thou hast mocked me: I would there were a sword in mine hand, for now would I kill thee.</p>
+            <p><strong>30</strong> And the ass said unto Balaam, Am not I thine ass, upon which thou hast ridden ever since I was thine unto this day? was I ever wont to do so unto thee? And he said, Nay.</p>
+            <p><strong>31</strong> Then the Lord opened the eyes of Balaam, and he saw the angel of the Lord standing in the way, and his sword drawn in his hand: and he bowed down his head, and fell flat on his face.</p>
+            <p><strong>32</strong> And the angel of the Lord said unto him, Wherefore hast thou smitten thine ass these three times? behold, I went out to withstand thee, because thy way is perverse before me:</p>
+            <p><strong>33</strong> And the ass saw me, and turned from me these three times: unless she had turned from me, surely now also I had slain thee, and saved her alive.</p>
+            <p><strong>34</strong> And Balaam said unto the angel of the Lord, I have sinned; for I knew not that thou stoodest in the way against me: now therefore, if it displease thee, I will get me back again.</p>
+            <p><strong>35</strong> And the angel of the Lord said unto Balaam, Go with the men: but only the word that I shall speak unto thee, that thou shalt speak. So Balaam went with the princes of Balak.</p>
+            <p><strong>36</strong> And when Balak heard that Balaam was come, he went out to meet him unto a city of Moab, which is in the border of Arnon, which is in the utmost coast.</p>
+            <p><strong>37</strong> And Balak said unto Balaam, Did I not earnestly send unto thee to call thee? wherefore camest thou not unto me? am I not able indeed to promote thee to honour?</p>
+            <p><strong>38</strong> And Balaam said unto Balak, Lo, I am come unto thee: have I now any power at all to say any thing? the word that God putteth in my mouth, that shall I speak.</p>
+            <p><strong>39</strong> And Balaam went with Balak, and they came unto Kirjath–huzoth.</p>
+            <p><strong>40</strong> And Balak offered oxen and sheep, and sent to Balaam, and to the princes that were with him.</p>
+            <p><strong>41</strong> And it came to pass on the morrow, that Balak took Balaam, and brought him up into the high places of Baal, that thence he might see the utmost part of the people.</p>
+            </div>
+            <div class="scripture-text" id="web-22-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 22 (ASV)</p>
+            <p><strong>1</strong> And the children of Israel journeyed, and encamped in the plains of Moab beyond the Jordan at Jericho.</p>
+            <p><strong>2</strong> And Balak the son of Zippor saw all that Israel had done to the Amorites.</p>
+            <p><strong>3</strong> And Moab was sore afraid of the people, because they were many: and Moab was distressed because of the children of Israel.</p>
+            <p><strong>4</strong> And Moab said unto the elders of Midian, Now will this multitude lick up all that is round about us, as the ox licketh up the grass of the field. And Balak the son of Zippor was king of Moab at that time.</p>
+            <p><strong>5</strong> And he sent messengers unto Balaam the son of Beor, to Pethor, which is by the River, to the land of the children of his people, to call him, saying, Behold, there is a people come out from Egypt: behold, they cover the face of the earth, and they abide over against me.</p>
+            <p><strong>6</strong> Come now therefore, I pray thee, curse me this people; for they are too mighty for me: peradventure I shall prevail, that we may smite them, and that I may drive them out of the land; for I know that he whom thou blessest is blessed, and he whom thou cursest is cursed.</p>
+            <p><strong>7</strong> And the elders of Moab and the elders of Midian departed with the rewards of divination in their hand; and they came unto Balaam, and spake unto him the words of Balak.</p>
+            <p><strong>8</strong> And he said unto them, Lodge here this night, and I will bring you word again, as Jehovah shall speak unto me: and the princes of Moab abode with Balaam.</p>
+            <p><strong>9</strong> And God came unto Balaam, and said, What men are these with thee?</p>
+            <p><strong>10</strong> And Balaam said unto God, Balak the son of Zippor, king of Moab, hath sent unto me, saying,</p>
+            <p><strong>11</strong> Behold, the people that is come out of Egypt, it covereth the face of the earth: now, come curse me them; peradventure I shall be able to fight against them, and shall drive them out.</p>
+            <p><strong>12</strong> And God said unto Balaam, Thou shalt not go with them; thou shalt not curse the people; for they are blessed.</p>
+            <p><strong>13</strong> And Balaam rose up in the morning, and said unto the princes of Balak, Get you into your land; for Jehovah refuseth to give me leave to go with you.</p>
+            <p><strong>14</strong> And the princes of Moab rose up, and they went unto Balak, and said, Balaam refuseth to come with us.</p>
+            <p><strong>15</strong> And Balak sent yet again princes, more, and more honorable than they.</p>
+            <p><strong>16</strong> And they came to Balaam, and said to him, Thus saith Balak the son of Zippor, Let nothing, I pray thee, hinder thee from coming unto me:</p>
+            <p><strong>17</strong> for I will promote thee unto very great honor, and whatsoever thou sayest unto me I will do: come therefore, I pray thee, curse me this people.</p>
+            <p><strong>18</strong> And Balaam answered and said unto the servants of Balak, If Balak would give me his house full of silver and gold, I cannot go beyond the word of Jehovah my God, to do less or more.</p>
+            <p><strong>19</strong> Now therefore, I pray you, tarry ye also here this night, that I may know what Jehovah will speak unto me more.</p>
+            <p><strong>20</strong> And God came unto Balaam at night, and said unto him, If the men are come to call thee, rise up, go with them; but only the word which I speak unto thee, that shalt thou do.</p>
+            <p><strong>21</strong> And Balaam rose up in the morning, and saddled his ass, and went with the princes of Moab.</p>
+            <p><strong>22</strong> And God’s anger was kindled because he went; and the angel of Jehovah placed himself in the way for an adversary against him. Now he was riding upon his ass, and his two servants were with him.</p>
+            <p><strong>23</strong> And the ass saw the angel of Jehovah standing in the way, with his sword drawn in his hand; and the ass turned aside out of the way, and went into the field: and Balaam smote the ass, to turn her into the way.</p>
+            <p><strong>24</strong> Then the angel of Jehovah stood in a narrow path between the vineyards, a wall being on this side, and a wall on that side.</p>
+            <p><strong>25</strong> And the ass saw the angel of Jehovah, and she thrust herself unto the wall, and crushed Balaam’s foot against the wall: and he smote her again.</p>
+            <p><strong>26</strong> And the angel of Jehovah went further, and stood in a narrow place, where was no way to turn either to the right hand or to the left.</p>
+            <p><strong>27</strong> And the ass saw the angel of Jehovah, and she lay down under Balaam: and Balaam’s anger was kindled, and he smote the ass with his staff.</p>
+            <p><strong>28</strong> And Jehovah opened the mouth of the ass, and she said unto Balaam, What have I done unto thee, that thou hast smitten me these three times?</p>
+            <p><strong>29</strong> And Balaam said unto the ass, Because thou hast mocked me: I would there were a sword in my hand, for now I had killed thee.</p>
+            <p><strong>30</strong> And the ass said unto Balaam, Am not I thine ass, upon which thou hast ridden all thy life long unto this day? was I ever wont to do so unto thee? and he said, Nay.</p>
+            <p><strong>31</strong> Then Jehovah opened the eyes of Balaam, and he saw the angel of Jehovah standing in the way, with his sword drawn in his hand; and he bowed his head, and fell on his face.</p>
+            <p><strong>32</strong> And the angel of Jehovah said unto him, Wherefore hast thou smitten thine ass these three times? behold, I am come forth for an adversary, because thy way is perverse before me:</p>
+            <p><strong>33</strong> and the ass saw me, and turned aside before me these three times: unless she had turned aside from me, surely now I had even slain thee, and saved her alive.</p>
+            <p><strong>34</strong> And Balaam said unto the angel of Jehovah, I have sinned; for I knew not that thou stoodest in the way against me: now therefore, if it displease thee, I will get me back again.</p>
+            <p><strong>35</strong> And the angel of Jehovah said unto Balaam, Go with the men; but only the word that I shall speak unto thee, that thou shalt speak. So Balaam went with the princes of Balak.</p>
+            <p><strong>36</strong> And when Balak heard that Balaam was come, he went out to meet him unto the City of Moab, which is on the border of the Arnon, which is in the utmost part of the border.</p>
+            <p><strong>37</strong> And Balak said unto Balaam, Did I not earnestly send unto thee to call thee? wherefore camest thou not unto me? am I not able indeed to promote thee to honor?</p>
+            <p><strong>38</strong> And Balaam said unto Balak, Lo, I am come unto thee: have I now any power at all to speak anything? the word that God putteth in my mouth, that shall I speak.</p>
+            <p><strong>39</strong> And Balaam went with Balak, and they came unto Kiriath-huzoth.</p>
+            <p><strong>40</strong> And Balak sacrificed oxen and sheep, and sent to Balaam, and to the princes that were with him.</p>
+            <p><strong>41</strong> And it came to pass in the morning, that Balak took Balaam, and brought him up into the high places of Baal; and he saw from thence the utmost part of the people.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Israel encamps in the plains of Moab, and Balak king of Moab, terrified by the multitude that has overwhelmed the Amorites, sends for the seer Balaam to come and curse them. God comes to Balaam and forbids him to go, since Israel is blessed, so Balaam refuses the first delegation. Balak sends more honorable princes with promises of great reward, and Balaam, though he professes he cannot go beyond the word of Yahweh, asks again and is permitted to go on the condition that he speak only what God says. Yet God's anger is kindled at his going, and the angel of Yahweh stands in the road with a drawn sword as an adversary. Balaam's donkey sees the angel three times and turns aside, is crushed against a wall, and finally lies down, and each time Balaam beats her in fury. Then Yahweh opens the donkey's mouth, and she protests her treatment, exposing the blindness of the seer who could not see what his animal saw. God opens Balaam's eyes, he sees the angel and bows down, confesses his sin, and is again told to go but to speak only God's words. The chapter is a sober and almost comic display of God's sovereignty over those who would oppose his people.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Balak</strong> — The king of Moab who, dreading Israel, repeatedly summons and bribes Balaam to curse them, only to be frustrated by God's purpose to bless.</li>
+          <li><strong>Balaam</strong> — The seer hired to curse Israel, who professes to speak only Yahweh's word yet is drawn by reward, and whose blindness is exposed by his own donkey.</li>
+          <li><strong>The angel of Yahweh</strong> — The messenger who stands in the road with a drawn sword as an adversary to Balaam, seen first by the donkey and then by the seer.</li>
+          <li><strong>Balaam's donkey</strong> — The animal who sees the angel three times, turns aside to save her master, and is given speech by God to rebuke the prophet's cruelty and blindness.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 22:28 (WEB)</p>
+          <p class="verse__text">Yahweh opened the mouth of the donkey, and she said to Balaam, “What have I done to you, that you have struck me these three times?”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's blessing on his people cannot be overturned by any curse.</li>
+          <li>The love of reward can blind us even while we claim to follow God's word.</li>
+          <li>God can open the eyes, and even the mouth, of the least likely instruments.</li>
+          <li>Spiritual gifting is no guarantee of spiritual sight.</li>
+          <li>God sovereignly guards his people, even working through those who oppose them.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-22">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-22">
+            <ul class="lesson-list">
+            <li><strong>No curse can undo God's blessing.</strong> God tells Balaam, “You shall not curse the people; for they are blessed” (Numbers 22:12, WEB); what God has blessed, no enemy can curse away.</li>
+            <li><strong>Greed bends the heart toward compromise.</strong> Though he says he cannot go beyond God's word, Balaam keeps asking and goes for the promise of “very great honor” (Numbers 22:17-19, WEB); reward tempts even the gifted to push against God's will.</li>
+            <li><strong>God can speak through anyone he chooses.</strong> “Yahweh opened the mouth of the donkey” (Numbers 22:28, WEB); God is free to use the humblest means to confront and instruct the proud.</li>
+            <li><strong>Gifting is not the same as sight.</strong> The seer cannot see the angel his donkey plainly sees (Numbers 22:23-31, WEB); true spiritual perception is God's gift, not the fruit of reputation or office.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-22">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-22">
+            <ol class="study-questions">
+            <li>Why does Balak want Balaam to curse Israel, and what does that reveal about his fear?</li>
+            <li>How does Balaam's repeated asking expose the pull of reward on his heart?</li>
+            <li>What is the significance of the donkey seeing the angel that Balaam, the seer, cannot?</li>
+            <li>What does this chapter teach about God's protection of his people?</li>
+            <li>Where might God be using an unexpected voice or circumstance to get your attention?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-22">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-22">
+            <ol class="study-questions">
+            <li>Balak is terrified by Israel's victory over the Amorites and their sheer number, so he seeks supernatural help to curse and defeat them (22:2-6). His fear drives him to oppose a people he cannot conquer by force, not realizing they are under God's blessing.</li>
+            <li>Though Balaam claims he cannot go beyond Yahweh's word, he keeps inquiring after Balak's lavish offers and finally goes (22:17-21). His repeated asking, despite a clear answer, reveals a heart drawn by honor and reward rather than wholehearted obedience.</li>
+            <li>The donkey sees the angel with the drawn sword three times while the renowned seer remains blind (22:23-31). The reversal exposes Balaam's spiritual blindness and shows that perception is a gift from God, not a product of status, with a touch of holy irony.</li>
+            <li>Throughout the chapter God overrules every attempt to curse his people, even turning back the hired prophet (22:12, 35). It shows that God sovereignly guards Israel, so that no scheme or seer can prevail against those he has blessed.</li>
+            <li>This is a personal-application question. Invite members to consider whether God might be speaking through humble or surprising means they have overlooked. As leader, encourage humility and attentiveness, and the willingness to have our blindness gently exposed.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-21.html">← Numbers 21</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-23.html">Numbers 23 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

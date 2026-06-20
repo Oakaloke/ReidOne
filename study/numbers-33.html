@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 33: The Record of the Journey — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 33: Moses records each stage of Israel's journey from Egypt to Moab, and God commands them to drive out Canaan's inhabitants and idols." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 33
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 33</span>
+        <h1>Numbers 33: The Record of the Journey</h1>
+        <p class="lead">Moses records every stage of Israel's journey from Egypt to the plains of Moab, and God commands them to drive out the nations of Canaan.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-33">
+            <span>Scripture — Numbers Chapter 33</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-33">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-33-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-33-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-33-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-33-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 33 (WEB)</p>
+            <p><strong>1</strong> These are the journeys of the children of Israel, when they went out of the land of Egypt by their armies under the hand of Moses and Aaron.</p>
+            <p><strong>2</strong> Moses wrote their goings out according to their journeys by the commandment of Yahweh. These are their journeys according to their goings out.</p>
+            <p><strong>3</strong> They traveled from Rameses in the first month, on the fifteenth day of the first month; on the next day after the Passover, the children of Israel went out with a high hand in the sight of all the Egyptians,</p>
+            <p><strong>4</strong> while the Egyptians were burying all their firstborn, whom Yahweh had struck among them. Yahweh also executed judgments on their gods.</p>
+            <p><strong>5</strong> The children of Israel traveled from Rameses, and encamped in Succoth.</p>
+            <p><strong>6</strong> They traveled from Succoth, and encamped in Etham, which is in the edge of the wilderness.</p>
+            <p><strong>7</strong> They traveled from Etham, and turned back to Pihahiroth, which is before Baal Zephon: and they encamped before Migdol.</p>
+            <p><strong>8</strong> They traveled from before Hahiroth, and passed through the midst of the sea into the wilderness. They went three days’ journey in the wilderness of Etham, and encamped in Marah.</p>
+            <p><strong>9</strong> They traveled from Marah, and came to Elim. In Elim, there were twelve springs of water, and seventy palm trees; and they encamped there.</p>
+            <p><strong>10</strong> They traveled from Elim, and encamped by the Red Sea.</p>
+            <p><strong>11</strong> They traveled from the Red Sea, and encamped in the wilderness of Sin.</p>
+            <p><strong>12</strong> They traveled from the wilderness of Sin, and encamped in Dophkah.</p>
+            <p><strong>13</strong> They traveled from Dophkah, and encamped in Alush.</p>
+            <p><strong>14</strong> They traveled from Alush, and encamped in Rephidim, where there was no water for the people to drink.</p>
+            <p><strong>15</strong> They traveled from Rephidim, and encamped in the wilderness of Sinai.</p>
+            <p><strong>16</strong> They traveled from the wilderness of Sinai, and encamped in Kibroth Hattaavah.</p>
+            <p><strong>17</strong> They traveled from Kibroth Hattaavah, and encamped in Hazeroth.</p>
+            <p><strong>18</strong> They traveled from Hazeroth, and encamped in Rithmah.</p>
+            <p><strong>19</strong> They traveled from Rithmah, and encamped in Rimmon Perez.</p>
+            <p><strong>20</strong> They traveled from Rimmon Perez, and encamped in Libnah.</p>
+            <p><strong>21</strong> They traveled from Libnah, and encamped in Rissah.</p>
+            <p><strong>22</strong> They traveled from Rissah, and encamped in Kehelathah.</p>
+            <p><strong>23</strong> They traveled from Kehelathah, and encamped in Mount Shepher.</p>
+            <p><strong>24</strong> They traveled from Mount Shepher, and encamped in Haradah.</p>
+            <p><strong>25</strong> They traveled from Haradah, and encamped in Makheloth.</p>
+            <p><strong>26</strong> They traveled from Makheloth, and encamped in Tahath.</p>
+            <p><strong>27</strong> They traveled from Tahath, and encamped in Terah.</p>
+            <p><strong>28</strong> They traveled from Terah, and encamped in Mithkah.</p>
+            <p><strong>29</strong> They traveled from Mithkah, and encamped in Hashmonah.</p>
+            <p><strong>30</strong> They traveled from Hashmonah, and encamped in Moseroth.</p>
+            <p><strong>31</strong> They traveled from Moseroth, and encamped in Bene Jaakan.</p>
+            <p><strong>32</strong> They traveled from Bene Jaakan, and encamped in Hor Haggidgad.</p>
+            <p><strong>33</strong> They traveled from Hor Haggidgad, and encamped in Jotbathah.</p>
+            <p><strong>34</strong> They traveled from Jotbathah, and encamped in Abronah.</p>
+            <p><strong>35</strong> They traveled from Abronah, and encamped in Ezion Geber.</p>
+            <p><strong>36</strong> They traveled from Ezion Geber, and encamped at Kadesh in the wilderness of Zin.</p>
+            <p><strong>37</strong> They traveled from Kadesh, and encamped in Mount Hor, in the edge of the land of Edom.</p>
+            <p><strong>38</strong> Aaron the priest went up into Mount Hor at the commandment of Yahweh, and died there, in the fortieth year after the children of Israel had come out of the land of Egypt, in the fifth month, on the first day of the month.</p>
+            <p><strong>39</strong> Aaron was one hundred twenty-three years old when he died in Mount Hor.</p>
+            <p><strong>40</strong> The Canaanite, the king of Arad, who lived in the South in the land of Canaan, heard of the coming of the children of Israel.</p>
+            <p><strong>41</strong> They traveled from Mount Hor, and encamped in Zalmonah.</p>
+            <p><strong>42</strong> They traveled from Zalmonah, and encamped in Punon.</p>
+            <p><strong>43</strong> They traveled from Punon, and encamped in Oboth.</p>
+            <p><strong>44</strong> They traveled from Oboth, and encamped in Iye Abarim, in the border of Moab.</p>
+            <p><strong>45</strong> They traveled from Iyim, and encamped in Dibon Gad.</p>
+            <p><strong>46</strong> They traveled from Dibon Gad, and encamped in Almon Diblathaim.</p>
+            <p><strong>47</strong> They traveled from Almon Diblathaim, and encamped in the mountains of Abarim, before Nebo.</p>
+            <p><strong>48</strong> They traveled from the mountains of Abarim, and encamped in the plains of Moab by the Jordan at Jericho.</p>
+            <p><strong>49</strong> They encamped by the Jordan, from Beth Jeshimoth even to Abel Shittim in the plains of Moab.</p>
+            <p><strong>50</strong> Yahweh spoke to Moses in the plains of Moab by the Jordan at Jericho, saying,</p>
+            <p><strong>51</strong> Speak to the children of Israel, and tell them, “When you pass over the Jordan into the land of Canaan,</p>
+            <p><strong>52</strong> then you shall drive out all the inhabitants of the land from before you, destroy all their stone idols, destroy all their molten images, and demolish all their high places.</p>
+            <p><strong>53</strong> You shall take possession of the land, and dwell therein; for I have given the land to you to possess it.</p>
+            <p><strong>54</strong> You shall inherit the land by lot according to your families; to the more you shall give the more inheritance, and to the fewer you shall give the less inheritance. Wherever the lot falls to any man, that shall be his. You shall inherit according to the tribes of your fathers.</p>
+            <p><strong>55</strong> “But if you do not drive out the inhabitants of the land from before you, then those you let remain of them will be as pricks in your eyes and as thorns in your sides, and they will harass you in the land in which you dwell.</p>
+            <p><strong>56</strong> It shall happen that as I thought to do to them, so will I do to you.”</p>
+            </div>
+            <div class="scripture-text" id="web-33-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 33 (KJV)</p>
+            <p><strong>1</strong> These are the journeys of the children of Israel, which went forth out of the land of Egypt with their armies under the hand of Moses and Aaron.</p>
+            <p><strong>2</strong> And Moses wrote their goings out according to their journeys by the commandment of the Lord: and these are their journeys according to their goings out.</p>
+            <p><strong>3</strong> And they departed from Rameses in the first month, on the fifteenth day of the first month; on the morrow after the passover the children of Israel went out with an high hand in the sight of all the Egyptians.</p>
+            <p><strong>4</strong> For the Egyptians buried all their firstborn, which the Lord had smitten among them: upon their gods also the Lord executed judgments.</p>
+            <p><strong>5</strong> And the children of Israel removed from Rameses, and pitched in Succoth.</p>
+            <p><strong>6</strong> And they departed from Succoth, and pitched in Etham, which is in the edge of the wilderness.</p>
+            <p><strong>7</strong> And they removed from Etham, and turned again unto Pi–hahiroth, which is before Baal–zephon: and they pitched before Migdol.</p>
+            <p><strong>8</strong> And they departed from before Pi–hahiroth, and passed through the midst of the sea into the wilderness, and went three days’ journey in the wilderness of Etham, and pitched in Marah.</p>
+            <p><strong>9</strong> And they removed from Marah, and came unto Elim: and in Elim were twelve fountains of water, and threescore and ten palm trees; and they pitched there.</p>
+            <p><strong>10</strong> And they removed from Elim, and encamped by the Red sea.</p>
+            <p><strong>11</strong> And they removed from the Red sea, and encamped in the wilderness of Sin.</p>
+            <p><strong>12</strong> And they took their journey out of the wilderness of Sin, and encamped in Dophkah.</p>
+            <p><strong>13</strong> And they departed from Dophkah, and encamped in Alush.</p>
+            <p><strong>14</strong> And they removed from Alush, and encamped at Rephidim, where was no water for the people to drink.</p>
+            <p><strong>15</strong> And they departed from Rephidim, and pitched in the wilderness of Sinai.</p>
+            <p><strong>16</strong> And they removed from the desert of Sinai, and pitched at Kibroth–hattaavah.</p>
+            <p><strong>17</strong> And they departed from Kibroth–hattaavah, and encamped at Hazeroth.</p>
+            <p><strong>18</strong> And they departed from Hazeroth, and pitched in Rithmah.</p>
+            <p><strong>19</strong> And they departed from Rithmah, and pitched at Rimmon–parez.</p>
+            <p><strong>20</strong> And they departed from Rimmon–parez, and pitched in Libnah.</p>
+            <p><strong>21</strong> And they removed from Libnah, and pitched at Rissah.</p>
+            <p><strong>22</strong> And they journeyed from Rissah, and pitched in Kehelathah.</p>
+            <p><strong>23</strong> And they went from Kehelathah, and pitched in mount Shapher.</p>
+            <p><strong>24</strong> And they removed from mount Shapher, and encamped in Haradah.</p>
+            <p><strong>25</strong> And they removed from Haradah, and pitched in Makheloth.</p>
+            <p><strong>26</strong> And they removed from Makheloth, and encamped at Tahath.</p>
+            <p><strong>27</strong> And they departed from Tahath, and pitched at Tarah.</p>
+            <p><strong>28</strong> And they removed from Tarah, and pitched in Mithcah.</p>
+            <p><strong>29</strong> And they went from Mithcah, and pitched in Hashmonah.</p>
+            <p><strong>30</strong> And they departed from Hashmonah, and encamped at Moseroth.</p>
+            <p><strong>31</strong> And they departed from Moseroth, and pitched in Bene–jaakan.</p>
+            <p><strong>32</strong> And they removed from Bene–jaakan, and encamped at Hor–hagidgad.</p>
+            <p><strong>33</strong> And they went from Hor–hagidgad, and pitched in Jotbathah.</p>
+            <p><strong>34</strong> And they removed from Jotbathah, and encamped at Ebronah.</p>
+            <p><strong>35</strong> And they departed from Ebronah, and encamped at Ezion–gaber.</p>
+            <p><strong>36</strong> And they removed from Ezion–gaber, and pitched in the wilderness of Zin, which is Kadesh.</p>
+            <p><strong>37</strong> And they removed from Kadesh, and pitched in mount Hor, in the edge of the land of Edom.</p>
+            <p><strong>38</strong> And Aaron the priest went up into mount Hor at the commandment of the Lord, and died there, in the fortieth year after the children of Israel were come out of the land of Egypt, in the first day of the fifth month.</p>
+            <p><strong>39</strong> And Aaron was an hundred and twenty and three years old when he died in mount Hor.</p>
+            <p><strong>40</strong> And king Arad the Canaanite, which dwelt in the south in the land of Canaan, heard of the coming of the children of Israel.</p>
+            <p><strong>41</strong> And they departed from mount Hor, and pitched in Zalmonah.</p>
+            <p><strong>42</strong> And they departed from Zalmonah, and pitched in Punon.</p>
+            <p><strong>43</strong> And they departed from Punon, and pitched in Oboth.</p>
+            <p><strong>44</strong> And they departed from Oboth, and pitched in Ije–abarim, in the border of Moab.</p>
+            <p><strong>45</strong> And they departed from Iim, and pitched in Dibon–gad.</p>
+            <p><strong>46</strong> And they removed from Dibon–gad, and encamped in Almon–diblathaim.</p>
+            <p><strong>47</strong> And they removed from Almon–diblathaim, and pitched in the mountains of Abarim, before Nebo.</p>
+            <p><strong>48</strong> And they departed from the mountains of Abarim, and pitched in the plains of Moab by Jordan near Jericho.</p>
+            <p><strong>49</strong> And they pitched by Jordan, from Beth–jesimoth even unto Abel–shittim in the plains of Moab.</p>
+            <p><strong>50</strong> And the Lord spake unto Moses in the plains of Moab by Jordan near Jericho, saying,</p>
+            <p><strong>51</strong> Speak unto the children of Israel, and say unto them, When ye are passed over Jordan into the land of Canaan;</p>
+            <p><strong>52</strong> Then ye shall drive out all the inhabitants of the land from before you, and destroy all their pictures, and destroy all their molten images, and quite pluck down all their high places:</p>
+            <p><strong>53</strong> And ye shall dispossess the inhabitants of the land, and dwell therein: for I have given you the land to possess it.</p>
+            <p><strong>54</strong> And ye shall divide the land by lot for an inheritance among your families: and to the more ye shall give the more inheritance, and to the fewer ye shall give the less inheritance: every man’s inheritance shall be in the place where his lot falleth; according to the tribes of your fathers ye shall inherit.</p>
+            <p><strong>55</strong> But if ye will not drive out the inhabitants of the land from before you; then it shall come to pass, that those which ye let remain of them shall be pricks in your eyes, and thorns in your sides, and shall vex you in the land wherein ye dwell.</p>
+            <p><strong>56</strong> Moreover it shall come to pass, that I shall do unto you, as I thought to do unto them.</p>
+            </div>
+            <div class="scripture-text" id="web-33-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 33 (ASV)</p>
+            <p><strong>1</strong> These are the journeys of the children of Israel, when they went forth out of the land of Egypt by their hosts under the hand of Moses and Aaron.</p>
+            <p><strong>2</strong> And Moses wrote their goings out according to their journeys by the commandment of Jehovah: and these are their journeys according to their goings out.</p>
+            <p><strong>3</strong> And they journeyed from Rameses in the first month, on the fifteenth day of the first month; on the morrow after the passover the children of Israel went out with a high hand in the sight of all the Egyptians,</p>
+            <p><strong>4</strong> while the Egyptians were burying all their first-born, whom Jehovah had smitten among them: upon their gods also Jehovah executed judgments.</p>
+            <p><strong>5</strong> And the children of Israel journeyed from Rameses, and encamped in Succoth.</p>
+            <p><strong>6</strong> And they journeyed from Succoth, and encamped in Etham, which is in the edge of the wilderness.</p>
+            <p><strong>7</strong> And they journeyed from Etham, and turned back unto Pi-hahiroth, which is before Baal-zephon: and they encamped before Migdol.</p>
+            <p><strong>8</strong> And they journeyed from before Hahiroth, and passed through the midst of the sea into the wilderness: and they went three days’ journey in the wilderness of Etham, and encamped in Marah.</p>
+            <p><strong>9</strong> And they journeyed from Marah, and came unto Elim: and in Elim were twelve springs of water, and threescore and ten palm-trees; and they encamped there.</p>
+            <p><strong>10</strong> And they journeyed from Elim, and encamped by the Red Sea.</p>
+            <p><strong>11</strong> And they journeyed from the Red Sea, and encamped in the wilderness of Sin.</p>
+            <p><strong>12</strong> And they journeyed from the wilderness of Sin, and encamped in Dophkah.</p>
+            <p><strong>13</strong> And they journeyed from Dophkah, and encamped in Alush.</p>
+            <p><strong>14</strong> And they journeyed from Alush, and encamped in Rephidim, where was no water for the people to drink.</p>
+            <p><strong>15</strong> And they journeyed from Rephidim, and encamped in the wilderness of Sinai.</p>
+            <p><strong>16</strong> And they journeyed from the wilderness of Sinai, and encamped in Kibroth-hattaavah.</p>
+            <p><strong>17</strong> And they journeyed from Kibroth-hattaavah, and encamped in Hazeroth.</p>
+            <p><strong>18</strong> And they journeyed from Hazeroth, and encamped in Rithmah.</p>
+            <p><strong>19</strong> And they journeyed from Rithmah, and encamped in Rimmon-perez.</p>
+            <p><strong>20</strong> And they journeyed from Rimmon-perez, and encamped in Libnah.</p>
+            <p><strong>21</strong> And they journeyed from Libnah, and encamped in Rissah.</p>
+            <p><strong>22</strong> And they journeyed from Rissah, and encamped in Kehelathah.</p>
+            <p><strong>23</strong> And they journeyed from Kehelathah, and encamped in mount Shepher.</p>
+            <p><strong>24</strong> And they journeyed from mount Shepher, and encamped in Haradah.</p>
+            <p><strong>25</strong> And they journeyed from Haradah, and encamped in Makheloth.</p>
+            <p><strong>26</strong> And they journeyed from Makheloth, and encamped in Tahath.</p>
+            <p><strong>27</strong> And they journeyed from Tahath, and encamped in Terah.</p>
+            <p><strong>28</strong> And they journeyed from Terah, and encamped in Mithkah.</p>
+            <p><strong>29</strong> And they journeyed from Mithkah, and encamped in Hashmonah.</p>
+            <p><strong>30</strong> And they journeyed from Hashmonah, and encamped in Moseroth.</p>
+            <p><strong>31</strong> And they journeyed from Moseroth, and encamped in Bene-jaakan.</p>
+            <p><strong>32</strong> And they journeyed from Bene-jaakan, and encamped in Hor-haggidgad.</p>
+            <p><strong>33</strong> And they journeyed from Hor-haggidgad, and encamped in Jotbathah.</p>
+            <p><strong>34</strong> And they journeyed from Jotbathah, and encamped in Abronah.</p>
+            <p><strong>35</strong> And they journeyed from Abronah, and encamped in Ezion-geber.</p>
+            <p><strong>36</strong> And they journeyed from Ezion-geber, and encamped in the wilderness of Zin (the same is Kadesh).</p>
+            <p><strong>37</strong> And they journeyed from Kadesh, and encamped in mount Hor, in the edge of the land of Edom.</p>
+            <p><strong>38</strong> And Aaron the priest went up into mount Hor at the commandment of Jehovah, and died there, in the fortieth year after the children of Israel were come out of the land of Egypt, in the fifth month, on the first day of the month.</p>
+            <p><strong>39</strong> And Aaron was a hundred and twenty and three years old when he died in mount Hor.</p>
+            <p><strong>40</strong> And the Canaanite, the king of Arad, who dwelt in the South in the land of Canaan, heard of the coming of the children of Israel.</p>
+            <p><strong>41</strong> And they journeyed from mount Hor, and encamped in Zalmonah.</p>
+            <p><strong>42</strong> And they journeyed from Zalmonah, and encamped in Punon.</p>
+            <p><strong>43</strong> And they journeyed from Punon, and encamped in Oboth.</p>
+            <p><strong>44</strong> And they journeyed from Oboth, and encamped in Iye-abarim, in the border of Moab.</p>
+            <p><strong>45</strong> And they journeyed from Iyim, and encamped in Dibon-gad.</p>
+            <p><strong>46</strong> And they journeyed from Dibon-gad, and encamped in Almon-diblathaim.</p>
+            <p><strong>47</strong> And they journeyed from Almon-diblathaim, and encamped in the mountains of Abarim, before Nebo.</p>
+            <p><strong>48</strong> And they journeyed from the mountains of Abarim, and encamped in the plains of Moab by the Jordan at Jericho.</p>
+            <p><strong>49</strong> And they encamped by the Jordan, from Beth-jeshimoth even unto Abel-shittim in the plains of Moab.</p>
+            <p><strong>50</strong> And Jehovah spake unto Moses in the plains of Moab by the Jordan at Jericho, saying,</p>
+            <p><strong>51</strong> Speak unto the children of Israel, and say unto them, When ye pass over the Jordan into the land of Canaan,</p>
+            <p><strong>52</strong> then ye shall drive out all the inhabitants of the land from before you, and destroy all their figured stones, and destroy all their molten images, and demolish all their high places:</p>
+            <p><strong>53</strong> and ye shall take possession of the land, and dwell therein; for unto you have I given the land to possess it.</p>
+            <p><strong>54</strong> And ye shall inherit the land by lot according to your families; to the more ye shall give the more inheritance, and to the fewer thou shalt give the less inheritance: wheresoever the lot falleth to any man, that shall be his; according to the tribes of your fathers shall ye inherit.</p>
+            <p><strong>55</strong> But if ye will not drive out the inhabitants of the land from before you, then shall those that ye let remain of them be as pricks in your eyes, and as thorns in your sides, and they shall vex you in the land wherein ye dwell.</p>
+            <p><strong>56</strong> And it shall come to pass, that, as I thought to do unto them, so will I do unto you.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>At God's command, Moses writes down the stages of Israel's journey from the land of Egypt, a long itinerary of the places where they set out and encamped. The list traces their path from Rameses, out with a high hand on the day after the Passover, through the sea, into the wilderness of Sinai, and on through dozens of named camps across forty years. Woven into the record are reminders of the journey's defining moments: the springs and palm trees of Elim, the lack of water at Rephidim, and the death of Aaron on Mount Hor in the fortieth year. At last the people arrive in the plains of Moab by the Jordan at Jericho, poised to enter the land. There God gives a solemn charge: when they cross over, they must drive out all the inhabitants, destroy their idols and high places, and take possession of the land he has given them, dividing it by lot among the tribes. He warns that if they leave the inhabitants in place, those nations will become pricks in their eyes and thorns in their sides, and what God planned to do to them he will do to Israel instead. The chapter is a memorial of God's faithful guidance through every stage of the journey, and a sober call to wholehearted obedience as a new chapter begins.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Moses</strong> — The leader who, at God's command, records the stages of the journey as a lasting memorial of how God brought Israel out and led them.</li>
+          <li><strong>The children of Israel</strong> — The people whose forty-year journey from Egypt to Moab, camp by camp, testifies to God's patient guidance.</li>
+          <li><strong>Aaron</strong> — The high priest whose death on Mount Hor in the fortieth year is noted within the itinerary, marking the passing of an era.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who led Israel every step and now commands them to drive out the nations and idols of Canaan as they enter the land.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 33:53 (WEB)</p>
+          <p class="verse__text">You shall take possession of the land, and dwell therein; for I have given the land to you to possess it.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God leads his people faithfully through every stage of the journey, even the long and wearying ones.</li>
+          <li>It is good to remember and record God's dealings with us as a testimony of his guidance.</li>
+          <li>Possession of God's promises calls for active, obedient participation, not passive waiting.</li>
+          <li>Compromise with the idols and influences around us becomes a snare that wounds us later.</li>
+          <li>The destination is a gift God gives, even as he calls us to take hold of it.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-33">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-33">
+            <ul class="lesson-list">
+            <li><strong>God guides every step.</strong> The itinerary records each place where Israel “traveled” and “encamped” (Numbers 33:5-49, WEB). The Lord led his people through every stage, none of them outside his care.</li>
+            <li><strong>Remembering builds faith.</strong> “Moses wrote their goings out according to their journeys by the commandment of Yahweh” (Numbers 33:2, WEB). Recalling God's past faithfulness strengthens trust for the road ahead.</li>
+            <li><strong>Promises must be possessed.</strong> “You shall take possession of the land… for I have given the land to you” (Numbers 33:53, WEB). God's gift is received through active, obedient faith.</li>
+            <li><strong>Tolerated idols become snares.</strong> Those left in the land “will be as pricks in your eyes and as thorns in your sides” (Numbers 33:55, WEB). Compromise with sin wounds us in the end.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-33">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-33">
+            <ol class="study-questions">
+            <li>Why do you think God commanded Moses to write down every stage of the journey?</li>
+            <li>What stands out to you in the brief details woven into the itinerary, such as Elim, Rephidim, and Aaron's death?</li>
+            <li>What does it mean that the land is both God's gift and something Israel must take possession of?</li>
+            <li>Why is God so insistent that Israel drive out the idols and inhabitants of Canaan?</li>
+            <li>How might keeping a record of God's faithfulness in your own life strengthen your trust in him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-33">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-33">
+            <ol class="study-questions">
+            <li>The record stands as a memorial of God's faithful guidance over forty years (33:1-2). Writing it down preserves the testimony for future generations, so they would remember how the Lord brought their parents out of Egypt and led them, step by step, to the edge of the promise.</li>
+            <li>The small notes—the abundance at Elim, the thirst at Rephidim, Aaron's death on Mount Hor (33:9, 14, 38)—recall both God's provision and the journey's hardships and losses. They keep the itinerary from being a dry list, reminding us that real life with God includes both refreshment and grief.</li>
+            <li>God freely gives the land, yet Israel must cross over and take hold of it (33:53). Grace and responsibility go together: the promise is sure because God grants it, but it is enjoyed through obedient action. Help the group hold both truths together.</li>
+            <li>Leaving the idols and nations in place would draw Israel into the very sins that destroyed Peor; God warns they would become snares and thorns (33:55-56). His insistence reflects his concern for his people's wholehearted devotion and their protection from corruption.</li>
+            <li>This is a personal-application question. Invite members to consider keeping a simple record—a journal of answered prayers or milestones—and how revisiting it might bolster their faith. As leader, share how remembering God's past kindness sustains hope through present uncertainty.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-32.html">← Numbers 32</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-34.html">Numbers 34 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

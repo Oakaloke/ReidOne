@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Leviticus 13: Examining the Plague — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Leviticus 13: the priest examines skin disease and mildew, pronouncing clean or unclean, while the unclean must dwell apart." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-leviticus-progress" data-study-total="27">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Leviticus, Chapter 13
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="leviticus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Leviticus · Chapter 13</span>
+        <h1>Leviticus 13: Examining the Plague</h1>
+        <p class="lead">The priest carefully examines skin diseases and mildew, pronouncing clean or unclean, while the leper dwells alone outside the camp.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-13">
+            <span>Scripture — Leviticus Chapter 13</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-13">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-13-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-13-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-13-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-13-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Leviticus 13 (WEB)</p>
+            <p><strong>1</strong> Yahweh spoke to Moses and to Aaron, saying,</p>
+            <p><strong>2</strong> “When a man shall have a rising in his body’s skin, or a scab, or a bright spot, and it becomes in the skin of his body the plague of leprosy, then he shall be brought to Aaron the priest, or to one of his sons, the priests:</p>
+            <p><strong>3</strong> and the priest shall examine the plague in the skin of the body: and if the hair in the plague has turned white, and the appearance of the plague is deeper than the body’s skin, it is the plague of leprosy; and the priest shall examine him, and pronounce him unclean.</p>
+            <p><strong>4</strong> If the bright spot is white in the skin of his body, and its appearance isn’t deeper than the skin, and its hair hasn’t turned white, then the priest shall isolate the infected person for seven days.</p>
+            <p><strong>5</strong> The priest shall examine him on the seventh day, and, behold, if in his eyes the plague is arrested, and the plague hasn’t spread in the skin, then the priest shall isolate him for seven more days.</p>
+            <p><strong>6</strong> The priest shall examine him again on the seventh day; and behold, if the plague has faded, and the plague hasn’t spread in the skin, then the priest shall pronounce him clean. It is a scab. He shall wash his clothes, and be clean.</p>
+            <p><strong>7</strong> But if the scab spreads on the skin, after he has shown himself to the priest for his cleansing, he shall show himself to the priest again.</p>
+            <p><strong>8</strong> The priest shall examine him; and behold, if the scab has spread on the skin, then the priest shall pronounce him unclean. It is leprosy.</p>
+            <p><strong>9</strong> “When the plague of leprosy is in a man, then he shall be brought to the priest;</p>
+            <p><strong>10</strong> and the priest shall examine him. Behold, if there is a white rising in the skin, and it has turned the hair white, and there is raw flesh in the rising,</p>
+            <p><strong>11</strong> it is a chronic leprosy in the skin of his body, and the priest shall pronounce him unclean. He shall not isolate him, for he is already unclean.</p>
+            <p><strong>12</strong> “If the leprosy breaks out all over the skin, and the leprosy covers all the skin of the infected person from his head even to his feet, as far as it appears to the priest;</p>
+            <p><strong>13</strong> then the priest shall examine him; and, behold, if the leprosy has covered all his flesh, he shall pronounce him clean of the plague. It has all turned white: he is clean.</p>
+            <p><strong>14</strong> But whenever raw flesh appears in him, he shall be unclean.</p>
+            <p><strong>15</strong> The priest shall examine the raw flesh, and pronounce him unclean: the raw flesh is unclean. It is leprosy.</p>
+            <p><strong>16</strong> Or if the raw flesh turns again, and is changed to white, then he shall come to the priest;</p>
+            <p><strong>17</strong> and the priest shall examine him; and, behold, if the plague has turned white, then the priest shall pronounce him clean of the plague. He is clean.</p>
+            <p><strong>18</strong> “When the body has a boil on its skin, and it has healed,</p>
+            <p><strong>19</strong> and in the place of the boil there is a white rising, or a bright spot, reddish-white, then it shall be shown to the priest;</p>
+            <p><strong>20</strong> and the priest shall examine it; and behold, if its appearance is lower than the skin, and its hair has turned white, then the priest shall pronounce him unclean. It is the plague of leprosy. It has broken out in the boil.</p>
+            <p><strong>21</strong> But if the priest examines it, and behold, there are no white hairs in it, and it isn’t deeper than the skin, but is dim, then the priest shall isolate him seven days.</p>
+            <p><strong>22</strong> If it spreads in the skin, then the priest shall pronounce him unclean. It is a plague.</p>
+            <p><strong>23</strong> But if the bright spot stays in its place, and hasn’t spread, it is the scar from the boil; and the priest shall pronounce him clean.</p>
+            <p><strong>24</strong> “Or when the body has a burn from fire on its skin, and the raw flesh of the burn becomes a bright spot, reddish-white, or white,</p>
+            <p><strong>25</strong> then the priest shall examine it; and behold, if the hair in the bright spot has turned white, and its appearance is deeper than the skin; it is leprosy. It has broken out in the burning, and the priest shall pronounce him unclean. It is the plague of leprosy.</p>
+            <p><strong>26</strong> But if the priest examines it, and behold, there is no white hair in the bright spot, and it isn’t lower than the skin, but is faded; then the priest shall isolate him seven days.</p>
+            <p><strong>27</strong> The priest shall examine him on the seventh day. If it has spread in the skin, then the priest shall pronounce him unclean. It is the plague of leprosy.</p>
+            <p><strong>28</strong> If the bright spot stays in its place, and hasn’t spread in the skin, but is faded, it is the swelling from the burn, and the priest shall pronounce him clean; for it is the scar from the burn.</p>
+            <p><strong>29</strong> “When a man or woman has a plague on the head or on the beard,</p>
+            <p><strong>30</strong> then the priest shall examine the plague; and behold, if its appearance is deeper than the skin, and the hair in it is yellow and thin, then the priest shall pronounce him unclean: it is an itch, it is leprosy of the head or of the beard.</p>
+            <p><strong>31</strong> If the priest examines the plague of itching, and behold, its appearance isn’t deeper than the skin, and there is no black hair in it, then the priest shall isolate the person infected with itching seven days.</p>
+            <p><strong>32</strong> On the seventh day the priest shall examine the plague; and behold, if the itch hasn’t spread, and there is no yellow hair in it, and the appearance of the itch isn’t deeper than the skin,</p>
+            <p><strong>33</strong> then he shall be shaved, but he shall not shave the itch; and the priest shall shut him up who has the itch seven more days.</p>
+            <p><strong>34</strong> On the seventh day, the priest shall examine the itch; and behold, if the itch hasn’t spread in the skin, and its appearance isn’t deeper than the skin, then the priest shall pronounce him clean. He shall wash his clothes, and be clean.</p>
+            <p><strong>35</strong> But if the itch spreads in the skin after his cleansing,</p>
+            <p><strong>36</strong> then the priest shall examine him; and behold, if the itch has spread in the skin, the priest shall not look for the yellow hair; he is unclean.</p>
+            <p><strong>37</strong> But if in his eyes the itch is arrested, and black hair has grown in it; the itch is healed, he is clean. The priest shall pronounce him clean.</p>
+            <p><strong>38</strong> “When a man or a woman has bright spots in the skin of the body, even white bright spots;</p>
+            <p><strong>39</strong> then the priest shall examine them; and behold, if the bright spots on the skin of their body are a dull white, it is a harmless rash, it has broken out in the skin; he is clean.</p>
+            <p><strong>40</strong> “If a man’s hair has fallen from his head, he is bald. He is clean.</p>
+            <p><strong>41</strong> If his hair has fallen off from the front part of his head, he is forehead bald. He is clean.</p>
+            <p><strong>42</strong> But if there is in the bald head, or the bald forehead, a reddish-white plague; it is leprosy breaking out in his bald head, or his bald forehead.</p>
+            <p><strong>43</strong> Then the priest shall examine him; and, behold, if the rising of the plague is reddish-white in his bald head, or in his bald forehead, like the appearance of leprosy in the skin of the flesh,</p>
+            <p><strong>44</strong> he is a leprous man. He is unclean. The priest shall surely pronounce him unclean. His plague is on his head.</p>
+            <p><strong>45</strong> “The leper in whom the plague is shall wear torn clothes, and the hair of his head shall hang loose. He shall cover his upper lip, and shall cry, ‘Unclean! Unclean!’</p>
+            <p><strong>46</strong> All the days in which the plague is in him he shall be unclean. He is unclean. He shall dwell alone. Outside of the camp shall be his dwelling.</p>
+            <p><strong>47</strong> “The garment also that the plague of leprosy is in, whether it is a woolen garment, or a linen garment;</p>
+            <p><strong>48</strong> whether it is in warp, or woof; of linen, or of wool; whether in a skin, or in anything made of skin;</p>
+            <p><strong>49</strong> if the plague is greenish or reddish in the garment, or in the skin, or in the warp, or in the woof, or in anything made of skin; it is the plague of leprosy, and shall be shown to the priest.</p>
+            <p><strong>50</strong> The priest shall examine the plague, and isolate the plague seven days.</p>
+            <p><strong>51</strong> He shall examine the plague on the seventh day. If the plague has spread in the garment, either in the warp, or in the woof, or in the skin, whatever use the skin is used for, the plague is a destructive mildew. It is unclean.</p>
+            <p><strong>52</strong> He shall burn the garment, whether the warp or the woof, in wool or in linen, or anything of skin, in which the plague is: for it is a destructive mildew. It shall be burned in the fire.</p>
+            <p><strong>53</strong> “If the priest examines it, and behold, the plague hasn’t spread in the garment, either in the warp, or in the woof, or in anything of skin;</p>
+            <p><strong>54</strong> then the priest shall command that they wash the thing in which the plague is, and he shall isolate it seven more days.</p>
+            <p><strong>55</strong> Then the priest shall examine it, after the plague is washed; and behold, if the plague hasn’t changed its color, and the plague hasn’t spread, it is unclean; you shall burn it in the fire. It is a mildewed spot, whether the bareness is inside or outside.</p>
+            <p><strong>56</strong> If the priest looks, and behold, the plague has faded after it is washed, then he shall tear it out of the garment, or out of the skin, or out of the warp, or out of the woof:</p>
+            <p><strong>57</strong> and if it appears again in the garment, either in the warp, or in the woof, or in anything of skin, it is spreading. You shall burn with fire that in which the plague is.</p>
+            <p><strong>58</strong> The garment, either the warp, or the woof, or whatever thing of skin it is, which you shall wash, if the plague has departed from them, then it shall be washed the second time, and it will be clean.”</p>
+            <p><strong>59</strong> This is the law of the plague of mildew in a garment of wool or linen, either in the warp, or the woof, or in anything of skin, to pronounce it clean, or to pronounce it unclean.</p>
+            </div>
+            <div class="scripture-text" id="web-13-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Leviticus 13 (KJV)</p>
+            <p><strong>1</strong> And the Lord spake unto Moses and Aaron, saying,</p>
+            <p><strong>2</strong> When a man shall have in the skin of his flesh a rising, a scab, or bright spot, and it be in the skin of his flesh like the plague of leprosy; then he shall be brought unto Aaron the priest, or unto one of his sons the priests:</p>
+            <p><strong>3</strong> And the priest shall look on the plague in the skin of the flesh: and when the hair in the plague is turned white, and the plague in sight be deeper than the skin of his flesh, it is a plague of leprosy: and the priest shall look on him, and pronounce him unclean.</p>
+            <p><strong>4</strong> If the bright spot be white in the skin of his flesh, and in sight be not deeper than the skin, and the hair thereof be not turned white; then the priest shall shut up him that hath the plague seven days:</p>
+            <p><strong>5</strong> And the priest shall look on him the seventh day: and, behold, if the plague in his sight be at a stay, and the plague spread not in the skin; then the priest shall shut him up seven days more:</p>
+            <p><strong>6</strong> And the priest shall look on him again the seventh day: and, behold, if the plague be somewhat dark, and the plague spread not in the skin, the priest shall pronounce him clean: it is but a scab: and he shall wash his clothes, and be clean.</p>
+            <p><strong>7</strong> But if the scab spread much abroad in the skin, after that he hath been seen of the priest for his cleansing, he shall be seen of the priest again:</p>
+            <p><strong>8</strong> And if the priest see that, behold, the scab spreadeth in the skin, then the priest shall pronounce him unclean: it is a leprosy.</p>
+            <p><strong>9</strong> When the plague of leprosy is in a man, then he shall be brought unto the priest;</p>
+            <p><strong>10</strong> And the priest shall see him: and, behold, if the rising be white in the skin, and it have turned the hair white, and there be quick raw flesh in the rising;</p>
+            <p><strong>11</strong> It is an old leprosy in the skin of his flesh, and the priest shall pronounce him unclean, and shall not shut him up: for he is unclean.</p>
+            <p><strong>12</strong> And if a leprosy break out abroad in the skin, and the leprosy cover all the skin of him that hath the plague from his head even to his foot, wheresoever the priest looketh;</p>
+            <p><strong>13</strong> Then the priest shall consider: and, behold, if the leprosy have covered all his flesh, he shall pronounce him clean that hath the plague: it is all turned white: he is clean.</p>
+            <p><strong>14</strong> But when raw flesh appeareth in him, he shall be unclean.</p>
+            <p><strong>15</strong> And the priest shall see the raw flesh, and pronounce him to be unclean: for the raw flesh is unclean: it is a leprosy.</p>
+            <p><strong>16</strong> Or if the raw flesh turn again, and be changed unto white, he shall come unto the priest;</p>
+            <p><strong>17</strong> And the priest shall see him: and, behold, if the plague be turned into white; then the priest shall pronounce him clean that hath the plague: he is clean.</p>
+            <p><strong>18</strong> The flesh also, in which, even in the skin thereof, was a boil, and is healed,</p>
+            <p><strong>19</strong> And in the place of the boil there be a white rising, or a bright spot, white, and somewhat reddish, and it be shewed to the priest;</p>
+            <p><strong>20</strong> And if, when the priest seeth it, behold, it be in sight lower than the skin, and the hair thereof be turned white; the priest shall pronounce him unclean: it is a plague of leprosy broken out of the boil.</p>
+            <p><strong>21</strong> But if the priest look on it, and, behold, there be no white hairs therein, and if it be not lower than the skin, but be somewhat dark; then the priest shall shut him up seven days:</p>
+            <p><strong>22</strong> And if it spread much abroad in the skin, then the priest shall pronounce him unclean: it is a plague.</p>
+            <p><strong>23</strong> But if the bright spot stay in his place, and spread not, it is a burning boil; and the priest shall pronounce him clean.</p>
+            <p><strong>24</strong> Or if there be any flesh, in the skin whereof there is a hot burning, and the quick flesh that burneth have a white bright spot, somewhat reddish, or white;</p>
+            <p><strong>25</strong> Then the priest shall look upon it: and, behold, if the hair in the bright spot be turned white, and it be in sight deeper than the skin; it is a leprosy broken out of the burning: wherefore the priest shall pronounce him unclean: it is the plague of leprosy.</p>
+            <p><strong>26</strong> But if the priest look on it, and, behold, there be no white hair in the bright spot, and it be no lower than the other skin, but be somewhat dark; then the priest shall shut him up seven days:</p>
+            <p><strong>27</strong> And the priest shall look upon him the seventh day: and if it be spread much abroad in the skin, then the priest shall pronounce him unclean: it is the plague of leprosy.</p>
+            <p><strong>28</strong> And if the bright spot stay in his place, and spread not in the skin, but it be somewhat dark; it is a rising of the burning, and the priest shall pronounce him clean: for it is an inflammation of the burning.</p>
+            <p><strong>29</strong> If a man or woman have a plague upon the head or the beard;</p>
+            <p><strong>30</strong> Then the priest shall see the plague: and, behold, if it be in sight deeper than the skin; and there be in it a yellow thin hair; then the priest shall pronounce him unclean: it is a dry scall, even a leprosy upon the head or beard.</p>
+            <p><strong>31</strong> And if the priest look on the plague of the scall, and, behold, it be not in sight deeper than the skin, and that there is no black hair in it; then the priest shall shut up him that hath the plague of the scall seven days:</p>
+            <p><strong>32</strong> And in the seventh day the priest shall look on the plague: and, behold, if the scall spread not, and there be in it no yellow hair, and the scall be not in sight deeper than the skin;</p>
+            <p><strong>33</strong> He shall be shaven, but the scall shall he not shave; and the priest shall shut up him that hath the scall seven days more:</p>
+            <p><strong>34</strong> And in the seventh day the priest shall look on the scall: and, behold, if the scall be not spread in the skin, nor be in sight deeper than the skin; then the priest shall pronounce him clean: and he shall wash his clothes, and be clean.</p>
+            <p><strong>35</strong> But if the scall spread much in the skin after his cleansing;</p>
+            <p><strong>36</strong> Then the priest shall look on him: and, behold, if the scall be spread in the skin, the priest shall not seek for yellow hair; he is unclean.</p>
+            <p><strong>37</strong> But if the scall be in his sight at a stay, and that there is black hair grown up therein; the scall is healed, he is clean: and the priest shall pronounce him clean.</p>
+            <p><strong>38</strong> If a man also or a woman have in the skin of their flesh bright spots, even white bright spots;</p>
+            <p><strong>39</strong> Then the priest shall look: and, behold, if the bright spots in the skin of their flesh be darkish white; it is a freckled spot that groweth in the skin; he is clean.</p>
+            <p><strong>40</strong> And the man whose hair is fallen off his head, he is bald; yet is he clean.</p>
+            <p><strong>41</strong> And he that hath his hair fallen off from the part of his head toward his face, he is forehead bald: yet is he clean.</p>
+            <p><strong>42</strong> And if there be in the bald head, or bald forehead, a white reddish sore; it is a leprosy sprung up in his bald head, or his bald forehead.</p>
+            <p><strong>43</strong> Then the priest shall look upon it: and, behold, if the rising of the sore be white reddish in his bald head, or in his bald forehead, as the leprosy appeareth in the skin of the flesh;</p>
+            <p><strong>44</strong> He is a leprous man, he is unclean: the priest shall pronounce him utterly unclean; his plague is in his head.</p>
+            <p><strong>45</strong> And the leper in whom the plague is, his clothes shall be rent, and his head bare, and he shall put a covering upon his upper lip, and shall cry, Unclean, unclean.</p>
+            <p><strong>46</strong> All the days wherein the plague shall be in him he shall be defiled; he is unclean: he shall dwell alone; without the camp shall his habitation be.</p>
+            <p><strong>47</strong> The garment also that the plague of leprosy is in, whether it be a woollen garment, or a linen garment;</p>
+            <p><strong>48</strong> Whether it be in the warp, or woof; of linen, or of woollen; whether in a skin, or in any thing made of skin;</p>
+            <p><strong>49</strong> And if the plague be greenish or reddish in the garment, or in the skin, either in the warp, or in the woof, or in any thing of skin; it is a plague of leprosy, and shall be shewed unto the priest:</p>
+            <p><strong>50</strong> And the priest shall look upon the plague, and shut up it that hath the plague seven days:</p>
+            <p><strong>51</strong> And he shall look on the plague on the seventh day: if the plague be spread in the garment, either in the warp, or in the woof, or in a skin, or in any work that is made of skin; the plague is a fretting leprosy; it is unclean.</p>
+            <p><strong>52</strong> He shall therefore burn that garment, whether warp or woof, in woollen or in linen, or any thing of skin, wherein the plague is: for it is a fretting leprosy; it shall be burnt in the fire.</p>
+            <p><strong>53</strong> And if the priest shall look, and, behold, the plague be not spread in the garment, either in the warp, or in the woof, or in any thing of skin;</p>
+            <p><strong>54</strong> Then the priest shall command that they wash the thing wherein the plague is, and he shall shut it up seven days more:</p>
+            <p><strong>55</strong> And the priest shall look on the plague, after that it is washed: and, behold, if the plague have not changed his colour, and the plague be not spread; it is unclean; thou shalt burn it in the fire; it is fret inward, whether it be bare within or without.</p>
+            <p><strong>56</strong> And if the priest look, and, behold, the plague be somewhat dark after the washing of it; then he shall rend it out of the garment, or out of the skin, or out of the warp, or out of the woof:</p>
+            <p><strong>57</strong> And if it appear still in the garment, either in the warp, or in the woof, or in any thing of skin; it is a spreading plague: thou shalt burn that wherein the plague is with fire.</p>
+            <p><strong>58</strong> And the garment, either warp, or woof, or whatsoever thing of skin it be, which thou shalt wash, if the plague be departed from them, then it shall be washed the second time, and shall be clean.</p>
+            <p><strong>59</strong> This is the law of the plague of leprosy in a garment of woollen or linen, either in the warp, or woof, or any thing of skins, to pronounce it clean, or to pronounce it unclean.</p>
+            </div>
+            <div class="scripture-text" id="web-13-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Leviticus 13 (ASV)</p>
+            <p><strong>1</strong> And Jehovah spake unto Moses and unto Aaron, saying,</p>
+            <p><strong>2</strong> When a man shall have in the skin of his flesh a rising, or a scab, or a bright spot, and it become in the skin of his flesh the plague of leprosy, then he shall be brought unto Aaron the priest, or unto one of his sons the priests:</p>
+            <p><strong>3</strong> and the priest shall look on the plague in the skin of the flesh: and if the hair in the plague be turned white, and the appearance of the plague be deeper than the skin of his flesh, it is the plague of leprosy; and the priest shall look on him, and pronounce him unclean.</p>
+            <p><strong>4</strong> And if the bright spot be white in the skin of his flesh, and the appearance thereof be not deeper than the skin, and the hair thereof be not turned white, then the priest shall shut up him that hath the plague seven days:</p>
+            <p><strong>5</strong> and the priest shall look on him the seventh day: and, behold, if in his eyes the plague be at a stay, and the plague be not spread in the skin, then the priest shall shut him up seven days more:</p>
+            <p><strong>6</strong> and the priest shall look on him again the seventh day; and, behold, if the plague be dim, and the plague be not spread in the skin, then the priest shall pronounce him clean: it is a scab: and he shall wash his clothes, and be clean.</p>
+            <p><strong>7</strong> But if the scab spread abroad in the skin, after that he hath showed himself to the priest for his cleansing, he shall show himself to the priest again:</p>
+            <p><strong>8</strong> and the priest shall look; and, behold, if the scab be spread in the skin, then the priest shall pronounce him unclean: it is leprosy.</p>
+            <p><strong>9</strong> When the plague of leprosy is in a man, then he shall be brought unto the priest;</p>
+            <p><strong>10</strong> and the priest shall look; and, behold, if there be a white rising in the skin, and it have turned the hair white, and there be quick raw flesh in the rising,</p>
+            <p><strong>11</strong> it is an old leprosy in the skin of his flesh, and the priest shall pronounce him unclean: he shall not shut him up; for he is unclean.</p>
+            <p><strong>12</strong> And if the leprosy break out abroad in the skin, and the leprosy cover all the skin of him that hath the plague from his head even to his feet, as far as appeareth to the priest;</p>
+            <p><strong>13</strong> then the priest shall look; and, behold, if the leprosy have covered all his flesh, he shall pronounce him clean that hath the plague: it is all turned white: he is clean.</p>
+            <p><strong>14</strong> But whensoever raw flesh appeareth in him, he shall be unclean.</p>
+            <p><strong>15</strong> And the priest shall look on the raw flesh, and pronounce him unclean: the raw flesh is unclean: it is leprosy.</p>
+            <p><strong>16</strong> Or if the raw flesh turn again, and be changed unto white, then he shall come unto the priest;</p>
+            <p><strong>17</strong> and the priest shall look on him; and, behold, if the plague be turned into white, then the priest shall pronounce him clean that hath the plague: he is clean.</p>
+            <p><strong>18</strong> And when the flesh hath in the skin thereof a boil, and it is healed,</p>
+            <p><strong>19</strong> and in the place of the boil there is a white rising, or a bright spot, reddish-white, then it shall be showed to the priest;</p>
+            <p><strong>20</strong> and the priest shall look; and, behold, if the appearance thereof be lower than the skin, and the hair thereof be turned white, then the priest shall pronounce him unclean: it is the plague of leprosy, it hath broken out in the boil.</p>
+            <p><strong>21</strong> But if the priest look on it, and, behold, there be no white hairs therein, and it be not lower than the skin, but be dim; then the priest shall shut him up seven days:</p>
+            <p><strong>22</strong> and if it spread abroad in the skin, then the priest shall pronounce him unclean: it is a plague.</p>
+            <p><strong>23</strong> But if the bright spot stay in its place, and be not spread, it is the scar of the boil; and the priest shall pronounce him clean.</p>
+            <p><strong>24</strong> Or when the flesh hath in the skin thereof a burning by fire, and the quick flesh of the burning become a bright spot, reddish-white, or white;</p>
+            <p><strong>25</strong> then the priest shall look upon it; and, behold, if the hair in the bright spot be turned white, and the appearance thereof be deeper than the skin; it is leprosy, it hath broken out in the burning: and the priest shall pronounce him unclean: it is the plague of leprosy.</p>
+            <p><strong>26</strong> But if the priest look on it, and, behold, there be no white hair in the bright spot, and it be no lower than the skin, but be dim; then the priest shall shut him up seven days:</p>
+            <p><strong>27</strong> and the priest shall look upon him the seventh day: if it spread abroad in the skin, then the priest shall pronounce him unclean: it is the plague of leprosy.</p>
+            <p><strong>28</strong> And if the bright spot stay in its place, and be not spread in the skin, but be dim; it is the rising of the burning, and the priest shall pronounce him clean: for it is the scar of the burning.</p>
+            <p><strong>29</strong> And when a man or woman hath a plague upon the head or upon the beard,</p>
+            <p><strong>30</strong> then the priest shall look on the plague; and, behold, if the appearance thereof be deeper than the skin, and there be in it yellow thin hair, then the priest shall pronounce him unclean: it is a scall, it is leprosy of the head or of the beard.</p>
+            <p><strong>31</strong> And if the priest look on the plague of the scall, and, behold, the appearance thereof be not deeper than the skin, and there be no black hair in it, then the priest shall shut up him that hath the plague of the scall seven days:</p>
+            <p><strong>32</strong> and in the seventh day the priest shall look on the plague; and, behold, if the scall be not spread, and there be in it no yellow hair, and the appearance of the scall be not deeper than the skin,</p>
+            <p><strong>33</strong> then he shall be shaven, but the scall shall he not shave; and the priest shall shut up him that hath the scall seven days more:</p>
+            <p><strong>34</strong> and in the seventh day the priest shall look on the scall; and, behold, if the scall be not spread in the skin, and the appearance thereof be not deeper than the skin; then the priest shall pronounce him clean: and he shall wash his clothes, and be clean.</p>
+            <p><strong>35</strong> But if the scall spread abroad in the skin after his cleansing,</p>
+            <p><strong>36</strong> then the priest shall look on him; and, behold, if the scall be spread in the skin, the priest shall not seek for the yellow hair; he is unclean.</p>
+            <p><strong>37</strong> But if in his eyes the scall be at a stay, and black hair be grown up therein; the scall is healed, he is clean: and the priest shall pronounce him clean.</p>
+            <p><strong>38</strong> And when a man or a woman hath in the skin of the flesh bright spots, even white bright spots;</p>
+            <p><strong>39</strong> then the priest shall look; and, behold, if the bright spots in the skin of their flesh be of a dull white, it is a tetter, it hath broken out in the skin; he is clean.</p>
+            <p><strong>40</strong> And if a man’s hair be fallen off his head, he is bald; yet is he clean.</p>
+            <p><strong>41</strong> And if his hair be fallen off from the front part of his head, he is forehead bald; yet is he clean.</p>
+            <p><strong>42</strong> But if there be in the bald head, or the bald forehead, a reddish-white plague; it is leprosy breaking out in his bald head, or his bald forehead.</p>
+            <p><strong>43</strong> Then the priest shall look upon him; and, behold, if the rising of the plague be reddish-white in his bald head, or in his bald forehead, as the appearance of leprosy in the skin of the flesh;</p>
+            <p><strong>44</strong> he is a leprous man, he is unclean: the priest shall surely pronounce him unclean; his plague is in his head.</p>
+            <p><strong>45</strong> And the leper in whom the plague is, his clothes shall be rent, and the hair of his head shall go loose, and he shall cover his upper lip, and shall cry, Unclean, unclean.</p>
+            <p><strong>46</strong> All the days wherein the plague is in him he shall be unclean; he is unclean: he shall dwell alone; without the camp shall his dwelling be.</p>
+            <p><strong>47</strong> The garment also that the plague of leprosy is in, whether it be a woollen garment, or a linen garment;</p>
+            <p><strong>48</strong> whether it be in warp, or woof; of linen, or of woollen; whether in a skin, or in anything made of skin;</p>
+            <p><strong>49</strong> if the plague be greenish or reddish in the garment, or in the skin, or in the warp, or in the woof, or in anything of skin; it is the plague of leprosy, and shall be showed unto the priest.</p>
+            <p><strong>50</strong> And the priest shall look upon the plague, and shut up that which hath the plague seven days:</p>
+            <p><strong>51</strong> and he shall look on the plague on the seventh day: if the plague be spread in the garment, either in the warp, or in the woof, or in the skin, whatever service skin is used for; the plague is a fretting leprosy; it is unclean.</p>
+            <p><strong>52</strong> And he shall burn the garment, whether the warp or the woof, in woollen or in linen, or anything of skin, wherein the plague is: for it is a fretting leprosy; it shall be burnt in the fire.</p>
+            <p><strong>53</strong> And if the priest shall look, and, behold, the plague be not spread in the garment, either in the warp, or in the woof, or in anything of skin;</p>
+            <p><strong>54</strong> then the priest shall command that they wash the thing wherein the plague is, and he shall shut it up seven days more:</p>
+            <p><strong>55</strong> and the priest shall look, after that the plague is washed; and, behold, if the plague have not changed its color, and the plague be not spread, it is unclean; thou shalt burn it in the fire: it is a fret, whether the bareness be within or without.</p>
+            <p><strong>56</strong> And if the priest look, and, behold, the plague be dim after the washing thereof, then he shall rend it out of the garment, or out of the skin, or out of the warp, or out of the woof:</p>
+            <p><strong>57</strong> and if it appear still in the garment, either in the warp, or in the woof, or in anything of skin, it is breaking out: thou shalt burn that wherein the plague is with fire.</p>
+            <p><strong>58</strong> And the garment, either the warp, or the woof, or whatsoever thing of skin it be, which thou shalt wash, if the plague be departed from them, then it shall be washed the second time, and shall be clean.</p>
+            <p><strong>59</strong> This is the law of the plague of leprosy in a garment of woollen or linen, either in the warp, or the woof, or anything of skin, to pronounce it clean, or to pronounce it unclean.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This long and detailed chapter gives the priest's procedures for diagnosing the plague of leprosy, a term covering various skin diseases and even mildew in fabric. When a person develops a rising, scab, or bright spot, he is brought to the priest, who examines the affected skin, watching for telltale signs such as white hair, depth below the skin, raw flesh, or spreading. If uncertain, the priest isolates the person for seven days, then examines again, pronouncing him clean or unclean. Various cases are treated, boils, burns, scalp conditions, baldness, and even greenish or reddish growths in woolen and linen garments. The one declared a leper must wear torn clothes, let his hair hang loose, cover his lip, and cry, “Unclean! Unclean!” dwelling alone outside the camp. Garments judged unclean are washed or burned. These laws protected the community and dramatized how sin defiles and isolates, cutting a person off from fellowship. Against this dark backdrop the Gospels shine all the brighter, for Jesus reached out and touched lepers, and instead of becoming unclean himself, he made the unclean clean.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The priest</strong> — The careful examiner who inspects the plague, isolates when uncertain, and pronounces a person or garment clean or unclean.</li>
+          <li><strong>The afflicted person</strong> — The one with a skin disease who is brought to the priest and, if declared leprous, must dwell alone outside the camp.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who gives these laws to Moses and Aaron, guarding his people's health and dramatizing the defiling, isolating power of uncleanness.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Leviticus 13:46 (WEB)</p>
+          <p class="verse__text">All the days in which the plague is in him he shall be unclean. He is unclean. He shall dwell alone. Outside of the camp shall be his dwelling.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God appoints careful, patient discernment rather than hasty judgment about uncleanness.</li>
+          <li>Uncleanness, like sin, defiles and separates a person from the community.</li>
+          <li>What is corrupt and spreading must be dealt with honestly, not ignored.</li>
+          <li>The isolation of the leper highlights our deep need for One who can make the unclean clean.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-13">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-13">
+            <ul class="lesson-list">
+            <li><strong>Discernment takes patience.</strong> The priest is to “isolate the infected person for seven days” and examine again (Leviticus 13:4-5, WEB). Right judgment is careful and unhurried.</li>
+            <li><strong>Uncleanness must be named.</strong> The leper is to “cry, ‘Unclean! Unclean!’” (Leviticus 13:45, WEB). What defiles is to be acknowledged honestly, not concealed.</li>
+            <li><strong>Sin isolates.</strong> The leper “shall dwell alone. Outside of the camp shall be his dwelling” (Leviticus 13:46, WEB). Defilement cuts a person off from fellowship, picturing the alienating power of sin.</li>
+            <li><strong>Corruption that spreads must be removed.</strong> A garment with spreading mildew “shall be burned in the fire” (Leviticus 13:52, WEB). What is destructive and spreading cannot simply be tolerated.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-13">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-13">
+            <ol class="study-questions">
+            <li>Why does God require such careful, repeated examination before declaring someone unclean?</li>
+            <li>In what ways does the defilement and isolation of leprosy picture the effects of sin?</li>
+            <li>Why must the leper announce his own uncleanness and dwell outside the camp?</li>
+            <li>How does this chapter's bleak picture make Jesus' willingness to touch lepers so striking (see Mark 1:40-42)?</li>
+            <li>Where might you be hiding something “spreading” in your life rather than bringing it into the light?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-13">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-13">
+            <ol class="study-questions">
+            <li>The careful process, with isolation and re-examination, ensures justice and protects both the individual and the community from rash verdicts. It models discernment that is patient and fair rather than hasty.</li>
+            <li>Like sin, leprosy spreads, defiles, and separates the person from fellowship and from worship. The physical condition becomes a vivid picture of how sin alienates us from God and others.</li>
+            <li>The cry and the dwelling apart protect others and acknowledge the reality of the condition. Yet the heartbreaking isolation magnifies our longing for restoration that only God can give.</li>
+            <li>Where the law required distance, Jesus drew near and touched the leper, and rather than being defiled, he cleansed the man. He alone reverses uncleanness, taking our defilement and giving his cleanness.</li>
+            <li>This is a gentle personal-application question. Encourage members to bring hidden, festering sin into the light of Christ's cleansing rather than letting it spread. Keep the tone hopeful and confidential.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="leviticus-12.html">← Leviticus 12</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="leviticus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="leviticus-14.html">Leviticus 14 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

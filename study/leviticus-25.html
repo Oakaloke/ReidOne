@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Leviticus 25: The Year of Jubilee — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Leviticus 25: the Sabbath year for the land, the Year of Jubilee, liberty proclaimed, redemption, and God's claim that the land is his." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-leviticus-progress" data-study-total="27">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Leviticus, Chapter 25
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="leviticus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Leviticus · Chapter 25</span>
+        <h1>Leviticus 25: The Year of Jubilee</h1>
+        <p class="lead">God commands Sabbath rest for the land and a Jubilee of release, when debts are forgiven, slaves freed, and property returns home.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-25">
+            <span>Scripture — Leviticus Chapter 25</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-25">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-25-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-25-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-25-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-25-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Leviticus 25 (WEB)</p>
+            <p><strong>1</strong> Yahweh said to Moses in Mount Sinai,</p>
+            <p><strong>2</strong> “Speak to the children of Israel, and tell them, ‘When you come into the land which I give you, then the land shall keep a Sabbath to Yahweh.</p>
+            <p><strong>3</strong> You shall sow your field six years, and you shall prune your vineyard six years, and gather in its fruits;</p>
+            <p><strong>4</strong> but in the seventh year there shall be a Sabbath of solemn rest for the land, a Sabbath to Yahweh. You shall not sow your field or prune your vineyard.</p>
+            <p><strong>5</strong> What grows of itself in your harvest you shall not reap, and you shall not gather the grapes of your undressed vine. It shall be a year of solemn rest for the land.</p>
+            <p><strong>6</strong> The Sabbath of the land shall be for food for you; for yourself, for your servant, for your maid, for your hired servant, and for your stranger, who lives as a foreigner with you.</p>
+            <p><strong>7</strong> For your livestock also, and for the animals that are in your land, shall all its increase be for food.</p>
+            <p><strong>8</strong> “‘You shall count off seven Sabbaths of years, seven times seven years; and there shall be to you the days of seven Sabbaths of years, even forty-nine years.</p>
+            <p><strong>9</strong> Then you shall sound the loud trumpet on the tenth day of the seventh month. On the Day of Atonement you shall sound the trumpet throughout all your land.</p>
+            <p><strong>10</strong> You shall make the fiftieth year holy, and proclaim liberty throughout the land to all its inhabitants. It shall be a jubilee to you; and each of you shall return to his own property, and each of you shall return to his family.</p>
+            <p><strong>11</strong> That fiftieth year shall be a jubilee to you. In it you shall not sow, neither reap that which grows of itself, nor gather from the undressed vines.</p>
+            <p><strong>12</strong> For it is a jubilee; it shall be holy to you. You shall eat of its increase out of the field.</p>
+            <p><strong>13</strong> “‘In this Year of Jubilee each of you shall return to his property.</p>
+            <p><strong>14</strong> “‘If you sell anything to your neighbor, or buy from your neighbor, you shall not wrong one another.</p>
+            <p><strong>15</strong> According to the number of years after the Jubilee you shall buy from your neighbor. According to the number of years of the crops he shall sell to you.</p>
+            <p><strong>16</strong> According to the length of the years you shall increase its price, and according to the shortness of the years you shall diminish its price; for he is selling the number of the crops to you.</p>
+            <p><strong>17</strong> You shall not wrong one another; but you shall fear your God: for I am Yahweh your God.</p>
+            <p><strong>18</strong> “‘Therefore you shall do my statutes, and keep my ordinances and do them; and you shall dwell in the land in safety.</p>
+            <p><strong>19</strong> The land shall yield its fruit, and you shall eat your fill, and dwell therein in safety.</p>
+            <p><strong>20</strong> If you said, “What shall we eat the seventh year? Behold, we shall not sow, nor gather in our increase”;</p>
+            <p><strong>21</strong> then I will command my blessing on you in the sixth year, and it shall bear fruit for the three years.</p>
+            <p><strong>22</strong> You shall sow the eighth year, and eat of the fruits, the old store; until the ninth year, until its fruits come in, you shall eat the old store.</p>
+            <p><strong>23</strong> “‘The land shall not be sold in perpetuity, for the land is mine; for you are strangers and live as foreigners with me.</p>
+            <p><strong>24</strong> In all the land of your possession you shall grant a redemption for the land.</p>
+            <p><strong>25</strong> “‘If your brother becomes poor, and sells some of his possessions, then his kinsman who is next to him shall come, and redeem that which his brother has sold.</p>
+            <p><strong>26</strong> If a man has no one to redeem it, and he becomes prosperous and finds sufficient means to redeem it;</p>
+            <p><strong>27</strong> then let him reckon the years since its sale, and restore the surplus to the man to whom he sold it; and he shall return to his property.</p>
+            <p><strong>28</strong> But if he isn’t able to get it back for himself, then what he has sold shall remain in the hand of him who has bought it until the Year of Jubilee: and in the Jubilee it shall be released, and he shall return to his property.</p>
+            <p><strong>29</strong> “‘If a man sells a dwelling house in a walled city, then he may redeem it within a whole year after it has been sold. For a full year he shall have the right of redemption.</p>
+            <p><strong>30</strong> If it isn’t redeemed within the space of a full year, then the house that is in the walled city shall be made sure in perpetuity to him who bought it, throughout his generations. It shall not be released in the Jubilee.</p>
+            <p><strong>31</strong> But the houses of the villages which have no wall around them shall be reckoned with the fields of the country: they may be redeemed, and they shall be released in the Jubilee.</p>
+            <p><strong>32</strong> “‘Nevertheless the cities of the Levites, the houses in the cities of their possession, the Levites may redeem at any time.</p>
+            <p><strong>33</strong> The Levites may redeem the house that was sold, and the city of his possession, and it shall be released in the Jubilee; for the houses of the cities of the Levites are their possession among the children of Israel.</p>
+            <p><strong>34</strong> But the field of the suburbs of their cities may not be sold; for it is their perpetual possession.</p>
+            <p><strong>35</strong> “‘If your brother has become poor, and his hand can’t support himself among you; then you shall uphold him. He shall live with you like an alien and a temporary resident.</p>
+            <p><strong>36</strong> Take no interest from him or profit, but fear your God; that your brother may live among you.</p>
+            <p><strong>37</strong> You shall not lend him your money at interest, nor give him your food for profit.</p>
+            <p><strong>38</strong> I am Yahweh your God, who brought you out of the land of Egypt, to give you the land of Canaan, and to be your God.</p>
+            <p><strong>39</strong> “‘If your brother has grown poor among you, and sells himself to you; you shall not make him to serve as a slave.</p>
+            <p><strong>40</strong> As a hired servant, and as a temporary resident, he shall be with you; he shall serve with you until the Year of Jubilee:</p>
+            <p><strong>41</strong> then he shall go out from you, he and his children with him, and shall return to his own family, and to the possession of his fathers.</p>
+            <p><strong>42</strong> For they are my servants, whom I brought out of the land of Egypt. They shall not be sold as slaves.</p>
+            <p><strong>43</strong> You shall not rule over him with harshness, but shall fear your God.</p>
+            <p><strong>44</strong> “‘As for your male and your female slaves, whom you may have; of the nations that are around you, from them you may buy male and female slaves.</p>
+            <p><strong>45</strong> Moreover of the children of the aliens who live among you, of them you may buy, and of their families who are with you, which they have conceived in your land; and they will be your property.</p>
+            <p><strong>46</strong> You may make them an inheritance for your children after you, to hold for a possession; of them may you take your slaves forever; but over your brothers the children of Israel you shall not rule, one over another, with harshness.</p>
+            <p><strong>47</strong> “‘If an alien or temporary resident with you becomes rich, and your brother beside him has grown poor, and sells himself to the stranger or foreigner living among you, or to a member of the stranger’s family;</p>
+            <p><strong>48</strong> after he is sold he may be redeemed. One of his brothers may redeem him;</p>
+            <p><strong>49</strong> or his uncle, or his uncle’s son, may redeem him, or any who is a close relative to him of his family may redeem him; or if he has grown rich, he may redeem himself.</p>
+            <p><strong>50</strong> He shall reckon with him who bought him from the year that he sold himself to him to the Year of Jubilee. The price of his sale shall be according to the number of years; he shall be with him according to the time of a hired servant.</p>
+            <p><strong>51</strong> If there are yet many years, according to them he shall give back the price of his redemption out of the money that he was bought for.</p>
+            <p><strong>52</strong> If there remain but a few years to the year of jubilee, then he shall reckon with him; according to his years of service he shall give back the price of his redemption.</p>
+            <p><strong>53</strong> As a servant hired year by year shall he be with him. He shall not rule with harshness over him in your sight.</p>
+            <p><strong>54</strong> If he isn’t redeemed by these means, then he shall be released in the Year of Jubilee, he, and his children with him.</p>
+            <p><strong>55</strong> For to me the children of Israel are servants; they are my servants whom I brought out of the land of Egypt. I am Yahweh your God.</p>
+            </div>
+            <div class="scripture-text" id="web-25-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Leviticus 25 (KJV)</p>
+            <p><strong>1</strong> And the Lord spake unto Moses in mount Sinai, saying,</p>
+            <p><strong>2</strong> Speak unto the children of Israel, and say unto them, When ye come into the land which I give you, then shall the land keep a sabbath unto the Lord.</p>
+            <p><strong>3</strong> Six years thou shalt sow thy field, and six years thou shalt prune thy vineyard, and gather in the fruit thereof;</p>
+            <p><strong>4</strong> But in the seventh year shall be a sabbath of rest unto the land, a sabbath for the Lord: thou shalt neither sow thy field, nor prune thy vineyard.</p>
+            <p><strong>5</strong> That which groweth of its own accord of thy harvest thou shalt not reap, neither gather the grapes of thy vine undressed: for it is a year of rest unto the land.</p>
+            <p><strong>6</strong> And the sabbath of the land shall be meat for you; for thee, and for thy servant, and for thy maid, and for thy hired servant, and for thy stranger that sojourneth with thee,</p>
+            <p><strong>7</strong> And for thy cattle, and for the beast that are in thy land, shall all the increase thereof be meat.</p>
+            <p><strong>8</strong> And thou shalt number seven sabbaths of years unto thee, seven times seven years; and the space of the seven sabbaths of years shall be unto thee forty and nine years.</p>
+            <p><strong>9</strong> Then shalt thou cause the trumpet of the jubile to sound on the tenth day of the seventh month, in the day of atonement shall ye make the trumpet sound throughout all your land.</p>
+            <p><strong>10</strong> And ye shall hallow the fiftieth year, and proclaim liberty throughout all the land unto all the inhabitants thereof: it shall be a jubile unto you; and ye shall return every man unto his possession, and ye shall return every man unto his family.</p>
+            <p><strong>11</strong> A jubile shall that fiftieth year be unto you: ye shall not sow, neither reap that which groweth of itself in it, nor gather the grapes in it of thy vine undressed.</p>
+            <p><strong>12</strong> For it is the jubile; it shall be holy unto you: ye shall eat the increase thereof out of the field.</p>
+            <p><strong>13</strong> In the year of this jubile ye shall return every man unto his possession.</p>
+            <p><strong>14</strong> And if thou sell ought unto thy neighbour, or buyest ought of thy neighbour’s hand, ye shall not oppress one another:</p>
+            <p><strong>15</strong> According to the number of years after the jubile thou shalt buy of thy neighbour, and according unto the number of years of the fruits he shall sell unto thee:</p>
+            <p><strong>16</strong> According to the multitude of years thou shalt increase the price thereof, and according to the fewness of years thou shalt diminish the price of it: for according to the number of the years of the fruits doth he sell unto thee.</p>
+            <p><strong>17</strong> Ye shall not therefore oppress one another; but thou shalt fear thy God: for I am the Lord your God.</p>
+            <p><strong>18</strong> Wherefore ye shall do my statutes, and keep my judgments, and do them; and ye shall dwell in the land in safety.</p>
+            <p><strong>19</strong> And the land shall yield her fruit, and ye shall eat your fill, and dwell therein in safety.</p>
+            <p><strong>20</strong> And if ye shall say, What shall we eat the seventh year? behold, we shall not sow, nor gather in our increase:</p>
+            <p><strong>21</strong> Then I will command my blessing upon you in the sixth year, and it shall bring forth fruit for three years.</p>
+            <p><strong>22</strong> And ye shall sow the eighth year, and eat yet of old fruit until the ninth year; until her fruits come in ye shall eat of the old store.</p>
+            <p><strong>23</strong> The land shall not be sold for ever: for the land is mine; for ye are strangers and sojourners with me.</p>
+            <p><strong>24</strong> And in all the land of your possession ye shall grant a redemption for the land.</p>
+            <p><strong>25</strong> If thy brother be waxen poor, and hath sold away some of his possession, and if any of his kin come to redeem it, then shall he redeem that which his brother sold.</p>
+            <p><strong>26</strong> And if the man have none to redeem it, and himself be able to redeem it;</p>
+            <p><strong>27</strong> Then let him count the years of the sale thereof, and restore the overplus unto the man to whom he sold it; that he may return unto his possession.</p>
+            <p><strong>28</strong> But if he be not able to restore it to him, then that which is sold shall remain in the hand of him that hath bought it until the year of jubile: and in the jubile it shall go out, and he shall return unto his possession.</p>
+            <p><strong>29</strong> And if a man sell a dwelling house in a walled city, then he may redeem it within a whole year after it is sold; within a full year may he redeem it.</p>
+            <p><strong>30</strong> And if it be not redeemed within the space of a full year, then the house that is in the walled city shall be established for ever to him that bought it throughout his generations: it shall not go out in the jubile.</p>
+            <p><strong>31</strong> But the houses of the villages which have no wall round about them shall be counted as the fields of the country: they may be redeemed, and they shall go out in the jubile.</p>
+            <p><strong>32</strong> Notwithstanding the cities of the Levites, and the houses of the cities of their possession, may the Levites redeem at any time.</p>
+            <p><strong>33</strong> And if a man purchase of the Levites, then the house that was sold, and the city of his possession, shall go out in the year of jubile: for the houses of the cities of the Levites are their possession among the children of Israel.</p>
+            <p><strong>34</strong> But the field of the suburbs of their cities may not be sold; for it is their perpetual possession.</p>
+            <p><strong>35</strong> And if thy brother be waxen poor, and fallen in decay with thee; then thou shalt relieve him: yea, though he be a stranger, or a sojourner; that he may live with thee.</p>
+            <p><strong>36</strong> Take thou no usury of him, or increase: but fear thy God; that thy brother may live with thee.</p>
+            <p><strong>37</strong> Thou shalt not give him thy money upon usury, nor lend him thy victuals for increase.</p>
+            <p><strong>38</strong> I am the Lord your God, which brought you forth out of the land of Egypt, to give you the land of Canaan, and to be your God.</p>
+            <p><strong>39</strong> And if thy brother that dwelleth by thee be waxen poor, and be sold unto thee; thou shalt not compel him to serve as a bondservant:</p>
+            <p><strong>40</strong> But as an hired servant, and as a sojourner, he shall be with thee, and shall serve thee unto the year of jubile:</p>
+            <p><strong>41</strong> And then shall he depart from thee, both he and his children with him, and shall return unto his own family, and unto the possession of his fathers shall he return.</p>
+            <p><strong>42</strong> For they are my servants, which I brought forth out of the land of Egypt: they shall not be sold as bondmen.</p>
+            <p><strong>43</strong> Thou shalt not rule over him with rigour; but shalt fear thy God.</p>
+            <p><strong>44</strong> Both thy bondmen, and thy bondmaids, which thou shalt have, shall be of the heathen that are round about you; of them shall ye buy bondmen and bondmaids.</p>
+            <p><strong>45</strong> Moreover of the children of the strangers that do sojourn among you, of them shall ye buy, and of their families that are with you, which they begat in your land: and they shall be your possession.</p>
+            <p><strong>46</strong> And ye shall take them as an inheritance for your children after you, to inherit them for a possession; they shall be your bondmen for ever: but over your brethren the children of Israel, ye shall not rule one over another with rigour.</p>
+            <p><strong>47</strong> And if a sojourner or stranger wax rich by thee, and thy brother that dwelleth by him wax poor, and sell himself unto the stranger or sojourner by thee, or to the stock of the stranger’s family:</p>
+            <p><strong>48</strong> After that he is sold he may be redeemed again; one of his brethren may redeem him:</p>
+            <p><strong>49</strong> Either his uncle, or his uncle’s son, may redeem him, or any that is nigh of kin unto him of his family may redeem him; or if he be able, he may redeem himself.</p>
+            <p><strong>50</strong> And he shall reckon with him that bought him from the year that he was sold to him unto the year of jubile: and the price of his sale shall be according unto the number of years, according to the time of an hired servant shall it be with him.</p>
+            <p><strong>51</strong> If there be yet many years behind, according unto them he shall give again the price of his redemption out of the money that he was bought for.</p>
+            <p><strong>52</strong> And if there remain but few years unto the year of jubile, then he shall count with him, and according unto his years shall he give him again the price of his redemption.</p>
+            <p><strong>53</strong> And as a yearly hired servant shall he be with him: and the other shall not rule with rigour over him in thy sight.</p>
+            <p><strong>54</strong> And if he be not redeemed in these years, then he shall go out in the year of jubile, both he, and his children with him.</p>
+            <p><strong>55</strong> For unto me the children of Israel are servants; they are my servants whom I brought forth out of the land of Egypt: I am the Lord your God.</p>
+            </div>
+            <div class="scripture-text" id="web-25-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Leviticus 25 (ASV)</p>
+            <p><strong>1</strong> And Jehovah spake unto Moses in mount Sinai, saying,</p>
+            <p><strong>2</strong> Speak unto the children of Israel, and say unto them, When ye come into the land which I give you, then shall the land keep a sabbath unto Jehovah.</p>
+            <p><strong>3</strong> Six years thou shalt sow thy field, and six years thou shalt prune thy vineyard, and gather in the fruits thereof;</p>
+            <p><strong>4</strong> but in the seventh year shall be a sabbath of solemn rest for the land, a sabbath unto Jehovah: thou shalt neither sow thy field, nor prune thy vineyard.</p>
+            <p><strong>5</strong> That which groweth of itself of thy harvest thou shalt not reap, and the grapes of thy undressed vine thou shalt not gather: it shall be a year of solemn rest for the land.</p>
+            <p><strong>6</strong> And the sabbath of the land shall be for food for you; for thee, and for thy servant and for thy maid, and for thy hired servant and for thy stranger, who sojourn with thee.</p>
+            <p><strong>7</strong> And for thy cattle, and for the beasts that are in thy land, shall all the increase thereof be for food.</p>
+            <p><strong>8</strong> And thou shalt number seven sabbaths of years unto thee, seven times seven years; and there shall be unto thee the days of seven sabbaths of years, even forty and nine years.</p>
+            <p><strong>9</strong> Then shalt thou send abroad the loud trumpet on the tenth day of the seventh month; in the day of atonement shall ye send abroad the trumpet throughout all your land.</p>
+            <p><strong>10</strong> And ye shall hallow the fiftieth year, and proclaim liberty throughout the land unto all the inhabitants thereof: it shall be a jubilee unto you; and ye shall return every man unto his possession, and ye shall return every man unto his family.</p>
+            <p><strong>11</strong> A jubilee shall that fiftieth year be unto you: ye shall not sow, neither reap that which groweth of itself in it, nor gather the grapes in it of the undressed vines.</p>
+            <p><strong>12</strong> For it is a jubilee; it shall be holy unto you: ye shall eat the increase thereof out of the field.</p>
+            <p><strong>13</strong> In this year of jubilee ye shall return every man unto his possession.</p>
+            <p><strong>14</strong> And if thou sell aught unto thy neighbor, or buy of thy neighbor’s hand, ye shall not wrong one another.</p>
+            <p><strong>15</strong> According to the number of years after the jubilee thou shalt buy of thy neighbor, and according unto the number of years of the crops he shall sell unto thee.</p>
+            <p><strong>16</strong> According to the multitude of the years thou shalt increase the price thereof, and according to the fewness of the years thou shalt diminish the price of it; for the number of the crops doth he sell unto thee.</p>
+            <p><strong>17</strong> And ye shall not wrong one another; but thou shalt fear thy God: for I am Jehovah your God.</p>
+            <p><strong>18</strong> Wherefore ye shall do my statutes, and keep mine ordinances and do them; and ye shall dwell in the land in safety.</p>
+            <p><strong>19</strong> And the land shall yield its fruit, and ye shall eat your fill, and dwell therein in safety.</p>
+            <p><strong>20</strong> And if ye shall say, What shall we eat the seventh year? behold, we shall not sow, nor gather in our increase;</p>
+            <p><strong>21</strong> then I will command my blessing upon you in the sixth year, and it shall bring forth fruit for the three years.</p>
+            <p><strong>22</strong> And ye shall sow the eighth year, and eat of the fruits, the old store; until the ninth year, until its fruits come in, ye shall eat the old store.</p>
+            <p><strong>23</strong> And the land shall not be sold in perpetuity; for the land is mine: for ye are strangers and sojourners with me.</p>
+            <p><strong>24</strong> And in all the land of your possession ye shall grant a redemption for the land.</p>
+            <p><strong>25</strong> If thy brother be waxed poor, and sell some of his possession, then shall his kinsman that is next unto him come, and shall redeem that which his brother hath sold.</p>
+            <p><strong>26</strong> And if a man have no one to redeem it, and he be waxed rich and find sufficient to redeem it;</p>
+            <p><strong>27</strong> then let him reckon the years of the sale thereof, and restore the overplus unto the man to whom he sold it; and he shall return unto his possession.</p>
+            <p><strong>28</strong> But if he be not able to get it back for himself, then that which he hath sold shall remain in the hand of him that hath bought it until the year of jubilee: and in the jubilee it shall go out, and he shall return unto his possession.</p>
+            <p><strong>29</strong> And if a man sell a dwelling-house in a walled city, then he may redeem it within a whole year after it is sold; for a full year shall he have the right of redemption.</p>
+            <p><strong>30</strong> And if it be not redeemed within the space of a full year, then the house that is in the walled city shall be made sure in perpetuity to him that bought it, throughout his generations: it shall not go out in the jubilee.</p>
+            <p><strong>31</strong> But the houses of the villages which have no wall round about them shall be reckoned with the fields of the country: they may be redeemed, and they shall go out in the jubilee.</p>
+            <p><strong>32</strong> Nevertheless the cities of the Levites, the houses of the cities of their possession, may the Levites redeem at any time.</p>
+            <p><strong>33</strong> And if one of the Levites redeem, then the house that was sold, and the city of his possession, shall go out in the jubilee; for the houses of the cities of the Levites are their possession among the children of Israel.</p>
+            <p><strong>34</strong> But the field of the suburbs of their cities may not be sold; for it is their perpetual possession.</p>
+            <p><strong>35</strong> And if thy brother be waxed poor, and his hand fail with thee; then thou shalt uphold him: as a stranger and a sojourner shall he live with thee.</p>
+            <p><strong>36</strong> Take thou no interest of him or increase, but fear thy God; that thy brother may live with thee.</p>
+            <p><strong>37</strong> Thou shalt not give him thy money upon interest, nor give him thy victuals for increase.</p>
+            <p><strong>38</strong> I am Jehovah your God, who brought you forth out of the land of Egypt, to give you the land of Canaan, and to be your God.</p>
+            <p><strong>39</strong> And if thy brother be waxed poor with thee, and sell himself unto thee; thou shalt not make him to serve as a bondservant.</p>
+            <p><strong>40</strong> As a hired servant, and as a sojourner, he shall be with thee; he shall serve with thee unto the year of jubilee:</p>
+            <p><strong>41</strong> then shall he go out from thee, he and his children with him, and shall return unto his own family, and unto the possession of his fathers shall he return.</p>
+            <p><strong>42</strong> For they are my servants, whom I brought forth out of the land of Egypt: they shall not be sold as bondmen.</p>
+            <p><strong>43</strong> Thou shalt not rule over him with rigor, but shalt fear thy God.</p>
+            <p><strong>44</strong> And as for thy bondmen, and thy bondmaids, whom thou shalt have; of the nations that are round about you, of them shall ye buy bondmen and bondmaids.</p>
+            <p><strong>45</strong> Moreover of the children of the strangers that sojourn among you, of them shall ye buy, and of their families that are with you, which they have begotten in your land: and they shall be your possession.</p>
+            <p><strong>46</strong> And ye shall make them an inheritance for your children after you, to hold for a possession; of them shall ye take your bondmen for ever: but over your brethren the children of Israel ye shall not rule, one over another, with rigor.</p>
+            <p><strong>47</strong> And if a stranger or sojourner with thee be waxed rich, and thy brother be waxed poor beside him, and sell himself unto the stranger or sojourner with thee, or to the stock of the stranger’s family;</p>
+            <p><strong>48</strong> after that he is sold he may be redeemed: one of his brethren may redeem him;</p>
+            <p><strong>49</strong> or his uncle, or his uncle’s son, may redeem him, or any that is nigh of kin unto him of his family may redeem him; or if he be waxed rich, he may redeem himself.</p>
+            <p><strong>50</strong> And he shall reckon with him that bought him from the year that he sold himself to him unto the year of jubilee: and the price of his sale shall be according unto the number of years; according to the time of a hired servant shall he be with him.</p>
+            <p><strong>51</strong> If there be yet many years, according unto them he shall give back the price of his redemption out of the money that he was bought for.</p>
+            <p><strong>52</strong> And if there remain but few years unto the year of jubilee, then he shall reckon with him; according unto his years shall he give back the price of his redemption.</p>
+            <p><strong>53</strong> As a servant hired year by year shall he be with him: he shall not rule with rigor over him in thy sight.</p>
+            <p><strong>54</strong> And if he be not redeemed by these means, then he shall go out in the year of jubilee, he, and his children with him.</p>
+            <p><strong>55</strong> For unto me the children of Israel are servants; they are my servants whom I brought forth out of the land of Egypt: I am Jehovah your God.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>At Mount Sinai Yahweh commands that the land itself keep a Sabbath: six years of sowing and harvesting, then a seventh year of solemn rest in which the fields are neither sown nor pruned, with whatever grows freely shared by all. After seven cycles of seven years, the fiftieth year is to be the Jubilee, announced by a trumpet on the Day of Atonement, proclaiming liberty throughout the land to all its inhabitants. In that year each person returns to his own property and his own family, and debts and bondage are released. God establishes laws of redemption so that land sold in poverty can be bought back, and a poor brother who has sold himself is to be treated as a hired servant, not a slave, and freed at the Jubilee. The foundation of it all is God's declaration that the land is his and Israel are but strangers and sojourners with him; the people, too, are his servants whom he brought out of Egypt, so they are not to be sold as slaves. God forbids charging interest to a struggling brother and commands his people to uphold the poor and fear their God. The Jubilee built mercy, restraint, and hope into the very economy of Israel. It anticipates the gospel liberty proclaimed in Christ, who came to set the captives free.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Themes</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The owner of the land and the redeemer of his people, who proclaims liberty and builds mercy into Israel's economy.</li>
+          <li><strong>The poor brother</strong> — The Israelite who falls into debt or bondage and whom the community must uphold, redeem, and release.</li>
+          <li><strong>The kinsman-redeemer</strong> — The near relative who buys back land or a person sold in poverty, a picture of redemption fulfilled in Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Leviticus 25:10 (WEB)</p>
+          <p class="verse__text">You shall make the fiftieth year holy, and proclaim liberty throughout the land to all its inhabitants. It shall be a jubilee to you; and each of you shall return to his own property, and each of you shall return to his family.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Even the land belongs to God and is to share in his rhythm of Sabbath rest.</li>
+          <li>God builds mercy, restraint, and release into the economic life of his people, protecting the poor.</li>
+          <li>Ultimate ownership belongs to God; his people hold the land as stewards and sojourners with him.</li>
+          <li>The Jubilee's proclamation of liberty anticipates the freedom Christ brings to captives of sin.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-25">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-25">
+            <ul class="lesson-list">
+            <li><strong>The land is the LORD's.</strong> “The land shall not be sold in perpetuity, for the land is mine; for you are strangers and live as foreigners with me” (Leviticus 25:23, WEB).</li>
+            <li><strong>Liberty is proclaimed in Jubilee.</strong> “Proclaim liberty throughout the land to all its inhabitants” (Leviticus 25:10, WEB), with property and family restored.</li>
+            <li><strong>Care for the poor without exploiting them.</strong> “If your brother becomes poor… then you shall uphold him,” taking no interest from him (Leviticus 25:35-36, WEB).</li>
+            <li><strong>God's people are his redeemed servants.</strong> “For they are my servants, whom I brought out of the land of Egypt” (Leviticus 25:42, WEB), so they are not to be enslaved.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-25">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-25">
+            <ol class="study-questions">
+            <li>What did it require of Israel to let the land rest every seventh year, and what did that teach about trusting God?</li>
+            <li>How did the Year of Jubilee protect families and prevent permanent poverty and inequality?</li>
+            <li>What difference does it make that God declares, “the land is mine,” and that Israel are sojourners with him?</li>
+            <li>How does the kinsman-redeemer and the proclamation of liberty point forward to Christ?</li>
+            <li>In what ways might God be calling you to extend mercy, release, or generosity to someone in need?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-25">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-25">
+            <ol class="study-questions">
+            <li>Leaving the land fallow required real trust, since they could not sow or reap that year. God promised to command a blessing in the sixth year sufficient for three (25:20-21). The Sabbath year trained Israel to depend on God's provision rather than on relentless labor and accumulation.</li>
+            <li>Because land returned to its original family and debts and bondage were released every fiftieth year, no family could be permanently dispossessed and no poverty could become hopeless. The Jubilee built in a regular reset, restraining greed and keeping hope alive for the struggling.</li>
+            <li>It reframes everything: Israel did not ultimately own the land but held it as God's tenants and guests. This humbles human claims to absolute ownership and undergirds the Jubilee—since the land is God's, he can decree how it is held, used, and returned.</li>
+            <li>The kinsman-redeemer who buys back lost property and freedom pictures Christ, our near relative who redeems us at cost. And the proclamation of liberty is the very language Jesus took up in Nazareth, announcing that he came to proclaim release to the captives and freedom to the oppressed.</li>
+            <li>This is a personal-application question. Encourage members to consider a concrete act of mercy—forgiving a debt, helping someone struggling, releasing a grudge, sharing generously. Root the invitation in the liberty God has graciously extended to us in Christ.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="leviticus-24.html">← Leviticus 24</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="leviticus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="leviticus-26.html">Leviticus 26 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

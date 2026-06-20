@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Exodus 6: I Am the Lord — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Exodus 6: God reaffirms his covenant, promises to redeem Israel, and reassures Moses despite the people's discouragement and Pharaoh's resistance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-exodus-progress" data-study-total="40">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Exodus, Chapter 6
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="exodus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Exodus · Chapter 6</span>
+        <h1>Exodus 6: I Am the Lord</h1>
+        <p class="lead">God renews his covenant promise to redeem Israel and reassures a discouraged Moses, grounding deliverance in his own faithful name.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-6">
+            <span>Scripture — Exodus Chapter 6</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-6">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-6-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-6-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-6-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-6-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Exodus 6 (WEB)</p>
+            <p><strong>1</strong> Yahweh said to Moses, “Now you shall see what I will do to Pharaoh, for by a strong hand he shall let them go, and by a strong hand he shall drive them out of his land.”</p>
+            <p><strong>2</strong> God spoke to Moses, and said to him, “I am Yahweh;</p>
+            <p><strong>3</strong> and I appeared to Abraham, to Isaac, and to Jacob, as God Almighty; but by my name Yahweh I was not known to them.</p>
+            <p><strong>4</strong> I have also established my covenant with them, to give them the land of Canaan, the land of their travels, in which they lived as aliens.</p>
+            <p><strong>5</strong> Moreover I have heard the groaning of the children of Israel, whom the Egyptians keep in bondage, and I have remembered my covenant.</p>
+            <p><strong>6</strong> Therefore tell the children of Israel, ‘I am Yahweh, and I will bring you out from under the burdens of the Egyptians, and I will rid you out of their bondage, and I will redeem you with an outstretched arm, and with great judgments:</p>
+            <p><strong>7</strong> and I will take you to me for a people, and I will be to you a God; and you shall know that I am Yahweh your God, who brings you out from under the burdens of the Egyptians.</p>
+            <p><strong>8</strong> I will bring you into the land which I swore to give to Abraham, to Isaac, and to Jacob; and I will give it to you for a heritage: I am Yahweh.’”</p>
+            <p><strong>9</strong> Moses spoke so to the children of Israel, but they didn’t listen to Moses for anguish of spirit, and for cruel bondage.</p>
+            <p><strong>10</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>11</strong> “Go in, speak to Pharaoh king of Egypt, that he let the children of Israel go out of his land.”</p>
+            <p><strong>12</strong> Moses spoke before Yahweh, saying, “Behold, the children of Israel haven’t listened to me. How then shall Pharaoh listen to me, who am of uncircumcised lips?”</p>
+            <p><strong>13</strong> Yahweh spoke to Moses and to Aaron, and gave them a command to the children of Israel, and to Pharaoh king of Egypt, to bring the children of Israel out of the land of Egypt.</p>
+            <p><strong>14</strong> These are the heads of their fathers’ houses. The sons of Reuben the firstborn of Israel: Hanoch, and Pallu, Hezron, and Carmi; these are the families of Reuben.</p>
+            <p><strong>15</strong> The sons of Simeon: Jemuel, and Jamin, and Ohad, and Jachin, and Zohar, and Shaul the son of a Canaanite woman; these are the families of Simeon.</p>
+            <p><strong>16</strong> These are the names of the sons of Levi according to their generations: Gershon, and Kohath, and Merari; and the years of the life of Levi were one hundred thirty-seven years.</p>
+            <p><strong>17</strong> The sons of Gershon: Libni and Shimei, according to their families.</p>
+            <p><strong>18</strong> The sons of Kohath: Amram, and Izhar, and Hebron, and Uzziel; and the years of the life of Kohath were one hundred thirty-three years.</p>
+            <p><strong>19</strong> The sons of Merari: Mahli and Mushi. These are the families of the Levites according to their generations.</p>
+            <p><strong>20</strong> Amram took Jochebed his father’s sister to himself as wife; and she bore him Aaron and Moses: and the years of the life of Amram were a hundred and thirty-seven years.</p>
+            <p><strong>21</strong> The sons of Izhar: Korah, and Nepheg, and Zichri.</p>
+            <p><strong>22</strong> The sons of Uzziel: Mishael, and Elzaphan, and Sithri.</p>
+            <p><strong>23</strong> Aaron took Elisheba, the daughter of Amminadab, the sister of Nahshon, as his wife; and she bore him Nadab and Abihu, Eleazar and Ithamar.</p>
+            <p><strong>24</strong> The sons of Korah: Assir, and Elkanah, and Abiasaph; these are the families of the Korahites.</p>
+            <p><strong>25</strong> Eleazar Aaron’s son took one of the daughters of Putiel as his wife; and she bore him Phinehas. These are the heads of the fathers’ houses of the Levites according to their families.</p>
+            <p><strong>26</strong> These are that Aaron and Moses, to whom Yahweh said, “Bring out the children of Israel from the land of Egypt according to their armies.”</p>
+            <p><strong>27</strong> These are those who spoke to Pharaoh king of Egypt, to bring out the children of Israel from Egypt. These are that Moses and Aaron.</p>
+            <p><strong>28</strong> On the day when Yahweh spoke to Moses in the land of Egypt,</p>
+            <p><strong>29</strong> Yahweh spoke to Moses, saying, “I am Yahweh. Speak to Pharaoh king of Egypt all that I speak to you.”</p>
+            <p><strong>30</strong> Moses said before Yahweh, “Behold, I am of uncircumcised lips, and how shall Pharaoh listen to me?”</p>
+            </div>
+            <div class="scripture-text" id="web-6-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Exodus 6 (KJV)</p>
+            <p><strong>1</strong> Then the Lord said unto Moses, Now shalt thou see what I will do to Pharaoh: for with a strong hand shall he let them go, and with a strong hand shall he drive them out of his land.</p>
+            <p><strong>2</strong> And God spake unto Moses, and said unto him, I am the Lord:</p>
+            <p><strong>3</strong> And I appeared unto Abraham, unto Isaac, and unto Jacob, by the name of God Almighty, but by my name Jehovah was I not known to them.</p>
+            <p><strong>4</strong> And I have also established my covenant with them, to give them the land of Canaan, the land of their pilgrimage, wherein they were strangers.</p>
+            <p><strong>5</strong> And I have also heard the groaning of the children of Israel, whom the Egyptians keep in bondage; and I have remembered my covenant.</p>
+            <p><strong>6</strong> Wherefore say unto the children of Israel, I am the Lord, and I will bring you out from under the burdens of the Egyptians, and I will rid you out of their bondage, and I will redeem you with a stretched out arm, and with great judgments:</p>
+            <p><strong>7</strong> And I will take you to me for a people, and I will be to you a God: and ye shall know that I am the Lord your God, which bringeth you out from under the burdens of the Egyptians.</p>
+            <p><strong>8</strong> And I will bring you in unto the land, concerning the which I did swear to give it to Abraham, to Isaac, and to Jacob; and I will give it you for an heritage: I am the Lord.</p>
+            <p><strong>9</strong> And Moses spake so unto the children of Israel: but they hearkened not unto Moses for anguish of spirit, and for cruel bondage.</p>
+            <p><strong>10</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>11</strong> Go in, speak unto Pharaoh king of Egypt, that he let the children of Israel go out of his land.</p>
+            <p><strong>12</strong> And Moses spake before the Lord, saying, Behold, the children of Israel have not hearkened unto me; how then shall Pharaoh hear me, who am of uncircumcised lips?</p>
+            <p><strong>13</strong> And the Lord spake unto Moses and unto Aaron, and gave them a charge unto the children of Israel, and unto Pharaoh king of Egypt, to bring the children of Israel out of the land of Egypt.</p>
+            <p><strong>14</strong> These be the heads of their fathers’ houses: The sons of Reuben the firstborn of Israel; Hanoch, and Pallu, Hezron, and Carmi: these be the families of Reuben.</p>
+            <p><strong>15</strong> And the sons of Simeon; Jemuel, and Jamin, and Ohad, and Jachin, and Zohar, and Shaul the son of a Canaanitish woman: these are the families of Simeon.</p>
+            <p><strong>16</strong> And these are the names of the sons of Levi according to their generations; Gershon, and Kohath, and Merari: and the years of the life of Levi were an hundred thirty and seven years.</p>
+            <p><strong>17</strong> The sons of Gershon; Libni, and Shimi, according to their families.</p>
+            <p><strong>18</strong> And the sons of Kohath; Amram, and Izhar, and Hebron, and Uzziel: and the years of the life of Kohath were an hundred thirty and three years.</p>
+            <p><strong>19</strong> And the sons of Merari; Mahali and Mushi: these are the families of Levi according to their generations.</p>
+            <p><strong>20</strong> And Amram took him Jochebed his father’s sister to wife; and she bare him Aaron and Moses: and the years of the life of Amram were an hundred and thirty and seven years.</p>
+            <p><strong>21</strong> And the sons of Izhar; Korah, and Nepheg, and Zichri.</p>
+            <p><strong>22</strong> And the sons of Uzziel; Mishael, and Elzaphan, and Zithri.</p>
+            <p><strong>23</strong> And Aaron took him Elisheba, daughter of Amminadab, sister of Naashon, to wife; and she bare him Nadab, and Abihu, Eleazar, and Ithamar.</p>
+            <p><strong>24</strong> And the sons of Korah; Assir, and Elkanah, and Abiasaph: these are the families of the Korhites.</p>
+            <p><strong>25</strong> And Eleazar Aaron’s son took him one of the daughters of Putiel to wife; and she bare him Phinehas: these are the heads of the fathers of the Levites according to their families.</p>
+            <p><strong>26</strong> These are that Aaron and Moses, to whom the Lord said, Bring out the children of Israel from the land of Egypt according to their armies.</p>
+            <p><strong>27</strong> These are they which spake to Pharaoh king of Egypt, to bring out the children of Israel from Egypt: these are that Moses and Aaron.</p>
+            <p><strong>28</strong> And it came to pass on the day when the Lord spake unto Moses in the land of Egypt,</p>
+            <p><strong>29</strong> That the Lord spake unto Moses, saying, I am the Lord: speak thou unto Pharaoh king of Egypt all that I say unto thee.</p>
+            <p><strong>30</strong> And Moses said before the Lord, Behold, I am of uncircumcised lips, and how shall Pharaoh hearken unto me?</p>
+            </div>
+            <div class="scripture-text" id="web-6-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Exodus 6 (ASV)</p>
+            <p><strong>1</strong> And Jehovah said unto Moses, Now shalt thou see what I will do to Pharaoh: for by a strong hand shall he let them go, and by a strong hand shall he drive them out of his land.</p>
+            <p><strong>2</strong> And God spake unto Moses, and said unto him, I am Jehovah:</p>
+            <p><strong>3</strong> and I appeared unto Abraham, unto Isaac, and unto Jacob, as God Almighty; but by my name Jehovah I was not known to them.</p>
+            <p><strong>4</strong> And I have also established my covenant with them, to give them the land of Canaan, the land of their sojournings, wherein they sojourned.</p>
+            <p><strong>5</strong> And moreover I have heard the groaning of the children of Israel, whom the Egyptians keep in bondage; and I have remembered my covenant.</p>
+            <p><strong>6</strong> Wherefore say unto the children of Israel, I am Jehovah, and I will bring you out from under the burdens of the Egyptians, and I will rid you out of their bondage, and I will redeem you with an outstretched arm, and with great judgments:</p>
+            <p><strong>7</strong> and I will take you to me for a people, and I will be to you a God; and ye shall know that I am Jehovah your God, who bringeth you out from under the burdens of the Egyptians.</p>
+            <p><strong>8</strong> And I will bring you in unto the land which I sware to give to Abraham, to Isaac, and to Jacob; and I will give it you for a heritage: I am Jehovah.</p>
+            <p><strong>9</strong> And Moses spake so unto the children of Israel: but they hearkened not unto Moses for anguish of spirit, and for cruel bondage.</p>
+            <p><strong>10</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>11</strong> Go in, speak unto Pharaoh king of Egypt, that he let the children of Israel go out of his land.</p>
+            <p><strong>12</strong> And Moses spake before Jehovah, saying, Behold, the children of Israel have not hearkened unto me; how then shall Pharaoh hear me, who am of uncircumcised lips?</p>
+            <p><strong>13</strong> And Jehovah spake unto Moses and unto Aaron, and gave them a charge unto the children of Israel, and unto Pharaoh king of Egypt, to bring the children of Israel out of the land of Egypt.</p>
+            <p><strong>14</strong> These are the heads of their fathers’ houses. The sons of Reuben the first-born of Israel: Hanoch, and Pallu, Hezron, and Carmi; these are the families of Reuben.</p>
+            <p><strong>15</strong> And the sons of Simeon: Jemuel, and Jamin, and Ohad, and Jachin, and Zohar, and Shaul the son of a Canaanitish woman; these are the families of Simeon.</p>
+            <p><strong>16</strong> And these are the names of the sons of Levi according to their generations: Gershon, and Kohath, and Merari; and the years of the life of Levi were a hundred thirty and seven years.</p>
+            <p><strong>17</strong> The sons of Gershon: Libni and Shimei, according to their families.</p>
+            <p><strong>18</strong> And the sons of Kohath: Amram, and Izhar, and Hebron, and Uzziel; and the years of the life of Kohath were a hundred thirty and three years.</p>
+            <p><strong>19</strong> And the sons of Merari: Mahli and Mushi. These are the families of the Levites according to their generations.</p>
+            <p><strong>20</strong> And Amram took him Jochebed his father’s sister to wife; and she bare him Aaron and Moses: and the years of the life of Amram were a hundred and thirty and seven years.</p>
+            <p><strong>21</strong> And the sons of Izhar: Korah, and Nepheg, and Zichri.</p>
+            <p><strong>22</strong> And the sons of Uzziel: Mishael, and Elzaphan, and Sithri.</p>
+            <p><strong>23</strong> And Aaron took him Elisheba, the daughter of Amminadab, the sister of Nahshon, to wife; and she bare him Nadab and Abihu, Eleazar and Ithamar.</p>
+            <p><strong>24</strong> And the sons of Korah: Assir, and Elkanah, and Abiasaph; these are the families of the Korahites.</p>
+            <p><strong>25</strong> And Eleazar Aaron’s son took him one of the daughters of Putiel to wife; and she bare him Phinehas. These are the heads of the fathers’ houses of the Levites according to their families.</p>
+            <p><strong>26</strong> These are that Aaron and Moses, to whom Jehovah said, Bring out the children of Israel from the land of Egypt according to their hosts.</p>
+            <p><strong>27</strong> These are they that spake to Pharaoh king of Egypt, to bring out the children of Israel from Egypt: these are that Moses and Aaron.</p>
+            <p><strong>28</strong> And it came to pass on the day when Jehovah spake unto Moses in the land of Egypt,</p>
+            <p><strong>29</strong> that Jehovah spake unto Moses, saying, I am Jehovah: speak thou unto Pharaoh king of Egypt all that I speak unto thee.</p>
+            <p><strong>30</strong> And Moses said before Jehovah, Behold, I am of uncircumcised lips, and how shall Pharaoh hearken unto me?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>In answer to Moses' complaint, God promises that he will act with a strong hand to make Pharaoh drive Israel out. He reveals himself anew as Yahweh, the God who appeared to the patriarchs as God Almighty and who established his covenant to give them the land of Canaan. He has heard the groaning of Israel and remembered his covenant, and he gives a string of magnificent promises: I will bring you out, I will rid you of bondage, I will redeem you with an outstretched arm, I will take you to be my people, I will be your God, and I will bring you into the promised land. Yet when Moses relays this, the people do not listen because of their anguish of spirit and cruel bondage. God again sends Moses to Pharaoh, and Moses protests that even Israel will not listen, so how will Pharaoh, since he is of uncircumcised lips. A genealogy then anchors Moses and Aaron in the tribe of Levi, establishing their identity and authority. The chapter returns to God's command to bring Israel out and Moses' continued hesitation, reminding us that deliverance rests not on the strength of the messenger but on the covenant faithfulness of the Lord who says again and again, “I am Yahweh.”</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The covenant God who reveals his name afresh, recalls his promises to the patriarchs, and pledges to redeem Israel with an outstretched arm.</li>
+          <li><strong>Moses</strong> — The discouraged servant whom God reassures, who still protests his unfitness yet receives the renewed commission to confront Pharaoh.</li>
+          <li><strong>The children of Israel</strong> — The people too crushed in spirit and labor to listen to God's promises, the very ones God is determined to redeem and claim as his own.</li>
+          <li><strong>Aaron and the house of Levi</strong> — Moses' brother and their Levite ancestry, recorded to establish the lineage and authority of the men God sends to Pharaoh.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Exodus 6:7 (WEB)</p>
+          <p class="verse__text">and I will take you to me for a people, and I will be to you a God; and you shall know that I am Yahweh your God, who brings you out from under the burdens of the Egyptians.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God grounds his promises in his own name and unchanging covenant faithfulness.</li>
+          <li>Redemption is God's work: he brings out, frees, redeems, takes, and brings in.</li>
+          <li>Discouragement and hardship can deafen us to God's good promises.</li>
+          <li>God's purposes do not depend on the eloquence or worthiness of his servants.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-6">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-6">
+            <ul class="lesson-list">
+            <li><strong>God's promises rest on his own name.</strong> Again and again he declares, “I am Yahweh” (Exodus 6:2, 6, 8, WEB). The certainty of redemption is anchored in who God is.</li>
+            <li><strong>Redemption is entirely God's initiative.</strong> “I will bring you out… I will redeem you… I will take you to me for a people” (Exodus 6:6-7, WEB). Salvation is a series of God's own actions.</li>
+            <li><strong>Suffering can blunt our hearing of grace.</strong> The people “didn’t listen to Moses for anguish of spirit, and for cruel bondage” (Exodus 6:9, WEB). Hardship can make even glorious promises hard to receive.</li>
+            <li><strong>God works through weak instruments.</strong> Moses protests he is “of uncircumcised lips” (Exodus 6:12, WEB), yet God still commissions him. Our inadequacy never cancels God's call.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-6">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-6">
+            <ol class="study-questions">
+            <li>How does God answer Moses' discouraged questions from the end of chapter 5?</li>
+            <li>Trace the “I will” promises in verses 6-8. What do they reveal about who does the saving?</li>
+            <li>Why do the people fail to listen, and what does this teach us about the effects of suffering?</li>
+            <li>Why might the chapter pause to record the genealogy of Moses and Aaron?</li>
+            <li>When you feel too crushed or distracted to hear God's promises, what helps you listen again?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-6">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-6">
+            <ol class="study-questions">
+            <li>God responds not by explaining the delay but by reasserting his name and covenant: “I am Yahweh” (6:2-8). He reassures Moses that deliverance is certain because it depends on God's faithfulness, not on present circumstances.</li>
+            <li>The seven “I will” statements—bring out, rid, redeem, take, be your God, you shall know, bring in (6:6-8)—make clear that every step of redemption is God's own doing. Israel's role is to be rescued by his grace.</li>
+            <li>They cannot hear “for anguish of spirit, and for cruel bondage” (6:9). Prolonged suffering can crowd out hope, reminding us to be patient with those overwhelmed by trials and to keep speaking God's promises gently.</li>
+            <li>The genealogy roots Moses and Aaron in Levi (6:14-27), establishing that the deliverers are real, accountable members of Israel with rightful standing. It grounds the grand promises in concrete history and credentialed messengers.</li>
+            <li>This is a personal-application question. Invite members to share what restores their hearing of God's word in hard seasons—Scripture, community, worship. As leader, anchor the discussion in God's repeated “I am Yahweh,” the firm ground of every promise.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="exodus-5.html">← Exodus 5</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="exodus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="exodus-7.html">Exodus 7 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

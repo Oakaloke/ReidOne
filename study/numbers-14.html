@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 14: Refusing the Promise — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 14: Israel rebels at the spies' report, God sentences the generation to wander, and only Caleb and Joshua are spared." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 14
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 14</span>
+        <h1>Numbers 14: Refusing the Promise</h1>
+        <p class="lead">Israel believes the fearful report, rebels against going up, and God sentences a generation to die in the wilderness while sparing Caleb and Joshua.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-14">
+            <span>Scripture — Numbers Chapter 14</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-14">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-14-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-14-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-14-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-14-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 14 (WEB)</p>
+            <p><strong>1</strong> All the congregation lifted up their voice, and cried; and the people wept that night.</p>
+            <p><strong>2</strong> All the children of Israel murmured against Moses and against Aaron. The whole congregation said to them, “We wish that we had died in the land of Egypt, or that we had died in this wilderness!</p>
+            <p><strong>3</strong> Why does Yahweh bring us to this land, to fall by the sword? Our wives and our little ones will be captured or killed! Wouldn’t it be better for us to return into Egypt?”</p>
+            <p><strong>4</strong> They said one to another, “Let us make a captain, and let us return into Egypt.”</p>
+            <p><strong>5</strong> Then Moses and Aaron fell on their faces before all the assembly of the congregation of the children of Israel.</p>
+            <p><strong>6</strong> Joshua the son of Nun and Caleb the son of Jephunneh, who were of those who spied out the land, tore their clothes.</p>
+            <p><strong>7</strong> They spoke to all the congregation of the children of Israel, saying, “The land, which we passed through to spy it out, is an exceeding good land.</p>
+            <p><strong>8</strong> If Yahweh delights in us, then he will bring us into this land, and give it to us; a land which flows with milk and honey.</p>
+            <p><strong>9</strong> Only don’t rebel against Yahweh, neither fear the people of the land; for they are bread for us. Their defense is removed from over them, and Yahweh is with us. Don’t fear them.”</p>
+            <p><strong>10</strong> But all the congregation threatened to stone them with stones. Yahweh’s glory appeared in the Tent of Meeting to all the children of Israel.</p>
+            <p><strong>11</strong> Yahweh said to Moses, “How long will this people despise me? and how long will they not believe in me, for all the signs which I have worked among them?</p>
+            <p><strong>12</strong> I will strike them with the pestilence, and disinherit them, and will make of you a nation greater and mightier than they.”</p>
+            <p><strong>13</strong> Moses said to Yahweh, “Then the Egyptians will hear it; for you brought up this people in your might from among them.</p>
+            <p><strong>14</strong> They will tell it to the inhabitants of this land. They have heard that you Yahweh are in the midst of this people; for you Yahweh are seen face to face, and your cloud stands over them, and you go before them, in a pillar of cloud by day, and in a pillar of fire by night.</p>
+            <p><strong>15</strong> Now if you killed this people as one man, then the nations which have heard the fame of you will speak, saying,</p>
+            <p><strong>16</strong> ‘Because Yahweh was not able to bring this people into the land which he swore to them, therefore he has slain them in the wilderness.’</p>
+            <p><strong>17</strong> Now please let the power of the Lord be great, according as you have spoken, saying,</p>
+            <p><strong>18</strong> ‘Yahweh is slow to anger, and abundant in loving kindness, forgiving iniquity and disobedience; and that will by no means clear the guilty, visiting the iniquity of the fathers on the children, on the third and on the fourth generation.’</p>
+            <p><strong>19</strong> Please pardon the iniquity of this people according to the greatness of your loving kindness, and according as you have forgiven this people, from Egypt even until now.”</p>
+            <p><strong>20</strong> Yahweh said, “I have pardoned according to your word:</p>
+            <p><strong>21</strong> but in very deed, as I live, and as all the earth shall be filled with Yahweh’s glory;</p>
+            <p><strong>22</strong> because all those men who have seen my glory, and my signs, which I worked in Egypt and in the wilderness, yet have tempted me these ten times, and have not listened to my voice;</p>
+            <p><strong>23</strong> surely they shall not see the land which I swore to their fathers, neither shall any of those who despised me see it.</p>
+            <p><strong>24</strong> But my servant Caleb, because he had another spirit with him, and has followed me fully, him I will bring into the land into which he went. His seed shall possess it.</p>
+            <p><strong>25</strong> Since the Amalekite and the Canaanite dwell in the valley, tomorrow turn, and go into the wilderness by the way to the Red Sea.”</p>
+            <p><strong>26</strong> Yahweh spoke to Moses and to Aaron, saying,</p>
+            <p><strong>27</strong> “How long shall I bear with this evil congregation, that murmur against me? I have heard the murmurings of the children of Israel, which they murmur against me.</p>
+            <p><strong>28</strong> Tell them, ‘As I live, says Yahweh, surely as you have spoken in my ears, so will I do to you.</p>
+            <p><strong>29</strong> Your dead bodies shall fall in this wilderness; and all who were numbered of you, according to your whole number, from twenty years old and upward, who have murmured against me,</p>
+            <p><strong>30</strong> surely you shall not come into the land, concerning which I swore that I would make you dwell therein, except Caleb the son of Jephunneh, and Joshua the son of Nun.</p>
+            <p><strong>31</strong> But your little ones, that you said should be captured or killed, them I will bring in, and they shall know the land which you have rejected.</p>
+            <p><strong>32</strong> But as for you, your dead bodies shall fall in this wilderness.</p>
+            <p><strong>33</strong> Your children shall be wanderers in the wilderness forty years, and shall bear your prostitution, until your dead bodies are consumed in the wilderness.</p>
+            <p><strong>34</strong> After the number of the days in which you spied out the land, even forty days, for every day a year, you will bear your iniquities, even forty years, and you will know my alienation.’</p>
+            <p><strong>35</strong> I, Yahweh, have spoken. I will surely do this to all this evil congregation, who are gathered together against me. In this wilderness they shall be consumed, and there they shall die.”</p>
+            <p><strong>36</strong> The men, whom Moses sent to spy out the land, who returned, and made all the congregation to murmur against him, by bringing up an evil report against the land,</p>
+            <p><strong>37</strong> even those men who brought up an evil report of the land, died by the plague before Yahweh.</p>
+            <p><strong>38</strong> But Joshua the son of Nun, and Caleb the son of Jephunneh, remained alive of those men who went to spy out the land.</p>
+            <p><strong>39</strong> Moses told these words to all the children of Israel, and the people mourned greatly.</p>
+            <p><strong>40</strong> They rose up early in the morning, and went up to the top of the mountain, saying, “Behold, we are here, and will go up to the place which Yahweh has promised: for we have sinned.”</p>
+            <p><strong>41</strong> Moses said, “Why now do you disobey the commandment of Yahweh, since it shall not prosper?</p>
+            <p><strong>42</strong> Don’t go up, for Yahweh isn’t among you; that you not be struck down before your enemies.</p>
+            <p><strong>43</strong> For there the Amalekite and the Canaanite are before you, and you shall fall by the sword, because you turned back from following Yahweh, therefore Yahweh will not be with you.”</p>
+            <p><strong>44</strong> But they presumed to go up to the top of the mountain. Nevertheless, the ark of the covenant of Yahweh, and Moses, didn’t depart out of the camp.</p>
+            <p><strong>45</strong> Then the Amalekites came down, and the Canaanites who lived in that mountain, and struck them and beat them down, even to Hormah.</p>
+            </div>
+            <div class="scripture-text" id="web-14-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 14 (KJV)</p>
+            <p><strong>1</strong> And all the congregation lifted up their voice, and cried; and the people wept that night.</p>
+            <p><strong>2</strong> And all the children of Israel murmured against Moses and against Aaron: and the whole congregation said unto them, Would God that we had died in the land of Egypt! or would God we had died in this wilderness!</p>
+            <p><strong>3</strong> And wherefore hath the Lord brought us unto this land, to fall by the sword, that our wives and our children should be a prey? were it not better for us to return into Egypt?</p>
+            <p><strong>4</strong> And they said one to another, Let us make a captain, and let us return into Egypt.</p>
+            <p><strong>5</strong> Then Moses and Aaron fell on their faces before all the assembly of the congregation of the children of Israel.</p>
+            <p><strong>6</strong> And Joshua the son of Nun, and Caleb the son of Jephunneh, which were of them that searched the land, rent their clothes:</p>
+            <p><strong>7</strong> And they spake unto all the company of the children of Israel, saying, The land, which we passed through to search it, is an exceeding good land.</p>
+            <p><strong>8</strong> If the Lord delight in us, then he will bring us into this land, and give it us; a land which floweth with milk and honey.</p>
+            <p><strong>9</strong> Only rebel not ye against the Lord, neither fear ye the people of the land; for they are bread for us: their defence is departed from them, and the Lord is with us: fear them not.</p>
+            <p><strong>10</strong> But all the congregation bade stone them with stones. And the glory of the Lord appeared in the tabernacle of the congregation before all the children of Israel.</p>
+            <p><strong>11</strong> And the Lord said unto Moses, How long will this people provoke me? and how long will it be ere they believe me, for all the signs which I have shewed among them?</p>
+            <p><strong>12</strong> I will smite them with the pestilence, and disinherit them, and will make of thee a greater nation and mightier than they.</p>
+            <p><strong>13</strong> And Moses said unto the Lord, Then the Egyptians shall hear it, (for thou broughtest up this people in thy might from among them;)</p>
+            <p><strong>14</strong> And they will tell it to the inhabitants of this land: for they have heard that thou Lord art among this people, that thou Lord art seen face to face, and that thy cloud standeth over them, and that thou goest before them, by day time in a pillar of a cloud, and in a pillar of fire by night.</p>
+            <p><strong>15</strong> Now if thou shalt kill all this people as one man, then the nations which have heard the fame of thee will speak, saying,</p>
+            <p><strong>16</strong> Because the Lord was not able to bring this people into the land which he sware unto them, therefore he hath slain them in the wilderness.</p>
+            <p><strong>17</strong> And now, I beseech thee, let the power of my Lord be great, according as thou hast spoken, saying,</p>
+            <p><strong>18</strong> The Lord is longsuffering, and of great mercy, forgiving iniquity and transgression, and by no means clearing the guilty, visiting the iniquity of the fathers upon the children unto the third and fourth generation.</p>
+            <p><strong>19</strong> Pardon, I beseech thee, the iniquity of this people according unto the greatness of thy mercy, and as thou hast forgiven this people, from Egypt even until now.</p>
+            <p><strong>20</strong> And the Lord said, I have pardoned according to thy word:</p>
+            <p><strong>21</strong> But as truly as I live, all the earth shall be filled with the glory of the Lord.</p>
+            <p><strong>22</strong> Because all those men which have seen my glory, and my miracles, which I did in Egypt and in the wilderness, and have tempted me now these ten times, and have not hearkened to my voice;</p>
+            <p><strong>23</strong> Surely they shall not see the land which I sware unto their fathers, neither shall any of them that provoked me see it:</p>
+            <p><strong>24</strong> But my servant Caleb, because he had another spirit with him, and hath followed me fully, him will I bring into the land whereinto he went; and his seed shall possess it.</p>
+            <p><strong>25</strong> (Now the Amalekites and the Canaanites dwelt in the valley.) To morrow turn you, and get you into the wilderness by the way of the Red sea.</p>
+            <p><strong>26</strong> And the Lord spake unto Moses and unto Aaron, saying,</p>
+            <p><strong>27</strong> How long shall I bear with this evil congregation, which murmur against me? I have heard the murmurings of the children of Israel, which they murmur against me.</p>
+            <p><strong>28</strong> Say unto them, As truly as I live, saith the Lord, as ye have spoken in mine ears, so will I do to you:</p>
+            <p><strong>29</strong> Your carcases shall fall in this wilderness; and all that were numbered of you, according to your whole number, from twenty years old and upward, which have murmured against me,</p>
+            <p><strong>30</strong> Doubtless ye shall not come into the land, concerning which I sware to make you dwell therein, save Caleb the son of Jephunneh, and Joshua the son of Nun.</p>
+            <p><strong>31</strong> But your little ones, which ye said should be a prey, them will I bring in, and they shall know the land which ye have despised.</p>
+            <p><strong>32</strong> But as for you, your carcases, they shall fall in this wilderness.</p>
+            <p><strong>33</strong> And your children shall wander in the wilderness forty years, and bear your whoredoms, until your carcases be wasted in the wilderness.</p>
+            <p><strong>34</strong> After the number of the days in which ye searched the land, even forty days, each day for a year, shall ye bear your iniquities, even forty years, and ye shall know my breach of promise.</p>
+            <p><strong>35</strong> I the Lord have said, I will surely do it unto all this evil congregation, that are gathered together against me: in this wilderness they shall be consumed, and there they shall die.</p>
+            <p><strong>36</strong> And the men, which Moses sent to search the land, who returned, and made all the congregation to murmur against him, by bringing up a slander upon the land,</p>
+            <p><strong>37</strong> Even those men that did bring up the evil report upon the land, died by the plague before the Lord.</p>
+            <p><strong>38</strong> But Joshua the son of Nun, and Caleb the son of Jephunneh, which were of the men that went to search the land, lived still.</p>
+            <p><strong>39</strong> And Moses told these sayings unto all the children of Israel: and the people mourned greatly.</p>
+            <p><strong>40</strong> And they rose up early in the morning, and gat them up into the top of the mountain, saying, Lo, we be here, and will go up unto the place which the Lord hath promised: for we have sinned.</p>
+            <p><strong>41</strong> And Moses said, Wherefore now do ye transgress the commandment of the Lord? but it shall not prosper.</p>
+            <p><strong>42</strong> Go not up, for the Lord is not among you; that ye be not smitten before your enemies.</p>
+            <p><strong>43</strong> For the Amalekites and the Canaanites are there before you, and ye shall fall by the sword: because ye are turned away from the Lord, therefore the Lord will not be with you.</p>
+            <p><strong>44</strong> But they presumed to go up unto the hill top: nevertheless the ark of the covenant of the Lord, and Moses, departed not out of the camp.</p>
+            <p><strong>45</strong> Then the Amalekites came down, and the Canaanites which dwelt in that hill, and smote them, and discomfited them, even unto Hormah.</p>
+            </div>
+            <div class="scripture-text" id="web-14-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 14 (ASV)</p>
+            <p><strong>1</strong> And all the congregation lifted up their voice, and cried; and the people wept that night.</p>
+            <p><strong>2</strong> And all the children of Israel murmured against Moses and against Aaron: and the whole congregation said unto them, Would that we had died in the land of Egypt! or would that we had died in this wilderness!</p>
+            <p><strong>3</strong> And wherefore doth Jehovah bring us unto this land, to fall by the sword? Our wives and our little ones will be a prey: were it not better for us to return into Egypt?</p>
+            <p><strong>4</strong> And they said one to another, Let us make a captain, and let us return into Egypt.</p>
+            <p><strong>5</strong> Then Moses and Aaron fell on their faces before all the assembly of the congregation of the children of Israel.</p>
+            <p><strong>6</strong> And Joshua the son of Nun and Caleb the son of Jephunneh, who were of them that spied out the land, rent their clothes:</p>
+            <p><strong>7</strong> and they spake unto all the congregation of the children of Israel, saying, The land, which we passed through to spy it out, is an exceeding good land.</p>
+            <p><strong>8</strong> If Jehovah delight in us, then he will bring us into this land, and give it unto us; a land which floweth with milk and honey.</p>
+            <p><strong>9</strong> Only rebel not against Jehovah, neither fear ye the people of the land; for they are bread for us: their defence is removed from over them, and Jehovah is with us: fear them not.</p>
+            <p><strong>10</strong> But all the congregation bade stone them with stones. And the glory of Jehovah appeared in the tent of meeting unto all the children of Israel.</p>
+            <p><strong>11</strong> And Jehovah said unto Moses, How long will this people despise me? and how long will they not believe in me, for all the signs which I have wrought among them?</p>
+            <p><strong>12</strong> I will smite them with the pestilence, and disinherit them, and will make of thee a nation greater and mightier than they.</p>
+            <p><strong>13</strong> And Moses said unto Jehovah, Then the Egyptians will hear it; for thou broughtest up this people in thy might from among them;</p>
+            <p><strong>14</strong> and they will tell it to the inhabitants of this land. They have heard that thou Jehovah art in the midst of this people; for thou Jehovah art seen face to face, and thy cloud standeth over them, and thou goest before them, in a pillar of cloud by day, and in a pillar of fire by night.</p>
+            <p><strong>15</strong> Now if thou shalt kill this people as one man, then the nations which have heard the fame of thee will speak, saying,</p>
+            <p><strong>16</strong> Because Jehovah was not able to bring this people into the land which he sware unto them, therefore he hath slain them in the wilderness.</p>
+            <p><strong>17</strong> And now, I pray thee, let the power of the Lord be great, according as thou hast spoken, saying,</p>
+            <p><strong>18</strong> Jehovah is slow to anger, and abundant in lovingkindness, forgiving iniquity and transgression; and that will by no means clear the guilty, visiting the iniquity of the fathers upon the children, upon the third and upon the fourth generation.</p>
+            <p><strong>19</strong> Pardon, I pray thee, the iniquity of this people according unto the greatness of thy lovingkindness, and according as thou hast forgiven this people, from Egypt even until now.</p>
+            <p><strong>20</strong> And Jehovah said, I have pardoned according to thy word:</p>
+            <p><strong>21</strong> but in very deed, as I live, and as all the earth shall be filled with the glory of Jehovah;</p>
+            <p><strong>22</strong> because all those men that have seen my glory, and my signs, which I wrought in Egypt and in the wilderness, yet have tempted me these ten times, and have not hearkened to my voice;</p>
+            <p><strong>23</strong> surely they shall not see the land which I sware unto their fathers, neither shall any of them that despised me see it:</p>
+            <p><strong>24</strong> but my servant Caleb, because he had another spirit with him, and hath followed me fully, him will I bring into the land whereinto he went; and his seed shall possess it.</p>
+            <p><strong>25</strong> Now the Amalekite and the Canaanite dwell in the valley: to-morrow turn ye, and get you into the wilderness by the way to the Red Sea.</p>
+            <p><strong>26</strong> And Jehovah spake unto Moses and unto Aaron, saying,</p>
+            <p><strong>27</strong> How long shall I bear with this evil congregation, that murmur against me? I have heard the murmurings of the children of Israel, which they murmur against me.</p>
+            <p><strong>28</strong> Say unto them, As I live, saith Jehovah, surely as ye have spoken in mine ears, so will I do to you:</p>
+            <p><strong>29</strong> your dead bodies shall fall in this wilderness; and all that were numbered of you, according to your whole number, from twenty years old and upward, that have murmured against me,</p>
+            <p><strong>30</strong> surely ye shall not come into the land, concerning which I sware that I would make you dwell therein, save Caleb the son of Jephunneh, and Joshua the son of Nun.</p>
+            <p><strong>31</strong> But your little ones, that ye said should be a prey, them will I bring in, and they shall know the land which ye have rejected.</p>
+            <p><strong>32</strong> But as for you, your dead bodies shall fall in this wilderness.</p>
+            <p><strong>33</strong> And your children shall be wanderers in the wilderness forty years, and shall bear your whoredoms, until your dead bodies be consumed in the wilderness.</p>
+            <p><strong>34</strong> After the number of the days in which ye spied out the land, even forty days, for every day a year, shall ye bear your iniquities, even forty years, and ye shall know my alienation.</p>
+            <p><strong>35</strong> I, Jehovah, have spoken, surely this will I do unto all this evil congregation, that are gathered together against me: in this wilderness they shall be consumed, and there they shall die.</p>
+            <p><strong>36</strong> And the men, whom Moses sent to spy out the land, who returned, and made all the congregation to murmur against him, by bringing up an evil report against the land,</p>
+            <p><strong>37</strong> even those men that did bring up an evil report of the land, died by the plague before Jehovah.</p>
+            <p><strong>38</strong> But Joshua the son of Nun, and Caleb the son of Jephunneh, remained alive of those men that went to spy out the land.</p>
+            <p><strong>39</strong> And Moses told these words unto all the children of Israel: and the people mourned greatly.</p>
+            <p><strong>40</strong> And they rose up early in the morning, and gat them up to the top of the mountain, saying, Lo, we are here, and will go up unto the place which Jehovah hath promised: for we have sinned.</p>
+            <p><strong>41</strong> And Moses said, Wherefore now do ye transgress the commandment of Jehovah, seeing it shall not prosper?</p>
+            <p><strong>42</strong> Go not up, for Jehovah is not among you; that ye be not smitten down before your enemies.</p>
+            <p><strong>43</strong> For there the Amalekite and the Canaanite are before you, and ye shall fall by the sword: because ye are turned back from following Jehovah, therefore Jehovah will not be with you.</p>
+            <p><strong>44</strong> But they presumed to go up to the top of the mountain: nevertheless the ark of the covenant of Jehovah, and Moses, departed not out of the camp.</p>
+            <p><strong>45</strong> Then the Amalekite came down, and the Canaanite who dwelt in that mountain, and smote them and beat them down, even unto Hormah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Hearing the evil report, the whole congregation weeps through the night and murmurs against Moses and Aaron, wishing they had died in Egypt and plotting to choose a new captain to take them back. Moses and Aaron fall on their faces, while Joshua and Caleb tear their clothes and plead with the people: the land is exceedingly good, and if Yahweh delights in them he will bring them in, so they must not rebel or fear, for the Lord is with them. The crowd answers by threatening to stone them. Then Yahweh's glory appears, and God threatens to disinherit the nation, but Moses intercedes, appealing to God's reputation among the nations and to his own self-revelation as slow to anger and abundant in loving kindness. Yahweh pardons, yet declares that this faithless generation will not see the land they despised. Their dead bodies will fall in the wilderness, and their children will wander forty years, one year for each day the spies explored the land. The ten spies who spread the report die by plague, but Caleb and Joshua live. When the people then presume to go up after all, against God's word, the Amalekites and Canaanites strike them down. Their disobedience and their delayed, self-willed obedience both end in defeat.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The congregation</strong> — The people of Israel who believe the fearful report, weep and murmur against their leaders, long to return to Egypt, and finally presume to fight without God.</li>
+          <li><strong>Moses</strong> — The mediator who falls on his face and intercedes for Israel, appealing to God's glory and his self-revealed character of mercy and slowness to anger.</li>
+          <li><strong>Caleb and Joshua</strong> — The two faithful spies who tear their clothes, urge the people to trust God, are threatened with stoning, and alone of their generation are promised entry to the land.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who pardons at Moses' plea yet holds the unbelieving generation accountable, sentencing them to die in the wilderness while keeping his promise to their children.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 14:18 (WEB)</p>
+          <p class="verse__text">‘Yahweh is slow to anger, and abundant in loving kindness, forgiving iniquity and disobedience; and that will by no means clear the guilty, visiting the iniquity of the fathers on the children, on the third and on the fourth generation.’</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Unbelief calls God's good gifts a curse and remembers slavery as if it were freedom.</li>
+          <li>God's mercy is real, yet sin still carries consequences we must live with.</li>
+          <li>Faithful intercession appeals to God's character and his glory among the nations.</li>
+          <li>Obedience offered on our own terms and timing is not obedience at all.</li>
+          <li>God keeps his promise even when a whole generation forfeits it, raising up the next to enter.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-14">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-14">
+            <ul class="lesson-list">
+            <li><strong>Unbelief romanticizes the past and resents the future.</strong> The people cry, “We wish that we had died in the land of Egypt” (Numbers 14:2, WEB), preferring remembered bondage to the promised land before them.</li>
+            <li><strong>Intercession leans on who God has revealed himself to be.</strong> Moses prays back God's own words, that he is “slow to anger, and abundant in loving kindness, forgiving iniquity” (Numbers 14:18, WEB), pleading God's character as the ground of pardon.</li>
+            <li><strong>Mercy forgives yet does not erase all consequence.</strong> Yahweh says, “I have pardoned according to your word” (Numbers 14:20, WEB), and still the faithless generation will not enter the land they despised.</li>
+            <li><strong>Late, self-willed obedience is still rebellion.</strong> When they presume to go up after God has said no, Moses warns, “Yahweh isn’t among you” (Numbers 14:42, WEB), and they are defeated; obedience on our own terms fails.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-14">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-14">
+            <ol class="study-questions">
+            <li>How do the people respond to the spies' report, and what do their words reveal about their hearts?</li>
+            <li>On what basis does Moses appeal to God for the people's pardon?</li>
+            <li>God pardons the people, yet they still suffer consequences. How do mercy and judgment fit together here?</li>
+            <li>Why does the attempt to 'go up' in verses 40-45 fail, even though it looks like obedience?</li>
+            <li>When have you treated a hard step of faith as too dangerous, and what helps you trust God's promise over your fears?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-14">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-14">
+            <ol class="study-questions">
+            <li>They weep, murmur, and long to return to Egypt, even proposing to choose a leader to take them back (14:1-4). Their words expose unbelief that distrusts God's goodness, rewrites their past, and would rather have slavery than risk trusting him.</li>
+            <li>Moses appeals first to God's glory among the watching nations and then to God's self-revealed character as merciful, slow to anger, and forgiving (14:13-19). His intercession rests not on Israel's worth but on who God is.</li>
+            <li>God truly forgives, yet the consequence remains: the unbelieving generation will die in the wilderness (14:20-23). Forgiveness restores the relationship and keeps the larger promise, while sin's earthly effects still play out, a sober and gracious balance.</li>
+            <li>The people act after God has already declared the door shut and warned that he will not go with them (14:41-43). Obedience that ignores God's actual word and timing is really self-will, and it ends in defeat at the hands of the Amalekites and Canaanites.</li>
+            <li>This is a personal-application question. Encourage members to name a fear that has kept them from a step of faith, and to recall how God's character and promises address it. As leader, hold together honesty about fear and confidence in God.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-13.html">← Numbers 13</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-15.html">Numbers 15 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

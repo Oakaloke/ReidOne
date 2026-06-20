@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Deuteronomy 28: Blessings and Curses — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Deuteronomy 28: the blessings promised for obedience and the long, sobering list of curses warned against covenant unfaithfulness." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-deuteronomy-progress" data-study-total="34">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Deuteronomy, Chapter 28
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="deuteronomy.html">← All Chapters</a>
+        <span class="study-meta">The Book of Deuteronomy · Chapter 28</span>
+        <h1>Deuteronomy 28: Blessings and Curses</h1>
+        <p class="lead">Moses lays out in vivid detail the abundant blessings of obedience and the devastating curses of covenant unfaithfulness.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-28">
+            <span>Scripture — Deuteronomy Chapter 28</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-28">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-28-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-28-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-28-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-28-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Deuteronomy 28 (WEB)</p>
+            <p><strong>1</strong> It shall happen, if you shall listen diligently to Yahweh your God’s voice, to observe to do all his commandments which I command you this day, that Yahweh your God will set you high above all the nations of the earth.</p>
+            <p><strong>2</strong> All these blessings will come upon you, and overtake you, if you listen to Yahweh your God’s voice.</p>
+            <p><strong>3</strong> You shall be blessed in the city, and you shall be blessed in the field.</p>
+            <p><strong>4</strong> You shall be blessed in the fruit of your body, the fruit of your ground, the fruit of your animals, the increase of your livestock, and the young of your flock.</p>
+            <p><strong>5</strong> Your basket and your kneading trough shall be blessed.</p>
+            <p><strong>6</strong> You shall be blessed when you come in, and you shall be blessed when you go out.</p>
+            <p><strong>7</strong> Yahweh will cause your enemies who rise up against you to be struck before you. They will come out against you one way, and will flee before you seven ways.</p>
+            <p><strong>8</strong> Yahweh will command the blessing on you in your barns, and in all that you put your hand to. He will bless you in the land which Yahweh your God gives you.</p>
+            <p><strong>9</strong> Yahweh will establish you for a holy people to himself, as he has sworn to you, if you shall keep the commandments of Yahweh your God, and walk in his ways.</p>
+            <p><strong>10</strong> All the peoples of the earth shall see that you are called by Yahweh’s name, and they will be afraid of you.</p>
+            <p><strong>11</strong> Yahweh will grant you abundant prosperity, in the fruit of your body, in the fruit of your livestock, and in the fruit of your ground, in the land which Yahweh swore to your fathers to give you.</p>
+            <p><strong>12</strong> Yahweh will open to you his good treasure in the sky, to give the rain of your land in its season, and to bless all the work of your hand. You will lend to many nations, and you will not borrow.</p>
+            <p><strong>13</strong> Yahweh will make you the head, and not the tail. You will be above only, and you will not be beneath; if you listen to the commandments of Yahweh your God, which I command you this day, to observe and to do,</p>
+            <p><strong>14</strong> and shall not turn aside from any of the words which I command you this day, to the right hand, or to the left, to go after other gods to serve them.</p>
+            <p><strong>15</strong> But it shall come to pass, if you will not listen to Yahweh your God’s voice, to observe to do all his commandments and his statutes which I command you this day, that all these curses will come on you, and overtake you.</p>
+            <p><strong>16</strong> You will be cursed in the city, and you will be cursed in the field.</p>
+            <p><strong>17</strong> Your basket and your kneading trough will be cursed.</p>
+            <p><strong>18</strong> The fruit of your body, the fruit of your ground, the increase of your livestock, and the young of your flock will be cursed.</p>
+            <p><strong>19</strong> You will be cursed when you come in, and you will be cursed when you go out.</p>
+            <p><strong>20</strong> Yahweh will send on you cursing, confusion, and rebuke, in all that you put your hand to do, until you are destroyed, and until you perish quickly; because of the evil of your doings, by which you have forsaken me.</p>
+            <p><strong>21</strong> Yahweh will make the pestilence cling to you, until he has consumed you from off the land, where you go in to possess it.</p>
+            <p><strong>22</strong> Yahweh will strike you with consumption, with fever, with inflammation, with fiery heat, with the sword, with blight, and with mildew. They will pursue you until you perish.</p>
+            <p><strong>23</strong> Your sky that is over your head will be brass, and the earth that is under you will be iron.</p>
+            <p><strong>24</strong> Yahweh will make the rain of your land powder and dust. It will come down on you from the sky, until you are destroyed.</p>
+            <p><strong>25</strong> Yahweh will cause you to be struck before your enemies. You will go out one way against them, and will flee seven ways before them. You will be tossed back and forth among all the kingdoms of the earth.</p>
+            <p><strong>26</strong> Your dead body will be food to all birds of the sky, and to the animals of the earth; and there will be no one to frighten them away.</p>
+            <p><strong>27</strong> Yahweh will strike you with the boils of Egypt, with the tumors, with the scurvy, and with the itch, of which you can not be healed.</p>
+            <p><strong>28</strong> Yahweh will strike you with madness, with blindness, and with astonishment of heart.</p>
+            <p><strong>29</strong> You will grope at noonday, as the blind gropes in darkness, and you shall not prosper in your ways. You will only be oppressed and robbed always, and there will be no one to save you.</p>
+            <p><strong>30</strong> You will betroth a wife, and another man shall lie with her. You will build a house, and you won’t dwell in it. You will plant a vineyard, and not use its fruit.</p>
+            <p><strong>31</strong> Your ox will be slain before your eyes, and you will not eat any of it. Your donkey will be violently taken away from before your face, and will not be restored to you. Your sheep will be given to your enemies, and you will have no one to save you.</p>
+            <p><strong>32</strong> Your sons and your daughters will be given to another people. Your eyes will look, and fail with longing for them all day long. There will be no power in your hand.</p>
+            <p><strong>33</strong> A nation which you don’t know eat the fruit of your ground and all of your work. You will only be oppressed and crushed always;</p>
+            <p><strong>34</strong> so that the sights that you see with your eyes will drive you mad.</p>
+            <p><strong>35</strong> Yahweh will strike you in the knees and in the legs with a sore boil, of which you can not be healed, from the sole of your foot to the crown of your head.</p>
+            <p><strong>36</strong> Yahweh will bring you, and your king whom you will set over yourselves, to a nation that you have not known, you nor your fathers. There you will serve other gods of wood and stone.</p>
+            <p><strong>37</strong> You will become an astonishment, a proverb, and a byword among all the peoples where Yahweh will lead you away.</p>
+            <p><strong>38</strong> You will carry much seed out into the field, and will gather little in; for the locust will consume it.</p>
+            <p><strong>39</strong> You will plant vineyards and dress them, but you will neither drink of the wine, nor harvest, because worms will eat them.</p>
+            <p><strong>40</strong> You will have olive trees throughout all your borders, but you won’t anoint yourself with the oil; for your olives will drop off.</p>
+            <p><strong>41</strong> You will father sons and daughters, but they will not be yours; for they will go into captivity.</p>
+            <p><strong>42</strong> Locusts will consume all of your trees and the fruit of your ground.</p>
+            <p><strong>43</strong> The foreigner who is in your midst will mount up above you higher and higher, and you will come down lower and lower.</p>
+            <p><strong>44</strong> He will lend to you, and you won’t lend to him. He will be the head, and you will be the tail.</p>
+            <p><strong>45</strong> All these curses will come on you, and will pursue you, and overtake you, until you are destroyed; because you didn’t listen to Yahweh your God’s voice, to keep his commandments and his statutes which he commanded you.</p>
+            <p><strong>46</strong> They will be for a sign and for a wonder to you and to your seed forever.</p>
+            <p><strong>47</strong> Because you didn’t serve Yahweh your God with joyfulness, and with gladness of heart, by reason of the abundance of all things;</p>
+            <p><strong>48</strong> therefore you will serve your enemies whom Yahweh sends against you, in hunger, in thirst, in nakedness, and in lack of all things. He will put an iron yoke on your neck, until he has destroyed you.</p>
+            <p><strong>49</strong> Yahweh will bring a nation against you from far, from the end of the earth, as the eagle flies; a nation whose language you will not understand;</p>
+            <p><strong>50</strong> a nation of fierce facial expressions, that doesn’t respect the elderly, nor show favor to the young,</p>
+            <p><strong>51</strong> and they will eat the fruit of your livestock, and the fruit of your ground, until you are destroyed. They also won’t leave you grain, new wine, or oil, the increase of your livestock, or the young of your flock, until they have caused you to perish.</p>
+            <p><strong>52</strong> They will besiege you in all your gates, until your high and fortified walls come down, in which you trusted, throughout all your land. They will besiege you in all your gates throughout all your land, which Yahweh your God has given you.</p>
+            <p><strong>53</strong> You will eat the fruit of your own body, the flesh of your sons and of your daughters, whom Yahweh your God has given you, in the siege and in the distress with which your enemies will distress you.</p>
+            <p><strong>54</strong> The man who is tender among you, and very delicate, his eye will be evil toward his brother, toward the wife whom he loves, and toward the remnant of his children whom he has remaining;</p>
+            <p><strong>55</strong> so that he will not give to any of them of the flesh of his children whom he will eat, because he has nothing left to him, in the siege and in the distress with which your enemy will distress you in all your gates.</p>
+            <p><strong>56</strong> The tender and delicate woman among you, who would not venture to set the sole of her foot on the ground for delicateness and tenderness, her eye will be evil toward the husband that she loves, toward her son, toward her daughter,</p>
+            <p><strong>57</strong> toward her young one who comes out from between her feet, and toward her children whom she bears; for she will eat them secretly for lack of all things, in the siege and in the distress with which your enemy will distress you in your gates.</p>
+            <p><strong>58</strong> If you will not observe to do all the words of this law that are written in this book, that you may fear this glorious and fearful name, YAHWEH YOUR GOD;</p>
+            <p><strong>59</strong> then Yahweh will make your plagues fearful, and the plagues of your seed, even great plagues, and of long duration, and severe sicknesses, and of long duration.</p>
+            <p><strong>60</strong> He will bring on you again all the diseases of Egypt, which you were afraid of; and they will cling to you.</p>
+            <p><strong>61</strong> Also every sickness and every plague, which is not written in the book of this law, Yahweh will bring them on you, until you are destroyed.</p>
+            <p><strong>62</strong> You will be left few in number, even though you were as the stars of the sky for multitude; because you didn’t listen to Yahweh your God’s voice.</p>
+            <p><strong>63</strong> It will happen that as Yahweh rejoiced over you to do you good, and to multiply you, so Yahweh will rejoice over you to cause you to perish, and to destroy you. You will be plucked from off of the land where you go in to possess it.</p>
+            <p><strong>64</strong> Yahweh will scatter you among all peoples, from one end of the earth to the other end of the earth. There you will serve other gods, which you have not known, you nor your fathers, even wood and stone.</p>
+            <p><strong>65</strong> Among these nations you will find no ease, and there will be no rest for the sole of your foot; but Yahweh will give you there a trembling heart, failing of eyes, and pining of soul.</p>
+            <p><strong>66</strong> Your life will hang in doubt before you. You will be afraid night and day, and will have no assurance of your life.</p>
+            <p><strong>67</strong> In the morning you will say, “I wish it were evening!” and at evening you will say, “I wish it were morning!” for the fear of your heart which you will fear, and for the sights which your eyes will see.</p>
+            <p><strong>68</strong> Yahweh will bring you into Egypt again with ships, by the way of which I told to you that you would never see it again. There you will sell yourselves to your enemies for male and female slaves, and nobody will buy you.</p>
+            </div>
+            <div class="scripture-text" id="web-28-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Deuteronomy 28 (KJV)</p>
+            <p><strong>1</strong> And it shall come to pass, if thou shalt hearken diligently unto the voice of the Lord thy God, to observe and to do all his commandments which I command thee this day, that the Lord thy God will set thee on high above all nations of the earth:</p>
+            <p><strong>2</strong> And all these blessings shall come on thee, and overtake thee, if thou shalt hearken unto the voice of the Lord thy God.</p>
+            <p><strong>3</strong> Blessed shalt thou be in the city, and blessed shalt thou be in the field.</p>
+            <p><strong>4</strong> Blessed shall be the fruit of thy body, and the fruit of thy ground, and the fruit of thy cattle, the increase of thy kine, and the flocks of thy sheep.</p>
+            <p><strong>5</strong> Blessed shall be thy basket and thy store.</p>
+            <p><strong>6</strong> Blessed shalt thou be when thou comest in, and blessed shalt thou be when thou goest out.</p>
+            <p><strong>7</strong> The Lord shall cause thine enemies that rise up against thee to be smitten before thy face: they shall come out against thee one way, and flee before thee seven ways.</p>
+            <p><strong>8</strong> The Lord shall command the blessing upon thee in thy storehouses, and in all that thou settest thine hand unto; and he shall bless thee in the land which the Lord thy God giveth thee.</p>
+            <p><strong>9</strong> The Lord shall establish thee an holy people unto himself, as he hath sworn unto thee, if thou shalt keep the commandments of the Lord thy God, and walk in his ways.</p>
+            <p><strong>10</strong> And all people of the earth shall see that thou art called by the name of the Lord; and they shall be afraid of thee.</p>
+            <p><strong>11</strong> And the Lord shall make thee plenteous in goods, in the fruit of thy body, and in the fruit of thy cattle, and in the fruit of thy ground, in the land which the Lord sware unto thy fathers to give thee.</p>
+            <p><strong>12</strong> The Lord shall open unto thee his good treasure, the heaven to give the rain unto thy land in his season, and to bless all the work of thine hand: and thou shalt lend unto many nations, and thou shalt not borrow.</p>
+            <p><strong>13</strong> And the Lord shall make thee the head, and not the tail; and thou shalt be above only, and thou shalt not be beneath; if that thou hearken unto the commandments of the Lord thy God, which I command thee this day, to observe and to do them:</p>
+            <p><strong>14</strong> And thou shalt not go aside from any of the words which I command thee this day, to the right hand, or to the left, to go after other gods to serve them.</p>
+            <p><strong>15</strong> But it shall come to pass, if thou wilt not hearken unto the voice of the Lord thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee:</p>
+            <p><strong>16</strong> Cursed shalt thou be in the city, and cursed shalt thou be in the field.</p>
+            <p><strong>17</strong> Cursed shall be thy basket and thy store.</p>
+            <p><strong>18</strong> Cursed shall be the fruit of thy body, and the fruit of thy land, the increase of thy kine, and the flocks of thy sheep.</p>
+            <p><strong>19</strong> Cursed shalt thou be when thou comest in, and cursed shalt thou be when thou goest out.</p>
+            <p><strong>20</strong> The Lord shall send upon thee cursing, vexation, and rebuke, in all that thou settest thine hand unto for to do, until thou be destroyed, and until thou perish quickly; because of the wickedness of thy doings, whereby thou hast forsaken me.</p>
+            <p><strong>21</strong> The Lord shall make the pestilence cleave unto thee, until he have consumed thee from off the land, whither thou goest to possess it.</p>
+            <p><strong>22</strong> The Lord shall smite thee with a consumption, and with a fever, and with an inflammation, and with an extreme burning, and with the sword, and with blasting, and with mildew; and they shall pursue thee until thou perish.</p>
+            <p><strong>23</strong> And thy heaven that is over thy head shall be brass, and the earth that is under thee shall be iron.</p>
+            <p><strong>24</strong> The Lord shall make the rain of thy land powder and dust: from heaven shall it come down upon thee, until thou be destroyed.</p>
+            <p><strong>25</strong> The Lord shall cause thee to be smitten before thine enemies: thou shalt go out one way against them, and flee seven ways before them: and shalt be removed into all the kingdoms of the earth.</p>
+            <p><strong>26</strong> And thy carcase shall be meat unto all fowls of the air, and unto the beasts of the earth, and no man shall fray them away.</p>
+            <p><strong>27</strong> The Lord will smite thee with the botch of Egypt, and with the emerods, and with the scab, and with the itch, whereof thou canst not be healed.</p>
+            <p><strong>28</strong> The Lord shall smite thee with madness, and blindness, and astonishment of heart:</p>
+            <p><strong>29</strong> And thou shalt grope at noonday, as the blind gropeth in darkness, and thou shalt not prosper in thy ways: and thou shalt be only oppressed and spoiled evermore, and no man shall save thee.</p>
+            <p><strong>30</strong> Thou shalt betroth a wife, and another man shall lie with her: thou shalt build an house, and thou shalt not dwell therein: thou shalt plant a vineyard, and shalt not gather the grapes thereof.</p>
+            <p><strong>31</strong> Thine ox shall be slain before thine eyes, and thou shalt not eat thereof: thine ass shall be violently taken away from before thy face, and shall not be restored to thee: thy sheep shall be given unto thine enemies, and thou shalt have none to rescue them.</p>
+            <p><strong>32</strong> Thy sons and thy daughters shall be given unto another people, and thine eyes shall look, and fail with longing for them all the day long: and there shall be no might in thine hand.</p>
+            <p><strong>33</strong> The fruit of thy land, and all thy labours, shall a nation which thou knowest not eat up; and thou shalt be only oppressed and crushed alway:</p>
+            <p><strong>34</strong> So that thou shalt be mad for the sight of thine eyes which thou shalt see.</p>
+            <p><strong>35</strong> The Lord shall smite thee in the knees, and in the legs, with a sore botch that cannot be healed, from the sole of thy foot unto the top of thy head.</p>
+            <p><strong>36</strong> The Lord shall bring thee, and thy king which thou shalt set over thee, unto a nation which neither thou nor thy fathers have known; and there shalt thou serve other gods, wood and stone.</p>
+            <p><strong>37</strong> And thou shalt become an astonishment, a proverb, and a byword, among all nations whither the Lord shall lead thee.</p>
+            <p><strong>38</strong> Thou shalt carry much seed out into the field, and shalt gather but little in; for the locust shall consume it.</p>
+            <p><strong>39</strong> Thou shalt plant vineyards, and dress them, but shalt neither drink of the wine, nor gather the grapes; for the worms shall eat them.</p>
+            <p><strong>40</strong> Thou shalt have olive trees throughout all thy coasts, but thou shalt not anoint thyself with the oil; for thine olive shall cast his fruit.</p>
+            <p><strong>41</strong> Thou shalt beget sons and daughters, but thou shalt not enjoy them; for they shall go into captivity.</p>
+            <p><strong>42</strong> All thy trees and fruit of thy land shall the locust consume.</p>
+            <p><strong>43</strong> The stranger that is within thee shall get up above thee very high; and thou shalt come down very low.</p>
+            <p><strong>44</strong> He shall lend to thee, and thou shalt not lend to him: he shall be the head, and thou shalt be the tail.</p>
+            <p><strong>45</strong> Moreover all these curses shall come upon thee, and shall pursue thee, and overtake thee, till thou be destroyed; because thou hearkenedst not unto the voice of the Lord thy God, to keep his commandments and his statutes which he commanded thee:</p>
+            <p><strong>46</strong> And they shall be upon thee for a sign and for a wonder, and upon thy seed for ever.</p>
+            <p><strong>47</strong> Because thou servedst not the Lord thy God with joyfulness, and with gladness of heart, for the abundance of all things;</p>
+            <p><strong>48</strong> Therefore shalt thou serve thine enemies which the Lord shall send against thee, in hunger, and in thirst, and in nakedness, and in want of all things: and he shall put a yoke of iron upon thy neck, until he have destroyed thee.</p>
+            <p><strong>49</strong> The Lord shall bring a nation against thee from far, from the end of the earth, as swift as the eagle flieth; a nation whose tongue thou shalt not understand;</p>
+            <p><strong>50</strong> A nation of fierce countenance, which shall not regard the person of the old, nor shew favour to the young:</p>
+            <p><strong>51</strong> And he shall eat the fruit of thy cattle, and the fruit of thy land, until thou be destroyed: which also shall not leave thee either corn, wine, or oil, or the increase of thy kine, or flocks of thy sheep, until he have destroyed thee.</p>
+            <p><strong>52</strong> And he shall besiege thee in all thy gates, until thy high and fenced walls come down, wherein thou trustedst, throughout all thy land: and he shall besiege thee in all thy gates throughout all thy land, which the Lord thy God hath given thee.</p>
+            <p><strong>53</strong> And thou shalt eat the fruit of thine own body, the flesh of thy sons and of thy daughters, which the Lord thy God hath given thee, in the siege, and in the straitness, wherewith thine enemies shall distress thee:</p>
+            <p><strong>54</strong> So that the man that is tender among you, and very delicate, his eye shall be evil toward his brother, and toward the wife of his bosom, and toward the remnant of his children which he shall leave:</p>
+            <p><strong>55</strong> So that he will not give to any of them of the flesh of his children whom he shall eat: because he hath nothing left him in the siege, and in the straitness, wherewith thine enemies shall distress thee in all thy gates.</p>
+            <p><strong>56</strong> The tender and delicate woman among you, which would not adventure to set the sole of her foot upon the ground for delicateness and tenderness, her eye shall be evil toward the husband of her bosom, and toward her son, and toward her daughter,</p>
+            <p><strong>57</strong> And toward her young one that cometh out from between her feet, and toward her children which she shall bear: for she shall eat them for want of all things secretly in the siege and straitness, wherewith thine enemy shall distress thee in thy gates.</p>
+            <p><strong>58</strong> If thou wilt not observe to do all the words of this law that are written in this book, that thou mayest fear this glorious and fearful name, THE LORD THY GOD;</p>
+            <p><strong>59</strong> Then the Lord will make thy plagues wonderful, and the plagues of thy seed, even great plagues, and of long continuance, and sore sicknesses, and of long continuance.</p>
+            <p><strong>60</strong> Moreover he will bring upon thee all the diseases of Egypt, which thou wast afraid of; and they shall cleave unto thee.</p>
+            <p><strong>61</strong> Also every sickness, and every plague, which is not written in the book of this law, them will the Lord bring upon thee, until thou be destroyed.</p>
+            <p><strong>62</strong> And ye shall be left few in number, whereas ye were as the stars of heaven for multitude; because thou wouldest not obey the voice of the Lord thy God.</p>
+            <p><strong>63</strong> And it shall come to pass, that as the Lord rejoiced over you to do you good, and to multiply you; so the Lord will rejoice over you to destroy you, and to bring you to nought; and ye shall be plucked from off the land whither thou goest to possess it.</p>
+            <p><strong>64</strong> And the Lord shall scatter thee among all people, from the one end of the earth even unto the other; and there thou shalt serve other gods, which neither thou nor thy fathers have known, even wood and stone.</p>
+            <p><strong>65</strong> And among these nations shalt thou find no ease, neither shall the sole of thy foot have rest: but the Lord shall give thee there a trembling heart, and failing of eyes, and sorrow of mind:</p>
+            <p><strong>66</strong> And thy life shall hang in doubt before thee; and thou shalt fear day and night, and shalt have none assurance of thy life:</p>
+            <p><strong>67</strong> In the morning thou shalt say, Would God it were even! and at even thou shalt say, Would God it were morning! for the fear of thine heart wherewith thou shalt fear, and for the sight of thine eyes which thou shalt see.</p>
+            <p><strong>68</strong> And the Lord shall bring thee into Egypt again with ships, by the way whereof I spake unto thee, Thou shalt see it no more again: and there ye shall be sold unto your enemies for bondmen and bondwomen, and no man shall buy you.</p>
+            </div>
+            <div class="scripture-text" id="web-28-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Deuteronomy 28 (ASV)</p>
+            <p><strong>1</strong> And it shall come to pass, if thou shalt hearken diligently unto the voice of Jehovah thy God, to observe to do all his commandments which I command thee this day, that Jehovah thy God will set thee on high above all the nations of the earth:</p>
+            <p><strong>2</strong> and all these blessings shall come upon thee, and overtake thee, if thou shalt hearken unto the voice of Jehovah thy God.</p>
+            <p><strong>3</strong> Blessed shalt thou be in the city, and blessed shalt thou be in the field.</p>
+            <p><strong>4</strong> Blessed shall be the fruit of thy body, and the fruit of thy ground, and the fruit of thy beasts, the increase of thy cattle, and the young of thy flock.</p>
+            <p><strong>5</strong> Blessed shall be thy basket and thy kneading-trough.</p>
+            <p><strong>6</strong> Blessed shalt thou be when thou comest in, and blessed shalt thou be when thou goest out.</p>
+            <p><strong>7</strong> Jehovah will cause thine enemies that rise up against thee to be smitten before thee: they shall come out against thee one way, and shall flee before thee seven ways.</p>
+            <p><strong>8</strong> Jehovah will command the blessing upon thee in thy barns, and in all that thou puttest thy hand unto; and he will bless thee in the land which Jehovah thy God giveth thee.</p>
+            <p><strong>9</strong> Jehovah will establish thee for a holy people unto himself, as he hath sworn unto thee; if thou shalt keep the commandments of Jehovah thy God, and walk in his ways.</p>
+            <p><strong>10</strong> And all the peoples of the earth shall see that thou art called by the name of Jehovah; and they shall be afraid of thee.</p>
+            <p><strong>11</strong> And Jehovah will make thee plenteous for good, in the fruit of thy body, and in the fruit of thy cattle, and in the fruit of thy ground, in the land which Jehovah sware unto thy fathers to give thee.</p>
+            <p><strong>12</strong> Jehovah will open unto thee his good treasure the heavens, to give the rain of thy land in its season, and to bless all the work of thy hand: and thou shalt lend unto many nations, and thou shalt not borrow.</p>
+            <p><strong>13</strong> And Jehovah will make thee the head, and not the tail; and thou shalt be above only, and thou shalt not be beneath; if thou shalt hearken unto the commandments of Jehovah thy God, which I command thee this day, to observe and to do them,</p>
+            <p><strong>14</strong> and shalt not turn aside from any of the words which I command you this day, to the right hand, or to the left, to go after other gods to serve them.</p>
+            <p><strong>15</strong> But it shall come to pass, if thou wilt not hearken unto the voice of Jehovah thy God, to observe to do all his commandments and his statutes which I command thee this day, that all these curses shall come upon thee, and overtake thee.</p>
+            <p><strong>16</strong> Cursed shalt thou be in the city, and cursed shalt thou be in the field.</p>
+            <p><strong>17</strong> Cursed shall be thy basket and thy kneading-trough.</p>
+            <p><strong>18</strong> Cursed shall be the fruit of thy body, and the fruit of thy ground, the increase of thy cattle, and the young of thy flock.</p>
+            <p><strong>19</strong> Cursed shalt thou be when thou comest in, and cursed shalt thou be when thou goest out.</p>
+            <p><strong>20</strong> Jehovah will send upon thee cursing, discomfiture, and rebuke, in all that thou puttest thy hand unto to do, until thou be destroyed, and until thou perish quickly; because of the evil of thy doings, whereby thou hast forsaken me.</p>
+            <p><strong>21</strong> Jehovah will make the pestilence cleave unto thee, until he have consumed thee from off the land, whither thou goest in to possess it.</p>
+            <p><strong>22</strong> Jehovah will smite thee with consumption, and with fever, and with inflammation, and with fiery heat, and with the sword, and with blasting, and with mildew; and they shall pursue thee until thou perish.</p>
+            <p><strong>23</strong> And thy heaven that is over thy head shall be brass, and the earth that is under thee shall be iron.</p>
+            <p><strong>24</strong> Jehovah will make the rain of thy land powder and dust: from heaven shall it come down upon thee, until thou be destroyed.</p>
+            <p><strong>25</strong> Jehovah will cause thee to be smitten before thine enemies; thou shalt go out one way against them, and shalt flee seven ways before them: and thou shalt be tossed to and from among all the kingdoms of the earth.</p>
+            <p><strong>26</strong> And thy dead body shall be food unto all birds of the heavens, and unto the beasts of the earth; and there shall be none to frighten them away.</p>
+            <p><strong>27</strong> Jehovah will smite thee with the boil of Egypt, and with the emerods, and with the scurvy, and with the itch, whereof thou canst not be healed.</p>
+            <p><strong>28</strong> Jehovah will smite thee with madness, and with blindness, and with astonishment of heart;</p>
+            <p><strong>29</strong> and thou shalt grope at noonday, as the blind gropeth in darkness, and thou shalt not prosper in thy ways: and thou shalt be only oppressed and robbed alway, and there shall be none to save thee.</p>
+            <p><strong>30</strong> Thou shalt betroth a wife, and another man shall lie with her: thou shalt build a house, and thou shalt not dwell therein: thou shalt plant a vineyard, and shalt not use the fruit thereof.</p>
+            <p><strong>31</strong> Thine ox shall be slain before thine eyes, and thou shalt not eat thereof: thine ass shall be violently taken away from before thy face, and shall not be restored to thee: thy sheep shall be given unto thine enemies, and thou shalt have none to save thee.</p>
+            <p><strong>32</strong> Thy sons and thy daughters shall be given unto another people; and thine eyes shall look, and fail with longing for them all the day: and there shall be nought in the power of thy hand.</p>
+            <p><strong>33</strong> The fruit of thy ground, and all thy labors, shall a nation which thou knowest not eat up; and thou shalt be only oppressed and crushed alway;</p>
+            <p><strong>34</strong> so that thou shalt be mad for the sight of thine eyes which thou shalt see.</p>
+            <p><strong>35</strong> Jehovah will smite thee in the knees, and in the legs, with a sore boil, whereof thou canst not be healed, from the sole of thy foot unto the crown of thy head.</p>
+            <p><strong>36</strong> Jehovah will bring thee, and thy king whom thou shalt set over thee, unto a nation that thou hast not known, thou nor thy fathers; and there shalt thou serve other gods, wood and stone.</p>
+            <p><strong>37</strong> And thou shalt become an astonishment, a proverb, and a byword, among all the peoples whither Jehovah shall lead thee away.</p>
+            <p><strong>38</strong> Thou shalt carry much seed out into the field, and shalt gather little in; for the locust shall consume it.</p>
+            <p><strong>39</strong> Thou shalt plant vineyards and dress them, but thou shalt neither drink of the wine, nor gather the grapes; for the worm shall eat them.</p>
+            <p><strong>40</strong> Thou shalt have olive-trees throughout all thy borders, but thou shalt not anoint thyself with the oil; for thine olive shall cast its fruit.</p>
+            <p><strong>41</strong> Thou shalt beget sons and daughters, but they shall not be thine; for they shall go into captivity.</p>
+            <p><strong>42</strong> All thy trees and the fruit of thy ground shall the locust possess.</p>
+            <p><strong>43</strong> The sojourner that is in the midst of thee shall mount up above thee higher and higher; and thou shalt come down lower and lower.</p>
+            <p><strong>44</strong> He shall lend to thee, and thou shalt not lend to him: he shall be the head, and thou shalt be the tail.</p>
+            <p><strong>45</strong> And all these curses shall come upon thee, and shall pursue thee, and overtake thee, till thou be destroyed; because thou hearkenedst not unto the voice of Jehovah thy God, to keep his commandments and his statutes which he commanded thee:</p>
+            <p><strong>46</strong> and they shall be upon thee for a sign and for a wonder, and upon thy seed for ever.</p>
+            <p><strong>47</strong> Because thou servedst not Jehovah thy God with joyfulness, and with gladness of heart, by reason of the abundance of all things;</p>
+            <p><strong>48</strong> therefore shalt thou serve thine enemies that Jehovah shall send against thee, in hunger, and in thirst, and in nakedness, and in want of all things: and he shall put a yoke of iron upon thy neck, until he have destroyed thee.</p>
+            <p><strong>49</strong> Jehovah will bring a nation against thee from far, from the end of the earth, as the eagle flieth; a nation whose tongue thou shalt not understand;</p>
+            <p><strong>50</strong> a nation of fierce countenance, that shall not regard the person of the old, nor show favor to the young,</p>
+            <p><strong>51</strong> and shall eat the fruit of thy cattle, and the fruit of thy ground, until thou be destroyed; that also shall not leave thee grain, new wine, or oil, the increase of thy cattle, or the young of thy flock, until they have caused thee to perish.</p>
+            <p><strong>52</strong> And they shall besiege thee in all thy gates, until thy high and fortified walls come down, wherein thou trustedst, throughout all thy land; and they shall besiege thee in all thy gates throughout all thy land, which Jehovah thy God hath given thee.</p>
+            <p><strong>53</strong> And thou shalt eat the fruit of thine own body, the flesh of thy sons and of thy daughters, whom Jehovah thy God hath given thee, in the siege and in the distress wherewith thine enemies shall distress thee.</p>
+            <p><strong>54</strong> The man that is tender among you, and very delicate, his eye shall be evil toward his brother, and toward the wife of his bosom, and toward the remnant of his children whom he hath remaining;</p>
+            <p><strong>55</strong> so that he will not give to any of them of the flesh of his children whom he shall eat, because he hath nothing left him, in the siege and in the distress wherewith thine enemy shall distress thee in all thy gates.</p>
+            <p><strong>56</strong> The tender and delicate woman among you, who would not adventure to set the sole of her foot upon the ground for delicateness and tenderness, her eye shall be evil toward the husband of her bosom, and toward her son, and toward her daughter,</p>
+            <p><strong>57</strong> and toward her young one that cometh out from between her feet, and toward her children whom she shall bear; for she shall eat them for want of all things secretly, in the siege and in the distress wherewith thine enemy shall distress thee in thy gates.</p>
+            <p><strong>58</strong> If thou wilt not observe to do all the words of this law that are written in this book, that thou mayest fear this glorious and fearful name, JEHOVAH THY GOD;</p>
+            <p><strong>59</strong> then Jehovah will make thy plagues wonderful, and the plagues of thy seed, even great plagues, and of long continuance, and sore sicknesses, and of long continuance.</p>
+            <p><strong>60</strong> And he will bring upon thee again all the diseases of Egypt, which thou wast afraid of; and they shall cleave unto thee.</p>
+            <p><strong>61</strong> Also every sickness, and every plague, which is not written in the book of this law, them will Jehovah bring upon thee, until thou be destroyed.</p>
+            <p><strong>62</strong> And ye shall be left few in number, whereas ye were as the stars of heaven for multitude; because thou didst not hearken unto the voice of Jehovah thy God.</p>
+            <p><strong>63</strong> And it shall come to pass, that, as Jehovah rejoiced over you to do you good, and to multiply you, so Jehovah will rejoice over you to cause you to perish, and to destroy you; and ye shall be plucked from off the land whither thou goest in to possess it.</p>
+            <p><strong>64</strong> And Jehovah will scatter thee among all peoples, from the one end of the earth even unto the other end of the earth; and there thou shalt serve other gods, which thou hast not known, thou nor thy fathers, even wood and stone.</p>
+            <p><strong>65</strong> And among these nations shalt thou find no ease, and there shall be no rest for the sole of thy foot: but Jehovah will give thee there a trembling heart, and failing of eyes, and pining of soul;</p>
+            <p><strong>66</strong> and thy life shall hang in doubt before thee; and thou shalt fear night and day, and shalt have no assurance of thy life.</p>
+            <p><strong>67</strong> In the morning thou shalt say, Would it were even! and at even thou shalt say, Would it were morning! for the fear of thy heart which thou shalt fear, and for the sight of thine eyes which thou shalt see.</p>
+            <p><strong>68</strong> And Jehovah will bring thee into Egypt again with ships, by the way whereof I said unto thee, Thou shalt see it no more again: and there ye shall sell yourselves unto your enemies for bondmen and for bondwomen, and no man shall buy you.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This long, sobering chapter sets the two destinies of the covenant side by side. If Israel listens diligently to the Lord's voice and obeys, blessing will overtake them in the city and the field, in body and harvest and herd, in coming in and going out; their enemies will flee, the heavens will give rain, and they will be the head and not the tail among the nations. But the far longer second half spells out the curses that will fall if they will not obey. These move from blighted crops and disease to defeat, drought, madness, and oppression, escalating into siege so terrible that families turn on one another, and finally into exile, where a scattered people find no rest and live in constant dread. The relentless detail is meant to press home how serious covenant unfaithfulness is and how good God's blessing is by contrast. Read in light of the whole Bible, this chapter exposes humanity's inability to earn blessing by perfect obedience, and it sets the stage for the new covenant in which the obedient Son secures blessing for his people and bears the curse in their place.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Moses</strong> — The covenant mediator who sets blessing and curse before Israel with sobering clarity, urging them to listen diligently to God's voice.</li>
+          <li><strong>Israel</strong> — The covenant people facing two possible futures—abundant blessing under obedience or devastating curse under rebellion.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who delights to bless an obedient people and who warns, with grief and justice, of the consequences of forsaking him.</li>
+          <li><strong>The nations</strong> — The surrounding peoples who will either see Israel honored and fear them, or witness their downfall and become an instrument of judgment.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Deuteronomy 28:1 (WEB)</p>
+          <p class="verse__text">It shall happen, if you shall listen diligently to Yahweh your God’s voice, to observe to do all his commandments which I command you this day, that Yahweh your God will set you high above all the nations of the earth.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's commands come with real consequences; obedience and rebellion lead to very different futures.</li>
+          <li>Sin's consequences, once unleashed, tend to escalate and spread far beyond what we imagine.</li>
+          <li>God genuinely desires to bless his people with abundant good.</li>
+          <li>No sinner can secure the blessing by perfect obedience, which points us to our need of a Savior.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-28">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-28">
+            <ul class="lesson-list">
+            <li><strong>Blessing follows attentive obedience.</strong> “If you shall listen diligently to Yahweh your God’s voice… Yahweh your God will set you high above all the nations” (Deuteronomy 28:1, WEB). God ties flourishing to wholehearted hearing of his word.</li>
+            <li><strong>Joyless service invites judgment.</strong> The curses come “because you didn’t serve Yahweh your God with joyfulness, and with gladness of heart” (Deuteronomy 28:47, WEB). God wants glad worship, not grudging duty.</li>
+            <li><strong>Sin's harvest is bitter and far-reaching.</strong> The curses sweep “until you are destroyed” and into exile among “all peoples” (Deuteronomy 28:24, 64, WEB). Rebellion never stays contained or small.</li>
+            <li><strong>The curse drives us to Christ.</strong> Only One ever obeyed perfectly and so became a curse for us (Galatians 3:13). The blessing we cannot earn, Jesus secures and shares with all who trust him.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-28">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-28">
+            <ol class="study-questions">
+            <li>Why do you think the curses are described in so much more detail than the blessings?</li>
+            <li>Verse 47 says the curses came because Israel did not serve God “with joyfulness.” How does the spirit of our obedience matter to God, not just the outward act?</li>
+            <li>How does reading this chapter make you feel about the seriousness of sin and the goodness of God's blessing?</li>
+            <li>Since no sinner keeps the whole law, how does this chapter prepare us for the gospel of grace in Christ?</li>
+            <li>What would it look like for you to serve God this week “with joyfulness, and with gladness of heart” rather than from mere obligation?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-28">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-28">
+            <ol class="study-questions">
+            <li>The lopsided length is itself a mercy—an extended, urgent warning meant to keep Israel from disaster. God spells out the horror of rebellion so vividly because he longs for them to choose life. The detail is the voice of a God who pleads before he judges.</li>
+            <li>Verse 47 shows that God cares about the heart behind the deed. Obedience offered without joy reveals a love that has cooled. He is not satisfied with sullen compliance; he desires children who delight in him. Invite honest reflection on the joy of our own obedience.</li>
+            <li>Let members sit with both realities. Sin is not trivial; its consequences are devastating. Yet the very God who warns so soberly is the God who delights to bless. The chapter is meant to sober us and to make God's grace shine all the brighter.</li>
+            <li>Because the chapter sets an obedience standard no one meets, it leaves us needing a substitute. This is exactly where the gospel meets us: Christ kept the covenant perfectly, earned the blessing, and bore the curse for us (Gal 3:13). The law's threat magnifies grace.</li>
+            <li>This is a personal-application question. Encourage members to identify where duty has crowded out delight, and to ask God to renew their joy in him. Keep the tone gentle—joyful obedience is itself a gift of grace, not another burden.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="deuteronomy-27.html">← Deuteronomy 27</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="deuteronomy.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="deuteronomy-29.html">Deuteronomy 29 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

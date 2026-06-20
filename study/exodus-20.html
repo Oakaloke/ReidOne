@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Exodus 20: The Ten Commandments — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Exodus 20: God speaks the Ten Commandments from Sinai, and the trembling people beg Moses to mediate between them and the holy God." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-exodus-progress" data-study-total="40">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Exodus, Chapter 20
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="exodus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Exodus · Chapter 20</span>
+        <h1>Exodus 20: The Ten Commandments</h1>
+        <p class="lead">From the mountain God speaks the ten words that define love for him and neighbor, and the trembling people ask Moses to mediate.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-20">
+            <span>Scripture — Exodus Chapter 20</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-20">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-20-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-20-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-20-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-20-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Exodus 20 (WEB)</p>
+            <p><strong>1</strong> God spoke all these words, saying,</p>
+            <p><strong>2</strong> “I am Yahweh your God, who brought you out of the land of Egypt, out of the house of bondage.</p>
+            <p><strong>3</strong> “You shall have no other gods before me.</p>
+            <p><strong>4</strong> “You shall not make for yourselves an idol, nor any image of anything that is in the heavens above, or that is in the earth beneath, or that is in the water under the earth:</p>
+            <p><strong>5</strong> you shall not bow yourself down to them, nor serve them, for I, Yahweh your God, am a jealous God, visiting the iniquity of the fathers on the children, on the third and on the fourth generation of those who hate me,</p>
+            <p><strong>6</strong> and showing loving kindness to thousands of those who love me and keep my commandments.</p>
+            <p><strong>7</strong> “You shall not take the name of Yahweh your God in vain, for Yahweh will not hold him guiltless who takes his name in vain.</p>
+            <p><strong>8</strong> “Remember the Sabbath day, to keep it holy.</p>
+            <p><strong>9</strong> You shall labor six days, and do all your work,</p>
+            <p><strong>10</strong> but the seventh day is a Sabbath to Yahweh your God. You shall not do any work in it, you, nor your son, nor your daughter, your male servant, nor your female servant, nor your livestock, nor your stranger who is within your gates;</p>
+            <p><strong>11</strong> for in six days Yahweh made heaven and earth, the sea, and all that is in them, and rested the seventh day; therefore Yahweh blessed the Sabbath day, and made it holy.</p>
+            <p><strong>12</strong> “Honor your father and your mother, that your days may be long in the land which Yahweh your God gives you.</p>
+            <p><strong>13</strong> “You shall not murder.</p>
+            <p><strong>14</strong> “You shall not commit adultery.</p>
+            <p><strong>15</strong> “You shall not steal.</p>
+            <p><strong>16</strong> “You shall not give false testimony against your neighbor.</p>
+            <p><strong>17</strong> “You shall not covet your neighbor’s house. You shall not covet your neighbor’s wife, nor his male servant, nor his female servant, nor his ox, nor his donkey, nor anything that is your neighbor’s.”</p>
+            <p><strong>18</strong> All the people perceived the thunderings, the lightnings, the sound of the trumpet, and the mountain smoking. When the people saw it, they trembled, and stayed at a distance.</p>
+            <p><strong>19</strong> They said to Moses, “Speak with us yourself, and we will listen; but don’t let God speak with us, lest we die.”</p>
+            <p><strong>20</strong> Moses said to the people, “Don’t be afraid, for God has come to test you, and that his fear may be before you, that you won’t sin.”</p>
+            <p><strong>21</strong> The people stayed at a distance, and Moses drew near to the thick darkness where God was.</p>
+            <p><strong>22</strong> Yahweh said to Moses, “This is what you shall tell the children of Israel: ‘You yourselves have seen that I have talked with you from heaven.</p>
+            <p><strong>23</strong> You shall most certainly not make alongside of me gods of silver, or gods of gold for yourselves.</p>
+            <p><strong>24</strong> You shall make an altar of earth for me, and shall sacrifice on it your burnt offerings and your peace offerings, your sheep and your cattle. In every place where I record my name I will come to you and I will bless you.</p>
+            <p><strong>25</strong> If you make me an altar of stone, you shall not build it of cut stones; for if you lift up your tool on it, you have polluted it.</p>
+            <p><strong>26</strong> Neither shall you go up by steps to my altar, that your nakedness may not be exposed to it.’</p>
+            </div>
+            <div class="scripture-text" id="web-20-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Exodus 20 (KJV)</p>
+            <p><strong>1</strong> And God spake all these words, saying,</p>
+            <p><strong>2</strong> I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage.</p>
+            <p><strong>3</strong> Thou shalt have no other gods before me.</p>
+            <p><strong>4</strong> Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth:</p>
+            <p><strong>5</strong> Thou shalt not bow down thyself to them, nor serve them: for I the Lord thy God am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me;</p>
+            <p><strong>6</strong> And shewing mercy unto thousands of them that love me, and keep my commandments.</p>
+            <p><strong>7</strong> Thou shalt not take the name of the Lord thy God in vain; for the Lord will not hold him guiltless that taketh his name in vain.</p>
+            <p><strong>8</strong> Remember the sabbath day, to keep it holy.</p>
+            <p><strong>9</strong> Six days shalt thou labour, and do all thy work:</p>
+            <p><strong>10</strong> But the seventh day is the sabbath of the Lord thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates:</p>
+            <p><strong>11</strong> For in six days the Lord made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the Lord blessed the sabbath day, and hallowed it.</p>
+            <p><strong>12</strong> Honour thy father and thy mother: that thy days may be long upon the land which the Lord thy God giveth thee.</p>
+            <p><strong>13</strong> Thou shalt not kill.</p>
+            <p><strong>14</strong> Thou shalt not commit adultery.</p>
+            <p><strong>15</strong> Thou shalt not steal.</p>
+            <p><strong>16</strong> Thou shalt not bear false witness against thy neighbour.</p>
+            <p><strong>17</strong> Thou shalt not covet thy neighbour’s house, thou shalt not covet thy neighbour’s wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour’s.</p>
+            <p><strong>18</strong> And all the people saw the thunderings, and the lightnings, and the noise of the trumpet, and the mountain smoking: and when the people saw it, they removed, and stood afar off.</p>
+            <p><strong>19</strong> And they said unto Moses, Speak thou with us, and we will hear: but let not God speak with us, lest we die.</p>
+            <p><strong>20</strong> And Moses said unto the people, Fear not: for God is come to prove you, and that his fear may be before your faces, that ye sin not.</p>
+            <p><strong>21</strong> And the people stood afar off, and Moses drew near unto the thick darkness where God was.</p>
+            <p><strong>22</strong> And the Lord said unto Moses, Thus thou shalt say unto the children of Israel, Ye have seen that I have talked with you from heaven.</p>
+            <p><strong>23</strong> Ye shall not make with me gods of silver, neither shall ye make unto you gods of gold.</p>
+            <p><strong>24</strong> An altar of earth thou shalt make unto me, and shalt sacrifice thereon thy burnt offerings, and thy peace offerings, thy sheep, and thine oxen: in all places where I record my name I will come unto thee, and I will bless thee.</p>
+            <p><strong>25</strong> And if thou wilt make me an altar of stone, thou shalt not build it of hewn stone: for if thou lift up thy tool upon it, thou hast polluted it.</p>
+            <p><strong>26</strong> Neither shalt thou go up by steps unto mine altar, that thy nakedness be not discovered thereon.</p>
+            </div>
+            <div class="scripture-text" id="web-20-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Exodus 20 (ASV)</p>
+            <p><strong>1</strong> And God spake all these words, saying,</p>
+            <p><strong>2</strong> I am Jehovah thy God, who brought thee out of the land of Egypt, out of the house of bondage.</p>
+            <p><strong>3</strong> Thou shalt have no other gods before me.</p>
+            <p><strong>4</strong> Thou shalt not make unto thee a graven image, nor any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth:</p>
+            <p><strong>5</strong> thou shalt not bow down thyself unto them, nor serve them; for I Jehovah thy God am a jealous God, visiting the iniquity of the fathers upon the children, upon the third and upon the fourth generation of them that hate me,</p>
+            <p><strong>6</strong> and showing lovingkindness unto thousands of them that love me and keep my commandments.</p>
+            <p><strong>7</strong> Thou shalt not take the name of Jehovah thy God in vain; for Jehovah will not hold him guiltless that taketh his name in vain.</p>
+            <p><strong>8</strong> Remember the sabbath day, to keep it holy.</p>
+            <p><strong>9</strong> Six days shalt thou labor, and do all thy work;</p>
+            <p><strong>10</strong> but the seventh day is a sabbath unto Jehovah thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy man-servant, nor thy maid-servant, nor thy cattle, nor thy stranger that is within thy gates:</p>
+            <p><strong>11</strong> for in six days Jehovah made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore Jehovah blessed the sabbath day, and hallowed it.</p>
+            <p><strong>12</strong> Honor thy father and thy mother, that thy days may be long in the land which Jehovah thy God giveth thee.</p>
+            <p><strong>13</strong> Thou shalt not kill.</p>
+            <p><strong>14</strong> Thou shalt not commit adultery.</p>
+            <p><strong>15</strong> Thou shalt not steal.</p>
+            <p><strong>16</strong> Thou shalt not bear false witness against thy neighbor.</p>
+            <p><strong>17</strong> Thou shalt not covet thy neighbor’s house, thou shalt not covet thy neighbor’s wife, nor his man-servant, nor his maid-servant, nor his ox, nor his ass, nor anything that is thy neighbor’s.</p>
+            <p><strong>18</strong> And all the people perceived the thunderings, and the lightnings, and the voice of the trumpet, and the mountain smoking: and when the people saw it, they trembled, and stood afar off.</p>
+            <p><strong>19</strong> And they said unto Moses, Speak thou with us, and we will hear; but let not God speak with us, lest we die.</p>
+            <p><strong>20</strong> And Moses said unto the people, Fear not: for God is come to prove you, and that his fear may be before you, that ye sin not.</p>
+            <p><strong>21</strong> And the people stood afar off, and Moses drew near unto the thick darkness where God was.</p>
+            <p><strong>22</strong> And Jehovah said unto Moses, Thus thou shalt say unto the children of Israel, Ye yourselves have seen that I have talked with you from heaven.</p>
+            <p><strong>23</strong> Ye shall not make other gods with me; gods of silver, or gods of gold, ye shall not make unto you.</p>
+            <p><strong>24</strong> An altar of earth thou shalt make unto me, and shalt sacrifice thereon thy burnt-offerings, and thy peace-offerings, thy sheep, and thine oxen: in every place where I record my name I will come unto thee and I will bless thee.</p>
+            <p><strong>25</strong> And if thou make me an altar of stone, thou shalt not build it of hewn stones; for if thou lift up thy tool upon it, thou hast polluted it.</p>
+            <p><strong>26</strong> Neither shalt thou go up by steps unto mine altar, that thy nakedness be not uncovered thereon.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God himself speaks all these words, beginning with grace: he is Yahweh who brought Israel out of Egypt, out of the house of bondage. On that foundation he gives the ten commandments. The first four govern love for God: have no other gods before him, make no idols, do not take his name in vain, and remember the Sabbath day to keep it holy. The remaining six govern love for neighbor: honor father and mother, do not murder, do not commit adultery, do not steal, do not give false testimony, and do not covet. These words reveal God's character and the shape of a life set apart for him. When the people perceive the thunder, lightning, trumpet, and smoking mountain, they tremble and stand far off, begging Moses to speak with them himself so that God will not speak directly, lest they die. Moses reassures them that God has come to test them and to put his fear before them so they will not sin. The people stay at a distance while Moses draws near to the thick darkness where God is, and God gives instructions about altars—simple, unadorned places of worship where he will record his name, come to his people, and bless them.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who redeemed Israel from slavery and now speaks the ten commandments, revealing his holy character and the way of life for his covenant people.</li>
+          <li><strong>Moses</strong> — The mediator the trembling people beg to stand between them and God, who draws near to the thick darkness where God is.</li>
+          <li><strong>The children of Israel</strong> — The people who hear God's voice from the mountain, tremble in fear, and ask that Moses speak to them instead of God himself.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Exodus 20:3 (WEB)</p>
+          <p class="verse__text">“You shall have no other gods before me.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's commands rest on his prior grace; he saves first, then calls his people to obey.</li>
+          <li>The law reveals God's character and shows us what wholehearted love for God and neighbor looks like.</li>
+          <li>The first table teaches devotion to God; the second, justice and love toward people.</li>
+          <li>The terror at Sinai exposes our need for a mediator between sinners and a holy God.</li>
+          <li>The law shows our sin and points us to Christ, who alone kept it perfectly and fulfills it for us.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-20">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-20">
+            <ul class="lesson-list">
+            <li><strong>Grace grounds the law.</strong> The commands open with redemption: “I am Yahweh your God, who brought you out of the land of Egypt” (Exodus 20:2, WEB). God's people obey because they have been delivered.</li>
+            <li><strong>God alone deserves our worship.</strong> “You shall have no other gods before me” (Exodus 20:3, WEB). Every other command flows from this exclusive devotion to the one true God.</li>
+            <li><strong>Love for God shapes love for neighbor.</strong> From honoring parents to not coveting, the law guards human dignity—“You shall not murder” (Exodus 20:13, WEB). Right worship produces righteous living.</li>
+            <li><strong>We need a mediator.</strong> Terrified, the people beg, “Speak with us yourself… but don’t let God speak with us, lest we die” (Exodus 20:19, WEB). Sinners cannot stand before God's holiness without one to stand between.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-20">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-20">
+            <ol class="study-questions">
+            <li>Why does God preface the commandments by reminding Israel that he rescued them from Egypt?</li>
+            <li>How do the first four commandments differ in focus from the last six?</li>
+            <li>Which commandment do you find most searching, and why?</li>
+            <li>What does the people's fear and request for Moses to mediate reveal about their relationship with God?</li>
+            <li>Jesus summed up the law as loving God and neighbor (Matthew 22:37-40); where is God inviting you to grow in that love?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-20">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-20">
+            <ol class="study-questions">
+            <li>God begins with grace, naming himself as the One who brought Israel “out of the house of bondage” (20:2). The commandments are not a ladder to earn rescue but the grateful response of an already-redeemed people. Obedience flows from salvation, never the reverse.</li>
+            <li>The first four commandments concern our relationship with God—worship, idols, his name, his day—while the last six concern relationships with people—family, life, marriage, property, truth, and desire (20:3-17). Loving God rightly leads to loving people rightly.</li>
+            <li>This invites honest reflection; the tenth, against coveting, is often felt most keenly because it reaches the heart's desires, not just outward acts. Let members name where the law exposes them, and point gently to grace rather than mere effort.</li>
+            <li>The people are so terrified they beg Moses to speak for them, fearing they will die if God speaks directly (20:18-19). Their dread reveals the gulf sin creates between them and God's holiness, and their need for a mediator—ultimately fulfilled in Christ.</li>
+            <li>This is a personal-application question. Jesus distills the law into love for God and neighbor (Matthew 22:37-40). Invite members to name one relationship or area where love is lacking, and to depend on Christ, who both fulfilled the law and pours his love into us.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="exodus-19.html">← Exodus 19</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="exodus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="exodus-21.html">Exodus 21 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

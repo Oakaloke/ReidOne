@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 21: Lifted Up to Live — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 21: fiery serpents judge Israel, God heals through a bronze serpent on a pole, and Israel defeats Sihon and Og." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 21
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 21</span>
+        <h1>Numbers 21: Lifted Up to Live</h1>
+        <p class="lead">After fiery serpents judge the grumbling people, God provides healing through a bronze serpent on a pole, and Israel defeats Sihon and Og.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-21">
+            <span>Scripture — Numbers Chapter 21</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-21">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-21-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-21-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-21-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-21-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 21 (WEB)</p>
+            <p><strong>1</strong> The Canaanite, the king of Arad, who lived in the South, heard that Israel came by the way of Atharim. He fought against Israel, and took some of them captive.</p>
+            <p><strong>2</strong> Israel vowed a vow to Yahweh, and said, “If you will indeed deliver this people into my hand, then I will utterly destroy their cities.”</p>
+            <p><strong>3</strong> Yahweh listened to the voice of Israel, and delivered up the Canaanites; and they utterly destroyed them and their cities. The name of the place was called Hormah.</p>
+            <p><strong>4</strong> They traveled from Mount Hor by the way to the Red Sea, to go around the land of Edom The soul of the people was very discouraged because of the journey.</p>
+            <p><strong>5</strong> The people spoke against God, and against Moses, “Why have you brought us up out of Egypt to die in the wilderness? For there is no bread, and there is no water; and our soul loathes this light bread.”</p>
+            <p><strong>6</strong> Yahweh sent fiery serpents among the people, and they bit the people. Many people of Israel died.</p>
+            <p><strong>7</strong> The people came to Moses, and said, “We have sinned, because we have spoken against Yahweh, and against you. Pray to Yahweh, that he take away the serpents from us.” Moses prayed for the people.</p>
+            <p><strong>8</strong> Yahweh said to Moses, “Make a fiery serpent, and set it on a pole. It shall happen, that everyone who is bitten, when he sees it, shall live.”</p>
+            <p><strong>9</strong> Moses made a serpent of brass, and set it on the pole. If a serpent had bitten any man, when he looked at the serpent of brass, he lived.</p>
+            <p><strong>10</strong> The children of Israel traveled, and encamped in Oboth.</p>
+            <p><strong>11</strong> They traveled from Oboth, and encamped at Iyeabarim, in the wilderness which is before Moab, toward the sunrise.</p>
+            <p><strong>12</strong> From there they traveled, and encamped in the valley of Zered.</p>
+            <p><strong>13</strong> From there they traveled, and encamped on the other side of the Arnon, which is in the wilderness, that comes out of the border of the Amorites: for the Arnon is the border of Moab, between Moab and the Amorites.</p>
+            <p><strong>14</strong> Therefore it is said in the book of the Wars of Yahweh, “Vaheb in Suphah, the valleys of the Arnon,</p>
+            <p><strong>15</strong> the slope of the valleys that incline toward the dwelling of Ar, leans on the border of Moab.”</p>
+            <p><strong>16</strong> From there they traveled to Beer; that is the well of which Yahweh said to Moses, “Gather the people together, and I will give them water.”</p>
+            <p><strong>17</strong> Then Israel sang this song: “Spring up, well! Sing to it,</p>
+            <p><strong>18</strong> the well, which the princes dug, which the nobles of the people dug, with the scepter, and with their poles.” From the wilderness they traveled to Mattanah;</p>
+            <p><strong>19</strong> and from Mattanah to Nahaliel; and from Nahaliel to Bamoth;</p>
+            <p><strong>20</strong> and from Bamoth to the valley that is in the field of Moab, to the top of Pisgah, which looks down on the desert.</p>
+            <p><strong>21</strong> Israel sent messengers to Sihon king of the Amorites, saying,</p>
+            <p><strong>22</strong> “Let me pass through your land. We will not turn aside into field, or into vineyard. We will not drink of the water of the wells. We will go by the king’s highway, until we have passed your border.”</p>
+            <p><strong>23</strong> Sihon would not allow Israel to pass through his border, but Sihon gathered all his people together, and went out against Israel into the wilderness, and came to Jahaz. He fought against Israel.</p>
+            <p><strong>24</strong> Israel struck him with the edge of the sword, and possessed his land from the Arnon to the Jabbok, even to the children of Ammon; for the border of the children of Ammon was strong.</p>
+            <p><strong>25</strong> Israel took all these cities. Israel lived in all the cities of the Amorites, in Heshbon, and in all its towns.</p>
+            <p><strong>26</strong> For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even to the Arnon.</p>
+            <p><strong>27</strong> Therefore those who speak in proverbs say, “Come to Heshbon. Let the city of Sihon be built and established;</p>
+            <p><strong>28</strong> for a fire has gone out of Heshbon, a flame from the city of Sihon. It has devoured Ar of Moab, The lords of the high places of the Arnon.</p>
+            <p><strong>29</strong> Woe to you, Moab! You are undone, people of Chemosh! He has given his sons as fugitives, and his daughters into captivity, to Sihon king of the Amorites.</p>
+            <p><strong>30</strong> We have shot at them. Heshbon has perished even to Dibon. We have laid waste even to Nophah, Which reaches to Medeba.”</p>
+            <p><strong>31</strong> Thus Israel lived in the land of the Amorites.</p>
+            <p><strong>32</strong> Moses sent to spy out Jazer. They took its towns, and drove out the Amorites who were there.</p>
+            <p><strong>33</strong> They turned and went up by the way of Bashan. Og the king of Bashan went out against them, he and all his people, to battle at Edrei.</p>
+            <p><strong>34</strong> Yahweh said to Moses, “Don’t fear him, for I have delivered him into your hand, with all his people, and his land. You shall do to him as you did to Sihon king of the Amorites, who lived at Heshbon.”</p>
+            <p><strong>35</strong> So they struck him, with his sons and all his people, until there were no survivors; and they possessed his land.</p>
+            </div>
+            <div class="scripture-text" id="web-21-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 21 (KJV)</p>
+            <p><strong>1</strong> And when king Arad the Canaanite, which dwelt in the south, heard tell that Israel came by the way of the spies; then he fought against Israel, and took some of them prisoners.</p>
+            <p><strong>2</strong> And Israel vowed a vow unto the Lord, and said, If thou wilt indeed deliver this people into my hand, then I will utterly destroy their cities.</p>
+            <p><strong>3</strong> And the Lord hearkened to the voice of Israel, and delivered up the Canaanites; and they utterly destroyed them and their cities: and he called the name of the place Hormah.</p>
+            <p><strong>4</strong> And they journeyed from mount Hor by the way of the Red sea, to compass the land of Edom: and the soul of the people was much discouraged because of the way.</p>
+            <p><strong>5</strong> And the people spake against God, and against Moses, Wherefore have ye brought us up out of Egypt to die in the wilderness? for there is no bread, neither is there any water; and our soul loatheth this light bread.</p>
+            <p><strong>6</strong> And the Lord sent fiery serpents among the people, and they bit the people; and much people of Israel died.</p>
+            <p><strong>7</strong> Therefore the people came to Moses, and said, We have sinned, for we have spoken against the Lord, and against thee; pray unto the Lord, that he take away the serpents from us. And Moses prayed for the people.</p>
+            <p><strong>8</strong> And the Lord said unto Moses, Make thee a fiery serpent, and set it upon a pole: and it shall come to pass, that every one that is bitten, when he looketh upon it, shall live.</p>
+            <p><strong>9</strong> And Moses made a serpent of brass, and put it upon a pole, and it came to pass, that if a serpent had bitten any man, when he beheld the serpent of brass, he lived.</p>
+            <p><strong>10</strong> And the children of Israel set forward, and pitched in Oboth.</p>
+            <p><strong>11</strong> And they journeyed from Oboth, and pitched at Ije–abarim, in the wilderness which is before Moab, toward the sunrising.</p>
+            <p><strong>12</strong> From thence they removed, and pitched in the valley of Zared.</p>
+            <p><strong>13</strong> From thence they removed, and pitched on the other side of Arnon, which is in the wilderness that cometh out of the coasts of the Amorites: for Arnon is the border of Moab, between Moab and the Amorites.</p>
+            <p><strong>14</strong> Wherefore it is said in the book of the wars of the Lord, What he did in the Red sea, and in the brooks of Arnon,</p>
+            <p><strong>15</strong> And at the stream of the brooks that goeth down to the dwelling of Ar, and lieth upon the border of Moab.</p>
+            <p><strong>16</strong> And from thence they went to Beer: that is the well whereof the Lord spake unto Moses, Gather the people together, and I will give them water.</p>
+            <p><strong>17</strong> Then Israel sang this song, Spring up, O well; sing ye unto it:</p>
+            <p><strong>18</strong> The princes digged the well, the nobles of the people digged it, by the direction of the lawgiver, with their staves. And from the wilderness they went to Mattanah:</p>
+            <p><strong>19</strong> And from Mattanah to Nahaliel: and from Nahaliel to Bamoth:</p>
+            <p><strong>20</strong> And from Bamoth in the valley, that is in the country of Moab, to the top of Pisgah, which looketh toward Jeshimon.</p>
+            <p><strong>21</strong> And Israel sent messengers unto Sihon king of the Amorites, saying,</p>
+            <p><strong>22</strong> Let me pass through thy land: we will not turn into the fields, or into the vineyards; we will not drink of the waters of the well: but we will go along by the king’s high way, until we be past thy borders.</p>
+            <p><strong>23</strong> And Sihon would not suffer Israel to pass through his border: but Sihon gathered all his people together, and went out against Israel into the wilderness: and he came to Jahaz, and fought against Israel.</p>
+            <p><strong>24</strong> And Israel smote him with the edge of the sword, and possessed his land from Arnon unto Jabbok, even unto the children of Ammon: for the border of the children of Ammon was strong.</p>
+            <p><strong>25</strong> And Israel took all these cities: and Israel dwelt in all the cities of the Amorites, in Heshbon, and in all the villages thereof.</p>
+            <p><strong>26</strong> For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even unto Arnon.</p>
+            <p><strong>27</strong> Wherefore they that speak in proverbs say, Come into Heshbon, let the city of Sihon be built and prepared:</p>
+            <p><strong>28</strong> For there is a fire gone out of Heshbon, a flame from the city of Sihon: it hath consumed Ar of Moab, and the lords of the high places of Arnon.</p>
+            <p><strong>29</strong> Woe to thee, Moab! thou art undone, O people of Chemosh: he hath given his sons that escaped, and his daughters, into captivity unto Sihon king of the Amorites.</p>
+            <p><strong>30</strong> We have shot at them; Heshbon is perished even unto Dibon, and we have laid them waste even unto Nophah, which reacheth unto Medeba.</p>
+            <p><strong>31</strong> Thus Israel dwelt in the land of the Amorites.</p>
+            <p><strong>32</strong> And Moses sent to spy out Jaazer, and they took the villages thereof, and drove out the Amorites that were there.</p>
+            <p><strong>33</strong> And they turned and went up by the way of Bashan: and Og the king of Bashan went out against them, he, and all his people, to the battle at Edrei.</p>
+            <p><strong>34</strong> And the Lord said unto Moses, Fear him not: for I have delivered him into thy hand, and all his people, and his land; and thou shalt do to him as thou didst unto Sihon king of the Amorites, which dwelt at Heshbon.</p>
+            <p><strong>35</strong> So they smote him, and his sons, and all his people, until there was none left him alive: and they possessed his land.</p>
+            </div>
+            <div class="scripture-text" id="web-21-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 21 (ASV)</p>
+            <p><strong>1</strong> And the Canaanite, the king of Arad, who dwelt in the South, heard tell that Israel came by the way of Atharim; and he fought against Israel, and took some of them captive.</p>
+            <p><strong>2</strong> And Israel vowed a vow unto Jehovah, and said, If thou wilt indeed deliver this people into my hand, then I will utterly destroy their cities.</p>
+            <p><strong>3</strong> And Jehovah hearkened to the voice of Israel, and delivered up the Canaanites; and they utterly destroyed them and their cities: and the name of the place was called Hormah.</p>
+            <p><strong>4</strong> And they journeyed from mount Hor by the way to the Red Sea, to compass the land of Edom: and the soul of the people was much discouraged because of the way.</p>
+            <p><strong>5</strong> And the people spake against God, and against Moses, Wherefore have ye brought us up out of Egypt to die in the wilderness? for there is no bread, and there is no water; and our soul loatheth this light bread.</p>
+            <p><strong>6</strong> And Jehovah sent fiery serpents among the people, and they bit the people; and much people of Israel died.</p>
+            <p><strong>7</strong> And the people came to Moses, and said, We have sinned, because we have spoken against Jehovah, and against thee; pray unto Jehovah, that he take away the serpents from us. And Moses prayed for the people.</p>
+            <p><strong>8</strong> And Jehovah said unto Moses, Make thee a fiery serpent, and set it upon a standard: and it shall come to pass, that every one that is bitten, when he seeth it, shall live.</p>
+            <p><strong>9</strong> And Moses made a serpent of brass, and set it upon the standard: and it came to pass, that if a serpent had bitten any man, when he looked unto the serpent of brass, he lived.</p>
+            <p><strong>10</strong> And the children of Israel journeyed, and encamped in Oboth.</p>
+            <p><strong>11</strong> And they journeyed from Oboth, and encamped at Iye-abarim, in the wilderness which is before Moab, toward the sunrising.</p>
+            <p><strong>12</strong> From thence they journeyed, and encamped in the valley of Zered.</p>
+            <p><strong>13</strong> From thence they journeyed, and encamped on the other side of the Arnon, which is in the wilderness, that cometh out of the border of the Amorites: for the Arnon is the border of Moab, between Moab and the Amorites.</p>
+            <p><strong>14</strong> Wherefore it is said in the book of the Wars of Jehovah, Vaheb in Suphah, And the valleys of the Arnon,</p>
+            <p><strong>15</strong> And the slope of the valleys That inclineth toward the dwelling of Ar, And leaneth upon the border of Moab.</p>
+            <p><strong>16</strong> And from thence they journeyed to Beer: that is the well whereof Jehovah said unto Moses, Gather the people together, and I will give them water.</p>
+            <p><strong>17</strong> Then sang Israel this song: Spring up, O well; sing ye unto it:</p>
+            <p><strong>18</strong> The well, which the princes digged, Which the nobles of the people delved, With the sceptre, and with their staves. And from the wildernessthey journeyedto Mattanah;</p>
+            <p><strong>19</strong> and from Mattanah to Nahaliel; and from Nahaliel to Bamoth;</p>
+            <p><strong>20</strong> and from Bamoth to the valley that is in the field of Moab, to the top of Pisgah, which looketh down upon the desert.</p>
+            <p><strong>21</strong> And Israel sent messengers unto Sihon king of the Amorites, saying,</p>
+            <p><strong>22</strong> Let me pass through thy land: we will not turn aside into field, or into vineyard; we will not drink of the water of the wells: we will go by the king’s highway, until we have passed thy border.</p>
+            <p><strong>23</strong> And Sihon would not suffer Israel to pass through his border: but Sihon gathered all his people together, and went out against Israel into the wilderness, and came to Jahaz; and he fought against Israel.</p>
+            <p><strong>24</strong> And Israel smote him with the edge of the sword, and possessed his land from the Arnon unto the Jabbok, even unto the children of Ammon; for the border of the children of Ammon was strong.</p>
+            <p><strong>25</strong> And Israel took all these cities: and Israel dwelt in all the cities of the Amorites, in Heshbon, and in all the towns thereof.</p>
+            <p><strong>26</strong> For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even unto the Arnon.</p>
+            <p><strong>27</strong> Wherefore they that speak in proverbs say, Come ye to Heshbon; Let the city of Sihon be built and established:</p>
+            <p><strong>28</strong> For a fire is gone out of Heshbon, A flame from the city of Sihon: It hath devoured Ar of Moab, The lords of the high places of the Arnon.</p>
+            <p><strong>29</strong> Woe to thee, Moab! Thou art undone, O people of Chemosh: He hath given his sons as fugitives, And his daughters into captivity, Unto Sihon king of the Amorites.</p>
+            <p><strong>30</strong> We have shot at them; Heshbon is perished even unto Dibon, And we have laid waste even unto Nophah, Whichreacheth unto Medeba.</p>
+            <p><strong>31</strong> Thus Israel dwelt in the land of the Amorites.</p>
+            <p><strong>32</strong> And Moses sent to spy out Jazer; and they took the towns thereof, and drove out the Amorites that were there.</p>
+            <p><strong>33</strong> And they turned and went up by the way of Bashan: and Og the king of Bashan went out against them, he and all his people, to battle at Edrei.</p>
+            <p><strong>34</strong> And Jehovah said unto Moses, Fear him not: for I have delivered him into thy hand, and all his people, and his land; and thou shalt do to him as thou didst unto Sihon king of the Amorites, who dwelt at Heshbon.</p>
+            <p><strong>35</strong> So they smote him, and his sons and all his people, until there was none left him remaining: and they possessed his land.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Israel defeats the Canaanite king of Arad after vowing to devote his cities to destruction. But as they journey around Edom, the people grow impatient and speak against God and Moses, despising the manna as worthless bread. In judgment Yahweh sends fiery serpents whose bites kill many, and the people confess their sin and beg Moses to pray. God's remedy is striking: Moses is to make a fiery serpent and set it on a pole, and everyone who is bitten will live by looking at it. Moses makes a bronze serpent, lifts it up, and all who look in faith are healed. Israel then journeys on, singing at the well God provides, and comes to the territory of the Amorites. When King Sihon refuses passage and attacks, Israel strikes him down and takes his land from the Arnon to the Jabbok, occupying Heshbon and its towns. Turning toward Bashan, they meet Og the giant king, but God tells Moses not to fear, for he has handed Og over; Israel defeats him and his people and possesses their land as well. The chapter moves from grumbling and judgment to a picture of salvation by looking, and on to victory as God gives Israel the lands east of the Jordan.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The people of Israel</strong> — The congregation who grow impatient and speak against God and Moses, are judged by fiery serpents, and are healed by looking at the bronze serpent.</li>
+          <li><strong>Moses</strong> — The leader who prays for the people, makes the bronze serpent at God's command and lifts it on a pole, and leads Israel to victory over Sihon and Og.</li>
+          <li><strong>Sihon king of the Amorites</strong> — The king who refuses Israel passage and attacks, and is defeated, so that Israel possesses his land from the Arnon to the Jabbok.</li>
+          <li><strong>Og king of Bashan</strong> — The powerful king whom Israel, assured by God not to fear, strikes down with all his people to possess his land.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 21:9 (WEB)</p>
+          <p class="verse__text">Moses made a serpent of brass, and set it on the pole. If a serpent had bitten any man, when he looked at the serpent of brass, he lived.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Despising God's provision is a sin that brings real consequences.</li>
+          <li>God's remedy for our deadly condition is to look in faith to what he has provided.</li>
+          <li>Salvation comes not by our effort but by looking away from ourselves to God's appointed cure.</li>
+          <li>The lifted-up serpent points forward to Christ lifted up for our salvation.</li>
+          <li>When God hands the enemy over, his people need not fear the giants before them.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-21">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-21">
+            <ul class="lesson-list">
+            <li><strong>Ingratitude despises God's gifts.</strong> The people say, “our soul loathes this light bread” (Numbers 21:5, WEB); grumbling against God's provision treats his daily mercies with contempt.</li>
+            <li><strong>God provides a way to live.</strong> “Everyone who is bitten, when he sees it, shall live” (Numbers 21:8, WEB); the remedy is sheer grace, healing offered to all who will simply look.</li>
+            <li><strong>Salvation comes by looking, not striving.</strong> “When he looked at the serpent of brass, he lived” (Numbers 21:9, WEB); the dying are healed not by works but by turning their gaze to God's appointed cure.</li>
+            <li><strong>The bronze serpent foreshadows Christ.</strong> Jesus said, “As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up” (John 3:14, WEB); the lifted serpent points to the cross.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-21">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-21">
+            <ol class="study-questions">
+            <li>What is the nature of the people's complaint, and why is it so serious?</li>
+            <li>Why does God provide healing through a serpent lifted on a pole rather than simply removing the serpents?</li>
+            <li>What does it mean that the bitten were healed simply by looking at the bronze serpent?</li>
+            <li>How does Jesus connect the bronze serpent to himself in John 3:14-15?</li>
+            <li>Where do you need to stop striving and simply look in faith to what God has provided in Christ?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-21">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-21">
+            <ol class="study-questions">
+            <li>The people speak against God and Moses and despise the manna as worthless 'light bread' (21:5). Their complaint is not merely about food but a contempt for God's faithful provision, a recurring sin that brings judgment in the form of fiery serpents.</li>
+            <li>God leaves the serpents but provides a remedy that requires faith: a serpent lifted up to be looked at (21:8). The cure calls the people to trust and act on God's word, turning their eyes to his provision rather than removing the consequence outright.</li>
+            <li>The dying were healed not by anything they did but by looking in faith at the lifted serpent (21:9). It is a vivid picture of salvation by grace through faith, received by turning our gaze to God's appointed remedy rather than to ourselves.</li>
+            <li>Jesus says that just as Moses lifted up the serpent, so the Son of Man must be lifted up, that whoever believes in him may have eternal life (John 3:14-15). The bronze serpent becomes a direct foreshadowing of Christ lifted up on the cross for our healing.</li>
+            <li>This is a personal-application question. Invite members to name where they are striving to save or fix themselves instead of trusting Christ. As leader, gently turn eyes to the One lifted up, encouraging a simple look of faith rather than self-effort.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-20.html">← Numbers 20</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-22.html">Numbers 22 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Deuteronomy 15: The Year of Release — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Deuteronomy 15: the sabbatical year of release, freeing Hebrew servants, generosity to the poor, and dedicating the firstborn to the Lord." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-deuteronomy-progress" data-study-total="34">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Deuteronomy, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="deuteronomy.html">← All Chapters</a>
+        <span class="study-meta">The Book of Deuteronomy · Chapter 15</span>
+        <h1>Deuteronomy 15: The Year of Release</h1>
+        <p class="lead">Every seventh year debts are cancelled and servants set free, and Israel is called to an open hand and an ungrudging heart toward the poor.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — Deuteronomy Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Deuteronomy 15 (WEB)</p>
+            <p><strong>1</strong> At the end of every seven years, you shall cancel debts.</p>
+            <p><strong>2</strong> This is the way it shall be done: every creditor shall release that which he has lent to his neighbor. He shall not require payment from his neighbor and his brother; because Yahweh’s release has been proclaimed.</p>
+            <p><strong>3</strong> Of a foreigner you may require it; but whatever of yours is with your brother, your hand shall release.</p>
+            <p><strong>4</strong> However there shall be no poor with you (for Yahweh will surely bless you in the land which Yahweh your God gives you for an inheritance to possess it)</p>
+            <p><strong>5</strong> if only you diligently listen to Yahweh your God’s voice, to observe to do all this commandment which I command you this day.</p>
+            <p><strong>6</strong> For Yahweh your God will bless you, as he promised you. You will lend to many nations, but you will not borrow. You will rule over many nations, but they will not rule over you.</p>
+            <p><strong>7</strong> If a poor man, one of your brothers, is with you within any of your gates in your land which Yahweh your God gives you, you shall not harden your heart, nor shut your hand from your poor brother;</p>
+            <p><strong>8</strong> but you shall surely open your hand to him, and shall surely lend him sufficient for his need, which he lacks.</p>
+            <p><strong>9</strong> Beware that there not be a base thought in your heart, saying, “The seventh year, the year of release, is at hand”; and your eye be evil against your poor brother, and you give him nothing; and he cry to Yahweh against you, and it be sin to you.</p>
+            <p><strong>10</strong> You shall surely give, and your heart shall not be grieved when you give to him; because that for this thing Yahweh your God will bless you in all your work, and in all that you put your hand to.</p>
+            <p><strong>11</strong> For the poor will never cease out of the land. Therefore I command you to surely open your hand to your brother, to your needy, and to your poor, in your land.</p>
+            <p><strong>12</strong> If your brother, a Hebrew man, or a Hebrew woman, is sold to you, and serves you six years; then in the seventh year you shall let him go free from you.</p>
+            <p><strong>13</strong> When you let him go free from you, you shall not let him go empty.</p>
+            <p><strong>14</strong> You shall furnish him liberally out of your flock, out of your threshing floor, and out of your wine press. As Yahweh your God has blessed you, you shall give to him.</p>
+            <p><strong>15</strong> You shall remember that you were a slave in the land of Egypt, and Yahweh your God redeemed you. Therefore I command you this thing today.</p>
+            <p><strong>16</strong> It shall be, if he tells you, “I will not go out from you,” because he loves you and your house, because he is well with you;</p>
+            <p><strong>17</strong> then you shall take an awl, and thrust it through his ear to the door, and he shall be your servant forever. Also to your female servant you shall do likewise.</p>
+            <p><strong>18</strong> It shall not seem hard to you, when you let him go free from you; for he has been double value of a hired hand as he served you six years. Yahweh your God will bless you in all that you do.</p>
+            <p><strong>19</strong> You shall dedicate all the firstborn males that are born of your herd and of your flock to Yahweh your God. You shall do no work with the firstborn of your herd, nor shear the firstborn of your flock.</p>
+            <p><strong>20</strong> You shall eat it before Yahweh your God year by year in the place which Yahweh shall choose, you and your household.</p>
+            <p><strong>21</strong> If it has any defect, is lame or blind, or has any defect whatever, you shall not sacrifice it to Yahweh your God.</p>
+            <p><strong>22</strong> You shall eat it within your gates. The unclean and the clean shall eat it alike, as the gazelle, and as the deer.</p>
+            <p><strong>23</strong> Only you shall not eat its blood. You shall pour it out on the ground like water.</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Deuteronomy 15 (KJV)</p>
+            <p><strong>1</strong> At the end of every seven years thou shalt make a release.</p>
+            <p><strong>2</strong> And this is the manner of the release: Every creditor that lendeth ought unto his neighbour shall release it; he shall not exact it of his neighbour, or of his brother; because it is called the Lord’s release.</p>
+            <p><strong>3</strong> Of a foreigner thou mayest exact it again: but that which is thine with thy brother thine hand shall release;</p>
+            <p><strong>4</strong> Save when there shall be no poor among you; for the Lord shall greatly bless thee in the land which the Lord thy God giveth thee for an inheritance to possess it:</p>
+            <p><strong>5</strong> Only if thou carefully hearken unto the voice of the Lord thy God, to observe to do all these commandments which I command thee this day.</p>
+            <p><strong>6</strong> For the Lord thy God blesseth thee, as he promised thee: and thou shalt lend unto many nations, but thou shalt not borrow; and thou shalt reign over many nations, but they shall not reign over thee.</p>
+            <p><strong>7</strong> If there be among you a poor man of one of thy brethren within any of thy gates in thy land which the Lord thy God giveth thee, thou shalt not harden thine heart, nor shut thine hand from thy poor brother:</p>
+            <p><strong>8</strong> But thou shalt open thine hand wide unto him, and shalt surely lend him sufficient for his need, in that which he wanteth.</p>
+            <p><strong>9</strong> Beware that there be not a thought in thy wicked heart, saying, The seventh year, the year of release, is at hand; and thine eye be evil against thy poor brother, and thou givest him nought; and he cry unto the Lord against thee, and it be sin unto thee.</p>
+            <p><strong>10</strong> Thou shalt surely give him, and thine heart shall not be grieved when thou givest unto him: because that for this thing the Lord thy God shall bless thee in all thy works, and in all that thou puttest thine hand unto.</p>
+            <p><strong>11</strong> For the poor shall never cease out of the land: therefore I command thee, saying, Thou shalt open thine hand wide unto thy brother, to thy poor, and to thy needy, in thy land.</p>
+            <p><strong>12</strong> And if thy brother, an Hebrew man, or an Hebrew woman, be sold unto thee, and serve thee six years; then in the seventh year thou shalt let him go free from thee.</p>
+            <p><strong>13</strong> And when thou sendest him out free from thee, thou shalt not let him go away empty:</p>
+            <p><strong>14</strong> Thou shalt furnish him liberally out of thy flock, and out of thy floor, and out of thy winepress: of that wherewith the Lord thy God hath blessed thee thou shalt give unto him.</p>
+            <p><strong>15</strong> And thou shalt remember that thou wast a bondman in the land of Egypt, and the Lord thy God redeemed thee: therefore I command thee this thing to day.</p>
+            <p><strong>16</strong> And it shall be, if he say unto thee, I will not go away from thee; because he loveth thee and thine house, because he is well with thee;</p>
+            <p><strong>17</strong> Then thou shalt take an aul, and thrust it through his ear unto the door, and he shall be thy servant for ever. And also unto thy maidservant thou shalt do likewise.</p>
+            <p><strong>18</strong> It shall not seem hard unto thee, when thou sendest him away free from thee; for he hath been worth a double hired servant to thee, in serving thee six years: and the Lord thy God shall bless thee in all that thou doest.</p>
+            <p><strong>19</strong> All the firstling males that come of thy herd and of thy flock thou shalt sanctify unto the Lord thy God: thou shalt do no work with the firstling of thy bullock, nor shear the firstling of thy sheep.</p>
+            <p><strong>20</strong> Thou shalt eat it before the Lord thy God year by year in the place which the Lord shall choose, thou and thy household.</p>
+            <p><strong>21</strong> And if there be any blemish therein, as if it be lame, or blind, or have any ill blemish, thou shalt not sacrifice it unto the Lord thy God.</p>
+            <p><strong>22</strong> Thou shalt eat it within thy gates: the unclean and the clean person shall eat it alike, as the roebuck, and as the hart.</p>
+            <p><strong>23</strong> Only thou shalt not eat the blood thereof; thou shalt pour it upon the ground as water.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Deuteronomy 15 (ASV)</p>
+            <p><strong>1</strong> At the end of every seven years thou shalt make a release.</p>
+            <p><strong>2</strong> And this is the manner of the release: every creditor shall release that which he hath lent unto his neighbor; he shall not exact it of his neighbor and his brother; because Jehovah’s release hath been proclaimed.</p>
+            <p><strong>3</strong> Of a foreigner thou mayest exact it: but whatsoever of thine is with thy brother thy hand shall release.</p>
+            <p><strong>4</strong> Howbeit there shall be no poor with thee (for Jehovah will surely bless thee in the land which Jehovah thy God giveth thee for an inheritance to possess it),</p>
+            <p><strong>5</strong> if only thou diligently hearken unto the voice of Jehovah thy God, to observe to do all this commandment which I command thee this day.</p>
+            <p><strong>6</strong> For Jehovah thy God will bless thee, as he promised thee: and thou shalt lend unto many nations, but thou shalt not borrow; and thou shalt rule over many nations, but they shall not rule over thee.</p>
+            <p><strong>7</strong> If there be with thee a poor man, one of thy brethren, within any of thy gates in thy land which Jehovah thy God giveth thee, thou shalt not harden thy heart, nor shut thy hand from thy poor brother;</p>
+            <p><strong>8</strong> but thou shalt surely open thy hand unto him, and shalt surely lend him sufficient for his need in that which he wanteth.</p>
+            <p><strong>9</strong> Beware that there be not a base thought in thy heart, saying, The seventh year, the year of release, is at hand; and thine eye be evil against thy poor brother, and thou give him nought; and he cry unto Jehovah against thee, and it be sin unto thee.</p>
+            <p><strong>10</strong> Thou shalt surely give him, and thy heart shall not be grieved when thou givest unto him; because that for this thing Jehovah thy God will bless thee in all thy work, and in all that thou puttest thy hand unto.</p>
+            <p><strong>11</strong> For the poor will never cease out of the land: therefore I command thee, saying, Thou shalt surely open thy hand unto thy brother, to thy needy, and to thy poor, in thy land.</p>
+            <p><strong>12</strong> If thy brother, a Hebrew man, or a Hebrew woman, be sold unto thee, and serve thee six years; then in the seventh year thou shalt let him go free from thee.</p>
+            <p><strong>13</strong> And when thou lettest him go free from thee, thou shalt not let him go empty:</p>
+            <p><strong>14</strong> thou shalt furnish him liberally out of thy flock, and out of thy threshing-floor, and out of thy winepress; as Jehovah thy God hath blessed thee thou shalt give unto him.</p>
+            <p><strong>15</strong> And thou shalt remember that thou wast a bondman in the land of Egypt, and Jehovah thy God redeemed thee: therefore I command thee this thing to-day.</p>
+            <p><strong>16</strong> And it shall be, if he say unto thee, I will not go out from thee; because he loveth thee and thy house, because he is well with thee;</p>
+            <p><strong>17</strong> then thou shalt take an awl, and thrust it through his ear unto the door, and he shall be thy servant for ever. And also unto thy maid-servant thou shalt do likewise.</p>
+            <p><strong>18</strong> It shall not seem hard unto thee, when thou lettest him go free from thee; for to the double of the hire of a hireling hath he served thee six years: and Jehovah thy God will bless thee in all that thou doest.</p>
+            <p><strong>19</strong> All the firstling males that are born of thy herd and of thy flock thou shalt sanctify unto Jehovah thy God: thou shalt do no work with the firstling of thy herd, nor shear the firstling of thy flock.</p>
+            <p><strong>20</strong> Thou shalt eat it before Jehovah thy God year by year in the place which Jehovah shall choose, thou and thy household.</p>
+            <p><strong>21</strong> And if it have any blemish, as if it be lame or blind, any ill blemish whatsoever, thou shalt not sacrifice it unto Jehovah thy God.</p>
+            <p><strong>22</strong> Thou shalt eat it within thy gates: the unclean and the clean shall eat it alike, as the gazelle, and as the hart.</p>
+            <p><strong>23</strong> Only thou shalt not eat the blood thereof; thou shalt pour it out upon the ground as water.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Every seven years Israel is to observe a year of release in which creditors cancel the debts owed by their fellow Israelites. God promises that if his people obey, there need be no poor among them, for he will surely bless the land; yet because the poor will never wholly cease, the command to be generous remains. Moses confronts the calculating heart that might refuse a loan as the seventh year approaches, urging instead an open hand and a heart that gives without grudging. This same compassion governs servitude: a Hebrew servant who has served six years is to be set free in the seventh, and not sent away empty but furnished liberally from the flock, threshing floor, and wine press. The motive is gratitude—Israel was once a slave in Egypt, and the Lord redeemed her. A servant who loves his master may choose to stay permanently, marked by an awl through his ear. Finally, the firstborn males of herd and flock are to be dedicated to the Lord and eaten in his presence, unless they are blemished. The chapter weaves justice, mercy, and worship together, calling God's people to mirror the generous, redeeming heart of God toward those in need.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The creditor</strong> — The one called to release debts in the seventh year and to lend freely to the poor without a grudging or calculating heart.</li>
+          <li><strong>The poor brother</strong> — The needy Israelite who must never meet a hardened heart or a shut hand, but an open hand sufficient for his need.</li>
+          <li><strong>The Hebrew servant</strong> — One sold into service for six years who is freed in the seventh and sent away liberally supplied, remembering Israel's own redemption from Egypt.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Deuteronomy 15:10 (WEB)</p>
+          <p class="verse__text">You shall surely give, and your heart shall not be grieved when you give to him; because that for this thing Yahweh your God will bless you in all your work, and in all that you put your hand to.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God builds rhythms of release and freedom into the life of his people so debt and bondage never become permanent.</li>
+          <li>True generosity is measured not only by the gift but by the heart—open, ungrudging, and glad.</li>
+          <li>Remembering our own redemption is the deepest motive for showing mercy to others.</li>
+          <li>God promises that giving generously is the path to blessing, not loss.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Mercy is meant to be structural, not occasional.</strong> “At the end of every seven years, you shall cancel debts” (Deuteronomy 15:1, WEB). God writes compassion into the calendar of his people.</li>
+            <li><strong>Open the hand; do not harden the heart.</strong> “You shall not harden your heart, nor shut your hand from your poor brother; but you shall surely open your hand to him” (Deuteronomy 15:7-8, WEB).</li>
+            <li><strong>Give without grudging.</strong> “You shall surely give, and your heart shall not be grieved when you give to him” (Deuteronomy 15:10, WEB). God cares about the spirit of the gift, not only the amount.</li>
+            <li><strong>Redeemed people set others free.</strong> “You shall remember that you were a slave in the land of Egypt, and Yahweh your God redeemed you” (Deuteronomy 15:15, WEB). Grace received becomes grace released.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>What does the year of release teach about how God views debt and the dignity of the poor (15:1-6)?</li>
+            <li>How does Moses expose the calculating heart in verses 9-10, and what is the cure?</li>
+            <li>Why must a freed servant be sent away “liberally” rather than empty (15:13-14)?</li>
+            <li>How does Israel's memory of slavery in Egypt shape her treatment of servants and the poor?</li>
+            <li>Where do you sense a hardened heart or a shut hand in your own life, and what would an open hand look like there?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>The release laws keep debt from becoming a permanent trap and affirm that no Israelite should be ground down forever. God ties the people's prosperity to their obedience and generosity, envisioning a community where, by his blessing, poverty is met rather than entrenched.</li>
+            <li>Moses names the tempting thought—“the seventh year… is at hand” (15:9)—that would withhold a loan to avoid its cancellation. The cure is not better accounting but a transformed heart that gives freely, trusting God's promise of blessing rather than clinging to advantage.</li>
+            <li>Sending a freed servant away empty would leave him to fall back into poverty and bondage. Liberal provision gives him a real start at freedom, treating him as a brother rather than a discarded tool. Generosity completes the act of release.</li>
+            <li>Israel is to remember she herself was a slave whom God redeemed, and to extend the same mercy she received. This memory turns law into gratitude and points forward to the gospel, where those redeemed by Christ are freed to set others free.</li>
+            <li>This is a personal-application question. Invite members to consider, without shame, where calculation or fear keeps their hand closed. As leader, hold out God's promise that the ungrudging giver is blessed, and let that promise loosen tight grips.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="deuteronomy-14.html">← Deuteronomy 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="deuteronomy.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="deuteronomy-16.html">Deuteronomy 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Exodus 16: Bread From Heaven — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Exodus 16: Israel grumbles for food, and God rains manna from the sky each morning, testing whether they will trust and rest in him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-exodus-progress" data-study-total="40">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Exodus, Chapter 16
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="exodus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Exodus · Chapter 16</span>
+        <h1>Exodus 16: Bread From Heaven</h1>
+        <p class="lead">When the people grumble for food in the wilderness, God rains down manna each morning and quail at evening, teaching daily dependence and Sabbath rest.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-16">
+            <span>Scripture — Exodus Chapter 16</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-16">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-16-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-16-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-16-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-16-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Exodus 16 (WEB)</p>
+            <p><strong>1</strong> They took their journey from Elim, and all the congregation of the children of Israel came to the wilderness of Sin, which is between Elim and Sinai, on the fifteenth day of the second month after their departing out of the land of Egypt.</p>
+            <p><strong>2</strong> The whole congregation of the children of Israel murmured against Moses and against Aaron in the wilderness;</p>
+            <p><strong>3</strong> and the children of Israel said to them, “We wish that we had died by the hand of Yahweh in the land of Egypt, when we sat by the meat pots, when we ate our fill of bread, for you have brought us out into this wilderness, to kill this whole assembly with hunger.”</p>
+            <p><strong>4</strong> Then Yahweh said to Moses, “Behold, I will rain bread from the sky for you, and the people shall go out and gather a day’s portion every day, that I may test them, whether they will walk in my law, or not.</p>
+            <p><strong>5</strong> It shall come to pass on the sixth day, that they shall prepare that which they bring in, and it shall be twice as much as they gather daily.”</p>
+            <p><strong>6</strong> Moses and Aaron said to all the children of Israel, “At evening, then you shall know that Yahweh has brought you out from the land of Egypt;</p>
+            <p><strong>7</strong> and in the morning, then you shall see Yahweh’s glory; because he hears your murmurings against Yahweh. Who are we, that you murmur against us?”</p>
+            <p><strong>8</strong> Moses said, “Now Yahweh shall give you meat to eat in the evening, and in the morning bread to satisfy you; because Yahweh hears your murmurings which you murmur against him. And who are we? Your murmurings are not against us, but against Yahweh.”</p>
+            <p><strong>9</strong> Moses said to Aaron, “Tell all the congregation of the children of Israel, ‘Come near before Yahweh, for he has heard your murmurings.’”</p>
+            <p><strong>10</strong> As Aaron spoke to the whole congregation of the children of Israel, they looked toward the wilderness, and behold, Yahweh’s glory appeared in the cloud.</p>
+            <p><strong>11</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>12</strong> “I have heard the murmurings of the children of Israel. Speak to them, saying, ‘At evening you shall eat meat, and in the morning you shall be filled with bread: and you shall know that I am Yahweh your God.’”</p>
+            <p><strong>13</strong> In the evening, quail came up and covered the camp; and in the morning the dew lay around the camp.</p>
+            <p><strong>14</strong> When the dew that lay had gone, behold, on the surface of the wilderness was a small round thing, small as the frost on the ground.</p>
+            <p><strong>15</strong> When the children of Israel saw it, they said one to another, “What is it?” For they didn’t know what it was. Moses said to them, “It is the bread which Yahweh has given you to eat.”</p>
+            <p><strong>16</strong> This is the thing which Yahweh has commanded: “Gather of it everyone according to his eating; an omer a head, according to the number of your persons, you shall take it, every man for those who are in his tent.”</p>
+            <p><strong>17</strong> The children of Israel did so, and gathered some more, some less.</p>
+            <p><strong>18</strong> When they measured it with an omer, he who gathered much had nothing over, and he who gathered little had no lack. They gathered every man according to his eating.</p>
+            <p><strong>19</strong> Moses said to them, “Let no one leave of it until the morning.”</p>
+            <p><strong>20</strong> Notwithstanding they didn’t listen to Moses, but some of them left of it until the morning, and it bred worms, and became foul: and Moses was angry with them.</p>
+            <p><strong>21</strong> They gathered it morning by morning, everyone according to his eating. When the sun grew hot, it melted.</p>
+            <p><strong>22</strong> On the sixth day, they gathered twice as much bread, two omers for each one, and all the rulers of the congregation came and told Moses.</p>
+            <p><strong>23</strong> He said to them, “This is that which Yahweh has spoken, ‘Tomorrow is a solemn rest, a holy Sabbath to Yahweh. Bake that which you want to bake, and boil that which you want to boil; and all that remains over lay up for yourselves to be kept until the morning.’”</p>
+            <p><strong>24</strong> They laid it up until the morning, as Moses asked, and it didn’t become foul, neither was there any worm in it.</p>
+            <p><strong>25</strong> Moses said, “Eat that today, for today is a Sabbath to Yahweh. Today you shall not find it in the field.</p>
+            <p><strong>26</strong> Six days you shall gather it, but on the seventh day is the Sabbath. In it there shall be none.”</p>
+            <p><strong>27</strong> On the seventh day, some of the people went out to gather, and they found none.</p>
+            <p><strong>28</strong> Yahweh said to Moses, “How long do you refuse to keep my commandments and my laws?</p>
+            <p><strong>29</strong> Behold, because Yahweh has given you the Sabbath, therefore he gives you on the sixth day the bread of two days. Everyone stay in his place. Let no one go out of his place on the seventh day.”</p>
+            <p><strong>30</strong> So the people rested on the seventh day.</p>
+            <p><strong>31</strong> The house of Israel called its name Manna, and it was like coriander seed, white; and its taste was like wafers with honey.</p>
+            <p><strong>32</strong> Moses said, “This is the thing which Yahweh has commanded, ‘Let an omer-full of it be kept throughout your generations, that they may see the bread with which I fed you in the wilderness, when I brought you out of the land of Egypt.’”</p>
+            <p><strong>33</strong> Moses said to Aaron, “Take a pot, and put an omer-full of manna in it, and lay it up before Yahweh, to be kept throughout your generations.”</p>
+            <p><strong>34</strong> As Yahweh commanded Moses, so Aaron laid it up before the Testimony, to be kept.</p>
+            <p><strong>35</strong> The children of Israel ate the manna forty years, until they came to an inhabited land. They ate the manna until they came to the borders of the land of Canaan.</p>
+            <p><strong>36</strong> Now an omer is the tenth part of an ephah.</p>
+            </div>
+            <div class="scripture-text" id="web-16-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Exodus 16 (KJV)</p>
+            <p><strong>1</strong> And they took their journey from Elim, and all the congregation of the children of Israel came unto the wilderness of Sin, which is between Elim and Sinai, on the fifteenth day of the second month after their departing out of the land of Egypt.</p>
+            <p><strong>2</strong> And the whole congregation of the children of Israel murmured against Moses and Aaron in the wilderness:</p>
+            <p><strong>3</strong> And the children of Israel said unto them, Would to God we had died by the hand of the Lord in the land of Egypt, when we sat by the flesh pots, and when we did eat bread to the full; for ye have brought us forth into this wilderness, to kill this whole assembly with hunger.</p>
+            <p><strong>4</strong> Then said the Lord unto Moses, Behold, I will rain bread from heaven for you; and the people shall go out and gather a certain rate every day, that I may prove them, whether they will walk in my law, or no.</p>
+            <p><strong>5</strong> And it shall come to pass, that on the sixth day they shall prepare that which they bring in; and it shall be twice as much as they gather daily.</p>
+            <p><strong>6</strong> And Moses and Aaron said unto all the children of Israel, At even, then ye shall know that the Lord hath brought you out from the land of Egypt:</p>
+            <p><strong>7</strong> And in the morning, then ye shall see the glory of the Lord; for that he heareth your murmurings against the Lord: and what are we, that ye murmur against us?</p>
+            <p><strong>8</strong> And Moses said, This shall be, when the Lord shall give you in the evening flesh to eat, and in the morning bread to the full; for that the Lord heareth your murmurings which ye murmur against him: and what are we? your murmurings are not against us, but against the Lord.</p>
+            <p><strong>9</strong> And Moses spake unto Aaron, Say unto all the congregation of the children of Israel, Come near before the Lord: for he hath heard your murmurings.</p>
+            <p><strong>10</strong> And it came to pass, as Aaron spake unto the whole congregation of the children of Israel, that they looked toward the wilderness, and, behold, the glory of the Lord appeared in the cloud.</p>
+            <p><strong>11</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>12</strong> I have heard the murmurings of the children of Israel: speak unto them, saying, At even ye shall eat flesh, and in the morning ye shall be filled with bread; and ye shall know that I am the Lord your God.</p>
+            <p><strong>13</strong> And it came to pass, that at even the quails came up, and covered the camp: and in the morning the dew lay round about the host.</p>
+            <p><strong>14</strong> And when the dew that lay was gone up, behold, upon the face of the wilderness there lay a small round thing, as small as the hoar frost on the ground.</p>
+            <p><strong>15</strong> And when the children of Israel saw it, they said one to another, It is manna: for they wist not what it was. And Moses said unto them, This is the bread which the Lord hath given you to eat.</p>
+            <p><strong>16</strong> This is the thing which the Lord hath commanded, Gather of it every man according to his eating, an omer for every man, according to the number of your persons; take ye every man for them which are in his tents.</p>
+            <p><strong>17</strong> And the children of Israel did so, and gathered, some more, some less.</p>
+            <p><strong>18</strong> And when they did mete it with an omer, he that gathered much had nothing over, and he that gathered little had no lack; they gathered every man according to his eating.</p>
+            <p><strong>19</strong> And Moses said, Let no man leave of it till the morning.</p>
+            <p><strong>20</strong> Notwithstanding they hearkened not unto Moses; but some of them left of it until the morning, and it bred worms, and stank: and Moses was wroth with them.</p>
+            <p><strong>21</strong> And they gathered it every morning, every man according to his eating: and when the sun waxed hot, it melted.</p>
+            <p><strong>22</strong> And it came to pass, that on the sixth day they gathered twice as much bread, two omers for one man: and all the rulers of the congregation came and told Moses.</p>
+            <p><strong>23</strong> And he said unto them, This is that which the Lord hath said, To morrow is the rest of the holy sabbath unto the Lord: bake that which ye will bake to day, and seethe that ye will seethe; and that which remaineth over lay up for you to be kept until the morning.</p>
+            <p><strong>24</strong> And they laid it up till the morning, as Moses bade: and it did not stink, neither was there any worm therein.</p>
+            <p><strong>25</strong> And Moses said, Eat that to day; for to day is a sabbath unto the Lord: to day ye shall not find it in the field.</p>
+            <p><strong>26</strong> Six days ye shall gather it; but on the seventh day, which is the sabbath, in it there shall be none.</p>
+            <p><strong>27</strong> And it came to pass, that there went out some of the people on the seventh day for to gather, and they found none.</p>
+            <p><strong>28</strong> And the Lord said unto Moses, How long refuse ye to keep my commandments and my laws?</p>
+            <p><strong>29</strong> See, for that the Lord hath given you the sabbath, therefore he giveth you on the sixth day the bread of two days; abide ye every man in his place, let no man go out of his place on the seventh day.</p>
+            <p><strong>30</strong> So the people rested on the seventh day.</p>
+            <p><strong>31</strong> And the house of Israel called the name thereof Manna: and it was like coriander seed, white; and the taste of it was like wafers made with honey.</p>
+            <p><strong>32</strong> And Moses said, This is the thing which the Lord commandeth, Fill an omer of it to be kept for your generations; that they may see the bread wherewith I have fed you in the wilderness, when I brought you forth from the land of Egypt.</p>
+            <p><strong>33</strong> And Moses said unto Aaron, Take a pot, and put an omer full of manna therein, and lay it up before the Lord, to be kept for your generations.</p>
+            <p><strong>34</strong> As the Lord commanded Moses, so Aaron laid it up before the Testimony, to be kept.</p>
+            <p><strong>35</strong> And the children of Israel did eat manna forty years, until they came to a land inhabited; they did eat manna, until they came unto the borders of the land of Canaan.</p>
+            <p><strong>36</strong> Now an omer is the tenth part of an ephah.</p>
+            </div>
+            <div class="scripture-text" id="web-16-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Exodus 16 (ASV)</p>
+            <p><strong>1</strong> And they took their journey from Elim, and all the congregation of the children of Israel came unto the wilderness of Sin, which is between Elim and Sinai, on the fifteenth day of the second month after their departing out of the land of Egypt.</p>
+            <p><strong>2</strong> And the whole congregation of the children of Israel murmured against Moses and against Aaron in the wilderness:</p>
+            <p><strong>3</strong> and the children of Israel said unto them, Would that we had died by the hand of Jehovah in the land of Egypt, when we sat by the flesh-pots, when we did eat bread to the full; for ye have brought us forth into this wilderness, to kill this whole assembly with hunger.</p>
+            <p><strong>4</strong> Then said Jehovah unto Moses, Behold, I will rain bread from heaven for you; and the people shall go out and gather a day’s portion every day, that I may prove them, whether they will walk in my law, or not.</p>
+            <p><strong>5</strong> And it shall come to pass on the sixth day, that they shall prepare that which they bring in, and it shall be twice as much as they gather daily.</p>
+            <p><strong>6</strong> And Moses and Aaron said unto all the children of Israel, At even, then ye shall know that Jehovah hath brought you out from the land of Egypt;</p>
+            <p><strong>7</strong> and in the morning, then ye shall see the glory of Jehovah; for that he heareth your murmurings against Jehovah: and what are we, that ye murmur against us?</p>
+            <p><strong>8</strong> And Moses said, This shall be, when Jehovah shall give you in the evening flesh to eat, and in the morning bread to the full; for that Jehovah heareth your murmurings which ye murmur against him: and what are we? your murmurings are not against us, but against Jehovah.</p>
+            <p><strong>9</strong> And Moses said unto Aaron, Say unto all the congregation of the children of Israel, Come near before Jehovah; for he hath heard your murmurings.</p>
+            <p><strong>10</strong> And it came to pass, as Aaron spake unto the whole congregation of the children of Israel, that they looked toward the wilderness, and, behold, the glory of Jehovah appeared in the cloud.</p>
+            <p><strong>11</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>12</strong> I have heard the murmurings of the children of Israel: speak unto them, saying, At even ye shall eat flesh, and in the morning ye shall be filled with bread: and ye shall know that I am Jehovah your God.</p>
+            <p><strong>13</strong> And it came to pass at even, that the quails came up, and covered the camp: and in the morning the dew lay round about the camp.</p>
+            <p><strong>14</strong> And when the dew that lay was gone up, behold, upon the face of the wilderness a small round thing, small as the hoar-frost on the ground.</p>
+            <p><strong>15</strong> And when the children of Israel saw it, they said one to another, What is it? for they knew not what it was. And Moses said unto them, It is the bread which Jehovah hath given you to eat.</p>
+            <p><strong>16</strong> This is the thing which Jehovah hath commanded, Gather ye of it every man according to his eating; an omer a head, according to the number of your persons, shall ye take it, every man for them that are in his tent.</p>
+            <p><strong>17</strong> And the children of Israel did so, and gathered some more, some less.</p>
+            <p><strong>18</strong> And when they measured it with an omer, he that gathered much had nothing over, and he that gathered little had no lack; they gathered every man according to his eating.</p>
+            <p><strong>19</strong> And Moses said unto them, Let no man leave of it till the morning.</p>
+            <p><strong>20</strong> Notwithstanding they hearkened not unto Moses; but some of them left of it until the morning, and it bred worms, and became foul: and Moses was wroth with them.</p>
+            <p><strong>21</strong> And they gathered it morning by morning, every man according to his eating: and when the sun waxed hot, it melted.</p>
+            <p><strong>22</strong> And it came to pass, that on the sixth day they gathered twice as much bread, two omers for each one: and all the rulers of the congregation came and told Moses.</p>
+            <p><strong>23</strong> And he said unto them, This is that which Jehovah hath spoken, To-morrow is a solemn rest, a holy sabbath unto Jehovah: bake that which ye will bake, and boil that which ye will boil; and all that remaineth over lay up for you to be kept until the morning.</p>
+            <p><strong>24</strong> And they laid it up till the morning, as Moses bade: and it did not become foul, neither was there any worm therein.</p>
+            <p><strong>25</strong> And Moses said, Eat that to-day; for to-day is a sabbath unto Jehovah: to-day ye shall not find it in the field.</p>
+            <p><strong>26</strong> Six days ye shall gather it; but on the seventh day is the sabbath, in it there shall be none.</p>
+            <p><strong>27</strong> And it came to pass on the seventh day, that there went out some of the people to gather, and they found none.</p>
+            <p><strong>28</strong> And Jehovah said unto Moses, How long refuse ye to keep my commandments and my laws?</p>
+            <p><strong>29</strong> See, for that Jehovah hath given you the sabbath, therefore he giveth you on the sixth day the bread of two days; abide ye every man in his place, let no man go out of his place on the seventh day.</p>
+            <p><strong>30</strong> So the people rested on the seventh day.</p>
+            <p><strong>31</strong> And the house of Israel called the name thereof Manna: and it was like coriander seed, white; and the taste of it was like wafers made with honey.</p>
+            <p><strong>32</strong> And Moses said, This is the thing which Jehovah hath commanded, Let an omerful of it be kept throughout your generations, that they may see the bread wherewith I fed you in the wilderness, when I brought you forth from the land of Egypt.</p>
+            <p><strong>33</strong> And Moses said unto Aaron, Take a pot, and put an omerful of manna therein, and lay it up before Jehovah, to be kept throughout your generations.</p>
+            <p><strong>34</strong> As Jehovah commanded Moses, so Aaron laid it up before the Testimony, to be kept.</p>
+            <p><strong>35</strong> And the children of Israel did eat the manna forty years, until they came to a land inhabited; they did eat the manna, until they came unto the borders of the land of Canaan.</p>
+            <p><strong>36</strong> Now an omer is the tenth part of an ephah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>A month and a half out of Egypt, the whole congregation murmurs against Moses and Aaron in the wilderness of Sin, wishing they had died in Egypt where they sat by pots of meat and ate their fill of bread. Yahweh responds not with judgment but with provision: he will rain bread from the sky, and the people are to gather a day's portion each day, that he may test whether they will walk in his law. In the evening quail cover the camp, and in the morning a fine, flake-like substance lies on the ground. The people ask, “What is it?”—manna—and Moses tells them it is the bread the LORD has given. Each is to gather only what is needed; those who hoard find it bred worms and stank, while those who gathered much and little alike had just enough. On the sixth day they gather a double portion, for the seventh is a Sabbath of rest, and the manna kept overnight does not spoil. Some go out on the Sabbath and find none, and God rebukes their disobedience. A jar of manna is kept before the Testimony as a memorial, and Israel eats manna for forty years until they reach the borders of Canaan.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Moses</strong> — God's spokesman, who relays the LORD's provision and instructions and bears the people's complaints, reminding them their grumbling is against God.</li>
+          <li><strong>Aaron</strong> — Moses' brother, who speaks to the congregation and stores a jar of manna before the Testimony as a lasting memorial.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who hears the people's murmuring and graciously rains bread from heaven each day, testing and teaching them to depend on him.</li>
+          <li><strong>The children of Israel</strong> — The congregation who grumble for food, receive daily manna, and are tested in whether they will gather, trust, and rest as God commands.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Exodus 16:4 (WEB)</p>
+          <p class="verse__text">Then Yahweh said to Moses, “Behold, I will rain bread from the sky for you, and the people shall go out and gather a day’s portion every day, that I may test them, whether they will walk in my law, or not.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Grumbling against God's servants is ultimately grumbling against God himself.</li>
+          <li>God provides for his people day by day, training them to depend on him rather than themselves.</li>
+          <li>Hoarding what God means us to receive daily breeds corruption; trust receives enough.</li>
+          <li>God builds rhythms of rest into his people's lives, providing for the Sabbath in advance.</li>
+          <li>Daily bread in the wilderness points ahead to Christ, the true bread that came down from heaven.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-16">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-16">
+            <ul class="lesson-list">
+            <li><strong>Our complaints are really aimed at God.</strong> Moses tells the people, “Your murmurings are not against us, but against Yahweh” (Exodus 16:8, WEB). Discontent with our circumstances is discontent with the God who ordains them.</li>
+            <li><strong>God gives daily bread.</strong> “The people shall go out and gather a day’s portion every day” (Exodus 16:4, WEB). He provides enough for today and calls us to trust him for tomorrow.</li>
+            <li><strong>Enough is a gift to be received, not hoarded.</strong> “He who gathered much had nothing over, and he who gathered little had no lack” (Exodus 16:18, WEB). God's provision levels the gatherers and teaches contentment.</li>
+            <li><strong>God provides for rest.</strong> On the sixth day the manna doubled and kept, for “Tomorrow is a solemn rest, a holy Sabbath to Yahweh” (Exodus 16:23, WEB). Rhythms of rest are God's gift, planned and provided.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-16">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-16">
+            <ol class="study-questions">
+            <li>What does Israel's grumbling reveal about how quickly they idealized their past in Egypt?</li>
+            <li>Why does God give the manna daily rather than all at once, and what is he testing?</li>
+            <li>What happens when people try to hoard the manna, and what does that teach about trust?</li>
+            <li>How does the gift of the Sabbath manna show God's care for rest?</li>
+            <li>How does the manna point forward to Jesus' words, “I am the bread of life” (John 6:35), and how do you feed on him daily?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-16">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-16">
+            <ol class="study-questions">
+            <li>The people remember Egypt's “meat pots” and bread but forget its slavery (16:3), romanticizing bondage the moment the wilderness grows hard. Discontent rewrites the past; help the group see how easily we exaggerate former comforts and discount present grace.</li>
+            <li>God deliberately gives only a day's supply “that I may test them, whether they will walk in my law” (16:4). Daily provision trains daily dependence, keeping the people looking to God each morning rather than trusting a stockpile of their own.</li>
+            <li>Those who keep manna overnight find it full of worms and foul (16:20). Hoarding refuses to trust God for tomorrow and corrupts the very gift it grasps. Trust receives what is needed and rests; greed spoils the blessing.</li>
+            <li>On the sixth day a double portion comes and keeps fresh, so the people can rest on the seventh (16:22-26). God provides ahead of time for the Sabbath, showing that rest is built into his care, not an interruption of work but a gift.</li>
+            <li>This is a personal-application question. Jesus calls himself the true bread from heaven (John 6:31-35), the lasting nourishment the manna foreshadowed. Invite members to consider concrete habits—Scripture, prayer, dependence—by which they feed on Christ each day.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="exodus-15.html">← Exodus 15</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="exodus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="exodus-17.html">Exodus 17 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Leviticus 26: Blessing, Discipline, and Mercy — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Leviticus 26: the blessings for obedience, the escalating discipline for disobedience, and God's promise to remember his covenant." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-leviticus-progress" data-study-total="27">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Leviticus, Chapter 26
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="leviticus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Leviticus · Chapter 26</span>
+        <h1>Leviticus 26: Blessing, Discipline, and Mercy</h1>
+        <p class="lead">God sets before Israel the blessings of obedience and the curses of rebellion, yet promises to remember his covenant even in exile.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-26">
+            <span>Scripture — Leviticus Chapter 26</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-26">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-26-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-26-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-26-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-26-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Leviticus 26 (WEB)</p>
+            <p><strong>1</strong> “‘You shall make for yourselves no idols, neither shall you raise up an engraved image or a pillar, neither shall you place any figured stone in your land, to bow down to it; for I am Yahweh your God.</p>
+            <p><strong>2</strong> “‘You shall keep my Sabbaths, and have reverence for my sanctuary. I am Yahweh.</p>
+            <p><strong>3</strong> “‘If you walk in my statutes, and keep my commandments, and do them;</p>
+            <p><strong>4</strong> then I will give you your rains in their season, and the land shall yield its increase, and the trees of the field shall yield their fruit.</p>
+            <p><strong>5</strong> Your threshing shall reach to the vintage, and the vintage shall reach to the sowing time. You shall eat your bread to the full, and dwell in your land safely.</p>
+            <p><strong>6</strong> “‘I will give peace in the land, and you shall lie down, and no one will make you afraid. I will remove evil animals out of the land, neither shall the sword go through your land.</p>
+            <p><strong>7</strong> You shall chase your enemies, and they shall fall before you by the sword.</p>
+            <p><strong>8</strong> Five of you shall chase a hundred, and a hundred of you shall chase ten thousand; and your enemies shall fall before you by the sword.</p>
+            <p><strong>9</strong> “‘I will have respect for you, and make you fruitful, and multiply you, and will establish my covenant with you.</p>
+            <p><strong>10</strong> You shall eat old store long kept, and you shall move out the old because of the new.</p>
+            <p><strong>11</strong> I will set my tent among you, and my soul won’t abhor you.</p>
+            <p><strong>12</strong> I will walk among you, and will be your God, and you will be my people.</p>
+            <p><strong>13</strong> I am Yahweh your God, who brought you out of the land of Egypt, that you should not be their slaves. I have broken the bars of your yoke, and made you go upright.</p>
+            <p><strong>14</strong> “‘But if you will not listen to me, and will not do all these commandments;</p>
+            <p><strong>15</strong> and if you shall reject my statutes, and if your soul abhors my ordinances, so that you will not do all my commandments, but break my covenant;</p>
+            <p><strong>16</strong> I also will do this to you: I will appoint terror over you, even consumption and fever, that shall consume the eyes, and make the soul to pine away. You will sow your seed in vain, for your enemies will eat it.</p>
+            <p><strong>17</strong> I will set my face against you, and you will be struck before your enemies. Those who hate you will rule over you; and you will flee when no one pursues you.</p>
+            <p><strong>18</strong> “‘If you in spite of these things will not listen to me, then I will chastise you seven times more for your sins.</p>
+            <p><strong>19</strong> I will break the pride of your power, and I will make your sky like iron, and your soil like brass.</p>
+            <p><strong>20</strong> Your strength will be spent in vain; for your land won’t yield its increase, neither will the trees of the land yield their fruit.</p>
+            <p><strong>21</strong> “‘If you walk contrary to me, and won’t listen to me, then I will bring seven times more plagues on you according to your sins.</p>
+            <p><strong>22</strong> I will send the wild animals among you, which will rob you of your children, destroy your livestock, and make you few in number. Your roads will become desolate.</p>
+            <p><strong>23</strong> “‘If by these things you won’t be reformed to me, but will walk contrary to me;</p>
+            <p><strong>24</strong> then I will also walk contrary to you; and I will strike you, even I, seven times for your sins.</p>
+            <p><strong>25</strong> I will bring a sword upon you that will execute the vengeance of the covenant. You will be gathered together within your cities, and I will send the pestilence among you. You will be delivered into the hand of the enemy.</p>
+            <p><strong>26</strong> When I break your staff of bread, ten women shall bake your bread in one oven, and they shall deliver your bread again by weight. You shall eat, and not be satisfied.</p>
+            <p><strong>27</strong> “‘If you in spite of this won’t listen to me, but walk contrary to me;</p>
+            <p><strong>28</strong> then I will walk contrary to you in wrath. I will also chastise you seven times for your sins.</p>
+            <p><strong>29</strong> You will eat the flesh of your sons, and you will eat the flesh of your daughters.</p>
+            <p><strong>30</strong> I will destroy your high places, and cut down your incense altars, and cast your dead bodies upon the bodies of your idols; and my soul will abhor you.</p>
+            <p><strong>31</strong> I will lay your cities waste, and will bring your sanctuaries to desolation. I will not take delight in the sweet fragrance of your offerings.</p>
+            <p><strong>32</strong> I will bring the land into desolation; and your enemies that dwell therein will be astonished at it.</p>
+            <p><strong>33</strong> I will scatter you among the nations, and I will draw out the sword after you. Your land will be a desolation, and your cities shall be a waste.</p>
+            <p><strong>34</strong> Then the land will enjoy its Sabbaths as long as it lies desolate and you are in your enemies’ land. Even then the land will rest and enjoy its Sabbaths.</p>
+            <p><strong>35</strong> As long as it lies desolate it shall have rest, even the rest which it didn’t have in your Sabbaths, when you lived on it.</p>
+            <p><strong>36</strong> “‘As for those of you who are left, I will send a faintness into their hearts in the lands of their enemies. The sound of a driven leaf will put them to flight; and they shall flee, as one flees from the sword. They will fall when no one pursues.</p>
+            <p><strong>37</strong> They will stumble over one another, as it were before the sword, when no one pursues. You will have no power to stand before your enemies.</p>
+            <p><strong>38</strong> You will perish among the nations. The land of your enemies will eat you up.</p>
+            <p><strong>39</strong> Those of you who are left will pine away in their iniquity in your enemies’ lands; and also in the iniquities of their fathers they shall pine away with them.</p>
+            <p><strong>40</strong> “‘If they confess their iniquity, and the iniquity of their fathers, in their trespass which they trespassed against me, and also that, because they walked contrary to me,</p>
+            <p><strong>41</strong> I also walked contrary to them, and brought them into the land of their enemies; if then their uncircumcised heart is humbled, and they then accept the punishment of their iniquity;</p>
+            <p><strong>42</strong> then I will remember my covenant with Jacob; and also my covenant with Isaac, and also my covenant with Abraham; and I will remember the land.</p>
+            <p><strong>43</strong> The land also will be left by them, and will enjoy its Sabbaths while it lies desolate without them: and they will accept the punishment of their iniquity; because, even because they rejected my ordinances, and their soul abhorred my statutes.</p>
+            <p><strong>44</strong> Yet for all that, when they are in the land of their enemies, I will not reject them, neither will I abhor them, to destroy them utterly, and to break my covenant with them; for I am Yahweh their God;</p>
+            <p><strong>45</strong> but I will for their sake remember the covenant of their ancestors, whom I brought out of the land of Egypt in the sight of the nations, that I might be their God. I am Yahweh.’”</p>
+            <p><strong>46</strong> These are the statutes, ordinances and laws, which Yahweh made between him and the children of Israel in Mount Sinai by Moses.</p>
+            </div>
+            <div class="scripture-text" id="web-26-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Leviticus 26 (KJV)</p>
+            <p><strong>1</strong> Ye shall make you no idols nor graven image, neither rear you up a standing image, neither shall ye set up any image of stone in your land, to bow down unto it: for I am the Lord your God.</p>
+            <p><strong>2</strong> Ye shall keep my sabbaths, and reverence my sanctuary: I am the Lord.</p>
+            <p><strong>3</strong> If ye walk in my statutes, and keep my commandments, and do them;</p>
+            <p><strong>4</strong> Then I will give you rain in due season, and the land shall yield her increase, and the trees of the field shall yield their fruit.</p>
+            <p><strong>5</strong> And your threshing shall reach unto the vintage, and the vintage shall reach unto the sowing time: and ye shall eat your bread to the full, and dwell in your land safely.</p>
+            <p><strong>6</strong> And I will give peace in the land, and ye shall lie down, and none shall make you afraid: and I will rid evil beasts out of the land, neither shall the sword go through your land.</p>
+            <p><strong>7</strong> And ye shall chase your enemies, and they shall fall before you by the sword.</p>
+            <p><strong>8</strong> And five of you shall chase an hundred, and an hundred of you shall put ten thousand to flight: and your enemies shall fall before you by the sword.</p>
+            <p><strong>9</strong> For I will have respect unto you, and make you fruitful, and multiply you, and establish my covenant with you.</p>
+            <p><strong>10</strong> And ye shall eat old store, and bring forth the old because of the new.</p>
+            <p><strong>11</strong> And I will set my tabernacle among you: and my soul shall not abhor you.</p>
+            <p><strong>12</strong> And I will walk among you, and will be your God, and ye shall be my people.</p>
+            <p><strong>13</strong> I am the Lord your God, which brought you forth out of the land of Egypt, that ye should not be their bondmen; and I have broken the bands of your yoke, and made you go upright.</p>
+            <p><strong>14</strong> But if ye will not hearken unto me, and will not do all these commandments;</p>
+            <p><strong>15</strong> And if ye shall despise my statutes, or if your soul abhor my judgments, so that ye will not do all my commandments, but that ye break my covenant:</p>
+            <p><strong>16</strong> I also will do this unto you; I will even appoint over you terror, consumption, and the burning ague, that shall consume the eyes, and cause sorrow of heart: and ye shall sow your seed in vain, for your enemies shall eat it.</p>
+            <p><strong>17</strong> And I will set my face against you, and ye shall be slain before your enemies: they that hate you shall reign over you; and ye shall flee when none pursueth you.</p>
+            <p><strong>18</strong> And if ye will not yet for all this hearken unto me, then I will punish you seven times more for your sins.</p>
+            <p><strong>19</strong> And I will break the pride of your power; and I will make your heaven as iron, and your earth as brass:</p>
+            <p><strong>20</strong> And your strength shall be spent in vain: for your land shall not yield her increase, neither shall the trees of the land yield their fruits.</p>
+            <p><strong>21</strong> And if ye walk contrary unto me, and will not hearken unto me; I will bring seven times more plagues upon you according to your sins.</p>
+            <p><strong>22</strong> I will also send wild beasts among you, which shall rob you of your children, and destroy your cattle, and make you few in number; and your high ways shall be desolate.</p>
+            <p><strong>23</strong> And if ye will not be reformed by me by these things, but will walk contrary unto me;</p>
+            <p><strong>24</strong> Then will I also walk contrary unto you, and will punish you yet seven times for your sins.</p>
+            <p><strong>25</strong> And I will bring a sword upon you, that shall avenge the quarrel of my covenant: and when ye are gathered together within your cities, I will send the pestilence among you; and ye shall be delivered into the hand of the enemy.</p>
+            <p><strong>26</strong> And when I have broken the staff of your bread, ten women shall bake your bread in one oven, and they shall deliver you your bread again by weight: and ye shall eat, and not be satisfied.</p>
+            <p><strong>27</strong> And if ye will not for all this hearken unto me, but walk contrary unto me;</p>
+            <p><strong>28</strong> Then I will walk contrary unto you also in fury; and I, even I, will chastise you seven times for your sins.</p>
+            <p><strong>29</strong> And ye shall eat the flesh of your sons, and the flesh of your daughters shall ye eat.</p>
+            <p><strong>30</strong> And I will destroy your high places, and cut down your images, and cast your carcases upon the carcases of your idols, and my soul shall abhor you.</p>
+            <p><strong>31</strong> And I will make your cities waste, and bring your sanctuaries unto desolation, and I will not smell the savour of your sweet odours.</p>
+            <p><strong>32</strong> And I will bring the land into desolation: and your enemies which dwell therein shall be astonished at it.</p>
+            <p><strong>33</strong> And I will scatter you among the heathen, and will draw out a sword after you: and your land shall be desolate, and your cities waste.</p>
+            <p><strong>34</strong> Then shall the land enjoy her sabbaths, as long as it lieth desolate, and ye be in your enemies’ land; even then shall the land rest, and enjoy her sabbaths.</p>
+            <p><strong>35</strong> As long as it lieth desolate it shall rest; because it did not rest in your sabbaths, when ye dwelt upon it.</p>
+            <p><strong>36</strong> And upon them that are left alive of you I will send a faintness into their hearts in the lands of their enemies; and the sound of a shaken leaf shall chase them; and they shall flee, as fleeing from a sword; and they shall fall when none pursueth.</p>
+            <p><strong>37</strong> And they shall fall one upon another, as it were before a sword, when none pursueth: and ye shall have no power to stand before your enemies.</p>
+            <p><strong>38</strong> And ye shall perish among the heathen, and the land of your enemies shall eat you up.</p>
+            <p><strong>39</strong> And they that are left of you shall pine away in their iniquity in your enemies’ lands; and also in the iniquities of their fathers shall they pine away with them.</p>
+            <p><strong>40</strong> If they shall confess their iniquity, and the iniquity of their fathers, with their trespass which they trespassed against me, and that also they have walked contrary unto me;</p>
+            <p><strong>41</strong> And that I also have walked contrary unto them, and have brought them into the land of their enemies; if then their uncircumcised hearts be humbled, and they then accept of the punishment of their iniquity:</p>
+            <p><strong>42</strong> Then will I remember my covenant with Jacob, and also my covenant with Isaac, and also my covenant with Abraham will I remember; and I will remember the land.</p>
+            <p><strong>43</strong> The land also shall be left of them, and shall enjoy her sabbaths, while she lieth desolate without them: and they shall accept of the punishment of their iniquity: because, even because they despised my judgments, and because their soul abhorred my statutes.</p>
+            <p><strong>44</strong> And yet for all that, when they be in the land of their enemies, I will not cast them away, neither will I abhor them, to destroy them utterly, and to break my covenant with them: for I am the Lord their God.</p>
+            <p><strong>45</strong> But I will for their sakes remember the covenant of their ancestors, whom I brought forth out of the land of Egypt in the sight of the heathen, that I might be their God: I am the Lord.</p>
+            <p><strong>46</strong> These are the statutes and judgments and laws, which the Lord made between him and the children of Israel in mount Sinai by the hand of Moses.</p>
+            </div>
+            <div class="scripture-text" id="web-26-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Leviticus 26 (ASV)</p>
+            <p><strong>1</strong> Ye shall make you no idols, neither shall ye rear you up a graven image, or a pillar, neither shall ye place any figured stone in your land, to bow down unto it: for I am Jehovah your God.</p>
+            <p><strong>2</strong> Ye shall keep my sabbaths, and reverence my sanctuary: I am Jehovah.</p>
+            <p><strong>3</strong> If ye walk in my statutes, and keep my commandments, and do them;</p>
+            <p><strong>4</strong> then I will give your rains in their season, and the land shall yield its increase, and the trees of the field shall yield their fruit.</p>
+            <p><strong>5</strong> And your threshing shall reach unto the vintage, and the vintage shall reach unto the sowing time; and ye shall eat your bread to the full, and dwell in your land safely.</p>
+            <p><strong>6</strong> And I will give peace in the land, and ye shall lie down, and none shall make you afraid: and I will cause evil beasts to cease out of the land, neither shall the sword go through your land.</p>
+            <p><strong>7</strong> And ye shall chase your enemies, and they shall fall before you by the sword.</p>
+            <p><strong>8</strong> And five of you shall chase a hundred, and a hundred of you shall chase ten thousand; and your enemies shall fall before you by the sword.</p>
+            <p><strong>9</strong> And I will have respect unto you, and make you fruitful, and multiply you, and will establish my covenant with you.</p>
+            <p><strong>10</strong> And ye shall eat old store long kept, and ye shall bring forth the old because of the new.</p>
+            <p><strong>11</strong> And I will set my tabernacle among you: and my soul shall not abhor you.</p>
+            <p><strong>12</strong> And I will walk among you, and will be your God, and ye shall be my people.</p>
+            <p><strong>13</strong> I am Jehovah your God, who brought you forth out of the land of Egypt, that ye should not be their bondmen; and I have broken the bars of your yoke, and made you go upright.</p>
+            <p><strong>14</strong> But if ye will not hearken unto me, and will not do all these commandments;</p>
+            <p><strong>15</strong> and if ye shall reject my statutes, and if your soul abhor mine ordinances, so that ye will not do all my commandments, but break my covenant;</p>
+            <p><strong>16</strong> I also will do this unto you: I will appoint terror over you, even consumption and fever, that shall consume the eyes, and make the soul to pine away; and ye shall sow your seed in vain, for your enemies shall eat it.</p>
+            <p><strong>17</strong> And I will set my face against you, and ye shall be smitten before your enemies: they that hate you shall rule over you; and ye shall flee when none pursueth you.</p>
+            <p><strong>18</strong> And if ye will not yet for these things hearken unto me, then I will chastise you seven times more for your sins.</p>
+            <p><strong>19</strong> And I will break the pride of your power: and I will make your heaven as iron, and your earth as brass;</p>
+            <p><strong>20</strong> and your strength shall be spent in vain; for your land shall not yield its increase, neither shall the trees of the land yield their fruit.</p>
+            <p><strong>21</strong> And if ye walk contrary unto me, and will not hearken unto me, I will bring seven times more plagues upon you according to your sins.</p>
+            <p><strong>22</strong> And I will send the beast of the field among you, which shall rob you of your children, and destroy your cattle, and make you few in number; and your ways shall become desolate.</p>
+            <p><strong>23</strong> And if by these things ye will not be reformed unto me, but will walk contrary unto me;</p>
+            <p><strong>24</strong> then will I also walk contrary unto you; and I will smite you, even I, seven times for your sins.</p>
+            <p><strong>25</strong> And I will bring a sword upon you, that shall execute the vengeance of the covenant; and ye shall be gathered together within your cities: and I will send the pestilence among you; and ye shall be delivered into the hand of the enemy.</p>
+            <p><strong>26</strong> When I break your staff of bread, ten women shall bake your bread in one oven, and they shall deliver your bread again by weight: and ye shall eat, and not be satisfied.</p>
+            <p><strong>27</strong> And if ye will not for all this hearken unto me, but walk contrary unto me;</p>
+            <p><strong>28</strong> then I will walk contrary unto you in wrath; and I also will chastise you seven times for your sins.</p>
+            <p><strong>29</strong> And ye shall eat the flesh of your sons, and the flesh of your daughters shall ye eat.</p>
+            <p><strong>30</strong> And I will destroy your high places, and cut down your sun-images, and cast your dead bodies upon the bodies of your idols; and my soul shall abhor you.</p>
+            <p><strong>31</strong> And I will make your cities a waste, and will bring your sanctuaries unto desolation, and I will not smell the savor of your sweet odors.</p>
+            <p><strong>32</strong> And I will bring the land into desolation; and your enemies that dwell therein shall be astonished at it.</p>
+            <p><strong>33</strong> And you will I scatter among the nations, and I will draw out the sword after you: and your land shall be a desolation, and your cities shall be a waste.</p>
+            <p><strong>34</strong> Then shall the land enjoy its sabbaths, as long as it lieth desolate, and ye are in your enemies’ land; even then shall the land rest, and enjoy its sabbaths.</p>
+            <p><strong>35</strong> As long as it lieth desolate it shall have rest, even the rest which it had not in your sabbaths, when ye dwelt upon it.</p>
+            <p><strong>36</strong> And as for them that are left of you, I will send a faintness into their heart in the lands of their enemies: and the sound of a driven leaf shall chase them; and they shall flee, as one fleeth from the sword; and they shall fall when none pursueth.</p>
+            <p><strong>37</strong> And they shall stumble one upon another, as it were before the sword, when none pursueth: and ye shall have no power to stand before your enemies.</p>
+            <p><strong>38</strong> And ye shall perish among the nations, and the land of your enemies shall eat you up.</p>
+            <p><strong>39</strong> And they that are left of you shall pine away in their iniquity in your enemies’ lands; and also in the iniquities of their fathers shall they pine away with them.</p>
+            <p><strong>40</strong> And they shall confess their iniquity, and the iniquity of their fathers, in their trespass which they trespassed against me, and also that, because they walked contrary unto me,</p>
+            <p><strong>41</strong> I also walked contrary unto them, and brought them into the land of their enemies: if then their uncircumcised heart be humbled, and they then accept of the punishment of their iniquity;</p>
+            <p><strong>42</strong> then will I remember my covenant with Jacob; and also my covenant with Isaac, and also my covenant with Abraham will I remember; and I will remember the land.</p>
+            <p><strong>43</strong> The land also shall be left by them, and shall enjoy its sabbaths, while it lieth desolate without them: and they shall accept of the punishment of their iniquity; because, even because they rejected mine ordinances, and their soul abhorred my statutes.</p>
+            <p><strong>44</strong> And yet for all that, when they are in the land of their enemies, I will not reject them, neither will I abhor them, to destroy them utterly, and to break my covenant with them; for I am Jehovah their God;</p>
+            <p><strong>45</strong> but I will for their sakes remember the covenant of their ancestors, whom I brought forth out of the land of Egypt in the sight of the nations, that I might be their God: I am Jehovah.</p>
+            <p><strong>46</strong> These are the statutes and ordinances and laws, which Jehovah made between him and the children of Israel in mount Sinai by Moses.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God lays before Israel the two ways that flow from covenant life. If they walk in his statutes and keep his commandments, he promises rains in their season, abundant harvests, peace in the land, victory over enemies, and his own presence dwelling among them: “I will walk among you, and will be your God, and you will be my people.” But if they will not listen and break the covenant, he warns of escalating discipline, repeated in stages “seven times more” for their sins—terror, drought, wild animals, sword, pestilence, famine, and finally scattering among the nations while the land enjoys the Sabbaths they refused to give it. The judgments grow increasingly severe precisely because their purpose is correction, meant to turn a stubborn people back to God. Yet the chapter does not end in wrath. If they confess their iniquity and humble their uncircumcised hearts, accepting their punishment, God promises to remember his covenant with Jacob, Isaac, and Abraham, and to remember the land. Even in the land of their enemies he will not utterly reject them or break his covenant, for he is the LORD their God. The chapter holds together God's holiness and his faithfulness. Discipline is real, but mercy has the last word, anchoring hope in the unbreakable covenant that finds its yes in Christ.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Themes</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The covenant God who blesses obedience, disciplines rebellion for correction, and remembers his promises in mercy.</li>
+          <li><strong>Israel, the children of Israel</strong> — The covenant people set before the two ways of obedience and rebellion, blessing and curse.</li>
+          <li><strong>The covenant with the patriarchs</strong> — God's promises to Jacob, Isaac, and Abraham, which he pledges to remember even when his people fail.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Leviticus 26:12 (WEB)</p>
+          <p class="verse__text">I will walk among you, and will be your God, and you will be my people.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Covenant life sets before us two ways: blessing in obedience and discipline in rebellion.</li>
+          <li>The greatest blessing of all is God's own presence dwelling among his people.</li>
+          <li>God's discipline is corrective, escalating in love to turn a hardened people back to him.</li>
+          <li>Even in judgment, God remembers his covenant; his mercy and faithfulness have the last word.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-26">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-26">
+            <ul class="lesson-list">
+            <li><strong>God's presence is the highest blessing.</strong> “I will walk among you, and will be your God, and you will be my people” (Leviticus 26:12, WEB).</li>
+            <li><strong>Discipline aims to restore.</strong> God chastises “seven times more for your sins” (Leviticus 26:18, WEB), escalating to turn his people back, not to destroy them.</li>
+            <li><strong>Confession reopens the way home.</strong> “If they confess their iniquity… and their uncircumcised heart is humbled” (Leviticus 26:40-41, WEB), God responds with mercy.</li>
+            <li><strong>God remembers his covenant.</strong> Even in exile, “I will not reject them… for I am Yahweh their God” (Leviticus 26:44, WEB), keeping his promise.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-26">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-26">
+            <ol class="study-questions">
+            <li>What does the promise “I will walk among you” reveal about the heart of the blessings God offers?</li>
+            <li>Why do the disciplines escalate “seven times” in stages rather than fall all at once?</li>
+            <li>What role does confession and a humbled heart play in the restoration God describes?</li>
+            <li>How does God's promise to remember his covenant even in exile give hope to people who have failed?</li>
+            <li>Where do you sense God's loving discipline at work in your life, and how might you respond with confession and trust?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-26">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-26">
+            <ol class="study-questions">
+            <li>The deepest blessing is not merely good harvests or safety but God himself dwelling among his people. “I will walk among you, and will be your God” (26:12) echoes Eden and points toward the new creation. Every other blessing flows from this fellowship with God.</li>
+            <li>The escalating stages reveal that discipline is corrective rather than merely punitive. God gives his people repeated opportunities to turn back, increasing the pressure only because lighter measures went unheeded. The severity is a measure of his patient determination to win them back.</li>
+            <li>Confession and a humbled heart are the turning point. When Israel acknowledges its iniquity and accepts the justice of its punishment (26:40-41), God promises to remember his covenant. Restoration comes not by earning it but by honest repentance that throws itself on God's mercy.</li>
+            <li>It assures failing people that God's faithfulness is not finally dependent on theirs. Even scattered among enemies, God refuses to utterly reject or abandon them (26:44). For anyone weighed down by failure, this is profound hope: the covenant rests on God's steadfast love.</li>
+            <li>This is a personal-application question. Gently invite members to consider hardships that may be God's loving correction and to respond not with despair but with confession and renewed trust. Emphasize that God disciplines those he loves and always holds out the way home.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="leviticus-25.html">← Leviticus 25</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="leviticus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="leviticus-27.html">Leviticus 27 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

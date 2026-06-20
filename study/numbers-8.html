@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Numbers 8: Lamps and Living Offerings — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Numbers 8: the lamps are lit before the Lord and the Levites are cleansed and presented as a living offering for the service of the tabernacle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-numbers-progress" data-study-total="36">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Numbers, Chapter 8
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="numbers.html">← All Chapters</a>
+        <span class="study-meta">The Book of Numbers · Chapter 8</span>
+        <h1>Numbers 8: Lamps and Living Offerings</h1>
+        <p class="lead">The lamps are set to shine before the Lord, and the Levites are cleansed and presented to God as a wave offering for his service.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-8">
+            <span>Scripture — Numbers Chapter 8</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-8">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-8-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-8-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-8-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-8-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Numbers 8 (WEB)</p>
+            <p><strong>1</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>2</strong> “Speak to Aaron, and tell him, ‘When you light the lamps, the seven lamps shall give light in front of the lamp stand.’”</p>
+            <p><strong>3</strong> Aaron did so. He lit its lamps to light the area in front of the lamp stand, as Yahweh commanded Moses.</p>
+            <p><strong>4</strong> This was the workmanship of the lamp stand, beaten work of gold. From its base to its flowers, it was beaten work: according to the pattern which Yahweh had shown Moses, so he made the lamp stand.</p>
+            <p><strong>5</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>6</strong> “Take the Levites from among the children of Israel, and cleanse them.</p>
+            <p><strong>7</strong> You shall do this to them, to cleanse them: sprinkle the water of cleansing on them, let them shave their whole bodies with a razor, and let them wash their clothes, and cleanse themselves.</p>
+            <p><strong>8</strong> Then let them take a young bull, and its meal offering, fine flour mixed with oil; and another young bull you shall take for a sin offering.</p>
+            <p><strong>9</strong> You shall present the Levites before the Tent of Meeting. You shall assemble the whole congregation of the children of Israel.</p>
+            <p><strong>10</strong> You shall present the Levites before Yahweh. The children of Israel shall lay their hands on the Levites,</p>
+            <p><strong>11</strong> and Aaron shall offer the Levites before Yahweh for a wave offering, on the behalf of the children of Israel, that it may be theirs to do the service of Yahweh.</p>
+            <p><strong>12</strong> “The Levites shall lay their hands on the heads of the bulls, and you shall offer the one for a sin offering, and the other for a burnt offering to Yahweh, to make atonement for the Levites.</p>
+            <p><strong>13</strong> You shall set the Levites before Aaron, and before his sons, and offer them as a wave offering to Yahweh.</p>
+            <p><strong>14</strong> Thus you shall separate the Levites from among the children of Israel, and the Levites shall be mine.</p>
+            <p><strong>15</strong> “After that, the Levites shall go in to do the service of the Tent of Meeting: and you shall cleanse them, and offer them as a wave offering.</p>
+            <p><strong>16</strong> For they are wholly given to me from among the children of Israel; instead of all who open the womb, even the firstborn of all the children of Israel, I have taken them to me.</p>
+            <p><strong>17</strong> For all the firstborn among the children of Israel are mine, both man and animal. On the day that I struck all the firstborn in the land of Egypt, I sanctified them for myself.</p>
+            <p><strong>18</strong> I have taken the Levites instead of all the firstborn among the children of Israel.</p>
+            <p><strong>19</strong> I have given the Levites as a gift to Aaron and to his sons from among the children of Israel, to do the service of the children of Israel in the Tent of Meeting, and to make atonement for the children of Israel; that there be no plague among the children of Israel, when the children of Israel come near to the sanctuary.”</p>
+            <p><strong>20</strong> Moses, and Aaron, and all the congregation of the children of Israel did so to the Levites. According to all that Yahweh commanded Moses concerning the Levites, so the children of Israel did to them.</p>
+            <p><strong>21</strong> The Levites purified themselves from sin, and they washed their clothes; and Aaron offered them for a wave offering before Yahweh; and Aaron made atonement for them to cleanse them.</p>
+            <p><strong>22</strong> After that, the Levites went in to do their service in the Tent of Meeting before Aaron, and before his sons: as Yahweh had commanded Moses concerning the Levites, so they did to them.</p>
+            <p><strong>23</strong> Yahweh spoke to Moses, saying,</p>
+            <p><strong>24</strong> “This is that which belongs to the Levites: from twenty-five years old and upward they shall go in to wait on the service in the work of the Tent of Meeting;</p>
+            <p><strong>25</strong> and from the age of fifty years they shall cease waiting on the work, and shall serve no more,</p>
+            <p><strong>26</strong> but shall minister with their brothers in the Tent of Meeting, to perform the duty, and shall do no service. You shall do thus to the Levites concerning their duties.”</p>
+            </div>
+            <div class="scripture-text" id="web-8-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Numbers 8 (KJV)</p>
+            <p><strong>1</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>2</strong> Speak unto Aaron, and say unto him, When thou lightest the lamps, the seven lamps shall give light over against the candlestick.</p>
+            <p><strong>3</strong> And Aaron did so; he lighted the lamps thereof over against the candlestick, as the Lord commanded Moses.</p>
+            <p><strong>4</strong> And this work of the candlestick was of beaten gold, unto the shaft thereof, unto the flowers thereof, was beaten work: according unto the pattern which the Lord had shewed Moses, so he made the candlestick.</p>
+            <p><strong>5</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>6</strong> Take the Levites from among the children of Israel, and cleanse them.</p>
+            <p><strong>7</strong> And thus shalt thou do unto them, to cleanse them: Sprinkle water of purifying upon them, and let them shave all their flesh, and let them wash their clothes, and so make themselves clean.</p>
+            <p><strong>8</strong> Then let them take a young bullock with his meat offering, even fine flour mingled with oil, and another young bullock shalt thou take for a sin offering.</p>
+            <p><strong>9</strong> And thou shalt bring the Levites before the tabernacle of the congregation: and thou shalt gather the whole assembly of the children of Israel together:</p>
+            <p><strong>10</strong> And thou shalt bring the Levites before the Lord: and the children of Israel shall put their hands upon the Levites:</p>
+            <p><strong>11</strong> And Aaron shall offer the Levites before the Lord for an offering of the children of Israel, that they may execute the service of the Lord.</p>
+            <p><strong>12</strong> And the Levites shall lay their hands upon the heads of the bullocks: and thou shalt offer the one for a sin offering, and the other for a burnt offering, unto the Lord, to make an atonement for the Levites.</p>
+            <p><strong>13</strong> And thou shalt set the Levites before Aaron, and before his sons, and offer them for an offering unto the Lord.</p>
+            <p><strong>14</strong> Thus shalt thou separate the Levites from among the children of Israel: and the Levites shall be mine.</p>
+            <p><strong>15</strong> And after that shall the Levites go in to do the service of the tabernacle of the congregation: and thou shalt cleanse them, and offer them for an offering.</p>
+            <p><strong>16</strong> For they are wholly given unto me from among the children of Israel; instead of such as open every womb, even instead of the firstborn of all the children of Israel, have I taken them unto me.</p>
+            <p><strong>17</strong> For all the firstborn of the children of Israel are mine, both man and beast: on the day that I smote every firstborn in the land of Egypt I sanctified them for myself.</p>
+            <p><strong>18</strong> And I have taken the Levites for all the firstborn of the children of Israel.</p>
+            <p><strong>19</strong> And I have given the Levites as a gift to Aaron and to his sons from among the children of Israel, to do the service of the children of Israel in the tabernacle of the congregation, and to make an atonement for the children of Israel: that there be no plague among the children of Israel, when the children of Israel come nigh unto the sanctuary.</p>
+            <p><strong>20</strong> And Moses, and Aaron, and all the congregation of the children of Israel, did to the Levites according unto all that the Lord commanded Moses concerning the Levites, so did the children of Israel unto them.</p>
+            <p><strong>21</strong> And the Levites were purified, and they washed their clothes; and Aaron offered them as an offering before the Lord; and Aaron made an atonement for them to cleanse them.</p>
+            <p><strong>22</strong> And after that went the Levites in to do their service in the tabernacle of the congregation before Aaron, and before his sons: as the Lord had commanded Moses concerning the Levites, so did they unto them.</p>
+            <p><strong>23</strong> And the Lord spake unto Moses, saying,</p>
+            <p><strong>24</strong> This is it that belongeth unto the Levites: from twenty and five years old and upward they shall go in to wait upon the service of the tabernacle of the congregation:</p>
+            <p><strong>25</strong> And from the age of fifty years they shall cease waiting upon the service thereof, and shall serve no more:</p>
+            <p><strong>26</strong> But shall minister with their brethren in the tabernacle of the congregation, to keep the charge, and shall do no service. Thus shalt thou do unto the Levites touching their charge.</p>
+            </div>
+            <div class="scripture-text" id="web-8-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Numbers 8 (ASV)</p>
+            <p><strong>1</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>2</strong> Speak unto Aaron, and say unto him, When thou lightest the lamps, the seven lamps shall give light in front of the candlestick.</p>
+            <p><strong>3</strong> And Aaron did so; he lighted the lamps thereof so as to give light in front of the candlestick, as Jehovah commanded Moses.</p>
+            <p><strong>4</strong> And this was the work of the candlestick, beaten work of gold; unto the base thereof, and unto the flowers thereof, it was beaten work: according unto the pattern which Jehovah had showed Moses, so he made the candlestick.</p>
+            <p><strong>5</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>6</strong> Take the Levites from among the children of Israel, and cleanse them.</p>
+            <p><strong>7</strong> And thus shalt thou do unto them, to cleanse them: sprinkle the water of expiation upon them, and let them cause a razor to pass over all their flesh, and let them wash their clothes, and cleanse themselves.</p>
+            <p><strong>8</strong> Then let them take a young bullock, and its meal-offering, fine flour mingled with oil; and another young bullock shalt thou take for a sin-offering.</p>
+            <p><strong>9</strong> And thou shalt present the Levites before the tent of meeting: and thou shalt assemble the whole congregation of the children of Israel:</p>
+            <p><strong>10</strong> and thou shalt present the Levites before Jehovah. And the children of Israel shall lay their hands upon the Levites:</p>
+            <p><strong>11</strong> and Aaron shall offer the Levites before Jehovah for a wave-offering, on the behalf of the children of Israel, that it may be theirs to do the service of Jehovah.</p>
+            <p><strong>12</strong> And the Levites shall lay their hands upon the heads of the bullocks: and offer thou the one for a sin-offering, and the other for a burnt-offering, unto Jehovah, to make atonement for the Levites.</p>
+            <p><strong>13</strong> And thou shalt set the Levites before Aaron, and before his sons, and offer them for a wave-offering unto Jehovah.</p>
+            <p><strong>14</strong> Thus shalt thou separate the Levites from among the children of Israel; and the Levites shall be mine.</p>
+            <p><strong>15</strong> And after that shall the Levites go in to do the service of the tent of meeting: and thou shalt cleanse them, and offer them for a wave-offering.</p>
+            <p><strong>16</strong> For they are wholly given unto me from among the children of Israel; instead of all that openeth the womb, even the first-born of all the children of Israel, have I taken them unto me.</p>
+            <p><strong>17</strong> For all the first-born among the children of Israel are mine, both man and beast: on the day that I smote all the first-born in the land of Egypt I sanctified them for myself.</p>
+            <p><strong>18</strong> And I have taken the Levites instead of all the first-born among the children of Israel.</p>
+            <p><strong>19</strong> And I have given the Levites as a gift to Aaron and to his sons from among the children of Israel, to do the service of the children of Israel in the tent of meeting, and to make atonement for the children of Israel; that there be no plague among the children of Israel, when the children of Israel come nigh unto the sanctuary.</p>
+            <p><strong>20</strong> Thus did Moses, and Aaron, and all the congregation of the children of Israel, unto the Levites: according unto all that Jehovah commanded Moses touching the Levites, so did the children of Israel unto them.</p>
+            <p><strong>21</strong> And the Levites purified themselves from sin, and they washed their clothes: and Aaron offered them for a wave-offering before Jehovah; and Aaron made atonement for them to cleanse them.</p>
+            <p><strong>22</strong> And after that went the Levites in to do their service in the tent of meeting before Aaron, and before his sons: as Jehovah had commanded Moses concerning the Levites, so did they unto them.</p>
+            <p><strong>23</strong> And Jehovah spake unto Moses, saying,</p>
+            <p><strong>24</strong> This is that which belongeth unto the Levites: from twenty and five years old and upward they shall go in to wait upon the service in the work of the tent of meeting:</p>
+            <p><strong>25</strong> and from the age of fifty years they shall cease waiting upon the work, and shall serve no more,</p>
+            <p><strong>26</strong> but shall minister with their brethren in the tent of meeting, to keep the charge, and shall do no service. Thus shalt thou do unto the Levites touching their charges.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God instructs Aaron to set up the seven lamps of the lampstand so that they give light in front of the lampstand, and Aaron does exactly as the Lord commanded. The chapter then turns to the consecration of the Levites for their service. They are cleansed by sprinkling, shaving their whole body, and washing their clothes, then brought before the Tent of Meeting. The whole congregation lays their hands on the Levites, identifying with them, and Aaron offers the Levites before the Lord as a wave offering from the children of Israel, that they may do the service of the Lord. The Levites in turn lay their hands on bulls offered for sin and burnt offering, making atonement for them. In this way the Levites are separated from among the people and given wholly to God and to Aaron, taken in place of the firstborn. Their term of service runs from twenty-five years old until fifty, after which they may assist their brothers but no longer do the heavy work. The chapter shows a people whose worship gives light and whose servants are themselves a living offering to God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who commands the lamps to shine before him and who claims the Levites as his own living offering for the service of the sanctuary.</li>
+          <li><strong>Aaron</strong> — The high priest who sets up the lamps as commanded and offers the Levites before the Lord as a wave offering.</li>
+          <li><strong>The Levites</strong> — Those cleansed, presented, and given wholly to God in place of the firstborn, set apart for the work of the tabernacle.</li>
+          <li><strong>The congregation</strong> — The people of Israel who lay their hands on the Levites, identifying with them as their representatives in God's service.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Numbers 8:14 (WEB)</p>
+          <p class="verse__text">Thus you shall separate the Levites from among the children of Israel, and the Levites shall be mine.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's people are meant to give light before him, shining as he commands (Numbers 8:2-3).</li>
+          <li>Those who serve God must first be cleansed and consecrated (Numbers 8:6-7).</li>
+          <li>The Levites belong wholly to God, given as a living offering for his service (Numbers 8:14).</li>
+          <li>There are seasons for active service and seasons to support others in their work (Numbers 8:25-26).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-8">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-8">
+            <ul class="lesson-list">
+            <li><strong>Obedient worship gives light.</strong> Aaron sets up the lamps so they “give light in front of the lampstand,” exactly as commanded (Numbers 8:3, WEB). Faithful obedience makes God's people a source of light.</li>
+            <li><strong>Service begins with cleansing.</strong> The Levites are cleansed before they serve (Numbers 8:7, WEB). God prepares his servants by purifying them, never sending the unclean into holy work.</li>
+            <li><strong>God's servants are his own.</strong> “The Levites shall be mine” (Numbers 8:14, WEB). Those set apart for God's service belong entirely to him, offered like a gift back to the Giver.</li>
+            <li><strong>Seasons of service change.</strong> After fifty the Levite shall “minister with his brothers… but shall do no service” (Numbers 8:26, WEB). God honors both vigorous labor and the supportive role of later years.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-8">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-8">
+            <ol class="study-questions">
+            <li>Why does the chapter pair the lighting of the lamps with the setting apart of the Levites?</li>
+            <li>What is the meaning of the elaborate cleansing of the Levites before they begin to serve?</li>
+            <li>What does it signify that the whole congregation lays hands on the Levites?</li>
+            <li>How does presenting the Levites as a wave offering deepen our understanding of belonging to God?</li>
+            <li>In what way is God calling you to be a living offering, set apart for his service?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-8">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-8">
+            <ol class="study-questions">
+            <li>The lamps that shine and the Levites who serve both display God's people offered to him. Light and service belong together. Help the group see that worship and consecrated service are two sides of a life given to God.</li>
+            <li>Cleansing precedes service (8:7) because a holy God is served by purified people. The washing pictures the inner cleansing God works in those he calls. Point gently toward the cleansing we receive in Christ before serving him.</li>
+            <li>By laying on hands, the people identify the Levites as their representatives, given on their behalf (8:10). It binds the community to the service performed for them all. Note how representation and substitution run through Israel's worship.</li>
+            <li>Offered as a “wave offering” (8:11), the Levites are presented to God as a gift, not merely employed. This raises service from mere duty to glad self-giving. Connect this to offering ourselves as living sacrifices in worship.</li>
+            <li>This is a personal-application question. Invite members to consider what it means to be set apart and given to God in their everyday roles. As leader, encourage a posture of glad surrender rather than guilt-driven effort.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="numbers-7.html">← Numbers 7</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="numbers.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="numbers-9.html">Numbers 9 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

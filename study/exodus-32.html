@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Exodus 32: The Golden Calf — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Exodus 32: Israel makes a golden calf at Sinai, God's anger burns, Moses intercedes, and the broken covenant is met with judgment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-exodus-progress" data-study-total="40">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Exodus, Chapter 32
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="exodus.html">← All Chapters</a>
+        <span class="study-meta">The Book of Exodus · Chapter 32</span>
+        <h1>Exodus 32: The Golden Calf</h1>
+        <p class="lead">While Moses is on the mountain, Israel makes a golden calf; God's anger burns, but Moses stands in the breach and pleads for the people.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-32">
+            <span>Scripture — Exodus Chapter 32</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-32">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-32-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-32-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-32-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-32-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Exodus 32 (WEB)</p>
+            <p><strong>1</strong> When the people saw that Moses delayed to come down from the mountain, the people gathered themselves together to Aaron, and said to him, “Come, make us gods, which shall go before us; for as for this Moses, the man who brought us up out of the land of Egypt, we don’t know what has become of him.”</p>
+            <p><strong>2</strong> Aaron said to them, “Take off the golden rings, which are in the ears of your wives, of your sons, and of your daughters, and bring them to me.”</p>
+            <p><strong>3</strong> All the people took off the golden rings which were in their ears, and brought them to Aaron.</p>
+            <p><strong>4</strong> He received what they handed him, and fashioned it with an engraving tool, and made it a molten calf; and they said, “These are your gods, Israel, which brought you up out of the land of Egypt.”</p>
+            <p><strong>5</strong> When Aaron saw this, he built an altar before it; and Aaron made a proclamation, and said, “Tomorrow shall be a feast to Yahweh.”</p>
+            <p><strong>6</strong> They rose up early on the next day, and offered burnt offerings, and brought peace offerings; and the people sat down to eat and to drink, and rose up to play.</p>
+            <p><strong>7</strong> Yahweh spoke to Moses, “Go, get down; for your people, who you brought up out of the land of Egypt, have corrupted themselves!</p>
+            <p><strong>8</strong> They have turned aside quickly out of the way which I commanded them. They have made themselves a molten calf, and have worshiped it, and have sacrificed to it, and said, ‘These are your gods, Israel, which brought you up out of the land of Egypt.’”</p>
+            <p><strong>9</strong> Yahweh said to Moses, “I have seen these people, and behold, they are a stiff-necked people.</p>
+            <p><strong>10</strong> Now therefore leave me alone, that my wrath may burn hot against them, and that I may consume them; and I will make of you a great nation.”</p>
+            <p><strong>11</strong> Moses begged Yahweh his God, and said, “Yahweh, why does your wrath burn hot against your people, that you have brought out of the land of Egypt with great power and with a mighty hand?</p>
+            <p><strong>12</strong> Why should the Egyptians speak, saying, ‘He brought them out for evil, to kill them in the mountains, and to consume them from the surface of the earth?’ Turn from your fierce wrath, and repent of this evil against your people.</p>
+            <p><strong>13</strong> Remember Abraham, Isaac, and Israel, your servants, to whom you swore by your own self, and said to them, ‘I will multiply your seed as the stars of the sky, and all this land that I have spoken of I will give to your seed, and they shall inherit it forever.’”</p>
+            <p><strong>14</strong> Yahweh repented of the evil which he said he would do to his people.</p>
+            <p><strong>15</strong> Moses turned, and went down from the mountain, with the two tablets of the testimony in his hand; tablets that were written on both their sides; on the one side and on the other they were written.</p>
+            <p><strong>16</strong> The tablets were the work of God, and the writing was the writing of God, engraved on the tables.</p>
+            <p><strong>17</strong> When Joshua heard the noise of the people as they shouted, he said to Moses, “There is the noise of war in the camp.”</p>
+            <p><strong>18</strong> He said, “It isn’t the voice of those who shout for victory, neither is it the voice of those who cry for being overcome; but the noise of those who sing that I hear.”</p>
+            <p><strong>19</strong> As soon as he came near to the camp, he saw the calf and the dancing. Then Moses’ anger grew hot, and he threw the tablets out of his hands, and broke them beneath the mountain.</p>
+            <p><strong>20</strong> He took the calf which they had made, and burnt it with fire, ground it to powder, and scattered it on the water, and made the children of Israel drink of it.</p>
+            <p><strong>21</strong> Moses said to Aaron, “What did these people do to you, that you have brought a great sin on them?”</p>
+            <p><strong>22</strong> Aaron said, “Don’t let the anger of my lord grow hot. You know the people, that they are set on evil.</p>
+            <p><strong>23</strong> For they said to me, ‘Make us gods, which shall go before us; for as for this Moses, the man who brought us up out of the land of Egypt, we don’t know what has become of him.’</p>
+            <p><strong>24</strong> I said to them, ‘Whoever has any gold, let them take it off:’ so they gave it to me; and I threw it into the fire, and out came this calf.”</p>
+            <p><strong>25</strong> When Moses saw that the people had broken loose, (for Aaron had let them loose for a derision among their enemies),</p>
+            <p><strong>26</strong> then Moses stood in the gate of the camp, and said, “Whoever is on Yahweh’s side, come to me!” All the sons of Levi gathered themselves together to him.</p>
+            <p><strong>27</strong> He said to them, “Thus says Yahweh, the God of Israel, ‘Every man put his sword on his thigh, and go back and forth from gate to gate throughout the camp, and every man kill his brother, and every man his companion, and every man his neighbor.’”</p>
+            <p><strong>28</strong> The sons of Levi did according to the word of Moses: and there fell of the people that day about three thousand men.</p>
+            <p><strong>29</strong> Moses said, “Consecrate yourselves today to Yahweh, yes, every man against his son, and against his brother; that he may bestow on you a blessing this day.”</p>
+            <p><strong>30</strong> On the next day, Moses said to the people, “You have sinned a great sin. Now I will go up to Yahweh. Perhaps I shall make atonement for your sin.”</p>
+            <p><strong>31</strong> Moses returned to Yahweh, and said, “Oh, this people have sinned a great sin, and have made themselves gods of gold.</p>
+            <p><strong>32</strong> Yet now, if you will, forgive their sin—and if not, please blot me out of your book which you have written.”</p>
+            <p><strong>33</strong> Yahweh said to Moses, “Whoever has sinned against me, him will I blot out of my book.</p>
+            <p><strong>34</strong> Now go, lead the people to the place of which I have spoken to you. Behold, my angel shall go before you. Nevertheless in the day when I punish, I will punish them for their sin.”</p>
+            <p><strong>35</strong> Yahweh struck the people, because they made the calf, which Aaron made.</p>
+            </div>
+            <div class="scripture-text" id="web-32-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Exodus 32 (KJV)</p>
+            <p><strong>1</strong> And when the people saw that Moses delayed to come down out of the mount, the people gathered themselves together unto Aaron, and said unto him, Up, make us gods, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we wot not what is become of him.</p>
+            <p><strong>2</strong> And Aaron said unto them, Break off the golden earrings, which are in the ears of your wives, of your sons, and of your daughters, and bring them unto me.</p>
+            <p><strong>3</strong> And all the people brake off the golden earrings which were in their ears, and brought them unto Aaron.</p>
+            <p><strong>4</strong> And he received them at their hand, and fashioned it with a graving tool, after he had made it a molten calf: and they said, These be thy gods, O Israel, which brought thee up out of the land of Egypt.</p>
+            <p><strong>5</strong> And when Aaron saw it, he built an altar before it; and Aaron made proclamation, and said, To morrow is a feast to the Lord.</p>
+            <p><strong>6</strong> And they rose up early on the morrow, and offered burnt offerings, and brought peace offerings; and the people sat down to eat and to drink, and rose up to play.</p>
+            <p><strong>7</strong> And the Lord said unto Moses, Go, get thee down; for thy people, which thou broughtest out of the land of Egypt, have corrupted themselves:</p>
+            <p><strong>8</strong> They have turned aside quickly out of the way which I commanded them: they have made them a molten calf, and have worshipped it, and have sacrificed thereunto, and said, These be thy gods, O Israel, which have brought thee up out of the land of Egypt.</p>
+            <p><strong>9</strong> And the Lord said unto Moses, I have seen this people, and, behold, it is a stiffnecked people:</p>
+            <p><strong>10</strong> Now therefore let me alone, that my wrath may wax hot against them, and that I may consume them: and I will make of thee a great nation.</p>
+            <p><strong>11</strong> And Moses besought the Lord his God, and said, Lord, why doth thy wrath wax hot against thy people, which thou hast brought forth out of the land of Egypt with great power, and with a mighty hand?</p>
+            <p><strong>12</strong> Wherefore should the Egyptians speak, and say, For mischief did he bring them out, to slay them in the mountains, and to consume them from the face of the earth? Turn from thy fierce wrath, and repent of this evil against thy people.</p>
+            <p><strong>13</strong> Remember Abraham, Isaac, and Israel, thy servants, to whom thou swarest by thine own self, and saidst unto them, I will multiply your seed as the stars of heaven, and all this land that I have spoken of will I give unto your seed, and they shall inherit it for ever.</p>
+            <p><strong>14</strong> And the Lord repented of the evil which he thought to do unto his people.</p>
+            <p><strong>15</strong> And Moses turned, and went down from the mount, and the two tables of the testimony were in his hand: the tables were written on both their sides; on the one side and on the other were they written.</p>
+            <p><strong>16</strong> And the tables were the work of God, and the writing was the writing of God, graven upon the tables.</p>
+            <p><strong>17</strong> And when Joshua heard the noise of the people as they shouted, he said unto Moses, There is a noise of war in the camp.</p>
+            <p><strong>18</strong> And he said, It is not the voice of them that shout for mastery, neither is it the voice of them that cry for being overcome: but the noise of them that sing do I hear.</p>
+            <p><strong>19</strong> And it came to pass, as soon as he came nigh unto the camp, that he saw the calf, and the dancing: and Moses’ anger waxed hot, and he cast the tables out of his hands, and brake them beneath the mount.</p>
+            <p><strong>20</strong> And he took the calf which they had made, and burnt it in the fire, and ground it to powder, and strawed it upon the water, and made the children of Israel drink of it.</p>
+            <p><strong>21</strong> And Moses said unto Aaron, What did this people unto thee, that thou hast brought so great a sin upon them?</p>
+            <p><strong>22</strong> And Aaron said, Let not the anger of my lord wax hot: thou knowest the people, that they are set on mischief.</p>
+            <p><strong>23</strong> For they said unto me, Make us gods, which shall go before us: for as for this Moses, the man that brought us up out of the land of Egypt, we wot not what is become of him.</p>
+            <p><strong>24</strong> And I said unto them, Whosoever hath any gold, let them break it off. So they gave it me: then I cast it into the fire, and there came out this calf.</p>
+            <p><strong>25</strong> And when Moses saw that the people were naked; (for Aaron had made them naked unto their shame among their enemies:)</p>
+            <p><strong>26</strong> Then Moses stood in the gate of the camp, and said, Who is on the Lord’s side? let him come unto me. And all the sons of Levi gathered themselves together unto him.</p>
+            <p><strong>27</strong> And he said unto them, Thus saith the Lord God of Israel, Put every man his sword by his side, and go in and out from gate to gate throughout the camp, and slay every man his brother, and every man his companion, and every man his neighbour.</p>
+            <p><strong>28</strong> And the children of Levi did according to the word of Moses: and there fell of the people that day about three thousand men.</p>
+            <p><strong>29</strong> For Moses had said, Consecrate yourselves to day to the Lord, even every man upon his son, and upon his brother; that he may bestow upon you a blessing this day.</p>
+            <p><strong>30</strong> And it came to pass on the morrow, that Moses said unto the people, Ye have sinned a great sin: and now I will go up unto the Lord; peradventure I shall make an atonement for your sin.</p>
+            <p><strong>31</strong> And Moses returned unto the Lord, and said, Oh, this people have sinned a great sin, and have made them gods of gold.</p>
+            <p><strong>32</strong> Yet now, if thou wilt forgive their sin—; and if not, blot me, I pray thee, out of thy book which thou hast written.</p>
+            <p><strong>33</strong> And the Lord said unto Moses, Whosoever hath sinned against me, him will I blot out of my book.</p>
+            <p><strong>34</strong> Therefore now go, lead the people unto the place of which I have spoken unto thee: behold, mine Angel shall go before thee: nevertheless in the day when I visit I will visit their sin upon them.</p>
+            <p><strong>35</strong> And the Lord plagued the people, because they made the calf, which Aaron made.</p>
+            </div>
+            <div class="scripture-text" id="web-32-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Exodus 32 (ASV)</p>
+            <p><strong>1</strong> And when the people saw that Moses delayed to come down from the mount, the people gathered themselves together unto Aaron, and said unto him, Up, make us gods, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we know not what is become of him.</p>
+            <p><strong>2</strong> And Aaron said unto them, Break off the golden rings, which are in the ears of your wives, of your sons, and of your daughters, and bring them unto me.</p>
+            <p><strong>3</strong> And all the people brake off the golden rings which were in their ears, and brought them unto Aaron.</p>
+            <p><strong>4</strong> And he received it at their hand, and fashioned it with a graving tool, and made it a molten calf: and they said, These are thy gods, O Israel, which brought thee up out of the land of Egypt.</p>
+            <p><strong>5</strong> And when Aaron saw this, he built an altar before it; and Aaron made proclamation, and said, To-morrow shall be a feast to Jehovah.</p>
+            <p><strong>6</strong> And they rose up early on the morrow, and offered burnt-offerings, and brought peace-offerings; and the people sat down to eat and to drink, and rose up to play.</p>
+            <p><strong>7</strong> And Jehovah spake unto Moses, Go, get thee down; for thy people, that thou broughtest up out of the land of Egypt, have corrupted themselves:</p>
+            <p><strong>8</strong> they have turned aside quickly out of the way which I commanded them: they have made them a molten calf, and have worshipped it, and have sacrificed unto it, and said, These are thy gods, O Israel, which brought thee up out of the land of Egypt.</p>
+            <p><strong>9</strong> And Jehovah said unto Moses, I have seen this people, and, behold, it is a stiffnecked people:</p>
+            <p><strong>10</strong> now therefore let me alone, that my wrath may wax hot against them, and that I may consume them: and I will make of thee a great nation.</p>
+            <p><strong>11</strong> And Moses besought Jehovah his God, and said, Jehovah, why doth thy wrath wax hot against thy people, that thou hast brought forth out of the land of Egypt with great power and with a mighty hand?</p>
+            <p><strong>12</strong> Wherefore should the Egyptians speak, saying, For evil did he bring them forth, to slay them in the mountains, and to consume them from the face of the earth? Turn from thy fierce wrath, and repent of this evil against thy people.</p>
+            <p><strong>13</strong> Remember Abraham, Isaac, and Israel, thy servants, to whom thou swarest by thine own self, and saidst unto them, I will multiply your seed as the stars of heaven, and all this land that I have spoken of will I give unto your seed, and they shall inherit it for ever.</p>
+            <p><strong>14</strong> And Jehovah repented of the evil which he said he would do unto his people.</p>
+            <p><strong>15</strong> And Moses turned, and went down from the mount, with the two tables of the testimony in his hand; tables that were written on both their sides; on the one side and on the other were they written.</p>
+            <p><strong>16</strong> And the tables were the work of God, and the writing was the writing of God, graven upon the tables.</p>
+            <p><strong>17</strong> And when Joshua heard the noise of the people as they shouted, he said unto Moses, There is a noise of war in the camp.</p>
+            <p><strong>18</strong> And he said, It is not the voice of them that shout for mastery, neither is it the voice of them that cry for being overcome; but the noise of them that sing do I hear.</p>
+            <p><strong>19</strong> And it came to pass, as soon as he came nigh unto the camp, that he saw the calf and the dancing: and Moses’ anger waxed hot, and he cast the tables out of his hands, and brake them beneath the mount.</p>
+            <p><strong>20</strong> And he took the calf which they had made, and burnt it with fire, and ground it to powder, and strewed it upon the water, and made the children of Israel drink of it.</p>
+            <p><strong>21</strong> And Moses said unto Aaron, What did this people unto thee, that thou hast brought a great sin upon them?</p>
+            <p><strong>22</strong> And Aaron said, Let not the anger of my lord wax hot: thou knowest the people, that they are set on evil.</p>
+            <p><strong>23</strong> For they said unto me, Make us gods, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we know not what is become of him.</p>
+            <p><strong>24</strong> And I said unto them, Whosoever hath any gold, let them break it off: so they gave it me; and I cast it into the fire, and there came out this calf.</p>
+            <p><strong>25</strong> And when Moses saw that the people were broken loose, (for Aaron had let them loose for a derision among their enemies,)</p>
+            <p><strong>26</strong> then Moses stood in the gate of the camp, and said, Whoso is on Jehovah’s side, let him come unto me. And all the sons of Levi gathered themselves together unto him.</p>
+            <p><strong>27</strong> And he said unto them, Thus saith Jehovah, the God of Israel, Put ye every man his sword upon his thigh, and go to and fro from gate to gate throughout the camp, and slay every man his brother, and every man his companion, and every man his neighbor.</p>
+            <p><strong>28</strong> And the sons of Levi did according to the word of Moses: and there fell of the people that day about three thousand men.</p>
+            <p><strong>29</strong> And Moses said, Consecrate yourselves to-day to Jehovah, yea, every man against his son, and against his brother; that he may bestow upon you a blessing this day.</p>
+            <p><strong>30</strong> And it came to pass on the morrow, that Moses said unto the people, Ye have sinned a great sin: and now I will go up unto Jehovah; peradventure I shall make atonement for your sin.</p>
+            <p><strong>31</strong> And Moses returned unto Jehovah, and said, Oh, this people have sinned a great sin, and have made them gods of gold.</p>
+            <p><strong>32</strong> Yet now, if thou wilt forgive their sin—; and if not, blot me, I pray thee, out of thy book which thou hast written.</p>
+            <p><strong>33</strong> And Jehovah said unto Moses, Whosoever hath sinned against me, him will I blot out of my book.</p>
+            <p><strong>34</strong> And now go, lead the people unto the place of which I have spoken unto thee: behold, mine angel shall go before thee; nevertheless in the day when I visit, I will visit their sin upon them.</p>
+            <p><strong>35</strong> And Jehovah smote the people, because they made the calf, which Aaron made.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>While Moses lingers on the mountain, the people grow impatient and demand that Aaron make them gods to go before them. Aaron gathers their gold, fashions a molten calf, and the people declare, "These are your gods, Israel, which brought you up out of the land of Egypt." They build an altar, hold a feast, and rise up to play—shattering the covenant they had just sworn. On the mountain God tells Moses to go down, calling them a stiff-necked people, and offers to consume them and make of Moses a great nation. But Moses pleads, appealing to God's reputation among the nations and to his promises to Abraham, Isaac, and Israel, and the Lord relents from the disaster. Moses descends, sees the calf and the dancing, and in anger breaks the tablets, burns the calf, grinds it to powder, and makes the people drink it. Aaron offers a feeble excuse. Moses calls those on the Lord's side to him, and the Levites rally; about three thousand fall that day. The next day Moses returns to the Lord, confessing the people's great sin and pleading, "forgive their sin—and if not, please blot me out of your book." God will not blot out the innocent for the guilty, yet sends his angel to lead them on. This dark chapter shows how quickly hearts turn to idols, and how a mediator stands between sinners and judgment—pointing to a greater Mediator still.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Moses</strong> — The mediator who descends in anger at the people's sin yet stands in the breach, pleading for Israel and even offering himself to be blotted out for them.</li>
+          <li><strong>Aaron</strong> — The brother left in charge who yields to the people's demand, fashions the golden calf, and then minimizes his part in the sin.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God whose anger burns against covenant-breaking idolatry, yet who hears his servant's intercession and relents from utter destruction.</li>
+          <li><strong>The children of Israel</strong> — The impatient people who exchange the living God for a golden calf and break the covenant they had so recently sworn.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Exodus 32:32 (WEB)</p>
+          <p class="verse__text">Yet now, if you will, forgive their sin—and if not, please blot me out of your book which you have written.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The human heart is quick to fashion idols, especially when God seems delayed or distant.</li>
+          <li>Idolatry is covenant betrayal, exchanging the glory of the living God for things our own hands have made.</li>
+          <li>A faithful mediator stands between sinners and judgment, pleading God's character and promises.</li>
+          <li>True intercession is costly; Moses is willing to be blotted out for the people he loves.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-32">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-32">
+            <ul class="lesson-list">
+            <li><strong>Impatience breeds idolatry.</strong> When "Moses delayed to come down," the people demanded other gods (Exodus 32:1, WEB). We are tempted to manufacture substitutes when God's timing is not ours.</li>
+            <li><strong>Sin spreads through compromise.</strong> Aaron "fashioned it with an engraving tool, and made it a molten calf" (Exodus 32:4, WEB) rather than resisting the crowd. Leaders who appease sin multiply it.</li>
+            <li><strong>A mediator pleads on God's own grounds.</strong> Moses appeals to God's glory and his oath to the patriarchs (Exodus 32:11-13, WEB), and "Yahweh repented of the evil" (32:14). Intercession rests on God's character and promises.</li>
+            <li><strong>Love is willing to bear another's loss.</strong> Moses begs, "blot me out of your book" (Exodus 32:32, WEB), foreshadowing the Mediator who would actually be cut off for his people.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-32">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-32">
+            <ol class="study-questions">
+            <li>What drives the people to demand a golden calf, and what does this reveal about the human heart?</li>
+            <li>How does Aaron's role and his later excuse expose the dangers of compromise in leadership?</li>
+            <li>On what grounds does Moses plead for the people, and what does this teach us about prayer?</li>
+            <li>How does Moses' willingness to be blotted out for Israel point forward to Jesus?</li>
+            <li>What "golden calves"—substitutes for trusting God—are you tempted to reach for when God seems slow to act?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-32">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-32">
+            <ol class="study-questions">
+            <li>Moses' delay exposes hearts that crave a god they can see and control (32:1). The same people who saw the plagues and the sea parted now bow to metal. The chapter is a sobering mirror: idolatry is not primitive ignorance but the default drift of the heart away from the unseen God.</li>
+            <li>Aaron caves to pressure, builds the calf, then blames the people and even claims the calf simply "came out" of the fire (32:24). His evasion shows how leaders who accommodate sin and dodge responsibility deepen the damage. Discuss the courage faithfulness sometimes requires.</li>
+            <li>Moses does not appeal to Israel's merit but to God's reputation and his covenant oath to Abraham, Isaac, and Israel (32:11-13). Effective prayer leans on who God is and what he has promised, not on what we deserve—a model for our own intercession.</li>
+            <li>Moses offers to be blotted out in the people's place (32:32), but God will not condemn the innocent for the guilty. Jesus is the Mediator who could and did take that place—cut off, blotted out, bearing the curse—so that his people might be spared. Point the group to that greater intercession.</li>
+            <li>This is a personal-application question. Invite members to name the comforts, securities, or controls they grasp when God feels distant. As leader, hold out the patience of faith and the mercy of the true Mediator who never fails to intercede for us.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="exodus-31.html">← Exodus 31</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="exodus.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="exodus-33.html">Exodus 33 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
