@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Samuel 11: The King Who Stayed Behind — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Samuel 11: David commits adultery with Bathsheba, then has her husband Uriah killed in battle to conceal it, and the Lord is displeased." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-samuel-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Samuel, Chapter 11
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Samuel · Chapter 11</span>
+        <h1>2 Samuel 11: The King Who Stayed Behind</h1>
+        <p class="lead">While his army is at war, David sees Bathsheba, takes her, and when she conceives he arranges the death of her faithful husband Uriah to cover his sin.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-11">
+            <span>Scripture — 2 Samuel Chapter 11</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-11">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-11-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-11-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-11-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-11-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Samuel 11 (WEB)</p>
+            <p><strong>1</strong> At the return of the year, at the time when kings go out, David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David stayed at Jerusalem.</p>
+            <p><strong>2</strong> At evening, David arose from his bed and walked on the roof of the king’s house. From the roof, he saw a woman bathing; and the woman was very beautiful to look at.</p>
+            <p><strong>3</strong> David sent and inquired after the woman. One said, “Isn’t this Bathsheba, the daughter of Eliam, the wife of Uriah the Hittite?”</p>
+            <p><strong>4</strong> David sent messengers, and took her; and she came in to him, and he lay with her (for she was purified from her uncleanness); and she returned to her house.</p>
+            <p><strong>5</strong> The woman conceived; and she sent and told David, and said, “I am with child.”</p>
+            <p><strong>6</strong> David sent to Joab, “Send me Uriah the Hittite.” Joab sent Uriah to David.</p>
+            <p><strong>7</strong> When Uriah had come to him, David asked of him how Joab did, and how the people fared, and how the war prospered.</p>
+            <p><strong>8</strong> David said to Uriah, “Go down to your house, and wash your feet.” Uriah departed out of the king’s house, and a gift from the king was sent after him.</p>
+            <p><strong>9</strong> But Uriah slept at the door of the king’s house with all the servants of his lord, and didn’t go down to his house.</p>
+            <p><strong>10</strong> When they had told David, saying, “Uriah didn’t go down to his house,” David said to Uriah, “Haven’t you come from a journey? Why didn’t you go down to your house?”</p>
+            <p><strong>11</strong> Uriah said to David, “The ark, Israel, and Judah, are staying in tents; and my lord Joab, and the servants of my lord, are encamped in the open field. Shall I then go into my house to eat and to drink, and to lie with my wife? As you live, and as your soul lives, I will not do this thing!”</p>
+            <p><strong>12</strong> David said to Uriah, “Stay here today also, and tomorrow I will let you depart.” So Uriah stayed in Jerusalem that day, and the next day.</p>
+            <p><strong>13</strong> When David had called him, he ate and drink before him; and he made him drunk. At evening, he went out to lie on his bed with the servants of his lord, but didn’t go down to his house.</p>
+            <p><strong>14</strong> In the morning, David wrote a letter to Joab, and sent it by the hand of Uriah.</p>
+            <p><strong>15</strong> He wrote in the letter, saying, “Send Uriah to the forefront of the hottest battle, and retreat from him, that he may be struck, and die.”</p>
+            <p><strong>16</strong> When Joab kept watch on the city, he assigned Uriah to the place where he knew that valiant men were.</p>
+            <p><strong>17</strong> The men of the city went out, and fought with Joab. Some of the people fell, even of the servants of David; and Uriah the Hittite died also.</p>
+            <p><strong>18</strong> Then Joab sent and told David all the things concerning the war;</p>
+            <p><strong>19</strong> and he commanded the messenger, saying, “When you have finished telling all the things concerning the war to the king,</p>
+            <p><strong>20</strong> it shall be that, if the king’s wrath arise, and he asks you, ‘Why did you go so near to the city to fight? Didn’t you know that they would shoot from the wall?</p>
+            <p><strong>21</strong> who struck Abimelech the son of Jerubbesheth? Didn’t a woman cast an upper millstone on him from the wall, so that he died at Thebez? Why did you go so near the wall?’ then you shall say, ‘Your servant Uriah the Hittite is dead also.’”</p>
+            <p><strong>22</strong> So the messenger went, and came and showed David all that Joab had sent him for.</p>
+            <p><strong>23</strong> The messenger said to David, “The men prevailed against us, and came out to us into the field, and we were on them even to the entrance of the gate.</p>
+            <p><strong>24</strong> The shooters shot at your servants from off the wall; and some of the king’s servants are dead, and your servant Uriah the Hittite is dead also.”</p>
+            <p><strong>25</strong> Then David said to the messenger, “Thus you shall tell Joab, ‘Don’t let this thing displease you, for the sword devours one as well as another. Make your battle stronger against the city, and overthrow it.’ Encourage him.”</p>
+            <p><strong>26</strong> When the wife of Uriah heard that Uriah her husband was dead, she made lamentation for her husband.</p>
+            <p><strong>27</strong> When the mourning was past, David sent and took her home to his house, and she became his wife, and bore him a son. But the thing that David had done displeased Yahweh.</p>
+            </div>
+            <div class="scripture-text" id="web-11-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Samuel 11 (KJV)</p>
+            <p><strong>1</strong> And it came to pass, after the year was expired, at the time when kings go forth to battle, that David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David tarried still at Jerusalem.</p>
+            <p><strong>2</strong> And it came to pass in an eveningtide, that David arose from off his bed, and walked upon the roof of the king’s house: and from the roof he saw a woman washing herself; and the woman was very beautiful to look upon.</p>
+            <p><strong>3</strong> And David sent and enquired after the woman. And one said, Is not this Bath–sheba, the daughter of Eliam, the wife of Uriah the Hittite?</p>
+            <p><strong>4</strong> And David sent messengers, and took her; and she came in unto him, and he lay with her; for she was purified from her uncleanness: and she returned unto her house.</p>
+            <p><strong>5</strong> And the woman conceived, and sent and told David, and said, I am with child.</p>
+            <p><strong>6</strong> And David sent to Joab, saying, Send me Uriah the Hittite. And Joab sent Uriah to David.</p>
+            <p><strong>7</strong> And when Uriah was come unto him, David demanded of him how Joab did, and how the people did, and how the war prospered.</p>
+            <p><strong>8</strong> And David said to Uriah, Go down to thy house, and wash thy feet. And Uriah departed out of the king’s house, and there followed him a mess of meat from the king.</p>
+            <p><strong>9</strong> But Uriah slept at the door of the king’s house with all the servants of his lord, and went not down to his house.</p>
+            <p><strong>10</strong> And when they had told David, saying, Uriah went not down unto his house, David said unto Uriah, Camest thou not from thy journey? why then didst thou not go down unto thine house?</p>
+            <p><strong>11</strong> And Uriah said unto David, The ark, and Israel, and Judah, abide in tents; and my lord Joab, and the servants of my lord, are encamped in the open fields; shall I then go into mine house, to eat and to drink, and to lie with my wife? as thou livest, and as thy soul liveth, I will not do this thing.</p>
+            <p><strong>12</strong> And David said to Uriah, Tarry here to day also, and to morrow I will let thee depart. So Uriah abode in Jerusalem that day, and the morrow.</p>
+            <p><strong>13</strong> And when David had called him, he did eat and drink before him; and he made him drunk: and at even he went out to lie on his bed with the servants of his lord, but went not down to his house.</p>
+            <p><strong>14</strong> And it came to pass in the morning, that David wrote a letter to Joab, and sent it by the hand of Uriah.</p>
+            <p><strong>15</strong> And he wrote in the letter, saying, Set ye Uriah in the forefront of the hottest battle, and retire ye from him, that he may be smitten, and die.</p>
+            <p><strong>16</strong> And it came to pass, when Joab observed the city, that he assigned Uriah unto a place where he knew that valiant men were.</p>
+            <p><strong>17</strong> And the men of the city went out, and fought with Joab: and there fell some of the people of the servants of David; and Uriah the Hittite died also.</p>
+            <p><strong>18</strong> Then Joab sent and told David all the things concerning the war;</p>
+            <p><strong>19</strong> And charged the messenger, saying, When thou hast made an end of telling the matters of the war unto the king,</p>
+            <p><strong>20</strong> And if so be that the king’s wrath arise, and he say unto thee, Wherefore approached ye so nigh unto the city when ye did fight? knew ye not that they would shoot from the wall?</p>
+            <p><strong>21</strong> Who smote Abimelech the son of Jerubbesheth? did not a woman cast a piece of a millstone upon him from the wall, that he died in Thebez? why went ye nigh the wall? then say thou, Thy servant Uriah the Hittite is dead also.</p>
+            <p><strong>22</strong> So the messenger went, and came and shewed David all that Joab had sent him for.</p>
+            <p><strong>23</strong> And the messenger said unto David, Surely the men prevailed against us, and came out unto us into the field, and we were upon them even unto the entering of the gate.</p>
+            <p><strong>24</strong> And the shooters shot from off the wall upon thy servants; and some of the king’s servants be dead, and thy servant Uriah the Hittite is dead also.</p>
+            <p><strong>25</strong> Then David said unto the messenger, Thus shalt thou say unto Joab, Let not this thing displease thee, for the sword devoureth one as well as another: make thy battle more strong against the city, and overthrow it: and encourage thou him.</p>
+            <p><strong>26</strong> And when the wife of Uriah heard that Uriah her husband was dead, she mourned for her husband.</p>
+            <p><strong>27</strong> And when the mourning was past, David sent and fetched her to his house, and she became his wife, and bare him a son. But the thing that David had done displeased the Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-11-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Samuel 11 (ASV)</p>
+            <p><strong>1</strong> And it came to pass, at the return of the year, at the time when kings go outto battle, that David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David tarried at Jerusalem.</p>
+            <p><strong>2</strong> And it came to pass at eventide, that David arose from off his bed, and walked upon the roof of the king’s house: and from the roof he saw a woman bathing; and the woman was very beautiful to look upon.</p>
+            <p><strong>3</strong> And David sent and inquired after the woman. And one said, Is not this Bath-sheba, the daughter of Eliam, the wife of Uriah the Hittite?</p>
+            <p><strong>4</strong> And David sent messengers, and took her; and she came in unto him, and he lay with her (for she was purified from her uncleanness); and she returned unto her house.</p>
+            <p><strong>5</strong> And the woman conceived; and she sent and told David, and said, I am with child.</p>
+            <p><strong>6</strong> And David sent to Joab, saying, Send me Uriah the Hittite. And Joab sent Uriah to David.</p>
+            <p><strong>7</strong> And when Uriah was come unto him, David asked of him how Joab did, and how the people fared, and how the war prospered.</p>
+            <p><strong>8</strong> And David said to Uriah, Go down to thy house, and wash thy feet. And Uriah departed out of the king’s house, and there followed him a mess of food from the king.</p>
+            <p><strong>9</strong> But Uriah slept at the door of the king’s house with all the servants of his lord, and went not down to his house.</p>
+            <p><strong>10</strong> And when they had told David, saying, Uriah went not down unto his house, David said unto Uriah, Art thou not come from a journey? wherefore didst thou not go down unto thy house?</p>
+            <p><strong>11</strong> And Uriah said unto David, The ark, and Israel, and Judah, abide in booths; and my lord Joab, and the servants of my lord, are encamped in the open field; shall I then go into my house, to eat and to drink, and to lie with my wife? as thou livest, and as thy soul liveth, I will not do this thing.</p>
+            <p><strong>12</strong> And David said to Uriah, Tarry here to-day also, and to-morrow I will let thee depart. So Uriah abode in Jerusalem that day, and the morrow.</p>
+            <p><strong>13</strong> And when David had called him, he did eat and drink before him; and he made him drunk: and at even he went out to lie on his bed with the servants of his lord, but went not down to his house.</p>
+            <p><strong>14</strong> And it came to pass in the morning, that David wrote a letter to Joab, and sent it by the hand of Uriah.</p>
+            <p><strong>15</strong> And he wrote in the letter, saying, Set ye Uriah in the forefront of the hottest battle, and retire ye from him, that he may be smitten, and die.</p>
+            <p><strong>16</strong> And it came to pass, when Joab kept watch upon the city, that he assigned Uriah unto the place where he knew that valiant men were.</p>
+            <p><strong>17</strong> And the men of the city went out, and fought with Joab: and there fell some of the people, even of the servants of David; and Uriah the Hittite died also.</p>
+            <p><strong>18</strong> Then Joab sent and told David all the things concerning the war;</p>
+            <p><strong>19</strong> and he charged the messenger, saying, When thou hast made an end of telling all the things concerning the war unto the king,</p>
+            <p><strong>20</strong> it shall be that, if the king’s wrath arise, and he say unto thee, Wherefore went ye so nigh unto the city to fight? knew ye not that they would shoot from the wall?</p>
+            <p><strong>21</strong> who smote Abimelech the son of Jerubbesheth? did not a woman cast an upper millstone upon him from the wall, so that he died at Thebez? why went ye so nigh the wall? then shalt thou say, Thy servant Uriah the Hittite is dead also.</p>
+            <p><strong>22</strong> So the messenger went, and came and showed David all that Joab had sent him for.</p>
+            <p><strong>23</strong> And the messenger said unto David, The men prevailed against us, and came out unto us into the field, and we were upon them even unto the entrance of the gate.</p>
+            <p><strong>24</strong> And the shooters shot at thy servants from off the wall; and some of the king’s servants are dead, and thy servant Uriah the Hittite is dead also.</p>
+            <p><strong>25</strong> Then David said unto the messenger, Thus shalt thou say unto Joab, Let not this thing displease thee, for the sword devoureth one as well as another; make thy battle more strong against the city, and overthrow it: and encourage thou him.</p>
+            <p><strong>26</strong> And when the wife of Uriah heard that Uriah her husband was dead, she made lamentation for her husband.</p>
+            <p><strong>27</strong> And when the mourning was past, David sent and took her home to his house, and she became his wife, and bare him a son. But the thing that David had done displeased Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>At the season when kings go out to war, David sends Joab and the army to besiege the Ammonites but stays behind in Jerusalem. One evening, walking on his roof, he sees a beautiful woman bathing and learns she is Bathsheba, wife of Uriah the Hittite, one of his loyal soldiers. David sends for her, lies with her, and she returns home; soon she sends word that she is pregnant. David's response is not repentance but cover-up. He summons Uriah from the front, hoping he will go home and sleep with his wife so the child can be attributed to him. But Uriah, devoted to his comrades, refuses to enjoy the comforts of home while the ark and the army are in tents in the open field; even when David gets him drunk, Uriah will not go down to his house. So David escalates: he writes a letter, carried by the unsuspecting Uriah himself, ordering Joab to place him at the front of the fiercest fighting and then withdraw, so that he will be killed. Joab obeys, Uriah dies, and David coldly tells the messenger not to let the matter trouble him, for the sword devours one as well as another. After Bathsheba mourns, David takes her as his wife and she bears a son. The chapter ends with a quiet, ominous verdict that hangs over everything: the thing David had done displeased Yahweh.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The king who, idle at home, commits adultery with Bathsheba and then engineers Uriah's death to hide his sin.</li>
+          <li><strong>Bathsheba</strong> — The wife of Uriah, taken by David, who conceives and later mourns her husband before becoming David's wife.</li>
+          <li><strong>Uriah the Hittite</strong> — A loyal soldier whose integrity shames the king and who is sent to his death carrying his own death warrant.</li>
+          <li><strong>Joab</strong> — David's general who carries out the order to have Uriah killed in battle, complicit in the cover-up.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Samuel 11:27 (WEB)</p>
+          <p class="verse__text">When the mourning was past, David sent and took her home to his house, and she became his wife, and bore him a son. But the thing that David had done displeased Yahweh.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Idleness and neglect of duty can open the door to serious temptation.</li>
+          <li>One unconfessed sin tends to multiply, dragging us into deeper deception and harm.</li>
+          <li>Even the godliest people are capable of grievous sin and must stay watchful.</li>
+          <li>Sin may be hidden from people but is always seen and judged by the Lord.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-11">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-11">
+            <ul class="lesson-list">
+            <li><strong>Guard against idleness.</strong> While kings went to war, “David stayed at Jerusalem” (2 Samuel 11:1, WEB); being out of his place left him exposed to temptation.</li>
+            <li><strong>Sin compounds when concealed.</strong> Adultery led to deception and then murder as David tried to hide what he had done (2 Samuel 11:6-17, WEB).</li>
+            <li><strong>Integrity rebukes compromise.</strong> Uriah refused comfort while “the ark, Israel, and Judah, are staying in tents” (2 Samuel 11:11, WEB); his faithfulness exposed the king's failure.</li>
+            <li><strong>Nothing is hidden from God.</strong> “the thing that David had done displeased Yahweh” (2 Samuel 11:27, WEB); what was concealed from people was fully seen by God.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-11">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-11">
+            <ol class="study-questions">
+            <li>What is significant about David staying in Jerusalem while his army goes to war?</li>
+            <li>How does David's sin escalate from temptation to adultery to murder?</li>
+            <li>What does Uriah's behavior reveal, and how does it contrast with David's?</li>
+            <li>Why does the chapter end with the statement that David's deed displeased the Lord?</li>
+            <li>Where might idleness or being out of your proper “place” be leaving you vulnerable to temptation?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-11">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-11">
+            <ol class="study-questions">
+            <li>David stays home when he should be leading his army (11:1). The detail signals a king out of his place, idle and unguarded, which sets the stage for the temptation that follows.</li>
+            <li>What begins with a glance becomes adultery, then a cover-up with Uriah, then murder by proxy (11:2-17). Each attempt to hide sin requires a greater sin, showing how concealment deepens guilt.</li>
+            <li>Uriah's loyalty to his comrades and the ark keeps him from enjoying home comforts (11:11), even drunk. His integrity throws David's selfish scheming into sharp relief.</li>
+            <li>The verse is the divine verdict over the whole episode (11:27). However well David hid things from people, God saw all, and his displeasure prepares for Nathan's confrontation in chapter 12.</li>
+            <li>This is a personal-application question. Invite members to reflect, without prying, on areas of idleness or neglected responsibility that expose them to temptation, and to consider returning to their God-given place.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-samuel-10.html">← 2 Samuel 10</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-samuel-12.html">2 Samuel 12 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

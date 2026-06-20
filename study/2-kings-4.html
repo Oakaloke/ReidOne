@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Kings 4: The God Who Provides — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Kings 4: Elisha multiplies a widow's oil, gives the Shunammite a son and raises him, purifies deadly stew, and feeds a hundred." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-kings-progress" data-study-total="25">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Kings, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Kings · Chapter 4</span>
+        <h1>2 Kings 4: The God Who Provides</h1>
+        <p class="lead">Through a widow's oil, a barren woman's son raised to life, poisoned stew made safe, and a hundred fed, the LORD shows his abundant care.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — 2 Kings Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Kings 4 (WEB)</p>
+            <p><strong>1</strong> Now there cried a certain woman of the wives of the sons of the prophets to Elisha, saying, “Your servant my husband is dead. You know that your servant feared Yahweh. Now the creditor has come to take for himself my two children to be slaves.”</p>
+            <p><strong>2</strong> Elisha said to her, “What shall I do for you? Tell me: what do you have in the house?” She said, “Your handmaid has nothing in the house, except a pot of oil.”</p>
+            <p><strong>3</strong> Then he said, “Go, borrow containers from of all your neighbors, even empty containers. Don’t borrow just a few.</p>
+            <p><strong>4</strong> You shall go in, and shut the door on you and on your sons, and pour out into all those containers; and you shall set aside that which is full.”</p>
+            <p><strong>5</strong> So she went from him, and shut the door on her and on her sons; they brought the containers to her, and she poured out.</p>
+            <p><strong>6</strong> When the containers were full, she said to her son, “Bring me another container.” He said to her, “There isn’t another container.” The oil stopped flowing.</p>
+            <p><strong>7</strong> Then she came and told the man of God. He said, “Go, sell the oil, and pay your debt; and you and your sons live on the rest.”</p>
+            <p><strong>8</strong> It fell on a day, that Elisha passed to Shunem, where there was a prominent woman; and she persuaded him to eat bread. So it was, that as often as he passed by, he turned in there to eat bread.</p>
+            <p><strong>9</strong> She said to her husband, “See now, I perceive that this is a holy man of God, that passes by us continually.</p>
+            <p><strong>10</strong> Please let us make a little room on the wall. Let us set for him there a bed, a table, a chair, and a lamp stand. It shall be, when he comes to us, that he shall turn in there.”</p>
+            <p><strong>11</strong> One day he came there, and he turned into the room and lay there.</p>
+            <p><strong>12</strong> He said to Gehazi his servant, “Call this Shunammite.” When he had called her, she stood before him.</p>
+            <p><strong>13</strong> He said to him, “Say now to her, ‘Behold, you have cared for us with all this care. What is to be done for you? Would you like to be spoken for to the king, or to the captain of the army?’” She answered, “I dwell among my own people.”</p>
+            <p><strong>14</strong> He said, “What then is to be done for her?” Gehazi answered, “Most certainly she has no son, and her husband is old.”</p>
+            <p><strong>15</strong> He said, “Call her.” When he had called her, she stood in the door.</p>
+            <p><strong>16</strong> He said, “At this season, when the time comes around, you will embrace a son.” She said, “No, my lord, you man of God, do not lie to your handmaid.”</p>
+            <p><strong>17</strong> The woman conceived, and bore a son at that season, when the time came around, as Elisha had said to her.</p>
+            <p><strong>18</strong> When the child was grown, one day he went out to his father to the reapers.</p>
+            <p><strong>19</strong> He said to his father, “My head! My head!” He said to his servant, “Carry him to his mother.”</p>
+            <p><strong>20</strong> When he had taken him, and brought him to his mother, he sat on her knees until noon, and then died.</p>
+            <p><strong>21</strong> She went up and laid him on the bed of the man of God, and shut the door on him, and went out.</p>
+            <p><strong>22</strong> She called to her husband, and said, “Please send me one of the servants, and one of the donkeys, that I may run to the man of God, and come again.”</p>
+            <p><strong>23</strong> He said, “Why would you want go to him today? It is neither new moon nor Sabbath.” She said, “It’s alright.”</p>
+            <p><strong>24</strong> Then she saddled a donkey, and said to her servant, “Drive, and go forward! Don’t slow down for me, unless I ask you to.”</p>
+            <p><strong>25</strong> So she went, and came to the man of God to Mount Carmel. When the man of God saw her afar off, he said to Gehazi his servant, “Behold, there is the Shunammite.</p>
+            <p><strong>26</strong> Please run now to meet her, and ask her, ‘Is it well with you? Is it well with your husband? Is it well with the child?’” She answered, “It is well.”</p>
+            <p><strong>27</strong> When she came to the man of God to the hill, she caught hold of his feet. Gehazi came near to thrust her away; but the man of God said, “Leave her alone; for her soul is troubled within her; and Yahweh has hidden it from me, and has not told me.”</p>
+            <p><strong>28</strong> Then she said, “Did I desire a son of my lord? Didn’t I say, Do not deceive me?”</p>
+            <p><strong>29</strong> Then he said to Gehazi, “Tuck your cloak into your belt, take my staff in your hand, and go your way. If you meet any man, don’t greet him; and if anyone greets you, don’t answer him again. Then lay my staff on the face of the child.”</p>
+            <p><strong>30</strong> The mother of the child said, “As Yahweh lives, and as your soul lives, I will not leave you.” He arose, and followed her.</p>
+            <p><strong>31</strong> Gehazi passed on before them, and laid the staff on the face of the child; but there was neither voice, nor hearing. Therefore he returned to meet him, and told him, saying, “The child has not awakened.”</p>
+            <p><strong>32</strong> When Elisha had come into the house, behold, the child was dead, and laid on his bed.</p>
+            <p><strong>33</strong> He went in therefore, and shut the door on them both, and prayed to Yahweh.</p>
+            <p><strong>34</strong> He went up, and lay on the child, and put his mouth on his mouth, and his eyes on his eyes, and his hands on his hands. He stretched himself on him; and the flesh of the child grew warm.</p>
+            <p><strong>35</strong> Then he returned, and walked in the house once back and forth; and went up, and stretched himself on him. Then the child sneezed seven times, and the child opened his eyes.</p>
+            <p><strong>36</strong> He called Gehazi, and said, “Call this Shunammite!” So he called her. When she had come in to him, he said, “Take up your son.”</p>
+            <p><strong>37</strong> Then she went in, and fell at his feet, and bowed herself to the ground; and she took up her son, and went out.</p>
+            <p><strong>38</strong> Elisha came again to Gilgal. There was a famine in the land; and the sons of the prophets were sitting before him; and he said to his servant, “Set on the great pot, and boil stew for the sons of the prophets.”</p>
+            <p><strong>39</strong> One went out into the field to gather herbs, and found a wild vine, and gathered of it wild gourds his lap full, and came and shred them into the pot of stew; for they didn’t recognize them.</p>
+            <p><strong>40</strong> So they poured out for the men to eat. As they were eating some of the stew, they cried out, and said, “Man of God, there is death in the pot!” They could not eat of it.</p>
+            <p><strong>41</strong> But he said, “Then bring meal.” He cast it into the pot; and he said, “Pour out for the people, that they may eat.” There was no harm in the pot.</p>
+            <p><strong>42</strong> A man from Baal Shalishah came, and brought the man of God bread of the first fruits, twenty loaves of barley, and fresh ears of grain in his sack. He said, “Give to the people, that they may eat.”</p>
+            <p><strong>43</strong> His servant said, “What, should I set this before a hundred men?” But he said, “Give the people, that they may eat; for thus says Yahweh, ‘They will eat, and will have some left over.’”</p>
+            <p><strong>44</strong> So he set it before them, and they ate, and left some of it, according to Yahweh’s word.</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Kings 4 (KJV)</p>
+            <p><strong>1</strong> Now there cried a certain woman of the wives of the sons of the prophets unto Elisha, saying, Thy servant my husband is dead; and thou knowest that thy servant did fear the Lord: and the creditor is come to take unto him my two sons to be bondmen.</p>
+            <p><strong>2</strong> And Elisha said unto her, What shall I do for thee? tell me, what hast thou in the house? And she said, Thine handmaid hath not any thing in the house, save a pot of oil.</p>
+            <p><strong>3</strong> Then he said, Go, borrow thee vessels abroad of all thy neighbours, even empty vessels; borrow not a few.</p>
+            <p><strong>4</strong> And when thou art come in, thou shalt shut the door upon thee and upon thy sons, and shalt pour out into all those vessels, and thou shalt set aside that which is full.</p>
+            <p><strong>5</strong> So she went from him, and shut the door upon her and upon her sons, who brought the vessels to her; and she poured out.</p>
+            <p><strong>6</strong> And it came to pass, when the vessels were full, that she said unto her son, Bring me yet a vessel. And he said unto her, There is not a vessel more. And the oil stayed.</p>
+            <p><strong>7</strong> Then she came and told the man of God. And he said, Go, sell the oil, and pay thy debt, and live thou and thy children of the rest.</p>
+            <p><strong>8</strong> And it fell on a day, that Elisha passed to Shunem, where was a great woman; and she constrained him to eat bread. And so it was, that as oft as he passed by, he turned in thither to eat bread.</p>
+            <p><strong>9</strong> And she said unto her husband, Behold now, I perceive that this is an holy man of God, which passeth by us continually.</p>
+            <p><strong>10</strong> Let us make a little chamber, I pray thee, on the wall; and let us set for him there a bed, and a table, and a stool, and a candlestick: and it shall be, when he cometh to us, that he shall turn in thither.</p>
+            <p><strong>11</strong> And it fell on a day, that he came thither, and he turned into the chamber, and lay there.</p>
+            <p><strong>12</strong> And he said to Gehazi his servant, Call this Shunammite. And when he had called her, she stood before him.</p>
+            <p><strong>13</strong> And he said unto him, Say now unto her, Behold, thou hast been careful for us with all this care; what is to be done for thee? wouldest thou be spoken for to the king, or to the captain of the host? And she answered, I dwell among mine own people.</p>
+            <p><strong>14</strong> And he said, What then is to be done for her? And Gehazi answered, Verily she hath no child, and her husband is old.</p>
+            <p><strong>15</strong> And he said, Call her. And when he had called her, she stood in the door.</p>
+            <p><strong>16</strong> And he said, About this season, according to the time of life, thou shalt embrace a son. And she said, Nay, my lord, thou man of God, do not lie unto thine handmaid.</p>
+            <p><strong>17</strong> And the woman conceived, and bare a son at that season that Elisha had said unto her, according to the time of life.</p>
+            <p><strong>18</strong> And when the child was grown, it fell on a day, that he went out to his father to the reapers.</p>
+            <p><strong>19</strong> And he said unto his father, My head, my head. And he said to a lad, Carry him to his mother.</p>
+            <p><strong>20</strong> And when he had taken him, and brought him to his mother, he sat on her knees till noon, and then died.</p>
+            <p><strong>21</strong> And she went up, and laid him on the bed of the man of God, and shut the door upon him, and went out.</p>
+            <p><strong>22</strong> And she called unto her husband, and said, Send me, I pray thee, one of the young men, and one of the asses, that I may run to the man of God, and come again.</p>
+            <p><strong>23</strong> And he said, Wherefore wilt thou go to him to day? it is neither new moon, nor sabbath. And she said, It shall be well.</p>
+            <p><strong>24</strong> Then she saddled an ass, and said to her servant, Drive, and go forward; slack not thy riding for me, except I bid thee.</p>
+            <p><strong>25</strong> So she went and came unto the man of God to mount Carmel. And it came to pass, when the man of God saw her afar off, that he said to Gehazi his servant, Behold, yonder is that Shunammite:</p>
+            <p><strong>26</strong> Run now, I pray thee, to meet her, and say unto her, Is it well with thee? is it well with thy husband? is it well with the child? And she answered, It is well.</p>
+            <p><strong>27</strong> And when she came to the man of God to the hill, she caught him by the feet: but Gehazi came near to thrust her away. And the man of God said, Let her alone; for her soul is vexed within her: and the Lord hath hid it from me, and hath not told me.</p>
+            <p><strong>28</strong> Then she said, Did I desire a son of my lord? did I not say, Do not deceive me?</p>
+            <p><strong>29</strong> Then he said to Gehazi, Gird up thy loins, and take my staff in thine hand, and go thy way: if thou meet any man, salute him not; and if any salute thee, answer him not again: and lay my staff upon the face of the child.</p>
+            <p><strong>30</strong> And the mother of the child said, As the Lord liveth, and as thy soul liveth, I will not leave thee. And he arose, and followed her.</p>
+            <p><strong>31</strong> And Gehazi passed on before them, and laid the staff upon the face of the child; but there was neither voice, nor hearing. Wherefore he went again to meet him, and told him, saying, The child is not awaked.</p>
+            <p><strong>32</strong> And when Elisha was come into the house, behold, the child was dead, and laid upon his bed.</p>
+            <p><strong>33</strong> He went in therefore, and shut the door upon them twain, and prayed unto the Lord.</p>
+            <p><strong>34</strong> And he went up, and lay upon the child, and put his mouth upon his mouth, and his eyes upon his eyes, and his hands upon his hands: and he stretched himself upon the child; and the flesh of the child waxed warm.</p>
+            <p><strong>35</strong> Then he returned, and walked in the house to and fro; and went up, and stretched himself upon him: and the child sneezed seven times, and the child opened his eyes.</p>
+            <p><strong>36</strong> And he called Gehazi, and said, Call this Shunammite. So he called her. And when she was come in unto him, he said, Take up thy son.</p>
+            <p><strong>37</strong> Then she went in, and fell at his feet, and bowed herself to the ground, and took up her son, and went out.</p>
+            <p><strong>38</strong> And Elisha came again to Gilgal: and there was a dearth in the land; and the sons of the prophets were sitting before him: and he said unto his servant, Set on the great pot, and seethe pottage for the sons of the prophets.</p>
+            <p><strong>39</strong> And one went out into the field to gather herbs, and found a wild vine, and gathered thereof wild gourds his lap full, and came and shred them into the pot of pottage: for they knew them not.</p>
+            <p><strong>40</strong> So they poured out for the men to eat. And it came to pass, as they were eating of the pottage, that they cried out, and said, O thou man of God, there is death in the pot. And they could not eat thereof.</p>
+            <p><strong>41</strong> But he said, Then bring meal. And he cast it into the pot; and he said, Pour out for the people, that they may eat. And there was no harm in the pot.</p>
+            <p><strong>42</strong> And there came a man from Baal–shalisha, and brought the man of God bread of the firstfruits, twenty loaves of barley, and full ears of corn in the husk thereof. And he said, Give unto the people, that they may eat.</p>
+            <p><strong>43</strong> And his servitor said, What, should I set this before an hundred men? He said again, Give the people, that they may eat: for thus saith the Lord, They shall eat, and shall leave thereof.</p>
+            <p><strong>44</strong> So he set it before them, and they did eat, and left thereof, according to the word of the Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Kings 4 (ASV)</p>
+            <p><strong>1</strong> Now there cried a certain woman of the wives of the sons of the prophets unto Elisha, saying, Thy servant my husband is dead; and thou knowest that thy servant did fear Jehovah: and the creditor is come to take unto him my two children to be bondmen.</p>
+            <p><strong>2</strong> And Elisha said unto her, What shall I do for thee? tell me; what hast thou in the house? And she said, Thy handmaid hath not anything in the house, save a pot of oil.</p>
+            <p><strong>3</strong> Then he said, Go, borrow thee vessels abroad of all thy neighbors, even empty vessels; borrow not a few.</p>
+            <p><strong>4</strong> And thou shalt go in, and shut the door upon thee and upon thy sons, and pour out into all those vessels; and thou shalt set aside that which is full.</p>
+            <p><strong>5</strong> So she went from him, and shut the door upon her and upon her sons; they brought the vessels to her, and she poured out.</p>
+            <p><strong>6</strong> And it came to pass, when the vessels were full, that she said unto her son, Bring me yet a vessel. And he said unto her, There is not a vessel more. And the oil stayed.</p>
+            <p><strong>7</strong> Then she came and told the man of God. And he said, Go, sell the oil, and pay thy debt, and live thou and thy sons of the rest.</p>
+            <p><strong>8</strong> And it fell on a day, that Elisha passed to Shunem, where was a great woman; and she constrained him to eat bread. And so it was, that as oft as he passed by, he turned in thither to eat bread.</p>
+            <p><strong>9</strong> And she said unto her husband, Behold now, I perceive that this is a holy man of God, that passeth by us continually.</p>
+            <p><strong>10</strong> Let us make, I pray thee, a little chamber on the wall; and let us set for him there a bed, and a table, and a seat, and a candlestick: and it shall be, when he cometh to us, that he shall turn in thither.</p>
+            <p><strong>11</strong> And it fell on a day, that he came thither, and he turned into the chamber and lay there.</p>
+            <p><strong>12</strong> And he said to Gehazi his servant, Call this Shunammite. And when he had called her, she stood before him.</p>
+            <p><strong>13</strong> And he said unto him, Say now unto her, Behold, thou hast been careful for us with all this care; what is to be done for thee? wouldest thou be spoken for to the king, or to the captain of the host? And she answered, I dwell among mine own people.</p>
+            <p><strong>14</strong> And he said, What then is to be done for her? And Gehazi answered, Verily she hath no son, and her husband is old.</p>
+            <p><strong>15</strong> And he said, Call her. And when he had called her, she stood in the door.</p>
+            <p><strong>16</strong> And he said, At this season, when the time cometh round, thou shalt embrace a son. And she said, Nay, my lord, thou man of God, do not lie unto thy handmaid.</p>
+            <p><strong>17</strong> And the woman conceived, and bare a son at that season, when the time came round, as Elisha had said unto her.</p>
+            <p><strong>18</strong> And when the child was grown, it fell on a day, that he went out to his father to the reapers.</p>
+            <p><strong>19</strong> And he said unto his father, My head, my head. And he said to his servant, Carry him to his mother.</p>
+            <p><strong>20</strong> And when he had taken him, and brought him to his mother, he sat on her knees till noon, and then died.</p>
+            <p><strong>21</strong> And she went up and laid him on the bed of the man of God, and shut the door upon him, and went out.</p>
+            <p><strong>22</strong> And she called unto her husband, and said, Send me, I pray thee, one of the servants, and one of the asses, that I may run to the man of God, and come again.</p>
+            <p><strong>23</strong> And he said, Wherefore wilt thou go to him to-day? it is neither new moon nor sabbath. And she said, It shall be well.</p>
+            <p><strong>24</strong> Then she saddled an ass, and said to her servant, Drive, and go forward; slacken me not the riding, except I bid thee.</p>
+            <p><strong>25</strong> So she went, and came unto the man of God to mount Carmel. And it came to pass, when the man of God saw her afar off, that he said to Gehazi his servant, Behold, yonder is the Shunammite:</p>
+            <p><strong>26</strong> run, I pray thee, now to meet her, and say unto her, Is it well with thee? is it well with thy husband? is it well with the child? And she answered, It is well.</p>
+            <p><strong>27</strong> And when she came to the man of God to the hill, she caught hold of his feet. And Gehazi came near to thrust her away; but the man of God said, Let her alone: for her soul is vexed within her; and Jehovah hath hid it from me, and hath not told me.</p>
+            <p><strong>28</strong> Then she said, Did I desire a son of my lord? did I not say, Do not deceive me?</p>
+            <p><strong>29</strong> Then he said to Gehazi, Gird up thy loins, and take my staff in thy hand, and go thy way: if thou meet any man, salute him not; and if any salute thee, answer him not again: and lay my staff upon the face of the child.</p>
+            <p><strong>30</strong> And the mother of the child said, As Jehovah liveth, and as thy soul liveth, I will not leave thee. And he arose, and followed her.</p>
+            <p><strong>31</strong> And Gehazi passed on before them, and laid the staff upon the face of the child; but there was neither voice, nor hearing. Wherefore he returned to meet him, and told him, saying, The child is not awaked.</p>
+            <p><strong>32</strong> And when Elisha was come into the house, behold, the child was dead, and laid upon his bed.</p>
+            <p><strong>33</strong> He went in therefore, and shut the door upon them twain, and prayed unto Jehovah.</p>
+            <p><strong>34</strong> And he went up, and lay upon the child, and put his mouth upon his mouth, and his eyes upon his eyes, and his hands upon his hands: and he stretched himself upon him; and the flesh of the child waxed warm.</p>
+            <p><strong>35</strong> Then he returned, and walked in the house once to and fro; and went up, and stretched himself upon him: and the child sneezed seven times, and the child opened his eyes.</p>
+            <p><strong>36</strong> And he called Gehazi, and said, Call this Shunammite. So he called her. And when she was come in unto him, he said, Take up thy son.</p>
+            <p><strong>37</strong> Then she went in, and fell at his feet, and bowed herself to the ground; and she took up her son, and went out.</p>
+            <p><strong>38</strong> And Elisha came again to Gilgal. And there was a dearth in the land; and the sons of the prophets were sitting before him; and he said unto his servant, Set on the great pot, and boil pottage for the sons of the prophets.</p>
+            <p><strong>39</strong> And one went out into the field to gather herbs, and found a wild vine, and gathered thereof wild gourds his lap full, and came and shred them into the pot of pottage; for they knew them not.</p>
+            <p><strong>40</strong> So they poured out for the men to eat. And it came to pass, as they were eating of the pottage, that they cried out, and said, O man of God, there is death in the pot. And they could not eat thereof.</p>
+            <p><strong>41</strong> But he said, Then bring meal. And he cast it into the pot; and he said, Pour out for the people, that they may eat. And there was no harm in the pot.</p>
+            <p><strong>42</strong> And there came a man from Baal-shalishah, and brought the man of God bread of the first-fruits, twenty loaves of barley, and fresh ears of grain in his sack. And he said, Give unto the people, that they may eat.</p>
+            <p><strong>43</strong> And his servant said, What, should I set this before a hundred men? But he said, Give the people, that they may eat; for thus saith Jehovah, They shall eat, and shall leave thereof.</p>
+            <p><strong>44</strong> So he set it before them, and they did eat, and left thereof, according to the word of Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This chapter overflows with the LORD's provision through Elisha. A prophet's widow, threatened with losing her sons to a creditor, owns only a pot of oil; Elisha tells her to borrow many empty containers and pour, and the oil keeps flowing until every vessel is full, enough to pay the debt and live. A prominent woman of Shunem makes a room for Elisha, and in return he promises that she, though her husband is old, will embrace a son; the child is born as promised. Years later the boy collapses with head pain and dies, and the grieving mother rides hard to Elisha, refusing to leave him. Elisha goes, shuts the door, prays, and stretches himself upon the child until the boy sneezes seven times and opens his eyes, restored to his mother's arms. At Gilgal, during a famine, poisoned wild gourds make the prophets cry, “There is death in the pot!”—and Elisha renders the stew harmless with meal. Finally, with only twenty barley loaves and fresh grain, Elisha feeds a hundred men, and by the word of the LORD there is food left over. Again and again, God meets his people's need with overflowing grace.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Elisha</strong> — The man of God through whom the LORD multiplies oil, gives and restores a son, purifies deadly stew, and feeds a hundred from little.</li>
+          <li><strong>The widow</strong> — A prophet's destitute wife whose single pot of oil the LORD multiplies to fill every borrowed vessel and rescue her sons from slavery.</li>
+          <li><strong>The Shunammite woman</strong> — A prominent, hospitable woman granted a son in her husband's old age, who runs to Elisha in faith when the boy dies and receives him back alive.</li>
+          <li><strong>Gehazi</strong> — Elisha's servant who suggests the woman has no son, fails to revive the boy with the staff, and assists his master throughout.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Kings 4:43 (WEB)</p>
+          <p class="verse__text">His servant said, “What, should I set this before a hundred men?”   But he said, “Give the people, that they may eat; for thus says Yahweh, ‘They will eat, and will have some left over.’”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God begins with what little we already have in hand and multiplies it for our need.</li>
+          <li>The LORD sees the desperate and the grieving, and he draws near to those who come to him in faith.</li>
+          <li>Nothing is too dead or too poisoned for God; he brings life and safety where there was death.</li>
+          <li>God's provision is not stingy but generous, leaving some left over as a sign of his abundance.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>God works through what we already have.</strong> Elisha asks, “what do you have in the house?” (2 Kings 4:2, WEB). God multiplies the little we surrender rather than demanding what we lack.</li>
+            <li><strong>Faith presses through to God in grief.</strong> The Shunammite vows, “As Yahweh lives… I will not leave you” (2 Kings 4:30, WEB), refusing to give up. Persistent, believing prayer brings us into God's restoring presence.</li>
+            <li><strong>God turns death into life.</strong> When they cry, “there is death in the pot!” (2 Kings 4:40, WEB), Elisha makes it wholesome, and the dead boy is raised. The LORD reverses what we cannot.</li>
+            <li><strong>God's provision overflows.</strong> “They will eat, and will have some left over” (2 Kings 4:43, WEB). His supply is abundant, foreshadowing the greater feeding by the One who fed thousands.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>What does Elisha ask the widow to do, and what does the empty containers test about her faith?</li>
+            <li>How does the Shunammite woman show faith in the way she responds to her son's death?</li>
+            <li>What do the poisoned stew and the feeding of a hundred together reveal about God's care in famine?</li>
+            <li>How do these miracles point forward to Jesus, who would also feed crowds with little?</li>
+            <li>What “little” do you have that God might be inviting you to offer him, trusting him to provide?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>Elisha tells her to borrow as many empty vessels as she can, then pour. The number of containers she gathers measures her faith; the oil flows until the last jar is full. God's provision was limited only by the room she made to receive it.</li>
+            <li>She lays the boy on the man of God's bed, says little to her husband, and rides hard to Elisha, refusing to leave him. Her tenacious faith brings the prophet back to the house, where God restores her son. Grief drives her toward God, not away.</li>
+            <li>Both miracles occur in famine, when food is scarce and even what there is can be deadly. God makes the poisoned stew safe and stretches a meager meal to feed a hundred with leftovers. He cares for ordinary bodily needs as well as spiritual ones.</li>
+            <li>Jesus, the greater prophet, would feed five thousand from five loaves and two fish, with baskets left over (John 6). Elisha's feeding of a hundred is a smaller foreshadowing of the abundance Christ brings, pointing to him as the true Bread of life.</li>
+            <li>This is a gentle personal-application question. Invite members to name the small resource, ability, or opportunity in their “house,” and to consider offering it to God. Encourage them with the pattern: God multiplies what is surrendered to him.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-kings-3.html">← 2 Kings 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-kings-5.html">2 Kings 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

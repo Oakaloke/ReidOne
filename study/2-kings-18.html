@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Kings 18: On Whom Do You Trust? — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Kings 18: Hezekiah's faithful reforms, Sennacherib's invasion, and the Rabshakeh's taunting challenge to Judah's trust." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-kings-progress" data-study-total="25">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Kings, Chapter 18
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Kings · Chapter 18</span>
+        <h1>2 Kings 18: On Whom Do You Trust?</h1>
+        <p class="lead">Hezekiah trusts the Lord and reforms Judah, but Assyria's envoy stands at the wall mocking that trust before the people.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-18">
+            <span>Scripture — 2 Kings Chapter 18</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-18">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-18-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-18-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-18-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-18-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Kings 18 (WEB)</p>
+            <p><strong>1</strong> Now in the third year of Hoshea son of Elah king of Israel, Hezekiah the son of Ahaz king of Judah began to reign.</p>
+            <p><strong>2</strong> He was twenty-five years old when he began to reign; and he reigned twenty-nine years in Jerusalem: and his mother’s name was Abi the daughter of Zechariah.</p>
+            <p><strong>3</strong> He did that which was right in the eyes of Yahweh, according to all that David his father had done.</p>
+            <p><strong>4</strong> He removed the high places, and broke the pillars, and cut down the Asherah: and he broke in pieces the bronze serpent that Moses had made; for in those days the children of Israel burned incense to it; and he called it Nehushtan.</p>
+            <p><strong>5</strong> He trusted in Yahweh, the God of Israel; so that after him was no one like him among all the kings of Judah, nor among them that were before him.</p>
+            <p><strong>6</strong> For he joined with Yahweh; he didn’t depart from following him, but kept his commandments, which Yahweh commanded Moses.</p>
+            <p><strong>7</strong> Yahweh was with him; wherever he went, he prospered. He rebelled against the king of Assyria, and didn’t serve him.</p>
+            <p><strong>8</strong> He struck the Philistines to Gaza and its borders, from the tower of the watchmen to the fortified city.</p>
+            <p><strong>9</strong> In the fourth year of king Hezekiah, which was the seventh year of Hoshea son of Elah king of Israel, Shalmaneser king of Assyria came up against Samaria, and besieged it.</p>
+            <p><strong>10</strong> At the end of three years they took it: in the sixth year of Hezekiah, which was the ninth year of Hoshea king of Israel, Samaria was taken.</p>
+            <p><strong>11</strong> The king of Assyria carried Israel away to Assyria, and put them in Halah, and on the Habor, the river of Gozan, and in the cities of the Medes,</p>
+            <p><strong>12</strong> because they didn’t obey the voice of Yahweh their God, but transgressed his covenant, even all that Moses the servant of Yahweh commanded, and would not hear it, nor do it.</p>
+            <p><strong>13</strong> Now in the fourteenth year of king Hezekiah, Sennacherib king of Assyria came up against all the fortified cities of Judah, and took them.</p>
+            <p><strong>14</strong> Hezekiah king of Judah sent to the king of Assyria to Lachish, saying, “I have offended; return from me. That which you put on me, I will bear.” The king of Assyria appointed to Hezekiah king of Judah three hundred talents of silver and thirty talents of gold.</p>
+            <p><strong>15</strong> Hezekiah gave him all the silver that was found in Yahweh’s house, and in the treasures of the king’s house.</p>
+            <p><strong>16</strong> At that time, Hezekiah cut off the gold from the doors of Yahweh’s temple, and from the pillars which Hezekiah king of Judah had overlaid, and gave it to the king of Assyria.</p>
+            <p><strong>17</strong> The king of Assyria sent Tartan and Rabsaris and Rabshakeh from Lachish to king Hezekiah with a great army to Jerusalem. They went up and came to Jerusalem. When they had come up, they came and stood by the conduit of the upper pool, which is in the highway of the fuller’s field.</p>
+            <p><strong>18</strong> When they had called to the king, there came out to them Eliakim the son of Hilkiah, who was over the household, and Shebnah the scribe, and Joah the son of Asaph the recorder.</p>
+            <p><strong>19</strong> Rabshakeh said to them, “Say now to Hezekiah, ‘Thus says the great king, the king of Assyria, “What confidence is this in which you trust?</p>
+            <p><strong>20</strong> You say (but they are but vain words), ‘There is counsel and strength for war.’ Now on whom do you trust, that you have rebelled against me?</p>
+            <p><strong>21</strong> Now, behold, you trust in the staff of this bruised reed, even in Egypt. If a man leans on it, it will go into his hand, and pierce it. So is Pharaoh king of Egypt to all who trust on him.</p>
+            <p><strong>22</strong> But if you tell me, ‘We trust in Yahweh our God;’ isn’t that he whose high places and whose altars Hezekiah has taken away, and has said to Judah and to Jerusalem, ‘You shall worship before this altar in Jerusalem?’</p>
+            <p><strong>23</strong> Now therefore, please give pledges to my master the king of Assyria, and I will give you two thousand horses, if you are able on your part to set riders on them.</p>
+            <p><strong>24</strong> How then can you turn away the face of one captain of the least of my master’s servants, and put your trust on Egypt for chariots and for horsemen?</p>
+            <p><strong>25</strong> Have I now come up without Yahweh against this place to destroy it? Yahweh said to me, ‘Go up against this land, and destroy it.’”’”</p>
+            <p><strong>26</strong> Then Eliakim the son of Hilkiah, and Shebnah, and Joah, said to Rabshakeh, “Please speak to your servants in the Syrian language; for we understand it. Don’t speak with us in the Jews’ language, in the hearing of the people who are on the wall.”</p>
+            <p><strong>27</strong> But Rabshakeh said to them, “Has my master sent me to your master, and to you, to speak these words? Hasn’t he sent me to the men who sit on the wall, to eat their own dung, and to drink their own water with you?”</p>
+            <p><strong>28</strong> Then Rabshakeh stood, and cried with a loud voice in the Jews’ language, and spoke, saying, “Hear the word of the great king, the king of Assyria.</p>
+            <p><strong>29</strong> Thus says the king, ‘Don’t let Hezekiah deceive you; for he will not be able to deliver you out of his hand.</p>
+            <p><strong>30</strong> Neither let Hezekiah make you trust in Yahweh, saying, “Yahweh will surely deliver us, and this city shall not be given into the hand of the king of Assyria.”</p>
+            <p><strong>31</strong> Don’t listen to Hezekiah.’ For thus says the king of Assyria, ‘Make your peace with me, and come out to me; and everyone of you eat of his vine, and everyone of his fig tree, and everyone drink the waters of his own cistern;</p>
+            <p><strong>32</strong> until I come and take you away to a land like your own land, a land of grain and new wine, a land of bread and vineyards, a land of olive trees and of honey, that you may live, and not die. Don’t listen to Hezekiah, when he persuades you, saying, “Yahweh will deliver us.”</p>
+            <p><strong>33</strong> Has any of the gods of the nations ever delivered his land out of the hand of the king of Assyria?</p>
+            <p><strong>34</strong> Where are the gods of Hamath, and of Arpad? Where are the gods of Sepharvaim, of Hena, and Ivvah? Have they delivered Samaria out of my hand?</p>
+            <p><strong>35</strong> Who are they among all the gods of the countries, that have delivered their country out of my hand, that Yahweh should deliver Jerusalem out of my hand?’”</p>
+            <p><strong>36</strong> But the people held their peace, and answered him not a word; for the king’s commandment was, “Don’t answer him.”</p>
+            <p><strong>37</strong> Then Eliakim the son of Hilkiah, who was over the household, came with Shebna the scribe, and Joah the son of Asaph the recorder, to Hezekiah with their clothes torn, and told him the words of Rabshakeh.</p>
+            </div>
+            <div class="scripture-text" id="web-18-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Kings 18 (KJV)</p>
+            <p><strong>1</strong> Now it came to pass in the third year of Hoshea son of Elah king of Israel, that Hezekiah the son of Ahaz king of Judah began to reign.</p>
+            <p><strong>2</strong> Twenty and five years old was he when he began to reign; and he reigned twenty and nine years in Jerusalem. His mother’s name also was Abi, the daughter of Zachariah.</p>
+            <p><strong>3</strong> And he did that which was right in the sight of the Lord, according to all that David his father did.</p>
+            <p><strong>4</strong> He removed the high places, and brake the images, and cut down the groves, and brake in pieces the brasen serpent that Moses had made: for unto those days the children of Israel did burn incense to it: and he called it Nehushtan.</p>
+            <p><strong>5</strong> He trusted in the Lord God of Israel; so that after him was none like him among all the kings of Judah, nor any that were before him.</p>
+            <p><strong>6</strong> For he clave to the Lord, and departed not from following him, but kept his commandments, which the Lord commanded Moses.</p>
+            <p><strong>7</strong> And the Lord was with him; and he prospered whithersoever he went forth: and he rebelled against the king of Assyria, and served him not.</p>
+            <p><strong>8</strong> He smote the Philistines, even unto Gaza, and the borders thereof, from the tower of the watchmen to the fenced city.</p>
+            <p><strong>9</strong> And it came to pass in the fourth year of king Hezekiah, which was the seventh year of Hoshea son of Elah king of Israel, that Shalmaneser king of Assyria came up against Samaria, and besieged it.</p>
+            <p><strong>10</strong> And at the end of three years they took it: even in the sixth year of Hezekiah, that is the ninth year of Hoshea king of Israel, Samaria was taken.</p>
+            <p><strong>11</strong> And the king of Assyria did carry away Israel unto Assyria, and put them in Halah and in Habor by the river of Gozan, and in the cities of the Medes:</p>
+            <p><strong>12</strong> Because they obeyed not the voice of the Lord their God, but transgressed his covenant, and all that Moses the servant of the Lord commanded, and would not hear them, nor do them.</p>
+            <p><strong>13</strong> Now in the fourteenth year of king Hezekiah did Sennacherib king of Assyria come up against all the fenced cities of Judah, and took them.</p>
+            <p><strong>14</strong> And Hezekiah king of Judah sent to the king of Assyria to Lachish, saying, I have offended; return from me: that which thou puttest on me will I bear. And the king of Assyria appointed unto Hezekiah king of Judah three hundred talents of silver and thirty talents of gold.</p>
+            <p><strong>15</strong> And Hezekiah gave him all the silver that was found in the house of the Lord, and in the treasures of the king’s house.</p>
+            <p><strong>16</strong> At that time did Hezekiah cut off the gold from the doors of the temple of the Lord, and from the pillars which Hezekiah king of Judah had overlaid, and gave it to the king of Assyria.</p>
+            <p><strong>17</strong> And the king of Assyria sent Tartan and Rabsaris and Rab–shakeh from Lachish to king Hezekiah with a great host against Jerusalem. And they went up and came to Jerusalem. And when they were come up, they came and stood by the conduit of the upper pool, which is in the highway of the fuller’s field.</p>
+            <p><strong>18</strong> And when they had called to the king, there came out to them Eliakim the son of Hilkiah, which was over the household, and Shebna the scribe, and Joah the son of Asaph the recorder.</p>
+            <p><strong>19</strong> And Rab–shakeh said unto them, Speak ye now to Hezekiah, Thus saith the great king, the king of Assyria, What confidence is this wherein thou trustest?</p>
+            <p><strong>20</strong> Thou sayest, (but they are but vain words,) I have counsel and strength for the war. Now on whom dost thou trust, that thou rebellest against me?</p>
+            <p><strong>21</strong> Now, behold, thou trustest upon the staff of this bruised reed, even upon Egypt, on which if a man lean, it will go into his hand, and pierce it: so is Pharaoh king of Egypt unto all that trust on him.</p>
+            <p><strong>22</strong> But if ye say unto me, We trust in the Lord our God: is not that he, whose high places and whose altars Hezekiah hath taken away, and hath said to Judah and Jerusalem, Ye shall worship before this altar in Jerusalem?</p>
+            <p><strong>23</strong> Now therefore, I pray thee, give pledges to my lord the king of Assyria, and I will deliver thee two thousand horses, if thou be able on thy part to set riders upon them.</p>
+            <p><strong>24</strong> How then wilt thou turn away the face of one captain of the least of my master’s servants, and put thy trust on Egypt for chariots and for horsemen?</p>
+            <p><strong>25</strong> Am I now come up without the Lord against this place to destroy it? The Lord said to me, Go up against this land, and destroy it.</p>
+            <p><strong>26</strong> Then said Eliakim the son of Hilkiah, and Shebna, and Joah, unto Rab–shakeh, Speak, I pray thee, to thy servants in the Syrian language; for we understand it: and talk not with us in the Jews’ language in the ears of the people that are on the wall.</p>
+            <p><strong>27</strong> But Rab–shakeh said unto them, Hath my master sent me to thy master, and to thee, to speak these words? hath he not sent me to the men which sit on the wall, that they may eat their own dung, and drink their own piss with you?</p>
+            <p><strong>28</strong> Then Rab–shakeh stood and cried with a loud voice in the Jews’ language, and spake, saying, Hear the word of the great king, the king of Assyria:</p>
+            <p><strong>29</strong> Thus saith the king, Let not Hezekiah deceive you: for he shall not be able to deliver you out of his hand:</p>
+            <p><strong>30</strong> Neither let Hezekiah make you trust in the Lord, saying, The Lord will surely deliver us, and this city shall not be delivered into the hand of the king of Assyria.</p>
+            <p><strong>31</strong> Hearken not to Hezekiah: for thus saith the king of Assyria, Make an agreement with me by a present, and come out to me, and then eat ye every man of his own vine, and every one of his fig tree, and drink ye every one the waters of his cistern:</p>
+            <p><strong>32</strong> Until I come and take you away to a land like your own land, a land of corn and wine, a land of bread and vineyards, a land of oil olive and of honey, that ye may live, and not die: and hearken not unto Hezekiah, when he persuadeth you, saying, The Lord will deliver us.</p>
+            <p><strong>33</strong> Hath any of the gods of the nations delivered at all his land out of the hand of the king of Assyria?</p>
+            <p><strong>34</strong> Where are the gods of Hamath, and of Arpad? where are the gods of Sepharvaim, Hena, and Ivah? have they delivered Samaria out of mine hand?</p>
+            <p><strong>35</strong> Who are they among all the gods of the countries, that have delivered their country out of mine hand, that the Lord should deliver Jerusalem out of mine hand?</p>
+            <p><strong>36</strong> But the people held their peace, and answered him not a word: for the king’s commandment was, saying, Answer him not.</p>
+            <p><strong>37</strong> Then came Eliakim the son of Hilkiah, which was over the household, and Shebna the scribe, and Joah the son of Asaph the recorder, to Hezekiah with their clothes rent, and told him the words of Rab–shakeh.</p>
+            </div>
+            <div class="scripture-text" id="web-18-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Kings 18 (ASV)</p>
+            <p><strong>1</strong> Now it came to pass in the third year of Hoshea son of Elah king of Israel, that Hezekiah the son of Ahaz king of Judah began to reign.</p>
+            <p><strong>2</strong> Twenty and five years old was he when he began to reign; and he reigned twenty and nine years in Jerusalem: and his mother’s name was Abi the daughter of Zechariah.</p>
+            <p><strong>3</strong> And he did that which was right in the eyes of Jehovah, according to all that David his father had done.</p>
+            <p><strong>4</strong> He removed the high places, and brake the pillars, and cut down the Asherah: and he brake in pieces the brazen serpent that Moses had made; for unto those days the children of Israel did burn incense to it; and he called it Nehushtan.</p>
+            <p><strong>5</strong> He trusted in Jehovah, the God of Israel; so that after him was none like him among all the kings of Judah, nor among them that were before him.</p>
+            <p><strong>6</strong> For he clave to Jehovah; he departed not from following him, but kept his commandments, which Jehovah commanded Moses.</p>
+            <p><strong>7</strong> And Jehovah was with him; whithersoever he went forth he prospered: and he rebelled against the king of Assyria, and served him not.</p>
+            <p><strong>8</strong> He smote the Philistines unto Gaza and the borders thereof, from the tower of the watchmen to the fortified city.</p>
+            <p><strong>9</strong> And it came to pass in the fourth year of king Hezekiah, which was the seventh year of Hoshea son of Elah king of Israel, that Shalmaneser king of Assyria came up against Samaria, and besieged it.</p>
+            <p><strong>10</strong> And at the end of three years they took it: in the sixth year of Hezekiah, which was the ninth year of Hoshea king of Israel, Samaria was taken.</p>
+            <p><strong>11</strong> And the king of Assyria carried Israel away unto Assyria, and put them in Halah, and on the Habor, the river of Gozan, and in the cities of the Medes,</p>
+            <p><strong>12</strong> because they obeyed not the voice of Jehovah their God, but transgressed his covenant, even all that Moses the servant of Jehovah commanded, and would not hear it, nor do it.</p>
+            <p><strong>13</strong> Now in the fourteenth year of king Hezekiah did Sennacherib king of Assyria come up against all the fortified cities of Judah, and took them.</p>
+            <p><strong>14</strong> And Hezekiah king of Judah sent to the king of Assyria to Lachish, saying, I have offended; return from me: that which thou puttest on me will I bear. And the king of Assyria appointed unto Hezekiah king of Judah three hundred talents of silver and thirty talents of gold.</p>
+            <p><strong>15</strong> And Hezekiah gave him all the silver that was found in the house of Jehovah, and in the treasures of the king’s house.</p>
+            <p><strong>16</strong> At that time did Hezekiah cut off the gold from the doors of the temple of Jehovah, and from the pillars which Hezekiah king of Judah had overlaid, and gave it to the king of Assyria.</p>
+            <p><strong>17</strong> And the king of Assyria sent Tartan and Rab-saris and Rabshakeh from Lachish to king Hezekiah with a great army unto Jerusalem. And they went up and came to Jerusalem. And when they were come up, they came and stood by the conduit of the upper pool, which is in the highway of the fuller’s field.</p>
+            <p><strong>18</strong> And when they had called to the king, there came out to them Eliakim the son of Hilkiah, who was over the household, and Shebnah the scribe, and Joah the son of Asaph the recorder.</p>
+            <p><strong>19</strong> And Rabshakeh said unto them, Say ye now to Hezekiah, Thus saith the great king, the king of Assyria, What confidence is this wherein thou trustest?</p>
+            <p><strong>20</strong> Thou sayest (but they are but vain words), There is counsel and strength for the war. Now on whom dost thou trust, that thou hast rebelled against me?</p>
+            <p><strong>21</strong> Now, behold, thou trustest upon the staff of this bruised reed, even upon Egypt; whereon if a man lean, it will go into his hand, and pierce it: so is Pharaoh king of Egypt unto all that trust on him.</p>
+            <p><strong>22</strong> But if ye say unto me, We trust in Jehovah our God; is not that he, whose high places and whose altars Hezekiah hath taken away, and hath said to Judah and to Jerusalem, Ye shall worship before this altar in Jerusalem?</p>
+            <p><strong>23</strong> Now therefore, I pray thee, give pledges to my master the king of Assyria, and I will give thee two thousand horses, if thou be able on thy part to set riders upon them.</p>
+            <p><strong>24</strong> How then canst thou turn away the face of one captain of the least of my master’s servants, and put thy trust on Egypt for chariots and for horsemen?</p>
+            <p><strong>25</strong> Am I now come up without Jehovah against this place to destroy it? Jehovah said unto me, Go up against this land, and destroy it.</p>
+            <p><strong>26</strong> Then said Eliakim the son of Hilkiah, and Shebnah, and Joah, unto Rabshakeh, Speak, I pray thee, to thy servants in the Syrian language; for we understand it: and speak not with us in the Jews’ language, in the ears of the people that are on the wall.</p>
+            <p><strong>27</strong> But Rabshakeh said unto them, Hath my master sent me to thy master, and to thee, to speak these words? hath he not sent me to the men that sit on the wall, to eat their own dung, and to drink their own water with you?</p>
+            <p><strong>28</strong> Then Rabshakeh stood, and cried with a loud voice in the Jews’ language, and spake, saying, Hear ye the word of the great king, the king of Assyria.</p>
+            <p><strong>29</strong> Thus saith the king, Let not Hezekiah deceive you; for he will not be able to deliver you out of his hand:</p>
+            <p><strong>30</strong> neither let Hezekiah make you trust in Jehovah, saying, Jehovah will surely deliver us, and this city shall not be given into the hand of the king of Assyria.</p>
+            <p><strong>31</strong> Hearken not to Hezekiah: for thus saith the king of Assyria, Make your peace with me, and come out to me; and eat ye every one of his vine, and every one of his fig-tree, and drink ye every one the waters of his own cistern;</p>
+            <p><strong>32</strong> until I come and take you away to a land like your own land, a land of grain and new wine, a land of bread and vineyards, a land of olive-trees and of honey, that ye may live, and not die: and hearken not unto Hezekiah, when he persuadeth you, saying, Jehovah will deliver us.</p>
+            <p><strong>33</strong> Hath any of the gods of the nations ever delivered his land out of the hand of the king of Assyria?</p>
+            <p><strong>34</strong> Where are the gods of Hamath, and of Arpad? where are the gods of Sepharvaim, of Hena, and Ivvah? have they delivered Samaria out of my hand?</p>
+            <p><strong>35</strong> Who are they among all the gods of the countries, that have delivered their country out of my hand, that Jehovah should deliver Jerusalem out of my hand?</p>
+            <p><strong>36</strong> But the people held their peace, and answered him not a word; for the king’s commandment was, saying, Answer him not.</p>
+            <p><strong>37</strong> Then came Eliakim the son of Hilkiah, who was over the household, and Shebna the scribe, and Joah the son of Asaph the recorder, to Hezekiah with their clothes rent, and told him the words of Rabshakeh.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Hezekiah becomes king of Judah and does what is right like David his father, removing the high places, breaking the pillars and the Asherah, and even crushing the bronze serpent of Moses that had become an idol. He trusts in the Lord so that no king of Judah was like him, holding fast to God and keeping his commandments, and the Lord is with him wherever he goes. He rebels against Assyria and strikes the Philistines. In his reign Samaria falls to Assyria, a reminder of the cost of disobedience. Then Sennacherib comes against the fortified cities of Judah and takes them, and Hezekiah, faltering, strips the temple to pay tribute. Assyria sends a great army and the Rabshakeh to Jerusalem, who stands at the conduit and taunts the people in their own language. He mocks their trust in Egypt and in the Lord, claims Yahweh himself sent him, and urges surrender, listing the gods of nations Assyria has destroyed. The people hold their peace at the king's command, and Hezekiah's officials return with their clothes torn. Faith and intimidation stand face to face at the city wall.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Hezekiah</strong> — King of Judah who trusts the Lord like no king before or after, removes the high places and idols, and at first falters under Sennacherib's pressure.</li>
+          <li><strong>Sennacherib</strong> — King of Assyria who invades Judah, captures its fortified cities, and demands Jerusalem's surrender through his envoy.</li>
+          <li><strong>The Rabshakeh</strong> — Sennacherib's spokesman who taunts Judah at the wall, mocking their trust in Egypt and in the Lord and urging the people to surrender.</li>
+          <li><strong>Eliakim, Shebna, and Joah</strong> — Hezekiah's officials who meet the Rabshakeh, ask him to speak in Aramaic, and return to the king with torn clothes to report the threat.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Kings 18:5 (WEB)</p>
+          <p class="verse__text">He trusted in Yahweh, the God of Israel; so that after him was no one like him among all the kings of Judah, nor among them that were before him.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>True reform tears down even cherished idols, including good things that have become objects of worship.</li>
+          <li>Trusting the Lord wholeheartedly sets a leader apart and brings God's presence and help.</li>
+          <li>Even faithful believers can falter under pressure, as Hezekiah does when he first pays tribute.</li>
+          <li>The enemy attacks faith by mocking it and twisting God's name to sow doubt and fear.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-18">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-18">
+            <ul class="lesson-list">
+            <li><strong>Faithfulness removes every rival to God.</strong> Hezekiah “broke in pieces the bronze serpent that Moses had made” (2 Kings 18:4, WEB) when it became an idol; nothing, however sacred its history, may take God's place.</li>
+            <li><strong>Wholehearted trust is rare and precious.</strong> “He trusted in Yahweh… so that after him was no one like him” (2 Kings 18:5, WEB); single-hearted reliance on God marks a life apart.</li>
+            <li><strong>God's presence follows obedience.</strong> “Yahweh was with him; wherever he went, he prospered” (2 Kings 18:7, WEB), for he held fast to the Lord.</li>
+            <li><strong>The enemy assaults our confidence in God.</strong> The Rabshakeh sneers, “What confidence is this in which you trust?” (2 Kings 18:19, WEB), aiming to unsettle faith before any battle is fought.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-18">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-18">
+            <ol class="study-questions">
+            <li>What made Hezekiah's reforms so thorough, and why did he destroy even the bronze serpent?</li>
+            <li>How is Hezekiah's trust in the Lord described, and what flowed from it?</li>
+            <li>Why might Hezekiah have wavered and paid tribute to Sennacherib after such faithful beginnings?</li>
+            <li>What strategies does the Rabshakeh use to undermine the people's trust in God?</li>
+            <li>When has someone's mockery shaken your confidence in God, and how can you stand firm when faith is ridiculed?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-18">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-18">
+            <ol class="study-questions">
+            <li>Hezekiah removes high places, pillars, and the Asherah, and even smashes the bronze serpent Moses had made because the people had begun burning incense to it (18:4). His reform reaches good things turned into idols, showing that genuine devotion will not spare even a treasured relic.</li>
+            <li>He trusted in the Lord like no other king, held fast to him, and kept his commandments, so that the Lord was with him and he prospered (18:5-7). His outward courage to rebel against Assyria grows from an inward reliance on God.</li>
+            <li>Under the weight of Assyria's conquests Hezekiah momentarily seeks to buy peace, stripping the temple to pay tribute (18:14-16). Even the most faithful can stumble under pressure; the chapter honestly shows that trust is tested and not always steady.</li>
+            <li>The Rabshakeh ridicules Judah's reliance on Egypt, twists Hezekiah's reforms against him, claims the Lord sent him, and lists conquered gods to argue Yahweh cannot deliver (18:19-35). His weapons are intimidation, half-truths, and blasphemy meant to crush hope.</li>
+            <li>This is a personal-application question. Invite members to recall mockery that made faith feel foolish, and to consider how God's track record and word steady us. As leader, encourage quiet confidence and avoid pressing anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-kings-17.html">← 2 Kings 17</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-kings-19.html">2 Kings 19 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

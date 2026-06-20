@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nehemiah 3: Everyone Builds Together — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Nehemiah 3: the people of Jerusalem rebuild the wall section by section, with each family and group repairing the portion nearest them." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-nehemiah-progress" data-study-total="13">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Nehemiah, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="nehemiah.html">← All Chapters</a>
+        <span class="study-meta">The Book of Nehemiah · Chapter 3</span>
+        <h1>Nehemiah 3: Everyone Builds Together</h1>
+        <p class="lead">Family by family and gate by gate, priests, rulers, daughters, and craftsmen take up the work, each repairing the section before them.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — Nehemiah Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Nehemiah 3 (WEB)</p>
+            <p><strong>1</strong> Then Eliashib the high priest rose up with his brothers the priests, and they built the sheep gate; they sanctified it, and set up its doors; even to the tower of Hammeah they sanctified it, to the tower of Hananel.</p>
+            <p><strong>2</strong> Next to him built the men of Jericho. Next to them built Zaccur the son of Imri.</p>
+            <p><strong>3</strong> The sons of Hassenaah built the fish gate. They laid its beams, and set up its doors, its bolts, and its bars.</p>
+            <p><strong>4</strong> Next to them, Meremoth the son of Uriah, the son of Hakkoz made repairs. Next to them, Meshullam the son of Berechiah, the son of Meshezabel made repairs. Next to them, Zadok the son of Baana made repairs.</p>
+            <p><strong>5</strong> Next to them, the Tekoites made repairs; but their nobles didn’t put their necks to the work of their lord.</p>
+            <p><strong>6</strong> Joiada the son of Paseah and Meshullam the son of Besodeiah repaired the old gate. They laid its beams, and set up its doors, and its bolts, and its bars.</p>
+            <p><strong>7</strong> Next to them, Melatiah the Gibeonite, and Jadon the Meronothite, the men of Gibeon, and of Mizpah, repaired the residence of the governor beyond the River.</p>
+            <p><strong>8</strong> Next to him, Uzziel the son of Harhaiah, goldsmiths, made repairs. Next to him, Hananiah one of the perfumers made repairs, and they fortified Jerusalem even to the broad wall.</p>
+            <p><strong>9</strong> Next to them, Rephaiah the son of Hur, the ruler of half the district of Jerusalem, made repairs.</p>
+            <p><strong>10</strong> Next to them, Jedaiah the son of Harumaph made repairs across from his house. Next to him, Hattush the son of Hashabneiah made repairs.</p>
+            <p><strong>11</strong> Malchijah the son of Harim, and Hasshub the son of Pahathmoab, repaired another portion, and the tower of the furnaces.</p>
+            <p><strong>12</strong> Next to him, Shallum the son of Hallohesh, the ruler of half the district of Jerusalem, he and his daughters, made repairs.</p>
+            <p><strong>13</strong> Hanun and the inhabitants of Zanoah repaired the valley gate. They built it, and set up its doors, its bolts, and its bars, and one thousand cubits of the wall to the dung gate.</p>
+            <p><strong>14</strong> Malchijah the son of Rechab, the ruler of the district of Beth Haccherem repaired the dung gate. He built it, and set up its doors, its bolts, and its bars.</p>
+            <p><strong>15</strong> Shallun the son of Colhozeh, the ruler of the district of Mizpah repaired the spring gate. He built it, and covered it, and set up its doors, its bolts, and its bars, and the wall of the pool of Shelah by the king’s garden, even to the stairs that go down from the city of David.</p>
+            <p><strong>16</strong> After him, Nehemiah the son of Azbuk, the ruler of half the district of Beth Zur, made repairs to the place opposite the tombs of David, and to the pool that was made, and to the house of the mighty men.</p>
+            <p><strong>17</strong> After him, the Levites, Rehum the son of Bani made repairs. Next to him, Hashabiah, the ruler of half the district of Keilah, made repairs for his district.</p>
+            <p><strong>18</strong> After him, their brothers, Bavvai the son of Henadad, the ruler of half the district of Keilah made repairs.</p>
+            <p><strong>19</strong> Next to him, Ezer the son of Jeshua, the ruler of Mizpah, repaired another portion, across from the ascent to the armory at the turning of the wall.</p>
+            <p><strong>20</strong> After him, Baruch the son of Zabbai earnestly repaired another portion, from the turning of the wall to the door of the house of Eliashib the high priest.</p>
+            <p><strong>21</strong> After him, Meremoth the son of Uriah the son of Hakkoz repaired another portion, from the door of the house of Eliashib even to the end of the house of Eliashib.</p>
+            <p><strong>22</strong> After him, the priests, the men of the Plain made repairs.</p>
+            <p><strong>23</strong> After them, Benjamin and Hasshub made repairs across from their house. After them, Azariah the son of Maaseiah the son of Ananiah made repairs beside his own house.</p>
+            <p><strong>24</strong> After him, Binnui the son of Henadad repaired another portion, from the house of Azariah to the turning of the wall, and to the corner.</p>
+            <p><strong>25</strong> Palal the son of Uzai made repairs opposite the turning of the wall, and the tower that stands out from the upper house of the king, which is by the court of the guard. After him Pedaiah the son of Parosh made repairs.</p>
+            <p><strong>26</strong> (Now the Nethinim lived in Ophel, to the place over against the water gate toward the east, and the tower that stands out.)</p>
+            <p><strong>27</strong> After him the Tekoites repaired another portion, over against the great tower that stands out, and to the wall of Ophel.</p>
+            <p><strong>28</strong> Above the horse gate, the priests made repairs, everyone across from his own house.</p>
+            <p><strong>29</strong> After them, Zadok the son of Immer made repairs across from his own house. After him, Shemaiah the son of Shecaniah, the keeper of the east gate made repairs.</p>
+            <p><strong>30</strong> After him, Hananiah the son of Shelemiah, and Hanun the sixth son of Zalaph, repaired another portion. After him, Meshullam the son of Berechiah made repairs across from his room.</p>
+            <p><strong>31</strong> After him, Malchijah one of the goldsmiths to the house of the Nethinim, and of the merchants, made repairs over against the gate of Hammiphkad, and to the ascent of the corner.</p>
+            <p><strong>32</strong> Between the ascent of the corner and the sheep gate, the goldsmiths and the merchants made repairs.</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Nehemiah 3 (KJV)</p>
+            <p><strong>1</strong> Then Eliashib the high priest rose up with his brethren the priests, and they builded the sheep gate; they sanctified it, and set up the doors of it; even unto the tower of Meah they sanctified it, unto the tower of Hananeel.</p>
+            <p><strong>2</strong> And next unto him builded the men of Jericho. And next to them builded Zaccur the son of Imri.</p>
+            <p><strong>3</strong> But the fish gate did the sons of Hassenaah build, who also laid the beams thereof, and set up the doors thereof, the locks thereof, and the bars thereof.</p>
+            <p><strong>4</strong> And next unto them repaired Meremoth the son of Urijah, the son of Koz. And next unto them repaired Meshullam the son of Berechiah, the son of Meshezabeel. And next unto them repaired Zadok the son of Baana.</p>
+            <p><strong>5</strong> And next unto them the Tekoites repaired; but their nobles put not their necks to the work of their Lord.</p>
+            <p><strong>6</strong> Moreover the old gate repaired Jehoiada the son of Paseah, and Meshullam the son of Besodeiah; they laid the beams thereof, and set up the doors thereof, and the locks thereof, and the bars thereof.</p>
+            <p><strong>7</strong> And next unto them repaired Melatiah the Gibeonite, and Jadon the Meronothite, the men of Gibeon, and of Mizpah, unto the throne of the governor on this side the river.</p>
+            <p><strong>8</strong> Next unto him repaired Uzziel the son of Harhaiah, of the goldsmiths. Next unto him also repaired Hananiah the son of one of the apothecaries, and they fortified Jerusalem unto the broad wall.</p>
+            <p><strong>9</strong> And next unto them repaired Rephaiah the son of Hur, the ruler of the half part of Jerusalem.</p>
+            <p><strong>10</strong> And next unto them repaired Jedaiah the son of Harumaph, even over against his house. And next unto him repaired Hattush the son of Hashabniah.</p>
+            <p><strong>11</strong> Malchijah the son of Harim, and Hashub the son of Pahath–moab, repaired the other piece, and the tower of the furnaces.</p>
+            <p><strong>12</strong> And next unto him repaired Shallum the son of Halohesh, the ruler of the half part of Jerusalem, he and his daughters.</p>
+            <p><strong>13</strong> The valley gate repaired Hanun, and the inhabitants of Zanoah; they built it, and set up the doors thereof, the locks thereof, and the bars thereof, and a thousand cubits on the wall unto the dung gate.</p>
+            <p><strong>14</strong> But the dung gate repaired Malchiah the son of Rechab, the ruler of part of Beth–haccerem; he built it, and set up the doors thereof, the locks thereof, and the bars thereof.</p>
+            <p><strong>15</strong> But the gate of the fountain repaired Shallun the son of Col–hozeh, the ruler of part of Mizpah; he built it, and covered it, and set up the doors thereof, the locks thereof, and the bars thereof, and the wall of the pool of Siloah by the king’s garden, and unto the stairs that go down from the city of David.</p>
+            <p><strong>16</strong> After him repaired Nehemiah the son of Azbuk, the ruler of the half part of Beth–zur, unto the place over against the sepulchres of David, and to the pool that was made, and unto the house of the mighty.</p>
+            <p><strong>17</strong> After him repaired the Levites, Rehum the son of Bani. Next unto him repaired Hashabiah, the ruler of the half part of Keilah, in his part.</p>
+            <p><strong>18</strong> After him repaired their brethren, Bavai the son of Henadad, the ruler of the half part of Keilah.</p>
+            <p><strong>19</strong> And next to him repaired Ezer the son of Jeshua, the ruler of Mizpah, another piece over against the going up to the armoury at the turning of the wall.</p>
+            <p><strong>20</strong> After him Baruch the son of Zabbai earnestly repaired the other piece, from the turning of the wall unto the door of the house of Eliashib the high priest.</p>
+            <p><strong>21</strong> After him repaired Meremoth the son of Urijah the son of Koz another piece, from the door of the house of Eliashib even to the end of the house of Eliashib.</p>
+            <p><strong>22</strong> And after him repaired the priests, the men of the plain.</p>
+            <p><strong>23</strong> After him repaired Benjamin and Hashub over against their house. After him repaired Azariah the son of Maaseiah the son of Ananiah by his house.</p>
+            <p><strong>24</strong> After him repaired Binnui the son of Henadad another piece, from the house of Azariah unto the turning of the wall, even unto the corner.</p>
+            <p><strong>25</strong> Palal the son of Uzai, over against the turning of the wall, and the tower which lieth out from the king’s high house, that was by the court of the prison. After him Pedaiah the son of Parosh.</p>
+            <p><strong>26</strong> Moreover the Nethinims dwelt in Ophel, unto the place over against the water gate toward the east, and the tower that lieth out.</p>
+            <p><strong>27</strong> After them the Tekoites repaired another piece, over against the great tower that lieth out, even unto the wall of Ophel.</p>
+            <p><strong>28</strong> From above the horse gate repaired the priests, every one over against his house.</p>
+            <p><strong>29</strong> After them repaired Zadok the son of Immer over against his house. After him repaired also Shemaiah the son of Shechaniah, the keeper of the east gate.</p>
+            <p><strong>30</strong> After him repaired Hananiah the son of Shelemiah, and Hanun the sixth son of Zalaph, another piece. After him repaired Meshullam the son of Berechiah over against his chamber.</p>
+            <p><strong>31</strong> After him repaired Malchiah the goldsmith’s son unto the place of the Nethinims, and of the merchants, over against the gate Miphkad, and to the going up of the corner.</p>
+            <p><strong>32</strong> And between the going up of the corner unto the sheep gate repaired the goldsmiths and the merchants.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Nehemiah 3 (ASV)</p>
+            <p><strong>1</strong> Then Eliashib the high priest rose up with his brethren the priests, and they builded the sheep gate; they sanctified it, and set up the doors of it; even unto the tower of Hammeah they sanctified it, unto the tower of Hananel.</p>
+            <p><strong>2</strong> And next unto him builded the men of Jericho. And next to them builded Zaccur the son of Imri.</p>
+            <p><strong>3</strong> And the fish gate did the sons of Hassenaah build; they laid the beams thereof, and set up the doors thereof, the bolts thereof, and the bars thereof.</p>
+            <p><strong>4</strong> And next unto them repaired Meremoth the son of Uriah, the son of Hakkoz. And next unto them repaired Meshullam the son of Berechiah, the son of Meshezabel. And next unto them repaired Zadok the son of Baana.</p>
+            <p><strong>5</strong> And next unto them the Tekoites repaired; but their nobles put not their necks to the work of their lord.</p>
+            <p><strong>6</strong> And the old gate repaired Joiada the son of Paseah and Meshullam the son of Besodeiah; they laid the beams thereof, and set up the doors thereof, and the bolts thereof, and the bars thereof.</p>
+            <p><strong>7</strong> And next unto them repaired Melatiah the Gibeonite, and Jadon the Meronothite, the men of Gibeon, and of Mizpah, that appertained to the throne of the governor beyond the River.</p>
+            <p><strong>8</strong> Next unto him repaired Uzziel the son of Harhaiah, goldsmiths. And next unto him repaired Hananiah one of the perfumers, and they fortified Jerusalem even unto the broad wall.</p>
+            <p><strong>9</strong> And next unto them repaired Rephaiah the son of Hur, the ruler of half the district of Jerusalem.</p>
+            <p><strong>10</strong> And next unto them repaired Jedaiah the son of Harumaph, over against his house. And next unto him repaired Hattush the son of Hashabneiah.</p>
+            <p><strong>11</strong> Malchijah the son of Harim, and Hasshub the son of Pahath-moab, repaired another portion, and the tower of the furnaces.</p>
+            <p><strong>12</strong> And next unto him repaired Shallum the son of Hallohesh, the ruler of half the district of Jerusalem, he and his daughters.</p>
+            <p><strong>13</strong> The valley gate repaired Hanun, and the inhabitants of Zanoah; they built it, and set up the doors thereof, the bolts thereof, and the bars thereof, and a thousand cubits of the wall unto the dung gate.</p>
+            <p><strong>14</strong> And the dung gate repaired Malchijah the son of Rechab, the ruler of the district of Beth-haccherem; he built it, and set up the doors thereof, the bolts thereof, and the bars thereof.</p>
+            <p><strong>15</strong> And the fountain gate repaired Shallun the son of Col-hozeh, the ruler of the district of Mizpah; he built it, and covered it, and set up the doors thereof, the bolts thereof, and the bars thereof, and the wall of the pool of Shelah by the king’s garden, even unto the stairs that go down from the city of David.</p>
+            <p><strong>16</strong> After him repaired Nehemiah the son of Azbuk, the ruler of half the district of Beth-zur, unto the place over against the sepulchres of David, and unto the pool that was made, and unto the house of the mighty men.</p>
+            <p><strong>17</strong> After him repaired the Levites, Rehum the son of Bani. Next unto him repaired Hashabiah, the ruler of half the district of Keilah, for his district.</p>
+            <p><strong>18</strong> After him repaired their brethren, Bavvai the son of Henadad, the ruler of half the district of Keilah.</p>
+            <p><strong>19</strong> And next to him repaired Ezer the son of Jeshua, the ruler of Mizpah, another portion, over against the ascent to the armory at the turning of the wall.</p>
+            <p><strong>20</strong> After him Baruch the son of Zabbai earnestly repaired another portion, from the turning of the wall unto the door of the house of Eliashib the high priest.</p>
+            <p><strong>21</strong> After him repaired Meremoth the son of Uriah the son of Hakkoz another portion, from the door of the house of Eliashib even to the end of the house of Eliashib.</p>
+            <p><strong>22</strong> And after him repaired the priests, the men of the Plain.</p>
+            <p><strong>23</strong> After them repaired Benjamin and Hasshub over against their house. After them repaired Azariah the son of Maaseiah the son of Ananiah beside his own house.</p>
+            <p><strong>24</strong> After him repaired Binnui the son of Henadad another portion, from the house of Azariah unto the turning of the wall, and unto the corner.</p>
+            <p><strong>25</strong> Palal the son of Uzai repaired over against the turning of the wall, and the tower that standeth out from the upper house of the king, which is by the court of the guard. After him Pedaiah the son of Parosh repaired.</p>
+            <p><strong>26</strong> (Now the Nethinim dwelt in Ophel, unto the place over against the water gate toward the east, and the tower that standeth out.)</p>
+            <p><strong>27</strong> After him the Tekoites repaired another portion, over against the great tower that standeth out, and unto the wall of Ophel.</p>
+            <p><strong>28</strong> Above the horse gate repaired the priests, every one over against his own house.</p>
+            <p><strong>29</strong> After them repaired Zadok the son of Immer over against his own house. And after him repaired Shemaiah the son of Shecaniah, the keeper of the east gate.</p>
+            <p><strong>30</strong> After him repaired Hananiah the son of Shelemiah, and Hanun the sixth son of Zalaph, another portion. After him repaired Meshullam the son of Berechiah over against his chamber.</p>
+            <p><strong>31</strong> After him repaired Malchijah one of the goldsmiths unto the house of the Nethinim, and of the merchants, over against the gate of Hammiphkad, and to the ascent of the corner.</p>
+            <p><strong>32</strong> And between the ascent of the corner and the sheep gate repaired the goldsmiths and the merchants.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>This chapter records the orderly, shared labor of rebuilding the wall, moving gate by gate around the city. Eliashib the high priest and his fellow priests begin with the sheep gate, sanctifying it as they go, and from there the account names group after group repairing their portions. Goldsmiths and perfumers work alongside rulers of districts; the men of Jericho, Tekoa, Gibeon, and other towns take their stretches; and Shallum's daughters share in the labor. Some, like the nobles of Tekoa, refuse to put their necks to the work of their lord, while others, like Baruch, repair earnestly and zealously. Many work on the section of wall directly across from their own houses, giving them a personal stake in the part they build. The repeated phrase “next to him” and “after him” weaves the whole community together, each person responsible for a manageable piece, so that the great task is accomplished through the faithful labor of ordinary people in their place. The chapter is a quiet testimony that God's work advances when many hands, gifted differently and serving where they are, build side by side.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Eliashib the high priest</strong> — The leader who, with his fellow priests, begins the work at the sheep gate, sanctifying it and setting an example of service from the top.</li>
+          <li><strong>The builders by families and towns</strong> — Priests, goldsmiths, perfumers, rulers, townspeople, and Shallum's daughters who each repair the portion of wall assigned to or nearest them.</li>
+          <li><strong>Baruch the son of Zabbai</strong> — A builder singled out for earnestly repairing his portion, a picture of wholehearted effort in God's work.</li>
+          <li><strong>The nobles of Tekoa</strong> — Leaders who would not stoop to the work of their lord, a sobering contrast to the many who labored willingly.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Nehemiah 3:1 (WEB)</p>
+          <p class="verse__text">Then Eliashib the high priest rose up with his brothers the priests, and they built the sheep gate; they sanctified it, and set up its doors; even to the tower of Hammeah they sanctified it, to the tower of Hananel.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Great tasks become possible when each person takes responsibility for a manageable part.</li>
+          <li>God's work needs every kind of worker—priests and goldsmiths, rulers and daughters alike.</li>
+          <li>Faithfulness often means simply building the section God has placed right in front of you.</li>
+          <li>Wholehearted, earnest labor stands in contrast to those who hold themselves above the work.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>Leaders lead by serving.</strong> Eliashib the high priest and his fellow priests “rose up” and built the first gate (Nehemiah 3:1, WEB). Those with authority set the pace by laboring first.</li>
+            <li><strong>Build what is in front of you.</strong> Many repaired the wall “across from his house” (Nehemiah 3:10, 23, WEB). Faithfulness usually means tending the part of the work nearest us.</li>
+            <li><strong>Every contributor matters.</strong> Goldsmiths, perfumers, rulers, townsfolk, and Shallum's daughters all share the labor (Nehemiah 3:8, 12, WEB). God's work has room for every gift and every willing hand.</li>
+            <li><strong>Some serve eagerly, some hold back.</strong> Baruch “earnestly repaired” his portion (Nehemiah 3:20, WEB), while Tekoa's nobles “didn’t put their necks to the work” (Nehemiah 3:5, WEB). Our hearts show in how we serve.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>What does the wide variety of workers in this chapter show about who is needed for God's work?</li>
+            <li>Why might it matter that many people repaired the wall directly in front of their own homes?</li>
+            <li>How do the nobles of Tekoa contrast with builders like Baruch, and what does each reveal about the heart?</li>
+            <li>What is significant about the high priest beginning the work himself?</li>
+            <li>What is the “section of wall” God has placed right in front of you to build faithfully?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>The list spans priests, goldsmiths, perfumers, district rulers, townspeople from Jericho and Tekoa, and even Shallum's daughters (3:8, 12). God's work is not reserved for a few specialists; it advances as people of every background and gift take up their part. No willing worker is unnecessary.</li>
+            <li>Building across from their own homes gave people a personal stake and natural diligence in their portion (3:10, 23, 28). It pictures how faithfulness often begins close to home, in the responsibilities nearest us, rather than in distant or impressive assignments.</li>
+            <li>Tekoa's nobles “didn’t put their necks to the work of their lord” (3:5), holding themselves above the labor, while Baruch “earnestly repaired” his section (3:20). The contrast is one of humility and zeal versus pride and reluctance, reminding us that God sees the spirit in which we serve.</li>
+            <li>By beginning the work himself, Eliashib the high priest leads from the front rather than merely directing others (3:1). Spiritual leadership models the very obedience and effort it asks of the people, lending credibility and momentum to the whole task.</li>
+            <li>This is a personal-application question. Invite members to name a concrete, often unglamorous responsibility—at home, work, or church—that God has set before them. As leader, affirm that faithfulness in our assigned “section” is exactly how God builds his larger work.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="nehemiah-2.html">← Nehemiah 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="nehemiah.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="nehemiah-4.html">Nehemiah 4 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

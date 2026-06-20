@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezra: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An overview of Ezra: God stirs Cyrus to free the exiles, the altar and temple are rebuilt amid opposition, and Ezra leads a second return to restore the people to God's Law." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezra-progress" data-study-total="10">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezra, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Ezra · Whole-Book Overview</span>
+        <h1>Ezra: The Whole Story</h1>
+        <p class="lead">A scattered people brought home to rebuild God's house and recover his word, kept and carried by his gracious hand at every step.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Ezra opens with a stunning act of God: he stirs the heart of Cyrus, king of Persia, to free the Jewish exiles and send them home to rebuild the temple in Jerusalem. The decades-long captivity in Babylon, foretold by the prophets, is over, and a remnant of Judah returns under Zerubbabel and Jeshua. They come not as conquerors but as worshipers, carrying back the sacred vessels and the hope of seeing God's house restored.</p>
+          <p>The work begins with the altar and then the temple foundation, met with both joyful shouting and the weeping of those who remembered the former glory. Opposition soon stalls the building for years, until the prophets Haggai and Zechariah stir the people to take up their tools again. A search of the Persian archives uncovers Cyrus's original decree, Darius confirms and funds the work, and at last the second temple is finished and dedicated with joy, and the Passover is kept.</p>
+          <p>Years later Ezra the scribe leads a second return, devoted to seeking, doing, and teaching the Law of the Lord. He arrives to find the people, even the leaders, compromised by intermarriage with the surrounding nations and their idolatry. Ezra's grief erupts in a searching prayer of confession, and the people respond with repentance and costly reform. The book ends not with a tidy triumph but with a community learning again to live as God's holy people—restored by grace and called to faithfulness.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>The Decree and the Return (chs 1-2)</strong> — God stirs Cyrus to free the exiles; the temple vessels are restored and a remnant journeys home to Jerusalem under Zerubbabel, listed family by family.</li>
+          <li><strong>Rebuilding Worship (ch 3)</strong> — The returned exiles set up the altar and lay the temple foundation, amid both great shouts of joy and the weeping of those who remembered the first house.</li>
+          <li><strong>Opposition and Renewal (chs 4-6)</strong> — Adversaries stall the building for years until Haggai and Zechariah rouse the people; Darius confirms Cyrus's decree, and the temple is finished and dedicated with joy.</li>
+          <li><strong>Ezra's Return (chs 7-8)</strong> — Ezra the scribe, with the king's blessing and the hand of God on him, leads a second company home to teach and establish the Law in Jerusalem.</li>
+          <li><strong>Repentance and Reform (chs 9-10)</strong> — Confronted with the people's unfaithful marriages to the nations, Ezra confesses their sin and leads a costly, painful reform to restore Israel as a holy people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Cyrus, king of Persia</strong> — The pagan king whose spirit God stirs to issue the decree freeing the exiles, returning the temple vessels, and authorizing the rebuilding of God's house in Jerusalem.</li>
+          <li><strong>Zerubbabel</strong> — The prince of the line of David who leads the first return, sets up the altar, and oversees the rebuilding of the temple foundation and walls.</li>
+          <li><strong>Jeshua the priest</strong> — The high priest who, with Zerubbabel, restores the altar and the temple worship and stands against compromise with the surrounding peoples.</li>
+          <li><strong>Ezra the scribe</strong> — The priest skilled in the Law who leads the second return, having set his heart to seek, do, and teach the word of God, and who leads the people in confession and reform.</li>
+          <li><strong>Artaxerxes, king of Persia</strong> — The later king whose decree commissions and lavishly provisions Ezra's journey to teach and establish God's Law throughout the province.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God of heaven whose gracious hand moves kings, frees captives, rebuilds his house, and restores his people to his word and his worship.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezra 7:10 (WEB)</p>
+          <p class="verse__text">For Ezra had set his heart to seek Yahweh’s law, and to do it, and to teach in Israel statutes and ordinances.</p>
+        </blockquote>
+          <p>This single verse is the heartbeat of the book and the portrait of its central figure. Ezra does not merely study the Law; he sets his heart to seek it, to obey it, and then to teach it to others—in that order. Before the dramatic reforms and the searching prayers, there is a man shaped by the word of God. The restoration of Judah, Ezra shows us, is not chiefly about stones and timber but about a people brought back to the Lord through his word.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>God rules the hearts of kings and uses even pagan rulers to accomplish his purposes for his people (Ezra 1:1).</li>
+          <li>True restoration begins with restored worship—the altar before the walls, God before everything else (Ezra 3:3).</li>
+          <li>God's work meets real opposition, but his hand keeps and prospers his people through it (Ezra 5:5).</li>
+          <li>The preaching of God's word, through Haggai and Zechariah, stirs a discouraged people to take up the work again (Ezra 6:14).</li>
+          <li>A heart set to seek, obey, and teach the word of God is the foundation of every lasting reform (Ezra 7:10).</li>
+          <li>Genuine repentance is humble, specific, and costly, owning sin honestly and turning from it (Ezra 9:6).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>God moves history to keep his promises.</strong> "Yahweh stirred up the spirit of Cyrus king of Persia" (Ezra 1:1, WEB) so that the word spoken through Jeremiah might be fulfilled. No empire is beyond his rule.</li>
+            <li><strong>Worship comes first in rebuilding.</strong> Before the foundation was laid, "they set the altar on its base" and offered burnt offerings (Ezra 3:3, WEB). Restoring our lives begins with restoring our worship.</li>
+            <li><strong>God watches over his people through opposition.</strong> "The eye of their God was on the elders of the Jews" (Ezra 5:5, WEB) so the work was not stopped. His care does not fail when trouble comes.</li>
+            <li><strong>God's word reignites stalled work.</strong> The elders "built and prospered, through the prophesying of Haggai the prophet and Zechariah" (Ezra 6:14, WEB). A faithful word breathes new life into weary hands.</li>
+            <li><strong>The gracious hand of God is on those who seek him.</strong> Again and again Ezra credits "the good hand of his God on him" (Ezra 7:9, WEB). Every step of restoration is grace, not achievement.</li>
+            <li><strong>Repentance owns sin without excuse.</strong> "I am ashamed and blush to lift up my face to you, my God" (Ezra 9:6, WEB). True confession refuses to minimize what God hates.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>How does the book of Ezra show God's sovereignty over kings and nations, and why is that comforting for God's people in exile?</li>
+            <li>Why do the returned exiles build the altar and restore worship before they finish the temple or the city? What does that order teach us?</li>
+            <li>The same event—laying the foundation—produces both shouts of joy and loud weeping (3:12-13). What does this tell us about looking back and looking forward in God's work?</li>
+            <li>How do Haggai and Zechariah, and later Ezra, show the power of God's word to renew a discouraged and compromised people?</li>
+            <li>Ezra credits "the good hand of his God" at every turn. Where have you seen God's gracious hand carrying you through a hard or important undertaking?</li>
+            <li>Ezra's reform was painful and costly. Where might following God faithfully today require you to make a hard, specific change rather than a vague good intention?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>From Cyrus to Darius to Artaxerxes, God moves the hearts of the most powerful rulers on earth to free, fund, and protect his people (1:1; 6:1-12; 7:11-26). For a remnant with no army and no king of their own, this is profound assurance: their God reigns over the very empire that holds them. Help the group see that no circumstance is outside his rule.</li>
+            <li>They set up the altar "in spite of their fear" before the foundation was even laid (3:3, 6). Restored fellowship with God comes before rebuilt structures; worship is not the reward for getting life in order but the starting point. Invite the group to consider what it means to put God first when much is still in ruins.</li>
+            <li>The older generation wept for the lost glory of Solomon's temple while the rest shouted for joy at God's fresh mercy (3:12-13). Both responses are honest. God's people can grieve what is gone and rejoice in what he is doing now. Encourage members to hold memory and hope together rather than letting one cancel the other.</li>
+            <li>Haggai and Zechariah stir the people to build again after years of paralysis (5:1-2; 6:14), and Ezra's whole ministry is to seek, do, and teach the Law (7:10). In each case it is God's word, faithfully spoken, that revives the people. The point is gently freeing: God renews us through his word, not merely through our willpower.</li>
+            <li>This is partly personal application. Ezra never takes credit; he repeatedly names "the good hand of his God on him" (7:9; 8:18). Invite members to retell a hard season as a story of God's gracious hand, learning to see his providence where they once saw only their own effort or good luck.</li>
+            <li>This is a personal-application question. Ezra's reform was wrenching and specific, not a vague resolve to do better (10:1-4). As leader, keep the tone hopeful and pastoral: invite members to name one concrete area where obedience will cost something, and remind them that the same grace that brought the exiles home empowers real change today.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="ezra.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="ezra.html">All Chapters</a>
+          <a class="btn btn--accent" href="ezra-1.html">Start with Ezra 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

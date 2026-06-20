@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ruth 1: Where You Go, I Will Go — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ruth 1: famine drives Naomi to Moab where she loses husband and sons, and Ruth clings to her with a vow of loyal love as they return to Bethlehem." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ruth-progress" data-study-total="4">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ruth, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ruth.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ruth · Chapter 1</span>
+        <h1>Ruth 1: Where You Go, I Will Go</h1>
+        <p class="lead">Famine, exile, and three graves leave Naomi empty, but Ruth refuses to turn back, binding her life and her God to her grieving mother-in-law.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Ruth Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ruth 1 (WEB)</p>
+            <p><strong>1</strong> In the days when the judges judged, there was a famine in the land. A certain man of Bethlehem Judah went to live in the country of Moab, he, and his wife, and his two sons.</p>
+            <p><strong>2</strong> The name of the man was Elimelech, and the name of his wife Naomi, and the name of his two sons Mahlon and Chilion, Ephrathites of Bethlehem Judah. They came into the country of Moab, and continued there.</p>
+            <p><strong>3</strong> Elimelech, Naomi’s husband, died; and she was left, and her two sons.</p>
+            <p><strong>4</strong> They took them wives of the women of Moab; the name of the one was Orpah, and the name of the other Ruth: and they lived there about ten years.</p>
+            <p><strong>5</strong> Mahlon and Chilion both died, and the woman was bereaved of her two children and of her husband.</p>
+            <p><strong>6</strong> Then she arose with her daughters-in-law, that she might return from the country of Moab: for she had heard in the country of Moab how that Yahweh had visited his people in giving them bread.</p>
+            <p><strong>7</strong> She went out of the place where she was, and her two daughters-in-law with her; and they went on the way to return to the land of Judah.</p>
+            <p><strong>8</strong> Naomi said to her two daughters-in-law, “Go, return each of you to her mother’s house: Yahweh deal kindly with you, as you have dealt with the dead, and with me.</p>
+            <p><strong>9</strong> Yahweh grant you that you may find rest, each of you in the house of her husband.” Then she kissed them, and they lifted up their voice, and wept.</p>
+            <p><strong>10</strong> They said to her, “No, but we will return with you to your people.”</p>
+            <p><strong>11</strong> Naomi said, “Go back, my daughters. Why do you want to go with me? Do I still have sons in my womb, that they may be your husbands?</p>
+            <p><strong>12</strong> Go back, my daughters, go your way; for I am too old to have a husband. If I should say, ‘I have hope,’ if I should even have a husband tonight, and should also bear sons;</p>
+            <p><strong>13</strong> would you then wait until they were grown? Would you then refrain from having husbands? No, my daughters, for it grieves me much for your sakes, for the hand of Yahweh has gone out against me.”</p>
+            <p><strong>14</strong> They lifted up their voice, and wept again: and Orpah kissed her mother-in-law, but Ruth joined with her.</p>
+            <p><strong>15</strong> She said, “Behold, your sister-in-law has gone back to her people, and to her god. Follow your sister-in-law.”</p>
+            <p><strong>16</strong> Ruth said, “Don’t entreat me to leave you, and to return from following after you, for where you go, I will go; and where you lodge, I will lodge; your people shall be my people, and your God my God;</p>
+            <p><strong>17</strong> where you die, will I die, and there will I be buried. Yahweh do so to me, and more also, if anything but death part you and me.”</p>
+            <p><strong>18</strong> When she saw that she was steadfastly minded to go with her, she left off speaking to her.</p>
+            <p><strong>19</strong> So they two went until they came to Bethlehem. When they had come to Bethlehem, all the city was excited about them, and they asked, “Is this Naomi?”</p>
+            <p><strong>20</strong> She said to them, “Don’t call me Naomi. Call me Mara; for the Almighty has dealt very bitterly with me.</p>
+            <p><strong>21</strong> I went out full, and Yahweh has brought me home again empty; why do you call me Naomi, since Yahweh has testified against me, and the Almighty has afflicted me?”</p>
+            <p><strong>22</strong> So Naomi returned, and Ruth the Moabitess, her daughter-in-law, with her, who returned out of the country of Moab: and they came to Bethlehem in the beginning of barley harvest.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ruth 1 (KJV)</p>
+            <p><strong>1</strong> Now it came to pass in the days when the judges ruled, that there was a famine in the land. And a certain man of Beth–lehem–judah went to sojourn in the country of Moab, he, and his wife, and his two sons.</p>
+            <p><strong>2</strong> And the name of the man was Elimelech, and the name of his wife Naomi, and the name of his two sons Mahlon and Chilion, Ephrathites of Beth–lehem–judah. And they came into the country of Moab, and continued there.</p>
+            <p><strong>3</strong> And Elimelech Naomi’s husband died; and she was left, and her two sons.</p>
+            <p><strong>4</strong> And they took them wives of the women of Moab; the name of the one was Orpah, and the name of the other Ruth: and they dwelled there about ten years.</p>
+            <p><strong>5</strong> And Mahlon and Chilion died also both of them; and the woman was left of her two sons and her husband.</p>
+            <p><strong>6</strong> Then she arose with her daughters in law, that she might return from the country of Moab: for she had heard in the country of Moab how that the Lord had visited his people in giving them bread.</p>
+            <p><strong>7</strong> Wherefore she went forth out of the place where she was, and her two daughters in law with her; and they went on the way to return unto the land of Judah.</p>
+            <p><strong>8</strong> And Naomi said unto her two daughters in law, Go, return each to her mother’s house: the Lord deal kindly with you, as ye have dealt with the dead, and with me.</p>
+            <p><strong>9</strong> The Lord grant you that ye may find rest, each of you in the house of her husband. Then she kissed them; and they lifted up their voice, and wept.</p>
+            <p><strong>10</strong> And they said unto her, Surely we will return with thee unto thy people.</p>
+            <p><strong>11</strong> And Naomi said, Turn again, my daughters: why will ye go with me? are there yet any more sons in my womb, that they may be your husbands?</p>
+            <p><strong>12</strong> Turn again, my daughters, go your way; for I am too old to have an husband. If I should say, I have hope, if I should have an husband also to night, and should also bear sons;</p>
+            <p><strong>13</strong> Would ye tarry for them till they were grown? would ye stay for them from having husbands? nay, my daughters; for it grieveth me much for your sakes that the hand of the Lord is gone out against me.</p>
+            <p><strong>14</strong> And they lifted up their voice, and wept again: and Orpah kissed her mother in law; but Ruth clave unto her.</p>
+            <p><strong>15</strong> And she said, Behold, thy sister in law is gone back unto her people, and unto her gods: return thou after thy sister in law.</p>
+            <p><strong>16</strong> And Ruth said, Intreat me not to leave thee, or to return from following after thee: for whither thou goest, I will go; and where thou lodgest, I will lodge: thy people shall be my people, and thy God my God:</p>
+            <p><strong>17</strong> Where thou diest, will I die, and there will I be buried: the Lord do so to me, and more also, if ought but death part thee and me.</p>
+            <p><strong>18</strong> When she saw that she was stedfastly minded to go with her, then she left speaking unto her.</p>
+            <p><strong>19</strong> So they two went until they came to Beth–lehem. And it came to pass, when they were come to Beth–lehem, that all the city was moved about them, and they said, Is this Naomi?</p>
+            <p><strong>20</strong> And she said unto them, Call me not Naomi, call me Mara: for the Almighty hath dealt very bitterly with me.</p>
+            <p><strong>21</strong> I went out full, and the Lord hath brought me home again empty: why then call ye me Naomi, seeing the Lord hath testified against me, and the Almighty hath afflicted me?</p>
+            <p><strong>22</strong> So Naomi returned, and Ruth the Moabitess, her daughter in law, with her, which returned out of the country of Moab: and they came to Beth–lehem in the beginning of barley harvest.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ruth 1 (ASV)</p>
+            <p><strong>1</strong> And it came to pass in the days when the judges judged, that there was a famine in the land. And a certain man of Beth-lehem-judah went to sojourn in the country of Moab, he, and his wife, and his two sons.</p>
+            <p><strong>2</strong> And the name of the man was Elimelech, and the name of his wife Naomi, and the name of his two sons Mahlon and Chilion, Ephrathites of Beth-lehem-judah. And they came into the country of Moab, and continued there.</p>
+            <p><strong>3</strong> And Elimelech, Naomi’s husband, died; and she was left, and her two sons.</p>
+            <p><strong>4</strong> And they took them wives of the women of Moab; the name of the one was Orpah, and the name of the other Ruth: and they dwelt there about ten years.</p>
+            <p><strong>5</strong> And Mahlon and Chilion died both of them; and the woman was left of her two children and of her husband.</p>
+            <p><strong>6</strong> Then she arose with her daughters-in-law, that she might return from the country of Moab: for she had heard in the country of Moab how that Jehovah had visited his people in giving them bread.</p>
+            <p><strong>7</strong> And she went forth out of the place where she was, and her two daughters-in-law with her; and they went on the way to return unto the land of Judah.</p>
+            <p><strong>8</strong> And Naomi said unto her two daughters-in-law, Go, return each of you to her mother’s house: Jehovah deal kindly with you, as ye have dealt with the dead, and with me.</p>
+            <p><strong>9</strong> Jehovah grant you that ye may find rest, each of you in the house of her husband. Then she kissed them, and they lifted up their voice, and wept.</p>
+            <p><strong>10</strong> And they said unto her, Nay, but we will return with thee unto thy people.</p>
+            <p><strong>11</strong> And Naomi said, Turn again, my daughters: why will ye go with me? have I yet sons in my womb, that they may be your husbands?</p>
+            <p><strong>12</strong> Turn again, my daughters, go your way; for I am too old to have a husband. If I should say, I have hope, if I should even have a husband to-night, and should also bear sons;</p>
+            <p><strong>13</strong> would ye therefore tarry till they were grown? would ye therefore stay from having husbands? nay, my daughters, for it grieveth me much for your sakes, for the hand of Jehovah is gone forth against me.</p>
+            <p><strong>14</strong> And they lifted up their voice, and wept again: and Orpah kissed her mother-in-law, but Ruth clave unto her.</p>
+            <p><strong>15</strong> And she said, Behold, thy sister-in-law is gone back unto her people, and unto her god: return thou after thy sister-in-law.</p>
+            <p><strong>16</strong> And Ruth said, Entreat me not to leave thee, and to return from following after thee, for whither thou goest, I will go; and where thou lodgest, I will lodge; thy people shall be my people, and thy God my God;</p>
+            <p><strong>17</strong> where thou diest, will I die, and there will I be buried: Jehovah do so to me, and more also, if aught but death part thee and me.</p>
+            <p><strong>18</strong> And when she saw that she was stedfastly minded to go with her, she left off speaking unto her.</p>
+            <p><strong>19</strong> So they two went until they came to Beth-lehem. And it came to pass, when they were come to Beth-lehem, that all the city was moved about them, and the women said, Is this Naomi?</p>
+            <p><strong>20</strong> And she said unto them, Call me not Naomi, call me Mara; for the Almighty hath dealt very bitterly with me.</p>
+            <p><strong>21</strong> I went out full, and Jehovah hath brought me home again empty; why call ye me Naomi, seeing Jehovah hath testified against me, and the Almighty hath afflicted me?</p>
+            <p><strong>22</strong> So Naomi returned, and Ruth the Moabitess, her daughter-in-law, with her, who returned out of the country of Moab: and they came to Beth-lehem in the beginning of barley harvest.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>In the days when the judges judged, a famine drives Elimelech of Bethlehem to take his wife Naomi and their two sons to live in Moab. There Elimelech dies, the sons marry Moabite women named Orpah and Ruth, and after about ten years both sons die as well, leaving Naomi bereaved of her husband and her children. Hearing that Yahweh has visited his people in Judah with bread, Naomi sets out to return home, and her two daughters-in-law start out with her. On the road she urges them to go back to their mothers' houses, praying that Yahweh will deal kindly with them and grant them rest in new marriages. After weeping and protest, Orpah kisses Naomi and turns back to her people and her god, but Ruth clings to her with a stunning vow: where Naomi goes she will go, Naomi's people will be her people, and Naomi's God her God, even unto death. The two come at last to Bethlehem at the beginning of the barley harvest, where the whole town is stirred. Naomi, however, tells them not to call her Naomi (“pleasant”) but Mara (“bitter”), for she went out full and the Lord has brought her home empty. Beneath her grief, the harvest is just beginning.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Naomi</strong> — A widow of Bethlehem who loses her husband and both sons in Moab and returns home so emptied by grief that she asks to be called Mara, bitter.</li>
+          <li><strong>Ruth</strong> — A young Moabite widow who refuses to leave Naomi, pledging her people, her God, and her future to her mother-in-law in a vow of covenant loyalty.</li>
+          <li><strong>Orpah</strong> — Naomi's other Moabite daughter-in-law, who weeps and at first protests, but finally kisses Naomi farewell and returns to her own people and gods.</li>
+          <li><strong>Elimelech</strong> — Naomi's husband, a man of Bethlehem who leads his family into Moab to escape famine and dies there, setting the story's loss in motion.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ruth 1:16 (WEB)</p>
+          <p class="verse__text">Ruth said, “Don’t entreat me to leave you, and to return from following after you, for where you go, I will go; and where you lodge, I will lodge; your people shall be my people, and your God my God;</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Even God's people experience famine, loss, and seasons that feel utterly empty.</li>
+          <li>Loyal love sometimes means staying when leaving would be far easier and safer.</li>
+          <li>Faith makes its home with God's people and God himself, even at great personal cost.</li>
+          <li>Honest grief and bitterness are not the end of the story when God is quietly at work.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>Loss is real, and so is God's care.</strong> Naomi is “bereaved of her two children and of her husband” (Ruth 1:5, WEB), yet the chapter ends with Yahweh visiting his people with bread (1:6). God does not ignore our emptiness.</li>
+            <li><strong>True loyalty counts the cost.</strong> Ruth pledges, “your people shall be my people, and your God my God” (Ruth 1:16, WEB), surrendering homeland and security for love that asks nothing in return.</li>
+            <li><strong>Conversion is to a God, not just a people.</strong> Ruth does not merely follow Naomi; she takes Naomi's God as her own (Ruth 1:16, WEB). Genuine faith embraces the Lord himself, not only his community.</li>
+            <li><strong>God can hold our bitterness.</strong> Naomi says, “the Almighty has dealt very bitterly with me” (Ruth 1:20, WEB), and the book lets her lament stand. Honest sorrow can coexist with a future God is preparing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>What chain of losses does Naomi suffer, and how does she understand God's hand in them by the end of the chapter?</li>
+            <li>Compare Orpah's choice with Ruth's. What is admirable about each, and what makes Ruth's vow so remarkable?</li>
+            <li>Ruth's pledge in verses 16-17 is one of Scripture's great statements of loyalty. What exactly does she commit to, and at what cost?</li>
+            <li>Naomi asks to be called Mara because she feels the Lord has emptied her. How should we respond to honest expressions of bitterness in grief?</li>
+            <li>Is there a place where loyal love is asking you to stay, follow, or commit, even though it would be easier to turn back?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Naomi loses her homeland to famine, then her husband, then both her sons, returning a childless widow (1:1-5). She reads these losses as the hand of Yahweh against her (1:13, 20-21). Help the group feel the weight of her grief, while noting the quiet hint of hope as God gives bread to his people.</li>
+            <li>Orpah does nothing wrong—she obeys Naomi's reasonable urging and returns home (1:14-15). Ruth's choice is extraordinary precisely because it is unreasonable by every worldly measure: she clings to a destitute widow with nothing to offer her. Use the contrast to highlight the costliness of covenant love.</li>
+            <li>Ruth binds her travel, her dwelling, her people, her God, her death, and her burial to Naomi (1:16-17). She gives up the safety of her family and the familiarity of her gods. This is hesed, loyal love that mirrors God's own faithfulness, and it shapes everything that follows.</li>
+            <li>The text neither rebukes nor corrects Naomi; it simply records her pain. Encourage the group that lament is a faithful response to suffering, and that God is patient with the grieving. Naomi's emptiness is the very soil in which God will bring fullness.</li>
+            <li>This is a personal-application question. Invite members to name, even silently, a relationship or commitment that calls for costly loyalty, and one small step of faithfulness. As leader, keep the tone hopeful—Ruth's loyalty led into blessing she could not yet see.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ruth.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ruth-2.html">Ruth 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

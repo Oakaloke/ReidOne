@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Judges 3: The First Deliverers — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Judges 3: God leaves nations to test Israel and raises up the judges Othniel, Ehud, and Shamgar to deliver his people from oppression." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-judges-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Judges, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="judges.html">← All Chapters</a>
+        <span class="study-meta">The Book of Judges · Chapter 3</span>
+        <h1>Judges 3: The First Deliverers</h1>
+        <p class="lead">God tests Israel through the remaining nations and raises up Othniel, left-handed Ehud, and Shamgar to rescue his people.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — Judges Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Judges 3 (WEB)</p>
+            <p><strong>1</strong> Now these are the nations which Yahweh left, to prove Israel by them, even as many as had not known all the wars of Canaan;</p>
+            <p><strong>2</strong> only that the generations of the children of Israel might know, to teach them war, at the least such as before knew nothing of it:</p>
+            <p><strong>3</strong> the five lords of the Philistines, and all the Canaanites, and the Sidonians, and the Hivites who lived on Mount Lebanon, from Mount Baal Hermon to the entrance of Hamath.</p>
+            <p><strong>4</strong> They were left to test Israel by them, to know whether they would listen to the commandments of Yahweh, which he commanded their fathers by Moses.</p>
+            <p><strong>5</strong> The children of Israel lived among the Canaanites, the Hittites, and the Amorites, and the Perizzites, and the Hivites, and the Jebusites:</p>
+            <p><strong>6</strong> and they took their daughters to be their wives, and gave their own daughters to their sons and served their gods.</p>
+            <p><strong>7</strong> The children of Israel did that which was evil in the sight of Yahweh, and forgot Yahweh their God, and served the Baals and the Asheroth.</p>
+            <p><strong>8</strong> Therefore Yahweh’s anger was kindled against Israel, and he sold them into the hand of Cushan Rishathaim king of Mesopotamia: and the children of Israel served Cushan Rishathaim eight years.</p>
+            <p><strong>9</strong> When the children of Israel cried to Yahweh, Yahweh raised up a savior to the children of Israel, who saved them, even Othniel the son of Kenaz, Caleb’s younger brother.</p>
+            <p><strong>10</strong> The Spirit of Yahweh came on him, and he judged Israel; and he went out to war, and Yahweh delivered Cushan Rishathaim king of Mesopotamia into his hand: and his hand prevailed against Cushan Rishathaim.</p>
+            <p><strong>11</strong> The land had rest forty years. Othniel the son of Kenaz died.</p>
+            <p><strong>12</strong> The children of Israel again did that which was evil in the sight of Yahweh: and Yahweh strengthened Eglon the king of Moab against Israel, because they had done that which was evil in the sight of Yahweh.</p>
+            <p><strong>13</strong> He gathered to him the children of Ammon and Amalek; and he went and struck Israel, and they possessed the city of palm trees.</p>
+            <p><strong>14</strong> The children of Israel served Eglon the king of Moab eighteen years.</p>
+            <p><strong>15</strong> But when the children of Israel cried to Yahweh, Yahweh raised them up a savior, Ehud the son of Gera, the Benjamite, a man left-handed. The children of Israel sent tribute by him to Eglon the king of Moab.</p>
+            <p><strong>16</strong> Ehud made him a sword which had two edges, a cubit in length; and he wore it under his clothing on his right thigh.</p>
+            <p><strong>17</strong> He offered the tribute to Eglon king of Moab: now Eglon was a very fat man.</p>
+            <p><strong>18</strong> When he had made an end of offering the tribute, he sent away the people who bore the tribute.</p>
+            <p><strong>19</strong> But he himself turned back from the quarries that were by Gilgal, and said, “I have a secret errand to you, king.” The king said, “Keep silence!” All who stood by him went out from him.</p>
+            <p><strong>20</strong> Ehud came to him; and he was sitting by himself alone in the cool upper room. Ehud said, “I have a message from God to you.” He arose out of his seat.</p>
+            <p><strong>21</strong> Ehud put out his left hand, and took the sword from his right thigh, and thrust it into his body:</p>
+            <p><strong>22</strong> and the handle also went in after the blade; and the fat closed on the blade, for he didn’t draw the sword out of his body; and it came out behind.</p>
+            <p><strong>23</strong> Then Ehud went out onto the porch, and shut the doors of the upper room on him, and locked them.</p>
+            <p><strong>24</strong> Now when he was gone out, his servants came; and they saw, and behold, the doors of the upper room were locked; and they said, “Surely he is covering his feet in the upper room.”</p>
+            <p><strong>25</strong> They waited until they were ashamed; and behold, he didn’t open the doors of the upper room: therefore they took the key, and opened them, and behold, their lord was fallen down dead on the earth.</p>
+            <p><strong>26</strong> Ehud escaped while they waited, and passed beyond the quarries, and escaped to Seirah.</p>
+            <p><strong>27</strong> When he had come, he blew a trumpet in the hill country of Ephraim; and the children of Israel went down with him from the hill country, and he before them.</p>
+            <p><strong>28</strong> He said to them, “Follow me; for Yahweh has delivered your enemies the Moabites into your hand.” They followed him, and took the fords of the Jordan against the Moabites, and didn’t allow any man to pass over.</p>
+            <p><strong>29</strong> They struck of Moab at that time about ten thousand men, every lusty man, and every man of valor; and there escaped not a man.</p>
+            <p><strong>30</strong> So Moab was subdued that day under the hand of Israel. The land had rest eighty years.</p>
+            <p><strong>31</strong> After him was Shamgar the son of Anath, who struck of the Philistines six hundred men with an ox goad: and he also saved Israel.</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Judges 3 (KJV)</p>
+            <p><strong>1</strong> Now these are the nations which the Lord left, to prove Israel by them, even as many of Israel as had not known all the wars of Canaan;</p>
+            <p><strong>2</strong> Only that the generations of the children of Israel might know, to teach them war, at the least such as before knew nothing thereof;</p>
+            <p><strong>3</strong> Namely, five lords of the Philistines, and all the Canaanites, and the Sidonians, and the Hivites that dwelt in mount Lebanon, from mount Baal–hermon unto the entering in of Hamath.</p>
+            <p><strong>4</strong> And they were to prove Israel by them, to know whether they would hearken unto the commandments of the Lord, which he commanded their fathers by the hand of Moses.</p>
+            <p><strong>5</strong> And the children of Israel dwelt among the Canaanites, Hittites, and Amorites, and Perizzites, and Hivites, and Jebusites:</p>
+            <p><strong>6</strong> And they took their daughters to be their wives, and gave their daughters to their sons, and served their gods.</p>
+            <p><strong>7</strong> And the children of Israel did evil in the sight of the Lord, and forgat the Lord their God, and served Baalim and the groves.</p>
+            <p><strong>8</strong> Therefore the anger of the Lord was hot against Israel, and he sold them into the hand of Chushan–rishathaim king of Mesopotamia: and the children of Israel served Chushan–rishathaim eight years.</p>
+            <p><strong>9</strong> And when the children of Israel cried unto the Lord, the Lord raised up a deliverer to the children of Israel, who delivered them, even Othniel the son of Kenaz, Caleb’s younger brother.</p>
+            <p><strong>10</strong> And the Spirit of the Lord came upon him, and he judged Israel, and went out to war: and the Lord delivered Chushan–rishathaim king of Mesopotamia into his hand; and his hand prevailed against Chushan–rishathaim.</p>
+            <p><strong>11</strong> And the land had rest forty years. And Othniel the son of Kenaz died.</p>
+            <p><strong>12</strong> And the children of Israel did evil again in the sight of the Lord: and the Lord strengthened Eglon the king of Moab against Israel, because they had done evil in the sight of the Lord.</p>
+            <p><strong>13</strong> And he gathered unto him the children of Ammon and Amalek, and went and smote Israel, and possessed the city of palm trees.</p>
+            <p><strong>14</strong> So the children of Israel served Eglon the king of Moab eighteen years.</p>
+            <p><strong>15</strong> But when the children of Israel cried unto the Lord, the Lord raised them up a deliverer, Ehud the son of Gera, a Benjamite, a man lefthanded: and by him the children of Israel sent a present unto Eglon the king of Moab.</p>
+            <p><strong>16</strong> But Ehud made him a dagger which had two edges, of a cubit length; and he did gird it under his raiment upon his right thigh.</p>
+            <p><strong>17</strong> And he brought the present unto Eglon king of Moab: and Eglon was a very fat man.</p>
+            <p><strong>18</strong> And when he had made an end to offer the present, he sent away the people that bare the present.</p>
+            <p><strong>19</strong> But he himself turned again from the quarries that were by Gilgal, and said, I have a secret errand unto thee, O king: who said, Keep silence. And all that stood by him went out from him.</p>
+            <p><strong>20</strong> And Ehud came unto him; and he was sitting in a summer parlour, which he had for himself alone. And Ehud said, I have a message from God unto thee. And he arose out of his seat.</p>
+            <p><strong>21</strong> And Ehud put forth his left hand, and took the dagger from his right thigh, and thrust it into his belly:</p>
+            <p><strong>22</strong> And the haft also went in after the blade; and the fat closed upon the blade, so that he could not draw the dagger out of his belly; and the dirt came out.</p>
+            <p><strong>23</strong> Then Ehud went forth through the porch, and shut the doors of the parlour upon him, and locked them.</p>
+            <p><strong>24</strong> When he was gone out, his servants came; and when they saw that, behold, the doors of the parlour were locked, they said, Surely he covereth his feet in his summer chamber.</p>
+            <p><strong>25</strong> And they tarried till they were ashamed: and, behold, he opened not the doors of the parlour; therefore they took a key, and opened them: and, behold, their lord was fallen down dead on the earth.</p>
+            <p><strong>26</strong> And Ehud escaped while they tarried, and passed beyond the quarries, and escaped unto Seirath.</p>
+            <p><strong>27</strong> And it came to pass, when he was come, that he blew a trumpet in the mountain of Ephraim, and the children of Israel went down with him from the mount, and he before them.</p>
+            <p><strong>28</strong> And he said unto them, Follow after me: for the Lord hath delivered your enemies the Moabites into your hand. And they went down after him, and took the fords of Jordan toward Moab, and suffered not a man to pass over.</p>
+            <p><strong>29</strong> And they slew of Moab at that time about ten thousand men, all lusty, and all men of valour; and there escaped not a man.</p>
+            <p><strong>30</strong> So Moab was subdued that day under the hand of Israel. And the land had rest fourscore years.</p>
+            <p><strong>31</strong> And after him was Shamgar the son of Anath, which slew of the Philistines six hundred men with an ox goad: and he also delivered Israel.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Judges 3 (ASV)</p>
+            <p><strong>1</strong> Now these are the nations which Jehovah left, to prove Israel by them, even as many of Israel as had not known all the wars of Canaan;</p>
+            <p><strong>2</strong> only that the generations of the children of Israel might know, to teach them war, at the least such as beforetime knew nothing thereof:</p>
+            <p><strong>3</strong> namely, the five lords of the Philistines, and all the Canaanites, and the Sidonians, and the Hivites that dwelt in mount Lebanon, from mount Baal-hermon unto the entrance of Hamath.</p>
+            <p><strong>4</strong> And they were left, to prove Israel by them, to know whether they would hearken unto the commandments of Jehovah, which he commanded their fathers by Moses.</p>
+            <p><strong>5</strong> And the children of Israel dwelt among the Canaanites, the Hittites, and the Amorites, and the Perizzites, and the Hivites, and the Jebusites:</p>
+            <p><strong>6</strong> and they took their daughters to be their wives, and gave their own daughters to their sons and served their gods.</p>
+            <p><strong>7</strong> And the children of Israel did that which was evil in the sight of Jehovah, and forgat Jehovah their God, and served the Baalim and the Asheroth.</p>
+            <p><strong>8</strong> Therefore the anger of Jehovah was kindled against Israel, and he sold them into the hand of Cushan-rishathaim king of Mesopotamia: and the children of Israel served Cushan-rishathaim eight years.</p>
+            <p><strong>9</strong> And when the children of Israel cried unto Jehovah, Jehovah raised up a saviour to the children of Israel, who saved them, even Othniel the son of Kenaz, Caleb’s younger brother.</p>
+            <p><strong>10</strong> And the Spirit of Jehovah came upon him, and he judged Israel; and he went out to war, and Jehovah delivered Cushan-rishathaim king of Mesopotamia into his hand: and his hand prevailed against Cushan-rishathaim.</p>
+            <p><strong>11</strong> And the land had rest forty years. And Othniel the son of Kenaz died.</p>
+            <p><strong>12</strong> And the children of Israel again did that which was evil in the sight of Jehovah: and Jehovah strengthened Eglon the king of Moab against Israel, because they had done that which was evil in the sight of Jehovah.</p>
+            <p><strong>13</strong> And he gathered unto him the children of Ammon and Amalek; and he went and smote Israel, and they possessed the city of palm-trees.</p>
+            <p><strong>14</strong> And the children of Israel served Eglon the king of Moab eighteen years.</p>
+            <p><strong>15</strong> But when the children of Israel cried unto Jehovah, Jehovah raised them up a saviour, Ehud the son of Gera, the Benjamite, a man left-handed. And the children of Israel sent tribute by him unto Eglon the king of Moab.</p>
+            <p><strong>16</strong> And Ehud made him a sword which had two edges, a cubit in length; and he girded it under his raiment upon his right thigh.</p>
+            <p><strong>17</strong> And he offered the tribute unto Eglon king of Moab: now Eglon was a very fat man.</p>
+            <p><strong>18</strong> And when he had made an end of offering the tribute, he sent away the people that bare the tribute.</p>
+            <p><strong>19</strong> But he himself turned back from the quarries that were by Gilgal, and said, I have a secret errand unto thee, O king. And he said, Keep silence. And all that stood by him went out from him.</p>
+            <p><strong>20</strong> And Ehud came unto him; and he was sitting by himself alone in the cool upper room. And Ehud said, I have a message from God unto thee. And he arose out of his seat.</p>
+            <p><strong>21</strong> And Ehud put forth his left hand, and took the sword from his right thigh, and thrust it into his body:</p>
+            <p><strong>22</strong> and the haft also went in after the blade; and the fat closed upon the blade, for he drew not the sword out of his body; and it came out behind.</p>
+            <p><strong>23</strong> Then Ehud went forth into the porch, and shut the doors of the upper room upon him, and locked them.</p>
+            <p><strong>24</strong> Now when he was gone out, his servants came; and they saw, and, behold, the doors of the upper room were locked; and they said, Surely he is covering his feet in the upper chamber.</p>
+            <p><strong>25</strong> And they tarried till they were ashamed; and, behold, he opened not the doors of the upper room: therefore they took the key, and opened them; and, behold, their lord was fallen down dead on the earth.</p>
+            <p><strong>26</strong> And Ehud escaped while they tarried, and passed beyond the quarries, and escaped unto Seirah.</p>
+            <p><strong>27</strong> And it came to pass, when he was come, that he blew a trumpet in the hill-country of Ephraim; and the children of Israel went down with him from the hill-country, and he before them.</p>
+            <p><strong>28</strong> And he said unto them, Follow after me; for Jehovah hath delivered your enemies the Moabites into your hand. And they went down after him, and took the fords of the Jordan against the Moabites, and suffered not a man to pass over.</p>
+            <p><strong>29</strong> And they smote of Moab at that time about ten thousand men, every lusty man, and every man of valor; and there escaped not a man.</p>
+            <p><strong>30</strong> So Moab was subdued that day under the hand of Israel. And the land had rest fourscore years.</p>
+            <p><strong>31</strong> And after him was Shamgar the son of Anath, who smote of the Philistines six hundred men with an ox-goad: and he also saved Israel.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The narrator explains that Yahweh left certain nations in the land to test Israel and to teach the new generations war, proving whether they would obey his commandments. Instead, Israel intermarries with the Canaanites, serves their gods, and forgets Yahweh. So the cycle turns for the first time in earnest: God sells Israel into the hand of Cushan-Rishathaim of Mesopotamia for eight years, until they cry out and the Spirit of Yahweh comes on Othniel, Caleb's younger kinsman, who delivers them and gives the land rest forty years. After Othniel dies, Israel again does evil, and God strengthens Eglon, the very fat king of Moab, who oppresses them eighteen years. This time God raises up Ehud, a left-handed Benjamite, who fashions a hidden double-edged sword, gains a private audience with Eglon, announces a message from God, and thrusts the blade into the king before escaping to rally Israel and rout Moab, granting eighty years of rest. Briefly we meet Shamgar son of Anath, who strikes down six hundred Philistines with an ox goad and also saves Israel. Through unlikely instruments—an obscure kinsman, a left-handed man, a farmer with a goad—God shows that salvation comes by his Spirit and his choosing, not by human strength.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Othniel</strong> — Caleb's younger kinsman and Israel's first judge, on whom the Spirit of Yahweh comes to defeat Cushan-Rishathaim and win forty years of rest.</li>
+          <li><strong>Ehud</strong> — A left-handed Benjamite who hides a double-edged sword, slays the Moabite king Eglon, and leads Israel to victory and eighty years of rest.</li>
+          <li><strong>Eglon</strong> — The very fat king of Moab whom God strengthens to oppress Israel, struck down by Ehud's hidden blade in his cool upper room.</li>
+          <li><strong>Shamgar</strong> — The son of Anath who strikes down six hundred Philistines with an ox goad and also saves Israel, a fleeting figure of unlikely deliverance.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Judges 3:9 (WEB)</p>
+          <p class="verse__text">When the children of Israel cried to Yahweh, Yahweh raised up a savior to the children of Israel, who saved them, even Othniel the son of Kenaz, Caleb’s younger brother.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God can use trials, even hostile nations, to test and strengthen the faith of his people.</li>
+          <li>When his people cry out, God answers by raising up a savior, for he is rich in mercy.</li>
+          <li>God delights to deliver through unlikely and unimpressive instruments, so the glory goes to him.</li>
+          <li>True deliverance comes by the Spirit of God resting on his chosen servant, not by human might.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>God hears the cry of his people.</strong> “When the children of Israel cried to Yahweh, Yahweh raised up a savior” (Judges 3:9, WEB). Crying out in our distress moves the merciful God to act.</li>
+            <li><strong>The Spirit empowers the deliverer.</strong> “The Spirit of Yahweh came on him, and he judged Israel” (Judges 3:10, WEB). Othniel's success is the work of God's Spirit, not his own resources.</li>
+            <li><strong>God uses the overlooked.</strong> Ehud is “a man left-handed” (Judges 3:15, WEB), and Shamgar wields only “an ox goad” (Judges 3:31, WEB). God chooses the unlikely to save.</li>
+            <li><strong>Idolatry brings bondage; God brings rest.</strong> After serving other gods Israel is sold into oppression, yet through the judge “the land had rest” (Judges 3:11, 30, WEB). Sin enslaves; God's salvation gives peace.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>Why does God leave nations in the land to “test” Israel (3:1-4)? How might God use testing in the life of faith today?</li>
+            <li>Othniel succeeds because “the Spirit of Yahweh came on him” (3:10). How does this shape the way we think about serving God?</li>
+            <li>Ehud is left-handed and Shamgar wields only an ox goad. What does God's use of unlikely instruments tell us about who he chooses?</li>
+            <li>Each deliverance is preceded by Israel crying out to God. What is the relationship between our desperation and God's rescue?</li>
+            <li>Where do you feel ill-equipped or overlooked, and how might God want to use you anyway for his purposes?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>God leaves the nations both to discipline a forgetful people and to prove whether they will obey (3:1-4). Testing is not God's cruelty but his refining; trials reveal and strengthen real faith. Discuss how hardship can become a teacher rather than only a threat.</li>
+            <li>Othniel's victory is attributed plainly to the Spirit coming upon him (3:10). Service in God's kingdom is never finally about our talent but about his empowering presence. Encourage dependence on the Spirit rather than self-reliance.</li>
+            <li>A left-handed man slips a sword past Eglon's guard, and a farmer routs Philistines with a cattle prod (3:15-16, 31). God repeatedly bypasses the obvious and the strong, so that salvation is clearly his doing and no one can boast.</li>
+            <li>Israel's cry consistently precedes God's saving response (3:9, 15). Our need, honestly brought to God, is the doorway to his mercy. Invite the group to bring real distress to God rather than managing it alone.</li>
+            <li>This is a personal-application question. Invite members to name a place where they feel inadequate or unseen, and to consider that God specializes in using such people. As leader, affirm that usefulness flows from God's Spirit, not our credentials.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="judges-2.html">← Judges 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="judges.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="judges-4.html">Judges 4 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

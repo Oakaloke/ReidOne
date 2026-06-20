@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Bible Study: The Book of 1 Chronicles — ReidOne</title>
+  <meta name="description" content="An interactive study of 1 Chronicles: a priestly retelling of Israel's story for the returned exiles, tracing genealogies from Adam and the worship-centered reign of David." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-chronicles-progress" data-study-total="29">
+<!--
+  ReidOne Bible Study — 1 Chronicles landing / index page.
+  Teaching content prepared for this site; scripture is public domain (WEB/KJV/ASV).
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Bible Study · History</span>
+        <h1>The Book of 1 Chronicles</h1>
+        <p class="lead study-intro mx-auto">First Chronicles is written for a people coming home from exile, unsure whether they still belong to the story God began long ago. The Chronicler answers them with names — long, patient lists that reach all the way back to Adam — saying in effect, you are not a footnote; you are woven into a covenant older than your defeat. Then the book turns to David, but not the David of palace intrigue and family scandal; here is David the worshiper, the man who longs to bring the ark home, who organizes the singers and gatekeepers, who gathers gold and timber and pours out his whole heart preparing for a temple he will never see built. Through genealogy and worship alike, 1 Chronicles roots a fragile community in the faithfulness of God, who keeps His promises across generations and whose presence among His people is worth everything.</p>
+        <p style="margin-top:1rem"><a class="btn btn--ghost" href="../bible.html">← All 66 Books</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="study-progress study-progress--soon">
+          <div class="study-progress__head">
+            <strong>Progress tracking <span class="coming-soon-tag">Coming soon</span></strong>
+            <button class="btn btn--ghost" type="button" disabled aria-disabled="true">Reset progress</button>
+          </div>
+          <div class="study-progress__bar">
+            <span class="study-progress__fill" style="width:0%"></span>
+          </div>
+          <p class="study-progress__note">Marking chapters complete and saving your progress across visits will arrive with member sign-in.</p>
+        </div>
+
+        <div class="study-grid">
+          <a class="study-card study-card--overview" href="1-chronicles-overview.html">
+            <span class="study-card__num">Start Here</span>
+            <h3 class="study-card__title">Whole-Book Overview</h3>
+            <p class="study-card__summary">A priestly history that grounds the returned exiles in God's covenant — from Adam's line to David's wholehearted preparation for the temple where God will dwell.</p>
+            <span class="study-card__cta">Open overview →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-1.html" data-chapter-card="1">
+            <span class="study-card__num">Chapter 1</span>
+            <h3 class="study-card__title">From Adam to Abraham</h3>
+            <p class="study-card__summary">A sweeping family tree runs from the first man through the nations to Abraham, narrowing toward the line of promise in Isaac and Israel.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-2.html" data-chapter-card="2">
+            <span class="study-card__num">Chapter 2</span>
+            <h3 class="study-card__title">The Sons of Israel</h3>
+            <p class="study-card__summary">The twelve tribes are listed, then the line of Judah is traced with care down to Jesse and his seventh son, David.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-3.html" data-chapter-card="3">
+            <span class="study-card__num">Chapter 3</span>
+            <h3 class="study-card__title">The House of David</h3>
+            <p class="study-card__summary">David's sons, the kings of Judah, and the line continuing past the exile show that God's promise to David's house was never extinguished.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-4.html" data-chapter-card="4">
+            <span class="study-card__num">Chapter 4</span>
+            <h3 class="study-card__title">The Prayer of Jabez</h3>
+            <p class="study-card__summary">Amid the clans of Judah and Simeon, one obscure man cries out to God for blessing and protection, and the Lord grants his request.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-5.html" data-chapter-card="5">
+            <span class="study-card__num">Chapter 5</span>
+            <h3 class="study-card__title">Tribes East of the Jordan</h3>
+            <p class="study-card__summary">Reuben, Gad, and half of Manasseh prosper when they cry to God in battle, but are carried into exile when they turn to other gods.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-6.html" data-chapter-card="6">
+            <span class="study-card__num">Chapter 6</span>
+            <h3 class="study-card__title">The Tribe of Levi</h3>
+            <p class="study-card__summary">The priestly line of Aaron, the singers David appointed, and the cities given to the Levites show God's care for worship at the center of Israel's life.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-7.html" data-chapter-card="7">
+            <span class="study-card__num">Chapter 7</span>
+            <h3 class="study-card__title">Tribes of the North</h3>
+            <p class="study-card__summary">Issachar, Benjamin, Manasseh, Ephraim, and Asher are counted as mighty men of valor, their families recorded among the people of God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-8.html" data-chapter-card="8">
+            <span class="study-card__num">Chapter 8</span>
+            <h3 class="study-card__title">The Line of Saul</h3>
+            <p class="study-card__summary">Benjamin's families are traced in detail, leading down to Kish, Saul, and Jonathan, Israel's first royal house.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-9.html" data-chapter-card="9">
+            <span class="study-card__num">Chapter 9</span>
+            <h3 class="study-card__title">The Returned Remnant</h3>
+            <p class="study-card__summary">After the exile to Babylon, the Chronicler records the first to return and resettle Jerusalem, especially those who served in God's house.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-10.html" data-chapter-card="10">
+            <span class="study-card__num">Chapter 10</span>
+            <h3 class="study-card__title">The Death of Saul</h3>
+            <p class="study-card__summary">The narrative begins with Saul's tragic end on Mount Gilboa, and the Chronicler explains plainly why his kingdom was given to David.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-11.html" data-chapter-card="11">
+            <span class="study-card__num">Chapter 11</span>
+            <h3 class="study-card__title">King Over All Israel</h3>
+            <p class="study-card__summary">All the tribes gather to anoint David at Hebron, he captures Zion, and his mighty men rally around him with daring courage.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-12.html" data-chapter-card="12">
+            <span class="study-card__num">Chapter 12</span>
+            <h3 class="study-card__title">An Army Like God's</h3>
+            <p class="study-card__summary">Warriors from every tribe stream to David at Ziklag and Hebron, of one heart to make him king, until the camp becomes a great army.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-13.html" data-chapter-card="13">
+            <span class="study-card__num">Chapter 13</span>
+            <h3 class="study-card__title">The Ark and a Holy Fear</h3>
+            <p class="study-card__summary">David seeks to bring the ark home with great joy, but a careless step ends in death and a sobering lesson about approaching the holy God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-14.html" data-chapter-card="14">
+            <span class="study-card__num">Chapter 14</span>
+            <h3 class="study-card__title">Established and Victorious</h3>
+            <p class="study-card__summary">Hiram honors David, his household and fame grow, and twice he inquires of God before striking down the Philistines who come against him.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-15.html" data-chapter-card="15">
+            <span class="study-card__num">Chapter 15</span>
+            <h3 class="study-card__title">The Ark Comes Home Rightly</h3>
+            <p class="study-card__summary">Having learned from disaster, David brings the ark to Jerusalem God's way, carried by Levites amid singers, music, and overflowing joy.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-16.html" data-chapter-card="16">
+            <span class="study-card__num">Chapter 16</span>
+            <h3 class="study-card__title">Give Thanks to the Lord</h3>
+            <p class="study-card__summary">With the ark in its tent, David appoints continual worship and gives a psalm of thanksgiving that calls all the earth to praise the faithful God.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-17.html" data-chapter-card="17">
+            <span class="study-card__num">Chapter 17</span>
+            <h3 class="study-card__title">A House the Lord Will Build</h3>
+            <p class="study-card__summary">David longs to build God a house, but God turns it around with a stunning promise: he will build David a house and an everlasting throne.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-18.html" data-chapter-card="18">
+            <span class="study-card__num">Chapter 18</span>
+            <h3 class="study-card__title">Victory Wherever He Went</h3>
+            <p class="study-card__summary">David subdues the surrounding nations, dedicates the spoils to the LORD, and reigns with justice, for God gives him victory wherever he goes.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-19.html" data-chapter-card="19">
+            <span class="study-card__num">Chapter 19</span>
+            <h3 class="study-card__title">Kindness Repaid With War</h3>
+            <p class="study-card__summary">David's kindness to Ammon is shamefully insulted, drawing Israel into battle, where courage and trust in God bring a decisive victory.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-20.html" data-chapter-card="20">
+            <span class="study-card__num">Chapter 20</span>
+            <h3 class="study-card__title">Giants Brought Down</h3>
+            <p class="study-card__summary">Joab captures Rabbah and David takes its crown, and in later battles Israel's warriors strike down the towering giants of the Philistines.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-21.html" data-chapter-card="21">
+            <span class="study-card__num">Chapter 21</span>
+            <h3 class="study-card__title">The Census and the Altar</h3>
+            <p class="study-card__summary">David's prideful counting of Israel brings a plague, and at Ornan's threshing floor mercy stays the sword and marks the place where the temple will rise.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-22.html" data-chapter-card="22">
+            <span class="study-card__num">Chapter 22</span>
+            <h3 class="study-card__title">Preparing for the House</h3>
+            <p class="study-card__summary">Though forbidden to build it himself, David gathers materials in abundance and charges Solomon to be strong and build the house for the name of the Lord.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-23.html" data-chapter-card="23">
+            <span class="study-card__num">Chapter 23</span>
+            <h3 class="study-card__title">The Levites Set in Order</h3>
+            <p class="study-card__summary">David, now old, organizes the thousands of Levites into their divisions and duties, fitting their service to a settled people who no longer carry the tabernacle.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-24.html" data-chapter-card="24">
+            <span class="study-card__num">Chapter 24</span>
+            <h3 class="study-card__title">The Courses of the Priests</h3>
+            <p class="study-card__summary">The sons of Aaron are divided by lot into twenty-four orders of service, so that the priesthood ministers in fair and faithful rotation before the Lord.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-25.html" data-chapter-card="25">
+            <span class="study-card__num">Chapter 25</span>
+            <h3 class="study-card__title">The Temple Musicians</h3>
+            <p class="study-card__summary">The sons of Asaph, Heman, and Jeduthun are set apart to prophesy with harps and cymbals, leading God's people in skilled, Spirit-filled praise.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-26.html" data-chapter-card="26">
+            <span class="study-card__num">Chapter 26</span>
+            <h3 class="study-card__title">Gatekeepers and Treasuries</h3>
+            <p class="study-card__summary">The gatekeepers are stationed at every gate, the treasures of God's house are entrusted to faithful keepers, and officials are appointed for the affairs of God and king.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-27.html" data-chapter-card="27">
+            <span class="study-card__num">Chapter 27</span>
+            <h3 class="study-card__title">Divisions, Tribes, and Officials</h3>
+            <p class="study-card__summary">Israel's military divisions rotate month by month, while tribal leaders, stewards, and trusted counselors are named to serve the king and the kingdom.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-28.html" data-chapter-card="28">
+            <span class="study-card__num">Chapter 28</span>
+            <h3 class="study-card__title">David's Charge to Solomon</h3>
+            <p class="study-card__summary">Before all Israel, David passes on the temple plans and charges Solomon to know God, serve him wholeheartedly, and be strong to finish the work.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="1-chronicles-29.html" data-chapter-card="29">
+            <span class="study-card__num">Chapter 29</span>
+            <h3 class="study-card__title">Willing Gifts and a King's Prayer</h3>
+            <p class="study-card__summary">David and the leaders give joyfully for the temple, David blesses God in a soaring prayer, Solomon is enthroned, and David dies full of days.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container">
+        <h2>Study together</h2>
+        <p>Gather a group, work through a chapter at a time, and journey through 1 Chronicles together. Invite a friend to join you.</p>
+        <div class="btn-group">
+          <a class="btn btn--light" href="1-chronicles-1.html">Start with 1 Chronicles 1</a>
+          <a class="btn btn--outline" href="../connect.html" style="color:#fff;border-color:rgba(255,255,255,.6)">Get Connected</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

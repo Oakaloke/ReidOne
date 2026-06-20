@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Judges 20: Brother Against Brother — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Judges 20: Israel assembles against Benjamin over Gibeah's crime, and after heavy losses the tribe is nearly annihilated." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-judges-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Judges, Chapter 20
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="judges.html">← All Chapters</a>
+        <span class="study-meta">The Book of Judges · Chapter 20</span>
+        <h1>Judges 20: Brother Against Brother</h1>
+        <p class="lead">United Israel goes to war against Benjamin over Gibeah's crime, and after costly battles the tribe is all but destroyed.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-20">
+            <span>Scripture — Judges Chapter 20</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-20">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-20-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-20-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-20-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-20-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Judges 20 (WEB)</p>
+            <p><strong>1</strong> Then all the children of Israel went out, and the congregation was assembled as one man, from Dan even to Beersheba, with the land of Gilead, to Yahweh at Mizpah.</p>
+            <p><strong>2</strong> The chiefs of all the people, even of all the tribes of Israel, presented themselves in the assembly of the people of God, four hundred thousand footmen who drew sword.</p>
+            <p><strong>3</strong> (Now the children of Benjamin heard that the children of Israel had gone up to Mizpah.) The children of Israel said, “Tell us, how did this wickedness happen?”</p>
+            <p><strong>4</strong> The Levite, the husband of the woman who was murdered, answered, “I came into Gibeah that belongs to Benjamin, I and my concubine, to lodge.</p>
+            <p><strong>5</strong> The men of Gibeah rose against me, and surrounded the house by night. They thought to have slain me, and they forced my concubine, and she is dead.</p>
+            <p><strong>6</strong> I took my concubine, and cut her in pieces, and sent her throughout all the country of the inheritance of Israel; for they have committed lewdness and folly in Israel.</p>
+            <p><strong>7</strong> Behold, you children of Israel, all of you, give here your advice and counsel.”</p>
+            <p><strong>8</strong> All the people arose as one man, saying, “None of us will go to his tent, neither will any of us turn to his house.</p>
+            <p><strong>9</strong> But now this is the thing which we will do to Gibeah: we will go up against it by lot;</p>
+            <p><strong>10</strong> and we will take ten men of one hundred throughout all the tribes of Israel, and one hundred of one thousand, and a thousand out of ten thousand, to get food for the people, that they may do, when they come to Gibeah of Benjamin, according to all the folly that they have worked in Israel.”</p>
+            <p><strong>11</strong> So all the men of Israel were gathered against the city, knit together as one man.</p>
+            <p><strong>12</strong> The tribes of Israel sent men through all the tribe of Benjamin, saying, “What wickedness is this that is happen among you?</p>
+            <p><strong>13</strong> Now therefore deliver up the men, the base fellows, who are in Gibeah, that we may put them to death, and put away evil from Israel.” But Benjamin would not listen to the voice of their brothers the children of Israel.</p>
+            <p><strong>14</strong> The children of Benjamin gathered themselves together out of the cities to Gibeah, to go out to battle against the children of Israel.</p>
+            <p><strong>15</strong> The children of Benjamin were numbered on that day out of the cities twenty-six thousand men who drew the sword, besides the inhabitants of Gibeah, who were numbered seven hundred chosen men.</p>
+            <p><strong>16</strong> Among all this people there were seven hundred chosen men left-handed; everyone could sling stones at a hair-breadth, and not miss.</p>
+            <p><strong>17</strong> The men of Israel, besides Benjamin, were numbered four hundred thousand men who drew sword: all these were men of war.</p>
+            <p><strong>18</strong> The children of Israel arose, and went up to Bethel, and asked counsel of God; and they said, “Who shall go up for us first to battle against the children of Benjamin?” Yahweh said, “Judah first.”</p>
+            <p><strong>19</strong> The children of Israel rose up in the morning, and encamped against Gibeah.</p>
+            <p><strong>20</strong> The men of Israel went out to battle against Benjamin; and the men of Israel set the battle in array against them at Gibeah.</p>
+            <p><strong>21</strong> The children of Benjamin came out of Gibeah, and destroyed down to the ground of the Israelites on that day twenty-two thousand men.</p>
+            <p><strong>22</strong> The people, the men of Israel, encouraged themselves, and set the battle again in array in the place where they set themselves in array the first day.</p>
+            <p><strong>23</strong> The children of Israel went up and wept before Yahweh until evening; and they asked of Yahweh, saying, “Shall I again draw near to battle against the children of Benjamin my brother?” Yahweh said, “Go up against him.”</p>
+            <p><strong>24</strong> The children of Israel came near against the children of Benjamin the second day.</p>
+            <p><strong>25</strong> Benjamin went out against them out of Gibeah the second day, and destroyed down to the ground of the children of Israel again eighteen thousand men; all these drew the sword.</p>
+            <p><strong>26</strong> Then all the children of Israel, and all the people, went up, and came to Bethel, and wept, and sat there before Yahweh, and fasted that day until evening; and they offered burnt offerings and peace offerings before Yahweh.</p>
+            <p><strong>27</strong> The children of Israel asked of Yahweh (for the ark of the covenant of God was there in those days,</p>
+            <p><strong>28</strong> and Phinehas, the son of Eleazar, the son of Aaron, stood before it in those days), saying, “Shall I yet again go out to battle against the children of Benjamin my brother, or shall I cease?” Yahweh said, “Go up; for tomorrow I will deliver him into your hand.”</p>
+            <p><strong>29</strong> Israel set ambushes all around Gibeah.</p>
+            <p><strong>30</strong> The children of Israel went up against the children of Benjamin on the third day, and set themselves in array against Gibeah, as at other times.</p>
+            <p><strong>31</strong> The children of Benjamin went out against the people, and were drawn away from the city; and they began to strike and kill of the people, as at other times, in the highways, of which one goes up to Bethel, and the other to Gibeah, in the field, about thirty men of Israel.</p>
+            <p><strong>32</strong> The children of Benjamin said, “They are struck down before us, as at the first.” But the children of Israel said, “Let us flee, and draw them away from the city to the highways.”</p>
+            <p><strong>33</strong> All the men of Israel rose up out of their place, and set themselves in array at Baal Tamar: and the ambushers of Israel broke out of their place, even out of Maareh Geba.</p>
+            <p><strong>34</strong> There came over against Gibeah ten thousand chosen men out of all Israel, and the battle was severe; but they didn’t know that evil was close on them.</p>
+            <p><strong>35</strong> Yahweh struck Benjamin before Israel; and the children of Israel destroyed of Benjamin that day twenty-five thousand one hundred men: all these drew the sword.</p>
+            <p><strong>36</strong> So the children of Benjamin saw that they were struck; for the men of Israel gave place to Benjamin, because they trusted the ambushers whom they had set against Gibeah.</p>
+            <p><strong>37</strong> The ambushers hurried, and rushed on Gibeah; and the ambushers drew themselves along, and struck all the city with the edge of the sword.</p>
+            <p><strong>38</strong> Now the appointed sign between the men of Israel and the ambushers was that they should make a great cloud of smoke rise up out of the city.</p>
+            <p><strong>39</strong> The men of Israel turned in the battle, and Benjamin began to strike and kill of the men of Israel about thirty persons; for they said, “Surely they are struck down before us, as in the first battle.”</p>
+            <p><strong>40</strong> But when the cloud began to arise up out of the city in a pillar of smoke, the Benjamites looked behind them; and behold, the whole of the city went up in smoke to the sky.</p>
+            <p><strong>41</strong> The men of Israel turned, and the men of Benjamin were dismayed; for they saw that evil had come on them.</p>
+            <p><strong>42</strong> Therefore they turned their backs before the men of Israel to the way of the wilderness; but the battle followed hard after them; and those who came out of the cities destroyed them in its midst.</p>
+            <p><strong>43</strong> They surrounded the Benjamites, chased them, and trod them down at their resting place, as far as over against Gibeah toward the sunrise.</p>
+            <p><strong>44</strong> There fell of Benjamin eighteen thousand men; all these were men of valor.</p>
+            <p><strong>45</strong> They turned and fled toward the wilderness to the rock of Rimmon: and they gleaned of them in the highways five thousand men, and followed hard after them to Gidom, and struck of them two thousand men.</p>
+            <p><strong>46</strong> So that all who fell that day of Benjamin were twenty-five thousand men who drew the sword; all these were men of valor.</p>
+            <p><strong>47</strong> But six hundred men turned and fled toward the wilderness to the rock of Rimmon, and stayed in the rock of Rimmon four months.</p>
+            <p><strong>48</strong> The men of Israel turned again on the children of Benjamin, and struck them with the edge of the sword, both the entire city, and the livestock, and all that they found: moreover all the cities which they found they set on fire.</p>
+            </div>
+            <div class="scripture-text" id="web-20-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Judges 20 (KJV)</p>
+            <p><strong>1</strong> Then all the children of Israel went out, and the congregation was gathered together as one man, from Dan even to Beer–sheba, with the land of Gilead, unto the Lord in Mizpeh.</p>
+            <p><strong>2</strong> And the chief of all the people, even of all the tribes of Israel, presented themselves in the assembly of the people of God, four hundred thousand footmen that drew sword.</p>
+            <p><strong>3</strong> (Now the children of Benjamin heard that the children of Israel were gone up to Mizpeh.) Then said the children of Israel, Tell us, how was this wickedness?</p>
+            <p><strong>4</strong> And the Levite, the husband of the woman that was slain, answered and said, I came into Gibeah that belongeth to Benjamin, I and my concubine, to lodge.</p>
+            <p><strong>5</strong> And the men of Gibeah rose against me, and beset the house round about upon me by night, and thought to have slain me: and my concubine have they forced, that she is dead.</p>
+            <p><strong>6</strong> And I took my concubine, and cut her in pieces, and sent her throughout all the country of the inheritance of Israel: for they have committed lewdness and folly in Israel.</p>
+            <p><strong>7</strong> Behold, ye are all children of Israel; give here your advice and counsel.</p>
+            <p><strong>8</strong> And all the people arose as one man, saying, We will not any of us go to his tent, neither will we any of us turn into his house.</p>
+            <p><strong>9</strong> But now this shall be the thing which we will do to Gibeah; we will go up by lot against it;</p>
+            <p><strong>10</strong> And we will take ten men of an hundred throughout all the tribes of Israel, and an hundred of a thousand, and a thousand out of ten thousand, to fetch victual for the people, that they may do, when they come to Gibeah of Benjamin, according to all the folly that they have wrought in Israel.</p>
+            <p><strong>11</strong> So all the men of Israel were gathered against the city, knit together as one man.</p>
+            <p><strong>12</strong> And the tribes of Israel sent men through all the tribe of Benjamin, saying, What wickedness is this that is done among you?</p>
+            <p><strong>13</strong> Now therefore deliver us the men, the children of Belial, which are in Gibeah, that we may put them to death, and put away evil from Israel. But the children of Benjamin would not hearken to the voice of their brethren the children of Israel:</p>
+            <p><strong>14</strong> But the children of Benjamin gathered themselves together out of the cities unto Gibeah, to go out to battle against the children of Israel.</p>
+            <p><strong>15</strong> And the children of Benjamin were numbered at that time out of the cities twenty and six thousand men that drew sword, beside the inhabitants of Gibeah, which were numbered seven hundred chosen men.</p>
+            <p><strong>16</strong> Among all this people there were seven hundred chosen men lefthanded; every one could sling stones at an hair breadth, and not miss.</p>
+            <p><strong>17</strong> And the men of Israel, beside Benjamin, were numbered four hundred thousand men that drew sword: all these were men of war.</p>
+            <p><strong>18</strong> And the children of Israel arose, and went up to the house of God, and asked counsel of God, and said, Which of us shall go up first to the battle against the children of Benjamin? And the Lord said, Judah shall go up first.</p>
+            <p><strong>19</strong> And the children of Israel rose up in the morning, and encamped against Gibeah.</p>
+            <p><strong>20</strong> And the men of Israel went out to battle against Benjamin; and the men of Israel put themselves in array to fight against them at Gibeah.</p>
+            <p><strong>21</strong> And the children of Benjamin came forth out of Gibeah, and destroyed down to the ground of the Israelites that day twenty and two thousand men.</p>
+            <p><strong>22</strong> And the people the men of Israel encouraged themselves, and set their battle again in array in the place where they put themselves in array the first day.</p>
+            <p><strong>23</strong> (And the children of Israel went up and wept before the Lord until even, and asked counsel of the Lord, saying, Shall I go up again to battle against the children of Benjamin my brother? And the Lord said, Go up against him.)</p>
+            <p><strong>24</strong> And the children of Israel came near against the children of Benjamin the second day.</p>
+            <p><strong>25</strong> And Benjamin went forth against them out of Gibeah the second day, and destroyed down to the ground of the children of Israel again eighteen thousand men; all these drew the sword.</p>
+            <p><strong>26</strong> Then all the children of Israel, and all the people, went up, and came unto the house of God, and wept, and sat there before the Lord, and fasted that day until even, and offered burnt offerings and peace offerings before the Lord.</p>
+            <p><strong>27</strong> And the children of Israel enquired of the Lord, (for the ark of the covenant of God was there in those days,</p>
+            <p><strong>28</strong> And Phinehas, the son of Eleazar, the son of Aaron, stood before it in those days,) saying, Shall I yet again go out to battle against the children of Benjamin my brother, or shall I cease? And the Lord said, Go up; for to morrow I will deliver them into thine hand.</p>
+            <p><strong>29</strong> And Israel set liers in wait round about Gibeah.</p>
+            <p><strong>30</strong> And the children of Israel went up against the children of Benjamin on the third day, and put themselves in array against Gibeah, as at other times.</p>
+            <p><strong>31</strong> And the children of Benjamin went out against the people, and were drawn away from the city; and they began to smite of the people, and kill, as at other times, in the highways, of which one goeth up to the house of God, and the other to Gibeah in the field, about thirty men of Israel.</p>
+            <p><strong>32</strong> And the children of Benjamin said, They are smitten down before us, as at the first. But the children of Israel said, Let us flee, and draw them from the city unto the highways.</p>
+            <p><strong>33</strong> And all the men of Israel rose up out of their place, and put themselves in array at Baal–tamar: and the liers in wait of Israel came forth out of their places, even out of the meadows of Gibeah.</p>
+            <p><strong>34</strong> And there came against Gibeah ten thousand chosen men out of all Israel, and the battle was sore: but they knew not that evil was near them.</p>
+            <p><strong>35</strong> And the Lord smote Benjamin before Israel: and the children of Israel destroyed of the Benjamites that day twenty and five thousand and an hundred men: all these drew the sword.</p>
+            <p><strong>36</strong> So the children of Benjamin saw that they were smitten: for the men of Israel gave place to the Benjamites, because they trusted unto the liers in wait which they had set beside Gibeah.</p>
+            <p><strong>37</strong> And the liers in wait hasted, and rushed upon Gibeah; and the liers in wait drew themselves along, and smote all the city with the edge of the sword.</p>
+            <p><strong>38</strong> Now there was an appointed sign between the men of Israel and the liers in wait, that they should make a great flame with smoke rise up out of the city.</p>
+            <p><strong>39</strong> And when the men of Israel retired in the battle, Benjamin began to smite and kill of the men of Israel about thirty persons: for they said, Surely they are smitten down before us, as in the first battle.</p>
+            <p><strong>40</strong> But when the flame began to arise up out of the city with a pillar of smoke, the Benjamites looked behind them, and, behold, the flame of the city ascended up to heaven.</p>
+            <p><strong>41</strong> And when the men of Israel turned again, the men of Benjamin were amazed: for they saw that evil was come upon them.</p>
+            <p><strong>42</strong> Therefore they turned their backs before the men of Israel unto the way of the wilderness; but the battle overtook them; and them which came out of the cities they destroyed in the midst of them.</p>
+            <p><strong>43</strong> Thus they inclosed the Benjamites round about, and chased them, and trode them down with ease over against Gibeah toward the sunrising.</p>
+            <p><strong>44</strong> And there fell of Benjamin eighteen thousand men; all these were men of valour.</p>
+            <p><strong>45</strong> And they turned and fled toward the wilderness unto the rock of Rimmon: and they gleaned of them in the highways five thousand men; and pursued hard after them unto Gidom, and slew two thousand men of them.</p>
+            <p><strong>46</strong> So that all which fell that day of Benjamin were twenty and five thousand men that drew the sword; all these were men of valour.</p>
+            <p><strong>47</strong> But six hundred men turned and fled to the wilderness unto the rock Rimmon, and abode in the rock Rimmon four months.</p>
+            <p><strong>48</strong> And the men of Israel turned again upon the children of Benjamin, and smote them with the edge of the sword, as well the men of every city, as the beast, and all that came to hand: also they set on fire all the cities that they came to.</p>
+            </div>
+            <div class="scripture-text" id="web-20-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Judges 20 (ASV)</p>
+            <p><strong>1</strong> Then all the children of Israel went out, and the congregation was assembled as one man, from Dan even to Beer-sheba, with the land of Gilead, unto Jehovah at Mizpah.</p>
+            <p><strong>2</strong> And the chiefs of all the people, even of all the tribes of Israel, presented themselves in the assembly of the people of God, four hundred thousand footmen that drew sword.</p>
+            <p><strong>3</strong> (Now the children of Benjamin heard that the children of Israel were gone up to Mizpah.) And the children of Israel said, Tell us, how was this wickedness brought to pass?</p>
+            <p><strong>4</strong> And the Levite, the husband of the woman that was murdered, answered and said, I came into Gibeah that belongeth to Benjamin, I and my concubine, to lodge.</p>
+            <p><strong>5</strong> And the men of Gibeah rose against me, and beset the house round about me by night; me they thought to have slain, and my concubine they forced, and she is dead.</p>
+            <p><strong>6</strong> And I took my concubine, and cut her in pieces, and sent her throughout all the country of the inheritance of Israel; for they have committed lewdness and folly in Israel.</p>
+            <p><strong>7</strong> Behold, ye children of Israel, all of you, give here your advice and counsel.</p>
+            <p><strong>8</strong> And all the people arose as one man, saying, We will not any of us go to his tent, neither will we any of us turn unto his house.</p>
+            <p><strong>9</strong> But now this is the thing which we will do to Gibeah: we will go up against it by lot;</p>
+            <p><strong>10</strong> and we will take ten men of a hundred throughout all the tribes of Israel, and a hundred of a thousand, and a thousand out of ten thousand, to fetch victuals for the people, that they may do, when they come to Gibeah of Benjamin, according to all the folly that they have wrought in Israel.</p>
+            <p><strong>11</strong> So all the men of Israel were gathered against the city, knit together as one man.</p>
+            <p><strong>12</strong> And the tribes of Israel sent men through all the tribe of Benjamin, saying, What wickedness is this that is come to pass among you?</p>
+            <p><strong>13</strong> Now therefore deliver up the men, the base fellows, that are in Gibeah, that we may put them to death, and put away evil from Israel. But Benjamin would not hearken to the voice of their brethren the children of Israel.</p>
+            <p><strong>14</strong> And the children of Benjamin gathered themselves together out of the cities unto Gibeah, to go out to battle against the children of Israel.</p>
+            <p><strong>15</strong> And the children of Benjamin were numbered on that day out of the cities twenty and six thousand men that drew sword, besides the inhabitants of Gibeah, who were numbered seven hundred chosen men.</p>
+            <p><strong>16</strong> Among all this people there were seven hundred chosen men lefthanded; every one could sling stones at a hair-breadth, and not miss.</p>
+            <p><strong>17</strong> And the men of Israel, besides Benjamin, were numbered four hundred thousand men that drew sword: all these were men of war.</p>
+            <p><strong>18</strong> And the children of Israel arose, and went up to Beth-el, and asked counsel of God; and they said, Who shall go up for us first to battle against the children of Benjamin? And Jehovah said, Judah shall go up first.</p>
+            <p><strong>19</strong> And the children of Israel rose up in the morning, and encamped against Gibeah.</p>
+            <p><strong>20</strong> And the men of Israel went out to battle against Benjamin; and the men of Israel set the battle in array against them at Gibeah.</p>
+            <p><strong>21</strong> And the children of Benjamin came forth out of Gibeah, and destroyed down to the ground of the Israelites on that day twenty and two thousand men.</p>
+            <p><strong>22</strong> And the people, the men of Israel, encouraged themselves, and set the battle again in array in the place where they set themselves in array the first day.</p>
+            <p><strong>23</strong> And the children of Israel went up and wept before Jehovah until even; and they asked of Jehovah, saying, Shall I again draw nigh to battle against the children of Benjamin my brother? And Jehovah said, Go up against him.</p>
+            <p><strong>24</strong> And the children of Israel came near against the children of Benjamin the second day.</p>
+            <p><strong>25</strong> And Benjamin went forth against them out of Gibeah the second day, and destroyed down to the ground of the children of Israel again eighteen thousand men; all these drew the sword.</p>
+            <p><strong>26</strong> Then all the children of Israel, and all the people, went up, and came unto Beth-el, and wept, and sat there before Jehovah, and fasted that day until even; and they offered burnt-offerings and peace-offerings before Jehovah.</p>
+            <p><strong>27</strong> And the children of Israel asked of Jehovah (for the ark of the covenant of God was there in those days,</p>
+            <p><strong>28</strong> and Phinehas, the son of Eleazar, the son of Aaron, stood before it in those days), saying, Shall I yet again go out to battle against the children of Benjamin my brother, or shall I cease? And Jehovah said, Go up; for to-morrow I will deliver him into thy hand.</p>
+            <p><strong>29</strong> And Israel set liers-in-wait against Gibeah round about.</p>
+            <p><strong>30</strong> And the children of Israel went up against the children of Benjamin on the third day, and set themselves in array against Gibeah, as at other times.</p>
+            <p><strong>31</strong> And the children of Benjamin went out against the people, and were drawn away from the city; and they began to smite and kill of the people, as at other times, in the highways, of which one goeth up to Beth-el, and the other to Gibeah, in the field, about thirty men of Israel.</p>
+            <p><strong>32</strong> And the children of Benjamin said, They are smitten down before us, as at the first. But the children of Israel said, Let us flee, and draw them away from the city unto the highways.</p>
+            <p><strong>33</strong> And all the men of Israel rose up out of their place, and set themselves in array at Baal-tamar: and the liers-in-wait of Israel brake forth out of their place, even out of Maareh-geba.</p>
+            <p><strong>34</strong> And there came over against Gibeah ten thousand chosen men out of all Israel, and the battle was sore; but they knew not that evil was close upon them.</p>
+            <p><strong>35</strong> And Jehovah smote Benjamin before Israel; and the children of Israel destroyed of Benjamin that day twenty and five thousand and a hundred men: all these drew the sword.</p>
+            <p><strong>36</strong> So the children of Benjamin saw that they were smitten; for the men of Israel gave place to Benjamin, because they trusted unto the liers-in-wait whom they had set against Gibeah.</p>
+            <p><strong>37</strong> And the liers-in-wait hasted, and rushed upon Gibeah; and the liers-in-wait drew themselves along, and smote all the city with the edge of the sword.</p>
+            <p><strong>38</strong> Now the appointed sign between the men of Israel and the liers-in-wait was, that they should make a great cloud of smoke rise up out of the city.</p>
+            <p><strong>39</strong> And the men of Israel turned in the battle, and Benjamin began to smite and kill of the men of Israel about thirty persons; for they said, Surely they are smitten down before us, as in the first battle.</p>
+            <p><strong>40</strong> But when the cloud began to arise up out of the city in a pillar of smoke, the Benjamites looked behind them; and, behold, the whole of the city went up in smoke to heaven.</p>
+            <p><strong>41</strong> And the men of Israel turned, and the men of Benjamin were dismayed; for they saw that evil was come upon them.</p>
+            <p><strong>42</strong> Therefore they turned their backs before the men of Israel unto the way of the wilderness; but the battle followed hard after them; and they that came out of the cities destroyed them in the midst thereof.</p>
+            <p><strong>43</strong> They inclosed the Benjamites round about, and chased them, and trod them down at their resting-place, as far as over against Gibeah toward the sunrising.</p>
+            <p><strong>44</strong> And there fell of Benjamin eighteen thousand men; all these were men of valor.</p>
+            <p><strong>45</strong> And they turned and fled toward the wilderness unto the rock of Rimmon: and they gleaned of them in the highways five thousand men, and followed hard after them unto Gidom, and smote of them two thousand men.</p>
+            <p><strong>46</strong> So that all who fell that day of Benjamin were twenty and five thousand men that drew the sword; all these were men of valor.</p>
+            <p><strong>47</strong> But six hundred men turned and fled toward the wilderness unto the rock of Rimmon, and abode in the rock of Rimmon four months.</p>
+            <p><strong>48</strong> And the men of Israel turned again upon the children of Benjamin, and smote them with the edge of the sword, both the entire city, and the cattle, and all that they found: moreover all the cities which they found they set on fire.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>All Israel assembles as one man at Mizpah, four hundred thousand armed men, to hear the Levite's account of the outrage at Gibeah. United in horror, they demand that Benjamin hand over the guilty men of Gibeah, but Benjamin refuses and instead musters for war to defend its own. So begins a brutal civil war. Israel inquires of God, who sends Judah up first, yet Benjamin's smaller force cuts down twenty-two thousand Israelites the first day. Israel weeps before Yahweh, returns, and loses eighteen thousand more the second day. Only after the whole nation fasts, weeps, and offers burnt and peace offerings before the ark does the Lord promise victory. On the third day Israel sets an ambush, draws Benjamin's army out of the city, and Yahweh strikes Benjamin before Israel. The men of Gibeah and the surrounding towns are overwhelmed, the cities burned, and twenty-five thousand of Benjamin's swordsmen fall, until only six hundred survivors escape to the rock of Rimmon. A tribe of Israel has been nearly wiped from the earth. Even a war waged against real evil, by a people seeking God yet doing so amid their own corruption, leaves the nation broken and grieving.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The tribes of Israel</strong> — Four hundred thousand who gather as one against Gibeah's crime, inquire of God, suffer staggering losses, and finally, through repentance, are granted victory.</li>
+          <li><strong>The tribe of Benjamin</strong> — Israelites who, rather than surrender the wicked men of Gibeah, defend them and go to war, winning two days but being nearly annihilated on the third.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who directs the battle order, permits early defeats, and after the people's fasting and offerings promises and grants the victory over Benjamin.</li>
+          <li><strong>Phinehas the priest</strong> — Grandson of Aaron, who stands before the ark of the covenant as Israel seeks the Lord on the eve of their decisive day.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Judges 20:35 (WEB)</p>
+          <p class="verse__text">Yahweh struck Benjamin before Israel; and the children of Israel destroyed of Benjamin that day twenty-five thousand one hundred men: all these drew the sword.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Evil tolerated by a community draws judgment upon the whole community.</li>
+          <li>Even a righteous cause does not guarantee easy or bloodless victory.</li>
+          <li>God may humble us through defeat before he grants the deliverance we seek.</li>
+          <li>Sin among God's people leaves no clean winners, only grief on every side.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-20">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-20">
+            <ul class="lesson-list">
+            <li><strong>Shielding the wicked invites ruin.</strong> Benjamin “would not listen to the voice of their brothers” to hand over the guilty (Judges 20:13, WEB), choosing tribal loyalty over justice and reaping disaster.</li>
+            <li><strong>Seeking God is not a guarantee of instant success.</strong> Israel inquires of God and still loses twenty-two thousand men the first day (Judges 20:18-21, WEB); God's people may walk through defeat on the way to deliverance.</li>
+            <li><strong>Repentant worship precedes victory.</strong> Only after the people fast, weep, and offer sacrifices before the ark does Yahweh say, “tomorrow I will deliver him into your hand” (Judges 20:26-28, WEB).</li>
+            <li><strong>The Lord himself decides the battle.</strong> “Yahweh struck Benjamin before Israel” (Judges 20:35, WEB); the victory is God's work, not merely Israel's strategy or numbers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-20">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-20">
+            <ol class="study-questions">
+            <li>Why does Benjamin choose to defend the men of Gibeah rather than hand them over?</li>
+            <li>Israel inquires of God yet suffers two crushing defeats. What might God be teaching the nation through these losses?</li>
+            <li>What changes in Israel's posture before the third day's victory (20:26-28)?</li>
+            <li>How does this civil war show that there are no real winners when God's people fall into sin?</li>
+            <li>When have you had to confront wrong within your own community, and how did you try to hold both justice and grief together?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-20">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-20">
+            <ol class="study-questions">
+            <li>Benjamin places tribal solidarity above justice, refusing to surrender the guilty even though their crime was monstrous (20:13-14). Loyalty to one's own can become complicity; help the group see how protecting wrongdoers ultimately destroys the very community it means to defend.</li>
+            <li>Israel asks who should go first but does not at first seek God with humility, and they are defeated twice (20:18-25). God may be exposing self-confidence and the impurity of a people who are themselves deeply compromised, driving them to genuine dependence.</li>
+            <li>Before the third day the whole nation fasts, weeps, sits before the Lord, and offers burnt and peace offerings (20:26-28). Their shift from strategy to repentant worship precedes the promise of victory, showing that God grants deliverance to the humble.</li>
+            <li>Even in winning, Israel has nearly destroyed a brother tribe and buried tens of thousands on both sides (20:35-48). The whole nation is left grieving. Sin among God's people yields only loss; the chapter offers triumph drenched in sorrow.</li>
+            <li>This is a personal-application question. Invite members to reflect on confronting sin within a family, church, or group, and on doing so with both firmness and lament. As leader, model that justice and mercy belong together, and keep the conversation tender.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="judges-19.html">← Judges 19</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="judges.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="judges-21.html">Judges 21 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

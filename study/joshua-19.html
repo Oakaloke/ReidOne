@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Joshua 19: Portions for the Tribes — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Joshua 19: the remaining tribes receive their inheritance by lot, and the people give Joshua the city he asked for in Ephraim." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-joshua-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Joshua, Chapter 19
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="joshua.html">← All Chapters</a>
+        <span class="study-meta">The Book of Joshua · Chapter 19</span>
+        <h1>Joshua 19: Portions for the Tribes</h1>
+        <p class="lead">The remaining tribes receive their inheritance by lot at Shiloh, and last of all the people give Joshua his own city in the hill country.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-19">
+            <span>Scripture — Joshua Chapter 19</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-19">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-19-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-19-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-19-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-19-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Joshua 19 (WEB)</p>
+            <p><strong>1</strong> The second lot came out for Simeon, even for the tribe of the children of Simeon according to their families. Their inheritance was in the midst of the inheritance of the children of Judah.</p>
+            <p><strong>2</strong> They had for their inheritance Beersheba (or Sheba), Moladah,</p>
+            <p><strong>3</strong> Hazar Shual, Balah, Ezem,</p>
+            <p><strong>4</strong> Eltolad, Bethul, Hormah,</p>
+            <p><strong>5</strong> Ziklag, Beth Marcaboth, Hazar Susah,</p>
+            <p><strong>6</strong> Beth Lebaoth, and Sharuhen; thirteen cities with their villages;</p>
+            <p><strong>7</strong> Ain, Rimmon, Ether, and Ashan; four cities with their villages;</p>
+            <p><strong>8</strong> and all the villages that were around these cities to Baalath Beer, Ramah of the South. This is the inheritance of the tribe of the children of Simeon according to their families.</p>
+            <p><strong>9</strong> Out of the part of the children of Judah was the inheritance of the children of Simeon; for the portion of the children of Judah was too much for them. Therefore the children of Simeon had inheritance in the midst of their inheritance.</p>
+            <p><strong>10</strong> The third lot came up for the children of Zebulun according to their families. The border of their inheritance was to Sarid.</p>
+            <p><strong>11</strong> Their border went up westward, even to Maralah, and reached to Dabbesheth. It reached to the brook that is before Jokneam.</p>
+            <p><strong>12</strong> It turned from Sarid eastward toward the sunrise to the border of Chisloth Tabor. It went out to Daberath, and went up to Japhia.</p>
+            <p><strong>13</strong> From there it passed along eastward to Gath Hepher, to Ethkazin; and it went out at Rimmon which stretches to Neah.</p>
+            <p><strong>14</strong> The border turned around it on the north to Hannathon; and it ended at the valley of Iphtah El;</p>
+            <p><strong>15</strong> Kattath, Nahalal, Shimron, Idalah, and Bethlehem: twelve cities with their villages.</p>
+            <p><strong>16</strong> This is the inheritance of the children of Zebulun according to their families, these cities with their villages.</p>
+            <p><strong>17</strong> The fourth lot came out for Issachar, even for the children of Issachar according to their families.</p>
+            <p><strong>18</strong> Their border was to Jezreel, Chesulloth, Shunem,</p>
+            <p><strong>19</strong> Hapharaim, Shion, Anaharath,</p>
+            <p><strong>20</strong> Rabbith, Kishion, Ebez,</p>
+            <p><strong>21</strong> Remeth, Engannim, En Haddah, and Beth Pazzez.</p>
+            <p><strong>22</strong> The border reached to Tabor, Shahazumah, and Beth Shemesh. Their border ended at the Jordan: sixteen cities with their villages.</p>
+            <p><strong>23</strong> This is the inheritance of the tribe of the children of Issachar according to their families, the cities with their villages.</p>
+            <p><strong>24</strong> The fifth lot came out for the tribe of the children of Asher according to their families.</p>
+            <p><strong>25</strong> Their border was Helkath, Hali, Beten, Achshaph,</p>
+            <p><strong>26</strong> Allammelech, Amad, Mishal. It reached to Carmel westward, and to Shihorlibnath.</p>
+            <p><strong>27</strong> It turned toward the sunrise to Beth Dagon, and reached to Zebulun, and to the valley of Iphtah El northward to Beth Emek and Neiel. It went out to Cabul on the left hand,</p>
+            <p><strong>28</strong> and Ebron, Rehob, Hammon, and Kanah, even to great Sidon.</p>
+            <p><strong>29</strong> The border turned to Ramah, to the fortified city of Tyre; and the border turned to Hosah. It ended at the sea by the region of Achzib;</p>
+            <p><strong>30</strong> Ummah also, and Aphek, and Rehob: twenty-two cities with their villages.</p>
+            <p><strong>31</strong> This is the inheritance of the tribe of the children of Asher according to their families, these cities with their villages.</p>
+            <p><strong>32</strong> The sixth lot came out for the children of Naphtali, even for the children of Naphtali according to their families.</p>
+            <p><strong>33</strong> Their border was from Heleph, from the oak in Zaanannim, Adaminekeb, and Jabneel, to Lakkum. It ended at the Jordan.</p>
+            <p><strong>34</strong> The border turned westward to Aznoth Tabor, and went out from there to Hukkok. It reached to Zebulun on the south, and reached to Asher on the west, and to Judah at the Jordan toward the sunrise.</p>
+            <p><strong>35</strong> The fortified cities were Ziddim, Zer, Hammath, Rakkath, Chinnereth,</p>
+            <p><strong>36</strong> Adamah, Ramah, Hazor,</p>
+            <p><strong>37</strong> Kedesh, Edrei, En Hazor,</p>
+            <p><strong>38</strong> Iron, Migdal El, Horem, Beth Anath, and Beth Shemesh; nineteen cities with their villages.</p>
+            <p><strong>39</strong> This is the inheritance of the tribe of the children of Naphtali according to their families, the cities with their villages.</p>
+            <p><strong>40</strong> The seventh lot came out for the tribe of the children of Dan according to their families.</p>
+            <p><strong>41</strong> The border of their inheritance was Zorah, Eshtaol, Irshemesh,</p>
+            <p><strong>42</strong> Shaalabbin, Aijalon, Ithlah,</p>
+            <p><strong>43</strong> Elon, Timnah, Ekron,</p>
+            <p><strong>44</strong> Eltekeh, Gibbethon, Baalath,</p>
+            <p><strong>45</strong> Jehud, Bene Berak, Gath Rimmon,</p>
+            <p><strong>46</strong> Me Jarkon, and Rakkon, with the border over against Joppa.</p>
+            <p><strong>47</strong> The border of the children of Dan went out beyond them; for the children of Dan went up and fought against Leshem, and took it, and struck it with the edge of the sword, and possessed it, and lived therein, and called Leshem, Dan, after the name of Dan their father.</p>
+            <p><strong>48</strong> This is the inheritance of the tribe of the children of Dan according to their families, these cities with their villages.</p>
+            <p><strong>49</strong> So they made an end of distributing the land for inheritance by its borders. The children of Israel gave an inheritance to Joshua the son of Nun in their midst.</p>
+            <p><strong>50</strong> According to the commandment of Yahweh, they gave him the city which he asked, even Timnathserah in the hill country of Ephraim; and he built the city, and lived there.</p>
+            <p><strong>51</strong> These are the inheritances, which Eleazar the priest, Joshua the son of Nun, and the heads of the fathers’ houses of the tribes of the children of Israel, distributed for inheritance by lot in Shiloh before Yahweh, at the door of the Tent of Meeting. So they made an end of dividing the land.</p>
+            </div>
+            <div class="scripture-text" id="web-19-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Joshua 19 (KJV)</p>
+            <p><strong>1</strong> And the second lot came forth to Simeon, even for the tribe of the children of Simeon according to their families: and their inheritance was within the inheritance of the children of Judah.</p>
+            <p><strong>2</strong> And they had in their inheritance Beer–sheba, Sheba, and Moladah,</p>
+            <p><strong>3</strong> And Hazar–shual, and Balah, and Azem,</p>
+            <p><strong>4</strong> And Eltolad, and Bethul, and Hormah,</p>
+            <p><strong>5</strong> And Ziklag, and Beth–marcaboth, and Hazar–susah,</p>
+            <p><strong>6</strong> And Beth–lebaoth, and Sharuhen; thirteen cities and their villages:</p>
+            <p><strong>7</strong> Ain, Remmon, and Ether, and Ashan; four cities and their villages:</p>
+            <p><strong>8</strong> And all the villages that were round about these cities to Baalath–beer, Ramath of the south. This is the inheritance of the tribe of the children of Simeon according to their families.</p>
+            <p><strong>9</strong> Out of the portion of the children of Judah was the inheritance of the children of Simeon: for the part of the children of Judah was too much for them: therefore the children of Simeon had their inheritance within the inheritance of them.</p>
+            <p><strong>10</strong> And the third lot came up for the children of Zebulun according to their families: and the border of their inheritance was unto Sarid:</p>
+            <p><strong>11</strong> And their border went up toward the sea, and Maralah, and reached to Dabbasheth, and reached to the river that is before Jokneam;</p>
+            <p><strong>12</strong> And turned from Sarid eastward toward the sunrising unto the border of Chisloth–tabor, and then goeth out to Daberath, and goeth up to Japhia,</p>
+            <p><strong>13</strong> And from thence passeth on along on the east to Gittah–hepher, to Ittah–kazin, and goeth out to Remmon–methoar to Neah;</p>
+            <p><strong>14</strong> And the border compasseth it on the north side to Hannathon: and the outgoings thereof are in the valley of Jiphthah–el:</p>
+            <p><strong>15</strong> And Kattath, and Nahallal, and Shimron, and Idalah, and Beth–lehem: twelve cities with their villages.</p>
+            <p><strong>16</strong> This is the inheritance of the children of Zebulun according to their families, these cities with their villages.</p>
+            <p><strong>17</strong> And the fourth lot came out to Issachar, for the children of Issachar according to their families.</p>
+            <p><strong>18</strong> And their border was toward Jezreel, and Chesulloth, and Shunem,</p>
+            <p><strong>19</strong> And Hapharaim, and Shion, and Anaharath,</p>
+            <p><strong>20</strong> And Rabbith, and Kishion, and Abez,</p>
+            <p><strong>21</strong> And Remeth, and En–gannim, and En–haddah, and Beth–pazzez;</p>
+            <p><strong>22</strong> And the coast reacheth to Tabor, and Shahazimah, and Beth–shemesh; and the outgoings of their border were at Jordan: sixteen cities with their villages.</p>
+            <p><strong>23</strong> This is the inheritance of the tribe of the children of Issachar according to their families, the cities and their villages.</p>
+            <p><strong>24</strong> And the fifth lot came out for the tribe of the children of Asher according to their families.</p>
+            <p><strong>25</strong> And their border was Helkath, and Hali, and Beten, and Achshaph,</p>
+            <p><strong>26</strong> And Alammelech, and Amad, and Misheal; and reacheth to Carmel westward, and to Shihor–libnath;</p>
+            <p><strong>27</strong> And turneth toward the sunrising to Beth–dagon, and reacheth to Zebulun, and to the valley of Jiphthah–el toward the north side of Beth–emek, and Neiel, and goeth out to Cabul on the left hand,</p>
+            <p><strong>28</strong> And Hebron, and Rehob, and Hammon, and Kanah, even unto great Zidon;</p>
+            <p><strong>29</strong> And then the coast turneth to Ramah, and to the strong city Tyre; and the coast turneth to Hosah; and the outgoings thereof are at the sea from the coast to Achzib:</p>
+            <p><strong>30</strong> Ummah also, and Aphek, and Rehob: twenty and two cities with their villages.</p>
+            <p><strong>31</strong> This is the inheritance of the tribe of the children of Asher according to their families, these cities with their villages.</p>
+            <p><strong>32</strong> The sixth lot came out to the children of Naphtali, even for the children of Naphtali according to their families.</p>
+            <p><strong>33</strong> And their coast was from Heleph, from Allon to Zaanannim, and Adami, Nekeb, and Jabneel, unto Lakum; and the outgoings thereof were at Jordan:</p>
+            <p><strong>34</strong> And then the coast turneth westward to Aznoth–tabor, and goeth out from thence to Hukkok, and reacheth to Zebulun on the south side, and reacheth to Asher on the west side, and to Judah upon Jordan toward the sunrising.</p>
+            <p><strong>35</strong> And the fenced cities are Ziddim, Zer, and Hammath, Rakkath, and Chinnereth,</p>
+            <p><strong>36</strong> And Adamah, and Ramah, and Hazor,</p>
+            <p><strong>37</strong> And Kedesh, and Edrei, and En–hazor,</p>
+            <p><strong>38</strong> And Iron, and Migdal–el, Horem, and Beth–anath, and Beth–shemesh; nineteen cities with their villages.</p>
+            <p><strong>39</strong> This is the inheritance of the tribe of the children of Naphtali according to their families, the cities and their villages.</p>
+            <p><strong>40</strong> And the seventh lot came out for the tribe of the children of Dan according to their families.</p>
+            <p><strong>41</strong> And the coast of their inheritance was Zorah, and Eshtaol, and Ir–shemesh,</p>
+            <p><strong>42</strong> And Shaalabbin, and Ajalon, and Jethlah,</p>
+            <p><strong>43</strong> And Elon, and Thimnathah, and Ekron,</p>
+            <p><strong>44</strong> And Eltekeh, and Gibbethon, and Baalath,</p>
+            <p><strong>45</strong> And Jehud, and Bene–berak, and Gath–rimmon,</p>
+            <p><strong>46</strong> And Me–jarkon, and Rakkon, with the border before Japho.</p>
+            <p><strong>47</strong> And the coast of the children of Dan went out too little for them: therefore the children of Dan went up to fight against Leshem, and took it, and smote it with the edge of the sword, and possessed it, and dwelt therein, and called Leshem, Dan, after the name of Dan their father.</p>
+            <p><strong>48</strong> This is the inheritance of the tribe of the children of Dan according to their families, these cities with their villages.</p>
+            <p><strong>49</strong> When they had made an end of dividing the land for inheritance by their coasts, the children of Israel gave an inheritance to Joshua the son of Nun among them:</p>
+            <p><strong>50</strong> According to the word of the Lord they gave him the city which he asked, even Timnath–serah in mount Ephraim: and he built the city, and dwelt therein.</p>
+            <p><strong>51</strong> These are the inheritances, which Eleazar the priest, and Joshua the son of Nun, and the heads of the fathers of the tribes of the children of Israel, divided for an inheritance by lot in Shiloh before the Lord, at the door of the tabernacle of the congregation. So they made an end of dividing the country.</p>
+            </div>
+            <div class="scripture-text" id="web-19-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Joshua 19 (ASV)</p>
+            <p><strong>1</strong> And the second lot came out for Simeon, even for the tribe of the children of Simeon according to their families: and their inheritance was in the midst of the inheritance of the children of Judah.</p>
+            <p><strong>2</strong> And they had for their inheritance Beer-sheba, or Sheba, and Moladah,</p>
+            <p><strong>3</strong> and Hazar-shual, and Balah, and Ezem,</p>
+            <p><strong>4</strong> and Eltolad, and Bethul, and Hormah,</p>
+            <p><strong>5</strong> and Ziklag, and Beth-marcaboth, and Hazar-susah,</p>
+            <p><strong>6</strong> and Beth-lebaoth, and Sharuhen; thirteen cities with their villages:</p>
+            <p><strong>7</strong> Ain, Rimmon, and Ether, and Ashan; four cities with their villages:</p>
+            <p><strong>8</strong> and all the villages that were round about these cities to Baalath-beer, Ramah of the South. This is the inheritance of the tribe of the children of Simeon according to their families.</p>
+            <p><strong>9</strong> Out of the part of the children of Judah was the inheritance of the children of Simeon; for the portion of the children of Judah was too much for them: therefore the children of Simeon had inheritance in the midst of their inheritance.</p>
+            <p><strong>10</strong> And the third lot came up for the children of Zebulun according to their families. And the border of their inheritance was unto Sarid;</p>
+            <p><strong>11</strong> and their border went up westward, even to Maralah, and reached to Dabbesheth; and it reached to the brook that is before Jokneam;</p>
+            <p><strong>12</strong> and it turned from Sarid eastward toward the sunrising unto the border of Chisloth-tabor; and it went out to Daberath, and went up to Japhia;</p>
+            <p><strong>13</strong> and from thence it passed along eastward to Gath-hepher, to Eth-kazin; and it went out at Rimmon which stretcheth unto Neah;</p>
+            <p><strong>14</strong> and the border turned about it on the north to Hannathon; and the goings out thereof were at the valley of Iphtah-el;</p>
+            <p><strong>15</strong> and Kattath, and Nahalal, and Shimron, and Idalah, and Bethlehem: twelve cities with their villages.</p>
+            <p><strong>16</strong> This is the inheritance of the children of Zebulun according to their families, these cities with their villages.</p>
+            <p><strong>17</strong> The fourth lot came out for Issachar, even for the children of Issachar according to their families.</p>
+            <p><strong>18</strong> And their border was unto Jezreel, and Chesulloth, and Shunem,</p>
+            <p><strong>19</strong> and Hapharaim, and Shion, and Anaharath,</p>
+            <p><strong>20</strong> and Rabbith, and Kishion, and Ebez,</p>
+            <p><strong>21</strong> and Remeth, and Engannim, and En-haddah, and Beth-pazzez,</p>
+            <p><strong>22</strong> and the border reached to Tabor, and Shahazumah, and Beth-shemesh; and the goings out of their border were at the Jordan: sixteen cities with their villages.</p>
+            <p><strong>23</strong> This is the inheritance of the tribe of the children of Issachar according to their families, the cities with their villages.</p>
+            <p><strong>24</strong> And the fifth lot came out for the tribe of the children of Asher according to their families.</p>
+            <p><strong>25</strong> And their border was Helkath, and Hali, and Beten, and Achshaph,</p>
+            <p><strong>26</strong> and Allammelech, and Amad, and Mishal; and it reached to Carmel westward, and to Shihor-libnath;</p>
+            <p><strong>27</strong> and it turned toward the sunrising to Beth-dagon, and reached to Zebulun, and to the valley of Iphtah-el northward to Beth-emek and Neiel; and it went out to Cabul on the left hand,</p>
+            <p><strong>28</strong> and Ebron, and Rehob, and Hammon, and Kanah, even unto great Sidon;</p>
+            <p><strong>29</strong> and the border turned to Ramah, and to the fortified city of Tyre; and the border turned to Hosah; and the goings out thereof were at the sea by the region of Achzib;</p>
+            <p><strong>30</strong> Ummah also, and Aphek, and Rehob: twenty and two cities with their villages.</p>
+            <p><strong>31</strong> This is the inheritance of the tribe of the children of Asher according to their families, these cities with their villages.</p>
+            <p><strong>32</strong> The sixth lot came out for the children of Naphtali, even for the children of Naphtali according to their families.</p>
+            <p><strong>33</strong> And their border was from Heleph, from the oak in Zaanannim, and Adami-nekeb, and Jabneel, unto Lakkum; and the goings out thereof were at the Jordan;</p>
+            <p><strong>34</strong> and the border turned westward to Aznoth-tabor, and went out from thence to Hukkok; and it reached to Zebulun on the south, and reached to Asher on the west, and to Judah at the Jordan toward the sunrising.</p>
+            <p><strong>35</strong> And the fortified cities were Ziddim, Zer, and Hammath, Rakkath, and Chinnereth,</p>
+            <p><strong>36</strong> and Adamah, and Ramah, and Hazor,</p>
+            <p><strong>37</strong> and Kedesh, and Edrei, and En-hazor,</p>
+            <p><strong>38</strong> and Iron, and Migdal-el, Horem, and Beth-anath, and Beth-shemesh; nineteen cities with their villages.</p>
+            <p><strong>39</strong> This is the inheritance of the tribe of the children of Naphtali according to their families, the cities with their villages.</p>
+            <p><strong>40</strong> The seventh lot came out for the tribe of the children of Dan according to their families.</p>
+            <p><strong>41</strong> And the border of their inheritance was Zorah, and Eshtaol, and Ir-shemesh,</p>
+            <p><strong>42</strong> and Shaalabbin, and Aijalon, and Ithlah,</p>
+            <p><strong>43</strong> and Elon, and Timnah, and Ekron,</p>
+            <p><strong>44</strong> and Eltekeh, and Gibbethon, and Baalath,</p>
+            <p><strong>45</strong> and Jehud, and Bene-berak, and Gath-rimmon,</p>
+            <p><strong>46</strong> and Me-jarkon, and Rakkon, with the border over against Joppa.</p>
+            <p><strong>47</strong> And the border of the children of Dan went out beyond them; for the children of Dan went up and fought against Leshem, and took it, and smote it with the edge of the sword, and possessed it, and dwelt therein, and called Leshem, Dan, after the name of Dan their father.</p>
+            <p><strong>48</strong> This is the inheritance of the tribe of the children of Dan according to their families, these cities with their villages.</p>
+            <p><strong>49</strong> So they made an end of distributing the land for inheritance by the borders thereof; and the children of Israel gave an inheritance to Joshua the son of Nun in the midst of them:</p>
+            <p><strong>50</strong> according to the commandment of Jehovah they gave him the city which he asked, even Timnath-serah in the hill-country of Ephraim; and he built the city, and dwelt therein.</p>
+            <p><strong>51</strong> These are the inheritances, which Eleazar the priest, and Joshua the son of Nun, and the heads of the fathers’housesof the tribes of the children of Israel, distributed for inheritance by lot in Shiloh before Jehovah, at the door of the tent of meeting. So they made an end of dividing the land.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The casting of lots at Shiloh continues, distributing the inheritance to the remaining tribes one by one. Simeon receives a portion within the territory of Judah, since Judah's share had been too large. Zebulun, Issachar, Asher, Naphtali, and Dan each receive their borders and cities in turn, the boundaries traced and the towns named for each tribe according to their families. Dan's allotment proves too tight, and the chapter notes that the Danites went up and fought for the city of Leshem, taking it and renaming it Dan after their ancestor. When the distribution of the land for inheritance is complete, the people give Joshua himself an inheritance in their midst. According to the commandment of Yahweh, they grant him the city he asked for—Timnathserah in the hill country of Ephraim—and he builds it and lives there. The chapter ends by summarizing that Eleazar the priest, Joshua, and the heads of the tribes had finished dividing the land by lot in Shiloh before Yahweh, at the door of the Tent of Meeting. The whole account testifies to a God who provides a place for every tribe and family, and to a leader who, having served all, receives his portion last of all.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The remaining tribes</strong> — Simeon, Zebulun, Issachar, Asher, Naphtali, and Dan, who each receive their inheritance by lot at Shiloh.</li>
+          <li><strong>Joshua</strong> — The leader who, after providing for everyone else, receives his own inheritance last—the city of Timnathserah, which he builds and settles.</li>
+          <li><strong>The tribe of Dan</strong> — The tribe whose narrow lot leads them to fight for Leshem, taking it and renaming it Dan after their ancestor.</li>
+          <li><strong>Eleazar the priest</strong> — The high priest who, with Joshua and the tribal heads, completes the dividing of the land before Yahweh at the Tent of Meeting.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Joshua 19:50 (WEB)</p>
+          <p class="verse__text">According to the commandment of Yahweh, they gave him the city which he asked, even Timnathserah in the hill country of Ephraim; and he built the city, and lived there.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God provides a place and a portion for every one of his people, not one forgotten.</li>
+          <li>True leaders, like Joshua, serve others first and take their own portion last.</li>
+          <li>God's provision is often modest yet sufficient—Joshua asks for a single city.</li>
+          <li>The orderly distribution before the Lord shows the peace and fairness of God's giving.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-19">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-19">
+            <ul class="lesson-list">
+            <li><strong>God provides for every family.</strong> Tribe by tribe the lots fall at Shiloh (Joshua 19:1-48, WEB), so that not one is left without an inheritance from the Lord's hand.</li>
+            <li><strong>Servant leaders are last to be served.</strong> Only after all the tribes are provided for do the people give Joshua his portion (Joshua 19:49, WEB), a model of leadership that seeks others' good first.</li>
+            <li><strong>God's gifts are received, not grasped.</strong> “they gave him the city which he asked” (Joshua 19:50, WEB), granted “according to the commandment of Yahweh,” so even Joshua receives rather than seizes.</li>
+            <li><strong>The work is finished before the Lord.</strong> They “made an end of dividing the land… in Shiloh before Yahweh, at the door of the Tent of Meeting” (Joshua 19:51, WEB), all done in God's presence.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-19">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-19">
+            <ol class="study-questions">
+            <li>What stands out about the way each remaining tribe receives its inheritance?</li>
+            <li>Why does Simeon's portion fall within Judah's territory?</li>
+            <li>What is significant about Joshua receiving his inheritance last of all?</li>
+            <li>How does the modest size of Joshua's request—a single city—reflect his character?</li>
+            <li>How might Joshua's example of serving others before himself shape the way you use your position or influence?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-19">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-19">
+            <ol class="study-questions">
+            <li>Each tribe receives its borders and cities by lot at Shiloh, named and numbered according to their families (19:1-48). The careful repetition underscores that God provides a definite place for every tribe, none overlooked, all assigned in his presence.</li>
+            <li>Judah's portion had proved too large, so Simeon's inheritance is carved out within it (19:1, 9). This arrangement shares the abundance and binds the tribes together, with Simeon dwelling in the midst of Judah's land.</li>
+            <li>Joshua, the leader of the whole nation, takes his inheritance only after every tribe has been provided for (19:49-50). It is a quiet but powerful picture of servant leadership—seeking the good of all before securing his own.</li>
+            <li>Joshua asks only for Timnathserah, a single city in the hill country, and builds and settles there (19:50). His modest request reveals a heart content with God's provision rather than grasping for the greatest share, fitting for one who led by faith.</li>
+            <li>This is a personal-application question. Invite members to reflect on whether they use influence to serve themselves first or others first, as Joshua did. As leader, point to the greater Servant, Jesus, who came not to be served but to serve, and encourage gentle, practical steps.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="joshua-18.html">← Joshua 18</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="joshua.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="joshua-20.html">Joshua 20 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

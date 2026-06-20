@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Judges 18: A Tribe in Search of Gods — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Judges 18: the tribe of Dan seizes Micah's idols and priest, conquers peaceful Laish, and establishes idolatrous worship." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-judges-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Judges, Chapter 18
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="judges.html">← All Chapters</a>
+        <span class="study-meta">The Book of Judges · Chapter 18</span>
+        <h1>Judges 18: A Tribe in Search of Gods</h1>
+        <p class="lead">The Danites, seeking land, steal Micah's idols and his priest, then put the quiet town of Laish to the sword and rename it Dan.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-18">
+            <span>Scripture — Judges Chapter 18</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-18">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-18-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-18-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-18-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-18-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Judges 18 (WEB)</p>
+            <p><strong>1</strong> In those days there was no king in Israel: and in those days the tribe of the Danites sought an inheritance to dwell in; for to that day, their inheritance had not fallen to them among the tribes of Israel.</p>
+            <p><strong>2</strong> The children of Dan sent of their family five men from their whole number, men of valor, from Zorah, and from Eshtaol, to spy out the land, and to search it; and they said to them, “Go, explore the land!” They came to the hill country of Ephraim, to the house of Micah, and lodged there.</p>
+            <p><strong>3</strong> When they were by the house of Micah, they knew the voice of the young man the Levite; and they turned aside there, and said to him, “Who brought you here? What do you do in this place? What do you have here?”</p>
+            <p><strong>4</strong> He said to them, “Thus and thus has Micah dealt with me, and he has hired me, and I am become his priest.”</p>
+            <p><strong>5</strong> They said to him, “Please ask counsel of God, that we may know whether our way which we go shall be prosperous.”</p>
+            <p><strong>6</strong> The priest said to them, “Go in peace. Your way in which you go is before Yahweh.”</p>
+            <p><strong>7</strong> Then the five men departed, and came to Laish, and saw the people who were therein, how they lived in security, in the way of the Sidonians, quiet and secure; for there was no one in the land, possessing authority, that might put them to shame in anything, and they were far from the Sidonians, and had no dealings with any man.</p>
+            <p><strong>8</strong> They came to their brothers to Zorah and Eshtaol: and their brothers said to them, “What do you say?”</p>
+            <p><strong>9</strong> They said, “Arise, and let us go up against them; for we have seen the land, and behold, it is very good. Do you stand still? Don’t be slothful to go and to enter in to possess the land.</p>
+            <p><strong>10</strong> When you go, you shall come to a secure people, and the land is large; for God has given it into your hand, a place where there is no want of anything that is in the earth.”</p>
+            <p><strong>11</strong> There set out from there of the family of the Danites, out of Zorah and out of Eshtaol, six hundred men girt with weapons of war.</p>
+            <p><strong>12</strong> They went up, and encamped in Kiriath Jearim, in Judah: therefore they called that place Mahaneh Dan, to this day; behold, it is behind Kiriath Jearim.</p>
+            <p><strong>13</strong> They passed there to the hill country of Ephraim, and came to the house of Micah.</p>
+            <p><strong>14</strong> Then the five men who went to spy out the country of Laish answered, and said to their brothers, “Do you know that there is in these houses an ephod, and teraphim, and an engraved image, and a molten image? Now therefore consider what you have to do.”</p>
+            <p><strong>15</strong> They turned aside there, and came to the house of the young man the Levite, even to the house of Micah, and asked him of his welfare.</p>
+            <p><strong>16</strong> The six hundred men girt with their weapons of war, who were of the children of Dan, stood by the entrance of the gate.</p>
+            <p><strong>17</strong> The five men who went to spy out the land went up, and came in there, and took the engraved image, and the ephod, and the teraphim, and the molten image: and the priest stood by the entrance of the gate with the six hundred men girt with weapons of war.</p>
+            <p><strong>18</strong> When these went into Micah’s house, and fetched the engraved image, the ephod, and the teraphim, and the molten image, the priest said to them, “What are you doing?”</p>
+            <p><strong>19</strong> They said to him, “Hold your peace, put your hand on your mouth, and go with us, and be to us a father and a priest. Is it better for you to be priest to the house of one man, or to be priest to a tribe and a family in Israel?”</p>
+            <p><strong>20</strong> The priest’s heart was glad, and he took the ephod, and the teraphim, and the engraved image, and went in the midst of the people.</p>
+            <p><strong>21</strong> So they turned and departed, and put the little ones and the livestock and the goods before them.</p>
+            <p><strong>22</strong> When they were a good way from the house of Micah, the men who were in the houses near to Micah’s house were gathered together, and overtook the children of Dan.</p>
+            <p><strong>23</strong> They cried to the children of Dan. They turned their faces, and said to Micah, “What ails you, that you come with such a company?”</p>
+            <p><strong>24</strong> He said, “You have taken away my gods which I made, and the priest, and have gone away, and what more do I have? How then do you say to me, ‘What ails you?’”</p>
+            <p><strong>25</strong> The children of Dan said to him, “Don’t let your voice be heard among us, lest angry fellows fall on you, and you lose your life, with the lives of your household.”</p>
+            <p><strong>26</strong> The children of Dan went their way: and when Micah saw that they were too strong for him, he turned and went back to his house.</p>
+            <p><strong>27</strong> They took that which Micah had made, and the priest whom he had, and came to Laish, to a people quiet and secure, and struck them with the edge of the sword; and they burnt the city with fire.</p>
+            <p><strong>28</strong> There was no deliverer, because it was far from Sidon, and they had no dealings with any man; and it was in the valley that lies by Beth Rehob. They built the city, and lived therein.</p>
+            <p><strong>29</strong> They called the name of the city Dan, after the name of Dan their father, who was born to Israel: however the name of the city was Laish at the first.</p>
+            <p><strong>30</strong> The children of Dan set up for themselves the engraved image: and Jonathan, the son of Gershom, the son of Moses, he and his sons were priests to the tribe of the Danites until the day of the captivity of the land.</p>
+            <p><strong>31</strong> So they set them up Micah’s engraved image which he made, all the time that God’s house was in Shiloh.</p>
+            </div>
+            <div class="scripture-text" id="web-18-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Judges 18 (KJV)</p>
+            <p><strong>1</strong> In those days there was no king in Israel: and in those days the tribe of the Danites sought them an inheritance to dwell in; for unto that day all their inheritance had not fallen unto them among the tribes of Israel.</p>
+            <p><strong>2</strong> And the children of Dan sent of their family five men from their coasts, men of valour, from Zorah, and from Eshtaol, to spy out the land, and to search it; and they said unto them, Go, search the land: who when they came to mount Ephraim, to the house of Micah, they lodged there.</p>
+            <p><strong>3</strong> When they were by the house of Micah, they knew the voice of the young man the Levite: and they turned in thither, and said unto him, Who brought thee hither? and what makest thou in this place? and what hast thou here?</p>
+            <p><strong>4</strong> And he said unto them, Thus and thus dealeth Micah with me, and hath hired me, and I am his priest.</p>
+            <p><strong>5</strong> And they said unto him, Ask counsel, we pray thee, of God, that we may know whether our way which we go shall be prosperous.</p>
+            <p><strong>6</strong> And the priest said unto them, Go in peace: before the Lord is your way wherein ye go.</p>
+            <p><strong>7</strong> Then the five men departed, and came to Laish, and saw the people that were therein, how they dwelt careless, after the manner of the Zidonians, quiet and secure; and there was no magistrate in the land, that might put them to shame in any thing; and they were far from the Zidonians, and had no business with any man.</p>
+            <p><strong>8</strong> And they came unto their brethren to Zorah and Eshtaol: and their brethren said unto them, What say ye?</p>
+            <p><strong>9</strong> And they said, Arise, that we may go up against them: for we have seen the land, and, behold, it is very good: and are ye still? be not slothful to go, and to enter to possess the land.</p>
+            <p><strong>10</strong> When ye go, ye shall come unto a people secure, and to a large land: for God hath given it into your hands; a place where there is no want of any thing that is in the earth.</p>
+            <p><strong>11</strong> And there went from thence of the family of the Danites, out of Zorah and out of Eshtaol, six hundred men appointed with weapons of war.</p>
+            <p><strong>12</strong> And they went up, and pitched in Kirjath–jearim, in Judah: wherefore they called that place Mahaneh–dan unto this day: behold, it is behind Kirjath–jearim.</p>
+            <p><strong>13</strong> And they passed thence unto mount Ephraim, and came unto the house of Micah.</p>
+            <p><strong>14</strong> Then answered the five men that went to spy out the country of Laish, and said unto their brethren, Do ye know that there is in these houses an ephod, and teraphim, and a graven image, and a molten image? now therefore consider what ye have to do.</p>
+            <p><strong>15</strong> And they turned thitherward, and came to the house of the young man the Levite, even unto the house of Micah, and saluted him.</p>
+            <p><strong>16</strong> And the six hundred men appointed with their weapons of war, which were of the children of Dan, stood by the entering of the gate.</p>
+            <p><strong>17</strong> And the five men that went to spy out the land went up, and came in thither, and took the graven image, and the ephod, and the teraphim, and the molten image: and the priest stood in the entering of the gate with the six hundred men that were appointed with weapons of war.</p>
+            <p><strong>18</strong> And these went into Micah’s house, and fetched the carved image, the ephod, and the teraphim, and the molten image. Then said the priest unto them, What do ye?</p>
+            <p><strong>19</strong> And they said unto him, Hold thy peace, lay thine hand upon thy mouth, and go with us, and be to us a father and a priest: is it better for thee to be a priest unto the house of one man, or that thou be a priest unto a tribe and a family in Israel?</p>
+            <p><strong>20</strong> And the priest’s heart was glad, and he took the ephod, and the teraphim, and the graven image, and went in the midst of the people.</p>
+            <p><strong>21</strong> So they turned and departed, and put the little ones and the cattle and the carriage before them.</p>
+            <p><strong>22</strong> And when they were a good way from the house of Micah, the men that were in the houses near to Micah’s house were gathered together, and overtook the children of Dan.</p>
+            <p><strong>23</strong> And they cried unto the children of Dan. And they turned their faces, and said unto Micah, What aileth thee, that thou comest with such a company?</p>
+            <p><strong>24</strong> And he said, Ye have taken away my gods which I made, and the priest, and ye are gone away: and what have I more? and what is this that ye say unto me, What aileth thee?</p>
+            <p><strong>25</strong> And the children of Dan said unto him, Let not thy voice be heard among us, lest angry fellows run upon thee, and thou lose thy life, with the lives of thy household.</p>
+            <p><strong>26</strong> And the children of Dan went their way: and when Micah saw that they were too strong for him, he turned and went back unto his house.</p>
+            <p><strong>27</strong> And they took the things which Micah had made, and the priest which he had, and came unto Laish, unto a people that were at quiet and secure: and they smote them with the edge of the sword, and burnt the city with fire.</p>
+            <p><strong>28</strong> And there was no deliverer, because it was far from Zidon, and they had no business with any man; and it was in the valley that lieth by Beth–rehob. And they built a city, and dwelt therein.</p>
+            <p><strong>29</strong> And they called the name of the city Dan, after the name of Dan their father, who was born unto Israel: howbeit the name of the city was Laish at the first.</p>
+            <p><strong>30</strong> And the children of Dan set up the graven image: and Jonathan, the son of Gershom, the son of Manasseh, he and his sons were priests to the tribe of Dan until the day of the captivity of the land.</p>
+            <p><strong>31</strong> And they set them up Micah’s graven image, which he made, all the time that the house of God was in Shiloh.</p>
+            </div>
+            <div class="scripture-text" id="web-18-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Judges 18 (ASV)</p>
+            <p><strong>1</strong> In those days there was no king in Israel: and in those days the tribe of the Danites sought them an inheritance to dwell in; for unto that day their inheritance had not fallen unto them among the tribes of Israel.</p>
+            <p><strong>2</strong> And the children of Dan sent of their family five men from their whole number, men of valor, from Zorah, and from Eshtaol, to spy out the land, and to search it; and they said unto them, Go, search the land. And they came to the hill-country of Ephraim, unto the house of Micah, and lodged there.</p>
+            <p><strong>3</strong> When they were by the house of Micah, they knew the voice of the young man the Levite; and they turned aside thither, and said unto him, Who brought thee hither? and what doest thou in this place? and what hast thou here?</p>
+            <p><strong>4</strong> And he said unto them, Thus and thus hath Micah dealt with me, and he hath hired me, and I am become his priest.</p>
+            <p><strong>5</strong> And they said unto him, Ask counsel, we pray thee, of God, that we may know whether our way which we go shall be prosperous.</p>
+            <p><strong>6</strong> And the priest said unto them, Go in peace: before Jehovah is your way wherein ye go.</p>
+            <p><strong>7</strong> Then the five men departed, and came to Laish, and saw the people that were therein, how they dwelt in security, after the manner of the Sidonians, quiet and secure; for there was none in the land, possessing authority, that might put them to shame in anything, and they were far from the Sidonians, and had no dealings with any man.</p>
+            <p><strong>8</strong> And they came unto their brethren to Zorah and Eshtaol: and their brethren said unto them, What say ye?</p>
+            <p><strong>9</strong> And they said, Arise, and let us go up against them; for we have seen the land, and, behold, it is very good: and are ye still? be not slothful to go and to enter in to possess the land.</p>
+            <p><strong>10</strong> When ye go, ye shall come unto a people secure, and the land is large; for God hath given it into your hand, a place where there is no want of anything that is in the earth.</p>
+            <p><strong>11</strong> And there set forth from thence of the family of the Danites, out of Zorah and out of Eshtaol, six hundred men girt with weapons of war.</p>
+            <p><strong>12</strong> And they went up, and encamped in Kiriath-jearim, in Judah: wherefore they called that place Mahaneh-dan, unto this day; behold, it is behind Kiriath-jearim.</p>
+            <p><strong>13</strong> And they passed thence unto the hill-country of Ephraim, and came unto the house of Micah.</p>
+            <p><strong>14</strong> Then answered the five men that went to spy out the country of Laish, and said unto their brethren, Do ye know that there is in these houses an ephod, and teraphim, and a graven image, and a molten image? now therefore consider what ye have to do.</p>
+            <p><strong>15</strong> And they turned aside thither, and came to the house of the young man the Levite, even unto the house of Micah, and asked him of his welfare.</p>
+            <p><strong>16</strong> And the six hundred men girt with their weapons of war, who were of the children of Dan, stood by the entrance of the gate.</p>
+            <p><strong>17</strong> And the five men that went to spy out the land went up, and came in thither, and took the graven image, and the ephod, and the teraphim, and the molten image: and the priest stood by the entrance of the gate with the six hundred men girt with weapons of war.</p>
+            <p><strong>18</strong> And when these went into Micah’s house, and fetched the graven image, the ephod, and the teraphim, and the molten image, the priest said unto them, What do ye?</p>
+            <p><strong>19</strong> And they said unto him, Hold thy peace, lay thy hand upon thy mouth, and go with us, and be to us a father and a priest: is it better for thee to be priest unto the house of one man, or to be priest unto a tribe and a family in Israel?</p>
+            <p><strong>20</strong> And the priest’s heart was glad, and he took the ephod, and the teraphim, and the graven image, and went in the midst of the people.</p>
+            <p><strong>21</strong> So they turned and departed, and put the little ones and the cattle and the goods before them.</p>
+            <p><strong>22</strong> When they were a good way from the house of Micah, the men that were in the houses near to Micah’s house were gathered together, and overtook the children of Dan.</p>
+            <p><strong>23</strong> And they cried unto the children of Dan. And they turned their faces, and said unto Micah, What aileth thee, that thou comest with such a company?</p>
+            <p><strong>24</strong> And he said, ye have taken away my gods which I made, and the priest, and are gone away, and what have I more? and how then say ye unto me, What aileth thee?</p>
+            <p><strong>25</strong> And the children of Dan said unto him, Let not thy voice be heard among us, lest angry fellows fall upon you, and thou lose thy life, with the lives of thy household.</p>
+            <p><strong>26</strong> And the children of Dan went their way: and when Micah saw that they were too strong for him, he turned and went back unto his house.</p>
+            <p><strong>27</strong> And they took that which Micah had made, and the priest whom he had, and came unto Laish, unto a people quiet and secure, and smote them with the edge of the sword; and they burnt the city with fire.</p>
+            <p><strong>28</strong> And there was no deliverer, because it was far from Sidon, and they had no dealings with any man; and it was in the valley that lieth by Beth-rehob. And they built the city, and dwelt therein.</p>
+            <p><strong>29</strong> And they called the name of the city Dan, after the name of Dan their father, who was born unto Israel: howbeit the name of the city was Laish at the first.</p>
+            <p><strong>30</strong> And the children of Dan set up for themselves the graven image; and Jonathan, the son of Gershom, the son of Moses, he and his sons were priests to the tribe of the Danites until the day of the captivity of the land.</p>
+            <p><strong>31</strong> So they set them up Micah’s graven image which he made, all the time that the house of God was in Shiloh.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The tribe of Dan, still without a secure inheritance, sends five scouts to find land. Passing Micah's house, they recognize the Levite's voice and ask him to inquire of God whether their mission will prosper; he glibly sends them off with “Go in peace.” The scouts discover Laish, a quiet, secure, isolated people with no deliverer, and report back that the land is good and God-given. Six hundred armed Danites set out, stopping again at Micah's house, where they brazenly carry off his carved image, ephod, household idols, and cast idol. When the Levite protests, they offer him a promotion: better to be priest to a whole tribe than to one man, and his heart is glad. Micah and his neighbors give chase but are warned off with threats and turn home, helpless—the man who stole and made idols now robbed of them. The Danites fall on unsuspecting Laish, strike it with the sword, burn it, rebuild it, and rename it Dan after their ancestor. There they set up Micah's carved image, and a priestly line traced to Moses' own grandson serves this idolatrous shrine until the captivity of the land. A whole tribe institutionalizes the very corruption one household began.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The tribe of Dan</strong> — Israelites seeking land who steal another man's idols and priest, slaughter the peaceful people of Laish, and establish a tribal shrine of false worship.</li>
+          <li><strong>The Levite</strong> — Micah's hired priest, who readily abandons his employer for a bigger congregation, gladly trading one master for the prestige of serving a whole tribe.</li>
+          <li><strong>Micah</strong> — The idol-maker of chapter 17, now robbed of his gods and priest by armed men, left to cry, “What more do I have?” as the Danites march off with everything.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Judges 18:1 (WEB)</p>
+          <p class="verse__text">In those days there was no king in Israel: and in those days the tribe of the Danites sought an inheritance to dwell in; for to that day, their inheritance had not fallen to them among the tribes of Israel.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Sin practiced by one household easily spreads to corrupt a whole community.</li>
+          <li>Those who chase prestige will abandon any loyalty for a bigger platform.</li>
+          <li>Idols cannot save; gods that can be stolen are no gods at all.</li>
+          <li>A people cut off from God's word will seize what they want and call it his gift.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-18">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-18">
+            <ul class="lesson-list">
+            <li><strong>Lawlessness multiplies when there is no king.</strong> “In those days there was no king in Israel” (Judges 18:1, WEB), and a whole tribe acts by theft and force rather than by God's direction.</li>
+            <li><strong>Hired religion has no real loyalty.</strong> Offered a bigger role, “the priest’s heart was glad” (Judges 18:20, WEB), and he abandons Micah without a thought; mercenary faith follows the best offer.</li>
+            <li><strong>Idols are powerless and portable.</strong> Micah laments, “You have taken away my gods which I made” (Judges 18:24, WEB); a god you can make and others can carry off cannot save anyone.</li>
+            <li><strong>Sin presumes upon God's name.</strong> The Danites declare, “God has given it into your hand” (Judges 18:10, WEB), claiming divine sanction for a conquest born of self-will and idolatry.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-18">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-18">
+            <ol class="study-questions">
+            <li>How does the Levite's easy “Go in peace” (18:6) reflect the spiritual emptiness of this religion?</li>
+            <li>Why does the priest so quickly abandon Micah for the Danites?</li>
+            <li>What is ironic about Micah's grief over the gods that were stolen from him (18:24)?</li>
+            <li>How does the corruption that began in one home in chapter 17 spread in chapter 18?</li>
+            <li>Where might you be tempted to claim God's approval for something you have already decided to do for your own reasons?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-18">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-18">
+            <ol class="study-questions">
+            <li>The priest offers a quick blessing without genuinely seeking God, telling the Danites their way is “before Yahweh” (18:6). His glib assurance shows a religion drained of truth, useful only for endorsing whatever people already intend to do.</li>
+            <li>The Levite leaves because the Danites offer prestige—priest to a whole tribe rather than one household (18:19-20). His faith is a career, not a calling; he follows the better offer. Help the group see the danger of self-serving ministry.</li>
+            <li>Micah made his gods himself, yet now weeps that they have been taken (18:24). The irony exposes the absurdity of idolatry: a god you manufacture and others can steal is no god at all. Only the living God cannot be carried off.</li>
+            <li>What one family did privately, a whole tribe now does publicly and permanently, setting up Micah's idol as a tribal shrine that endures for generations (18:30-31). Sin tolerated in one place rarely stays contained; it spreads and institutionalizes.</li>
+            <li>This is a personal-application question. Invite members to consider where they may baptize their own plans with God's name rather than truly seeking his will. As leader, encourage honest, prayerful discernment, and keep the discussion gracious.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="judges-17.html">← Judges 17</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="judges.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="judges-19.html">Judges 19 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Samuel 16: The Lord Looks at the Heart — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Samuel 16: God sends Samuel to anoint David, the Spirit comes upon him, and David enters Saul's troubled court." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-samuel-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Samuel, Chapter 16
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Samuel · Chapter 16</span>
+        <h1>1 Samuel 16: The Lord Looks at the Heart</h1>
+        <p class="lead">Samuel anoints the youngest son of Jesse, and the Spirit of the Lord rushes upon David while the Spirit departs from Saul.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-16">
+            <span>Scripture — 1 Samuel Chapter 16</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-16">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-16-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-16-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-16-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-16-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Samuel 16 (WEB)</p>
+            <p><strong>1</strong> Yahweh said to Samuel, “How long will you mourn for Saul, since I have rejected him from being king over Israel? Fill your horn with oil, and go. I will send you to Jesse the Bethlehemite; for I have provided a king for myself among his sons.”</p>
+            <p><strong>2</strong> Samuel said, “How can I go? If Saul hears it, he will kill me.” Yahweh said, “Take a heifer with you, and say, I have come to sacrifice to Yahweh.</p>
+            <p><strong>3</strong> Call Jesse to the sacrifice, and I will show you what you shall do. You shall anoint to me him whom I name to you.”</p>
+            <p><strong>4</strong> Samuel did that which Yahweh spoke, and came to Bethlehem. The elders of the city came to meet him trembling, and said, “Do you come peaceably?”</p>
+            <p><strong>5</strong> He said, “Peaceably; I have come to sacrifice to Yahweh. Sanctify yourselves, and come with me to the sacrifice.” He sanctified Jesse and his sons, and called them to the sacrifice.</p>
+            <p><strong>6</strong> When they had come, he looked at Eliab, and said, “Surely Yahweh’s anointed is before him.”</p>
+            <p><strong>7</strong> But Yahweh said to Samuel, “Don’t look on his face, or on the height of his stature; because I have rejected him: for I see not as man sees; for man looks at the outward appearance, but Yahweh looks at the heart.”</p>
+            <p><strong>8</strong> Then Jesse called Abinadab, and made him pass before Samuel. He said, “Neither has Yahweh chosen this one.”</p>
+            <p><strong>9</strong> Then Jesse made Shammah to pass by. He said, “Neither has Yahweh chosen this one.”</p>
+            <p><strong>10</strong> Jesse made seven of his sons to pass before Samuel. Samuel said to Jesse, “Yahweh has not chosen these.”</p>
+            <p><strong>11</strong> Samuel said to Jesse, “Are all your children here?” He said, “There remains yet the youngest, and behold, he is keeping the sheep.” Samuel said to Jesse, “Send and get him; for we will not sit down until he comes here.”</p>
+            <p><strong>12</strong> He sent, and brought him in. Now he was ruddy, and withal of a beautiful face, and goodly to look on. Yahweh said, “Arise, anoint him; for this is he.”</p>
+            <p><strong>13</strong> Then Samuel took the horn of oil, and anointed him in the midst of his brothers: and the Spirit of Yahweh came mightily on David from that day forward. So Samuel rose up, and went to Ramah.</p>
+            <p><strong>14</strong> Now the Spirit of Yahweh departed from Saul, and an evil spirit from Yahweh troubled him.</p>
+            <p><strong>15</strong> Saul’s servants said to him, “See now, an evil spirit from God troubles you.</p>
+            <p><strong>16</strong> Let our lord now command your servants who are before you, to seek out a man who is a skillful player on the harp. It shall happen, when the evil spirit from God is on you, that he shall play with his hand, and you shall be well.”</p>
+            <p><strong>17</strong> Saul said to his servants, “Provide me now a man who can play well, and bring him to me.”</p>
+            <p><strong>18</strong> Then one of the young men answered, and said, “Behold, I have seen a son of Jesse the Bethlehemite, who is skillful in playing, a mighty man of valor, a man of war, prudent in speech, and a comely person; and Yahweh is with him.”</p>
+            <p><strong>19</strong> Therefore Saul sent messengers to Jesse, and said, “Send me David your son, who is with the sheep.”</p>
+            <p><strong>20</strong> Jesse took a donkey loaded with bread, and a bottle of wine, and a young goat, and sent them by David his son to Saul.</p>
+            <p><strong>21</strong> David came to Saul, and stood before him. He loved him greatly; and he became his armor bearer.</p>
+            <p><strong>22</strong> Saul sent to Jesse, saying, “Please let David stand before me; for he has found favor in my sight.”</p>
+            <p><strong>23</strong> When the spirit from God was on Saul, David took the harp, and played with his hand: so Saul was refreshed, and was well, and the evil spirit departed from him.</p>
+            </div>
+            <div class="scripture-text" id="web-16-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Samuel 16 (KJV)</p>
+            <p><strong>1</strong> And the Lord said unto Samuel, How long wilt thou mourn for Saul, seeing I have rejected him from reigning over Israel? fill thine horn with oil, and go, I will send thee to Jesse the Beth–lehemite: for I have provided me a king among his sons.</p>
+            <p><strong>2</strong> And Samuel said, How can I go? if Saul hear it, he will kill me. And the Lord said, Take an heifer with thee, and say, I am come to sacrifice to the Lord.</p>
+            <p><strong>3</strong> And call Jesse to the sacrifice, and I will shew thee what thou shalt do: and thou shalt anoint unto me him whom I name unto thee.</p>
+            <p><strong>4</strong> And Samuel did that which the Lord spake, and came to Beth–lehem. And the elders of the town trembled at his coming, and said, Comest thou peaceably?</p>
+            <p><strong>5</strong> And he said, Peaceably: I am come to sacrifice unto the Lord: sanctify yourselves, and come with me to the sacrifice. And he sanctified Jesse and his sons, and called them to the sacrifice.</p>
+            <p><strong>6</strong> And it came to pass, when they were come, that he looked on Eliab, and said, Surely the Lord’s anointed is before him.</p>
+            <p><strong>7</strong> But the Lord said unto Samuel, Look not on his countenance, or on the height of his stature; because I have refused him: for the Lord seeth not as man seeth; for man looketh on the outward appearance, but the Lord looketh on the heart.</p>
+            <p><strong>8</strong> Then Jesse called Abinadab, and made him pass before Samuel. And he said, Neither hath the Lord chosen this.</p>
+            <p><strong>9</strong> Then Jesse made Shammah to pass by. And he said, Neither hath the Lord chosen this.</p>
+            <p><strong>10</strong> Again, Jesse made seven of his sons to pass before Samuel. And Samuel said unto Jesse, The Lord hath not chosen these.</p>
+            <p><strong>11</strong> And Samuel said unto Jesse, Are here all thy children? And he said, There remaineth yet the youngest, and, behold, he keepeth the sheep. And Samuel said unto Jesse, Send and fetch him: for we will not sit down till he come hither.</p>
+            <p><strong>12</strong> And he sent, and brought him in. Now he was ruddy, and withal of a beautiful countenance, and goodly to look to. And the Lord said, Arise, anoint him: for this is he.</p>
+            <p><strong>13</strong> Then Samuel took the horn of oil, and anointed him in the midst of his brethren: and the Spirit of the Lord came upon David from that day forward. So Samuel rose up, and went to Ramah.</p>
+            <p><strong>14</strong> But the Spirit of the Lord departed from Saul, and an evil spirit from the Lord troubled him.</p>
+            <p><strong>15</strong> And Saul’s servants said unto him, Behold now, an evil spirit from God troubleth thee.</p>
+            <p><strong>16</strong> Let our lord now command thy servants, which are before thee, to seek out a man, who is a cunning player on an harp: and it shall come to pass, when the evil spirit from God is upon thee, that he shall play with his hand, and thou shalt be well.</p>
+            <p><strong>17</strong> And Saul said unto his servants, Provide me now a man that can play well, and bring him to me.</p>
+            <p><strong>18</strong> Then answered one of the servants, and said, Behold, I have seen a son of Jesse the Beth–lehemite, that is cunning in playing, and a mighty valiant man, and a man of war, and prudent in matters, and a comely person, and the Lord is with him.</p>
+            <p><strong>19</strong> Wherefore Saul sent messengers unto Jesse, and said, Send me David thy son, which is with the sheep.</p>
+            <p><strong>20</strong> And Jesse took an ass laden with bread, and a bottle of wine, and a kid, and sent them by David his son unto Saul.</p>
+            <p><strong>21</strong> And David came to Saul, and stood before him: and he loved him greatly; and he became his armourbearer.</p>
+            <p><strong>22</strong> And Saul sent to Jesse, saying, Let David, I pray thee, stand before me; for he hath found favour in my sight.</p>
+            <p><strong>23</strong> And it came to pass, when the evil spirit from God was upon Saul, that David took an harp, and played with his hand: so Saul was refreshed, and was well, and the evil spirit departed from him.</p>
+            </div>
+            <div class="scripture-text" id="web-16-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Samuel 16 (ASV)</p>
+            <p><strong>1</strong> And Jehovah said unto Samuel, How long wilt thou mourn for Saul, seeing I have rejected him from being king over Israel? fill thy horn with oil, and go: I will send thee to Jesse the Beth-lehemite; for I have provided me a king among his sons.</p>
+            <p><strong>2</strong> And Samuel said, How can I go? if Saul hear it, he will kill me. And Jehovah said, Take a heifer with thee, and say, I am come to sacrifice to Jehovah.</p>
+            <p><strong>3</strong> And call Jesse to the sacrifice, and I will show thee what thou shalt do: and thou shalt anoint unto me him whom I name unto thee.</p>
+            <p><strong>4</strong> And Samuel did that which Jehovah spake, and came to Beth-lehem. And the elders of the city came to meet him trembling, and said, Comest thou peaceably?</p>
+            <p><strong>5</strong> And he said, Peaceably; I am come to sacrifice unto Jehovah: sanctify yourselves, and come with me to the sacrifice. And he sanctified Jesse and his sons, and called them to the sacrifice.</p>
+            <p><strong>6</strong> And it came to pass, when they were come, that he looked on Eliab, and said, Surely Jehovah’s anointed is before him.</p>
+            <p><strong>7</strong> But Jehovah said unto Samuel, Look not on his countenance, or on the height of his stature; because I have rejected him: for Jehovah seeth not as man seeth; for man looketh on the outward appearance, but Jehovah looketh on the heart.</p>
+            <p><strong>8</strong> Then Jesse called Abinadab, and made him pass before Samuel. And he said, Neither hath Jehovah chosen this.</p>
+            <p><strong>9</strong> Then Jesse made Shammah to pass by. And he said, Neither hath Jehovah chosen this.</p>
+            <p><strong>10</strong> And Jesse made seven of his sons to pass before Samuel. And Samuel said unto Jesse, Jehovah hath not chosen these.</p>
+            <p><strong>11</strong> And Samuel said unto Jesse, Are here all thy children? And he said, There remaineth yet the youngest, and, behold, he is keeping the sheep. And Samuel said unto Jesse, Send and fetch him; for we will not sit down till he come hither.</p>
+            <p><strong>12</strong> And he sent, and brought him in. Now he was ruddy, and withal of a beautiful countenance, and goodly to look upon. And Jehovah said, Arise, anoint him; for this is he.</p>
+            <p><strong>13</strong> Then Samuel took the horn of oil, and anointed him in the midst of his brethren: and the Spirit of Jehovah came mightily upon David from that day forward. So Samuel rose up, and went to Ramah.</p>
+            <p><strong>14</strong> Now the Spirit of Jehovah departed from Saul, and an evil spirit from Jehovah troubled him.</p>
+            <p><strong>15</strong> And Saul’s servants said unto him, Behold now, an evil spirit from God troubleth thee.</p>
+            <p><strong>16</strong> Let our lord now command thy servants, that are before thee, to seek out a man who is a skilful player on the harp: and it shall come to pass, when the evil spirit from God is upon thee, that he shall play with his hand, and thou shalt be well.</p>
+            <p><strong>17</strong> And Saul said unto his servants, Provide me now a man that can play well, and bring him to me.</p>
+            <p><strong>18</strong> Then answered one of the young men, and said, Behold, I have seen a son of Jesse the Beth-lehemite, that is skilful in playing, and a mighty man of valor, and a man of war, and prudent in speech, and a comely person; and Jehovah is with him.</p>
+            <p><strong>19</strong> Wherefore Saul sent messengers unto Jesse, and said, Send me David thy son, who is with the sheep.</p>
+            <p><strong>20</strong> And Jesse took an ass laden with bread, and a bottle of wine, and a kid, and sent them by David his son unto Saul.</p>
+            <p><strong>21</strong> And David came to Saul, and stood before him: and he loved him greatly; and he became his armorbearer.</p>
+            <p><strong>22</strong> And Saul sent to Jesse, saying, Let David, I pray thee, stand before me; for he hath found favor in my sight.</p>
+            <p><strong>23</strong> And it came to pass, when the evil spirit from God was upon Saul, that David took the harp, and played with his hand: so Saul was refreshed, and was well, and the evil spirit departed from him.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God tells Samuel to stop mourning for Saul and fill his horn with oil, for he has chosen a king from among the sons of Jesse of Bethlehem. Fearing Saul, Samuel goes under the cover of a sacrifice. When Jesse's sons pass before him, Samuel is impressed by Eliab's appearance, but the Lord teaches him a deep truth: God does not see as man sees, for man looks at the outward appearance while the Lord looks at the heart. One by one seven sons pass by, and none is chosen. Samuel asks if there are more, and the youngest, David, is summoned from keeping the sheep. The Lord says, “Arise, anoint him; for this is he,” and when Samuel anoints him, the Spirit of Yahweh rushes upon David from that day forward. Meanwhile the Spirit departs from Saul, and a tormenting spirit troubles him. His servants suggest finding a skillful harpist to soothe him, and David—already noted as skillful, brave, and one with whom the Lord is present—is brought to court. David enters Saul's service as armor-bearer and musician, and whenever the tormenting spirit comes, David plays and Saul is relieved. So the rejected king and the anointed shepherd are quietly drawn together at the very moment their paths begin to diverge.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The youngest son of Jesse, a shepherd anointed as the future king, upon whom the Spirit of the Lord rushes and who enters Saul's court.</li>
+          <li><strong>Samuel</strong> — The prophet sent to Bethlehem to anoint God's chosen king, who learns that the Lord looks not at appearance but at the heart.</li>
+          <li><strong>Jesse</strong> — The Bethlehemite father of eight sons, who presents seven before Samuel before his youngest is finally summoned from the flock.</li>
+          <li><strong>Saul</strong> — The rejected king from whom the Spirit of the Lord has departed, now troubled by an evil spirit and soothed by David's playing.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Samuel 16:7 (WEB)</p>
+          <p class="verse__text">But Yahweh said to Samuel, “Don’t look on his face, or on the height of his stature; because I have rejected him: for I see not as man sees; for man looks at the outward appearance, but Yahweh looks at the heart.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God sees and values the heart, not the outward impressions that sway people.</li>
+          <li>The Lord often chooses the overlooked and unlikely to accomplish his purposes.</li>
+          <li>True anointing for service comes by the Spirit, not by human qualifications.</li>
+          <li>God's quiet work is often underway long before it becomes visible to others.</li>
+          <li>The presence of God's Spirit is the greatest mark of his blessing on a life.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-16">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-16">
+            <ul class="lesson-list">
+            <li><strong>God looks at the heart.</strong> “man looks at the outward appearance, but Yahweh looks at the heart” (1 Samuel 16:7, WEB). God's evaluation runs deeper than the impressions that captivate us.</li>
+            <li><strong>God chooses the overlooked.</strong> David is so unconsidered that he is left with the sheep (1 Samuel 16:11, WEB), yet he is the one God names. The Lord delights to raise up the unlikely.</li>
+            <li><strong>The Spirit empowers the chosen.</strong> “the Spirit of Yahweh came mightily on David from that day forward” (1 Samuel 16:13, WEB). It is God's Spirit, not human strength, that equips for his work.</li>
+            <li><strong>God's presence is the true blessing.</strong> David is commended as one with whom “Yahweh is with him” (1 Samuel 16:18, WEB), the surest sign of God's favor on a life.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-16">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-16">
+            <ol class="study-questions">
+            <li>Why does God tell Samuel to stop mourning for Saul, and what does this teach about moving forward in God's purposes?</li>
+            <li>What does it mean that “Yahweh looks at the heart,” and how does this challenge the way we tend to size up people?</li>
+            <li>Why is it significant that David was the youngest, left keeping the sheep, when Samuel came?</li>
+            <li>How does the contrast between the Spirit coming on David and departing from Saul frame the rest of the story?</li>
+            <li>In what areas are you tempted to judge yourself or others by outward appearance rather than the heart?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-16">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-16">
+            <ol class="study-questions">
+            <li>God gently tells Samuel that his prolonged grief over Saul must give way to obedience: “Fill your horn with oil, and go” (16:1). There is a time to mourn, but God calls his servant to move ahead into the new thing he is doing, trusting his provision of a king.</li>
+            <li>God sees past face and stature to the inner person (16:7). This challenges our instinct to esteem people by looks, charisma, or status, and calls us to value—and cultivate—the heart, which is what God actually weighs.</li>
+            <li>David was so overlooked that his own father did not present him; he was out tending sheep (16:11). God's choice of the least likely underscores that his kingdom advances by grace and divine election, not by human ranking or expectation.</li>
+            <li>As the Spirit rushes upon David, it departs from Saul (16:13-14). This pivot marks the true transfer of God's favor; though Saul still sits on the throne, the narrative shows where God's anointing—and the future—now rests.</li>
+            <li>This is a personal-application question. Invite members to consider where they crave outward approval or judge others superficially, and to ask God to shape their hearts. As leader, point to the comfort that God sees and values what is hidden from human eyes.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-samuel-15.html">← 1 Samuel 15</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-samuel-17.html">1 Samuel 17 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

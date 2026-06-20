@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Samuel 18: A Father's Grief — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Samuel 18: Absalom's defeat in the forest of Ephraim, his death at Joab's hand, and David's bitter grief." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-samuel-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Samuel, Chapter 18
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Samuel · Chapter 18</span>
+        <h1>2 Samuel 18: A Father's Grief</h1>
+        <p class="lead">Absalom's rebellion ends in the forest of Ephraim, caught in an oak and killed by Joab, while David weeps for his lost son.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-18">
+            <span>Scripture — 2 Samuel Chapter 18</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-18">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-18-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-18-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-18-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-18-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Samuel 18 (WEB)</p>
+            <p><strong>1</strong> David numbered the people who were with him, and set captains of thousands and captains of hundreds over them.</p>
+            <p><strong>2</strong> David sent the people out, a third part under the hand of Joab, and a third part under the hand of Abishai the son of Zeruiah, Joab’s brother, and a third part under the hand of Ittai the Gittite. The king said to the people, “I will also surely go out with you myself.”</p>
+            <p><strong>3</strong> But the people said, “You shall not go out; for if we flee away, they will not care for us; neither if half of us die, will they care for us. But you are worth ten thousand of us. Therefore now it is better that you are ready to help us out of the city.”</p>
+            <p><strong>4</strong> The king said to them, “I will do what seems best to you.” The king stood beside the gate, and all the people went out by hundreds and by thousands.</p>
+            <p><strong>5</strong> The king commanded Joab and Abishai and Ittai, saying, “Deal gently for my sake with the young man, even with Absalom.” All the people heard when the king commanded all the captains concerning Absalom.</p>
+            <p><strong>6</strong> So the people went out into the field against Israel: and the battle was in the forest of Ephraim.</p>
+            <p><strong>7</strong> The people of Israel were struck there before the servants of David, and there was a great slaughter there that day of twenty thousand men.</p>
+            <p><strong>8</strong> For the battle was there spread over the surface of all the country; and the forest devoured more people that day than the sword devoured.</p>
+            <p><strong>9</strong> Absalom happened to meet the servants of David. Absalom was riding on his mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the sky and earth; and the mule that was under him went on.</p>
+            <p><strong>10</strong> A certain man saw it, and told Joab, and said, “Behold, I saw Absalom hanging in an oak.”</p>
+            <p><strong>11</strong> Joab said to the man who told him, “Behold, you saw it, and why didn’t you strike him there to the ground? I would have given you ten pieces of silver, and a sash.”</p>
+            <p><strong>12</strong> The man said to Joab, “Though I should receive a thousand pieces of silver in my hand, I still wouldn’t stretch out my hand against the king’s son; for in our hearing the king commanded you and Abishai and Ittai, saying, ‘Beware that no one touch the young man Absalom.’</p>
+            <p><strong>13</strong> Otherwise if I had dealt falsely against his life (and there is no matter hidden from the king), then you yourself would have set yourself against me.”</p>
+            <p><strong>14</strong> Then Joab said, “I’m not going to wait like this with you.” He took three darts in his hand, and thrust them through the heart of Absalom, while he was yet alive in the midst of the oak.</p>
+            <p><strong>15</strong> Ten young men who bore Joab’s armor surrounded and struck Absalom, and killed him.</p>
+            <p><strong>16</strong> Joab blew the trumpet, and the people returned from pursuing after Israel; for Joab held back the people.</p>
+            <p><strong>17</strong> They took Absalom, and cast him into the great pit in the forest, and raised over him a very great heap of stones. Then all Israel fled everyone to his tent.</p>
+            <p><strong>18</strong> Now Absalom in his lifetime had taken and reared up for himself the pillar, which is in the king’s dale; for he said, “I have no son to keep my name in memory.” He called the pillar after his own name; and it is called Absalom’s monument, to this day.</p>
+            <p><strong>19</strong> Then Ahimaaz the son of Zadok said, “Let me now run, and bear the king news, how that Yahweh has avenged him of his enemies.”</p>
+            <p><strong>20</strong> Joab said to him, “You shall not be the bearer of news this day, but you shall bear news another day. But today you shall bear no news, because the king’s son is dead.”</p>
+            <p><strong>21</strong> Then Joab said to the Cushite, “Go, tell the king what you have seen!” The Cushite bowed himself to Joab, and ran.</p>
+            <p><strong>22</strong> Then Ahimaaz the son of Zadok said yet again to Joab, “But come what may, please let me also run after the Cushite.” Joab said, “Why do you want to run, my son, since that you will have no reward for the news?”</p>
+            <p><strong>23</strong> “But come what may,” he said, “I will run.” He said to him, “Run!” Then Ahimaaz ran by the way of the Plain, and outran the Cushite.</p>
+            <p><strong>24</strong> Now David was sitting between the two gates: and the watchman went up to the roof of the gate to the wall, and lifted up his eyes, and looked, and, behold, a man running alone.</p>
+            <p><strong>25</strong> The watchman cried, and told the king. The king said, “If he is alone, there is news in his mouth.” He came closer and closer.</p>
+            <p><strong>26</strong> The watchman saw another man running; and the watchman called to the porter, and said, “Behold, a man running alone!” The king said, “He also brings news.”</p>
+            <p><strong>27</strong> The watchman said, “I think the running of the first one is like the running of Ahimaaz the son of Zadok.” The king said, “He is a good man, and comes with good news.”</p>
+            <p><strong>28</strong> Ahimaaz called, and said to the king, “All is well.” He bowed himself before the king with his face to the earth, and said, “Blessed is Yahweh your God, who has delivered up the men who lifted up their hand against my lord the king!”</p>
+            <p><strong>29</strong> The king said, “Is it well with the young man Absalom?” Ahimaaz answered, “When Joab sent the king’s servant, even me your servant, I saw a great tumult, but I don’t know what it was.”</p>
+            <p><strong>30</strong> The king said, “Turn aside, and stand here.” He turned aside, and stood still.</p>
+            <p><strong>31</strong> Behold, the Cushite came. The Cushite said, “News for my lord the king; for Yahweh has avenged you this day of all those who rose up against you.”</p>
+            <p><strong>32</strong> The king said to the Cushite, “Is it well with the young man Absalom?” The Cushite answered, “May the enemies of my lord the king, and all who rise up against you to do you harm, be as that young man is.”</p>
+            <p><strong>33</strong> The king was much moved, and went up to the room over the gate, and wept. As he went, he said, “My son Absalom! My son, my son Absalom! I wish I had died for you, Absalom, my son, my son!”</p>
+            </div>
+            <div class="scripture-text" id="web-18-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Samuel 18 (KJV)</p>
+            <p><strong>1</strong> And David numbered the people that were with him, and set captains of thousands and captains of hundreds over them.</p>
+            <p><strong>2</strong> And David sent forth a third part of the people under the hand of Joab, and a third part under the hand of Abishai the son of Zeruiah, Joab’s brother, and a third part under the hand of Ittai the Gittite. And the king said unto the people, I will surely go forth with you myself also.</p>
+            <p><strong>3</strong> But the people answered, Thou shalt not go forth: for if we flee away, they will not care for us; neither if half of us die, will they care for us: but now thou art worth ten thousand of us: therefore now it is better that thou succour us out of the city.</p>
+            <p><strong>4</strong> And the king said unto them, What seemeth you best I will do. And the king stood by the gate side, and all the people came out by hundreds and by thousands.</p>
+            <p><strong>5</strong> And the king commanded Joab and Abishai and Ittai, saying, Deal gently for my sake with the young man, even with Absalom. And all the people heard when the king gave all the captains charge concerning Absalom.</p>
+            <p><strong>6</strong> So the people went out into the field against Israel: and the battle was in the wood of Ephraim;</p>
+            <p><strong>7</strong> Where the people of Israel were slain before the servants of David, and there was there a great slaughter that day of twenty thousand men.</p>
+            <p><strong>8</strong> For the battle was there scattered over the face of all the country: and the wood devoured more people that day than the sword devoured.</p>
+            <p><strong>9</strong> And Absalom met the servants of David. And Absalom rode upon a mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the heaven and the earth; and the mule that was under him went away.</p>
+            <p><strong>10</strong> And a certain man saw it, and told Joab, and said, Behold, I saw Absalom hanged in an oak.</p>
+            <p><strong>11</strong> And Joab said unto the man that told him, And, behold, thou sawest him, and why didst thou not smite him there to the ground? and I would have given thee ten shekels of silver, and a girdle.</p>
+            <p><strong>12</strong> And the man said unto Joab, Though I should receive a thousand shekels of silver in mine hand, yet would I not put forth mine hand against the king’s son: for in our hearing the king charged thee and Abishai and Ittai, saying, Beware that none touch the young man Absalom.</p>
+            <p><strong>13</strong> Otherwise I should have wrought falsehood against mine own life: for there is no matter hid from the king, and thou thyself wouldest have set thyself against me.</p>
+            <p><strong>14</strong> Then said Joab, I may not tarry thus with thee. And he took three darts in his hand, and thrust them through the heart of Absalom, while he was yet alive in the midst of the oak.</p>
+            <p><strong>15</strong> And ten young men that bare Joab’s armour compassed about and smote Absalom, and slew him.</p>
+            <p><strong>16</strong> And Joab blew the trumpet, and the people returned from pursuing after Israel: for Joab held back the people.</p>
+            <p><strong>17</strong> And they took Absalom, and cast him into a great pit in the wood, and laid a very great heap of stones upon him: and all Israel fled every one to his tent.</p>
+            <p><strong>18</strong> Now Absalom in his lifetime had taken and reared up for himself a pillar, which is in the king’s dale: for he said, I have no son to keep my name in remembrance: and he called the pillar after his own name: and it is called unto this day, Absalom’s place.</p>
+            <p><strong>19</strong> Then said Ahimaaz the son of Zadok, Let me now run, and bear the king tidings, how that the Lord hath avenged him of his enemies.</p>
+            <p><strong>20</strong> And Joab said unto him, Thou shalt not bear tidings this day, but thou shalt bear tidings another day: but this day thou shalt bear no tidings, because the king’s son is dead.</p>
+            <p><strong>21</strong> Then said Joab to Cushi, Go tell the king what thou hast seen. And Cushi bowed himself unto Joab, and ran.</p>
+            <p><strong>22</strong> Then said Ahimaaz the son of Zadok yet again to Joab, But howsoever, let me, I pray thee, also run after Cushi. And Joab said, Wherefore wilt thou run, my son, seeing that thou hast no tidings ready?</p>
+            <p><strong>23</strong> But howsoever, said he, let me run. And he said unto him, Run. Then Ahimaaz ran by the way of the plain, and overran Cushi.</p>
+            <p><strong>24</strong> And David sat between the two gates: and the watchman went up to the roof over the gate unto the wall, and lifted up his eyes, and looked, and behold a man running alone.</p>
+            <p><strong>25</strong> And the watchman cried, and told the king. And the king said, If he be alone, there is tidings in his mouth. And he came apace, and drew near.</p>
+            <p><strong>26</strong> And the watchman saw another man running: and the watchman called unto the porter, and said, Behold another man running alone. And the king said, He also bringeth tidings.</p>
+            <p><strong>27</strong> And the watchman said, Me thinketh the running of the foremost is like the running of Ahimaaz the son of Zadok. And the king said, He is a good man, and cometh with good tidings.</p>
+            <p><strong>28</strong> And Ahimaaz called, and said unto the king, All is well. And he fell down to the earth upon his face before the king, and said, Blessed be the Lord thy God, which hath delivered up the men that lifted up their hand against my lord the king.</p>
+            <p><strong>29</strong> And the king said, Is the young man Absalom safe? And Ahimaaz answered, When Joab sent the king’s servant, and me thy servant, I saw a great tumult, but I knew not what it was.</p>
+            <p><strong>30</strong> And the king said unto him, Turn aside, and stand here. And he turned aside, and stood still.</p>
+            <p><strong>31</strong> And, behold, Cushi came; and Cushi said, Tidings, my lord the king: for the Lord hath avenged thee this day of all them that rose up against thee.</p>
+            <p><strong>32</strong> And the king said unto Cushi, Is the young man Absalom safe? And Cushi answered, The enemies of my lord the king, and all that rise against thee to do thee hurt, be as that young man is.</p>
+            <p><strong>33</strong> And the king was much moved, and went up to the chamber over the gate, and wept: and as he went, thus he said, O my son Absalom, my son, my son Absalom! would God I had died for thee, O Absalom, my son, my son!</p>
+            </div>
+            <div class="scripture-text" id="web-18-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Samuel 18 (ASV)</p>
+            <p><strong>1</strong> And David numbered the people that were with him, and set captains of thousands and captains of hundreds over them.</p>
+            <p><strong>2</strong> And David sent forth the people, a third part under the hand of Joab, and a third part under the hand of Abishai the son of Zeruiah, Joab’s brother, and a third part under the hand of Ittai the Gittite. And the king said unto the people, I will surely go forth with you myself also.</p>
+            <p><strong>3</strong> But the people said, Thou shalt not go forth: for if we flee away, they will not care for us; neither if half of us die, will they care for us: but thou art worth ten thousand of us; therefore now it is better that thou be ready to succor us out of the city.</p>
+            <p><strong>4</strong> And the king said unto them, What seemeth you best I will do. And the king stood by the gate-side, and all the people went out by hundreds and by thousands.</p>
+            <p><strong>5</strong> And the king commanded Joab and Abishai and Ittai, saying, Deal gently for my sake with the young man, even with Absalom. And all the people heard when the king gave all the captains charge concerning Absalom.</p>
+            <p><strong>6</strong> So the people went out into the field against Israel: and the battle was in the forest of Ephraim.</p>
+            <p><strong>7</strong> And the people of Israel were smitten there before the servants of David, and there was a great slaughter there that day of twenty thousand men.</p>
+            <p><strong>8</strong> For the battle was there spread over the face of all the country; and the forest devoured more people that day than the sword devoured.</p>
+            <p><strong>9</strong> And Absalom chanced to meet the servants of David. And Absalom was riding upon his mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between heaven and earth; and the mule that was under him went on.</p>
+            <p><strong>10</strong> And a certain man saw it, and told Joab, and said, Behold, I saw Absalom hanging in an oak.</p>
+            <p><strong>11</strong> And Joab said unto the man that told him, And, behold, thou sawest it, and why didst thou not smite him there to the ground? and I would have given thee ten pieces of silver, and a girdle.</p>
+            <p><strong>12</strong> And the man said unto Joab, Though I should receive a thousand pieces of silver in my hand, yet would I not put forth my hand against the king’s son: for in our hearing the king charged thee and Abishai and Ittai, saying, Beware that none touch the young man Absalom.</p>
+            <p><strong>13</strong> Otherwise if I had dealt falsely against his life (and there is no matter hid from the king), then thou thyself wouldest have set thyself against me.</p>
+            <p><strong>14</strong> Then said Joab, I may not tarry thus with thee. And he took three darts in his hand, and thrust them through the heart of Absalom, while he was yet alive in the midst of the oak.</p>
+            <p><strong>15</strong> And ten young men that bare Joab’s armor compassed about and smote Absalom, and slew him.</p>
+            <p><strong>16</strong> And Joab blew the trumpet, and the people returned from pursuing after Israel; for Joab held back the people.</p>
+            <p><strong>17</strong> And they took Absalom, and cast him into the great pit in the forest, and raised over him a very great heap of stones: and all Israel fled every one to his tent.</p>
+            <p><strong>18</strong> Now Absalom in his lifetime had taken and reared up for himself the pillar, which is in the king’s dale; for he said, I have no son to keep my name in remembrance: and he called the pillar after his own name; and it is called Absalom’s monument, unto this day.</p>
+            <p><strong>19</strong> Then said Ahimaaz the son of Zadok, Let me now run, and bear the king tidings, how that Jehovah hath avenged him of his enemies.</p>
+            <p><strong>20</strong> And Joab said unto him, Thou shalt not be the bearer of tidings this day, but thou shalt bear tidings another day; but this day thou shalt bear no tidings, because the king’s son is dead.</p>
+            <p><strong>21</strong> Then said Joab to the Cushite, Go, tell the king what thou hast seen. And the Cushite bowed himself unto Joab, and ran.</p>
+            <p><strong>22</strong> Then said Ahimaaz the son of Zadok yet again to Joab, But come what may, let me, I pray thee, also run after the Cushite. And Joab said, Wherefore wilt thou run, my son, seeing that thou wilt have no reward for the tidings?</p>
+            <p><strong>23</strong> But come what may, said he, I will run. And he said unto him, Run. Then Ahimaaz ran by the way of the Plain, and outran the Cushite.</p>
+            <p><strong>24</strong> Now David was sitting between the two gates: and the watchman went up to the roof of the gate unto the wall, and lifted up his eyes, and looked, and, behold, a man running alone.</p>
+            <p><strong>25</strong> And the watchman cried, and told the king. And the king said, If he be alone, there is tidings in his mouth. And he came apace, and drew near.</p>
+            <p><strong>26</strong> And the watchman saw another man running; and the watchman called unto the porter, and said, Behold, another man running alone. And the king said, He also bringeth tidings.</p>
+            <p><strong>27</strong> And the watchman said, I think the running of the foremost is like the running of Ahimaaz the son of Zadok. And the king said, He is a good man, and cometh with good tidings.</p>
+            <p><strong>28</strong> And Ahimaaz called, and said unto the king, All is well. And he bowed himself before the king with his face to the earth, and said, Blessed be Jehovah thy God, who hath delivered up the men that lifted up their hand against my lord the king.</p>
+            <p><strong>29</strong> And the king said, Is it well with the young man Absalom? And Ahimaaz answered, When Joab sent the king’s servant, even me thy servant, I saw a great tumult, but I knew not what it was.</p>
+            <p><strong>30</strong> And the king said, Turn aside, and stand here. And he turned aside, and stood still.</p>
+            <p><strong>31</strong> And, behold, the Cushite came; and the Cushite said, Tidings for my lord the king; for Jehovah hath avenged thee this day of all them that rose up against thee.</p>
+            <p><strong>32</strong> And the king said unto the Cushite, Is it well with the young man Absalom? And the Cushite answered, The enemies of my lord the king, and all that rise up against thee to do thee hurt, be as that young man is.</p>
+            <p><strong>33</strong> And the king was much moved, and went up to the chamber over the gate, and wept: and as he went, thus he said, O my son Absalom, my son, my son Absalom! would I had died for thee, O Absalom, my son, my son!</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>David musters his men and divides them under Joab, Abishai, and Ittai, but the people will not let him go into battle himself. He charges all the commanders, in the hearing of the troops, to deal gently with the young man Absalom. The battle joins in the forest of Ephraim, where David's servants prevail and twenty thousand fall, the forest itself devouring more than the sword. Absalom, riding his mule beneath a great oak, is caught by his head in the branches and left hanging between heaven and earth. A soldier reports it to Joab but refuses to strike the king's son; Joab, defying David's command, thrusts three darts through Absalom's heart, and his armor-bearers finish the work. The rebellion collapses. Two runners carry the news to David, and when the Cushite confirms that the king's enemy is dead, David is overcome. He climbs to the chamber over the gate and weeps, crying out that he wishes he had died in Absalom's place, his victory swallowed up in a father's grief.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Absalom</strong> — The rebel prince whose pride and beauty end with him caught in an oak by his hair, killed by Joab against the king's express command.</li>
+          <li><strong>David</strong> — The king who pleads for gentleness toward his son and, on hearing of his death, is broken with grief, longing to have died in his place.</li>
+          <li><strong>Joab</strong> — David's hard-edged general, who kills Absalom himself despite the king's order, judging the realm's good above the father's wish.</li>
+          <li><strong>Ahimaaz and the Cushite</strong> — The two messengers who race to bring David word of the victory, one eager and one bearing the heavy news of Absalom's death.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Samuel 18:33 (WEB)</p>
+          <p class="verse__text">The king was much moved, and went up to the room over the gate, and wept. As he went, he said, “My son Absalom! My son, my son Absalom! I wish I had died for you, Absalom, my son, my son!”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Rebellion against rightful authority leads at last to ruin, however glorious it once appeared.</li>
+          <li>Victory in battle can be bitter when it comes at the cost of one we love.</li>
+          <li>A father's grief over a wayward child reflects something of God's own heart toward the lost.</li>
+          <li>Even our pride, like Absalom's celebrated hair, can become the snare that destroys us.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-18">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-18">
+            <ul class="lesson-list">
+            <li><strong>Sin's path ends in death.</strong> Absalom hangs helpless in the oak and is slain (2 Samuel 18:14, WEB). The rebellion that began with stolen hearts ends suspended between heaven and earth, belonging to neither.</li>
+            <li><strong>Authority can be defied even by the loyal.</strong> Joab ignores David's plea to “deal gently… with Absalom” (2 Samuel 18:5, WEB) and kills him. Strong men of action sometimes substitute their own judgment for the king's command.</li>
+            <li><strong>A king's heart is broken over a lost son.</strong> David cries, “I wish I had died for you, Absalom, my son” (2 Samuel 18:33, WEB). His grief over the very son who hunted him hints at a love that would die in the sinner's place.</li>
+            <li><strong>Good news and hard news both find us.</strong> Two runners come, one with the victory, one with the death (2 Samuel 18:19-32, WEB). Even our triumphs arrive mingled with sorrow in a fallen world.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-18">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-18">
+            <ol class="study-questions">
+            <li>Why does David charge his commanders to deal gently with Absalom, and how does Joab respond to that order?</li>
+            <li>What is significant about the way Absalom dies, caught helpless in the oak?</li>
+            <li>How does David's reaction to the news of victory differ from what we might expect of a king who has just won his throne back?</li>
+            <li>What does David's grief over Absalom reveal about the heart of a father, and how might it point us toward God?</li>
+            <li>Have you ever experienced a victory that arrived mixed with loss? How do you hold gladness and grief together before God?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-18">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-18">
+            <ol class="study-questions">
+            <li>David, still a father, wants his rebel son spared (18:5), but Joab judges that a living Absalom means future bloodshed and kills him outright (18:14). The tension exposes the gap between the king's mercy and his general's ruthless pragmatism, and Joab's defiance will not be forgotten.</li>
+            <li>The proud prince is left dangling helplessly by his head in the branches, his mule gone, unable to save himself (18:9). The man who exalted himself is brought low and suspended between heaven and earth, a vivid picture of where self-exaltation finally leads.</li>
+            <li>Instead of celebrating, David is undone, retreating to weep and crying that he wishes he had died instead (18:33). His love for his son overwhelms the relief of victory, reminding us that for David the throne never mattered more than his children.</li>
+            <li>David's anguished wish to die in his son's place reveals a love that persists even toward one who wronged him deeply (18:33). It faintly foreshadows the Father who gave his Son, and the Son who truly did die in the place of rebels. Let the group dwell on that mercy.</li>
+            <li>This is a personal-application question. Invite members to name a time joy and sorrow came together, and to consider how faith lets us grieve honestly while still receiving God's mercies. As leader, model that lament and gratitude can coexist in the believer's heart before a compassionate God.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-samuel-17.html">← 2 Samuel 17</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-samuel-19.html">2 Samuel 19 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

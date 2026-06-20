@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Samuel 20: Another Rebellion — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Samuel 20: Sheba's revolt against David, Joab's killing of Amasa, and a wise woman's intervention at Abel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-samuel-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Samuel, Chapter 20
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Samuel · Chapter 20</span>
+        <h1>2 Samuel 20: Another Rebellion</h1>
+        <p class="lead">Sheba blows the trumpet of revolt, Joab murders Amasa, and a wise woman's counsel ends the uprising at Abel.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-20">
+            <span>Scripture — 2 Samuel Chapter 20</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-20">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-20-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-20-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-20-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-20-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Samuel 20 (WEB)</p>
+            <p><strong>1</strong> There happened to be there a base fellow, whose name was Sheba, the son of Bichri, a Benjamite: and he blew the trumpet, and said, “We have no portion in David, neither have we inheritance in the son of Jesse. Every man to his tents, Israel!”</p>
+            <p><strong>2</strong> So all the men of Israel went up from following David, and followed Sheba the son of Bichri; but the men of Judah joined with their king, from the Jordan even to Jerusalem.</p>
+            <p><strong>3</strong> David came to his house at Jerusalem; and the king took the ten women his concubines, whom he had left to keep the house, and put them in custody, and provided them with sustenance, but didn’t go in to them. So they were shut up to the day of their death, living in widowhood.</p>
+            <p><strong>4</strong> Then the king said to Amasa, “Call me the men of Judah together within three days, and be here present.”</p>
+            <p><strong>5</strong> So Amasa went to call the men of Judah together; but he stayed longer than the set time which he had appointed him.</p>
+            <p><strong>6</strong> David said to Abishai, “Now Sheba the son of Bichri will do us more harm than Absalom did. Take your lord’s servants, and pursue after him, lest he get himself fortified cities, and escape out of our sight.”</p>
+            <p><strong>7</strong> There went out after him Joab’s men, and the Cherethites and the Pelethites, and all the mighty men; and they went out of Jerusalem, to pursue after Sheba the son of Bichri.</p>
+            <p><strong>8</strong> When they were at the great stone which is in Gibeon, Amasa came to meet them. Joab was clothed in his apparel of war that he had put on, and on it was a sash with a sword fastened on his waist in its sheath; and as he went along it fell out.</p>
+            <p><strong>9</strong> Joab said to Amasa, “Is it well with you, my brother?” Joab took Amasa by the beard with his right hand to kiss him.</p>
+            <p><strong>10</strong> But Amasa took no heed to the sword that was in Joab’s hand. So he struck him with it in the body, and shed out his bowels to the ground, and didn’t strike him again; and he died. Joab and Abishai his brother pursued after Sheba the son of Bichri.</p>
+            <p><strong>11</strong> There stood by him one of Joab’s young men, and said, “He who favors Joab, and he who is for David, let him follow Joab!”</p>
+            <p><strong>12</strong> Amasa lay wallowing in his blood in the midst of the highway. When the man saw that all the people stood still, he carried Amasa out of the highway into the field, and cast a garment over him, when he saw that everyone who came by him stood still.</p>
+            <p><strong>13</strong> When he was removed out of the highway, all the people went on after Joab, to pursue after Sheba the son of Bichri.</p>
+            <p><strong>14</strong> He went through all the tribes of Israel to Abel, and to Beth Maacah, and all the Berites: and they were gathered together, and went also after him.</p>
+            <p><strong>15</strong> They came and besieged him in Abel of Beth Maacah, and they cast up a mound against the city, and it stood against the rampart; and all the people who were with Joab battered the wall, to throw it down.</p>
+            <p><strong>16</strong> Then a wise woman cried out of the city, “Hear, hear! Please say to Joab, ‘Come near here, that I may speak with you.’”</p>
+            <p><strong>17</strong> He came near to her; and the woman said, “Are you Joab?” He answered, “I am.” Then she said to him, “Hear the words of your handmaid.” He answered, “I do hear.”</p>
+            <p><strong>18</strong> Then she spoke, saying, “They were used to say in old times, ‘They shall surely ask counsel at Abel;’ and so they settled it.</p>
+            <p><strong>19</strong> I am among those who are peaceable and faithful in Israel. You seek to destroy a city and a mother in Israel. Why will you swallow up the inheritance of Yahweh?”</p>
+            <p><strong>20</strong> Joab answered, “Far be it, far be it from me, that I should swallow up or destroy.</p>
+            <p><strong>21</strong> The matter is not so. But a man of the hill country of Ephraim, Sheba the son of Bichri by name, has lifted up his hand against the king, even against David. Deliver him only, and I will depart from the city.” The woman said to Joab, “Behold, his head shall be thrown to you over the wall.”</p>
+            <p><strong>22</strong> Then the woman went to all the people in her wisdom. They cut off the head of Sheba the son of Bichri, and threw it out to Joab. He blew the trumpet, and they were dispersed from the city, every man to his tent. Joab returned to Jerusalem to the king.</p>
+            <p><strong>23</strong> Now Joab was over all the army of Israel; and Benaiah the son of Jehoiada was over the Cherethites and over the Pelethites;</p>
+            <p><strong>24</strong> and Adoram was over the men subject to forced labor; and Jehoshaphat the son of Ahilud was the recorder;</p>
+            <p><strong>25</strong> and Sheva was scribe; and Zadok and Abiathar were priests;</p>
+            <p><strong>26</strong> and also Ira the Jairite was chief minister to David.</p>
+            </div>
+            <div class="scripture-text" id="web-20-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Samuel 20 (KJV)</p>
+            <p><strong>1</strong> And there happened to be there a man of Belial, whose name was Sheba, the son of Bichri, a Benjamite: and he blew a trumpet, and said, We have no part in David, neither have we inheritance in the son of Jesse: every man to his tents, O Israel.</p>
+            <p><strong>2</strong> So every man of Israel went up from after David, and followed Sheba the son of Bichri: but the men of Judah clave unto their king, from Jordan even to Jerusalem.</p>
+            <p><strong>3</strong> And David came to his house at Jerusalem; and the king took the ten women his concubines, whom he had left to keep the house, and put them in ward, and fed them, but went not in unto them. So they were shut up unto the day of their death, living in widowhood.</p>
+            <p><strong>4</strong> Then said the king to Amasa, Assemble me the men of Judah within three days, and be thou here present.</p>
+            <p><strong>5</strong> So Amasa went to assemble the men of Judah: but he tarried longer than the set time which he had appointed him.</p>
+            <p><strong>6</strong> And David said to Abishai, Now shall Sheba the son of Bichri do us more harm than did Absalom: take thou thy lord’s servants, and pursue after him, lest he get him fenced cities, and escape us.</p>
+            <p><strong>7</strong> And there went out after him Joab’s men, and the Cherethites, and the Pelethites, and all the mighty men: and they went out of Jerusalem, to pursue after Sheba the son of Bichri.</p>
+            <p><strong>8</strong> When they were at the great stone which is in Gibeon, Amasa went before them. And Joab’s garment that he had put on was girded unto him, and upon it a girdle with a sword fastened upon his loins in the sheath thereof; and as he went forth it fell out.</p>
+            <p><strong>9</strong> And Joab said to Amasa, Art thou in health, my brother? And Joab took Amasa by the beard with the right hand to kiss him.</p>
+            <p><strong>10</strong> But Amasa took no heed to the sword that was in Joab’s hand: so he smote him therewith in the fifth rib, and shed out his bowels to the ground, and struck him not again; and he died. So Joab and Abishai his brother pursued after Sheba the son of Bichri.</p>
+            <p><strong>11</strong> And one of Joab’s men stood by him, and said, He that favoureth Joab, and he that is for David, let him go after Joab.</p>
+            <p><strong>12</strong> And Amasa wallowed in blood in the midst of the highway. And when the man saw that all the people stood still, he removed Amasa out of the highway into the field, and cast a cloth upon him, when he saw that every one that came by him stood still.</p>
+            <p><strong>13</strong> When he was removed out of the highway, all the people went on after Joab, to pursue after Sheba the son of Bichri.</p>
+            <p><strong>14</strong> And he went through all the tribes of Israel unto Abel, and to Beth–maachah, and all the Berites: and they were gathered together, and went also after him.</p>
+            <p><strong>15</strong> And they came and besieged him in Abel of Beth–maachah, and they cast up a bank against the city, and it stood in the trench: and all the people that were with Joab battered the wall, to throw it down.</p>
+            <p><strong>16</strong> Then cried a wise woman out of the city, Hear, hear; say, I pray you, unto Joab, Come near hither, that I may speak with thee.</p>
+            <p><strong>17</strong> And when he was come near unto her, the woman said, Art thou Joab? And he answered, I am he. Then she said unto him, Hear the words of thine handmaid. And he answered, I do hear.</p>
+            <p><strong>18</strong> Then she spake, saying, They were wont to speak in old time, saying, They shall surely ask counsel at Abel: and so they ended the matter.</p>
+            <p><strong>19</strong> I am one of them that are peaceable and faithful in Israel: thou seekest to destroy a city and a mother in Israel: why wilt thou swallow up the inheritance of the Lord?</p>
+            <p><strong>20</strong> And Joab answered and said, Far be it, far be it from me, that I should swallow up or destroy.</p>
+            <p><strong>21</strong> The matter is not so: but a man of mount Ephraim, Sheba the son of Bichri by name, hath lifted up his hand against the king, even against David: deliver him only, and I will depart from the city. And the woman said unto Joab, Behold, his head shall be thrown to thee over the wall.</p>
+            <p><strong>22</strong> Then the woman went unto all the people in her wisdom. And they cut off the head of Sheba the son of Bichri, and cast it out to Joab. And he blew a trumpet, and they retired from the city, every man to his tent. And Joab returned to Jerusalem unto the king.</p>
+            <p><strong>23</strong> Now Joab was over all the host of Israel: and Benaiah the son of Jehoiada was over the Cherethites and over the Pelethites:</p>
+            <p><strong>24</strong> And Adoram was over the tribute: and Jehoshaphat the son of Ahilud was recorder:</p>
+            <p><strong>25</strong> And Sheva was scribe: and Zadok and Abiathar were the priests:</p>
+            <p><strong>26</strong> And Ira also the Jairite was a chief ruler about David.</p>
+            </div>
+            <div class="scripture-text" id="web-20-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Samuel 20 (ASV)</p>
+            <p><strong>1</strong> And there happened to be there a base fellow, whose name was Sheba, the son of Bichri, a Benjamite: and he blew the trumpet, and said, We have no portion in David, neither have we inheritance in the son of Jesse: every man to his tents, O Israel.</p>
+            <p><strong>2</strong> So all the men of Israel went up from following David, and followed Sheba the son of Bichri; but the men of Judah clave unto their king, from the Jordan even to Jerusalem.</p>
+            <p><strong>3</strong> And David came to his house at Jerusalem; and the king took the ten women his concubines, whom he had left to keep the house, and put them in ward, and provided them with sustenance, but went not in unto them. So they were shut up unto the day of their death, living in widowhood.</p>
+            <p><strong>4</strong> Then said the king to Amasa, Call me the men of Judah together within three days, and be thou here present.</p>
+            <p><strong>5</strong> So Amasa went to call the men of Judah together; but he tarried longer than the set time which he had appointed him.</p>
+            <p><strong>6</strong> And David said to Abishai, Now will Sheba the son of Bichri do us more harm than did Absalom: take thou thy lord’s servants, and pursue after him, lest he get him fortified cities, and escape out of our sight.</p>
+            <p><strong>7</strong> And there went out after him Joab’s men, and the Cherethites and the Pelethites, and all the mighty men; and they went out of Jerusalem, to pursue after Sheba the son of Bichri.</p>
+            <p><strong>8</strong> When they were at the great stone which is in Gibeon, Amasa came to meet them. And Joab was girded with his apparel of war that he had put on, and thereon was a girdle with a sword fastened upon his loins in the sheath thereof; and as he went forth it fell out.</p>
+            <p><strong>9</strong> And Joab said to Amasa, Is it well with thee, my brother? And Joab took Amasa by the beard with his right hand to kiss him.</p>
+            <p><strong>10</strong> But Amasa took no heed to the sword that was in Joab’s hand: so he smote him therewith in the body, and shed out his bowels to the ground, and struck him not again; and he died. And Joab and Abishai his brother pursued after Sheba the son of Bichri.</p>
+            <p><strong>11</strong> And there stood by him one of Joab’s young men, and said, He that favoreth Joab, and he that is for David, let him follow Joab.</p>
+            <p><strong>12</strong> And Amasa lay wallowing in his blood in the midst of the highway. And when the man saw that all the people stood still, he carried Amasa out of the highway into the field, and cast a garment over him, when he saw that every one that came by him stood still.</p>
+            <p><strong>13</strong> When he was removed out of the highway, all the people went on after Joab, to pursue after Sheba the son of Bichri.</p>
+            <p><strong>14</strong> And he went through all the tribes of Israel unto Abel, and to Beth-maacah, and all the Berites: and they were gathered together, and went also after him.</p>
+            <p><strong>15</strong> And they came and besieged him in Abel of Beth-maacah, and they cast up a mound against the city, and it stood against the rampart; and all the people that were with Joab battered the wall, to throw it down.</p>
+            <p><strong>16</strong> Then cried a wise woman out of the city, Hear, hear; say, I pray you, unto Joab, Come near hither, that I may speak with thee.</p>
+            <p><strong>17</strong> And he came near unto her; and the woman said, Art thou Joab? And he answered, I am. Then she said unto him, Hear the words of thy handmaid. And he answered, I do hear.</p>
+            <p><strong>18</strong> Then she spake, saying, They were wont to speak in old time, saying, They shall surely ask counsel at Abel: and so they ended the matter.</p>
+            <p><strong>19</strong> I am of them that are peaceable and faithful in Israel: thou seekest to destroy a city and a mother in Israel: why wilt thou swallow up the inheritance of Jehovah?</p>
+            <p><strong>20</strong> And Joab answered and said, Far be it, far be it from me, that I should swallow up or destroy.</p>
+            <p><strong>21</strong> The matter is not so: but a man of the hill-country of Ephraim, Sheba the son of Bichri by name, hath lifted up his hand against the king, even against David; deliver him only, and I will depart from the city. And the woman said unto Joab, Behold, his head shall be thrown to thee over the wall.</p>
+            <p><strong>22</strong> Then the woman went unto all the people in her wisdom. And they cut off the head of Sheba the son of Bichri, and threw it out to Joab. And he blew the trumpet, and they were dispersed from the city, every man to his tent. And Joab returned to Jerusalem unto the king.</p>
+            <p><strong>23</strong> Now Joab was over all the host of Israel; and Benaiah the son of Jehoiada was over the Cherethites and over the Pelethites;</p>
+            <p><strong>24</strong> and Adoram was over the men subject to taskwork; and Jehoshaphat the son of Ahilud was the recorder;</p>
+            <p><strong>25</strong> and Sheva was scribe; and Zadok and Abiathar were priests;</p>
+            <p><strong>26</strong> and also Ira the Jairite was chief minister unto David.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>No sooner is David restored than fresh division erupts. A worthless man named Sheba sounds the trumpet and calls Israel to abandon David, and the men of Israel follow him while Judah stays loyal. David, returning home, places the ten concubines defiled by Absalom in lifelong seclusion. He orders Amasa to muster Judah, but when Amasa delays, David sends Abishai to pursue Sheba before he gains fortified cities. On the way, Joab treacherously greets Amasa, takes him by the beard as if to kiss him, and runs him through, then takes command and pursues the rebel. Sheba takes refuge in the city of Abel of Beth Maacah, which Joab besieges. A wise woman of the city calls out to him, pleading that he not destroy a peaceful mother-city in Israel. When Joab asks only for Sheba, she persuades the people, who behead the rebel and throw his head over the wall. Joab withdraws, the revolt ends, and the chapter closes by listing David's restored officials.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Sheba</strong> — A worthless Benjamite who blows the trumpet of revolt against David, drawing Israel away until he is besieged and beheaded at Abel.</li>
+          <li><strong>Joab</strong> — David's ruthless commander, who murders his rival Amasa and then crushes Sheba's rebellion through siege and negotiation.</li>
+          <li><strong>Amasa</strong> — The newly appointed army commander who delays his orders and is treacherously killed by Joab on the road.</li>
+          <li><strong>The wise woman of Abel</strong> — A peace-loving woman whose shrewd appeal spares her city by persuading it to surrender the rebel's head to Joab.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Samuel 20:19 (WEB)</p>
+          <p class="verse__text">I am among those who are peaceable and faithful in Israel. You seek to destroy a city and a mother in Israel. Why will you swallow up the inheritance of Yahweh?”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Old divisions and discontent can flare up again quickly when leaders fail to nurture true unity.</li>
+          <li>Ambition and rivalry, like Joab's, can lead to treachery cloaked in friendly gestures.</li>
+          <li>One wise and courageous voice can avert disaster for a whole community.</li>
+          <li>Peacemakers who value their people's lives can find solutions that the sword alone cannot.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-20">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-20">
+            <ul class="lesson-list">
+            <li><strong>Discord recovers quickly without true reconciliation.</strong> Sheba cries, “We have no portion in David” (2 Samuel 20:1, WEB), and Israel follows. Unresolved grievances easily reignite when only the surface has been patched.</li>
+            <li><strong>A kiss can conceal a dagger.</strong> Joab takes Amasa “by the beard… to kiss him” and kills him (2 Samuel 20:9-10, WEB). Beware betrayal that hides behind gestures of friendship.</li>
+            <li><strong>Wisdom can save where weapons cannot.</strong> The wise woman asks, “Why will you swallow up the inheritance of Yahweh?” (2 Samuel 20:19, WEB), and her counsel ends the siege without destroying her city.</li>
+            <li><strong>Peacemaking seeks a way out of bloodshed.</strong> She negotiates the surrender of one rebel to spare a whole city (2 Samuel 20:21-22, WEB). Wise mediation can satisfy justice while preserving life.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-20">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-20">
+            <ol class="study-questions">
+            <li>Why does Sheba's call to revolt gain such quick traction so soon after David's return?</li>
+            <li>How does Joab's killing of Amasa compare with his earlier killing of Absalom, and what does it show about him?</li>
+            <li>What makes the wise woman of Abel's appeal to Joab so effective?</li>
+            <li>How does this woman model the role of a peacemaker in a moment of crisis?</li>
+            <li>Where might God be calling you to be a voice of wisdom and peace in a conflict, rather than letting it escalate to harm?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-20">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-20">
+            <ol class="study-questions">
+            <li>The quarrel between Israel and Judah at the end of chapter 19 had not been healed, so Sheba's slogan found ready listeners (20:1-2). The episode shows how fragile a restored peace remains when underlying resentments are left unaddressed. Reconciliation must reach the heart, not just the surface.</li>
+            <li>As with Absalom, Joab takes life on his own terms, this time murdering a rival to reclaim his command (20:9-10). It reveals a man whose loyalty to David is mixed with ruthless self-interest, willing to shed blood to protect his own position. His violence will eventually be answered.</li>
+            <li>She appeals to shared identity and faith, calling Abel a faithful mother-city and the Lord's inheritance, then offers a concrete solution (20:18-21). By combining moral force with a practical compromise, she gives Joab a way to win without destroying the innocent.</li>
+            <li>Rather than resign her city to slaughter, she steps forward, reasons wisely, and rallies her people toward a costly but life-saving resolution (20:16-22). She shows that peacemaking is active and courageous, seeking outcomes that honor justice while sparing the many.</li>
+            <li>This is a personal-application question. The wise woman intervened where others would have let the siege run its course. Invite members to consider a conflict where a calm, wise word might prevent harm, and to ask God for the courage to speak it. As leader, commend the call to be peacemakers, whom Jesus blesses.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-samuel-19.html">← 2 Samuel 19</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-samuel-21.html">2 Samuel 21 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

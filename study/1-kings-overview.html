@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Kings: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive overview of 1 Kings: Solomon's wisdom and temple, the kingdom's division, faithless kings, and Elijah's confrontation with Baal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-kings-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Kings, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of 1 Kings · Whole-Book Overview</span>
+        <h1>1 Kings: The Whole Story</h1>
+        <p class="lead">From the dazzling reign of Solomon to a divided kingdom and a prophet's fire, 1 Kings shows how wholehearted devotion is won or lost one choice at a time.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>First Kings begins with the close of David's life and the rise of his son Solomon, whom God blesses with extraordinary wisdom, wealth, and peace. When God invites Solomon to ask for anything, the young king asks for an understanding heart to govern God's people, and God is so pleased that he grants wisdom along with riches and honor unmatched among kings. The crowning achievement of Solomon's reign is the temple, a magnificent house for God's name, where the cloud of God's glory descends and Solomon prays one of the great prayers of Scripture. For a season Israel flourishes, and the queen of Sheba travels far to witness a glory that exceeds even the reports she had heard.</p>
+          <p>Yet the same chapters that record Solomon's splendor record the seeds of his ruin. He multiplies horses, gold, and wives, taking hundreds of foreign women who turn his heart after their gods, and the wisest man in the world becomes a builder of high places to idols. God announces that the kingdom will be torn away, though for David's sake not in Solomon's own lifetime. After Solomon dies, his son Rehoboam answers the people's plea for relief with arrogance, and ten tribes break away under Jeroboam to form the northern kingdom of Israel, leaving Judah in the south. The unity forged under David and Solomon is shattered, and it will never be rebuilt.</p>
+          <p>From the division onward, 1 Kings becomes a chronicle of kings measured by one standard: did they do right in the eyes of the LORD? Jeroboam sets up golden calves to keep his people from Jerusalem, and a long line of northern kings walks in his sins, culminating in Ahab, who marries the Baal-worshiping Jezebel and provokes God more than all before him. Into this darkness God sends Elijah, who shuts the heavens, is fed by ravens and a widow's never-empty jar, and finally calls Israel to decide on Mount Carmel between the LORD and Baal. Fire falls, the people fall on their faces confessing that the LORD is God, and yet the struggle continues. The book leaves Israel still wavering, still waiting, and still in need of a king whose heart is perfect toward God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>Solomon Secures the Throne (chs 1-2)</strong> — As David dies, Solomon is established as king, Adonijah's bid for power collapses, and old scores are settled so the kingdom rests firmly in Solomon's hand.</li>
+          <li><strong>Wisdom and Glory (chs 3-10)</strong> — Solomon asks God for an understanding heart and receives wisdom, wealth, and fame; he builds the temple and his palace, dedicates the house with prayer, and dazzles the queen of Sheba.</li>
+          <li><strong>The King's Divided Heart (ch 11)</strong> — Solomon's many foreign wives turn him to other gods, and the LORD declares that the kingdom will be torn from his son, though not entirely, for David's sake.</li>
+          <li><strong>The Kingdom Splits (chs 12-14)</strong> — Rehoboam's harshness drives ten tribes to follow Jeroboam, who founds the northern kingdom and leads it into calf worship, setting the pattern for generations.</li>
+          <li><strong>Kings of Israel and Judah (chs 15-16)</strong> — A rapid succession of mostly faithless rulers fills both kingdoms, descending through intrigue and idolatry until Ahab rises and outdoes them all in evil.</li>
+          <li><strong>Elijah Versus Baal (chs 17-22)</strong> — God raises up Elijah to confront Ahab and Jezebel; fire falls on Carmel, a still small voice restores the discouraged prophet, and Ahab's doom is pronounced.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Solomon</strong> — David's son and successor, granted unequaled wisdom and wealth and chosen to build the temple, yet undone by the foreign wives who turn his heart from the LORD.</li>
+          <li><strong>Elijah</strong> — The fearless prophet of the LORD who shuts the heavens, calls down fire on Mount Carmel, and stands almost alone against the idolatry of Ahab's house.</li>
+          <li><strong>Ahab</strong> — King of Israel who marries Jezebel and promotes Baal worship, provoking God more than any king before him while still being met by mercy and warning.</li>
+          <li><strong>Jezebel</strong> — Ahab's foreign queen who imports Baal, kills the LORD's prophets, and drives the kingdom deeper into idolatry and violence.</li>
+          <li><strong>Jeroboam</strong> — First king of the northern kingdom, who sets up golden calves at Bethel and Dan so his people will not return to Jerusalem, becoming the byword for leading Israel into sin.</li>
+          <li><strong>Rehoboam</strong> — Solomon's son whose proud refusal to lighten the people's burden splits the kingdom, leaving him to rule only Judah in the south.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Kings 18:21 (WEB)</p>
+          <p class="verse__text">Elijah came near to all the people, and said, “How long will you waver between the two sides? If Yahweh is God, follow him; but if Baal, then follow him.”   The people answered him not a word.</p>
+        </blockquote>
+          <p>Elijah's question on Mount Carmel cuts to the heart of the whole book. Israel had not openly abandoned the LORD; it had simply tried to keep him alongside Baal, limping between two opinions and refusing to choose. Elijah refuses to let that compromise stand, because a heart divided between God and idols is a heart that has already drifted from God. The silence that follows his challenge exposes a people who know they cannot answer. First Kings shows again and again that lukewarm, divided devotion is the slow poison that destroyed even the wisest of kings, and it calls every reader to the wholehearted worship that belongs to God alone.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>God delights to give wisdom to those who humbly ask him for it rather than for status, wealth, or revenge.</li>
+          <li>Great gifts and great accomplishments cannot protect a heart that is allowed to drift toward other loves.</li>
+          <li>Idolatry rarely arrives as outright rebellion; it creeps in through small compromises and divided affections.</li>
+          <li>Leaders shape the spiritual direction of those who follow them, for better or for worse, across generations.</li>
+          <li>God preserves a faithful remnant and raises up bold witnesses even in the darkest seasons of unfaithfulness.</li>
+          <li>The LORD answers by fire and by a still small voice, proving he is God and tenderly restoring his weary servants.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>Ask God for what matters most.</strong> When God offered Solomon anything, he asked for an understanding heart to serve others, and God added what he had not asked (1 Kings 3:9, WEB).</li>
+            <li><strong>Guard your heart, not just your reputation.</strong> Solomon built God a house yet let foreign wives turn his heart, showing that outward achievement cannot guard inward devotion (1 Kings 11:4, WEB).</li>
+            <li><strong>Refuse to limp between two opinions.</strong> Elijah confronted Israel's divided loyalty and demanded a clear choice for the LORD or against him (1 Kings 18:21, WEB).</li>
+            <li><strong>God alone answers as God.</strong> When fire fell on Carmel and consumed even the water, the people confessed that Yahweh, not Baal, is God (1 Kings 18:39, WEB).</li>
+            <li><strong>God meets discouragement with gentleness.</strong> After Carmel, a fearful Elijah found God not in wind or fire but in a still small voice that recommissioned him (1 Kings 19:12, WEB).</li>
+            <li><strong>Wholehearted devotion is the standard.</strong> Solomon urged the people to let their hearts be perfect with the LORD, walking fully in his ways (1 Kings 8:61, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>Solomon asked God for wisdom rather than wealth or long life. What does the prayer a person prays most reveal about what they truly value?</li>
+            <li>How can great gifts, success, or influence become a danger to our walk with God rather than a help?</li>
+            <li>Solomon's idolatry began with small accommodations to the people he loved. Where do compromises tend to creep into our own devotion?</li>
+            <li>Elijah told Israel they could not follow both the LORD and Baal. What modern rivals compete with God for our wholehearted loyalty?</li>
+            <li>After his great victory Elijah sank into fear and despair. What does God's gentle response teach us about how he treats his discouraged servants?</li>
+            <li>Elijah asked, How long will you waver between two opinions? Where might God be calling you to make a clearer, more wholehearted choice for him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Solomon's request shows that his deepest desire was to serve God's people well; our prayers expose our priorities, and asking for the right things is itself a fruit of grace. Encourage honest reflection rather than guilt.</li>
+            <li>Blessings can quietly become our security or our identity, crowding out dependence on God. Invite the group to name areas where success has made them less, not more, reliant on the Lord.</li>
+            <li>Notice how Solomon's downfall came through relationships and gradual tolerance, not sudden defiance. Help the group see compromise as a slow drift that needs regular self-examination and accountability.</li>
+            <li>Encourage the group to name concrete rivals such as money, comfort, approval, or busyness, and to consider how those loyalties show up in their schedules and choices, not just their words.</li>
+            <li>God did not rebuke Elijah harshly but fed him, let him rest, spoke gently, and gave him fresh purpose. Reassure anyone weary in faith that God is tender toward the exhausted.</li>
+            <li>This is the personal application question. Invite quiet, honest reflection and avoid pressing anyone to share. A simple step toward undivided devotion this week is a worthy and gentle goal.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="1-kings.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="1-kings.html">All Chapters</a>
+          <a class="btn btn--accent" href="1-kings-1.html">Start with 1 Kings 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Kings 22: The Book Rediscovered — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Kings 22: Josiah's reign, the rediscovery of the Book of the Law in the temple, and Huldah's word of judgment and mercy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-kings-progress" data-study-total="25">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Kings, Chapter 22
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Kings · Chapter 22</span>
+        <h1>2 Kings 22: The Book Rediscovered</h1>
+        <p class="lead">Repairing the temple uncovers the lost Book of the Law, and young Josiah tears his clothes and seeks the Lord for his people.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-22">
+            <span>Scripture — 2 Kings Chapter 22</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-22">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-22-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-22-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-22-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-22-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Kings 22 (WEB)</p>
+            <p><strong>1</strong> Josiah was eight years old when he began to reign; and he reigned thirty-one years in Jerusalem: and his mother’s name was Jedidah the daughter of Adaiah of Bozkath.</p>
+            <p><strong>2</strong> He did that which was right in the eyes of Yahweh, and walked in all the way of David his father, and didn’t turn aside to the right hand or to the left.</p>
+            <p><strong>3</strong> In the eighteenth year of king Josiah, the king sent Shaphan, the son of Azaliah the son of Meshullam, the scribe, to Yahweh’s house, saying,</p>
+            <p><strong>4</strong> “Go up to Hilkiah the high priest, that he may sum the money which is brought into Yahweh’s house, which the keepers of the threshold have gathered of the people.</p>
+            <p><strong>5</strong> Let them deliver it into the hand of the workmen who have the oversight of Yahweh’s house; and let them give it to the workmen who are in Yahweh’s house, to repair the breaches of the house,</p>
+            <p><strong>6</strong> to the carpenters, and to the builders, and to the masons, and for buying timber and cut stone to repair the house.</p>
+            <p><strong>7</strong> However there was no accounting made with them of the money that was delivered into their hand; for they dealt faithfully.”</p>
+            <p><strong>8</strong> Hilkiah the high priest said to Shaphan the scribe, “I have found the book of the law in Yahweh’s house.” Hilkiah delivered the book to Shaphan, and he read it.</p>
+            <p><strong>9</strong> Shaphan the scribe came to the king, and brought the king word again, and said, “Your servants have emptied out the money that was found in the house, and have delivered it into the hand of the workmen who have the oversight of Yahweh’s house.”</p>
+            <p><strong>10</strong> Shaphan the scribe told the king, saying, “Hilkiah the priest has delivered a book to me.” Shaphan read it before the king.</p>
+            <p><strong>11</strong> When the king had heard the words of the book of the law, he tore his clothes.</p>
+            <p><strong>12</strong> The king commanded Hilkiah the priest, and Ahikam the son of Shaphan, and Achbor the son of Micaiah, and Shaphan the scribe, and Asaiah the king’s servant, saying,</p>
+            <p><strong>13</strong> “Go inquire of Yahweh for me, and for the people, and for all Judah, concerning the words of this book that is found; for great is the wrath of Yahweh that is kindled against us, because our fathers have not listened to the words of this book, to do according to all that which is written concerning us.”</p>
+            <p><strong>14</strong> So Hilkiah the priest, and Ahikam, and Achbor, and Shaphan, and Asaiah, went to Huldah the prophetess, the wife of Shallum the son of Tikvah, the son of Harhas, keeper of the wardrobe (now she lived in Jerusalem in the second quarter); and they talked with her.</p>
+            <p><strong>15</strong> She said to them, “Thus says Yahweh, the God of Israel: ‘Tell the man who sent you to me,</p>
+            <p><strong>16</strong> “Thus says Yahweh, ‘Behold, I will bring evil on this place, and on its inhabitants, even all the words of the book which the king of Judah has read.</p>
+            <p><strong>17</strong> Because they have forsaken me, and have burned incense to other gods, that they might provoke me to anger with all the work of their hands, therefore my wrath shall be kindled against this place, and it shall not be quenched.’”</p>
+            <p><strong>18</strong> But to the king of Judah, who sent you to inquire of Yahweh, thus you shall tell him, “Thus says Yahweh, the God of Israel: ‘Concerning the words which you have heard,</p>
+            <p><strong>19</strong> because your heart was tender, and you humbled yourself before Yahweh, when you heard what I spoke against this place, and against its inhabitants, that they should become a desolation and a curse, and have torn your clothes, and wept before me; I also have heard you,’ says Yahweh.</p>
+            <p><strong>20</strong> ‘Therefore behold, I will gather you to your fathers, and you shall be gathered to your grave in peace, neither shall your eyes see all the evil which I will bring on this place.’”’” They brought back this message to the king.</p>
+            </div>
+            <div class="scripture-text" id="web-22-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Kings 22 (KJV)</p>
+            <p><strong>1</strong> Josiah was eight years old when he began to reign, and he reigned thirty and one years in Jerusalem. And his mother’s name was Jedidah, the daughter of Adaiah of Boscath.</p>
+            <p><strong>2</strong> And he did that which was right in the sight of the Lord, and walked in all the way of David his father, and turned not aside to the right hand or to the left.</p>
+            <p><strong>3</strong> And it came to pass in the eighteenth year of king Josiah, that the king sent Shaphan the son of Azaliah, the son of Meshullam, the scribe, to the house of the Lord, saying,</p>
+            <p><strong>4</strong> Go up to Hilkiah the high priest, that he may sum the silver which is brought into the house of the Lord, which the keepers of the door have gathered of the people:</p>
+            <p><strong>5</strong> And let them deliver it into the hand of the doers of the work, that have the oversight of the house of the Lord: and let them give it to the doers of the work which is in the house of the Lord, to repair the breaches of the house,</p>
+            <p><strong>6</strong> Unto carpenters, and builders, and masons, and to buy timber and hewn stone to repair the house.</p>
+            <p><strong>7</strong> Howbeit there was no reckoning made with them of the money that was delivered into their hand, because they dealt faithfully.</p>
+            <p><strong>8</strong> And Hilkiah the high priest said unto Shaphan the scribe, I have found the book of the law in the house of the Lord. And Hilkiah gave the book to Shaphan, and he read it.</p>
+            <p><strong>9</strong> And Shaphan the scribe came to the king, and brought the king word again, and said, Thy servants have gathered the money that was found in the house, and have delivered it into the hand of them that do the work, that have the oversight of the house of the Lord.</p>
+            <p><strong>10</strong> And Shaphan the scribe shewed the king, saying, Hilkiah the priest hath delivered me a book. And Shaphan read it before the king.</p>
+            <p><strong>11</strong> And it came to pass, when the king had heard the words of the book of the law, that he rent his clothes.</p>
+            <p><strong>12</strong> And the king commanded Hilkiah the priest, and Ahikam the son of Shaphan, and Achbor the son of Michaiah, and Shaphan the scribe, and Asahiah a servant of the king’s, saying,</p>
+            <p><strong>13</strong> Go ye, enquire of the Lord for me, and for the people, and for all Judah, concerning the words of this book that is found: for great is the wrath of the Lord that is kindled against us, because our fathers have not hearkened unto the words of this book, to do according unto all that which is written concerning us.</p>
+            <p><strong>14</strong> So Hilkiah the priest, and Ahikam, and Achbor, and Shaphan, and Asahiah, went unto Huldah the prophetess, the wife of Shallum the son of Tikvah, the son of Harhas, keeper of the wardrobe; (now she dwelt in Jerusalem in the college;) and they communed with her.</p>
+            <p><strong>15</strong> And she said unto them, Thus saith the Lord God of Israel, Tell the man that sent you to me,</p>
+            <p><strong>16</strong> Thus saith the Lord, Behold, I will bring evil upon this place, and upon the inhabitants thereof, even all the words of the book which the king of Judah hath read:</p>
+            <p><strong>17</strong> Because they have forsaken me, and have burned incense unto other gods, that they might provoke me to anger with all the works of their hands; therefore my wrath shall be kindled against this place, and shall not be quenched.</p>
+            <p><strong>18</strong> But to the king of Judah which sent you to enquire of the Lord, thus shall ye say to him, Thus saith the Lord God of Israel, As touching the words which thou hast heard;</p>
+            <p><strong>19</strong> Because thine heart was tender, and thou hast humbled thyself before the Lord, when thou heardest what I spake against this place, and against the inhabitants thereof, that they should become a desolation and a curse, and hast rent thy clothes, and wept before me; I also have heard thee, saith the Lord.</p>
+            <p><strong>20</strong> Behold therefore, I will gather thee unto thy fathers, and thou shalt be gathered into thy grave in peace; and thine eyes shall not see all the evil which I will bring upon this place. And they brought the king word again.</p>
+            </div>
+            <div class="scripture-text" id="web-22-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Kings 22 (ASV)</p>
+            <p><strong>1</strong> Josiah was eight years old when he began to reign; and he reigned thirty and one years in Jerusalem: and his mother’s name was Jedidah the daughter of Adaiah of Bozkath.</p>
+            <p><strong>2</strong> And he did that which was right in the eyes of Jehovah, and walked in all the way of David his father, and turned not aside to the right hand or to the left.</p>
+            <p><strong>3</strong> And it came to pass in the eighteenth year of king Josiah, that the king sent Shaphan, the son of Azaliah the son of Meshullam, the scribe, to the house of Jehovah, saying,</p>
+            <p><strong>4</strong> Go up to Hilkiah the high priest, that he may sum the money which is brought into the house of Jehovah, which the keepers of the threshold have gathered of the people:</p>
+            <p><strong>5</strong> and let them deliver it into the hand of the workmen that have the oversight of the house of Jehovah; and let them give it to the workmen that are in the house of Jehovah, to repair the breaches of the house,</p>
+            <p><strong>6</strong> unto the carpenters, and to the builders, and to the masons, and for buying timber and hewn stone to repair the house.</p>
+            <p><strong>7</strong> Howbeit there was no reckoning made with them of the money that was delivered into their hand; for they dealt faithfully.</p>
+            <p><strong>8</strong> And Hilkiah the high priest said unto Shaphan the scribe, I have found the book of the law in the house of Jehovah. And Hilkiah delivered the book to Shaphan, and he read it.</p>
+            <p><strong>9</strong> And Shaphan the scribe came to the king, and brought the king word again, and said, Thy servants have emptied out the money that was found in the house, and have delivered it into the hand of the workmen that have the oversight of the house of Jehovah.</p>
+            <p><strong>10</strong> And Shaphan the scribe told the king, saying, Hilkiah the priest hath delivered me a book. And Shaphan read it before the king.</p>
+            <p><strong>11</strong> And it came to pass, when the king had heard the words of the book of the law, that he rent his clothes.</p>
+            <p><strong>12</strong> And the king commanded Hilkiah the priest, and Ahikam the son of Shaphan, and Achbor the son of Micaiah, and Shaphan the scribe, and Asaiah the king’s servant, saying,</p>
+            <p><strong>13</strong> Go ye, inquire of Jehovah for me, and for the people, and for all Judah, concerning the words of this book that is found; for great is the wrath of Jehovah that is kindled against us, because our fathers have not hearkened unto the words of this book, to do according unto all that which is written concerning us.</p>
+            <p><strong>14</strong> So Hilkiah the priest, and Ahikam, and Achbor, and Shaphan, and Asaiah, went unto Huldah the prophetess, the wife of Shallum the son of Tikvah, the son of Harhas, keeper of the wardrobe (now she dwelt in Jerusalem in the second quarter); and they communed with her.</p>
+            <p><strong>15</strong> And she said unto them, Thus saith Jehovah, the God of Israel: Tell ye the man that sent you unto me,</p>
+            <p><strong>16</strong> Thus saith Jehovah, Behold, I will bring evil upon this place, and upon the inhabitants thereof, even all the words of the book which the king of Judah hath read.</p>
+            <p><strong>17</strong> Because they have forsaken me, and have burned incense unto other gods, that they might provoke me to anger with all the work of their hands, therefore my wrath shall be kindled against this place, and it shall not be quenched.</p>
+            <p><strong>18</strong> But unto the king of Judah, who sent you to inquire of Jehovah, thus shall ye say to him, Thus saith Jehovah, the God of Israel: As touching the words which thou hast heard,</p>
+            <p><strong>19</strong> because thy heart was tender, and thou didst humble thyself before Jehovah, when thou heardest what I spake against this place, and against the inhabitants thereof, that they should become a desolation and a curse, and hast rent thy clothes, and wept before me; I also have heard thee, saith Jehovah.</p>
+            <p><strong>20</strong> Therefore, behold, I will gather thee to thy fathers, and thou shalt be gathered to thy grave in peace, neither shall thine eyes see all the evil which I will bring upon this place. And they brought the king word again.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Josiah becomes king at eight years old and does what is right in the eyes of the Lord, walking in the way of David without turning aside. In the eighteenth year of his reign he sends Shaphan the scribe to the temple to oversee the repair of the house and to count the money given by the people, who work faithfully. While there, Hilkiah the high priest finds the Book of the Law in the house of the Lord and gives it to Shaphan, who reads it and then reads it before the king. When Josiah hears the words of the Law, he tears his clothes, grieved that his fathers had not obeyed it, and he sends his officials to inquire of the Lord for himself and for all Judah, knowing great wrath is kindled against them. They go to Huldah the prophetess, who confirms that the Lord will bring all the threatened evil upon this place because the people forsook him. Yet because Josiah's heart was tender and he humbled himself and wept, the Lord promises he will be gathered to his grave in peace and will not see the disaster to come. God's word, long neglected, both pierces and comforts a humble king.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Josiah</strong> — King of Judah from age eight who walks faithfully like David; hearing the rediscovered Law, he tears his clothes and humbly seeks the Lord.</li>
+          <li><strong>Hilkiah the high priest</strong> — The priest who finds the Book of the Law in the temple during its repair and delivers it to Shaphan the scribe.</li>
+          <li><strong>Shaphan the scribe</strong> — The official who oversees the temple repairs, receives the book, reads it, and reads it again before the king.</li>
+          <li><strong>Huldah the prophetess</strong> — The prophet who confirms the coming judgment on Judah but promises Josiah peace because his heart was tender and he humbled himself.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Kings 22:13 (WEB)</p>
+          <p class="verse__text">“Go inquire of Yahweh for me, and for the people, and for all Judah, concerning the words of this book that is found; for great is the wrath of Yahweh that is kindled against us, because our fathers have not listened to the words of this book, to do according to all that which is written concerning us.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Neglecting God's word leaves a people drifting into the very judgment it warned against.</li>
+          <li>When Scripture is heard afresh, it both exposes our sin and stirs us to seek God.</li>
+          <li>A tender, humble heart that grieves over sin is precious in the Lord's sight.</li>
+          <li>God notices and responds to genuine humility, even amid a coming judgment.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-22">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-22">
+            <ul class="lesson-list">
+            <li><strong>God's word can be lost and must be recovered.</strong> Hilkiah says, “I have found the book of the law in Yahweh’s house” (2 Kings 22:8, WEB); even in the temple, Scripture had been neglected.</li>
+            <li><strong>True hearing of the word humbles us.</strong> “When the king had heard the words of the book of the law, he tore his clothes” (2 Kings 22:11, WEB), grieving over sin.</li>
+            <li><strong>The humble seek God rather than excuse themselves.</strong> Josiah commands, “Go inquire of Yahweh for me, and for the people” (2 Kings 22:13, WEB), turning at once to the Lord.</li>
+            <li><strong>God honors a tender heart.</strong> “Because your heart was tender, and you humbled yourself before Yahweh” (2 Kings 22:19, WEB), the Lord promises Josiah peace.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-22">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-22">
+            <ol class="study-questions">
+            <li>What does it suggest that the Book of the Law had to be rediscovered in the temple?</li>
+            <li>How does Josiah respond when he hears the words of the Law read aloud?</li>
+            <li>Why does Josiah immediately send to inquire of the Lord rather than simply act on his own?</li>
+            <li>What does God's word through Huldah reveal about how he regards a humble, grieving heart?</li>
+            <li>How does God's word tend to function in your life—neglected, or heard freshly enough to move your heart?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-22">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-22">
+            <ol class="study-questions">
+            <li>That the Law could be lost inside the temple shows how far Judah had drifted; the very center of worship had forgotten God's word (22:8). Spiritual decline often begins quietly, with Scripture set aside and unread.</li>
+            <li>Josiah tears his clothes in grief, recognizing how far his people have fallen short of what is written (22:11). His response models a heart that lets God's word convict rather than rationalize, taking sin seriously.</li>
+            <li>Rather than presume, Josiah seeks God's will through inquiry, knowing great wrath is kindled (22:13). His humility refuses to act independently of the Lord and shows a king submitting himself to God's verdict and guidance.</li>
+            <li>Huldah confirms the judgment yet promises Josiah peace because his heart was tender and he humbled himself and wept (22:18-20). God is moved by genuine humility; even when judgment stands, he deals tenderly with the contrite.</li>
+            <li>This is a personal-application question. Invite members to reflect honestly on their engagement with Scripture and to ask God for a tender heart that truly hears. As leader, keep the invitation gracious and avoid any tone of guilt.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-kings-21.html">← 2 Kings 21</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-kings-23.html">2 Kings 23 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

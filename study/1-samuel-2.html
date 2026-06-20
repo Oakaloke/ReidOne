@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Samuel 2: The Song of the Humble Exalted — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Samuel 2: Hannah sings of God who exalts the humble, while Eli's corrupt sons despise the Lord and judgment is foretold." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-samuel-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Samuel, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Samuel · Chapter 2</span>
+        <h1>1 Samuel 2: The Song of the Humble Exalted</h1>
+        <p class="lead">Hannah sings of the God who reverses fortunes, while Eli's wicked sons despise the Lord and a faithful priest is promised.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — 1 Samuel Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Samuel 2 (WEB)</p>
+            <p><strong>1</strong> Hannah prayed, and said: “My heart exults in Yahweh! My horn is exalted in Yahweh. My mouth is enlarged over my enemies, because I rejoice in your salvation.</p>
+            <p><strong>2</strong> There is no one as holy as Yahweh, For there is no one besides you, nor is there any rock like our God.</p>
+            <p><strong>3</strong> “Talk no more so exceeding proudly. Don’t let arrogance come out of your mouth, For Yahweh is a God of knowledge. By him actions are weighed.</p>
+            <p><strong>4</strong> “The bows of the mighty men are broken. Those who stumbled are armed with strength.</p>
+            <p><strong>5</strong> Those who were full have hired themselves out for bread. Those who were hungry are satisfied. Yes, the barren has borne seven. She who has many children languishes.</p>
+            <p><strong>6</strong> “Yahweh kills, and makes alive. He brings down to Sheol, and brings up.</p>
+            <p><strong>7</strong> Yahweh makes poor, and makes rich. He brings low, he also lifts up.</p>
+            <p><strong>8</strong> He raises up the poor out of the dust. He lifts up the needy from the dunghill, To make them sit with princes, and inherit the throne of glory. For the pillars of the earth are Yahweh’s. He has set the world on them.</p>
+            <p><strong>9</strong> He will keep the feet of his holy ones, but the wicked shall be put to silence in darkness; for no man shall prevail by strength.</p>
+            <p><strong>10</strong> Those who strive with Yahweh shall be broken to pieces. He will thunder against them in the sky. “Yahweh will judge the ends of the earth. He will give strength to his king, and exalt the horn of his anointed.”</p>
+            <p><strong>11</strong> Elkanah went to Ramah to his house. The child served Yahweh before Eli the priest.</p>
+            <p><strong>12</strong> Now the sons of Eli were base men; they didn’t know Yahweh.</p>
+            <p><strong>13</strong> The custom of the priests with the people was that when any man offered sacrifice, the priest’s servant came, while the flesh was boiling, with a fork of three teeth in his hand;</p>
+            <p><strong>14</strong> and he struck it into the pan, or kettle, or cauldron, or pot; all that the fork brought up the priest took therewith. So they did in Shiloh to all the Israelites who came there.</p>
+            <p><strong>15</strong> Yes, before they burnt the fat, the priest’s servant came, and said to the man who sacrificed, “Give meat to roast for the priest; for he will not accept boiled meat from you, but raw.”</p>
+            <p><strong>16</strong> If the man said to him, “Let the fat be burned first, and then take as much as your soul desires”; then he would say, “No, but you shall give it to me now; and if not, I will take it by force.”</p>
+            <p><strong>17</strong> The sin of the young men was very great before Yahweh; for the men despised the offering of Yahweh.</p>
+            <p><strong>18</strong> But Samuel ministered before Yahweh, being a child, clothed with a linen ephod.</p>
+            <p><strong>19</strong> Moreover his mother made him a little robe, and brought it to him from year to year, when she came up with her husband to offer the yearly sacrifice.</p>
+            <p><strong>20</strong> Eli blessed Elkanah and his wife, and said, “Yahweh give you seed of this woman for the petition which was asked of Yahweh.” They went to their own home.</p>
+            <p><strong>21</strong> Yahweh visited Hannah, and she conceived, and bore three sons and two daughters. The child Samuel grew before Yahweh.</p>
+            <p><strong>22</strong> Now Eli was very old; and he heard all that his sons did to all Israel, and how that they lay with the women who served at the door of the Tent of Meeting.</p>
+            <p><strong>23</strong> He said to them, “Why do you do such things? for I hear of your evil dealings from all this people.</p>
+            <p><strong>24</strong> No, my sons; for it is no good report that I hear: you make Yahweh’s people disobey.</p>
+            <p><strong>25</strong> If one man sin against another, God shall judge him; but if a man sin against Yahweh, who shall entreat for him?” Notwithstanding, they didn’t listen to the voice of their father, because Yahweh intended to kill them.</p>
+            <p><strong>26</strong> The child Samuel grew on, and increased in favor both with Yahweh, and also with men.</p>
+            <p><strong>27</strong> A man of God came to Eli, and said to him, “Thus says Yahweh, ‘Did I reveal myself to the house of your father, when they were in Egypt in bondage to Pharaoh’s house?</p>
+            <p><strong>28</strong> Did I choose him out of all the tribes of Israel to be my priest, to go up to my altar, to burn incense, to wear an ephod before me? Did I give to the house of your father all the offerings of the children of Israel made by fire?</p>
+            <p><strong>29</strong> Why do you kick at my sacrifice and at my offering, which I have commanded in my habitation, and honor your sons above me, to make yourselves fat with the best of all the offerings of Israel my people?’</p>
+            <p><strong>30</strong> “Therefore Yahweh, the God of Israel, says, ‘I said indeed that your house, and the house of your father, should walk before me forever.’ But now Yahweh says, ‘Be it far from me; for those who honor me I will honor, and those who despise me shall be lightly esteemed.</p>
+            <p><strong>31</strong> Behold, the days come, that I will cut off your arm, and the arm of your father’s house, that there shall not be an old man in your house.</p>
+            <p><strong>32</strong> You shall see the affliction of my habitation, in all the wealth which I shall give Israel; and there shall not be an old man in your house forever.</p>
+            <p><strong>33</strong> The man of yours, whom I shall not cut off from my altar, shall consume your eyes, and grieve your heart; and all the increase of your house shall die in the flower of their age.</p>
+            <p><strong>34</strong> “‘This shall be the sign to you, that shall come on your two sons, on Hophni and Phinehas: in one day they shall both die.</p>
+            <p><strong>35</strong> I will raise me up a faithful priest, that shall do according to that which is in my heart and in my mind. I will build him a sure house; and he shall walk before my anointed forever.</p>
+            <p><strong>36</strong> It shall happen, that everyone who is left in your house shall come and bow down to him for a piece of silver and a loaf of bread, and shall say, “Please put me into one of the priests’ offices, that I may eat a morsel of bread.”’”</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Samuel 2 (KJV)</p>
+            <p><strong>1</strong> And Hannah prayed, and said, My heart rejoiceth in the Lord, mine horn is exalted in the Lord: my mouth is enlarged over mine enemies; because I rejoice in thy salvation.</p>
+            <p><strong>2</strong> There is none holy as the Lord: for there is none beside thee: neither is there any rock like our God.</p>
+            <p><strong>3</strong> Talk no more so exceeding proudly; let not arrogancy come out of your mouth: for the Lord is a God of knowledge, and by him actions are weighed.</p>
+            <p><strong>4</strong> The bows of the mighty men are broken, and they that stumbled are girded with strength.</p>
+            <p><strong>5</strong> They that were full have hired out themselves for bread; and they that were hungry ceased: so that the barren hath born seven; and she that hath many children is waxed feeble.</p>
+            <p><strong>6</strong> The Lord killeth, and maketh alive: he bringeth down to the grave, and bringeth up.</p>
+            <p><strong>7</strong> The Lord maketh poor, and maketh rich: he bringeth low, and lifteth up.</p>
+            <p><strong>8</strong> He raiseth up the poor out of the dust, and lifteth up the beggar from the dunghill, to set them among princes, and to make them inherit the throne of glory: for the pillars of the earth are the Lord’s, and he hath set the world upon them.</p>
+            <p><strong>9</strong> He will keep the feet of his saints, and the wicked shall be silent in darkness; for by strength shall no man prevail.</p>
+            <p><strong>10</strong> The adversaries of the Lord shall be broken to pieces; out of heaven shall he thunder upon them: the Lord shall judge the ends of the earth; and he shall give strength unto his king, and exalt the horn of his anointed.</p>
+            <p><strong>11</strong> And Elkanah went to Ramah to his house. And the child did minister unto the Lord before Eli the priest.</p>
+            <p><strong>12</strong> Now the sons of Eli were sons of Belial; they knew not the Lord.</p>
+            <p><strong>13</strong> And the priests’ custom with the people was, that, when any man offered sacrifice, the priest’s servant came, while the flesh was in seething, with a fleshhook of three teeth in his hand;</p>
+            <p><strong>14</strong> And he struck it into the pan, or kettle, or caldron, or pot; all that the fleshhook brought up the priest took for himself. So they did in Shiloh unto all the Israelites that came thither.</p>
+            <p><strong>15</strong> Also before they burnt the fat, the priest’s servant came, and said to the man that sacrificed, Give flesh to roast for the priest; for he will not have sodden flesh of thee, but raw.</p>
+            <p><strong>16</strong> And if any man said unto him, Let them not fail to burn the fat presently, and then take as much as thy soul desireth; then he would answer him, Nay; but thou shalt give it me now: and if not, I will take it by force.</p>
+            <p><strong>17</strong> Wherefore the sin of the young men was very great before the Lord: for men abhorred the offering of the Lord.</p>
+            <p><strong>18</strong> But Samuel ministered before the Lord, being a child, girded with a linen ephod.</p>
+            <p><strong>19</strong> Moreover his mother made him a little coat, and brought it to him from year to year, when she came up with her husband to offer the yearly sacrifice.</p>
+            <p><strong>20</strong> And Eli blessed Elkanah and his wife, and said, The Lord give thee seed of this woman for the loan which is lent to the Lord. And they went unto their own home.</p>
+            <p><strong>21</strong> And the Lord visited Hannah, so that she conceived, and bare three sons and two daughters. And the child Samuel grew before the Lord.</p>
+            <p><strong>22</strong> Now Eli was very old, and heard all that his sons did unto all Israel; and how they lay with the women that assembled at the door of the tabernacle of the congregation.</p>
+            <p><strong>23</strong> And he said unto them, Why do ye such things? for I hear of your evil dealings by all this people.</p>
+            <p><strong>24</strong> Nay, my sons; for it is no good report that I hear: ye make the Lord’s people to transgress.</p>
+            <p><strong>25</strong> If one man sin against another, the judge shall judge him: but if a man sin against the Lord, who shall intreat for him? Notwithstanding they hearkened not unto the voice of their father, because the Lord would slay them.</p>
+            <p><strong>26</strong> And the child Samuel grew on, and was in favour both with the Lord, and also with men.</p>
+            <p><strong>27</strong> And there came a man of God unto Eli, and said unto him, Thus saith the Lord, Did I plainly appear unto the house of thy father, when they were in Egypt in Pharaoh’s house?</p>
+            <p><strong>28</strong> And did I choose him out of all the tribes of Israel to be my priest, to offer upon mine altar, to burn incense, to wear an ephod before me? and did I give unto the house of thy father all the offerings made by fire of the children of Israel?</p>
+            <p><strong>29</strong> Wherefore kick ye at my sacrifice and at mine offering, which I have commanded in my habitation; and honourest thy sons above me, to make yourselves fat with the chiefest of all the offerings of Israel my people?</p>
+            <p><strong>30</strong> Wherefore the Lord God of Israel saith, I said indeed that thy house, and the house of thy father, should walk before me for ever: but now the Lord saith, Be it far from me; for them that honour me I will honour, and they that despise me shall be lightly esteemed.</p>
+            <p><strong>31</strong> Behold, the days come, that I will cut off thine arm, and the arm of thy father’s house, that there shall not be an old man in thine house.</p>
+            <p><strong>32</strong> And thou shalt see an enemy in my habitation, in all the wealth which God shall give Israel: and there shall not be an old man in thine house for ever.</p>
+            <p><strong>33</strong> And the man of thine, whom I shall not cut off from mine altar, shall be to consume thine eyes, and to grieve thine heart: and all the increase of thine house shall die in the flower of their age.</p>
+            <p><strong>34</strong> And this shall be a sign unto thee, that shall come upon thy two sons, on Hophni and Phinehas; in one day they shall die both of them.</p>
+            <p><strong>35</strong> And I will raise me up a faithful priest, that shall do according to that which is in mine heart and in my mind: and I will build him a sure house; and he shall walk before mine anointed for ever.</p>
+            <p><strong>36</strong> And it shall come to pass, that every one that is left in thine house shall come and crouch to him for a piece of silver and a morsel of bread, and shall say, Put me, I pray thee, into one of the priests’ offices, that I may eat a piece of bread.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Samuel 2 (ASV)</p>
+            <p><strong>1</strong> And Hannah prayed, and said: My heart exulteth in Jehovah; My horn is exalted in Jehovah; My mouth is enlarged over mine enemies; Because I rejoice in thy salvation.</p>
+            <p><strong>2</strong> There is none holy as Jehovah; For there is none besides thee, Neither is there any rock like our God.</p>
+            <p><strong>3</strong> Talk no more so exceeding proudly; Let not arrogancy come out of your mouth; For Jehovah is a God of knowledge, And by him actions are weighed.</p>
+            <p><strong>4</strong> The bows of the mighty men are broken; And they that stumbled are girded with strength.</p>
+            <p><strong>5</strong> They that were full have hired out themselves for bread; And they that were hungry have ceasedto hunger: Yea, the barren hath borne seven; And she that hath many children languisheth.</p>
+            <p><strong>6</strong> Jehovah killeth, and maketh alive: He bringeth down to Sheol, and bringeth up.</p>
+            <p><strong>7</strong> Jehovah maketh poor, and maketh rich: He bringeth low, he also lifteth up.</p>
+            <p><strong>8</strong> He raiseth up the poor out of the dust, He lifteth up the needy from the dunghill, To make them sit with princes, And inherit the throne of glory: For the pillars of the earth are Jehovah’s, And he hath set the world upon them.</p>
+            <p><strong>9</strong> He will keep the feet of his holy ones; But the wicked shall be put to silence in darkness; For by strength shall no man prevail.</p>
+            <p><strong>10</strong> They that strive with Jehovah shall be broken to pieces; Against them will he thunder in heaven: Jehovah will judge the ends of the earth; And he will give strength unto his king, And exalt the horn of his anointed.</p>
+            <p><strong>11</strong> And Elkanah went to Ramah to his house. And the child did minister unto Jehovah before Eli the priest.</p>
+            <p><strong>12</strong> Now the sons of Eli were base men; they knew not Jehovah.</p>
+            <p><strong>13</strong> And the custom of the priests with the people was, that, when any man offered sacrifice, the priest’s servant came, while the flesh was boiling, with a flesh-hook of three teeth in his hand;</p>
+            <p><strong>14</strong> and he struck it into the pan, or kettle, or caldron, or pot; all that the flesh-hook brought up the priest took therewith. So they did in Shiloh unto all the Israelites that came thither.</p>
+            <p><strong>15</strong> Yea, before they burnt the fat, the priest’s servant came, and said to the man that sacrificed, Give flesh to roast for the priest; for he will not have boiled flesh of thee, but raw.</p>
+            <p><strong>16</strong> And if the man said unto him, They will surely burn the fat first, and then take as much as thy soul desireth; then he would say, Nay, but thou shalt give it me now: and if not, I will take it by force.</p>
+            <p><strong>17</strong> And the sin of the young men was very great before Jehovah; for the men despised the offering of Jehovah.</p>
+            <p><strong>18</strong> But Samuel ministered before Jehovah, being a child, girded with a linen ephod.</p>
+            <p><strong>19</strong> Moreover his mother made him a little robe, and brought it to him from year to year, when she came up with her husband to offer the yearly sacrifice.</p>
+            <p><strong>20</strong> And Eli blessed Elkanah and his wife, and said, Jehovah give thee seed of this woman for the petition which was asked of Jehovah. And they went unto their own home.</p>
+            <p><strong>21</strong> And Jehovah visited Hannah, and she conceived, and bare three sons and two daughters. And the child Samuel grew before Jehovah.</p>
+            <p><strong>22</strong> Now Eli was very old; and he heard all that his sons did unto all Israel, and how that they lay with the women that did service at the door of the tent of meeting.</p>
+            <p><strong>23</strong> And he said unto them, Why do ye such things? for I hear of your evil dealings from all this people.</p>
+            <p><strong>24</strong> Nay, my sons; for it is no good report that I hear: ye make Jehovah’s people to transgress.</p>
+            <p><strong>25</strong> If one man sin against another, God shall judge him; but if a man sin against Jehovah, who shall entreat for him? Notwithstanding, they hearkened not unto the voice of their father, because Jehovah was minded to slay them.</p>
+            <p><strong>26</strong> And the child Samuel grew on, and increased in favor both with Jehovah, and also with men.</p>
+            <p><strong>27</strong> And there came a man of God unto Eli, and said unto him, Thus saith Jehovah, Did I reveal myself unto the house of thy father, when they were in Egypt in bondage to Pharaoh’s house?</p>
+            <p><strong>28</strong> and did I choose him out of all the tribes of Israel to be my priest, to go up unto mine altar, to burn incense, to wear an ephod before me? and did I give unto the house of thy father all the offerings of the children of Israel made by fire?</p>
+            <p><strong>29</strong> Wherefore kick ye at my sacrifice and at mine offering, which I have commanded in my habitation, and honorest thy sons above me, to make yourselves fat with the chiefest of all the offerings of Israel my people?</p>
+            <p><strong>30</strong> Therefore Jehovah, the God of Israel, saith, I said indeed that thy house, and the house of thy father, should walk before me for ever: but now Jehovah saith, Be it far from me; for them that honor me I will honor, and they that despise me shall be lightly esteemed.</p>
+            <p><strong>31</strong> Behold, the days come, that I will cut off thine arm, and the arm of thy father’s house, that there shall not be an old man in thy house.</p>
+            <p><strong>32</strong> And thou shalt behold the affliction of my habitation, in all the wealth which God shall give Israel; and there shall not be an old man in thy house for ever.</p>
+            <p><strong>33</strong> And the man of thine, whom I shall not cut off from mine altar, shall be to consume thine eyes, and to grieve thy heart; and all the increase of thy house shall die in the flower of their age.</p>
+            <p><strong>34</strong> And this shall be the sign unto thee, that shall come upon thy two sons, on Hophni and Phinehas: in one day they shall die both of them.</p>
+            <p><strong>35</strong> And I will raise me up a faithful priest, that shall do according to that which is in my heart and in my mind: and I will build him a sure house; and he shall walk before mine anointed for ever.</p>
+            <p><strong>36</strong> And it shall come to pass, that every one that is left in thy house shall come and bow down to him for a piece of silver and a loaf of bread, and shall say, Put me, I pray thee, into one of the priests’ offices, that I may eat a morsel of bread.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Hannah's heart overflows in a song of praise, exulting that there is no one as holy as the Lord, no rock like our God. She celebrates the God who weighs all actions, who breaks the bows of the mighty and arms the stumbling, who fills the hungry and empties the full. He kills and makes alive, brings low and lifts up, raises the poor from the dust to sit with princes, and at last will give strength to his king and exalt the horn of his anointed. As Samuel ministers before the Lord as a child, the narrative turns dark: Eli's sons are base men who do not know the Lord, seizing sacrificial meat by force and lying with the women who serve at the tent. Their sin is very great before Yahweh, for they treat his offering with contempt. Meanwhile Samuel grows in favor with God and man, and his mother brings him a little robe year by year. Eli rebukes his sons feebly, but they will not listen, for the Lord intends to judge them. A man of God comes to announce that Eli's house will be cut off, his two sons will die on the same day, and God will raise up a faithful priest who will walk before his anointed forever. The chapter contrasts the proud who fall with the humble whom God exalts, and points beyond Eli to a coming, faithful, anointed One.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Hannah</strong> — Samuel's mother, whose song of praise celebrates the God who humbles the proud and exalts the lowly and his anointed king.</li>
+          <li><strong>Samuel</strong> — The child who ministers before the Lord clothed in a linen ephod, growing in favor with God and with men.</li>
+          <li><strong>Hophni and Phinehas</strong> — Eli's wicked sons, base men who do not know the Lord and treat his offerings with contempt.</li>
+          <li><strong>Eli</strong> — The old priest who rebukes his sons too weakly and hears the sentence of judgment on his house.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Samuel 2:2 (WEB)</p>
+          <p class="verse__text">There is no one as holy as Yahweh, For there is no one besides you, nor is there any rock like our God.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God is uniquely holy, and there is no rock or refuge like him.</li>
+          <li>The Lord delights to reverse human fortunes, humbling the proud and lifting the lowly.</li>
+          <li>Treating God's worship with contempt is a grave and dangerous sin.</li>
+          <li>Honoring God leads to honor, while despising him leads to being lightly esteemed.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>God alone is holy and unrivaled.</strong> “There is no one as holy as Yahweh… nor is there any rock like our God” (1 Samuel 2:2, WEB). All our praise rests on his unmatched character.</li>
+            <li><strong>The Lord lifts the lowly.</strong> “He raises up the poor out of the dust… to make them sit with princes” (1 Samuel 2:8, WEB). God's pattern is to exalt the humble and bring down the proud.</li>
+            <li><strong>God will not be mocked in worship.</strong> “The men despised the offering of Yahweh” (1 Samuel 2:17, WEB), and judgment followed. How we treat what is holy matters to God.</li>
+            <li><strong>Those who honor God he will honor.</strong> “Those who honor me I will honor, and those who despise me shall be lightly esteemed” (1 Samuel 2:30, WEB). God responds to the posture of our hearts toward him.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>What picture of God emerges from Hannah's song, and how does it compare with the song of Mary in Luke 1?</li>
+            <li>How is the behavior of Eli's sons described, and why is their sin so serious?</li>
+            <li>What is the difference between Eli's rebuke of his sons and true restraint of evil?</li>
+            <li>What does the promise of a “faithful priest” who walks before God's anointed point toward?</li>
+            <li>Where might you be tempted to treat the things of God casually, and how does this chapter call you to honor him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>Hannah sings of a God who reverses fortunes, exalting the humble and humbling the proud, and ends by exalting “the horn of his anointed” (2:1-10). Mary's Magnificat echoes the same themes, showing this is God's consistent way and pointing toward Christ.</li>
+            <li>Hophni and Phinehas seize sacrificial meat by force and defile worship (2:12-17). Their sin is grave because they despise God's offering and lead his people astray, abusing sacred office for selfish gain.</li>
+            <li>Eli speaks to his sons but does not truly restrain them (2:23-25). The man of God later notes he honored his sons above God (2:29). Verbal disapproval without action is not the same as faithful correction.</li>
+            <li>The faithful priest who will “walk before my anointed forever” (2:35) points beyond any single figure toward God's ongoing purpose, ultimately fulfilled in Christ, our perfect and faithful High Priest.</li>
+            <li>This is a personal-application question. Invite members to consider where reverence has grown thin in their worship or service, and how Hannah's vision of God's holiness might renew their honor of him.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-samuel-1.html">← 1 Samuel 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-samuel-3.html">1 Samuel 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

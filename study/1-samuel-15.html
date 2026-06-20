@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Samuel 15: To Obey Is Better — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Samuel 15: Saul disobeys God's command against Amalek, and Samuel declares that to obey is better than sacrifice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-samuel-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Samuel, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Samuel · Chapter 15</span>
+        <h1>1 Samuel 15: To Obey Is Better</h1>
+        <p class="lead">Sent to destroy Amalek, Saul spares the king and the best of the spoil, and learns that obedience matters more to God than sacrifice.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — 1 Samuel Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Samuel 15 (WEB)</p>
+            <p><strong>1</strong> Samuel said to Saul, “Yahweh sent me to anoint you to be king over his people, over Israel. Now therefore listen to the voice of Yahweh’s words.</p>
+            <p><strong>2</strong> Thus says Yahweh of Armies, ‘I have marked that which Amalek did to Israel, how he set himself against him on the way, when he came up out of Egypt.</p>
+            <p><strong>3</strong> Now go and strike Amalek, and utterly destroy all that they have, and don’t spare them; but kill both man and woman, infant and nursing baby, ox and sheep, camel and donkey.’”</p>
+            <p><strong>4</strong> Saul summoned the people, and numbered them in Telaim, two hundred thousand footmen, and ten thousand men of Judah.</p>
+            <p><strong>5</strong> Saul came to the city of Amalek, and laid wait in the valley.</p>
+            <p><strong>6</strong> Saul said to the Kenites, “Go, depart, go down from among the Amalekites, lest I destroy you with them; for you showed kindness to all the children of Israel, when they came up out of Egypt.” So the Kenites departed from among the Amalekites.</p>
+            <p><strong>7</strong> Saul struck the Amalekites, from Havilah as you go to Shur, that is before Egypt.</p>
+            <p><strong>8</strong> He took Agag the king of the Amalekites alive, and utterly destroyed all the people with the edge of the sword.</p>
+            <p><strong>9</strong> But Saul and the people spared Agag, and the best of the sheep, and of the cattle, and of the fatlings, and the lambs, and all that was good, and wouldn’t utterly destroy them: but everything that was vile and refuse, that they destroyed utterly.</p>
+            <p><strong>10</strong> Then Yahweh’s word came to Samuel, saying,</p>
+            <p><strong>11</strong> “It grieves me that I have set up Saul to be king; for he is turned back from following me, and has not performed my commandments.” Samuel was angry; and he cried to Yahweh all night.</p>
+            <p><strong>12</strong> Samuel rose early to meet Saul in the morning; and it was told Samuel, saying, “Saul came to Carmel, and behold, he set up a monument for himself, and turned, and passed on, and went down to Gilgal.”</p>
+            <p><strong>13</strong> Samuel came to Saul; and Saul said to him, “You are blessed by Yahweh! I have performed the commandment of Yahweh.”</p>
+            <p><strong>14</strong> Samuel said, “Then what does this bleating of the sheep in my ears, and the lowing of the cattle which I hear mean?”</p>
+            <p><strong>15</strong> Saul said, “They have brought them from the Amalekites; for the people spared the best of the sheep and of the cattle, to sacrifice to Yahweh your God. We have utterly destroyed the rest.”</p>
+            <p><strong>16</strong> Then Samuel said to Saul, “Stay, and I will tell you what Yahweh has said to me last night.” He said to him, “Say on.”</p>
+            <p><strong>17</strong> Samuel said, “Though you were little in your own sight, weren’t you made the head of the tribes of Israel? Yahweh anointed you king over Israel;</p>
+            <p><strong>18</strong> and Yahweh sent you on a journey, and said, ‘Go, and utterly destroy the sinners the Amalekites, and fight against them until they are consumed.’</p>
+            <p><strong>19</strong> Why then didn’t you obey the voice of Yahweh, but took the plunder, and did that which was evil in the sight of Yahweh?”</p>
+            <p><strong>20</strong> Saul said to Samuel, “But I have obeyed the voice of Yahweh, and have gone the way which Yahweh sent me, and have brought Agag the king of Amalek, and have utterly destroyed the Amalekites.</p>
+            <p><strong>21</strong> But the people took of the plunder, sheep and cattle, the chief of the devoted things, to sacrifice to Yahweh your God in Gilgal.”</p>
+            <p><strong>22</strong> Samuel said, “Has Yahweh as great delight in burnt offerings and sacrifices, as in obeying the voice of Yahweh? Behold, to obey is better than sacrifice, and to listen than the fat of rams.</p>
+            <p><strong>23</strong> For rebellion is as the sin of witchcraft, and stubbornness is as idolatry and teraphim. Because you have rejected Yahweh’s word, he has also rejected you from being king.”</p>
+            <p><strong>24</strong> Saul said to Samuel, “I have sinned; for I have transgressed the commandment of Yahweh, and your words, because I feared the people, and obeyed their voice.</p>
+            <p><strong>25</strong> Now therefore, please pardon my sin, and turn again with me, that I may worship Yahweh.”</p>
+            <p><strong>26</strong> Samuel said to Saul, “I will not return with you; for you have rejected Yahweh’s word, and Yahweh has rejected you from being king over Israel.”</p>
+            <p><strong>27</strong> As Samuel turned about to go away, Saul grabbed the skirt of his robe, and it tore.</p>
+            <p><strong>28</strong> Samuel said to him, “Yahweh has torn the kingdom of Israel from you this day, and has given it to a neighbor of yours who is better than you.</p>
+            <p><strong>29</strong> Also the Strength of Israel will not lie nor repent; for he is not a man, that he should repent.”</p>
+            <p><strong>30</strong> Then he said, “I have sinned: yet please honor me now before the elders of my people, and before Israel, and come back with me, that I may worship Yahweh your God.”</p>
+            <p><strong>31</strong> So Samuel went back with Saul; and Saul worshiped Yahweh.</p>
+            <p><strong>32</strong> Then Samuel said, “Bring here to me Agag the king of the Amalekites!” Agag came to him cheerfully. Agag said, “Surely the bitterness of death is past.”</p>
+            <p><strong>33</strong> Samuel said, “As your sword has made women childless, so your mother will be childless among women!” Samuel cut Agag in pieces before Yahweh in Gilgal.</p>
+            <p><strong>34</strong> Then Samuel went to Ramah; and Saul went up to his house to Gibeah of Saul.</p>
+            <p><strong>35</strong> Samuel came no more to see Saul until the day of his death; for Samuel mourned for Saul: and Yahweh grieved that he had made Saul king over Israel.</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Samuel 15 (KJV)</p>
+            <p><strong>1</strong> Samuel also said unto Saul, The Lord sent me to anoint thee to be king over his people, over Israel: now therefore hearken thou unto the voice of the words of the Lord.</p>
+            <p><strong>2</strong> Thus saith the Lord of hosts, I remember that which Amalek did to Israel, how he laid wait for him in the way, when he came up from Egypt.</p>
+            <p><strong>3</strong> Now go and smite Amalek, and utterly destroy all that they have, and spare them not; but slay both man and woman, infant and suckling, ox and sheep, camel and ass.</p>
+            <p><strong>4</strong> And Saul gathered the people together, and numbered them in Telaim, two hundred thousand footmen, and ten thousand men of Judah.</p>
+            <p><strong>5</strong> And Saul came to a city of Amalek, and laid wait in the valley.</p>
+            <p><strong>6</strong> And Saul said unto the Kenites, Go, depart, get you down from among the Amalekites, lest I destroy you with them: for ye shewed kindness to all the children of Israel, when they came up out of Egypt. So the Kenites departed from among the Amalekites.</p>
+            <p><strong>7</strong> And Saul smote the Amalekites from Havilah until thou comest to Shur, that is over against Egypt.</p>
+            <p><strong>8</strong> And he took Agag the king of the Amalekites alive, and utterly destroyed all the people with the edge of the sword.</p>
+            <p><strong>9</strong> But Saul and the people spared Agag, and the best of the sheep, and of the oxen, and of the fatlings, and the lambs, and all that was good, and would not utterly destroy them: but every thing that was vile and refuse, that they destroyed utterly.</p>
+            <p><strong>10</strong> Then came the word of the Lord unto Samuel, saying,</p>
+            <p><strong>11</strong> It repenteth me that I have set up Saul to be king: for he is turned back from following me, and hath not performed my commandments. And it grieved Samuel; and he cried unto the Lord all night.</p>
+            <p><strong>12</strong> And when Samuel rose early to meet Saul in the morning, it was told Samuel, saying, Saul came to Carmel, and, behold, he set him up a place, and is gone about, and passed on, and gone down to Gilgal.</p>
+            <p><strong>13</strong> And Samuel came to Saul: and Saul said unto him, Blessed be thou of the Lord: I have performed the commandment of the Lord.</p>
+            <p><strong>14</strong> And Samuel said, What meaneth then this bleating of the sheep in mine ears, and the lowing of the oxen which I hear?</p>
+            <p><strong>15</strong> And Saul said, They have brought them from the Amalekites: for the people spared the best of the sheep and of the oxen, to sacrifice unto the Lord thy God; and the rest we have utterly destroyed.</p>
+            <p><strong>16</strong> Then Samuel said unto Saul, Stay, and I will tell thee what the Lord hath said to me this night. And he said unto him, Say on.</p>
+            <p><strong>17</strong> And Samuel said, When thou wast little in thine own sight, wast thou not made the head of the tribes of Israel, and the Lord anointed thee king over Israel?</p>
+            <p><strong>18</strong> And the Lord sent thee on a journey, and said, Go and utterly destroy the sinners the Amalekites, and fight against them until they be consumed.</p>
+            <p><strong>19</strong> Wherefore then didst thou not obey the voice of the Lord, but didst fly upon the spoil, and didst evil in the sight of the Lord?</p>
+            <p><strong>20</strong> And Saul said unto Samuel, Yea, I have obeyed the voice of the Lord, and have gone the way which the Lord sent me, and have brought Agag the king of Amalek, and have utterly destroyed the Amalekites.</p>
+            <p><strong>21</strong> But the people took of the spoil, sheep and oxen, the chief of the things which should have been utterly destroyed, to sacrifice unto the Lord thy God in Gilgal.</p>
+            <p><strong>22</strong> And Samuel said, Hath the Lord as great delight in burnt offerings and sacrifices, as in obeying the voice of the Lord? Behold, to obey is better than sacrifice, and to hearken than the fat of rams.</p>
+            <p><strong>23</strong> For rebellion is as the sin of witchcraft, and stubbornness is as iniquity and idolatry. Because thou hast rejected the word of the Lord, he hath also rejected thee from being king.</p>
+            <p><strong>24</strong> And Saul said unto Samuel, I have sinned: for I have transgressed the commandment of the Lord, and thy words: because I feared the people, and obeyed their voice.</p>
+            <p><strong>25</strong> Now therefore, I pray thee, pardon my sin, and turn again with me, that I may worship the Lord.</p>
+            <p><strong>26</strong> And Samuel said unto Saul, I will not return with thee: for thou hast rejected the word of the Lord, and the Lord hath rejected thee from being king over Israel.</p>
+            <p><strong>27</strong> And as Samuel turned about to go away, he laid hold upon the skirt of his mantle, and it rent.</p>
+            <p><strong>28</strong> And Samuel said unto him, The Lord hath rent the kingdom of Israel from thee this day, and hath given it to a neighbour of thine, that is better than thou.</p>
+            <p><strong>29</strong> And also the Strength of Israel will not lie nor repent: for he is not a man, that he should repent.</p>
+            <p><strong>30</strong> Then he said, I have sinned: yet honour me now, I pray thee, before the elders of my people, and before Israel, and turn again with me, that I may worship the Lord thy God.</p>
+            <p><strong>31</strong> So Samuel turned again after Saul; and Saul worshipped the Lord.</p>
+            <p><strong>32</strong> Then said Samuel, Bring ye hither to me Agag the king of the Amalekites. And Agag came unto him delicately. And Agag said, Surely the bitterness of death is past.</p>
+            <p><strong>33</strong> And Samuel said, As thy sword hath made women childless, so shall thy mother be childless among women. And Samuel hewed Agag in pieces before the Lord in Gilgal.</p>
+            <p><strong>34</strong> Then Samuel went to Ramah; and Saul went up to his house to Gibeah of Saul.</p>
+            <p><strong>35</strong> And Samuel came no more to see Saul until the day of his death: nevertheless Samuel mourned for Saul: and the Lord repented that he had made Saul king over Israel.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Samuel 15 (ASV)</p>
+            <p><strong>1</strong> And Samuel said unto Saul, Jehovah sent me to anoint thee to be king over his people, over Israel: now therefore hearken thou unto the voice of the words of Jehovah.</p>
+            <p><strong>2</strong> Thus saith Jehovah of hosts, I have marked that which Amalek did to Israel, how he set himself against him in the way, when he came up out of Egypt.</p>
+            <p><strong>3</strong> Now go and smite Amalek, and utterly destroy all that they have, and spare them not; but slay both man and woman, infant and suckling, ox and sheep, camel and ass.</p>
+            <p><strong>4</strong> And Saul summoned the people, and numbered them in Telaim, two hundred thousand footmen, and ten thousand men of Judah.</p>
+            <p><strong>5</strong> And Saul came to the city of Amalek, and laid wait in the valley.</p>
+            <p><strong>6</strong> And Saul said unto the Kenites, Go, depart, get you down from among the Amalekites, lest I destroy you with them; for ye showed kindness to all the children of Israel, when they came up out of Egypt. So the Kenites departed from among the Amalekites.</p>
+            <p><strong>7</strong> And Saul smote the Amalekites, from Havilah as thou goest to Shur, that is before Egypt.</p>
+            <p><strong>8</strong> And he took Agag the king of the Amalekites alive, and utterly destroyed all the people with the edge of the sword.</p>
+            <p><strong>9</strong> But Saul and the people spared Agag, and the best of the sheep, and of the oxen, and of the fatlings, and the lambs, and all that was good, and would not utterly destroy them: but everything that was vile and refuse, that they destroyed utterly.</p>
+            <p><strong>10</strong> Then came the word of Jehovah unto Samuel, saying,</p>
+            <p><strong>11</strong> It repenteth me that I have set up Saul to be king; for he is turned back from following me, and hath not performed my commandments. And Samuel was wroth; and he cried unto Jehovah all night.</p>
+            <p><strong>12</strong> And Samuel rose early to meet Saul in the morning; and it was told Samuel, saying, Saul came to Carmel, and, behold, he set him up a monument, and turned, and passed on, and went down to Gilgal.</p>
+            <p><strong>13</strong> And Samuel came to Saul; and Saul said unto him, Blessed be thou of Jehovah: I have performed the commandment of Jehovah.</p>
+            <p><strong>14</strong> And Samuel said, What meaneth then this bleating of the sheep in mine ears, and the lowing of the oxen which I hear?</p>
+            <p><strong>15</strong> And Saul said, They have brought them from the Amalekites: for the people spared the best of the sheep and of the oxen, to sacrifice unto Jehovah thy God; and the rest we have utterly destroyed.</p>
+            <p><strong>16</strong> Then Samuel said unto Saul, Stay, and I will tell thee what Jehovah hath said to me this night. And he said unto him, Say on.</p>
+            <p><strong>17</strong> And Samuel said, Though thou wast little in thine own sight, wast thou not made the head of the tribes of Israel? And Jehovah anointed thee king over Israel;</p>
+            <p><strong>18</strong> and Jehovah sent thee on a journey, and said, Go, and utterly destroy the sinners the Amalekites, and fight against them until they be consumed.</p>
+            <p><strong>19</strong> Wherefore then didst thou not obey the voice of Jehovah, but didst fly upon the spoil, and didst that which was evil in the sight of Jehovah?</p>
+            <p><strong>20</strong> And Saul said unto Samuel, Yea, I have obeyed the voice of Jehovah, and have gone the way which Jehovah sent me, and have brought Agag the king of Amalek, and have utterly destroyed the Amalekites.</p>
+            <p><strong>21</strong> But the people took of the spoil, sheep and oxen, the chief of the devoted things, to sacrifice unto Jehovah thy God in Gilgal.</p>
+            <p><strong>22</strong> And Samuel said, Hath Jehovah as great delight in burnt-offerings and sacrifices, as in obeying the voice of Jehovah? Behold, to obey is better than sacrifice, and to hearken than the fat of rams.</p>
+            <p><strong>23</strong> For rebellion is as the sin of witchcraft, and stubbornness is as idolatry and teraphim. Because thou hast rejected the word of Jehovah, he hath also rejected thee from being king.</p>
+            <p><strong>24</strong> And Saul said unto Samuel, I have sinned; for I have transgressed the commandment of Jehovah, and thy words, because I feared the people, and obeyed their voice.</p>
+            <p><strong>25</strong> Now therefore, I pray thee, pardon my sin, and turn again with me, that I may worship Jehovah.</p>
+            <p><strong>26</strong> And Samuel said unto Saul, I will not return with thee; for thou hast rejected the word of Jehovah, and Jehovah hath rejected thee from being king over Israel.</p>
+            <p><strong>27</strong> And as Samuel turned about to go away, Saul laid hold upon the skirt of his robe, and it rent.</p>
+            <p><strong>28</strong> And Samuel said unto him, Jehovah hath rent the kingdom of Israel from thee this day, and hath given it to a neighbor of thine, that is better than thou.</p>
+            <p><strong>29</strong> And also the Strength of Israel will not lie nor repent; for he is not a man, that he should repent.</p>
+            <p><strong>30</strong> Then he said, I have sinned: yet honor me now, I pray thee, before the elders of my people, and before Israel, and turn again with me, that I may worship Jehovah thy God.</p>
+            <p><strong>31</strong> So Samuel turned again after Saul; and Saul worshipped Jehovah.</p>
+            <p><strong>32</strong> Then said Samuel, Bring ye hither to me Agag the king of the Amalekites. And Agag came unto him cheerfully. And Agag said, Surely the bitterness of death is past.</p>
+            <p><strong>33</strong> And Samuel said, As thy sword hath made women childless, so shall thy mother be childless among women. And Samuel hewed Agag in pieces before Jehovah in Gilgal.</p>
+            <p><strong>34</strong> Then Samuel went to Ramah; and Saul went up to his house to Gibeah of Saul.</p>
+            <p><strong>35</strong> And Samuel came no more to see Saul until the day of his death; for Samuel mourned for Saul: and Jehovah repented that he had made Saul king over Israel.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Samuel brings Saul a clear command from Yahweh of Armies: strike Amalek and devote everything to destruction in judgment for their ancient hostility to Israel. Saul musters the army and defeats the Amalekites, but he spares Agag their king and keeps back the best of the sheep, cattle, and all that was good, destroying only what was worthless. The word of the Lord comes to Samuel that night: it grieves God that he made Saul king, for Saul has turned back from following him. Samuel, troubled, cries to the Lord all night, then confronts the king. Saul greets him claiming to have performed the Lord's commandment, but the bleating of sheep and lowing of cattle betray him. He shifts blame to the people and insists the animals were spared to sacrifice to the Lord. Samuel cuts through the excuse with the heart of the matter: God delights in obedience more than in burnt offerings, for to obey is better than sacrifice. Rebellion, he says, is as the sin of witchcraft. Because Saul has rejected the word of the Lord, the Lord has rejected him from being king. Saul confesses he feared the people, clutches at Samuel's torn robe—a sign that the kingdom is torn from him—and Samuel goes off to execute Agag himself, then departs to mourn for Saul.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Saul</strong> — The king who partially obeys, spares Agag and the best spoil, blames the people, and is finally rejected from kingship for rejecting God's word.</li>
+          <li><strong>Samuel</strong> — The prophet who delivers God's command, grieves over Saul through the night, pronounces his rejection, and executes Agag before the Lord.</li>
+          <li><strong>Agag</strong> — The king of the Amalekites whom Saul spares against God's command, and whom Samuel ultimately puts to death in Gilgal.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who commands judgment on Amalek, is grieved by Saul's disobedience, and declares that obedience is better than sacrifice.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Samuel 15:22 (WEB)</p>
+          <p class="verse__text">Samuel said, “Has Yahweh as great delight in burnt offerings and sacrifices, as in obeying the voice of Yahweh? Behold, to obey is better than sacrifice, and to listen than the fat of rams.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Partial obedience is still disobedience in the eyes of God.</li>
+          <li>God values a heart that listens and obeys above outward religious offerings.</li>
+          <li>Blaming others and dressing up disobedience as devotion only deepens our guilt.</li>
+          <li>The fear of people can lead us to defy the God we claim to serve.</li>
+          <li>Rejecting God's word brings the sober consequence of being set aside from his purposes.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Obedience outweighs sacrifice.</strong> “to obey is better than sacrifice, and to listen than the fat of rams” (1 Samuel 15:22, WEB). God wants our submission more than our offerings.</li>
+            <li><strong>Rebellion is no small sin.</strong> “rebellion is as the sin of witchcraft, and stubbornness is as idolatry” (1 Samuel 15:23, WEB). Setting aside God's word is as serious as the gravest idolatry.</li>
+            <li><strong>Excuses cannot cover disobedience.</strong> Saul claims the spoil was “to sacrifice to Yahweh” (1 Samuel 15:21, WEB), but spiritual-sounding rationalizations do not change the fact that he disobeyed.</li>
+            <li><strong>Fearing people leads us astray.</strong> Saul admits, “I feared the people, and obeyed their voice” (1 Samuel 15:24, WEB). Letting the crowd's approval rule us can pull us away from obeying God.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>What exactly did God command Saul to do, and in what ways did Saul fall short?</li>
+            <li>How does Saul try to present his disobedience, and how does Samuel see through it?</li>
+            <li>What does Samuel mean that “to obey is better than sacrifice” (15:22)? How might we be tempted to substitute religious activity for obedience?</li>
+            <li>Saul says he feared the people. How can the fear of others lead us into disobedience to God?</li>
+            <li>Where might God be calling you to full obedience in an area where you have settled for “mostly” obeying?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>God commanded Saul to devote Amalek entirely to destruction (15:3), but Saul spared King Agag and kept the best of the livestock, destroying only what was worthless (15:8-9). His obedience was selective, keeping what he found valuable while disregarding the clear command.</li>
+            <li>Saul greets Samuel insisting he has obeyed, then blames the people and claims the animals were for sacrifice (15:13-15, 20-21). The bleating sheep expose him; Samuel refuses the pious excuse and names it as rejection of God's word.</li>
+            <li>God delights in a heart that listens and obeys more than in offerings, however costly (15:22). We can fall into the same trap when we substitute attendance, giving, or service for the simple obedience God actually asks of us, treating ritual as a way to manage him.</li>
+            <li>Saul confesses he feared the people and obeyed their voice (15:24). When the approval or pressure of others matters more to us than God's will, we will bend his commands to keep the peace; the fear of man becomes a snare that overrides the fear of the Lord.</li>
+            <li>This is a personal-application question. Gently invite members to identify a place where they have practiced partial obedience—keeping back some “Agag” they are unwilling to surrender—and to ask God for grace to obey fully. Emphasize his mercy alongside his call.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-samuel-14.html">← 1 Samuel 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-samuel-16.html">1 Samuel 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Samuel 5: No God Like Our God — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Samuel 5: the captured ark topples the idol Dagon and afflicts the Philistine cities with tumors and confusion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-samuel-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Samuel, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Samuel · Chapter 5</span>
+        <h1>1 Samuel 5: No God Like Our God</h1>
+        <p class="lead">Captured in Philistine hands, the ark topples Dagon and afflicts city after city, proving the Lord supreme over every idol.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — 1 Samuel Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Samuel 5 (WEB)</p>
+            <p><strong>1</strong> Now the Philistines had taken the ark of God, and they brought it from Ebenezer to Ashdod.</p>
+            <p><strong>2</strong> The Philistines took the ark of God, and brought it into the house of Dagon, and set it by Dagon.</p>
+            <p><strong>3</strong> When they of Ashdod arose early on the next day, behold, Dagon was fallen on his face to the ground before Yahweh’s ark. They took Dagon, and set him in his place again.</p>
+            <p><strong>4</strong> When they arose early on the next day morning, behold, Dagon was fallen on his face to the ground before Yahweh’s ark; and the head of Dagon and both the palms of his hands were cut off on the threshold. Only Dagon’s torso was intact.</p>
+            <p><strong>5</strong> Therefore neither the priests of Dagon, nor any who come into Dagon’s house, tread on the threshold of Dagon in Ashdod, to this day.</p>
+            <p><strong>6</strong> But the hand of Yahweh was heavy on them of Ashdod, and he destroyed them, and struck them with tumors, even Ashdod and its borders.</p>
+            <p><strong>7</strong> When the men of Ashdod saw that it was so, they said, “The ark of the God of Israel shall not stay with us; for his hand is severe on us, and on Dagon our god.”</p>
+            <p><strong>8</strong> They sent therefore and gathered all the lords of the Philistines to them, and said, “What shall we do with the ark of the God of Israel?” They answered, “Let the ark of the God of Israel be carried over to Gath.” They carried the ark of the God of Israel there.</p>
+            <p><strong>9</strong> It was so, that after they had carried it about, the hand of Yahweh was against the city with a very great confusion: and he struck the men of the city, both small and great; and tumors broke out on them.</p>
+            <p><strong>10</strong> So they sent the ark of God to Ekron. As the ark of God came to Ekron, the Ekronites cried out, saying, “They have brought about the ark of the God of Israel to us, to kill us and our people.”</p>
+            <p><strong>11</strong> They sent therefore and gathered together all the lords of the Philistines, and they said, “Send away the ark of the God of Israel, and let it go again to its own place, that it not kill us and our people.” For there was a deadly confusion throughout all the city; the hand of God was very heavy there.</p>
+            <p><strong>12</strong> The men who didn’t die were struck with the tumors; and the cry of the city went up to heaven.</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Samuel 5 (KJV)</p>
+            <p><strong>1</strong> And the Philistines took the ark of God, and brought it from Eben–ezer unto Ashdod.</p>
+            <p><strong>2</strong> When the Philistines took the ark of God, they brought it into the house of Dagon, and set it by Dagon.</p>
+            <p><strong>3</strong> And when they of Ashdod arose early on the morrow, behold, Dagon was fallen upon his face to the earth before the ark of the Lord. And they took Dagon, and set him in his place again.</p>
+            <p><strong>4</strong> And when they arose early on the morrow morning, behold, Dagon was fallen upon his face to the ground before the ark of the Lord; and the head of Dagon and both the palms of his hands were cut off upon the threshold; only the stump of Dagon was left to him.</p>
+            <p><strong>5</strong> Therefore neither the priests of Dagon, nor any that come into Dagon’s house, tread on the threshold of Dagon in Ashdod unto this day.</p>
+            <p><strong>6</strong> But the hand of the Lord was heavy upon them of Ashdod, and he destroyed them, and smote them with emerods, even Ashdod and the coasts thereof.</p>
+            <p><strong>7</strong> And when the men of Ashdod saw that it was so, they said, The ark of the God of Israel shall not abide with us: for his hand is sore upon us, and upon Dagon our god.</p>
+            <p><strong>8</strong> They sent therefore and gathered all the lords of the Philistines unto them, and said, What shall we do with the ark of the God of Israel? And they answered, Let the ark of the God of Israel be carried about unto Gath. And they carried the ark of the God of Israel about thither.</p>
+            <p><strong>9</strong> And it was so, that, after they had carried it about, the hand of the Lord was against the city with a very great destruction: and he smote the men of the city, both small and great, and they had emerods in their secret parts.</p>
+            <p><strong>10</strong> Therefore they sent the ark of God to Ekron. And it came to pass, as the ark of God came to Ekron, that the Ekronites cried out, saying, They have brought about the ark of the God of Israel to us, to slay us and our people.</p>
+            <p><strong>11</strong> So they sent and gathered together all the lords of the Philistines, and said, Send away the ark of the God of Israel, and let it go again to his own place, that it slay us not, and our people: for there was a deadly destruction throughout all the city; the hand of God was very heavy there.</p>
+            <p><strong>12</strong> And the men that died not were smitten with the emerods: and the cry of the city went up to heaven.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Samuel 5 (ASV)</p>
+            <p><strong>1</strong> Now the Philistines had taken the ark of God, and they brought it from Eben-ezer unto Ashdod.</p>
+            <p><strong>2</strong> And the Philistines took the ark of God, and brought it into the house of Dagon, and set it by Dagon.</p>
+            <p><strong>3</strong> And when they of Ashdod arose early on the morrow, behold, Dagon was fallen upon his face to the ground before the ark of Jehovah. And they took Dagon, and set him in his place again.</p>
+            <p><strong>4</strong> And when they arose early on the morrow morning, behold, Dagon was fallen upon his face to the ground before the ark of Jehovah; and the head of Dagon and both the palms of his hands lay cut off upon the threshold; only the stump of Dagon was left to him.</p>
+            <p><strong>5</strong> Therefore neither the priests of Dagon, nor any that come into Dagon’s house, tread on the threshold of Dagon in Ashdod, unto this day.</p>
+            <p><strong>6</strong> But the hand of Jehovah was heavy upon them of Ashdod, and he destroyed them, and smote them with tumors, even Ashdod and the borders thereof.</p>
+            <p><strong>7</strong> And when the men of Ashdod saw that it was so, they said, The ark of the God of Israel shall not abide with us; for his hand is sore upon us, and upon Dagon our god.</p>
+            <p><strong>8</strong> They sent therefore and gathered all the lords of the Philistines unto them, and said, What shall we do with the ark of the God of Israel? And they answered, Let the ark of the God of Israel be carried about unto Gath. And they carried the ark of the God of Israel thither.</p>
+            <p><strong>9</strong> And it was so, that, after they had carried it about, the hand of Jehovah was against the city with a very great discomfiture: and he smote the men of the city, both small and great; and tumors brake out upon them.</p>
+            <p><strong>10</strong> So they sent the ark of God to Ekron. And it came to pass, as the ark of God came to Ekron, that the Ekronites cried out, saying, They have brought about the ark of the God of Israel to us, to slay us and our people.</p>
+            <p><strong>11</strong> They sent therefore and gathered together all the lords of the Philistines, and they said, Send away the ark of the God of Israel, and let it go again to its own place, that it slay us not, and our people. For there was a deadly discomfiture throughout all the city; the hand of God was very heavy there.</p>
+            <p><strong>12</strong> And the men that died not were smitten with the tumors; and the cry of the city went up to heaven.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The Philistines carry the captured ark of God from Ebenezer to Ashdod and set it beside their idol Dagon in his temple, as a trophy of victory. But the next morning they find Dagon fallen on his face before the ark of the Lord, and they set him up again. The following morning Dagon has fallen once more, this time with his head and both hands broken off on the threshold, leaving only his torso intact, so that to this day his priests will not tread on that threshold. Then the hand of Yahweh grows heavy on the people of Ashdod, striking them with tumors and destroying them. When they send the ark to Gath, the Lord's hand falls there too with great confusion, striking the men of the city, both small and great, with tumors. Sent on to Ekron, the ark causes the people to cry out in terror that it has been brought to kill them, and a deadly panic spreads through the whole city while the hand of God lies very heavy upon it. The Philistine lords gather to decide what to do, for the ark cannot stay among them. This chapter dramatically demonstrates that Israel's defeat was not the defeat of Israel's God. Even in enemy territory and as a prisoner of war, the Lord reigns supreme, humbling the idol and the nations who worship it, and showing there is none like him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>The Philistines</strong> — The victorious enemies who carry the ark home as a trophy, only to be afflicted by the heavy hand of Israel's God.</li>
+          <li><strong>Dagon</strong> — The Philistine idol set beside the ark, found fallen and then shattered before the Lord, exposed as powerless.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God whose hand falls heavy on Ashdod, Gath, and Ekron, proving his supremacy even as a captive in enemy lands.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Samuel 5:3 (WEB)</p>
+          <p class="verse__text">When they of Ashdod arose early on the next day, behold, Dagon was fallen on his face to the ground before Yahweh’s ark. They took Dagon, and set him in his place again.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's apparent defeat is never the end of the story; he reigns even in enemy hands.</li>
+          <li>Idols cannot stand before the living God; they topple and break in his presence.</li>
+          <li>The Lord is able to defend his own honor without any help from us.</li>
+          <li>God's power is no respecter of borders; his hand reaches every place and people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>No idol can stand before God.</strong> “Dagon was fallen on his face to the ground before Yahweh’s ark” (1 Samuel 5:3, WEB). The living God exposes every false god as powerless.</li>
+            <li><strong>God defends his own glory.</strong> The Lord topples and shatters Dagon without any human aid (1 Samuel 5:4, WEB). He needs no one to vindicate his name.</li>
+            <li><strong>The hand of the Lord is heavy on his enemies.</strong> “The hand of Yahweh was heavy on them of Ashdod” (1 Samuel 5:6, WEB). Those who oppose God find his power undeniable.</li>
+            <li><strong>God reigns even when his people are weak.</strong> Israel was defeated, yet in Philistine cities “the hand of God was very heavy there” (1 Samuel 5:11, WEB). His sovereignty does not depend on our strength.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>Why did the Philistines place the ark beside Dagon, and what did they expect it to mean?</li>
+            <li>What is the significance of Dagon falling and then being broken before the ark?</li>
+            <li>How does God's affliction of the Philistine cities answer the despair of Ichabod in chapter 4?</li>
+            <li>What does this chapter teach us about how God guards his own honor?</li>
+            <li>Where do you need to trust that God reigns even in situations that look like defeat?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>Setting the ark beside Dagon proclaimed that the Philistine god had defeated Israel's God (5:2). It was a victory trophy. The chapter swiftly overturns that claim, showing the true outcome of the battle.</li>
+            <li>Dagon first falls in homage, then is shattered with head and hands cut off on the threshold (5:3-4). The broken idol pictures the utter impotence of false gods before the Lord, who needs no defender.</li>
+            <li>Chapter 4 ended with “the glory has departed,” seeming to mean God was defeated. Chapter 5 corrects that fear: the ark's God is humbling whole cities. God's glory was never truly diminished, only Israel's enjoyment of it.</li>
+            <li>God topples and breaks Dagon and afflicts the cities entirely on his own (5:3-12). We learn that the Lord is fully able to vindicate his name and does not depend on our efforts to protect his reputation.</li>
+            <li>This is a personal-application question. Invite members to name circumstances that feel like defeat, and to rest in the truth that God still reigns there. As leader, point to the cross, where apparent defeat became God's greatest victory.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-samuel-4.html">← 1 Samuel 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-samuel-6.html">1 Samuel 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Judges 1: An Incomplete Conquest — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Judges 1: after Joshua's death the tribes go up against the Canaanites, win some battles, but repeatedly fail to drive out the land's inhabitants." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-judges-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Judges, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="judges.html">← All Chapters</a>
+        <span class="study-meta">The Book of Judges · Chapter 1</span>
+        <h1>Judges 1: An Incomplete Conquest</h1>
+        <p class="lead">After Joshua dies, the tribes win early victories but fail to fully drive out the Canaanites, leaving footholds that will haunt them.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Judges Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Judges 1 (WEB)</p>
+            <p><strong>1</strong> After the death of Joshua, the children of Israel asked of Yahweh, saying, “Who should go up for us first against the Canaanites, to fight against them?”</p>
+            <p><strong>2</strong> Yahweh said, “Judah shall go up. Behold, I have delivered the land into his hand.”</p>
+            <p><strong>3</strong> Judah said to Simeon his brother, “Come up with me into my lot, that we may fight against the Canaanites; and I likewise will go with you into your lot.” So Simeon went with him.</p>
+            <p><strong>4</strong> Judah went up, and Yahweh delivered the Canaanites and the Perizzites into their hand. They struck ten thousand men in Bezek.</p>
+            <p><strong>5</strong> They found Adoni-Bezek in Bezek, and they fought against him; and they struck the Canaanites and the Perizzites.</p>
+            <p><strong>6</strong> But Adoni-Bezek fled; and they pursued him, and caught him, and cut off his thumbs and his big toes.</p>
+            <p><strong>7</strong> Adoni-Bezek said, “Seventy kings, having their thumbs and their big toes cut off, scavenged under my table. As I have done, so God has done to me.” They brought him to Jerusalem, and he died there.</p>
+            <p><strong>8</strong> The children of Judah fought against Jerusalem, took it, struck it with the edge of the sword, and set the city on fire.</p>
+            <p><strong>9</strong> After that, the children of Judah went down to fight against the Canaanites who lived in the hill country, and in the South, and in the lowland.</p>
+            <p><strong>10</strong> Judah went against the Canaanites who lived in Hebron (now the name of Hebron before was Kiriath Arba); and they struck Sheshai, and Ahiman, and Talmai.</p>
+            <p><strong>11</strong> From there he went against the inhabitants of Debir. (Now the name of Debir before was Kiriath Sepher.)</p>
+            <p><strong>12</strong> Caleb said, “I will give Achsah my daughter as wife to he who strikes Kiriath Sepher, and takes it.”</p>
+            <p><strong>13</strong> Othniel the son of Kenaz, Caleb’s younger brother, took it, so he gave him Achsah his daughter as wife.</p>
+            <p><strong>14</strong> When she came, she got him to ask her father for a field. She dismounted from off of her donkey; and Caleb said to her, “What would you like?”</p>
+            <p><strong>15</strong> She said to him, “Give me a blessing; because you have set me in the land of the South, give me also springs of water.” Then Caleb gave her the upper springs and the lower springs.</p>
+            <p><strong>16</strong> The children of the Kenite, Moses’ brother-in-law, went up out of the city of palm trees with the children of Judah into the wilderness of Judah, which is in the south of Arad; and they went and lived with the people.</p>
+            <p><strong>17</strong> Judah went with Simeon his brother, and they struck the Canaanites who inhabited Zephath, and utterly destroyed it. The name of the city was called Hormah.</p>
+            <p><strong>18</strong> Also Judah took Gaza with its border, and Ashkelon with its border, and Ekron with its border.</p>
+            <p><strong>19</strong> Yahweh was with Judah; and drove out the inhabitants of the hill country; for he could not drive out the inhabitants of the valley, because they had chariots of iron.</p>
+            <p><strong>20</strong> They gave Hebron to Caleb, as Moses had spoken: and he drove out there the three sons of Anak.</p>
+            <p><strong>21</strong> The children of Benjamin did not drive out the Jebusites who inhabited Jerusalem; but the Jebusites dwell with the children of Benjamin in Jerusalem to this day.</p>
+            <p><strong>22</strong> The house of Joseph, they also went up against Bethel; and Yahweh was with them.</p>
+            <p><strong>23</strong> The house of Joseph sent to spy out Bethel. (Now the name of the city before was Luz.)</p>
+            <p><strong>24</strong> The watchers saw a man come out of the city, and they said to him, “Please show us the entrance into the city, and we will deal kindly with you.”</p>
+            <p><strong>25</strong> He showed them the entrance into the city; and they struck the city with the edge of the sword; but they let the man go and all his family.</p>
+            <p><strong>26</strong> The man went into the land of the Hittites, and built a city, and called its name Luz, which is its name to this day.</p>
+            <p><strong>27</strong> Manasseh did not drive out the inhabitants of Beth Shean and its towns, nor Taanach and its towns, nor the inhabitants of Dor and its towns, nor the inhabitants of Ibleam and its towns, nor the inhabitants of Megiddo and its towns; but the Canaanites would dwell in that land.</p>
+            <p><strong>28</strong> When Israel had grown strong, they put the Canaanites to forced labor, and did not utterly drive them out.</p>
+            <p><strong>29</strong> Ephraim didn’t drive out the Canaanites who lived in Gezer; but the Canaanites lived in Gezer among them.</p>
+            <p><strong>30</strong> Zebulun didn’t drive out the inhabitants of Kitron, nor the inhabitants of Nahalol; but the Canaanites lived among them, and became subject to forced labor.</p>
+            <p><strong>31</strong> Asher didn’t drive out the inhabitants of Acco, nor the inhabitants of Sidon, nor of Ahlab, nor of Achzib, nor of Helbah, nor of Aphik, nor of Rehob;</p>
+            <p><strong>32</strong> but the Asherites lived among the Canaanites, the inhabitants of the land; for they did not drive them out.</p>
+            <p><strong>33</strong> Naphtali didn’t drive out the inhabitants of Beth Shemesh, nor the inhabitants of Beth Anath; but he lived among the Canaanites, the inhabitants of the land: nevertheless the inhabitants of Beth Shemesh and of Beth Anath became subject to forced labor.</p>
+            <p><strong>34</strong> The Amorites forced the children of Dan into the hill country; for they would not allow them to come down to the valley;</p>
+            <p><strong>35</strong> but the Amorites would dwell in Mount Heres, in Aijalon, and in Shaalbim: yet the hand of the house of Joseph prevailed, so that they became subject to forced labor.</p>
+            <p><strong>36</strong> The border of the Amorites was from the ascent of Akrabbim, from the rock, and upward.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Judges 1 (KJV)</p>
+            <p><strong>1</strong> Now after the death of Joshua it came to pass, that the children of Israel asked the Lord, saying, Who shall go up for us against the Canaanites first, to fight against them?</p>
+            <p><strong>2</strong> And the Lord said, Judah shall go up: behold, I have delivered the land into his hand.</p>
+            <p><strong>3</strong> And Judah said unto Simeon his brother, Come up with me into my lot, that we may fight against the Canaanites; and I likewise will go with thee into thy lot. So Simeon went with him.</p>
+            <p><strong>4</strong> And Judah went up; and the Lord delivered the Canaanites and the Perizzites into their hand: and they slew of them in Bezek ten thousand men.</p>
+            <p><strong>5</strong> And they found Adoni–bezek in Bezek: and they fought against him, and they slew the Canaanites and the Perizzites.</p>
+            <p><strong>6</strong> But Adoni–bezek fled; and they pursued after him, and caught him, and cut off his thumbs and his great toes.</p>
+            <p><strong>7</strong> And Adoni–bezek said, Threescore and ten kings, having their thumbs and their great toes cut off, gathered their meat under my table: as I have done, so God hath requited me. And they brought him to Jerusalem, and there he died.</p>
+            <p><strong>8</strong> Now the children of Judah had fought against Jerusalem, and had taken it, and smitten it with the edge of the sword, and set the city on fire.</p>
+            <p><strong>9</strong> And afterward the children of Judah went down to fight against the Canaanites, that dwelt in the mountain, and in the south, and in the valley.</p>
+            <p><strong>10</strong> And Judah went against the Canaanites that dwelt in Hebron: (now the name of Hebron before was Kirjath–arba:) and they slew Sheshai, and Ahiman, and Talmai.</p>
+            <p><strong>11</strong> And from thence he went against the inhabitants of Debir: and the name of Debir before was Kirjath–sepher:</p>
+            <p><strong>12</strong> And Caleb said, He that smiteth Kirjath–sepher, and taketh it, to him will I give Achsah my daughter to wife.</p>
+            <p><strong>13</strong> And Othniel the son of Kenaz, Caleb’s younger brother, took it: and he gave him Achsah his daughter to wife.</p>
+            <p><strong>14</strong> And it came to pass, when she came to him, that she moved him to ask of her father a field: and she lighted from off her ass; and Caleb said unto her, What wilt thou?</p>
+            <p><strong>15</strong> And she said unto him, Give me a blessing: for thou hast given me a south land; give me also springs of water. And Caleb gave her the upper springs and the nether springs.</p>
+            <p><strong>16</strong> And the children of the Kenite, Moses’ father in law, went up out of the city of palm trees with the children of Judah into the wilderness of Judah, which lieth in the south of Arad; and they went and dwelt among the people.</p>
+            <p><strong>17</strong> And Judah went with Simeon his brother, and they slew the Canaanites that inhabited Zephath, and utterly destroyed it. And the name of the city was called Hormah.</p>
+            <p><strong>18</strong> Also Judah took Gaza with the coast thereof, and Askelon with the coast thereof, and Ekron with the coast thereof.</p>
+            <p><strong>19</strong> And the Lord was with Judah; and he drave out the inhabitants of the mountain; but could not drive out the inhabitants of the valley, because they had chariots of iron.</p>
+            <p><strong>20</strong> And they gave Hebron unto Caleb, as Moses said: and he expelled thence the three sons of Anak.</p>
+            <p><strong>21</strong> And the children of Benjamin did not drive out the Jebusites that inhabited Jerusalem; but the Jebusites dwell with the children of Benjamin in Jerusalem unto this day.</p>
+            <p><strong>22</strong> And the house of Joseph, they also went up against Beth–el: and the Lord was with them.</p>
+            <p><strong>23</strong> And the house of Joseph sent to descry Beth–el. (Now the name of the city before was Luz.)</p>
+            <p><strong>24</strong> And the spies saw a man come forth out of the city, and they said unto him, Shew us, we pray thee, the entrance into the city, and we will shew thee mercy.</p>
+            <p><strong>25</strong> And when he shewed them the entrance into the city, they smote the city with the edge of the sword; but they let go the man and all his family.</p>
+            <p><strong>26</strong> And the man went into the land of the Hittites, and built a city, and called the name thereof Luz: which is the name thereof unto this day.</p>
+            <p><strong>27</strong> Neither did Manasseh drive out the inhabitants of Beth–shean and her towns, nor Taanach and her towns, nor the inhabitants of Dor and her towns, nor the inhabitants of Ibleam and her towns, nor the inhabitants of Megiddo and her towns: but the Canaanites would dwell in that land.</p>
+            <p><strong>28</strong> And it came to pass, when Israel was strong, that they put the Canaanites to tribute, and did not utterly drive them out.</p>
+            <p><strong>29</strong> Neither did Ephraim drive out the Canaanites that dwelt in Gezer; but the Canaanites dwelt in Gezer among them.</p>
+            <p><strong>30</strong> Neither did Zebulun drive out the inhabitants of Kitron, nor the inhabitants of Nahalol; but the Canaanites dwelt among them, and became tributaries.</p>
+            <p><strong>31</strong> Neither did Asher drive out the inhabitants of Accho, nor the inhabitants of Zidon, nor of Ahlab, nor of Achzib, nor of Helbah, nor of Aphik, nor of Rehob:</p>
+            <p><strong>32</strong> But the Asherites dwelt among the Canaanites, the inhabitants of the land: for they did not drive them out.</p>
+            <p><strong>33</strong> Neither did Naphtali drive out the inhabitants of Beth–shemesh, nor the inhabitants of Beth–anath; but he dwelt among the Canaanites, the inhabitants of the land: nevertheless the inhabitants of Beth–shemesh and of Beth–anath became tributaries unto them.</p>
+            <p><strong>34</strong> And the Amorites forced the children of Dan into the mountain: for they would not suffer them to come down to the valley:</p>
+            <p><strong>35</strong> But the Amorites would dwell in mount Heres in Aijalon, and in Shaalbim: yet the hand of the house of Joseph prevailed, so that they became tributaries.</p>
+            <p><strong>36</strong> And the coast of the Amorites was from the going up to Akrabbim, from the rock, and upward.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Judges 1 (ASV)</p>
+            <p><strong>1</strong> And it came to pass after the death of Joshua, that the children of Israel asked of Jehovah, saying, Who shall go up for us first against the Canaanites, to fight against them?</p>
+            <p><strong>2</strong> And Jehovah said, Judah shall go up: behold, I have delivered the land into his hand.</p>
+            <p><strong>3</strong> And Judah said unto Simeon his brother, Come up with me into my lot, that we may fight against the Canaanites; and I likewise will go with thee into thy lot. So Simeon went with him.</p>
+            <p><strong>4</strong> And Judah went up; and Jehovah delivered the Canaanites and the Perizzites into their hand: and they smote of them in Bezek ten thousand men.</p>
+            <p><strong>5</strong> And they found Adoni-bezek in Bezek; and they fought against him, and they smote the Canaanites and the Perizzites.</p>
+            <p><strong>6</strong> But Adoni-bezek fled; and they pursued after him, and caught him, and cut off his thumbs and his great toes.</p>
+            <p><strong>7</strong> And Adoni-bezek said, Threescore and ten kings, having their thumbs and their great toes cut off, gathered their food under my table: as I have done, so God hath requited me. And they brought him to Jerusalem, and he died there.</p>
+            <p><strong>8</strong> And the children of Judah fought against Jerusalem, and took it, and smote it with the edge of the sword, and set the city on fire.</p>
+            <p><strong>9</strong> And afterward the children of Judah went down to fight against the Canaanites that dwelt in the hill-country, and in the South, and in the lowland.</p>
+            <p><strong>10</strong> And Judah went against the Canaanites that dwelt in Hebron (now the name of Hebron beforetime was Kiriath-arba); and they smote Sheshai, and Ahiman, and Talmai.</p>
+            <p><strong>11</strong> And from thence he went against the inhabitants of Debir. (Now the name of Debir beforetime was Kiriath-sepher.)</p>
+            <p><strong>12</strong> And Caleb said, He that smiteth Kiriath-sepher, and taketh it, to him will I give Achsah my daughter to wife.</p>
+            <p><strong>13</strong> And Othniel the son of Kenaz, Caleb’s younger brother, took it: and he gave him Achsah his daughter to wife.</p>
+            <p><strong>14</strong> And it came to pass, when she came unto him, that she moved him to ask of her father a field: and she alighted from off her ass; and Caleb said unto her, What wouldest thou?</p>
+            <p><strong>15</strong> And she said unto him, Give me a blessing; for that thou hast set me in the land of the South, give me also springs of water. And Caleb gave her the upper springs and the nether springs.</p>
+            <p><strong>16</strong> And the children of the Kenite, Moses’ brother-in-law, went up out of the city of palm-trees with the children of Judah into the wilderness of Judah, which is in the south of Arad; and they went and dwelt with the people.</p>
+            <p><strong>17</strong> And Judah went with Simeon his brother, and they smote the Canaanites that inhabited Zephath, and utterly destroyed it. And the name of the city was called Hormah.</p>
+            <p><strong>18</strong> Also Judah took Gaza with the border thereof, and Ashkelon with the border thereof, and Ekron with the border thereof.</p>
+            <p><strong>19</strong> And Jehovah was with Judah; and drove out the inhabitants of the hill-country; for he could not drive out the inhabitants of the valley, because they had chariots of iron.</p>
+            <p><strong>20</strong> And they gave Hebron unto Caleb, as Moses had spoken: and he drove out thence the three sons of Anak.</p>
+            <p><strong>21</strong> And the children of Benjamin did not drive out the Jebusites that inhabited Jerusalem; but the Jebusites dwell with the children of Benjamin in Jerusalem unto this day.</p>
+            <p><strong>22</strong> And the house of Joseph, they also went up against Beth-el; and Jehovah was with them.</p>
+            <p><strong>23</strong> And the house of Joseph sent to spy out Beth-el. (Now the name of the city beforetime was Luz.)</p>
+            <p><strong>24</strong> And the watchers saw a man come forth out of the city, and they said unto him, Show us, we pray thee, the entrance into the city, and we will deal kindly with thee.</p>
+            <p><strong>25</strong> And he showed them the entrance into the city; and they smote the city with the edge of the sword; but they let the man go and all his family.</p>
+            <p><strong>26</strong> And the man went into the land of the Hittites, and built a city, and called the name thereof Luz, which is the name thereof unto this day.</p>
+            <p><strong>27</strong> And Manasseh did not drive outthe inhabitants ofBeth-shean and its towns, norofTaanach and its towns, nor the inhabitants of Dor and its towns, nor the inhabitants of Ibleam and its towns, nor the inhabitants of Megiddo and its towns; but the Canaanites would dwell in that land.</p>
+            <p><strong>28</strong> And it came to pass, when Israel was waxed strong, that they put the Canaanites to taskwork, and did not utterly drive them out.</p>
+            <p><strong>29</strong> And Ephraim drove not out the Canaanites that dwelt in Gezer; but the Canaanites dwelt in Gezer among them.</p>
+            <p><strong>30</strong> Zebulun drove not out the inhabitants of Kitron, nor the inhabitants of Nahalol; but the Canaanites dwelt among them, and became subject to taskwork.</p>
+            <p><strong>31</strong> Asher drove not out the inhabitants of Acco, nor the inhabitants of Sidon, nor of Ahlab, nor of Achzib, nor of Helbah, nor of Aphik, nor of Rehob;</p>
+            <p><strong>32</strong> but the Asherites dwelt among the Canaanites, the inhabitants of the land; for they did not drive them out.</p>
+            <p><strong>33</strong> Naphtali drove not out the inhabitants of Beth-shemesh, nor the inhabitants of Beth-anath; but he dwelt among the Canaanites, the inhabitants of the land: nevertheless the inhabitants of Beth-shemesh and of Beth-anath became subject to taskwork.</p>
+            <p><strong>34</strong> And the Amorites forced the children of Dan into the hill-country; for they would not suffer them to come down to the valley;</p>
+            <p><strong>35</strong> but the Amorites would dwell in mount Heres, in Aijalon, and in Shaalbim: yet the hand of the house of Joseph prevailed, so that they became subject to taskwork.</p>
+            <p><strong>36</strong> And the border of the Amorites was from the ascent of Akrabbim, from the rock, and upward.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>After the death of Joshua, the children of Israel ask Yahweh who should go up first to fight the Canaanites, and Yahweh names Judah, promising to deliver the land into his hand. Judah and Simeon march together, strike the Canaanites and Perizzites at Bezek, capture the cruel Adoni-Bezek, and take Jerusalem, Hebron, and Debir. We are given a tender domestic scene as Caleb gives his daughter Achsah in marriage to Othniel, and she boldly asks for springs of water in the dry South. Yet a darker refrain begins to sound: Yahweh is with Judah, but Judah could not drive out the inhabitants of the valley because they had chariots of iron. Tribe after tribe is then named with the same sad verdict—Benjamin, Manasseh, Ephraim, Zebulun, Asher, Naphtali, and Dan all fail to drive out the Canaanites, settling instead for forced labor or living among them. The chapter that opens with bold faith ends with a long catalog of compromise. Incomplete obedience leaves snares in the land, and the seeds of Israel's coming downfall are quietly sown.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Judah and Simeon</strong> — The brother tribes who go up first at Yahweh's word, win real victories, yet stop short of fully driving out the inhabitants of the valley.</li>
+          <li><strong>Caleb and Achsah</strong> — The faithful old warrior and his bold daughter, who asks her father for springs of water—a bright glimpse of faith amid a chapter of compromise.</li>
+          <li><strong>Othniel</strong> — Caleb's younger kinsman who captures Kiriath Sepher and wins Achsah, soon to become Israel's first judge.</li>
+          <li><strong>Adoni-Bezek</strong> — The Canaanite king whose own cruelty is repaid to him, confessing that as he had done to others, so God had done to him.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Judges 1:19 (WEB)</p>
+          <p class="verse__text">Yahweh was with Judah; and drove out the inhabitants of the hill country; for he could not drive out the inhabitants of the valley, because they had chariots of iron.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God gives real victories when his people go forward at his word and trust his promise.</li>
+          <li>Partial obedience is still disobedience, and the compromises we tolerate become snares that outlast us.</li>
+          <li>Faith like Achsah's asks boldly for the good gifts God delights to give.</li>
+          <li>What we fail to confront today will trouble us tomorrow; left-over enemies do not stay quiet.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>God's presence makes us victorious.</strong> “Yahweh was with Judah; and drove out the inhabitants of the hill country” (Judges 1:19, WEB). Every true success in the land flows from the Lord being with his people.</li>
+            <li><strong>Sin reaps what it sows.</strong> Adoni-Bezek confesses, “As I have done, so God has done to me” (Judges 1:7, WEB). The God of justice does not wink at cruelty.</li>
+            <li><strong>Bold faith asks for more of God's blessing.</strong> Achsah pleads, “Give me a blessing… give me also springs of water” (Judges 1:15, WEB). She trusts her father's generosity and is not disappointed.</li>
+            <li><strong>Compromise leaves a foothold for ruin.</strong> Again and again a tribe “didn’t drive out” the Canaanites (Judges 1:21, 27, 29, WEB). What is tolerated will later dominate.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>Why do you think Israel begins so well, asking the Lord who should go up first, and how does Judah's early obedience pay off?</li>
+            <li>Achsah asks her father for springs of water in a dry land. What does her request teach us about asking God for good gifts?</li>
+            <li>The chapter repeats that tribe after tribe “didn’t drive out” the inhabitants. What reasons and excuses do you notice, and what is the cumulative effect?</li>
+            <li>Verse 19 says Yahweh was with Judah, yet Judah “could not drive out” those with chariots of iron. How do we sometimes let obstacles outweigh God's promise?</li>
+            <li>What “Canaanite” in your own life have you settled for living alongside rather than driving out, and what would obedience look like?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Israel begins in dependence, inquiring of Yahweh, who answers with both a command and a promise (1:1-2). Judah's victories at Bezek, Jerusalem, Hebron, and Debir show that obedience anchored in God's word bears fruit. Help the group see how good beginnings flow from seeking the Lord first.</li>
+            <li>Achsah, newly married, urges Othniel and then asks Caleb directly for the upper and lower springs (1:14-15). Her boldness models a confidence in a generous father; encourage the group to bring their real needs to God, who gives good gifts to his children.</li>
+            <li>From Benjamin to Dan, the refrain “didn’t drive out” recurs, sometimes with the rationale of iron chariots, sometimes with forced labor as a compromise (1:21-36). Individually each seems minor; together they reveal a nation drifting from full obedience and storing up trouble.</li>
+            <li>The tension is striking: God's presence and a frank statement of failure stand side by side (1:19). Often our problem is not God's power but our willingness to believe it against intimidating obstacles. Invite honest reflection on where fear has crowded out faith.</li>
+            <li>This is a personal-application question. Invite members to name, even silently, a habit, relationship, or attitude they have learned to coexist with rather than confront. As leader, keep the tone hopeful and point ahead to the Deliverer who finishes what we cannot.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="judges.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="judges-2.html">Judges 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezra 8: Guarded on the Journey — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezra 8: Ezra lists those who returned, proclaims a fast for a safe journey, entrusts the temple treasure, and arrives safely in Jerusalem." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezra-progress" data-study-total="10">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezra, Chapter 8
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezra.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezra · Chapter 8</span>
+        <h1>Ezra 8: Guarded on the Journey</h1>
+        <p class="lead">Ezra gathers a company, fasts for protection rather than asking the king for soldiers, and entrusts the temple treasure to faithful hands.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-8">
+            <span>Scripture — Ezra Chapter 8</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-8">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-8-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-8-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-8-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-8-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezra 8 (WEB)</p>
+            <p><strong>1</strong> Now these are the heads of their fathers’ households, and this is the genealogy of those who went up with me from Babylon, in the reign of Artaxerxes the king:</p>
+            <p><strong>2</strong> Of the sons of Phinehas, Gershom. Of the sons of Ithamar, Daniel. Of the sons of David, Hattush.</p>
+            <p><strong>3</strong> Of the sons of Shecaniah, of the sons of Parosh, Zechariah; and with him were reckoned by genealogy of the males one hundred fifty.</p>
+            <p><strong>4</strong> Of the sons of Pahathmoab, Eliehoenai the son of Zerahiah; and with him two hundred males.</p>
+            <p><strong>5</strong> Of the sons of Shecaniah, the son of Jahaziel; and with him three hundred males.</p>
+            <p><strong>6</strong> Of the sons of Adin, Ebed the son of Jonathan; and with him fifty males.</p>
+            <p><strong>7</strong> Of the sons of Elam, Jeshaiah the son of Athaliah; and with him seventy males.</p>
+            <p><strong>8</strong> Of the sons of Shephatiah, Zebadiah the son of Michael; and with him eighty males.</p>
+            <p><strong>9</strong> Of the sons of Joab, Obadiah the son of Jehiel; and with him two hundred and eighteen males.</p>
+            <p><strong>10</strong> Of the sons of Shelomith, the son of Josiphiah; and with him one hundred sixty males.</p>
+            <p><strong>11</strong> Of the sons of Bebai, Zechariah the son of Bebai; and with him twenty-eight males.</p>
+            <p><strong>12</strong> Of the sons of Azgad, Johanan the son of Hakkatan; and with him one hundred ten males.</p>
+            <p><strong>13</strong> Of the sons of Adonikam, who were the last; and these are their names: Eliphelet, Jeuel, and Shemaiah; and with them sixty males.</p>
+            <p><strong>14</strong> Of the sons of Bigvai, Uthai and Zabbud; and with them seventy males.</p>
+            <p><strong>15</strong> I gathered them together to the river that runs to Ahava; and there we encamped three days: and I viewed the people, and the priests, and found there none of the sons of Levi.</p>
+            <p><strong>16</strong> Then sent I for Eliezer, for Ariel, for Shemaiah, and for Elnathan, and for Jarib, and for Elnathan, and for Nathan, and for Zechariah, and for Meshullam, chief men; also for Joiarib, and for Elnathan, who were teachers.</p>
+            <p><strong>17</strong> I sent them out to Iddo the chief at the place Casiphia; and I told them what they should tell Iddo, and his brothers the Nethinim, at the place Casiphia, that they should bring to us ministers for the house of our God.</p>
+            <p><strong>18</strong> According to the good hand of our God on us they brought us a man of discretion, of the sons of Mahli, the son of Levi, the son of Israel; and Sherebiah, with his sons and his brothers, eighteen;</p>
+            <p><strong>19</strong> and Hashabiah, and with him Jeshaiah of the sons of Merari, his brothers and their sons, twenty;</p>
+            <p><strong>20</strong> and of the Nethinim, whom David and the princes had given for the service of the Levites, two hundred and twenty Nethinim: all of them were mentioned by name.</p>
+            <p><strong>21</strong> Then I proclaimed a fast there, at the river Ahava, that we might humble ourselves before our God, to seek of him a straight way for us, and for our little ones, and for all our substance.</p>
+            <p><strong>22</strong> For I was ashamed to ask of the king a band of soldiers and horsemen to help us against the enemy on the way, because we had spoken to the king, saying, “The hand of our God is on all those who seek him, for good; but his power and his wrath is against all those who forsake him.”</p>
+            <p><strong>23</strong> So we fasted and begged our God for this: and he was entreated of us.</p>
+            <p><strong>24</strong> Then I set apart twelve of the chiefs of the priests, even Sherebiah, Hashabiah, and ten of their brothers with them,</p>
+            <p><strong>25</strong> and weighed to them the silver, and the gold, and the vessels, even the offering for the house of our God, which the king, and his counselors, and his princes, and all Israel there present, had offered:</p>
+            <p><strong>26</strong> I weighed into their hand six hundred fifty talents of silver, and silver vessels one hundred talents; of gold one hundred talents;</p>
+            <p><strong>27</strong> and twenty bowls of gold, of one thousand darics; and two vessels of fine bright brass, precious as gold.</p>
+            <p><strong>28</strong> I said to them, “You are holy to Yahweh, and the vessels are holy; and the silver and the gold are a freewill offering to Yahweh, the God of your fathers.</p>
+            <p><strong>29</strong> Watch, and keep them, until you weigh them before the chiefs of the priests and the Levites, and the princes of the fathers’ households of Israel, at Jerusalem, in the rooms of Yahweh’s house.”</p>
+            <p><strong>30</strong> So the priests and the Levites received the weight of the silver and the gold, and the vessels, to bring them to Jerusalem to the house of our God.</p>
+            <p><strong>31</strong> Then we departed from the river Ahava on the twelfth day of the first month, to go to Jerusalem: and the hand of our God was on us, and he delivered us from the hand of the enemy and the bandit by the way.</p>
+            <p><strong>32</strong> We came to Jerusalem, and stayed there three days.</p>
+            <p><strong>33</strong> On the fourth day the silver and the gold and the vessels were weighed in the house of our God into the hand of Meremoth the son of Uriah the priest; and with him was Eleazar the son of Phinehas; and with them was Jozabad the son of Jeshua, and Noadiah the son of Binnui, the Levite;</p>
+            <p><strong>34</strong> the whole by number and by weight: and all the weight was written at that time.</p>
+            <p><strong>35</strong> The children of the captivity, who had come out of exile, offered burnt offerings to the God of Israel, twelve bulls for all Israel, ninety-six rams, seventy-seven lambs, and twelve male goats for a sin offering: all this was a burnt offering to Yahweh.</p>
+            <p><strong>36</strong> They delivered the king’s commissions to the king’s satraps, and to the governors beyond the River: and they furthered the people and God’s house.</p>
+            </div>
+            <div class="scripture-text" id="web-8-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezra 8 (KJV)</p>
+            <p><strong>1</strong> These are now the chief of their fathers, and this is the genealogy of them that went up with me from Babylon, in the reign of Artaxerxes the king.</p>
+            <p><strong>2</strong> Of the sons of Phinehas; Gershom: of the sons of Ithamar; Daniel: of the sons of David; Hattush.</p>
+            <p><strong>3</strong> Of the sons of Shechaniah, of the sons of Pharosh; Zechariah: and with him were reckoned by genealogy of the males an hundred and fifty.</p>
+            <p><strong>4</strong> Of the sons of Pahath–moab; Elihoenai the son of Zerahiah, and with him two hundred males.</p>
+            <p><strong>5</strong> Of the sons of Shechaniah; the son of Jahaziel, and with him three hundred males.</p>
+            <p><strong>6</strong> Of the sons also of Adin; Ebed the son of Jonathan, and with him fifty males.</p>
+            <p><strong>7</strong> And of the sons of Elam; Jeshaiah the son of Athaliah, and with him seventy males.</p>
+            <p><strong>8</strong> And of the sons of Shephatiah; Zebadiah the son of Michael, and with him fourscore males.</p>
+            <p><strong>9</strong> Of the sons of Joab; Obadiah the son of Jehiel, and with him two hundred and eighteen males.</p>
+            <p><strong>10</strong> And of the sons of Shelomith; the son of Josiphiah, and with him an hundred and threescore males.</p>
+            <p><strong>11</strong> And of the sons of Bebai; Zechariah the son of Bebai, and with him twenty and eight males.</p>
+            <p><strong>12</strong> And of the sons of Azgad; Johanan the son of Hakkatan, and with him an hundred and ten males.</p>
+            <p><strong>13</strong> And of the last sons of Adonikam, whose names are these, Eliphelet, Jeiel, and Shemaiah, and with them threescore males.</p>
+            <p><strong>14</strong> Of the sons also of Bigvai; Uthai, and Zabbud, and with them seventy males.</p>
+            <p><strong>15</strong> And I gathered them together to the river that runneth to Ahava; and there abode we in tents three days: and I viewed the people, and the priests, and found there none of the sons of Levi.</p>
+            <p><strong>16</strong> Then sent I for Eliezer, for Ariel, for Shemaiah, and for Elnathan, and for Jarib, and for Elnathan, and for Nathan, and for Zechariah, and for Meshullam, chief men; also for Joiarib, and for Elnathan, men of understanding.</p>
+            <p><strong>17</strong> And I sent them with commandment unto Iddo the chief at the place Casiphia, and I told them what they should say unto Iddo, and to his brethren the Nethinims, at the place Casiphia, that they should bring unto us ministers for the house of our God.</p>
+            <p><strong>18</strong> And by the good hand of our God upon us they brought us a man of understanding, of the sons of Mahli, the son of Levi, the son of Israel; and Sherebiah, with his sons and his brethren, eighteen;</p>
+            <p><strong>19</strong> And Hashabiah, and with him Jeshaiah of the sons of Merari, his brethren and their sons, twenty;</p>
+            <p><strong>20</strong> Also of the Nethinims, whom David and the princes had appointed for the service of the Levites, two hundred and twenty Nethinims: all of them were expressed by name.</p>
+            <p><strong>21</strong> Then I proclaimed a fast there, at the river of Ahava, that we might afflict ourselves before our God, to seek of him a right way for us, and for our little ones, and for all our substance.</p>
+            <p><strong>22</strong> For I was ashamed to require of the king a band of soldiers and horsemen to help us against the enemy in the way: because we had spoken unto the king, saying, The hand of our God is upon all them for good that seek him; but his power and his wrath is against all them that forsake him.</p>
+            <p><strong>23</strong> So we fasted and besought our God for this: and he was intreated of us.</p>
+            <p><strong>24</strong> Then I separated twelve of the chief of the priests, Sherebiah, Hashabiah, and ten of their brethren with them,</p>
+            <p><strong>25</strong> And weighed unto them the silver, and the gold, and the vessels, even the offering of the house of our God, which the king, and his counsellors, and his lords, and all Israel there present, had offered:</p>
+            <p><strong>26</strong> I even weighed unto their hand six hundred and fifty talents of silver, and silver vessels an hundred talents, and of gold an hundred talents;</p>
+            <p><strong>27</strong> Also twenty basons of gold, of a thousand drams; and two vessels of fine copper, precious as gold.</p>
+            <p><strong>28</strong> And I said unto them, Ye are holy unto the Lord; the vessels are holy also; and the silver and the gold are a freewill offering unto the Lord God of your fathers.</p>
+            <p><strong>29</strong> Watch ye, and keep them, until ye weigh them before the chief of the priests and the Levites, and chief of the fathers of Israel, at Jerusalem, in the chambers of the house of the Lord.</p>
+            <p><strong>30</strong> So took the priests and the Levites the weight of the silver, and the gold, and the vessels, to bring them to Jerusalem unto the house of our God.</p>
+            <p><strong>31</strong> Then we departed from the river of Ahava on the twelfth day of the first month, to go unto Jerusalem: and the hand of our God was upon us, and he delivered us from the hand of the enemy, and of such as lay in wait by the way.</p>
+            <p><strong>32</strong> And we came to Jerusalem, and abode there three days.</p>
+            <p><strong>33</strong> Now on the fourth day was the silver and the gold and the vessels weighed in the house of our God by the hand of Meremoth the son of Uriah the priest; and with him was Eleazar the son of Phinehas; and with them was Jozabad the son of Jeshua, and Noadiah the son of Binnui, Levites;</p>
+            <p><strong>34</strong> By number and by weight of every one: and all the weight was written at that time.</p>
+            <p><strong>35</strong> Also the children of those that had been carried away, which were come out of the captivity, offered burnt offerings unto the God of Israel, twelve bullocks for all Israel, ninety and six rams, seventy and seven lambs, twelve he goats for a sin offering: all this was a burnt offering unto the Lord.</p>
+            <p><strong>36</strong> And they delivered the king’s commissions unto the king’s lieutenants, and to the governors on this side the river: and they furthered the people, and the house of God.</p>
+            </div>
+            <div class="scripture-text" id="web-8-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezra 8 (ASV)</p>
+            <p><strong>1</strong> Now these are the heads of their fathers’houses, and this is the genealogy of them that went up with me from Babylon, in the reign of Artaxerxes the king:</p>
+            <p><strong>2</strong> Of the sons of Phinehas, Gershom. Of the sons of Ithamar, Daniel. Of the sons of David, Hattush.</p>
+            <p><strong>3</strong> Of the sons of Shecaniah, of the sons of Parosh, Zechariah; and with him were reckoned by genealogy of the males a hundred and fifty.</p>
+            <p><strong>4</strong> Of the sons of Pahath-moab, Eliehoenai the son of Zerahiah; and with him two hundred males.</p>
+            <p><strong>5</strong> Of the sons of Shecaniah, the son of Jahaziel; and with him three hundred males.</p>
+            <p><strong>6</strong> And of the sons of Adin, Ebed the son of Jonathan; and with him fifty males.</p>
+            <p><strong>7</strong> And of the sons of Elam, Jeshaiah the son of Athaliah; and with him seventy males.</p>
+            <p><strong>8</strong> And of the sons of Shephatiah, Zebadiah the son of Michael; and with him fourscore males.</p>
+            <p><strong>9</strong> Of the sons of Joab, Obadiah the son of Jehiel; and with him two hundred and eighteen males.</p>
+            <p><strong>10</strong> And of the sons of Shelomith, the son of Josiphiah; and with him a hundred and threescore males.</p>
+            <p><strong>11</strong> And of the sons of Bebai, Zechariah the son of Bebai; and with him twenty and eight males.</p>
+            <p><strong>12</strong> And of the sons of Azgad, Johanan the son of Hakkatan; and with him a hundred and ten males.</p>
+            <p><strong>13</strong> And of the sons of Adonikam, that were the last; and these are their names: Eliphelet, Jeuel, and Shemaiah; and with them threescore males.</p>
+            <p><strong>14</strong> And of the sons of Bigvai, Uthai and Zabbud; and with them seventy males.</p>
+            <p><strong>15</strong> And I gathered them together to the river that runneth to Ahava; and there we encamped three days: and I viewed the people, and the priests, and found there none of the sons of Levi.</p>
+            <p><strong>16</strong> Then sent I for Eliezer, for Ariel, for Shemaiah, and for Elnathan, and for Jarib, and for Elnathan, and for Nathan, and for Zechariah, and for Meshullam, chief men; also for Joiarib, and for Elnathan, who were teachers.</p>
+            <p><strong>17</strong> And I sent them forth unto Iddo the chief at the place Casiphia; and I told them what they should say unto Iddo, and his brethren the Nethinim, at the place Casiphia, that they should bring unto us ministers for the house of our God.</p>
+            <p><strong>18</strong> And according to the good hand of our God upon us they brought us a man of discretion, of the sons of Mahli, the son of Levi, the son of Israel; and Sherebiah, with his sons and his brethren, eighteen;</p>
+            <p><strong>19</strong> and Hashabiah, and with him Jeshaiah of the sons of Merari, his brethren and their sons, twenty;</p>
+            <p><strong>20</strong> and of the Nethinim, whom David and the princes had given for the service of the Levites, two hundred and twenty Nethinim: all of them were mentioned by name.</p>
+            <p><strong>21</strong> Then I proclaimed a fast there, at the river Ahava, that we might humble ourselves before our God, to seek of him a straight way for us, and for our little ones, and for all our substance.</p>
+            <p><strong>22</strong> For I was ashamed to ask of the king a band of soldiers and horsemen to help us against the enemy in the way, because we had spoken unto the king, saying, The hand of our God is upon all them that seek him, for good; but his power and his wrath is against all them that forsake him.</p>
+            <p><strong>23</strong> So we fasted and besought our God for this: and he was entreated of us.</p>
+            <p><strong>24</strong> Then I set apart twelve of the chiefs of the priests, even Sherebiah, Hashabiah, and ten of their brethren with them,</p>
+            <p><strong>25</strong> and weighed unto them the silver, and the gold, and the vessels, even the offering for the house of our God, which the king, and his counsellors, and his princes, and all Israel there present, had offered:</p>
+            <p><strong>26</strong> I weighed into their hand six hundred and fifty talents of silver, and silver vessels a hundred talents; of gold a hundred talents;</p>
+            <p><strong>27</strong> and twenty bowls of gold, of a thousand darics; and two vessels of fine bright brass, precious as gold.</p>
+            <p><strong>28</strong> And I said unto them, Ye are holy unto Jehovah, and the vessels are holy; and the silver and the gold are a freewill-offering unto Jehovah, the God of your fathers.</p>
+            <p><strong>29</strong> Watch ye, and keep them, until ye weigh them before the chiefs of the priests and the Levites, and the princes of the fathers’ houses of Israel, at Jerusalem, in the chambers of the house of Jehovah.</p>
+            <p><strong>30</strong> So the priests and the Levites received the weight of the silver and the gold, and the vessels, to bring them to Jerusalem unto the house of our God.</p>
+            <p><strong>31</strong> Then we departed from the river Ahava on the twelfth day of the first month, to go unto Jerusalem: and the hand of our God was upon us, and he delivered us from the hand of the enemy and the lier-in-wait by the way.</p>
+            <p><strong>32</strong> And we came to Jerusalem, and abode there three days.</p>
+            <p><strong>33</strong> And on the fourth day the silver and the gold and the vessels were weighed in the house of our God into the hand of Meremoth the son of Uriah the priest (and with him was Eleazar the son of Phinehas; and with them was Jozabad the son of Jeshua, and Noadiah the son of Binnui, the Levites)—</p>
+            <p><strong>34</strong> the whole by number and by weight: and all the weight was written at that time.</p>
+            <p><strong>35</strong> The children of the captivity, that were come out of exile, offered burnt-offerings unto the God of Israel, twelve bullocks for all Israel, ninety and six rams, seventy and seven lambs, twelve he-goats for a sin-offering: all this was a burnt-offering unto Jehovah.</p>
+            <p><strong>36</strong> And they delivered the king’s commissions unto the king’s satraps, and to the governors beyond the River: and they furthered the people and the house of God.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Ezra records the heads of families who went up with him from Babylon. Finding no Levites among them, he sends leaders to Iddo at Casiphia, and by the good hand of God on them, ministers and temple servants are brought to join the company. At the river Ahava, Ezra proclaims a fast so that they might humble themselves before God and seek from him a safe journey for themselves, their children, and their goods. He explains that he was ashamed to ask the king for soldiers and horsemen, because he had testified that God's hand is on all who seek him for good, while his wrath is against those who forsake him. So they fast and plead, and God answers their prayer. Ezra then sets apart twelve leading priests and weighs out to them the enormous offering of silver, gold, and vessels for the house of God, charging them that they and the treasure are holy to the Lord and must be guarded until weighed out again in Jerusalem. They depart, and the hand of God delivers them from enemies and bandits along the way. Arriving in Jerusalem, they weigh the treasure into the priests' hands, offer sacrifices, and deliver the king's commissions to the local officials.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Ezra the scribe</strong> — The leader who gathers the company, proclaims a fast for protection, and entrusts the sacred treasure to faithful hands for the journey.</li>
+          <li><strong>The twelve chief priests</strong> — Those set apart to guard and carry the silver, gold, and vessels, accountable to weigh them out again in Jerusalem.</li>
+          <li><strong>The returning company</strong> — The families, priests, Levites, and temple servants who travel with Ezra, humbling themselves before God for a safe journey.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God whose hand is on all who seek him, who answers the fast and delivers the travelers from enemies and bandits on the road.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezra 8:22 (WEB)</p>
+          <p class="verse__text">For I was ashamed to ask of the king a band of soldiers and horsemen to help us against the enemy on the way, because we had spoken to the king, saying, “The hand of our God is on all those who seek him, for good; but his power and his wrath is against all those who forsake him.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Seeking God in prayer and fasting is the believer's first resort, not the last.</li>
+          <li>Genuine faith is willing to risk relying on God rather than visible securities.</li>
+          <li>Holy responsibilities call for careful accountability and trustworthy stewards.</li>
+          <li>God really does protect and provide for those who humble themselves before him.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-8">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-8">
+            <ul class="lesson-list">
+            <li><strong>Humble yourself before the journey.</strong> Ezra proclaimed a fast "that we might humble ourselves before our God, to seek of him a straight way" (Ezra 8:21, WEB). Prayer precedes the road.</li>
+            <li><strong>Let your faith match your testimony.</strong> Ezra was "ashamed to ask of the king a band of soldiers," having said God's hand is on all who seek him (Ezra 8:22, WEB). Our trust should match our words.</li>
+            <li><strong>God answers humble prayer.</strong> "So we fasted and begged our God for this: and he was entreated of us" (Ezra 8:23, WEB). The Lord responds to those who earnestly seek him.</li>
+            <li><strong>Holy things require faithful stewards.</strong> Ezra charged the priests, "You are holy to Yahweh, and the vessels are holy" (Ezra 8:28, WEB). What belongs to God must be guarded with care and accountability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-8">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-8">
+            <ol class="study-questions">
+            <li>Why does Ezra proclaim a fast before setting out, and what does that show about his priorities?</li>
+            <li>Why is Ezra unwilling to ask the king for a military escort?</li>
+            <li>How does Ezra arrange for the safe and accountable transport of the temple treasure?</li>
+            <li>What does the safe arrival in Jerusalem reveal about God's faithfulness to those who seek him?</li>
+            <li>Where are you tempted to rely on visible securities instead of trusting and seeking God first?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-8">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-8">
+            <ol class="study-questions">
+            <li>Before a dangerous journey, Ezra leads the people to humble themselves and seek God (8:21). Prayer and fasting are his first response, not a fallback after other plans fail. Help the group consider what it means to seek God at the outset of their undertakings.</li>
+            <li>Having testified to the king that God's hand protects all who seek him (8:22), Ezra will not undercut that witness by demanding soldiers. His integrity means his actions must match his words. This is a searching example of letting our trust in God be visible and consistent.</li>
+            <li>Ezra sets apart twelve trustworthy priests, weighs the treasure to them publicly, and requires it weighed again in Jerusalem (8:24-30, 33-34). Holy responsibility is paired with careful accountability. Faithfulness with God's resources protects both the treasure and the reputation of his servants.</li>
+            <li>God delivered them "from the hand of the enemy and the bandit by the way" (8:31), answering their fast. His protection was not abstract but concrete and timely. Invite the group to recall specific ways God has guarded them when they trusted him.</li>
+            <li>This is a personal-application question. Ezra chose to depend on God rather than visible protection. As leader, gently invite members to name a place where they reach for security apart from God, and to consider what trusting him first might look like, without shaming those for whom this is hard.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezra-7.html">← Ezra 7</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezra.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezra-9.html">Ezra 9 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

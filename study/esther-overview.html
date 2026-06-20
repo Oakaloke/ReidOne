@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Esther: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An overview of Esther: a Jewish girl becomes queen of Persia, a wicked official plots genocide, and through courage and providence the plot is reversed and the people delivered." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-esther-progress" data-study-total="10">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Esther, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Esther · Whole-Book Overview</span>
+        <h1>Esther: The Whole Story</h1>
+        <p class="lead">An orphan queen, a faithful exile, a murderous plot, and a God who never appears by name yet rules every turn of the story.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Esther is unlike most books of the Bible. It is set not in the promised land but in exile, in the palace of Susa under the Persian king Ahasuerus. And famously, the name of God never appears in it—no miracles, no prophets, no commands from heaven. Instead the story unfolds through banquets, decrees, and a string of remarkable coincidences. The question pressing on every page is whether God is still at work for his scattered, vulnerable people when he seems entirely absent.</p>
+          <p>The answer comes through events that line up too neatly to be chance. A queen is deposed, and a Jewish orphan named Esther is chosen in her place. Her cousin Mordecai uncovers a plot against the king and goes unrewarded—for now. When the proud official Haman, enraged by Mordecai's refusal to bow, schemes to destroy every Jew in the empire, the stage is set for catastrophe. Yet Esther has come to the throne, as Mordecai says, “for such a time as this,” and she risks her life to intercede for her people.</p>
+          <p>What follows is one of the great reversals in all of Scripture. On a sleepless night the king reads of Mordecai's forgotten loyalty; Haman is forced to honor the very man he meant to hang; and at Esther's banquet the plot is exposed and the schemer is executed on his own gallows. The decree of death is answered by a decree of deliverance, and a day of intended mourning becomes a feast of joy—celebrated ever after as Purim. Though God is never named, his sovereign hand is unmistakable from beginning to end.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>A Throne Made Empty (chs 1-2)</strong> — Queen Vashti is deposed after defying the king; a search for a new queen brings the Jewish orphan Esther to the palace, while Mordecai quietly uncovers a plot against the king's life.</li>
+          <li><strong>A Plot Against a People (ch 3)</strong> — Promoted above all, the Agagite Haman is enraged that Mordecai will not bow, and persuades the king to decree the destruction of every Jew in the empire on a single day.</li>
+          <li><strong>For Such a Time as This (chs 4-5)</strong> — Mordecai calls Esther to risk her life for her people; after fasting, she approaches the king uninvited, finds favor, and invites him and Haman to a banquet, setting her plan in motion.</li>
+          <li><strong>The Great Reversal (chs 6-7)</strong> — A sleepless king honors Mordecai through a humiliated Haman; at Esther's second banquet she exposes the plot, and Haman is hanged on the gallows he built for Mordecai.</li>
+          <li><strong>Deliverance and Purim (chs 8-10)</strong> — A new decree lets the Jews defend themselves; their enemies fall, sorrow turns to gladness, and the days of rescue are established forever as the joyful feast of Purim.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Esther (Hadassah)</strong> — A Jewish orphan raised by her cousin Mordecai, chosen as queen of Persia, who hides her identity until she risks everything to intercede for her people.</li>
+          <li><strong>Mordecai</strong> — Esther's cousin and guardian, a Jew in exile who refuses to bow to Haman, exposes a plot against the king, and urges Esther toward the courage that saves the nation.</li>
+          <li><strong>Haman the Agagite</strong> — The king's proud favorite, enraged by Mordecai's refusal to bow, who plots the genocide of the Jews and is undone by the very schemes he devises.</li>
+          <li><strong>King Ahasuerus (Xerxes)</strong> — The powerful, easily swayed ruler of Persia, whose decrees, banquets, and sleepless night become the means by which God's people are preserved.</li>
+          <li><strong>Vashti</strong> — The queen who refuses to be paraded before the king's drunken guests and is deposed, leaving the throne that Esther will fill.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Esther 4:14 (WEB)</p>
+          <p class="verse__text">For if you remain silent now, then relief and deliverance will come to the Jews from another place, but you and your father’s house will perish. Who knows if you haven’t come to the kingdom for such a time as this?”</p>
+        </blockquote>
+          <p>These words from Mordecai capture the heart of the book. God's purpose to deliver his people is certain—relief will come “from another place” whether or not Esther acts. Yet she has been placed exactly where she is, at exactly this moment, and is invited to play her part. The verse holds together God's sovereign certainty and our real responsibility, and it presses every reader to ask why God has put us where we are.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>God is at work even when he seems absent and is never named (Esther 4:14).</li>
+          <li>God places his people in particular times and roles for his purposes (Esther 4:14).</li>
+          <li>Faithful courage often means risking ourselves for the good of others (Esther 4:16).</li>
+          <li>Pride sets a trap that finally closes on the proud themselves (Esther 7:10).</li>
+          <li>God reverses the schemes of the wicked and turns sorrow into gladness (Esther 9:22).</li>
+          <li>The rescue of God's people through a faithful intercessor points us to Christ (Esther 5:2).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>God's providence works through ordinary events.</strong> A king's insomnia leads him to honor Mordecai—“On that night, the king couldn’t sleep” (Esther 6:1, WEB). No miracle is needed; God rules the smallest details.</li>
+            <li><strong>We are placed where we are for a reason.</strong> Mordecai asks, “Who knows if you haven’t come to the kingdom for such a time as this?” (Esther 4:14, WEB). God positions his people to serve his purposes.</li>
+            <li><strong>Courage trusts God with the outcome.</strong> Esther resolves, “if I perish, I perish” (Esther 4:16, WEB). True courage acts in obedience and leaves the result to God.</li>
+            <li><strong>Pride digs its own pit.</strong> Haman is hanged “on the gallows that he had prepared for Mordecai” (Esther 7:10, WEB). The schemes of the proud return upon their own heads.</li>
+            <li><strong>God turns mourning into joy.</strong> The month was “turned to them from sorrow to gladness, and from mourning into a good day” (Esther 9:22, WEB). Deliverance becomes lasting celebration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>The name of God never appears in Esther. How does the book nevertheless show us that God is at work, and why might its author have written it this way?</li>
+            <li>Mordecai tells Esther that deliverance will come whether or not she acts, yet still urges her to act. How does the book hold together God's sovereignty and human responsibility?</li>
+            <li>Esther risks her life with the words “if I perish, I perish.” What gives her the courage to step forward, and what role does the fasting of her people play?</li>
+            <li>Haman is destroyed by the very plots he devised. What does the book teach about pride, and how do its reversals reveal God's justice?</li>
+            <li>Purim was established so the rescue would never be forgotten. How might remembering God's past deliverances strengthen our trust in him today?</li>
+            <li>Where has God placed you—what relationships, role, or moment—and how might he be inviting you to act faithfully there “for such a time as this”?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Though God is never named, his fingerprints are everywhere: the timing of Esther's rise, the sleepless night, the gallows turned on Haman, the precise reversal of the decree. The author's silence about God may be deliberate, mirroring the experience of exile, where God feels hidden yet is quietly governing every event. Help the group see providence in the ordinary rather than only in the miraculous.</li>
+            <li>Mordecai is certain God will save his people, yet he calls Esther to take responsibility (4:13-14). The book refuses to play sovereignty and responsibility against each other; God's sure purpose does not cancel our calling to act, but rather invites us into it. Encourage members that their faithful choices genuinely matter within God's plan.</li>
+            <li>Esther's courage grows out of identity and community: she embraces her people, calls them to fast with her, and entrusts the outcome to God (4:16). The three-day fast is an implicit turning to God for help. Note how facing danger together, in dependence rather than self-confidence, frees us to do what love requires.</li>
+            <li>Haman's pride blinds him—he assumes the honor is for himself and builds a gallows for his enemy, only to hang on it (6:6, 7:10). The reversals show that God resists the proud and that injustice ultimately recoils on those who do it. Let the group savor how quietly and completely God overturns evil.</li>
+            <li>Purim binds the community to remember and retell the story so trust passes to each generation (9:27-28). Remembering God's faithfulness in the past steadies us in present fears. As leader, invite members to recall and share specific times God carried them, building a shared memory of his care.</li>
+            <li>This is a personal-application question with no single answer. Invite members to consider the particular place, people, and moment God has given them, and one faithful step they might take there. As leader, keep the tone hopeful and unhurried, and let Mordecai's question rest gently on each heart without pressure.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="esther.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="esther.html">All Chapters</a>
+          <a class="btn btn--accent" href="esther-1.html">Start with Esther 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

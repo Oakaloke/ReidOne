@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Samuel 22: Song of the Rock — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Samuel 22: David's great song of deliverance, praising the Lord as his rock, fortress, and savior." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-samuel-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Samuel, Chapter 22
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Samuel · Chapter 22</span>
+        <h1>2 Samuel 22: Song of the Rock</h1>
+        <p class="lead">David sings of the God who reached down into the floods of death and drew him out into a broad place of deliverance.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-22">
+            <span>Scripture — 2 Samuel Chapter 22</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-22">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-22-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-22-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-22-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-22-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Samuel 22 (WEB)</p>
+            <p><strong>1</strong> David spoke to Yahweh the words of this song in the day that Yahweh delivered him out of the hand of all his enemies, and out of the hand of Saul:</p>
+            <p><strong>2</strong> and he said, “Yahweh is my rock, my fortress, and my deliverer, even mine;</p>
+            <p><strong>3</strong> God, my rock, in him I will take refuge; my shield, and the horn of my salvation, my high tower, and my refuge. My savior, you save me from violence.</p>
+            <p><strong>4</strong> I will call on Yahweh, who is worthy to be praised: So shall I be saved from my enemies.</p>
+            <p><strong>5</strong> For the waves of death surrounded me. The floods of ungodliness made me afraid.</p>
+            <p><strong>6</strong> The cords of Sheol were around me. The snares of death caught me.</p>
+            <p><strong>7</strong> In my distress I called on Yahweh. Yes, I called to my God. He heard my voice out of his temple. My cry came into his ears.</p>
+            <p><strong>8</strong> Then the earth shook and trembled. The foundations of heaven quaked and were shaken, because he was angry.</p>
+            <p><strong>9</strong> Smoke went up out of his nostrils. Fire out of his mouth devoured. Coals were kindled by it.</p>
+            <p><strong>10</strong> He bowed the heavens also, and came down. Thick darkness was under his feet.</p>
+            <p><strong>11</strong> He rode on a cherub, and flew. Yes, he was seen on the wings of the wind.</p>
+            <p><strong>12</strong> He made darkness pavilions around himself: gathering of waters, and thick clouds of the skies.</p>
+            <p><strong>13</strong> At the brightness before him, coals of fire were kindled.</p>
+            <p><strong>14</strong> Yahweh thundered from heaven. The Most High uttered his voice.</p>
+            <p><strong>15</strong> He sent out arrows, and scattered them; lightning, and confused them.</p>
+            <p><strong>16</strong> Then the channels of the sea appeared. The foundations of the world were laid bare by the rebuke of Yahweh, At the blast of the breath of his nostrils.</p>
+            <p><strong>17</strong> He sent from on high and he took me. He drew me out of many waters.</p>
+            <p><strong>18</strong> He delivered me from my strong enemy, from those who hated me, for they were too mighty for me.</p>
+            <p><strong>19</strong> They came on me in the day of my calamity, but Yahweh was my support.</p>
+            <p><strong>20</strong> He also brought me out into a large place. He delivered me, because he delighted in me.</p>
+            <p><strong>21</strong> Yahweh rewarded me according to my righteousness. He rewarded me according to the cleanness of my hands.</p>
+            <p><strong>22</strong> For I have kept the ways of Yahweh, and have not wickedly departed from my God.</p>
+            <p><strong>23</strong> For all his ordinances were before me. As for his statutes, I did not depart from them.</p>
+            <p><strong>24</strong> I was also perfect toward him. I kept myself from my iniquity.</p>
+            <p><strong>25</strong> Therefore Yahweh has rewarded me according to my righteousness, According to my cleanness in his eyesight.</p>
+            <p><strong>26</strong> With the merciful you will show yourself merciful. With the perfect man you will show yourself perfect.</p>
+            <p><strong>27</strong> With the pure you will show yourself pure. With the crooked you will show yourself shrewd.</p>
+            <p><strong>28</strong> You will save the afflicted people, But your eyes are on the haughty, that you may bring them down.</p>
+            <p><strong>29</strong> For you are my lamp, Yahweh. Yahweh will light up my darkness.</p>
+            <p><strong>30</strong> For by you, I run against a troop. By my God, I leap over a wall.</p>
+            <p><strong>31</strong> As for God, his way is perfect. Yahweh’s word is tested. He is a shield to all those who take refuge in him.</p>
+            <p><strong>32</strong> For who is God, besides Yahweh? Who is a rock, besides our God?</p>
+            <p><strong>33</strong> God is my strong fortress. He makes my way perfect.</p>
+            <p><strong>34</strong> He makes his feet like hinds’ feet, and sets me on my high places.</p>
+            <p><strong>35</strong> He teaches my hands to war, so that my arms bend a bow of brass.</p>
+            <p><strong>36</strong> You have also given me the shield of your salvation. Your gentleness has made me great.</p>
+            <p><strong>37</strong> You have enlarged my steps under me. My feet have not slipped.</p>
+            <p><strong>38</strong> I have pursued my enemies and destroyed them. I didn’t turn again until they were consumed.</p>
+            <p><strong>39</strong> I have consumed them, and struck them through, so that they can’t arise. Yes, they have fallen under my feet.</p>
+            <p><strong>40</strong> For you have armed me with strength for the battle. You have subdued under me those who rose up against me.</p>
+            <p><strong>41</strong> You have also made my enemies turn their backs to me, that I might cut off those who hate me.</p>
+            <p><strong>42</strong> They looked, but there was no one to save; even to Yahweh, but he didn’t answer them.</p>
+            <p><strong>43</strong> Then I beat them as small as the dust of the earth. I crushed them as the mire of the streets, and spread them abroad.</p>
+            <p><strong>44</strong> You also have delivered me from the strivings of my people. You have kept me to be the head of the nations. A people whom I have not known will serve me.</p>
+            <p><strong>45</strong> The foreigners will submit themselves to me. As soon as they hear of me, they will obey me.</p>
+            <p><strong>46</strong> The foreigners will fade away, and will come trembling out of their close places.</p>
+            <p><strong>47</strong> Yahweh lives! Blessed be my rock! Exalted be God, the rock of my salvation,</p>
+            <p><strong>48</strong> even the God who executes vengeance for me, who brings down peoples under me,</p>
+            <p><strong>49</strong> who brings me away from my enemies. Yes, you lift me up above those who rise up against me. You deliver me from the violent man.</p>
+            <p><strong>50</strong> Therefore I will give thanks to you, Yahweh, among the nations, and will sing praises to your name.</p>
+            <p><strong>51</strong> He gives great deliverance to his king, and shows loving kindness to his anointed, to David and to his seed, forever more.”</p>
+            </div>
+            <div class="scripture-text" id="web-22-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Samuel 22 (KJV)</p>
+            <p><strong>1</strong> And David spake unto the Lord the words of this song in the day that the Lord had delivered him out of the hand of all his enemies, and out of the hand of Saul:</p>
+            <p><strong>2</strong> And he said, The Lord is my rock, and my fortress, and my deliverer;</p>
+            <p><strong>3</strong> The God of my rock; in him will I trust: he is my shield, and the horn of my salvation, my high tower, and my refuge, my saviour; thou savest me from violence.</p>
+            <p><strong>4</strong> I will call on the Lord, who is worthy to be praised: so shall I be saved from mine enemies.</p>
+            <p><strong>5</strong> When the waves of death compassed me, the floods of ungodly men made me afraid;</p>
+            <p><strong>6</strong> The sorrows of hell compassed me about; the snares of death prevented me;</p>
+            <p><strong>7</strong> In my distress I called upon the Lord, and cried to my God: and he did hear my voice out of his temple, and my cry did enter into his ears.</p>
+            <p><strong>8</strong> Then the earth shook and trembled; the foundations of heaven moved and shook, because he was wroth.</p>
+            <p><strong>9</strong> There went up a smoke out of his nostrils, and fire out of his mouth devoured: coals were kindled by it.</p>
+            <p><strong>10</strong> He bowed the heavens also, and came down; and darkness was under his feet.</p>
+            <p><strong>11</strong> And he rode upon a cherub, and did fly: and he was seen upon the wings of the wind.</p>
+            <p><strong>12</strong> And he made darkness pavilions round about him, dark waters, and thick clouds of the skies.</p>
+            <p><strong>13</strong> Through the brightness before him were coals of fire kindled.</p>
+            <p><strong>14</strong> The Lord thundered from heaven, and the most High uttered his voice.</p>
+            <p><strong>15</strong> And he sent out arrows, and scattered them; lightning, and discomfited them.</p>
+            <p><strong>16</strong> And the channels of the sea appeared, the foundations of the world were discovered, at the rebuking of the Lord, at the blast of the breath of his nostrils.</p>
+            <p><strong>17</strong> He sent from above, he took me; he drew me out of many waters;</p>
+            <p><strong>18</strong> He delivered me from my strong enemy, and from them that hated me: for they were too strong for me.</p>
+            <p><strong>19</strong> They prevented me in the day of my calamity: but the Lord was my stay.</p>
+            <p><strong>20</strong> He brought me forth also into a large place: he delivered me, because he delighted in me.</p>
+            <p><strong>21</strong> The Lord rewarded me according to my righteousness: according to the cleanness of my hands hath he recompensed me.</p>
+            <p><strong>22</strong> For I have kept the ways of the Lord, and have not wickedly departed from my God.</p>
+            <p><strong>23</strong> For all his judgments were before me: and as for his statutes, I did not depart from them.</p>
+            <p><strong>24</strong> I was also upright before him, and have kept myself from mine iniquity.</p>
+            <p><strong>25</strong> Therefore the Lord hath recompensed me according to my righteousness; according to my cleanness in his eye sight.</p>
+            <p><strong>26</strong> With the merciful thou wilt shew thyself merciful, and with the upright man thou wilt shew thyself upright.</p>
+            <p><strong>27</strong> With the pure thou wilt shew thyself pure; and with the froward thou wilt shew thyself unsavoury.</p>
+            <p><strong>28</strong> And the afflicted people thou wilt save: but thine eyes are upon the haughty, that thou mayest bring them down.</p>
+            <p><strong>29</strong> For thou art my lamp, O Lord: and the Lord will lighten my darkness.</p>
+            <p><strong>30</strong> For by thee I have run through a troop: by my God have I leaped over a wall.</p>
+            <p><strong>31</strong> As for God, his way is perfect; the word of the Lord is tried: he is a buckler to all them that trust in him.</p>
+            <p><strong>32</strong> For who is God, save the Lord? and who is a rock, save our God?</p>
+            <p><strong>33</strong> God is my strength and power: and he maketh my way perfect.</p>
+            <p><strong>34</strong> He maketh my feet like hinds’ feet: and setteth me upon my high places.</p>
+            <p><strong>35</strong> He teacheth my hands to war; so that a bow of steel is broken by mine arms.</p>
+            <p><strong>36</strong> Thou hast also given me the shield of thy salvation: and thy gentleness hath made me great.</p>
+            <p><strong>37</strong> Thou hast enlarged my steps under me; so that my feet did not slip.</p>
+            <p><strong>38</strong> I have pursued mine enemies, and destroyed them; and turned not again until I had consumed them.</p>
+            <p><strong>39</strong> And I have consumed them, and wounded them, that they could not arise: yea, they are fallen under my feet.</p>
+            <p><strong>40</strong> For thou hast girded me with strength to battle: them that rose up against me hast thou subdued under me.</p>
+            <p><strong>41</strong> Thou hast also given me the necks of mine enemies, that I might destroy them that hate me.</p>
+            <p><strong>42</strong> They looked, but there was none to save; even unto the Lord, but he answered them not.</p>
+            <p><strong>43</strong> Then did I beat them as small as the dust of the earth, I did stamp them as the mire of the street, and did spread them abroad.</p>
+            <p><strong>44</strong> Thou also hast delivered me from the strivings of my people, thou hast kept me to be head of the heathen: a people which I knew not shall serve me.</p>
+            <p><strong>45</strong> Strangers shall submit themselves unto me: as soon as they hear, they shall be obedient unto me.</p>
+            <p><strong>46</strong> Strangers shall fade away, and they shall be afraid out of their close places.</p>
+            <p><strong>47</strong> The Lord liveth; and blessed be my rock; and exalted be the God of the rock of my salvation.</p>
+            <p><strong>48</strong> It is God that avengeth me, and that bringeth down the people under me,</p>
+            <p><strong>49</strong> And that bringeth me forth from mine enemies: thou also hast lifted me up on high above them that rose up against me: thou hast delivered me from the violent man.</p>
+            <p><strong>50</strong> Therefore I will give thanks unto thee, O Lord, among the heathen, and I will sing praises unto thy name.</p>
+            <p><strong>51</strong> He is the tower of salvation for his king: and sheweth mercy to his anointed, unto David, and to his seed for evermore.</p>
+            </div>
+            <div class="scripture-text" id="web-22-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Samuel 22 (ASV)</p>
+            <p><strong>1</strong> And David spake unto Jehovah the words of this song in the day that Jehovah delivered him out of the hand of all his enemies, and out of the hand of Saul:</p>
+            <p><strong>2</strong> and he said, Jehovah is my rock, and my fortress, and my deliverer, even mine;</p>
+            <p><strong>3</strong> God, my rock, in him will I take refuge; My shield, and the horn of my salvation, my high tower, and my refuge; My saviour, thou savest me from violence.</p>
+            <p><strong>4</strong> I will call upon Jehovah, who is worthy to be praised: So shall I be saved from mine enemies.</p>
+            <p><strong>5</strong> For the waves of death compassed me; The floods of ungodliness made me afraid:</p>
+            <p><strong>6</strong> The cords of Sheol were round about me; The snares of death came upon me.</p>
+            <p><strong>7</strong> In my distress I called upon Jehovah; Yea, I called unto my God: And he heard my voice out of his temple, And my crycameinto his ears.</p>
+            <p><strong>8</strong> Then the earth shook and trembled, The foundations of heaven quaked And were shaken, because he was wroth.</p>
+            <p><strong>9</strong> There went up a smoke out of his nostrils, And fire out of his mouth devoured: Coals were kindled by it.</p>
+            <p><strong>10</strong> He bowed the heavens also, and came down; And thick darkness was under his feet.</p>
+            <p><strong>11</strong> And he rode upon a cherub, and did fly; Yea, he was seen upon the wings of the wind.</p>
+            <p><strong>12</strong> And he made darkness pavilions round about him, Gathering of waters, thick clouds of the skies.</p>
+            <p><strong>13</strong> At the brightness before him Coals of fire were kindled.</p>
+            <p><strong>14</strong> Jehovah thundered from heaven, And the Most High uttered his voice.</p>
+            <p><strong>15</strong> And he sent out arrows, and scattered them; Lightning, and discomfited them.</p>
+            <p><strong>16</strong> Then the channels of the sea appeared, The foundations of the world were laid bare, By the rebuke of Jehovah, At the blast of the breath of his nostrils.</p>
+            <p><strong>17</strong> He sent from on high, he took me; He drew me out of many waters;</p>
+            <p><strong>18</strong> He delivered me from my strong enemy, From them that hated me; for they were too mighty for me.</p>
+            <p><strong>19</strong> They came upon me in the day of my calamity; But Jehovah was my stay.</p>
+            <p><strong>20</strong> He brought me forth also into a large place; He delivered me, because he delighted in me.</p>
+            <p><strong>21</strong> Jehovah rewarded me according to my righteousness; According to the cleanness of my hands hath he recompensed me.</p>
+            <p><strong>22</strong> For I have kept the ways of Jehovah, And have not wickedly departed from my God.</p>
+            <p><strong>23</strong> For all his ordinances were before me; And as for his statutes, I did not depart from them.</p>
+            <p><strong>24</strong> I was also perfect toward him; And I kept myself from mine iniquity.</p>
+            <p><strong>25</strong> Therefore hath Jehovah recompensed me according to my righteousness, According to my cleanness in his eyesight.</p>
+            <p><strong>26</strong> With the merciful thou wilt show thyself merciful; With the perfect man thou wilt show thyself perfect;</p>
+            <p><strong>27</strong> With the pure thou wilt show thyself pure; And with the perverse thou wilt show thyself froward.</p>
+            <p><strong>28</strong> And the afflicted people thou wilt save; But thine eyes are upon the haughty, that thou mayest bring them down.</p>
+            <p><strong>29</strong> For thou art my lamp, O Jehovah; And Jehovah will lighten my darkness.</p>
+            <p><strong>30</strong> For by thee I run upon a troop; By my God do I leap over a wall.</p>
+            <p><strong>31</strong> As for God, his way is perfect: The word of Jehovah is tried; He is a shield unto all them that take refuge in him.</p>
+            <p><strong>32</strong> For who is God, save Jehovah? And who is a rock, save our God?</p>
+            <p><strong>33</strong> God is my strong fortress; And he guideth the perfect in his way.</p>
+            <p><strong>34</strong> He maketh his feet like hinds’ feet, And setteth me upon my high places.</p>
+            <p><strong>35</strong> He teacheth my hands to war, So that mine arms do bend a bow of brass.</p>
+            <p><strong>36</strong> Thou hast also given me the shield of thy salvation; And thy gentleness hath made me great.</p>
+            <p><strong>37</strong> Thou hast enlarged my steps under me; And my feet have not slipped.</p>
+            <p><strong>38</strong> I have pursued mine enemies, and destroyed them; Neither did I turn again till they were consumed.</p>
+            <p><strong>39</strong> And I have consumed them, and smitten them through, so that they cannot arise: Yea, they are fallen under my feet.</p>
+            <p><strong>40</strong> For thou hast girded me with strength unto the battle; Thou hast subdued under me those that rose up against me.</p>
+            <p><strong>41</strong> Thou hast also made mine enemies turn their backs unto me, That I might cut off them that hate me.</p>
+            <p><strong>42</strong> They looked, but there was none to save; Even unto Jehovah, but he answered them not.</p>
+            <p><strong>43</strong> Then did I beat them small as the dust of the earth, I did crush them as the mire of the streets, and did spread them abroad.</p>
+            <p><strong>44</strong> Thou also hast delivered me from the strivings of my people; Thou hast kept me to be the head of the nations: A people whom I have not known shall serve me.</p>
+            <p><strong>45</strong> The foreigners shall submit themselves unto me: As soon as they hear of me, they shall obey me.</p>
+            <p><strong>46</strong> The foreigners shall fade away, And shall come trembling out of their close places.</p>
+            <p><strong>47</strong> Jehovah liveth; And blessed be my rock; And exalted be God, the rock of my salvation,</p>
+            <p><strong>48</strong> Even the God that executeth vengeance for me, And that bringeth down peoples under me,</p>
+            <p><strong>49</strong> And that bringeth me forth from mine enemies: Yea, thou liftest me up above them that rise up against me; Thou deliverest me from the violent man.</p>
+            <p><strong>50</strong> Therefore I will give thanks unto thee, O Jehovah, among the nations, And will sing praises unto thy name.</p>
+            <p><strong>51</strong> Great deliverance giveth he to his king, And showeth lovingkindness to his anointed, To David and to his seed, for evermore.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Looking back over a lifetime of rescue, David sings a great song to Yahweh on the day the Lord delivered him from all his enemies and from Saul. He heaps up images of refuge: the Lord is his rock, his fortress, his deliverer, his shield, the horn of his salvation, and his high tower. He recalls being encircled by the cords of death and the floods of destruction, crying out in distress, and God hearing his voice from his temple. Then comes a magnificent picture of God descending in power, the earth shaking, smoke and fire and thunder accompanying his rescue, reaching down from on high to draw David out of many waters and bring him into a broad place because he delighted in him. David praises God's perfect way and tested word, the shield for all who take refuge in him, and confesses that it is God who arms him, makes his way perfect, and gives him strength for battle. The song ends with thanksgiving among the nations and a note of covenant hope: the Lord shows loving kindness to his anointed, to David and to his seed forevermore.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The singer and worshiper, who recounts a lifetime of God's deliverances and pours out praise to the Lord his rock and savior.</li>
+          <li><strong>Yahweh, the Rock</strong> — The covenant God celebrated throughout the song as fortress, deliverer, shield, and high tower, who descends in power to rescue his servant.</li>
+          <li><strong>The anointed and his seed</strong> — David and his descendants, to whom God shows enduring loving kindness, a covenant line reaching forward to the Messiah.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Samuel 22:2 (WEB)</p>
+          <p class="verse__text">and he said,  “Yahweh is my rock, my fortress, and my deliverer, even mine;</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Looking back over our deliverances fuels heartfelt worship and strengthens present faith.</li>
+          <li>God is a sure refuge, a rock and fortress for all who take shelter in him.</li>
+          <li>The Lord hears the cry of the distressed and bends the heavens to bring rescue.</li>
+          <li>Our deliverance flows from God's delight in us, not merely from our merit.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-22">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-22">
+            <ul class="lesson-list">
+            <li><strong>God is our unshakable refuge.</strong> “Yahweh is my rock, my fortress, and my deliverer” (2 Samuel 22:2, WEB). David's many names for God all confess one truth: the Lord himself is our security.</li>
+            <li><strong>God hears the cry of the distressed.</strong> “In my distress I called on Yahweh… He heard my voice out of his temple” (2 Samuel 22:7, WEB). No cry from the depths goes unheard by him.</li>
+            <li><strong>God delights to deliver his own.</strong> “He delivered me, because he delighted in me” (2 Samuel 22:20, WEB). Our rescue rests on God's gracious delight, not on our deserving.</li>
+            <li><strong>God's word and way are perfect.</strong> “As for God, his way is perfect. Yahweh’s word is tested. He is a shield to all those who take refuge in him” (2 Samuel 22:31, WEB). His reliability invites our whole trust.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-22">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-22">
+            <ol class="study-questions">
+            <li>What images does David use for God in the opening verses, and what do they together say about who God is to him?</li>
+            <li>How does David describe God's coming to rescue him, and what does this dramatic picture convey?</li>
+            <li>What does it mean that God delivered David “because he delighted in me” (22:20)?</li>
+            <li>How do the closing verses about God's anointed and his seed point beyond David himself?</li>
+            <li>Looking back over your own life, what deliverances can you name that move you to praise God as your rock and refuge?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-22">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-22">
+            <ol class="study-questions">
+            <li>David piles up rock, fortress, deliverer, shield, horn of salvation, and high tower (22:2-3), each a picture of safety and strength. Together they confess that his whole security rests not in his army or skill but in God himself, who is a personal and sufficient refuge.</li>
+            <li>He depicts God bending the heavens, the earth quaking, smoke and fire and thunder, then reaching down to draw him from many waters (22:8-17). The cosmic imagery magnifies how powerfully and personally God acts to save, treating one man's rescue as worthy of heaven's full might.</li>
+            <li>David grounds his deliverance not in his own worth but in God's delight in him (22:20). It teaches that the foundation of our rescue is God's gracious love, freeing us from anxiously earning his help and inviting us to rest in being delighted in.</li>
+            <li>The song closes with God's loving kindness to “his anointed, to David and to his seed, forever more” (22:51). This covenant promise reaches beyond David to his greater Son, Jesus the Messiah, in whom the steadfast love of God finds its fullest and final expression.</li>
+            <li>This is a personal-application question. David's worship flowed from remembering concrete rescues. Invite members to recall specific times God delivered or sustained them and to turn those memories into praise. As leader, encourage the group to make remembrance a regular fuel for worship and renewed trust.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-samuel-21.html">← 2 Samuel 21</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-samuel-23.html">2 Samuel 23 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

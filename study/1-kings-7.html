@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Kings 7: Pillars, Sea, and Gold — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Kings 7: Solomon builds his palace and, with the craftsman Hiram, makes the temple's bronze pillars, sea, stands, and gold vessels." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-kings-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Kings, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Kings · Chapter 7</span>
+        <h1>1 Kings 7: Pillars, Sea, and Gold</h1>
+        <p class="lead">Solomon builds his palace complex and, through the skilled craftsman Hiram, fashions the temple's bronze pillars, the molten sea, and its golden vessels.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — 1 Kings Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Kings 7 (WEB)</p>
+            <p><strong>1</strong> Solomon was building his own house thirteen years, and he finished all his house.</p>
+            <p><strong>2</strong> For he built the house of the forest of Lebanon; its length was one hundred cubits, and its breadth fifty cubits, and its height thirty cubits, on four rows of cedar pillars, with cedar beams on the pillars.</p>
+            <p><strong>3</strong> It was covered with cedar above over the forty-five beams, that were on the pillars; fifteen in a row.</p>
+            <p><strong>4</strong> There were beams in three rows, and window was over against window in three ranks.</p>
+            <p><strong>5</strong> All the doors and posts were made square with beams: and window was over against window in three ranks.</p>
+            <p><strong>6</strong> He made the porch of pillars; its length was fifty cubits, and its breadth thirty cubits; and a porch before them; and pillars and a threshold before them.</p>
+            <p><strong>7</strong> He made the porch of the throne where he was to judge, even the porch of judgment: and it was covered with cedar from floor to floor.</p>
+            <p><strong>8</strong> His house where he was to dwell, the other court within the porch, was of the like work. He made also a house for Pharaoh’s daughter (whom Solomon had taken as wife), like this porch.</p>
+            <p><strong>9</strong> All these were of costly stones, even of cut stone, according to measure, sawed with saws, inside and outside, even from the foundation to the coping, and so on the outside to the great court.</p>
+            <p><strong>10</strong> The foundation was of costly stones, even great stones, stones of ten cubits, and stones of eight cubits.</p>
+            <p><strong>11</strong> Above were costly stones, even cut stone, according to measure, and cedar wood.</p>
+            <p><strong>12</strong> The great court around had three courses of cut stone, and a course of cedar beams; like as the inner court of Yahweh’s house, and the porch of the house.</p>
+            <p><strong>13</strong> King Solomon sent and fetched Hiram out of Tyre.</p>
+            <p><strong>14</strong> He was the son of a widow of the tribe of Naphtali, and his father was a man of Tyre, a worker in brass; and he was filled with wisdom and understanding and skill, to work all works in brass. He came to king Solomon, and performed all his work.</p>
+            <p><strong>15</strong> For he fashioned the two pillars of brass, eighteen cubits high apiece: and a line of twelve cubits encircled either of them about.</p>
+            <p><strong>16</strong> He made two capitals of molten brass, to set on the tops of the pillars: the height of the one capital was five cubits, and the height of the other capital was five cubits.</p>
+            <p><strong>17</strong> There were nets of checker work, and wreaths of chain work, for the capitals which were on the top of the pillars; seven for the one capital, and seven for the other capital.</p>
+            <p><strong>18</strong> So he made the pillars; and there were two rows around on the one network, to cover the capitals that were on the top of the pillars: and he did so for the other capital.</p>
+            <p><strong>19</strong> The capitals that were on the top of the pillars in the porch were of lily work, four cubits.</p>
+            <p><strong>20</strong> There were capitals above also on the two pillars, close by the belly which was beside the network: and the pomegranates were two hundred, in rows around on the other capital.</p>
+            <p><strong>21</strong> He set up the pillars at the porch of the temple: and he set up the right pillar, and called its name Jachin; and he set up the left pillar, and called its name Boaz.</p>
+            <p><strong>22</strong> On the top of the pillars was lily work: so was the work of the pillars finished.</p>
+            <p><strong>23</strong> He made the molten sea of ten cubits from brim to brim, round in compass, and its height was five cubits; and a line of thirty cubits encircled it.</p>
+            <p><strong>24</strong> Under its brim around there were buds which encircled it, for ten cubits, encircling the sea: the buds were in two rows, cast when it was cast.</p>
+            <p><strong>25</strong> It stood on twelve oxen, three looking toward the north, and three looking toward the west, and three looking toward the south, and three looking toward the east; and the sea was set on them above, and all their hinder parts were inward.</p>
+            <p><strong>26</strong> It was a hand breadth thick: and its brim was worked like the brim of a cup, like the flower of a lily: it held two thousand baths.</p>
+            <p><strong>27</strong> He made the ten bases of brass; four cubits was the length of one base, and four cubits its breadth, and three cubits its height.</p>
+            <p><strong>28</strong> The work of the bases was like this: they had panels; and there were panels between the ledges;</p>
+            <p><strong>29</strong> and on the panels that were between the ledges were lions, oxen, and cherubim; and on the ledges there was a pedestal above; and beneath the lions and oxen were wreaths of hanging work.</p>
+            <p><strong>30</strong> Every base had four bronze wheels, and axles of brass; and the four feet of it had supports: beneath the basin were the supports molten, with wreaths at the side of each.</p>
+            <p><strong>31</strong> The mouth of it within the capital and above was a cubit: and its mouth was round after the work of a pedestal, a cubit and a half; and also on its mouth were engravings, and their panels were square, not round.</p>
+            <p><strong>32</strong> The four wheels were underneath the panels; and the axles of the wheels were in the base: and the height of a wheel was a cubit and half a cubit.</p>
+            <p><strong>33</strong> The work of the wheels was like the work of a chariot wheel: their axles, and their rims, and their spokes, and their naves, were all molten.</p>
+            <p><strong>34</strong> There were four supports at the four corners of each base: its supports were of the base itself.</p>
+            <p><strong>35</strong> In the top of the base was there a round compass half a cubit high; and on the top of the base its stays and its panels were of the same.</p>
+            <p><strong>36</strong> On the plates of its stays, and on its panels, he engraved cherubim, lions, and palm trees, according to the space of each, with wreaths all around.</p>
+            <p><strong>37</strong> In this way, he made the ten bases: all of them had one casting, one measure, and one form.</p>
+            <p><strong>38</strong> He made ten basins of brass: one basin contained forty baths; and every basin was four cubits; and on every one of the ten bases one basin.</p>
+            <p><strong>39</strong> He set the bases, five on the right side of the house, and five on the left side of the house: and he set the sea on the right side of the house eastward, toward the south.</p>
+            <p><strong>40</strong> Hiram made the basins, and the shovels, and the basins. So Hiram made an end of doing all the work that he worked for king Solomon in Yahweh’s house:</p>
+            <p><strong>41</strong> the two pillars, and the two bowls of the capitals that were on the top of the pillars; and the two networks to cover the two bowls of the capitals that were on the top of the pillars;</p>
+            <p><strong>42</strong> and the four hundred pomegranates for the two networks; two rows of pomegranates for each network, to cover the two bowls of the capitals that were on the pillars;</p>
+            <p><strong>43</strong> and the ten bases, and the ten basins on the bases;</p>
+            <p><strong>44</strong> and the one sea, and the twelve oxen under the sea;</p>
+            <p><strong>45</strong> and the pots, and the shovels, and the basins: even all these vessels, which Hiram made for king Solomon, in Yahweh’s house, were of burnished brass.</p>
+            <p><strong>46</strong> The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.</p>
+            <p><strong>47</strong> Solomon left all the vessels unweighed, because they were exceeding many: the weight of the brass could not be found out.</p>
+            <p><strong>48</strong> Solomon made all the vessels that were in Yahweh’s house: the golden altar, and the table whereupon the show bread was, of gold;</p>
+            <p><strong>49</strong> and the lamp stands, five on the right side, and five on the left, before the oracle, of pure gold; and the flowers, and the lamps, and the tongs, of gold;</p>
+            <p><strong>50</strong> and the cups, and the snuffers, and the basins, and the spoons, and the fire pans, of pure gold; and the hinges, both for the doors of the inner house, the most holy place, and for the doors of the house, of the temple, of gold.</p>
+            <p><strong>51</strong> Thus all the work that king Solomon worked in Yahweh’s house was finished. Solomon brought in the things which David his father had dedicated, the silver, and the gold, and the vessels, and put them in the treasuries of Yahweh’s house.</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Kings 7 (KJV)</p>
+            <p><strong>1</strong> But Solomon was building his own house thirteen years, and he finished all his house.</p>
+            <p><strong>2</strong> He built also the house of the forest of Lebanon; the length thereof was an hundred cubits, and the breadth thereof fifty cubits, and the height thereof thirty cubits, upon four rows of cedar pillars, with cedar beams upon the pillars.</p>
+            <p><strong>3</strong> And it was covered with cedar above upon the beams, that lay on forty five pillars, fifteen in a row.</p>
+            <p><strong>4</strong> And there were windows in three rows, and light was against light in three ranks.</p>
+            <p><strong>5</strong> And all the doors and posts were square, with the windows: and light was against light in three ranks.</p>
+            <p><strong>6</strong> And he made a porch of pillars; the length thereof was fifty cubits, and the breadth thereof thirty cubits: and the porch was before them: and the other pillars and the thick beam were before them.</p>
+            <p><strong>7</strong> Then he made a porch for the throne where he might judge, even the porch of judgment: and it was covered with cedar from one side of the floor to the other.</p>
+            <p><strong>8</strong> And his house where he dwelt had another court within the porch, which was of the like work. Solomon made also an house for Pharaoh’s daughter, whom he had taken to wife, like unto this porch.</p>
+            <p><strong>9</strong> All these were of costly stones, according to the measures of hewed stones, sawed with saws, within and without, even from the foundation unto the coping, and so on the outside toward the great court.</p>
+            <p><strong>10</strong> And the foundation was of costly stones, even great stones, stones of ten cubits, and stones of eight cubits.</p>
+            <p><strong>11</strong> And above were costly stones, after the measures of hewed stones, and cedars.</p>
+            <p><strong>12</strong> And the great court round about was with three rows of hewed stones, and a row of cedar beams, both for the inner court of the house of the Lord, and for the porch of the house.</p>
+            <p><strong>13</strong> And king Solomon sent and fetched Hiram out of Tyre.</p>
+            <p><strong>14</strong> He was a widow’s son of the tribe of Naphtali, and his father was a man of Tyre, a worker in brass: and he was filled with wisdom, and understanding, and cunning to work all works in brass. And he came to king Solomon, and wrought all his work.</p>
+            <p><strong>15</strong> For he cast two pillars of brass, of eighteen cubits high apiece: and a line of twelve cubits did compass either of them about.</p>
+            <p><strong>16</strong> And he made two chapiters of molten brass, to set upon the tops of the pillars: the height of the one chapiter was five cubits, and the height of the other chapiter was five cubits:</p>
+            <p><strong>17</strong> And nets of checker work, and wreaths of chain work, for the chapiters which were upon the top of the pillars; seven for the one chapiter, and seven for the other chapiter.</p>
+            <p><strong>18</strong> And he made the pillars, and two rows round about upon the one network, to cover the chapiters that were upon the top, with pomegranates: and so did he for the other chapiter.</p>
+            <p><strong>19</strong> And the chapiters that were upon the top of the pillars were of lily work in the porch, four cubits.</p>
+            <p><strong>20</strong> And the chapiters upon the two pillars had pomegranates also above, over against the belly which was by the network: and the pomegranates were two hundred in rows round about upon the other chapiter.</p>
+            <p><strong>21</strong> And he set up the pillars in the porch of the temple: and he set up the right pillar, and called the name thereof Jachin: and he set up the left pillar, and called the name thereof Boaz.</p>
+            <p><strong>22</strong> And upon the top of the pillars was lily work: so was the work of the pillars finished.</p>
+            <p><strong>23</strong> And he made a molten sea, ten cubits from the one brim to the other: it was round all about, and his height was five cubits: and a line of thirty cubits did compass it round about.</p>
+            <p><strong>24</strong> And under the brim of it round about there were knops compassing it, ten in a cubit, compassing the sea round about: the knops were cast in two rows, when it was cast.</p>
+            <p><strong>25</strong> It stood upon twelve oxen, three looking toward the north, and three looking toward the west, and three looking toward the south, and three looking toward the east: and the sea was set above upon them, and all their hinder parts were inward.</p>
+            <p><strong>26</strong> And it was an hand breadth thick, and the brim thereof was wrought like the brim of a cup, with flowers of lilies: it contained two thousand baths.</p>
+            <p><strong>27</strong> And he made ten bases of brass; four cubits was the length of one base, and four cubits the breadth thereof, and three cubits the height of it.</p>
+            <p><strong>28</strong> And the work of the bases was on this manner: they had borders, and the borders were between the ledges:</p>
+            <p><strong>29</strong> And on the borders that were between the ledges were lions, oxen, and cherubims: and upon the ledges there was a base above: and beneath the lions and oxen were certain additions made of thin work.</p>
+            <p><strong>30</strong> And every base had four brasen wheels, and plates of brass: and the four corners thereof had undersetters: under the laver were undersetters molten, at the side of every addition.</p>
+            <p><strong>31</strong> And the mouth of it within the chapiter and above was a cubit: but the mouth thereof was round after the work of the base, a cubit and an half: and also upon the mouth of it were gravings with their borders, foursquare, not round.</p>
+            <p><strong>32</strong> And under the borders were four wheels; and the axletrees of the wheels were joined to the base: and the height of a wheel was a cubit and half a cubit.</p>
+            <p><strong>33</strong> And the work of the wheels was like the work of a chariot wheel: their axletrees, and their naves, and their felloes, and their spokes, were all molten.</p>
+            <p><strong>34</strong> And there were four undersetters to the four corners of one base: and the undersetters were of the very base itself.</p>
+            <p><strong>35</strong> And in the top of the base was there a round compass of half a cubit high: and on the top of the base the ledges thereof and the borders thereof were of the same.</p>
+            <p><strong>36</strong> For on the plates of the ledges thereof, and on the borders thereof, he graved cherubims, lions, and palm trees, according to the proportion of every one, and additions round about.</p>
+            <p><strong>37</strong> After this manner he made the ten bases: all of them had one casting, one measure, and one size.</p>
+            <p><strong>38</strong> Then made he ten lavers of brass: one laver contained forty baths: and every laver was four cubits: and upon every one of the ten bases one laver.</p>
+            <p><strong>39</strong> And he put five bases on the right side of the house, and five on the left side of the house: and he set the sea on the right side of the house eastward over against the south.</p>
+            <p><strong>40</strong> And Hiram made the lavers, and the shovels, and the basons. So Hiram made an end of doing all the work that he made king Solomon for the house of the Lord:</p>
+            <p><strong>41</strong> The two pillars, and the two bowls of the chapiters that were on the top of the two pillars; and the two networks, to cover the two bowls of the chapiters which were upon the top of the pillars;</p>
+            <p><strong>42</strong> And four hundred pomegranates for the two networks, even two rows of pomegranates for one network, to cover the two bowls of the chapiters that were upon the pillars;</p>
+            <p><strong>43</strong> And the ten bases, and ten lavers on the bases;</p>
+            <p><strong>44</strong> And one sea, and twelve oxen under the sea;</p>
+            <p><strong>45</strong> And the pots, and the shovels, and the basons: and all these vessels, which Hiram made to king Solomon for the house of the Lord, were of bright brass.</p>
+            <p><strong>46</strong> In the plain of Jordan did the king cast them, in the clay ground between Succoth and Zarthan.</p>
+            <p><strong>47</strong> And Solomon left all the vessels unweighed, because they were exceeding many: neither was the weight of the brass found out.</p>
+            <p><strong>48</strong> And Solomon made all the vessels that pertained unto the house of the Lord: the altar of gold, and the table of gold, whereupon the shewbread was,</p>
+            <p><strong>49</strong> And the candlesticks of pure gold, five on the right side, and five on the left, before the oracle, with the flowers, and the lamps, and the tongs of gold,</p>
+            <p><strong>50</strong> And the bowls, and the snuffers, and the basons, and the spoons, and the censers of pure gold; and the hinges of gold, both for the doors of the inner house, the most holy place, and for the doors of the house, to wit, of the temple.</p>
+            <p><strong>51</strong> So was ended all the work that king Solomon made for the house of the Lord. And Solomon brought in the things which David his father had dedicated; even the silver, and the gold, and the vessels, did he put among the treasures of the house of the Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Kings 7 (ASV)</p>
+            <p><strong>1</strong> And Solomon was building his own house thirteen years, and he finished all his house.</p>
+            <p><strong>2</strong> For he built the house of the forest of Lebanon; the length thereof was a hundred cubits, and the breadth thereof fifty cubits, and the height thereof thirty cubits, upon four rows of cedar pillars, with cedar beams upon the pillars.</p>
+            <p><strong>3</strong> And it was covered with cedar above over the forty and five beams, that were upon the pillars; fifteen in a row.</p>
+            <p><strong>4</strong> And there were beams in three rows, and window was over against window in three ranks.</p>
+            <p><strong>5</strong> And all the doors and posts were made square with beams: and window was over against window in three ranks.</p>
+            <p><strong>6</strong> And he made the porch of pillars; the length thereof was fifty cubits, and the breadth thereof thirty cubits; and a porch before them; and pillars and a threshold before them.</p>
+            <p><strong>7</strong> And he made the porch of the throne where he was to judge, even the porch of judgment: and it was covered with cedar from floor to floor.</p>
+            <p><strong>8</strong> And his house where he was to dwell, the other court within the porch, was of the like work. He made also a house for Pharaoh’s daughter (whom Solomon had taken to wife), like unto this porch.</p>
+            <p><strong>9</strong> All these were of costly stones, even of hewn stone, according to measure, sawed with saws, within and without, even from the foundation unto the coping, and so on the outside unto the great court.</p>
+            <p><strong>10</strong> And the foundation was of costly stones, even great stones, stones of ten cubits, and stones of eight cubits.</p>
+            <p><strong>11</strong> And above were costly stones, even hewn stone, according to measure, and cedar-wood.</p>
+            <p><strong>12</strong> And the great court round about had three courses of hewn stone, and a course of cedar beams; like as the inner court of the house of Jehovah, and the porch of the house.</p>
+            <p><strong>13</strong> And king Solomon sent and fetched Hiram out of Tyre.</p>
+            <p><strong>14</strong> He was the son of a widow of the tribe of Naphtali, and his father was a man of Tyre, a worker in brass; and he was filled with wisdom and understanding and skill, to work all works in brass. And he came to king Solomon, and wrought all his work.</p>
+            <p><strong>15</strong> For he fashioned the two pillars of brass, eighteen cubits high apiece: and a line of twelve cubits compassed either of them about.</p>
+            <p><strong>16</strong> And he made two capitals of molten brass, to set upon the tops of the pillars: the height of the one capital was five cubits, and the height of the other capital was five cubits.</p>
+            <p><strong>17</strong> There were nets of checker-work, and wreaths of chain-work, for the capitals which were upon the top of the pillars; seven for the one capital, and seven for the other capital.</p>
+            <p><strong>18</strong> So he made the pillars; and there were two rows round about upon the one network, to cover the capitals that were upon the top of the pillars: and so did he for the other capital.</p>
+            <p><strong>19</strong> And the capitals that were upon the top of the pillars in the porch were of lily-work, four cubits.</p>
+            <p><strong>20</strong> And there were capitals above also upon the two pillars, close by the belly which was beside the network: and the pomegranates were two hundred, in rows round about upon the other capital.</p>
+            <p><strong>21</strong> And he set up the pillars at the porch of the temple: and he set up the right pillar, and called the name thereof Jachin; and he set up the left pillar, and called the name thereof Boaz.</p>
+            <p><strong>22</strong> And upon the top of the pillars was lily-work: so was the work of the pillars finished.</p>
+            <p><strong>23</strong> And he made the molten sea of ten cubits from brim to brim, round in compass, and the height thereof was five cubits; and a line of thirty cubits compassed it round about.</p>
+            <p><strong>24</strong> And under the brim of it round about there were knops which did compass it, for ten cubits, compassing the sea round about: the knops were in two rows, cast when it was cast.</p>
+            <p><strong>25</strong> It stood upon twelve oxen, three looking toward the north, and three looking toward the west, and three looking toward the south, and three looking toward the east; and the sea was set upon them above, and all their hinder parts were inward.</p>
+            <p><strong>26</strong> And it was a handbreadth thick: and the brim thereof was wrought like the brim of a cup, like the flower of a lily: it held two thousand baths.</p>
+            <p><strong>27</strong> And he made the ten bases of brass; four cubits was the length of one base, and four cubits the breadth thereof, and three cubits the height of it.</p>
+            <p><strong>28</strong> And the work of the bases was on this manner: they had panels; and there were panels between the ledges;</p>
+            <p><strong>29</strong> and on the panels that were between the ledges were lions, oxen, and cherubim; and upon the ledges there was a pedestal above; and beneath the lions and oxen were wreaths of hanging work.</p>
+            <p><strong>30</strong> And every base had four brazen wheels, and axles of brass; and the four feet thereof had undersetters: beneath the laver were the undersetters molten, with wreaths at the side of each.</p>
+            <p><strong>31</strong> And the mouth of it within the capital and above was a cubit: and the mouth thereof was round after the work of a pedestal, a cubit and a half; and also upon the mouth of it were gravings, and their panels were foursquare, not round.</p>
+            <p><strong>32</strong> And the four wheels were underneath the panels; and the axletrees of the wheels were in the base: and the height of a wheel was a cubit and half a cubit.</p>
+            <p><strong>33</strong> And the work of the wheels was like the work of a chariot wheel: their axletrees, and their felloes, and their spokes, and their naves, were all molten.</p>
+            <p><strong>34</strong> And there were four undersetters at the four corners of each base: the undersetters thereof were of the base itself.</p>
+            <p><strong>35</strong> And in the top of the base was there a round compass half a cubit high; and on the top of the base the stays thereof and the panels thereof were of the same.</p>
+            <p><strong>36</strong> And on the plates of the stays thereof, and on the panels thereof, he graved cherubim, lions, and palm-trees, according to the space of each, with wreaths round about.</p>
+            <p><strong>37</strong> After this manner he made the ten bases: all of them had one casting, one measure, and one form.</p>
+            <p><strong>38</strong> And he made ten lavers of brass: one laver contained forty baths; and every laver was four cubits; and upon every one of the ten bases one laver.</p>
+            <p><strong>39</strong> And he set the bases, five on the right side of the house, and five on the left side of the house: and he set the sea on the right side of the house eastward, toward the south.</p>
+            <p><strong>40</strong> And Hiram made the lavers, and the shovels, and the basins. So Hiram made an end of doing all the work that he wrought for king Solomon in the house of Jehovah:</p>
+            <p><strong>41</strong> the two pillars, and the two bowls of the capitals that were on the top of the pillars; and the two networks to cover the two bowls of the capitals that were on the top of the pillars;</p>
+            <p><strong>42</strong> and the four hundred pomegranates for the two networks; two rows of pomegranates for each network, to cover the two bowls of the capitals that were upon the pillars;</p>
+            <p><strong>43</strong> and the ten bases, and the ten lavers on the bases;</p>
+            <p><strong>44</strong> and the one sea, and the twelve oxen under the sea;</p>
+            <p><strong>45</strong> and the pots, and the shovels, and the basins: even all these vessels, which Hiram made for king Solomon, in the house of Jehovah, were of burnished brass.</p>
+            <p><strong>46</strong> In the plain of the Jordan did the king cast them, in the clay ground between Succoth and Zarethan.</p>
+            <p><strong>47</strong> And Solomon left all the vessels unweighed, because they were exceeding many: the weight of the brass could not be found out.</p>
+            <p><strong>48</strong> And Solomon made all the vessels that were in the house of Jehovah: the golden altar, and the table whereupon the showbread was, of gold;</p>
+            <p><strong>49</strong> and the candlesticks, five on the right side, and five on the left, before the oracle, of pure gold; and the flowers, and the lamps, and the tongs, of gold;</p>
+            <p><strong>50</strong> and the cups, and the snuffers, and the basins, and the spoons, and the firepans, of pure gold; and the hinges, both for the doors of the inner house, the most holy place, and for the doors of the house, to wit, of the temple, of gold.</p>
+            <p><strong>51</strong> Thus all the work that king Solomon wrought in the house of Jehovah was finished. And Solomon brought in the things which David his father had dedicated, even the silver, and the gold, and the vessels, and put them in the treasuries of the house of Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Having finished the temple, Solomon spends thirteen years building his own house and the larger palace complex, including the House of the Forest of Lebanon with its rows of cedar pillars, the Hall of Pillars, the Hall of the Throne where he would judge, and a house for Pharaoh's daughter. All are built of costly, carefully cut stones and cedar. The narrative then turns to the temple furnishings, crafted by Hiram of Tyre, a man filled with wisdom, understanding, and skill to work in bronze. He casts two great bronze pillars, named Jachin and Boaz, set at the temple porch and crowned with ornate capitals of lily work and pomegranates. He makes the molten sea, a vast bronze basin resting on twelve oxen, ten wheeled stands with their basins, and a host of pots, shovels, and basins of burnished bronze, so many that their weight cannot be reckoned. Solomon also makes the golden furnishings within the house: the golden altar, the table for the showbread, the lampstands, and the cups, snuffers, and fire pans of pure gold. When all the work is finished, Solomon brings in the silver, gold, and vessels his father David had dedicated and stores them in the treasuries. The chapter displays God-given craftsmanship lavished on the place of worship, while quietly noting how much longer Solomon labored on his own house than on God's.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Solomon</strong> — The king who builds his palace complex over thirteen years and oversees the making of the temple's bronze and gold furnishings, then stores David's dedicated treasures.</li>
+          <li><strong>Hiram the craftsman</strong> — A skilled bronze-worker from Tyre, son of a widow of Naphtali, filled with wisdom and skill, who casts the temple's pillars, sea, stands, and vessels.</li>
+          <li><strong>Jachin and Boaz</strong> — The two great bronze pillars set at the temple porch, named and adorned with lily work and pomegranates, marking the entrance to God's house.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Kings 7:14 (WEB)</p>
+          <p class="verse__text">He was the son of a widow of the tribe of Naphtali, and his father was a man of Tyre, a worker in brass; and he was filled with wisdom and understanding and skill, to work all works in brass. He came to king Solomon, and performed all his work.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Skill and craftsmanship are gifts from God, to be offered in service to him.</li>
+          <li>God can fill ordinary people, even a widow's son, with wisdom for great work.</li>
+          <li>What God deserves is our finest workmanship, not our leftovers.</li>
+          <li>How we order our priorities—God's house and our own—reveals the bent of our hearts.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>Craftsmanship is a God-given gift.</strong> Hiram was “filled with wisdom and understanding and skill, to work all works in brass” (1 Kings 7:14, WEB). Even artistic skill comes from the Lord and can be devoted to his service.</li>
+            <li><strong>God's house is adorned with our best.</strong> Solomon makes the altar, table, and lampstands “of pure gold” (1 Kings 7:48-50, WEB). Worship calls for offering God what is most precious and well-made.</li>
+            <li><strong>Generosity completes the work.</strong> Solomon brought in “the things which David his father had dedicated, the silver, and the gold” (1 Kings 7:51, WEB). The dedicated gifts of one generation fund the worship of the next.</li>
+            <li><strong>Priorities tell a story.</strong> Solomon spent thirteen years on his own house but seven on God's (1 Kings 7:1; 6:38). The contrast quietly invites us to examine where our greatest energies are spent.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>What stands out about the description of Hiram the craftsman, and how is his skill described?</li>
+            <li>Why might the writer detail the pillars, the sea, and the vessels so carefully?</li>
+            <li>What do the materials—bronze, gold, costly stone—suggest about worship?</li>
+            <li>Solomon spent thirteen years on his palace and seven on the temple. What might that comparison invite us to consider?</li>
+            <li>Hiram offered his God-given skill to build God's house. What gift or skill has God given you, and how might you offer it in his service?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>Hiram is a widow's son from Naphtali, filled with wisdom, understanding, and skill in bronze (7:14). The same words used for God's gift of wisdom to Solomon describe Hiram's craftsmanship, showing that practical, artistic skill is a genuine gift of God for his work.</li>
+            <li>The careful detail honors the worth of the temple and preserves the memory of how God's house was furnished. It also conveys that nothing about worship was haphazard; every pillar, basin, and vessel was made with intention and excellence for the Lord.</li>
+            <li>The lavish use of bronze and pure gold signals that the place of God's presence deserved the costliest and most beautiful materials. Worship, then and now, fittingly offers God our best rather than what is cheap or careless.</li>
+            <li>The longer time and elaborate detail given to his own palace, compared with the temple, can prompt gentle reflection on priorities. While the text does not condemn him here, it invites readers to ask whether God's honor truly comes first in our own lives.</li>
+            <li>This is a personal-application question. Invite members to identify a skill, talent, or resource God has entrusted to them and to consider concrete ways to use it for his glory and his people's good. As leader, affirm that all honest skill, offered to God, becomes worship.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-kings-6.html">← 1 Kings 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-kings-8.html">1 Kings 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

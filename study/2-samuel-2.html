@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Samuel 2: Anointed King in Hebron — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Samuel 2: David is anointed king over Judah at Hebron, Abner crowns Ish-bosheth, and the houses of Saul and David collide at Gibeon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-samuel-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Samuel, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Samuel · Chapter 2</span>
+        <h1>2 Samuel 2: Anointed King in Hebron</h1>
+        <p class="lead">David inquires of the Lord, is anointed king over Judah at Hebron, and the long division begins as Abner sets up Ish-bosheth and the armies clash at Gibeon.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — 2 Samuel Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Samuel 2 (WEB)</p>
+            <p><strong>1</strong> Ofter this, David inquired of Yahweh, saying, “Shall I go up into any of the cities of Judah?” Yahweh said to him, “Go up.” David said, “Where shall I go up?” He said, “To Hebron.”</p>
+            <p><strong>2</strong> So David went up there, and his two wives also, Ahinoam the Jezreelitess, and Abigail the wife of Nabal the Carmelite.</p>
+            <p><strong>3</strong> David brought up his men who were with him, every man with his household. They lived in the cities of Hebron.</p>
+            <p><strong>4</strong> The men of Judah came, and there they anointed David king over the house of Judah. They told David, saying, “The men of Jabesh Gilead were those who buried Saul.”</p>
+            <p><strong>5</strong> David sent messengers to the men of Jabesh Gilead, and said to them, “Blessed are you by Yahweh, that you have shown this kindness to your lord, even to Saul, and have buried him.</p>
+            <p><strong>6</strong> Now may Yahweh show loving kindness and truth to you. I also will reward you for this kindness, because you have done this thing.</p>
+            <p><strong>7</strong> Now therefore let your hands be strong, and be valiant; for Saul your lord is dead, and also the house of Judah have anointed me king over them.”</p>
+            <p><strong>8</strong> Now Abner the son of Ner, captain of Saul’s army, had taken Ishbosheth the son of Saul, and brought him over to Mahanaim;</p>
+            <p><strong>9</strong> and he made him king over Gilead, and over the Ashurites, and over Jezreel, and over Ephraim, and over Benjamin, and over all Israel.</p>
+            <p><strong>10</strong> Ishbosheth, Saul’s son, was forty years old when he began to reign over Israel, and he reigned two years. But the house of Judah followed David.</p>
+            <p><strong>11</strong> The time that David was king in Hebron over the house of Judah was seven years and six months.</p>
+            <p><strong>12</strong> Abner the son of Ner, and the servants of Ishbosheth the son of Saul, went out from Mahanaim to Gibeon.</p>
+            <p><strong>13</strong> Joab the son of Zeruiah, and the servants of David, went out, and met them by the pool of Gibeon; and they sat down, the one on the one side of the pool, and the other on the other side of the pool.</p>
+            <p><strong>14</strong> Abner said to Joab, “Please let the young men arise and play before us!” Joab said, “Let them arise!”</p>
+            <p><strong>15</strong> Then they arose and went over by number: twelve for Benjamin, and for Ishbosheth the son of Saul, and twelve of the servants of David.</p>
+            <p><strong>16</strong> They each caught his opponent by the head, and thrust his sword in his fellow’s side; so they fell down together: therefore that place was called Helkath Hazzurim, which is in Gibeon.</p>
+            <p><strong>17</strong> The battle was very severe that day: and Abner was beaten, and the men of Israel, before the servants of David.</p>
+            <p><strong>18</strong> The three sons of Zeruiah were there, Joab, and Abishai, and Asahel: and Asahel was as light of foot as a wild gazelle.</p>
+            <p><strong>19</strong> Asahel pursued after Abner; and in going he didn’t turn to the right hand nor to the left from following Abner.</p>
+            <p><strong>20</strong> Then Abner looked behind him, and said, “Is it you, Asahel?” He answered, “It is I.”</p>
+            <p><strong>21</strong> Abner said to him, “Turn aside to your right hand or to your left, and grab one of the young men, and take his armor.” But Asahel would not turn aside from following him.</p>
+            <p><strong>22</strong> Abner said again to Asahel, “Turn aside from following me. Why should I strike you to the ground? How then should I hold up my face to Joab your brother?”</p>
+            <p><strong>23</strong> However he refused to turn aside. Therefore Abner with the back end of the spear struck him in the body, so that the spear came out behind him; and he fell down there, and died in the same place. As many as came to the place where Asahel fell down and died stood still.</p>
+            <p><strong>24</strong> But Joab and Abishai pursued after Abner: and the sun went down when they had come to the hill of Ammah, that lies before Giah by the way of the wilderness of Gibeon.</p>
+            <p><strong>25</strong> The children of Benjamin gathered themselves together after Abner, and became one band, and stood on the top of a hill.</p>
+            <p><strong>26</strong> Then Abner called to Joab, and said, “Shall the sword devour forever? Don’t you know that it will be bitterness in the latter end? How long shall it be then, before you ask the people to return from following their brothers?”</p>
+            <p><strong>27</strong> Joab said, “As God lives, if you had not spoken, surely then in the morning the people would have gone away, and not each followed his brother.”</p>
+            <p><strong>28</strong> So Joab blew the trumpet; and all the people stood still, and pursued after Israel no more, neither fought they any more.</p>
+            <p><strong>29</strong> Abner and his men went all that night through the Arabah; and they passed over the Jordan, and went through all Bithron, and came to Mahanaim.</p>
+            <p><strong>30</strong> Joab returned from following Abner: and when he had gathered all the people together, there lacked of David’s servants nineteen men and Asahel.</p>
+            <p><strong>31</strong> But the servants of David had struck of Benjamin, and of Abner’s men, so that three hundred sixty men died.</p>
+            <p><strong>32</strong> They took up Asahel, and buried him in the tomb of his father, which was in Bethlehem. Joab and his men went all night, and the day broke on them at Hebron.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Samuel 2 (KJV)</p>
+            <p><strong>1</strong> And it came to pass after this, that David enquired of the Lord, saying, Shall I go up into any of the cities of Judah? And the Lord said unto him, Go up. And David said, Whither shall I go up? And he said, Unto Hebron.</p>
+            <p><strong>2</strong> So David went up thither, and his two wives also, Ahinoam the Jezreelitess, and Abigail Nabal’s wife the Carmelite.</p>
+            <p><strong>3</strong> And his men that were with him did David bring up, every man with his household: and they dwelt in the cities of Hebron.</p>
+            <p><strong>4</strong> And the men of Judah came, and there they anointed David king over the house of Judah. And they told David, saying, That the men of Jabesh–gilead were they that buried Saul.</p>
+            <p><strong>5</strong> And David sent messengers unto the men of Jabesh–gilead, and said unto them, Blessed be ye of the Lord, that ye have shewed this kindness unto your lord, even unto Saul, and have buried him.</p>
+            <p><strong>6</strong> And now the Lord shew kindness and truth unto you: and I also will requite you this kindness, because ye have done this thing.</p>
+            <p><strong>7</strong> Therefore now let your hands be strengthened, and be ye valiant: for your master Saul is dead, and also the house of Judah have anointed me king over them.</p>
+            <p><strong>8</strong> But Abner the son of Ner, captain of Saul’s host, took Ish–bosheth the son of Saul, and brought him over to Mahanaim;</p>
+            <p><strong>9</strong> And made him king over Gilead, and over the Ashurites, and over Jezreel, and over Ephraim, and over Benjamin, and over all Israel.</p>
+            <p><strong>10</strong> Ish–bosheth Saul’s son was forty years old when he began to reign over Israel, and reigned two years. But the house of Judah followed David.</p>
+            <p><strong>11</strong> And the time that David was king in Hebron over the house of Judah was seven years and six months.</p>
+            <p><strong>12</strong> And Abner the son of Ner, and the servants of Ish–bosheth the son of Saul, went out from Mahanaim to Gibeon.</p>
+            <p><strong>13</strong> And Joab the son of Zeruiah, and the servants of David, went out, and met together by the pool of Gibeon: and they sat down, the one on the one side of the pool, and the other on the other side of the pool.</p>
+            <p><strong>14</strong> And Abner said to Joab, Let the young men now arise, and play before us. And Joab said, Let them arise.</p>
+            <p><strong>15</strong> Then there arose and went over by number twelve of Benjamin, which pertained to Ish–bosheth the son of Saul, and twelve of the servants of David.</p>
+            <p><strong>16</strong> And they caught every one his fellow by the head, and thrust his sword in his fellow’s side; so they fell down together: wherefore that place was called Helkath–hazzurim, which is in Gibeon.</p>
+            <p><strong>17</strong> And there was a very sore battle that day; and Abner was beaten, and the men of Israel, before the servants of David.</p>
+            <p><strong>18</strong> And there were three sons of Zeruiah there, Joab, and Abishai, and Asahel: and Asahel was as light of foot as a wild roe.</p>
+            <p><strong>19</strong> And Asahel pursued after Abner; and in going he turned not to the right hand nor to the left from following Abner.</p>
+            <p><strong>20</strong> Then Abner looked behind him, and said, Art thou Asahel? And he answered, I am.</p>
+            <p><strong>21</strong> And Abner said to him, Turn thee aside to thy right hand or to thy left, and lay thee hold on one of the young men, and take thee his armour. But Asahel would not turn aside from following of him.</p>
+            <p><strong>22</strong> And Abner said again to Asahel, Turn thee aside from following me: wherefore should I smite thee to the ground? how then should I hold up my face to Joab thy brother?</p>
+            <p><strong>23</strong> Howbeit he refused to turn aside: wherefore Abner with the hinder end of the spear smote him under the fifth rib, that the spear came out behind him; and he fell down there, and died in the same place: and it came to pass, that as many as came to the place where Asahel fell down and died stood still.</p>
+            <p><strong>24</strong> Joab also and Abishai pursued after Abner: and the sun went down when they were come to the hill of Ammah, that lieth before Giah by the way of the wilderness of Gibeon.</p>
+            <p><strong>25</strong> And the children of Benjamin gathered themselves together after Abner, and became one troop, and stood on the top of an hill.</p>
+            <p><strong>26</strong> Then Abner called to Joab, and said, Shall the sword devour for ever? knowest thou not that it will be bitterness in the latter end? how long shall it be then, ere thou bid the people return from following their brethren?</p>
+            <p><strong>27</strong> And Joab said, As God liveth, unless thou hadst spoken, surely then in the morning the people had gone up every one from following his brother.</p>
+            <p><strong>28</strong> So Joab blew a trumpet, and all the people stood still, and pursued after Israel no more, neither fought they any more.</p>
+            <p><strong>29</strong> And Abner and his men walked all that night through the plain, and passed over Jordan, and went through all Bithron, and they came to Mahanaim.</p>
+            <p><strong>30</strong> And Joab returned from following Abner: and when he had gathered all the people together, there lacked of David’s servants nineteen men and Asahel.</p>
+            <p><strong>31</strong> But the servants of David had smitten of Benjamin, and of Abner’s men, so that three hundred and threescore men died.</p>
+            <p><strong>32</strong> And they took up Asahel, and buried him in the sepulchre of his father, which was in Beth–lehem. And Joab and his men went all night, and they came to Hebron at break of day.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Samuel 2 (ASV)</p>
+            <p><strong>1</strong> And it came to pass after this, that David inquired of Jehovah, saying, Shall I go up into any of the cities of Judah? And Jehovah said unto him, Go up. And David said, Whither shall I go up? And he said, Unto Hebron.</p>
+            <p><strong>2</strong> So David went up thither, and his two wives also, Ahinoam the Jezreelitess, and Abigail the wife of Nabal the Carmelite.</p>
+            <p><strong>3</strong> And his men that were with him did David bring up, every man with his household: and they dwelt in the cities of Hebron.</p>
+            <p><strong>4</strong> And the men of Judah came, and there they anointed David king over the house of Judah. And they told David, saying, The men of Jabesh-gilead were they that buried Saul.</p>
+            <p><strong>5</strong> And David sent messengers unto the men of Jabesh-gilead, and said unto them, Blessed be ye of Jehovah, that ye have showed this kindness unto your lord, even unto Saul, and have buried him.</p>
+            <p><strong>6</strong> And now Jehovah show lovingkindness and truth unto you: and I also will requite you this kindness, because ye have done this thing.</p>
+            <p><strong>7</strong> Now therefore let your hands be strong, and be ye valiant; for Saul your lord is dead, and also the house of Judah have anointed me king over them.</p>
+            <p><strong>8</strong> Now Abner the son of Ner, captain of Saul’s host, had taken Ish-bosheth the son of Saul, and brought him over to Mahanaim;</p>
+            <p><strong>9</strong> and he made him king over Gilead, and over the Ashurites, and over Jezreel, and over Ephraim, and over Benjamin, and over all Israel.</p>
+            <p><strong>10</strong> Ish-bosheth, Saul’s son, was forty years old when he began to reign over Israel, and he reigned two years. But the house of Judah followed David.</p>
+            <p><strong>11</strong> And the time that David was king in Hebron over the house of Judah was seven years and six months.</p>
+            <p><strong>12</strong> And Abner the son of Ner, and the servants of Ish-bosheth the son of Saul, went out from Mahanaim to Gibeon.</p>
+            <p><strong>13</strong> And Joab the son of Zeruiah, and the servants of David, went out, and met them by the pool of Gibeon; and they sat down, the one on the one side of the pool, and the other on the other side of the pool.</p>
+            <p><strong>14</strong> And Abner said to Joab, Let the young men, I pray thee, arise and play before us. And Joab said, Let them arise.</p>
+            <p><strong>15</strong> Then they arose and went over by number: twelve for Benjamin, and for Ish-bosheth the son of Saul, and twelve of the servants of David.</p>
+            <p><strong>16</strong> And they caught every one his fellow by the head, and thrust his sword in his fellow’s side; so they fell down together: wherefore that place was called Helkath-hazzurim, which is in Gibeon.</p>
+            <p><strong>17</strong> And the battle was very sore that day; and Abner was beaten, and the men of Israel, before the servants of David.</p>
+            <p><strong>18</strong> And the three sons of Zeruiah were there, Joab, and Abishai, and Asahel: and Asahel was as light of foot as a wild roe.</p>
+            <p><strong>19</strong> And Asahel pursued after Abner; and in going he turned not to the right hand nor to the left from following Abner.</p>
+            <p><strong>20</strong> Then Abner looked behind him, and said, Is it thou, Asahel? And he answered, It is I.</p>
+            <p><strong>21</strong> And Abner said to him, Turn thee aside to thy right hand or to thy left, and lay thee hold on one of the young men, and take thee his armor. But Asahel would not turn aside from following him.</p>
+            <p><strong>22</strong> And Abner said again to Asahel, Turn thee aside from following me: wherefore should I smite thee to the ground? how then should I hold up my face to Joab thy brother?</p>
+            <p><strong>23</strong> Howbeit he refused to turn aside: wherefore Abner with the hinder end of the spear smote him in the body, so that the spear came out behind him; and he fell down there, and died in the same place: and it came to pass, that as many as came to the place where Asahel fell down and died stood still.</p>
+            <p><strong>24</strong> But Joab and Abishai pursued after Abner: and the sun went down when they were come to the hill of Ammah, that lieth before Giah by the way of the wilderness of Gibeon.</p>
+            <p><strong>25</strong> And the children of Benjamin gathered themselves together after Abner, and became one band, and stood on the top of a hill.</p>
+            <p><strong>26</strong> Then Abner called to Joab, and said, Shall the sword devour for ever? knowest thou not that it will be bitterness in the latter end? how long shall it be then, ere thou bid the people return from following their brethren?</p>
+            <p><strong>27</strong> And Joab said, As God liveth, if thou hadst not spoken, surely then in the morning the people had gone away, nor followed every one his brother.</p>
+            <p><strong>28</strong> So Joab blew the trumpet; and all the people stood still, and pursued after Israel no more, neither fought they any more.</p>
+            <p><strong>29</strong> And Abner and his men went all that night through the Arabah; and they passed over the Jordan, and went through all Bithron, and came to Mahanaim.</p>
+            <p><strong>30</strong> And Joab returned from following Abner: and when he had gathered all the people together, there lacked of David’s servants nineteen men and Asahel.</p>
+            <p><strong>31</strong> But the servants of David had smitten of Benjamin, and of Abner’s men, so that three hundred and threescore men died.</p>
+            <p><strong>32</strong> And they took up Asahel, and buried him in the sepulchre of his father, which was in Beth-lehem. And Joab and his men went all night, and the day brake upon them at Hebron.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>David does not seize power but asks Yahweh whether he should go up into Judah, and God directs him to Hebron. There the men of Judah anoint David king over the house of Judah, and his first royal act is to bless the men of Jabesh Gilead for their kindness in burying Saul. But the kingdom is divided: Abner, captain of Saul's army, takes Saul's son Ish-bosheth and makes him king over Israel at Mahanaim. David reigns in Hebron over Judah for seven years and six months while the rest of Israel follows the house of Saul. The two sides meet at the pool of Gibeon, where a brutal contest between twelve young men from each side erupts into a fierce battle, and Abner's forces are beaten before David's servants. In the pursuit, Asahel, swift as a wild gazelle, refuses to stop chasing Abner despite repeated warnings, and Abner kills him—planting a seed of vengeance that will later cost Abner his life. The chapter shows a man waiting on God's timing, content to begin small in Hebron while trusting the Lord to establish the rest in due season.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — Anointed king over Judah at Hebron, who inquires of the Lord before acting and honors the men who buried Saul.</li>
+          <li><strong>Abner</strong> — Saul's army commander who installs Ish-bosheth as king over Israel and reluctantly kills Asahel in the battle at Gibeon.</li>
+          <li><strong>Ish-bosheth</strong> — Saul's surviving son, made king over Israel by Abner, ruling from Mahanaim while Judah follows David.</li>
+          <li><strong>Asahel</strong> — Joab's brother, swift of foot, who relentlessly pursues Abner and is killed, setting in motion a deadly feud.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Samuel 2:4 (WEB)</p>
+          <p class="verse__text">The men of Judah came, and there they anointed David king over the house of Judah. They told David, saying, “The men of Jabesh Gilead were those who buried Saul.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Waiting on God's direction guards us from grasping for what he intends to give in his own time.</li>
+          <li>Faithful leaders honor and bless those who have shown kindness, even to former enemies.</li>
+          <li>Division and conflict often follow when people seek to preserve their own power against God's purposes.</li>
+          <li>Reckless pursuit of vengeance, like Asahel's chase, can lead to needless death and lasting feuds.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Seek God's guidance before you move.</strong> David “inquired of Yahweh” before going up to Hebron (2 Samuel 2:1, WEB), refusing to act on his own initiative even when the throne was within reach.</li>
+            <li><strong>Bless those who do good.</strong> David honors the men of Jabesh Gilead—“Blessed are you by Yahweh” (2 Samuel 2:5, WEB)—for their kindness in burying Saul.</li>
+            <li><strong>God's purposes advance gradually.</strong> David reigned in Hebron “seven years and six months” over Judah alone (2 Samuel 2:11, WEB); the full kingdom would come only in God's timing.</li>
+            <li><strong>Restraint warns against needless bloodshed.</strong> Abner pleads, “Shall the sword devour forever?” (2 Samuel 2:26, WEB), grieving the bitterness that civil strife brings.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>Why does David inquire of the Lord before going up to Hebron, and what does this show about his character?</li>
+            <li>What is significant about David's first act as king—blessing the men of Jabesh Gilead?</li>
+            <li>How does the division between the house of David and the house of Saul take shape in this chapter?</li>
+            <li>What does Asahel's pursuit of Abner teach us about the dangers of relentless vengeance?</li>
+            <li>Where in your life are you tempted to grasp prematurely for something God may intend to give in his time?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>Rather than marching on Jerusalem, David asks God where to go (2:1). His dependence on the Lord, even when crowned by his own tribe, marks the difference between godly leadership and self-promotion.</li>
+            <li>David's first royal act is gratitude, blessing those who honored Saul in burial (2:4-6). It reveals a king who values loyalty and kindness, and who continues to honor the house of his former pursuer.</li>
+            <li>Abner crowns Ish-bosheth over Israel while Judah follows David (2:8-11). The kingdom splits, and the clash at Gibeon shows that human ambition will resist God's clear purpose, prolonging conflict.</li>
+            <li>Asahel ignores Abner's repeated warnings and is killed (2:21-23), and his death fuels Joab's later revenge. Relentless pursuit driven by pride or vengeance breeds tragedy and lasting feuds.</li>
+            <li>This is a personal-application question. Invite members to name an area where impatience tempts them to seize control, and to consider David's pattern of inquiring of the Lord and waiting for his timing.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-samuel-1.html">← 2 Samuel 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-samuel-3.html">2 Samuel 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

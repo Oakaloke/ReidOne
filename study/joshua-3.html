@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Joshua 3: Crossing the Jordan — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Joshua 3: Israel follows the ark across the flooding Jordan, the waters stand in a heap, and the nation passes over on dry ground." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-joshua-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Joshua, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="joshua.html">← All Chapters</a>
+        <span class="study-meta">The Book of Joshua · Chapter 3</span>
+        <h1>Joshua 3: Crossing the Jordan</h1>
+        <p class="lead">Following the ark, Israel crosses the flooding Jordan on dry ground as the waters stand in a heap, and God magnifies Joshua before all the people.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — Joshua Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Joshua 3 (WEB)</p>
+            <p><strong>1</strong> Joshua rose up early in the morning; and they moved from Shittim, and came to the Jordan, he and all the children of Israel. They lodged there before they passed over.</p>
+            <p><strong>2</strong> After three days, the officers went through the midst of the camp;</p>
+            <p><strong>3</strong> and they commanded the people, saying, “When you see the ark of the covenant of Yahweh your God, and the priests the Levites bearing it, then you shall move from your place, and follow it.</p>
+            <p><strong>4</strong> Yet there shall be a space between you and it, about two thousand cubits by measure. Don’t come near to it, that you may know the way by which you must go; for you have not passed this way before.”</p>
+            <p><strong>5</strong> Joshua said to the people, “Sanctify yourselves; for tomorrow Yahweh will do wonders among you.”</p>
+            <p><strong>6</strong> Joshua spoke to the priests, saying, “Take up the ark of the covenant, and pass over before the people.” They took up the ark of the covenant, and went before the people.</p>
+            <p><strong>7</strong> Yahweh said to Joshua, “Today I will begin to magnify you in the sight of all Israel, that they may know that as I was with Moses, so I will be with you.</p>
+            <p><strong>8</strong> You shall command the priests who bear the ark of the covenant, saying, ‘When you come to the brink of the waters of the Jordan, you shall stand still in the Jordan.’”</p>
+            <p><strong>9</strong> Joshua said to the children of Israel, “Come here, and hear the words of Yahweh your God.”</p>
+            <p><strong>10</strong> Joshua said, “Hereby you shall know that the living God is among you, and that he will without fail drive the Canaanite, and the Hittite, and the Hivite, and the Perizzite, and the Girgashite, and the Amorite, and the Jebusite out from before you.</p>
+            <p><strong>11</strong> Behold, the ark of the covenant of the Lord of all the earth passes over before you into the Jordan.</p>
+            <p><strong>12</strong> Now therefore take twelve men out of the tribes of Israel, for every tribe a man.</p>
+            <p><strong>13</strong> It shall come to pass, when the soles of the feet of the priests who bear the ark of Yahweh, the Lord of all the earth, rest in the waters of the Jordan, that the waters of the Jordan will be cut off, even the waters that come down from above; and they shall stand in one heap.”</p>
+            <p><strong>14</strong> When the people moved from their tents to pass over the Jordan, the priests who bore the ark of the covenant being before the people,</p>
+            <p><strong>15</strong> and when those who bore the ark had come to the Jordan, and the feet of the priests who bore the ark had dipped in the edge of the water (for the Jordan overflows all its banks all the time of harvest),</p>
+            <p><strong>16</strong> the waters which came down from above stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan; and those that went down toward the sea of the Arabah, even the Salt Sea, were wholly cut off. Then the people passed over right against Jericho.</p>
+            <p><strong>17</strong> The priests who bore the ark of the covenant of Yahweh stood firm on dry ground in the middle of the Jordan; and all Israel passed over on dry ground, until all the nation had passed completely over the Jordan.</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Joshua 3 (KJV)</p>
+            <p><strong>1</strong> And Joshua rose early in the morning; and they removed from Shittim, and came to Jordan, he and all the children of Israel, and lodged there before they passed over.</p>
+            <p><strong>2</strong> And it came to pass after three days, that the officers went through the host;</p>
+            <p><strong>3</strong> And they commanded the people, saying, When ye see the ark of the covenant of the Lord your God, and the priests the Levites bearing it, then ye shall remove from your place, and go after it.</p>
+            <p><strong>4</strong> Yet there shall be a space between you and it, about two thousand cubits by measure: come not near unto it, that ye may know the way by which ye must go: for ye have not passed this way heretofore.</p>
+            <p><strong>5</strong> And Joshua said unto the people, Sanctify yourselves: for to morrow the Lord will do wonders among you.</p>
+            <p><strong>6</strong> And Joshua spake unto the priests, saying, Take up the ark of the covenant, and pass over before the people. And they took up the ark of the covenant, and went before the people.</p>
+            <p><strong>7</strong> And the Lord said unto Joshua, This day will I begin to magnify thee in the sight of all Israel, that they may know that, as I was with Moses, so I will be with thee.</p>
+            <p><strong>8</strong> And thou shalt command the priests that bear the ark of the covenant, saying, When ye are come to the brink of the water of Jordan, ye shall stand still in Jordan.</p>
+            <p><strong>9</strong> And Joshua said unto the children of Israel, Come hither, and hear the words of the Lord your God.</p>
+            <p><strong>10</strong> And Joshua said, Hereby ye shall know that the living God is among you, and that he will without fail drive out from before you the Canaanites, and the Hittites, and the Hivites, and the Perizzites, and the Girgashites, and the Amorites, and the Jebusites.</p>
+            <p><strong>11</strong> Behold, the ark of the covenant of the Lord of all the earth passeth over before you into Jordan.</p>
+            <p><strong>12</strong> Now therefore take you twelve men out of the tribes of Israel, out of every tribe a man.</p>
+            <p><strong>13</strong> And it shall come to pass, as soon as the soles of the feet of the priests that bear the ark of the Lord, the Lord of all the earth, shall rest in the waters of Jordan, that the waters of Jordan shall be cut off from the waters that come down from above; and they shall stand upon an heap.</p>
+            <p><strong>14</strong> And it came to pass, when the people removed from their tents, to pass over Jordan, and the priests bearing the ark of the covenant before the people;</p>
+            <p><strong>15</strong> And as they that bare the ark were come unto Jordan, and the feet of the priests that bare the ark were dipped in the brim of the water, (for Jordan overfloweth all his banks all the time of harvest,)</p>
+            <p><strong>16</strong> That the waters which came down from above stood and rose up upon an heap very far from the city Adam, that is beside Zaretan: and those that came down toward the sea of the plain, even the salt sea, failed, and were cut off: and the people passed over right against Jericho.</p>
+            <p><strong>17</strong> And the priests that bare the ark of the covenant of the Lord stood firm on dry ground in the midst of Jordan, and all the Israelites passed over on dry ground, until all the people were passed clean over Jordan.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Joshua 3 (ASV)</p>
+            <p><strong>1</strong> And Joshua rose up early in the morning; and they removed from Shittim, and came to the Jordan, he and all the children of Israel; and they lodged there before they passed over.</p>
+            <p><strong>2</strong> And it came to pass after three days, that the officers went through the midst of the camp;</p>
+            <p><strong>3</strong> and they commanded the people, saying, When ye see the ark of the covenant of Jehovah your God, and the priests the Levites bearing it, then ye shall remove from your place, and go after it.</p>
+            <p><strong>4</strong> Yet there shall be a space between you and it, about two thousand cubits by measure: come not near unto it, that ye may know the way by which ye must go; for ye have not passed this way heretofore.</p>
+            <p><strong>5</strong> And Joshua said unto the people, Sanctify yourselves; for to-morrow Jehovah will do wonders among you.</p>
+            <p><strong>6</strong> And Joshua spake unto the priests, saying, Take up the ark of the covenant, and pass over before the people. And they took up the ark of the covenant, and went before the people.</p>
+            <p><strong>7</strong> And Jehovah said unto Joshua, This day will I begin to magnify thee in the sight of all Israel, that they may know that, as I was with Moses, so I will be with thee.</p>
+            <p><strong>8</strong> And thou shalt command the priests that bear the ark of the covenant, saying, When ye are come to the brink of the waters of the Jordan, ye shall stand still in the Jordan.</p>
+            <p><strong>9</strong> And Joshua said unto the children of Israel, Come hither, and hear the words of Jehovah your God.</p>
+            <p><strong>10</strong> And Joshua said, Hereby ye shall know that the living God is among you, and that he will without fail drive out from before you the Canaanite, and the Hittite, and the Hivite, and the Perizzite, and the Girgashite, and the Amorite, and the Jebusite.</p>
+            <p><strong>11</strong> Behold, the ark of the covenant of the Lord of all the earth passeth over before you into the Jordan.</p>
+            <p><strong>12</strong> Now therefore take you twelve men out of the tribes of Israel, for every tribe a man.</p>
+            <p><strong>13</strong> And it shall come to pass, when the soles of the feet of the priests that bear the ark of Jehovah, the Lord of all the earth, shall rest in the waters of the Jordan, that the waters of the Jordan shall be cut off, even the waters that come down from above; and they shall stand in one heap.</p>
+            <p><strong>14</strong> And it came to pass, when the people removed from their tents, to pass over the Jordan, the priests that bare the ark of the covenant being before the people;</p>
+            <p><strong>15</strong> and when they that bare the ark were come unto the Jordan, and the feet of the priests that bare the ark were dipped in the brink of the water (for the Jordan overfloweth all its banks all the time of harvest),</p>
+            <p><strong>16</strong> that the waters which came down from above stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan; and those that went down toward the sea of the Arabah, even the Salt Sea, were wholly cut off: and the people passed over right against Jericho.</p>
+            <p><strong>17</strong> And the priests that bare the ark of the covenant of Jehovah stood firm on dry ground in the midst of the Jordan; and all Israel passed over on dry ground, until all the nation were passed clean over the Jordan.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Joshua and all Israel set out early and camp at the Jordan before crossing. After three days the officers instruct the people to follow the ark of the covenant when they see the priests carry it, keeping a reverent distance so they will know the way they have never traveled before. Joshua tells the people to sanctify themselves, for tomorrow the Lord will do wonders among them, and he commands the priests to take up the ark and go ahead. God promises to begin magnifying Joshua in the sight of all Israel, so they will know that he is with him as he was with Moses. Joshua then gathers the people and declares that the living God is among them and will surely drive out the nations of Canaan. The sign will be unmistakable: the moment the priests' feet touch the water, the Jordan, in full flood at harvest time, will be cut off and stand in a heap. As the priests step into the brink, the waters far upstream pile up and the riverbed below empties, and the priests stand firm on dry ground in the middle of the Jordan while the whole nation crosses over toward Jericho. What God did at the Red Sea for the exodus generation he now does for their children, opening the way into the land.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Joshua</strong> — Israel's leader, who sanctifies the people, directs the priests, and is magnified by God before all Israel as the crossing is accomplished.</li>
+          <li><strong>The priests</strong> — The Levites who bear the ark of the covenant, step first into the flooding Jordan, and stand firm on dry ground until all Israel has passed over.</li>
+          <li><strong>The ark of the covenant</strong> — The visible sign of God's presence leading the way; where it goes, the people follow, and at its passing the waters of the Jordan are cut off.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The living God among his people, who cuts off the river, magnifies Joshua, and proves he will drive out the nations before Israel.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Joshua 3:5 (WEB)</p>
+          <p class="verse__text">Joshua said to the people, “Sanctify yourselves; for tomorrow Yahweh will do wonders among you.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God leads his people forward, often into ways they have never traveled before.</li>
+          <li>Preparing our hearts to meet God comes before seeing his wonders.</li>
+          <li>Faith sometimes means stepping into the water before the way opens up.</li>
+          <li>God confirms the leaders he appoints and proves his living presence among his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>God's presence goes before us.</strong> The people follow the ark, “for you have not passed this way before” (Joshua 3:4, WEB). Where the way is unknown, his presence leads.</li>
+            <li><strong>Wonders meet a consecrated people.</strong> “Sanctify yourselves; for tomorrow Yahweh will do wonders among you” (Joshua 3:5, WEB). God calls his people to prepare their hearts to meet him.</li>
+            <li><strong>Faith steps in before it sees.</strong> The waters do not part until “the feet of the priests… dipped in the edge of the water” (Joshua 3:15, WEB). Obedience often precedes the miracle.</li>
+            <li><strong>The living God is among his people.</strong> “Hereby you shall know that the living God is among you” (Joshua 3:10, WEB). The crossing proves God's real, active presence with Israel.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>Why are the people told to follow the ark and keep their distance from it as they cross?</li>
+            <li>What does it mean to “sanctify yourselves” before God does wonders (verse 5)?</li>
+            <li>Notice that the river does not part until the priests step into it. What does this teach about faith and obedience?</li>
+            <li>How does this crossing echo the Red Sea, and why might God do this for a new generation?</li>
+            <li>When have you had to step forward before you could see how God would make a way? What did you learn?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>The ark represents God's own presence, and following it teaches Israel to walk a new path by trusting him rather than their own knowledge (3:3-4). The reverent distance honors his holiness while keeping the people's eyes on where he leads.</li>
+            <li>To sanctify themselves is to consecrate their hearts and lives in expectation of meeting God (3:5). Wonders are not magic tricks but encounters with a holy God; preparation readies the people to receive what he will do.</li>
+            <li>God could have parted the river first, but he calls the priests to step into the flood before it gives way (3:13-15). Faith acts on God's word before the outcome is visible. Invite the group to consider where obedience must precede proof.</li>
+            <li>Just as God dried up the Red Sea for the exodus generation, he now dries up the Jordan for their children (3:7; cf. 4:23). The repeated miracle assures the new generation that the God of their parents is just as present and powerful for them.</li>
+            <li>This is a personal-application question. Encourage members to recall a time they obeyed before the path was clear, and how God proved faithful. As leader, normalize the discomfort of stepping into the water and point to God's track record as the basis for trust.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="joshua-2.html">← Joshua 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="joshua.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="joshua-4.html">Joshua 4 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

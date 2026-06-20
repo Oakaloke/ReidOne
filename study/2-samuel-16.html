@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Samuel 16: Curses on the Road — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Samuel 16: Ziba's lie, Shimei's cursing of David, and Ahithophel's shameful counsel to Absalom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-samuel-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Samuel, Chapter 16
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Samuel · Chapter 16</span>
+        <h1>2 Samuel 16: Curses on the Road</h1>
+        <p class="lead">Ziba deceives David, Shimei hurls curses and stones, and in Jerusalem Ahithophel's shameful counsel is obeyed.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-16">
+            <span>Scripture — 2 Samuel Chapter 16</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-16">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-16-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-16-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-16-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-16-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Samuel 16 (WEB)</p>
+            <p><strong>1</strong> When David was a little past the top, behold, Ziba the servant of Mephibosheth met him, with a couple of donkeys saddled, and on them two hundred loaves of bread, and one hundred clusters of raisins, and one hundred summer fruits, and a bottle of wine.</p>
+            <p><strong>2</strong> The king said to Ziba, What do you mean by these? Ziba said, The donkeys are for the king’s household to ride on; and the bread and summer fruit for the young men to eat; and the wine, that such as are faint in the wilderness may drink.</p>
+            <p><strong>3</strong> The king said, “Where is your master’s son?” Ziba said to the king, “Behold, he is staying in Jerusalem; for he said, ‘Today the house of Israel will restore me the kingdom of my father.’”</p>
+            <p><strong>4</strong> Then the king said to Ziba, “Behold, all that pertains to Mephibosheth is yours.” Ziba said, “I do obeisance. Let me find favor in your sight, my lord, O king.”</p>
+            <p><strong>5</strong> When king David came to Bahurim, behold, a man of the family of the house of Saul came out, whose name was Shimei, the son of Gera. He came out, and cursed still as he came.</p>
+            <p><strong>6</strong> He cast stones at David, and at all the servants of king David, and all the people and all the mighty men were on his right hand and on his left.</p>
+            <p><strong>7</strong> Shimei said when he cursed, “Be gone, be gone, you man of blood, and base fellow!</p>
+            <p><strong>8</strong> Yahweh has returned on you all the blood of the house of Saul, in whose place you have reigned! Yahweh has delivered the kingdom into the hand of Absalom your son! Behold, you are caught by your own mischief, because you are a man of blood!”</p>
+            <p><strong>9</strong> Then Abishai the son of Zeruiah said to the king, “Why should this dead dog curse my lord the king? Please let me go over and take off his head.”</p>
+            <p><strong>10</strong> The king said, “What have I to do with you, you sons of Zeruiah? Because he curses, and because Yahweh has said to him, ‘Curse David;’ who then shall say, ‘Why have you done so?’”</p>
+            <p><strong>11</strong> David said to Abishai, and to all his servants, “Behold, my son, who came out of my bowels, seeks my life. How much more this Benjamite, now? Leave him alone, and let him curse; for Yahweh has invited him.</p>
+            <p><strong>12</strong> It may be that Yahweh will look on the wrong done to me, and that Yahweh will repay me good for the cursing of me today.”</p>
+            <p><strong>13</strong> So David and his men went by the way; and Shimei went along on the hillside opposite him, and cursed as he went, threw stones at him, and threw dust.</p>
+            <p><strong>14</strong> The king, and all the people who were with him, came weary; and he refreshed himself there.</p>
+            <p><strong>15</strong> Absalom, and all the people, the men of Israel, came to Jerusalem, and Ahithophel with him.</p>
+            <p><strong>16</strong> When Hushai the Archite, David’s friend, had come to Absalom, Hushai said to Absalom, “Long live the king! Long live the king!”</p>
+            <p><strong>17</strong> Absalom said to Hushai, “Is this your kindness to your friend? Why didn’t you go with your friend?”</p>
+            <p><strong>18</strong> Hushai said to Absalom, “No; but whomever Yahweh, and this people, and all the men of Israel have chosen, his will I be, and with him I will stay.</p>
+            <p><strong>19</strong> Again, whom should I serve? Shouldn’t I serve in the presence of his son? As I have served in your father’s presence, so will I be in your presence.”</p>
+            <p><strong>20</strong> Then Absalom said to Ahithophel, “Give your counsel what we shall do.”</p>
+            <p><strong>21</strong> Ahithophel said to Absalom, “Go in to your father’s concubines, that he has left to keep the house. Then all Israel will hear that you are abhorred by your father. Then the hands of all who are with you will be strong.”</p>
+            <p><strong>22</strong> So they spread Absalom a tent on the top of the house; and Absalom went in to his father’s concubines in the sight of all Israel.</p>
+            <p><strong>23</strong> The counsel of Ahithophel, which he gave in those days, was as if a man inquired at the oracle of God: so was all the counsel of Ahithophel both with David and with Absalom.</p>
+            </div>
+            <div class="scripture-text" id="web-16-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Samuel 16 (KJV)</p>
+            <p><strong>1</strong> And when David was a little past the top of the hill, behold, Ziba the servant of Mephibosheth met him, with a couple of asses saddled, and upon them two hundred loaves of bread, and an hundred bunches of raisins, and an hundred of summer fruits, and a bottle of wine.</p>
+            <p><strong>2</strong> And the king said unto Ziba, What meanest thou by these? And Ziba said, The asses be for the king’s household to ride on; and the bread and summer fruit for the young men to eat; and the wine, that such as be faint in the wilderness may drink.</p>
+            <p><strong>3</strong> And the king said, And where is thy master’s son? And Ziba said unto the king, Behold, he abideth at Jerusalem: for he said, To day shall the house of Israel restore me the kingdom of my father.</p>
+            <p><strong>4</strong> Then said the king to Ziba, Behold, thine are all that pertained unto Mephibosheth. And Ziba said, I humbly beseech thee that I may find grace in thy sight, my lord, O king.</p>
+            <p><strong>5</strong> And when king David came to Bahurim, behold, thence came out a man of the family of the house of Saul, whose name was Shimei, the son of Gera: he came forth, and cursed still as he came.</p>
+            <p><strong>6</strong> And he cast stones at David, and at all the servants of king David: and all the people and all the mighty men were on his right hand and on his left.</p>
+            <p><strong>7</strong> And thus said Shimei when he cursed, Come out, come out, thou bloody man, and thou man of Belial:</p>
+            <p><strong>8</strong> The Lord hath returned upon thee all the blood of the house of Saul, in whose stead thou hast reigned; and the Lord hath delivered the kingdom into the hand of Absalom thy son: and, behold, thou art taken in thy mischief, because thou art a bloody man.</p>
+            <p><strong>9</strong> Then said Abishai the son of Zeruiah unto the king, Why should this dead dog curse my lord the king? let me go over, I pray thee, and take off his head.</p>
+            <p><strong>10</strong> And the king said, What have I to do with you, ye sons of Zeruiah? so let him curse, because the Lord hath said unto him, Curse David. Who shall then say, Wherefore hast thou done so?</p>
+            <p><strong>11</strong> And David said to Abishai, and to all his servants, Behold, my son, which came forth of my bowels, seeketh my life: how much more now may this Benjamite do it? let him alone, and let him curse; for the Lord hath bidden him.</p>
+            <p><strong>12</strong> It may be that the Lord will look on mine affliction, and that the Lord will requite me good for his cursing this day.</p>
+            <p><strong>13</strong> And as David and his men went by the way, Shimei went along on the hill’s side over against him, and cursed as he went, and threw stones at him, and cast dust.</p>
+            <p><strong>14</strong> And the king, and all the people that were with him, came weary, and refreshed themselves there.</p>
+            <p><strong>15</strong> And Absalom, and all the people the men of Israel, came to Jerusalem, and Ahithophel with him.</p>
+            <p><strong>16</strong> And it came to pass, when Hushai the Archite, David’s friend, was come unto Absalom, that Hushai said unto Absalom, God save the king, God save the king.</p>
+            <p><strong>17</strong> And Absalom said to Hushai, Is this thy kindness to thy friend? why wentest thou not with thy friend?</p>
+            <p><strong>18</strong> And Hushai said unto Absalom, Nay; but whom the Lord, and this people, and all the men of Israel, choose, his will I be, and with him will I abide.</p>
+            <p><strong>19</strong> And again, whom should I serve? should I not serve in the presence of his son? as I have served in thy father’s presence, so will I be in thy presence.</p>
+            <p><strong>20</strong> Then said Absalom to Ahithophel, Give counsel among you what we shall do.</p>
+            <p><strong>21</strong> And Ahithophel said unto Absalom, Go in unto thy father’s concubines, which he hath left to keep the house; and all Israel shall hear that thou art abhorred of thy father: then shall the hands of all that are with thee be strong.</p>
+            <p><strong>22</strong> So they spread Absalom a tent upon the top of the house; and Absalom went in unto his father’s concubines in the sight of all Israel.</p>
+            <p><strong>23</strong> And the counsel of Ahithophel, which he counselled in those days, was as if a man had enquired at the oracle of God: so was all the counsel of Ahithophel both with David and with Absalom.</p>
+            </div>
+            <div class="scripture-text" id="web-16-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Samuel 16 (ASV)</p>
+            <p><strong>1</strong> And when David was a little past the top of the ascent, behold, Ziba the servant of Mephibosheth met him, with a couple of asses saddled, and upon them two hundred loaves of bread, and a hundred clusters of raisins, and a hundred of summer fruits, and a bottle of wine.</p>
+            <p><strong>2</strong> And the king said unto Ziba, What meanest thou by these? And Ziba said, The asses are for the king’s household to ride on; and the bread and summer fruit for the young men to eat; and the wine, that such as are faint in the wilderness may drink.</p>
+            <p><strong>3</strong> And the king said, And where is thy master’s son? And Ziba said unto the king, Behold, he abideth at Jerusalem; for he said, To-day will the house of Israel restore me the kingdom of my father.</p>
+            <p><strong>4</strong> Then said the king to Ziba, Behold, thine is all that pertaineth unto Mephibosheth. And Ziba said, I do obeisance; let me find favor in thy sight, my lord, O king.</p>
+            <p><strong>5</strong> And when king David came to Bahurim, behold, there came out thence a man of the family of the house of Saul, whose name was Shimei, the son of Gera; he came out, and cursed still as he came.</p>
+            <p><strong>6</strong> And he cast stones at David, and at all the servants of king David: and all the people and all the mighty men were on his right hand and on his left.</p>
+            <p><strong>7</strong> And thus said Shimei when he cursed, Begone, begone, thou man of blood, and base fellow:</p>
+            <p><strong>8</strong> Jehovah hath returned upon thee all the blood of the house of Saul, in whose stead thou hast reigned; and Jehovah hath delivered the kingdom into the hand of Absalom thy son; and, behold, thou art taken in thine own mischief, because thou art a man of blood.</p>
+            <p><strong>9</strong> Then said Abishai the son of Zeruiah unto the king, Why should this dead dog curse my lord the king? let me go over, I pray thee, and take off his head.</p>
+            <p><strong>10</strong> And the king said, What have I to do with you, ye sons of Zeruiah? Because he curseth, and because Jehovah hath said unto him, Curse David; who then shall say, Wherefore hast thou done so?</p>
+            <p><strong>11</strong> And David said to Abishai, and to all his servants, Behold, my son, who came forth from my bowels, seeketh my life: how much more may this Benjamite now do it? let him alone, and let him curse; for Jehovah hath bidden him.</p>
+            <p><strong>12</strong> It may be that Jehovah will look on the wrong done unto me, and that Jehovah will requite me good for his cursing of me this day.</p>
+            <p><strong>13</strong> So David and his men went by the way; and Shimei went along on the hill-side over against him, and cursed as he went, and threw stones at him, and cast dust.</p>
+            <p><strong>14</strong> And the king, and all the people that were with him, came weary; and he refreshed himself there.</p>
+            <p><strong>15</strong> And Absalom, and all the people, the men of Israel, came to Jerusalem, and Ahithophel with him.</p>
+            <p><strong>16</strong> And it came to pass, when Hushai the Archite, David’s friend, was come unto Absalom, that Hushai said unto Absalom, Long live the king, Long live the king.</p>
+            <p><strong>17</strong> And Absalom said to Hushai, Is this thy kindness to thy friend? why wentest thou not with thy friend?</p>
+            <p><strong>18</strong> And Hushai said unto Absalom, Nay; but whom Jehovah, and this people, and all the men of Israel have chosen, his will I be, and with him will I abide.</p>
+            <p><strong>19</strong> And again, whom should I serve? should I not serve in the presence of his son? as I have served in thy father’s presence, so will I be in thy presence.</p>
+            <p><strong>20</strong> Then said Absalom to Ahithophel, Give your counsel what we shall do.</p>
+            <p><strong>21</strong> And Ahithophel said unto Absalom, Go in unto thy father’s concubines, that he hath left to keep the house; and all Israel will hear that thou art abhorred of thy father: then will the hands of all that are with thee be strong.</p>
+            <p><strong>22</strong> So they spread Absalom a tent upon the top of the house; and Absalom went in unto his father’s concubines in the sight of all Israel.</p>
+            <p><strong>23</strong> And the counsel of Ahithophel, which he gave in those days, was as if a man inquired at the oracle of God: so was all the counsel of Ahithophel both with David and with Absalom.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>As David flees, the road tests his heart. Ziba, Mephibosheth's servant, meets him with provisions and a slander against his master, claiming Mephibosheth hopes to regain Saul's kingdom, and David rashly grants Ziba all his master's property. Further on, Shimei of Saul's house comes out cursing, throwing stones and dust, calling David a man of blood reaping what he sowed. Abishai offers to remove the cursing man's head, but David restrains him, reasoning that perhaps the Lord has told Shimei to curse, and that God may yet repay good for the day's reviling. So the king bears the abuse in humility, leaving judgment to God. Meanwhile in Jerusalem, Hushai presents himself to Absalom with cries of “Long live the king,” disguising his loyalty to David. Absalom asks Ahithophel for counsel, and Ahithophel advises him to go in to his father's concubines publicly, to make the breach with David irreparable and embolden the rebels. Absalom does so on the palace roof in the sight of all Israel, unknowingly fulfilling the judgment Nathan had pronounced over David's house.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The fleeing king who bears Shimei's curses with humility, trusting God to judge, but is deceived by Ziba's self-serving lie.</li>
+          <li><strong>Shimei</strong> — A man of Saul's house who curses David and pelts him with stones, voicing accusation that David chooses to endure rather than silence.</li>
+          <li><strong>Ziba</strong> — Mephibosheth's servant, who wins his master's property with provisions and a slander against the lame prince.</li>
+          <li><strong>Ahithophel</strong> — The shrewd counselor whose advice to defile David's concubines deepens the rebellion and fulfills Nathan's earlier word of judgment.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Samuel 16:12 (WEB)</p>
+          <p class="verse__text">It may be that Yahweh will look on the wrong done to me, and that Yahweh will repay me good for the cursing of me today.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>In a crisis we are prone to believe a convenient story without weighing the truth, as David did with Ziba.</li>
+          <li>Humility can receive even unjust reproach as something God may use, leaving vengeance to him.</li>
+          <li>The harvest of past sin can come back upon us in ways that are bitter and public.</li>
+          <li>Counsel that seems shrewd to the world can be a path of deeper rebellion against God.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-16">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-16">
+            <ul class="lesson-list">
+            <li><strong>Crisis tempts us to judge too quickly.</strong> David hears only Ziba and grants him everything: “all that pertains to Mephibosheth is yours” (2 Samuel 16:4, WEB). Hasty verdicts in pressure often prove unjust.</li>
+            <li><strong>Humility leaves vengeance to God.</strong> David refuses to silence Shimei, hoping “Yahweh will repay me good for the cursing of me today” (2 Samuel 16:12, WEB). He bears reproach rather than repay it.</li>
+            <li><strong>Sin's consequences can return openly.</strong> Absalom defiles his father's concubines “in the sight of all Israel” (2 Samuel 16:22, WEB), fulfilling the judgment Nathan spoke. What David did secretly returns publicly upon his house.</li>
+            <li><strong>Worldly shrewdness is not godly wisdom.</strong> Ahithophel's counsel was esteemed “as if a man inquired at the oracle of God” (2 Samuel 16:23, WEB), yet it served rebellion. Brilliance apart from God can lead straight to ruin.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-16">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-16">
+            <ol class="study-questions">
+            <li>Why does David so readily believe Ziba's accusation against Mephibosheth, and what does this caution us about?</li>
+            <li>How does David respond to Shimei's curses, and what reasoning lies behind his restraint?</li>
+            <li>What does it mean that David hoped the Lord might “repay me good for the cursing of me today”?</li>
+            <li>How does Ahithophel's counsel to Absalom connect to the judgment Nathan pronounced over David's house?</li>
+            <li>When you are reviled or wronged, what helps you, like David, to leave the matter in God's hands rather than retaliate?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-16">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-16">
+            <ol class="study-questions">
+            <li>Under the strain of flight, David accepts Ziba's gift and his story without hearing Mephibosheth, awarding the property on the spot (16:1-4). Pressure narrows our judgment and makes us susceptible to those who flatter us with help and feed us a convenient narrative. The verdict will later prove unjust.</li>
+            <li>David stops Abishai and chooses to absorb the cursing, considering that the Lord may be behind it and may yet bring good from it (16:9-12). His restraint flows from a humbled, God-trusting heart that no longer grasps to defend its honor by force.</li>
+            <li>David entrusts both the wrong and the recompense to God, hoping divine mercy may answer his patient endurance (16:12). Rather than settle the score himself, he believes God sees the injustice and can turn the day's bitterness into blessing. It is faith refusing to take revenge.</li>
+            <li>Nathan had foretold that David's wives would be taken and lain with in the sight of Israel (12:11-12); Absalom's public act on the roof fulfills it (16:21-22). The chapter shows that sin's consequences, though forgiven, can still ripen into painful public harvest within a family.</li>
+            <li>This is a personal-application question. David's secret was trusting that God saw the wrong and would judge rightly. Invite members to recall when they were unfairly treated and to consider how belief in God's just and merciful oversight frees us from the need to retaliate. As leader, keep the focus on Christ, who when reviled did not revile in return.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-samuel-15.html">← 2 Samuel 15</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-samuel-17.html">2 Samuel 17 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

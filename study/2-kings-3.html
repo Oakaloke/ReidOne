@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Kings 3: Water in the Desert — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Kings 3: three kings war against Moab, run out of water, and through Elisha's prophecy receive both water and victory." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-kings-progress" data-study-total="25">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Kings, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Kings · Chapter 3</span>
+        <h1>2 Kings 3: Water in the Desert</h1>
+        <p class="lead">Three kings march against rebellious Moab and, dying of thirst, find both water and victory through the word of the LORD spoken by Elisha.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — 2 Kings Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Kings 3 (WEB)</p>
+            <p><strong>1</strong> Now Jehoram the son of Ahab began to reign over Israel in Samaria in the eighteenth year of Jehoshaphat king of Judah, and reigned twelve years.</p>
+            <p><strong>2</strong> He did that which was evil in the sight of Yahweh, but not like his father, and like his mother; for he put away the pillar of Baal that his father had made.</p>
+            <p><strong>3</strong> Nevertheless he held to the sins of Jeroboam the son of Nebat, with which he made Israel to sin; he didn’t depart from it.</p>
+            <p><strong>4</strong> Now Mesha king of Moab was a sheep breeder; and he rendered to the king of Israel the wool of one hundred thousand lambs, and of one hundred thousand rams.</p>
+            <p><strong>5</strong> But when Ahab was dead, the king of Moab rebelled against the king of Israel.</p>
+            <p><strong>6</strong> King Jehoram went out of Samaria at that time, and mustered all Israel.</p>
+            <p><strong>7</strong> He went and sent to Jehoshaphat the king of Judah, saying, “The king of Moab has rebelled against me. Will you go with me against Moab to battle?” He said, “I will go up. I am as you are, my people as your people, my horses as your horses.”</p>
+            <p><strong>8</strong> He said, “Which way shall we go up?” He answered, “The way of the wilderness of Edom.”</p>
+            <p><strong>9</strong> So the king of Israel went, and the king of Judah, and the king of Edom; and they made a circuit of seven days’ journey. There was no water for the army, nor for the animals that followed them.</p>
+            <p><strong>10</strong> The king of Israel said, “Alas! For Yahweh has called these three kings together to deliver them into the hand of Moab.”</p>
+            <p><strong>11</strong> But Jehoshaphat said, “Isn’t there here a prophet of Yahweh, that we may inquire of Yahweh by him?” One of the king of Israel’s servants answered, “Elisha the son of Shaphat is here, who poured water on the hands of Elijah.”</p>
+            <p><strong>12</strong> Jehoshaphat said, “Yahweh’s word is with him.” So the king of Israel and Jehoshaphat and the king of Edom went down to him.</p>
+            <p><strong>13</strong> Elisha said to the king of Israel, “What have I to do with you? Go to the prophets of your father, and to the prophets of your mother.” The king of Israel said to him, “No; for Yahweh has called these three kings together to deliver them into the hand of Moab.”</p>
+            <p><strong>14</strong> Elisha said, “As Yahweh of Armies lives, before whom I stand, surely, were it not that I respect the presence of Jehoshaphat the king of Judah, I would not look toward you, nor see you.</p>
+            <p><strong>15</strong> But now bring me a minstrel.” When the minstrel played, the hand of Yahweh came on him.</p>
+            <p><strong>16</strong> He said, “Thus says Yahweh, ‘Make this valley full of trenches.’</p>
+            <p><strong>17</strong> For thus says Yahweh, ‘You will not see wind, neither will you see rain; yet that valley shall be filled with water, and you will drink, both you and your livestock and your animals.</p>
+            <p><strong>18</strong> This is but a light thing in the sight of Yahweh. He will also deliver the Moabites into your hand.</p>
+            <p><strong>19</strong> You shall strike every fortified city, and every choice city, and shall fell every good tree, and stop all springs of water, and mar every good piece of land with stones.’”</p>
+            <p><strong>20</strong> In the morning, about the time of offering the offering, behold, water came by the way of Edom, and the country was filled with water.</p>
+            <p><strong>21</strong> Now when all the Moabites heard that the kings had come up to fight against them, they gathered themselves together, all who were able to put on armor, and upward, and stood on the border.</p>
+            <p><strong>22</strong> They rose up early in the morning, and the sun shone on the water, and the Moabites saw the water over against them as red as blood.</p>
+            <p><strong>23</strong> They said, “This is blood. The kings are surely destroyed, and they have struck each other. Now therefore, Moab, to the plunder!”</p>
+            <p><strong>24</strong> When they came to the camp of Israel, the Israelites rose up and struck the Moabites, so that they fled before them; and they went forward into the land smiting the Moabites.</p>
+            <p><strong>25</strong> They beat down the cities; and on every good piece of land they cast every man his stone, and filled it; and they stopped all the springs of water, and felled all the good trees, until in Kir Hareseth only they left its stones; however the men armed with slings went about it, and struck it.</p>
+            <p><strong>26</strong> When the king of Moab saw that the battle was too severe for him, he took with him seven hundred men who drew sword, to break through to the king of Edom; but they could not.</p>
+            <p><strong>27</strong> Then he took his eldest son who would have reigned in his place, and offered him for a burnt offering on the wall. There was great wrath against Israel: and they departed from him, and returned to their own land.</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Kings 3 (KJV)</p>
+            <p><strong>1</strong> Now Jehoram the son of Ahab began to reign over Israel in Samaria the eighteenth year of Jehoshaphat king of Judah, and reigned twelve years.</p>
+            <p><strong>2</strong> And he wrought evil in the sight of the Lord; but not like his father, and like his mother: for he put away the image of Baal that his father had made.</p>
+            <p><strong>3</strong> Nevertheless he cleaved unto the sins of Jeroboam the son of Nebat, which made Israel to sin; he departed not therefrom.</p>
+            <p><strong>4</strong> And Mesha king of Moab was a sheepmaster, and rendered unto the king of Israel an hundred thousand lambs, and an hundred thousand rams, with the wool.</p>
+            <p><strong>5</strong> But it came to pass, when Ahab was dead, that the king of Moab rebelled against the king of Israel.</p>
+            <p><strong>6</strong> And king Jehoram went out of Samaria the same time, and numbered all Israel.</p>
+            <p><strong>7</strong> And he went and sent to Jehoshaphat the king of Judah, saying, The king of Moab hath rebelled against me: wilt thou go with me against Moab to battle? And he said, I will go up: I am as thou art, my people as thy people, and my horses as thy horses.</p>
+            <p><strong>8</strong> And he said, Which way shall we go up? And he answered, The way through the wilderness of Edom.</p>
+            <p><strong>9</strong> So the king of Israel went, and the king of Judah, and the king of Edom: and they fetched a compass of seven days’ journey: and there was no water for the host, and for the cattle that followed them.</p>
+            <p><strong>10</strong> And the king of Israel said, Alas! that the Lord hath called these three kings together, to deliver them into the hand of Moab!</p>
+            <p><strong>11</strong> But Jehoshaphat said, Is there not here a prophet of the Lord, that we may enquire of the Lord by him? And one of the king of Israel’s servants answered and said, Here is Elisha the son of Shaphat, which poured water on the hands of Elijah.</p>
+            <p><strong>12</strong> And Jehoshaphat said, The word of the Lord is with him. So the king of Israel and Jehoshaphat and the king of Edom went down to him.</p>
+            <p><strong>13</strong> And Elisha said unto the king of Israel, What have I to do with thee? get thee to the prophets of thy father, and to the prophets of thy mother. And the king of Israel said unto him, Nay: for the Lord hath called these three kings together, to deliver them into the hand of Moab.</p>
+            <p><strong>14</strong> And Elisha said, As the Lord of hosts liveth, before whom I stand, surely, were it not that I regard the presence of Jehoshaphat the king of Judah, I would not look toward thee, nor see thee.</p>
+            <p><strong>15</strong> But now bring me a minstrel. And it came to pass, when the minstrel played, that the hand of the Lord came upon him.</p>
+            <p><strong>16</strong> And he said, Thus saith the Lord, Make this valley full of ditches.</p>
+            <p><strong>17</strong> For thus saith the Lord, Ye shall not see wind, neither shall ye see rain; yet that valley shall be filled with water, that ye may drink, both ye, and your cattle, and your beasts.</p>
+            <p><strong>18</strong> And this is but a light thing in the sight of the Lord: he will deliver the Moabites also into your hand.</p>
+            <p><strong>19</strong> And ye shall smite every fenced city, and every choice city, and shall fell every good tree, and stop all wells of water, and mar every good piece of land with stones.</p>
+            <p><strong>20</strong> And it came to pass in the morning, when the meat offering was offered, that, behold, there came water by the way of Edom, and the country was filled with water.</p>
+            <p><strong>21</strong> And when all the Moabites heard that the kings were come up to fight against them, they gathered all that were able to put on armour, and upward, and stood in the border.</p>
+            <p><strong>22</strong> And they rose up early in the morning, and the sun shone upon the water, and the Moabites saw the water on the other side as red as blood:</p>
+            <p><strong>23</strong> And they said, This is blood: the kings are surely slain, and they have smitten one another: now therefore, Moab, to the spoil.</p>
+            <p><strong>24</strong> And when they came to the camp of Israel, the Israelites rose up and smote the Moabites, so that they fled before them: but they went forward smiting the Moabites, even in their country.</p>
+            <p><strong>25</strong> And they beat down the cities, and on every good piece of land cast every man his stone, and filled it; and they stopped all the wells of water, and felled all the good trees: only in Kir–haraseth left they the stones thereof; howbeit the slingers went about it, and smote it.</p>
+            <p><strong>26</strong> And when the king of Moab saw that the battle was too sore for him, he took with him seven hundred men that drew swords, to break through even unto the king of Edom: but they could not.</p>
+            <p><strong>27</strong> Then he took his eldest son that should have reigned in his stead, and offered him for a burnt offering upon the wall. And there was great indignation against Israel: and they departed from him, and returned to their own land.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Kings 3 (ASV)</p>
+            <p><strong>1</strong> Now Jehoram the son of Ahab began to reign over Israel in Samaria in the eighteenth year of Jehoshaphat king of Judah, and reigned twelve years.</p>
+            <p><strong>2</strong> And he did that which was evil in the sight of Jehovah, but not like his father, and like his mother; for he put away the pillar of Baal that his father had made.</p>
+            <p><strong>3</strong> Nevertheless he cleaved unto the sins of Jeroboam the son of Nebat, wherewith he made Israel to sin; he departed not therefrom.</p>
+            <p><strong>4</strong> Now Mesha king of Moab was a sheep-master; and he rendered unto the king of Israel the wool of a hundred thousand lambs, and of a hundred thousand rams.</p>
+            <p><strong>5</strong> But it came to pass, when Ahab was dead, that the king of Moab rebelled against the king of Israel.</p>
+            <p><strong>6</strong> And king Jehoram went out of Samaria at that time, and mustered all Israel.</p>
+            <p><strong>7</strong> And he went and sent to Jehoshaphat the king of Judah, saying, The king of Moab hath rebelled against me: wilt thou go with me against Moab to battle? And he said, I will go up: I am as thou art, my people as thy people, my horses as thy horses.</p>
+            <p><strong>8</strong> And he said, Which way shall we go up? And he answered, The way of the wilderness of Edom.</p>
+            <p><strong>9</strong> So the king of Israel went, and the king of Judah, and the king of Edom; and they made a circuit of seven days’ journey: and there was no water for the host, nor for the beasts that followed them.</p>
+            <p><strong>10</strong> And the king of Israel said, Alas! for Jehovah hath called these three kings together to deliver them into the hand of Moab.</p>
+            <p><strong>11</strong> But Jehoshaphat said, Is there not here a prophet of Jehovah, that we may inquire of Jehovah by him? And one of the king of Israel’s servants answered and said, Elisha the son of Shaphat is here, who poured water on the hands of Elijah.</p>
+            <p><strong>12</strong> And Jehoshaphat said, The word of Jehovah is with him. So the king of Israel and Jehoshaphat and the king of Edom went down to him.</p>
+            <p><strong>13</strong> And Elisha said unto the king of Israel, What have I to do with thee? get thee to the prophets of thy father, and to the prophets of thy mother. And the king of Israel said unto him, Nay; for Jehovah hath called these three kings together to deliver them into the hand of Moab.</p>
+            <p><strong>14</strong> And Elisha said, As Jehovah of hosts liveth, before whom I stand, surely, were it not that I regard the presence of Jehoshaphat the king of Judah, I would not look toward thee, nor see thee.</p>
+            <p><strong>15</strong> But now bring me a minstrel. And it came to pass, when the minstrel played, that the hand of Jehovah came upon him.</p>
+            <p><strong>16</strong> And he said, Thus saith Jehovah, Make this valley full of trenches.</p>
+            <p><strong>17</strong> For thus saith Jehovah, Ye shall not see wind, neither shall ye see rain; yet that valley shall be filled with water, and ye shall drink, both ye and your cattle and your beasts.</p>
+            <p><strong>18</strong> And this is but a light thing in the sight of Jehovah: he will also deliver the Moabites into your hand.</p>
+            <p><strong>19</strong> And ye shall smite every fortified city, and every choice city, and shall fell every good tree, and stop all fountains of water, and mar every good piece of land with stones.</p>
+            <p><strong>20</strong> And it came to pass in the morning, about the time of offering the oblation, that, behold, there came water by the way of Edom, and the country was filled with water.</p>
+            <p><strong>21</strong> Now when all the Moabites heard that the kings were come up to fight against them, they gathered themselves together, all that were able to put on armor, and upward, and stood on the border.</p>
+            <p><strong>22</strong> And they rose up early in the morning, and the sun shone upon the water, and the Moabites saw the water over against them as red as blood:</p>
+            <p><strong>23</strong> and they said, This is blood; the kings are surely destroyed, and they have smitten each man his fellow: now therefore, Moab, to the spoil.</p>
+            <p><strong>24</strong> And when they came to the camp of Israel, the Israelites rose up and smote the Moabites, so that they fled before them; and they went forward into the land smiting the Moabites.</p>
+            <p><strong>25</strong> And they beat down the cities; and on every good piece of land they cast every man his stone, and filled it; and they stopped all the fountains of water, and felled all the good trees, until in Kir-hareseth only they left the stones thereof; howbeit the slingers went about it, and smote it.</p>
+            <p><strong>26</strong> And when the king of Moab saw that the battle was too sore for him, he took with him seven hundred men that drew sword, to break through unto the king of Edom; but they could not.</p>
+            <p><strong>27</strong> Then he took his eldest son that should have reigned in his stead, and offered him for a burnt-offering upon the wall. And there was great wrath against Israel: and they departed from him, and returned to their own land.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>When Moab rebels after Ahab's death, King Jehoram of Israel allies with Jehoshaphat of Judah and the king of Edom to subdue it. Marching by way of the wilderness of Edom, the armies make a seven-day circuit and run out of water for the soldiers and animals. Jehoram despairs that the LORD has gathered the kings only to deliver them to Moab, but Jehoshaphat asks for a prophet, and Elisha is found. The prophet bluntly tells Jehoram he would not even look at him were it not for godly Jehoshaphat's presence. With a minstrel playing, the hand of the LORD comes on Elisha, and he commands the valley to be dug full of trenches; without wind or rain, water will fill them, and God will also deliver Moab into their hands. At dawn water comes by the way of Edom and fills the land. The Moabites, seeing the sunlit water red as blood, assume the kings have destroyed one another and rush in to plunder, only to be routed. Israel devastates Moab's cities until, in desperation, the king of Moab offers his eldest son as a burnt offering on the wall, and Israel withdraws.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jehoram of Israel</strong> — Ahab's son and king of Israel, who removes the pillar of Baal yet clings to Jeroboam's sins and despairs when the army runs dry.</li>
+          <li><strong>Jehoshaphat of Judah</strong> — The godly king who insists on seeking a prophet of the LORD and whose presence is the reason Elisha gives an answer at all.</li>
+          <li><strong>Elisha</strong> — The prophet through whom the LORD provides water without rain and promises victory over Moab.</li>
+          <li><strong>Mesha king of Moab</strong> — The sheep-breeding king who rebels against Israel and, in final desperation, sacrifices his own son on the city wall.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Kings 3:17 (WEB)</p>
+          <p class="verse__text">For thus says Yahweh, ‘You will not see wind, neither will you see rain; yet that valley shall be filled with water, and you will drink, both you and your livestock and your animals.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God can provide for his people in ways that defy all natural expectation, sending water without wind or rain.</li>
+          <li>The presence of even one faithful believer can be a means of blessing to those around them.</li>
+          <li>When all seems hopeless, the right response is to seek the word of the LORD rather than despair.</li>
+          <li>God's deliverance often comes quietly at dawn, asking us to prepare by faith before we see the provision.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>Seek God's word before you act.</strong> Jehoshaphat asks, “Isn’t there here a prophet of Yahweh?” (2 Kings 3:11, WEB). The turning point comes when the kings stop scheming and start seeking the LORD.</li>
+            <li><strong>God provides beyond natural means.</strong> “You will not see wind, neither will you see rain; yet that valley shall be filled with water” (2 Kings 3:17, WEB). His supply is not limited to what we can foresee.</li>
+            <li><strong>Faith digs the trenches before the rain.</strong> Israel must “make this valley full of trenches” (2 Kings 3:16, WEB) in advance. Obedient preparation precedes the provision we have not yet seen.</li>
+            <li><strong>One faithful presence brings blessing.</strong> Elisha answers only because he respects “the presence of Jehoshaphat the king of Judah” (2 Kings 3:14, WEB). A godly life can be a channel of mercy to others.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>How do Jehoram and Jehoshaphat respond differently to the crisis of no water?</li>
+            <li>Why does Elisha agree to speak at all, and what does that teach about the influence of the godly?</li>
+            <li>What is significant about water arriving “without wind or rain” and Israel being told to dig trenches first?</li>
+            <li>How does God use the Moabites' own misreading of the water to bring about their defeat?</li>
+            <li>When have you had to act in faith and prepare for a provision you could not yet see?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>Jehoram immediately despairs, assuming the LORD has gathered them only for destruction—the reflex of a heart not anchored in God. Jehoshaphat, by contrast, turns to seek a prophet of the LORD. The two kings model unbelief and faith side by side.</li>
+            <li>Elisha says he would not even look at the wicked Jehoram were it not for Jehoshaphat. The presence of one faithful man secures a word of grace for the whole army, illustrating how the godly can be a blessing to those around them.</li>
+            <li>The water comes by God's bare word, not by weather, underscoring that this is his doing alone. Israel must dig the trenches in advance, an act of faith trusting the promise before the provision appears—obedience that prepares to receive.</li>
+            <li>At sunrise the water looks red as blood, and Moab assumes the allied kings have slaughtered each other. Rushing in to plunder, they meet a prepared army. God turns their own false confidence into the means of their downfall.</li>
+            <li>This is a personal-application question. Invite members to recall a time they obeyed before they could see the outcome—digging trenches, so to speak—and how God met them. Encourage trust that prepares in faith for unseen provision.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="2-kings-2.html">← 2 Kings 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-kings-4.html">2 Kings 4 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

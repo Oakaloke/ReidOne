@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Samuel 17: The Battle Is the Lord's — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Samuel 17: young David trusts in the living God and defeats the giant Goliath, declaring that the battle is the Lord's." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-samuel-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Samuel, Chapter 17
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Samuel · Chapter 17</span>
+        <h1>1 Samuel 17: The Battle Is the Lord's</h1>
+        <p class="lead">A shepherd boy faces the giant Goliath with a sling and faith, declaring that the battle belongs to the Lord who saves not with sword and spear.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-17">
+            <span>Scripture — 1 Samuel Chapter 17</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-17">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-17-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-17-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-17-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-17-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Samuel 17 (WEB)</p>
+            <p><strong>1</strong> Now the Philistines gathered together their armies to battle; and they were gathered together at Socoh, which belongs to Judah, and encamped between Socoh and Azekah, in Ephesdammim.</p>
+            <p><strong>2</strong> Saul and the men of Israel were gathered together, and encamped in the valley of Elah, and set the battle in array against the Philistines.</p>
+            <p><strong>3</strong> The Philistines stood on the mountain on the one side, and Israel stood on the mountain on the other side: and there was a valley between them.</p>
+            <p><strong>4</strong> There went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span.</p>
+            <p><strong>5</strong> He had a helmet of brass on his head, and he was clad with a coat of mail; and the weight of the coat was five thousand shekels of brass.</p>
+            <p><strong>6</strong> He had brass shin armor on his legs, and a javelin of brass between his shoulders.</p>
+            <p><strong>7</strong> The staff of his spear was like a weaver’s beam; and his spear’s head weighed six hundred shekels of iron: and his shield bearer went before him.</p>
+            <p><strong>8</strong> He stood and cried to the armies of Israel, and said to them, “Why have you come out to set your battle in array? Am I not a Philistine, and you servants to Saul? Choose a man for yourselves, and let him come down to me.</p>
+            <p><strong>9</strong> If he be able to fight with me, and kill me, then will we be your servants; but if I prevail against him, and kill him, then you will be our servants, and serve us.”</p>
+            <p><strong>10</strong> The Philistine said, “I defy the armies of Israel this day! Give me a man, that we may fight together!”</p>
+            <p><strong>11</strong> When Saul and all Israel heard those words of the Philistine, they were dismayed, and greatly afraid.</p>
+            <p><strong>12</strong> Now David was the son of that Ephrathite of Bethlehem Judah, whose name was Jesse; and he had eight sons: and the man was an old man in the days of Saul, stricken among men.</p>
+            <p><strong>13</strong> The three eldest sons of Jesse had gone after Saul to the battle: and the names of his three sons who went to the battle were Eliab the firstborn, and next to him Abinadab, and the third Shammah.</p>
+            <p><strong>14</strong> David was the youngest; and the three eldest followed Saul.</p>
+            <p><strong>15</strong> Now David went back and forth from Saul to feed his father’s sheep at Bethlehem.</p>
+            <p><strong>16</strong> The Philistine drew near morning and evening, and presented himself forty days.</p>
+            <p><strong>17</strong> Jesse said to David his son, “Now take for your brothers an ephah of this parched grain, and these ten loaves, and carry them quickly to the camp to your brothers;</p>
+            <p><strong>18</strong> and bring these ten cheeses to the captain of their thousand, and see how your brothers are doing, and bring back news.”</p>
+            <p><strong>19</strong> Now Saul, and they, and all the men of Israel, were in the valley of Elah, fighting with the Philistines.</p>
+            <p><strong>20</strong> David rose up early in the morning, and left the sheep with a keeper, and took, and went, as Jesse had commanded him; and he came to the place of the wagons, as the army which was going out to the fight shouted for the battle.</p>
+            <p><strong>21</strong> Israel and the Philistines put the battle in array, army against army.</p>
+            <p><strong>22</strong> David left his baggage in the hand of the keeper of the baggage, and ran to the army, and came and greeted his brothers.</p>
+            <p><strong>23</strong> As he talked with them, behold, there came up the champion, the Philistine of Gath, Goliath by name, out of the ranks of the Philistines, and spoke according to the same words: and David heard them.</p>
+            <p><strong>24</strong> All the men of Israel, when they saw the man, fled from him, and were terrified.</p>
+            <p><strong>25</strong> The men of Israel said, “Have you seen this man who has come up? He has surely come up to defy Israel. It shall be, that the man who kills him, the king will enrich him with great riches, and will give him his daughter, and make his father’s house free in Israel.”</p>
+            <p><strong>26</strong> David spoke to the men who stood by him, saying, “What shall be done to the man who kills this Philistine, and takes away the reproach from Israel? For who is this uncircumcised Philistine, that he should defy the armies of the living God?”</p>
+            <p><strong>27</strong> The people answered him in this way, saying, “So shall it be done to the man who kills him.”</p>
+            <p><strong>28</strong> Eliab his eldest brother heard when he spoke to the men; and Eliab’s anger was kindled against David, and he said, “Why have you come down? With whom have you left those few sheep in the wilderness? I know your pride, and the naughtiness of your heart; for you have come down that you might see the battle.”</p>
+            <p><strong>29</strong> David said, “What have I now done? Is there not a cause?”</p>
+            <p><strong>30</strong> He turned away from him toward another, and spoke like that again; and the people answered him again the same way.</p>
+            <p><strong>31</strong> When the words were heard which David spoke, they rehearsed them before Saul; and he sent for him.</p>
+            <p><strong>32</strong> David said to Saul, “Let no man’s heart fail because of him. Your servant will go and fight with this Philistine.”</p>
+            <p><strong>33</strong> Saul said to David, “You are not able to go against this Philistine to fight with him; for you are but a youth, and he a man of war from his youth.”</p>
+            <p><strong>34</strong> David said to Saul, “Your servant was keeping his father’s sheep; and when a lion or a bear came, and took a lamb out of the flock,</p>
+            <p><strong>35</strong> I went out after him, and struck him, and rescued it out of his mouth. When he arose against me, I caught him by his beard, and struck him, and killed him.</p>
+            <p><strong>36</strong> Your servant struck both the lion and the bear. This uncircumcised Philistine shall be as one of them, since he has defied the armies of the living God.”</p>
+            <p><strong>37</strong> David said, “Yahweh who delivered me out of the paw of the lion, and out of the paw of the bear, he will deliver me out of the hand of this Philistine.” Saul said to David, “Go; and Yahweh shall be with you.”</p>
+            <p><strong>38</strong> Saul dressed David with his clothing. He put a helmet of brass on his head, and he clad him with a coat of mail.</p>
+            <p><strong>39</strong> David strapped his sword on his clothing, and he tried to move; for he had not tested it. David said to Saul, “I can’t go with these; for I have not tested them.” David took them off.</p>
+            <p><strong>40</strong> He took his staff in his hand, and chose for himself five smooth stones out of the brook, and put them in the shepherd’s bag which he had, even in his wallet. His sling was in his hand; and he drew near to the Philistine.</p>
+            <p><strong>41</strong> The Philistine came on and drew near to David; and the man who bore the shield went before him.</p>
+            <p><strong>42</strong> When the Philistine looked about, and saw David, he disdained him; for he was but a youth, and ruddy, and withal of a fair face.</p>
+            <p><strong>43</strong> The Philistine said to David, “Am I a dog, that you come to me with sticks?” The Philistine cursed David by his gods.</p>
+            <p><strong>44</strong> The Philistine said to David, “Come to me, and I will give your flesh to the birds of the sky, and to the animals of the field.”</p>
+            <p><strong>45</strong> Then David said to the Philistine, “You come to me with a sword, and with a spear, and with a javelin: but I come to you in the name of Yahweh of Armies, the God of the armies of Israel, whom you have defied.</p>
+            <p><strong>46</strong> Today, Yahweh will deliver you into my hand. I will strike you, and take your head from off you. I will give the dead bodies of the army of the Philistines this day to the birds of the sky, and to the wild animals of the earth; that all the earth may know that there is a God in Israel,</p>
+            <p><strong>47</strong> and that all this assembly may know that Yahweh doesn’t save with sword and spear: for the battle is Yahweh’s, and he will give you into our hand.”</p>
+            <p><strong>48</strong> When the Philistine arose, and came and drew near to meet David, David hurried, and ran toward the army to meet the Philistine.</p>
+            <p><strong>49</strong> David put his hand in his bag, took a stone, and slung it, and struck the Philistine in his forehead; and the stone sank into his forehead, and he fell on his face to the earth.</p>
+            <p><strong>50</strong> So David prevailed over the Philistine with a sling and with a stone, and struck the Philistine, and killed him; but there was no sword in the hand of David.</p>
+            <p><strong>51</strong> Then David ran, and stood over the Philistine, and took his sword, and drew it out of its sheath, and killed him, and cut off his head therewith. When the Philistines saw that their champion was dead, they fled.</p>
+            <p><strong>52</strong> The men of Israel and of Judah arose, and shouted, and pursued the Philistines, until you come to Gai, and to the gates of Ekron. The wounded of the Philistines fell down by the way to Shaaraim, even to Gath, and to Ekron.</p>
+            <p><strong>53</strong> The children of Israel returned from chasing after the Philistines, and they plundered their camp.</p>
+            <p><strong>54</strong> David took the head of the Philistine, and brought it to Jerusalem; but he put his armor in his tent.</p>
+            <p><strong>55</strong> When Saul saw David go out against the Philistine, he said to Abner, the captain of the army, “Abner, whose son is this youth?” Abner said, “As your soul lives, O king, I can’t tell.”</p>
+            <p><strong>56</strong> The king said, “Inquire whose son the young man is!”</p>
+            <p><strong>57</strong> As David returned from the slaughter of the Philistine, Abner took him, and brought him before Saul with the head of the Philistine in his hand.</p>
+            <p><strong>58</strong> Saul said to him, “Whose son are you, you young man?” David answered, “I am the son of your servant Jesse the Bethlehemite.”</p>
+            </div>
+            <div class="scripture-text" id="web-17-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Samuel 17 (KJV)</p>
+            <p><strong>1</strong> Now the Philistines gathered together their armies to battle, and were gathered together at Shochoh, which belongeth to Judah, and pitched between Shochoh and Azekah, in Ephes–dammim.</p>
+            <p><strong>2</strong> And Saul and the men of Israel were gathered together, and pitched by the valley of Elah, and set the battle in array against the Philistines.</p>
+            <p><strong>3</strong> And the Philistines stood on a mountain on the one side, and Israel stood on a mountain on the other side: and there was a valley between them.</p>
+            <p><strong>4</strong> And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span.</p>
+            <p><strong>5</strong> And he had an helmet of brass upon his head, and he was armed with a coat of mail; and the weight of the coat was five thousand shekels of brass.</p>
+            <p><strong>6</strong> And he had greaves of brass upon his legs, and a target of brass between his shoulders.</p>
+            <p><strong>7</strong> And the staff of his spear was like a weaver’s beam; and his spear’s head weighed six hundred shekels of iron: and one bearing a shield went before him.</p>
+            <p><strong>8</strong> And he stood and cried unto the armies of Israel, and said unto them, Why are ye come out to set your battle in array? am not I a Philistine, and ye servants to Saul? choose you a man for you, and let him come down to me.</p>
+            <p><strong>9</strong> If he be able to fight with me, and to kill me, then will we be your servants: but if I prevail against him, and kill him, then shall ye be our servants, and serve us.</p>
+            <p><strong>10</strong> And the Philistine said, I defy the armies of Israel this day; give me a man, that we may fight together.</p>
+            <p><strong>11</strong> When Saul and all Israel heard those words of the Philistine, they were dismayed, and greatly afraid.</p>
+            <p><strong>12</strong> Now David was the son of that Ephrathite of Beth–lehem–judah, whose name was Jesse; and he had eight sons: and the man went among men for an old man in the days of Saul.</p>
+            <p><strong>13</strong> And the three eldest sons of Jesse went and followed Saul to the battle: and the names of his three sons that went to the battle were Eliab the firstborn, and next unto him Abinadab, and the third Shammah.</p>
+            <p><strong>14</strong> And David was the youngest: and the three eldest followed Saul.</p>
+            <p><strong>15</strong> But David went and returned from Saul to feed his father’s sheep at Beth–lehem.</p>
+            <p><strong>16</strong> And the Philistine drew near morning and evening, and presented himself forty days.</p>
+            <p><strong>17</strong> And Jesse said unto David his son, Take now for thy brethren an ephah of this parched corn, and these ten loaves, and run to the camp to thy brethren;</p>
+            <p><strong>18</strong> And carry these ten cheeses unto the captain of their thousand, and look how thy brethren fare, and take their pledge.</p>
+            <p><strong>19</strong> Now Saul, and they, and all the men of Israel, were in the valley of Elah, fighting with the Philistines.</p>
+            <p><strong>20</strong> And David rose up early in the morning, and left the sheep with a keeper, and took, and went, as Jesse had commanded him; and he came to the trench, as the host was going forth to the fight, and shouted for the battle.</p>
+            <p><strong>21</strong> For Israel and the Philistines had put the battle in array, army against army.</p>
+            <p><strong>22</strong> And David left his carriage in the hand of the keeper of the carriage, and ran into the army, and came and saluted his brethren.</p>
+            <p><strong>23</strong> And as he talked with them, behold, there came up the champion, the Philistine of Gath, Goliath by name, out of the armies of the Philistines, and spake according to the same words: and David heard them.</p>
+            <p><strong>24</strong> And all the men of Israel, when they saw the man, fled from him, and were sore afraid.</p>
+            <p><strong>25</strong> And the men of Israel said, Have ye seen this man that is come up? surely to defy Israel is he come up: and it shall be, that the man who killeth him, the king will enrich him with great riches, and will give him his daughter, and make his father’s house free in Israel.</p>
+            <p><strong>26</strong> And David spake to the men that stood by him, saying, What shall be done to the man that killeth this Philistine, and taketh away the reproach from Israel? for who is this uncircumcised Philistine, that he should defy the armies of the living God?</p>
+            <p><strong>27</strong> And the people answered him after this manner, saying, So shall it be done to the man that killeth him.</p>
+            <p><strong>28</strong> And Eliab his eldest brother heard when he spake unto the men; and Eliab’s anger was kindled against David, and he said, Why camest thou down hither? and with whom hast thou left those few sheep in the wilderness? I know thy pride, and the naughtiness of thine heart; for thou art come down that thou mightest see the battle.</p>
+            <p><strong>29</strong> And David said, What have I now done? Is there not a cause?</p>
+            <p><strong>30</strong> And he turned from him toward another, and spake after the same manner: and the people answered him again after the former manner.</p>
+            <p><strong>31</strong> And when the words were heard which David spake, they rehearsed them before Saul: and he sent for him.</p>
+            <p><strong>32</strong> And David said to Saul, Let no man’s heart fail because of him; thy servant will go and fight with this Philistine.</p>
+            <p><strong>33</strong> And Saul said to David, Thou art not able to go against this Philistine to fight with him: for thou art but a youth, and he a man of war from his youth.</p>
+            <p><strong>34</strong> And David said unto Saul, Thy servant kept his father’s sheep, and there came a lion, and a bear, and took a lamb out of the flock:</p>
+            <p><strong>35</strong> And I went out after him, and smote him, and delivered it out of his mouth: and when he arose against me, I caught him by his beard, and smote him, and slew him.</p>
+            <p><strong>36</strong> Thy servant slew both the lion and the bear: and this uncircumcised Philistine shall be as one of them, seeing he hath defied the armies of the living God.</p>
+            <p><strong>37</strong> David said moreover, The Lord that delivered me out of the paw of the lion, and out of the paw of the bear, he will deliver me out of the hand of this Philistine. And Saul said unto David, Go, and the Lord be with thee.</p>
+            <p><strong>38</strong> And Saul armed David with his armour, and he put an helmet of brass upon his head; also he armed him with a coat of mail.</p>
+            <p><strong>39</strong> And David girded his sword upon his armour, and he assayed to go; for he had not proved it. And David said unto Saul, I cannot go with these; for I have not proved them. And David put them off him.</p>
+            <p><strong>40</strong> And he took his staff in his hand, and chose him five smooth stones out of the brook, and put them in a shepherd’s bag which he had, even in a scrip; and his sling was in his hand: and he drew near to the Philistine.</p>
+            <p><strong>41</strong> And the Philistine came on and drew near unto David; and the man that bare the shield went before him.</p>
+            <p><strong>42</strong> And when the Philistine looked about, and saw David, he disdained him: for he was but a youth, and ruddy, and of a fair countenance.</p>
+            <p><strong>43</strong> And the Philistine said unto David, Am I a dog, that thou comest to me with staves? And the Philistine cursed David by his gods.</p>
+            <p><strong>44</strong> And the Philistine said to David, Come to me, and I will give thy flesh unto the fowls of the air, and to the beasts of the field.</p>
+            <p><strong>45</strong> Then said David to the Philistine, Thou comest to me with a sword, and with a spear, and with a shield: but I come to thee in the name of the Lord of hosts, the God of the armies of Israel, whom thou hast defied.</p>
+            <p><strong>46</strong> This day will the Lord deliver thee into mine hand; and I will smite thee, and take thine head from thee; and I will give the carcases of the host of the Philistines this day unto the fowls of the air, and to the wild beasts of the earth; that all the earth may know that there is a God in Israel.</p>
+            <p><strong>47</strong> And all this assembly shall know that the Lord saveth not with sword and spear: for the battle is the Lord’s, and he will give you into our hands.</p>
+            <p><strong>48</strong> And it came to pass, when the Philistine arose, and came and drew nigh to meet David, that David hasted, and ran toward the army to meet the Philistine.</p>
+            <p><strong>49</strong> And David put his hand in his bag, and took thence a stone, and slang it, and smote the Philistine in his forehead, that the stone sunk into his forehead; and he fell upon his face to the earth.</p>
+            <p><strong>50</strong> So David prevailed over the Philistine with a sling and with a stone, and smote the Philistine, and slew him; but there was no sword in the hand of David.</p>
+            <p><strong>51</strong> Therefore David ran, and stood upon the Philistine, and took his sword, and drew it out of the sheath thereof, and slew him, and cut off his head therewith. And when the Philistines saw their champion was dead, they fled.</p>
+            <p><strong>52</strong> And the men of Israel and of Judah arose, and shouted, and pursued the Philistines, until thou come to the valley, and to the gates of Ekron. And the wounded of the Philistines fell down by the way to Shaaraim, even unto Gath, and unto Ekron.</p>
+            <p><strong>53</strong> And the children of Israel returned from chasing after the Philistines, and they spoiled their tents.</p>
+            <p><strong>54</strong> And David took the head of the Philistine, and brought it to Jerusalem; but he put his armour in his tent.</p>
+            <p><strong>55</strong> And when Saul saw David go forth against the Philistine, he said unto Abner, the captain of the host, Abner, whose son is this youth? And Abner said, As thy soul liveth, O king, I cannot tell.</p>
+            <p><strong>56</strong> And the king said, Enquire thou whose son the stripling is.</p>
+            <p><strong>57</strong> And as David returned from the slaughter of the Philistine, Abner took him, and brought him before Saul with the head of the Philistine in his hand.</p>
+            <p><strong>58</strong> And Saul said to him, Whose son art thou, thou young man? And David answered, I am the son of thy servant Jesse the Beth–lehemite.</p>
+            </div>
+            <div class="scripture-text" id="web-17-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Samuel 17 (ASV)</p>
+            <p><strong>1</strong> Now the Philistines gathered together their armies to battle; and they were gathered together at Socoh, which belongeth to Judah, and encamped between Socoh and Azekah, in Ephes-dammim.</p>
+            <p><strong>2</strong> And Saul and the men of Israel were gathered together, and encamped in the vale of Elah, and set the battle in array against the Philistines.</p>
+            <p><strong>3</strong> And the Philistines stood on the mountain on the one side, and Israel stood on the mountain on the other side: and there was a valley between them.</p>
+            <p><strong>4</strong> And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span.</p>
+            <p><strong>5</strong> And he had a helmet of brass upon his head, and he was clad with a coat of mail; and the weight of the coat was five thousand shekels of brass.</p>
+            <p><strong>6</strong> And he had greaves of brass upon his legs, and a javelin of brass between his shoulders.</p>
+            <p><strong>7</strong> And the staff of his spear was like a weaver’s beam; and his spear’s head weighed six hundred shekels of iron: and his shield-bearer went before him.</p>
+            <p><strong>8</strong> And he stood and cried unto the armies of Israel, and said unto them, Why are ye come out to set your battle in array? am not I a Philistine, and ye servants to Saul? choose you a man for you, and let him come down to me.</p>
+            <p><strong>9</strong> If he be able to fight with me, and kill me, then will we be your servants; but if I prevail against him, and kill him, then shall ye be our servants, and serve us.</p>
+            <p><strong>10</strong> And the Philistine said, I defy the armies of Israel this day; give me a man, that we may fight together.</p>
+            <p><strong>11</strong> And when Saul and all Israel heard those words of the Philistine, they were dismayed, and greatly afraid.</p>
+            <p><strong>12</strong> Now David was the son of that Ephrathite of Beth-lehem-judah, whose name was Jesse; and he had eight sons: and the man was an old man in the days of Saul, stricken in years among men.</p>
+            <p><strong>13</strong> And the three eldest sons of Jesse had gone after Saul to the battle: and the names of his three sons that went to the battle were Eliab the first-born, and next unto him Abinadab, and the third Shammah.</p>
+            <p><strong>14</strong> And David was the youngest; and the three eldest followed Saul.</p>
+            <p><strong>15</strong> Now David went to and fro from Saul to feed his father’s sheep at Beth-lehem.</p>
+            <p><strong>16</strong> And the Philistine drew near morning and evening, and presented himself forty days.</p>
+            <p><strong>17</strong> And Jesse said unto David his son, Take now for thy brethren an ephah of this parched grain, and these ten loaves, and carry them quickly to the camp to thy brethren;</p>
+            <p><strong>18</strong> and bring these ten cheeses unto the captain of their thousand, and look how thy brethren fare, and take their pledge.</p>
+            <p><strong>19</strong> Now Saul, and they, and all the men of Israel, were in the vale of Elah, fighting with the Philistines.</p>
+            <p><strong>20</strong> And David rose up early in the morning, and left the sheep with a keeper, and took, and went, as Jesse had commanded him; and he came to the place of the wagons, as the host which was going forth to the fight shouted for the battle.</p>
+            <p><strong>21</strong> And Israel and the Philistines put the battle in array, army against army.</p>
+            <p><strong>22</strong> And David left his baggage in the hand of the keeper of the baggage, and ran to the army, and came and saluted his brethren.</p>
+            <p><strong>23</strong> And as he talked with them, behold, there came up the champion, the Philistine of Gath, Goliath by name, out of the ranks of the Philistines, and spake according to the same words: and David heard them.</p>
+            <p><strong>24</strong> And all the men of Israel, when they saw the man, fled from him, and were sore afraid.</p>
+            <p><strong>25</strong> And the men of Israel said, Have ye seen this man that is come up? surely to defy Israel is he come up: and it shall be, that the man who killeth him, the king will enrich him with great riches, and will give him his daughter, and make his father’s house free in Israel.</p>
+            <p><strong>26</strong> And David spake to the men that stood by him, saying, What shall be done to the man that killeth this Philistine, and taketh away the reproach from Israel? for who is this uncircumcised Philistine, that he should defy the armies of the living God?</p>
+            <p><strong>27</strong> And the people answered him after this manner, saying, So shall it be done to the man that killeth him.</p>
+            <p><strong>28</strong> And Eliab his eldest brother heard when he spake unto the men; and Eliab’s anger was kindled against David, and he said, Why art thou come down? and with whom hast thou left those few sheep in the wilderness? I know thy pride, and the naughtiness of thy heart; for thou art come down that thou mightest see the battle.</p>
+            <p><strong>29</strong> And David said, What have I now done? Is there not a cause?</p>
+            <p><strong>30</strong> And he turned away from him toward another, and spake after the same manner: and the people answered him again after the former manner.</p>
+            <p><strong>31</strong> And when the words were heard which David spake, they rehearsed them before Saul; and he sent for him.</p>
+            <p><strong>32</strong> And David said to Saul, Let no man’s heart fail because of him; thy servant will go and fight with this Philistine.</p>
+            <p><strong>33</strong> And Saul said to David, Thou art not able to go against this Philistine to fight with him; for thou art but a youth, and he a man of war from his youth.</p>
+            <p><strong>34</strong> And David said unto Saul, Thy servant was keeping his father’s sheep; and when there came a lion, or a bear, and took a lamb out of the flock,</p>
+            <p><strong>35</strong> I went out after him, and smote him, and delivered it out of his mouth; and when he arose against me, I caught him by his beard, and smote him, and slew him.</p>
+            <p><strong>36</strong> Thy servant smote both the lion and the bear: and this uncircumcised Philistine shall be as one of them, seeing he hath defied the armies of the living God.</p>
+            <p><strong>37</strong> And David said, Jehovah that delivered me out of the paw of the lion, and out of the paw of the bear, he will deliver me out of the hand of this Philistine. And Saul said unto David, Go, and Jehovah shall be with thee.</p>
+            <p><strong>38</strong> And Saul clad David with his apparel, and he put a helmet of brass upon his head, and he clad him with a coat of mail.</p>
+            <p><strong>39</strong> And David girded his sword upon his apparel, and he assayed to go; for he had not proved it. And David said unto Saul, I cannot go with these; for I have not proved them. And David put them off him.</p>
+            <p><strong>40</strong> And he took his staff in his hand, and chose him five smooth stones out of the brook, and put them in the shepherd’s bag which he had, even in his wallet; and his sling was in his hand: and he drew near to the Philistine.</p>
+            <p><strong>41</strong> And the Philistine came on and drew near unto David; and the man that bare the shield went before him.</p>
+            <p><strong>42</strong> And when the Philistine looked about, and saw David, he disdained him; for he was but a youth, and ruddy, and withal of a fair countenance.</p>
+            <p><strong>43</strong> And the Philistine said unto David, Am I a dog, that thou comest to me with staves? And the Philistine cursed David by his gods.</p>
+            <p><strong>44</strong> And the Philistine said to David, Come to me, and I will give thy flesh unto the birds of the heavens, and to the beasts of the field.</p>
+            <p><strong>45</strong> Then said David to the Philistine, Thou comest to me with a sword, and with a spear, and with a javelin: but I come to thee in the name of Jehovah of hosts, the God of the armies of Israel, whom thou hast defied.</p>
+            <p><strong>46</strong> This day will Jehovah deliver thee into my hand; and I will smite thee, and take thy head from off thee; and I will give the dead bodies of the host of the Philistines this day unto the birds of the heavens, and to the wild beasts of the earth; that all the earth may know that there is a God in Israel,</p>
+            <p><strong>47</strong> and that all this assembly may know that Jehovah saveth not with sword and spear: for the battle is Jehovah’s, and he will give you into our hand.</p>
+            <p><strong>48</strong> And it came to pass, when the Philistine arose, and came and drew nigh to meet David, that David hastened, and ran toward the army to meet the Philistine.</p>
+            <p><strong>49</strong> And David put his hand in his bag, and took thence a stone, and slang it, and smote the Philistine in his forehead; and the stone sank into his forehead, and he fell upon his face to the earth.</p>
+            <p><strong>50</strong> So David prevailed over the Philistine with a sling and with a stone, and smote the Philistine, and slew him; but there was no sword in the hand of David.</p>
+            <p><strong>51</strong> Then David ran, and stood over the Philistine, and took his sword, and drew it out of the sheath thereof, and slew him, and cut off his head therewith. And when the Philistines saw that their champion was dead, they fled.</p>
+            <p><strong>52</strong> And the men of Israel and of Judah arose, and shouted, and pursued the Philistines, until thou comest to Gai, and to the gates of Ekron. And the wounded of the Philistines fell down by the way to Shaaraim, even unto Gath, and unto Ekron.</p>
+            <p><strong>53</strong> And the children of Israel returned from chasing after the Philistines, and they plundered their camp.</p>
+            <p><strong>54</strong> And David took the head of the Philistine, and brought it to Jerusalem; but he put his armor in his tent.</p>
+            <p><strong>55</strong> And when Saul saw David go forth against the Philistine, he said unto Abner, the captain of the host, Abner, whose son is this youth? And Abner said, As thy soul liveth, O king, I cannot tell.</p>
+            <p><strong>56</strong> And the king said, Inquire thou whose son the stripling is.</p>
+            <p><strong>57</strong> And as David returned from the slaughter of the Philistine, Abner took him, and brought him before Saul with the head of the Philistine in his hand.</p>
+            <p><strong>58</strong> And Saul said to him, Whose son art thou, thou young man? And David answered, I am the son of thy servant Jesse the Beth-lehemite.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The Philistines and Israel face off across the valley of Elah, and a champion named Goliath of Gath, towering and heavily armored, comes out morning and evening for forty days to defy the armies of Israel. Saul and all his men are dismayed and terrified. David, sent by his father to bring food to his brothers at the front, hears the giant's taunts and is indignant that this uncircumcised Philistine should defy the armies of the living God. Brushing aside his brother's scorn, David is brought before Saul and offers to fight, recounting how the Lord delivered him from the lion and the bear. He refuses Saul's armor, takes his staff, sling, and five smooth stones, and goes out to meet Goliath. When the giant curses and mocks him, David answers that he comes in the name of Yahweh of Armies, the God of the armies of Israel; he declares that the Lord does not save with sword and spear, for the battle is the Lord's. David runs at the giant, slings a stone that sinks into Goliath's forehead, and the Philistine falls. With no sword in his own hand, David takes Goliath's sword and cuts off his head. The Philistines flee, Israel pursues, and a shepherd's faith wins a victory that no armored king dared attempt.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The shepherd who, trusting the living God, takes up sling and stones against the giant and declares that the battle belongs to the Lord.</li>
+          <li><strong>Goliath</strong> — The Philistine champion of Gath, immense and heavily armed, who defies Israel's armies and mocks David before falling to a single stone.</li>
+          <li><strong>Saul</strong> — The king who, with all Israel, is paralyzed by fear of the giant, and who lends David his own armor before the shepherd sets it aside.</li>
+          <li><strong>Eliab</strong> — David's eldest brother, whose anger and contempt David must overcome on his way to facing Goliath.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Samuel 17:47 (WEB)</p>
+          <p class="verse__text">and that all this assembly may know that Yahweh doesn’t save with sword and spear: for the battle is Yahweh’s, and he will give you into our hand.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's people need not fear the giants that defy the living God.</li>
+          <li>Faith remembers past deliverances and trusts God for present ones.</li>
+          <li>The Lord saves by his own power, not by weapons, armor, or human strength.</li>
+          <li>God delights to use the small and overlooked to shame the proud and mighty.</li>
+          <li>Every battle, rightly seen, belongs to the Lord and is fought for his glory.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-17">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-17">
+            <ul class="lesson-list">
+            <li><strong>The battle belongs to God.</strong> “the battle is Yahweh’s, and he will give you into our hand” (1 Samuel 17:47, WEB). David fights in confidence that the outcome rests with God, not with weapons.</li>
+            <li><strong>Past grace fuels present faith.</strong> David recalls how the Lord delivered him “out of the paw of the lion, and out of the paw of the bear” (1 Samuel 17:37, WEB), trusting God again for the giant before him.</li>
+            <li><strong>God is not impressed by size.</strong> David asks, “who is this uncircumcised Philistine, that he should defy the armies of the living God?” (1 Samuel 17:26, WEB). What terrifies others is no match for the living God.</li>
+            <li><strong>Victory is for God's glory.</strong> David fights “that all the earth may know that there is a God in Israel” (1 Samuel 17:46, WEB). The aim of the conquest is the honor of God's name.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-17">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-17">
+            <ol class="study-questions">
+            <li>How does David's view of Goliath differ from that of Saul and the army, and why?</li>
+            <li>What role does David's past experience with the lion and bear play in his confidence?</li>
+            <li>Why does David refuse Saul's armor and choose his sling and stones instead?</li>
+            <li>How does David's confession in verses 45-47 reveal the true source of his courage?</li>
+            <li>What “giant” are you facing, and what would it look like to face it trusting that the battle is the Lord's?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-17">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-17">
+            <ol class="study-questions">
+            <li>Saul and the soldiers see an unbeatable warrior and are paralyzed by fear, but David sees one who dares to “defy the armies of the living God” (17:26). Where others measure the giant against themselves, David measures him against God, and the giant shrinks.</li>
+            <li>David recounts rescuing his flock from the lion and the bear by God's help, and reasons that the same Lord will deliver him from Goliath (17:34-37). Remembering concrete past faithfulness gives him bold assurance for the present danger.</li>
+            <li>The borrowed armor was untested and unfamiliar, but more deeply, David's trust was not in equipment at all (17:38-40). By taking only his sling and stones, he makes clear that the victory will come from the Lord, not from human armor or might.</li>
+            <li>David declares he comes “in the name of Yahweh of Armies” and that the Lord saves not with sword and spear, “for the battle is Yahweh’s” (17:45-47). His courage flows not from self-confidence but from confidence in the living God and his honor.</li>
+            <li>This is a personal-application question. Invite members to name a daunting challenge—a “giant” of fear, circumstance, or opposition—and to consider how trusting that the battle belongs to God might reshape their response. Encourage prayerful, faith-filled steps.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-samuel-16.html">← 1 Samuel 16</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-samuel-18.html">1 Samuel 18 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezra 7: A Scribe Sets His Heart — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezra 7: Ezra the scribe, skilled in the Law, goes up to Jerusalem with Artaxerxes' generous decree and the good hand of God on him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezra-progress" data-study-total="10">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezra, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezra.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezra · Chapter 7</span>
+        <h1>Ezra 7: A Scribe Sets His Heart</h1>
+        <p class="lead">Ezra the scribe, devoted to seeking, doing, and teaching God's Law, goes up from Babylon with the king's lavish blessing and God's hand upon him.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — Ezra Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezra 7 (WEB)</p>
+            <p><strong>1</strong> Now after these things, in the reign of Artaxerxes king of Persia, Ezra the son of Seraiah, the son of Azariah, the son of Hilkiah,</p>
+            <p><strong>2</strong> the son of Shallum, the son of Zadok, the son of Ahitub,</p>
+            <p><strong>3</strong> the son of Amariah, the son of Azariah, the son of Meraioth,</p>
+            <p><strong>4</strong> the son of Zerahiah, the son of Uzzi, the son of Bukki,</p>
+            <p><strong>5</strong> the son of Abishua, the son of Phinehas, the son of Eleazar, the son of Aaron the chief priest;</p>
+            <p><strong>6</strong> this Ezra went up from Babylon: and he was a ready scribe in the law of Moses, which Yahweh, the God of Israel, had given; and the king granted him all his request, according to the hand of Yahweh his God on him.</p>
+            <p><strong>7</strong> There went up some of the children of Israel, and of the priests, and the Levites, and the singers, and the porters, and the Nethinim, to Jerusalem, in the seventh year of Artaxerxes the king.</p>
+            <p><strong>8</strong> He came to Jerusalem in the fifth month, which was in the seventh year of the king.</p>
+            <p><strong>9</strong> For on the first day of the first month began he to go up from Babylon; and on the first day of the fifth month came he to Jerusalem, according to the good hand of his God on him.</p>
+            <p><strong>10</strong> For Ezra had set his heart to seek Yahweh’s law, and to do it, and to teach in Israel statutes and ordinances.</p>
+            <p><strong>11</strong> Now this is the copy of the letter that the king Artaxerxes gave to Ezra the priest, the scribe, even the scribe of the words of the commandments of Yahweh, and of his statutes to Israel:</p>
+            <p><strong>12</strong> Artaxerxes, king of kings, to Ezra the priest, the scribe of the law of the God of heaven, perfect and so forth.</p>
+            <p><strong>13</strong> I make a decree, that all those of the people of Israel, and their priests and the Levites, in my realm, who are minded of their own free will to go to Jerusalem, go with you.</p>
+            <p><strong>14</strong> Because you are sent of the king and his seven counselors, to inquire concerning Judah and Jerusalem, according to the law of your God which is in your hand,</p>
+            <p><strong>15</strong> and to carry the silver and gold, which the king and his counselors have freely offered to the God of Israel, whose habitation is in Jerusalem,</p>
+            <p><strong>16</strong> and all the silver and gold that you shall find in all the province of Babylon, with the freewill offering of the people, and of the priests, offering willingly for the house of their God which is in Jerusalem;</p>
+            <p><strong>17</strong> therefore you shall with all diligence buy with this money bulls, rams, lambs, with their meal offerings and their drink offerings, and shall offer them on the altar of the house of your God which is in Jerusalem.</p>
+            <p><strong>18</strong> Whatever shall seem good to you and to your brothers to do with the rest of the silver and the gold, do that after the will of your God.</p>
+            <p><strong>19</strong> The vessels that are given to you for the service of the house of your God, deliver before the God of Jerusalem.</p>
+            <p><strong>20</strong> Whatever more shall be needful for the house of your God, which you shall have occasion to bestow, bestow it out of the king’s treasure house.</p>
+            <p><strong>21</strong> I, even I Artaxerxes the king, do make a decree to all the treasurers who are beyond the River, that whatever Ezra the priest, the scribe of the law of the God of heaven, shall require of you, it be done with all diligence,</p>
+            <p><strong>22</strong> to one hundred talents of silver, and to one hundred measures of wheat, and to one hundred baths of wine, and to one hundred baths of oil, and salt without prescribing how much.</p>
+            <p><strong>23</strong> Whatever is commanded by the God of heaven, let it be done exactly for the house of the God of heaven; for why should there be wrath against the realm of the king and his sons?</p>
+            <p><strong>24</strong> Also we inform you, that touching any of the priests and Levites, the singers, porters, Nethinim, or servants of this house of God, it shall not be lawful to impose tribute, custom, or toll, on them.</p>
+            <p><strong>25</strong> You, Ezra, after the wisdom of your God who is in your hand, appoint magistrates and judges, who may judge all the people who are beyond the River, all such as know the laws of your God; and teach him who doesn’t know them.</p>
+            <p><strong>26</strong> Whoever will not do the law of your God, and the law of the king, let judgment be executed on him with all diligence, whether it be to death, or to banishment, or to confiscation of goods, or to imprisonment.</p>
+            <p><strong>27</strong> Blessed be Yahweh, the God of our fathers, who has put such a thing as this in the king’s heart, to beautify Yahweh’s house which is in Jerusalem;</p>
+            <p><strong>28</strong> and has extended loving kindness to me before the king, and his counselors, and before all the king’s mighty princes. I was strengthened according to the hand of Yahweh my God on me, and I gathered together out of Israel chief men to go up with me.</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezra 7 (KJV)</p>
+            <p><strong>1</strong> Now after these things, in the reign of Artaxerxes king of Persia, Ezra the son of Seraiah, the son of Azariah, the son of Hilkiah,</p>
+            <p><strong>2</strong> The son of Shallum, the son of Zadok, the son of Ahitub,</p>
+            <p><strong>3</strong> The son of Amariah, the son of Azariah, the son of Meraioth,</p>
+            <p><strong>4</strong> The son of Zerahiah, the son of Uzzi, the son of Bukki,</p>
+            <p><strong>5</strong> The son of Abishua, the son of Phinehas, the son of Eleazar, the son of Aaron the chief priest:</p>
+            <p><strong>6</strong> This Ezra went up from Babylon; and he was a ready scribe in the law of Moses, which the Lord God of Israel had given: and the king granted him all his request, according to the hand of the Lord his God upon him.</p>
+            <p><strong>7</strong> And there went up some of the children of Israel, and of the priests, and the Levites, and the singers, and the porters, and the Nethinims, unto Jerusalem, in the seventh year of Artaxerxes the king.</p>
+            <p><strong>8</strong> And he came to Jerusalem in the fifth month, which was in the seventh year of the king.</p>
+            <p><strong>9</strong> For upon the first day of the first month began he to go up from Babylon, and on the first day of the fifth month came he to Jerusalem, according to the good hand of his God upon him.</p>
+            <p><strong>10</strong> For Ezra had prepared his heart to seek the law of the Lord, and to do it, and to teach in Israel statutes and judgments.</p>
+            <p><strong>11</strong> Now this is the copy of the letter that the king Artaxerxes gave unto Ezra the priest, the scribe, even a scribe of the words of the commandments of the Lord, and of his statutes to Israel.</p>
+            <p><strong>12</strong> Artaxerxes, king of kings, unto Ezra the priest, a scribe of the law of the God of heaven, perfect peace, and at such a time.</p>
+            <p><strong>13</strong> I make a decree, that all they of the people of Israel, and of his priests and Levites, in my realm, which are minded of their own freewill to go up to Jerusalem, go with thee.</p>
+            <p><strong>14</strong> Forasmuch as thou art sent of the king, and of his seven counsellors, to enquire concerning Judah and Jerusalem, according to the law of thy God which is in thine hand;</p>
+            <p><strong>15</strong> And to carry the silver and gold, which the king and his counsellors have freely offered unto the God of Israel, whose habitation is in Jerusalem,</p>
+            <p><strong>16</strong> And all the silver and gold that thou canst find in all the province of Babylon, with the freewill offering of the people, and of the priests, offering willingly for the house of their God which is in Jerusalem:</p>
+            <p><strong>17</strong> That thou mayest buy speedily with this money bullocks, rams, lambs, with their meat offerings and their drink offerings, and offer them upon the altar of the house of your God which is in Jerusalem.</p>
+            <p><strong>18</strong> And whatsoever shall seem good to thee, and to thy brethren, to do with the rest of the silver and the gold, that do after the will of your God.</p>
+            <p><strong>19</strong> The vessels also that are given thee for the service of the house of thy God, those deliver thou before the God of Jerusalem.</p>
+            <p><strong>20</strong> And whatsoever more shall be needful for the house of thy God, which thou shalt have occasion to bestow, bestow it out of the king’s treasure house.</p>
+            <p><strong>21</strong> And I, even I Artaxerxes the king, do make a decree to all the treasurers which are beyond the river, that whatsoever Ezra the priest, the scribe of the law of the God of heaven, shall require of you, it be done speedily,</p>
+            <p><strong>22</strong> Unto an hundred talents of silver, and to an hundred measures of wheat, and to an hundred baths of wine, and to an hundred baths of oil, and salt without prescribing how much.</p>
+            <p><strong>23</strong> Whatsoever is commanded by the God of heaven, let it be diligently done for the house of the God of heaven: for why should there be wrath against the realm of the king and his sons?</p>
+            <p><strong>24</strong> Also we certify you, that touching any of the priests and Levites, singers, porters, Nethinims, or ministers of this house of God, it shall not be lawful to impose toll, tribute, or custom, upon them.</p>
+            <p><strong>25</strong> And thou, Ezra, after the wisdom of thy God, that is in thine hand, set magistrates and judges, which may judge all the people that are beyond the river, all such as know the laws of thy God; and teach ye them that know them not.</p>
+            <p><strong>26</strong> And whosoever will not do the law of thy God, and the law of the king, let judgment be executed speedily upon him, whether it be unto death, or to banishment, or to confiscation of goods, or to imprisonment.</p>
+            <p><strong>27</strong> Blessed be the Lord God of our fathers, which hath put such a thing as this in the king’s heart, to beautify the house of the Lord which is in Jerusalem:</p>
+            <p><strong>28</strong> And hath extended mercy unto me before the king, and his counsellors, and before all the king’s mighty princes. And I was strengthened as the hand of the Lord my God was upon me, and I gathered together out of Israel chief men to go up with me.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezra 7 (ASV)</p>
+            <p><strong>1</strong> Now after these things, in the reign of Artaxerxes king of Persia, Ezra the son of Seraiah, the son of Azariah, the son of Hilkiah,</p>
+            <p><strong>2</strong> the son of Shallum, the son of Zadok, the son of Ahitub,</p>
+            <p><strong>3</strong> the son of Amariah, the son of Azariah, the son of Meraioth,</p>
+            <p><strong>4</strong> the son of Zerahiah, the son of Uzzi, the son of Bukki,</p>
+            <p><strong>5</strong> the son of Abishua, the son of Phinehas, the son of Eleazar, the son of Aaron the chief priest—</p>
+            <p><strong>6</strong> this Ezra went up from Babylon. And he was a ready scribe in the law of Moses, which Jehovah, the God of Israel, had given; and the king granted him all his request, according to the hand of Jehovah his God upon him.</p>
+            <p><strong>7</strong> And there went up some of the children of Israel, and of the priests, and the Levites, and the singers, and the porters, and the Nethinim, unto Jerusalem, in the seventh year of Artaxerxes the king.</p>
+            <p><strong>8</strong> And he came to Jerusalem in the fifth month, which was in the seventh year of the king.</p>
+            <p><strong>9</strong> For upon the first day of the first month began he to go up from Babylon; and on the first day of the fifth month came he to Jerusalem, according to the good hand of his God upon him.</p>
+            <p><strong>10</strong> For Ezra had set his heart to seek the law of Jehovah, and to do it, and to teach in Israel statutes and ordinances.</p>
+            <p><strong>11</strong> Now this is the copy of the letter that the king Artaxerxes gave unto Ezra the priest, the scribe, even the scribe of the words of the commandments of Jehovah, and of his statutes to Israel:</p>
+            <p><strong>12</strong> Artaxerxes, king of kings, unto Ezra the priest, the scribe of the law of the God of heaven, perfect and so forth.</p>
+            <p><strong>13</strong> I make a decree, that all they of the people of Israel, and their priests and the Levites, in my realm, that are minded of their own free will to go to Jerusalem, go with thee.</p>
+            <p><strong>14</strong> Forasmuch as thou art sent of the king and his seven counsellors, to inquire concerning Judah and Jerusalem, according to the law of thy God which is in thy hand,</p>
+            <p><strong>15</strong> and to carry the silver and gold, which the king and his counsellors have freely offered unto the God of Israel, whose habitation is in Jerusalem,</p>
+            <p><strong>16</strong> and all the silver and gold that thou shalt find in all the province of Babylon, with the freewill-offering of the people, and of the priests, offering willingly for the house of their God which is in Jerusalem;</p>
+            <p><strong>17</strong> therefore thou shalt with all diligence buy with this money bullocks, rams, lambs, with their meal-offerings and their drink-offerings, and shalt offer them upon the altar of the house of your God which is in Jerusalem.</p>
+            <p><strong>18</strong> And whatsoever shall seem good to thee and to thy brethren to do with the rest of the silver and the gold, that do ye after the will of your God.</p>
+            <p><strong>19</strong> And the vessels that are given thee for the service of the house of thy God, deliver thou before the God of Jerusalem.</p>
+            <p><strong>20</strong> And whatsoever more shall be needful for the house of thy God, which thou shalt have occasion to bestow, bestow it out of the king’s treasure-house.</p>
+            <p><strong>21</strong> And I, even I Artaxerxes the king, do make a decree to all the treasurers that are beyond the River, that whatsoever Ezra the priest, the scribe of the law of the God of heaven, shall require of you, it be done with all diligence,</p>
+            <p><strong>22</strong> unto a hundred talents of silver, and to a hundred measures of wheat, and to a hundred baths of wine, and to a hundred baths of oil, and salt without prescribing how much.</p>
+            <p><strong>23</strong> Whatsoever is commanded by the God of heaven, let it be done exactly for the house of the God of heaven; for why should there be wrath against the realm of the king and his sons?</p>
+            <p><strong>24</strong> Also we certify you, that touching any of the priests and Levites, the singers, porters, Nethinim, or servants of this house of God, it shall not be lawful to impose tribute, custom, or toll, upon them.</p>
+            <p><strong>25</strong> And thou, Ezra, after the wisdom of thy God that is in thy hand, appoint magistrates and judges, who may judge all the people that are beyond the River, all such as know the laws of thy God; and teach ye him that knoweth them not.</p>
+            <p><strong>26</strong> And whosoever will not do the law of thy God, and the law of the king, let judgment be executed upon him with all diligence, whether it be unto death, or to banishment, or to confiscation of goods, or to imprisonment.</p>
+            <p><strong>27</strong> Blessed be Jehovah, the God of our fathers, who hath put such a thing as this in the king’s heart, to beautify the house of Jehovah which is in Jerusalem;</p>
+            <p><strong>28</strong> and hath extended lovingkindness unto me before the king, and his counsellors, and before all the king’s mighty princes. And I was strengthened according to the hand of Jehovah my God upon me, and I gathered together out of Israel chief men to go up with me.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Years after the temple's completion, in the reign of Artaxerxes, Ezra is introduced through a priestly genealogy reaching back to Aaron. He is described as a ready scribe in the Law of Moses, and the king grants him all he requests, for the hand of the Lord his God was on him. A company of Israelites, priests, Levites, singers, gatekeepers, and temple servants goes up with him to Jerusalem in the seventh year of the king. The narrator pauses to give the reason for God's favor: Ezra had set his heart to seek the Law of the Lord, to do it, and to teach its statutes and ordinances in Israel. The chapter then records Artaxerxes' remarkable letter, which authorizes any willing Israelite to return, commissions Ezra to inquire about Judah and Jerusalem according to God's Law, and provides silver, gold, vessels, and supplies for the temple from the royal treasury. The king exempts the temple servants from taxes and empowers Ezra to appoint judges and teach the people the Law. Ezra closes the chapter by blessing the Lord, who put such a thing in the king's heart and strengthened him by his gracious hand.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Ezra the scribe</strong> — The priest descended from Aaron, skilled in the Law, who sets his heart to seek, do, and teach God's word and leads the second return.</li>
+          <li><strong>Artaxerxes, king of Persia</strong> — The king who issues a generous decree authorizing Ezra's mission and lavishly provisioning the temple and its worship.</li>
+          <li><strong>The returning company</strong> — The Israelites, priests, Levites, and temple servants who go up with Ezra from Babylon to Jerusalem.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God whose good hand rests on Ezra, moving the king's heart and strengthening Ezra for the journey and the work.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezra 7:10 (WEB)</p>
+          <p class="verse__text">For Ezra had set his heart to seek Yahweh’s law, and to do it, and to teach in Israel statutes and ordinances.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>A heart set to seek God's word is the root of a fruitful, God-honoring life.</li>
+          <li>True teachers of God's word first seek it and obey it themselves.</li>
+          <li>God's gracious hand, not human skill alone, opens doors and grants favor.</li>
+          <li>The Lord can move a king to fund and protect the work of his kingdom.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>Seek, do, then teach.</strong> Ezra "had set his heart to seek Yahweh’s law, and to do it, and to teach" (Ezra 7:10, WEB). The order matters: obedience precedes instruction.</li>
+            <li><strong>Success follows God's hand.</strong> The king granted Ezra's requests "according to the hand of Yahweh his God on him" (Ezra 7:6, WEB). Favor is grace, not merely talent.</li>
+            <li><strong>God moves kings' hearts toward his work.</strong> Ezra blesses God, "who has put such a thing as this in the king’s heart" (Ezra 7:27, WEB). The Lord directs rulers to serve his purposes.</li>
+            <li><strong>God strengthens those he sends.</strong> Ezra was "strengthened according to the hand of Yahweh my God on me" (Ezra 7:28, WEB). God supplies courage for the task he assigns.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>Why does the narrator trace Ezra's priestly genealogy before describing his mission?</li>
+            <li>What is the significance of the order in 7:10: seek, do, then teach?</li>
+            <li>How does Ezra repeatedly attribute his success and favor to "the hand of God"?</li>
+            <li>What does Artaxerxes' generous decree reveal about how God provides for his work?</li>
+            <li>How might "setting your heart" to seek, obey, and share God's word reshape your daily life?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>The genealogy roots Ezra in Aaron's priestly line (7:1-5), establishing his authority and continuity with God's covenant. Before we meet his mission, we see his identity as one set apart for God. Help the group see that calling flows from belonging to God's people.</li>
+            <li>Ezra seeks the Law, then does it, and only then teaches it (7:10). Obedience gives integrity to instruction; he teaches from a life already shaped by the word. This guards us from the hollow teaching that knows truth but does not live it.</li>
+            <li>Ezra credits "the hand of Yahweh his God" for the king's favor and his own strength (7:6, 9, 28). He refuses to take the glory, seeing grace behind every open door. Invite the group to practice attributing their successes to God rather than themselves.</li>
+            <li>Artaxerxes supplies silver, gold, vessels, provisions, and tax exemptions for the temple (7:15-24), all from the royal treasury. God provides for his work through unexpected channels. The decree assures us that the Lord can fund his purposes far beyond our resources.</li>
+            <li>This is a personal-application question. Ezra's whole ministry sprang from a heart set on God's word. As leader, gently invite members to consider one concrete way to seek Scripture more intentionally, to obey it more fully, and to share it with someone, trusting God's hand to bless the effort.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezra-6.html">← Ezra 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezra.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezra-8.html">Ezra 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

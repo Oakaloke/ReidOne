@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>2 Kings 1: Fire From Heaven — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 2 Kings 1: King Ahaziah seeks Baal Zebub instead of the LORD, and Elijah pronounces judgment as fire falls from heaven." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-2-kings-progress" data-study-total="25">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 2 Kings, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="2-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 2 Kings · Chapter 1</span>
+        <h1>2 Kings 1: Fire From Heaven</h1>
+        <p class="lead">An injured king sends to a pagan god for help, and Elijah confronts both the king's idolatry and the captains sent to seize him.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — 2 Kings Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">2 Kings 1 (WEB)</p>
+            <p><strong>1</strong> Moab rebelled against Israel after the death of Ahab.</p>
+            <p><strong>2</strong> Ahaziah fell down through the lattice in his upper room that was in Samaria, and was sick. So he sent messengers, and said to them, “Go, inquire of Baal Zebub, the god of Ekron, whether I will recover of this sickness.”</p>
+            <p><strong>3</strong> But Yahweh’s angel said to Elijah the Tishbite, “Arise, go up to meet the messengers of the king of Samaria, and tell them, ‘Is it because there is no God in Israel, that you go to inquire of Baal Zebub, the god of Ekron?</p>
+            <p><strong>4</strong> Now therefore thus says Yahweh, “You shall not come down from the bed where you have gone up, but shall surely die.”’” Elijah departed.</p>
+            <p><strong>5</strong> The messengers returned to him, and he said to them, “Why is it that you have returned?”</p>
+            <p><strong>6</strong> They said to him, “A man came up to meet us, and said to us, ‘Go, return to the king who sent you, and tell him, “Thus says Yahweh, ‘Is it because there is no God in Israel, that you send to inquire of Baal Zebub, the god of Ekron? Therefore you shall not come down from the bed where you have gone up, but shall surely die.’”’”</p>
+            <p><strong>7</strong> He said to them, “What kind of man was he who came up to meet you, and told you these words?”</p>
+            <p><strong>8</strong> They answered him, “He was a hairy man, and wearing a leather belt around his waist.” He said, “It is Elijah the Tishbite.”</p>
+            <p><strong>9</strong> Then the king sent a captain of fifty with his fifty to him. He went up to him; and behold, he was sitting on the top of the hill. He said to him, “Man of God, the king has said, ‘Come down!’”</p>
+            <p><strong>10</strong> Elijah answered to the captain of fifty, “If I am a man of God, let fire come down from the sky, and consume you and your fifty!” Fire came down from the sky, and consumed him and his fifty.</p>
+            <p><strong>11</strong> Again he sent to him another captain of fifty and his fifty. He answered him, “Man of God, the king has said, ‘Come down quickly!’”</p>
+            <p><strong>12</strong> Elijah answered them, “If I am a man of God, let fire come down from the sky, and consume you and your fifty!” The fire of God came down from the sky, and consumed him and his fifty.</p>
+            <p><strong>13</strong> Again he sent the captain of a third fifty with his fifty. The third captain of fifty went up, and came and fell on his knees before Elijah, and begged him, and said to him, “Man of God, please let my life, and the life of these fifty your servants, be precious in your sight.</p>
+            <p><strong>14</strong> Behold, fire came down from the sky, and consumed the two former captains of fifty with their fifties. But now let my life be precious in your sight.”</p>
+            <p><strong>15</strong> Yahweh’s angel said to Elijah, “Go down with him. Don’t be afraid of him.” He arose, and went down with him to the king.</p>
+            <p><strong>16</strong> He said to him, “Thus says Yahweh, ‘Because you have sent messengers to inquire of Baal Zebub, the god of Ekron, is it because there is no God in Israel to inquire of his word? Therefore you shall not come down from the bed where you have gone up, but shall surely die.’”</p>
+            <p><strong>17</strong> So he died according to Yahweh’s word which Elijah had spoken. Jehoram began to reign in his place in the second year of Jehoram the son of Jehoshaphat king of Judah; because he had no son.</p>
+            <p><strong>18</strong> Now the rest of the acts of Ahaziah which he did, aren’t they written in the book of the chronicles of the kings of Israel?</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">2 Kings 1 (KJV)</p>
+            <p><strong>1</strong> Then Moab rebelled against Israel after the death of Ahab.</p>
+            <p><strong>2</strong> And Ahaziah fell down through a lattice in his upper chamber that was in Samaria, and was sick: and he sent messengers, and said unto them, Go, enquire of Baal–zebub the god of Ekron whether I shall recover of this disease.</p>
+            <p><strong>3</strong> But the angel of the Lord said to Elijah the Tishbite, Arise, go up to meet the messengers of the king of Samaria, and say unto them, Is it not because there is not a God in Israel, that ye go to enquire of Baal–zebub the god of Ekron?</p>
+            <p><strong>4</strong> Now therefore thus saith the Lord, Thou shalt not come down from that bed on which thou art gone up, but shalt surely die. And Elijah departed.</p>
+            <p><strong>5</strong> And when the messengers turned back unto him, he said unto them, Why are ye now turned back?</p>
+            <p><strong>6</strong> And they said unto him, There came a man up to meet us, and said unto us, Go, turn again unto the king that sent you, and say unto him, Thus saith the Lord, Is it not because there is not a God in Israel, that thou sendest to enquire of Baal–zebub the god of Ekron? therefore thou shalt not come down from that bed on which thou art gone up, but shalt surely die.</p>
+            <p><strong>7</strong> And he said unto them, What manner of man was he which came up to meet you, and told you these words?</p>
+            <p><strong>8</strong> And they answered him, He was an hairy man, and girt with a girdle of leather about his loins. And he said, It is Elijah the Tishbite.</p>
+            <p><strong>9</strong> Then the king sent unto him a captain of fifty with his fifty. And he went up to him: and, behold, he sat on the top of an hill. And he spake unto him, Thou man of God, the king hath said, Come down.</p>
+            <p><strong>10</strong> And Elijah answered and said to the captain of fifty, If I be a man of God, then let fire come down from heaven, and consume thee and thy fifty. And there came down fire from heaven, and consumed him and his fifty.</p>
+            <p><strong>11</strong> Again also he sent unto him another captain of fifty with his fifty. And he answered and said unto him, O man of God, thus hath the king said, Come down quickly.</p>
+            <p><strong>12</strong> And Elijah answered and said unto them, If I be a man of God, let fire come down from heaven, and consume thee and thy fifty. And the fire of God came down from heaven, and consumed him and his fifty.</p>
+            <p><strong>13</strong> And he sent again a captain of the third fifty with his fifty. And the third captain of fifty went up, and came and fell on his knees before Elijah, and besought him, and said unto him, O man of God, I pray thee, let my life, and the life of these fifty thy servants, be precious in thy sight.</p>
+            <p><strong>14</strong> Behold, there came fire down from heaven, and burnt up the two captains of the former fifties with their fifties: therefore let my life now be precious in thy sight.</p>
+            <p><strong>15</strong> And the angel of the Lord said unto Elijah, Go down with him: be not afraid of him. And he arose, and went down with him unto the king.</p>
+            <p><strong>16</strong> And he said unto him, Thus saith the Lord, Forasmuch as thou hast sent messengers to enquire of Baal–zebub the god of Ekron, is it not because there is no God in Israel to enquire of his word? therefore thou shalt not come down off that bed on which thou art gone up, but shalt surely die.</p>
+            <p><strong>17</strong> So he died according to the word of the Lord which Elijah had spoken. And Jehoram reigned in his stead in the second year of Jehoram the son of Jehoshaphat king of Judah; because he had no son.</p>
+            <p><strong>18</strong> Now the rest of the acts of Ahaziah which he did, are they not written in the book of the chronicles of the kings of Israel?</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">2 Kings 1 (ASV)</p>
+            <p><strong>1</strong> And Moab rebelled against Israel after the death of Ahab.</p>
+            <p><strong>2</strong> And Ahaziah fell down through the lattice in his upper chamber that was in Samaria, and was sick: and he sent messengers, and said unto them, Go, inquire of Baal-zebub, the god of Ekron, whether I shall recover of this sickness.</p>
+            <p><strong>3</strong> But the angel of Jehovah said to Elijah the Tishbite, Arise, go up to meet the messengers of the king of Samaria, and say unto them, Is it because there is no God in Israel, that ye go to inquire of Baal-zebub, the god of Ekron?</p>
+            <p><strong>4</strong> Now therefore thus saith Jehovah, Thou shalt not come down from the bed whither thou art gone up, but shalt surely die. And Elijah departed.</p>
+            <p><strong>5</strong> And the messengers returned unto him, and he said unto them, Why is it that ye are returned?</p>
+            <p><strong>6</strong> And they said unto him, There came up a man to meet us, and said unto us, Go, turn again unto the king that sent you, and say unto him, Thus saith Jehovah, Is it because there is no God in Israel, that thou sendest to inquire of Baal-zebub, the god of Ekron? therefore thou shalt not come down from the bed whither thou art gone up, but shalt surely die.</p>
+            <p><strong>7</strong> And he said unto them, What manner of man was he that came up to meet you, and told you these words?</p>
+            <p><strong>8</strong> And they answered him, He was a hairy man, and girt with a girdle of leather about his loins. And he said, It is Elijah the Tishbite.</p>
+            <p><strong>9</strong> Thenthe kingsent unto him a captain of fifty with his fifty. And he went up to him: and, behold, he was sitting on the top of the hill. And he spake unto him, O man of God, the king hath said, Come down.</p>
+            <p><strong>10</strong> And Elijah answered and said to the captain of fifty, If I be a man of God, let fire come down from heaven, and consume thee and thy fifty. And there came down fire from heaven, and consumed him and his fifty.</p>
+            <p><strong>11</strong> And again he sent unto him another captain of fifty with his fifty. And he answered and said unto him, O man of God, thus hath the king said, Come down quickly.</p>
+            <p><strong>12</strong> And Elijah answered and said unto them, If I be a man of God, let fire come down from heaven, and consume thee and thy fifty. And the fire of God came down from heaven, and consumed him and his fifty.</p>
+            <p><strong>13</strong> And again he sent the captain of a third fifty with his fifty. And the third captain of fifty went up, and came and fell on his knees before Elijah, and besought him, and said unto him, O man of God, I pray thee, let my life, and the life of these fifty thy servants, be precious in thy sight.</p>
+            <p><strong>14</strong> Behold, there came fire down from heaven, and consumed the two former captains of fifty with their fifties; but now let my life be precious in thy sight.</p>
+            <p><strong>15</strong> And the angel of Jehovah said unto Elijah, Go down with him: be not afraid of him. And he arose, and went down with him unto the king.</p>
+            <p><strong>16</strong> And he said unto him, Thus saith Jehovah, Forasmuch as thou hast sent messengers to inquire of Baal-zebub, the god of Ekron, is it because there is no God in Israel to inquire of his word? therefore thou shalt not come down from the bed whither thou art gone up, but shalt surely die.</p>
+            <p><strong>17</strong> So he died according to the word of Jehovah which Elijah had spoken. And Jehoram began to reign in his stead in the second year of Jehoram the son of Jehoshaphat king of Judah; because he had no son.</p>
+            <p><strong>18</strong> Now the rest of the acts of Ahaziah which he did, are they not written in the book of the chronicles of the kings of Israel?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>After Ahab's death, Moab rebels against Israel and King Ahaziah falls through the lattice of his upper room and lies injured. Rather than seek the LORD, he sends messengers to inquire of Baal Zebub, the god of Ekron, whether he will recover. Yahweh's angel sends Elijah to intercept the messengers with a stinging question: is it because there is no God in Israel that the king turns to a foreign idol? Because of his unbelief, Ahaziah will not rise from his bed but will surely die. When the king learns it was Elijah, he sends a captain with fifty men to fetch the prophet, and fire falls from the sky to consume them; a second fifty meets the same end. The third captain humbly falls on his knees and begs that his life be precious in Elijah's sight, and the angel tells Elijah to go down with him without fear. Elijah delivers the same word of judgment to the king's face, and Ahaziah dies according to the word of the LORD. The chapter exposes the folly of seeking help anywhere but from the living God, and the mercy that meets even the soldier who bows.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Ahaziah</strong> — The injured king of Israel who, instead of seeking the LORD, sends to Baal Zebub for help, and dies under God's judgment for his idolatry.</li>
+          <li><strong>Elijah the Tishbite</strong> — The hairy prophet in his leather belt who intercepts the king's messengers, calls down fire on the proud captains, and delivers God's word of judgment.</li>
+          <li><strong>The third captain of fifty</strong> — The soldier who, unlike the two before him, falls on his knees and begs that his life and his men's lives be precious, and is spared.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">2 Kings 1:3 (WEB)</p>
+          <p class="verse__text">But Yahweh’s angel said to Elijah the Tishbite, “Arise, go up to meet the messengers of the king of Samaria, and tell them, ‘Is it because there is no God in Israel, that you go to inquire of Baal Zebub, the god of Ekron?</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>When trouble comes, the heart reveals where it truly trusts; Ahaziah turned to an idol rather than the living God.</li>
+          <li>There is a God in Israel, and to seek help anywhere else is both folly and rebellion.</li>
+          <li>Pride that commands God's prophet meets judgment, but humility that bows finds mercy.</li>
+          <li>God's word spoken through his prophet stands; what the LORD declares surely comes to pass.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>We are made to seek God first.</strong> Ahaziah sends to “inquire of Baal Zebub, the god of Ekron” (2 Kings 1:2, WEB) when the true God is near; trouble exposes whom we really trust.</li>
+            <li><strong>Idolatry insults the living God.</strong> “Is it because there is no God in Israel?” (2 Kings 1:3, WEB) the LORD asks. To run to substitutes is to deny that he is present and able to save.</li>
+            <li><strong>Proud demands meet God's judgment.</strong> Twice a captain commands, “Come down!” and fire falls (2 Kings 1:9-12, WEB). God will not be summoned by arrogant men as though he were at our beck and call.</li>
+            <li><strong>Humble pleading finds mercy.</strong> The third captain begs, “let my life… be precious in your sight” (2 Kings 1:13, WEB), and is spared. The same God who judges pride shows grace to the lowly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>Why does Ahaziah send to Baal Zebub instead of seeking the LORD, and what does this reveal about his heart?</li>
+            <li>What is the force of the repeated question, “Is it because there is no God in Israel?”</li>
+            <li>How do the first two captains differ from the third, and how does God respond to each?</li>
+            <li>Why is it significant that Ahaziah dies exactly “according to Yahweh’s word which Elijah had spoken” (1:17)?</li>
+            <li>Where are you tempted to seek help from lesser things rather than turning first to God?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Ahaziah turns to a foreign idol in his crisis because his heart, like his parents Ahab and Jezebel's, was set on Baal. Trouble does not create our trust; it reveals it. His instinct in pain shows that he never truly reckoned with the God of Israel.</li>
+            <li>The question is repeated three times for emphasis: there most certainly is a God in Israel, and to bypass him is willful unbelief. Help the group feel the rebuke—God is grieved when his people act as though he were absent or powerless.</li>
+            <li>The first two captains come with proud commands and are consumed; the third comes on his knees, pleading for mercy, and is told not to fear. The contrast shows that God resists the proud but gives grace to the humble (cf. James 4:6).</li>
+            <li>Scripture stresses that God's prophetic word is not idle threat but certain truth. Ahaziah's death validates Elijah's message and warns every reader that God means what he says—both his judgments and his promises come to pass.</li>
+            <li>This is a gentle personal-application question. Invite members to name, even silently, the “Baal Zebubs” they reach for first—money, control, approval—and to practice turning to God first. Keep the tone hopeful; the third captain shows mercy is near to the humble.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="2-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="2-kings-2.html">2 Kings 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

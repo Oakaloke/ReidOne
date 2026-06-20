@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Kings 16: Dynasties Rise and Fall — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Kings 16: Baasha, Elah, Zimri, Omri, and finally Ahab take Israel's throne amid prophecy, conspiracy, and deepening idolatry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-kings-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Kings, Chapter 16
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-kings.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Kings · Chapter 16</span>
+        <h1>1 Kings 16: Dynasties Rise and Fall</h1>
+        <p class="lead">A whirlwind of conspiracy and bloodshed sweeps Israel's throne from Baasha to Omri, until Ahab takes the crown and marries Jezebel.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-16">
+            <span>Scripture — 1 Kings Chapter 16</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-16">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-16-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-16-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-16-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-16-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Kings 16 (WEB)</p>
+            <p><strong>1</strong> Yahweh’s word came to Jehu the son of Hanani against Baasha, saying,</p>
+            <p><strong>2</strong> “Because I exalted you out of the dust, and made you prince over my people Israel, and you have walked in the way of Jeroboam, and have made my people Israel to sin, to provoke me to anger with their sins;</p>
+            <p><strong>3</strong> behold, I will utterly sweep away Baasha and his house; and I will make your house like the house of Jeroboam the son of Nebat.</p>
+            <p><strong>4</strong> The dogs will eat Baasha’s descendants who die in the city; and he who dies of his in the field the birds of the sky will eat.”</p>
+            <p><strong>5</strong> Now the rest of the acts of Baasha, and what he did, and his might, aren’t they written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>6</strong> Baasha slept with his fathers, and was buried in Tirzah; and Elah his son reigned in his place.</p>
+            <p><strong>7</strong> Moreover by the prophet Jehu the son of Hanani came Yahweh’s word against Baasha, and against his house, both because of all the evil that he did in the sight of Yahweh, to provoke him to anger with the work of his hands, in being like the house of Jeroboam, and because he struck him.</p>
+            <p><strong>8</strong> In the twenty-sixth year of Asa king of Judah, Elah the son of Baasha began to reign over Israel in Tirzah for two years.</p>
+            <p><strong>9</strong> His servant Zimri, captain of half his chariots, conspired against him. Now he was in Tirzah, drinking himself drunk in the house of Arza, who was over the household in Tirzah:</p>
+            <p><strong>10</strong> and Zimri went in and struck him, and killed him, in the twenty-seventh year of Asa king of Judah, and reigned in his place.</p>
+            <p><strong>11</strong> When he began to reign, as soon as he sat on his throne, he struck all the house of Baasha: he didn’t leave him a single one who urinates on a wall, neither of his relatives, nor of his friends.</p>
+            <p><strong>12</strong> Thus Zimri destroyed all the house of Baasha, according to Yahweh’s word, which he spoke against Baasha by Jehu the prophet,</p>
+            <p><strong>13</strong> for all the sins of Baasha, and the sins of Elah his son, which they sinned, and with which they made Israel to sin, to provoke Yahweh, the God of Israel, to anger with their vanities.</p>
+            <p><strong>14</strong> Now the rest of the acts of Elah, and all that he did, aren’t they written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>15</strong> In the twenty-seventh year of Asa king of Judah, Zimri reigned seven days in Tirzah. Now the people were encamped against Gibbethon, which belonged to the Philistines.</p>
+            <p><strong>16</strong> The people who were encamped heard say, Zimri has conspired, and has also struck the king: therefore all Israel made Omri, the captain of the army, king over Israel that day in the camp.</p>
+            <p><strong>17</strong> Omri went up from Gibbethon, and all Israel with him, and they besieged Tirzah.</p>
+            <p><strong>18</strong> When Zimri saw that the city was taken, he went into the castle of the king’s house, and burnt the king’s house over him with fire, and died,</p>
+            <p><strong>19</strong> for his sins which he sinned in doing that which was evil in the sight of Yahweh, in walking in the way of Jeroboam, and in his sin which he did, to make Israel to sin.</p>
+            <p><strong>20</strong> Now the rest of the acts of Zimri, and his treason that he committed, aren’t they written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>21</strong> Then were the people of Israel divided into two parts: half of the people followed Tibni the son of Ginath, to make him king; and half followed Omri.</p>
+            <p><strong>22</strong> But the people who followed Omri prevailed against the people who followed Tibni the son of Ginath: so Tibni died, and Omri reigned.</p>
+            <p><strong>23</strong> In the thirty-first year of Asa king of Judah, Omri began to reign over Israel for twelve years. He reigned six years in Tirzah.</p>
+            <p><strong>24</strong> He bought the hill Samaria of Shemer for two talents of silver; and he built on the hill, and called the name of the city which he built, after the name of Shemer, the owner of the hill, Samaria.</p>
+            <p><strong>25</strong> Omri did that which was evil in the sight of Yahweh, and dealt wickedly above all who were before him.</p>
+            <p><strong>26</strong> For he walked in all the way of Jeroboam the son of Nebat, and in his sins with which he made Israel to sin, to provoke Yahweh, the God of Israel, to anger with their vanities.</p>
+            <p><strong>27</strong> Now the rest of the acts of Omri which he did, and his might that he showed, aren’t they written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>28</strong> So Omri slept with his fathers, and was buried in Samaria; and Ahab his son reigned in his place.</p>
+            <p><strong>29</strong> In the thirty-eighth year of Asa king of Judah began Ahab the son of Omri to reign over Israel: and Ahab the son of Omri reigned over Israel in Samaria twenty-two years.</p>
+            <p><strong>30</strong> Ahab the son of Omri did that which was evil in the sight of Yahweh above all that were before him.</p>
+            <p><strong>31</strong> As if it had been a light thing for him to walk in the sins of Jeroboam the son of Nebat, he took as wife Jezebel the daughter of Ethbaal king of the Sidonians, and went and served Baal, and worshiped him.</p>
+            <p><strong>32</strong> He reared up an altar for Baal in the house of Baal, which he had built in Samaria.</p>
+            <p><strong>33</strong> Ahab made the Asherah; and Ahab did yet more to provoke Yahweh, the God of Israel, to anger than all the kings of Israel who were before him.</p>
+            <p><strong>34</strong> In his days Hiel the Bethelite built Jericho: he laid its foundation with the loss of Abiram his firstborn, and set up its gates with the loss of his youngest son Segub, according to Yahweh’s word, which he spoke by Joshua the son of Nun.</p>
+            </div>
+            <div class="scripture-text" id="web-16-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Kings 16 (KJV)</p>
+            <p><strong>1</strong> Then the word of the Lord came to Jehu the son of Hanani against Baasha, saying,</p>
+            <p><strong>2</strong> Forasmuch as I exalted thee out of the dust, and made thee prince over my people Israel; and thou hast walked in the way of Jeroboam, and hast made my people Israel to sin, to provoke me to anger with their sins;</p>
+            <p><strong>3</strong> Behold, I will take away the posterity of Baasha, and the posterity of his house; and will make thy house like the house of Jeroboam the son of Nebat.</p>
+            <p><strong>4</strong> Him that dieth of Baasha in the city shall the dogs eat; and him that dieth of his in the fields shall the fowls of the air eat.</p>
+            <p><strong>5</strong> Now the rest of the acts of Baasha, and what he did, and his might, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>6</strong> So Baasha slept with his fathers, and was buried in Tirzah: and Elah his son reigned in his stead.</p>
+            <p><strong>7</strong> And also by the hand of the prophet Jehu the son of Hanani came the word of the Lord against Baasha, and against his house, even for all the evil that he did in the sight of the Lord, in provoking him to anger with the work of his hands, in being like the house of Jeroboam; and because he killed him.</p>
+            <p><strong>8</strong> In the twenty and sixth year of Asa king of Judah began Elah the son of Baasha to reign over Israel in Tirzah, two years.</p>
+            <p><strong>9</strong> And his servant Zimri, captain of half his chariots, conspired against him, as he was in Tirzah, drinking himself drunk in the house of Arza steward of his house in Tirzah.</p>
+            <p><strong>10</strong> And Zimri went in and smote him, and killed him, in the twenty and seventh year of Asa king of Judah, and reigned in his stead.</p>
+            <p><strong>11</strong> And it came to pass, when he began to reign, as soon as he sat on his throne, that he slew all the house of Baasha: he left him not one that pisseth against a wall, neither of his kinsfolks, nor of his friends.</p>
+            <p><strong>12</strong> Thus did Zimri destroy all the house of Baasha, according to the word of the Lord, which he spake against Baasha by Jehu the prophet,</p>
+            <p><strong>13</strong> For all the sins of Baasha, and the sins of Elah his son, by which they sinned, and by which they made Israel to sin, in provoking the Lord God of Israel to anger with their vanities.</p>
+            <p><strong>14</strong> Now the rest of the acts of Elah, and all that he did, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>15</strong> In the twenty and seventh year of Asa king of Judah did Zimri reign seven days in Tirzah. And the people were encamped against Gibbethon, which belonged to the Philistines.</p>
+            <p><strong>16</strong> And the people that were encamped heard say, Zimri hath conspired, and hath also slain the king: wherefore all Israel made Omri, the captain of the host, king over Israel that day in the camp.</p>
+            <p><strong>17</strong> And Omri went up from Gibbethon, and all Israel with him, and they besieged Tirzah.</p>
+            <p><strong>18</strong> And it came to pass, when Zimri saw that the city was taken, that he went into the palace of the king’s house, and burnt the king’s house over him with fire, and died,</p>
+            <p><strong>19</strong> For his sins which he sinned in doing evil in the sight of the Lord, in walking in the way of Jeroboam, and in his sin which he did, to make Israel to sin.</p>
+            <p><strong>20</strong> Now the rest of the acts of Zimri, and his treason that he wrought, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>21</strong> Then were the people of Israel divided into two parts: half of the people followed Tibni the son of Ginath, to make him king; and half followed Omri.</p>
+            <p><strong>22</strong> But the people that followed Omri prevailed against the people that followed Tibni the son of Ginath: so Tibni died, and Omri reigned.</p>
+            <p><strong>23</strong> In the thirty and first year of Asa king of Judah began Omri to reign over Israel, twelve years: six years reigned he in Tirzah.</p>
+            <p><strong>24</strong> And he bought the hill Samaria of Shemer for two talents of silver, and built on the hill, and called the name of the city which he built, after the name of Shemer, owner of the hill, Samaria.</p>
+            <p><strong>25</strong> But Omri wrought evil in the eyes of the Lord, and did worse than all that were before him.</p>
+            <p><strong>26</strong> For he walked in all the way of Jeroboam the son of Nebat, and in his sin wherewith he made Israel to sin, to provoke the Lord God of Israel to anger with their vanities.</p>
+            <p><strong>27</strong> Now the rest of the acts of Omri which he did, and his might that he shewed, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>28</strong> So Omri slept with his fathers, and was buried in Samaria: and Ahab his son reigned in his stead.</p>
+            <p><strong>29</strong> And in the thirty and eighth year of Asa king of Judah began Ahab the son of Omri to reign over Israel: and Ahab the son of Omri reigned over Israel in Samaria twenty and two years.</p>
+            <p><strong>30</strong> And Ahab the son of Omri did evil in the sight of the Lord above all that were before him.</p>
+            <p><strong>31</strong> And it came to pass, as if it had been a light thing for him to walk in the sins of Jeroboam the son of Nebat, that he took to wife Jezebel the daughter of Ethbaal king of the Zidonians, and went and served Baal, and worshipped him.</p>
+            <p><strong>32</strong> And he reared up an altar for Baal in the house of Baal, which he had built in Samaria.</p>
+            <p><strong>33</strong> And Ahab made a grove; and Ahab did more to provoke the Lord God of Israel to anger than all the kings of Israel that were before him.</p>
+            <p><strong>34</strong> In his days did Hiel the Beth–elite build Jericho: he laid the foundation thereof in Abiram his firstborn, and set up the gates thereof in his youngest son Segub, according to the word of the Lord, which he spake by Joshua the son of Nun.</p>
+            </div>
+            <div class="scripture-text" id="web-16-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Kings 16 (ASV)</p>
+            <p><strong>1</strong> And the word of Jehovah came to Jehu the son of Hanani against Baasha, saying,</p>
+            <p><strong>2</strong> Forasmuch as I exalted thee out of the dust, and made thee prince over my people Israel, and thou hast walked in the way of Jeroboam, and hast made my people Israel to sin, to provoke me to anger with their sins;</p>
+            <p><strong>3</strong> behold, I will utterly sweep away Baasha and his house; and I will make thy house like the house of Jeroboam the son of Nebat.</p>
+            <p><strong>4</strong> Him that dieth of Baasha in the city shall the dogs eat; and him that dieth of his in the field shall the birds of the heavens eat.</p>
+            <p><strong>5</strong> Now the rest of the acts of Baasha, and what he did, and his might, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>6</strong> And Baasha slept with his fathers, and was buried in Tirzah; and Elah his son reigned in his stead.</p>
+            <p><strong>7</strong> And moreover by the prophet Jehu the son of Hanani came the word of Jehovah against Baasha, and against his house, both because of all the evil that he did in the sight of Jehovah, to provoke him to anger with the work of his hands, in being like the house of Jeroboam, and because he smote him.</p>
+            <p><strong>8</strong> In the twenty and sixth year of Asa king of Judah began Elah the son of Baasha to reign over Israel in Tirzah, and reigned two years.</p>
+            <p><strong>9</strong> And his servant Zimri, captain of half his chariots, conspired against him. Now he was in Tirzah, drinking himself drunk in the house of Arza, who was over the household in Tirzah:</p>
+            <p><strong>10</strong> and Zimri went in and smote him, and killed him, in the twenty and seventh year of Asa king of Judah, and reigned in his stead.</p>
+            <p><strong>11</strong> And it came to pass, when he began to reign, as soon as he sat on his throne, that he smote all the house of Baasha: he left him not a single man-child, neither of his kinsfolks, nor of his friends.</p>
+            <p><strong>12</strong> Thus did Zimri destroy all the house of Baasha, according to the word of Jehovah, which he spake against Baasha by Jehu the prophet,</p>
+            <p><strong>13</strong> for all the sins of Baasha, and the sins of Elah his son, which they sinned, and wherewith they made Israel to sin, to provoke Jehovah, the God of Israel, to anger with their vanities.</p>
+            <p><strong>14</strong> Now the rest of the acts of Elah, and all that he did, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>15</strong> In the twenty and seventh year of Asa king of Judah did Zimri reign seven days in Tirzah. Now the people were encamped against Gibbethon, which belonged to the Philistines.</p>
+            <p><strong>16</strong> And the people that were encamped heard say, Zimri hath conspired, and hath also smitten the king: wherefore all Israel made Omri, the captain of the host, king over Israel that day in the camp.</p>
+            <p><strong>17</strong> And Omri went up from Gibbethon, and all Israel with him, and they besieged Tirzah.</p>
+            <p><strong>18</strong> And it came to pass, when Zimri saw that the city was taken, that he went into the castle of the king’s house, and burnt the king’s house over him with fire, and died,</p>
+            <p><strong>19</strong> for his sins which he sinned in doing that which was evil in the sight of Jehovah, in walking in the way of Jeroboam, and in his sin which he did, to make Israel to sin.</p>
+            <p><strong>20</strong> Now the rest of the acts of Zimri, and his treason that he wrought, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>21</strong> Then were the people of Israel divided into two parts: half of the people followed Tibni the son of Ginath, to make him king; and half followed Omri.</p>
+            <p><strong>22</strong> But the people that followed Omri prevailed against the people that followed Tibni the son of Ginath: so Tibni died, and Omri reigned.</p>
+            <p><strong>23</strong> In the thirty and first year of Asa king of Judah began Omri to reign over Israel, and reigned twelve years: six years reigned he in Tirzah.</p>
+            <p><strong>24</strong> And he bought the hill Samaria of Shemer for two talents of silver; and he built on the hill, and called the name of the city which he built, after the name of Shemer, the owner of the hill, Samaria.</p>
+            <p><strong>25</strong> And Omri did that which was evil in the sight of Jehovah, and dealt wickedly above all that were before him.</p>
+            <p><strong>26</strong> For he walked in all the way of Jeroboam the son of Nebat, and in his sins wherewith he made Israel to sin, to provoke Jehovah, the God of Israel, to anger with their vanities.</p>
+            <p><strong>27</strong> Now the rest of the acts of Omri which he did, and his might that he showed, are they not written in the book of the chronicles of the kings of Israel?</p>
+            <p><strong>28</strong> So Omri slept with his fathers, and was buried in Samaria; and Ahab his son reigned in his stead.</p>
+            <p><strong>29</strong> And in the thirty and eighth year of Asa king of Judah began Ahab the son of Omri to reign over Israel: and Ahab the son of Omri reigned over Israel in Samaria twenty and two years.</p>
+            <p><strong>30</strong> And Ahab the son of Omri did that which was evil in the sight of Jehovah above all that were before him.</p>
+            <p><strong>31</strong> And it came to pass, as if it had been a light thing for him to walk in the sins of Jeroboam the son of Nebat, that he took to wife Jezebel the daughter of Ethbaal king of the Sidonians, and went and served Baal, and worshipped him.</p>
+            <p><strong>32</strong> And he reared up an altar for Baal in the house of Baal, which he had built in Samaria.</p>
+            <p><strong>33</strong> And Ahab made the Asherah; and Ahab did yet more to provoke Jehovah, the God of Israel, to anger than all the kings of Israel that were before him.</p>
+            <p><strong>34</strong> In his days did Hiel the Beth-elite build Jericho: he laid the foundation thereof with the loss of Abiram his first-born, and set up the gates thereof with the loss of his youngest son Segub, according to the word of Jehovah, which he spake by Joshua the son of Nun.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The word of the LORD comes through Jehu son of Hanani against Baasha, declaring that because he walked in the way of Jeroboam and led Israel into sin, his house will be swept away like Jeroboam's. Baasha dies and his son Elah reigns, but Zimri, a chariot commander, conspires against the drunken king, kills him, and seizes the throne, then destroys the entire house of Baasha just as prophesied. Zimri reigns only seven days; when the army hears of his treason they make Omri king, and as the city falls, Zimri burns the palace down on himself and dies. The people are divided between Tibni and Omri, but Omri's faction prevails. Omri reigns twelve years, buys the hill of Samaria and builds his capital there, and does more evil than all who came before him, walking in Jeroboam's ways. His son Ahab succeeds him and surpasses even his father in wickedness: treating idolatry as a light thing, he marries Jezebel, daughter of the Sidonian king, serves and worships Baal, builds a temple and altar for Baal in Samaria, and makes an Asherah pole. The chapter ends noting that Ahab provoked the LORD more than all the kings of Israel before him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Omri</strong> — The army commander who seizes the throne after civil strife, founds Samaria as Israel's capital, and does more evil than all before him.</li>
+          <li><strong>Zimri</strong> — The chariot commander who murders Elah and destroys Baasha's house, then reigns only seven days before burning the palace down on himself.</li>
+          <li><strong>Ahab</strong> — Omri's son, who marries Jezebel, builds a temple to Baal in Samaria, and provokes the LORD more than any king of Israel before him.</li>
+          <li><strong>Jehu son of Hanani</strong> — The prophet through whom the LORD pronounces the doom of Baasha's house for leading Israel into sin.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Kings 16:30 (WEB)</p>
+          <p class="verse__text">Ahab the son of Omri did that which was evil in the sight of Yahweh above all that were before him.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's word of judgment is sure; the dooms pronounced on faithless houses come to pass.</li>
+          <li>Seizing a throne by violence cannot secure it; Zimri's seven days warn against ambition without God.</li>
+          <li>Sin tends to escalate, each generation outdoing the last unless someone turns back.</li>
+          <li>Marrying our hearts to idolatry, as Ahab did with Jezebel, opens the door to far greater evil.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-16">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-16">
+            <ul class="lesson-list">
+            <li><strong>Prophecy is fulfilled precisely.</strong> Zimri destroyed Baasha's house "according to Yahweh's word, which he spoke against Baasha by Jehu the prophet" (1 Kings 16:12, WEB). What God declares against sin he carries out.</li>
+            <li><strong>Ill-gotten power is short-lived.</strong> Zimri "reigned seven days in Tirzah" (1 Kings 16:15, WEB) before dying in the flames. Ambition that seizes by treachery cannot hold what it grasps.</li>
+            <li><strong>Evil compounds across generations.</strong> Omri "dealt wickedly above all who were before him" (1 Kings 16:25, WEB), and Ahab outdid even him. Unrepented sin rarely stays still; it grows.</li>
+            <li><strong>Idolatry treated lightly becomes ruin.</strong> As if walking in Jeroboam's sins were "a light thing," Ahab married Jezebel and "served Baal, and worshiped him" (1 Kings 16:31, WEB). Casual compromise opens the door to total apostasy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-16">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-16">
+            <ol class="study-questions">
+            <li>How is the judgment on Baasha's house through Jehu fulfilled in the chapter?</li>
+            <li>What does Zimri's seven-day reign teach about seizing power through violence?</li>
+            <li>Trace how evil escalates from Baasha to Omri to Ahab. What pattern do you see?</li>
+            <li>Why is Ahab's marriage to Jezebel such a turning point for the northern kingdom?</li>
+            <li>Where do you see small compromises in your own life that, treated as "a light thing," could grow into something far worse?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-16">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-16">
+            <ol class="study-questions">
+            <li>Jehu prophesied that Baasha's house would be swept away like Jeroboam's (16:3-4), and when Zimri killed Elah he destroyed every member of Baasha's family "according to Yahweh's word" (16:12). God's word against sin proves exact, even when carried out by another wicked man.</li>
+            <li>Zimri murdered his way to the throne and held it just seven days before the army turned on him and he died in the burning palace (16:15-18). His brief, doomed reign shows that treacherous ambition cannot build anything lasting; it only invites the same violence in return.</li>
+            <li>Each king is said to do evil, but Omri does worse than all before him and Ahab worse still (16:25, 30). The pattern is escalation: sin left unrepented does not plateau but deepens, dragging the whole nation further from God with each generation.</li>
+            <li>Ahab's marriage to Jezebel brings the official, royally-sponsored worship of Baal into Israel, complete with a temple and altar in Samaria (16:31-33). It moves the nation from Jeroboam's corrupted worship of the LORD to outright worship of a foreign god, a decisive plunge into apostasy.</li>
+            <li>This is a personal-application question. Invite members to identify compromises they have dismissed as minor. As leader, gently warn that what we treat as "a light thing" can take deep root, and encourage early, honest repentance before small sins grow.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-kings-15.html">← 1 Kings 15</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-kings.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-kings-17.html">1 Kings 17 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

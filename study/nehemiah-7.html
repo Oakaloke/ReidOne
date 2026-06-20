@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nehemiah 7: Numbering the People — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Nehemiah 7: Nehemiah appoints faithful guardians for Jerusalem and records the genealogy of the exiles who first returned from Babylon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-nehemiah-progress" data-study-total="13">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Nehemiah, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="nehemiah.html">← All Chapters</a>
+        <span class="study-meta">The Book of Nehemiah · Chapter 7</span>
+        <h1>Nehemiah 7: Numbering the People</h1>
+        <p class="lead">With the wall built and guards appointed, Nehemiah registers the returned exiles by genealogy, securing the identity of the restored community.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — Nehemiah Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Nehemiah 7 (WEB)</p>
+            <p><strong>1</strong> Now when the wall was built, and I had set up the doors, and the porters and the singers and the Levites were appointed,</p>
+            <p><strong>2</strong> I put my brother Hanani, and Hananiah the governor of the castle, in charge of Jerusalem; for he was a faithful man, and feared God above many.</p>
+            <p><strong>3</strong> I said to them, “Don’t let the gates of Jerusalem be opened until the sun is hot; and while they stand guard, let them shut the doors, and you bar them: and appoint watches of the inhabitants of Jerusalem, everyone in his watch, with everyone near his house.”</p>
+            <p><strong>4</strong> Now the city was wide and large; but the people were few therein, and the houses were not built.</p>
+            <p><strong>5</strong> My God put into my heart to gather together the nobles, and the rulers, and the people, that they might be reckoned by genealogy. I found the book of the genealogy of those who came up at the first, and I found written therein:</p>
+            <p><strong>6</strong> These are the children of the province, who went up out of the captivity of those who had been carried away, whom Nebuchadnezzar the king of Babylon had carried away, and who returned to Jerusalem and to Judah, everyone to his city;</p>
+            <p><strong>7</strong> who came with Zerubbabel, Jeshua, Nehemiah, Azariah, Raamiah, Nahamani, Mordecai, Bilshan, Mispereth, Bigvai, Nehum, Baanah. The number of the men of the people of Israel:</p>
+            <p><strong>8</strong> The children of Parosh, two thousand one hundred seventy-two.</p>
+            <p><strong>9</strong> The children of Shephatiah, three hundred seventy-two.</p>
+            <p><strong>10</strong> The children of Arah, six hundred fifty-two.</p>
+            <p><strong>11</strong> The children of Pahathmoab, of the children of Jeshua and Joab, two thousand eight hundred eighteen.</p>
+            <p><strong>12</strong> The children of Elam, one thousand two hundred fifty-four.</p>
+            <p><strong>13</strong> The children of Zattu, eight hundred forty-five.</p>
+            <p><strong>14</strong> The children of Zaccai, seven hundred sixty.</p>
+            <p><strong>15</strong> The children of Binnui, six hundred forty-eight.</p>
+            <p><strong>16</strong> The children of Bebai, six hundred twenty-eight.</p>
+            <p><strong>17</strong> The children of Azgad, two thousand three hundred twenty-two.</p>
+            <p><strong>18</strong> The children of Adonikam, six hundred sixty-seven.</p>
+            <p><strong>19</strong> The children of Bigvai, two thousand sixty-seven.</p>
+            <p><strong>20</strong> The children of Adin, six hundred fifty-five.</p>
+            <p><strong>21</strong> The children of Ater, of Hezekiah, ninety-eight.</p>
+            <p><strong>22</strong> The children of Hashum, three hundred Twenty-eight.</p>
+            <p><strong>23</strong> The children of Bezai, three hundred twenty-four.</p>
+            <p><strong>24</strong> The children of Hariph, one hundred twelve.</p>
+            <p><strong>25</strong> The children of Gibeon, ninety-five.</p>
+            <p><strong>26</strong> The men of Bethlehem and Netophah, one hundred eighty-eight.</p>
+            <p><strong>27</strong> The men of Anathoth, one hundred twenty-eight.</p>
+            <p><strong>28</strong> The men of Beth Azmaveth, forty-two.</p>
+            <p><strong>29</strong> The men of Kiriath Jearim, Chephirah, and Beeroth, seven hundred forty-three.</p>
+            <p><strong>30</strong> The men of Ramah and Geba, six hundred twenty-one.</p>
+            <p><strong>31</strong> The men of Michmas, one hundred and twenty-two.</p>
+            <p><strong>32</strong> The men of Bethel and Ai, a hundred twenty-three.</p>
+            <p><strong>33</strong> The men of the other Nebo, fifty-two.</p>
+            <p><strong>34</strong> The children of the other Elam, one thousand two hundred fifty-four.</p>
+            <p><strong>35</strong> The children of Harim, three hundred twenty.</p>
+            <p><strong>36</strong> The children of Jericho, three hundred forty-five.</p>
+            <p><strong>37</strong> The children of Lod, Hadid, and Ono, seven hundred twenty-one.</p>
+            <p><strong>38</strong> The children of Senaah, three thousand nine hundred thirty.</p>
+            <p><strong>39</strong> The priests: The children of Jedaiah, of the house of Jeshua, nine hundred seventy-three.</p>
+            <p><strong>40</strong> The children of Immer, one thousand fifty-two.</p>
+            <p><strong>41</strong> The children of Pashhur, one thousand two hundred forty-seven.</p>
+            <p><strong>42</strong> The children of Harim, one thousand seventeen.</p>
+            <p><strong>43</strong> The Levites: the children of Jeshua, of Kadmiel, of the children of Hodevah, seventy-four.</p>
+            <p><strong>44</strong> The singers: the children of Asaph, one hundred forty-eight.</p>
+            <p><strong>45</strong> The porters: the children of Shallum, the children of Ater, the children of Talmon, the children of Akkub, the children of Hatita, the children of Shobai, one hundred thirty-eight.</p>
+            <p><strong>46</strong> The Nethinim: the children of Ziha, the children of Hasupha, the children of Tabbaoth,</p>
+            <p><strong>47</strong> the children of Keros, the children of Sia, the children of Padon,</p>
+            <p><strong>48</strong> the children of Lebana, the children of Hagaba, the children of Salmai,</p>
+            <p><strong>49</strong> the children of Hanan, the children of Giddel, the children of Gahar,</p>
+            <p><strong>50</strong> the children of Reaiah, the children of Rezin, the children of Nekoda,</p>
+            <p><strong>51</strong> the children of Gazzam, the children of Uzza, the children of Paseah.</p>
+            <p><strong>52</strong> The children of Besai, the children of Meunim, the children of Nephushesim,</p>
+            <p><strong>53</strong> the children of Bakbuk, the children of Hakupha, the children of Harhur,</p>
+            <p><strong>54</strong> the children of Bazlith, the children of Mehida, the children of Harsha,</p>
+            <p><strong>55</strong> the children of Barkos, the children of Sisera, the children of Temah,</p>
+            <p><strong>56</strong> the children of Neziah, the children of Hatipha.</p>
+            <p><strong>57</strong> The children of Solomon’s servants: the children of Sotai, the children of Sophereth, the children of Perida,</p>
+            <p><strong>58</strong> the children of Jaala, the children of Darkon, the children of Giddel,</p>
+            <p><strong>59</strong> the children of Shephatiah, the children of Hattil, the children of Pochereth Hazzebaim, the children of Amon.</p>
+            <p><strong>60</strong> All the Nethinim, and the children of Solomon’s servants, were three hundred ninety-two.</p>
+            <p><strong>61</strong> These were those who went up from Tel Melah, Tel Harsha, Cherub, Addon, and Immer; but they could not show their fathers’ houses, nor their seed, whether they were of Israel:</p>
+            <p><strong>62</strong> The children of Delaiah, the children of Tobiah, the children of Nekoda, six hundred forty-two.</p>
+            <p><strong>63</strong> Of the priests: the children of Hobaiah, the children of Hakkoz, the children of Barzillai, who took a wife of the daughters of Barzillai the Gileadite, and was called after their name.</p>
+            <p><strong>64</strong> These searched for their genealogical records, but couldn’t find them. Therefore were they deemed polluted and put from the priesthood.</p>
+            <p><strong>65</strong> The governor said to them, that they should not eat of the most holy things, until there stood up a priest with Urim and Thummim.</p>
+            <p><strong>66</strong> The whole assembly together was forty-two thousand three hundred sixty,</p>
+            <p><strong>67</strong> besides their male servants and their female servants, of whom there were seven thousand three hundred thirty-seven: and they had two hundred forty-five singing men and singing women.</p>
+            <p><strong>68</strong> Their horses were seven hundred thirty-six; their mules, two hundred forty-five;</p>
+            <p><strong>69</strong> their camels, four hundred thirty-five; their donkeys, six thousand seven hundred twenty.</p>
+            <p><strong>70</strong> Some from among the heads of fathers’ households gave to the work. The governor gave to the treasury one thousand darics of gold, fifty basins, and five hundred thirty priests’ garments.</p>
+            <p><strong>71</strong> Some of the heads of fathers’ households gave into the treasury of the work twenty thousand darics of gold, and two thousand two hundred minas of silver.</p>
+            <p><strong>72</strong> That which the rest of the people gave was twenty thousand darics of gold, and two thousand minas of silver, and sixty-seven priests’ garments.</p>
+            <p><strong>73</strong> So the priests, and the Levites, and the porters, and the singers, and some of the people, and the Nethinim, and all Israel, lived in their cities. When the seventh month had come, the children of Israel were in their cities.</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Nehemiah 7 (KJV)</p>
+            <p><strong>1</strong> Now it came to pass, when the wall was built, and I had set up the doors, and the porters and the singers and the Levites were appointed,</p>
+            <p><strong>2</strong> That I gave my brother Hanani, and Hananiah the ruler of the palace, charge over Jerusalem: for he was a faithful man, and feared God above many.</p>
+            <p><strong>3</strong> And I said unto them, Let not the gates of Jerusalem be opened until the sun be hot; and while they stand by, let them shut the doors, and bar them: and appoint watches of the inhabitants of Jerusalem, every one in his watch, and every one to be over against his house.</p>
+            <p><strong>4</strong> Now the city was large and great: but the people were few therein, and the houses were not builded.</p>
+            <p><strong>5</strong> And my God put into mine heart to gather together the nobles, and the rulers, and the people, that they might be reckoned by genealogy. And I found a register of the genealogy of them which came up at the first, and found written therein,</p>
+            <p><strong>6</strong> These are the children of the province, that went up out of the captivity, of those that had been carried away, whom Nebuchadnezzar the king of Babylon had carried away, and came again to Jerusalem and to Judah, every one unto his city;</p>
+            <p><strong>7</strong> Who came with Zerubbabel, Jeshua, Nehemiah, Azariah, Raamiah, Nahamani, Mordecai, Bilshan, Mispereth, Bigvai, Nehum, Baanah. The number, I say, of the men of the people of Israel was this;</p>
+            <p><strong>8</strong> The children of Parosh, two thousand an hundred seventy and two.</p>
+            <p><strong>9</strong> The children of Shephatiah, three hundred seventy and two.</p>
+            <p><strong>10</strong> The children of Arah, six hundred fifty and two.</p>
+            <p><strong>11</strong> The children of Pahath–moab, of the children of Jeshua and Joab, two thousand and eight hundred and eighteen.</p>
+            <p><strong>12</strong> The children of Elam, a thousand two hundred fifty and four.</p>
+            <p><strong>13</strong> The children of Zattu, eight hundred forty and five.</p>
+            <p><strong>14</strong> The children of Zaccai, seven hundred and threescore.</p>
+            <p><strong>15</strong> The children of Binnui, six hundred forty and eight.</p>
+            <p><strong>16</strong> The children of Bebai, six hundred twenty and eight.</p>
+            <p><strong>17</strong> The children of Azgad, two thousand three hundred twenty and two.</p>
+            <p><strong>18</strong> The children of Adonikam, six hundred threescore and seven.</p>
+            <p><strong>19</strong> The children of Bigvai, two thousand threescore and seven.</p>
+            <p><strong>20</strong> The children of Adin, six hundred fifty and five.</p>
+            <p><strong>21</strong> The children of Ater of Hezekiah, ninety and eight.</p>
+            <p><strong>22</strong> The children of Hashum, three hundred twenty and eight.</p>
+            <p><strong>23</strong> The children of Bezai, three hundred twenty and four.</p>
+            <p><strong>24</strong> The children of Hariph, an hundred and twelve.</p>
+            <p><strong>25</strong> The children of Gibeon, ninety and five.</p>
+            <p><strong>26</strong> The men of Beth–lehem and Netophah, an hundred fourscore and eight.</p>
+            <p><strong>27</strong> The men of Anathoth, an hundred twenty and eight.</p>
+            <p><strong>28</strong> The men of Beth–azmaveth, forty and two.</p>
+            <p><strong>29</strong> The men of Kirjath–jearim, Chephirah, and Beeroth, seven hundred forty and three.</p>
+            <p><strong>30</strong> The men of Ramah and Geba, six hundred twenty and one.</p>
+            <p><strong>31</strong> The men of Michmas, an hundred and twenty and two.</p>
+            <p><strong>32</strong> The men of Beth–el and Ai, an hundred twenty and three.</p>
+            <p><strong>33</strong> The men of the other Nebo, fifty and two.</p>
+            <p><strong>34</strong> The children of the other Elam, a thousand two hundred fifty and four.</p>
+            <p><strong>35</strong> The children of Harim, three hundred and twenty.</p>
+            <p><strong>36</strong> The children of Jericho, three hundred forty and five.</p>
+            <p><strong>37</strong> The children of Lod, Hadid, and Ono, seven hundred twenty and one.</p>
+            <p><strong>38</strong> The children of Senaah, three thousand nine hundred and thirty.</p>
+            <p><strong>39</strong> The priests: the children of Jedaiah, of the house of Jeshua, nine hundred seventy and three.</p>
+            <p><strong>40</strong> The children of Immer, a thousand fifty and two.</p>
+            <p><strong>41</strong> The children of Pashur, a thousand two hundred forty and seven.</p>
+            <p><strong>42</strong> The children of Harim, a thousand and seventeen.</p>
+            <p><strong>43</strong> The Levites: the children of Jeshua, of Kadmiel, and of the children of Hodevah, seventy and four.</p>
+            <p><strong>44</strong> The singers: the children of Asaph, an hundred forty and eight.</p>
+            <p><strong>45</strong> The porters: the children of Shallum, the children of Ater, the children of Talmon, the children of Akkub, the children of Hatita, the children of Shobai, an hundred thirty and eight.</p>
+            <p><strong>46</strong> The Nethinims: the children of Ziha, the children of Hashupha, the children of Tabbaoth,</p>
+            <p><strong>47</strong> The children of Keros, the children of Sia, the children of Padon,</p>
+            <p><strong>48</strong> The children of Lebana, the children of Hagaba, the children of Shalmai,</p>
+            <p><strong>49</strong> The children of Hanan, the children of Giddel, the children of Gahar,</p>
+            <p><strong>50</strong> The children of Reaiah, the children of Rezin, the children of Nekoda,</p>
+            <p><strong>51</strong> The children of Gazzam, the children of Uzza, the children of Phaseah,</p>
+            <p><strong>52</strong> The children of Besai, the children of Meunim, the children of Nephishesim,</p>
+            <p><strong>53</strong> The children of Bakbuk, the children of Hakupha, the children of Harhur,</p>
+            <p><strong>54</strong> The children of Bazlith, the children of Mehida, the children of Harsha,</p>
+            <p><strong>55</strong> The children of Barkos, the children of Sisera, the children of Tamah,</p>
+            <p><strong>56</strong> The children of Neziah, the children of Hatipha.</p>
+            <p><strong>57</strong> The children of Solomon’s servants: the children of Sotai, the children of Sophereth, the children of Perida,</p>
+            <p><strong>58</strong> The children of Jaala, the children of Darkon, the children of Giddel,</p>
+            <p><strong>59</strong> The children of Shephatiah, the children of Hattil, the children of Pochereth of Zebaim, the children of Amon.</p>
+            <p><strong>60</strong> All the Nethinims, and the children of Solomon’s servants, were three hundred ninety and two.</p>
+            <p><strong>61</strong> And these were they which went up also from Tel–melah, Tel–haresha, Cherub, Addon, and Immer: but they could not shew their father’s house, nor their seed, whether they were of Israel.</p>
+            <p><strong>62</strong> The children of Delaiah, the children of Tobiah, the children of Nekoda, six hundred forty and two.</p>
+            <p><strong>63</strong> And of the priests: the children of Habaiah, the children of Koz, the children of Barzillai, which took one of the daughters of Barzillai the Gileadite to wife, and was called after their name.</p>
+            <p><strong>64</strong> These sought their register among those that were reckoned by genealogy, but it was not found: therefore were they, as polluted, put from the priesthood.</p>
+            <p><strong>65</strong> And the Tirshatha said unto them, that they should not eat of the most holy things, till there stood up a priest with Urim and Thummim.</p>
+            <p><strong>66</strong> The whole congregation together was forty and two thousand three hundred and threescore,</p>
+            <p><strong>67</strong> Beside their manservants and their maidservants, of whom there were seven thousand three hundred thirty and seven: and they had two hundred forty and five singing men and singing women.</p>
+            <p><strong>68</strong> Their horses, seven hundred thirty and six: their mules, two hundred forty and five:</p>
+            <p><strong>69</strong> Their camels, four hundred thirty and five: six thousand seven hundred and twenty asses.</p>
+            <p><strong>70</strong> And some of the chief of the fathers gave unto the work. The Tirshatha gave to the treasure a thousand drams of gold, fifty basons, five hundred and thirty priests’ garments.</p>
+            <p><strong>71</strong> And some of the chief of the fathers gave to the treasure of the work twenty thousand drams of gold, and two thousand and two hundred pound of silver.</p>
+            <p><strong>72</strong> And that which the rest of the people gave was twenty thousand drams of gold, and two thousand pound of silver, and threescore and seven priests’ garments.</p>
+            <p><strong>73</strong> So the priests, and the Levites, and the porters, and the singers, and some of the people, and the Nethinims, and all Israel, dwelt in their cities; and when the seventh month came, the children of Israel were in their cities.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Nehemiah 7 (ASV)</p>
+            <p><strong>1</strong> Now it came to pass, when the wall was built, and I had set up the doors, and the porters and the singers and the Levites were appointed,</p>
+            <p><strong>2</strong> that I gave my brother Hanani, and Hananiah the governor of the castle, charge over Jerusalem; for he was a faithful man, and feared God above many.</p>
+            <p><strong>3</strong> And I said unto them, Let not the gates of Jerusalem be opened until the sun be hot; and while they stand on guard, let them shut the doors, and bar ye them: and appoint watches of the inhabitants of Jerusalem, every one in his watch, and every one to be over against his house.</p>
+            <p><strong>4</strong> Now the city was wide and large; but the people were few therein, and the houses were not builded.</p>
+            <p><strong>5</strong> And my God put into my heart to gather together the nobles, and the rulers, and the people, that they might be reckoned by genealogy. And I found the book of the genealogy of them that came up at the first, and I found written therein:</p>
+            <p><strong>6</strong> These are the children of the province, that went up out of the captivity of those that had been carried away, whom Nebuchadnezzar the king of Babylon had carried away, and that returned unto Jerusalem and to Judah, every one unto his city;</p>
+            <p><strong>7</strong> who came with Zerubbabel, Jeshua, Nehemiah, Azariah, Raamiah, Nahamani, Mordecai, Bilshan, Mispereth, Bigvai, Nehum, Baanah. The number of the men of the people of Israel:</p>
+            <p><strong>8</strong> The children of Parosh, two thousand a hundred and seventy and two.</p>
+            <p><strong>9</strong> The children of Shephatiah, three hundred seventy and two.</p>
+            <p><strong>10</strong> The children of Arah, six hundred fifty and two.</p>
+            <p><strong>11</strong> The children of Pahath-moab, of the children of Jeshua and Joab, two thousand and eight hundredandeighteen.</p>
+            <p><strong>12</strong> The children of Elam, a thousand two hundred fifty and four.</p>
+            <p><strong>13</strong> The children of Zattu, eight hundred forty and five.</p>
+            <p><strong>14</strong> The children of Zaccai, seven hundred and threescore.</p>
+            <p><strong>15</strong> The children of Binnui, six hundred forty and eight.</p>
+            <p><strong>16</strong> The children of Bebai, six hundred twenty and eight.</p>
+            <p><strong>17</strong> The children of Azgad, two thousand three hundred twenty and two.</p>
+            <p><strong>18</strong> The children of Adonikam, six hundred threescore and seven.</p>
+            <p><strong>19</strong> The children of Bigvai, two thousand threescore and seven.</p>
+            <p><strong>20</strong> The children of Adin, six hundred fifty and five.</p>
+            <p><strong>21</strong> The children of Ater, of Hezekiah, ninety and eight.</p>
+            <p><strong>22</strong> The children of Hashum, three hundred twenty and eight.</p>
+            <p><strong>23</strong> The children of Bezai, three hundred twenty and four.</p>
+            <p><strong>24</strong> The children of Hariph, a hundred and twelve.</p>
+            <p><strong>25</strong> The children of Gibeon, ninety and five.</p>
+            <p><strong>26</strong> The men of Beth-lehem and Netophah, a hundred fourscore and eight.</p>
+            <p><strong>27</strong> The men of Anathoth, a hundred twenty and eight.</p>
+            <p><strong>28</strong> The men of Beth-azmaveth, forty and two.</p>
+            <p><strong>29</strong> The men of Kiriath-jearim, Chephirah, and Beeroth, seven hundred forty and three.</p>
+            <p><strong>30</strong> The men of Ramah and Geba, six hundred twenty and one.</p>
+            <p><strong>31</strong> The men of Michmas, a hundred and twenty and two.</p>
+            <p><strong>32</strong> The men of Beth-el and Ai, a hundred twenty and three.</p>
+            <p><strong>33</strong> The men of the other Nebo, fifty and two.</p>
+            <p><strong>34</strong> The children of the other Elam, a thousand two hundred fifty and four.</p>
+            <p><strong>35</strong> The children of Harim, three hundred and twenty.</p>
+            <p><strong>36</strong> The children of Jericho, three hundred forty and five.</p>
+            <p><strong>37</strong> The children of Lod, Hadid, and Ono, seven hundred twenty and one.</p>
+            <p><strong>38</strong> The children of Senaah, three thousand nine hundred and thirty.</p>
+            <p><strong>39</strong> The priests: The children of Jedaiah, of the house of Jeshua, nine hundred seventy and three.</p>
+            <p><strong>40</strong> The children of Immer, a thousand fifty and two.</p>
+            <p><strong>41</strong> The children of Pashhur, a thousand two hundred forty and seven.</p>
+            <p><strong>42</strong> The children of Harim, a thousandandseventeen.</p>
+            <p><strong>43</strong> The Levites: the children of Jeshua, of Kadmiel, of the children of Hodevah, seventy and four.</p>
+            <p><strong>44</strong> The singers: the children of Asaph, a hundred forty and eight.</p>
+            <p><strong>45</strong> The porters: the children of Shallum, the children of Ater, the children of Talmon, the children of Akkub, the children of Hatita, the children of Shobai, a hundred thirty and eight.</p>
+            <p><strong>46</strong> The Nethinim: the children of Ziha, the children of Hasupha, the children of Tabbaoth,</p>
+            <p><strong>47</strong> the children of Keros, the children of Sia, the children of Padon,</p>
+            <p><strong>48</strong> the children of Lebana, the children of Hagaba, the children of Salmai,</p>
+            <p><strong>49</strong> the children of Hanan, the children of Giddel, the children of Gahar,</p>
+            <p><strong>50</strong> the children of Reaiah, the children of Rezin, the children of Nekoda,</p>
+            <p><strong>51</strong> the children of Gazzam, the children of Uzza, the children of Paseah.</p>
+            <p><strong>52</strong> The children of Besai, the children of Meunim, the children of Nephushesim,</p>
+            <p><strong>53</strong> the children of Bakbuk, the children of Hakupha, the children of Harhur,</p>
+            <p><strong>54</strong> the children of Bazlith, the children of Mehida, the children of Harsha,</p>
+            <p><strong>55</strong> the children of Barkos, the children of Sisera, the children of Temah,</p>
+            <p><strong>56</strong> the children of Neziah, the children of Hatipha.</p>
+            <p><strong>57</strong> The children of Solomon’s servants: the children of Sotai, the children of Sophereth, the children of Perida,</p>
+            <p><strong>58</strong> the children of Jaala, the children of Darkon, the children of Giddel,</p>
+            <p><strong>59</strong> the children of Shephatiah, the children of Hattil, the children of Pochereth-hazzebaim, the children of Amon.</p>
+            <p><strong>60</strong> All the Nethinim, and the children of Solomon’s servants, were three hundred ninety and two.</p>
+            <p><strong>61</strong> And these were they that went up from Tel-melah, Tel-harsha, Cherub, Addon, and Immer; but they could not show their fathers’ houses, nor their seed, whether they were of Israel:</p>
+            <p><strong>62</strong> The children of Delaiah, the children of Tobiah, the children of Nekoda, six hundred forty and two.</p>
+            <p><strong>63</strong> And of the priests: the children of Hobaiah, the children of Hakkoz, the children of Barzillai, who took a wife of the daughters of Barzillai the Gileadite, and was called after their name.</p>
+            <p><strong>64</strong> These sought their registeramongthose that were reckoned by genealogy, but it was not found: therefore were they deemed polluted and put from the priesthood.</p>
+            <p><strong>65</strong> And the governor said unto them, that they should not eat of the most holy things, till there stood up a priest with Urim and Thummim.</p>
+            <p><strong>66</strong> The whole assembly together was forty and two thousand three hundred and threescore,</p>
+            <p><strong>67</strong> besides their men-servants and their maid-servants, of whom there were seven thousand three hundred thirty and seven: and they had two hundred forty and five singing men and singing women.</p>
+            <p><strong>68</strong> Their horses were seven hundred thirty and six; their mules, two hundred forty and five;</p>
+            <p><strong>69</strong> their camels, four hundred thirty and five; their asses, six thousand seven hundred and twenty.</p>
+            <p><strong>70</strong> And some from among the heads of fathers’ houses gave unto the work. The governor gave to the treasury a thousand darics of gold, fifty basins, five hundred and thirty priests’ garments.</p>
+            <p><strong>71</strong> And some of the heads of fathers’ houses gave into the treasury of the work twenty thousand darics of gold, and two thousand and two hundred pounds of silver.</p>
+            <p><strong>72</strong> And that which the rest of the people gave was twenty thousand darics of gold, and two thousand pounds of silver, and threescore and seven priests’ garments.</p>
+            <p><strong>73</strong> So the priests, and the Levites, and the porters, and the singers, and some of the people, and the Nethinim, and all Israel, dwelt in their cities. And when the seventh month was come, the children of Israel were in their cities.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>With the wall finished and the doors set up, Nehemiah turns to securing the city and its people. He appoints porters, singers, and Levites, and places his brother Hanani and the faithful, God-fearing Hananiah in charge of Jerusalem, with careful instructions about guarding the gates. The city is large but sparsely populated, so God puts it into Nehemiah's heart to gather the people for a genealogical registration. He finds the record of those who first returned from exile under Zerubbabel and others, and the chapter preserves that list: the families of Israel by clan and town, the priests, Levites, singers, porters, temple servants, and the descendants of Solomon's servants, along with those who could not prove their lineage. The totals are given—tens of thousands of people, with their servants, singers, and animals—and the freewill gifts that leaders and people offered for the work. The chapter ends by noting that the priests, Levites, and people settled in their towns as the seventh month arrived, setting the stage for the great assembly to hear the Law. Behind the long list lies a tender truth: God knows and numbers his people, preserving a faithful remnant and giving them a secure identity in the land he promised.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Nehemiah</strong> — The governor who secures the city, appoints trustworthy guardians, and registers the people by genealogy to preserve the community's identity.</li>
+          <li><strong>Hanani and Hananiah</strong> — The faithful men placed in charge of Jerusalem, chosen because Hananiah was faithful and feared God above many.</li>
+          <li><strong>The returned exiles</strong> — The families, priests, Levites, singers, and temple servants who first came up from Babylon under Zerubbabel and are now recorded by name and number.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who put it into Nehemiah's heart to gather the people and who preserves and numbers his faithful remnant.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Nehemiah 7:2 (WEB)</p>
+          <p class="verse__text">I put my brother Hanani, and Hananiah the governor of the castle, in charge of Jerusalem; for he was a faithful man, and feared God above many.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Finishing a project well includes putting trustworthy people in place to guard and sustain it.</li>
+          <li>Character and the fear of God are the chief qualifications for spiritual responsibility.</li>
+          <li>God preserves a faithful remnant and gives his people a secure identity and belonging.</li>
+          <li>Even long lists of names testify that God knows and values each of his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>Entrust the work to the faithful.</strong> Nehemiah chooses Hananiah because he was “a faithful man, and feared God above many” (Nehemiah 7:2, WEB). Character outweighs talent in those we trust with God's work.</li>
+            <li><strong>God plants the right impulses.</strong> “My God put into my heart to gather together” the people (Nehemiah 7:5, WEB). The desire to do good is itself a gift of God's grace at work in us.</li>
+            <li><strong>Identity and belonging matter.</strong> The careful genealogy roots each family in the covenant people of God (Nehemiah 7:6-7, WEB). God's people are not anonymous; they belong by name.</li>
+            <li><strong>Guard what God has built.</strong> Nehemiah gives detailed orders for watching the gates (Nehemiah 7:3, WEB). Completed work must still be protected and maintained.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>Why does Nehemiah focus on appointing leaders and guards once the wall is finished?</li>
+            <li>What qualities does Nehemiah look for in those he puts in charge of Jerusalem?</li>
+            <li>Why does Nehemiah take the trouble to register the people by genealogy?</li>
+            <li>What does the long list of names and numbers suggest about how God regards his people?</li>
+            <li>Who are the faithful people in your life or community that God has used to sustain his work, and how might you encourage them?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>A finished wall is not the end of the task; the city must be guarded and governed. Nehemiah appoints porters and watchmen and entrusts Jerusalem to capable leaders (7:1-3). He understands that securing and sustaining a work requires ongoing structure and faithful oversight, not just the initial achievement.</li>
+            <li>Nehemiah selects Hananiah specifically because he “was a faithful man, and feared God above many” (7:2). Reliability and reverence for God, not merely competence or status, are the marks he prizes. Spiritual responsibility rests most safely on tested character.</li>
+            <li>By recovering the genealogical record, Nehemiah anchors the community in its covenant identity, confirming who truly belongs to the people God brought back from exile (7:5-7). It guards against confusion and gives the restored nation a clear sense of belonging and continuity with God's promises.</li>
+            <li>Though the list reads as mere names and figures, it testifies that God knows his people individually and preserved them through exile (7:6-66). Each family is remembered and counted. The chapter quietly assures us that no one is overlooked in the community God redeems.</li>
+            <li>This is a personal-application question. Invite members to name the often unseen, faithful people—volunteers, mentors, servants—who keep good work going. As leader, encourage practical gratitude and consider how the group might honor or support such people this week.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="nehemiah-6.html">← Nehemiah 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="nehemiah.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="nehemiah-8.html">Nehemiah 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Samuel 19: Hunted but Kept — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Samuel 19: Saul openly seeks David's life, yet Jonathan, Michal, and the Spirit of God protect him at every turn." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-samuel-progress" data-study-total="31">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Samuel, Chapter 19
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-samuel.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Samuel · Chapter 19</span>
+        <h1>1 Samuel 19: Hunted but Kept</h1>
+        <p class="lead">Saul's resolve to kill David grows open, but Jonathan, Michal, and even the Spirit of God repeatedly shield the Lord's anointed.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-19">
+            <span>Scripture — 1 Samuel Chapter 19</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-19">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-19-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-19-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-19-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-19-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Samuel 19 (WEB)</p>
+            <p><strong>1</strong> Saul spoke to Jonathan his son, and to all his servants, that they should kill David. But Jonathan, Saul’s son, delighted much in David.</p>
+            <p><strong>2</strong> Jonathan told David, saying, “Saul my father seeks to kill you. Now therefore, please take care of yourself in the morning, and live in a secret place, and hide yourself.</p>
+            <p><strong>3</strong> I will go out and stand beside my father in the field where you are, and I will talk with my father about you; and if I see anything, I will tell you.”</p>
+            <p><strong>4</strong> Jonathan spoke good of David to Saul his father, and said to him, “Don’t let the king sin against his servant, against David; because he has not sinned against you, and because his works have been very good toward you;</p>
+            <p><strong>5</strong> for he put his life in his hand, and struck the Philistine, and Yahweh worked a great victory for all Israel. You saw it, and rejoiced. Why then will you sin against innocent blood, to kill David without a cause?”</p>
+            <p><strong>6</strong> Saul listened to the voice of Jonathan: and Saul swore, “As Yahweh lives, he shall not be put to death.”</p>
+            <p><strong>7</strong> Jonathan called David, and Jonathan showed him all those things. Jonathan brought David to Saul, and he was in his presence, as before.</p>
+            <p><strong>8</strong> There was war again. David went out, and fought with the Philistines, and killed them with a great slaughter; and they fled before him.</p>
+            <p><strong>9</strong> An evil spirit from Yahweh was on Saul, as he sat in his house with his spear in his hand; and David was playing with his hand.</p>
+            <p><strong>10</strong> Saul sought to pin David even to the wall with the spear; but he slipped away out of Saul’s presence, and he stuck the spear into the wall. David fled, and escaped that night.</p>
+            <p><strong>11</strong> Saul sent messengers to David’s house, to watch him, and to kill him in the morning. Michal, David’s wife, told him, saying, “If you don’t save your life tonight, tomorrow you will be killed.”</p>
+            <p><strong>12</strong> So Michal let David down through the window. He went, fled, and escaped.</p>
+            <p><strong>13</strong> Michal took the teraphim, and laid it in the bed, and put a pillow of goats’ hair at its head, and covered it with the clothes.</p>
+            <p><strong>14</strong> When Saul sent messengers to take David, she said, “He is sick.”</p>
+            <p><strong>15</strong> Saul sent the messengers to see David, saying, “Bring him up to me in the bed, that I may kill him.”</p>
+            <p><strong>16</strong> When the messengers came in, behold, the teraphim was in the bed, with the pillow of goats’ hair at its head.</p>
+            <p><strong>17</strong> Saul said to Michal, “Why have you deceived me thus, and let my enemy go, so that he is escaped?” Michal answered Saul, “He said to me, ‘Let me go! Why should I kill you?’”</p>
+            <p><strong>18</strong> Now David fled, and escaped, and came to Samuel to Ramah, and told him all that Saul had done to him. He and Samuel went and lived in Naioth.</p>
+            <p><strong>19</strong> It was told Saul, saying, “Behold, David is at Naioth in Ramah.”</p>
+            <p><strong>20</strong> Saul sent messengers to take David: and when they saw the company of the prophets prophesying, and Samuel standing as head over them, the Spirit of God came on the messengers of Saul, and they also prophesied.</p>
+            <p><strong>21</strong> When it was told Saul, he sent other messengers, and they also prophesied. Saul sent messengers again the third time, and they also prophesied.</p>
+            <p><strong>22</strong> Then went he also to Ramah, and came to the great well that is in Secu: and he asked, “Where are Samuel and David?” One said, “Behold, they are at Naioth in Ramah.”</p>
+            <p><strong>23</strong> He went there to Naioth in Ramah. Then the Spirit of God came on him also, and he went on, and prophesied, until he came to Naioth in Ramah.</p>
+            <p><strong>24</strong> He also stripped off his clothes, and he also prophesied before Samuel, and lay down naked all that day and all that night. Therefore they say, “Is Saul also among the prophets?”</p>
+            </div>
+            <div class="scripture-text" id="web-19-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Samuel 19 (KJV)</p>
+            <p><strong>1</strong> And Saul spake to Jonathan his son, and to all his servants, that they should kill David.</p>
+            <p><strong>2</strong> But Jonathan Saul’s son delighted much in David: and Jonathan told David, saying, Saul my father seeketh to kill thee: now therefore, I pray thee, take heed to thyself until the morning, and abide in a secret place, and hide thyself:</p>
+            <p><strong>3</strong> And I will go out and stand beside my father in the field where thou art, and I will commune with my father of thee; and what I see, that I will tell thee.</p>
+            <p><strong>4</strong> And Jonathan spake good of David unto Saul his father, and said unto him, Let not the king sin against his servant, against David; because he hath not sinned against thee, and because his works have been to thee-ward very good:</p>
+            <p><strong>5</strong> For he did put his life in his hand, and slew the Philistine, and the Lord wrought a great salvation for all Israel: thou sawest it, and didst rejoice: wherefore then wilt thou sin against innocent blood, to slay David without a cause?</p>
+            <p><strong>6</strong> And Saul hearkened unto the voice of Jonathan: and Saul sware, As the Lord liveth, he shall not be slain.</p>
+            <p><strong>7</strong> And Jonathan called David, and Jonathan shewed him all those things. And Jonathan brought David to Saul, and he was in his presence, as in times past.</p>
+            <p><strong>8</strong> And there was war again: and David went out, and fought with the Philistines, and slew them with a great slaughter; and they fled from him.</p>
+            <p><strong>9</strong> And the evil spirit from the Lord was upon Saul, as he sat in his house with his javelin in his hand: and David played with his hand.</p>
+            <p><strong>10</strong> And Saul sought to smite David even to the wall with the javelin; but he slipped away out of Saul’s presence, and he smote the javelin into the wall: and David fled, and escaped that night.</p>
+            <p><strong>11</strong> Saul also sent messengers unto David’s house, to watch him, and to slay him in the morning: and Michal David’s wife told him, saying, If thou save not thy life to night, to morrow thou shalt be slain.</p>
+            <p><strong>12</strong> So Michal let David down through a window: and he went, and fled, and escaped.</p>
+            <p><strong>13</strong> And Michal took an image, and laid it in the bed, and put a pillow of goats’ hair for his bolster, and covered it with a cloth.</p>
+            <p><strong>14</strong> And when Saul sent messengers to take David, she said, He is sick.</p>
+            <p><strong>15</strong> And Saul sent the messengers again to see David, saying, Bring him up to me in the bed, that I may slay him.</p>
+            <p><strong>16</strong> And when the messengers were come in, behold, there was an image in the bed, with a pillow of goats’ hair for his bolster.</p>
+            <p><strong>17</strong> And Saul said unto Michal, Why hast thou deceived me so, and sent away mine enemy, that he is escaped? And Michal answered Saul, He said unto me, Let me go; why should I kill thee?</p>
+            <p><strong>18</strong> So David fled, and escaped, and came to Samuel to Ramah, and told him all that Saul had done to him. And he and Samuel went and dwelt in Naioth.</p>
+            <p><strong>19</strong> And it was told Saul, saying, Behold, David is at Naioth in Ramah.</p>
+            <p><strong>20</strong> And Saul sent messengers to take David: and when they saw the company of the prophets prophesying, and Samuel standing as appointed over them, the Spirit of God was upon the messengers of Saul, and they also prophesied.</p>
+            <p><strong>21</strong> And when it was told Saul, he sent other messengers, and they prophesied likewise. And Saul sent messengers again the third time, and they prophesied also.</p>
+            <p><strong>22</strong> Then went he also to Ramah, and came to a great well that is in Sechu: and he asked and said, Where are Samuel and David? And one said, Behold, they be at Naioth in Ramah.</p>
+            <p><strong>23</strong> And he went thither to Naioth in Ramah: and the Spirit of God was upon him also, and he went on, and prophesied, until he came to Naioth in Ramah.</p>
+            <p><strong>24</strong> And he stripped off his clothes also, and prophesied before Samuel in like manner, and lay down naked all that day and all that night. Wherefore they say, Is Saul also among the prophets?</p>
+            </div>
+            <div class="scripture-text" id="web-19-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Samuel 19 (ASV)</p>
+            <p><strong>1</strong> And Saul spake to Jonathan his son, and to all his servants, that they should slay David. But Jonathan, Saul’s son, delighted much in David.</p>
+            <p><strong>2</strong> And Jonathan told David, saying, Saul my father seeketh to slay thee: now therefore, I pray thee, take heed to thyself in the morning, and abide in a secret place, and hide thyself:</p>
+            <p><strong>3</strong> and I will go out and stand beside my father in the field where thou art, and I will commune with my father of thee; and if I see aught, I will tell thee.</p>
+            <p><strong>4</strong> And Jonathan spake good of David unto Saul his father, and said unto him, Let not the king sin against his servant, against David; because he hath not sinned against thee, and because his works have been to thee-ward very good:</p>
+            <p><strong>5</strong> for he put his life in his hand, and smote the Philistine, and Jehovah wrought a great victory for all Israel: thou sawest it, and didst rejoice; wherefore then wilt thou sin against innocent blood, to slay David without a cause?</p>
+            <p><strong>6</strong> And Saul hearkened unto the voice of Jonathan: and Saul sware, As Jehovah liveth, he shall not be put to death.</p>
+            <p><strong>7</strong> And Jonathan called David, and Jonathan showed him all those things. And Jonathan brought David to Saul, and he was in his presence, as beforetime.</p>
+            <p><strong>8</strong> And there was war again: and David went out, and fought with the Philistines, and slew them with a great slaughter; and they fled before him.</p>
+            <p><strong>9</strong> And an evil spirit from Jehovah was upon Saul, as he sat in his house with his spear in his hand; and David was playing with his hand.</p>
+            <p><strong>10</strong> And Saul sought to smite David even to the wall with the spear; but he slipped away out of Saul’s presence, and he smote the spear into the wall: and David fled, and escaped that night.</p>
+            <p><strong>11</strong> And Saul sent messengers unto David’s house, to watch him, and to slay him in the morning: and Michal, David’s wife, told him, saying, If thou save not thy life to-night, to-morrow thou wilt be slain.</p>
+            <p><strong>12</strong> So Michal let David down through the window: and he went, and fled, and escaped.</p>
+            <p><strong>13</strong> And Michal took the teraphim, and laid it in the bed, and put a pillow of goats’ hair at the head thereof, and covered it with the clothes.</p>
+            <p><strong>14</strong> And when Saul sent messengers to take David, she said, He is sick.</p>
+            <p><strong>15</strong> And Saul sent the messengers to see David, saying, Bring him up to me in the bed, that I may slay him.</p>
+            <p><strong>16</strong> And when the messengers came in, behold, the teraphim was in the bed, with the pillow of goats’ hair at the head thereof.</p>
+            <p><strong>17</strong> And Saul said unto Michal, Why hast thou deceived me thus, and let mine enemy go, so that he is escaped? And Michal answered Saul, He said unto me, Let me go; why should I kill thee?</p>
+            <p><strong>18</strong> Now David fled, and escaped, and came to Samuel to Ramah, and told him all that Saul had done to him. And he and Samuel went and dwelt in Naioth.</p>
+            <p><strong>19</strong> And it was told Saul, saying, Behold, David is at Naioth in Ramah.</p>
+            <p><strong>20</strong> And Saul sent messengers to take David: and when they saw the company of the prophets prophesying, and Samuel standing as head over them, the Spirit of God came upon the messengers of Saul, and they also prophesied.</p>
+            <p><strong>21</strong> And when it was told Saul, he sent other messengers, and they also prophesied. And Saul sent messengers again the third time, and they also prophesied.</p>
+            <p><strong>22</strong> Then went he also to Ramah, and came to the great well that is in Secu: and he asked and said, Where are Samuel and David? And one said, Behold, they are at Naioth in Ramah.</p>
+            <p><strong>23</strong> And he went thither to Naioth in Ramah: and the Spirit of God came upon him also, and he went on, and prophesied, until he came to Naioth in Ramah.</p>
+            <p><strong>24</strong> And he also stripped off his clothes, and he also prophesied before Samuel, and lay down naked all that day and all that night. Wherefore they say, Is Saul also among the prophets?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Saul now speaks openly to Jonathan and his servants of his desire to kill David. Jonathan, who delights in David, warns him to hide and then pleads his case before his father, reminding Saul that David has not sinned against him but risked his life to win great victories for Israel. Saul listens and swears that David will not be put to death, and for a time David returns to court. But after another victory over the Philistines, the tormenting spirit returns, and Saul again hurls his spear; David escapes into the night. Saul sends men to watch David's house and kill him in the morning, but Michal, David's wife, lowers him through a window and uses a household idol in the bed to deceive the messengers, buying him time to flee. David escapes to Samuel at Ramah, and when Saul sends messengers to seize him, the Spirit of God comes upon them and they prophesy. This happens to a second and third company, and finally to Saul himself, who strips off his clothes and lies prophesying all that day and night, so that people ask, “Is Saul also among the prophets?” Again and again human malice is overruled, and the Lord's anointed is preserved.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>David</strong> — The Lord's anointed, now openly hunted, who escapes Saul's spear and messengers through the help of friends and the hand of God.</li>
+          <li><strong>Saul</strong> — The king whose murderous intent toward David becomes open and relentless, yet is repeatedly thwarted, even when he himself is overcome by the Spirit.</li>
+          <li><strong>Jonathan</strong> — Saul's son who defends David before his father and secures a temporary reprieve for his friend.</li>
+          <li><strong>Michal</strong> — David's wife and Saul's daughter, who lowers David through a window and deceives the messengers to save his life.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Samuel 19:6 (WEB)</p>
+          <p class="verse__text">Saul listened to the voice of Jonathan: and Saul swore, “As Yahweh lives, he shall not be put to death.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God can use ordinary people and ordinary courage to protect his purposes.</li>
+          <li>Hardened sin breaks even solemn vows and returns to its old hostility.</li>
+          <li>The Lord sovereignly overrules the schemes of those who oppose his anointed.</li>
+          <li>Faithful friends advocate for the innocent and stand against injustice.</li>
+          <li>No human power can finally thwart what God has determined to do.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-19">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-19">
+            <ul class="lesson-list">
+            <li><strong>Advocacy can stay the hand of harm.</strong> Jonathan pleads David's case and Saul swears, “As Yahweh lives, he shall not be put to death” (1 Samuel 19:6, WEB). Speaking up for the innocent can turn aside evil, at least for a time.</li>
+            <li><strong>Unrepentant sin returns.</strong> Despite his oath, Saul again seeks “to pin David even to the wall with the spear” (1 Samuel 19:10, WEB). Apart from true repentance, old patterns of sin reassert themselves.</li>
+            <li><strong>God protects through people.</strong> “Michal let David down through the window” (1 Samuel 19:12, WEB). The Lord often works his deliverance through the courage and quick thinking of his servants.</li>
+            <li><strong>God can overrule any pursuer.</strong> “the Spirit of God came on him also, and he… prophesied” (1 Samuel 19:23, WEB). Even Saul is rendered powerless when God chooses to intervene.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-19">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-19">
+            <ol class="study-questions">
+            <li>How does Jonathan intercede for David, and what makes his argument persuasive to Saul?</li>
+            <li>Why does Saul break the oath he swore, and what does this reveal about the state of his heart?</li>
+            <li>How do Michal's actions show both courage and resourcefulness in protecting David?</li>
+            <li>What is the significance of the Spirit of God coming upon Saul's messengers and even Saul himself?</li>
+            <li>When have you seen God protect or provide through unexpected people or means in your own life?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-19">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-19">
+            <ol class="study-questions">
+            <li>Jonathan reminds Saul that David has not wronged him but has served him faithfully and risked his life for Israel, asking why Saul would sin against innocent blood (19:4-5). His appeal to justice and David's record briefly moves Saul to swear David will not die.</li>
+            <li>Saul breaks his oath after the tormenting spirit returns and his old envy resurfaces (19:9-10). His repentance was shallow and circumstantial, not a true turning; without a changed heart, his solemn vow could not hold against his settled hostility.</li>
+            <li>Michal lowers David through a window under cover of night and places a household idol in his bed to fool the messengers (19:12-16). Her quick, daring deception buys David the time he needs to escape, showing love expressed in decisive action.</li>
+            <li>When the Spirit comes upon the messengers and then Saul, all of them prophesy and are kept from harming David (19:20-24). God demonstrates that he can disarm any pursuer; even the king is overruled, underscoring that David's safety rests in God's hands.</li>
+            <li>This is a personal-application question. Invite members to recall times when help came through unlikely people or surprising circumstances, and to recognize God's hand in them. As leader, encourage gratitude and trust in God's faithful, often hidden, protection.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-samuel-18.html">← 1 Samuel 18</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-samuel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-samuel-20.html">1 Samuel 20 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

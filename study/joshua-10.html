@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Joshua 10: The Day the Sun Stood Still — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Joshua 10: Israel defends Gibeon, the Lord hurls hailstones, the sun stands still, and the southern kings of Canaan are defeated." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-joshua-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Joshua, Chapter 10
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="joshua.html">← All Chapters</a>
+        <span class="study-meta">The Book of Joshua · Chapter 10</span>
+        <h1>Joshua 10: The Day the Sun Stood Still</h1>
+        <p class="lead">When five kings attack Gibeon, Israel rushes to its defense, and the Lord fights with hailstones and a day when the sun stands still.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-10">
+            <span>Scripture — Joshua Chapter 10</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-10">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-10-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-10-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-10-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-10-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Joshua 10 (WEB)</p>
+            <p><strong>1</strong> Now when Adoni-Zedek king of Jerusalem heard how Joshua had taken Ai, and had utterly destroyed it; as he had done to Jericho and her king, so he had done to Ai and her king; and how the inhabitants of Gibeon had made peace with Israel, and were among them;</p>
+            <p><strong>2</strong> they were very afraid, because Gibeon was a great city, as one of the royal cities, and because it was greater than Ai, and all its men were mighty.</p>
+            <p><strong>3</strong> Therefore Adoni-Zedek king of Jerusalem sent to Hoham king of Hebron, to Piram king of Jarmuth, to Japhia king of Lachish, and to Debir king of Eglon, saying,</p>
+            <p><strong>4</strong> “Come up to me, and help me, and let us strike Gibeon; for it has made peace with Joshua and with the children of Israel.”</p>
+            <p><strong>5</strong> Therefore the five kings of the Amorites, the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, the king of Eglon, gathered themselves together, and went up, they and all their armies, and encamped against Gibeon, and made war against it.</p>
+            <p><strong>6</strong> The men of Gibeon sent to Joshua to the camp to Gilgal, saying, “Don’t abandon your servants! Come up to us quickly, and save us, and help us; for all the kings of the Amorites that dwell in the hill country have gathered together against us.”</p>
+            <p><strong>7</strong> So Joshua went up from Gilgal, he, and all the people of war with him, and all the mighty men of valor.</p>
+            <p><strong>8</strong> Yahweh said to Joshua, “Don’t fear them, for I have delivered them into your hands. Not a man of them will stand before you.”</p>
+            <p><strong>9</strong> Joshua therefore came on them suddenly. He went up from Gilgal all night.</p>
+            <p><strong>10</strong> Yahweh confused them before Israel, and he killed them with a great slaughter at Gibeon, and chased them by the way of the ascent of Beth Horon, and struck them to Azekah and to Makkedah.</p>
+            <p><strong>11</strong> As they fled from before Israel, while they were at the descent of Beth Horon, Yahweh hurled down great stones from the sky on them to Azekah, and they died. There were more who died from the hailstones than who the children of Israel killed with the sword.</p>
+            <p><strong>12</strong> Then Joshua spoke to Yahweh in the day when Yahweh delivered up the Amorites before the children of Israel; and he said in the sight of Israel, “Sun, stand still on Gibeon! You, moon, stop in the valley of Aijalon!”</p>
+            <p><strong>13</strong> The sun stood still, and the moon stayed, until the nation had avenged themselves of their enemies. Isn’t this written in the book of Jashar? The sun stayed in the midst of the sky, and didn’t hurry to go down about a whole day.</p>
+            <p><strong>14</strong> There was no day like that before it or after it, that Yahweh listened to the voice of a man; for Yahweh fought for Israel.</p>
+            <p><strong>15</strong> Joshua returned, and all Israel with him, to the camp to Gilgal.</p>
+            <p><strong>16</strong> These five kings fled, and hid themselves in the cave at Makkedah.</p>
+            <p><strong>17</strong> Joshua was told, saying, “The five kings are found, hidden in the cave at Makkedah.”</p>
+            <p><strong>18</strong> Joshua said, “Roll large stones to the mouth of the cave, and set men by it to guard them;</p>
+            <p><strong>19</strong> but don’t stay. Pursue your enemies, and them from the rear. Don’t allow them to enter into their cities; for Yahweh your God has delivered them into your hand.”</p>
+            <p><strong>20</strong> When Joshua and the children of Israel had finished killing them with a very great slaughter until they were consumed, and the remnant which remained of them had entered into the fortified cities,</p>
+            <p><strong>21</strong> all the people returned to the camp to Joshua at Makkedah in peace. None moved his tongue against any of the children of Israel.</p>
+            <p><strong>22</strong> Then Joshua said, “Open the mouth of the cave, and bring those five kings out of the cave to me.”</p>
+            <p><strong>23</strong> They did so, and brought those five kings out of the cave to him: the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, and the king of Eglon.</p>
+            <p><strong>24</strong> When they brought those kings out to Joshua, Joshua called for all the men of Israel, and said to the chiefs of the men of war who went with him, “Come near, put your feet on the necks of these kings.” They came near, and put their feet on their necks.</p>
+            <p><strong>25</strong> Joshua said to them, “Don’t be afraid, nor be dismayed. Be strong and courageous, for Yahweh will do this to all your enemies against whom you fight.”</p>
+            <p><strong>26</strong> Afterward Joshua struck them, put them to death, and hanged them on five trees. They were hanging on the trees until the evening.</p>
+            <p><strong>27</strong> At the time of the going down of the sun, Joshua commanded, and they took them down off the trees, and cast them into the cave in which they had hidden themselves, and laid great stones on the mouth of the cave, which remain to this very day.</p>
+            <p><strong>28</strong> Joshua took Makkedah on that day, and struck it with the edge of the sword, with its king. He utterly destroyed them and all the souls who were in it. He left no one remaining. He did to the king of Makkedah as he had done to the king of Jericho.</p>
+            <p><strong>29</strong> Joshua passed from Makkedah, and all Israel with him, to Libnah, and fought against Libnah.</p>
+            <p><strong>30</strong> Yahweh delivered it also, with its king, into the hand of Israel. He struck it with the edge of the sword, and all the souls who were in it. He left no one remaining in it. He did to its king as he had done to the king of Jericho.</p>
+            <p><strong>31</strong> Joshua passed from Libnah, and all Israel with him, to Lachish, and encamped against it, and fought against it.</p>
+            <p><strong>32</strong> Yahweh delivered Lachish into the hand of Israel. He took it on the second day, and struck it with the edge of the sword, with all the souls who were in it, according to all that he had done to Libnah.</p>
+            <p><strong>33</strong> Then Horam king of Gezer came up to help Lachish; and Joshua struck him and his people, until he had left him no one remaining.</p>
+            <p><strong>34</strong> Joshua passed from Lachish, and all Israel with him, to Eglon; and they encamped against it fought against it.</p>
+            <p><strong>35</strong> They took it on that day, and struck it with the edge of the sword. He utterly destroyed all the souls who were in it that day, according to all that he had done to Lachish.</p>
+            <p><strong>36</strong> Joshua went up from Eglon, and all Israel with him, to Hebron; and they fought against it.</p>
+            <p><strong>37</strong> They took it, and struck it with the edge of the sword, with its king and all its cities, and all the souls who were in it. He left no one remaining, according to all that he had done to Eglon; but he utterly destroyed it, and all the souls who were in it.</p>
+            <p><strong>38</strong> Joshua returned, and all Israel with him, to Debir, and fought against it.</p>
+            <p><strong>39</strong> He took it, with its king and all its cities. They struck them with the edge of the sword, and utterly destroyed all the souls who were in it. He left no one remaining. As he had done to Hebron, so he did to Debir, and to its king; as he had done also to Libnah, and to its king.</p>
+            <p><strong>40</strong> So Joshua struck all the land, the hill country, and the South, and the lowland, and the slopes, and all their kings. He left no one remaining, but he utterly destroyed all that breathed, as Yahweh, the God of Israel, commanded.</p>
+            <p><strong>41</strong> Joshua struck them from Kadesh Barnea even to Gaza, and all the country of Goshen, even to Gibeon.</p>
+            <p><strong>42</strong> Joshua took all these kings and their land at one time, because Yahweh, the God of Israel, fought for Israel.</p>
+            <p><strong>43</strong> Joshua returned, and all Israel with him, to the camp to Gilgal.</p>
+            </div>
+            <div class="scripture-text" id="web-10-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Joshua 10 (KJV)</p>
+            <p><strong>1</strong> Now it came to pass, when Adoni–zedek king of Jerusalem had heard how Joshua had taken Ai, and had utterly destroyed it; as he had done to Jericho and her king, so he had done to Ai and her king; and how the inhabitants of Gibeon had made peace with Israel, and were among them;</p>
+            <p><strong>2</strong> That they feared greatly, because Gibeon was a great city, as one of the royal cities, and because it was greater than Ai, and all the men thereof were mighty.</p>
+            <p><strong>3</strong> Wherefore Adoni–zedek king of Jerusalem sent unto Hoham king of Hebron, and unto Piram king of Jarmuth, and unto Japhia king of Lachish, and unto Debir king of Eglon, saying,</p>
+            <p><strong>4</strong> Come up unto me, and help me, that we may smite Gibeon: for it hath made peace with Joshua and with the children of Israel.</p>
+            <p><strong>5</strong> Therefore the five kings of the Amorites, the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, the king of Eglon, gathered themselves together, and went up, they and all their hosts, and encamped before Gibeon, and made war against it.</p>
+            <p><strong>6</strong> And the men of Gibeon sent unto Joshua to the camp to Gilgal, saying, Slack not thy hand from thy servants; come up to us quickly, and save us, and help us: for all the kings of the Amorites that dwell in the mountains are gathered together against us.</p>
+            <p><strong>7</strong> So Joshua ascended from Gilgal, he, and all the people of war with him, and all the mighty men of valour.</p>
+            <p><strong>8</strong> And the Lord said unto Joshua, Fear them not: for I have delivered them into thine hand; there shall not a man of them stand before thee.</p>
+            <p><strong>9</strong> Joshua therefore came unto them suddenly, and went up from Gilgal all night.</p>
+            <p><strong>10</strong> And the Lord discomfited them before Israel, and slew them with a great slaughter at Gibeon, and chased them along the way that goeth up to Beth–horon, and smote them to Azekah, and unto Makkedah.</p>
+            <p><strong>11</strong> And it came to pass, as they fled from before Israel, and were in the going down to Beth–horon, that the Lord cast down great stones from heaven upon them unto Azekah, and they died: they were more which died with hailstones than they whom the children of Israel slew with the sword.</p>
+            <p><strong>12</strong> Then spake Joshua to the Lord in the day when the Lord delivered up the Amorites before the children of Israel, and he said in the sight of Israel, Sun, stand thou still upon Gibeon; and thou, Moon, in the valley of Ajalon.</p>
+            <p><strong>13</strong> And the sun stood still, and the moon stayed, until the people had avenged themselves upon their enemies. Is not this written in the book of Jasher? So the sun stood still in the midst of heaven, and hasted not to go down about a whole day.</p>
+            <p><strong>14</strong> And there was no day like that before it or after it, that the Lord hearkened unto the voice of a man: for the Lord fought for Israel.</p>
+            <p><strong>15</strong> And Joshua returned, and all Israel with him, unto the camp to Gilgal.</p>
+            <p><strong>16</strong> But these five kings fled, and hid themselves in a cave at Makkedah.</p>
+            <p><strong>17</strong> And it was told Joshua, saying, The five kings are found hid in a cave at Makkedah.</p>
+            <p><strong>18</strong> And Joshua said, Roll great stones upon the mouth of the cave, and set men by it for to keep them:</p>
+            <p><strong>19</strong> And stay ye not, but pursue after your enemies, and smite the hindmost of them; suffer them not to enter into their cities: for the Lord your God hath delivered them into your hand.</p>
+            <p><strong>20</strong> And it came to pass, when Joshua and the children of Israel had made an end of slaying them with a very great slaughter, till they were consumed, that the rest which remained of them entered into fenced cities.</p>
+            <p><strong>21</strong> And all the people returned to the camp to Joshua at Makkedah in peace: none moved his tongue against any of the children of Israel.</p>
+            <p><strong>22</strong> Then said Joshua, Open the mouth of the cave, and bring out those five kings unto me out of the cave.</p>
+            <p><strong>23</strong> And they did so, and brought forth those five kings unto him out of the cave, the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, and the king of Eglon.</p>
+            <p><strong>24</strong> And it came to pass, when they brought out those kings unto Joshua, that Joshua called for all the men of Israel, and said unto the captains of the men of war which went with him, Come near, put your feet upon the necks of these kings. And they came near, and put their feet upon the necks of them.</p>
+            <p><strong>25</strong> And Joshua said unto them, Fear not, nor be dismayed, be strong and of good courage: for thus shall the Lord do to all your enemies against whom ye fight.</p>
+            <p><strong>26</strong> And afterward Joshua smote them, and slew them, and hanged them on five trees: and they were hanging upon the trees until the evening.</p>
+            <p><strong>27</strong> And it came to pass at the time of the going down of the sun, that Joshua commanded, and they took them down off the trees, and cast them into the cave wherein they had been hid, and laid great stones in the cave’s mouth, which remain until this very day.</p>
+            <p><strong>28</strong> And that day Joshua took Makkedah, and smote it with the edge of the sword, and the king thereof he utterly destroyed, them, and all the souls that were therein; he let none remain: and he did to the king of Makkedah as he did unto the king of Jericho.</p>
+            <p><strong>29</strong> Then Joshua passed from Makkedah, and all Israel with him, unto Libnah, and fought against Libnah:</p>
+            <p><strong>30</strong> And the Lord delivered it also, and the king thereof, into the hand of Israel; and he smote it with the edge of the sword, and all the souls that were therein; he let none remain in it; but did unto the king thereof as he did unto the king of Jericho.</p>
+            <p><strong>31</strong> And Joshua passed from Libnah, and all Israel with him, unto Lachish, and encamped against it, and fought against it:</p>
+            <p><strong>32</strong> And the Lord delivered Lachish into the hand of Israel, which took it on the second day, and smote it with the edge of the sword, and all the souls that were therein, according to all that he had done to Libnah.</p>
+            <p><strong>33</strong> Then Horam king of Gezer came up to help Lachish; and Joshua smote him and his people, until he had left him none remaining.</p>
+            <p><strong>34</strong> And from Lachish Joshua passed unto Eglon, and all Israel with him; and they encamped against it, and fought against it:</p>
+            <p><strong>35</strong> And they took it on that day, and smote it with the edge of the sword, and all the souls that were therein he utterly destroyed that day, according to all that he had done to Lachish.</p>
+            <p><strong>36</strong> And Joshua went up from Eglon, and all Israel with him, unto Hebron; and they fought against it:</p>
+            <p><strong>37</strong> And they took it, and smote it with the edge of the sword, and the king thereof, and all the cities thereof, and all the souls that were therein; he left none remaining, according to all that he had done to Eglon; but destroyed it utterly, and all the souls that were therein.</p>
+            <p><strong>38</strong> And Joshua returned, and all Israel with him, to Debir; and fought against it:</p>
+            <p><strong>39</strong> And he took it, and the king thereof, and all the cities thereof; and they smote them with the edge of the sword, and utterly destroyed all the souls that were therein; he left none remaining: as he had done to Hebron, so he did to Debir, and to the king thereof; as he had done also to Libnah, and to her king.</p>
+            <p><strong>40</strong> So Joshua smote all the country of the hills, and of the south, and of the vale, and of the springs, and all their kings: he left none remaining, but utterly destroyed all that breathed, as the Lord God of Israel commanded.</p>
+            <p><strong>41</strong> And Joshua smote them from Kadesh–barnea even unto Gaza, and all the country of Goshen, even unto Gibeon.</p>
+            <p><strong>42</strong> And all these kings and their land did Joshua take at one time, because the Lord God of Israel fought for Israel.</p>
+            <p><strong>43</strong> And Joshua returned, and all Israel with him, unto the camp to Gilgal.</p>
+            </div>
+            <div class="scripture-text" id="web-10-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Joshua 10 (ASV)</p>
+            <p><strong>1</strong> Now it came to pass, when Adoni-zedek king of Jerusalem heard how Joshua had taken Ai, and had utterly destroyed it (as he had done to Jericho and her king, so he had done to Ai and her king), and how the inhabitants of Gibeon had made peace with Israel, and were among them;</p>
+            <p><strong>2</strong> that they feared greatly, because Gibeon was a great city, as one of the royal cities, and because it was greater than Ai, and all the men thereof were mighty.</p>
+            <p><strong>3</strong> Wherefore Adoni-zedek king of Jerusalem sent unto Hoham king of Hebron, and unto Piram king of Jarmuth, and unto Japhia king of Lachish, and unto Debir king of Eglon, saying,</p>
+            <p><strong>4</strong> Come up unto me, and help me, and let us smite Gibeon; for it hath made peace with Joshua and with the children of Israel.</p>
+            <p><strong>5</strong> Therefore the five kings of the Amorites, the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, the king of Eglon, gathered themselves together, and went up, they and all their hosts, and encamped against Gibeon, and made war against it.</p>
+            <p><strong>6</strong> And the men of Gibeon sent unto Joshua to the camp to Gilgal, saying, Slack not thy hand from thy servants; come up to us quickly, and save us, and help us: for all the kings of the Amorites that dwell in the hill-country are gathered together against us.</p>
+            <p><strong>7</strong> So Joshua went up from Gilgal, he, and all the people of war with him, and all the mighty men of valor.</p>
+            <p><strong>8</strong> And Jehovah said unto Joshua, Fear them not: for I have delivered them into thy hands; there shall not a man of them stand before thee.</p>
+            <p><strong>9</strong> Joshua therefore came upon them suddenly; for he went up from Gilgal all the night.</p>
+            <p><strong>10</strong> And Jehovah discomfited them before Israel, and he slew them with a great slaughter at Gibeon, and chased them by the way of the ascent of Beth-horon, and smote them to Azekah, and unto Makkedah.</p>
+            <p><strong>11</strong> And it came to pass, as they fled from before Israel, while they were at the descent of Beth-horon, that Jehovah cast down great stones from heaven upon them unto Azekah, and they died: they were more who died with the hailstones than they whom the children of Israel slew with the sword.</p>
+            <p><strong>12</strong> Then spake Joshua to Jehovah in the day when Jehovah delivered up the Amorites before the children of Israel; and he said in the sight of Israel, Sun, stand thou still upon Gibeon; And thou, Moon, in the valley of Aijalon.</p>
+            <p><strong>13</strong> And the sun stood still, and the moon stayed, Until the nation had avenged themselves of their enemies. Is not this written in the book of Jashar? And the sun stayed in the midst of heaven, and hasted not to go down about a whole day.</p>
+            <p><strong>14</strong> And there was no day like that before it or after it, that Jehovah hearkened unto the voice of a man: for Jehovah fought for Israel.</p>
+            <p><strong>15</strong> And Joshua returned, and all Israel with him, unto the camp to Gilgal.</p>
+            <p><strong>16</strong> And these five kings fled, and hid themselves in the cave at Makkedah.</p>
+            <p><strong>17</strong> And it was told Joshua, saying, The five kings are found, hidden in the cave at Makkedah.</p>
+            <p><strong>18</strong> And Joshua said, Roll great stones unto the mouth of the cave, and set men by it to keep them:</p>
+            <p><strong>19</strong> but stay not ye; pursue after your enemies, and smite the hindmost of them; suffer them not to enter into their cities: for Jehovah your God hath delivered them into your hand.</p>
+            <p><strong>20</strong> And it came to pass, when Joshua and the children of Israel had made an end of slaying them with a very great slaughter, till they were consumed, and the remnant which remained of them had entered into the fortified cities,</p>
+            <p><strong>21</strong> that all the people returned to the camp to Joshua at Makkedah in peace: none moved his tongue against any of the children of Israel.</p>
+            <p><strong>22</strong> Then said Joshua, Open the mouth of the cave, and bring forth those five kings unto me out of the cave.</p>
+            <p><strong>23</strong> And they did so, and brought forth those five kings unto him out of the cave, the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, the king of Eglon.</p>
+            <p><strong>24</strong> And it came to pass, when they brought forth those kings unto Joshua, that Joshua called for all the men of Israel, and said unto the chiefs of the men of war that went with him, Come near, put your feet upon the necks of these kings. And they came near, and put their feet upon the necks of them.</p>
+            <p><strong>25</strong> And Joshua said unto them, Fear not, nor be dismayed; be strong and of good courage: for thus shall Jehovah do to all your enemies against whom ye fight.</p>
+            <p><strong>26</strong> And afterward Joshua smote them, and put them to death, and hanged them on five trees: and they were hanging upon the trees until the evening.</p>
+            <p><strong>27</strong> And it came to pass at the time of the going down of the sun, that Joshua commanded, and they took them down off the trees, and cast them into the cave wherein they had hidden themselves, and laid great stones on the mouth of the cave, unto this very day.</p>
+            <p><strong>28</strong> And Joshua took Makkedah on that day, and smote it with the edge of the sword, and the king thereof: he utterly destroyed them and all the souls that were therein; he left none remaining; and he did to the king of Makkedah as he had done unto the king of Jericho.</p>
+            <p><strong>29</strong> And Joshua passed from Makkedah, and all Israel with him, unto Libnah, and fought against Libnah:</p>
+            <p><strong>30</strong> and Jehovah delivered it also, and the king thereof, into the hand of Israel; and he smote it with the edge of the sword, and all the souls that were therein; he left none remaining in it; and he did unto the king thereof as he had done unto the king of Jericho.</p>
+            <p><strong>31</strong> And Joshua passed from Libnah, and all Israel with him, unto Lachish, and encamped against it, and fought against it:</p>
+            <p><strong>32</strong> and Jehovah delivered Lachish into the hand of Israel; and he took it on the second day, and smote it with the edge of the sword, and all the souls that were therein, according to all that he had done to Libnah.</p>
+            <p><strong>33</strong> Then Horam king of Gezer came up to help Lachish; and Joshua smote him and his people, until he had left him none remaining.</p>
+            <p><strong>34</strong> And Joshua passed from Lachish, and all Israel with him, unto Eglon; and they encamped against it, and fought against it;</p>
+            <p><strong>35</strong> and they took it on that day, and smote it with the edge of the sword; and all the souls that were therein he utterly destroyed that day, according to all that he had done to Lachish.</p>
+            <p><strong>36</strong> And Joshua went up from Eglon, and all Israel with him, unto Hebron; and they fought against it:</p>
+            <p><strong>37</strong> and they took it, and smote it with the edge of the sword, and the king thereof, and all the cities thereof, and all the souls that were therein; he left none remaining, according to all that he had done to Eglon; but he utterly destroyed it, and all the souls that were therein.</p>
+            <p><strong>38</strong> And Joshua returned, and all Israel with him, to Debir, and fought against it:</p>
+            <p><strong>39</strong> and he took it, and the king thereof, and all the cities thereof; and they smote them with the edge of the sword, and utterly destroyed all the souls that were therein; he left none remaining: as he had done to Hebron, so he did to Debir, and to the king thereof; as he had done also to Libnah, and to the king thereof.</p>
+            <p><strong>40</strong> So Joshua smote all the land, the hill-country, and the South, and the lowland, and the slopes, and all their kings: he left none remaining, but he utterly destroyed all that breathed, as Jehovah, the God of Israel, commanded.</p>
+            <p><strong>41</strong> And Joshua smote them from Kadesh-barnea even unto Gaza, and all the country of Goshen, even unto Gibeon.</p>
+            <p><strong>42</strong> And all these kings and their land did Joshua take at one time, because Jehovah, the God of Israel, fought for Israel.</p>
+            <p><strong>43</strong> And Joshua returned, and all Israel with him, unto the camp to Gilgal.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>When Adoni-Zedek, king of Jerusalem, hears that Gibeon has made peace with Israel, he rallies four other Amorite kings to attack the city. The frightened Gibeonites send to Joshua for help, and he marches all night from Gilgal to relieve them. The Lord assures Joshua, "Don't fear them, for I have delivered them into your hands," and he throws the enemy into confusion. As the Amorites flee, the Lord hurls down great hailstones that kill more than Israel's swords do. Then Joshua speaks a bold word in the sight of Israel, commanding the sun to stand still over Gibeon and the moon over Aijalon, and the sun stops in the sky for about a whole day so the nation can finish its victory. The text marvels that there was never a day like it, when the Lord listened to a man's voice, for the Lord fought for Israel. The five kings hide in a cave at Makkedah but are trapped, brought out, and executed, with Israel's commanders putting their feet on the kings' necks as a sign that the Lord will do the same to all their enemies. Joshua then sweeps through the southern cities, taking Makkedah, Libnah, Lachish, Eglon, Hebron, and Debir, leaving no survivors. He strikes the whole region because the Lord, the God of Israel, fought for them. The chapter celebrates that the battles of God's people are ultimately won by God himself.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Joshua</strong> — Israel's leader, who marches all night to rescue Gibeon, prays for the sun to stand still, and leads the conquest of the southern cities.</li>
+          <li><strong>The five Amorite kings</strong> — The kings of Jerusalem, Hebron, Jarmuth, Lachish, and Eglon, who attack Gibeon, flee before Israel, and are captured and executed at Makkedah.</li>
+          <li><strong>The Gibeonites</strong> — The people whose covenant with Israel draws the Amorite attack, and who call on Joshua to come quickly and save them.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who confuses the enemy, hurls hailstones from heaven, makes the sun stand still, and fights for Israel as no day before or since.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Joshua 10:14 (WEB)</p>
+          <p class="verse__text">There was no day like that before it or after it, that Yahweh listened to the voice of a man; for Yahweh fought for Israel.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God honors his people's commitments, defending even those bound to them by covenant.</li>
+          <li>The Lord himself fights for his people, often in ways beyond human power.</li>
+          <li>Bold prayer flows from confidence in God's promise and presence.</li>
+          <li>Every victory of God's people ultimately points back to God as the true warrior.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-10">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-10">
+            <ul class="lesson-list">
+            <li><strong>God answers the cry for help.</strong> When Gibeon pleads, “save us, and help us,” Joshua comes and God promises victory (Joshua 10:6, 8, WEB). The Lord defends those who turn to him.</li>
+            <li><strong>The Lord fights for his people.</strong> “Yahweh hurled down great stones from the sky on them” (Joshua 10:11, WEB), and more died from hail than from the sword. The decisive power is God's.</li>
+            <li><strong>Bold faith dares to pray big.</strong> Joshua commands, “Sun, stand still on Gibeon!” (Joshua 10:12, WEB). Confidence in God emboldens extraordinary prayer.</li>
+            <li><strong>God listens to the voice of a man.</strong> “There was no day like that… that Yahweh listened to the voice of a man; for Yahweh fought for Israel” (Joshua 10:14, WEB). The Lord delights to act for his praying people.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-10">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-10">
+            <ol class="study-questions">
+            <li>Why does Joshua march all night to rescue the Gibeonites, despite the deception of chapter 9?</li>
+            <li>How does the chapter show that the Lord, not Israel, is winning the battle?</li>
+            <li>What does Joshua's prayer for the sun to stand still reveal about his faith?</li>
+            <li>Why does the writer stress that there was never a day like this one?</li>
+            <li>Joshua prayed a bold prayer based on God's promise. What would it look like for you to pray boldly in line with what God has said?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-10">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-10">
+            <ol class="study-questions">
+            <li>Having sworn an oath, Israel is bound to protect Gibeon, and Joshua honors it at great cost (10:6-7; cf. 9:18-19). His faithfulness to his word, even to former deceivers, models covenant integrity. Help the group see how keeping commitments reflects God's own faithfulness.</li>
+            <li>The confusion of the enemy, the deadly hailstones, and the stilled sun all come from God's hand (10:10-14). The text repeatedly credits the Lord, climaxing in "Yahweh fought for Israel." Encourage the group to see God as the true victor behind every success.</li>
+            <li>Joshua's command to the sun is an act of astonishing faith, spoken publicly in reliance on God's promised help (10:12-13). His boldness rests not in himself but in the God who had said he would deliver the enemy. Invite the group to ground bold prayer in God's word.</li>
+            <li>The uniqueness of the day underscores that this was God's direct, supernatural intervention on behalf of his people (10:14). It was not the result of human strength but of the Lord listening to a man and fighting for Israel. Help the group marvel at God's willingness to act for his people.</li>
+            <li>This is a personal-application question. Encourage members to anchor bold requests in God's revealed promises rather than mere wishes. As leader, balance confidence in God's power with submission to his will, and invite the group to pray with expectant faith.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="joshua-9.html">← Joshua 9</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="joshua.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="joshua-11.html">Joshua 11 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

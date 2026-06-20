@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Judges 15: Foxes, Fire, and a Jawbone — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Judges 15: Samson burns Philistine fields, is handed over by Judah, and strikes a thousand men with the jawbone of a donkey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-judges-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Judges, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="judges.html">← All Chapters</a>
+        <span class="study-meta">The Book of Judges · Chapter 15</span>
+        <h1>Judges 15: Foxes, Fire, and a Jawbone</h1>
+        <p class="lead">Cheated of his wife, Samson takes escalating vengeance on the Philistines and strikes a thousand men with a donkey's jawbone.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — Judges Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Judges 15 (WEB)</p>
+            <p><strong>1</strong> But after a while, in the time of wheat harvest, Samson visited his wife with a young goat; and he said, “I will go in to my wife into the room.” But her father wouldn’t allow him to go in.</p>
+            <p><strong>2</strong> Her father said, “I most certainly thought that you had utterly hated her; therefore I gave her to your companion. Isn’t her younger sister more beautiful than she? Please take her, instead.”</p>
+            <p><strong>3</strong> Samson said to them, “This time I will be blameless in regard of the Philistines, when I harm them.”</p>
+            <p><strong>4</strong> Samson went and caught three hundred foxes, and took torches, and turned tail to tail, and put a torch in the midst between every two tails.</p>
+            <p><strong>5</strong> When he had set the brands on fire, he let them go into the standing grain of the Philistines, and burnt up both the shocks and the standing grain, and also the olive groves.</p>
+            <p><strong>6</strong> Then the Philistines said, “Who has done this?” They said, “Samson, the son-in-law of the Timnite, because he has taken his wife, and given her to his companion.” The Philistines came up, and burnt her and her father with fire.</p>
+            <p><strong>7</strong> Samson said to them, “If you behave like this, surely I will be avenged of you, and after that I will cease.”</p>
+            <p><strong>8</strong> He struck them hip and thigh with a great slaughter: and he went down and lived in the cleft of the rock of Etam.</p>
+            <p><strong>9</strong> Then the Philistines went up, and encamped in Judah, and spread themselves in Lehi.</p>
+            <p><strong>10</strong> The men of Judah said, “Why have you come up against us?” They said, “We have come up to bind Samson, to do to him as he has done to us.”</p>
+            <p><strong>11</strong> Then three thousand men of Judah went down to the cleft of the rock of Etam, and said to Samson, “Don’t you know that the Philistines are rulers over us? What then is this that you have done to us?” He said to them, “As they did to me, so have I done to them.”</p>
+            <p><strong>12</strong> They said to him, “We have come down to bind you, that we may deliver you into the hand of the Philistines.” Samson said to them, “Swear to me that you will not fall on me yourselves.”</p>
+            <p><strong>13</strong> They spoke to him, saying, “No; but we will bind you fast, and deliver you into their hand; but surely we will not kill you.” They bound him with two new ropes, and brought him up from the rock.</p>
+            <p><strong>14</strong> When he came to Lehi, the Philistines shouted as they met him: and the Spirit of Yahweh came mightily on him, and the ropes that were on his arms became as flax that was burnt with fire, and his bands dropped from off his hands.</p>
+            <p><strong>15</strong> He found a fresh jawbone of a donkey, and put out his hand, and took it, and struck a thousand men with it.</p>
+            <p><strong>16</strong> Samson said, “With the jawbone of a donkey, heaps on heaps; with the jawbone of a donkey I have struck a thousand men.”</p>
+            <p><strong>17</strong> When he had finished speaking, he threw the jawbone out of his hand; and that place was called Ramath Lehi.</p>
+            <p><strong>18</strong> He was very thirsty, and called on Yahweh, and said, “You have given this great deliverance by the hand of your servant; and now shall I die for thirst, and fall into the hand of the uncircumcised?”</p>
+            <p><strong>19</strong> But God split the hollow place that is in Lehi, and water came out of it. When he had drunk, his spirit came again, and he revived: therefore its name was called En Hakkore, which is in Lehi, to this day.</p>
+            <p><strong>20</strong> He judged Israel in the days of the Philistines twenty years.</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Judges 15 (KJV)</p>
+            <p><strong>1</strong> But it came to pass within a while after, in the time of wheat harvest, that Samson visited his wife with a kid; and he said, I will go in to my wife into the chamber. But her father would not suffer him to go in.</p>
+            <p><strong>2</strong> And her father said, I verily thought that thou hadst utterly hated her; therefore I gave her to thy companion: is not her younger sister fairer than she? take her, I pray thee, instead of her.</p>
+            <p><strong>3</strong> And Samson said concerning them, Now shall I be more blameless than the Philistines, though I do them a displeasure.</p>
+            <p><strong>4</strong> And Samson went and caught three hundred foxes, and took firebrands, and turned tail to tail, and put a firebrand in the midst between two tails.</p>
+            <p><strong>5</strong> And when he had set the brands on fire, he let them go into the standing corn of the Philistines, and burnt up both the shocks, and also the standing corn, with the vineyards and olives.</p>
+            <p><strong>6</strong> Then the Philistines said, Who hath done this? And they answered, Samson, the son in law of the Timnite, because he had taken his wife, and given her to his companion. And the Philistines came up, and burnt her and her father with fire.</p>
+            <p><strong>7</strong> And Samson said unto them, Though ye have done this, yet will I be avenged of you, and after that I will cease.</p>
+            <p><strong>8</strong> And he smote them hip and thigh with a great slaughter: and he went down and dwelt in the top of the rock Etam.</p>
+            <p><strong>9</strong> Then the Philistines went up, and pitched in Judah, and spread themselves in Lehi.</p>
+            <p><strong>10</strong> And the men of Judah said, Why are ye come up against us? And they answered, To bind Samson are we come up, to do to him as he hath done to us.</p>
+            <p><strong>11</strong> Then three thousand men of Judah went to the top of the rock Etam, and said to Samson, Knowest thou not that the Philistines are rulers over us? what is this that thou hast done unto us? And he said unto them, As they did unto me, so have I done unto them.</p>
+            <p><strong>12</strong> And they said unto him, We are come down to bind thee, that we may deliver thee into the hand of the Philistines. And Samson said unto them, Swear unto me, that ye will not fall upon me yourselves.</p>
+            <p><strong>13</strong> And they spake unto him, saying, No; but we will bind thee fast, and deliver thee into their hand: but surely we will not kill thee. And they bound him with two new cords, and brought him up from the rock.</p>
+            <p><strong>14</strong> And when he came unto Lehi, the Philistines shouted against him: and the Spirit of the Lord came mightily upon him, and the cords that were upon his arms became as flax that was burnt with fire, and his bands loosed from off his hands.</p>
+            <p><strong>15</strong> And he found a new jawbone of an ass, and put forth his hand, and took it, and slew a thousand men therewith.</p>
+            <p><strong>16</strong> And Samson said, With the jawbone of an ass, heaps upon heaps, with the jaw of an ass have I slain a thousand men.</p>
+            <p><strong>17</strong> And it came to pass, when he had made an end of speaking, that he cast away the jawbone out of his hand, and called that place Ramath–lehi.</p>
+            <p><strong>18</strong> And he was sore athirst, and called on the Lord, and said, Thou hast given this great deliverance into the hand of thy servant: and now shall I die for thirst, and fall into the hand of the uncircumcised?</p>
+            <p><strong>19</strong> But God clave an hollow place that was in the jaw, and there came water thereout; and when he had drunk, his spirit came again, and he revived: wherefore he called the name thereof En–hakkore, which is in Lehi unto this day.</p>
+            <p><strong>20</strong> And he judged Israel in the days of the Philistines twenty years.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Judges 15 (ASV)</p>
+            <p><strong>1</strong> But it came to pass after a while, in the time of wheat harvest, that Samson visited his wife with a kid; and he said, I will go in to my wife into the chamber. But her father would not suffer him to go in.</p>
+            <p><strong>2</strong> And her father said, I verily thought that thou hadst utterly hated her; therefore I gave her to thy companion: is not her younger sister fairer than she? take her, I pray thee, instead of her.</p>
+            <p><strong>3</strong> And Samson said unto them, This time shall I be blameless in regard of the Philistines, when I do them a mischief.</p>
+            <p><strong>4</strong> And Samson went and caught three hundred foxes, and took firebrands, and turned tail to tail, and put a firebrand in the midst between every two tails.</p>
+            <p><strong>5</strong> And when he had set the brands on fire, he let them go into the standing grain of the Philistines, and burnt up both the shocks and the standing grain, and also the oliveyards.</p>
+            <p><strong>6</strong> Then the Philistines said, Who hath done this? And they said, Samson, the son-in-law of the Timnite, because he hath taken his wife, and given her to his companion. And the Philistines came up, and burnt her and her father with fire.</p>
+            <p><strong>7</strong> And Samson said unto them, If ye do after this manner, surely I will be avenged of you, and after that I will cease.</p>
+            <p><strong>8</strong> And he smote them hip and thigh with a great slaughter: and he went down and dwelt in the cleft of the rock of Etam.</p>
+            <p><strong>9</strong> Then the Philistines went up, and encamped in Judah, and spread themselves in Lehi.</p>
+            <p><strong>10</strong> And the men of Judah said, Why are ye come up against us? And they said, To bind Samson are we come up, to do to him as he hath done to us.</p>
+            <p><strong>11</strong> Then three thousand men of Judah went down to the cleft of the rock of Etam, and said to Samson, Knowest thou not that the Philistines are rulers over us? what then is this that thou hast done unto us? And he said unto them, As they did unto me, so have I done unto them.</p>
+            <p><strong>12</strong> And they said unto him, We are come down to bind thee, that we may deliver thee into the hand of the Philistines. And Samson said unto them, Swear unto me, that ye will not fall upon me yourselves.</p>
+            <p><strong>13</strong> And they spake unto him, saying, No; but we will bind thee fast, and deliver thee into their hand: but surely we will not kill thee. And they bound him with two new ropes, and brought him up from the rock.</p>
+            <p><strong>14</strong> When he came unto Lehi, the Philistines shouted as they met him: and the Spirit of Jehovah came mightily upon him, and the ropes that were upon his arms became as flax that was burnt with fire, and his bands dropped from off his hands.</p>
+            <p><strong>15</strong> And he found a fresh jawbone of an ass, and put forth his hand, and took it, and smote a thousand men therewith.</p>
+            <p><strong>16</strong> And Samson said, With the jawbone of an ass, heaps upon heaps, With the jawbone of an ass have I smitten a thousand men.</p>
+            <p><strong>17</strong> And it came to pass, when he had made an end of speaking, that he cast away the jawbone out of his hand; and that place was called Ramath-lehi.</p>
+            <p><strong>18</strong> And he was sore athirst, and called on Jehovah, and said, Thou hast given this great deliverance by the hand of thy servant; and now shall I die for thirst, and fall into the hand of the uncircumcised.</p>
+            <p><strong>19</strong> But God clave the hollow place that is in Lehi, and there came water thereout; and when he had drunk, his spirit came again, and he revived: wherefore the name thereof was called En-hakkore, which is in Lehi, unto this day.</p>
+            <p><strong>20</strong> And he judged Israel in the days of the Philistines twenty years.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Samson returns to claim his wife, only to learn her father has given her to his companion, and the offer of her younger sister does not appease him. Declaring himself blameless, Samson catches three hundred foxes, ties them tail to tail with torches, and burns up the Philistines' standing grain, shocks, and olive groves. When the Philistines learn the cause, they burn his wife and her father to death, the very fate she had once feared. Samson answers slaughter with slaughter, striking them hip and thigh, then withdraws to the cleft of the rock of Etam. The Philistines invade Judah to capture him, and three thousand men of Judah—more eager to keep the peace with their oppressors than to be freed—come to bind Samson and hand him over. He lets them bind him, but at Lehi the Spirit of Yahweh rushes on him; the ropes melt like burnt flax, and he seizes a fresh donkey's jawbone and strikes down a thousand men. Boasting in his victory, he then nearly dies of thirst and finally cries out to Yahweh, who splits open a hollow place so water flows out and revives him. The spring is named En Hakkore, a reminder that even this wild deliverer must call on God. Samson judges Israel twenty years in the days of the Philistines.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Samson</strong> — The judge whose personal vendetta against the Philistines becomes God's instrument of judgment, performing astonishing feats yet boasting in himself before crying to God in thirst.</li>
+          <li><strong>The men of Judah</strong> — Three thousand fellow Israelites who, content to live under Philistine rule, would rather bind their own deliverer than resist their oppressors.</li>
+          <li><strong>The Philistines</strong> — Israel's overlords, who burn Samson's wife and father-in-law, invade Judah to capture him, and are struck down a thousand at a time.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Judges 15:18 (WEB)</p>
+          <p class="verse__text">He was very thirsty, and called on Yahweh, and said, “You have given this great deliverance by the hand of your servant; and now shall I die for thirst, and fall into the hand of the uncircumcised?”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Cycles of revenge escalate, drawing more and more people into ruin.</li>
+          <li>God's people can grow so comfortable in bondage that they resist their own rescue.</li>
+          <li>The Lord supplies strength and even water to weak, demanding servants by sheer grace.</li>
+          <li>Pride in our victories must give way to dependence, calling on God in our thirst.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Vengeance never knows when to stop.</strong> Samson vows, “surely I will be avenged of you, and after that I will cease” (Judges 15:7, WEB), yet each blow only summons another round of bloodshed.</li>
+            <li><strong>Comfort with oppression dulls the longing for freedom.</strong> Judah protests, “Don’t you know that the Philistines are rulers over us?” (Judges 15:11, WEB), preferring submission to their oppressors over deliverance.</li>
+            <li><strong>God's strength comes by his Spirit, not our boasting.</strong> “The Spirit of Yahweh came mightily on him,” and the ropes fell off like burnt flax (Judges 15:14, WEB); the power is the Lord's, though Samson boasts as if it were his own.</li>
+            <li><strong>Even mighty servants must cry out for grace.</strong> Faint with thirst, Samson “called on Yahweh” (Judges 15:18, WEB), and God splits the rock to revive him, naming the spring En Hakkore.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>How does Samson justify his revenge, and how do the Philistines respond at each step?</li>
+            <li>Why are the men of Judah more willing to bind Samson than to fight the Philistines?</li>
+            <li>What changes in Samson between his boast over the jawbone (15:16) and his cry of thirst (15:18)?</li>
+            <li>How does God's provision of water at En Hakkore reveal his grace toward a flawed servant?</li>
+            <li>When have you grown comfortable with something that quietly held you captive, and what would it take to long for freedom again?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>Samson insists he is “blameless” for harming the Philistines after losing his wife (15:3), then burns their crops; they retaliate by burning his wife and her father, and he answers with greater slaughter (15:4-8). The spiral shows how revenge feeds on itself without end.</li>
+            <li>Judah has settled into life under Philistine rule and fears Samson will upset that fragile peace (15:11-12). Their willingness to hand over their own deliverer exposes a people more attached to comfort than to freedom, an indictment of complacent faith.</li>
+            <li>Fresh from victory, Samson boasts in his own arm—“with the jawbone of a donkey I have struck a thousand men” (15:16)—but moments later, dying of thirst, he must finally turn to God (15:18). Need teaches him the dependence that triumph had hidden.</li>
+            <li>Samson never apologizes for his pride, yet God still splits the rock and gives him water (15:19). The spring named En Hakkore (“the spring of him who called”) testifies that deliverance comes by grace to those who cry out, not to those who deserve it.</li>
+            <li>This is a personal-application question. Invite members to consider habits or arrangements they have made peace with that actually bind them, and to ask God to rekindle a desire for true freedom. As leader, be patient and encouraging, not condemning.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="judges-14.html">← Judges 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="judges.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="judges-16.html">Judges 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

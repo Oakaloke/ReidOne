@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nehemiah: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An overview of Nehemiah: a cupbearer grieves over ruined Jerusalem, returns to rebuild its walls against ridicule and threat, hears the Law read, and leads the people into covenant renewal and reform." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-nehemiah-progress" data-study-total="13">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Nehemiah, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Nehemiah · Whole-Book Overview</span>
+        <h1>Nehemiah: The Whole Story</h1>
+        <p class="lead">Broken walls, a praying leader, fierce opposition, and a people brought back to God's Word and God's covenant.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Nehemiah opens far from Jerusalem, in the Persian palace at Susa, where a Jewish cupbearer hears devastating news: the remnant who survived the exile live in great affliction, and the wall of Jerusalem is broken down, its gates burned with fire. Nehemiah weeps, fasts, and prays, confessing the sins of his people and asking God to grant him favor before the king. When the moment comes, he prays a single silent breath and then speaks, and Artaxerxes sends him to rebuild the city with letters, timber, and an armed escort.</p>
+          <p>The middle of the book is a study in courageous, prayerful leadership under fire. Nehemiah surveys the ruins by night, rallies the people with the words “Let us build,” and organizes families to repair the wall section by section. Sanballat, Tobiah, and Geshem oppose the work at every turn—first with mockery, then with threats of attack, then with plots and slander and a false prophet hired to make Nehemiah afraid. Through it all the builders pray and post a guard, working with a tool in one hand and a weapon in the other, and the wall is finished in fifty-two days, so that even their enemies recognize the work was done by God.</p>
+          <p>But walls alone do not make a holy city. The second half of the book turns to the rebuilding of the people. Ezra the scribe reads the Law of Moses aloud before the assembled nation; the people weep, then are told that the joy of the Lord is their strength, and they keep the Feast of Booths with great gladness. They gather again to confess their long history of rebellion and God's persistent mercy, and they seal a binding covenant to obey. Yet the book ends honestly: even after dedication and reform, old sins creep back, and Nehemiah must contend again for the temple, the Sabbath, and faithful marriages—reminding us that lasting renewal is God's work, and pointing us to the One who alone can make us new.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>Grief and Prayer (ch 1)</strong> — News of Jerusalem's broken walls drives Nehemiah to weeping, fasting, and confession, as he pleads with the God of heaven and asks for favor before the king.</li>
+          <li><strong>Commission and Survey (chs 2-3)</strong> — Artaxerxes sends Nehemiah to Judah; he inspects the ruins by night, calls the people to build, and the families take up the work gate by gate.</li>
+          <li><strong>Building Against Opposition (chs 4-6)</strong> — Sanballat and Tobiah meet the work with ridicule, threats, internal injustice, and conspiracy, yet through prayer, vigilance, and resolve the wall is finished in fifty-two days.</li>
+          <li><strong>The Word and Revival (chs 7-8)</strong> — The people are numbered, the Law is read and explained, and a weeping nation is turned to joy as they understand God's Word and keep the feast.</li>
+          <li><strong>Confession and Covenant (chs 9-10)</strong> — Israel recounts God's faithfulness and their own rebellion, then seals a binding covenant to walk in God's law and support his house.</li>
+          <li><strong>Dedication and Reform (chs 11-13)</strong> — The city is repopulated and the wall joyfully dedicated, but recurring sins call for renewed reform of the temple, the Sabbath, and the people's marriages.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Nehemiah</strong> — A Jewish cupbearer to Artaxerxes who becomes governor of Judah; a man of constant prayer, decisive action, and dogged perseverance who rebuilds the wall and reforms the people.</li>
+          <li><strong>Ezra</strong> — The priest and scribe who reads and explains the Law before the assembly, leading the people from understanding to weeping to joy and covenant renewal.</li>
+          <li><strong>Sanballat and Tobiah</strong> — Regional officials who oppose the rebuilding with mockery, intimidation, conspiracy, and infiltration, determined to stop the work and discredit Nehemiah.</li>
+          <li><strong>The people of Judah</strong> — The returned remnant who take up the work with a mind to build, defend their families, hear the Word, confess their sins, and bind themselves to God.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The great and awesome God who keeps covenant and loving kindness, who turns the king's heart, frustrates the enemies' plans, and rebuilds both the wall and his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Nehemiah 8:10 (WEB)</p>
+          <p class="verse__text">Then he said to them, “Go your way. Eat the fat, drink the sweet, and send portions to him for whom nothing is prepared; for this day is holy to our Lord. Don’t be grieved; for the joy of Yahweh is your strength.”</p>
+        </blockquote>
+          <p>At the heart of the book stands a people gathered around God's Word, weeping at how far they had fallen—until they are told that this holy day is meant for joy, for the joy of the Lord is their strength. The walls were rebuilt by prayer and labor, but the people are rebuilt by the Word and by gladness in God himself. Nehemiah's whole story moves from ruin to restoration, and its true strength is never human grit but joy in the God who keeps covenant and makes all things new.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>Genuine burdens for God's work begin on our knees, in prayer, confession, and dependence on God (Nehemiah 1:4-11).</li>
+          <li>God is sovereign over kings and circumstances, granting favor and opening doors when we pray and act (Nehemiah 2:8).</li>
+          <li>God's work always meets opposition; faithful leaders answer ridicule and threats with prayer and perseverance (Nehemiah 4:9).</li>
+          <li>God's people are restored not merely by structures but by hearing and obeying God's Word (Nehemiah 8:8).</li>
+          <li>True revival leads to honest confession of sin and renewed commitment to God's covenant (Nehemiah 9:33-38).</li>
+          <li>Reform must be guarded and renewed, for old sins return; lasting holiness is God's ongoing work in us (Nehemiah 13:30-31).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>Burdens become prayers before they become plans.</strong> When Nehemiah hears of the ruin, he “sat down and wept, and mourned certain days; and… fasted and prayed before the God of heaven” (Nehemiah 1:4, WEB) before he ever lifts a stone.</li>
+            <li><strong>Pray, then act.</strong> Facing the king's question, Nehemiah “prayed to the God of heaven” and then answered (Nehemiah 2:4-5, WEB). Prayer and action belong together, not apart.</li>
+            <li><strong>Opposition is not a sign of God's absence.</strong> When enemies conspire, the builders “made our prayer to our God, and set a watch” (Nehemiah 4:9, WEB). Faith both trusts God and takes wise precautions.</li>
+            <li><strong>The Word must be understood, not just heard.</strong> The Levites “gave the sense, so that they understood the reading” (Nehemiah 8:8, WEB). God's people are built up when his Word is explained and obeyed.</li>
+            <li><strong>God is just, and we are dependent on his mercy.</strong> Israel confesses, “you are just in all that has come on us; for you have dealt truly, but we have done wickedly” (Nehemiah 9:33, WEB). Renewal rests on God's faithfulness, not ours.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>Nehemiah's first response to bad news is prayer, not strategy. What does his prayer in chapter 1 reveal about how he understands the problem and its solution?</li>
+            <li>How does Nehemiah hold together deep trust in God with careful planning, courage, and hard work throughout the book?</li>
+            <li>The enemies shift from mockery to threats to conspiracy and slander. How does Nehemiah respond to each, and what can we learn about facing opposition?</li>
+            <li>Why does the reading of the Law in chapter 8 produce both weeping and joy, and what does it teach us about the place of Scripture in renewal?</li>
+            <li>Chapters 9-10 move from confession of sin to covenant commitment. Why must honest confession come before lasting change?</li>
+            <li>The book ends with reform still unfinished and old sins returning. What “Ninevehs” or recurring struggles in your own life call for renewed, prayerful perseverance?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Nehemiah treats ruined walls as a spiritual matter before a logistical one. He confesses not only Israel's sins but his own, appeals to God's covenant promises, and asks for favor before the king. Help the group see that he interprets the crisis through God's character and Word, so that prayer is not a preliminary but the foundation of everything that follows.</li>
+            <li>Nehemiah is intensely practical—surveying ruins, organizing crews, posting guards, managing supplies—yet at every turn he prays and credits “the good hand of my God.” The book refuses to separate trusting God from working hard. Invite the group to see that dependence on God fuels rather than replaces diligent effort.</li>
+            <li>To mockery Nehemiah answers with prayer and steady work (4:4-6); to threats with prayer and a posted guard (4:9); to plots with refusing to be distracted, “I am doing a great work, so that I can’t come down” (6:3); to slander and a hired false prophet with discernment and integrity. The pattern is consistent: pray, stay at the task, and refuse fear.</li>
+            <li>The Law exposes how far the people have fallen, and they weep with conviction; but the leaders redirect them to joy, because the same Word that convicts also reveals a covenant-keeping God. Scripture both wounds and heals. Encourage the group that grief over sin is meant to lead to joy in grace, not despair.</li>
+            <li>Israel's long prayer rehearses centuries of God's mercy and their rebellion, owning that God has been just and they have done wickedly. Only after this honest reckoning do they seal a binding covenant. Note that pretending we are fine produces shallow change; naming sin truthfully opens the way to real, God-dependent renewal.</li>
+            <li>This is a personal-application question with no single answer. Nehemiah 13 honestly shows that reform can erode and must be renewed. As leader, invite members to name an area where they have seen old patterns return, and to embrace the long, prayerful obedience of perseverance. Point gently to Christ, the One who finishes the good work he begins in us (Philippians 1:6).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="nehemiah.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="nehemiah.html">All Chapters</a>
+          <a class="btn btn--accent" href="nehemiah-1.html">Start with Nehemiah 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
