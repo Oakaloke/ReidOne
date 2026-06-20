@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 4: Living Water at the Well — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 4: Jesus meets a Samaritan woman at a well, offers her living water that satisfies forever, and many in her town come to believe he is the Savior of the world." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 4</span>
+        <h1>John 4: Living Water at the Well</h1>
+        <p class="lead">Jesus meets a Samaritan woman at a well, offers her living water that satisfies forever, and many in her town come to believe he is the Savior of the world.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — John Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 4 (WEB)</p>
+            <p><strong>1</strong> Therefore when the Lord knew that the Pharisees had heard that Jesus was making and baptizing more disciples than John</p>
+            <p><strong>2</strong> (although Jesus himself didn’t baptize, but his disciples),</p>
+            <p><strong>3</strong> he left Judea, and departed into Galilee.</p>
+            <p><strong>4</strong> He needed to pass through Samaria.</p>
+            <p><strong>5</strong> So he came to a city of Samaria, called Sychar, near the parcel of ground that Jacob gave to his son, Joseph.</p>
+            <p><strong>6</strong> Jacob’s well was there. Jesus therefore, being tired from his journey, sat down by the well. It was about the sixth hour.</p>
+            <p><strong>7</strong> A woman of Samaria came to draw water. Jesus said to her, “Give me a drink.”</p>
+            <p><strong>8</strong> For his disciples had gone away into the city to buy food.</p>
+            <p><strong>9</strong> The Samaritan woman therefore said to him, “How is it that you, being a Jew, ask for a drink from me, a Samaritan woman?” (For Jews have no dealings with Samaritans.)</p>
+            <p><strong>10</strong> Jesus answered her, “If you knew the gift of God, and who it is who says to you, ‘Give me a drink,’ you would have asked him, and he would have given you living water.”</p>
+            <p><strong>11</strong> The woman said to him, “Sir, you have nothing to draw with, and the well is deep. So where do you get that living water?</p>
+            <p><strong>12</strong> Are you greater than our father, Jacob, who gave us the well, and drank of it himself, as did his children, and his livestock?”</p>
+            <p><strong>13</strong> Jesus answered her, “Everyone who drinks of this water will thirst again,</p>
+            <p><strong>14</strong> but whoever drinks of the water that I will give him will never thirst again; but the water that I will give him will become in him a well of water springing up to eternal life.”</p>
+            <p><strong>15</strong> The woman said to him, “Sir, give me this water, so that I don’t get thirsty, neither come all the way here to draw.”</p>
+            <p><strong>16</strong> Jesus said to her, “Go, call your husband, and come here.”</p>
+            <p><strong>17</strong> The woman answered, “I have no husband.” Jesus said to her, “You said well, ‘I have no husband,’</p>
+            <p><strong>18</strong> for you have had five husbands; and he whom you now have is not your husband. This you have said truly.”</p>
+            <p><strong>19</strong> The woman said to him, “Sir, I perceive that you are a prophet.</p>
+            <p><strong>20</strong> Our fathers worshiped in this mountain, and you Jews say that in Jerusalem is the place where people ought to worship.”</p>
+            <p><strong>21</strong> Jesus said to her, “Woman, believe me, the hour comes, when neither in this mountain, nor in Jerusalem, will you worship the Father.</p>
+            <p><strong>22</strong> You worship that which you don’t know. We worship that which we know; for salvation is from the Jews.</p>
+            <p><strong>23</strong> But the hour comes, and now is, when the true worshipers will worship the Father in spirit and truth, for the Father seeks such to be his worshipers.</p>
+            <p><strong>24</strong> God is spirit, and those who worship him must worship in spirit and truth.”</p>
+            <p><strong>25</strong> The woman said to him, “I know that Messiah comes, he who is called Christ. When he has come, he will declare to us all things.”</p>
+            <p><strong>26</strong> Jesus said to her, “I am he, the one who speaks to you.”</p>
+            <p><strong>27</strong> At this, his disciples came. They marveled that he was speaking with a woman; yet no one said, “What are you looking for?” or, “Why do you speak with her?”</p>
+            <p><strong>28</strong> So the woman left her water pot, and went away into the city, and said to the people,</p>
+            <p><strong>29</strong> “Come, see a man who told me everything that I did. Can this be the Christ?”</p>
+            <p><strong>30</strong> They went out of the city, and were coming to him.</p>
+            <p><strong>31</strong> In the meanwhile, the disciples urged him, saying, “Rabbi, eat.”</p>
+            <p><strong>32</strong> But he said to them, “I have food to eat that you don’t know about.”</p>
+            <p><strong>33</strong> The disciples therefore said to one another, “Has anyone brought him something to eat?”</p>
+            <p><strong>34</strong> Jesus said to them, “My food is to do the will of him who sent me, and to accomplish his work.</p>
+            <p><strong>35</strong> Don’t you say, ‘There are yet four months until the harvest?’ Behold, I tell you, lift up your eyes, and look at the fields, that they are white for harvest already.</p>
+            <p><strong>36</strong> He who reaps receives wages, and gathers fruit to eternal life; that both he who sows and he who reaps may rejoice together.</p>
+            <p><strong>37</strong> For in this the saying is true, ‘One sows, and another reaps.’</p>
+            <p><strong>38</strong> I sent you to reap that for which you haven’t labored. Others have labored, and you have entered into their labor.”</p>
+            <p><strong>39</strong> From that city many of the Samaritans believed in him because of the word of the woman, who testified, “He told me everything that I did.”</p>
+            <p><strong>40</strong> So when the Samaritans came to him, they begged him to stay with them. He stayed there two days.</p>
+            <p><strong>41</strong> Many more believed because of his word.</p>
+            <p><strong>42</strong> They said to the woman, “Now we believe, not because of your speaking; for we have heard for ourselves, and know that this is indeed the Christ, the Savior of the world.”</p>
+            <p><strong>43</strong> After the two days he went out from there and went into Galilee.</p>
+            <p><strong>44</strong> For Jesus himself testified that a prophet has no honor in his own country.</p>
+            <p><strong>45</strong> So when he came into Galilee, the Galileans received him, having seen all the things that he did in Jerusalem at the feast, for they also went to the feast.</p>
+            <p><strong>46</strong> Jesus came therefore again to Cana of Galilee, where he made the water into wine. There was a certain nobleman whose son was sick at Capernaum.</p>
+            <p><strong>47</strong> When he heard that Jesus had come out of Judea into Galilee, he went to him, and begged him that he would come down and heal his son, for he was at the point of death.</p>
+            <p><strong>48</strong> Jesus therefore said to him, “Unless you see signs and wonders, you will in no way believe.”</p>
+            <p><strong>49</strong> The nobleman said to him, “Sir, come down before my child dies.”</p>
+            <p><strong>50</strong> Jesus said to him, “Go your way. Your son lives.” The man believed the word that Jesus spoke to him, and he went his way.</p>
+            <p><strong>51</strong> As he was now going down, his servants met him and reported, saying “Your child lives!”</p>
+            <p><strong>52</strong> So he inquired of them the hour when he began to get better. They said therefore to him, “Yesterday at the seventh hour, the fever left him.”</p>
+            <p><strong>53</strong> So the father knew that it was at that hour in which Jesus said to him, “Your son lives.” He believed, as did his whole house.</p>
+            <p><strong>54</strong> This is again the second sign that Jesus did, having come out of Judea into Galilee.</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 4 (KJV)</p>
+            <p><strong>1</strong> When therefore the Lord knew how the Pharisees had heard that Jesus made and baptized more disciples than John,</p>
+            <p><strong>2</strong> (Though Jesus himself baptized not, but his disciples,)</p>
+            <p><strong>3</strong> He left Judaea, and departed again into Galilee.</p>
+            <p><strong>4</strong> And he must needs go through Samaria.</p>
+            <p><strong>5</strong> Then cometh he to a city of Samaria, which is called Sychar, near to the parcel of ground that Jacob gave to his son Joseph.</p>
+            <p><strong>6</strong> Now Jacob’s well was there. Jesus therefore, being wearied with his journey, sat thus on the well: and it was about the sixth hour.</p>
+            <p><strong>7</strong> There cometh a woman of Samaria to draw water: Jesus saith unto her, Give me to drink.</p>
+            <p><strong>8</strong> (For his disciples were gone away unto the city to buy meat.)</p>
+            <p><strong>9</strong> Then saith the woman of Samaria unto him, How is it that thou, being a Jew, askest drink of me, which am a woman of Samaria? for the Jews have no dealings with the Samaritans.</p>
+            <p><strong>10</strong> Jesus answered and said unto her, If thou knewest the gift of God, and who it is that saith to thee, Give me to drink; thou wouldest have asked of him, and he would have given thee living water.</p>
+            <p><strong>11</strong> The woman saith unto him, Sir, thou hast nothing to draw with, and the well is deep: from whence then hast thou that living water?</p>
+            <p><strong>12</strong> Art thou greater than our father Jacob, which gave us the well, and drank thereof himself, and his children, and his cattle?</p>
+            <p><strong>13</strong> Jesus answered and said unto her, Whosoever drinketh of this water shall thirst again:</p>
+            <p><strong>14</strong> But whosoever drinketh of the water that I shall give him shall never thirst; but the water that I shall give him shall be in him a well of water springing up into everlasting life.</p>
+            <p><strong>15</strong> The woman saith unto him, Sir, give me this water, that I thirst not, neither come hither to draw.</p>
+            <p><strong>16</strong> Jesus saith unto her, Go, call thy husband, and come hither.</p>
+            <p><strong>17</strong> The woman answered and said, I have no husband. Jesus said unto her, Thou hast well said, I have no husband:</p>
+            <p><strong>18</strong> For thou hast had five husbands; and he whom thou now hast is not thy husband: in that saidst thou truly.</p>
+            <p><strong>19</strong> The woman saith unto him, Sir, I perceive that thou art a prophet.</p>
+            <p><strong>20</strong> Our fathers worshipped in this mountain; and ye say, that in Jerusalem is the place where men ought to worship.</p>
+            <p><strong>21</strong> Jesus saith unto her, Woman, believe me, the hour cometh, when ye shall neither in this mountain, nor yet at Jerusalem, worship the Father.</p>
+            <p><strong>22</strong> Ye worship ye know not what: we know what we worship: for salvation is of the Jews.</p>
+            <p><strong>23</strong> But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him.</p>
+            <p><strong>24</strong> God is a Spirit: and they that worship him must worship him in spirit and in truth.</p>
+            <p><strong>25</strong> The woman saith unto him, I know that Messias cometh, which is called Christ: when he is come, he will tell us all things.</p>
+            <p><strong>26</strong> Jesus saith unto her, I that speak unto thee am he.</p>
+            <p><strong>27</strong> And upon this came his disciples, and marvelled that he talked with the woman: yet no man said, What seekest thou? or, Why talkest thou with her?</p>
+            <p><strong>28</strong> The woman then left her waterpot, and went her way into the city, and saith to the men,</p>
+            <p><strong>29</strong> Come, see a man, which told me all things that ever I did: is not this the Christ?</p>
+            <p><strong>30</strong> Then they went out of the city, and came unto him.</p>
+            <p><strong>31</strong> In the mean while his disciples prayed him, saying, Master, eat.</p>
+            <p><strong>32</strong> But he said unto them, I have meat to eat that ye know not of.</p>
+            <p><strong>33</strong> Therefore said the disciples one to another, Hath any man brought him ought to eat?</p>
+            <p><strong>34</strong> Jesus saith unto them, My meat is to do the will of him that sent me, and to finish his work.</p>
+            <p><strong>35</strong> Say not ye, There are yet four months, and then cometh harvest? behold, I say unto you, Lift up your eyes, and look on the fields; for they are white already to harvest.</p>
+            <p><strong>36</strong> And he that reapeth receiveth wages, and gathereth fruit unto life eternal: that both he that soweth and he that reapeth may rejoice together.</p>
+            <p><strong>37</strong> And herein is that saying true, One soweth, and another reapeth.</p>
+            <p><strong>38</strong> I sent you to reap that whereon ye bestowed no labour: other men laboured, and ye are entered into their labours.</p>
+            <p><strong>39</strong> And many of the Samaritans of that city believed on him for the saying of the woman, which testified, He told me all that ever I did.</p>
+            <p><strong>40</strong> So when the Samaritans were come unto him, they besought him that he would tarry with them: and he abode there two days.</p>
+            <p><strong>41</strong> And many more believed because of his own word;</p>
+            <p><strong>42</strong> And said unto the woman, Now we believe, not because of thy saying: for we have heard him ourselves, and know that this is indeed the Christ, the Saviour of the world.</p>
+            <p><strong>43</strong> Now after two days he departed thence, and went into Galilee.</p>
+            <p><strong>44</strong> For Jesus himself testified, that a prophet hath no honour in his own country.</p>
+            <p><strong>45</strong> Then when he was come into Galilee, the Galilaeans received him, having seen all the things that he did at Jerusalem at the feast: for they also went unto the feast.</p>
+            <p><strong>46</strong> So Jesus came again into Cana of Galilee, where he made the water wine. And there was a certain nobleman, whose son was sick at Capernaum.</p>
+            <p><strong>47</strong> When he heard that Jesus was come out of Judaea into Galilee, he went unto him, and besought him that he would come down, and heal his son: for he was at the point of death.</p>
+            <p><strong>48</strong> Then said Jesus unto him, Except ye see signs and wonders, ye will not believe.</p>
+            <p><strong>49</strong> The nobleman saith unto him, Sir, come down ere my child die.</p>
+            <p><strong>50</strong> Jesus saith unto him, Go thy way; thy son liveth. And the man believed the word that Jesus had spoken unto him, and he went his way.</p>
+            <p><strong>51</strong> And as he was now going down, his servants met him, and told him, saying, Thy son liveth.</p>
+            <p><strong>52</strong> Then enquired he of them the hour when he began to amend. And they said unto him, Yesterday at the seventh hour the fever left him.</p>
+            <p><strong>53</strong> So the father knew that it was at the same hour, in the which Jesus said unto him, Thy son liveth: and himself believed, and his whole house.</p>
+            <p><strong>54</strong> This is again the second miracle that Jesus did, when he was come out of Judaea into Galilee.</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 4 (ASV)</p>
+            <p><strong>1</strong> When therefore the Lord knew that the Pharisees had heard that Jesus was making and baptizing more disciples than John</p>
+            <p><strong>2</strong> (although Jesus himself baptized not, but his disciples),</p>
+            <p><strong>3</strong> he left Judea, and departed again into Galilee.</p>
+            <p><strong>4</strong> And he must needs pass through Samaria.</p>
+            <p><strong>5</strong> So he cometh to a city of Samaria, called Sychar, near to the parcel of ground that Jacob gave to his son Joseph:</p>
+            <p><strong>6</strong> and Jacob`s well was there. Jesus therefore, being wearied with his journey, sat thus by the well. It was about the sixth hour.</p>
+            <p><strong>7</strong> There cometh a woman of Samaria to draw water: Jesus saith unto her, Give me to drink.</p>
+            <p><strong>8</strong> For his disciples were gone away into the city to buy food.</p>
+            <p><strong>9</strong> The Samaritan woman therefore saith unto him, How is it that thou, being a Jew, askest drink of me, who am a Samaritan woman? (For Jews have no dealings with Samaritans.)</p>
+            <p><strong>10</strong> Jesus answered and said unto unto her, If thou knewest the gift of God, and who it is that saith to thee, Give me to drink; thou wouldest have asked of him, and he would have given thee living water.</p>
+            <p><strong>11</strong> The woman saith unto him, Sir, thou hast nothing to draw with, and the well is deep: whence then hast thou that living water?</p>
+            <p><strong>12</strong> Art thou greater than our father Jacob, who gave us the well, and drank thereof himself, and his sons, and his cattle?</p>
+            <p><strong>13</strong> Jesus answered and said unto her, Every one that drinketh of this water shall thirst again:</p>
+            <p><strong>14</strong> but whosoever drinketh of the water that I shall give him shall never thirst; but the water that I shall give him shall become in him a well of water springing up unto eternal life.</p>
+            <p><strong>15</strong> The woman saith unto him, Sir, give me this water, that I thirst not, neither come all the way hither to draw.</p>
+            <p><strong>16</strong> Jesus saith unto her, Go, call thy husband, and come hither.</p>
+            <p><strong>17</strong> The woman answered and said unto him, I have no husband. Jesus saith unto her, Thou saidst well, I have no husband:</p>
+            <p><strong>18</strong> for thou hast had five husbands; and he whom thou now hast is not thy husband: this hast thou said truly.</p>
+            <p><strong>19</strong> The woman saith unto him, Sir, I perceive that thou art a prophet.</p>
+            <p><strong>20</strong> Our fathers worshipped in this mountain; and ye say, that in Jerusalem is the place where men ought to worship.</p>
+            <p><strong>21</strong> Jesus saith unto her, Woman, believe me, the hour cometh, when neither in this mountain, nor in Jerusalem, shall ye worship the Father.</p>
+            <p><strong>22</strong> Ye worship that which ye know not: we worship that which we know; for salvation is from the Jews.</p>
+            <p><strong>23</strong> But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and truth: for such doth the Father seek to be his worshippers.</p>
+            <p><strong>24</strong> God is a Spirit: and they that worship him must worship in spirit and truth.</p>
+            <p><strong>25</strong> The woman saith unto him, I know that Messiah cometh (he that is called Christ): when he is come, he will declare unto us all things.</p>
+            <p><strong>26</strong> Jesus saith unto her, I that speak unto thee am [he].</p>
+            <p><strong>27</strong> And upon this came his disciples; and they marvelled that he was speaking with a woman; yet no man said, What seekest thou? or, Why speakest thou with her?</p>
+            <p><strong>28</strong> So the woman left her waterpot, and went away into the city, and saith to the people,</p>
+            <p><strong>29</strong> Come, see a man, who told me all things that [ever] I did: can this be the Christ?</p>
+            <p><strong>30</strong> They went out of the city, and were coming to him.</p>
+            <p><strong>31</strong> In the mean while the disciples prayed him, saying, Rabbi, eat.</p>
+            <p><strong>32</strong> But he said unto them, I have meat to eat that ye know not.</p>
+            <p><strong>33</strong> The disciples therefore said one to another, Hath any man brought him [aught] to eat?</p>
+            <p><strong>34</strong> Jesus saith unto them, My meat is to do the will of him that sent me, and to accomplish his work.</p>
+            <p><strong>35</strong> Say not ye, There are yet four months, and [then] cometh the harvest? behold, I say unto you, Lift up your eyes, and look on the fields, that they are white already unto harvest.</p>
+            <p><strong>36</strong> He that reapeth receiveth wages, and gathereth fruit unto life eternal; that he that soweth and he that reapeth may rejoice together.</p>
+            <p><strong>37</strong> For herein is the saying true, One soweth, and another reapeth.</p>
+            <p><strong>38</strong> I sent you to reap that whereon ye have not labored: others have labored, and ye are entered into their labor.</p>
+            <p><strong>39</strong> And from that city many of the Samaritans believed on him because of the word of the woman, who testified, He told me all things that [ever] I did.</p>
+            <p><strong>40</strong> So when the Samaritans came unto him, they besought him to abide with them: and he abode there two days.</p>
+            <p><strong>41</strong> And many more believed because of his word;</p>
+            <p><strong>42</strong> and they said to the woman, Now we believe, not because of thy speaking: for we have heard for ourselves, and know that this is indeed the Saviour of the world.</p>
+            <p><strong>43</strong> And after the two days he went forth from thence into Galilee.</p>
+            <p><strong>44</strong> For Jesus himself testified, that a prophet hath no honor in his own country.</p>
+            <p><strong>45</strong> So when he came into Galilee, the Galilaeans received him, having seen all the things that he did in Jerusalem at the feast: for they also went unto the feast.</p>
+            <p><strong>46</strong> He came therefore again unto Cana of Galilee, where he made the water wine. And there was a certain nobleman, whose son was sick at Capernaum.</p>
+            <p><strong>47</strong> When he heard that Jesus was come out of Judaea into Galilee, he went unto him, and besought [him] that he would come down, and heal his son; for he was at the point of death.</p>
+            <p><strong>48</strong> Jesus therefore said unto him, Except ye see signs and wonders, ye will in no wise believe.</p>
+            <p><strong>49</strong> The nobleman saith unto him, Sir, come down ere my child die.</p>
+            <p><strong>50</strong> Jesus saith unto him, Go thy way; thy son liveth. The man believed the word that Jesus spake unto him, and he went his way.</p>
+            <p><strong>51</strong> And as he was now going down, his servants met him, saying, that his son lived.</p>
+            <p><strong>52</strong> So he inquired of them the hour when he began to amend. They said therefore unto him, Yesterday at the seventh hour the fever left him.</p>
+            <p><strong>53</strong> So the father knew that [it was] at that hour in which Jesus said unto him, Thy son liveth: and himself believed, and his whole house.</p>
+            <p><strong>54</strong> This is again the second sign that Jesus did, having come out of Judaea into Galilee.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Tired from his journey, Jesus rests at Jacob's well in Samaria and asks a woman for a drink, crossing the deep divides of race and gender. He offers her living water that will become a spring welling up to eternal life, water that quenches thirst forever. When she asks for it, he gently reveals that he knows her broken history of many husbands, yet does not condemn her. He teaches that true worshipers will worship the Father in spirit and truth, and openly tells her that he is the promised Messiah. She leaves her water jar and runs to tell the town, and many Samaritans come to believe. Meanwhile Jesus tells his disciples that the fields are ripe for harvest and that his food is to do the will of the One who sent him. Returning to Cana, he heals an official's dying son from a distance, and the man's whole household believes.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Offers living water to a Samaritan woman, reveals himself as Messiah, and heals an official's son.</li>
+          <li><strong>The Samaritan woman</strong> — Meets Jesus at the well, receives living water, and becomes a witness to her whole town.</li>
+          <li><strong>The disciples</strong> — Return with food and learn that the harvest is ready and doing God's will is true nourishment.</li>
+          <li><strong>The royal official</strong> — Begs Jesus to heal his dying son and believes Jesus' word, seeing the boy made well.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 4:14 (WEB)</p>
+          <p class="verse__text">but whoever drinks of the water that I will give him will never thirst again; but the water that I will give him will become in him a well of water springing up to eternal life.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus offers living water that satisfies the soul's deepest thirst forever.</li>
+          <li>Christ crosses every barrier of race, status, and sin to seek and save the lost.</li>
+          <li>True worship is not about place but about worshiping the Father in spirit and truth.</li>
+          <li>Encountering Jesus turns ordinary people into joyful witnesses who bring others to him.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>Only Jesus satisfies the soul's true thirst.</strong> Jesus says the water he gives 'will become in him a well of water springing up to eternal life' (John 4:14, WEB), unlike water that leaves us thirsty again.</li>
+            <li><strong>God seeks worshipers who worship in spirit and truth.</strong> Jesus teaches, 'the true worshipers will worship the Father in spirit and truth, for the Father seeks such to be his worshipers' (John 4:23, WEB).</li>
+            <li><strong>Jesus openly reveals himself as the promised Messiah.</strong> When the woman speaks of the coming Messiah, Jesus answers, 'I am he, the one who speaks to you' (John 4:26, WEB).</li>
+            <li><strong>A changed life becomes a witness to others.</strong> The woman leaves her water jar and tells the town, 'Come, see a man who told me everything that I did' (John 4:29, WEB), and many believe.</li>
+            <li><strong>Faith trusts Jesus' word even at a distance.</strong> Jesus tells the official, 'Go your way. Your son lives,' and 'the man believed the word... and he went his way' (John 4:50, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>What barriers does Jesus cross by speaking with the Samaritan woman, and what does this reveal about his heart?</li>
+            <li>What is the living water Jesus offers, and how is it different from the water of Jacob's well?</li>
+            <li>How does Jesus describe true worship, and why does this matter more than the place of worship?</li>
+            <li>How does the Samaritan woman respond after meeting Jesus, and what is the result in her town?</li>
+            <li>Where in your own life are you trying to satisfy a thirst that only the living water of Christ can fill?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>Jesus speaks with a Samaritan, a woman, and one with a broken past, crossing barriers of race, gender, and reputation that most would never cross (John 4:7-9). This reveals a Savior who seeks the lost personally and refuses to let social walls keep him from offering grace.</li>
+            <li>The living water Jesus offers becomes a spring welling up to eternal life, satisfying forever (John 4:13-14). Jacob's well water meets passing thirst, but Christ's gift, the life of the Spirit, satisfies the soul's deepest longing and never runs dry.</li>
+            <li>Jesus says true worshipers worship the Father in spirit and truth, for the Father seeks such worshipers (John 4:23-24). Worship is not confined to a mountain or temple but flows from a heart made alive by the Spirit and grounded in the truth of who God is.</li>
+            <li>The woman leaves her water jar and runs to invite the town to come and see (John 4:28-29). Her testimony leads many Samaritans to believe, and after hearing Jesus themselves they confess him as the Savior of the world (John 4:39-42), showing how one changed life spreads.</li>
+            <li>This is a personal application question. Invite members to name where they seek satisfaction apart from Christ, gently and without shame. As leader, point back to the well that never runs dry in verse 14, encourage honest sharing, and never press anyone to reveal more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-3.html">← John 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-5.html">John 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

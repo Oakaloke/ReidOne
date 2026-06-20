@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 17: Faith, Forgiveness, and the Coming Kingdom — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 17: Jesus teaches his followers about forgiveness, faith, and grateful service, then heals ten lepers and points ahead to the coming of his kingdom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 17
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 17</span>
+        <h1>Luke 17: Faith, Forgiveness, and the Coming Kingdom</h1>
+        <p class="lead">Jesus teaches his followers about forgiveness, faith, and grateful service, then heals ten lepers and points ahead to the coming of his kingdom.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-17">
+            <span>Scripture — Luke Chapter 17</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-17">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-17-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-17-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-17-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-17-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 17 (WEB)</p>
+            <p><strong>1</strong> He said to the disciples, “It is impossible that no occasions of stumbling should come, but woe to him through whom they come!</p>
+            <p><strong>2</strong> It would be better for him if a millstone were hung around his neck, and he were thrown into the sea, rather than that he should cause one of these little ones to stumble.</p>
+            <p><strong>3</strong> Be careful. If your brother sins against you, rebuke him. If he repents, forgive him.</p>
+            <p><strong>4</strong> If he sins against you seven times in the day, and seven times returns, saying, ‘I repent,’ you shall forgive him.”</p>
+            <p><strong>5</strong> The apostles said to the Lord, “Increase our faith.”</p>
+            <p><strong>6</strong> The Lord said, “If you had faith like a grain of mustard seed, you would tell this sycamore tree, ‘Be uprooted, and be planted in the sea,’ and it would obey you.</p>
+            <p><strong>7</strong> But who is there among you, having a servant plowing or keeping sheep, that will say, when he comes in from the field, ‘Come immediately and sit down at the table,’</p>
+            <p><strong>8</strong> and will not rather tell him, ‘Prepare my supper, clothe yourself properly, and serve me, while I eat and drink. Afterward you shall eat and drink’?</p>
+            <p><strong>9</strong> Does he thank that servant because he did the things that were commanded? I think not.</p>
+            <p><strong>10</strong> Even so you also, when you have done all the things that are commanded you, say, ‘We are unworthy servants. We have done our duty.’”</p>
+            <p><strong>11</strong> As he was on his way to Jerusalem, he was passing along the borders of Samaria and Galilee.</p>
+            <p><strong>12</strong> As he entered into a certain village, ten men who were lepers met him, who stood at a distance.</p>
+            <p><strong>13</strong> They lifted up their voices, saying, “Jesus, Master, have mercy on us!”</p>
+            <p><strong>14</strong> When he saw them, he said to them, “Go and show yourselves to the priests.” As they went, they were cleansed.</p>
+            <p><strong>15</strong> One of them, when he saw that he was healed, turned back, glorifying God with a loud voice.</p>
+            <p><strong>16</strong> He fell on his face at Jesus’ feet, giving him thanks; and he was a Samaritan.</p>
+            <p><strong>17</strong> Jesus answered, “Weren’t the ten cleansed? But where are the nine?</p>
+            <p><strong>18</strong> Were there none found who returned to give glory to God, except this stranger?”</p>
+            <p><strong>19</strong> Then he said to him, “Get up, and go your way. Your faith has healed you.”</p>
+            <p><strong>20</strong> Being asked by the Pharisees when God’s Kingdom would come, he answered them, “God’s Kingdom doesn’t come with observation;</p>
+            <p><strong>21</strong> neither will they say, ‘Look, here!’ or, ‘Look, there!’ for behold, God’s Kingdom is within you.”</p>
+            <p><strong>22</strong> He said to the disciples, “The days will come, when you will desire to see one of the days of the Son of Man, and you will not see it.</p>
+            <p><strong>23</strong> They will tell you, ‘Look, here!’ or ‘Look, there!’ Don’t go away, nor follow after them,</p>
+            <p><strong>24</strong> for as the lightning, when it flashes out of the one part under the sky, shines to the other part under the sky; so will the Son of Man be in his day.</p>
+            <p><strong>25</strong> But first, he must suffer many things and be rejected by this generation.</p>
+            <p><strong>26</strong> As it was in the days of Noah, even so will it be also in the days of the Son of Man.</p>
+            <p><strong>27</strong> They ate, they drank, they married, they were given in marriage, until the day that Noah entered into the ship, and the flood came, and destroyed them all.</p>
+            <p><strong>28</strong> Likewise, even as it was in the days of Lot: they ate, they drank, they bought, they sold, they planted, they built;</p>
+            <p><strong>29</strong> but in the day that Lot went out from Sodom, it rained fire and sulfur from the sky, and destroyed them all.</p>
+            <p><strong>30</strong> It will be the same way in the day that the Son of Man is revealed.</p>
+            <p><strong>31</strong> In that day, he who will be on the housetop, and his goods in the house, let him not go down to take them away. Let him who is in the field likewise not turn back.</p>
+            <p><strong>32</strong> Remember Lot’s wife!</p>
+            <p><strong>33</strong> Whoever seeks to save his life loses it, but whoever loses his life preserves it.</p>
+            <p><strong>34</strong> I tell you, in that night there will be two people in one bed. The one will be taken, and the other will be left.</p>
+            <p><strong>35</strong> There will be two grinding grain together. One will be taken, and the other will be left.”</p>
+            <p><strong>36</strong> </p>
+            <p><strong>37</strong> They, answering, asked him, “Where, Lord?” He said to them, “Where the body is, there will the vultures also be gathered together.”</p>
+            </div>
+            <div class="scripture-text" id="web-17-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 17 (KJV)</p>
+            <p><strong>1</strong> Then said he unto the disciples, It is impossible but that offences will come: but woe unto him, through whom they come!</p>
+            <p><strong>2</strong> It were better for him that a millstone were hanged about his neck, and he cast into the sea, than that he should offend one of these little ones.</p>
+            <p><strong>3</strong> Take heed to yourselves: If thy brother trespass against thee, rebuke him; and if he repent, forgive him.</p>
+            <p><strong>4</strong> And if he trespass against thee seven times in a day, and seven times in a day turn again to thee, saying, I repent; thou shalt forgive him.</p>
+            <p><strong>5</strong> And the apostles said unto the Lord, Increase our faith.</p>
+            <p><strong>6</strong> And the Lord said, If ye had faith as a grain of mustard seed, ye might say unto this sycamine tree, Be thou plucked up by the root, and be thou planted in the sea; and it should obey you.</p>
+            <p><strong>7</strong> But which of you, having a servant plowing or feeding cattle, will say unto him by and by, when he is come from the field, Go and sit down to meat?</p>
+            <p><strong>8</strong> And will not rather say unto him, Make ready wherewith I may sup, and gird thyself, and serve me, till I have eaten and drunken; and afterward thou shalt eat and drink?</p>
+            <p><strong>9</strong> Doth he thank that servant because he did the things that were commanded him? I trow not.</p>
+            <p><strong>10</strong> So likewise ye, when ye shall have done all those things which are commanded you, say, We are unprofitable servants: we have done that which was our duty to do.</p>
+            <p><strong>11</strong> And it came to pass, as he went to Jerusalem, that he passed through the midst of Samaria and Galilee.</p>
+            <p><strong>12</strong> And as he entered into a certain village, there met him ten men that were lepers, which stood afar off:</p>
+            <p><strong>13</strong> And they lifted up their voices, and said, Jesus, Master, have mercy on us.</p>
+            <p><strong>14</strong> And when he saw them, he said unto them, Go shew yourselves unto the priests. And it came to pass, that, as they went, they were cleansed.</p>
+            <p><strong>15</strong> And one of them, when he saw that he was healed, turned back, and with a loud voice glorified God,</p>
+            <p><strong>16</strong> And fell down on his face at his feet, giving him thanks: and he was a Samaritan.</p>
+            <p><strong>17</strong> And Jesus answering said, Were there not ten cleansed? but where are the nine?</p>
+            <p><strong>18</strong> There are not found that returned to give glory to God, save this stranger.</p>
+            <p><strong>19</strong> And he said unto him, Arise, go thy way: thy faith hath made thee whole.</p>
+            <p><strong>20</strong> And when he was demanded of the Pharisees, when the kingdom of God should come, he answered them and said, The kingdom of God cometh not with observation:</p>
+            <p><strong>21</strong> Neither shall they say, Lo here! or, lo there! for, behold, the kingdom of God is within you.</p>
+            <p><strong>22</strong> And he said unto the disciples, The days will come, when ye shall desire to see one of the days of the Son of man, and ye shall not seeit.</p>
+            <p><strong>23</strong> And they shall say to you, See here; or, see there: go not after them, nor follow them.</p>
+            <p><strong>24</strong> For as the lightning, that lighteneth out of the one part under heaven, shineth unto the other part under heaven; so shall also the Son of man be in his day.</p>
+            <p><strong>25</strong> But first must he suffer many things, and be rejected of this generation.</p>
+            <p><strong>26</strong> And as it was in the days of Noe, so shall it be also in the days of the Son of man.</p>
+            <p><strong>27</strong> They did eat, they drank, they married wives, they were given in marriage, until the day that Noe entered into the ark, and the flood came, and destroyed them all.</p>
+            <p><strong>28</strong> Likewise also as it was in the days of Lot; they did eat, they drank, they bought, they sold, they planted, they builded;</p>
+            <p><strong>29</strong> But the same day that Lot went out of Sodom it rained fire and brimstone from heaven, and destroyed them all.</p>
+            <p><strong>30</strong> Even thus shall it be in the day when the Son of man is revealed.</p>
+            <p><strong>31</strong> In that day, he which shall be upon the housetop, and his stuff in the house, let him not come down to take it away: and he that is in the field, let him likewise not return back.</p>
+            <p><strong>32</strong> Remember Lot’s wife.</p>
+            <p><strong>33</strong> Whosoever shall seek to save his life shall lose it; and whosoever shall lose his life shall preserve it.</p>
+            <p><strong>34</strong> I tell you, in that night there shall be two men in one bed; the one shall be taken, and the other shall be left.</p>
+            <p><strong>35</strong> Two women shall be grinding together; the one shall be taken, and the other left.</p>
+            <p><strong>36</strong> Two men shall be in the field; the one shall be taken, and the other left.</p>
+            <p><strong>37</strong> And they answered and said unto him, Where, Lord? And he said unto them, Wheresoever the body is, thither will the eagles be gathered together.</p>
+            </div>
+            <div class="scripture-text" id="web-17-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 17 (ASV)</p>
+            <p><strong>1</strong> And he said unto his disciples, It is impossible but that occasions of stumbling should come; but woe unto him, through whom they come!</p>
+            <p><strong>2</strong> It were well for him if a millstone were hanged about his neck, and he were thrown into the sea, rather than that he should cause one of these little ones to stumble.</p>
+            <p><strong>3</strong> Take heed to yourselves: if thy brother sin, rebuke him; and if he repent, forgive him.</p>
+            <p><strong>4</strong> And if he sin against thee seven times in the day, and seven times turn again to thee, saying, I repent; thou shalt forgive him.</p>
+            <p><strong>5</strong> And the apostles said unto the Lord, Increase our faith.</p>
+            <p><strong>6</strong> And the Lord said, If ye had faith as a grain of mustard seed, ye would say unto this sycamine tree, Be thou rooted up, and be thou planted in the sea; and it would obey you.</p>
+            <p><strong>7</strong> But who is there of you, having a servant plowing or keeping sheep, that will say unto him, when he is come in from the field, Come straightway and sit down to meat;</p>
+            <p><strong>8</strong> and will not rather say unto him, Make ready wherewith I may sup, and gird thyself, and serve me, till I have eaten and drunken; and afterward thou shalt eat and drink?</p>
+            <p><strong>9</strong> Doth he thank the servant because he did the things that were commanded?</p>
+            <p><strong>10</strong> Even so ye also, when ye shall have done all the things that are commanded you, say, We are unprofitable servants; we have done that which it was our duty to do.</p>
+            <p><strong>11</strong> And it came to pass, as they were on their way to Jerusalem, that he was passing along the borders of Samaria and Galilee.</p>
+            <p><strong>12</strong> And as he entered into a certain village, there met him ten men that were lepers, who stood afar off:</p>
+            <p><strong>13</strong> and they lifted up their voices, saying, Jesus, Master, have mercy on us.</p>
+            <p><strong>14</strong> And when he saw them, he said unto them, Go and show yourselves unto the priests. And it came to pass, as they went, they were cleansed.</p>
+            <p><strong>15</strong> And one of them, when he saw that he was healed, turned back, with a loud voice glorifying God;</p>
+            <p><strong>16</strong> and he fell upon his face at his feet, giving him thanks: and he was a Samaritan.</p>
+            <p><strong>17</strong> And Jesus answering said, Were not the ten cleansed? but where are the nine?</p>
+            <p><strong>18</strong> Were there none found that returned to give glory to God, save this stranger?</p>
+            <p><strong>19</strong> And he said unto him, Arise, and go thy way: thy faith hath made thee whole.</p>
+            <p><strong>20</strong> And being asked by the Pharisees, when the kingdom of God cometh, he answered them and said, The kingdom of God cometh not with observation:</p>
+            <p><strong>21</strong> neither shall they say, Lo, here! or, There! for lo, the kingdom of God is within you.</p>
+            <p><strong>22</strong> And he said unto the disciples, The days will come, when ye shall desire to see one of the days of the Son of man, and ye shall not see it.</p>
+            <p><strong>23</strong> And they shall say to you, Lo, there! Lo, here! go not away, nor follow after [them]:</p>
+            <p><strong>24</strong> for as the lightning, when it lighteneth out of the one part under the heaven, shineth unto the other part under heaven; so shall the Son of man be in his day.</p>
+            <p><strong>25</strong> But first must he suffer many things and be rejected of this generation.</p>
+            <p><strong>26</strong> And as it came to pass in the days of Noah, even so shall it be also in the days of the Son of man.</p>
+            <p><strong>27</strong> They ate, they drank, they married, they were given in marriage, until the day that Noah entered into the ark, and the flood came, and destroyed them all.</p>
+            <p><strong>28</strong> Likewise even as it came to pass in the days of Lot; they ate, they drank, they bought, they sold, they planted, they builded;</p>
+            <p><strong>29</strong> but in the day that Lot went out from Sodom it rained fire and brimstone from heaven, and destroyed them all:</p>
+            <p><strong>30</strong> after the same manner shall it be in the day that the Son of man is revealed.</p>
+            <p><strong>31</strong> In that day, he that shall be on the housetop, and his goods in the house, let him not go down to take them away: and let him that is in the field likewise not return back.</p>
+            <p><strong>32</strong> Remember Lot`s wife.</p>
+            <p><strong>33</strong> Whosoever shall seek to gain his life shall lose it: but whosoever shall lose [his life] shall preserve it.</p>
+            <p><strong>34</strong> I say unto you, In that night there shall be two men on one bed; the one shall be taken, and the other shall be left.</p>
+            <p><strong>35</strong> There shall be two women grinding together; the one shall be taken, and the other shall be left.</p>
+            <p><strong>36</strong> [There shall be two men in the field; the one shall be taken, and the other shall be left.]</p>
+            <p><strong>37</strong> And they answering say unto him, Where, Lord? And he said unto them, Where the body [is], thither will the eagles also be gathered together.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus warns his disciples against causing others to stumble and calls them to forgive a brother again and again, even seven times in a day. When they ask for greater faith, he answers that faith the size of a mustard seed is enough, for the issue is the God they trust, not the size of their belief. He likens disciples to servants who simply do their duty without expecting praise. On the way to Jerusalem, ten lepers cry out for mercy and are healed as they go, yet only one, a Samaritan, returns to give thanks and is told his faith has made him well. The chapter closes with teaching about the kingdom of God, which is already among them, and the sudden, unmistakable revealing of the Son of Man, a day for which people must be ready.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Teaches on forgiveness and faith, heals ten lepers, and foretells the coming of the Son of Man</li>
+          <li><strong>The disciples</strong> — Ask the Lord to increase their faith and receive teaching on humble service</li>
+          <li><strong>The ten lepers</strong> — Cry out for mercy and are cleansed as they obey Jesus' command</li>
+          <li><strong>The Samaritan</strong> — The one healed leper who returns praising God and is commended for his faith</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 17:21 (WEB)</p>
+          <p class="verse__text">neither will they say, ‘Look, here!’ or, ‘Look, there!’ for behold, God’s Kingdom is within you.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Forgiveness is to be offered freely and repeatedly, flowing from a heart shaped by grace.</li>
+          <li>Even small faith is powerful when it rests in a great and faithful God.</li>
+          <li>Gratitude is the right response to mercy, yet it is easily forgotten.</li>
+          <li>The kingdom of God is present among us in Jesus and will one day be revealed for all to see.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-17">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-17">
+            <ul class="lesson-list">
+            <li><strong>We are called to forgive generously and again and again.</strong> Jesus says that if a brother sins and repents seven times in a day, 'you shall forgive him' (Luke 17:4, WEB).</li>
+            <li><strong>Faith's strength lies in its object, not its size.</strong> Jesus says faith like a grain of mustard seed could uproot a tree (Luke 17:6, WEB), showing that even small trust in God accomplishes much.</li>
+            <li><strong>True service expects no applause.</strong> Jesus teaches that after doing all we are commanded we should say, 'We are unworthy servants. We have done our duty' (Luke 17:10, WEB).</li>
+            <li><strong>Mercy received should turn the heart to thanksgiving.</strong> Of the ten cleansed, only the Samaritan returned, 'glorifying God with a loud voice' (Luke 17:15, WEB), and Jesus asked where the other nine were.</li>
+            <li><strong>God's kingdom comes quietly now and gloriously later.</strong> Jesus says, 'the Kingdom of God is within you' (Luke 17:21, WEB), even as he warns the Son of Man's day will flash like lightning across the sky.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-17">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-17">
+            <ol class="study-questions">
+            <li>How does Jesus describe the kind of forgiveness his followers should show, and why is it so demanding?</li>
+            <li>What does Jesus mean when he compares faith to a mustard seed?</li>
+            <li>Why might only one of the ten healed lepers have returned to give thanks, and what made him different?</li>
+            <li>What does Jesus teach about the coming of the Son of Man and the need to be ready?</li>
+            <li>Where in your own life is God inviting you to forgive more freely or to give thanks more readily?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-17">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-17">
+            <ol class="study-questions">
+            <li>Jesus calls his disciples to forgive a repentant brother even seven times in a single day (Luke 17:3-4). Such forgiveness is demanding because it sets no limit and trusts God rather than keeping a record of wrongs.</li>
+            <li>Faith the size of a mustard seed can do the seemingly impossible (Luke 17:6). Jesus shifts attention away from the quantity of faith to the power of the God in whom that faith rests.</li>
+            <li>Ten were cleansed, but only the Samaritan turned back to glorify God and fall at Jesus' feet (Luke 17:15-16). His gratitude marked him out, and Jesus told him his faith had made him well (17:19).</li>
+            <li>Jesus warns that the Son of Man's day will come suddenly and visibly, like lightning (Luke 17:24), and recalls the days of Noah and Lot. People are to live ready, not clinging to this present life (17:33).</li>
+            <li>This is a personal application question. Invite members to reflect honestly on where forgiveness or thanksgiving is hard for them. As leader, encourage gentle sharing and point back to the grateful Samaritan, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-16.html">← Luke 16</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-18.html">Luke 18 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

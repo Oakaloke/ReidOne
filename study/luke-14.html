@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 14: The Great Banquet and the Cost — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 14: Jesus heals on the Sabbath, teaches humility and hospitality, and invites the overlooked to a great banquet that none should refuse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 14
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 14</span>
+        <h1>Luke 14: The Great Banquet and the Cost</h1>
+        <p class="lead">Jesus heals on the Sabbath, teaches humility and hospitality, and invites the overlooked to a great banquet that none should refuse.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-14">
+            <span>Scripture — Luke Chapter 14</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-14">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-14-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-14-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-14-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-14-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 14 (WEB)</p>
+            <p><strong>1</strong> When he went into the house of one of the rulers of the Pharisees on a Sabbath to eat bread, they were watching him.</p>
+            <p><strong>2</strong> Behold, a certain man who had dropsy was in front of him.</p>
+            <p><strong>3</strong> Jesus, answering, spoke to the lawyers and Pharisees, saying, “Is it lawful to heal on the Sabbath?”</p>
+            <p><strong>4</strong> But they were silent. He took him, and healed him, and let him go.</p>
+            <p><strong>5</strong> He answered them, “Which of you, if your son or an ox fell into a well, wouldn’t immediately pull him out on a Sabbath day?”</p>
+            <p><strong>6</strong> They couldn’t answer him regarding these things.</p>
+            <p><strong>7</strong> He spoke a parable to those who were invited, when he noticed how they chose the best seats, and said to them,</p>
+            <p><strong>8</strong> “When you are invited by anyone to a marriage feast, don’t sit in the best seat, since perhaps someone more honorable than you might be invited by him,</p>
+            <p><strong>9</strong> and he who invited both of you would come and tell you, ‘Make room for this person.’ Then you would begin, with shame, to take the lowest place.</p>
+            <p><strong>10</strong> But when you are invited, go and sit in the lowest place, so that when he who invited you comes, he may tell you, ‘Friend, move up higher.’ Then you will be honored in the presence of all who sit at the table with you.</p>
+            <p><strong>11</strong> For everyone who exalts himself will be humbled, and whoever humbles himself will be exalted.”</p>
+            <p><strong>12</strong> He also said to the one who had invited him, “When you make a dinner or a supper, don’t call your friends, nor your brothers, nor your kinsmen, nor rich neighbors, or perhaps they might also return the favor, and pay you back.</p>
+            <p><strong>13</strong> But when you make a feast, ask the poor, the maimed, the lame, or the blind;</p>
+            <p><strong>14</strong> and you will be blessed, because they don’t have the resources to repay you. For you will be repaid in the resurrection of the righteous.”</p>
+            <p><strong>15</strong> When one of those who sat at the table with him heard these things, he said to him, “Blessed is he who will feast in God’s Kingdom!”</p>
+            <p><strong>16</strong> But he said to him, “A certain man made a great supper, and he invited many people.</p>
+            <p><strong>17</strong> He sent out his servant at supper time to tell those who were invited, ‘Come, for everything is ready now.’</p>
+            <p><strong>18</strong> They all as one began to make excuses. “The first said to him, ‘I have bought a field, and I must go and see it. Please have me excused.’</p>
+            <p><strong>19</strong> “Another said, ‘I have bought five yoke of oxen, and I must go try them out. Please have me excused.’</p>
+            <p><strong>20</strong> “Another said, ‘I have married a wife, and therefore I can’t come.’</p>
+            <p><strong>21</strong> “That servant came, and told his lord these things. Then the master of the house, being angry, said to his servant, ‘Go out quickly into the streets and lanes of the city, and bring in the poor, maimed, blind, and lame.’</p>
+            <p><strong>22</strong> “The servant said, ‘Lord, it is done as you commanded, and there is still room.’</p>
+            <p><strong>23</strong> “The lord said to the servant, ‘Go out into the highways and hedges, and compel them to come in, that my house may be filled.</p>
+            <p><strong>24</strong> For I tell you that none of those men who were invited will taste of my supper.’”</p>
+            <p><strong>25</strong> Now great multitudes were going with him. He turned and said to them,</p>
+            <p><strong>26</strong> “If anyone comes to me, and doesn’t disregard his own father, mother, wife, children, brothers, and sisters, yes, and his own life also, he can’t be my disciple.</p>
+            <p><strong>27</strong> Whoever doesn’t bear his own cross, and come after me, can’t be my disciple.</p>
+            <p><strong>28</strong> For which of you, desiring to build a tower, doesn’t first sit down and count the cost, to see if he has enough to complete it?</p>
+            <p><strong>29</strong> Or perhaps, when he has laid a foundation, and is not able to finish, everyone who sees begins to mock him,</p>
+            <p><strong>30</strong> saying, ‘This man began to build, and wasn’t able to finish.’</p>
+            <p><strong>31</strong> Or what king, as he goes to encounter another king in war, will not sit down first and consider whether he is able with ten thousand to meet him who comes against him with twenty thousand?</p>
+            <p><strong>32</strong> Or else, while the other is yet a great way off, he sends an envoy, and asks for conditions of peace.</p>
+            <p><strong>33</strong> So therefore whoever of you who doesn’t renounce all that he has, he can’t be my disciple.</p>
+            <p><strong>34</strong> Salt is good, but if the salt becomes flat and tasteless, with what do you season it?</p>
+            <p><strong>35</strong> It is fit neither for the soil nor for the manure pile. It is thrown out. He who has ears to hear, let him hear.”</p>
+            </div>
+            <div class="scripture-text" id="web-14-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 14 (KJV)</p>
+            <p><strong>1</strong> And it came to pass, as he went into the house of one of the chief Pharisees to eat bread on the sabbath day, that they watched him.</p>
+            <p><strong>2</strong> And, behold, there was a certain man before him which had the dropsy.</p>
+            <p><strong>3</strong> And Jesus answering spake unto the lawyers and Pharisees, saying, Is it lawful to heal on the sabbath day?</p>
+            <p><strong>4</strong> And they held their peace. And he took him, and healed him, and let him go;</p>
+            <p><strong>5</strong> And answered them, saying, Which of you shall have an ass or an ox fallen into a pit, and will not straightway pull him out on the sabbath day?</p>
+            <p><strong>6</strong> And they could not answer him again to these things.</p>
+            <p><strong>7</strong> And he put forth a parable to those which were bidden, when he marked how they chose out the chief rooms; saying unto them,</p>
+            <p><strong>8</strong> When thou art bidden of any man to a wedding, sit not down in the highest room; lest a more honourable man than thou be bidden of him;</p>
+            <p><strong>9</strong> And he that bade thee and him come and say to thee, Give this man place; and thou begin with shame to take the lowest room.</p>
+            <p><strong>10</strong> But when thou art bidden, go and sit down in the lowest room; that when he that bade thee cometh, he may say unto thee, Friend, go up higher: then shalt thou have worship in the presence of them that sit at meat with thee.</p>
+            <p><strong>11</strong> For whosoever exalteth himself shall be abased; and he that humbleth himself shall be exalted.</p>
+            <p><strong>12</strong> Then said he also to him that bade him, When thou makest a dinner or a supper, call not thy friends, nor thy brethren, neither thy kinsmen, nor thy rich neighbours; lest they also bid thee again, and a recompence be made thee.</p>
+            <p><strong>13</strong> But when thou makest a feast, call the poor, the maimed, the lame, the blind:</p>
+            <p><strong>14</strong> And thou shalt be blessed; for they cannot recompense thee: for thou shalt be recompensed at the resurrection of the just.</p>
+            <p><strong>15</strong> And when one of them that sat at meat with him heard these things, he said unto him, Blessed is he that shall eat bread in the kingdom of God.</p>
+            <p><strong>16</strong> Then said he unto him, A certain man made a great supper, and bade many:</p>
+            <p><strong>17</strong> And sent his servant at supper time to say to them that were bidden, Come; for all things are now ready.</p>
+            <p><strong>18</strong> And they all with one consent began to make excuse. The first said unto him, I have bought a piece of ground, and I must needs go and see it: I pray thee have me excused.</p>
+            <p><strong>19</strong> And another said, I have bought five yoke of oxen, and I go to prove them: I pray thee have me excused.</p>
+            <p><strong>20</strong> And another said, I have married a wife, and therefore I cannot come.</p>
+            <p><strong>21</strong> So that servant came, and shewed his lord these things. Then the master of the house being angry said to his servant, Go out quickly into the streets and lanes of the city, and bring in hither the poor, and the maimed, and the halt, and the blind.</p>
+            <p><strong>22</strong> And the servant said, Lord, it is done as thou hast commanded, and yet there is room.</p>
+            <p><strong>23</strong> And the lord said unto the servant, Go out into the highways and hedges, and compel them to come in, that my house may be filled.</p>
+            <p><strong>24</strong> For I say unto you, That none of those men which were bidden shall taste of my supper.</p>
+            <p><strong>25</strong> And there went great multitudes with him: and he turned, and said unto them,</p>
+            <p><strong>26</strong> If any man come to me, and hate not his father, and mother, and wife, and children, and brethren, and sisters, yea, and his own life also, he cannot be my disciple.</p>
+            <p><strong>27</strong> And whosoever doth not bear his cross, and come after me, cannot be my disciple.</p>
+            <p><strong>28</strong> For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it?</p>
+            <p><strong>29</strong> Lest haply, after he hath laid the foundation, and is not able to finish it, all that behold it begin to mock him,</p>
+            <p><strong>30</strong> Saying, This man began to build, and was not able to finish.</p>
+            <p><strong>31</strong> Or what king, going to make war against another king, sitteth not down first, and consulteth whether he be able with ten thousand to meet him that cometh against him with twenty thousand?</p>
+            <p><strong>32</strong> Or else, while the other is yet a great way off, he sendeth an ambassage, and desireth conditions of peace.</p>
+            <p><strong>33</strong> So likewise, whosoever he be of you that forsaketh not all that he hath, he cannot be my disciple.</p>
+            <p><strong>34</strong> Salt is good: but if the salt have lost his savour, wherewith shall it be seasoned?</p>
+            <p><strong>35</strong> It is neither fit for the land, nor yet for the dunghill; but men cast it out. He that hath ears to hear, let him hear.</p>
+            </div>
+            <div class="scripture-text" id="web-14-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 14 (ASV)</p>
+            <p><strong>1</strong> And it came to pass, when he went into the house of one of the rulers of the Pharisees on a sabbath to eat bread, that they were watching him.</p>
+            <p><strong>2</strong> And behold, there was before him a certain man that had the dropsy.</p>
+            <p><strong>3</strong> And Jesus answering spake unto the lawyers and Pharisees, saying, Is it lawful to heal on the sabbath, or not?</p>
+            <p><strong>4</strong> But they held their peace. And he took him, and healed him, and let him go.</p>
+            <p><strong>5</strong> And he said unto them, Which of you shall have an ass or an ox fallen into a well, and will not straightway draw him up on a sabbath day?</p>
+            <p><strong>6</strong> And they could not answer again unto these things.</p>
+            <p><strong>7</strong> And he spake a parable unto those that were bidden, when he marked how they chose out the chief seats; saying unto them,</p>
+            <p><strong>8</strong> When thou art bidden of any man to a marriage feast, sit not down in the chief seat; lest haply a more honorable man than thou be bidden of him,</p>
+            <p><strong>9</strong> and he that bade thee and him shall come and say to thee, Give this man place; and then thou shalt begin with shame to take the lowest place.</p>
+            <p><strong>10</strong> But when thou art bidden, go and sit down in the lowest place; that when he that hath bidden thee cometh, he may say to thee, Friend, go up higher: then shalt thou have glory in the presence of all that sit at meat with thee.</p>
+            <p><strong>11</strong> For everyone that exalteth himself shall be humbled; and he that humbleth himself shall be exalted.</p>
+            <p><strong>12</strong> And he said to him also that had bidden him, When thou makest a dinner or a supper, call not thy friends, nor thy brethren, nor thy kinsmen, nor rich neighbors; lest haply they also bid thee again, and a recompense be made thee.</p>
+            <p><strong>13</strong> But when thou makest a feast, bid the poor, the maimed, the lame, the blind:</p>
+            <p><strong>14</strong> and thou shalt be blessed; because they have not [wherewith] to recompense thee: for thou shalt be recompensed in the resurrection of the just.</p>
+            <p><strong>15</strong> And when one of them that sat at meat with him heard these things, he said unto him, Blessed is he that shall eat bread in the kingdom of God.</p>
+            <p><strong>16</strong> But he said unto him, A certain man made a great supper; and he bade many:</p>
+            <p><strong>17</strong> and he sent forth his servant at supper time to say to them that were bidden, Come; for [all] things are now ready.</p>
+            <p><strong>18</strong> And they all with one [consent] began to make excuse. The first said unto him, I have bought a field, and I must needs go out and see it; I pray thee have me excused.</p>
+            <p><strong>19</strong> And another said, I have bought five yoke of oxen, and I go to prove them; I pray thee have me excused.</p>
+            <p><strong>20</strong> And another said, I have married a wife, and therefore I cannot come.</p>
+            <p><strong>21</strong> And the servant came, and told his lord these things. Then the master of the house being angry said to his servant, Go out quickly into the streets and lanes of the city, and bring in hither the poor and maimed and blind and lame.</p>
+            <p><strong>22</strong> And the servant said, Lord, what thou didst command is done, and yet there is room.</p>
+            <p><strong>23</strong> And the lord said unto the servant, Go out into the highways and hedges, and constrain [them] to come in, that my house may be filled.</p>
+            <p><strong>24</strong> For I say unto you, that none of those men that were bidden shall taste of my supper.</p>
+            <p><strong>25</strong> Now there went with him great multitudes: and he turned, and said unto them,</p>
+            <p><strong>26</strong> If any man cometh unto me, and hateth not his own father, and mother, and wife, and children, and brethren, and sisters, yea, and his own life also, he cannot be my disciple.</p>
+            <p><strong>27</strong> Whosoever doth not bear his own cross, and come after me, cannot be my disciple.</p>
+            <p><strong>28</strong> For which of you, desiring to build a tower, doth not first sit down and count the cost, whether he have [wherewith] to complete it?</p>
+            <p><strong>29</strong> Lest haply, when he hath laid a foundation, and is not able to finish, all that behold begin to mock him,</p>
+            <p><strong>30</strong> saying, This man began to build, and was not able to finish.</p>
+            <p><strong>31</strong> Or what king, as he goeth to encounter another king in war, will not sit down first and take counsel whether he is able with ten thousand to meet him that cometh against him with twenty thousand?</p>
+            <p><strong>32</strong> Or else, while the other is yet a great way off, he sendeth an ambassage, and asketh conditions of peace.</p>
+            <p><strong>33</strong> So therefore whosoever he be of you that renounceth not all that he hath, he cannot be my disciple.</p>
+            <p><strong>34</strong> Salt therefore is good: but if even the salt have lost its savor, wherewith shall it be seasoned?</p>
+            <p><strong>35</strong> It is fit neither for the land nor for the dunghill: [men] cast it out. He that hath ears to hear, let him hear.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Dining at a Pharisee's house on the Sabbath, Jesus heals a man with dropsy and asks whether mercy should wait for another day. Watching guests jostle for places of honor, he teaches that those who exalt themselves will be humbled, and the humble exalted; better to take the lowest seat. He tells the host to invite the poor, the crippled, the lame, and the blind, who cannot repay, for repayment will come at the resurrection. He then tells of a man whose great banquet is spurned by invited guests making excuses, so the master sends his servant into the streets and lanes to bring in the poor and outcast until his house is full. Turning to the crowds, Jesus speaks plainly of the cost of following him: one must count the cost like a builder or a king at war, and hold nothing back, even as salt must keep its savor.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Heals on the Sabbath and teaches humility, hospitality, and the cost of discipleship.</li>
+          <li><strong>The man with dropsy</strong> — Healed by Jesus before the watching Pharisees on the Sabbath.</li>
+          <li><strong>The host Pharisee</strong> — A leading Pharisee who invites Jesus to dine and watches him closely.</li>
+          <li><strong>The master of the banquet</strong> — In the parable, fills his house with the poor and outcast after guests refuse.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 14:11 (WEB)</p>
+          <p class="verse__text">For everyone who exalts himself will be humbled, and whoever humbles himself will be exalted.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Mercy should never be postponed for the sake of appearances.</li>
+          <li>Those who humble themselves will be exalted by God.</li>
+          <li>True generosity gives to those who cannot repay.</li>
+          <li>Following Jesus is worth everything, but it costs everything.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-14">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-14">
+            <ul class="lesson-list">
+            <li><strong>Mercy honors, not breaks, the Sabbath.</strong> Jesus healed the man and asked whether any would not rescue a son or an ox on the Sabbath day (Luke 14:5, WEB).</li>
+            <li><strong>God lifts up the humble.</strong> Jesus said, "Everyone who exalts himself will be humbled, and whoever humbles himself will be exalted" (Luke 14:11, WEB).</li>
+            <li><strong>Kingdom hospitality blesses those who cannot repay.</strong> Jesus said to invite "the poor, the maimed, the lame, or the blind" who cannot repay, "for you will be repaid in the resurrection" (Luke 14:13-14, WEB).</li>
+            <li><strong>God's invitation reaches the overlooked.</strong> The master told his servant to bring in "the poor, maimed, blind, and lame" so that his house would be filled (Luke 14:21, WEB).</li>
+            <li><strong>Discipleship calls for counting the cost.</strong> Jesus said, "Which of you, desiring to build a tower, doesn't first sit down and count the cost?" (Luke 14:28, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-14">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-14">
+            <ol class="study-questions">
+            <li>How does Jesus answer those watching him heal on the Sabbath?</li>
+            <li>What does Jesus teach about choosing seats at a feast, and what principle lies behind it?</li>
+            <li>Who does the master bring into his banquet after the first guests refuse?</li>
+            <li>What images does Jesus use to describe counting the cost of discipleship?</li>
+            <li>Where in your own life is Jesus inviting you to humble yourself or to give without expecting repayment?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-14">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-14">
+            <ol class="study-questions">
+            <li>Jesus healed the man with dropsy and asked whether they would not rescue a son or ox fallen into a well on the Sabbath (Luke 14:3-5). Compassion is always in season, and love fulfills the day of rest.</li>
+            <li>Jesus advised taking the lowest seat so the host might invite you higher, for those who exalt themselves will be humbled (Luke 14:8-11). Humility before God and others is the true path to honor.</li>
+            <li>When the invited guests made excuses, the master sent his servant to bring in the poor, maimed, blind, and lame, and still to compel others until the house was full (Luke 14:21-23). God's grace gathers those the world overlooks.</li>
+            <li>Jesus pictures a builder counting the cost of a tower and a king weighing his army before battle (Luke 14:28-32). Following him is a wholehearted commitment to be entered with eyes open.</li>
+            <li>This is a personal application question. Invite members to share gently where humility or unselfish giving is being asked of them (Luke 14:11-14). Encourage honesty, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-13.html">← Luke 13</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-15.html">Luke 15 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

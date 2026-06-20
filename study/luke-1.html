@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 1: Promises Conceived in Faith — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 1: Luke opens with two miraculous announcements as God remembers his mercy, and ordinary people respond with wonder, song, and obedient faith." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 1</span>
+        <h1>Luke 1: Promises Conceived in Faith</h1>
+        <p class="lead">Luke opens with two miraculous announcements as God remembers his mercy, and ordinary people respond with wonder, song, and obedient faith.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Luke Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 1 (WEB)</p>
+            <p><strong>1</strong> Since many have undertaken to set in order a narrative concerning those matters which have been fulfilled among us,</p>
+            <p><strong>2</strong> even as those who from the beginning were eyewitnesses and servants of the word delivered them to us,</p>
+            <p><strong>3</strong> it seemed good to me also, having traced the course of all things accurately from the first, to write to you in order, most excellent Theophilus;</p>
+            <p><strong>4</strong> that you might know the certainty concerning the things in which you were instructed.</p>
+            <p><strong>5</strong> There was in the days of Herod, the king of Judea, a certain priest named Zacharias, of the priestly division of Abijah. He had a wife of the daughters of Aaron, and her name was Elizabeth.</p>
+            <p><strong>6</strong> They were both righteous before God, walking blamelessly in all the commandments and ordinances of the Lord.</p>
+            <p><strong>7</strong> But they had no child, because Elizabeth was barren, and they both were well advanced in years.</p>
+            <p><strong>8</strong> Now while he executed the priest’s office before God in the order of his division,</p>
+            <p><strong>9</strong> according to the custom of the priest’s office, his lot was to enter into the temple of the Lord and burn incense.</p>
+            <p><strong>10</strong> The whole multitude of the people were praying outside at the hour of incense.</p>
+            <p><strong>11</strong> An angel of the Lord appeared to him, standing on the right side of the altar of incense.</p>
+            <p><strong>12</strong> Zacharias was troubled when he saw him, and fear fell upon him.</p>
+            <p><strong>13</strong> But the angel said to him, “Don’t be afraid, Zacharias, because your request has been heard, and your wife, Elizabeth, will bear you a son, and you shall call his name John.</p>
+            <p><strong>14</strong> You will have joy and gladness; and many will rejoice at his birth.</p>
+            <p><strong>15</strong> For he will be great in the sight of the Lord, and he will drink no wine nor strong drink. He will be filled with the Holy Spirit, even from his mother’s womb.</p>
+            <p><strong>16</strong> He will turn many of the children of Israel to the Lord, their God.</p>
+            <p><strong>17</strong> He will go before him in the spirit and power of Elijah, ‘to turn the hearts of the fathers to the children,’ and the disobedient to the wisdom of the just; to prepare a people prepared for the Lord.”</p>
+            <p><strong>18</strong> Zacharias said to the angel, “How can I be sure of this? For I am an old man, and my wife is well advanced in years.”</p>
+            <p><strong>19</strong> The angel answered him, “I am Gabriel, who stands in the presence of God. I was sent to speak to you, and to bring you this good news.</p>
+            <p><strong>20</strong> Behold, you will be silent and not able to speak, until the day that these things will happen, because you didn’t believe my words, which will be fulfilled in their proper time.”</p>
+            <p><strong>21</strong> The people were waiting for Zacharias, and they marveled that he delayed in the temple.</p>
+            <p><strong>22</strong> When he came out, he could not speak to them, and they perceived that he had seen a vision in the temple. He continued making signs to them, and remained mute.</p>
+            <p><strong>23</strong> When the days of his service were fulfilled, he departed to his house.</p>
+            <p><strong>24</strong> After these days Elizabeth, his wife, conceived, and she hid herself five months, saying,</p>
+            <p><strong>25</strong> “Thus has the Lord done to me in the days in which he looked at me, to take away my reproach among men.”</p>
+            <p><strong>26</strong> Now in the sixth month, the angel Gabriel was sent from God to a city of Galilee, named Nazareth,</p>
+            <p><strong>27</strong> to a virgin pledged to be married to a man whose name was Joseph, of David’s house. The virgin’s name was Mary.</p>
+            <p><strong>28</strong> Having come in, the angel said to her, “Rejoice, you highly favored one! The Lord is with you. Blessed are you among women!”</p>
+            <p><strong>29</strong> But when she saw him, she was greatly troubled at the saying, and considered what kind of salutation this might be.</p>
+            <p><strong>30</strong> The angel said to her, “Don’t be afraid, Mary, for you have found favor with God.</p>
+            <p><strong>31</strong> Behold, you will conceive in your womb, and give birth to a son, and will call his name ‘Jesus.’</p>
+            <p><strong>32</strong> He will be great, and will be called the Son of the Most High. The Lord God will give him the throne of his father, David,</p>
+            <p><strong>33</strong> and he will reign over the house of Jacob forever. There will be no end to his Kingdom.”</p>
+            <p><strong>34</strong> Mary said to the angel, “How can this be, seeing I am a virgin?”</p>
+            <p><strong>35</strong> The angel answered her, “The Holy Spirit will come on you, and the power of the Most High will overshadow you. Therefore also the holy one who is born from you will be called the Son of God.</p>
+            <p><strong>36</strong> Behold, Elizabeth, your relative, also has conceived a son in her old age; and this is the sixth month with her who was called barren.</p>
+            <p><strong>37</strong> For nothing spoken by God is impossible.”</p>
+            <p><strong>38</strong> Mary said, “Behold, the servant of the Lord; let it be done to me according to your word.” The angel departed from her.</p>
+            <p><strong>39</strong> Mary arose in those days and went into the hill country with haste, into a city of Judah,</p>
+            <p><strong>40</strong> and entered into the house of Zacharias and greeted Elizabeth.</p>
+            <p><strong>41</strong> When Elizabeth heard Mary’s greeting, the baby leaped in her womb, and Elizabeth was filled with the Holy Spirit.</p>
+            <p><strong>42</strong> She called out with a loud voice, and said, “Blessed are you among women, and blessed is the fruit of your womb!</p>
+            <p><strong>43</strong> Why am I so favored, that the mother of my Lord should come to me?</p>
+            <p><strong>44</strong> For behold, when the voice of your greeting came into my ears, the baby leaped in my womb for joy!</p>
+            <p><strong>45</strong> Blessed is she who believed, for there will be a fulfillment of the things which have been spoken to her from the Lord!”</p>
+            <p><strong>46</strong> Mary said, “My soul magnifies the Lord.</p>
+            <p><strong>47</strong> My spirit has rejoiced in God my Savior,</p>
+            <p><strong>48</strong> for he has looked at the humble state of his servant. For behold, from now on, all generations will call me blessed.</p>
+            <p><strong>49</strong> For he who is mighty has done great things for me. Holy is his name.</p>
+            <p><strong>50</strong> His mercy is for generations of generations on those who fear him.</p>
+            <p><strong>51</strong> He has shown strength with his arm. He has scattered the proud in the imagination of their hearts.</p>
+            <p><strong>52</strong> He has put down princes from their thrones. And has exalted the lowly.</p>
+            <p><strong>53</strong> He has filled the hungry with good things. He has sent the rich away empty.</p>
+            <p><strong>54</strong> He has given help to Israel, his servant, that he might remember mercy,</p>
+            <p><strong>55</strong> As he spoke to our fathers, to Abraham and his offspring forever.”</p>
+            <p><strong>56</strong> Mary stayed with her about three months, and then returned to her house.</p>
+            <p><strong>57</strong> Now the time that Elizabeth should give birth was fulfilled, and she gave birth to a son.</p>
+            <p><strong>58</strong> Her neighbors and her relatives heard that the Lord had magnified his mercy towards her, and they rejoiced with her.</p>
+            <p><strong>59</strong> On the eighth day, they came to circumcise the child; and they would have called him Zacharias, after the name of his father.</p>
+            <p><strong>60</strong> His mother answered, “Not so; but he will be called John.”</p>
+            <p><strong>61</strong> They said to her, “There is no one among your relatives who is called by this name.”</p>
+            <p><strong>62</strong> They made signs to his father, what he would have him called.</p>
+            <p><strong>63</strong> He asked for a writing tablet, and wrote, “His name is John.” They all marveled.</p>
+            <p><strong>64</strong> His mouth was opened immediately, and his tongue freed, and he spoke, blessing God.</p>
+            <p><strong>65</strong> Fear came on all who lived around them, and all these sayings were talked about throughout all the hill country of Judea.</p>
+            <p><strong>66</strong> All who heard them laid them up in their heart, saying, “What then will this child be?” The hand of the Lord was with him.</p>
+            <p><strong>67</strong> His father, Zacharias, was filled with the Holy Spirit, and prophesied, saying,</p>
+            <p><strong>68</strong> “Blessed be the Lord, the God of Israel, for he has visited and redeemed his people;</p>
+            <p><strong>69</strong> and has raised up a horn of salvation for us in the house of his servant David</p>
+            <p><strong>70</strong> (as he spoke by the mouth of his holy prophets who have been from of old),</p>
+            <p><strong>71</strong> salvation from our enemies, and from the hand of all who hate us;</p>
+            <p><strong>72</strong> to show mercy towards our fathers, to remember his holy covenant,</p>
+            <p><strong>73</strong> the oath which he swore to Abraham, our father,</p>
+            <p><strong>74</strong> to grant to us that we, being delivered out of the hand of our enemies, should serve him without fear,</p>
+            <p><strong>75</strong> In holiness and righteousness before him all the days of our life.</p>
+            <p><strong>76</strong> And you, child, will be called a prophet of the Most High, for you will go before the face of the Lord to prepare his ways,</p>
+            <p><strong>77</strong> to give knowledge of salvation to his people by the remission of their sins,</p>
+            <p><strong>78</strong> because of the tender mercy of our God, whereby the dawn from on high will visit us,</p>
+            <p><strong>79</strong> to shine on those who sit in darkness and the shadow of death; to guide our feet into the way of peace.”</p>
+            <p><strong>80</strong> The child was growing, and becoming strong in spirit, and was in the desert until the day of his public appearance to Israel.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 1 (KJV)</p>
+            <p><strong>1</strong> Forasmuch as many have taken in hand to set forth in order a declaration of those things which are most surely believed among us,</p>
+            <p><strong>2</strong> Even as they delivered them unto us, which from the beginning were eyewitnesses, and ministers of the word;</p>
+            <p><strong>3</strong> It seemed good to me also, having had perfect understanding of all things from the very first, to write unto thee in order, most excellent Theophilus,</p>
+            <p><strong>4</strong> That thou mightest know the certainty of those things, wherein thou hast been instructed.</p>
+            <p><strong>5</strong> There was in the days of Herod, the king of Judaea, a certain priest named Zacharias, of the course of Abia: and his wife was of the daughters of Aaron, and her name was Elisabeth.</p>
+            <p><strong>6</strong> And they were both righteous before God, walking in all the commandments and ordinances of the Lord blameless.</p>
+            <p><strong>7</strong> And they had no child, because that Elisabeth was barren, and they both were now well stricken in years.</p>
+            <p><strong>8</strong> And it came to pass, that while he executed the priest’s office before God in the order of his course,</p>
+            <p><strong>9</strong> According to the custom of the priest’s office, his lot was to burn incense when he went into the temple of the Lord.</p>
+            <p><strong>10</strong> And the whole multitude of the people were praying without at the time of incense.</p>
+            <p><strong>11</strong> And there appeared unto him an angel of the Lord standing on the right side of the altar of incense.</p>
+            <p><strong>12</strong> And when Zacharias saw him, he was troubled, and fear fell upon him.</p>
+            <p><strong>13</strong> But the angel said unto him, Fear not, Zacharias: for thy prayer is heard; and thy wife Elisabeth shall bear thee a son, and thou shalt call his name John.</p>
+            <p><strong>14</strong> And thou shalt have joy and gladness; and many shall rejoice at his birth.</p>
+            <p><strong>15</strong> For he shall be great in the sight of the Lord, and shall drink neither wine nor strong drink; and he shall be filled with the Holy Ghost, even from his mother’s womb.</p>
+            <p><strong>16</strong> And many of the children of Israel shall he turn to the Lord their God.</p>
+            <p><strong>17</strong> And he shall go before him in the spirit and power of Elias, to turn the hearts of the fathers to the children, and the disobedient to the wisdom of the just; to make ready a people prepared for the Lord.</p>
+            <p><strong>18</strong> And Zacharias said unto the angel, Whereby shall I know this? for I am an old man, and my wife well stricken in years.</p>
+            <p><strong>19</strong> And the angel answering said unto him, I am Gabriel, that stand in the presence of God; and am sent to speak unto thee, and to shew thee these glad tidings.</p>
+            <p><strong>20</strong> And, behold, thou shalt be dumb, and not able to speak, until the day that these things shall be performed, because thou believest not my words, which shall be fulfilled in their season.</p>
+            <p><strong>21</strong> And the people waited for Zacharias, and marvelled that he tarried so long in the temple.</p>
+            <p><strong>22</strong> And when he came out, he could not speak unto them: and they perceived that he had seen a vision in the temple: for he beckoned unto them, and remained speechless.</p>
+            <p><strong>23</strong> And it came to pass, that, as soon as the days of his ministration were accomplished, he departed to his own house.</p>
+            <p><strong>24</strong> And after those days his wife Elisabeth conceived, and hid herself five months, saying,</p>
+            <p><strong>25</strong> Thus hath the Lord dealt with me in the days wherein he looked on me, to take away my reproach among men.</p>
+            <p><strong>26</strong> And in the sixth month the angel Gabriel was sent from God unto a city of Galilee, named Nazareth,</p>
+            <p><strong>27</strong> To a virgin espoused to a man whose name was Joseph, of the house of David; and the virgin’s name was Mary.</p>
+            <p><strong>28</strong> And the angel came in unto her, and said, Hail, thou that art highly favoured, the Lord is with thee: blessed art thou among women.</p>
+            <p><strong>29</strong> And when she saw him, she was troubled at his saying, and cast in her mind what manner of salutation this should be.</p>
+            <p><strong>30</strong> And the angel said unto her, Fear not, Mary: for thou hast found favour with God.</p>
+            <p><strong>31</strong> And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS.</p>
+            <p><strong>32</strong> He shall be great, and shall be called the Son of the Highest: and the Lord God shall give unto him the throne of his father David:</p>
+            <p><strong>33</strong> And he shall reign over the house of Jacob for ever; and of his kingdom there shall be no end.</p>
+            <p><strong>34</strong> Then said Mary unto the angel, How shall this be, seeing I know not a man?</p>
+            <p><strong>35</strong> And the angel answered and said unto her, The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee: therefore also that holy thing which shall be born of thee shall be called the Son of God.</p>
+            <p><strong>36</strong> And, behold, thy cousin Elisabeth, she hath also conceived a son in her old age: and this is the sixth month with her, who was called barren.</p>
+            <p><strong>37</strong> For with God nothing shall be impossible.</p>
+            <p><strong>38</strong> And Mary said, Behold the handmaid of the Lord; be it unto me according to thy word. And the angel departed from her.</p>
+            <p><strong>39</strong> And Mary arose in those days, and went into the hill country with haste, into a city of Juda;</p>
+            <p><strong>40</strong> And entered into the house of Zacharias, and saluted Elisabeth.</p>
+            <p><strong>41</strong> And it came to pass, that, when Elisabeth heard the salutation of Mary, the babe leaped in her womb; and Elisabeth was filled with the Holy Ghost:</p>
+            <p><strong>42</strong> And she spake out with a loud voice, and said, Blessed art thou among women, and blessed is the fruit of thy womb.</p>
+            <p><strong>43</strong> And whence is this to me, that the mother of my Lord should come to me?</p>
+            <p><strong>44</strong> For, lo, as soon as the voice of thy salutation sounded in mine ears, the babe leaped in my womb for joy.</p>
+            <p><strong>45</strong> And blessed is she that believed: for there shall be a performance of those things which were told her from the Lord.</p>
+            <p><strong>46</strong> And Mary said, My soul doth magnify the Lord,</p>
+            <p><strong>47</strong> And my spirit hath rejoiced in God my Saviour.</p>
+            <p><strong>48</strong> For he hath regarded the low estate of his handmaiden: for, behold, from henceforth all generations shall call me blessed.</p>
+            <p><strong>49</strong> For he that is mighty hath done to me great things; and holy is his name.</p>
+            <p><strong>50</strong> And his mercy is on them that fear him from generation to generation.</p>
+            <p><strong>51</strong> He hath shewed strength with his arm; he hath scattered the proud in the imagination of their hearts.</p>
+            <p><strong>52</strong> He hath put down the mighty from their seats, and exalted them of low degree.</p>
+            <p><strong>53</strong> He hath filled the hungry with good things; and the rich he hath sent empty away.</p>
+            <p><strong>54</strong> He hath holpen his servant Israel, in remembrance of his mercy;</p>
+            <p><strong>55</strong> As he spake to our fathers, to Abraham, and to his seed for ever.</p>
+            <p><strong>56</strong> And Mary abode with her about three months, and returned to her own house.</p>
+            <p><strong>57</strong> Now Elisabeth’s full time came that she should be delivered; and she brought forth a son.</p>
+            <p><strong>58</strong> And her neighbours and her cousins heard how the Lord had shewed great mercy upon her; and they rejoiced with her.</p>
+            <p><strong>59</strong> And it came to pass, that on the eighth day they came to circumcise the child; and they called him Zacharias, after the name of his father.</p>
+            <p><strong>60</strong> And his mother answered and said, Not so; but he shall be called John.</p>
+            <p><strong>61</strong> And they said unto her, There is none of thy kindred that is called by this name.</p>
+            <p><strong>62</strong> And they made signs to his father, how he would have him called.</p>
+            <p><strong>63</strong> And he asked for a writing table, and wrote, saying, His name is John. And they marvelled all.</p>
+            <p><strong>64</strong> And his mouth was opened immediately, and his tongue loosed, and he spake, and praised God.</p>
+            <p><strong>65</strong> And fear came on all that dwelt round about them: and all these sayings were noised abroad throughout all the hill country of Judaea.</p>
+            <p><strong>66</strong> And all they that heard them laid them up in their hearts, saying, What manner of child shall this be! And the hand of the Lord was with him.</p>
+            <p><strong>67</strong> And his father Zacharias was filled with the Holy Ghost, and prophesied, saying,</p>
+            <p><strong>68</strong> Blessed be the Lord God of Israel; for he hath visited and redeemed his people,</p>
+            <p><strong>69</strong> And hath raised up an horn of salvation for us in the house of his servant David;</p>
+            <p><strong>70</strong> As he spake by the mouth of his holy prophets, which have been since the world began:</p>
+            <p><strong>71</strong> That we should be saved from our enemies, and from the hand of all that hate us;</p>
+            <p><strong>72</strong> To perform the mercy promised to our fathers, and to remember his holy covenant;</p>
+            <p><strong>73</strong> The oath which he sware to our father Abraham,</p>
+            <p><strong>74</strong> That he would grant unto us, that we being delivered out of the hand of our enemies might serve him without fear,</p>
+            <p><strong>75</strong> In holiness and righteousness before him, all the days of our life.</p>
+            <p><strong>76</strong> And thou, child, shalt be called the prophet of the Highest: for thou shalt go before the face of the Lord to prepare his ways;</p>
+            <p><strong>77</strong> To give knowledge of salvation unto his people by the remission of their sins,</p>
+            <p><strong>78</strong> Through the tender mercy of our God; whereby the dayspring from on high hath visited us,</p>
+            <p><strong>79</strong> To give light to them that sit in darkness and in the shadow of death, to guide our feet into the way of peace.</p>
+            <p><strong>80</strong> And the child grew, and waxed strong in spirit, and was in the deserts till the day of his shewing unto Israel.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 1 (ASV)</p>
+            <p><strong>1</strong> Forasmuch as many have taken in hand to draw up a narrative concerning those matters which have been fulfilled among us,</p>
+            <p><strong>2</strong> even as they delivered them unto us, who from the beginning were eyewitnesses and ministers of the word,</p>
+            <p><strong>3</strong> it seemed good to me also, having traced the course of all things accurately from the first, to write unto thee in order, most excellent Theophilus;</p>
+            <p><strong>4</strong> that thou mightest know the certainty concerning the things wherein thou wast instructed.</p>
+            <p><strong>5</strong> There was in the days of Herod, king of Judaea, a certain priest named Zacharias, of the course of Abijah: and he had a wife of the daughters of Aaron, and her name was Elisabeth.</p>
+            <p><strong>6</strong> And they were both righteous before God, walking in all the commandments and ordinances of the Lord blameless.</p>
+            <p><strong>7</strong> And they had no child, because that Elisabeth was barren, and they both were [now] well stricken in years.</p>
+            <p><strong>8</strong> Now it came to pass, while he executed the priest`s office before God in the order of his course,</p>
+            <p><strong>9</strong> according to the custom of the priest`s office, his lot was to enter into the temple of the Lord and burn incense.</p>
+            <p><strong>10</strong> And the whole multitude of the people were praying without at the hour of incense.</p>
+            <p><strong>11</strong> And there appeared unto him an angel of the Lord standing on the right side of altar of incense.</p>
+            <p><strong>12</strong> And Zacharias was troubled when he saw [him], and fear fell upon him.</p>
+            <p><strong>13</strong> But the angel said unto him, Fear not, Zacharias: because thy supplication is heard, and thy wife Elisabeth shall bear thee a son, and thou shalt call his name John.</p>
+            <p><strong>14</strong> And thou shalt have joy and gladness; and many shall rejoice at his birth.</p>
+            <p><strong>15</strong> For he shall be great in the sight of the Lord, and he shall drink no wine nor strong drink; and he shall be filled with the Holy Spirit, even from his mother`s womb.</p>
+            <p><strong>16</strong> And many of the children of Israel shall be turn unto the Lord their God.</p>
+            <p><strong>17</strong> And he shall go before his face in the spirit and power of Elijah, to turn the hearts of the fathers to the children, and the disobedient [to walk] in the wisdom of the just; to make ready for the Lord a people prepared [for him].</p>
+            <p><strong>18</strong> And Zacharias said unto the angel, Whereby shall I know this? for I am an old man, and my wife well stricken in years.</p>
+            <p><strong>19</strong> And the angel answering said unto him, I am Gabriel, that stand in the presence of God; and I was sent to speak unto thee, and to bring thee these good tidings.</p>
+            <p><strong>20</strong> And behold, thou shalt be silent and not able to speak, until the day that these things shall come to pass, because thou believedst not my words, which shall be fulfilled in their season.</p>
+            <p><strong>21</strong> And the people were waiting for Zacharias, and they marvelled while he tarried in the temple.</p>
+            <p><strong>22</strong> And when he came out, he could not speak unto them: and they perceived that he had seen a vision in the temple: and he continued making signs unto them, and remained dumb.</p>
+            <p><strong>23</strong> And it came to pass, when the days of his ministration were fulfilled, he departed unto his house.</p>
+            <p><strong>24</strong> And after these days Elisabeth his wife conceived; and she hid herself five months, saying,</p>
+            <p><strong>25</strong> Thus hath the Lord done unto me in the days wherein he looked upon [me], to take away my reproach among men.</p>
+            <p><strong>26</strong> Now in the sixth month the angel Gabriel was sent from God unto a city of Galilee, named Nazareth,</p>
+            <p><strong>27</strong> to a virgin betrothed to a man whose name was Joseph, of the house of David; and the virgin`s name was Mary.</p>
+            <p><strong>28</strong> And he came in unto her, and said, Hail, thou that art highly favored, the Lord [is] with thee.</p>
+            <p><strong>29</strong> But she was greatly troubled at the saying, and cast in her mind what manner of salutation this might be.</p>
+            <p><strong>30</strong> And the angel said unto her, Fear not, Mary: for thou hast found favor with God.</p>
+            <p><strong>31</strong> And behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS.</p>
+            <p><strong>32</strong> He shall be great, and shall be called the Son of the Most High: and the Lord God shall give unto him the throne of his father David:</p>
+            <p><strong>33</strong> and he shall reign over the house of Jacob for ever; and of his kingdom there shall be no end.</p>
+            <p><strong>34</strong> And Mary said unto the angel, How shall this be, seeing I know not a man?</p>
+            <p><strong>35</strong> And the angel answered and said unto her, The Holy Spirit shall come upon thee, and the power of the Most High shall overshadow thee: wherefore also the holy thing which is begotten shall be called the Son of God.</p>
+            <p><strong>36</strong> And behold, Elisabeth thy kinswoman, she also hath conceived a son in her old age; and this is the sixth month with her that was called barren.</p>
+            <p><strong>37</strong> For no word from God shall be void of power.</p>
+            <p><strong>38</strong> And Mary said, Behold, the handmaid of the Lord; be it unto me according to thy word. And the angel departed from her.</p>
+            <p><strong>39</strong> And Mary arose in these days and went into the hill country with haste, into a city of Judah;</p>
+            <p><strong>40</strong> and entered into the house of Zacharias and saluted Elisabeth.</p>
+            <p><strong>41</strong> And it came to pass, when Elisabeth heard the salutation of Mary, the babe leaped in her womb; and Elisabeth was filled with the Holy Spirit;</p>
+            <p><strong>42</strong> and she lifted up her voice with a loud cry, and said, Blessed [art] thou among women, and blessed [is] the fruit of thy womb.</p>
+            <p><strong>43</strong> And whence is this to me, that the mother of my Lord should come unto me?</p>
+            <p><strong>44</strong> For behold, when the voice of thy salutation came into mine ears, the babe leaped in my womb for joy.</p>
+            <p><strong>45</strong> And blessed [is] she that believed; for there shall be a fulfilment of the things which have been spoken to her from the Lord.</p>
+            <p><strong>46</strong> And Mary said, My soul doth magnify the Lord,</p>
+            <p><strong>47</strong> And my spirit hath rejoiced in God my Saviour.</p>
+            <p><strong>48</strong> For he hath looked upon the low estate of his handmaid: For behold, from henceforth all generations shall call me blessed.</p>
+            <p><strong>49</strong> For he that is mighty hath done to me great things; And holy is his name.</p>
+            <p><strong>50</strong> And his mercy is unto generations and generations On them that fear him.</p>
+            <p><strong>51</strong> He hath showed strength with his arm; He hath scattered the proud in the imagination of their heart.</p>
+            <p><strong>52</strong> He hath put down princes from [their] thrones, And hath exalted them of low degree.</p>
+            <p><strong>53</strong> The hungry he hath filled with good things; And the rich he hath sent empty away.</p>
+            <p><strong>54</strong> He hath given help to Israel his servant, That he might remember mercy</p>
+            <p><strong>55</strong> (As he spake unto our fathers) Toward Abraham and his seed for ever.</p>
+            <p><strong>56</strong> And Mary abode with her about three months, and returned unto her house.</p>
+            <p><strong>57</strong> Now Elisabeth`s time was fulfilled that she should be delivered; and she brought forth a son.</p>
+            <p><strong>58</strong> And her neighbors and her kinsfolk heard that the Lord had magnified his mercy towards her; and they rejoiced with her.</p>
+            <p><strong>59</strong> And it came to pass on the eighth day, that they came to circumcise the child; and they would have called him Zacharias, after the name of the father.</p>
+            <p><strong>60</strong> And his mother answered and said, Not so; but he shall be called John.</p>
+            <p><strong>61</strong> And they said unto her, There is none of thy kindred that is called by this name.</p>
+            <p><strong>62</strong> And they made signs to his father, what he would have him called.</p>
+            <p><strong>63</strong> And he asked for a writing tablet, and wrote, saying, His name is John. And they marvelled all.</p>
+            <p><strong>64</strong> And his mouth was opened immediately, and his tongue [loosed], and he spake, blessing God.</p>
+            <p><strong>65</strong> And fear came on all that dwelt round about them: and all these sayings were noised abroad throughout all the hill country of Judaea.</p>
+            <p><strong>66</strong> And all that heard them laid them up in their heart, saying, What then shall this child be? For the hand of the Lord was with him.</p>
+            <p><strong>67</strong> And his father Zacharias was filled with the Holy Spirit, and prophesied, saying,</p>
+            <p><strong>68</strong> Blessed [be] the Lord, the God of Israel; For he hath visited and wrought redemption for his people,</p>
+            <p><strong>69</strong> And hath raised up a horn of salvation for us In the house of his servant David</p>
+            <p><strong>70</strong> (As he spake by the mouth of his holy prophets that have been from of old),</p>
+            <p><strong>71</strong> Salvation from our enemies, and from the hand of all that hate us;</p>
+            <p><strong>72</strong> To show mercy towards, our fathers, And to remember his holy covenant;</p>
+            <p><strong>73</strong> The oath which he spake unto Abraham our father,</p>
+            <p><strong>74</strong> To grant unto us that we being delivered out of the hand of our enemies Should serve him without fear,</p>
+            <p><strong>75</strong> In holiness and righteousness before him all our days.</p>
+            <p><strong>76</strong> Yea and thou, child, shalt be called the prophet of the Most High: For thou shalt go before the face of the Lord to make ready his ways;</p>
+            <p><strong>77</strong> To give knowledge of salvation unto his people In the remission of their sins,</p>
+            <p><strong>78</strong> Because of the tender mercy of our God, Whereby the dayspring from on high shall visit us,</p>
+            <p><strong>79</strong> To shine upon them that sit in darkness and the shadow of death; To guide our feet into the way of peace.</p>
+            <p><strong>80</strong> And the child grew, and waxed strong in spirit, and was in the deserts till the day of his showing unto Israel.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Luke writes an orderly account so that Theophilus may know the certainty of what he has been taught. He begins with Zacharias, a faithful priest who, while serving in the temple, is told by the angel Gabriel that his elderly wife Elizabeth will bear a son named John, who will prepare the Lord's people. Because he doubts, Zacharias is struck silent. Six months later Gabriel comes to a young virgin in Nazareth, Mary, announcing that she will conceive by the Holy Spirit and bear the Son of the Most High, whose kingdom will never end. Mary humbly consents and visits Elizabeth, whose unborn child leaps for joy. Mary sings the Magnificat, praising God's mercy to the lowly. John is born, Zacharias's speech returns, and he prophesies that his son will go before the Lord to give knowledge of salvation.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Gabriel</strong> — The angel who announces the births of John and of Jesus, the Son of the Most High.</li>
+          <li><strong>Zacharias</strong> — A faithful priest struck mute for doubting, who later prophesies over his son John.</li>
+          <li><strong>Elizabeth</strong> — Zacharias's elderly wife who conceives John and blesses Mary as the mother of her Lord.</li>
+          <li><strong>Mary</strong> — The young virgin of Nazareth who humbly receives God's call and sings the Magnificat.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 1:37 (WEB)</p>
+          <p class="verse__text">For nothing spoken by God is impossible.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God remembers and acts on his ancient promises in his own perfect timing.</li>
+          <li>Faith responds to God's word with trust, even when the news seems impossible.</li>
+          <li>God lifts up the lowly and fills the humble with good things.</li>
+          <li>Salvation is born out of God's tender mercy, not human worthiness.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>God hears prayers we may have stopped praying.</strong> Gabriel tells Zacharias, 'your prayer is heard, and your wife Elizabeth will bear you a son' (Luke 1:13, WEB), long after hope had faded.</li>
+            <li><strong>Nothing is impossible with God.</strong> Gabriel assures Mary that 'no word from God will be void of power' (Luke 1:37, WEB), for the same God who opened a barren womb will overshadow a virgin.</li>
+            <li><strong>Humble surrender is the posture of faith.</strong> Mary answers, 'Behold, the servant of the Lord; let it be done to me according to your word' (Luke 1:38, WEB).</li>
+            <li><strong>God exalts the lowly and scatters the proud.</strong> Mary sings that he 'has put down princes from their thrones, and has exalted the lowly' (Luke 1:52, WEB).</li>
+            <li><strong>Salvation flows from God's tender mercy.</strong> Zacharias prophesies that 'because of the tender mercy of our God' the dawn from on high will visit his people (Luke 1:78, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>How does Zacharias respond to Gabriel's announcement, and what is the result of his doubt?</li>
+            <li>What does Gabriel reveal about the identity and reign of the child Mary will bear?</li>
+            <li>How does Mary's response to the angel differ from Zacharias's, and what does her song celebrate?</li>
+            <li>What does Zacharias prophesy about his son John once his speech is restored?</li>
+            <li>Where in your own life is God asking you to trust a promise that seems impossible?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Zacharias asks how he can be sure, since he and Elizabeth are old, and Gabriel tells him he will be unable to speak until the promise is fulfilled (Luke 1:18-20). His silence becomes both a discipline and a sign that God's word will surely come to pass.</li>
+            <li>Gabriel says the child will be great, called the Son of the Most High, given the throne of his father David, and that 'of his Kingdom there will be no end' (Luke 1:32-33). This reveals Jesus as the promised eternal King.</li>
+            <li>Mary asks how this will be yet yields in faith, calling herself the Lord's servant (Luke 1:38). Her Magnificat celebrates God's mercy, his regard for the lowly, and his faithfulness to Abraham's offspring (Luke 1:46-55).</li>
+            <li>Filled with the Holy Spirit, Zacharias blesses God for visiting and redeeming his people, and prophesies that John will be called prophet of the Most High to prepare the Lord's way and give knowledge of salvation (Luke 1:76-77).</li>
+            <li>This is a personal application question. Invite members to name a promise or hope that feels beyond reach, and to bring it honestly to God. As leader, encourage faith like Mary's and remind the group that nothing is impossible with God, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-2.html">Luke 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

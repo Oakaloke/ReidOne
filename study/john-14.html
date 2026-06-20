@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 14: I Am the Way, the Truth, and the Life — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 14: Jesus comforts his troubled disciples, reveals himself as the only way to the Father, and promises the coming of the Holy Spirit and his peace." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 14
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 14</span>
+        <h1>John 14: I Am the Way, the Truth, and the Life</h1>
+        <p class="lead">Jesus comforts his troubled disciples, reveals himself as the only way to the Father, and promises the coming of the Holy Spirit and his peace.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-14">
+            <span>Scripture — John Chapter 14</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-14">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-14-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-14-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-14-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-14-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 14 (WEB)</p>
+            <p><strong>1</strong> “Don’t let your heart be troubled. Believe in God. Believe also in me.</p>
+            <p><strong>2</strong> In my Father’s house are many homes. If it weren’t so, I would have told you. I am going to prepare a place for you.</p>
+            <p><strong>3</strong> If I go and prepare a place for you, I will come again, and will receive you to myself; that where I am, you may be there also.</p>
+            <p><strong>4</strong> Where I go, you know, and you know the way.”</p>
+            <p><strong>5</strong> Thomas said to him, “Lord, we don’t know where you are going. How can we know the way?”</p>
+            <p><strong>6</strong> Jesus said to him, “I am the way, the truth, and the life. No one comes to the Father, except through me.</p>
+            <p><strong>7</strong> If you had known me, you would have known my Father also. From now on, you know him, and have seen him.”</p>
+            <p><strong>8</strong> Philip said to him, “Lord, show us the Father, and that will be enough for us.”</p>
+            <p><strong>9</strong> Jesus said to him, “Have I been with you such a long time, and do you not know me, Philip? He who has seen me has seen the Father. How do you say, ‘Show us the Father?’</p>
+            <p><strong>10</strong> Don’t you believe that I am in the Father, and the Father in me? The words that I tell you, I speak not from myself; but the Father who lives in me does his works.</p>
+            <p><strong>11</strong> Believe me that I am in the Father, and the Father in me; or else believe me for the very works’ sake.</p>
+            <p><strong>12</strong> Most certainly I tell you, he who believes in me, the works that I do, he will do also; and he will do greater works than these, because I am going to my Father.</p>
+            <p><strong>13</strong> Whatever you will ask in my name, that will I do, that the Father may be glorified in the Son.</p>
+            <p><strong>14</strong> If you will ask anything in my name, I will do it.</p>
+            <p><strong>15</strong> If you love me, keep my commandments.</p>
+            <p><strong>16</strong> I will pray to the Father, and he will give you another Counselor, that he may be with you forever,—</p>
+            <p><strong>17</strong> the Spirit of truth, whom the world can’t receive; for it doesn’t see him, neither knows him. You know him, for he lives with you, and will be in you.</p>
+            <p><strong>18</strong> I will not leave you orphans. I will come to you.</p>
+            <p><strong>19</strong> Yet a little while, and the world will see me no more; but you will see me. Because I live, you will live also.</p>
+            <p><strong>20</strong> In that day you will know that I am in my Father, and you in me, and I in you.</p>
+            <p><strong>21</strong> One who has my commandments, and keeps them, that person is one who loves me. One who loves me will be loved by my Father, and I will love him, and will reveal myself to him.”</p>
+            <p><strong>22</strong> Judas (not Iscariot) said to him, “Lord, what has happened that you are about to reveal yourself to us, and not to the world?”</p>
+            <p><strong>23</strong> Jesus answered him, “If a man loves me, he will keep my word. My Father will love him, and we will come to him, and make our home with him.</p>
+            <p><strong>24</strong> He who doesn’t love me doesn’t keep my words. The word which you hear isn’t mine, but the Father’s who sent me.</p>
+            <p><strong>25</strong> I have said these things to you, while still living with you.</p>
+            <p><strong>26</strong> But the Counselor, the Holy Spirit, whom the Father will send in my name, he will teach you all things, and will remind you of all that I said to you.</p>
+            <p><strong>27</strong> Peace I leave with you. My peace I give to you; not as the world gives, give I to you. Don’t let your heart be troubled, neither let it be fearful.</p>
+            <p><strong>28</strong> You heard how I told you, ‘I go away, and I come to you.’ If you loved me, you would have rejoiced, because I said ‘I am going to my Father;’ for the Father is greater than I.</p>
+            <p><strong>29</strong> Now I have told you before it happens so that, when it happens, you may believe.</p>
+            <p><strong>30</strong> I will no more speak much with you, for the prince of the world comes, and he has nothing in me.</p>
+            <p><strong>31</strong> But that the world may know that I love the Father, and as the Father commanded me, even so I do. Arise, let us go from here.</p>
+            </div>
+            <div class="scripture-text" id="web-14-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 14 (KJV)</p>
+            <p><strong>1</strong> Let not your heart be troubled: ye believe in God, believe also in me.</p>
+            <p><strong>2</strong> In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you.</p>
+            <p><strong>3</strong> And if I go and prepare a place for you, I will come again, and receive you unto myself; that where I am, there ye may be also.</p>
+            <p><strong>4</strong> And whither I go ye know, and the way ye know.</p>
+            <p><strong>5</strong> Thomas saith unto him, Lord, we know not whither thou goest; and how can we know the way?</p>
+            <p><strong>6</strong> Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.</p>
+            <p><strong>7</strong> If ye had known me, ye should have known my Father also: and from henceforth ye know him, and have seen him.</p>
+            <p><strong>8</strong> Philip saith unto him, Lord, shew us the Father, and it sufficeth us.</p>
+            <p><strong>9</strong> Jesus saith unto him, Have I been so long time with you, and yet hast thou not known me, Philip? he that hath seen me hath seen the Father; and how sayest thou then, Shew us the Father?</p>
+            <p><strong>10</strong> Believest thou not that I am in the Father, and the Father in me? the words that I speak unto you I speak not of myself: but the Father that dwelleth in me, he doeth the works.</p>
+            <p><strong>11</strong> Believe me that I am in the Father, and the Father in me: or else believe me for the very works’ sake.</p>
+            <p><strong>12</strong> Verily, verily, I say unto you, He that believeth on me, the works that I do shall he do also; and greater works than these shall he do; because I go unto my Father.</p>
+            <p><strong>13</strong> And whatsoever ye shall ask in my name, that will I do, that the Father may be glorified in the Son.</p>
+            <p><strong>14</strong> If ye shall ask any thing in my name, I will do it.</p>
+            <p><strong>15</strong> If ye love me, keep my commandments.</p>
+            <p><strong>16</strong> And I will pray the Father, and he shall give you another Comforter, that he may abide with you for ever;</p>
+            <p><strong>17</strong> Even the Spirit of truth; whom the world cannot receive, because it seeth him not, neither knoweth him: but ye know him; for he dwelleth with you, and shall be in you.</p>
+            <p><strong>18</strong> I will not leave you comfortless: I will come to you.</p>
+            <p><strong>19</strong> Yet a little while, and the world seeth me no more; but ye see me: because I live, ye shall live also.</p>
+            <p><strong>20</strong> At that day ye shall know that I am in my Father, and ye in me, and I in you.</p>
+            <p><strong>21</strong> He that hath my commandments, and keepeth them, he it is that loveth me: and he that loveth me shall be loved of my Father, and I will love him, and will manifest myself to him.</p>
+            <p><strong>22</strong> Judas saith unto him, not Iscariot, Lord, how is it that thou wilt manifest thyself unto us, and not unto the world?</p>
+            <p><strong>23</strong> Jesus answered and said unto him, If a man love me, he will keep my words: and my Father will love him, and we will come unto him, and make our abode with him.</p>
+            <p><strong>24</strong> He that loveth me not keepeth not my sayings: and the word which ye hear is not mine, but the Father’s which sent me.</p>
+            <p><strong>25</strong> These things have I spoken unto you, being yet present with you.</p>
+            <p><strong>26</strong> But the Comforter, which is the Holy Ghost, whom the Father will send in my name, he shall teach you all things, and bring all things to your remembrance, whatsoever I have said unto you.</p>
+            <p><strong>27</strong> Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.</p>
+            <p><strong>28</strong> Ye have heard how I said unto you, I go away, and come again unto you. If ye loved me, ye would rejoice, because I said, I go unto the Father: for my Father is greater than I.</p>
+            <p><strong>29</strong> And now I have told you before it come to pass, that, when it is come to pass, ye might believe.</p>
+            <p><strong>30</strong> Hereafter I will not talk much with you: for the prince of this world cometh, and hath nothing in me.</p>
+            <p><strong>31</strong> But that the world may know that I love the Father; and as the Father gave me commandment, even so I do. Arise, let us go hence.</p>
+            </div>
+            <div class="scripture-text" id="web-14-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 14 (ASV)</p>
+            <p><strong>1</strong> Let not your heart be troubled: believe in God, believe also in me.</p>
+            <p><strong>2</strong> In my Father`s house are many mansions; if it were not so, I would have told you; for I go to prepare a place for you.</p>
+            <p><strong>3</strong> And if I go and prepare a place for you, I come again, and will receive you unto myself; that where I am, [there] ye may be also.</p>
+            <p><strong>4</strong> And whither I go, ye know the way.</p>
+            <p><strong>5</strong> Thomas saith unto him, Lord, we know not whither thou goest; how know we the way?</p>
+            <p><strong>6</strong> Jesus saith unto him, I am the way, and the truth, and the life: no one cometh unto the Father, but by me.</p>
+            <p><strong>7</strong> If ye had known me, ye would have known my Father also: from henceforth ye know him, and have seen him.</p>
+            <p><strong>8</strong> Philip saith unto him, Lord, show us the Father, and it sufficeth us.</p>
+            <p><strong>9</strong> Jesus saith unto him, Have I been so long time with you, and dost thou not know me, Philip? he that hath seen me hath seen the Father; how sayest thou, Show us the Father?</p>
+            <p><strong>10</strong> Believest thou not that I am in the Father, and the Father in me? the words that I say unto you I speak not from myself: but the Father abiding in me doeth his works.</p>
+            <p><strong>11</strong> Believe me that I am in the Father, and the Father in me: or else believe me for the very works` sake.</p>
+            <p><strong>12</strong> Verily, verily, I say unto you, he that believeth on me, the works that I do shall he do also; and greater [works] than these shall he do; because I go unto the Father.</p>
+            <p><strong>13</strong> And whatsoever ye shall ask in my name, that will I do, that the Father may be glorified in the Son.</p>
+            <p><strong>14</strong> If ye shall ask anything in my name, that will I do.</p>
+            <p><strong>15</strong> If ye love me, ye will keep my commandments.</p>
+            <p><strong>16</strong> And I will pray the Father, and he shall give you another Comforter, that he may be with you for ever,</p>
+            <p><strong>17</strong> [even] the Spirit of truth: whom the world cannot receive; for it beholdeth him not, neither knoweth him: ye know him; for he abideth with you, and shall be in you.</p>
+            <p><strong>18</strong> I will not leave you desolate: I come unto you.</p>
+            <p><strong>19</strong> Yet a little while, and the world beholdeth me no more; but ye behold me: because I live, ye shall live also.</p>
+            <p><strong>20</strong> In that day ye shall know that I am in my Father, and ye in me, and I in you.</p>
+            <p><strong>21</strong> He that hath my commandments, and keepeth them, he it is that loveth me: and he that loveth me shall be loved of my Father, and I will love him, and will manifest myself unto him.</p>
+            <p><strong>22</strong> Judas (not Iscariot) saith unto him, Lord, what is come to pass that thou wilt manifest thyself unto us, and not unto the world?</p>
+            <p><strong>23</strong> Jesus answered and said unto him, If a man love me, he will keep my word: and my Father will love him, and we will come unto him, and make our abode with him.</p>
+            <p><strong>24</strong> He that loveth me not keepeth not my words: and the word which ye hear is not mine, but the Father`s who sent me.</p>
+            <p><strong>25</strong> These things have I spoken unto you, while [yet] abiding with you.</p>
+            <p><strong>26</strong> But the Comforter, [even] the Holy Spirit, whom the Father will send in my name, he shall teach you all things, and bring to your remembrance all that I said unto you.</p>
+            <p><strong>27</strong> Peace I leave with you; my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be fearful.</p>
+            <p><strong>28</strong> Ye heard how I said to you, I go away, and I come unto you. If ye loved me, ye would have rejoiced, because I go unto the Father: for the Father is greater than I.</p>
+            <p><strong>29</strong> And now I have told you before it come to pass, that, when it is come to pass, ye may believe.</p>
+            <p><strong>30</strong> I will no more speak much with you, for the prince of the world cometh: and he hath nothing in me;</p>
+            <p><strong>31</strong> but that the world may know that I love the Father, and as the Father gave me commandment, even so I do. Arise, let us go hence.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus comforts his disciples, telling them not to let their hearts be troubled but to trust in God and in him. He is going to prepare a place in his Father's house and will come again to receive them to himself. When Thomas asks how they can know the way, Jesus declares, I am the way, the truth, and the life; no one comes to the Father except through him. Philip asks to be shown the Father, and Jesus answers that whoever has seen him has seen the Father, for he and the Father dwell in one another. He promises that those who love him and keep his commandments will receive another Helper, the Holy Spirit, who will teach and remind them of all he said. Jesus leaves them his peace, not as the world gives, and tells them not to be afraid, for he goes to the Father.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Comforts his disciples and reveals himself as the way, the truth, and the life, the only path to the Father.</li>
+          <li><strong>Thomas</strong> — Asks how they can know the way, prompting Jesus' great I AM declaration.</li>
+          <li><strong>Philip</strong> — Asks Jesus to show them the Father, and learns that to see Jesus is to see the Father.</li>
+          <li><strong>The Holy Spirit</strong> — The promised Helper whom the Father will send to teach and remind the disciples of all Jesus said.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 14:6 (WEB)</p>
+          <p class="verse__text">Jesus said to him, “I am the way, the truth, and the life. No one comes to the Father, except through me.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Trust in Jesus is the cure for troubled and fearful hearts.</li>
+          <li>Jesus is the one and only way to the Father, the truth, and the life.</li>
+          <li>To know and see Jesus is to know and see God the Father himself.</li>
+          <li>Christ does not leave us alone but gives the Holy Spirit and a peace the world cannot give.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-14">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-14">
+            <ul class="lesson-list">
+            <li><strong>Faith in Christ calms the troubled heart.</strong> Jesus says, 'Don't let your heart be troubled. Believe in God. Believe also in me' (John 14:1, WEB).</li>
+            <li><strong>Jesus is the only way to the Father.</strong> He declares, 'I am the way, the truth, and the life. No one comes to the Father, except through me' (John 14:6, WEB).</li>
+            <li><strong>To see Jesus is to see God.</strong> He tells Philip, 'He who has seen me has seen the Father' (John 14:9, WEB), revealing his oneness with the Father.</li>
+            <li><strong>Jesus sends the Holy Spirit to help us.</strong> He promises, 'The Father will send the Counselor, the Holy Spirit, in my name, who will teach you all things' (John 14:26, WEB).</li>
+            <li><strong>Christ gives a peace the world cannot match.</strong> Jesus says, 'Peace I leave with you. My peace I give to you... Don't let your heart be troubled, neither let it be fearful' (John 14:27, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-14">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-14">
+            <ol class="study-questions">
+            <li>How does Jesus comfort his disciples about his departure, and what does he promise them?</li>
+            <li>What does Jesus mean by calling himself the way, the truth, and the life, and why is it significant that no one comes to the Father except through him?</li>
+            <li>How does Jesus answer Philip's request to be shown the Father?</li>
+            <li>What does Jesus promise about the Holy Spirit, and what kind of peace does he leave with his disciples?</li>
+            <li>Where in your own life do you most need the peace of Christ that the world cannot give?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-14">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-14">
+            <ol class="study-questions">
+            <li>Jesus tells them not to be troubled but to trust him, promising he goes to prepare a place in his Father's house and will return for them (John 14:1-3). Their comfort rests not in their circumstances but in his presence and his promise to come again.</li>
+            <li>Jesus claims to be the only path to God, the embodiment of truth, and the source of life (John 14:6). To say no one comes to the Father except through him affirms that salvation is found in Christ alone, not in many roads but in one Person.</li>
+            <li>Jesus tells Philip that to have seen him is to have seen the Father, for the Father dwells in him and he in the Father (John 14:9-11). The disciples need not look elsewhere; the fullness of God is revealed in the face of Jesus.</li>
+            <li>Jesus promises the Father will send the Holy Spirit to teach them and remind them of all he said (John 14:26). He also leaves them his own peace, unlike the fragile peace the world offers, freeing them from fear (14:27).</li>
+            <li>This is a personal application question. Invite members to name where anxiety has crowded out peace, and to bring it to the One who says, Don't let your heart be troubled (John 14:27). As leader, encourage honest sharing, pray gently, and never press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-13.html">← John 13</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-15.html">John 15 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

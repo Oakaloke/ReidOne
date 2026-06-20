@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 18: Betrayal, Arrest, and Denial — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 18: Jesus is betrayed in the garden, arrested, questioned by the high priest and Pilate, while Peter denies him three times before the night is over." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 18
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 18</span>
+        <h1>John 18: Betrayal, Arrest, and Denial</h1>
+        <p class="lead">Jesus is betrayed in the garden, arrested, questioned by the high priest and Pilate, while Peter denies him three times before the night is over.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-18">
+            <span>Scripture — John Chapter 18</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-18">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-18-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-18-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-18-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-18-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 18 (WEB)</p>
+            <p><strong>1</strong> When Jesus had spoken these words, he went out with his disciples over the brook Kidron, where there was a garden, into which he and his disciples entered.</p>
+            <p><strong>2</strong> Now Judas, who betrayed him, also knew the place, for Jesus often met there with his disciples.</p>
+            <p><strong>3</strong> Judas then, having taken a detachment of soldiers and officers from the chief priests and the Pharisees, came there with lanterns, torches, and weapons.</p>
+            <p><strong>4</strong> Jesus therefore, knowing all the things that were happening to him, went out, and said to them, “Who are you looking for?”</p>
+            <p><strong>5</strong> They answered him, “Jesus of Nazareth.” Jesus said to them, “I am he.” Judas also, who betrayed him, was standing with them.</p>
+            <p><strong>6</strong> When therefore he said to them, “I am he,” they went backward, and fell to the ground.</p>
+            <p><strong>7</strong> Again therefore he asked them, “Who are you looking for?” They said, “Jesus of Nazareth.”</p>
+            <p><strong>8</strong> Jesus answered, “I told you that I am he. If therefore you seek me, let these go their way,”</p>
+            <p><strong>9</strong> that the word might be fulfilled which he spoke, “Of those whom you have given me, I have lost none.”</p>
+            <p><strong>10</strong> Simon Peter therefore, having a sword, drew it, and struck the high priest’s servant, and cut off his right ear. The servant’s name was Malchus.</p>
+            <p><strong>11</strong> Jesus therefore said to Peter, “Put the sword into its sheath. The cup which the Father has given me, shall I not surely drink it?”</p>
+            <p><strong>12</strong> So the detachment, the commanding officer, and the officers of the Jews, seized Jesus and bound him,</p>
+            <p><strong>13</strong> and led him to Annas first, for he was father-in-law to Caiaphas, who was high priest that year.</p>
+            <p><strong>14</strong> Now it was Caiaphas who advised the Jews that it was expedient that one man should perish for the people.</p>
+            <p><strong>15</strong> Simon Peter followed Jesus, as did another disciple. Now that disciple was known to the high priest, and entered in with Jesus into the court of the high priest;</p>
+            <p><strong>16</strong> but Peter was standing at the door outside. So the other disciple, who was known to the high priest, went out and spoke to her who kept the door, and brought in Peter.</p>
+            <p><strong>17</strong> Then the maid who kept the door said to Peter, “Are you also one of this man’s disciples?” He said, “I am not.”</p>
+            <p><strong>18</strong> Now the servants and the officers were standing there, having made a fire of coals, for it was cold. They were warming themselves. Peter was with them, standing and warming himself.</p>
+            <p><strong>19</strong> The high priest therefore asked Jesus about his disciples, and about his teaching.</p>
+            <p><strong>20</strong> Jesus answered him, “I spoke openly to the world. I always taught in synagogues, and in the temple, where the Jews always meet. I said nothing in secret.</p>
+            <p><strong>21</strong> Why do you ask me? Ask those who have heard me what I said to them. Behold, these know the things which I said.”</p>
+            <p><strong>22</strong> When he had said this, one of the officers standing by slapped Jesus with his hand, saying, “Do you answer the high priest like that?”</p>
+            <p><strong>23</strong> Jesus answered him, “If I have spoken evil, testify of the evil; but if well, why do you beat me?”</p>
+            <p><strong>24</strong> Annas sent him bound to Caiaphas, the high priest.</p>
+            <p><strong>25</strong> Now Simon Peter was standing and warming himself. They said therefore to him, “You aren’t also one of his disciples, are you?” He denied it, and said, “I am not.”</p>
+            <p><strong>26</strong> One of the servants of the high priest, being a relative of him whose ear Peter had cut off, said, “Didn’t I see you in the garden with him?”</p>
+            <p><strong>27</strong> Peter therefore denied it again, and immediately the rooster crowed.</p>
+            <p><strong>28</strong> They led Jesus therefore from Caiaphas into the Praetorium. It was early, and they themselves didn’t enter into the Praetorium, that they might not be defiled, but might eat the Passover.</p>
+            <p><strong>29</strong> Pilate therefore went out to them, and said, “What accusation do you bring against this man?”</p>
+            <p><strong>30</strong> They answered him, “If this man weren’t an evildoer, we wouldn’t have delivered him up to you.”</p>
+            <p><strong>31</strong> Pilate therefore said to them, “Take him yourselves, and judge him according to your law.” Therefore the Jews said to him, “It is not lawful for us to put anyone to death,”</p>
+            <p><strong>32</strong> that the word of Jesus might be fulfilled, which he spoke, signifying by what kind of death he should die.</p>
+            <p><strong>33</strong> Pilate therefore entered again into the Praetorium, called Jesus, and said to him, “Are you the King of the Jews?”</p>
+            <p><strong>34</strong> Jesus answered him, “Do you say this by yourself, or did others tell you about me?”</p>
+            <p><strong>35</strong> Pilate answered, “I’m not a Jew, am I? Your own nation and the chief priests delivered you to me. What have you done?”</p>
+            <p><strong>36</strong> Jesus answered, “My Kingdom is not of this world. If my Kingdom were of this world, then my servants would fight, that I wouldn’t be delivered to the Jews. But now my Kingdom is not from here.”</p>
+            <p><strong>37</strong> Pilate therefore said to him, “Are you a king then?” Jesus answered, “You say that I am a king. For this reason I have been born, and for this reason I have come into the world, that I should testify to the truth. Everyone who is of the truth listens to my voice.”</p>
+            <p><strong>38</strong> Pilate said to him, “What is truth?” When he had said this, he went out again to the Jews, and said to them, “I find no basis for a charge against him.</p>
+            <p><strong>39</strong> But you have a custom, that I should release someone to you at the Passover. Therefore, do you want me to release to you the King of the Jews?”</p>
+            <p><strong>40</strong> Then they all shouted again, saying, “Not this man, but Barabbas!” Now Barabbas was a robber.</p>
+            </div>
+            <div class="scripture-text" id="web-18-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 18 (KJV)</p>
+            <p><strong>1</strong> When Jesus had spoken these words, he went forth with his disciples over the brook Cedron, where was a garden, into the which he entered, and his disciples.</p>
+            <p><strong>2</strong> And Judas also, which betrayed him, knew the place: for Jesus ofttimes resorted thither with his disciples.</p>
+            <p><strong>3</strong> Judas then, having received a band of men and officers from the chief priests and Pharisees, cometh thither with lanterns and torches and weapons.</p>
+            <p><strong>4</strong> Jesus therefore, knowing all things that should come upon him, went forth, and said unto them, Whom seek ye?</p>
+            <p><strong>5</strong> They answered him, Jesus of Nazareth. Jesus saith unto them, I amhe. And Judas also, which betrayed him, stood with them.</p>
+            <p><strong>6</strong> As soon then as he had said unto them, I am he, they went backward, and fell to the ground.</p>
+            <p><strong>7</strong> Then asked he them again, Whom seek ye? And they said, Jesus of Nazareth.</p>
+            <p><strong>8</strong> Jesus answered, I have told you that I am he: if therefore ye seek me, let these go their way:</p>
+            <p><strong>9</strong> That the saying might be fulfilled, which he spake, Of them which thou gavest me have I lost none.</p>
+            <p><strong>10</strong> Then Simon Peter having a sword drew it, and smote the high priest’s servant, and cut off his right ear. The servant’s name was Malchus.</p>
+            <p><strong>11</strong> Then said Jesus unto Peter, Put up thy sword into the sheath: the cup which my Father hath given me, shall I not drink it?</p>
+            <p><strong>12</strong> Then the band and the captain and officers of the Jews took Jesus, and bound him,</p>
+            <p><strong>13</strong> And led him away to Annas first; for he was father in law to Caiaphas, which was the high priest that same year.</p>
+            <p><strong>14</strong> Now Caiaphas was he, which gave counsel to the Jews, that it was expedient that one man should die for the people.</p>
+            <p><strong>15</strong> And Simon Peter followed Jesus, and so did another disciple: that disciple was known unto the high priest, and went in with Jesus into the palace of the high priest.</p>
+            <p><strong>16</strong> But Peter stood at the door without. Then went out that other disciple, which was known unto the high priest, and spake unto her that kept the door, and brought in Peter.</p>
+            <p><strong>17</strong> Then saith the damsel that kept the door unto Peter, Art not thou also one of this man’s disciples? He saith, I am not.</p>
+            <p><strong>18</strong> And the servants and officers stood there, who had made a fire of coals; for it was cold: and they warmed themselves: and Peter stood with them, and warmed himself.</p>
+            <p><strong>19</strong> The high priest then asked Jesus of his disciples, and of his doctrine.</p>
+            <p><strong>20</strong> Jesus answered him, I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing.</p>
+            <p><strong>21</strong> Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said.</p>
+            <p><strong>22</strong> And when he had thus spoken, one of the officers which stood by struck Jesus with the palm of his hand, saying, Answerest thou the high priest so?</p>
+            <p><strong>23</strong> Jesus answered him, If I have spoken evil, bear witness of the evil: but if well, why smitest thou me?</p>
+            <p><strong>24</strong> Now Annas had sent him bound unto Caiaphas the high priest.</p>
+            <p><strong>25</strong> And Simon Peter stood and warmed himself. They said therefore unto him, Art not thou also one of his disciples? He denied it, and said, I am not.</p>
+            <p><strong>26</strong> One of the servants of the high priest, being his kinsman whose ear Peter cut off, saith, Did not I see thee in the garden with him?</p>
+            <p><strong>27</strong> Peter then denied again: and immediately the cock crew.</p>
+            <p><strong>28</strong> Then led they Jesus from Caiaphas unto the hall of judgment: and it was early; and they themselves went not into the judgment hall, lest they should be defiled; but that they might eat the passover.</p>
+            <p><strong>29</strong> Pilate then went out unto them, and said, What accusation bring ye against this man?</p>
+            <p><strong>30</strong> They answered and said unto him, If he were not a malefactor, we would not have delivered him up unto thee.</p>
+            <p><strong>31</strong> Then said Pilate unto them, Take ye him, and judge him according to your law. The Jews therefore said unto him, It is not lawful for us to put any man to death:</p>
+            <p><strong>32</strong> That the saying of Jesus might be fulfilled, which he spake, signifying what death he should die.</p>
+            <p><strong>33</strong> Then Pilate entered into the judgment hall again, and called Jesus, and said unto him, Art thou the King of the Jews?</p>
+            <p><strong>34</strong> Jesus answered him, Sayest thou this thing of thyself, or did others tell it thee of me?</p>
+            <p><strong>35</strong> Pilate answered, Am I a Jew? Thine own nation and the chief priests have delivered thee unto me: what hast thou done?</p>
+            <p><strong>36</strong> Jesus answered, My kingdom is not of this world: if my kingdom were of this world, then would my servants fight, that I should not be delivered to the Jews: but now is my kingdom not from hence.</p>
+            <p><strong>37</strong> Pilate therefore said unto him, Art thou a king then? Jesus answered, Thou sayest that I am a king. To this end was I born, and for this cause came I into the world, that I should bear witness unto the truth. Every one that is of the truth heareth my voice.</p>
+            <p><strong>38</strong> Pilate saith unto him, What is truth? And when he had said this, he went out again unto the Jews, and saith unto them, I find in him no fault at all.</p>
+            <p><strong>39</strong> But ye have a custom, that I should release unto you one at the passover: will ye therefore that I release unto you the King of the Jews?</p>
+            <p><strong>40</strong> Then cried they all again, saying, Not this man, but Barabbas. Now Barabbas was a robber.</p>
+            </div>
+            <div class="scripture-text" id="web-18-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 18 (ASV)</p>
+            <p><strong>1</strong> When Jesus had spoken these words, he went forth with his disciples over the brook Kidron, where was a garden, into which he entered, himself and his disciples.</p>
+            <p><strong>2</strong> Now Judas also, who betrayed him, knew the place: for Jesus oft-times resorted thither with his disciples.</p>
+            <p><strong>3</strong> Judas then, having received the band [of soldiers], and officers from the chief priests and the Pharisees, cometh thither with lanterns and torches and weapons.</p>
+            <p><strong>4</strong> Jesus therefore, knowing all the things that were coming upon him, went forth, and saith unto them, Whom seek ye?</p>
+            <p><strong>5</strong> They answered him, Jesus of Nazareth. Jesus saith unto them, I am [he]. And Judas also, who betrayed him, was standing with them.</p>
+            <p><strong>6</strong> When therefore he said unto them, I am [he], they went backward, and fell to the ground.</p>
+            <p><strong>7</strong> Again therefore he asked them, Whom seek ye? And they said, Jesus of Nazareth.</p>
+            <p><strong>8</strong> Jesus answered, I told you that I am [he]; if therefore ye seek me, let these go their way:</p>
+            <p><strong>9</strong> that the word might be fulfilled which he spake, Of those whom thou hast given me I lost not one.</p>
+            <p><strong>10</strong> Simon Peter therefore having a sword drew it, and struck the high priest`s servant, and cut off his right ear. Now the servant`s name was Malchus.</p>
+            <p><strong>11</strong> Jesus therefore said unto Peter, Put up the sword into the sheath: the cup which the Father hath given me, shall I not drink it?</p>
+            <p><strong>12</strong> So the band and the chief captain, and the officers of the Jews, seized Jesus and bound him,</p>
+            <p><strong>13</strong> and led him to Annas first; for he was father in law to Caiaphas, who was high priest that year.</p>
+            <p><strong>14</strong> Now Caiaphas was he that gave counsel to the Jews, that it was expedient that one man should die for the people.</p>
+            <p><strong>15</strong> And Simon Peter followed Jesus, and [so did] another disciple. Now that disciple was known unto the high priest, and entered in with Jesus into the court of the high priest;</p>
+            <p><strong>16</strong> but Peter was standing at the door without. So the other disciple, who was known unto the high priest, went out and spake unto her that kept the door, and brought in Peter.</p>
+            <p><strong>17</strong> The maid therefore that kept the door saith unto Peter, Art thou also [one] of this man`s disciples? He saith, I am not.</p>
+            <p><strong>18</strong> Now the servants and the officers were standing [there], having made a fire of coals; for it was cold; and they were warming themselves: and Peter also was with them, standing and warming himself.</p>
+            <p><strong>19</strong> The high priest therefore asked Jesus of his disciples, and of his teaching.</p>
+            <p><strong>20</strong> Jesus answered him, I have spoken openly to the world; I ever taught in synagogues, and in the temple, where all the Jews come together; and in secret spake I nothing.</p>
+            <p><strong>21</strong> Why askest thou me? Ask them that have heard [me], what I spake unto them: behold, these know the things which I said.</p>
+            <p><strong>22</strong> And when he had said this, one of the officers standing by struck Jesus with his hand, saying, Answerest thou the high priest so?</p>
+            <p><strong>23</strong> Jesus answered him, If I have spoken evil, bear witness of the evil: but if well, why smitest thou me?</p>
+            <p><strong>24</strong> Annas therefore sent him bound unto Caiaphas the high priest.</p>
+            <p><strong>25</strong> Now Simon Peter was standing and warming himself. They said therefore unto him, Art thou also [one] of his disciples? He denied, and said, I am not.</p>
+            <p><strong>26</strong> One of the servants of the high priest, being a kinsman of him whose ear Peter cut off, saith, Did not I see thee in the garden with him?</p>
+            <p><strong>27</strong> Peter therefore denied again: and straightway the cock crew.</p>
+            <p><strong>28</strong> They lead Jesus therefore from Caiaphas into the Praetorium: and it was early; and they themselves entered not into the Praetorium, that they might not be defiled, but might eat the passover.</p>
+            <p><strong>29</strong> Pilate therefore went out unto them, and saith, What accusation bring ye against this man?</p>
+            <p><strong>30</strong> They answered and said unto him, If this man were not an evildoer, we should not have delivered him up unto thee.</p>
+            <p><strong>31</strong> Pilate therefore said unto them, Take him yourselves, and judge him according to your law. The Jews said unto him, It is not lawful for us to put any man to death:</p>
+            <p><strong>32</strong> that the word of Jesus might be fulfilled, which he spake, signifying by what manner of death he should die.</p>
+            <p><strong>33</strong> Pilate therefore entered again into the Praetorium, and called Jesus, and said unto him, Art thou the King of the Jews?</p>
+            <p><strong>34</strong> Jesus answered, Sayest thou this of thyself, or did others tell it thee concerning me?</p>
+            <p><strong>35</strong> Pilate answered, Am I a Jew? Thine own nation and the chief priests delivered thee unto me: what hast thou done?</p>
+            <p><strong>36</strong> Jesus answered, My kingdom is not of this world: if my kingdom were of this world, then would my servants fight, that I should not be delivered to the Jews: but now is my kingdom not from hence.</p>
+            <p><strong>37</strong> Pilate therefore said unto him, Art thou a king then? Jesus answered, Thou sayest that I am a king. To this end have I been born, and to this end am I come into the world, that I should bear witness unto the truth. Every one that is of the truth heareth my voice.</p>
+            <p><strong>38</strong> Pilate saith unto him, What is truth? And when he had said this, he went out again unto the Jews, and saith unto them, I find no crime in him.</p>
+            <p><strong>39</strong> But ye have a custom, that I should release unto you one at the passover: will ye therefore that I release unto you the King of the Jews?</p>
+            <p><strong>40</strong> They cried out therefore again, saying, Not this man, but Barabbas. Now Barabbas was a robber.)</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus crosses the Kidron valley to a garden, where Judas arrives with soldiers and officers. When Jesus says, 'I am he,' the crowd draws back and falls to the ground, and he asks that his disciples be let go. Peter draws a sword and cuts off Malchus' ear, but Jesus tells him to put it away, for he will drink the cup the Father has given him. Jesus is bound and led first to Annas, then to Caiaphas the high priest, where he is questioned about his teaching and struck by an officer. Meanwhile Peter, warming himself by a fire, denies three times that he knows Jesus, and a rooster crows. Jesus is taken to the praetorium, and Pilate questions him about being king of the Jews. Jesus answers that his kingdom is not of this world and that he came to bear witness to the truth. Finding no guilt, Pilate offers to release him, but the crowd demands Barabbas instead.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord who willingly surrenders to arrest and testifies before the authorities to the truth of his kingdom.</li>
+          <li><strong>Peter</strong> — The disciple who strikes with a sword, then denies knowing Jesus three times.</li>
+          <li><strong>Judas</strong> — The betrayer who leads the soldiers and officers to arrest Jesus in the garden.</li>
+          <li><strong>Pilate</strong> — The Roman governor who questions Jesus, finds no guilt, yet yields to the crowd.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 18:37 (WEB)</p>
+          <p class="verse__text">Pilate therefore said to him, “Are you a king then?” Jesus answered, “You say that I am a king. For this reason I have been born, and for this reason I have come into the world, that I should testify to the truth. Everyone who is of the truth listens to my voice.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus goes to the cross willingly, in control even as he is handed over to his enemies.</li>
+          <li>True strength is not the sword but obedient surrender to the Father's will.</li>
+          <li>Even bold disciples can fall, as Peter's denials soberly remind us.</li>
+          <li>Jesus' kingdom is not of this world; he reigns by bearing witness to the truth.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-18">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-18">
+            <ul class="lesson-list">
+            <li><strong>Jesus willingly drinks the cup the Father gives.</strong> When Peter draws his sword, Jesus says, 'The cup which the Father has given me, shall I not surely drink it?' (John 18:11, WEB).</li>
+            <li><strong>Jesus is sovereign even in his arrest.</strong> At his words 'I am he,' the soldiers 'went backward and fell to the ground' (John 18:6, WEB), showing he is not taken against his will.</li>
+            <li><strong>Fear can lead even loyal disciples to deny their Lord.</strong> Pressed at the fire, Peter answers, 'I am not,' three times, and 'immediately the rooster crowed' (John 18:27, WEB).</li>
+            <li><strong>Christ's kingdom does not advance by worldly force.</strong> Jesus tells Pilate, 'My Kingdom is not of this world... but now my Kingdom is not from here' (John 18:36, WEB).</li>
+            <li><strong>Jesus came to bear witness to the truth.</strong> He says, 'For this reason I have been born... that I should testify to the truth' (John 18:37, WEB), though Pilate asks, 'What is truth?'</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-18">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-18">
+            <ol class="study-questions">
+            <li>How does Jesus show that he is in control during his arrest in the garden?</li>
+            <li>Why does Jesus rebuke Peter for using the sword, and what does it reveal about his mission?</li>
+            <li>What leads Peter to deny Jesus, and how does the scene contrast with his earlier boldness?</li>
+            <li>How does Jesus describe his kingdom to Pilate, and why does Pilate find no guilt in him?</li>
+            <li>Where in your own life are you tempted, like Peter, to stay quiet about Jesus when it feels costly?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-18">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-18">
+            <ol class="study-questions">
+            <li>When Jesus identifies himself, the armed crowd falls back to the ground (John 18:6). He asks that his disciples be released and freely accepts arrest, showing he lays down his life rather than having it taken (18:8-11).</li>
+            <li>Jesus tells Peter to sheath his sword, for he must drink the cup the Father has given him (John 18:11). His mission is to suffer and save, not to be defended by violence; the cross, not the blade, is the way.</li>
+            <li>Warming himself among Jesus' enemies, Peter is questioned and three times denies knowing him (John 18:17-27). The fisherman who promised to lay down his life now falters, a sober picture of how fear overtakes self-confidence.</li>
+            <li>Jesus says his kingdom is not of this world and that he came to testify to the truth (John 18:36-37). Because he claims no earthly throne and threatens no rebellion, Pilate declares, 'I find no basis for a charge against him' (18:38).</li>
+            <li>This is a personal application question. Invite members to consider where fear keeps them silent about Christ, and to receive grace rather than shame. As leader, point gently to Peter's later restoration and avoid pressing anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-17.html">← John 17</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-19.html">John 19 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

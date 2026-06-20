@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 24: He Is Risen Indeed — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 24: The tomb is empty, the risen Jesus walks with disciples on the Emmaus road and appears to his followers, then opens the Scriptures and ascends in blessing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 24
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 24</span>
+        <h1>Luke 24: He Is Risen Indeed</h1>
+        <p class="lead">The tomb is empty, the risen Jesus walks with disciples on the Emmaus road and appears to his followers, then opens the Scriptures and ascends in blessing.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-24">
+            <span>Scripture — Luke Chapter 24</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-24">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-24-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-24-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-24-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-24-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 24 (WEB)</p>
+            <p><strong>1</strong> But on the first day of the week, at early dawn, they and some others came to the tomb, bringing the spices which they had prepared.</p>
+            <p><strong>2</strong> They found the stone rolled away from the tomb.</p>
+            <p><strong>3</strong> They entered in, and didn’t find the Lord Jesus’ body.</p>
+            <p><strong>4</strong> While they were greatly perplexed about this, behold, two men stood by them in dazzling clothing.</p>
+            <p><strong>5</strong> Becoming terrified, they bowed their faces down to the earth. They said to them, “Why do you seek the living among the dead?</p>
+            <p><strong>6</strong> He isn’t here, but is risen. Remember what he told you when he was still in Galilee,</p>
+            <p><strong>7</strong> saying that the Son of Man must be delivered up into the hands of sinful men, and be crucified, and the third day rise again?”</p>
+            <p><strong>8</strong> They remembered his words,</p>
+            <p><strong>9</strong> returned from the tomb, and told all these things to the eleven, and to all the rest.</p>
+            <p><strong>10</strong> Now they were Mary Magdalene, Joanna, and Mary the mother of James. The other women with them told these things to the apostles.</p>
+            <p><strong>11</strong> These words seemed to them to be nonsense, and they didn’t believe them.</p>
+            <p><strong>12</strong> But Peter got up and ran to the tomb. Stooping and looking in, he saw the strips of linen lying by themselves, and he departed to his home, wondering what had happened.</p>
+            <p><strong>13</strong> Behold, two of them were going that very day to a village named Emmaus, which was sixty stadia from Jerusalem.</p>
+            <p><strong>14</strong> They talked with each other about all of these things which had happened.</p>
+            <p><strong>15</strong> While they talked and questioned together, Jesus himself came near, and went with them.</p>
+            <p><strong>16</strong> But their eyes were kept from recognizing him.</p>
+            <p><strong>17</strong> He said to them, “What are you talking about as you walk, and are sad?”</p>
+            <p><strong>18</strong> One of them, named Cleopas, answered him, “Are you the only stranger in Jerusalem who doesn’t know the things which have happened there in these days?”</p>
+            <p><strong>19</strong> He said to them, “What things?” They said to him, “The things concerning Jesus, the Nazarene, who was a prophet mighty in deed and word before God and all the people;</p>
+            <p><strong>20</strong> and how the chief priests and our rulers delivered him up to be condemned to death, and crucified him.</p>
+            <p><strong>21</strong> But we were hoping that it was he who would redeem Israel. Yes, and besides all this, it is now the third day since these things happened.</p>
+            <p><strong>22</strong> Also, certain women of our company amazed us, having arrived early at the tomb;</p>
+            <p><strong>23</strong> and when they didn’t find his body, they came saying that they had also seen a vision of angels, who said that he was alive.</p>
+            <p><strong>24</strong> Some of us went to the tomb, and found it just like the women had said, but they didn’t see him.”</p>
+            <p><strong>25</strong> He said to them, “Foolish men, and slow of heart to believe in all that the prophets have spoken!</p>
+            <p><strong>26</strong> Didn’t the Christ have to suffer these things and to enter into his glory?”</p>
+            <p><strong>27</strong> Beginning from Moses and from all the prophets, he explained to them in all the Scriptures the things concerning himself.</p>
+            <p><strong>28</strong> They came near to the village, where they were going, and he acted like he would go further.</p>
+            <p><strong>29</strong> They urged him, saying, “Stay with us, for it is almost evening, and the day is almost over.” He went in to stay with them.</p>
+            <p><strong>30</strong> When he had sat down at the table with them, he took the bread and gave thanks. Breaking it, he gave it to them.</p>
+            <p><strong>31</strong> Their eyes were opened, and they recognized him, and he vanished out of their sight.</p>
+            <p><strong>32</strong> They said to one another, “Weren’t our hearts burning within us, while he spoke to us along the way, and while he opened the Scriptures to us?”</p>
+            <p><strong>33</strong> They rose up that very hour, returned to Jerusalem, and found the eleven gathered together, and those who were with them,</p>
+            <p><strong>34</strong> saying, “The Lord is risen indeed, and has appeared to Simon!”</p>
+            <p><strong>35</strong> They related the things that happened along the way, and how he was recognized by them in the breaking of the bread.</p>
+            <p><strong>36</strong> As they said these things, Jesus himself stood among them, and said to them, “Peace be to you.”</p>
+            <p><strong>37</strong> But they were terrified and filled with fear, and supposed that they had seen a spirit.</p>
+            <p><strong>38</strong> He said to them, “Why are you troubled? Why do doubts arise in your hearts?</p>
+            <p><strong>39</strong> See my hands and my feet, that it is truly me. Touch me and see, for a spirit doesn’t have flesh and bones, as you see that I have.”</p>
+            <p><strong>40</strong> When he had said this, he showed them his hands and his feet.</p>
+            <p><strong>41</strong> While they still didn’t believe for joy, and wondered, he said to them, “Do you have anything here to eat?”</p>
+            <p><strong>42</strong> They gave him a piece of a broiled fish and some honeycomb.</p>
+            <p><strong>43</strong> He took them, and ate in front of them.</p>
+            <p><strong>44</strong> He said to them, “This is what I told you, while I was still with you, that all things which are written in the law of Moses, the prophets, and the psalms, concerning me must be fulfilled.”</p>
+            <p><strong>45</strong> Then he opened their minds, that they might understand the Scriptures.</p>
+            <p><strong>46</strong> He said to them, “Thus it is written, and thus it was necessary for the Christ to suffer and to rise from the dead the third day,</p>
+            <p><strong>47</strong> and that repentance and remission of sins should be preached in his name to all the nations, beginning at Jerusalem.</p>
+            <p><strong>48</strong> You are witnesses of these things.</p>
+            <p><strong>49</strong> Behold, I send out the promise of my Father on you. But wait in the city of Jerusalem until you are clothed with power from on high.”</p>
+            <p><strong>50</strong> He led them out as far as Bethany, and he lifted up his hands, and blessed them.</p>
+            <p><strong>51</strong> While he blessed them, he withdrew from them, and was carried up into heaven.</p>
+            <p><strong>52</strong> They worshiped him, and returned to Jerusalem with great joy,</p>
+            <p><strong>53</strong> and were continually in the temple, praising and blessing God. Amen.</p>
+            </div>
+            <div class="scripture-text" id="web-24-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 24 (KJV)</p>
+            <p><strong>1</strong> Now upon the first day of the week, very early in the morning, they came unto the sepulchre, bringing the spices which they had prepared, and certain others with them.</p>
+            <p><strong>2</strong> And they found the stone rolled away from the sepulchre.</p>
+            <p><strong>3</strong> And they entered in, and found not the body of the Lord Jesus.</p>
+            <p><strong>4</strong> And it came to pass, as they were much perplexed thereabout, behold, two men stood by them in shining garments:</p>
+            <p><strong>5</strong> And as they were afraid, and bowed down their faces to the earth, they said unto them, Why seek ye the living among the dead?</p>
+            <p><strong>6</strong> He is not here, but is risen: remember how he spake unto you when he was yet in Galilee,</p>
+            <p><strong>7</strong> Saying, The Son of man must be delivered into the hands of sinful men, and be crucified, and the third day rise again.</p>
+            <p><strong>8</strong> And they remembered his words,</p>
+            <p><strong>9</strong> And returned from the sepulchre, and told all these things unto the eleven, and to all the rest.</p>
+            <p><strong>10</strong> It was Mary Magdalene, and Joanna, and Mary the mother of James, and other women that were with them, which told these things unto the apostles.</p>
+            <p><strong>11</strong> And their words seemed to them as idle tales, and they believed them not.</p>
+            <p><strong>12</strong> Then arose Peter, and ran unto the sepulchre; and stooping down, he beheld the linen clothes laid by themselves, and departed, wondering in himself at that which was come to pass.</p>
+            <p><strong>13</strong> And, behold, two of them went that same day to a village called Emmaus, which was from Jerusalem about threescore furlongs.</p>
+            <p><strong>14</strong> And they talked together of all these things which had happened.</p>
+            <p><strong>15</strong> And it came to pass, that, while they communed together and reasoned, Jesus himself drew near, and went with them.</p>
+            <p><strong>16</strong> But their eyes were holden that they should not know him.</p>
+            <p><strong>17</strong> And he said unto them, What manner of communications are these that ye have one to another, as ye walk, and are sad?</p>
+            <p><strong>18</strong> And the one of them, whose name was Cleopas, answering said unto him, Art thou only a stranger in Jerusalem, and hast not known the things which are come to pass there in these days?</p>
+            <p><strong>19</strong> And he said unto them, What things? And they said unto him, Concerning Jesus of Nazareth, which was a prophet mighty in deed and word before God and all the people:</p>
+            <p><strong>20</strong> And how the chief priests and our rulers delivered him to be condemned to death, and have crucified him.</p>
+            <p><strong>21</strong> But we trusted that it had been he which should have redeemed Israel: and beside all this, to day is the third day since these things were done.</p>
+            <p><strong>22</strong> Yea, and certain women also of our company made us astonished, which were early at the sepulchre;</p>
+            <p><strong>23</strong> And when they found not his body, they came, saying, that they had also seen a vision of angels, which said that he was alive.</p>
+            <p><strong>24</strong> And certain of them which were with us went to the sepulchre, and found it even so as the women had said: but him they saw not.</p>
+            <p><strong>25</strong> Then he said unto them, O fools, and slow of heart to believe all that the prophets have spoken:</p>
+            <p><strong>26</strong> Ought not Christ to have suffered these things, and to enter into his glory?</p>
+            <p><strong>27</strong> And beginning at Moses and all the prophets, he expounded unto them in all the scriptures the things concerning himself.</p>
+            <p><strong>28</strong> And they drew nigh unto the village, whither they went: and he made as though he would have gone further.</p>
+            <p><strong>29</strong> But they constrained him, saying, Abide with us: for it is toward evening, and the day is far spent. And he went in to tarry with them.</p>
+            <p><strong>30</strong> And it came to pass, as he sat at meat with them, he took bread, and blessed it, and brake, and gave to them.</p>
+            <p><strong>31</strong> And their eyes were opened, and they knew him; and he vanished out of their sight.</p>
+            <p><strong>32</strong> And they said one to another, Did not our heart burn within us, while he talked with us by the way, and while he opened to us the scriptures?</p>
+            <p><strong>33</strong> And they rose up the same hour, and returned to Jerusalem, and found the eleven gathered together, and them that were with them,</p>
+            <p><strong>34</strong> Saying, The Lord is risen indeed, and hath appeared to Simon.</p>
+            <p><strong>35</strong> And they told what things were done in the way, and how he was known of them in breaking of bread.</p>
+            <p><strong>36</strong> And as they thus spake, Jesus himself stood in the midst of them, and saith unto them, Peace be unto you.</p>
+            <p><strong>37</strong> But they were terrified and affrighted, and supposed that they had seen a spirit.</p>
+            <p><strong>38</strong> And he said unto them, Why are ye troubled? and why do thoughts arise in your hearts?</p>
+            <p><strong>39</strong> Behold my hands and my feet, that it is I myself: handle me, and see; for a spirit hath not flesh and bones, as ye see me have.</p>
+            <p><strong>40</strong> And when he had thus spoken, he shewed them his hands and his feet.</p>
+            <p><strong>41</strong> And while they yet believed not for joy, and wondered, he said unto them, Have ye here any meat?</p>
+            <p><strong>42</strong> And they gave him a piece of a broiled fish, and of an honeycomb.</p>
+            <p><strong>43</strong> And he took it, and did eat before them.</p>
+            <p><strong>44</strong> And he said unto them, These are the words which I spake unto you, while I was yet with you, that all things must be fulfilled, which were written in the law of Moses, and in the prophets, and in the psalms, concerning me.</p>
+            <p><strong>45</strong> Then opened he their understanding, that they might understand the scriptures,</p>
+            <p><strong>46</strong> And said unto them, Thus it is written, and thus it behoved Christ to suffer, and to rise from the dead the third day:</p>
+            <p><strong>47</strong> And that repentance and remission of sins should be preached in his name among all nations, beginning at Jerusalem.</p>
+            <p><strong>48</strong> And ye are witnesses of these things.</p>
+            <p><strong>49</strong> And, behold, I send the promise of my Father upon you: but tarry ye in the city of Jerusalem, until ye be endued with power from on high.</p>
+            <p><strong>50</strong> And he led them out as far as to Bethany, and he lifted up his hands, and blessed them.</p>
+            <p><strong>51</strong> And it came to pass, while he blessed them, he was parted from them, and carried up into heaven.</p>
+            <p><strong>52</strong> And they worshipped him, and returned to Jerusalem with great joy:</p>
+            <p><strong>53</strong> And were continually in the temple, praising and blessing God. Amen.</p>
+            </div>
+            <div class="scripture-text" id="web-24-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 24 (ASV)</p>
+            <p><strong>1</strong> But on the first day of the week, at early dawn, they came unto the tomb, bringing the spices which they had prepared.</p>
+            <p><strong>2</strong> And they found the stone rolled away from the tomb.</p>
+            <p><strong>3</strong> And they entered in, and found not the body of the Lord Jesus.</p>
+            <p><strong>4</strong> And it came to pass, while they were perplexed thereabout, behold, two men stood by them in dazzling apparel:</p>
+            <p><strong>5</strong> and as they were affrighted and bowed down their faces to the earth, they said unto them, Why seek ye the living among the dead?</p>
+            <p><strong>6</strong> He is not here, but is risen: remember how he spake unto you when he was yet in Galilee,</p>
+            <p><strong>7</strong> saying that the Son of man must be delivered up into the hands of sinful men, and be crucified, and the third day rise again.</p>
+            <p><strong>8</strong> And they remembered his words,</p>
+            <p><strong>9</strong> and returned from the tomb, and told all these things to the eleven, and to all the rest.</p>
+            <p><strong>10</strong> Now they were Mary Magdalene, and Joanna, and Mary the [mother] of James: and the other women with them told these things unto the apostles.</p>
+            <p><strong>11</strong> And these words appeared in their sight as idle talk; and they disbelieved them.</p>
+            <p><strong>12</strong> But Peter arose, and ran unto the tomb; and stooping and looking in, he seeth the linen cloths by themselves; and he departed to his home, wondering at that which was come to pass.</p>
+            <p><strong>13</strong> And behold, two of them were going that very day to a village named Emmaus, which was threescore furlongs from Jerusalem.</p>
+            <p><strong>14</strong> And they communed with each other of all these things which had happened.</p>
+            <p><strong>15</strong> And it came to pass, while they communed and questioned together, that Jesus himself drew near, and went with them.</p>
+            <p><strong>16</strong> But their eyes were holden that they should not know him.</p>
+            <p><strong>17</strong> And he said unto them, What communications are these that ye have one with another, as ye walk? And they stood still, looking sad.</p>
+            <p><strong>18</strong> And one of them, named Cleopas, answering said unto him, Dost thou alone sojourn in Jerusalem and not know the things which are come to pass there in these days?</p>
+            <p><strong>19</strong> And he said unto them, What things? And they said unto him, The things concerning Jesus the Nazarene, who was a prophet mighty in deed and word before God and all the people:</p>
+            <p><strong>20</strong> and how the chief priests and our rulers delivered him up to be condemned to death, and crucified him.</p>
+            <p><strong>21</strong> But we hoped that it was he who should redeem Israel. Yea and besides all this, it is now the third day since these things came to pass.</p>
+            <p><strong>22</strong> Moreover certain women of our company amazed us, having been early at the tomb;</p>
+            <p><strong>23</strong> and when they found not his body, they came, saying, that they had also seen a vision of angels, who said that he was alive.</p>
+            <p><strong>24</strong> And certain of them that were with us went to the tomb, and found it even so as the women had said: but him they saw not.</p>
+            <p><strong>25</strong> And he said unto them, O foolish men, and slow of heart to believe in all that the prophets have spoken!</p>
+            <p><strong>26</strong> Behooved it not the Christ to suffer these things, and to enter into his glory?</p>
+            <p><strong>27</strong> And beginning from Moses and from all the prophets, he interpreted to them in all the scriptures the things concerning himself.</p>
+            <p><strong>28</strong> And they drew nigh unto the village, whither they were going: and he made as though he would go further.</p>
+            <p><strong>29</strong> And they constrained him, saying, Abide with us; for it is toward evening, and the day is now far spent. And he went in to abide with them.</p>
+            <p><strong>30</strong> And it came to pass, when he had sat down with them to meat, he took the bread and blessed; and breaking [it] he gave to them.</p>
+            <p><strong>31</strong> And their eyes were opened, and they knew him; and he vanished out of their sight.</p>
+            <p><strong>32</strong> And they said one to another, Was not our heart burning within us, while he spake to us in the way, while he opened to us the scriptures?</p>
+            <p><strong>33</strong> And they rose up that very hour, and returned to Jerusalem, and found the eleven gathered together, and them that were with them,</p>
+            <p><strong>34</strong> saying, The Lord is risen indeed, and hath appeared to Simon.</p>
+            <p><strong>35</strong> And they rehearsed the things [that happened] in the way, and how he was known of them in the breaking of the bread.</p>
+            <p><strong>36</strong> And as they spake these things, he himself stood in the midst of them, and saith unto them, Peace [be] unto you.</p>
+            <p><strong>37</strong> But they were terrified and affrighted, and supposed that they beheld a spirit.</p>
+            <p><strong>38</strong> And he said unto them, Why are ye troubled? and wherefore do questionings arise in your heart?</p>
+            <p><strong>39</strong> See my hands and my feet, that it is I myself: handle me, and see; for a spirit hath not flesh and bones, as ye behold me having.</p>
+            <p><strong>40</strong> And when he had said this, he showed them his hands and his feet.</p>
+            <p><strong>41</strong> And while they still disbelieved for joy, and wondered, he said unto them, Have ye here anything to eat?</p>
+            <p><strong>42</strong> And they gave him a piece of a broiled fish.</p>
+            <p><strong>43</strong> And he took it, and ate before them.</p>
+            <p><strong>44</strong> And he said unto them, These are my words which I spake unto you, while I was yet with you, that all things must needs be fulfilled, which are written in the law of Moses, and the prophets, and the psalms, concerning me.</p>
+            <p><strong>45</strong> Then opened he their mind, that they might understand the scriptures;</p>
+            <p><strong>46</strong> and he said unto them, Thus it is written, that the Christ should suffer, and rise again from the dead the third day;</p>
+            <p><strong>47</strong> and that repentance and remission of sins should be preached in his name unto all the nations, beginning from Jerusalem.</p>
+            <p><strong>48</strong> Ye are witnesses of these things.</p>
+            <p><strong>49</strong> And behold, I send forth the promise of my Father upon you: but tarry ye in the city, until ye be clothed with power from on high.</p>
+            <p><strong>50</strong> And he led them out until [they were] over against Bethany: and he lifted up his hands, and blessed them.</p>
+            <p><strong>51</strong> And it came to pass, while he blessed them, he parted from them, and was carried up into heaven.</p>
+            <p><strong>52</strong> And they worshipped him, and returned to Jerusalem with great joy:</p>
+            <p><strong>53</strong> and were continually in the temple, blessing God.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>At dawn the women come to the tomb with spices and find the stone rolled away and the body gone. Two angels ask why they seek the living among the dead and remind them that Jesus foretold his rising. The women report to the apostles, who think it nonsense, though Peter runs and wonders. That same day the risen Jesus joins two disciples walking to Emmaus, and beginning with Moses and the prophets, he explains how the Scriptures pointed to his suffering and glory. Their hearts burn within them, and they recognize him in the breaking of bread before he vanishes. They hurry back to Jerusalem, where Jesus appears among the gathered disciples, shows his hands and feet, eats before them, and opens their minds to understand the Scriptures. He commissions them as witnesses of repentance and forgiveness to all nations and promises the Father's power. Leading them out to Bethany, he blesses them and is carried up into heaven, and they return to Jerusalem with great joy, praising God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Risen from the dead, he opens the Scriptures, commissions his disciples, and ascends in blessing</li>
+          <li><strong>The women</strong> — Find the empty tomb, hear the angels' news, and report the resurrection to the apostles</li>
+          <li><strong>The two Emmaus disciples</strong> — Walk with the unrecognized Jesus and know him in the breaking of bread</li>
+          <li><strong>The eleven apostles</strong> — Doubt at first, then see the risen Lord, eat with him, and are commissioned as witnesses</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 24:6 (WEB)</p>
+          <p class="verse__text">He isn’t here, but is risen. Remember what he told you when he was still in Galilee,</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus is truly risen, just as he promised, and the tomb could not hold him.</li>
+          <li>All the Scriptures point to the suffering and glory of the Christ.</li>
+          <li>The risen Jesus draws near to the doubting and downcast and opens their eyes to know him.</li>
+          <li>His followers are sent as witnesses of repentance and forgiveness to all nations.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-24">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-24">
+            <ul class="lesson-list">
+            <li><strong>Christ is risen, exactly as he foretold.</strong> The angels say, 'He isn't here, but is risen. Remember what he told you' while still in Galilee (Luke 24:6, WEB).</li>
+            <li><strong>The whole of Scripture testifies to Christ.</strong> Beginning with Moses and all the prophets, Jesus 'explained to them in all the Scriptures the things concerning himself' (Luke 24:27, WEB).</li>
+            <li><strong>The risen Lord meets us in our discouragement.</strong> As Jesus broke bread, 'their eyes were opened, and they recognized him,' and their hearts had burned along the way (Luke 24:31-32, WEB).</li>
+            <li><strong>Jesus rose bodily, not as a ghost.</strong> He shows his hands and feet and eats a piece of fish, saying, 'a spirit doesn't have flesh and bones, as you see that I have' (Luke 24:39-43, WEB).</li>
+            <li><strong>Christ's people are sent out as joyful witnesses.</strong> He says repentance and forgiveness should be preached in his name 'to all the nations,' then blesses them and is carried into heaven (Luke 24:47, 51, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-24">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-24">
+            <ol class="study-questions">
+            <li>What do the women find at the tomb, and how do the angels point them back to Jesus' own words?</li>
+            <li>How does Jesus help the Emmaus disciples understand who he is and what has happened?</li>
+            <li>How does the risen Jesus reassure his disciples that he is truly and bodily alive?</li>
+            <li>What does Jesus commission his followers to do, and what does he promise them?</li>
+            <li>Where in your own life do you long for the risen Jesus to open your eyes and warm your heart?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-24">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-24">
+            <ol class="study-questions">
+            <li>The women find the stone rolled away and the tomb empty, and the angels ask why they seek the living among the dead, reminding them that Jesus foretold his rising (Luke 24:2-7). The resurrection is the fulfillment of his own promise, not a surprise.</li>
+            <li>Jesus walks with the downcast disciples and, beginning with Moses and the prophets, shows how the Scriptures spoke of his suffering and glory (Luke 24:25-27). They recognize him in the breaking of bread, and realize their hearts had burned as he spoke (24:31-32).</li>
+            <li>Jesus appears among them, shows his hands and feet, invites them to touch him, and eats fish before them (Luke 24:39-43). He proves he is not a ghost but bodily risen, and opens their minds to understand the Scriptures (24:45).</li>
+            <li>Jesus commissions them to proclaim repentance and forgiveness of sins in his name to all nations, as witnesses of these things (Luke 24:47-48). He promises to send the Father's power upon them, then blesses them and ascends (24:49-51).</li>
+            <li>This is a personal application question. Invite members to share where they long to know Christ's nearness afresh. As leader, encourage honest, hopeful sharing and rest in the joy of the resurrection, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-23.html">← Luke 23</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

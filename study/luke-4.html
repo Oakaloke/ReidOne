@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 4: Tempted, Anointed, Sent — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 4: Jesus overcomes the devil&#x27;s temptations, announces good news in Nazareth, and demonstrates his authority over demons and disease throughout Galilee." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 4</span>
+        <h1>Luke 4: Tempted, Anointed, Sent</h1>
+        <p class="lead">Jesus overcomes the devil's temptations, announces good news in Nazareth, and demonstrates his authority over demons and disease throughout Galilee.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — Luke Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 4 (WEB)</p>
+            <p><strong>1</strong> Jesus, full of the Holy Spirit, returned from the Jordan, and was led by the Spirit into the wilderness</p>
+            <p><strong>2</strong> for forty days, being tempted by the devil. He ate nothing in those days. Afterward, when they were completed, he was hungry.</p>
+            <p><strong>3</strong> The devil said to him, “If you are the Son of God, command this stone to become bread.”</p>
+            <p><strong>4</strong> Jesus answered him, saying, “It is written, ‘Man shall not live by bread alone, but by every word of God.’”</p>
+            <p><strong>5</strong> The devil, leading him up on a high mountain, showed him all the kingdoms of the world in a moment of time.</p>
+            <p><strong>6</strong> The devil said to him, “I will give you all this authority, and their glory, for it has been delivered to me; and I give it to whomever I want.</p>
+            <p><strong>7</strong> If you therefore will worship before me, it will all be yours.”</p>
+            <p><strong>8</strong> Jesus answered him, “Get behind me Satan! For it is written, ‘You shall worship the Lord your God, and you shall serve him only.’”</p>
+            <p><strong>9</strong> He led him to Jerusalem, and set him on the pinnacle of the temple, and said to him, “If you are the Son of God, cast yourself down from here,</p>
+            <p><strong>10</strong> for it is written, ‘He will put his angels in charge of you, to guard you;’</p>
+            <p><strong>11</strong> and, ‘On their hands they will bear you up, lest perhaps you dash your foot against a stone.’”</p>
+            <p><strong>12</strong> Jesus answering, said to him, “It has been said, ‘You shall not tempt the Lord your God.’”</p>
+            <p><strong>13</strong> When the devil had completed every temptation, he departed from him until another time.</p>
+            <p><strong>14</strong> Jesus returned in the power of the Spirit into Galilee, and news about him spread through all the surrounding area.</p>
+            <p><strong>15</strong> He taught in their synagogues, being glorified by all.</p>
+            <p><strong>16</strong> He came to Nazareth, where he had been brought up. He entered, as was his custom, into the synagogue on the Sabbath day, and stood up to read.</p>
+            <p><strong>17</strong> The book of the prophet Isaiah was handed to him. He opened the book, and found the place where it was written,</p>
+            <p><strong>18</strong> “The Spirit of the Lord is on me, because he has anointed me to preach good news to the poor. He has sent me to heal the broken hearted, to proclaim release to the captives, recovering of sight to the blind, to deliver those who are crushed,</p>
+            <p><strong>19</strong> and to proclaim the acceptable year of the Lord.”</p>
+            <p><strong>20</strong> He closed the book, gave it back to the attendant, and sat down. The eyes of all in the synagogue were fastened on him.</p>
+            <p><strong>21</strong> He began to tell them, “Today, this Scripture has been fulfilled in your hearing.”</p>
+            <p><strong>22</strong> All testified about him, and wondered at the gracious words which proceeded out of his mouth, and they said, “Isn’t this Joseph’s son?”</p>
+            <p><strong>23</strong> He said to them, “Doubtless you will tell me this parable, ‘Physician, heal yourself! Whatever we have heard done at Capernaum, do also here in your hometown.’”</p>
+            <p><strong>24</strong> He said, “Most certainly I tell you, no prophet is acceptable in his hometown.</p>
+            <p><strong>25</strong> But truly I tell you, there were many widows in Israel in the days of Elijah, when the sky was shut up three years and six months, when a great famine came over all the land.</p>
+            <p><strong>26</strong> Elijah was sent to none of them, except to Zarephath, in the land of Sidon, to a woman who was a widow.</p>
+            <p><strong>27</strong> There were many lepers in Israel in the time of Elisha the prophet, yet not one of them was cleansed, except Naaman, the Syrian.”</p>
+            <p><strong>28</strong> They were all filled with wrath in the synagogue, as they heard these things.</p>
+            <p><strong>29</strong> They rose up, threw him out of the city, and led him to the brow of the hill that their city was built on, that they might throw him off the cliff.</p>
+            <p><strong>30</strong> But he, passing through the middle of them, went his way.</p>
+            <p><strong>31</strong> He came down to Capernaum, a city of Galilee. He was teaching them on the Sabbath day,</p>
+            <p><strong>32</strong> and they were astonished at his teaching, for his word was with authority.</p>
+            <p><strong>33</strong> In the synagogue there was a man who had a spirit of an unclean demon, and he cried out with a loud voice,</p>
+            <p><strong>34</strong> saying, “Ah! what have we to do with you, Jesus of Nazareth? Have you come to destroy us? I know you who you are: the Holy One of God!”</p>
+            <p><strong>35</strong> Jesus rebuked him, saying, “Be silent, and come out of him!” When the demon had thrown him down in the middle of them, he came out of him, having done him no harm.</p>
+            <p><strong>36</strong> Amazement came on all, and they spoke together, one with another, saying, “What is this word? For with authority and power he commands the unclean spirits, and they come out!”</p>
+            <p><strong>37</strong> News about him went out into every place of the surrounding region.</p>
+            <p><strong>38</strong> He rose up from the synagogue, and entered into Simon’s house. Simon’s mother-in-law was afflicted with a great fever, and they begged him for her.</p>
+            <p><strong>39</strong> He stood over her, and rebuked the fever; and it left her. Immediately she rose up and served them.</p>
+            <p><strong>40</strong> When the sun was setting, all those who had any sick with various diseases brought them to him; and he laid his hands on every one of them, and healed them.</p>
+            <p><strong>41</strong> Demons also came out of many, crying out, and saying, “You are the Christ, the Son of God!” Rebuking them, he didn’t allow them to speak, because they knew that he was the Christ.</p>
+            <p><strong>42</strong> When it was day, he departed and went into an uninhabited place, and the multitudes looked for him, and came to him, and held on to him, so that he wouldn’t go away from them.</p>
+            <p><strong>43</strong> But he said to them, “I must preach the good news of God’s Kingdom to the other cities also. For this reason I have been sent.”</p>
+            <p><strong>44</strong> He was preaching in the synagogues of Galilee.</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 4 (KJV)</p>
+            <p><strong>1</strong> And Jesus being full of the Holy Ghost returned from Jordan, and was led by the Spirit into the wilderness,</p>
+            <p><strong>2</strong> Being forty days tempted of the devil. And in those days he did eat nothing: and when they were ended, he afterward hungered.</p>
+            <p><strong>3</strong> And the devil said unto him, If thou be the Son of God, command this stone that it be made bread.</p>
+            <p><strong>4</strong> And Jesus answered him, saying, It is written, That man shall not live by bread alone, but by every word of God.</p>
+            <p><strong>5</strong> And the devil, taking him up into an high mountain, shewed unto him all the kingdoms of the world in a moment of time.</p>
+            <p><strong>6</strong> And the devil said unto him, All this power will I give thee, and the glory of them: for that is delivered unto me; and to whomsoever I will I give it.</p>
+            <p><strong>7</strong> If thou therefore wilt worship me, all shall be thine.</p>
+            <p><strong>8</strong> And Jesus answered and said unto him, Get thee behind me, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve.</p>
+            <p><strong>9</strong> And he brought him to Jerusalem, and set him on a pinnacle of the temple, and said unto him, If thou be the Son of God, cast thyself down from hence:</p>
+            <p><strong>10</strong> For it is written, He shall give his angels charge over thee, to keep thee:</p>
+            <p><strong>11</strong> And in their hands they shall bear thee up, lest at any time thou dash thy foot against a stone.</p>
+            <p><strong>12</strong> And Jesus answering said unto him, It is said, Thou shalt not tempt the Lord thy God.</p>
+            <p><strong>13</strong> And when the devil had ended all the temptation, he departed from him for a season.</p>
+            <p><strong>14</strong> And Jesus returned in the power of the Spirit into Galilee: and there went out a fame of him through all the region round about.</p>
+            <p><strong>15</strong> And he taught in their synagogues, being glorified of all.</p>
+            <p><strong>16</strong> And he came to Nazareth, where he had been brought up: and, as his custom was, he went into the synagogue on the sabbath day, and stood up for to read.</p>
+            <p><strong>17</strong> And there was delivered unto him the book of the prophet Esaias. And when he had opened the book, he found the place where it was written,</p>
+            <p><strong>18</strong> The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised,</p>
+            <p><strong>19</strong> To preach the acceptable year of the Lord.</p>
+            <p><strong>20</strong> And he closed the book, and he gave it again to the minister, and sat down. And the eyes of all them that were in the synagogue were fastened on him.</p>
+            <p><strong>21</strong> And he began to say unto them, This day is this scripture fulfilled in your ears.</p>
+            <p><strong>22</strong> And all bare him witness, and wondered at the gracious words which proceeded out of his mouth. And they said, Is not this Joseph’s son?</p>
+            <p><strong>23</strong> And he said unto them, Ye will surely say unto me this proverb, Physician, heal thyself: whatsoever we have heard done in Capernaum, do also here in thy country.</p>
+            <p><strong>24</strong> And he said, Verily I say unto you, No prophet is accepted in his own country.</p>
+            <p><strong>25</strong> But I tell you of a truth, many widows were in Israel in the days of Elias, when the heaven was shut up three years and six months, when great famine was throughout all the land;</p>
+            <p><strong>26</strong> But unto none of them was Elias sent, save unto Sarepta, a city of Sidon, unto a woman that was a widow.</p>
+            <p><strong>27</strong> And many lepers were in Israel in the time of Eliseus the prophet; and none of them was cleansed, saving Naaman the Syrian.</p>
+            <p><strong>28</strong> And all they in the synagogue, when they heard these things, were filled with wrath,</p>
+            <p><strong>29</strong> And rose up, and thrust him out of the city, and led him unto the brow of the hill whereon their city was built, that they might cast him down headlong.</p>
+            <p><strong>30</strong> But he passing through the midst of them went his way,</p>
+            <p><strong>31</strong> And came down to Capernaum, a city of Galilee, and taught them on the sabbath days.</p>
+            <p><strong>32</strong> And they were astonished at his doctrine: for his word was with power.</p>
+            <p><strong>33</strong> And in the synagogue there was a man, which had a spirit of an unclean devil, and cried out with a loud voice,</p>
+            <p><strong>34</strong> Saying, Let us alone; what have we to do with thee, thou Jesus of Nazareth? art thou come to destroy us? I know thee who thou art; the Holy One of God.</p>
+            <p><strong>35</strong> And Jesus rebuked him, saying, Hold thy peace, and come out of him. And when the devil had thrown him in the midst, he came out of him, and hurt him not.</p>
+            <p><strong>36</strong> And they were all amazed, and spake among themselves, saying, What a word is this! for with authority and power he commandeth the unclean spirits, and they come out.</p>
+            <p><strong>37</strong> And the fame of him went out into every place of the country round about.</p>
+            <p><strong>38</strong> And he arose out of the synagogue, and entered into Simon’s house. And Simon’s wife’s mother was taken with a great fever; and they besought him for her.</p>
+            <p><strong>39</strong> And he stood over her, and rebuked the fever; and it left her: and immediately she arose and ministered unto them.</p>
+            <p><strong>40</strong> Now when the sun was setting, all they that had any sick with divers diseases brought them unto him; and he laid his hands on every one of them, and healed them.</p>
+            <p><strong>41</strong> And devils also came out of many, crying out, and saying, Thou art Christ the Son of God. And he rebuking them suffered them not to speak: for they knew that he was Christ.</p>
+            <p><strong>42</strong> And when it was day, he departed and went into a desert place: and the people sought him, and came unto him, and stayed him, that he should not depart from them.</p>
+            <p><strong>43</strong> And he said unto them, I must preach the kingdom of God to other cities also: for therefore am I sent.</p>
+            <p><strong>44</strong> And he preached in the synagogues of Galilee.</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 4 (ASV)</p>
+            <p><strong>1</strong> And Jesus, full of the Holy Spirit, returned from the Jordan, and was led in the Spirit in the wilderness</p>
+            <p><strong>2</strong> during forty days, being tempted of the devil. And he did eat nothing in those days: and when they were completed, he hungered.</p>
+            <p><strong>3</strong> And the devil said unto him, if thou art the Son of God, command this stone that it become bread.</p>
+            <p><strong>4</strong> And Jesus answered unto him, It is written, Man shall not live by bread alone.</p>
+            <p><strong>5</strong> And he led him up, and showed him all the kingdoms of the world in a moment of time.</p>
+            <p><strong>6</strong> And the devil said unto him, To thee will I give all this authority, and the glory of them: for it hath been delivered unto me; and to whomsoever I will I give it.</p>
+            <p><strong>7</strong> If thou therefore wilt worship before me, it shall all be thine.</p>
+            <p><strong>8</strong> And Jesus answered and said unto him, It is written, Thou shalt worship the Lord thy God, and him only shalt thou serve.</p>
+            <p><strong>9</strong> And he led him to Jerusalem, and set him on the pinnacle of the temple, and said unto him, If thou art the Son of God, cast thyself down from hence:</p>
+            <p><strong>10</strong> for it is written, He shall give his angels charge concerning thee, to guard thee:</p>
+            <p><strong>11</strong> and, On their hands they shall bear thee up, Lest haply thou dash thy foot against a stone.</p>
+            <p><strong>12</strong> And Jesus answering said unto him, It is said, Thou shalt not make trial of the Lord thy God.</p>
+            <p><strong>13</strong> And when the devil had completed every temptation, he departed from him for a season.</p>
+            <p><strong>14</strong> And Jesus returned in the power of the Spirit into Galilee: and a fame went out concerning him through all the region round about.</p>
+            <p><strong>15</strong> And he taught in their synagogues, being glorified of all.</p>
+            <p><strong>16</strong> And he came to Nazareth, where he had been brought up: and he entered, as his custom was, into the synagogue on the sabbath day, and stood up to read.</p>
+            <p><strong>17</strong> And there was delivered unto him the book of the prophet Isaiah. And he opened the book, and found the place where it was written,</p>
+            <p><strong>18</strong> The Spirit of the Lord is upon me, Because he anointed me to preach good tidings to the poor: He hath sent me to proclaim release to the captives, And recovering of sight to the blind, To set at liberty them that are bruised,</p>
+            <p><strong>19</strong> To proclaim the acceptable year of the Lord.</p>
+            <p><strong>20</strong> And he closed the book, and gave it back to the attendant, and sat down: and the eyes of all in the synagogue were fastened on him.</p>
+            <p><strong>21</strong> And he began to say unto them, To-day hath this scripture been fulfilled in your ears.</p>
+            <p><strong>22</strong> And all bare him witness, and wondered at the words of grace which proceeded out of his mouth: and they said, Is not this Joseph`s son?</p>
+            <p><strong>23</strong> And he said unto them, Doubtless ye will say unto me this parable, Physician, heal thyself: whatsoever we have heard done at Capernaum, do also here in thine own country.</p>
+            <p><strong>24</strong> And he said, Verily I say unto you, No prophet is acceptable in his own country.</p>
+            <p><strong>25</strong> But of a truth I say unto you, There were many widows in Israel in the days of Elijah, when the heaven was shut up three years and six months, when there came a great famine over all the land;</p>
+            <p><strong>26</strong> and unto none of them was Elijah sent, but only to Zarephath, in the land of Sidon, unto a woman that was a widow.</p>
+            <p><strong>27</strong> And there were many lepers in Israel in the time of Elisha the prophet; and none of them was cleansed, but only Naaman the Syrian.</p>
+            <p><strong>28</strong> And they were all filled with wrath in the synagogue, as they heard these things;</p>
+            <p><strong>29</strong> and they rose up, and cast him forth out of the city, and led him unto the brow of the hill whereon their city was built, that they might throw him down headlong.</p>
+            <p><strong>30</strong> But he passing through the midst of them went his way.</p>
+            <p><strong>31</strong> And he came down to Capernaum, a city of Galilee. And he was teaching them on the sabbath day:</p>
+            <p><strong>32</strong> and they were astonished at his teaching; for his word was with authority.</p>
+            <p><strong>33</strong> And in the synagogue there was a man, that had a spirit of an unclean demon; and he cried out with a loud voice,</p>
+            <p><strong>34</strong> Ah! what have we to do with thee, Jesus thou Nazarene? art thou come to destroy us? I know thee who thou art, the Holy One of God.</p>
+            <p><strong>35</strong> And Jesus rebuked him, saying, Hold thy peace, and come out of him. And when the demon had thrown him down in the midst, he came out of him, having done him no hurt.</p>
+            <p><strong>36</strong> And amazement came upon all, and they spake together, one with another, saying, What is this word? for with authority and power he commandeth the unclean spirits, and they come out.</p>
+            <p><strong>37</strong> And there went forth a rumor concerning him into every place of the region round about.</p>
+            <p><strong>38</strong> And he rose up from the synagogue, and entered into the house of Simon. And Simon`s wife`s mother was holden with a great fever; and they besought him for her.</p>
+            <p><strong>39</strong> And he stood over her, and rebuked the fever; and it left her: and immediately she rose up and ministered unto them.</p>
+            <p><strong>40</strong> And when the sun was setting, all they that had any sick with divers diseases brought them unto him; and he laid his hands on every one of them, and healed them.</p>
+            <p><strong>41</strong> And demons also came out from many, crying out, and saying, Thou art the Son of God. And rebuking them, he suffered them not to speak, because they knew that he was the Christ.</p>
+            <p><strong>42</strong> And when it was day, he came out and went into a desert place: and the multitudes sought after him, and came unto him, and would have stayed him, that he should not go from them.</p>
+            <p><strong>43</strong> But he said unto them, I must preach the good tidings of the kingdom of God to the other cities also: for therefore was I sent.</p>
+            <p><strong>44</strong> And he was preaching in the synagogues of Galilee.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Full of the Holy Spirit, Jesus is led into the wilderness, where for forty days he is tempted by the devil. To each enticement he answers with Scripture, refusing to turn stones to bread, to worship Satan for the kingdoms of the world, or to test God by throwing himself down. The devil departs for a season. Jesus returns to Galilee in the Spirit's power and, in his hometown synagogue at Nazareth, reads from Isaiah and announces that the prophecy of good news to the poor is fulfilled in him. Amazement turns to fury when he reminds them God's mercy has reached outsiders, and they try to throw him off a cliff, but he passes through them. In Capernaum he teaches with authority, casts out an unclean spirit, heals Peter's mother-in-law, and many others. He withdraws to pray, then declares he must preach the kingdom to other towns as well.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Spirit-filled Son who resists temptation and proclaims and enacts the kingdom.</li>
+          <li><strong>The devil</strong> — The tempter who tries to divert Jesus from his mission and is answered with Scripture.</li>
+          <li><strong>The Nazareth synagogue crowd</strong> — Jesus' townspeople who marvel at his words, then turn on him in rage.</li>
+          <li><strong>The unclean spirit</strong> — A demon in the Capernaum synagogue that recognizes Jesus and is cast out at his command.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 4:18 (WEB)</p>
+          <p class="verse__text">“The Spirit of the Lord is on me, because he has anointed me to preach good news to the poor. He has sent me to heal the broken hearted, to proclaim release to the captives, recovering of sight to the blind, to deliver those who are crushed,</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Scripture is our weapon against temptation, as it was for Jesus.</li>
+          <li>Jesus is the anointed one who brings good news to the poor and freedom to the captive.</li>
+          <li>Familiarity can blind people to the very presence of God among them.</li>
+          <li>Jesus' word carries authority that even demons and disease must obey.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>God's word equips us to resist temptation.</strong> Jesus answers the devil, 'It is written, Man shall not live by bread alone, but by every word of God' (Luke 4:4, WEB).</li>
+            <li><strong>Worship belongs to God alone.</strong> Jesus replies, 'You shall worship the Lord your God, and you shall serve him only' (Luke 4:8, WEB).</li>
+            <li><strong>Jesus is the anointed bearer of good news.</strong> He reads, 'The Spirit of the Lord is on me, because he has anointed me to preach good news to the poor' (Luke 4:18, WEB).</li>
+            <li><strong>The promises of God are fulfilled in Christ.</strong> Jesus declares, 'Today, this Scripture has been fulfilled in your hearing' (Luke 4:21, WEB).</li>
+            <li><strong>Jesus speaks with kingly authority.</strong> The people are amazed, for 'with authority and power he commands the unclean spirits, and they come out' (Luke 4:36, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>What are the three temptations Jesus faces, and how does he respond to each?</li>
+            <li>What does Jesus read in the Nazareth synagogue, and what claim does he make about it?</li>
+            <li>Why does the crowd in Nazareth turn from amazement to anger?</li>
+            <li>What signs of Jesus' authority appear during his ministry in Capernaum?</li>
+            <li>Where in your own life do you need to answer temptation with the truth of God's word?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>The devil tempts Jesus to turn stones to bread, to gain the world's kingdoms by worship, and to test God by leaping from the temple; Jesus answers each with Scripture (Luke 4:3-12). He trusts the Father's word and timing over every shortcut.</li>
+            <li>Jesus reads Isaiah's words about the Spirit anointing him to preach good news, freedom, and the Lord's favor, then says, 'Today, this Scripture has been fulfilled in your hearing' (Luke 4:18-21). He identifies himself as the promised Messiah.</li>
+            <li>When Jesus recalls how God blessed a widow of Zarephath and Naaman the Syrian, the townspeople are enraged that grace would reach outsiders, and drive him out to throw him off a cliff (Luke 4:25-29). Familiarity hardens into rejection.</li>
+            <li>Jesus teaches with authority, commands an unclean spirit to come out, heals Peter's mother-in-law with a word, and cures many at sundown (Luke 4:31-40). His authority over demons and disease shows the kingdom breaking in.</li>
+            <li>This is a personal application question. Invite members to name a recurring temptation and a truth of Scripture that speaks to it. As leader, encourage the group to treasure God's word as Jesus did, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-3.html">← Luke 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-5.html">Luke 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

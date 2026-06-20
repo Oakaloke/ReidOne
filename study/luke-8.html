@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 8: The Word and the Power of God — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 8: Jesus teaches the parable of the sower, calms a storm, frees a demon-possessed man, heals a suffering woman, and raises a little girl." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 8
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 8</span>
+        <h1>Luke 8: The Word and the Power of God</h1>
+        <p class="lead">Jesus teaches the parable of the sower, calms a storm, frees a demon-possessed man, heals a suffering woman, and raises a little girl.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-8">
+            <span>Scripture — Luke Chapter 8</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-8">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-8-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-8-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-8-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-8-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 8 (WEB)</p>
+            <p><strong>1</strong> Soon afterwards, he went about through cities and villages, preaching and bringing the good news of God’s Kingdom. With him were the twelve,</p>
+            <p><strong>2</strong> and certain women who had been healed of evil spirits and infirmities: Mary who was called Magdalene, from whom seven demons had gone out;</p>
+            <p><strong>3</strong> and Joanna, the wife of Chuzas, Herod’s steward; Susanna; and many others; who served them from their possessions.</p>
+            <p><strong>4</strong> When a great multitude came together, and people from every city were coming to him, he spoke by a parable.</p>
+            <p><strong>5</strong> “The farmer went out to sow his seed. As he sowed, some fell along the road, and it was trampled under foot, and the birds of the sky devoured it.</p>
+            <p><strong>6</strong> Other seed fell on the rock, and as soon as it grew, it withered away, because it had no moisture.</p>
+            <p><strong>7</strong> Other fell amid the thorns, and the thorns grew with it, and choked it.</p>
+            <p><strong>8</strong> Other fell into the good ground, and grew, and produced one hundred times as much fruit.” As he said these things, he called out, “He who has ears to hear, let him hear!”</p>
+            <p><strong>9</strong> Then his disciples asked him, “What does this parable mean?”</p>
+            <p><strong>10</strong> He said, “To you it is given to know the mysteries of God’s Kingdom, but to the rest in parables; that ‘seeing they may not see, and hearing they may not understand.’</p>
+            <p><strong>11</strong> Now the parable is this: The seed is the word of God.</p>
+            <p><strong>12</strong> Those along the road are those who hear, then the devil comes, and takes away the word from their heart, that they may not believe and be saved.</p>
+            <p><strong>13</strong> Those on the rock are they who, when they hear, receive the word with joy; but these have no root, who believe for a while, then fall away in time of temptation.</p>
+            <p><strong>14</strong> That which fell among the thorns, these are those who have heard, and as they go on their way they are choked with cares, riches, and pleasures of life, and bring no fruit to maturity.</p>
+            <p><strong>15</strong> Those in the good ground, these are those who with an honest and good heart, having heard the word, hold it tightly, and produce fruit with perseverance.</p>
+            <p><strong>16</strong> “No one, when he has lit a lamp, covers it with a container, or puts it under a bed; but puts it on a stand, that those who enter in may see the light.</p>
+            <p><strong>17</strong> For nothing is hidden, that will not be revealed; nor anything secret, that will not be known and come to light.</p>
+            <p><strong>18</strong> Be careful therefore how you hear. For whoever has, to him will be given; and whoever doesn’t have, from him will be taken away even that which he thinks he has.”</p>
+            <p><strong>19</strong> His mother and brothers came to him, and they could not come near him for the crowd.</p>
+            <p><strong>20</strong> Some people told him, “Your mother and your brothers stand outside, desiring to see you.”</p>
+            <p><strong>21</strong> But he answered them, “My mother and my brothers are these who hear the word of God, and do it.”</p>
+            <p><strong>22</strong> Now on one of those days, he entered into a boat, himself and his disciples, and he said to them, “Let’s go over to the other side of the lake.” So they launched out.</p>
+            <p><strong>23</strong> But as they sailed, he fell asleep. A wind storm came down on the lake, and they were taking on dangerous amounts of water.</p>
+            <p><strong>24</strong> They came to him, and awoke him, saying, “Master, master, we are dying!” He awoke, and rebuked the wind and the raging of the water, and they ceased, and it was calm.</p>
+            <p><strong>25</strong> He said to them, “Where is your faith?” Being afraid they marveled, saying to one another, “Who is this then, that he commands even the winds and the water, and they obey him?”</p>
+            <p><strong>26</strong> They arrived at the country of the Gadarenes, which is opposite Galilee.</p>
+            <p><strong>27</strong> When Jesus stepped ashore, a certain man out of the city who had demons for a long time met him. He wore no clothes, and didn’t live in a house, but in the tombs.</p>
+            <p><strong>28</strong> When he saw Jesus, he cried out, and fell down before him, and with a loud voice said, “What do I have to do with you, Jesus, you Son of the Most High God? I beg you, don’t torment me!”</p>
+            <p><strong>29</strong> For Jesus was commanding the unclean spirit to come out of the man. For the unclean spirit had often seized the man. He was kept under guard, and bound with chains and fetters. Breaking the bonds apart, he was driven by the demon into the desert.</p>
+            <p><strong>30</strong> Jesus asked him, “What is your name?” He said, “Legion,” for many demons had entered into him.</p>
+            <p><strong>31</strong> They begged him that he would not command them to go into the abyss.</p>
+            <p><strong>32</strong> Now there was there a herd of many pigs feeding on the mountain, and they begged him that he would allow them to enter into those. He allowed them.</p>
+            <p><strong>33</strong> The demons came out of the man, and entered into the pigs, and the herd rushed down the steep bank into the lake, and were drowned.</p>
+            <p><strong>34</strong> When those who fed them saw what had happened, they fled, and told it in the city and in the country.</p>
+            <p><strong>35</strong> People went out to see what had happened. They came to Jesus, and found the man from whom the demons had gone out, sitting at Jesus’ feet, clothed and in his right mind; and they were afraid.</p>
+            <p><strong>36</strong> Those who saw it told them how he who had been possessed by demons was healed.</p>
+            <p><strong>37</strong> All the people of the surrounding country of the Gadarenes asked him to depart from them, for they were very much afraid. He entered into the boat, and returned.</p>
+            <p><strong>38</strong> But the man from whom the demons had gone out begged him that he might go with him, but Jesus sent him away, saying,</p>
+            <p><strong>39</strong> “Return to your house, and declare what great things God has done for you.” He went his way, proclaiming throughout the whole city what great things Jesus had done for him.</p>
+            <p><strong>40</strong> When Jesus returned, the multitude welcomed him, for they were all waiting for him.</p>
+            <p><strong>41</strong> Behold, there came a man named Jairus, and he was a ruler of the synagogue. He fell down at Jesus’ feet, and begged him to come into his house,</p>
+            <p><strong>42</strong> for he had an only daughter, about twelve years of age, and she was dying. But as he went, the multitudes pressed against him.</p>
+            <p><strong>43</strong> A woman who had a flow of blood for twelve years, who had spent all her living on physicians, and could not be healed by any,</p>
+            <p><strong>44</strong> came behind him, and touched the fringe of his cloak, and immediately the flow of her blood stopped.</p>
+            <p><strong>45</strong> Jesus said, “Who touched me?” When all denied it, Peter and those with him said, “Master, the multitudes press and jostle you, and you say, ‘Who touched me?’”</p>
+            <p><strong>46</strong> But Jesus said, “Someone did touch me, for I perceived that power has gone out of me.”</p>
+            <p><strong>47</strong> When the woman saw that she was not hidden, she came trembling, and falling down before him declared to him in the presence of all the people the reason why she had touched him, and how she was healed immediately.</p>
+            <p><strong>48</strong> He said to her, “Daughter, cheer up. Your faith has made you well. Go in peace.”</p>
+            <p><strong>49</strong> While he still spoke, one from the ruler of the synagogue’s house came, saying to him, “Your daughter is dead. Don’t trouble the Teacher.”</p>
+            <p><strong>50</strong> But Jesus hearing it, answered him, “Don’t be afraid. Only believe, and she will be healed.”</p>
+            <p><strong>51</strong> When he came to the house, he didn’t allow anyone to enter in, except Peter, John, James, the father of the child, and her mother.</p>
+            <p><strong>52</strong> All were weeping and mourning her, but he said, “Don’t weep. She isn’t dead, but sleeping.”</p>
+            <p><strong>53</strong> They were ridiculing him, knowing that she was dead.</p>
+            <p><strong>54</strong> But he put them all outside, and taking her by the hand, he called, saying, “Child, arise!”</p>
+            <p><strong>55</strong> Her spirit returned, and she rose up immediately. He commanded that something be given to her to eat.</p>
+            <p><strong>56</strong> Her parents were amazed, but he commanded them to tell no one what had been done.</p>
+            </div>
+            <div class="scripture-text" id="web-8-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 8 (KJV)</p>
+            <p><strong>1</strong> And it came to pass afterward, that he went throughout every city and village, preaching and shewing the glad tidings of the kingdom of God: and the twelve were with him,</p>
+            <p><strong>2</strong> And certain women, which had been healed of evil spirits and infirmities, Mary called Magdalene, out of whom went seven devils,</p>
+            <p><strong>3</strong> And Joanna the wife of Chuza Herod’s steward, and Susanna, and many others, which ministered unto him of their substance.</p>
+            <p><strong>4</strong> And when much people were gathered together, and were come to him out of every city, he spake by a parable:</p>
+            <p><strong>5</strong> A sower went out to sow his seed: and as he sowed, some fell by the way side; and it was trodden down, and the fowls of the air devoured it.</p>
+            <p><strong>6</strong> And some fell upon a rock; and as soon as it was sprung up, it withered away, because it lacked moisture.</p>
+            <p><strong>7</strong> And some fell among thorns; and the thorns sprang up with it, and choked it.</p>
+            <p><strong>8</strong> And other fell on good ground, and sprang up, and bare fruit an hundredfold. And when he had said these things, he cried, He that hath ears to hear, let him hear.</p>
+            <p><strong>9</strong> And his disciples asked him, saying, What might this parable be?</p>
+            <p><strong>10</strong> And he said, Unto you it is given to know the mysteries of the kingdom of God: but to others in parables; that seeing they might not see, and hearing they might not understand.</p>
+            <p><strong>11</strong> Now the parable is this: The seed is the word of God.</p>
+            <p><strong>12</strong> Those by the way side are they that hear; then cometh the devil, and taketh away the word out of their hearts, lest they should believe and be saved.</p>
+            <p><strong>13</strong> They on the rock are they, which, when they hear, receive the word with joy; and these have no root, which for a while believe, and in time of temptation fall away.</p>
+            <p><strong>14</strong> And that which fell among thorns are they, which, when they have heard, go forth, and are choked with cares and riches and pleasures of this life, and bring no fruit to perfection.</p>
+            <p><strong>15</strong> But that on the good ground are they, which in an honest and good heart, having heard the word, keep it, and bring forth fruit with patience.</p>
+            <p><strong>16</strong> No man, when he hath lighted a candle, covereth it with a vessel, or putteth it under a bed; but setteth it on a candlestick, that they which enter in may see the light.</p>
+            <p><strong>17</strong> For nothing is secret, that shall not be made manifest; neither any thing hid, that shall not be known and come abroad.</p>
+            <p><strong>18</strong> Take heed therefore how ye hear: for whosoever hath, to him shall be given; and whosoever hath not, from him shall be taken even that which he seemeth to have.</p>
+            <p><strong>19</strong> Then came to him his mother and his brethren, and could not come at him for the press.</p>
+            <p><strong>20</strong> And it was told him by certain which said, Thy mother and thy brethren stand without, desiring to see thee.</p>
+            <p><strong>21</strong> And he answered and said unto them, My mother and my brethren are these which hear the word of God, and do it.</p>
+            <p><strong>22</strong> Now it came to pass on a certain day, that he went into a ship with his disciples: and he said unto them, Let us go over unto the other side of the lake. And they launched forth.</p>
+            <p><strong>23</strong> But as they sailed he fell asleep: and there came down a storm of wind on the lake; and they were filled with water, and were in jeopardy.</p>
+            <p><strong>24</strong> And they came to him, and awoke him, saying, Master, master, we perish. Then he arose, and rebuked the wind and the raging of the water: and they ceased, and there was a calm.</p>
+            <p><strong>25</strong> And he said unto them, Where is your faith? And they being afraid wondered, saying one to another, What manner of man is this! for he commandeth even the winds and water, and they obey him.</p>
+            <p><strong>26</strong> And they arrived at the country of the Gadarenes, which is over against Galilee.</p>
+            <p><strong>27</strong> And when he went forth to land, there met him out of the city a certain man, which had devils long time, and ware no clothes, neither abode in any house, but in the tombs.</p>
+            <p><strong>28</strong> When he saw Jesus, he cried out, and fell down before him, and with a loud voice said, What have I to do with thee, Jesus, thou Son of God most high? I beseech thee, torment me not.</p>
+            <p><strong>29</strong> (For he had commanded the unclean spirit to come out of the man. For oftentimes it had caught him: and he was kept bound with chains and in fetters; and he brake the bands, and was driven of the devil into the wilderness.)</p>
+            <p><strong>30</strong> And Jesus asked him, saying, What is thy name? And he said, Legion: because many devils were entered into him.</p>
+            <p><strong>31</strong> And they besought him that he would not command them to go out into the deep.</p>
+            <p><strong>32</strong> And there was there an herd of many swine feeding on the mountain: and they besought him that he would suffer them to enter into them. And he suffered them.</p>
+            <p><strong>33</strong> Then went the devils out of the man, and entered into the swine: and the herd ran violently down a steep place into the lake, and were choked.</p>
+            <p><strong>34</strong> When they that fed them saw what was done, they fled, and went and told it in the city and in the country.</p>
+            <p><strong>35</strong> Then they went out to see what was done; and came to Jesus, and found the man, out of whom the devils were departed, sitting at the feet of Jesus, clothed, and in his right mind: and they were afraid.</p>
+            <p><strong>36</strong> They also which saw it told them by what means he that was possessed of the devils was healed.</p>
+            <p><strong>37</strong> Then the whole multitude of the country of the Gadarenes round about besought him to depart from them; for they were taken with great fear: and he went up into the ship, and returned back again.</p>
+            <p><strong>38</strong> Now the man out of whom the devils were departed besought him that he might be with him: but Jesus sent him away, saying,</p>
+            <p><strong>39</strong> Return to thine own house, and shew how great things God hath done unto thee. And he went his way, and published throughout the whole city how great things Jesus had done unto him.</p>
+            <p><strong>40</strong> And it came to pass, that, when Jesus was returned, the people gladly received him: for they were all waiting for him.</p>
+            <p><strong>41</strong> And, behold, there came a man named Jairus, and he was a ruler of the synagogue: and he fell down at Jesus’ feet, and besought him that he would come into his house:</p>
+            <p><strong>42</strong> For he had one only daughter, about twelve years of age, and she lay a dying. But as he went the people thronged him.</p>
+            <p><strong>43</strong> And a woman having an issue of blood twelve years, which had spent all her living upon physicians, neither could be healed of any,</p>
+            <p><strong>44</strong> Came behind him, and touched the border of his garment: and immediately her issue of blood stanched.</p>
+            <p><strong>45</strong> And Jesus said, Who touched me? When all denied, Peter and they that were with him said, Master, the multitude throng thee and press thee, and sayest thou, Who touched me?</p>
+            <p><strong>46</strong> And Jesus said, Somebody hath touched me: for I perceive that virtue is gone out of me.</p>
+            <p><strong>47</strong> And when the woman saw that she was not hid, she came trembling, and falling down before him, she declared unto him before all the people for what cause she had touched him and how she was healed immediately.</p>
+            <p><strong>48</strong> And he said unto her, Daughter, be of good comfort: thy faith hath made thee whole; go in peace.</p>
+            <p><strong>49</strong> While he yet spake, there cometh one from the ruler of the synagogue’s house, saying to him, Thy daughter is dead; trouble not the Master.</p>
+            <p><strong>50</strong> But when Jesus heard it, he answered him, saying, Fear not: believe only, and she shall be made whole.</p>
+            <p><strong>51</strong> And when he came into the house, he suffered no man to go in, save Peter, and James, and John, and the father and the mother of the maiden.</p>
+            <p><strong>52</strong> And all wept, and bewailed her: but he said, Weep not; she is not dead, but sleepeth.</p>
+            <p><strong>53</strong> And they laughed him to scorn, knowing that she was dead.</p>
+            <p><strong>54</strong> And he put them all out, and took her by the hand, and called, saying, Maid, arise.</p>
+            <p><strong>55</strong> And her spirit came again, and she arose straightway: and he commanded to give her meat.</p>
+            <p><strong>56</strong> And her parents were astonished: but he charged them that they should tell no man what was done.</p>
+            </div>
+            <div class="scripture-text" id="web-8-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 8 (ASV)</p>
+            <p><strong>1</strong> And it came to pass soon afterwards, that he went about through cities and villages, preaching and bringing the good tidings of the kingdom of God, and with him the twelve,</p>
+            <p><strong>2</strong> and certain women who had been healed of evil spirits and infirmities: Mary that was called Magdalene, from whom seven demons had gone out,</p>
+            <p><strong>3</strong> and Joanna the wife of Chuzas Herod`s steward, and Susanna, and many others, who ministered unto them of their substance.</p>
+            <p><strong>4</strong> And when a great multitude came together, and they of every city resorted unto him, he spake by a parable:</p>
+            <p><strong>5</strong> The sower went forth to sow his seed: and as he sowed, some fell by the way side; and it was trodden under foot, and the birds of the heaven devoured it.</p>
+            <p><strong>6</strong> And other fell on the rock; and as soon as it grew, it withered away, because it had no moisture.</p>
+            <p><strong>7</strong> And other fell amidst the thorns; and the thorns grew with it, and choked it.</p>
+            <p><strong>8</strong> And other fell into the good ground, and grew, and brought forth fruit a hundredfold. As he said these things, he cried, He that hath ears to hear, let him hear.</p>
+            <p><strong>9</strong> And his disciples asked him what this parable might be.</p>
+            <p><strong>10</strong> And he said, Unto you it is given to know the mysteries of the kingdom of God: but to the rest in parables; that seeing they may not see, and hearing they may not understand.</p>
+            <p><strong>11</strong> Now the parable is this: The seed is the word of God.</p>
+            <p><strong>12</strong> And those by the way side are they that have heard; then cometh the devil, and taketh away the word from their heart, that they may not believe and be saved.</p>
+            <p><strong>13</strong> And those on the rock [are] they who, when they have heard, receive the word with joy; and these have no root, who for a while believe, and in time of temptation fall away.</p>
+            <p><strong>14</strong> And that which fell among the thorns, these are they that have heard, and as they go on their way they are choked with cares and riches and pleasures of [this] life, and bring no fruit to perfection.</p>
+            <p><strong>15</strong> And that in the good ground, these are such as in an honest and good heart, having heard the word, hold it fast, and bring forth fruit with patience.</p>
+            <p><strong>16</strong> And no man, when he hath lighted a lamp, covereth it with a vessel, or putteth it under a bed; but putteth it on a stand, that they that enter in may see the light.</p>
+            <p><strong>17</strong> For nothing is hid, that shall not be made manifest; nor [anything] secret, that shall not be known and come to light.</p>
+            <p><strong>18</strong> Take heed therefore how ye hear: for whosoever hath, to him shall be given; and whosoever hath not, from him shall be taken away even that which he thinketh he hath.</p>
+            <p><strong>19</strong> And there came to him his mother and brethren, and they could not come at him for the crowd.</p>
+            <p><strong>20</strong> And it was told him, Thy mother and thy brethren stand without, desiring to see thee.</p>
+            <p><strong>21</strong> But he answered and said unto them, My mother and my brethren are these that hear the word of God, and do it.</p>
+            <p><strong>22</strong> Now it came to pass on one of those days, that he entered into a boat, himself and his disciples; and he said unto them, Let us go over unto the other side of the lake: and they launched forth.</p>
+            <p><strong>23</strong> But as they sailed he fell asleep: and there came down a storm of wind on the lake; and they were filling [with water], and were in jeopardy.</p>
+            <p><strong>24</strong> And they came to him, and awoke him, saying, Master, master, we perish. And he awoke, and rebuked the wind and the raging of the water: and they ceased, and there was a calm.</p>
+            <p><strong>25</strong> And he said unto them, Where is your faith? And being afraid they marvelled, saying one to another, Who then is this, that he commandeth even the winds and the water, and they obey him?</p>
+            <p><strong>26</strong> And they arrived at the country of the Gerasenes, which is over against Galilee.</p>
+            <p><strong>27</strong> And when he was come forth upon the land, there met him a certain man out of the city, who had demons; and for a long time he had worn no clothes, and abode not in [any] house, but in the tombs.</p>
+            <p><strong>28</strong> And when he saw Jesus, he cried out, and fell down before him, and with a loud voice said, What have I to do with thee, Jesus, thou Son of the Most High God? I beseech thee, torment me not.</p>
+            <p><strong>29</strong> For he was commanding the unclean spirit to come out from the man. For oftentimes it had seized him: and he was kept under guard, and bound with chains and fetters; and breaking the bands asunder, he was driven of the demon into the deserts.</p>
+            <p><strong>30</strong> And Jesus asked him, What is thy name? And he said, Legion; for many demons were entered into him.</p>
+            <p><strong>31</strong> And they entreated him that he would not command them to depart into the abyss.</p>
+            <p><strong>32</strong> Now there was there a herd of many swine feeding on the mountain: and they entreated him that he would give them leave to enter into them. And he gave them leave.</p>
+            <p><strong>33</strong> And the demons came out from the man, and entered into the swine: and the herd rushed down the steep into the lake, and were drowned.</p>
+            <p><strong>34</strong> And when they that fed them saw what had come to pass, they fled, and told it in the city and in the country.</p>
+            <p><strong>35</strong> And they went out to see what had come to pass; and they came to Jesus, and found the man, from whom the demons were gone out, sitting, clothed and in his right mind, at the feet of Jesus: and they were afraid.</p>
+            <p><strong>36</strong> And they that saw it told them how he that was possessed with demons was made whole.</p>
+            <p><strong>37</strong> And all the people of the country of the Gerasenes round about asked him to depart from them, for they were holden with great fear: and he entered into a boat, and returned.</p>
+            <p><strong>38</strong> But the man from whom the demons were gone out prayed him that he might be with him: but he sent him away, saying,</p>
+            <p><strong>39</strong> Return to thy house, and declare how great things God hath done for thee. And he went his way, publishing throughout the whole city how great things Jesus had done for him.</p>
+            <p><strong>40</strong> And as Jesus returned, the multitude welcomed him; for they were all waiting for him.</p>
+            <p><strong>41</strong> And behold, there came a man named Jairus, and he was a ruler of the synagogue: and he fell down at Jesus` feet, and besought him to come into his house;</p>
+            <p><strong>42</strong> for he had an only daughter, about twelve years of age, and she was dying. But as he went the multitudes thronged him.</p>
+            <p><strong>43</strong> And a woman having an issue of blood twelve years, who had spent all her living upon physicians, and could not be healed of any,</p>
+            <p><strong>44</strong> came behind him, and touched the border of his garment: and immediately the issue of her blood stanched.</p>
+            <p><strong>45</strong> And Jesus said, Who is it that touched me? And when all denied, Peter said, and they that were with him, Master, the multitudes press thee and crush [thee].</p>
+            <p><strong>46</strong> But Jesus said, Some one did touch me; for I perceived that power had gone forth from me.</p>
+            <p><strong>47</strong> And when the woman saw that she was not hid, she came trembling, and falling down before him declared in the presence of all the people for what cause she touched him, and how she was healed immediately.</p>
+            <p><strong>48</strong> And he said unto her, Daughter, thy faith hath made thee whole; go in peace.</p>
+            <p><strong>49</strong> While he yet spake, there cometh one from the ruler of the synagogue`s [house], saying, Thy daughter is dead; trouble not the Teacher.</p>
+            <p><strong>50</strong> But Jesus hearing it, answered him, Fear not: only believe, and she shall be made whole.</p>
+            <p><strong>51</strong> And when he came to the house, he suffered not any man to enter in with him, save Peter, and John, and James, and the father of the maiden and her mother.</p>
+            <p><strong>52</strong> And all were weeping, and bewailing her: but he said, Weep not; for she is not dead, but sleepeth.</p>
+            <p><strong>53</strong> And they laughed him to scorn, knowing that she was dead.</p>
+            <p><strong>54</strong> But he, taking her by the hand, called, saying, Maiden, arise.</p>
+            <p><strong>55</strong> And her spirit returned, and she rose up immediately: and he commanded that [something] be given her to eat.</p>
+            <p><strong>56</strong> And her parents were amazed: but he charged them to tell no man what had been done.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Traveling and preaching the kingdom with the twelve and several women who support them, Jesus tells the parable of the sower: seed falls on the path, on rock, among thorns, and on good soil, picturing how people receive the word. He explains that the good soil hears the word, holds it fast, and bears fruit with patience, and he urges careful listening, for what is hidden will be revealed. His true family are those who hear and do God's word. Crossing the lake, Jesus rebukes a fierce storm into calm, and the disciples wonder who he is. In the country of the Gerasenes he frees a man tormented by many demons, sending them into pigs. As he returns, a woman with a long hemorrhage touches his garment and is healed by faith, and he raises Jairus's dead daughter, telling her to arise. Through it all Jesus shows mastery over nature, demons, sickness, and death.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord whose word saves and who rules nature, demons, disease, and death.</li>
+          <li><strong>The disciples</strong> — The twelve who hear the parables explained and witness the calming of the storm.</li>
+          <li><strong>Jairus</strong> — A synagogue ruler who begs Jesus to heal his dying daughter and sees her raised.</li>
+          <li><strong>The woman with the hemorrhage</strong> — A long-suffering woman healed when she touches Jesus' garment in faith.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 8:15 (WEB)</p>
+          <p class="verse__text">Those in the good ground, these are those who with an honest and good heart, having heard the word, hold it tightly, and produce fruit with perseverance.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>How we receive God's word determines whether it bears lasting fruit.</li>
+          <li>Jesus' true family are those who hear and obey God's word.</li>
+          <li>Jesus has authority over the storm, over demons, and over death.</li>
+          <li>Faith reaches out to Jesus and finds healing and peace.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-8">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-8">
+            <ul class="lesson-list">
+            <li><strong>Fruitfulness depends on how we receive the word.</strong> The good soil are those who 'having heard the word, hold it tightly, and produce fruit with patience' (Luke 8:15, WEB).</li>
+            <li><strong>Jesus' family is defined by obedience.</strong> Jesus says, 'My mother and my brothers are these who hear the word of God, and do it' (Luke 8:21, WEB).</li>
+            <li><strong>Christ commands even the wind and waves.</strong> He rebukes the storm, and the disciples marvel, 'Who then is this, that he commands even the wind and the water, and they obey him?' (Luke 8:25, WEB).</li>
+            <li><strong>Faith reaches out and is healed.</strong> Jesus tells the woman, 'Daughter, cheer up. Your faith has made you well. Go in peace' (Luke 8:48, WEB).</li>
+            <li><strong>Jesus calls us to trust him in the face of death.</strong> He tells Jairus, 'Don't be afraid. Only believe, and she will be healed' (Luke 8:50, WEB), then raises the girl.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-8">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-8">
+            <ol class="study-questions">
+            <li>What do the four soils in the parable of the sower represent, and what marks the good soil?</li>
+            <li>How does Jesus redefine his true family, and what does that teach us?</li>
+            <li>What do the calming of the storm and the deliverance of the demon-possessed man reveal about Jesus?</li>
+            <li>How do the woman with the hemorrhage and Jairus each show faith, and how does Jesus respond?</li>
+            <li>Where in your own life do you need to hear God's word and let it take deeper root?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-8">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-8">
+            <ol class="study-questions">
+            <li>The seed is the word of God; the path, rock, and thorns picture hearts hardened, shallow, or choked by cares and riches, while the good soil hears, holds fast, and bears fruit with patience (Luke 8:11-15). Reception, not just hearing, matters.</li>
+            <li>When told his mother and brothers wait outside, Jesus says his family are those who hear and do God's word (Luke 8:21). True kinship with Christ is not by blood but by faithful obedience to the Father's word.</li>
+            <li>Jesus rebukes the storm into calm, prompting the disciples to ask who he is (Luke 8:24-25), and frees a man of a legion of demons who then sits clothed and in his right mind (Luke 8:35). He reigns over nature and the powers of darkness.</li>
+            <li>The woman touches his garment, is healed, and is commended for her faith (Luke 8:44-48), while Jairus is told only to believe, and Jesus takes the dead girl by the hand and raises her (Luke 8:50-55). Jesus honors faith and conquers death.</li>
+            <li>This is a personal application question. Invite members to consider what cares or distractions crowd out the word in their hearts. As leader, encourage honest reflection and patient cultivation of good soil, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-7.html">← Luke 7</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-9.html">Luke 9 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 23: The Crucifixion of the King — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 23: Jesus is tried before Pilate and Herod, condemned though innocent, and crucified, where he forgives his enemies and welcomes a dying thief into paradise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 23
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 23</span>
+        <h1>Luke 23: The Crucifixion of the King</h1>
+        <p class="lead">Jesus is tried before Pilate and Herod, condemned though innocent, and crucified, where he forgives his enemies and welcomes a dying thief into paradise.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-23">
+            <span>Scripture — Luke Chapter 23</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-23">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-23-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-23-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-23-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-23-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 23 (WEB)</p>
+            <p><strong>1</strong> The whole company of them rose up and brought him before Pilate.</p>
+            <p><strong>2</strong> They began to accuse him, saying, “We found this man perverting the nation, forbidding paying taxes to Caesar, and saying that he himself is Christ, a king.”</p>
+            <p><strong>3</strong> Pilate asked him, “Are you the King of the Jews?” He answered him, “So you say.”</p>
+            <p><strong>4</strong> Pilate said to the chief priests and the multitudes, “I find no basis for a charge against this man.”</p>
+            <p><strong>5</strong> But they insisted, saying, “He stirs up the people, teaching throughout all Judea, beginning from Galilee even to this place.”</p>
+            <p><strong>6</strong> But when Pilate heard Galilee mentioned, he asked if the man was a Galilean.</p>
+            <p><strong>7</strong> When he found out that he was in Herod’s jurisdiction, he sent him to Herod, who was also in Jerusalem during those days.</p>
+            <p><strong>8</strong> Now when Herod saw Jesus, he was exceedingly glad, for he had wanted to see him for a long time, because he had heard many things about him. He hoped to see some miracle done by him.</p>
+            <p><strong>9</strong> He questioned him with many words, but he gave no answers.</p>
+            <p><strong>10</strong> The chief priests and the scribes stood, vehemently accusing him.</p>
+            <p><strong>11</strong> Herod with his soldiers humiliated him and mocked him. Dressing him in luxurious clothing, they sent him back to Pilate.</p>
+            <p><strong>12</strong> Herod and Pilate became friends with each other that very day, for before that they were enemies with each other.</p>
+            <p><strong>13</strong> Pilate called together the chief priests, the rulers, and the people,</p>
+            <p><strong>14</strong> and said to them, “You brought this man to me as one that perverts the people, and behold, having examined him before you, I found no basis for a charge against this man concerning those things of which you accuse him.</p>
+            <p><strong>15</strong> Neither has Herod, for I sent you to him, and see, nothing worthy of death has been done by him.</p>
+            <p><strong>16</strong> I will therefore chastise him and release him.”</p>
+            <p><strong>17</strong> Now he had to release one prisoner to them at the feast.</p>
+            <p><strong>18</strong> But they all cried out together, saying, “Away with this man! Release to us Barabbas!”—</p>
+            <p><strong>19</strong> one who was thrown into prison for a certain revolt in the city, and for murder.</p>
+            <p><strong>20</strong> Then Pilate spoke to them again, wanting to release Jesus,</p>
+            <p><strong>21</strong> but they shouted, saying, “Crucify! Crucify him!”</p>
+            <p><strong>22</strong> He said to them the third time, “Why? What evil has this man done? I have found no capital crime in him. I will therefore chastise him and release him.”</p>
+            <p><strong>23</strong> But they were urgent with loud voices, asking that he might be crucified. Their voices and the voices of the chief priests prevailed.</p>
+            <p><strong>24</strong> Pilate decreed that what they asked for should be done.</p>
+            <p><strong>25</strong> He released him who had been thrown into prison for insurrection and murder, for whom they asked, but he delivered Jesus up to their will.</p>
+            <p><strong>26</strong> When they led him away, they grabbed one Simon of Cyrene, coming from the country, and laid on him the cross, to carry it after Jesus.</p>
+            <p><strong>27</strong> A great multitude of the people followed him, including women who also mourned and lamented him.</p>
+            <p><strong>28</strong> But Jesus, turning to them, said, “Daughters of Jerusalem, don’t weep for me, but weep for yourselves and for your children.</p>
+            <p><strong>29</strong> For behold, the days are coming in which they will say, ‘Blessed are the barren, the wombs that never bore, and the breasts that never nursed.’</p>
+            <p><strong>30</strong> Then they will begin to tell the mountains, ‘Fall on us!’ and tell the hills, ‘Cover us.’</p>
+            <p><strong>31</strong> For if they do these things in the green tree, what will be done in the dry?”</p>
+            <p><strong>32</strong> There were also others, two criminals, led with him to be put to death.</p>
+            <p><strong>33</strong> When they came to the place that is called The Skull, they crucified him there with the criminals, one on the right and the other on the left.</p>
+            <p><strong>34</strong> Jesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.</p>
+            <p><strong>35</strong> The people stood watching. The rulers with them also scoffed at him, saying, “He saved others. Let him save himself, if this is the Christ of God, his chosen one!”</p>
+            <p><strong>36</strong> The soldiers also mocked him, coming to him and offering him vinegar,</p>
+            <p><strong>37</strong> and saying, “If you are the King of the Jews, save yourself!”</p>
+            <p><strong>38</strong> An inscription was also written over him in letters of Greek, Latin, and Hebrew: “THIS IS THE KING OF THE JEWS.”</p>
+            <p><strong>39</strong> One of the criminals who was hanged insulted him, saying, “If you are the Christ, save yourself and us!”</p>
+            <p><strong>40</strong> But the other answered, and rebuking him said, “Don’t you even fear God, seeing you are under the same condemnation?</p>
+            <p><strong>41</strong> And we indeed justly, for we receive the due reward for our deeds, but this man has done nothing wrong.”</p>
+            <p><strong>42</strong> He said to Jesus, “Lord, remember me when you come into your Kingdom.”</p>
+            <p><strong>43</strong> Jesus said to him, “Assuredly I tell you, today you will be with me in Paradise.”</p>
+            <p><strong>44</strong> It was now about the sixth hour, and darkness came over the whole land until the ninth hour.</p>
+            <p><strong>45</strong> The sun was darkened, and the veil of the temple was torn in two.</p>
+            <p><strong>46</strong> Jesus, crying with a loud voice, said, “Father, into your hands I commit my spirit!” Having said this, he breathed his last.</p>
+            <p><strong>47</strong> When the centurion saw what was done, he glorified God, saying, “Certainly this was a righteous man.”</p>
+            <p><strong>48</strong> All the multitudes that came together to see this, when they saw the things that were done, returned home beating their breasts.</p>
+            <p><strong>49</strong> All his acquaintances, and the women who followed with him from Galilee, stood at a distance, watching these things.</p>
+            <p><strong>50</strong> Behold, a man named Joseph, who was a member of the council, a good and righteous man</p>
+            <p><strong>51</strong> (he had not consented to their counsel and deed), from Arimathaea, a city of the Jews, who was also waiting for God’s Kingdom:</p>
+            <p><strong>52</strong> this man went to Pilate, and asked for Jesus’ body.</p>
+            <p><strong>53</strong> He took it down, and wrapped it in a linen cloth, and laid him in a tomb that was cut in stone, where no one had ever been laid.</p>
+            <p><strong>54</strong> It was the day of the Preparation, and the Sabbath was drawing near.</p>
+            <p><strong>55</strong> The women, who had come with him out of Galilee, followed after, and saw the tomb, and how his body was laid.</p>
+            <p><strong>56</strong> They returned, and prepared spices and ointments. On the Sabbath they rested according to the commandment.</p>
+            </div>
+            <div class="scripture-text" id="web-23-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 23 (KJV)</p>
+            <p><strong>1</strong> And the whole multitude of them arose, and led him unto Pilate.</p>
+            <p><strong>2</strong> And they began to accuse him, saying, We found this fellow perverting the nation, and forbidding to give tribute to Caesar, saying that he himself is Christ a King.</p>
+            <p><strong>3</strong> And Pilate asked him, saying, Art thou the King of the Jews? And he answered him and said, Thou sayest it.</p>
+            <p><strong>4</strong> Then said Pilate to the chief priests and to the people, I find no fault in this man.</p>
+            <p><strong>5</strong> And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place.</p>
+            <p><strong>6</strong> When Pilate heard of Galilee, he asked whether the man were a Galilaean.</p>
+            <p><strong>7</strong> And as soon as he knew that he belonged unto Herod’s jurisdiction, he sent him to Herod, who himself also was at Jerusalem at that time.</p>
+            <p><strong>8</strong> And when Herod saw Jesus, he was exceeding glad: for he was desirous to see him of a long season, because he had heard many things of him; and he hoped to have seen some miracle done by him.</p>
+            <p><strong>9</strong> Then he questioned with him in many words; but he answered him nothing.</p>
+            <p><strong>10</strong> And the chief priests and scribes stood and vehemently accused him.</p>
+            <p><strong>11</strong> And Herod with his men of war set him at nought, and mocked him, and arrayed him in a gorgeous robe, and sent him again to Pilate.</p>
+            <p><strong>12</strong> And the same day Pilate and Herod were made friends together: for before they were at enmity between themselves.</p>
+            <p><strong>13</strong> And Pilate, when he had called together the chief priests and the rulers and the people,</p>
+            <p><strong>14</strong> Said unto them, Ye have brought this man unto me, as one that perverteth the people: and, behold, I, having examined him before you, have found no fault in this man touching those things whereof ye accuse him:</p>
+            <p><strong>15</strong> No, nor yet Herod: for I sent you to him; and, lo, nothing worthy of death is done unto him.</p>
+            <p><strong>16</strong> I will therefore chastise him, and release him.</p>
+            <p><strong>17</strong> (For of necessity he must release one unto them at the feast.)</p>
+            <p><strong>18</strong> And they cried out all at once, saying, Away with this man, and release unto us Barabbas:</p>
+            <p><strong>19</strong> (Who for a certain sedition made in the city, and for murder, was cast into prison.)</p>
+            <p><strong>20</strong> Pilate therefore, willing to release Jesus, spake again to them.</p>
+            <p><strong>21</strong> But they cried, saying, Crucify him, crucify him.</p>
+            <p><strong>22</strong> And he said unto them the third time, Why, what evil hath he done? I have found no cause of death in him: I will therefore chastise him, and let him go.</p>
+            <p><strong>23</strong> And they were instant with loud voices, requiring that he might be crucified. And the voices of them and of the chief priests prevailed.</p>
+            <p><strong>24</strong> And Pilate gave sentence that it should be as they required.</p>
+            <p><strong>25</strong> And he released unto them him that for sedition and murder was cast into prison, whom they had desired; but he delivered Jesus to their will.</p>
+            <p><strong>26</strong> And as they led him away, they laid hold upon one Simon, a Cyrenian, coming out of the country, and on him they laid the cross, that he might bear it after Jesus.</p>
+            <p><strong>27</strong> And there followed him a great company of people, and of women, which also bewailed and lamented him.</p>
+            <p><strong>28</strong> But Jesus turning unto them said, Daughters of Jerusalem, weep not for me, but weep for yourselves, and for your children.</p>
+            <p><strong>29</strong> For, behold, the days are coming, in the which they shall say, Blessed are the barren, and the wombs that never bare, and the paps which never gave suck.</p>
+            <p><strong>30</strong> Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us.</p>
+            <p><strong>31</strong> For if they do these things in a green tree, what shall be done in the dry?</p>
+            <p><strong>32</strong> And there were also two others, malefactors, led with him to be put to death.</p>
+            <p><strong>33</strong> And when they were come to the place, which is called Calvary, there they crucified him, and the malefactors, one on the right hand, and the other on the left.</p>
+            <p><strong>34</strong> Then said Jesus, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.</p>
+            <p><strong>35</strong> And the people stood beholding. And the rulers also with them derided him, saying, He saved others; let him save himself, if he be Christ, the chosen of God.</p>
+            <p><strong>36</strong> And the soldiers also mocked him, coming to him, and offering him vinegar,</p>
+            <p><strong>37</strong> And saying, If thou be the king of the Jews, save thyself.</p>
+            <p><strong>38</strong> And a superscription also was written over him in letters of Greek, and Latin, and Hebrew, THIS IS THE KING OF THE JEWS.</p>
+            <p><strong>39</strong> And one of the malefactors which were hanged railed on him, saying, If thou be Christ, save thyself and us.</p>
+            <p><strong>40</strong> But the other answering rebuked him, saying, Dost not thou fear God, seeing thou art in the same condemnation?</p>
+            <p><strong>41</strong> And we indeed justly; for we receive the due reward of our deeds: but this man hath done nothing amiss.</p>
+            <p><strong>42</strong> And he said unto Jesus, Lord, remember me when thou comest into thy kingdom.</p>
+            <p><strong>43</strong> And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise.</p>
+            <p><strong>44</strong> And it was about the sixth hour, and there was a darkness over all the earth until the ninth hour.</p>
+            <p><strong>45</strong> And the sun was darkened, and the veil of the temple was rent in the midst.</p>
+            <p><strong>46</strong> And when Jesus had cried with a loud voice, he said, Father, into thy hands I commend my spirit: and having said thus, he gave up the ghost.</p>
+            <p><strong>47</strong> Now when the centurion saw what was done, he glorified God, saying, Certainly this was a righteous man.</p>
+            <p><strong>48</strong> And all the people that came together to that sight, beholding the things which were done, smote their breasts, and returned.</p>
+            <p><strong>49</strong> And all his acquaintance, and the women that followed him from Galilee, stood afar off, beholding these things.</p>
+            <p><strong>50</strong> And, behold, there was a man named Joseph, a counsellor; and he was a good man, and a just:</p>
+            <p><strong>51</strong> (The same had not consented to the counsel and deed of them;) he was of Arimathaea, a city of the Jews: who also himself waited for the kingdom of God.</p>
+            <p><strong>52</strong> This man went unto Pilate, and begged the body of Jesus.</p>
+            <p><strong>53</strong> And he took it down, and wrapped it in linen, and laid it in a sepulchre that was hewn in stone, wherein never man before was laid.</p>
+            <p><strong>54</strong> And that day was the preparation, and the sabbath drew on.</p>
+            <p><strong>55</strong> And the women also, which came with him from Galilee, followed after, and beheld the sepulchre, and how his body was laid.</p>
+            <p><strong>56</strong> And they returned, and prepared spices and ointments; and rested the sabbath day according to the commandment.</p>
+            </div>
+            <div class="scripture-text" id="web-23-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 23 (ASV)</p>
+            <p><strong>1</strong> And the whole company of them rose up, and brought him before Pilate.</p>
+            <p><strong>2</strong> And they began to accuse him, saying, We found this man perverting our nation, and forbidding to give tribute to Caesar, and saying that he himself is Christ a king.</p>
+            <p><strong>3</strong> And Pilate asked him, saying, Art thou the King of the Jews? And he answered him and said, Thou sayest.</p>
+            <p><strong>4</strong> And Pilate said unto the chief priests and the multitudes, I find no fault in this man.</p>
+            <p><strong>5</strong> But they were the more urgent, saying, He stirreth up the people, teaching throughout all Judaea, and beginning from Galilee even unto this place.</p>
+            <p><strong>6</strong> But when Pilate heard it, he asked whether the man were a Galilaean.</p>
+            <p><strong>7</strong> And when he knew that he was of Herod`s jurisdiction, he sent him unto Herod, who himself also was at Jerusalem in these days.</p>
+            <p><strong>8</strong> Now when Herod saw Jesus, he was exceeding glad: for he was of a long time desirous to see him, because he had heard concerning him; and he hoped to see some miracle done by him.</p>
+            <p><strong>9</strong> And he questioned him in many words; but he answered him nothing.</p>
+            <p><strong>10</strong> And the chief priests and the scribes stood, vehemently accusing him.</p>
+            <p><strong>11</strong> And Herod with his soldiers set him at nought, and mocked him, and arraying him in gorgeous apparel sent him back to Pilate.</p>
+            <p><strong>12</strong> And Herod and Pilate became friends with each other that very day: for before they were at enmity between themselves.</p>
+            <p><strong>13</strong> And Pilate called together the chief priests and the rulers and the people,</p>
+            <p><strong>14</strong> and said unto them, Ye brought unto me this man, as one that perverteth the people: and behold, I having examined him before you, found no fault in this man touching those things whereof ye accuse him:</p>
+            <p><strong>15</strong> no, nor yet Herod: for he sent him back unto us; and behold, nothing worthy of death hath been done by him.</p>
+            <p><strong>16</strong> I will therefore chastise him, and release him.</p>
+            <p><strong>17</strong> [Now he must needs release unto them at the feast one prisoner.]</p>
+            <p><strong>18</strong> But they cried out all together, saying, Away with this man, and release unto us Barabbas: --</p>
+            <p><strong>19</strong> one who for a certain insurrection made in the city, and for murder, was cast into prison.</p>
+            <p><strong>20</strong> And Pilate spake unto them again, desiring to release Jesus;</p>
+            <p><strong>21</strong> but they shouted, saying, Crucify, crucify him.</p>
+            <p><strong>22</strong> And he said unto them the third time, Why, what evil hath this man done? I have found no cause of death in him: I will therefore chastise him and release him.</p>
+            <p><strong>23</strong> But they were urgent with loud voices, asking that he might be crucified. And their voices prevailed.</p>
+            <p><strong>24</strong> And Pilate gave sentence that what they asked for should be done.</p>
+            <p><strong>25</strong> And he released him that for insurrection and murder had been cast into prison, whom they asked for; but Jesus he delivered up to their will.</p>
+            <p><strong>26</strong> And when they led him away, they laid hold upon one Simon of Cyrene, coming from the country, and laid on him the cross, to bear it after Jesus.</p>
+            <p><strong>27</strong> And there followed him a great multitude of the people, and of women who bewailed and lamented him.</p>
+            <p><strong>28</strong> But Jesus turning unto them said, Daughters of Jerusalem, weep not for me, but weep for yourselves, and for your children.</p>
+            <p><strong>29</strong> For behold, the days are coming, in which they shall say, Blessed are the barren, and the wombs that never bare, and the breasts that never gave suck.</p>
+            <p><strong>30</strong> Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us.</p>
+            <p><strong>31</strong> For if they do these things in the green tree, what shall be done in the dry?</p>
+            <p><strong>32</strong> And there were also two others, malefactors, led with him to be put to death.</p>
+            <p><strong>33</strong> And when they came unto the place which is called The skull, there they crucified him, and the malefactors, one on the right hand and the other on the left.</p>
+            <p><strong>34</strong> And Jesus said, Father, forgive them; for they know not what they do. And parting his garments among them, they cast lots.</p>
+            <p><strong>35</strong> And the people stood beholding. And the rulers also scoffed at him, saying, He saved others; let him save himself, if this is the Christ of God, his chosen.</p>
+            <p><strong>36</strong> And the soldiers also mocked him, coming to him, offering him vinegar,</p>
+            <p><strong>37</strong> and saying, If thou art the King of the Jews, save thyself.</p>
+            <p><strong>38</strong> And there was also a superscription over him, THIS IS THE KING OF THE JEWS.</p>
+            <p><strong>39</strong> And one of the malefactors that were hanged railed on him, saying, Art not thou the Christ? save thyself and us.</p>
+            <p><strong>40</strong> But the other answered, and rebuking him said, Dost thou not even fear God, seeing thou art in the same condemnation?</p>
+            <p><strong>41</strong> And we indeed justly; for we receive the due reward of our deeds: but this man hath done nothing amiss.</p>
+            <p><strong>42</strong> And he said, Jesus, remember me when thou comest in thy kingdom.</p>
+            <p><strong>43</strong> And he said unto him, Verily I say unto thee, To-day shalt thou be with me in Paradise.</p>
+            <p><strong>44</strong> And it was now about the sixth hour, and a darkness came over the whole land until the ninth hour,</p>
+            <p><strong>45</strong> the sun`s light failing: and the veil of the temple was rent in the midst.</p>
+            <p><strong>46</strong> And Jesus, crying with a loud voice, said, Father, into thy hands I commend my spirit: and having said this, he gave up the ghost.</p>
+            <p><strong>47</strong> And when the centurion saw what was done, he glorified God, saying, Certainly this was a righteous man.</p>
+            <p><strong>48</strong> And all the multitudes that came together to this sight, when they beheld the things that were done, returned smiting their breasts.</p>
+            <p><strong>49</strong> And all his acquaintance, and the women that followed with him from Galilee, stood afar off, seeing these things.</p>
+            <p><strong>50</strong> And behold, a man named Joseph, who was a councillor, a good and righteous man</p>
+            <p><strong>51</strong> (he had not consented to their counsel and deed), [a man] of Arimathaea, a city of the Jews, who was looking for the kingdom of God:</p>
+            <p><strong>52</strong> this man went to Pilate, and asked for the body of Jesus.</p>
+            <p><strong>53</strong> And he took it down, and wrapped it in a linen cloth, and laid him in a tomb that was hewn in stone, where never man had yet lain.</p>
+            <p><strong>54</strong> And it was the day of the Preparation, and the sabbath drew on.</p>
+            <p><strong>55</strong> And the women, who had come with him out of Galilee, followed after, and beheld the tomb, and how his body was laid.</p>
+            <p><strong>56</strong> And they returned, and prepared spices and ointments. And on the sabbath they rested according to the commandment.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The council leads Jesus to Pilate, accusing him of stirring up the people and claiming to be a king. Pilate finds no guilt in him and sends him to Herod, who mocks him and sends him back. Though Pilate repeatedly declares Jesus innocent, the crowd demands his crucifixion and the release of Barabbas, and Pilate gives in. As Jesus is led away, Simon of Cyrene carries his cross, and Jesus speaks tenderly to the weeping women of Jerusalem. Crucified between two criminals, Jesus prays, Father, forgive them, for they don't know what they are doing. One criminal mocks him, but the other asks to be remembered, and Jesus promises him paradise that very day. Darkness covers the land, the temple veil tears in two, and Jesus commits his spirit to the Father and dies. A centurion glorifies God and declares him righteous. Joseph of Arimathea, a good and righteous man, lays Jesus' body in a new tomb as the Sabbath begins.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Condemned though innocent, he forgives his enemies, saves a dying thief, and gives up his spirit</li>
+          <li><strong>Pilate</strong> — Finds no fault in Jesus yet yields to the crowd and delivers him to be crucified</li>
+          <li><strong>The repentant criminal</strong> — Crucified beside Jesus, he asks to be remembered and is promised paradise</li>
+          <li><strong>Joseph of Arimathea</strong> — A good and righteous council member who lays Jesus' body in a new tomb</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 23:34 (WEB)</p>
+          <p class="verse__text">Jesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus suffered and died as the innocent one, bearing condemnation he did not deserve.</li>
+          <li>At the cross Jesus prays forgiveness for his enemies, showing the depth of God's mercy.</li>
+          <li>Salvation comes by simple faith, as the dying thief found welcome into paradise.</li>
+          <li>Jesus entrusted his spirit to the Father, completing the work he came to do.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-23">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-23">
+            <ul class="lesson-list">
+            <li><strong>Jesus is condemned though he is innocent.</strong> Pilate declares, 'I find no basis for a charge against this man,' yet hands him over to be crucified (Luke 23:4, 24, WEB).</li>
+            <li><strong>Jesus forgives even those who crucify him.</strong> From the cross he prays, 'Father, forgive them, for they don't know what they are doing' (Luke 23:34, WEB).</li>
+            <li><strong>Salvation is received by humble faith.</strong> To the criminal who asked to be remembered, Jesus said, 'today you will be with me in Paradise' (Luke 23:43, WEB).</li>
+            <li><strong>Jesus dies trusting the Father.</strong> With a loud voice he cried, 'Father, into your hands I commit my spirit!' and breathed his last (Luke 23:46, WEB).</li>
+            <li><strong>The cross moves witnesses to recognize his righteousness.</strong> The centurion glorified God, saying, 'Certainly this was a righteous man' (Luke 23:47, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-23">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-23">
+            <ol class="study-questions">
+            <li>How do Pilate and Herod respond to Jesus, and what do their verdicts reveal about his innocence?</li>
+            <li>What is striking about Jesus' first words from the cross?</li>
+            <li>What does the exchange between Jesus and the two criminals teach us about salvation?</li>
+            <li>How do the signs at Jesus' death, and the words he speaks, point to the meaning of the cross?</li>
+            <li>Where in your own life do you need to hear Jesus' words of forgiveness and welcome from the cross?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-23">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-23">
+            <ol class="study-questions">
+            <li>Pilate three times declares he finds no guilt in Jesus, and Herod likewise sends him back without condemning him (Luke 23:4, 14-15). Their verdicts underscore that Jesus is the innocent one, condemned in the place of the guilty, as Barabbas is released.</li>
+            <li>Even while being nailed to the cross, Jesus prays for those crucifying him, 'Father, forgive them, for they don't know what they are doing' (Luke 23:34). His mercy reaches his enemies and reveals the heart of God.</li>
+            <li>One criminal mocks Jesus, but the other confesses his own guilt and asks Jesus to remember him (Luke 23:40-42). Jesus promises him paradise that very day, showing salvation comes by faith in Christ alone, even at the last hour (23:43).</li>
+            <li>Darkness covers the land and the temple veil is torn in two as Jesus dies (Luke 23:44-45), signaling that the way to God is opened. His final words entrust his spirit to the Father (23:46), and the centurion declares him righteous (23:47).</li>
+            <li>This is a personal application question. Invite members to receive personally the forgiveness and welcome Jesus offers from the cross. As leader, encourage gentle, honest sharing and rest in the wonder of his grace, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-22.html">← Luke 22</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-24.html">Luke 24 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

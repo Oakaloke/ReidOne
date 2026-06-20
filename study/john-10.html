@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 10: I Am the Good Shepherd — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 10: Jesus describes himself as the door for the sheep and the good shepherd who lays down his life, and his sheep hear his voice and follow him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 10
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 10</span>
+        <h1>John 10: I Am the Good Shepherd</h1>
+        <p class="lead">Jesus describes himself as the door for the sheep and the good shepherd who lays down his life, and his sheep hear his voice and follow him.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-10">
+            <span>Scripture — John Chapter 10</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-10">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-10-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-10-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-10-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-10-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 10 (WEB)</p>
+            <p><strong>1</strong> “Most certainly, I tell you, one who doesn’t enter by the door into the sheep fold, but climbs up some other way, the same is a thief and a robber.</p>
+            <p><strong>2</strong> But one who enters in by the door is the shepherd of the sheep.</p>
+            <p><strong>3</strong> The gatekeeper opens the gate for him, and the sheep listen to his voice. He calls his own sheep by name, and leads them out.</p>
+            <p><strong>4</strong> Whenever he brings out his own sheep, he goes before them, and the sheep follow him, for they know his voice.</p>
+            <p><strong>5</strong> They will by no means follow a stranger, but will flee from him; for they don’t know the voice of strangers.”</p>
+            <p><strong>6</strong> Jesus spoke this parable to them, but they didn’t understand what he was telling them.</p>
+            <p><strong>7</strong> Jesus therefore said to them again, “Most certainly, I tell you, I am the sheep’s door.</p>
+            <p><strong>8</strong> All who came before me are thieves and robbers, but the sheep didn’t listen to them.</p>
+            <p><strong>9</strong> I am the door. If anyone enters in by me, he will be saved, and will go in and go out, and will find pasture.</p>
+            <p><strong>10</strong> The thief only comes to steal, kill, and destroy. I came that they may have life, and may have it abundantly.</p>
+            <p><strong>11</strong> I am the good shepherd. The good shepherd lays down his life for the sheep.</p>
+            <p><strong>12</strong> He who is a hired hand, and not a shepherd, who doesn’t own the sheep, sees the wolf coming, leaves the sheep, and flees. The wolf snatches the sheep, and scatters them.</p>
+            <p><strong>13</strong> The hired hand flees because he is a hired hand, and doesn’t care for the sheep.</p>
+            <p><strong>14</strong> I am the good shepherd. I know my own, and I’m known by my own;</p>
+            <p><strong>15</strong> even as the Father knows me, and I know the Father. I lay down my life for the sheep.</p>
+            <p><strong>16</strong> I have other sheep, which are not of this fold. I must bring them also, and they will hear my voice. They will become one flock with one shepherd.</p>
+            <p><strong>17</strong> Therefore the Father loves me, because I lay down my life, that I may take it again.</p>
+            <p><strong>18</strong> No one takes it away from me, but I lay it down by myself. I have power to lay it down, and I have power to take it again. I received this commandment from my Father.”</p>
+            <p><strong>19</strong> Therefore a division arose again among the Jews because of these words.</p>
+            <p><strong>20</strong> Many of them said, “He has a demon, and is insane! Why do you listen to him?”</p>
+            <p><strong>21</strong> Others said, “These are not the sayings of one possessed by a demon. It isn’t possible for a demon to open the eyes of the blind, is it?”</p>
+            <p><strong>22</strong> It was the Feast of the Dedication at Jerusalem.</p>
+            <p><strong>23</strong> It was winter, and Jesus was walking in the temple, in Solomon’s porch.</p>
+            <p><strong>24</strong> The Jews therefore came around him and said to him, “How long will you hold us in suspense? If you are the Christ, tell us plainly.”</p>
+            <p><strong>25</strong> Jesus answered them, “I told you, and you don’t believe. The works that I do in my Father’s name, these testify about me.</p>
+            <p><strong>26</strong> But you don’t believe, because you are not of my sheep, as I told you.</p>
+            <p><strong>27</strong> My sheep hear my voice, and I know them, and they follow me.</p>
+            <p><strong>28</strong> I give eternal life to them. They will never perish, and no one will snatch them out of my hand.</p>
+            <p><strong>29</strong> My Father, who has given them to me, is greater than all. No one is able to snatch them out of my Father’s hand.</p>
+            <p><strong>30</strong> I and the Father are one.”</p>
+            <p><strong>31</strong> Therefore Jews took up stones again to stone him.</p>
+            <p><strong>32</strong> Jesus answered them, “I have shown you many good works from my Father. For which of those works do you stone me?”</p>
+            <p><strong>33</strong> The Jews answered him, “We don’t stone you for a good work, but for blasphemy: because you, being a man, make yourself God.”</p>
+            <p><strong>34</strong> Jesus answered them, “Isn’t it written in your law, ‘I said, you are gods?’</p>
+            <p><strong>35</strong> If he called them gods, to whom the word of God came (and the Scripture can’t be broken),</p>
+            <p><strong>36</strong> do you say of him whom the Father sanctified and sent into the world, ‘You blaspheme,’ because I said, ‘I am the Son of God?’</p>
+            <p><strong>37</strong> If I don’t do the works of my Father, don’t believe me.</p>
+            <p><strong>38</strong> But if I do them, though you don’t believe me, believe the works; that you may know and believe that the Father is in me, and I in the Father.”</p>
+            <p><strong>39</strong> They sought again to seize him, and he went out of their hand.</p>
+            <p><strong>40</strong> He went away again beyond the Jordan into the place where John was baptizing at first, and there he stayed.</p>
+            <p><strong>41</strong> Many came to him. They said, “John indeed did no sign, but everything that John said about this man is true.”</p>
+            <p><strong>42</strong> Many believed in him there.</p>
+            </div>
+            <div class="scripture-text" id="web-10-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 10 (KJV)</p>
+            <p><strong>1</strong> Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber.</p>
+            <p><strong>2</strong> But he that entereth in by the door is the shepherd of the sheep.</p>
+            <p><strong>3</strong> To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out.</p>
+            <p><strong>4</strong> And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice.</p>
+            <p><strong>5</strong> And a stranger will they not follow, but will flee from him: for they know not the voice of strangers.</p>
+            <p><strong>6</strong> This parable spake Jesus unto them: but they understood not what things they were which he spake unto them.</p>
+            <p><strong>7</strong> Then said Jesus unto them again, Verily, verily, I say unto you, I am the door of the sheep.</p>
+            <p><strong>8</strong> All that ever came before me are thieves and robbers: but the sheep did not hear them.</p>
+            <p><strong>9</strong> I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture.</p>
+            <p><strong>10</strong> The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly.</p>
+            <p><strong>11</strong> I am the good shepherd: the good shepherd giveth his life for the sheep.</p>
+            <p><strong>12</strong> But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep.</p>
+            <p><strong>13</strong> The hireling fleeth, because he is an hireling, and careth not for the sheep.</p>
+            <p><strong>14</strong> I am the good shepherd, and know my sheep, and am known of mine.</p>
+            <p><strong>15</strong> As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep.</p>
+            <p><strong>16</strong> And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd.</p>
+            <p><strong>17</strong> Therefore doth my Father love me, because I lay down my life, that I might take it again.</p>
+            <p><strong>18</strong> No man taketh it from me, but I lay it down of myself. I have power to lay it down, and I have power to take it again. This commandment have I received of my Father.</p>
+            <p><strong>19</strong> There was a division therefore again among the Jews for these sayings.</p>
+            <p><strong>20</strong> And many of them said, He hath a devil, and is mad; why hear ye him?</p>
+            <p><strong>21</strong> Others said, These are not the words of him that hath a devil. Can a devil open the eyes of the blind?</p>
+            <p><strong>22</strong> And it was at Jerusalem the feast of the dedication, and it was winter.</p>
+            <p><strong>23</strong> And Jesus walked in the temple in Solomon’s porch.</p>
+            <p><strong>24</strong> Then came the Jews round about him, and said unto him, How long dost thou make us to doubt? If thou be the Christ, tell us plainly.</p>
+            <p><strong>25</strong> Jesus answered them, I told you, and ye believed not: the works that I do in my Father’s name, they bear witness of me.</p>
+            <p><strong>26</strong> But ye believe not, because ye are not of my sheep, as I said unto you.</p>
+            <p><strong>27</strong> My sheep hear my voice, and I know them, and they follow me:</p>
+            <p><strong>28</strong> And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand.</p>
+            <p><strong>29</strong> My Father, which gave them me, is greater than all; and no man is able to pluck them out of my Father’s hand.</p>
+            <p><strong>30</strong> I and my Father are one.</p>
+            <p><strong>31</strong> Then the Jews took up stones again to stone him.</p>
+            <p><strong>32</strong> Jesus answered them, Many good works have I shewed you from my Father; for which of those works do ye stone me?</p>
+            <p><strong>33</strong> The Jews answered him, saying, For a good work we stone thee not; but for blasphemy; and because that thou, being a man, makest thyself God.</p>
+            <p><strong>34</strong> Jesus answered them, Is it not written in your law, I said, Ye are gods?</p>
+            <p><strong>35</strong> If he called them gods, unto whom the word of God came, and the scripture cannot be broken;</p>
+            <p><strong>36</strong> Say ye of him, whom the Father hath sanctified, and sent into the world, Thou blasphemest; because I said, I am the Son of God?</p>
+            <p><strong>37</strong> If I do not the works of my Father, believe me not.</p>
+            <p><strong>38</strong> But if I do, though ye believe not me, believe the works: that ye may know, and believe, that the Father is in me, and I in him.</p>
+            <p><strong>39</strong> Therefore they sought again to take him: but he escaped out of their hand,</p>
+            <p><strong>40</strong> And went away again beyond Jordan into the place where John at first baptized; and there he abode.</p>
+            <p><strong>41</strong> And many resorted unto him, and said, John did no miracle: but all things that John spake of this man were true.</p>
+            <p><strong>42</strong> And many believed on him there.</p>
+            </div>
+            <div class="scripture-text" id="web-10-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 10 (ASV)</p>
+            <p><strong>1</strong> Verily, verily, I say unto you, He that entereth not by the door into the fold of the sheep, but climbeth up some other way, the same is a thief and a robber.</p>
+            <p><strong>2</strong> But he that entereth in by the door is the shepherd of the sheep.</p>
+            <p><strong>3</strong> To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out.</p>
+            <p><strong>4</strong> When he hath put forth all his own, he goeth before them, and the sheep follow him: for they know his voice.</p>
+            <p><strong>5</strong> And a stranger will they not follow, but will flee from him: for they know not the voice of strangers.</p>
+            <p><strong>6</strong> This parable spake Jesus unto them: but they understood not what things they were which he spake unto them.</p>
+            <p><strong>7</strong> Jesus therefore said unto them again, Verily, verily, I say unto you, I am the door of the sheep.</p>
+            <p><strong>8</strong> All that came before me are thieves and robbers: but the sheep did not hear them.</p>
+            <p><strong>9</strong> I am the door; by me if any man enter in, he shall be saved, and shall go in and go out, and shall find pasture.</p>
+            <p><strong>10</strong> The thief cometh not, but that he may steal, and kill, and destroy: I came that they may have life, and may have [it] abundantly.</p>
+            <p><strong>11</strong> I am the good shepherd: the good shepherd layeth down his life for the sheep.</p>
+            <p><strong>12</strong> He that is a hireling, and not a shepherd, whose own the sheep are not, beholdeth the wolf coming, and leaveth the sheep, and fleeth, and the wolf snatcheth them, and scattereth [them]:</p>
+            <p><strong>13</strong> [he fleeth] because he is a hireling, and careth not for the sheep.</p>
+            <p><strong>14</strong> I am the good shepherd; and I know mine own, and mine own know me,</p>
+            <p><strong>15</strong> even as the Father knoweth me, and I know the Father; and I lay down my life for the sheep.</p>
+            <p><strong>16</strong> And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice: and they shall become one flock, one shepherd.</p>
+            <p><strong>17</strong> Therefore doth the Father love me, because I lay down my life, that I may take it again.</p>
+            <p><strong>18</strong> No one taketh it away from me, but I lay it down of myself. I have power to lay it down, and I have power to take it again. This commandment received I from my Father.</p>
+            <p><strong>19</strong> There arose a division again among the Jews because of these words.</p>
+            <p><strong>20</strong> And many of them said, He hath a demon, and is mad; why hear ye him?</p>
+            <p><strong>21</strong> Others said, These are not the sayings of one possessed with a demon. Can a demon open the eyes of the blind?</p>
+            <p><strong>22</strong> And it was the feast of the dedication at Jerusalem:</p>
+            <p><strong>23</strong> it was winter; and Jesus was walking in the temple in Solomon`s porch.</p>
+            <p><strong>24</strong> The Jews therefore came round about him, and said unto him, How long dost thou hold us in suspense? If thou art the Christ, tell us plainly.</p>
+            <p><strong>25</strong> Jesus answered them, I told you, and ye believe not: the works that I do in my Father`s name, these bear witness of me.</p>
+            <p><strong>26</strong> But ye believe not, because ye are not of my sheep.</p>
+            <p><strong>27</strong> My sheep hear my voice, and I know them, and they follow me:</p>
+            <p><strong>28</strong> and I give unto them eternal life; and they shall never perish, and no one shall snatch them out of my hand.</p>
+            <p><strong>29</strong> My Father, who hath given [them] unto me, is greater than all; and no one is able to snatch [them] out of the Father`s hand.</p>
+            <p><strong>30</strong> I and the Father are one.</p>
+            <p><strong>31</strong> The Jews took up stones again to stone him.</p>
+            <p><strong>32</strong> Jesus answered them, Many good works have I showed you from the Father; for which of those works do ye stone me?</p>
+            <p><strong>33</strong> The Jews answered him, For a good work we stone thee not, but for blasphemy; and because that thou, being a man, makest thyself God.</p>
+            <p><strong>34</strong> Jesus answered them, Is it not written in your law, I said, ye are gods?</p>
+            <p><strong>35</strong> If he called them gods, unto whom the word of God came (and the scripture cannot be broken),</p>
+            <p><strong>36</strong> say ye of him, whom the Father sanctified and sent into the world, Thou blasphemest; because I said, I am [the] Son of God?</p>
+            <p><strong>37</strong> If I do not the works of my Father, believe me not.</p>
+            <p><strong>38</strong> But if I do them, though ye believe not me, believe the works: that ye may know and understand that the Father is in me, and I in the Father.</p>
+            <p><strong>39</strong> They sought again to take him: and he went forth out of their hand.</p>
+            <p><strong>40</strong> And he went away again beyond the Jordan into the place where John was at the first baptizing; and there be abode.</p>
+            <p><strong>41</strong> And many came unto him; and they said, John indeed did no sign: but all things whatsoever John spake of this man were true.</p>
+            <p><strong>42</strong> And many believed on him there.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus tells a figure of speech about a shepherd whose sheep know his voice and follow him, while they flee from a stranger. He declares, I am the door of the sheep, the only true entrance to safety and pasture, contrasting himself with thieves who come to steal and destroy. Then he says, I am the good shepherd, who lays down his life for the sheep, unlike a hired hand who abandons them when the wolf comes. He speaks of other sheep he will bring so there will be one flock and one shepherd. Later, at the Feast of Dedication, the leaders demand he say plainly if he is the Christ. Jesus says his sheep hear his voice and no one can snatch them from his hand, then claims, I and the Father are one, and they try to stone him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Reveals himself as the door and the good shepherd who lays down his life for the sheep.</li>
+          <li><strong>The sheep</strong> — Those who hear the shepherd's voice, follow him, and are held securely in his hand.</li>
+          <li><strong>The hired hand</strong> — A contrast figure who flees when the wolf comes, having no real care for the sheep.</li>
+          <li><strong>The Jewish leaders</strong> — Demand a plain claim, then take up stones when Jesus says he and the Father are one.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 10:11 (WEB)</p>
+          <p class="verse__text">I am the good shepherd. The good shepherd lays down his life for the sheep.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus is the only door into salvation, safety, and abundant life.</li>
+          <li>The good shepherd loves his sheep so deeply that he willingly lays down his life for them.</li>
+          <li>Christ's true sheep recognize his voice and follow him rather than strangers.</li>
+          <li>Those who belong to Jesus are held securely in his hand and the Father's, beyond all snatching.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-10">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-10">
+            <ul class="lesson-list">
+            <li><strong>Jesus is the only way into life with God.</strong> He says, 'I am the door. If anyone enters in by me, he will be saved' (John 10:9, WEB), the single true entrance for the sheep.</li>
+            <li><strong>Christ came to give us abundant life.</strong> Against the thief who steals and destroys, Jesus says, 'I came that they may have life, and may have it abundantly' (John 10:10, WEB).</li>
+            <li><strong>The good shepherd lays down his life for his sheep.</strong> Jesus declares, 'I am the good shepherd. The good shepherd lays down his life for the sheep' (John 10:11, WEB), unlike the hired hand who flees.</li>
+            <li><strong>Christ's sheep know and follow his voice.</strong> He says, 'My sheep hear my voice, and I know them, and they follow me' (John 10:27, WEB), a relationship of mutual knowing.</li>
+            <li><strong>Believers are eternally secure in Christ.</strong> Jesus promises, 'I give eternal life to them. They will never perish, and no one will snatch them out of my hand' (John 10:28, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-10">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-10">
+            <ol class="study-questions">
+            <li>What does Jesus mean by calling himself the door of the sheep, and what does he promise those who enter by him?</li>
+            <li>How does the good shepherd differ from the thief and the hired hand?</li>
+            <li>What does Jesus teach about his sheep hearing his voice and following him?</li>
+            <li>What assurance does Jesus give about the security of his sheep, and how does it relate to his claim that he and the Father are one?</li>
+            <li>Where in your own life do you need to listen more closely for the voice of your shepherd?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-10">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-10">
+            <ol class="study-questions">
+            <li>Jesus calls himself the door, the one entrance through which the sheep find salvation and pasture (John 10:7-9). To enter by him is to be saved and to find freedom and provision, while all other ways are like climbing in to rob the flock.</li>
+            <li>The thief comes only to steal, kill, and destroy, and the hired hand abandons the sheep when danger comes (John 10:10, 12-13). The good shepherd, by contrast, knows his sheep and lays down his life for them out of genuine love (10:11, 14-15).</li>
+            <li>Jesus says his sheep hear his voice, are known by him, and follow him (John 10:27). This is a picture of intimate relationship, where belonging to Christ means recognizing his guidance and trusting him over the strange voices of the world.</li>
+            <li>Jesus promises his sheep eternal life and says no one can snatch them from his hand or the Father's (John 10:28-29). This security rests on his unity with the Father, for he says, 'I and the Father are one' (10:30), a claim the leaders rightly heard as divine.</li>
+            <li>This is a personal application question. Invite members to share where the noise of life drowns out the shepherd's voice, and to consider habits that help them listen, like Scripture and prayer. As leader, encourage honesty and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-9.html">← John 9</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-11.html">John 11 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

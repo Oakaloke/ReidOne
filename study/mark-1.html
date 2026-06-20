@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 1: The Gospel Breaks In — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 1: Mark opens at full pace as John prepares the way, the Father claims Jesus as his beloved Son, and the kingdom of God arrives in word and power." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 1</span>
+        <h1>Mark 1: The Gospel Breaks In</h1>
+        <p class="lead">Mark opens at full pace as John prepares the way, the Father claims Jesus as his beloved Son, and the kingdom of God arrives in word and power.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Mark Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 1 (WEB)</p>
+            <p><strong>1</strong> The beginning of the Good News of Jesus Christ, the Son of God.</p>
+            <p><strong>2</strong> As it is written in the prophets, “Behold, I send my messenger before your face, who will prepare your way before you:</p>
+            <p><strong>3</strong> the voice of one crying in the wilderness, ‘Make ready the way of the Lord! Make his paths straight!’”</p>
+            <p><strong>4</strong> John came baptizing in the wilderness and preaching the baptism of repentance for forgiveness of sins.</p>
+            <p><strong>5</strong> All the country of Judea and all those of Jerusalem went out to him. They were baptized by him in the Jordan river, confessing their sins.</p>
+            <p><strong>6</strong> John was clothed with camel’s hair and a leather belt around his waist. He ate locusts and wild honey.</p>
+            <p><strong>7</strong> He preached, saying, “After me comes he who is mightier than I, the thong of whose sandals I am not worthy to stoop down and loosen.</p>
+            <p><strong>8</strong> I baptized you in water, but he will baptize you in the Holy Spirit.”</p>
+            <p><strong>9</strong> In those days, Jesus came from Nazareth of Galilee, and was baptized by John in the Jordan.</p>
+            <p><strong>10</strong> Immediately coming up from the water, he saw the heavens parting, and the Spirit descending on him like a dove.</p>
+            <p><strong>11</strong> A voice came out of the sky, “You are my beloved Son, in whom I am well pleased.”</p>
+            <p><strong>12</strong> Immediately the Spirit drove him out into the wilderness.</p>
+            <p><strong>13</strong> He was there in the wilderness forty days tempted by Satan. He was with the wild animals; and the angels were serving him.</p>
+            <p><strong>14</strong> Now after John was taken into custody, Jesus came into Galilee, preaching the Good News of God’s Kingdom,</p>
+            <p><strong>15</strong> and saying, “The time is fulfilled, and God’s Kingdom is at hand! Repent, and believe in the Good News.”</p>
+            <p><strong>16</strong> Passing along by the sea of Galilee, he saw Simon and Andrew the brother of Simon casting a net into the sea, for they were fishermen.</p>
+            <p><strong>17</strong> Jesus said to them, “Come after me, and I will make you into fishers for men.”</p>
+            <p><strong>18</strong> Immediately they left their nets, and followed him.</p>
+            <p><strong>19</strong> Going on a little further from there, he saw James the son of Zebedee, and John, his brother, who were also in the boat mending the nets.</p>
+            <p><strong>20</strong> Immediately he called them, and they left their father, Zebedee, in the boat with the hired servants, and went after him.</p>
+            <p><strong>21</strong> They went into Capernaum, and immediately on the Sabbath day he entered into the synagogue and taught.</p>
+            <p><strong>22</strong> They were astonished at his teaching, for he taught them as having authority, and not as the scribes.</p>
+            <p><strong>23</strong> Immediately there was in their synagogue a man with an unclean spirit, and he cried out,</p>
+            <p><strong>24</strong> saying, “Ha! What do we have to do with you, Jesus, you Nazarene? Have you come to destroy us? I know you who you are: the Holy One of God!”</p>
+            <p><strong>25</strong> Jesus rebuked him, saying, “Be quiet, and come out of him!”</p>
+            <p><strong>26</strong> The unclean spirit, convulsing him and crying with a loud voice, came out of him.</p>
+            <p><strong>27</strong> They were all amazed, so that they questioned among themselves, saying, “What is this? A new teaching? For with authority he commands even the unclean spirits, and they obey him!”</p>
+            <p><strong>28</strong> The report of him went out immediately everywhere into all the region of Galilee and its surrounding area.</p>
+            <p><strong>29</strong> Immediately, when they had come out of the synagogue, they came into the house of Simon and Andrew, with James and John.</p>
+            <p><strong>30</strong> Now Simon’s wife’s mother lay sick with a fever, and immediately they told him about her.</p>
+            <p><strong>31</strong> He came and took her by the hand, and raised her up. The fever left her, and she served them.</p>
+            <p><strong>32</strong> At evening, when the sun had set, they brought to him all who were sick, and those who were possessed by demons.</p>
+            <p><strong>33</strong> All the city was gathered together at the door.</p>
+            <p><strong>34</strong> He healed many who were sick with various diseases, and cast out many demons. He didn’t allow the demons to speak, because they knew him.</p>
+            <p><strong>35</strong> Early in the morning, while it was still dark, he rose up and went out, and departed into a deserted place, and prayed there.</p>
+            <p><strong>36</strong> Simon and those who were with him followed after him;</p>
+            <p><strong>37</strong> and they found him, and told him, “Everyone is looking for you.”</p>
+            <p><strong>38</strong> He said to them, “Let’s go elsewhere into the next towns, that I may preach there also, because I came out for this reason.”</p>
+            <p><strong>39</strong> He went into their synagogues throughout all Galilee, preaching and casting out demons.</p>
+            <p><strong>40</strong> A leper came to him, begging him, kneeling down to him, and saying to him, “If you want to, you can make me clean.”</p>
+            <p><strong>41</strong> Being moved with compassion, he stretched out his hand, and touched him, and said to him, “I want to. Be made clean.”</p>
+            <p><strong>42</strong> When he had said this, immediately the leprosy departed from him, and he was made clean.</p>
+            <p><strong>43</strong> He strictly warned him, and immediately sent him out,</p>
+            <p><strong>44</strong> and said to him, “See you say nothing to anybody, but go show yourself to the priest, and offer for your cleansing the things which Moses commanded, for a testimony to them.”</p>
+            <p><strong>45</strong> But he went out, and began to proclaim it much, and to spread about the matter, so that Jesus could no more openly enter into a city, but was outside in desert places: and they came to him from everywhere.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 1 (KJV)</p>
+            <p><strong>1</strong> The beginning of the gospel of Jesus Christ, the Son of God;</p>
+            <p><strong>2</strong> As it is written in the prophets, Behold, I send my messenger before thy face, which shall prepare thy way before thee.</p>
+            <p><strong>3</strong> The voice of one crying in the wilderness, Prepare ye the way of the Lord, make his paths straight.</p>
+            <p><strong>4</strong> John did baptize in the wilderness, and preach the baptism of repentance for the remission of sins.</p>
+            <p><strong>5</strong> And there went out unto him all the land of Judaea, and they of Jerusalem, and were all baptized of him in the river of Jordan, confessing their sins.</p>
+            <p><strong>6</strong> And John was clothed with camel’s hair, and with a girdle of a skin about his loins; and he did eat locusts and wild honey;</p>
+            <p><strong>7</strong> And preached, saying, There cometh one mightier than I after me, the latchet of whose shoes I am not worthy to stoop down and unloose.</p>
+            <p><strong>8</strong> I indeed have baptized you with water: but he shall baptize you with the Holy Ghost.</p>
+            <p><strong>9</strong> And it came to pass in those days, that Jesus came from Nazareth of Galilee, and was baptized of John in Jordan.</p>
+            <p><strong>10</strong> And straightway coming up out of the water, he saw the heavens opened, and the Spirit like a dove descending upon him:</p>
+            <p><strong>11</strong> And there came a voice from heaven, saying, Thou art my beloved Son, in whom I am well pleased.</p>
+            <p><strong>12</strong> And immediately the Spirit driveth him into the wilderness.</p>
+            <p><strong>13</strong> And he was there in the wilderness forty days, tempted of Satan; and was with the wild beasts; and the angels ministered unto him.</p>
+            <p><strong>14</strong> Now after that John was put in prison, Jesus came into Galilee, preaching the gospel of the kingdom of God,</p>
+            <p><strong>15</strong> And saying, The time is fulfilled, and the kingdom of God is at hand: repent ye, and believe the gospel.</p>
+            <p><strong>16</strong> Now as he walked by the sea of Galilee, he saw Simon and Andrew his brother casting a net into the sea: for they were fishers.</p>
+            <p><strong>17</strong> And Jesus said unto them, Come ye after me, and I will make you to become fishers of men.</p>
+            <p><strong>18</strong> And straightway they forsook their nets, and followed him.</p>
+            <p><strong>19</strong> And when he had gone a little farther thence, he saw James the son of Zebedee, and John his brother, who also were in the ship mending their nets.</p>
+            <p><strong>20</strong> And straightway he called them: and they left their father Zebedee in the ship with the hired servants, and went after him.</p>
+            <p><strong>21</strong> And they went into Capernaum; and straightway on the sabbath day he entered into the synagogue, and taught.</p>
+            <p><strong>22</strong> And they were astonished at his doctrine: for he taught them as one that had authority, and not as the scribes.</p>
+            <p><strong>23</strong> And there was in their synagogue a man with an unclean spirit; and he cried out,</p>
+            <p><strong>24</strong> Saying, Let us alone; what have we to do with thee, thou Jesus of Nazareth? art thou come to destroy us? I know thee who thou art, the Holy One of God.</p>
+            <p><strong>25</strong> And Jesus rebuked him, saying, Hold thy peace, and come out of him.</p>
+            <p><strong>26</strong> And when the unclean spirit had torn him, and cried with a loud voice, he came out of him.</p>
+            <p><strong>27</strong> And they were all amazed, insomuch that they questioned among themselves, saying, What thing is this? what new doctrine is this? for with authority commandeth he even the unclean spirits, and they do obey him.</p>
+            <p><strong>28</strong> And immediately his fame spread abroad throughout all the region round about Galilee.</p>
+            <p><strong>29</strong> And forthwith, when they were come out of the synagogue, they entered into the house of Simon and Andrew, with James and John.</p>
+            <p><strong>30</strong> But Simon’s wife’s mother lay sick of a fever, and anon they tell him of her.</p>
+            <p><strong>31</strong> And he came and took her by the hand, and lifted her up; and immediately the fever left her, and she ministered unto them.</p>
+            <p><strong>32</strong> And at even, when the sun did set, they brought unto him all that were diseased, and them that were possessed with devils.</p>
+            <p><strong>33</strong> And all the city was gathered together at the door.</p>
+            <p><strong>34</strong> And he healed many that were sick of divers diseases, and cast out many devils; and suffered not the devils to speak, because they knew him.</p>
+            <p><strong>35</strong> And in the morning, rising up a great while before day, he went out, and departed into a solitary place, and there prayed.</p>
+            <p><strong>36</strong> And Simon and they that were with him followed after him.</p>
+            <p><strong>37</strong> And when they had found him, they said unto him, All men seek for thee.</p>
+            <p><strong>38</strong> And he said unto them, Let us go into the next towns, that I may preach there also: for therefore came I forth.</p>
+            <p><strong>39</strong> And he preached in their synagogues throughout all Galilee, and cast out devils.</p>
+            <p><strong>40</strong> And there came a leper to him, beseeching him, and kneeling down to him, and saying unto him, If thou wilt, thou canst make me clean.</p>
+            <p><strong>41</strong> And Jesus, moved with compassion, put forth his hand, and touched him, and saith unto him, I will; be thou clean.</p>
+            <p><strong>42</strong> And as soon as he had spoken, immediately the leprosy departed from him, and he was cleansed.</p>
+            <p><strong>43</strong> And he straitly charged him, and forthwith sent him away;</p>
+            <p><strong>44</strong> And saith unto him, See thou say nothing to any man: but go thy way, shew thyself to the priest, and offer for thy cleansing those things which Moses commanded, for a testimony unto them.</p>
+            <p><strong>45</strong> But he went out, and began to publish it much, and to blaze abroad the matter, insomuch that Jesus could no more openly enter into the city, but was without in desert places: and they came to him from every quarter.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 1 (ASV)</p>
+            <p><strong>1</strong> The beginning of the gospel of Jesus Christ, the Son of God.</p>
+            <p><strong>2</strong> Even as it is written in Isaiah the prophet, Behold, I send my messenger before thy face, Who shall prepare thy way.</p>
+            <p><strong>3</strong> The voice of one crying in the wilderness, Make ye ready the way of the Lord, Make his paths straight;</p>
+            <p><strong>4</strong> John came, who baptized in the wilderness and preached the baptism of repentance unto remission of sins.</p>
+            <p><strong>5</strong> And there went out unto him all the country of Judaea, and all they of Jerusalem; And they were baptized of him in the river Jordan, confessing their sins.</p>
+            <p><strong>6</strong> And John was clothed with camel`s hair, and [had] a leathern girdle about his loins, and did eat locusts and wild honey.</p>
+            <p><strong>7</strong> And he preached, saying, There cometh after me he that is mightier than I, the latchet of whose shoes I am not worthy to stoop down and unloose.</p>
+            <p><strong>8</strong> I baptized you in water; But he shall baptize you in the Holy Spirit.</p>
+            <p><strong>9</strong> And it came to pass in those days, that Jesus came from Nazareth of Galilee, and was baptized of John in the Jordan.</p>
+            <p><strong>10</strong> And straightway coming up out of the water, he saw the heavens rent asunder, and the Spirit as a dove descending upon him:</p>
+            <p><strong>11</strong> And a voice came out of the heavens, Thou art my beloved Son, in thee I am well pleased.</p>
+            <p><strong>12</strong> And straightway the Spirit driveth him forth into the wilderness.</p>
+            <p><strong>13</strong> And he was in the wilderness forty days tempted of Satan; And he was with the wild beasts; And the angels ministered unto him.</p>
+            <p><strong>14</strong> Now after John was delivered up, Jesus came into Galilee, preaching the gospel of God,</p>
+            <p><strong>15</strong> and saying, The time is fulfilled, and the kingdom of God is at hand: repent ye, and believe in the gospel.</p>
+            <p><strong>16</strong> And passing along by the sea of Galilee, he saw Simon and Andrew the brother of Simon casting a net in the sea; for they were fishers.</p>
+            <p><strong>17</strong> And Jesus said unto them, Come ye after me, and I will make you to become fishers of men.</p>
+            <p><strong>18</strong> And straightway they left the nets, and followed him.</p>
+            <p><strong>19</strong> And going on a little further, he saw James the [son] of Zebedee, and John his brother, who also were in the boat mending the nets.</p>
+            <p><strong>20</strong> And straightway he called them: and they left their father Zebedee in the boat with the hired servants, and went after him.</p>
+            <p><strong>21</strong> And they go into Capernaum; and straightway on the sabbath day he entered into the synagogue and taught.</p>
+            <p><strong>22</strong> And they were astonished at his teaching: For he taught them as having authority, and not as the scribes.</p>
+            <p><strong>23</strong> And straightway there was in their synagogue a man with an unclean spirit; and he cried out,</p>
+            <p><strong>24</strong> saying, What have we to do with thee, Jesus thou Nazarene? art thou come to destroy us? I know thee who thou art, the Holy One of God.</p>
+            <p><strong>25</strong> And Jesus rebuked him, saying, Hold thy peace, and come out of him.</p>
+            <p><strong>26</strong> And the unclean spirit, tearing him and crying with a loud voice, came out of him.</p>
+            <p><strong>27</strong> And they were all amazed, insomuch that they questioned among themselves, saying, What is this? a new teaching! with authority he commandeth even the unclean spirits, and they obey him.</p>
+            <p><strong>28</strong> And the report of him went out straightway everywhere into all the region of Galilee round about.</p>
+            <p><strong>29</strong> And straightway, when they were come out of the synagogue, they came into the house of Simon and Andrew, with James and John.</p>
+            <p><strong>30</strong> Now Simon`s wife`s mother lay sick of a fever; and straightway they tell him of her:</p>
+            <p><strong>31</strong> and he came and took her by the hand, and raised her up; and the fever left her, and she ministered unto them.</p>
+            <p><strong>32</strong> And at even, when the sun did set, they brought unto him all that were sick, and them that were possessed with demons.</p>
+            <p><strong>33</strong> And all the city was gathered together at the door.</p>
+            <p><strong>34</strong> And he healed many that were sick with divers diseases, and cast out many demons; and he suffered not the demons to speak, because they knew him.</p>
+            <p><strong>35</strong> And in the morning, a great while before day, he rose up and went out, and departed into a desert place, and there prayed.</p>
+            <p><strong>36</strong> And Simon and they that were with him followed after him;</p>
+            <p><strong>37</strong> and they found him, and say unto him, All are seeking thee.</p>
+            <p><strong>38</strong> And he saith unto them, Let us go elsewhere into the next towns, that I may preach there also; for to this end came I forth.</p>
+            <p><strong>39</strong> And he went into their synagogues throughout all Galilee, preaching and casting out demons.</p>
+            <p><strong>40</strong> And there cometh to him a leper, beseeching him, and kneeling down to him, and saying unto him, If thou wilt, thou canst make me clean.</p>
+            <p><strong>41</strong> And being moved with compassion, he stretched forth his hand, and touched him, and saith unto him, I will; be thou made clean.</p>
+            <p><strong>42</strong> And straightway the leprosy departed from him, and he was made clean.</p>
+            <p><strong>43</strong> And he strictly charged him, and straightway sent him out,</p>
+            <p><strong>44</strong> and saith unto him, See thou say nothing to any man: but go show thyself to the priest, and offer for thy cleansing the things which Moses commanded, for a testimony unto them.</p>
+            <p><strong>45</strong> But he went out, and began to publish it much, and to spread abroad the matter, insomuch that Jesus could no more openly enter into a city, but was without in desert places: and they came to him from every quarter.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Mark begins not with a genealogy but with a herald. John the Baptizer appears in the wilderness, calling people to repent and be baptized, pointing beyond himself to one mightier who will baptize with the Holy Spirit. Jesus comes from Nazareth and is baptized; the heavens tear open, the Spirit descends, and the Father declares him his beloved Son. Driven into the wilderness, Jesus is tempted, then returns proclaiming that the kingdom of God has come near. He calls Simon, Andrew, James, and John, who leave their nets at once. In Capernaum he teaches with authority, casts out an unclean spirit, heals Peter's mother-in-law, and many more at sundown. Rising before dawn to pray, he moves on to preach throughout Galilee. A leper begs for cleansing; moved with compassion, Jesus touches him and makes him clean, and the news spreads everywhere.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Son of God who is baptized, proclaims the kingdom, calls disciples, and heals with authority.</li>
+          <li><strong>John the Baptizer</strong> — The wilderness herald who prepares the way and baptizes for repentance.</li>
+          <li><strong>Simon and Andrew</strong> — Fishermen brothers who leave their nets immediately to follow Jesus.</li>
+          <li><strong>James and John</strong> — Sons of Zebedee, called from their boat to become fishers of men.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 1:15 (WEB)</p>
+          <p class="verse__text">and saying, “The time is fulfilled, and God’s Kingdom is at hand! Repent, and believe in the Good News.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The good news of Jesus begins with a call to repent and believe.</li>
+          <li>At his baptism Jesus is publicly named the Father's beloved Son.</li>
+          <li>Following Jesus means leaving behind what we cling to and going at his word.</li>
+          <li>Jesus teaches and acts with an authority that nothing unclean can resist.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>God prepares hearts before the Savior arrives.</strong> John comes 'preaching the baptism of repentance for forgiveness of sins' to make ready the way of the Lord (Mark 1:4, WEB).</li>
+            <li><strong>The Father delights in his Son.</strong> A voice from heaven says, 'You are my beloved Son, in whom I am well pleased' (Mark 1:11, WEB).</li>
+            <li><strong>The kingdom calls for repentance and faith.</strong> Jesus proclaims, 'The time is fulfilled, and the Kingdom of God is at hand! Repent, and believe in the Good News' (Mark 1:15, WEB).</li>
+            <li><strong>Jesus' call demands immediate, wholehearted response.</strong> Simon and Andrew 'immediately left their nets, and followed him' (Mark 1:18, WEB).</li>
+            <li><strong>Christ meets the outcast with compassion and power.</strong> Moved with compassion, Jesus touches the leper and says, 'I want to. Be made clean,' and the leprosy departs (Mark 1:41-42, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>How does John the Baptizer prepare the way for Jesus, and how does he describe the one coming after him?</li>
+            <li>What happens at Jesus' baptism, and what does the Father's voice reveal about his identity?</li>
+            <li>How do the first disciples respond to Jesus' call, and what does their response cost them?</li>
+            <li>What patterns do you notice in how Jesus balances teaching, healing, and time alone in prayer?</li>
+            <li>Where in your own life is Jesus calling you to leave something behind and follow him without delay?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>John preaches a baptism of repentance and points beyond himself, saying one is coming whose sandals he is unworthy to untie, who will baptize with the Holy Spirit (Mark 1:7-8). He readies people by turning their hearts toward God.</li>
+            <li>The heavens are torn open, the Spirit descends like a dove, and the Father declares, 'You are my beloved Son, in whom I am well pleased' (Mark 1:10-11). This reveals Jesus as the Son of God, affirmed and empowered for his mission.</li>
+            <li>Simon, Andrew, James, and John leave their nets and even their father in the boat to follow immediately (Mark 1:18-20). Their response costs them livelihood and security, showing that Jesus' call takes priority over all.</li>
+            <li>Jesus teaches in the synagogue, heals many, yet rises 'a long time before daylight' to pray in a solitary place (Mark 1:35). His ministry flows from communion with the Father, and he refuses to be confined to one town's demands.</li>
+            <li>This is a personal application question. Invite members to name what they cling to that Jesus may be asking them to release. As leader, encourage honest reflection and point back to the disciples' glad obedience, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-2.html">Mark 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

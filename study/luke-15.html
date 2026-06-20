@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 15: Lost and Found, Heaven Rejoices — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 15: Three tender parables reveal a God who searches for the lost and runs to welcome home every wandering child with joy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 15</span>
+        <h1>Luke 15: Lost and Found, Heaven Rejoices</h1>
+        <p class="lead">Three tender parables reveal a God who searches for the lost and runs to welcome home every wandering child with joy.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — Luke Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 15 (WEB)</p>
+            <p><strong>1</strong> Now all the tax collectors and sinners were coming close to him to hear him.</p>
+            <p><strong>2</strong> The Pharisees and the scribes murmured, saying, “This man welcomes sinners, and eats with them.”</p>
+            <p><strong>3</strong> He told them this parable.</p>
+            <p><strong>4</strong> “Which of you men, if you had one hundred sheep, and lost one of them, wouldn’t leave the ninety-nine in the wilderness, and go after the one that was lost, until he found it?</p>
+            <p><strong>5</strong> When he has found it, he carries it on his shoulders, rejoicing.</p>
+            <p><strong>6</strong> When he comes home, he calls together his friends and his neighbors, saying to them, ‘Rejoice with me, for I have found my sheep which was lost!’</p>
+            <p><strong>7</strong> I tell you that even so there will be more joy in heaven over one sinner who repents, than over ninety-nine righteous people who need no repentance.</p>
+            <p><strong>8</strong> Or what woman, if she had ten drachma coins, if she lost one drachma coin, wouldn’t light a lamp, sweep the house, and seek diligently until she found it?</p>
+            <p><strong>9</strong> When she has found it, she calls together her friends and neighbors, saying, ‘Rejoice with me, for I have found the drachma which I had lost.’</p>
+            <p><strong>10</strong> Even so, I tell you, there is joy in the presence of the angels of God over one sinner repenting.”</p>
+            <p><strong>11</strong> He said, “A certain man had two sons.</p>
+            <p><strong>12</strong> The younger of them said to his father, ‘Father, give me my share of your property.’ He divided his livelihood between them.</p>
+            <p><strong>13</strong> Not many days after, the younger son gathered all of this together and traveled into a far country. There he wasted his property with riotous living.</p>
+            <p><strong>14</strong> When he had spent all of it, there arose a severe famine in that country, and he began to be in need.</p>
+            <p><strong>15</strong> He went and joined himself to one of the citizens of that country, and he sent him into his fields to feed pigs.</p>
+            <p><strong>16</strong> He wanted to fill his belly with the husks that the pigs ate, but no one gave him any.</p>
+            <p><strong>17</strong> But when he came to himself he said, ‘How many hired servants of my father’s have bread enough to spare, and I’m dying with hunger!</p>
+            <p><strong>18</strong> I will get up and go to my father, and will tell him, “Father, I have sinned against heaven, and in your sight.</p>
+            <p><strong>19</strong> I am no more worthy to be called your son. Make me as one of your hired servants.”’</p>
+            <p><strong>20</strong> “He arose, and came to his father. But while he was still far off, his father saw him, and was moved with compassion, and ran, and fell on his neck, and kissed him.</p>
+            <p><strong>21</strong> The son said to him, ‘Father, I have sinned against heaven, and in your sight. I am no longer worthy to be called your son.’</p>
+            <p><strong>22</strong> “But the father said to his servants, ‘Bring out the best robe, and put it on him. Put a ring on his hand, and shoes on his feet.</p>
+            <p><strong>23</strong> Bring the fattened calf, kill it, and let us eat, and celebrate;</p>
+            <p><strong>24</strong> for this, my son, was dead, and is alive again. He was lost, and is found.’ They began to celebrate.</p>
+            <p><strong>25</strong> “Now his elder son was in the field. As he came near to the house, he heard music and dancing.</p>
+            <p><strong>26</strong> He called one of the servants to him, and asked what was going on.</p>
+            <p><strong>27</strong> He said to him, ‘Your brother has come, and your father has killed the fattened calf, because he has received him back safe and healthy.’</p>
+            <p><strong>28</strong> But he was angry, and would not go in. Therefore his father came out, and begged him.</p>
+            <p><strong>29</strong> But he answered his father, ‘Behold, these many years I have served you, and I never disobeyed a commandment of yours, but you never gave me a goat, that I might celebrate with my friends.</p>
+            <p><strong>30</strong> But when this your son came, who has devoured your living with prostitutes, you killed the fattened calf for him.’</p>
+            <p><strong>31</strong> “He said to him, ‘Son, you are always with me, and all that is mine is yours.</p>
+            <p><strong>32</strong> But it was appropriate to celebrate and be glad, for this, your brother, was dead, and is alive again. He was lost, and is found.’”</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 15 (KJV)</p>
+            <p><strong>1</strong> Then drew near unto him all the publicans and sinners for to hear him.</p>
+            <p><strong>2</strong> And the Pharisees and scribes murmured, saying, This man receiveth sinners, and eateth with them.</p>
+            <p><strong>3</strong> And he spake this parable unto them, saying,</p>
+            <p><strong>4</strong> What man of you, having an hundred sheep, if he lose one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?</p>
+            <p><strong>5</strong> And when he hath found it, he layeth it on his shoulders, rejoicing.</p>
+            <p><strong>6</strong> And when he cometh home, he calleth together his friends and neighbours, saying unto them, Rejoice with me; for I have found my sheep which was lost.</p>
+            <p><strong>7</strong> I say unto you, that likewise joy shall be in heaven over one sinner that repenteth, more than over ninety and nine just persons, which need no repentance.</p>
+            <p><strong>8</strong> Either what woman having ten pieces of silver, if she lose one piece, doth not light a candle, and sweep the house, and seek diligently till she find it?</p>
+            <p><strong>9</strong> And when she hath found it, she calleth her friends and her neighbours together, saying, Rejoice with me; for I have found the piece which I had lost.</p>
+            <p><strong>10</strong> Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth.</p>
+            <p><strong>11</strong> And he said, A certain man had two sons:</p>
+            <p><strong>12</strong> And the younger of them said to his father, Father, give me the portion of goods that falleth to me. And he divided unto them his living.</p>
+            <p><strong>13</strong> And not many days after the younger son gathered all together, and took his journey into a far country, and there wasted his substance with riotous living.</p>
+            <p><strong>14</strong> And when he had spent all, there arose a mighty famine in that land; and he began to be in want.</p>
+            <p><strong>15</strong> And he went and joined himself to a citizen of that country; and he sent him into his fields to feed swine.</p>
+            <p><strong>16</strong> And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him.</p>
+            <p><strong>17</strong> And when he came to himself, he said, How many hired servants of my father’s have bread enough and to spare, and I perish with hunger!</p>
+            <p><strong>18</strong> I will arise and go to my father, and will say unto him, Father, I have sinned against heaven, and before thee,</p>
+            <p><strong>19</strong> And am no more worthy to be called thy son: make me as one of thy hired servants.</p>
+            <p><strong>20</strong> And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him.</p>
+            <p><strong>21</strong> And the son said unto him, Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son.</p>
+            <p><strong>22</strong> But the father said to his servants, Bring forth the best robe, and put it on him; and put a ring on his hand, and shoes on his feet:</p>
+            <p><strong>23</strong> And bring hither the fatted calf, and kill it; and let us eat, and be merry:</p>
+            <p><strong>24</strong> For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry.</p>
+            <p><strong>25</strong> Now his elder son was in the field: and as he came and drew nigh to the house, he heard musick and dancing.</p>
+            <p><strong>26</strong> And he called one of the servants, and asked what these things meant.</p>
+            <p><strong>27</strong> And he said unto him, Thy brother is come; and thy father hath killed the fatted calf, because he hath received him safe and sound.</p>
+            <p><strong>28</strong> And he was angry, and would not go in: therefore came his father out, and intreated him.</p>
+            <p><strong>29</strong> And he answering said to his father, Lo, these many years do I serve thee, neither transgressed I at any time thy commandment: and yet thou never gavest me a kid, that I might make merry with my friends:</p>
+            <p><strong>30</strong> But as soon as this thy son was come, which hath devoured thy living with harlots, thou hast killed for him the fatted calf.</p>
+            <p><strong>31</strong> And he said unto him, Son, thou art ever with me, and all that I have is thine.</p>
+            <p><strong>32</strong> It was meet that we should make merry, and be glad: for this thy brother was dead, and is alive again; and was lost, and is found.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 15 (ASV)</p>
+            <p><strong>1</strong> Now all the publicans and sinners were drawing near unto him to hear him.</p>
+            <p><strong>2</strong> And both the Pharisees and the scribes murmured, saying, This man receiveth sinners, and eateth with them.</p>
+            <p><strong>3</strong> And he spake unto them this parable, saying,</p>
+            <p><strong>4</strong> What man of you, having a hundred sheep, and having lost one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?</p>
+            <p><strong>5</strong> And when he hath found it, he layeth it on his shoulders, rejoicing.</p>
+            <p><strong>6</strong> And when he cometh home, he calleth together his friends and his neighbors, saying unto them, Rejoice with me, for I have found my sheep which was lost.</p>
+            <p><strong>7</strong> I say unto you, that even so there shall be joy in heaven over one sinner that repenteth, [more] than over ninety and nine righteous persons, who need no repentance.</p>
+            <p><strong>8</strong> Or what woman having ten pieces of silver, if she lose one piece, doth not light a lamp, and sweep the house, and seek diligently until she find it?</p>
+            <p><strong>9</strong> And when she hath found it, she calleth together her friends and neighbors, saying, Rejoice with me, for I have found the piece which I had lost.</p>
+            <p><strong>10</strong> Even so, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth.</p>
+            <p><strong>11</strong> And he said, A certain man had two sons:</p>
+            <p><strong>12</strong> and the younger of them said to his father, Father, give me the portion of [thy] substance that falleth to me. And he divided unto them his living.</p>
+            <p><strong>13</strong> And not many days after, the younger son gathered all together and took his journey into a far country; and there he wasted his substance with riotous living.</p>
+            <p><strong>14</strong> And when he had spent all, there arose a mighty famine in that country; and he began to be in want.</p>
+            <p><strong>15</strong> And he went and joined himself to one of the citizens of that country; and he sent him into his fields to feed swine.</p>
+            <p><strong>16</strong> And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him.</p>
+            <p><strong>17</strong> But when he came to himself he said, How many hired servants of my father`s have bread enough and to spare, and I perish here with hunger!</p>
+            <p><strong>18</strong> I will arise and go to my father, and will say unto him, Father, I have sinned against heaven, and in thy sight:</p>
+            <p><strong>19</strong> I am no more worthy to be called your son: make me as one of thy hired servants.</p>
+            <p><strong>20</strong> And he arose, and came to his father. But while he was yet afar off, his father saw him, and was moved with compassion, and ran, and fell on his neck, and kissed him.</p>
+            <p><strong>21</strong> And the son said unto him, Father, I have sinned against heaven, and in thy sight: I am no more worthy to be called thy son.</p>
+            <p><strong>22</strong> But the father said to his servants, Bring forth quickly the best robe, and put it on him; and put a ring on his hand, and shoes on his feet:</p>
+            <p><strong>23</strong> and bring the fatted calf, [and] kill it, and let us eat, and make merry:</p>
+            <p><strong>24</strong> for this my son was dead, and is alive again; he was lost, and is found. And they began to be merry.</p>
+            <p><strong>25</strong> Now his elder son was in the field: and as he came and drew nigh to the house, he heard music and dancing.</p>
+            <p><strong>26</strong> And he called to him one of the servants, and inquired what these things might be.</p>
+            <p><strong>27</strong> And he said unto him, Thy brother is come; and thy father hath killed the fatted calf, because he hath received him safe and sound.</p>
+            <p><strong>28</strong> But he was angry, and would not go in: and his father came out, and entreated him.</p>
+            <p><strong>29</strong> But he answered and said to his father, Lo, these many years do I serve thee, and I never transgressed a commandment of thine; and [yet] thou never gavest me a kid, that I might make merry with my friends:</p>
+            <p><strong>30</strong> but when this thy son came, who hath devoured thy living with harlots, thou killedst for him the fatted calf.</p>
+            <p><strong>31</strong> And he said unto him, Son, thou art ever with me, and all that is mine is thine.</p>
+            <p><strong>32</strong> But it was meet to make merry and be glad: for this thy brother was dead, and is alive [again]; and [was] lost, and is found.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>As tax collectors and sinners draw near to listen, the Pharisees and scribes grumble that Jesus welcomes such people and eats with them. In reply Jesus tells three parables of joy over the found. A shepherd leaves ninety-nine sheep to seek the one that is lost, and carries it home rejoicing on his shoulders. A woman lights a lamp and sweeps the house until she finds her single lost coin, then calls her friends to celebrate. Then comes the most tender of all: a younger son demands his inheritance, squanders it in a far country, and comes to ruin, until he returns rehearsing an apology, only to find his father running to embrace him, clothe him, and throw a feast. The elder brother sulks outside, and the father pleads with him too, for his lost son was dead and is alive again. All heaven rejoices over one sinner who repents.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Welcomes sinners and tells three parables revealing the Father's seeking love.</li>
+          <li><strong>The father</strong> — Runs to embrace his returning son and pleads with the elder one, picturing God's heart.</li>
+          <li><strong>The younger son</strong> — Wastes his inheritance, comes to his senses, and is joyfully restored.</li>
+          <li><strong>The elder son</strong> — Resentful of his brother's welcome, invited by the father to share the joy.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 15:20 (WEB)</p>
+          <p class="verse__text">“He arose, and came to his father. But while he was still far off, his father saw him, and was moved with compassion, and ran, and fell on his neck, and kissed him.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God actively seeks the lost rather than waiting for them to find their way.</li>
+          <li>Heaven erupts in joy over even one sinner who repents.</li>
+          <li>The Father runs to welcome home the child who returns to him.</li>
+          <li>Grace invites the self-righteous, too, to share in the joy of the found.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Jesus gladly welcomes sinners.</strong> The leaders grumbled, "This man receives sinners, and eats with them" — the very heart of the gospel (Luke 15:2, WEB).</li>
+            <li><strong>God seeks the lost until they are found.</strong> The shepherd goes "after that which was lost, until he found it," then lays it on his shoulders rejoicing (Luke 15:4-5, WEB).</li>
+            <li><strong>Heaven rejoices over one repentant sinner.</strong> Jesus said, "There is joy in the presence of the angels of God over one sinner repenting" (Luke 15:10, WEB).</li>
+            <li><strong>The Father runs to embrace the returning child.</strong> While the son was still far off, his father "was moved with compassion, and ran, and fell on his neck, and kissed him" (Luke 15:20, WEB).</li>
+            <li><strong>Grace reaches even the resentful heart.</strong> The father pleaded with the elder son, "It was appropriate to celebrate... for this, your brother, was dead, and is alive again" (Luke 15:32, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>What prompted Jesus to tell these three parables?</li>
+            <li>What do the shepherd and the woman do when they discover what was lost, and how do they respond when they find it?</li>
+            <li>How does the father respond to the returning younger son, and what does that reveal about God?</li>
+            <li>Why is the elder brother resentful, and how does the father reach out to him?</li>
+            <li>Where in your own life do you most need to receive, or to share, the Father's welcoming grace?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>The Pharisees and scribes grumbled that Jesus received sinners and ate with them (Luke 15:1-2). The parables are Jesus' joyful answer: he comes for the lost, and that is cause for celebration, not complaint.</li>
+            <li>The shepherd seeks the one lost sheep until he finds it, and the woman sweeps until she finds her coin; both call others to rejoice (Luke 15:4-9). God's love is searching and persistent, and recovery brings overflowing joy.</li>
+            <li>While the son was still far off, the father ran, embraced him, clothed him, and held a feast (Luke 15:20-24). This is the tender center of the chapter: God does not merely permit our return, he runs toward us with open arms.</li>
+            <li>The elder son resents the celebration and his own years of dutiful service, yet the father comes out and entreats him to join the joy (Luke 15:28-32). Grace is offered freely to the wanderer and the dutiful alike.</li>
+            <li>This is a personal application question. Invite members to share gently, whether as the younger son needing welcome or the elder son needing to rejoice (Luke 15:20-32). Hold the moment with warmth, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-14.html">← Luke 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-16.html">Luke 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

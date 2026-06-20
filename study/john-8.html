@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 8: I Am the Light of the World — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 8: Jesus refuses to condemn a sinful woman, declares himself the light of the world, and reveals his eternal identity to those who oppose him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 8
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 8</span>
+        <h1>John 8: I Am the Light of the World</h1>
+        <p class="lead">Jesus refuses to condemn a sinful woman, declares himself the light of the world, and reveals his eternal identity to those who oppose him.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-8">
+            <span>Scripture — John Chapter 8</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-8">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-8-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-8-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-8-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-8-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 8 (WEB)</p>
+            <p><strong>1</strong> but Jesus went to the Mount of Olives.</p>
+            <p><strong>2</strong> Now very early in the morning, he came again into the temple, and all the people came to him. He sat down, and taught them.</p>
+            <p><strong>3</strong> The scribes and the Pharisees brought a woman taken in adultery. Having set her in the middle,</p>
+            <p><strong>4</strong> they told him, “Teacher, we found this woman in adultery, in the very act.</p>
+            <p><strong>5</strong> Now in our law, Moses commanded us to stone such women. What then do you say about her?”</p>
+            <p><strong>6</strong> They said this testing him, that they might have something to accuse him of. But Jesus stooped down, and wrote on the ground with his finger.</p>
+            <p><strong>7</strong> But when they continued asking him, he looked up and said to them, “He who is without sin among you, let him throw the first stone at her.”</p>
+            <p><strong>8</strong> Again he stooped down, and with his finger wrote on the ground.</p>
+            <p><strong>9</strong> They, when they heard it, being convicted by their conscience, went out one by one, beginning from the oldest, even to the last. Jesus was left alone with the woman where she was, in the middle.</p>
+            <p><strong>10</strong> Jesus, standing up, saw her and said, “Woman, where are your accusers? Did no one condemn you?”</p>
+            <p><strong>11</strong> She said, “No one, Lord.” Jesus said, “Neither do I condemn you. Go your way. From now on, sin no more.”</p>
+            <p><strong>12</strong> Again, therefore, Jesus spoke to them, saying, “I am the light of the world. He who follows me will not walk in the darkness, but will have the light of life.”</p>
+            <p><strong>13</strong> The Pharisees therefore said to him, “You testify about yourself. Your testimony is not valid.”</p>
+            <p><strong>14</strong> Jesus answered them, “Even if I testify about myself, my testimony is true, for I know where I came from, and where I am going; but you don’t know where I came from, or where I am going.</p>
+            <p><strong>15</strong> You judge according to the flesh. I judge no one.</p>
+            <p><strong>16</strong> Even if I do judge, my judgment is true, for I am not alone, but I am with the Father who sent me.</p>
+            <p><strong>17</strong> It’s also written in your law that the testimony of two people is valid.</p>
+            <p><strong>18</strong> I am one who testifies about myself, and the Father who sent me testifies about me.”</p>
+            <p><strong>19</strong> They said therefore to him, “Where is your Father?” Jesus answered, “You know neither me, nor my Father. If you knew me, you would know my Father also.”</p>
+            <p><strong>20</strong> Jesus spoke these words in the treasury, as he taught in the temple. Yet no one arrested him, because his hour had not yet come.</p>
+            <p><strong>21</strong> Jesus said therefore again to them, “I am going away, and you will seek me, and you will die in your sins. Where I go, you can’t come.”</p>
+            <p><strong>22</strong> The Jews therefore said, “Will he kill himself, because he says, ‘Where I am going, you can’t come’?”</p>
+            <p><strong>23</strong> He said to them, “You are from beneath. I am from above. You are of this world. I am not of this world.</p>
+            <p><strong>24</strong> I said therefore to you that you will die in your sins; for unless you believe that I am he, you will die in your sins.”</p>
+            <p><strong>25</strong> They said therefore to him, “Who are you?” Jesus said to them, “Just what I have been saying to you from the beginning.</p>
+            <p><strong>26</strong> I have many things to speak and to judge concerning you. However he who sent me is true; and the things which I heard from him, these I say to the world.”</p>
+            <p><strong>27</strong> They didn’t understand that he spoke to them about the Father.</p>
+            <p><strong>28</strong> Jesus therefore said to them, “When you have lifted up the Son of Man, then you will know that I am he, and I do nothing of myself, but as my Father taught me, I say these things.</p>
+            <p><strong>29</strong> He who sent me is with me. The Father hasn’t left me alone, for I always do the things that are pleasing to him.”</p>
+            <p><strong>30</strong> As he spoke these things, many believed in him.</p>
+            <p><strong>31</strong> Jesus therefore said to those Jews who had believed him, “If you remain in my word, then you are truly my disciples.</p>
+            <p><strong>32</strong> You will know the truth, and the truth will make you free.”</p>
+            <p><strong>33</strong> They answered him, “We are Abraham’s offspring, and have never been in bondage to anyone. How do you say, ‘You will be made free’?”</p>
+            <p><strong>34</strong> Jesus answered them, “Most certainly I tell you, everyone who commits sin is the bondservant of sin.</p>
+            <p><strong>35</strong> A bondservant doesn’t live in the house forever. A son remains forever.</p>
+            <p><strong>36</strong> If therefore the Son makes you free, you will be free indeed.</p>
+            <p><strong>37</strong> I know that you are Abraham’s offspring, yet you seek to kill me, because my word finds no place in you.</p>
+            <p><strong>38</strong> I say the things which I have seen with my Father; and you also do the things which you have seen with your father.”</p>
+            <p><strong>39</strong> They answered him, “Our father is Abraham.” Jesus said to them, “If you were Abraham’s children, you would do the works of Abraham.</p>
+            <p><strong>40</strong> But now you seek to kill me, a man who has told you the truth, which I heard from God. Abraham didn’t do this.</p>
+            <p><strong>41</strong> You do the works of your father.” They said to him, “We were not born of sexual immorality. We have one Father, God.”</p>
+            <p><strong>42</strong> Therefore Jesus said to them, “If God were your father, you would love me, for I came out and have come from God. For I haven’t come of myself, but he sent me.</p>
+            <p><strong>43</strong> Why don’t you understand my speech? Because you can’t hear my word.</p>
+            <p><strong>44</strong> You are of your father, the devil, and you want to do the desires of your father. He was a murderer from the beginning, and doesn’t stand in the truth, because there is no truth in him. When he speaks a lie, he speaks on his own; for he is a liar, and the father of lies.</p>
+            <p><strong>45</strong> But because I tell the truth, you don’t believe me.</p>
+            <p><strong>46</strong> Which of you convicts me of sin? If I tell the truth, why do you not believe me?</p>
+            <p><strong>47</strong> He who is of God hears the words of God. For this cause you don’t hear, because you are not of God.”</p>
+            <p><strong>48</strong> Then the Jews answered him, “Don’t we say well that you are a Samaritan, and have a demon?”</p>
+            <p><strong>49</strong> Jesus answered, “I don’t have a demon, but I honor my Father, and you dishonor me.</p>
+            <p><strong>50</strong> But I don’t seek my own glory. There is one who seeks and judges.</p>
+            <p><strong>51</strong> Most certainly, I tell you, if a person keeps my word, he will never see death.”</p>
+            <p><strong>52</strong> Then the Jews said to him, “Now we know that you have a demon. Abraham died, and the prophets; and you say, ‘If a man keeps my word, he will never taste of death.’</p>
+            <p><strong>53</strong> Are you greater than our father, Abraham, who died? The prophets died. Who do you make yourself out to be?”</p>
+            <p><strong>54</strong> Jesus answered, “If I glorify myself, my glory is nothing. It is my Father who glorifies me, of whom you say that he is our God.</p>
+            <p><strong>55</strong> You have not known him, but I know him. If I said, ‘I don’t know him,’ I would be like you, a liar. But I know him, and keep his word.</p>
+            <p><strong>56</strong> Your father Abraham rejoiced to see my day. He saw it, and was glad.”</p>
+            <p><strong>57</strong> The Jews therefore said to him, “You are not yet fifty years old, and have you seen Abraham?”</p>
+            <p><strong>58</strong> Jesus said to them, “Most certainly, I tell you, before Abraham came into existence, I AM.”</p>
+            <p><strong>59</strong> Therefore they took up stones to throw at him, but Jesus was hidden, and went out of the temple, having gone through the middle of them, and so passed by.</p>
+            </div>
+            <div class="scripture-text" id="web-8-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 8 (KJV)</p>
+            <p><strong>1</strong> Jesus went unto the mount of Olives.</p>
+            <p><strong>2</strong> And early in the morning he came again into the temple, and all the people came unto him; and he sat down, and taught them.</p>
+            <p><strong>3</strong> And the scribes and Pharisees brought unto him a woman taken in adultery; and when they had set her in the midst,</p>
+            <p><strong>4</strong> They say unto him, Master, this woman was taken in adultery, in the very act.</p>
+            <p><strong>5</strong> Now Moses in the law commanded us, that such should be stoned: but what sayest thou?</p>
+            <p><strong>6</strong> This they said, tempting him, that they might have to accuse him. But Jesus stooped down, and with his finger wrote on the ground, as though he heard them not.</p>
+            <p><strong>7</strong> So when they continued asking him, he lifted up himself, and said unto them, He that is without sin among you, let him first cast a stone at her.</p>
+            <p><strong>8</strong> And again he stooped down, and wrote on the ground.</p>
+            <p><strong>9</strong> And they which heard it, being convicted by their own conscience, went out one by one, beginning at the eldest, even unto the last: and Jesus was left alone, and the woman standing in the midst.</p>
+            <p><strong>10</strong> When Jesus had lifted up himself, and saw none but the woman, he said unto her, Woman, where are those thine accusers? hath no man condemned thee?</p>
+            <p><strong>11</strong> She said, No man, Lord. And Jesus said unto her, Neither do I condemn thee: go, and sin no more.</p>
+            <p><strong>12</strong> Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.</p>
+            <p><strong>13</strong> The Pharisees therefore said unto him, Thou bearest record of thyself; thy record is not true.</p>
+            <p><strong>14</strong> Jesus answered and said unto them, Though I bear record of myself, yet my record is true: for I know whence I came, and whither I go; but ye cannot tell whence I come, and whither I go.</p>
+            <p><strong>15</strong> Ye judge after the flesh; I judge no man.</p>
+            <p><strong>16</strong> And yet if I judge, my judgment is true: for I am not alone, but I and the Father that sent me.</p>
+            <p><strong>17</strong> It is also written in your law, that the testimony of two men is true.</p>
+            <p><strong>18</strong> I am one that bear witness of myself, and the Father that sent me beareth witness of me.</p>
+            <p><strong>19</strong> Then said they unto him, Where is thy Father? Jesus answered, Ye neither know me, nor my Father: if ye had known me, ye should have known my Father also.</p>
+            <p><strong>20</strong> These words spake Jesus in the treasury, as he taught in the temple: and no man laid hands on him; for his hour was not yet come.</p>
+            <p><strong>21</strong> Then said Jesus again unto them, I go my way, and ye shall seek me, and shall die in your sins: whither I go, ye cannot come.</p>
+            <p><strong>22</strong> Then said the Jews, Will he kill himself? because he saith, Whither I go, ye cannot come.</p>
+            <p><strong>23</strong> And he said unto them, Ye are from beneath; I am from above: ye are of this world; I am not of this world.</p>
+            <p><strong>24</strong> I said therefore unto you, that ye shall die in your sins: for if ye believe not that I am he, ye shall die in your sins.</p>
+            <p><strong>25</strong> Then said they unto him, Who art thou? And Jesus saith unto them, Even the same that I said unto you from the beginning.</p>
+            <p><strong>26</strong> I have many things to say and to judge of you: but he that sent me is true; and I speak to the world those things which I have heard of him.</p>
+            <p><strong>27</strong> They understood not that he spake to them of the Father.</p>
+            <p><strong>28</strong> Then said Jesus unto them, When ye have lifted up the Son of man, then shall ye know that I am he, and that I do nothing of myself; but as my Father hath taught me, I speak these things.</p>
+            <p><strong>29</strong> And he that sent me is with me: the Father hath not left me alone; for I do always those things that please him.</p>
+            <p><strong>30</strong> As he spake these words, many believed on him.</p>
+            <p><strong>31</strong> Then said Jesus to those Jews which believed on him, If ye continue in my word, then are ye my disciples indeed;</p>
+            <p><strong>32</strong> And ye shall know the truth, and the truth shall make you free.</p>
+            <p><strong>33</strong> They answered him, We be Abraham’s seed, and were never in bondage to any man: how sayest thou, Ye shall be made free?</p>
+            <p><strong>34</strong> Jesus answered them, Verily, verily, I say unto you, Whosoever committeth sin is the servant of sin.</p>
+            <p><strong>35</strong> And the servant abideth not in the house for ever: but the Son abideth ever.</p>
+            <p><strong>36</strong> If the Son therefore shall make you free, ye shall be free indeed.</p>
+            <p><strong>37</strong> I know that ye are Abraham’s seed; but ye seek to kill me, because my word hath no place in you.</p>
+            <p><strong>38</strong> I speak that which I have seen with my Father: and ye do that which ye have seen with your father.</p>
+            <p><strong>39</strong> They answered and said unto him, Abraham is our father. Jesus saith unto them, If ye were Abraham’s children, ye would do the works of Abraham.</p>
+            <p><strong>40</strong> But now ye seek to kill me, a man that hath told you the truth, which I have heard of God: this did not Abraham.</p>
+            <p><strong>41</strong> Ye do the deeds of your father. Then said they to him, We be not born of fornication; we have one Father, even God.</p>
+            <p><strong>42</strong> Jesus said unto them, If God were your Father, ye would love me: for I proceeded forth and came from God; neither came I of myself, but he sent me.</p>
+            <p><strong>43</strong> Why do ye not understand my speech? even because ye cannot hear my word.</p>
+            <p><strong>44</strong> Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father of it.</p>
+            <p><strong>45</strong> And because I tell you the truth, ye believe me not.</p>
+            <p><strong>46</strong> Which of you convinceth me of sin? And if I say the truth, why do ye not believe me?</p>
+            <p><strong>47</strong> He that is of God heareth God’s words: ye therefore hear them not, because ye are not of God.</p>
+            <p><strong>48</strong> Then answered the Jews, and said unto him, Say we not well that thou art a Samaritan, and hast a devil?</p>
+            <p><strong>49</strong> Jesus answered, I have not a devil; but I honour my Father, and ye do dishonour me.</p>
+            <p><strong>50</strong> And I seek not mine own glory: there is one that seeketh and judgeth.</p>
+            <p><strong>51</strong> Verily, verily, I say unto you, If a man keep my saying, he shall never see death.</p>
+            <p><strong>52</strong> Then said the Jews unto him, Now we know that thou hast a devil. Abraham is dead, and the prophets; and thou sayest, If a man keep my saying, he shall never taste of death.</p>
+            <p><strong>53</strong> Art thou greater than our father Abraham, which is dead? and the prophets are dead: whom makest thou thyself?</p>
+            <p><strong>54</strong> Jesus answered, If I honour myself, my honour is nothing: it is my Father that honoureth me; of whom ye say, that he is your God:</p>
+            <p><strong>55</strong> Yet ye have not known him; but I know him: and if I should say, I know him not, I shall be a liar like unto you: but I know him, and keep his saying.</p>
+            <p><strong>56</strong> Your father Abraham rejoiced to see my day: and he saw it, and was glad.</p>
+            <p><strong>57</strong> Then said the Jews unto him, Thou art not yet fifty years old, and hast thou seen Abraham?</p>
+            <p><strong>58</strong> Jesus said unto them, Verily, verily, I say unto you, Before Abraham was, I am.</p>
+            <p><strong>59</strong> Then took they up stones to cast at him: but Jesus hid himself, and went out of the temple, going through the midst of them, and so passed by.</p>
+            </div>
+            <div class="scripture-text" id="web-8-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 8 (ASV)</p>
+            <p><strong>1</strong> but Jesus went unto the mount of Olives.</p>
+            <p><strong>2</strong> And early in the morning he came again into the temple, and all the people came unto him; and he sat down, and taught them.</p>
+            <p><strong>3</strong> And the scribes and the Pharisees bring a woman taken in adultery; and having set her in the midst,</p>
+            <p><strong>4</strong> they say unto him, Teacher, this woman hath been taken in adultery, in the very act.</p>
+            <p><strong>5</strong> Now in the law Moses commanded us to stone such: what then sayest thou of her?</p>
+            <p><strong>6</strong> And this they said, trying him, that they might have [whereof] to accuse him. But Jesus stooped down, and with his finger wrote on the ground.</p>
+            <p><strong>7</strong> But when they continued asking him, he lifted up himself, and said unto them, He that is without sin among you, let him first cast a stone at her.</p>
+            <p><strong>8</strong> And again he stooped down, and with his finger wrote on the ground.</p>
+            <p><strong>9</strong> And they, when they heard it, went out one by one, beginning from the eldest, [even] unto the last: and Jesus was left alone, and the woman, where she was, in the midst.</p>
+            <p><strong>10</strong> And Jesus lifted up himself, and said unto her, Woman, where are they? did no man condemn thee?</p>
+            <p><strong>11</strong> And she said, No man, Lord. And Jesus said, Neither do I condemn thee: go thy way; from henceforth sin no more.</p>
+            <p><strong>12</strong> Again therefore Jesus spake unto them, saying, I am the light of the world: he that followeth me shall not walk in the darkness, but shall have the light of life.</p>
+            <p><strong>13</strong> The Pharisees therefore said unto him, Thou bearest witness of thyself; thy witness is not true.</p>
+            <p><strong>14</strong> Jesus answered and said unto them, Even if I bear witness of myself, my witness is true; for I know whence I came, and whither I go; but ye know not whence I come, or whither I go.</p>
+            <p><strong>15</strong> Ye judge after the flesh; I judge no man.</p>
+            <p><strong>16</strong> Yea and if I judge, my judgment is true; for I am not alone, but I and the Father that sent me.</p>
+            <p><strong>17</strong> Yea and in your law it is written, that the witness of two men is true.</p>
+            <p><strong>18</strong> I am he that beareth witness of myself, and the Father that sent me beareth witness of me.</p>
+            <p><strong>19</strong> They said therefore unto him, Where is thy Father? Jesus answered, Ye know neither me, nor my Father: if ye knew me, ye would know my Father also.</p>
+            <p><strong>20</strong> These words spake he in the treasury, as he taught in the temple: and no man took him; because his hour was not yet come.</p>
+            <p><strong>21</strong> He said therefore again unto them, I go away, and ye shall seek me, and shall die in your sin: whither I go, ye cannot come.</p>
+            <p><strong>22</strong> The Jews therefore said, Will he kill himself, that he saith, Whither I go, ye cannot come?</p>
+            <p><strong>23</strong> And he said unto them, Ye are from beneath; I am from above: ye are of this world; I am not of this world.</p>
+            <p><strong>24</strong> I said therefore unto you, that ye shall die in your sins: for except ye believe that I am [he], ye shall die in your sins.</p>
+            <p><strong>25</strong> They said therefore unto him, Who art thou? Jesus said unto them, Even that which I have also spoken unto you from the beginning.</p>
+            <p><strong>26</strong> I have many things to speak and to judge concerning you: howbeit he that sent me is true; and the things which I heard from him, these speak I unto the world.</p>
+            <p><strong>27</strong> They perceived not that he spake to them of the Father.</p>
+            <p><strong>28</strong> Jesus therefore said, When ye have lifted up the Son of man, then shall ye know that I am [he], and [that] I do nothing of myself, but as the Father taught me, I speak these things.</p>
+            <p><strong>29</strong> And he that sent me is with me; he hath not left me alone; for I do always the things that are pleasing to him.</p>
+            <p><strong>30</strong> As he spake these things, many believed on him.</p>
+            <p><strong>31</strong> Jesus therefore said to those Jews that had believed him, If ye abide in my word, [then] are ye truly my disciples;</p>
+            <p><strong>32</strong> and ye shall know the truth, and the truth shall make you free.</p>
+            <p><strong>33</strong> They answered unto him, We are Abraham`s seed, and have never yet been in bondage to any man: how sayest thou, Ye shall be made free?</p>
+            <p><strong>34</strong> Jesus answered them, Verily, verily, I say unto you, Every one that committeth sin is the bondservant of sin.</p>
+            <p><strong>35</strong> And the bondservant abideth not in the house for ever: the son abideth for ever.</p>
+            <p><strong>36</strong> If therefore the Son shall make you free, ye shall be free indeed.</p>
+            <p><strong>37</strong> I know that ye are Abraham`s seed: yet ye seek to kill me, because my word hath not free course in you.</p>
+            <p><strong>38</strong> I speak the things which I have seen with [my] Father: and ye also do the things which ye heard from [your] father.</p>
+            <p><strong>39</strong> They answered and said unto him, Our father is Abraham. Jesus saith unto them, If ye were Abraham`s children, ye would do the works of Abraham.</p>
+            <p><strong>40</strong> But now ye seek to kill me, a man that hath told you the truth, which I heard from God: this did not Abraham.</p>
+            <p><strong>41</strong> Ye do the works of your father. They said unto him, We were not born of fornication; we have one Father, [even] God.</p>
+            <p><strong>42</strong> Jesus said unto them, If God were your Father, ye would love me: for I came forth and am come from God; for neither have I come of myself, but he sent me.</p>
+            <p><strong>43</strong> Why do ye not understand my speech? [Even] because ye cannot hear my word.</p>
+            <p><strong>44</strong> Ye are of [your] father the devil, and the lusts of your father it is your will to do. He was a murderer from the beginning, and standeth not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father thereof.</p>
+            <p><strong>45</strong> But because I say the truth, ye believe me not.</p>
+            <p><strong>46</strong> Which of you convicteth me of sin? If I say truth, why do ye not believe me?</p>
+            <p><strong>47</strong> He that is of God heareth the words of God: for this cause ye hear [them] not, because ye are not of God.</p>
+            <p><strong>48</strong> The Jews answered and said unto him, Say we not well that thou art a Samaritan, and hast a demon?</p>
+            <p><strong>49</strong> Jesus answered, I have not a demon; but I honor my Father, and ye dishonor me.</p>
+            <p><strong>50</strong> But I seek not mine own glory: there is one that seeketh and judgeth.</p>
+            <p><strong>51</strong> Verily, verily, I say unto you, If a man keep my word, he shall never see death.</p>
+            <p><strong>52</strong> The Jews said unto him, Now we know that thou hast a demon. Abraham died, and the prophets; and thou sayest, If a man keep my word, he shall never taste of death.</p>
+            <p><strong>53</strong> Art thou greater than our father Abraham, who died? and the prophets died: whom makest thou thyself?</p>
+            <p><strong>54</strong> Jesus answered, If I glorify myself, my glory is nothing: it is my Father that glorifieth me; of whom ye say, that he is your God;</p>
+            <p><strong>55</strong> and ye have not known him: but I know him; and if I should say, I know him not, I shall be like unto you, a liar: but I know him, and keep his word.</p>
+            <p><strong>56</strong> Your father Abraham rejoiced to see my day; and he saw it, and was glad.</p>
+            <p><strong>57</strong> The Jews therefore said unto him, Thou art not yet fifty years old, and hast thou seen Abraham?</p>
+            <p><strong>58</strong> Jesus said unto them, Verily, verily, I say unto you, Before Abraham was born, I am.</p>
+            <p><strong>59</strong> They took up stones therefore to cast at him: but Jesus hid himself, and went out of the temple.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>At dawn in the temple, religious leaders drag a woman caught in adultery before Jesus, hoping to trap him. He stoops to write on the ground and says that whoever is without sin should throw the first stone; one by one the accusers leave, and Jesus tells her he does not condemn her but to sin no more. He then declares, I am the light of the world, promising that whoever follows him will not walk in darkness. The Pharisees challenge his testimony, and Jesus speaks of the Father who sent him and of where he is going. He tells those who believe that the truth will set them free, while warning that slaves to sin need true freedom. The dispute deepens until Jesus says, Before Abraham came into existence, I AM, and they take up stones to throw at him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Declares himself the light of the world and the eternal I AM, showing both mercy and truth.</li>
+          <li><strong>The woman caught in adultery</strong> — Brought to be condemned, she receives mercy and a call to leave her sin.</li>
+          <li><strong>The scribes and Pharisees</strong> — Bring the woman to trap Jesus and later dispute his identity and origin.</li>
+          <li><strong>Abraham</strong> — The patriarch the leaders claim as father, whom Jesus says rejoiced to see his day.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 8:12 (WEB)</p>
+          <p class="verse__text">Again, therefore, Jesus spoke to them, saying, “I am the light of the world. He who follows me will not walk in the darkness, but will have the light of life.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus meets sinners with mercy that does not excuse sin but frees them from it.</li>
+          <li>Following Jesus, the light of the world, leads us out of darkness into the light of life.</li>
+          <li>True freedom comes not from heritage or effort but from abiding in the truth of Christ.</li>
+          <li>Jesus is the eternal I AM, existing before Abraham and equal with the Father.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-8">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-8">
+            <ul class="lesson-list">
+            <li><strong>Grace confronts sin without crushing the sinner.</strong> Jesus tells the woman, 'Neither do I condemn you. Go your way. From now on, sin no more' (John 8:11, WEB), joining mercy with a call to new life.</li>
+            <li><strong>Jesus is the light that scatters our darkness.</strong> He says, 'I am the light of the world. He who follows me will not walk in the darkness, but will have the light of life' (John 8:12, WEB).</li>
+            <li><strong>The truth of Christ is what truly sets us free.</strong> Jesus promises, 'You will know the truth, and the truth will make you free' (John 8:32, WEB), and that the Son makes us free indeed (John 8:36, WEB).</li>
+            <li><strong>Sin enslaves, but Christ liberates.</strong> Jesus warns, 'Everyone who commits sin is the bondservant of sin' (John 8:34, WEB), pointing to the deeper freedom only he can give.</li>
+            <li><strong>Jesus shares the eternal name and being of God.</strong> He declares, 'Most certainly, I tell you, before Abraham came into existence, I AM' (John 8:58, WEB), claiming the divine name.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-8">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-8">
+            <ol class="study-questions">
+            <li>How does Jesus respond to the leaders who bring the woman, and what does his answer expose about them and about himself?</li>
+            <li>What does Jesus mean by calling himself the light of the world, and what does he promise those who follow him?</li>
+            <li>How does Jesus describe true freedom, and why do his hearers misunderstand it?</li>
+            <li>What is Jesus claiming about himself when he says, Before Abraham came into existence, I AM, and why do the leaders react so violently?</li>
+            <li>Where in your own life do you need to step out of darkness and walk in the light of Christ?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-8">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-8">
+            <ol class="study-questions">
+            <li>Jesus invites the one without sin to throw the first stone, and the accusers leave one by one (John 8:7-9). He neither ignores the sin nor condemns the woman, but sends her to sin no more (John 8:11), revealing both his authority and his mercy.</li>
+            <li>Jesus claims to be the very light of the world, the one who guides people out of spiritual darkness (John 8:12). He promises that those who follow him will have the light of life, a relationship that dispels confusion, fear, and sin's gloom.</li>
+            <li>Jesus says that continuing in his word makes us his disciples, and the truth will set us free (John 8:31-32). His hearers think of national freedom as Abraham's children (8:33), but Jesus speaks of freedom from slavery to sin (8:34-36).</li>
+            <li>By saying I AM, Jesus takes up the divine name God revealed to Moses, claiming existence before Abraham and equality with God (John 8:58). The leaders hear this as blasphemy and pick up stones (8:59), showing they grasped exactly what he meant.</li>
+            <li>This is a personal application question. Invite members to name areas of darkness they long to bring into Christ's light, and gently remind them of his promise in verse 12. As leader, encourage honest sharing and never press anyone to reveal more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-7.html">← John 7</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-9.html">John 9 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

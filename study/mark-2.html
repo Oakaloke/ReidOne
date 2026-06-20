@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 2: Authority to Forgive Sins — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 2: Jesus forgives a paralyzed man, calls a tax collector, and explains why his new life cannot be poured into old religious forms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 2</span>
+        <h1>Mark 2: Authority to Forgive Sins</h1>
+        <p class="lead">Jesus forgives a paralyzed man, calls a tax collector, and explains why his new life cannot be poured into old religious forms.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Mark Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 2 (WEB)</p>
+            <p><strong>1</strong> When he entered again into Capernaum after some days, it was heard that he was in the house.</p>
+            <p><strong>2</strong> Immediately many were gathered together, so that there was no more room, not even around the door; and he spoke the word to them.</p>
+            <p><strong>3</strong> Four people came, carrying a paralytic to him.</p>
+            <p><strong>4</strong> When they could not come near to him for the crowd, they removed the roof where he was. When they had broken it up, they let down the mat that the paralytic was lying on.</p>
+            <p><strong>5</strong> Jesus, seeing their faith, said to the paralytic, “Son, your sins are forgiven you.”</p>
+            <p><strong>6</strong> But there were some of the scribes sitting there, and reasoning in their hearts,</p>
+            <p><strong>7</strong> “Why does this man speak blasphemies like that? Who can forgive sins but God alone?”</p>
+            <p><strong>8</strong> Immediately Jesus, perceiving in his spirit that they so reasoned within themselves, said to them, “Why do you reason these things in your hearts?</p>
+            <p><strong>9</strong> Which is easier, to tell the paralytic, ‘Your sins are forgiven;’ or to say, ‘Arise, and take up your bed, and walk?’</p>
+            <p><strong>10</strong> But that you may know that the Son of Man has authority on earth to forgive sins”—he said to the paralytic—</p>
+            <p><strong>11</strong> “I tell you, arise, take up your mat, and go to your house.”</p>
+            <p><strong>12</strong> He arose, and immediately took up the mat, and went out in front of them all; so that they were all amazed, and glorified God, saying, “We never saw anything like this!”</p>
+            <p><strong>13</strong> He went out again by the seaside. All the multitude came to him, and he taught them.</p>
+            <p><strong>14</strong> As he passed by, he saw Levi, the son of Alphaeus, sitting at the tax office, and he said to him, “Follow me.” And he arose and followed him.</p>
+            <p><strong>15</strong> He was reclining at the table in his house, and many tax collectors and sinners sat down with Jesus and his disciples, for there were many, and they followed him.</p>
+            <p><strong>16</strong> The scribes and the Pharisees, when they saw that he was eating with the sinners and tax collectors, said to his disciples, “Why is it that he eats and drinks with tax collectors and sinners?”</p>
+            <p><strong>17</strong> When Jesus heard it, he said to them, “Those who are healthy have no need for a physician, but those who are sick. I came not to call the righteous, but sinners to repentance.”</p>
+            <p><strong>18</strong> John’s disciples and the Pharisees were fasting, and they came and asked him, “Why do John’s disciples and the disciples of the Pharisees fast, but your disciples don’t fast?”</p>
+            <p><strong>19</strong> Jesus said to them, “Can the groomsmen fast while the bridegroom is with them? As long as they have the bridegroom with them, they can’t fast.</p>
+            <p><strong>20</strong> But the days will come when the bridegroom will be taken away from them, and then will they fast in that day.</p>
+            <p><strong>21</strong> No one sews a piece of unshrunk cloth on an old garment, or else the patch shrinks and the new tears away from the old, and a worse hole is made.</p>
+            <p><strong>22</strong> No one puts new wine into old wineskins, or else the new wine will burst the skins, and the wine pours out, and the skins will be destroyed; but they put new wine into fresh wineskins.”</p>
+            <p><strong>23</strong> He was going on the Sabbath day through the grain fields, and his disciples began, as they went, to pluck the ears of grain.</p>
+            <p><strong>24</strong> The Pharisees said to him, “Behold, why do they do that which is not lawful on the Sabbath day?”</p>
+            <p><strong>25</strong> He said to them, “Did you never read what David did, when he had need, and was hungry—he, and those who were with him?</p>
+            <p><strong>26</strong> How he entered into God’s house at the time of Abiathar the high priest, and ate the show bread, which is not lawful to eat except for the priests, and gave also to those who were with him?”</p>
+            <p><strong>27</strong> He said to them, “The Sabbath was made for man, not man for the Sabbath.</p>
+            <p><strong>28</strong> Therefore the Son of Man is lord even of the Sabbath.”</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 2 (KJV)</p>
+            <p><strong>1</strong> And again he entered into Capernaum, after some days; and it was noised that he was in the house.</p>
+            <p><strong>2</strong> And straightway many were gathered together, insomuch that there was no room to receive them, no, not so much as about the door: and he preached the word unto them.</p>
+            <p><strong>3</strong> And they come unto him, bringing one sick of the palsy, which was borne of four.</p>
+            <p><strong>4</strong> And when they could not come nigh unto him for the press, they uncovered the roof where he was: and when they had broken it up, they let down the bed wherein the sick of the palsy lay.</p>
+            <p><strong>5</strong> When Jesus saw their faith, he said unto the sick of the palsy, Son, thy sins be forgiven thee.</p>
+            <p><strong>6</strong> But there were certain of the scribes sitting there, and reasoning in their hearts,</p>
+            <p><strong>7</strong> Why doth this man thus speak blasphemies? who can forgive sins but God only?</p>
+            <p><strong>8</strong> And immediately when Jesus perceived in his spirit that they so reasoned within themselves, he said unto them, Why reason ye these things in your hearts?</p>
+            <p><strong>9</strong> Whether is it easier to say to the sick of the palsy, Thy sins be forgiven thee; or to say, Arise, and take up thy bed, and walk?</p>
+            <p><strong>10</strong> But that ye may know that the Son of man hath power on earth to forgive sins, (he saith to the sick of the palsy,)</p>
+            <p><strong>11</strong> I say unto thee, Arise, and take up thy bed, and go thy way into thine house.</p>
+            <p><strong>12</strong> And immediately he arose, took up the bed, and went forth before them all; insomuch that they were all amazed, and glorified God, saying, We never saw it on this fashion.</p>
+            <p><strong>13</strong> And he went forth again by the sea side; and all the multitude resorted unto him, and he taught them.</p>
+            <p><strong>14</strong> And as he passed by, he saw Levi the son of Alphaeus sitting at the receipt of custom, and said unto him, Follow me. And he arose and followed him.</p>
+            <p><strong>15</strong> And it came to pass, that, as Jesus sat at meat in his house, many publicans and sinners sat also together with Jesus and his disciples: for there were many, and they followed him.</p>
+            <p><strong>16</strong> And when the scribes and Pharisees saw him eat with publicans and sinners, they said unto his disciples, How is it that he eateth and drinketh with publicans and sinners?</p>
+            <p><strong>17</strong> When Jesus heard it, he saith unto them, They that are whole have no need of the physician, but they that are sick: I came not to call the righteous, but sinners to repentance.</p>
+            <p><strong>18</strong> And the disciples of John and of the Pharisees used to fast: and they come and say unto him, Why do the disciples of John and of the Pharisees fast, but thy disciples fast not?</p>
+            <p><strong>19</strong> And Jesus said unto them, Can the children of the bridechamber fast, while the bridegroom is with them? as long as they have the bridegroom with them, they cannot fast.</p>
+            <p><strong>20</strong> But the days will come, when the bridegroom shall be taken away from them, and then shall they fast in those days.</p>
+            <p><strong>21</strong> No man also seweth a piece of new cloth on an old garment: else the new piece that filled it up taketh away from the old, and the rent is made worse.</p>
+            <p><strong>22</strong> And no man putteth new wine into old bottles: else the new wine doth burst the bottles, and the wine is spilled, and the bottles will be marred: but new wine must be put into new bottles.</p>
+            <p><strong>23</strong> And it came to pass, that he went through the corn fields on the sabbath day; and his disciples began, as they went, to pluck the ears of corn.</p>
+            <p><strong>24</strong> And the Pharisees said unto him, Behold, why do they on the sabbath day that which is not lawful?</p>
+            <p><strong>25</strong> And he said unto them, Have ye never read what David did, when he had need, and was an hungred, he, and they that were with him?</p>
+            <p><strong>26</strong> How he went into the house of God in the days of Abiathar the high priest, and did eat the shewbread, which is not lawful to eat but for the priests, and gave also to them which were with him?</p>
+            <p><strong>27</strong> And he said unto them, The sabbath was made for man, and not man for the sabbath:</p>
+            <p><strong>28</strong> Therefore the Son of man is Lord also of the sabbath.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 2 (ASV)</p>
+            <p><strong>1</strong> And when he entered again into Capernaum after some days, it was noised that he was in the house.</p>
+            <p><strong>2</strong> And many were gathered together, so that there was no longer room [for them], no, not even about the door: and he spake the word unto them.</p>
+            <p><strong>3</strong> And they come, bringing unto him a man sick of the palsy, borne of four.</p>
+            <p><strong>4</strong> And when they could not come nigh unto him for the crowd, they uncovered the roof where he was: and when they had broken it up, they let down the bed whereon the sick of the palsy lay.</p>
+            <p><strong>5</strong> And Jesus seeing their faith saith unto the sick of the palsy, Son, thy sins are forgiven.</p>
+            <p><strong>6</strong> But there were certain of the scribes sitting there, and reasoning in their hearts,</p>
+            <p><strong>7</strong> Why doth this man thus speak? he blasphemeth: who can forgive sins but one, [even] God?</p>
+            <p><strong>8</strong> And straightway Jesus, perceiving in his spirit that they so reasoned within themselves, saith unto them, Why reason ye these things in your hearts?</p>
+            <p><strong>9</strong> Which is easier, to say to the sick of the palsy, Thy sins are forgiven; or to say, Arise, and take up thy bed, and walk?</p>
+            <p><strong>10</strong> But that ye may know that the Son of man hath authority on earth to forgive sins (he saith to the sick of the palsy),</p>
+            <p><strong>11</strong> I say unto thee, Arise, take up thy bed, and go unto thy house.</p>
+            <p><strong>12</strong> And he arose, and straightway took up the bed, and went forth before them all; insomuch that they were all amazed, and glorified God, saying, We never saw it on this fashion.</p>
+            <p><strong>13</strong> And he went forth again by the sea side; and all the multitude resorted unto him, and he taught them.</p>
+            <p><strong>14</strong> And as he passed by, he saw Levi the [son] of Alphaeus sitting at the place of toll, and he saith unto him, Follow me. And he arose and followed him.</p>
+            <p><strong>15</strong> And it came to pass, that he was sitting at meat in his house, and many publicans and sinners sat down with Jesus and his disciples: for there were many, and they followed him.</p>
+            <p><strong>16</strong> And the scribes of the Pharisees, when they saw that he was eating with the sinners and publicans, said unto his disciples, [How is it] that he eateth and drinketh with publicans and sinners?</p>
+            <p><strong>17</strong> And when Jesus heard it, he saith unto them, They that are whole have no need of a physician, but they that are sick: I came not to call the righteous, but sinners.</p>
+            <p><strong>18</strong> And John`s disciples and the Pharisees were fasting: and they come and say unto him, Why do John`s disciples and the disciples of the Pharisees fast, but thy disciples fast not?</p>
+            <p><strong>19</strong> And Jesus said unto them, Can the sons of the bridechamber fast, while the bridegroom is with them? as long as they have the bridegroom with them, they cannot fast.</p>
+            <p><strong>20</strong> But the days will come, when the bridegroom shall be taken away from them, and then will they fast in that day.</p>
+            <p><strong>21</strong> No man seweth a piece of undressed cloth on an old garment: else that which should fill it up taketh from it, the new from the old, and a worse rent is made.</p>
+            <p><strong>22</strong> And no man putteth new wine into old wineskins; else the wine will burst the skins, and the wine perisheth, and the skins: but [they put] new wine into fresh wine-skins.</p>
+            <p><strong>23</strong> And it came to pass, that he was going on the sabbath day through the grainfields; and his disciples began, as they went, to pluck the ears.</p>
+            <p><strong>24</strong> And the Pharisees said unto him, Behold, why do they on the sabbath day that which is not lawful?</p>
+            <p><strong>25</strong> And he said unto them, Did ye never read what David did, when he had need, and was hungry, he, and they that were with him?</p>
+            <p><strong>26</strong> How he entered into the house of God when Abiathar was high priest, and ate the showbread, which it is not lawful to eat save for the priests, and gave also to them that were with him?</p>
+            <p><strong>27</strong> And he said unto them, The sabbath was made for man, and not man for the sabbath:</p>
+            <p><strong>28</strong> so that the Son of man is lord even of the sabbath.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>A paralyzed man is carried by four friends to the house where Jesus is teaching. Unable to reach him through the crowd, they dig through the roof and lower the man down. Seeing their faith, Jesus first forgives the man's sins, stirring objection from the scribes who think he blasphemes. To prove his authority, Jesus tells the man to rise and walk, and he does, leaving everyone amazed. Jesus then calls Levi, a tax collector, and dines with sinners, answering critics that he came to call not the righteous but sinners. Questioned about fasting, he speaks of the bridegroom present with his friends, and of new wine that bursts old wineskins. When the Pharisees fault his disciples for plucking grain on the Sabbath, Jesus declares that the Sabbath was made for man, and that he is Lord even of the Sabbath.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Son of Man who forgives sins, calls sinners, and claims lordship over the Sabbath.</li>
+          <li><strong>The paralyzed man and his four friends</strong> — Friends whose persistent faith brings a paralyzed man to Jesus for healing and forgiveness.</li>
+          <li><strong>Levi</strong> — A tax collector who leaves his booth to follow Jesus and hosts him among sinners.</li>
+          <li><strong>The scribes and Pharisees</strong> — Religious leaders who question Jesus' authority, his company, and his view of the Sabbath.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 2:10 (WEB)</p>
+          <p class="verse__text">But that you may know that the Son of Man has authority on earth to forgive sins”—he said to the paralytic—</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus has authority not only to heal the body but to forgive sins.</li>
+          <li>Faith often shows itself in persistent, costly action.</li>
+          <li>Jesus came specifically to call sinners, not those who think they are well.</li>
+          <li>The new life Jesus brings cannot be contained by old self-righteous forms.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Bold faith brings people to Jesus.</strong> Seeing the friends' faith as they lower the man through the roof, 'Jesus said to the paralytic, Son, your sins are forgiven you' (Mark 2:5, WEB).</li>
+            <li><strong>Jesus holds divine authority to forgive.</strong> He asks which is easier, then declares 'that the Son of Man has authority on earth to forgive sins' (Mark 2:10, WEB).</li>
+            <li><strong>Christ welcomes the very people religion rejects.</strong> Jesus says, 'I came not to call the righteous, but sinners to repentance' (Mark 2:17, WEB).</li>
+            <li><strong>The presence of the Bridegroom is cause for joy.</strong> Jesus asks, 'Can the groomsmen fast while the bridegroom is with them?' (Mark 2:19, WEB).</li>
+            <li><strong>Jesus is Lord over our religious rules.</strong> He teaches that 'the Sabbath was made for man, not man for the Sabbath,' and is himself 'Lord even of the Sabbath' (Mark 2:27-28, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>What does the action of the four friends reveal about faith, and how does Jesus respond to it?</li>
+            <li>Why do the scribes object when Jesus forgives the man's sins, and how does Jesus answer them?</li>
+            <li>What does Jesus mean when he says he came to call sinners, not the righteous?</li>
+            <li>How do the images of the bridegroom, new cloth, and new wineskins explain what is new about Jesus?</li>
+            <li>Where in your own life might you be holding to old forms instead of receiving the fresh life Jesus offers?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>The friends will not let the crowd stop them; they dig through the roof to bring their friend to Jesus (Mark 2:4). Jesus sees their faith and responds first with forgiveness, then with healing (Mark 2:5, 11), honoring faith expressed in action.</li>
+            <li>The scribes reason that only God can forgive sins, so they accuse him of blasphemy (Mark 2:6-7). Jesus heals the man as visible proof that he holds the authority on earth to forgive (Mark 2:10-12).</li>
+            <li>Jesus dines with tax collectors and sinners and says the sick, not the healthy, need a physician (Mark 2:17). He means he comes for those who know their need, not those who trust their own righteousness.</li>
+            <li>The bridegroom's presence makes fasting unfitting now (Mark 2:19), and new wine needs new wineskins (Mark 2:22). Together they show that Jesus brings something so new it cannot be patched onto old self-reliant religion.</li>
+            <li>This is a personal application question. Invite members to consider where habit or self-righteousness keeps them from Jesus' renewing grace. As leader, encourage gentle honesty and point to Christ's welcome, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="mark-1.html">← Mark 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-3.html">Mark 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 5: Power Over Demons, Disease, and Death — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 5: Jesus frees a tormented man from a legion of demons, heals a suffering woman through her reach of faith, and raises a little girl from death." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 5</span>
+        <h1>Mark 5: Power Over Demons, Disease, and Death</h1>
+        <p class="lead">Jesus frees a tormented man from a legion of demons, heals a suffering woman through her reach of faith, and raises a little girl from death.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — Mark Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 5 (WEB)</p>
+            <p><strong>1</strong> They came to the other side of the sea, into the country of the Gadarenes.</p>
+            <p><strong>2</strong> When he had come out of the boat, immediately a man with an unclean spirit met him out of the tombs.</p>
+            <p><strong>3</strong> He lived in the tombs. Nobody could bind him any more, not even with chains,</p>
+            <p><strong>4</strong> because he had been often bound with fetters and chains, and the chains had been torn apart by him, and the fetters broken in pieces. Nobody had the strength to tame him.</p>
+            <p><strong>5</strong> Always, night and day, in the tombs and in the mountains, he was crying out, and cutting himself with stones.</p>
+            <p><strong>6</strong> When he saw Jesus from afar, he ran and bowed down to him,</p>
+            <p><strong>7</strong> and crying out with a loud voice, he said, “What have I to do with you, Jesus, you Son of the Most High God? I adjure you by God, don’t torment me.”</p>
+            <p><strong>8</strong> For he said to him, “Come out of the man, you unclean spirit!”</p>
+            <p><strong>9</strong> He asked him, “What is your name?” He said to him, “My name is Legion, for we are many.”</p>
+            <p><strong>10</strong> He begged him much that he would not send them away out of the country.</p>
+            <p><strong>11</strong> Now on the mountainside there was a great herd of pigs feeding.</p>
+            <p><strong>12</strong> All the demons begged him, saying, “Send us into the pigs, that we may enter into them.”</p>
+            <p><strong>13</strong> At once Jesus gave them permission. The unclean spirits came out and entered into the pigs. The herd of about two thousand rushed down the steep bank into the sea, and they were drowned in the sea.</p>
+            <p><strong>14</strong> Those who fed them fled, and told it in the city and in the country. The people came to see what it was that had happened.</p>
+            <p><strong>15</strong> They came to Jesus, and saw him who had been possessed by demons sitting, clothed, and in his right mind, even him who had the legion; and they were afraid.</p>
+            <p><strong>16</strong> Those who saw it declared to them what happened to him who was possessed by demons, and about the pigs.</p>
+            <p><strong>17</strong> They began to beg him to depart from their region.</p>
+            <p><strong>18</strong> As he was entering into the boat, he who had been possessed by demons begged him that he might be with him.</p>
+            <p><strong>19</strong> He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you, and how he had mercy on you.”</p>
+            <p><strong>20</strong> He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.</p>
+            <p><strong>21</strong> When Jesus had crossed back over in the boat to the other side, a great multitude was gathered to him; and he was by the sea.</p>
+            <p><strong>22</strong> Behold, one of the rulers of the synagogue, Jairus by name, came; and seeing him, he fell at his feet,</p>
+            <p><strong>23</strong> and begged him much, saying, “My little daughter is at the point of death. Please come and lay your hands on her, that she may be made healthy, and live.”</p>
+            <p><strong>24</strong> He went with him, and a great multitude followed him, and they pressed upon him on all sides.</p>
+            <p><strong>25</strong> A certain woman, who had an issue of blood for twelve years,</p>
+            <p><strong>26</strong> and had suffered many things by many physicians, and had spent all that she had, and was no better, but rather grew worse,</p>
+            <p><strong>27</strong> having heard the things concerning Jesus, came up behind him in the crowd, and touched his clothes.</p>
+            <p><strong>28</strong> For she said, “If I just touch his clothes, I will be made well.”</p>
+            <p><strong>29</strong> Immediately the flow of her blood was dried up, and she felt in her body that she was healed of her affliction.</p>
+            <p><strong>30</strong> Immediately Jesus, perceiving in himself that the power had gone out from him, turned around in the crowd, and asked, “Who touched my clothes?”</p>
+            <p><strong>31</strong> His disciples said to him, “You see the multitude pressing against you, and you say, ‘Who touched me?’”</p>
+            <p><strong>32</strong> He looked around to see her who had done this thing.</p>
+            <p><strong>33</strong> But the woman, fearing and trembling, knowing what had been done to her, came and fell down before him, and told him all the truth.</p>
+            <p><strong>34</strong> He said to her, “Daughter, your faith has made you well. Go in peace, and be cured of your disease.”</p>
+            <p><strong>35</strong> While he was still speaking, people came from the synagogue ruler’s house saying, “Your daughter is dead. Why bother the Teacher any more?”</p>
+            <p><strong>36</strong> But Jesus, when he heard the message spoken, immediately said to the ruler of the synagogue, “Don’t be afraid, only believe.”</p>
+            <p><strong>37</strong> He allowed no one to follow him, except Peter, James, and John the brother of James.</p>
+            <p><strong>38</strong> He came to the synagogue ruler’s house, and he saw an uproar, weeping, and great wailing.</p>
+            <p><strong>39</strong> When he had entered in, he said to them, “Why do you make an uproar and weep? The child is not dead, but is asleep.”</p>
+            <p><strong>40</strong> They ridiculed him. But he, having put them all out, took the father of the child, her mother, and those who were with him, and went in where the child was lying.</p>
+            <p><strong>41</strong> Taking the child by the hand, he said to her, “Talitha cumi!” which means, being interpreted, “Girl, I tell you, get up!”</p>
+            <p><strong>42</strong> Immediately the girl rose up and walked, for she was twelve years old. They were amazed with great amazement.</p>
+            <p><strong>43</strong> He strictly ordered them that no one should know this, and commanded that something should be given to her to eat.</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 5 (KJV)</p>
+            <p><strong>1</strong> And they came over unto the other side of the sea, into the country of the Gadarenes.</p>
+            <p><strong>2</strong> And when he was come out of the ship, immediately there met him out of the tombs a man with an unclean spirit,</p>
+            <p><strong>3</strong> Who had his dwelling among the tombs; and no man could bind him, no, not with chains:</p>
+            <p><strong>4</strong> Because that he had been often bound with fetters and chains, and the chains had been plucked asunder by him, and the fetters broken in pieces: neither could any man tame him.</p>
+            <p><strong>5</strong> And always, night and day, he was in the mountains, and in the tombs, crying, and cutting himself with stones.</p>
+            <p><strong>6</strong> But when he saw Jesus afar off, he ran and worshipped him,</p>
+            <p><strong>7</strong> And cried with a loud voice, and said, What have I to do with thee, Jesus, thou Son of the most high God? I adjure thee by God, that thou torment me not.</p>
+            <p><strong>8</strong> For he said unto him, Come out of the man, thou unclean spirit.</p>
+            <p><strong>9</strong> And he asked him, What is thy name? And he answered, saying, My name is Legion: for we are many.</p>
+            <p><strong>10</strong> And he besought him much that he would not send them away out of the country.</p>
+            <p><strong>11</strong> Now there was there nigh unto the mountains a great herd of swine feeding.</p>
+            <p><strong>12</strong> And all the devils besought him, saying, Send us into the swine, that we may enter into them.</p>
+            <p><strong>13</strong> And forthwith Jesus gave them leave. And the unclean spirits went out, and entered into the swine: and the herd ran violently down a steep place into the sea, (they were about two thousand;) and were choked in the sea.</p>
+            <p><strong>14</strong> And they that fed the swine fled, and told it in the city, and in the country. And they went out to see what it was that was done.</p>
+            <p><strong>15</strong> And they come to Jesus, and see him that was possessed with the devil, and had the legion, sitting, and clothed, and in his right mind: and they were afraid.</p>
+            <p><strong>16</strong> And they that saw it told them how it befell to him that was possessed with the devil, and also concerning the swine.</p>
+            <p><strong>17</strong> And they began to pray him to depart out of their coasts.</p>
+            <p><strong>18</strong> And when he was come into the ship, he that had been possessed with the devil prayed him that he might be with him.</p>
+            <p><strong>19</strong> Howbeit Jesus suffered him not, but saith unto him, Go home to thy friends, and tell them how great things the Lord hath done for thee, and hath had compassion on thee.</p>
+            <p><strong>20</strong> And he departed, and began to publish in Decapolis how great things Jesus had done for him: and all men did marvel.</p>
+            <p><strong>21</strong> And when Jesus was passed over again by ship unto the other side, much people gathered unto him: and he was nigh unto the sea.</p>
+            <p><strong>22</strong> And, behold, there cometh one of the rulers of the synagogue, Jairus by name; and when he saw him, he fell at his feet,</p>
+            <p><strong>23</strong> And besought him greatly, saying, My little daughter lieth at the point of death: I pray thee, come and lay thy hands on her, that she may be healed; and she shall live.</p>
+            <p><strong>24</strong> And Jesus went with him; and much people followed him, and thronged him.</p>
+            <p><strong>25</strong> And a certain woman, which had an issue of blood twelve years,</p>
+            <p><strong>26</strong> And had suffered many things of many physicians, and had spent all that she had, and was nothing bettered, but rather grew worse,</p>
+            <p><strong>27</strong> When she had heard of Jesus, came in the press behind, and touched his garment.</p>
+            <p><strong>28</strong> For she said, If I may touch but his clothes, I shall be whole.</p>
+            <p><strong>29</strong> And straightway the fountain of her blood was dried up; and she felt in her body that she was healed of that plague.</p>
+            <p><strong>30</strong> And Jesus, immediately knowing in himself that virtue had gone out of him, turned him about in the press, and said, Who touched my clothes?</p>
+            <p><strong>31</strong> And his disciples said unto him, Thou seest the multitude thronging thee, and sayest thou, Who touched me?</p>
+            <p><strong>32</strong> And he looked round about to see her that had done this thing.</p>
+            <p><strong>33</strong> But the woman fearing and trembling, knowing what was done in her, came and fell down before him, and told him all the truth.</p>
+            <p><strong>34</strong> And he said unto her, Daughter, thy faith hath made thee whole; go in peace, and be whole of thy plague.</p>
+            <p><strong>35</strong> While he yet spake, there came from the ruler of the synagogue’s house certain which said, Thy daughter is dead: why troublest thou the Master any further?</p>
+            <p><strong>36</strong> As soon as Jesus heard the word that was spoken, he saith unto the ruler of the synagogue, Be not afraid, only believe.</p>
+            <p><strong>37</strong> And he suffered no man to follow him, save Peter, and James, and John the brother of James.</p>
+            <p><strong>38</strong> And he cometh to the house of the ruler of the synagogue, and seeth the tumult, and them that wept and wailed greatly.</p>
+            <p><strong>39</strong> And when he was come in, he saith unto them, Why make ye this ado, and weep? the damsel is not dead, but sleepeth.</p>
+            <p><strong>40</strong> And they laughed him to scorn. But when he had put them all out, he taketh the father and the mother of the damsel, and them that were with him, and entereth in where the damsel was lying.</p>
+            <p><strong>41</strong> And he took the damsel by the hand, and said unto her, Talitha cumi; which is, being interpreted, Damsel, I say unto thee, arise.</p>
+            <p><strong>42</strong> And straightway the damsel arose, and walked; for she was of the age of twelve years. And they were astonished with a great astonishment.</p>
+            <p><strong>43</strong> And he charged them straitly that no man should know it; and commanded that something should be given her to eat.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 5 (ASV)</p>
+            <p><strong>1</strong> And they came to the other side of the sea, into the country of the Gerasenes.</p>
+            <p><strong>2</strong> And when he was come out of the boat, straightway there met him out of the tombs a man with an unclean spirit,</p>
+            <p><strong>3</strong> who had his dwelling in the tombs: and no man could any more bind him, no, not with a chain;</p>
+            <p><strong>4</strong> because that he had been often bound with fetters and chains, and the chains had been rent asunder by him, and the fetters broken in pieces: and no man had strength to tame him.</p>
+            <p><strong>5</strong> And always, night and day, in the tombs and in the mountains, he was crying out, and cutting himself with stones.</p>
+            <p><strong>6</strong> And when he saw Jesus from afar, he ran and worshipped him;</p>
+            <p><strong>7</strong> and crying out with a loud voice, he saith, What have I to do with thee, Jesus, thou Son of the Most High God? I adjure thee by God, torment me not.</p>
+            <p><strong>8</strong> For he said unto him, Come forth, thou unclean spirit, out of the man.</p>
+            <p><strong>9</strong> And he asked him, What is thy name? And he saith unto him, My name is Legion; for we are many.</p>
+            <p><strong>10</strong> And he besought him much that he would not send them away out of the country.</p>
+            <p><strong>11</strong> Now there was there on the mountain side a great herd of swine feeding.</p>
+            <p><strong>12</strong> And they besought him, saying, Send us into the swine, that we may enter into them.</p>
+            <p><strong>13</strong> And he gave them leave. And the unclean spirits came out, and entered into the swine: and the herd rushed down the steep into the sea, [in number] about two thousand; and they were drowned in the sea.</p>
+            <p><strong>14</strong> And they that fed them fled, and told it in the city, and in the country. And they came to see what it was that had come to pass.</p>
+            <p><strong>15</strong> And they come to Jesus, and behold him that was possessed with demons sitting, clothed and in his right mind, [even] him that had the legion: and they were afraid.</p>
+            <p><strong>16</strong> And they that saw it declared unto them how it befell him that was possessed with demons, and concerning the swine.</p>
+            <p><strong>17</strong> And they began to beseech him to depart from their borders.</p>
+            <p><strong>18</strong> And as he was entering into the boat, he that had been possessed with demons besought him that he might be with him.</p>
+            <p><strong>19</strong> And he suffered him not, but saith unto him, Go to thy house unto thy friends, and tell them how great things the Lord hath done for thee, and [how] he had mercy on thee.</p>
+            <p><strong>20</strong> And he went his way, and began to publish in Decapolis how great things Jesus had done for him: and all men marvelled.</p>
+            <p><strong>21</strong> And when Jesus had crossed over again in the boat unto the other side, a great multitude was gathered unto him; and he was by the sea.</p>
+            <p><strong>22</strong> And there cometh one of the rulers of the synagogue, Jairus by name; and seeing him, he falleth at his feet,</p>
+            <p><strong>23</strong> and beseecheth him much, saying, My little daughter is at the point of death: [I pray thee], that thou come and lay thy hands on her, that she may be made whole, and live.</p>
+            <p><strong>24</strong> And he went with him; and a great multitude followed him, and they thronged him.</p>
+            <p><strong>25</strong> And a woman, who had an issue of blood twelve years,</p>
+            <p><strong>26</strong> and had suffered many things of many physicians, and had spent all that she had, and was nothing bettered, but rather grew worse,</p>
+            <p><strong>27</strong> having heard the things concerning Jesus, came in the crowd behind, and touched his garment.</p>
+            <p><strong>28</strong> For she said, If I touch but his garments, I shall be made whole.</p>
+            <p><strong>29</strong> And straightway the fountain of her blood was dried up; and she felt in her body that she was healed of her plague.</p>
+            <p><strong>30</strong> And straightway Jesus, perceiving in himself that the power [proceeding] from him had gone forth, turned him about in the crowd, and said, Who touched my garments?</p>
+            <p><strong>31</strong> And his disciples said unto him, Thou seest the multitude thronging thee, and sayest thou, Who touched me?</p>
+            <p><strong>32</strong> And he looked round about to see her that had done this thing.</p>
+            <p><strong>33</strong> But the woman fearing and trembling, knowing what had been done to her, came and fell down before him, and told him all the truth.</p>
+            <p><strong>34</strong> And he said unto her, Daughter, thy faith hath made thee whole; go in peace, and be whole of thy plague.</p>
+            <p><strong>35</strong> While he yet spake, they come from the ruler of the synagogue`s [house] saying, Thy daughter is dead: why troublest thou the Teacher any further?</p>
+            <p><strong>36</strong> But Jesus, not heeding the word spoken, saith unto the ruler of the synagogue, Fear not, only believe.</p>
+            <p><strong>37</strong> And he suffered no man to follow with him, save Peter, and James, and John the brother of James.</p>
+            <p><strong>38</strong> And they come to the house of the ruler of the synagogue; and he beholdeth a tumult, and [many] weeping and wailing greatly.</p>
+            <p><strong>39</strong> And when he was entered in, he saith unto them, Why make ye a tumult, and weep? the child is not dead, but sleepeth.</p>
+            <p><strong>40</strong> And they laughed him to scorn. But he, having put them all forth, taketh the father of the child and her mother and them that were with him, and goeth in where the child was.</p>
+            <p><strong>41</strong> And taking the child by the hand, he saith unto her, Talitha cumi; which is, being interpreted, Damsel, I say unto thee, Arise.</p>
+            <p><strong>42</strong> And straightway the damsel rose up, and walked; for she was twelve years old. And they were amazed straightway with a great amazement.</p>
+            <p><strong>43</strong> And he charged them much that no man should know this: and he commanded that [something] should be given her to eat.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Crossing to the region of the Gerasenes, Jesus meets a man possessed by a legion of demons, living among the tombs, uncontrollable and self-harming. Jesus casts the demons into a herd of pigs that rushes into the sea, and the man is found clothed and in his right mind. The frightened townspeople beg Jesus to leave, but he sends the freed man home to tell what the Lord has done. Back across the sea, the synagogue ruler Jairus pleads for his dying daughter. On the way, a woman who has bled for twelve years touches Jesus' garment in faith and is instantly healed; Jesus draws her into the open and commends her faith. Word comes that the girl has died, but Jesus says only to believe. Entering the house, he takes the child by the hand, tells her to arise, and she gets up and walks, to the amazement of all.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord who frees the demon-possessed, heals the sick, and raises the dead.</li>
+          <li><strong>The Gerasene man</strong> — A man freed from a legion of demons who is sent to tell what the Lord has done.</li>
+          <li><strong>Jairus</strong> — A synagogue ruler who falls at Jesus' feet, pleading for his dying daughter.</li>
+          <li><strong>The woman with the flow of blood</strong> — A long-suffering woman healed when she reaches out in faith to touch Jesus' clothes.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 5:36 (WEB)</p>
+          <p class="verse__text">But Jesus, when he heard the message spoken, immediately said to the ruler of the synagogue, “Don’t be afraid, only believe.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>No bondage is too deep for Jesus to break and restore a person whole.</li>
+          <li>Faith may be trembling and quiet, yet still take hold of Christ's power.</li>
+          <li>Jesus calls us to bring our faith into the open and into relationship with him.</li>
+          <li>Even death gives way before the word of Jesus.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>Jesus restores the most broken to their right mind.</strong> The townspeople find the formerly possessed man 'sitting, clothed, and in his right mind' (Mark 5:15, WEB).</li>
+            <li><strong>The healed are sent to tell of God's mercy.</strong> Jesus tells him, 'Go to your house, to your friends, and tell them what great things the Lord has done for you' (Mark 5:19, WEB).</li>
+            <li><strong>Reaching out in faith brings healing.</strong> Jesus tells the woman, 'Daughter, your faith has made you well. Go in peace' (Mark 5:34, WEB).</li>
+            <li><strong>Faith is the answer to fear.</strong> When word comes that the girl has died, Jesus says, 'Don't be afraid, only believe' (Mark 5:36, WEB).</li>
+            <li><strong>Jesus speaks life where there is death.</strong> He takes the child's hand and says, 'Little girl, I tell you, get up!' and immediately she rises and walks (Mark 5:41-42, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>How is the demon-possessed man described before and after Jesus frees him, and what does the change reveal?</li>
+            <li>Why does Jesus send the freed man to tell his own people rather than follow him?</li>
+            <li>What does the healing of the bleeding woman teach about faith, and why does Jesus call her forward?</li>
+            <li>How does Jesus respond to the news of the girl's death, and what does her raising reveal about him?</li>
+            <li>Where in your own life do you need to reach out to Jesus in faith despite fear or shame?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>Before, the man lives among the tombs, uncontrollable, crying out and cutting himself (Mark 5:3-5). Afterward he sits clothed and in his right mind (Mark 5:15). Jesus restores not only sanity but dignity and peace.</li>
+            <li>Jesus sends him home to tell his friends what great things the Lord has done and how he had mercy (Mark 5:19). The freed man becomes a witness among his own people, and all marvel at his testimony.</li>
+            <li>The woman touches Jesus' garment believing she will be healed, and she is (Mark 5:28-29). Jesus calls her forward not to shame her but to commend her faith and send her in peace, turning a secret touch into a personal blessing.</li>
+            <li>Jesus ignores the report and tells Jairus, 'Don't be afraid, only believe' (Mark 5:36). Taking the child's hand, he commands her to rise, and she does (Mark 5:41-42), revealing his authority even over death.</li>
+            <li>This is a personal application question. Invite members to name where fear or shame keeps them from reaching out to Christ. As leader, encourage gentle honesty and point to the woman's welcome and the words 'only believe,' but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="mark-4.html">← Mark 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-6.html">Mark 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

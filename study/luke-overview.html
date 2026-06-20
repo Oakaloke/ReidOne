@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An overview of Luke&#x27;s Gospel: the orderly account of Jesus the Savior of all, who seeks and saves the lost, welcomes sinners and outcasts, and rises to send his church in the power of the Spirit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Luke · Whole-Book Overview</span>
+        <h1>Luke: The Whole Story</h1>
+        <p class="lead">From a song in the temple to a sending in Jerusalem, Luke shows Jesus the Savior who came to seek and to save the lost.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Luke begins by telling Theophilus that he has "investigated everything accurately from the beginning" so that his reader "might know the certainty concerning the things in which you were instructed" (Luke 1:3-4). The account opens with songs of joy, as the angel announces the births of John and Jesus, and Mary rejoices that God "has put down princes from their thrones, and has exalted the lowly" (Luke 1:52). Jesus is born in a manger, heralded to shepherds as "a Savior, who is Christ the Lord" (Luke 2:11). From the start Luke shows a Savior for the humble, the overlooked, and the world.</p>
+          <p>In his hometown synagogue Jesus reads from Isaiah and announces his mission: "to preach good news to the poor... to set at liberty those who are crushed" (Luke 4:18). He heals the sick, forgives a sinful woman, eats with tax collectors, and welcomes those the religious world pushed aside. He teaches the crowds in unforgettable parables, and on the long journey to Jerusalem he tells of the good Samaritan, the lost sheep, the lost coin, and the prodigal son, declaring heaven's joy "over one sinner who repents" (Luke 15:7). Again and again Jesus prays, blesses the lowly, and calls people to follow him in faith.</p>
+          <p>Jesus enters Jerusalem to weeping and praise, cleanses the temple, shares the Last Supper, and is betrayed, denied, and crucified between two criminals, promising one of them, "Today you will be with me in Paradise" (Luke 23:43). But the tomb is empty: "He isn't here, but is risen!" (Luke 24:6). The risen Lord walks the Emmaus road, opens the Scriptures, and shows that the Christ had to suffer and rise "that repentance and remission of sins should be preached in his name to all the nations" (Luke 24:47). He blesses his disciples and sends them to wait for the promised Spirit, leaving them full of joy.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>Songs of a Savior's Coming (chs 1-2)</strong> — Luke addresses Theophilus, then fills the air with joy as angels announce John and Jesus, Mary and Zechariah sing, and the child born in a manger is hailed by shepherds as Christ the Lord and welcomed in the temple by Simeon and Anna.</li>
+          <li><strong>The Savior's Mission Begins (chs 3-4)</strong> — John prepares the way and baptizes Jesus; the Spirit descends and a voice from heaven speaks; Jesus overcomes temptation in the wilderness and, in Nazareth, announces good news for the poor and freedom for the captives.</li>
+          <li><strong>Ministry in Galilee (chs 5-9)</strong> — Jesus calls disciples, heals the sick, forgives sins, and welcomes outcasts; he teaches on the plain, stills a storm, feeds the multitude, and is confessed as the Christ as he begins to foretell his cross.</li>
+          <li><strong>The Long Road to Jerusalem (chs 10-19)</strong> — Setting his face toward Jerusalem, Jesus teaches on prayer, mercy, and the cost of discipleship, telling the parables of the good Samaritan and the lost son, dining with sinners, and calling Zacchaeus down to be saved.</li>
+          <li><strong>Passion Week in Jerusalem (chs 20-23)</strong> — Jesus teaches in the temple and silences his testers, foretells the end, shares the Last Supper, prays in agony, and is betrayed, denied, tried, and crucified, pardoning a dying thief and entrusting his spirit to the Father.</li>
+          <li><strong>Risen and Sending Joy (ch 24)</strong> — The women find the empty tomb, the risen Jesus walks to Emmaus and opens the Scriptures, he appears to the disciples, commissions them to preach repentance to all nations, and ascends as they return with great joy.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus the Savior</strong> — The Son of the Most High, born in a manger and announced as Savior, who preaches good news to the poor, welcomes sinners and outcasts, prays to the Father, dies for the lost, rises, and sends his witnesses to all nations.</li>
+          <li><strong>John the Baptist</strong> — The miracle-child of Zechariah and Elizabeth who leaps in the womb at Mary's greeting, grows strong, prepares the Lord's way with a baptism of repentance, baptizes Jesus, and points beyond himself to the mightier One.</li>
+          <li><strong>Mary</strong> — The young woman who receives the angel's word with faith, sings the Magnificat exalting the lowly, treasures all these things in her heart, and follows her son from the manger to the heart of the gospel story.</li>
+          <li><strong>Peter (Simon)</strong> — The fisherman who falls at Jesus' knees after the great catch, confesses him as the Christ, boasts and then denies him three times, weeps bitterly, and runs to the empty tomb amazed at the resurrection.</li>
+          <li><strong>The Pharisees and Scribes</strong> — The religious leaders who grumble that Jesus welcomes and eats with sinners, test and oppose him over Sabbath and tradition, and finally join the plot against him, exposing self-righteous hearts that miss God's mercy.</li>
+          <li><strong>The Holy Spirit</strong> — Present from the first chapter, filling Elizabeth, Zechariah, and Simeon, descending on Jesus at his baptism and leading him in mission, and promised at the end as the power from on high for his sent church.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 19:10 (WEB)</p>
+          <p class="verse__text">For the Son of Man came to seek and to save that which was lost.”</p>
+        </blockquote>
+        <p>Spoken at the home of Zacchaeus the tax collector, this verse gathers up the whole heart of Luke's Gospel: "For the Son of Man came to seek and to save that which was lost." Every healing, every parable of the lost being found, every meal with sinners, and the cross itself flows from this mission. Luke shows a Savior who does not wait for the lost to climb up to him but who comes down, seeks them out, and brings them home.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>Luke writes so that we may know the certainty of the gospel; our faith rests on an account carefully investigated and true (Luke 1:3-4).</li>
+          <li>God exalts the lowly and lifts up the humble; Mary rejoices that he scatters the proud and fills the hungry with good things (Luke 1:52-53).</li>
+          <li>Jesus came to preach good news to the poor and freedom to the captive, announcing his mission from Isaiah in Nazareth (Luke 4:18).</li>
+          <li>Heaven rejoices over one sinner who repents, as the shepherd, the woman, and the father in Luke 15 each celebrate the lost being found (Luke 15:7, 10, 32).</li>
+          <li>Jesus came to seek and to save the lost, going to the house of a despised tax collector to bring salvation (Luke 19:9-10).</li>
+          <li>The risen Christ had to suffer and rise so that repentance and forgiveness could be preached to all nations, and he sends his witnesses in the Spirit's power (Luke 24:46-49).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>The gospel rests on solid, eyewitness ground.</strong> Luke wrote his orderly account so that Theophilus "might know the certainty concerning the things in which you were instructed" (Luke 1:4, WEB).</li>
+            <li><strong>God delights to lift up the lowly.</strong> Mary sings that the Lord "has put down princes from their thrones, and has exalted the lowly" (Luke 1:52, WEB).</li>
+            <li><strong>Jesus is good news for the poor and the outsider.</strong> In Nazareth he reads, "He has anointed me to preach good news to the poor... to set at liberty those who are crushed" (Luke 4:18, WEB).</li>
+            <li><strong>Heaven rejoices when the lost are found.</strong> Jesus says "there will be more joy in heaven over one sinner who repents, than over ninety-nine righteous people who need no repentance" (Luke 15:7, WEB).</li>
+            <li><strong>Jesus actively seeks and saves the lost.</strong> At Zacchaeus' house he declares, "For the Son of Man came to seek and to save that which was lost" (Luke 19:10, WEB).</li>
+            <li><strong>The risen Lord sends his witnesses to all nations.</strong> He opens the Scriptures and commissions that "repentance and remission of sins should be preached in his name to all the nations" (Luke 24:47, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>Luke wrote so his reader would "know the certainty" of the gospel (Luke 1:4). What gives you confidence in the truth of who Jesus is, and where do you long for more assurance?</li>
+            <li>From the manger onward, Luke shows Jesus reaching the poor, the outcast, and the overlooked. Who are the overlooked people around you, and how might Jesus be calling you to draw near to them?</li>
+            <li>The parables of Luke 15 reveal a God who searches for the lost and throws a party when they return. How does this picture of God compare with how you imagine he feels about you?</li>
+            <li>Jesus prays at every major turning point in Luke. What might it look like for prayer to take a more central place in your own daily life and decisions?</li>
+            <li>Zacchaeus, a despised tax collector, is sought out and saved (Luke 19:1-10). Is there anyone you have quietly written off as beyond God's reach, and how does this story challenge that?</li>
+            <li>The Gospel ends with the disciples sent out and filled with great joy (Luke 24:47-53). How is Jesus calling your group, and you, to be his joyful witnesses right now?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Luke researched carefully and wrote an orderly account drawn from eyewitnesses so that believers could be certain of their faith (Luke 1:1-4). Encourage the group that Christianity rests on real events in history, not wishful thinking. This is partly personal; let people name honestly where they feel sure and where they still wrestle, and point them to the trustworthy record Luke gives.</li>
+            <li>From the shepherds at the manger to the sinful woman, the Samaritan, and Zacchaeus, Luke shows a Savior who consistently moves toward the lowly and excluded (Luke 4:18; 7:37-50). This is personal application; gently invite members to name specific overlooked people in their lives. Model it by sharing one relationship of your own, and keep the focus on grace rather than guilt.</li>
+            <li>In Luke 15 the shepherd, the woman, and especially the father all actively seek and rejoice over the lost; the father runs to embrace his son (Luke 15:20). Many people carry a picture of God as distant or disappointed, so let this parable correct that. Reassure the group that God's heart toward the returning sinner is joy, not reluctance.</li>
+            <li>Luke shows Jesus praying at his baptism, before choosing the Twelve, at the transfiguration, and in Gethsemane (Luke 3:21; 6:12; 22:41-44). This is personal and practical; there is no single right answer. Invite members to share one small, realistic step toward prayer this week, and consider praying together as a group before you close.</li>
+            <li>Zacchaeus was hated as a chief tax collector, yet Jesus invited himself to his home and announced, "Today, salvation has come to this house" (Luke 19:9). Handle this gently, since we have all written people off. Encourage members to name one such person privately before God and to ask him to soften their hearts, trusting that no one is beyond the Savior who came to seek the lost.</li>
+            <li>The risen Jesus commissions his disciples to preach repentance and forgiveness to all nations and tells them to wait for the Spirit's power, after which they return with great joy (Luke 24:47-53). This is corporate and personal application. Help the group name concrete, realistic ways to bear witness, sharing the gospel, serving a neighbor, inviting someone in, and close by praying for joy and boldness together.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="luke.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="luke.html">All Chapters</a>
+          <a class="btn btn--accent" href="luke-1.html">Start with Luke 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

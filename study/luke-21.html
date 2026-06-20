@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 21: The Widow's Gift and the End of the Age — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 21: Jesus honors a poor widow&#x27;s offering, foretells the destruction of the temple and the signs of the age, and calls his people to watchful endurance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 21
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 21</span>
+        <h1>Luke 21: The Widow's Gift and the End of the Age</h1>
+        <p class="lead">Jesus honors a poor widow's offering, foretells the destruction of the temple and the signs of the age, and calls his people to watchful endurance.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-21">
+            <span>Scripture — Luke Chapter 21</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-21">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-21-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-21-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-21-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-21-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 21 (WEB)</p>
+            <p><strong>1</strong> He looked up, and saw the rich people who were putting their gifts into the treasury.</p>
+            <p><strong>2</strong> He saw a certain poor widow casting in two small brass coins.</p>
+            <p><strong>3</strong> He said, “Truly I tell you, this poor widow put in more than all of them,</p>
+            <p><strong>4</strong> for all these put in gifts for God from their abundance, but she, out of her poverty, put in all that she had to live on.”</p>
+            <p><strong>5</strong> As some were talking about the temple and how it was decorated with beautiful stones and gifts, he said,</p>
+            <p><strong>6</strong> “As for these things which you see, the days will come, in which there will not be left here one stone on another that will not be thrown down.”</p>
+            <p><strong>7</strong> They asked him, “Teacher, so when will these things be? What is the sign that these things are about to happen?”</p>
+            <p><strong>8</strong> He said, “Watch out that you don’t get led astray, for many will come in my name, saying, ‘I am he,’ and, ‘The time is at hand.’ Therefore don’t follow them.</p>
+            <p><strong>9</strong> When you hear of wars and disturbances, don’t be terrified, for these things must happen first, but the end won’t come immediately.”</p>
+            <p><strong>10</strong> Then he said to them, “Nation will rise against nation, and kingdom against kingdom.</p>
+            <p><strong>11</strong> There will be great earthquakes, famines, and plagues in various places. There will be terrors and great signs from heaven.</p>
+            <p><strong>12</strong> But before all these things, they will lay their hands on you and will persecute you, delivering you up to synagogues and prisons, bringing you before kings and governors for my name’s sake.</p>
+            <p><strong>13</strong> It will turn out as a testimony for you.</p>
+            <p><strong>14</strong> Settle it therefore in your hearts not to meditate beforehand how to answer,</p>
+            <p><strong>15</strong> for I will give you a mouth and wisdom which all your adversaries will not be able to withstand or to contradict.</p>
+            <p><strong>16</strong> You will be handed over even by parents, brothers, relatives, and friends. They will cause some of you to be put to death.</p>
+            <p><strong>17</strong> You will be hated by all men for my name’s sake.</p>
+            <p><strong>18</strong> And not a hair of your head will perish.</p>
+            <p><strong>19</strong> “By your endurance you will win your lives.</p>
+            <p><strong>20</strong> “But when you see Jerusalem surrounded by armies, then know that its desolation is at hand.</p>
+            <p><strong>21</strong> Then let those who are in Judea flee to the mountains. Let those who are in the middle of her depart. Let those who are in the country not enter therein.</p>
+            <p><strong>22</strong> For these are days of vengeance, that all things which are written may be fulfilled.</p>
+            <p><strong>23</strong> Woe to those who are pregnant and to those who nurse infants in those days! For there will be great distress in the land, and wrath to this people.</p>
+            <p><strong>24</strong> They will fall by the edge of the sword, and will be led captive into all the nations. Jerusalem will be trampled down by the Gentiles, until the times of the Gentiles are fulfilled.</p>
+            <p><strong>25</strong> There will be signs in the sun, moon, and stars; and on the earth anxiety of nations, in perplexity for the roaring of the sea and the waves;</p>
+            <p><strong>26</strong> men fainting for fear, and for expectation of the things which are coming on the world: for the powers of the heavens will be shaken.</p>
+            <p><strong>27</strong> Then they will see the Son of Man coming in a cloud with power and great glory.</p>
+            <p><strong>28</strong> But when these things begin to happen, look up, and lift up your heads, because your redemption is near.”</p>
+            <p><strong>29</strong> He told them a parable. “See the fig tree, and all the trees.</p>
+            <p><strong>30</strong> When they are already budding, you see it and know by your own selves that the summer is already near.</p>
+            <p><strong>31</strong> Even so you also, when you see these things happening, know that God’s Kingdom is near.</p>
+            <p><strong>32</strong> Most certainly I tell you, this generation will not pass away until all things are accomplished.</p>
+            <p><strong>33</strong> Heaven and earth will pass away, but my words will by no means pass away.</p>
+            <p><strong>34</strong> “So be careful, or your hearts will be loaded down with carousing, drunkenness, and cares of this life, and that day will come on you suddenly.</p>
+            <p><strong>35</strong> For it will come like a snare on all those who dwell on the surface of all the earth.</p>
+            <p><strong>36</strong> Therefore be watchful all the time, praying that you may be counted worthy to escape all these things that will happen, and to stand before the Son of Man.”</p>
+            <p><strong>37</strong> Every day Jesus was teaching in the temple, and every night he would go out and spend the night on the mountain that is called Olivet.</p>
+            <p><strong>38</strong> All the people came early in the morning to him in the temple to hear him.</p>
+            </div>
+            <div class="scripture-text" id="web-21-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 21 (KJV)</p>
+            <p><strong>1</strong> And he looked up, and saw the rich men casting their gifts into the treasury.</p>
+            <p><strong>2</strong> And he saw also a certain poor widow casting in thither two mites.</p>
+            <p><strong>3</strong> And he said, Of a truth I say unto you, that this poor widow hath cast in more than they all:</p>
+            <p><strong>4</strong> For all these have of their abundance cast in unto the offerings of God: but she of her penury hath cast in all the living that she had.</p>
+            <p><strong>5</strong> And as some spake of the temple, how it was adorned with goodly stones and gifts, he said,</p>
+            <p><strong>6</strong> As for these things which ye behold, the days will come, in the which there shall not be left one stone upon another, that shall not be thrown down.</p>
+            <p><strong>7</strong> And they asked him, saying, Master, but when shall these things be? and what sign will there be when these things shall come to pass?</p>
+            <p><strong>8</strong> And he said, Take heed that ye be not deceived: for many shall come in my name, saying, I am Christ; and the time draweth near: go ye not therefore after them.</p>
+            <p><strong>9</strong> But when ye shall hear of wars and commotions, be not terrified: for these things must first come to pass; but the end is not by and by.</p>
+            <p><strong>10</strong> Then said he unto them, Nation shall rise against nation, and kingdom against kingdom:</p>
+            <p><strong>11</strong> And great earthquakes shall be in divers places, and famines, and pestilences; and fearful sights and great signs shall there be from heaven.</p>
+            <p><strong>12</strong> But before all these, they shall lay their hands on you, and persecute you, delivering you up to the synagogues, and into prisons, being brought before kings and rulers for my name’s sake.</p>
+            <p><strong>13</strong> And it shall turn to you for a testimony.</p>
+            <p><strong>14</strong> Settle it therefore in your hearts, not to meditate before what ye shall answer:</p>
+            <p><strong>15</strong> For I will give you a mouth and wisdom, which all your adversaries shall not be able to gainsay nor resist.</p>
+            <p><strong>16</strong> And ye shall be betrayed both by parents, and brethren, and kinsfolks, and friends; and some of you shall they cause to be put to death.</p>
+            <p><strong>17</strong> And ye shall be hated of all men for my name’s sake.</p>
+            <p><strong>18</strong> But there shall not an hair of your head perish.</p>
+            <p><strong>19</strong> In your patience possess ye your souls.</p>
+            <p><strong>20</strong> And when ye shall see Jerusalem compassed with armies, then know that the desolation thereof is nigh.</p>
+            <p><strong>21</strong> Then let them which are in Judaea flee to the mountains; and let them which are in the midst of it depart out; and let not them that are in the countries enter thereinto.</p>
+            <p><strong>22</strong> For these be the days of vengeance, that all things which are written may be fulfilled.</p>
+            <p><strong>23</strong> But woe unto them that are with child, and to them that give suck, in those days! for there shall be great distress in the land, and wrath upon this people.</p>
+            <p><strong>24</strong> And they shall fall by the edge of the sword, and shall be led away captive into all nations: and Jerusalem shall be trodden down of the Gentiles, until the times of the Gentiles be fulfilled.</p>
+            <p><strong>25</strong> And there shall be signs in the sun, and in the moon, and in the stars; and upon the earth distress of nations, with perplexity; the sea and the waves roaring;</p>
+            <p><strong>26</strong> Men’s hearts failing them for fear, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.</p>
+            <p><strong>27</strong> And then shall they see the Son of man coming in a cloud with power and great glory.</p>
+            <p><strong>28</strong> And when these things begin to come to pass, then look up, and lift up your heads; for your redemption draweth nigh.</p>
+            <p><strong>29</strong> And he spake to them a parable; Behold the fig tree, and all the trees;</p>
+            <p><strong>30</strong> When they now shoot forth, ye see and know of your own selves that summer is now nigh at hand.</p>
+            <p><strong>31</strong> So likewise ye, when ye see these things come to pass, know ye that the kingdom of God is nigh at hand.</p>
+            <p><strong>32</strong> Verily I say unto you, This generation shall not pass away, till all be fulfilled.</p>
+            <p><strong>33</strong> Heaven and earth shall pass away: but my words shall not pass away.</p>
+            <p><strong>34</strong> And take heed to yourselves, lest at any time your hearts be overcharged with surfeiting, and drunkenness, and cares of this life, and so that day come upon you unawares.</p>
+            <p><strong>35</strong> For as a snare shall it come on all them that dwell on the face of the whole earth.</p>
+            <p><strong>36</strong> Watch ye therefore, and pray always, that ye may be accounted worthy to escape all these things that shall come to pass, and to stand before the Son of man.</p>
+            <p><strong>37</strong> And in the day time he was teaching in the temple; and at night he went out, and abode in the mount that is called the mount of Olives.</p>
+            <p><strong>38</strong> And all the people came early in the morning to him in the temple, for to hear him.</p>
+            </div>
+            <div class="scripture-text" id="web-21-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 21 (ASV)</p>
+            <p><strong>1</strong> And he looked up, and saw the rich men that were casting their gifts into the treasury.</p>
+            <p><strong>2</strong> And he saw a certain poor widow casting in thither two mites.</p>
+            <p><strong>3</strong> And he said, Of a truth I say unto you, This poor widow cast in more than they all:</p>
+            <p><strong>4</strong> for all these did of their superfluity cast in unto the gifts; but she of her want did cast in all the living that she had.</p>
+            <p><strong>5</strong> And as some spake of the temple, how it was adorned with goodly stones and offerings, he said,</p>
+            <p><strong>6</strong> As for these things which ye behold, the days will come, in which there shall not be left here one stone upon another, that shall not be thrown down.</p>
+            <p><strong>7</strong> And they asked him, saying, Teacher, when therefore shall these things be? and what [shall be] the sign when these things are about to come to pass?</p>
+            <p><strong>8</strong> And he said, Take heed that ye be not led astray: for many shall come in my name, saying, I am [he]; and, The time is at hand: go ye not after them.</p>
+            <p><strong>9</strong> And when ye shall hear of wars and tumults, be not terrified: for these things must needs come to pass first; but the end is not immediately.</p>
+            <p><strong>10</strong> Then said he unto them, Nation shall rise against nation, and kingdom against kingdom;</p>
+            <p><strong>11</strong> and there shall be great earthquakes, and in divers places famines and pestilences; and there shall be terrors and great signs from heaven.</p>
+            <p><strong>12</strong> But before all these things, they shall lay their hands on you, and shall persecute you, delivering you up to the synagogues and prisons, bringing you before kings and governors for my name`s sake.</p>
+            <p><strong>13</strong> It shall turn out unto you for a testimony.</p>
+            <p><strong>14</strong> Settle it therefore in your hearts, not to meditate beforehand how to answer:</p>
+            <p><strong>15</strong> for I will give you a mouth and wisdom, which all your adversaries shall not be able to withstand or to gainsay.</p>
+            <p><strong>16</strong> But ye shall be delivered up even by parents, and brethren, and kinsfolk, and friends; and [some] of you shall they cause to be put to death.</p>
+            <p><strong>17</strong> And ye shall be hated of all men for my name`s sake.</p>
+            <p><strong>18</strong> And not a hair of your head shall perish.</p>
+            <p><strong>19</strong> In your patience ye shall win your souls.</p>
+            <p><strong>20</strong> But when ye see Jerusalem compassed with armies, then know that her desolation is at hand.</p>
+            <p><strong>21</strong> Then let them that are in Judaea flee unto the mountains; and let them that are in the midst of her depart out; and let not them that are in the country enter therein.</p>
+            <p><strong>22</strong> For these are days of vengeance, that all things which are written may be fulfilled.</p>
+            <p><strong>23</strong> Woe unto them that are with child and to them that give suck in those days! for there shall be great distress upon the land, and wrath unto this people.</p>
+            <p><strong>24</strong> And they shall fall by the edge of the sword, and shall be led captive into all the nations: and Jerusalem shall be trodden down of the Gentiles, until the times of the Gentiles be fulfilled.</p>
+            <p><strong>25</strong> And there shall be signs in sun and moon and stars; and upon the earth distress of nations, in perplexity for the roaring of the sea and the billows;</p>
+            <p><strong>26</strong> men fainting for fear, and for expectation of the things which are coming on the world: for the powers of the heavens shall be shaken.</p>
+            <p><strong>27</strong> And then shall they see the Son of man coming in a cloud with power and great glory.</p>
+            <p><strong>28</strong> But when these things begin to come to pass, look up, and lift up your heads; because your redemption draweth nigh.</p>
+            <p><strong>29</strong> And he spake to them a parable: Behold the fig tree, and all the trees:</p>
+            <p><strong>30</strong> when they now shoot forth, ye see it and know of your own selves that the summer is now nigh.</p>
+            <p><strong>31</strong> Even so ye also, when ye see these things coming to pass, know ye that the kingdom of God is nigh.</p>
+            <p><strong>32</strong> Verily I say unto you, This generation shall not pass away, till all things be accomplished.</p>
+            <p><strong>33</strong> Heaven and earth shall pass away: but my words shall not pass away.</p>
+            <p><strong>34</strong> But take heed to yourselves, lest haply your hearts be overcharged with surfeiting, and drunkenness, and cares of this life, and that day come on you suddenly as a snare:</p>
+            <p><strong>35</strong> for [so] shall it come upon all them that dwell on the face of all the earth.</p>
+            <p><strong>36</strong> But watch ye at every season, making supplication, that ye may prevail to escape all these things that shall come to pass, and to stand before the Son of man.</p>
+            <p><strong>37</strong> And every day he was teaching in the temple; and every night he went out, and lodged in the mount that is called Olivet.</p>
+            <p><strong>38</strong> And all the people came early in the morning to him in the temple, to hear him.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Watching the offerings in the temple, Jesus notices a poor widow who puts in two small coins and declares that she has given more than all the rich, for she gave out of her poverty everything she had. When some admire the temple's beauty, Jesus foretells that not one stone will be left on another. He warns his followers of false messiahs, wars, persecutions, and cosmic signs, urging them not to be terrified but to use the times to bear witness, promising them words and wisdom no enemy can resist. He speaks of Jerusalem surrounded and trampled, and of the Son of Man coming on a cloud with power and great glory, at which his people are to lift up their heads, for their redemption draws near. Like a fig tree budding before summer, these signs announce that the kingdom of God is near. Jesus calls his people to stay awake and to pray for strength to stand before him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Commends the widow's offering and teaches about the end of the age and the coming of the Son of Man</li>
+          <li><strong>The poor widow</strong> — Gives two small coins, all she had, and is honored by Jesus above the rich</li>
+          <li><strong>The disciples</strong> — Ask when these things will happen and receive Jesus' call to watchful endurance</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 21:33 (WEB)</p>
+          <p class="verse__text">Heaven and earth will pass away, but my words will by no means pass away.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God measures our giving not by the amount but by the heart and the cost behind it.</li>
+          <li>Earthly grandeur is temporary, but the word of Jesus endures forever.</li>
+          <li>Followers of Jesus should expect trials yet use them as opportunities to witness.</li>
+          <li>Christ will return in glory, so his people are to watch, pray, and stand ready.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-21">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-21">
+            <ul class="lesson-list">
+            <li><strong>God sees the heart behind our giving.</strong> Jesus says the poor widow 'put in more than all of them,' giving out of her poverty 'all that she had to live on' (Luke 21:3-4, WEB).</li>
+            <li><strong>Jesus' words outlast everything that seems permanent.</strong> He declares, 'Heaven and earth will pass away, but my words will by no means pass away' (Luke 21:33, WEB).</li>
+            <li><strong>Trials become opportunities for testimony.</strong> Jesus tells his followers, 'It will turn out as a testimony for you,' and promises them 'a mouth and wisdom' their adversaries cannot resist (Luke 21:13-15, WEB).</li>
+            <li><strong>Christ will return visibly and gloriously.</strong> Jesus says they will see 'the Son of Man coming in a cloud with power and great glory' (Luke 21:27, WEB), and his people may lift up their heads.</li>
+            <li><strong>Watchfulness and prayer prepare us for that day.</strong> Jesus warns them to watch and pray always 'that you may be counted worthy... to stand before the Son of Man' (Luke 21:36, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-21">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-21">
+            <ol class="study-questions">
+            <li>Why does Jesus say the widow gave more than all the wealthy givers?</li>
+            <li>How does Jesus respond to the admiration of the temple, and what does he predict?</li>
+            <li>What does Jesus tell his followers to expect, and how are they to respond to persecution?</li>
+            <li>How does Jesus describe the coming of the Son of Man, and what hope does it hold for his people?</li>
+            <li>Where in your own life is God inviting you to give or to trust him more fully, even from a place of little?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-21">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-21">
+            <ol class="study-questions">
+            <li>The rich gave out of their abundance, but the widow gave two small coins, all she had to live on (Luke 21:3-4). Jesus measures the gift by sacrifice and trust, not by the sum, so her offering is the greatest of all.</li>
+            <li>When people admire the temple's stones and gifts, Jesus foretells that not one stone will be left upon another (Luke 21:5-6). Even the most magnificent earthly structure will pass, while his word remains (21:33).</li>
+            <li>Jesus warns of wars, persecutions, and betrayals (Luke 21:9-17), yet tells his followers not to be terrified and to see these as chances to testify. He promises wisdom no opponent can withstand and that not a hair of their head will perish (21:15, 18).</li>
+            <li>Jesus describes the Son of Man coming on a cloud with power and great glory (Luke 21:27). Far from fearing, his people are to look up because their redemption is near, and the budding fig tree shows the kingdom is at hand (21:28-31).</li>
+            <li>This is a personal application question. Invite members to share where they sense God calling them to greater trust or generosity. As leader, encourage honest reflection and point to the widow's quiet faith, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-20.html">← Luke 20</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-22.html">Luke 22 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

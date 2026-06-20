@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 8: Who Do You Say I Am? — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 8: Jesus feeds another multitude, warns against spiritual blindness, opens a blind man&#x27;s eyes, and draws Peter&#x27;s great confession before foretelling the cross." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 8
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 8</span>
+        <h1>Mark 8: Who Do You Say I Am?</h1>
+        <p class="lead">Jesus feeds another multitude, warns against spiritual blindness, opens a blind man's eyes, and draws Peter's great confession before foretelling the cross.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-8">
+            <span>Scripture — Mark Chapter 8</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-8">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-8-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-8-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-8-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-8-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 8 (WEB)</p>
+            <p><strong>1</strong> In those days, when there was a very great multitude, and they had nothing to eat, Jesus called his disciples to himself, and said to them,</p>
+            <p><strong>2</strong> “I have compassion on the multitude, because they have stayed with me now three days, and have nothing to eat.</p>
+            <p><strong>3</strong> If I send them away fasting to their home, they will faint on the way, for some of them have come a long way.”</p>
+            <p><strong>4</strong> His disciples answered him, “From where could one satisfy these people with bread here in a deserted place?”</p>
+            <p><strong>5</strong> He asked them, “How many loaves do you have?” They said, “Seven.”</p>
+            <p><strong>6</strong> He commanded the multitude to sit down on the ground, and he took the seven loaves. Having given thanks, he broke them, and gave them to his disciples to serve, and they served the multitude.</p>
+            <p><strong>7</strong> They had a few small fish. Having blessed them, he said to serve these also.</p>
+            <p><strong>8</strong> They ate, and were filled. They took up seven baskets of broken pieces that were left over.</p>
+            <p><strong>9</strong> Those who had eaten were about four thousand. Then he sent them away.</p>
+            <p><strong>10</strong> Immediately he entered into the boat with his disciples, and came into the region of Dalmanutha.</p>
+            <p><strong>11</strong> The Pharisees came out and began to question him, seeking from him a sign from heaven, and testing him.</p>
+            <p><strong>12</strong> He sighed deeply in his spirit, and said, “Why does this generation seek a sign? Most certainly I tell you, no sign will be given to this generation.”</p>
+            <p><strong>13</strong> He left them, and again entering into the boat, departed to the other side.</p>
+            <p><strong>14</strong> They forgot to take bread; and they didn’t have more than one loaf in the boat with them.</p>
+            <p><strong>15</strong> He warned them, saying, “Take heed: beware of the yeast of the Pharisees and the yeast of Herod.”</p>
+            <p><strong>16</strong> They reasoned with one another, saying, “It’s because we have no bread.”</p>
+            <p><strong>17</strong> Jesus, perceiving it, said to them, “Why do you reason that it’s because you have no bread? Don’t you perceive yet, neither understand? Is your heart still hardened?</p>
+            <p><strong>18</strong> Having eyes, don’t you see? Having ears, don’t you hear? Don’t you remember?</p>
+            <p><strong>19</strong> When I broke the five loaves among the five thousand, how many baskets full of broken pieces did you take up?” They told him, “Twelve.”</p>
+            <p><strong>20</strong> “When the seven loaves fed the four thousand, how many baskets full of broken pieces did you take up?” They told him, “Seven.”</p>
+            <p><strong>21</strong> He asked them, “Don’t you understand yet?”</p>
+            <p><strong>22</strong> He came to Bethsaida. They brought a blind man to him, and begged him to touch him.</p>
+            <p><strong>23</strong> He took hold of the blind man by the hand, and brought him out of the village. When he had spat on his eyes, and laid his hands on him, he asked him if he saw anything.</p>
+            <p><strong>24</strong> He looked up, and said, “I see men; for I see them like trees walking.”</p>
+            <p><strong>25</strong> Then again he laid his hands on his eyes. He looked intently, and was restored, and saw everyone clearly.</p>
+            <p><strong>26</strong> He sent him away to his house, saying, “Don’t enter into the village, nor tell anyone in the village.”</p>
+            <p><strong>27</strong> Jesus went out, with his disciples, into the villages of Caesarea Philippi. On the way he asked his disciples, “Who do men say that I am?”</p>
+            <p><strong>28</strong> They told him, “John the Baptizer, and others say Elijah, but others: one of the prophets.”</p>
+            <p><strong>29</strong> He said to them, “But who do you say that I am?” Peter answered, “You are the Christ.”</p>
+            <p><strong>30</strong> He commanded them that they should tell no one about him.</p>
+            <p><strong>31</strong> He began to teach them that the Son of Man must suffer many things, and be rejected by the elders, the chief priests, and the scribes, and be killed, and after three days rise again.</p>
+            <p><strong>32</strong> He spoke to them openly. Peter took him, and began to rebuke him.</p>
+            <p><strong>33</strong> But he, turning around, and seeing his disciples, rebuked Peter, and said, “Get behind me, Satan! For you have in mind not the things of God, but the things of men.”</p>
+            <p><strong>34</strong> He called the multitude to himself with his disciples, and said to them, “Whoever wants to come after me, let him deny himself, and take up his cross, and follow me.</p>
+            <p><strong>35</strong> For whoever wants to save his life will lose it; and whoever will lose his life for my sake and the sake of the Good News will save it.</p>
+            <p><strong>36</strong> For what does it profit a man, to gain the whole world, and forfeit his life?</p>
+            <p><strong>37</strong> For what will a man give in exchange for his life?</p>
+            <p><strong>38</strong> For whoever will be ashamed of me and of my words in this adulterous and sinful generation, the Son of Man also will be ashamed of him, when he comes in his Father’s glory, with the holy angels.”</p>
+            </div>
+            <div class="scripture-text" id="web-8-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 8 (KJV)</p>
+            <p><strong>1</strong> In those days the multitude being very great, and having nothing to eat, Jesus called his disciples unto him, and saith unto them,</p>
+            <p><strong>2</strong> I have compassion on the multitude, because they have now been with me three days, and have nothing to eat:</p>
+            <p><strong>3</strong> And if I send them away fasting to their own houses, they will faint by the way: for divers of them came from far.</p>
+            <p><strong>4</strong> And his disciples answered him, From whence can a man satisfy these men with bread here in the wilderness?</p>
+            <p><strong>5</strong> And he asked them, How many loaves have ye? And they said, Seven.</p>
+            <p><strong>6</strong> And he commanded the people to sit down on the ground: and he took the seven loaves, and gave thanks, and brake, and gave to his disciples to set before them; and they did set them before the people.</p>
+            <p><strong>7</strong> And they had a few small fishes: and he blessed, and commanded to set them also before them.</p>
+            <p><strong>8</strong> So they did eat, and were filled: and they took up of the broken meat that was left seven baskets.</p>
+            <p><strong>9</strong> And they that had eaten were about four thousand: and he sent them away.</p>
+            <p><strong>10</strong> And straightway he entered into a ship with his disciples, and came into the parts of Dalmanutha.</p>
+            <p><strong>11</strong> And the Pharisees came forth, and began to question with him, seeking of him a sign from heaven, tempting him.</p>
+            <p><strong>12</strong> And he sighed deeply in his spirit, and saith, Why doth this generation seek after a sign? verily I say unto you, There shall no sign be given unto this generation.</p>
+            <p><strong>13</strong> And he left them, and entering into the ship again departed to the other side.</p>
+            <p><strong>14</strong> Now the disciples had forgotten to take bread, neither had they in the ship with them more than one loaf.</p>
+            <p><strong>15</strong> And he charged them, saying, Take heed, beware of the leaven of the Pharisees, and of the leaven of Herod.</p>
+            <p><strong>16</strong> And they reasoned among themselves, saying, It is because we have no bread.</p>
+            <p><strong>17</strong> And when Jesus knew it, he saith unto them, Why reason ye, because ye have no bread? perceive ye not yet, neither understand? have ye your heart yet hardened?</p>
+            <p><strong>18</strong> Having eyes, see ye not? and having ears, hear ye not? and do ye not remember?</p>
+            <p><strong>19</strong> When I brake the five loaves among five thousand, how many baskets full of fragments took ye up? They say unto him, Twelve.</p>
+            <p><strong>20</strong> And when the seven among four thousand, how many baskets full of fragments took ye up? And they said, Seven.</p>
+            <p><strong>21</strong> And he said unto them, How is it that ye do not understand?</p>
+            <p><strong>22</strong> And he cometh to Bethsaida; and they bring a blind man unto him, and besought him to touch him.</p>
+            <p><strong>23</strong> And he took the blind man by the hand, and led him out of the town; and when he had spit on his eyes, and put his hands upon him, he asked him if he saw ought.</p>
+            <p><strong>24</strong> And he looked up, and said, I see men as trees, walking.</p>
+            <p><strong>25</strong> After that he put his hands again upon his eyes, and made him look up: and he was restored, and saw every man clearly.</p>
+            <p><strong>26</strong> And he sent him away to his house, saying, Neither go into the town, nor tell it to any in the town.</p>
+            <p><strong>27</strong> And Jesus went out, and his disciples, into the towns of Caesarea Philippi: and by the way he asked his disciples, saying unto them, Whom do men say that I am?</p>
+            <p><strong>28</strong> And they answered, John the Baptist: but some say, Elias; and others, One of the prophets.</p>
+            <p><strong>29</strong> And he saith unto them, But whom say ye that I am? And Peter answereth and saith unto him, Thou art the Christ.</p>
+            <p><strong>30</strong> And he charged them that they should tell no man of him.</p>
+            <p><strong>31</strong> And he began to teach them, that the Son of man must suffer many things, and be rejected of the elders, and of the chief priests, and scribes, and be killed, and after three days rise again.</p>
+            <p><strong>32</strong> And he spake that saying openly. And Peter took him, and began to rebuke him.</p>
+            <p><strong>33</strong> But when he had turned about and looked on his disciples, he rebuked Peter, saying, Get thee behind me, Satan: for thou savourest not the things that be of God, but the things that be of men.</p>
+            <p><strong>34</strong> And when he had called the people unto him with his disciples also, he said unto them, Whosoever will come after me, let him deny himself, and take up his cross, and follow me.</p>
+            <p><strong>35</strong> For whosoever will save his life shall lose it; but whosoever shall lose his life for my sake and the gospel’s, the same shall save it.</p>
+            <p><strong>36</strong> For what shall it profit a man, if he shall gain the whole world, and lose his own soul?</p>
+            <p><strong>37</strong> Or what shall a man give in exchange for his soul?</p>
+            <p><strong>38</strong> Whosoever therefore shall be ashamed of me and of my words in this adulterous and sinful generation; of him also shall the Son of man be ashamed, when he cometh in the glory of his Father with the holy angels.</p>
+            </div>
+            <div class="scripture-text" id="web-8-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 8 (ASV)</p>
+            <p><strong>1</strong> In those days, when there was again a great multitude, and they had nothing to eat, he called unto him his disciples, and saith unto them,</p>
+            <p><strong>2</strong> I have compassion on the multitude, because they continue with me now three days, and have nothing to eat:</p>
+            <p><strong>3</strong> and if I send them away fasting to their home, they will faint on the way; and some of them are come from far.</p>
+            <p><strong>4</strong> And his disciples answered him, Whence shall one be able to fill these men with bread here in a desert place?</p>
+            <p><strong>5</strong> And he asked them, How many loaves have ye? And they said, Seven.</p>
+            <p><strong>6</strong> And he commandeth the multitude to sit down on the ground: and he took the seven loaves, and having given thanks, he brake, and gave to his disciples, to set before them; and they set them before the multitude.</p>
+            <p><strong>7</strong> And they had a few small fishes: and having blessed them, he commanded to set these also before them.</p>
+            <p><strong>8</strong> And they ate, and were filled: and they took up, of broken pieces that remained over, seven baskets.</p>
+            <p><strong>9</strong> And they were about four thousand: and he sent them away.</p>
+            <p><strong>10</strong> And straightway he entered into the boat with his disciples, and came into the parts of Dalmanutha.</p>
+            <p><strong>11</strong> And the Pharisees came forth, and began to question with him, seeking of him a sign from heaven, trying him.</p>
+            <p><strong>12</strong> And he sighed deeply in his spirit, and saith, Why doth this generation seek a sign? verily I say unto you, There shall no sign be given unto this generation.</p>
+            <p><strong>13</strong> And he left them, and again entering into [the boat] departed to the other side.</p>
+            <p><strong>14</strong> And they forgot to take bread; and they had not in the boat with them more than one loaf.</p>
+            <p><strong>15</strong> And he charged them, saying, Take heed, beware of the leaven of the Pharisees and the leaven of Herod.</p>
+            <p><strong>16</strong> And they reasoned one with another, saying, We have no bread.</p>
+            <p><strong>17</strong> And Jesus perceiving it saith unto them, Why reason ye, because ye have no bread? do ye not yet perceive, neither understand? have ye your heart hardened?</p>
+            <p><strong>18</strong> Having eyes, see ye not? and having ears, hear ye not? and do ye not remember?</p>
+            <p><strong>19</strong> When I brake the five loaves among the five thousand, how many baskets full of broken pieces took ye up? They say unto him, Twelve.</p>
+            <p><strong>20</strong> And when the seven among the four thousand, how many basketfuls of broken pieces took ye up? And they say unto him, Seven.</p>
+            <p><strong>21</strong> And he said unto them, Do ye not yet understand?</p>
+            <p><strong>22</strong> And they come unto Bethsaida. And they bring to him a blind man, and beseech him to touch him.</p>
+            <p><strong>23</strong> And he took hold of the blind man by the hand, and brought him out of the village; and when he had spit on his eyes, and laid his hands upon him, he asked him, Seest thou aught?</p>
+            <p><strong>24</strong> And he looked up, and said, I see men; for I behold [them] as trees, walking.</p>
+            <p><strong>25</strong> Then again he laid his hands upon his eyes; and he looked stedfastly, and was restored, and saw all things clearly.</p>
+            <p><strong>26</strong> And he sent him away to his home, saying, Do not even enter into the village.</p>
+            <p><strong>27</strong> And Jesus went forth, and his disciples, into the villages of Caesarea Philippi: and on the way he asked his disciples, saying unto them, Who do men say that I am?</p>
+            <p><strong>28</strong> And they told him, saying, John the Baptist; and others, Elijah; but others, One of the prophets.</p>
+            <p><strong>29</strong> And he asked them, But who say ye that I am? Peter answereth and saith unto him, Thou art the Christ.</p>
+            <p><strong>30</strong> And he charged them that they should tell no man of him.</p>
+            <p><strong>31</strong> And he began to teach them, that the Son of man must suffer many things, and be rejected by the elders, and the chief priests, and the scribes, and be killed, and after three days rise again.</p>
+            <p><strong>32</strong> And he spake the saying openly. And Peter took him, and began to rebuke him.</p>
+            <p><strong>33</strong> But he turning about, and seeing his disciples, rebuked Peter, and saith, Get thee behind me, Satan; for thou mindest not the things of God, but the things of men.</p>
+            <p><strong>34</strong> And he called unto him the multitude with his disciples, and said unto them, If any man would come after me, let him deny himself, and take up his cross, and follow me.</p>
+            <p><strong>35</strong> For whosoever would save his life shall lose it; and whosoever shall lose his life for my sake and the gospel`s shall save it.</p>
+            <p><strong>36</strong> For what doth it profit a man, to gain the whole world, and forfeit his life?</p>
+            <p><strong>37</strong> For what should a man give in exchange for his life?</p>
+            <p><strong>38</strong> For whosoever shall be ashamed of me and of my words in this adulterous and sinful generation, the Son of man also shall be ashamed of him, when he cometh in the glory of his Father with the holy angels.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Moved with compassion for a crowd that has stayed three days without food, Jesus feeds four thousand from seven loaves and a few fish, with seven baskets left over. When the Pharisees demand a sign, he refuses and sighs deeply. In the boat he warns the disciples against the leaven of the Pharisees and of Herod; they think he speaks of bread, and he gently rebukes their dullness, reminding them of the baskets gathered. At Bethsaida he heals a blind man in stages, first to blurred sight, then to clear vision. On the way to Caesarea Philippi, Jesus asks who people say he is, then who they say he is. Peter answers that he is the Christ. Jesus then begins to teach plainly that the Son of Man must suffer, be killed, and rise again. When Peter rebukes him, Jesus answers sharply, then calls the crowd to deny themselves, take up their cross, and follow him, for whoever loses his life for the gospel will save it.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Christ who feeds the crowd, opens blind eyes, and foretells his suffering and rising.</li>
+          <li><strong>Peter</strong> — The disciple who confesses Jesus as the Christ, then resists the way of the cross.</li>
+          <li><strong>The disciples</strong> — Followers slow to understand, warned against spiritual blindness and hardness of heart.</li>
+          <li><strong>The blind man of Bethsaida</strong> — A man Jesus heals in two stages until he sees everyone clearly.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 8:29 (WEB)</p>
+          <p class="verse__text">He said to them, “But who do you say that I am?” Peter answered, “You are the Christ.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus' compassion provides for both body and soul, again and again.</li>
+          <li>Spiritual dullness can blind even those closest to Jesus.</li>
+          <li>Seeing Jesus clearly may come in stages as he patiently works in us.</li>
+          <li>Following the Christ means embracing the cross, not avoiding it.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-8">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-8">
+            <ul class="lesson-list">
+            <li><strong>Christ's compassion meets our needs.</strong> Jesus says, 'I have compassion on the multitude, because they have stayed with me now three days, and have nothing to eat' (Mark 8:2, WEB).</li>
+            <li><strong>Hardened hearts fail to perceive Jesus' work.</strong> Jesus asks, 'Having eyes, don't you see? Having ears, don't you hear?' (Mark 8:18, WEB).</li>
+            <li><strong>Jesus patiently brings us from blurred to clear sight.</strong> After a first touch the man sees men 'like trees walking,' and after a second he sees everyone clearly (Mark 8:24-25, WEB).</li>
+            <li><strong>Jesus is the Christ who must suffer.</strong> Peter confesses, 'You are the Christ,' and Jesus begins to teach that the Son of Man must suffer, be killed, and rise (Mark 8:29-31, WEB).</li>
+            <li><strong>Following Jesus means taking up the cross.</strong> Jesus says, 'Whoever wants to come after me, let him deny himself, and take up his cross, and follow me' (Mark 8:34, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-8">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-8">
+            <ol class="study-questions">
+            <li>What does the feeding of the four thousand reveal about Jesus, and how does it echo the earlier feeding?</li>
+            <li>Why does Jesus warn about the leaven of the Pharisees and Herod, and why do the disciples misunderstand?</li>
+            <li>What might the two-stage healing of the blind man picture about the disciples' growing understanding?</li>
+            <li>How does Peter's confession and his later rebuke show both insight and misunderstanding about Jesus?</li>
+            <li>Where in your own life is Jesus calling you to deny yourself and take up your cross to follow him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-8">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-8">
+            <ol class="study-questions">
+            <li>Out of compassion Jesus feeds four thousand from seven loaves and a few fish, leaving seven baskets (Mark 8:6-8). Like the earlier feeding, it shows his abundant provision and presses the disciples to trust the One who supplies.</li>
+            <li>Jesus warns against the corrupting influence, the leaven, of the Pharisees and Herod (Mark 8:15). The disciples think he speaks of literal bread, and he rebukes their dullness, reminding them how many baskets they gathered (Mark 8:17-21).</li>
+            <li>The man sees blurry shapes after one touch, then clearly after the second (Mark 8:24-25). It pictures the disciples, who partly grasp who Jesus is yet need his continued work to see the way of the cross clearly.</li>
+            <li>Peter rightly confesses, 'You are the Christ' (Mark 8:29), but when Jesus foretells his suffering, Peter rebukes him and is sternly corrected (Mark 8:31-33). He sees Jesus' identity yet not his mission to suffer and rise.</li>
+            <li>This is a personal application question. Invite members to consider what self-denial following Jesus asks of them now. As leader, encourage honest reflection and point to the promise that whoever loses his life for the gospel will save it, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="mark-7.html">← Mark 7</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-9.html">Mark 9 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

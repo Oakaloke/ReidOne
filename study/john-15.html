@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 15: The True Vine and Its Branches — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 15: Jesus calls himself the true vine and invites his disciples to abide in him, bear lasting fruit, love one another, and expect the world&#x27;s hatred." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 15</span>
+        <h1>John 15: The True Vine and Its Branches</h1>
+        <p class="lead">Jesus calls himself the true vine and invites his disciples to abide in him, bear lasting fruit, love one another, and expect the world's hatred.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — John Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 15 (WEB)</p>
+            <p><strong>1</strong> “I am the true vine, and my Father is the farmer.</p>
+            <p><strong>2</strong> Every branch in me that doesn’t bear fruit, he takes away. Every branch that bears fruit, he prunes, that it may bear more fruit.</p>
+            <p><strong>3</strong> You are already pruned clean because of the word which I have spoken to you.</p>
+            <p><strong>4</strong> Remain in me, and I in you. As the branch can’t bear fruit by itself, unless it remains in the vine, so neither can you, unless you remain in me.</p>
+            <p><strong>5</strong> I am the vine. You are the branches. He who remains in me, and I in him, the same bears much fruit, for apart from me you can do nothing.</p>
+            <p><strong>6</strong> If a man doesn’t remain in me, he is thrown out as a branch, and is withered; and they gather them, throw them into the fire, and they are burned.</p>
+            <p><strong>7</strong> If you remain in me, and my words remain in you, you will ask whatever you desire, and it will be done for you.</p>
+            <p><strong>8</strong> “In this is my Father glorified, that you bear much fruit; and so you will be my disciples.</p>
+            <p><strong>9</strong> Even as the Father has loved me, I also have loved you. Remain in my love.</p>
+            <p><strong>10</strong> If you keep my commandments, you will remain in my love; even as I have kept my Father’s commandments, and remain in his love.</p>
+            <p><strong>11</strong> I have spoken these things to you, that my joy may remain in you, and that your joy may be made full.</p>
+            <p><strong>12</strong> “This is my commandment, that you love one another, even as I have loved you.</p>
+            <p><strong>13</strong> Greater love has no one than this, that someone lay down his life for his friends.</p>
+            <p><strong>14</strong> You are my friends, if you do whatever I command you.</p>
+            <p><strong>15</strong> No longer do I call you servants, for the servant doesn’t know what his lord does. But I have called you friends, for everything that I heard from my Father, I have made known to you.</p>
+            <p><strong>16</strong> You didn’t choose me, but I chose you, and appointed you, that you should go and bear fruit, and that your fruit should remain; that whatever you will ask of the Father in my name, he may give it to you.</p>
+            <p><strong>17</strong> “I command these things to you, that you may love one another.</p>
+            <p><strong>18</strong> If the world hates you, you know that it has hated me before it hated you.</p>
+            <p><strong>19</strong> If you were of the world, the world would love its own. But because you are not of the world, since I chose you out of the world, therefore the world hates you.</p>
+            <p><strong>20</strong> Remember the word that I said to you: ‘A servant is not greater than his lord.’ If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours.</p>
+            <p><strong>21</strong> But all these things will they do to you for my name’s sake, because they don’t know him who sent me.</p>
+            <p><strong>22</strong> If I had not come and spoken to them, they would not have had sin; but now they have no excuse for their sin.</p>
+            <p><strong>23</strong> He who hates me, hates my Father also.</p>
+            <p><strong>24</strong> If I hadn’t done among them the works which no one else did, they wouldn’t have had sin. But now have they seen and also hated both me and my Father.</p>
+            <p><strong>25</strong> But this happened so that the word may be fulfilled which was written in their law, ‘They hated me without a cause.’</p>
+            <p><strong>26</strong> “When the Counselor has come, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, he will testify about me.</p>
+            <p><strong>27</strong> You will also testify, because you have been with me from the beginning.</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 15 (KJV)</p>
+            <p><strong>1</strong> I am the true vine, and my Father is the husbandman.</p>
+            <p><strong>2</strong> Every branch in me that beareth not fruit he taketh away: and every branch that beareth fruit, he purgeth it, that it may bring forth more fruit.</p>
+            <p><strong>3</strong> Now ye are clean through the word which I have spoken unto you.</p>
+            <p><strong>4</strong> Abide in me, and I in you. As the branch cannot bear fruit of itself, except it abide in the vine; no more can ye, except ye abide in me.</p>
+            <p><strong>5</strong> I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing.</p>
+            <p><strong>6</strong> If a man abide not in me, he is cast forth as a branch, and is withered; and men gather them, and cast them into the fire, and they are burned.</p>
+            <p><strong>7</strong> If ye abide in me, and my words abide in you, ye shall ask what ye will, and it shall be done unto you.</p>
+            <p><strong>8</strong> Herein is my Father glorified, that ye bear much fruit; so shall ye be my disciples.</p>
+            <p><strong>9</strong> As the Father hath loved me, so have I loved you: continue ye in my love.</p>
+            <p><strong>10</strong> If ye keep my commandments, ye shall abide in my love; even as I have kept my Father’s commandments, and abide in his love.</p>
+            <p><strong>11</strong> These things have I spoken unto you, that my joy might remain in you, and that your joy might be full.</p>
+            <p><strong>12</strong> This is my commandment, That ye love one another, as I have loved you.</p>
+            <p><strong>13</strong> Greater love hath no man than this, that a man lay down his life for his friends.</p>
+            <p><strong>14</strong> Ye are my friends, if ye do whatsoever I command you.</p>
+            <p><strong>15</strong> Henceforth I call you not servants; for the servant knoweth not what his lord doeth: but I have called you friends; for all things that I have heard of my Father I have made known unto you.</p>
+            <p><strong>16</strong> Ye have not chosen me, but I have chosen you, and ordained you, that ye should go and bring forth fruit, and that your fruit should remain: that whatsoever ye shall ask of the Father in my name, he may give it you.</p>
+            <p><strong>17</strong> These things I command you, that ye love one another.</p>
+            <p><strong>18</strong> If the world hate you, ye know that it hated me before it hated you.</p>
+            <p><strong>19</strong> If ye were of the world, the world would love his own: but because ye are not of the world, but I have chosen you out of the world, therefore the world hateth you.</p>
+            <p><strong>20</strong> Remember the word that I said unto you, The servant is not greater than his lord. If they have persecuted me, they will also persecute you; if they have kept my saying, they will keep yours also.</p>
+            <p><strong>21</strong> But all these things will they do unto you for my name’s sake, because they know not him that sent me.</p>
+            <p><strong>22</strong> If I had not come and spoken unto them, they had not had sin: but now they have no cloke for their sin.</p>
+            <p><strong>23</strong> He that hateth me hateth my Father also.</p>
+            <p><strong>24</strong> If I had not done among them the works which none other man did, they had not had sin: but now have they both seen and hated both me and my Father.</p>
+            <p><strong>25</strong> But this cometh to pass, that the word might be fulfilled that is written in their law, They hated me without a cause.</p>
+            <p><strong>26</strong> But when the Comforter is come, whom I will send unto you from the Father, even the Spirit of truth, which proceedeth from the Father, he shall testify of me:</p>
+            <p><strong>27</strong> And ye also shall bear witness, because ye have been with me from the beginning.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 15 (ASV)</p>
+            <p><strong>1</strong> I am the true vine, and my Father is the husbandman.</p>
+            <p><strong>2</strong> Every branch in me that beareth not fruit, he taketh it away: and every [branch] that beareth fruit, he cleanseth it, that it may bear more fruit.</p>
+            <p><strong>3</strong> Already ye are clean because of the word which I have spoken unto you.</p>
+            <p><strong>4</strong> Abide in me, and I in you. As the branch cannot bear fruit of itself, except it abide in the vine; so neither can ye, except ye abide in me.</p>
+            <p><strong>5</strong> I am the vine, ye are the branches: He that abideth in me, and I in him, the same beareth much fruit: for apart from me ye can do nothing.</p>
+            <p><strong>6</strong> If a man abide not in me, he is cast forth as a branch, and is withered; and they gather them, and cast them into the fire, and they are burned.</p>
+            <p><strong>7</strong> If ye abide in me, and my words abide in you, ask whatsoever ye will, and it shall be done unto you.</p>
+            <p><strong>8</strong> Herein is my Father glorified, that ye bear much fruit; and [so] shall ye be my disciples.</p>
+            <p><strong>9</strong> Even as the Father hath loved me, I also have loved you: abide ye in my love.</p>
+            <p><strong>10</strong> If ye keep my commandments, ye shall abide in my love; even as I have kept my Father`s commandments, and abide in his love.</p>
+            <p><strong>11</strong> These things have I spoken unto you, that my joy may be in you, and [that] your joy may be made full.</p>
+            <p><strong>12</strong> This is my commandment, that ye love one another, even as I have loved you.</p>
+            <p><strong>13</strong> Greater love hath no man than this, that a man lay down his life for his friends.</p>
+            <p><strong>14</strong> Ye are my friends, if ye do the things which I command you.</p>
+            <p><strong>15</strong> No longer do I call you servants; for the servant knoweth not what his lord doeth: but I have called you friends; for all things that I heard from my Father, I have made known unto you.</p>
+            <p><strong>16</strong> Ye did not choose me, but I chose you, and appointed you, that ye should go and bear fruit, and [that] your fruit should abide: that whatsoever ye shall ask of the Father in my name, he may give it you.</p>
+            <p><strong>17</strong> These things I command you, that ye may love one another.</p>
+            <p><strong>18</strong> If the world hateth you, ye know that it hath hated me before [it hated] you.</p>
+            <p><strong>19</strong> If ye were of the world, the world would love its own: but because ye are not of the world, but I chose you out of the world, therefore the world hateth you.</p>
+            <p><strong>20</strong> Remember the word that I said unto you, A servant is not greater than his lord. If they persecuted me, they will also persecute you; if they kept my word, they will keep yours also.</p>
+            <p><strong>21</strong> But all these things will they do unto you for my name`s sake, because they know not him that sent me.</p>
+            <p><strong>22</strong> If I had not come and spoken unto them, they had not had sin: but now they have no excuse for their sin.</p>
+            <p><strong>23</strong> He that hateth me hateth my Father also.</p>
+            <p><strong>24</strong> If I had not done among them the works which none other did, they had not had sin: but now have they both seen and hated both me and my Father.</p>
+            <p><strong>25</strong> But [this cometh to pass], that the word may be fulfilled that is written in their law, They hated me without a cause.</p>
+            <p><strong>26</strong> But when the Comforter is come, whom I will send unto you from the Father, [even] the Spirit of truth, which proceedeth from the Father, he shall bear witness of me:</p>
+            <p><strong>27</strong> and ye also bear witness, because ye have been with me from the beginning.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus declares that he is the true vine and his Father is the gardener, who prunes every branch so it may bear more fruit. The disciples are already clean through his word, and he urges them to remain in him, because apart from him they can do nothing. A branch cut off from the vine withers and is burned, but those who abide bear much fruit and bring glory to the Father. Jesus then opens his heart, telling them to remain in his love as he remains in the Father's love, and to love one another as he has loved them. There is no greater love than to lay down one's life for friends, and he calls them friends, not servants, choosing and appointing them to bear lasting fruit. Finally he warns that the world will hate them as it hated him, yet the Spirit will testify of him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The true vine, who teaches his disciples to abide in him, love one another, and endure the world's hatred.</li>
+          <li><strong>The Father</strong> — The gardener who prunes the branches and is glorified when the disciples bear much fruit.</li>
+          <li><strong>The disciples</strong> — The branches whom Jesus calls friends, chosen and appointed to bear lasting fruit.</li>
+          <li><strong>The Holy Spirit</strong> — The Counselor of truth, sent from the Father, who will testify about Jesus.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 15:5 (WEB)</p>
+          <p class="verse__text">I am the vine. You are the branches. He who remains in me, and I in him, the same bears much fruit, for apart from me you can do nothing.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Real, lasting fruit grows only out of a life that remains connected to Jesus.</li>
+          <li>The Father's pruning, though painful, is loving work that makes us more fruitful.</li>
+          <li>Jesus' greatest love is shown in laying down his life, and he calls us his friends.</li>
+          <li>Following Jesus may bring the world's hatred, but we are not left alone in it.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Apart from Christ we can do nothing.</strong> Jesus says, 'I am the vine. You are the branches... apart from me you can do nothing' (John 15:5, WEB), making union with him the source of all fruit.</li>
+            <li><strong>God prunes us so we will bear more fruit.</strong> The Father, the gardener, takes away fruitless branches and prunes the fruitful 'that it may bear more fruit' (John 15:2, WEB).</li>
+            <li><strong>Abiding in Jesus' word keeps us in his love.</strong> Jesus promises, 'If you remain in me, and my words remain in you, you will ask whatever you desire, and it will be done for you' (John 15:7, WEB).</li>
+            <li><strong>The greatest love lays down its life for others.</strong> Jesus teaches, 'Greater love has no one than this, that someone lay down his life for his friends' (John 15:13, WEB), and calls his disciples friends.</li>
+            <li><strong>The world's hatred is no surprise to a disciple.</strong> Jesus warns, 'If the world hates you, know that it has hated me before it hated you' (John 15:18, WEB), yet the Spirit will testify of him (15:26).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>What does Jesus mean when he calls himself the true vine and his Father the gardener, and what is the gardener's work?</li>
+            <li>Why does Jesus say we can do nothing apart from him, and what does it look like to remain in him?</li>
+            <li>How does Jesus redefine the relationship when he says he no longer calls the disciples servants but friends?</li>
+            <li>Why does Jesus prepare his disciples for the world's hatred, and what comfort does he offer them?</li>
+            <li>Where in your own life do you sense the Father pruning you, and how can you keep remaining in Jesus through it?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>Jesus is the source of true life, and the Father tends the vineyard, cutting away dead branches and pruning living ones so they bear more fruit (John 15:1-2). The image makes clear that fruitfulness flows from God's care, not our striving.</li>
+            <li>Branches have no life of their own; cut from the vine they wither (John 15:4-6). Remaining in Jesus means letting his words abide in us, obeying his commands, and depending on him in prayer (15:7-10) rather than working in our own strength.</li>
+            <li>A servant does not know the master's business, but Jesus has made known everything he heard from the Father and laid down his life for them (John 15:13-15). He lifts them from servants to friends, chosen and appointed by his initiative (15:16).</li>
+            <li>Jesus tells them plainly so they will not be shaken; the world hated him first, and a servant is not greater than his master (John 15:18-20). His comfort is that the Spirit of truth will come and testify of him alongside them (15:26-27).</li>
+            <li>This is a personal application question. Invite members to share where God may be lovingly pruning them, and how they can stay rooted in Jesus through the season. As leader, encourage honesty and avoid pressing anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-14.html">← John 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-16.html">John 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

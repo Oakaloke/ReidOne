@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 1: The Word Became Flesh — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 1: The eternal Word who was with God and was God comes into the world as a man, full of grace and truth, and the first disciples begin to follow him." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 1</span>
+        <h1>John 1: The Word Became Flesh</h1>
+        <p class="lead">The eternal Word who was with God and was God comes into the world as a man, full of grace and truth, and the first disciples begin to follow him.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — John Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 1 (WEB)</p>
+            <p><strong>1</strong> In the beginning was the Word, and the Word was with God, and the Word was God.</p>
+            <p><strong>2</strong> The same was in the beginning with God.</p>
+            <p><strong>3</strong> All things were made through him. Without him was not anything made that has been made.</p>
+            <p><strong>4</strong> In him was life, and the life was the light of men.</p>
+            <p><strong>5</strong> The light shines in the darkness, and the darkness hasn’t overcome it.</p>
+            <p><strong>6</strong> There came a man, sent from God, whose name was John.</p>
+            <p><strong>7</strong> The same came as a witness, that he might testify about the light, that all might believe through him.</p>
+            <p><strong>8</strong> He was not the light, but was sent that he might testify about the light.</p>
+            <p><strong>9</strong> The true light that enlightens everyone was coming into the world.</p>
+            <p><strong>10</strong> He was in the world, and the world was made through him, and the world didn’t recognize him.</p>
+            <p><strong>11</strong> He came to his own, and those who were his own didn’t receive him.</p>
+            <p><strong>12</strong> But as many as received him, to them he gave the right to become God’s children, to those who believe in his name:</p>
+            <p><strong>13</strong> who were born not of blood, nor of the will of the flesh, nor of the will of man, but of God.</p>
+            <p><strong>14</strong> The Word became flesh, and lived among us. We saw his glory, such glory as of the one and only Son of the Father, full of grace and truth.</p>
+            <p><strong>15</strong> John testified about him. He cried out, saying, “This was he of whom I said, ‘He who comes after me has surpassed me, for he was before me.’”</p>
+            <p><strong>16</strong> From his fullness we all received grace upon grace.</p>
+            <p><strong>17</strong> For the law was given through Moses. Grace and truth were realized through Jesus Christ.</p>
+            <p><strong>18</strong> No one has seen God at any time. The one and only Son, who is in the bosom of the Father, he has declared him.</p>
+            <p><strong>19</strong> This is John’s testimony, when the Jews sent priests and Levites from Jerusalem to ask him, “Who are you?”</p>
+            <p><strong>20</strong> He declared, and didn’t deny, but he declared, “I am not the Christ.”</p>
+            <p><strong>21</strong> They asked him, “What then? Are you Elijah?” He said, “I am not.” “Are you the prophet?” He answered, “No.”</p>
+            <p><strong>22</strong> They said therefore to him, “Who are you? Give us an answer to take back to those who sent us. What do you say about yourself?”</p>
+            <p><strong>23</strong> He said, “I am the voice of one crying in the wilderness, ‘Make straight the way of the Lord,’ as Isaiah the prophet said.”</p>
+            <p><strong>24</strong> The ones who had been sent were from the Pharisees.</p>
+            <p><strong>25</strong> They asked him, “Why then do you baptize, if you are not the Christ, nor Elijah, nor the prophet?”</p>
+            <p><strong>26</strong> John answered them, “I baptize in water, but among you stands one whom you don’t know.</p>
+            <p><strong>27</strong> He is the one who comes after me, who is preferred before me, whose sandal strap I’m not worthy to loosen.”</p>
+            <p><strong>28</strong> These things were done in Bethany beyond the Jordan, where John was baptizing.</p>
+            <p><strong>29</strong> The next day, he saw Jesus coming to him, and said, “Behold, the Lamb of God, who takes away the sin of the world!</p>
+            <p><strong>30</strong> This is he of whom I said, ‘After me comes a man who is preferred before me, for he was before me.’</p>
+            <p><strong>31</strong> I didn’t know him, but for this reason I came baptizing in water: that he would be revealed to Israel.”</p>
+            <p><strong>32</strong> John testified, saying, “I have seen the Spirit descending like a dove out of heaven, and it remained on him.</p>
+            <p><strong>33</strong> I didn’t recognize him, but he who sent me to baptize in water, he said to me, ‘On whomever you will see the Spirit descending, and remaining on him, the same is he who baptizes in the Holy Spirit.’</p>
+            <p><strong>34</strong> I have seen, and have testified that this is the Son of God.”</p>
+            <p><strong>35</strong> Again, the next day, John was standing with two of his disciples,</p>
+            <p><strong>36</strong> and he looked at Jesus as he walked, and said, “Behold, the Lamb of God!”</p>
+            <p><strong>37</strong> The two disciples heard him speak, and they followed Jesus.</p>
+            <p><strong>38</strong> Jesus turned, and saw them following, and said to them, “What are you looking for?” They said to him, “Rabbi” (which is to say, being interpreted, Teacher), “where are you staying?”</p>
+            <p><strong>39</strong> He said to them, “Come, and see.” They came and saw where he was staying, and they stayed with him that day. It was about the tenth hour.</p>
+            <p><strong>40</strong> One of the two who heard John, and followed him, was Andrew, Simon Peter’s brother.</p>
+            <p><strong>41</strong> He first found his own brother, Simon, and said to him, “We have found the Messiah!” (which is, being interpreted, Christ).</p>
+            <p><strong>42</strong> He brought him to Jesus. Jesus looked at him, and said, “You are Simon the son of Jonah. You shall be called Cephas” (which is by interpretation, Peter).</p>
+            <p><strong>43</strong> On the next day, he was determined to go out into Galilee, and he found Philip. Jesus said to him, “Follow me.”</p>
+            <p><strong>44</strong> Now Philip was from Bethsaida, of the city of Andrew and Peter.</p>
+            <p><strong>45</strong> Philip found Nathanael, and said to him, “We have found him, of whom Moses in the law, and the prophets, wrote: Jesus of Nazareth, the son of Joseph.”</p>
+            <p><strong>46</strong> Nathanael said to him, “Can any good thing come out of Nazareth?” Philip said to him, “Come and see.”</p>
+            <p><strong>47</strong> Jesus saw Nathanael coming to him, and said about him, “Behold, an Israelite indeed, in whom is no deceit!”</p>
+            <p><strong>48</strong> Nathanael said to him, “How do you know me?” Jesus answered him, “Before Philip called you, when you were under the fig tree, I saw you.”</p>
+            <p><strong>49</strong> Nathanael answered him, “Rabbi, you are the Son of God! You are King of Israel!”</p>
+            <p><strong>50</strong> Jesus answered him, “Because I told you, ‘I saw you underneath the fig tree,’ do you believe? You will see greater things than these!”</p>
+            <p><strong>51</strong> He said to him, “Most certainly, I tell you all, hereafter you will see heaven opened, and the angels of God ascending and descending on the Son of Man.”</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 1 (KJV)</p>
+            <p><strong>1</strong> In the beginning was the Word, and the Word was with God, and the Word was God.</p>
+            <p><strong>2</strong> The same was in the beginning with God.</p>
+            <p><strong>3</strong> All things were made by him; and without him was not any thing made that was made.</p>
+            <p><strong>4</strong> In him was life; and the life was the light of men.</p>
+            <p><strong>5</strong> And the light shineth in darkness; and the darkness comprehended it not.</p>
+            <p><strong>6</strong> There was a man sent from God, whose name was John.</p>
+            <p><strong>7</strong> The same came for a witness, to bear witness of the Light, that all men through him might believe.</p>
+            <p><strong>8</strong> He was not that Light, but was sent to bear witness of that Light.</p>
+            <p><strong>9</strong> That was the true Light, which lighteth every man that cometh into the world.</p>
+            <p><strong>10</strong> He was in the world, and the world was made by him, and the world knew him not.</p>
+            <p><strong>11</strong> He came unto his own, and his own received him not.</p>
+            <p><strong>12</strong> But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name:</p>
+            <p><strong>13</strong> Which were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God.</p>
+            <p><strong>14</strong> And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth.</p>
+            <p><strong>15</strong> John bare witness of him, and cried, saying, This was he of whom I spake, He that cometh after me is preferred before me: for he was before me.</p>
+            <p><strong>16</strong> And of his fulness have all we received, and grace for grace.</p>
+            <p><strong>17</strong> For the law was given by Moses, but grace and truth came by Jesus Christ.</p>
+            <p><strong>18</strong> No man hath seen God at any time; the only begotten Son, which is in the bosom of the Father, he hath declared him.</p>
+            <p><strong>19</strong> And this is the record of John, when the Jews sent priests and Levites from Jerusalem to ask him, Who art thou?</p>
+            <p><strong>20</strong> And he confessed, and denied not; but confessed, I am not the Christ.</p>
+            <p><strong>21</strong> And they asked him, What then? Art thou Elias? And he saith, I am not. Art thou that prophet? And he answered, No.</p>
+            <p><strong>22</strong> Then said they unto him, Who art thou? that we may give an answer to them that sent us. What sayest thou of thyself?</p>
+            <p><strong>23</strong> He said, I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said the prophet Esaias.</p>
+            <p><strong>24</strong> And they which were sent were of the Pharisees.</p>
+            <p><strong>25</strong> And they asked him, and said unto him, Why baptizest thou then, if thou be not that Christ, nor Elias, neither that prophet?</p>
+            <p><strong>26</strong> John answered them, saying, I baptize with water: but there standeth one among you, whom ye know not;</p>
+            <p><strong>27</strong> He it is, who coming after me is preferred before me, whose shoe’s latchet I am not worthy to unloose.</p>
+            <p><strong>28</strong> These things were done in Bethabara beyond Jordan, where John was baptizing.</p>
+            <p><strong>29</strong> The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world.</p>
+            <p><strong>30</strong> This is he of whom I said, After me cometh a man which is preferred before me: for he was before me.</p>
+            <p><strong>31</strong> And I knew him not: but that he should be made manifest to Israel, therefore am I come baptizing with water.</p>
+            <p><strong>32</strong> And John bare record, saying, I saw the Spirit descending from heaven like a dove, and it abode upon him.</p>
+            <p><strong>33</strong> And I knew him not: but he that sent me to baptize with water, the same said unto me, Upon whom thou shalt see the Spirit descending, and remaining on him, the same is he which baptizeth with the Holy Ghost.</p>
+            <p><strong>34</strong> And I saw, and bare record that this is the Son of God.</p>
+            <p><strong>35</strong> Again the next day after John stood, and two of his disciples;</p>
+            <p><strong>36</strong> And looking upon Jesus as he walked, he saith, Behold the Lamb of God!</p>
+            <p><strong>37</strong> And the two disciples heard him speak, and they followed Jesus.</p>
+            <p><strong>38</strong> Then Jesus turned, and saw them following, and saith unto them, What seek ye? They said unto him, Rabbi, (which is to say, being interpreted, Master,) where dwellest thou?</p>
+            <p><strong>39</strong> He saith unto them, Come and see. They came and saw where he dwelt, and abode with him that day: for it was about the tenth hour.</p>
+            <p><strong>40</strong> One of the two which heard John speak, and followed him, was Andrew, Simon Peter’s brother.</p>
+            <p><strong>41</strong> He first findeth his own brother Simon, and saith unto him, We have found the Messias, which is, being interpreted, the Christ.</p>
+            <p><strong>42</strong> And he brought him to Jesus. And when Jesus beheld him, he said, Thou art Simon the son of Jona: thou shalt be called Cephas, which is by interpretation, A stone.</p>
+            <p><strong>43</strong> The day following Jesus would go forth into Galilee, and findeth Philip, and saith unto him, Follow me.</p>
+            <p><strong>44</strong> Now Philip was of Bethsaida, the city of Andrew and Peter.</p>
+            <p><strong>45</strong> Philip findeth Nathanael, and saith unto him, We have found him, of whom Moses in the law, and the prophets, did write, Jesus of Nazareth, the son of Joseph.</p>
+            <p><strong>46</strong> And Nathanael said unto him, Can there any good thing come out of Nazareth? Philip saith unto him, Come and see.</p>
+            <p><strong>47</strong> Jesus saw Nathanael coming to him, and saith of him, Behold an Israelite indeed, in whom is no guile!</p>
+            <p><strong>48</strong> Nathanael saith unto him, Whence knowest thou me? Jesus answered and said unto him, Before that Philip called thee, when thou wast under the fig tree, I saw thee.</p>
+            <p><strong>49</strong> Nathanael answered and saith unto him, Rabbi, thou art the Son of God; thou art the King of Israel.</p>
+            <p><strong>50</strong> Jesus answered and said unto him, Because I said unto thee, I saw thee under the fig tree, believest thou? thou shalt see greater things than these.</p>
+            <p><strong>51</strong> And he saith unto him, Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the angels of God ascending and descending upon the Son of man.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 1 (ASV)</p>
+            <p><strong>1</strong> In the beginning was the Word, and the Word was with God, and the Word was God.</p>
+            <p><strong>2</strong> The same was in the beginning with God.</p>
+            <p><strong>3</strong> All things were made through him; and without him was not anything made that hath been made.</p>
+            <p><strong>4</strong> In him was life; and the life was the light of men.</p>
+            <p><strong>5</strong> And the light shineth in the darkness; and the darkness apprehended it not.</p>
+            <p><strong>6</strong> There came a man, sent from God, whose name was John.</p>
+            <p><strong>7</strong> The same came for witness, that he might bear witness of the light, that all might believe through him.</p>
+            <p><strong>8</strong> He was not the light, but [came] that he might bear witness of the light.</p>
+            <p><strong>9</strong> There was the true light, [even the light] which lighteth every man, coming into the world.</p>
+            <p><strong>10</strong> He was in the world, and the world was made through him, and the world knew him not.</p>
+            <p><strong>11</strong> He came unto his own, and they that were his own received him not.</p>
+            <p><strong>12</strong> But as many as received him, to them gave he the right to become children of God, [even] to them that believe on his name:</p>
+            <p><strong>13</strong> who were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God.</p>
+            <p><strong>14</strong> And the Word became flesh, and dwelt among us (and we beheld his glory, glory as of the only begotten from the Father), full of grace and truth.</p>
+            <p><strong>15</strong> John beareth witness of him, and crieth, saying, This was he of whom I said, He that cometh after me is become before me: for he was before me.</p>
+            <p><strong>16</strong> For of his fulness we all received, and grace for grace.</p>
+            <p><strong>17</strong> For the law was given through Moses; grace and truth came through Jesus Christ.</p>
+            <p><strong>18</strong> No man hath seen God at any time; the only begotten Son, who is in the bosom of the Father, he hath declared [him].</p>
+            <p><strong>19</strong> And this is the witness of John, when the Jews sent unto him from Jerusalem priests and Levites to ask him, Who art thou?</p>
+            <p><strong>20</strong> And he confessed, and denied not; and he confessed, I am not the Christ.</p>
+            <p><strong>21</strong> And they asked him, What then? Art thou Elijah? And he saith, I am not. Art thou the prophet? And he answered, No.</p>
+            <p><strong>22</strong> They said therefore unto him, Who art thou? that we may give an answer to them that sent us. What sayest thou of thyself?</p>
+            <p><strong>23</strong> He said, I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said Isaiah the prophet.</p>
+            <p><strong>24</strong> And they had been sent from the Pharisees.</p>
+            <p><strong>25</strong> And they asked him, and said unto him, Why then baptizest thou, if thou art not the Christ, neither Elijah, neither the prophet?</p>
+            <p><strong>26</strong> John answered them, saying, I baptize in water: in the midst of you standeth one whom ye know not,</p>
+            <p><strong>27</strong> [even] he that cometh after me, the latchet of whose shoe I am not worthy to unloose.</p>
+            <p><strong>28</strong> These things were done in Bethany beyond the Jordan, where John was baptizing.</p>
+            <p><strong>29</strong> On the morrow he seeth Jesus coming unto him, and saith, Behold, the Lamb of God, that taketh away the sin of the world!</p>
+            <p><strong>30</strong> This is he of whom I said, After me cometh a man who is become before me: for he was before me.</p>
+            <p><strong>31</strong> And I knew him not; but that he should be made manifest to Israel, for this cause came I baptizing in water.</p>
+            <p><strong>32</strong> And John bare witness, saying, I have beheld the Spirit descending as a dove out of heaven; and it abode upon him.</p>
+            <p><strong>33</strong> And I knew him not: but he that sent me to baptize in water, he said unto me, Upon whomsoever thou shalt see the Spirit descending, and abiding upon him, the same is he that baptizeth in the Holy Spirit.</p>
+            <p><strong>34</strong> And I have seen, and have borne witness that this is the Son of God.</p>
+            <p><strong>35</strong> Again on the morrow John was standing, and two of his disciples;</p>
+            <p><strong>36</strong> and he looked upon Jesus as he walked, and saith, Behold, the Lamb of God!</p>
+            <p><strong>37</strong> And the two disciples heard him speak, and they followed Jesus.</p>
+            <p><strong>38</strong> And Jesus turned, and beheld them following, and saith unto them, What seek ye? And they said unto him, Rabbi (which is to say, being interpreted, Teacher), where abideth thou?</p>
+            <p><strong>39</strong> He saith unto them, Come, and ye shall see. They came therefore and saw where he abode; and they abode with him that day: it was about the tenth hour.</p>
+            <p><strong>40</strong> One of the two that heard John [speak], and followed him, was Andrew, Simon Peter`s brother.</p>
+            <p><strong>41</strong> He findeth first his own brother Simon, and saith unto him, We have found the Messiah (which is, being interpreted, Christ).</p>
+            <p><strong>42</strong> He brought him unto Jesus. Jesus looked upon him, and said, Thou art Simon the son of John: thou shalt be called Cephas (which is by interpretation, Peter).</p>
+            <p><strong>43</strong> On the morrow he was minded to go forth into Galilee, and he findeth Philip: and Jesus saith unto him, Follow me.</p>
+            <p><strong>44</strong> Now Philip was from Bethsaida, of the city of Andrew and Peter.</p>
+            <p><strong>45</strong> Philip findeth Nathanael, and saith unto him, We have found him, of whom Moses in the law, and the prophets, wrote, Jesus of Nazareth, the son of Joseph.</p>
+            <p><strong>46</strong> And Nathanael said unto him, Can any good thing come out of Nazareth? Philip saith unto him, Come and see.</p>
+            <p><strong>47</strong> Jesus saw Nathanael coming to him, and saith of him, Behold, an Israelite indeed, in whom is no guile!</p>
+            <p><strong>48</strong> Nathanael saith unto him, Whence knowest thou me? Jesus answered and said unto him, Before Philip called thee, when thou wast under the fig tree, I saw thee.</p>
+            <p><strong>49</strong> Nathanael answered him, Rabbi, thou art the Son of God; thou art King of Israel.</p>
+            <p><strong>50</strong> Jesus answered and said unto him, Because I said unto thee, I saw thee underneath the fig tree, believest thou? thou shalt see greater things than these.</p>
+            <p><strong>51</strong> And he saith unto him, Verily, verily, I say unto you, Ye shall see the heaven opened, and the angels of God ascending and descending upon the Son of man.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>John opens not with a manger but with eternity, declaring that in the beginning was the Word, who was with God and was God, and through whom all things were made. In him was life, and that life was the light of all people, shining in a darkness that could not overcome it. John the Baptist comes as a witness to the light, though the world does not recognize its Maker. Yet to all who receive him, the Word gives the right to become children of God. Then comes the wonder: the Word became flesh and lived among us, full of grace and truth. John the Baptist points to Jesus as the Lamb of God who takes away the sin of the world. Andrew, Peter, Philip, and Nathanael are drawn to follow, and Jesus promises they will see heaven opened.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The eternal Word made flesh, the light of the world and the Lamb of God who takes away sin.</li>
+          <li><strong>John the Baptist</strong> — The witness sent to testify to the light, who declares Jesus the Lamb of God.</li>
+          <li><strong>Andrew</strong> — One of John's disciples who follows Jesus and brings his brother Simon Peter.</li>
+          <li><strong>Nathanael</strong> — Skeptical at first, he confesses Jesus as the Son of God and King of Israel.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 1:14 (WEB)</p>
+          <p class="verse__text">The Word became flesh, and lived among us. We saw his glory, such glory as of the one and only Son of the Father, full of grace and truth.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus is not a created being but the eternal Word, fully God, present at creation itself.</li>
+          <li>In becoming flesh, God draws near to live among us, full of grace and truth.</li>
+          <li>Receiving Christ by faith makes us beloved children of God, born of him and not of human effort.</li>
+          <li>Jesus is the Lamb of God whose mission is to take away the sin of the world.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>Jesus is eternal, divine, and the source of all life.</strong> John writes, 'In the beginning was the Word, and the Word was with God, and the Word was God' (John 1:1, WEB), and through him all things were made (John 1:3, WEB).</li>
+            <li><strong>God came near by taking on our humanity.</strong> 'The Word became flesh, and lived among us. We saw his glory... full of grace and truth' (John 1:14, WEB), showing the unseen God in a face we can know.</li>
+            <li><strong>Faith in Christ makes us children of God.</strong> 'As many as received him, to them he gave the right to become God's children, to those who believe in his name' (John 1:12, WEB), a birth that is God's gift.</li>
+            <li><strong>Christ is the Lamb who carries away our sin.</strong> John the Baptist sees Jesus and cries, 'Behold, the Lamb of God, who takes away the sin of the world!' (John 1:29, WEB).</li>
+            <li><strong>Jesus invites ordinary people to come and see.</strong> When Nathanael doubts, Philip simply says, 'Come and see' (John 1:46, WEB), and an encounter with Jesus turns doubt into worship (John 1:49, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>What does John teach about the identity of the Word in the opening verses, and why does he begin in eternity rather than at Bethlehem?</li>
+            <li>What does it mean that the Word became flesh and lived among us, and how is this full of grace and truth?</li>
+            <li>How does someone become a child of God according to this chapter, and what does that birth depend on?</li>
+            <li>Why does John the Baptist call Jesus the Lamb of God, and how do the first disciples respond when they meet Jesus?</li>
+            <li>Where in your own life do you need to receive Christ more fully and let his light shine into your darkness?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>John declares the Word was in the beginning, was with God, and was God, the agent of all creation (John 1:1-3). He begins in eternity to show that Jesus is no mere prophet or teacher but the eternal God, the light shining in the darkness that cannot overcome him (John 1:4-5).</li>
+            <li>John says the Word became flesh and lived among us, and we saw his glory, full of grace and truth (John 1:14). God did not stay distant; he entered our world to be seen, touched, and known, joining unwavering truth with abundant, undeserved grace (John 1:16-17).</li>
+            <li>We become children of God by receiving Christ and believing in his name (John 1:12). This birth is not of blood, human will, or effort, but of God himself (John 1:13). It is his gift, not our achievement, opening the family of God to all who trust the Son.</li>
+            <li>John calls Jesus the Lamb of God who takes away the sin of the world (John 1:29), pointing to his coming sacrifice. The first disciples respond by following, staying with him, and bringing others, until Nathanael confesses him as the Son of God and King of Israel (John 1:39-49).</li>
+            <li>This is a personal application question. Invite members to consider where they have only partly received Christ, or where darkness still lingers. As leader, encourage honest, unhurried sharing, point back to verse 12, and never press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-2.html">John 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

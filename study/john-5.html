@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 5: Healing and the Authority of the Son — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 5: Jesus heals a man unable to walk for thirty-eight years, then answers his critics by revealing his unique authority and oneness with the Father." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 5</span>
+        <h1>John 5: Healing and the Authority of the Son</h1>
+        <p class="lead">Jesus heals a man unable to walk for thirty-eight years, then answers his critics by revealing his unique authority and oneness with the Father.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — John Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 5 (WEB)</p>
+            <p><strong>1</strong> After these things, there was a feast of the Jews, and Jesus went up to Jerusalem.</p>
+            <p><strong>2</strong> Now in Jerusalem by the sheep gate, there is a pool, which is called in Hebrew, “Bethesda”, having five porches.</p>
+            <p><strong>3</strong> In these lay a great multitude of those who were sick, blind, lame, or paralyzed, waiting for the moving of the water;</p>
+            <p><strong>4</strong> for an angel went down at certain times into the pool, and stirred up the water. Whoever stepped in first after the stirring of the water was healed of whatever disease he had.</p>
+            <p><strong>5</strong> A certain man was there, who had been sick for thirty-eight years.</p>
+            <p><strong>6</strong> When Jesus saw him lying there, and knew that he had been sick for a long time, he asked him, “Do you want to be made well?”</p>
+            <p><strong>7</strong> The sick man answered him, “Sir, I have no one to put me into the pool when the water is stirred up, but while I’m coming, another steps down before me.”</p>
+            <p><strong>8</strong> Jesus said to him, “Arise, take up your mat, and walk.”</p>
+            <p><strong>9</strong> Immediately, the man was made well, and took up his mat and walked. Now it was the Sabbath on that day.</p>
+            <p><strong>10</strong> So the Jews said to him who was cured, “It is the Sabbath. It is not lawful for you to carry the mat.”</p>
+            <p><strong>11</strong> He answered them, “He who made me well, the same said to me, ‘Take up your mat, and walk.’”</p>
+            <p><strong>12</strong> Then they asked him, “Who is the man who said to you, ‘Take up your mat, and walk’?”</p>
+            <p><strong>13</strong> But he who was healed didn’t know who it was, for Jesus had withdrawn, a crowd being in the place.</p>
+            <p><strong>14</strong> Afterward Jesus found him in the temple, and said to him, “Behold, you are made well. Sin no more, so that nothing worse happens to you.”</p>
+            <p><strong>15</strong> The man went away, and told the Jews that it was Jesus who had made him well.</p>
+            <p><strong>16</strong> For this cause the Jews persecuted Jesus, and sought to kill him, because he did these things on the Sabbath.</p>
+            <p><strong>17</strong> But Jesus answered them, “My Father is still working, so I am working, too.”</p>
+            <p><strong>18</strong> For this cause therefore the Jews sought all the more to kill him, because he not only broke the Sabbath, but also called God his own Father, making himself equal with God.</p>
+            <p><strong>19</strong> Jesus therefore answered them, “Most certainly, I tell you, the Son can do nothing of himself, but what he sees the Father doing. For whatever things he does, these the Son also does likewise.</p>
+            <p><strong>20</strong> For the Father has affection for the Son, and shows him all things that he himself does. He will show him greater works than these, that you may marvel.</p>
+            <p><strong>21</strong> For as the Father raises the dead and gives them life, even so the Son also gives life to whom he desires.</p>
+            <p><strong>22</strong> For the Father judges no one, but he has given all judgment to the Son,</p>
+            <p><strong>23</strong> that all may honor the Son, even as they honor the Father. He who doesn’t honor the Son doesn’t honor the Father who sent him.</p>
+            <p><strong>24</strong> “Most certainly I tell you, he who hears my word, and believes him who sent me, has eternal life, and doesn’t come into judgment, but has passed out of death into life.</p>
+            <p><strong>25</strong> Most certainly, I tell you, the hour comes, and now is, when the dead will hear the Son of God’s voice; and those who hear will live.</p>
+            <p><strong>26</strong> For as the Father has life in himself, even so he gave to the Son also to have life in himself.</p>
+            <p><strong>27</strong> He also gave him authority to execute judgment, because he is a son of man.</p>
+            <p><strong>28</strong> Don’t marvel at this, for the hour comes, in which all that are in the tombs will hear his voice,</p>
+            <p><strong>29</strong> and will come out; those who have done good, to the resurrection of life; and those who have done evil, to the resurrection of judgment.</p>
+            <p><strong>30</strong> I can of myself do nothing. As I hear, I judge, and my judgment is righteous; because I don’t seek my own will, but the will of my Father who sent me.</p>
+            <p><strong>31</strong> “If I testify about myself, my witness is not valid.</p>
+            <p><strong>32</strong> It is another who testifies about me. I know that the testimony which he testifies about me is true.</p>
+            <p><strong>33</strong> You have sent to John, and he has testified to the truth.</p>
+            <p><strong>34</strong> But the testimony which I receive is not from man. However, I say these things that you may be saved.</p>
+            <p><strong>35</strong> He was the burning and shining lamp, and you were willing to rejoice for a while in his light.</p>
+            <p><strong>36</strong> But the testimony which I have is greater than that of John, for the works which the Father gave me to accomplish, the very works that I do, testify about me, that the Father has sent me.</p>
+            <p><strong>37</strong> The Father himself, who sent me, has testified about me. You have neither heard his voice at any time, nor seen his form.</p>
+            <p><strong>38</strong> You don’t have his word living in you; because you don’t believe him whom he sent.</p>
+            <p><strong>39</strong> “You search the Scriptures, because you think that in them you have eternal life; and these are they which testify about me.</p>
+            <p><strong>40</strong> Yet you will not come to me, that you may have life.</p>
+            <p><strong>41</strong> I don’t receive glory from men.</p>
+            <p><strong>42</strong> But I know you, that you don’t have God’s love in yourselves.</p>
+            <p><strong>43</strong> I have come in my Father’s name, and you don’t receive me. If another comes in his own name, you will receive him.</p>
+            <p><strong>44</strong> How can you believe, who receive glory from one another, and you don’t seek the glory that comes from the only God?</p>
+            <p><strong>45</strong> “Don’t think that I will accuse you to the Father. There is one who accuses you, even Moses, on whom you have set your hope.</p>
+            <p><strong>46</strong> For if you believed Moses, you would believe me; for he wrote about me.</p>
+            <p><strong>47</strong> But if you don’t believe his writings, how will you believe my words?”</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 5 (KJV)</p>
+            <p><strong>1</strong> After this there was a feast of the Jews; and Jesus went up to Jerusalem.</p>
+            <p><strong>2</strong> Now there is at Jerusalem by the sheep market a pool, which is called in the Hebrew tongue Bethesda, having five porches.</p>
+            <p><strong>3</strong> In these lay a great multitude of impotent folk, of blind, halt, withered, waiting for the moving of the water.</p>
+            <p><strong>4</strong> For an angel went down at a certain season into the pool, and troubled the water: whosoever then first after the troubling of the water stepped in was made whole of whatsoever disease he had.</p>
+            <p><strong>5</strong> And a certain man was there, which had an infirmity thirty and eight years.</p>
+            <p><strong>6</strong> When Jesus saw him lie, and knew that he had been now a long time in that case, he saith unto him, Wilt thou be made whole?</p>
+            <p><strong>7</strong> The impotent man answered him, Sir, I have no man, when the water is troubled, to put me into the pool: but while I am coming, another steppeth down before me.</p>
+            <p><strong>8</strong> Jesus saith unto him, Rise, take up thy bed, and walk.</p>
+            <p><strong>9</strong> And immediately the man was made whole, and took up his bed, and walked: and on the same day was the sabbath.</p>
+            <p><strong>10</strong> The Jews therefore said unto him that was cured, It is the sabbath day: it is not lawful for thee to carry thy bed.</p>
+            <p><strong>11</strong> He answered them, He that made me whole, the same said unto me, Take up thy bed, and walk.</p>
+            <p><strong>12</strong> Then asked they him, What man is that which said unto thee, Take up thy bed, and walk?</p>
+            <p><strong>13</strong> And he that was healed wist not who it was: for Jesus had conveyed himself away, a multitude being in that place.</p>
+            <p><strong>14</strong> Afterward Jesus findeth him in the temple, and said unto him, Behold, thou art made whole: sin no more, lest a worse thing come unto thee.</p>
+            <p><strong>15</strong> The man departed, and told the Jews that it was Jesus, which had made him whole.</p>
+            <p><strong>16</strong> And therefore did the Jews persecute Jesus, and sought to slay him, because he had done these things on the sabbath day.</p>
+            <p><strong>17</strong> But Jesus answered them, My Father worketh hitherto, and I work.</p>
+            <p><strong>18</strong> Therefore the Jews sought the more to kill him, because he not only had broken the sabbath, but said also that God was his Father, making himself equal with God.</p>
+            <p><strong>19</strong> Then answered Jesus and said unto them, Verily, verily, I say unto you, The Son can do nothing of himself, but what he seeth the Father do: for what things soever he doeth, these also doeth the Son likewise.</p>
+            <p><strong>20</strong> For the Father loveth the Son, and sheweth him all things that himself doeth: and he will shew him greater works than these, that ye may marvel.</p>
+            <p><strong>21</strong> For as the Father raiseth up the dead, and quickeneth them; even so the Son quickeneth whom he will.</p>
+            <p><strong>22</strong> For the Father judgeth no man, but hath committed all judgment unto the Son:</p>
+            <p><strong>23</strong> That all men should honour the Son, even as they honour the Father. He that honoureth not the Son honoureth not the Father which hath sent him.</p>
+            <p><strong>24</strong> Verily, verily, I say unto you, He that heareth my word, and believeth on him that sent me, hath everlasting life, and shall not come into condemnation; but is passed from death unto life.</p>
+            <p><strong>25</strong> Verily, verily, I say unto you, The hour is coming, and now is, when the dead shall hear the voice of the Son of God: and they that hear shall live.</p>
+            <p><strong>26</strong> For as the Father hath life in himself; so hath he given to the Son to have life in himself;</p>
+            <p><strong>27</strong> And hath given him authority to execute judgment also, because he is the Son of man.</p>
+            <p><strong>28</strong> Marvel not at this: for the hour is coming, in the which all that are in the graves shall hear his voice,</p>
+            <p><strong>29</strong> And shall come forth; they that have done good, unto the resurrection of life; and they that have done evil, unto the resurrection of damnation.</p>
+            <p><strong>30</strong> I can of mine own self do nothing: as I hear, I judge: and my judgment is just; because I seek not mine own will, but the will of the Father which hath sent me.</p>
+            <p><strong>31</strong> If I bear witness of myself, my witness is not true.</p>
+            <p><strong>32</strong> There is another that beareth witness of me; and I know that the witness which he witnesseth of me is true.</p>
+            <p><strong>33</strong> Ye sent unto John, and he bare witness unto the truth.</p>
+            <p><strong>34</strong> But I receive not testimony from man: but these things I say, that ye might be saved.</p>
+            <p><strong>35</strong> He was a burning and a shining light: and ye were willing for a season to rejoice in his light.</p>
+            <p><strong>36</strong> But I have greater witness than that of John: for the works which the Father hath given me to finish, the same works that I do, bear witness of me, that the Father hath sent me.</p>
+            <p><strong>37</strong> And the Father himself, which hath sent me, hath borne witness of me. Ye have neither heard his voice at any time, nor seen his shape.</p>
+            <p><strong>38</strong> And ye have not his word abiding in you: for whom he hath sent, him ye believe not.</p>
+            <p><strong>39</strong> Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me.</p>
+            <p><strong>40</strong> And ye will not come to me, that ye might have life.</p>
+            <p><strong>41</strong> I receive not honour from men.</p>
+            <p><strong>42</strong> But I know you, that ye have not the love of God in you.</p>
+            <p><strong>43</strong> I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive.</p>
+            <p><strong>44</strong> How can ye believe, which receive honour one of another, and seek not the honour that cometh from God only?</p>
+            <p><strong>45</strong> Do not think that I will accuse you to the Father: there is one that accuseth you, even Moses, in whom ye trust.</p>
+            <p><strong>46</strong> For had ye believed Moses, ye would have believed me: for he wrote of me.</p>
+            <p><strong>47</strong> But if ye believe not his writings, how shall ye believe my words?</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 5 (ASV)</p>
+            <p><strong>1</strong> After these things there was a feast of the Jews; and Jesus went up to Jerusalem.</p>
+            <p><strong>2</strong> Now there is in Jerusalem by the sheep [gate] a pool, which is called in Hebrew Bethesda, having five porches.</p>
+            <p><strong>3</strong> In these lay a multitude of them that were sick, blind, halt, withered, [waiting for the moving of the water.]</p>
+            <p><strong>4</strong> [for an angel of the Lord went down at certain seasons into the pool, and troubled the water: whosoever then first after the troubling of the waters stepped in was made whole, with whatsoever disease he was holden.]</p>
+            <p><strong>5</strong> And a certain man was there, who had been thirty and eight years in his infirmity.</p>
+            <p><strong>6</strong> When Jesus saw him lying, and knew that he had been now a long time [in that case], he saith unto him, Wouldest thou be made whole?</p>
+            <p><strong>7</strong> The sick man answered him, Sir, I have no man, when the water is troubled, to put me into the pool: but while I am coming, another steppeth down before me.</p>
+            <p><strong>8</strong> Jesus saith unto him, Arise, take up thy bed, and walk.</p>
+            <p><strong>9</strong> And straightway the man was made whole, and took up his bed and walked. Now it was the sabbath on that day.</p>
+            <p><strong>10</strong> So the Jews said unto him that was cured, It is the sabbath, and it is not lawful for thee to take up thy bed.</p>
+            <p><strong>11</strong> But he answered them, He that made me whole, the same said unto me, Take up thy bed, and walk.</p>
+            <p><strong>12</strong> They asked him, Who is the man that said unto thee, Take up [thy bed], and walk?</p>
+            <p><strong>13</strong> But he that was healed knew not who it was; for Jesus had conveyed himself away, a multitude being in the place.</p>
+            <p><strong>14</strong> Afterward Jesus findeth him in the temple, and said unto him, Behold, thou art made whole: sin no more, lest a worse thing befall thee.</p>
+            <p><strong>15</strong> The man went away, and told the Jews that it was Jesus who had made him whole.</p>
+            <p><strong>16</strong> And for this cause the Jews persecuted Jesus, because he did these things on the sabbath.</p>
+            <p><strong>17</strong> But Jesus answered them, My Father worketh even until now, and I work.</p>
+            <p><strong>18</strong> For this cause therefore the Jews sought the more to kill him, because he not only brake the sabbath, but also called God his own Father, making himself equal with God.</p>
+            <p><strong>19</strong> Jesus therefore answered and said unto them, Verily, verily, I say unto you, The Son can do nothing of himself, but what he seeth the Father doing: for what things soever he doeth, these the Son also doeth in like manner.</p>
+            <p><strong>20</strong> For the Father loveth the Son, and showeth him all things that himself doeth: and greater works than these will he show him, that ye may marvel.</p>
+            <p><strong>21</strong> For as the Father raiseth the dead and giveth them life, even so the Son also giveth life to whom he will.</p>
+            <p><strong>22</strong> For neither doth the Father judge any man, but he hath given all judgment unto the Son;</p>
+            <p><strong>23</strong> that all may honor the Son, even as they honor the Father. He that honoreth not the Son honoreth not the Father that sent him.</p>
+            <p><strong>24</strong> Verily, verily, I say unto you, He that heareth my word, and believeth him that sent me, hath eternal life, and cometh not into judgment, but hath passed out of death into life.</p>
+            <p><strong>25</strong> Verily, verily, I say unto you, The hour cometh, and now is, when the dead shall hear the voice of the Son of God; and they that hear shall live.</p>
+            <p><strong>26</strong> For as the Father hath life in himself, even so gave he to the Son also to have life in himself:</p>
+            <p><strong>27</strong> and he gave him authority to execute judgment, because he is a son of man.</p>
+            <p><strong>28</strong> Marvel not at this: for the hour cometh, in which all that are in the tombs shall hear his voice,</p>
+            <p><strong>29</strong> and shall come forth; they that have done good, unto the resurrection of life; and they that have done evil, unto the resurrection of judgment.</p>
+            <p><strong>30</strong> I can of myself do nothing: as I hear, I judge: and my judgment is righteous; because I seek not mine own will, but the will of him that sent me.</p>
+            <p><strong>31</strong> If I bear witness of myself, my witness is not true.</p>
+            <p><strong>32</strong> It is another that beareth witness of me; and I know that the witness which he witnesseth of me is true.</p>
+            <p><strong>33</strong> Ye have sent unto John, and he hath borne witness unto the truth.</p>
+            <p><strong>34</strong> But the witness which I receive is not from man: howbeit I say these things, that ye may be saved.</p>
+            <p><strong>35</strong> He was the lamp that burneth and shineth; and ye were willing to rejoice for a season in his light.</p>
+            <p><strong>36</strong> But the witness which I have is greater than [that of] John; for the works which the Father hath given me to accomplish, the very works that I do, bear witness of me, that the Father hath sent me.</p>
+            <p><strong>37</strong> And the Father that sent me, he hath borne witness of me. Ye have neither heard his voice at any time, nor seen his form.</p>
+            <p><strong>38</strong> And ye have not his word abiding in you: for whom he sent, him ye believe not.</p>
+            <p><strong>39</strong> Ye search the scriptures, because ye think that in them ye have eternal life; and these are they which bear witness of me;</p>
+            <p><strong>40</strong> and ye will not come to me, that ye may have life.</p>
+            <p><strong>41</strong> I receive not glory from men.</p>
+            <p><strong>42</strong> But I know you, that ye have not the love of God in yourselves.</p>
+            <p><strong>43</strong> I am come in my Father`s name, and ye receive me not: if another shall come in his own name, him ye will receive.</p>
+            <p><strong>44</strong> How can ye believe, who receive glory one of another, and the glory that [cometh] from the only God ye seek not?</p>
+            <p><strong>45</strong> Think not that I will accuse you to the Father: there is one that accuseth you, [even] Moses, on whom ye have set your hope.</p>
+            <p><strong>46</strong> For if ye believed Moses, ye would believe me; for he wrote of me.</p>
+            <p><strong>47</strong> But if ye believe not his writings, how shall ye believe my words?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>By the pool of Bethesda lies a man who has been an invalid for thirty-eight years, waiting in vain for healing. Jesus asks if he wants to be made well, then tells him to take up his mat and walk, and at once the man is healed. Because it happened on the Sabbath, the religious leaders object, and their anger deepens when Jesus calls God his own Father, making himself equal with God. Jesus responds with a profound teaching: the Son does only what he sees the Father doing, the Father has entrusted all judgment to the Son, and whoever hears his word and believes has eternal life and has passed from death to life. He points to the witnesses that testify about him, John the Baptist, his own works, the Father, and the Scriptures, which Moses wrote. Yet many refuse to come to him for life, seeking glory from one another instead of from God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Heals the man at Bethesda and reveals his authority to give life and judge, sent by the Father.</li>
+          <li><strong>The invalid man</strong> — Disabled for thirty-eight years, he is healed at Jesus' word and told to sin no more.</li>
+          <li><strong>The Jewish leaders</strong> — Oppose Jesus for healing on the Sabbath and for claiming equality with God.</li>
+          <li><strong>Moses</strong> — The lawgiver whose writings, Jesus says, testify about him to those who will believe.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 5:24 (WEB)</p>
+          <p class="verse__text">“Most certainly I tell you, he who hears my word, and believes him who sent me, has eternal life, and doesn’t come into judgment, but has passed out of death into life.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus has compassion on the long-suffering and brings healing where hope has failed.</li>
+          <li>The Son acts in perfect unity with the Father, doing only what he sees the Father do.</li>
+          <li>Hearing and believing Christ's word brings eternal life and a passage from death to life.</li>
+          <li>The Scriptures themselves testify about Jesus, and true faith comes to him for life.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>Jesus meets us in long seasons of helplessness.</strong> To a man disabled thirty-eight years Jesus says, 'Arise, take up your mat, and walk,' and immediately he is made well (John 5:8-9, WEB).</li>
+            <li><strong>The Son works in perfect union with the Father.</strong> Jesus says, 'The Son can do nothing of himself, but what he sees the Father doing' (John 5:19, WEB), revealing their oneness.</li>
+            <li><strong>Believing Christ's word brings life out of death.</strong> 'He who hears my word and believes him who sent me has eternal life... but has passed out of death into life' (John 5:24, WEB).</li>
+            <li><strong>The Scriptures point us to Jesus.</strong> Jesus says, 'You search the Scriptures... These are they which testify about me' (John 5:39, WEB), yet some refuse to come to him for life.</li>
+            <li><strong>Seeking human approval can keep us from God.</strong> Jesus asks, 'How can you believe, who receive glory from one another, and you don't seek the glory that comes from the only God?' (John 5:44, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>How does Jesus approach the man at the pool, and what does the healing reveal about his compassion and power?</li>
+            <li>Why do the religious leaders react so strongly, and what claim of Jesus most provokes them?</li>
+            <li>What does Jesus teach about his relationship with the Father in this chapter?</li>
+            <li>What does Jesus mean when he says the one who hears and believes has passed from death to life, and how do the Scriptures testify about him?</li>
+            <li>Where in your own life have you been waiting a long time for God to act, and how does Jesus' word speak to that?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>Jesus singles out a man helpless for thirty-eight years and asks if he wants to be made well, then heals him with a word (John 5:6-9). He takes the initiative toward the overlooked and powerless, showing both tender compassion and authority over a condition no one else could cure.</li>
+            <li>The leaders are angered first that Jesus heals on the Sabbath, then far more that he calls God his own Father, making himself equal with God (John 5:16-18). They rightly grasp that Jesus is claiming divine status, but they reject rather than receive the One standing before them.</li>
+            <li>Jesus describes a perfect unity with the Father: the Son does only what he sees the Father doing, shares the Father's life-giving power, and has been entrusted with all judgment (John 5:19-22). To honor the Son is to honor the Father who sent him (John 5:23).</li>
+            <li>Jesus says whoever hears his word and believes the Father who sent him already has eternal life and has crossed from death to life (John 5:24). He adds that the Scriptures, written by Moses, testify about him (John 5:39, 46), so true belief moves us to come to him for that life.</li>
+            <li>This is a personal application question. Invite members to name long waits or unanswered longings, and to hear Jesus' question, do you want to be made well. As leader, encourage honest, patient sharing, point to his life-giving word in verse 24, and never press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-4.html">← John 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-6.html">John 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

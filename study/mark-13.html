@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 13: Watch and Be Ready — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 13: On the Mount of Olives Jesus foretells coming trials and his return in glory, calling his followers to endure faithfully and stay awake and ready." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 13
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 13</span>
+        <h1>Mark 13: Watch and Be Ready</h1>
+        <p class="lead">On the Mount of Olives Jesus foretells coming trials and his return in glory, calling his followers to endure faithfully and stay awake and ready.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-13">
+            <span>Scripture — Mark Chapter 13</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-13">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-13-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-13-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-13-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-13-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 13 (WEB)</p>
+            <p><strong>1</strong> As he went out of the temple, one of his disciples said to him, “Teacher, see what kind of stones and what kind of buildings!”</p>
+            <p><strong>2</strong> Jesus said to him, “Do you see these great buildings? There will not be left here one stone on another, which will not be thrown down.”</p>
+            <p><strong>3</strong> As he sat on the Mount of Olives opposite the temple, Peter, James, John, and Andrew asked him privately,</p>
+            <p><strong>4</strong> “Tell us, when will these things be? What is the sign that these things are all about to be fulfilled?”</p>
+            <p><strong>5</strong> Jesus, answering, began to tell them, “Be careful that no one leads you astray.</p>
+            <p><strong>6</strong> For many will come in my name, saying, ‘I am he!’ and will lead many astray.</p>
+            <p><strong>7</strong> “When you hear of wars and rumors of wars, don’t be troubled. For those must happen, but the end is not yet.</p>
+            <p><strong>8</strong> For nation will rise against nation, and kingdom against kingdom. There will be earthquakes in various places. There will be famines and troubles. These things are the beginning of birth pains.</p>
+            <p><strong>9</strong> But watch yourselves, for they will deliver you up to councils. You will be beaten in synagogues. You will stand before rulers and kings for my sake, for a testimony to them.</p>
+            <p><strong>10</strong> The Good News must first be preached to all the nations.</p>
+            <p><strong>11</strong> When they lead you away and deliver you up, don’t be anxious beforehand, or premeditate what you will say, but say whatever will be given you in that hour. For it is not you who speak, but the Holy Spirit.</p>
+            <p><strong>12</strong> “Brother will deliver up brother to death, and the father his child. Children will rise up against parents, and cause them to be put to death.</p>
+            <p><strong>13</strong> You will be hated by all men for my name’s sake, but he who endures to the end, the same will be saved.</p>
+            <p><strong>14</strong> But when you see the abomination of desolation, spoken of by Daniel the prophet, standing where it ought not (let the reader understand), then let those who are in Judea flee to the mountains,</p>
+            <p><strong>15</strong> and let him who is on the housetop not go down, nor enter in, to take anything out of his house.</p>
+            <p><strong>16</strong> Let him who is in the field not return back to take his cloak.</p>
+            <p><strong>17</strong> But woe to those who are with child and to those who nurse babies in those days!</p>
+            <p><strong>18</strong> Pray that your flight won’t be in the winter.</p>
+            <p><strong>19</strong> For in those days there will be oppression, such as there has not been the like from the beginning of the creation which God created until now, and never will be.</p>
+            <p><strong>20</strong> Unless the Lord had shortened the days, no flesh would have been saved; but for the sake of the chosen ones, whom he picked out, he shortened the days.</p>
+            <p><strong>21</strong> Then if anyone tells you, ‘Look, here is the Christ!’ or, ‘Look, there!’ don’t believe it.</p>
+            <p><strong>22</strong> For there will arise false christs and false prophets, and will show signs and wonders, that they may lead astray, if possible, even the chosen ones.</p>
+            <p><strong>23</strong> But you watch. “Behold, I have told you all things beforehand.</p>
+            <p><strong>24</strong> But in those days, after that oppression, the sun will be darkened, the moon will not give its light,</p>
+            <p><strong>25</strong> the stars will be falling from the sky, and the powers that are in the heavens will be shaken.</p>
+            <p><strong>26</strong> Then they will see the Son of Man coming in clouds with great power and glory.</p>
+            <p><strong>27</strong> Then he will send out his angels, and will gather together his chosen ones from the four winds, from the ends of the earth to the ends of the sky.</p>
+            <p><strong>28</strong> “Now from the fig tree, learn this parable. When the branch has now become tender, and produces its leaves, you know that the summer is near;</p>
+            <p><strong>29</strong> even so you also, when you see these things coming to pass, know that it is near, at the doors.</p>
+            <p><strong>30</strong> Most certainly I say to you, this generation will not pass away until all these things happen.</p>
+            <p><strong>31</strong> Heaven and earth will pass away, but my words will not pass away.</p>
+            <p><strong>32</strong> But of that day or that hour no one knows, not even the angels in heaven, nor the Son, but only the Father.</p>
+            <p><strong>33</strong> Watch, keep alert, and pray; for you don’t know when the time is.</p>
+            <p><strong>34</strong> “It is like a man, traveling to another country, having left his house, and given authority to his servants, and to each one his work, and also commanded the doorkeeper to keep watch.</p>
+            <p><strong>35</strong> Watch therefore, for you don’t know when the lord of the house is coming, whether at evening, or at midnight, or when the rooster crows, or in the morning;</p>
+            <p><strong>36</strong> lest coming suddenly he might find you sleeping.</p>
+            <p><strong>37</strong> What I tell you, I tell all: Watch.”</p>
+            </div>
+            <div class="scripture-text" id="web-13-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 13 (KJV)</p>
+            <p><strong>1</strong> And as he went out of the temple, one of his disciples saith unto him, Master, see what manner of stones and what buildings are here!</p>
+            <p><strong>2</strong> And Jesus answering said unto him, Seest thou these great buildings? there shall not be left one stone upon another, that shall not be thrown down.</p>
+            <p><strong>3</strong> And as he sat upon the mount of Olives over against the temple, Peter and James and John and Andrew asked him privately,</p>
+            <p><strong>4</strong> Tell us, when shall these things be? and what shall be the sign when all these things shall be fulfilled?</p>
+            <p><strong>5</strong> And Jesus answering them began to say, Take heed lest any man deceive you:</p>
+            <p><strong>6</strong> For many shall come in my name, saying, I am Christ; and shall deceive many.</p>
+            <p><strong>7</strong> And when ye shall hear of wars and rumours of wars, be ye not troubled: for such things must needs be; but the end shall not be yet.</p>
+            <p><strong>8</strong> For nation shall rise against nation, and kingdom against kingdom: and there shall be earthquakes in divers places, and there shall be famines and troubles: these are the beginnings of sorrows.</p>
+            <p><strong>9</strong> But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten: and ye shall be brought before rulers and kings for my sake, for a testimony against them.</p>
+            <p><strong>10</strong> And the gospel must first be published among all nations.</p>
+            <p><strong>11</strong> But when they shall lead you, and deliver you up, take no thought beforehand what ye shall speak, neither do ye premeditate: but whatsoever shall be given you in that hour, that speak ye: for it is not ye that speak, but the Holy Ghost.</p>
+            <p><strong>12</strong> Now the brother shall betray the brother to death, and the father the son; and children shall rise up against their parents, and shall cause them to be put to death.</p>
+            <p><strong>13</strong> And ye shall be hated of all men for my name’s sake: but he that shall endure unto the end, the same shall be saved.</p>
+            <p><strong>14</strong> But when ye shall see the abomination of desolation, spoken of by Daniel the prophet, standing where it ought not, (let him that readeth understand,) then let them that be in Judaea flee to the mountains:</p>
+            <p><strong>15</strong> And let him that is on the housetop not go down into the house, neither enter therein, to take any thing out of his house:</p>
+            <p><strong>16</strong> And let him that is in the field not turn back again for to take up his garment.</p>
+            <p><strong>17</strong> But woe to them that are with child, and to them that give suck in those days!</p>
+            <p><strong>18</strong> And pray ye that your flight be not in the winter.</p>
+            <p><strong>19</strong> For in those days shall be affliction, such as was not from the beginning of the creation which God created unto this time, neither shall be.</p>
+            <p><strong>20</strong> And except that the Lord had shortened those days, no flesh should be saved: but for the elect’s sake, whom he hath chosen, he hath shortened the days.</p>
+            <p><strong>21</strong> And then if any man shall say to you, Lo, here is Christ; or, lo, he is there; believe him not:</p>
+            <p><strong>22</strong> For false Christs and false prophets shall rise, and shall shew signs and wonders, to seduce, if it were possible, even the elect.</p>
+            <p><strong>23</strong> But take ye heed: behold, I have foretold you all things.</p>
+            <p><strong>24</strong> But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light,</p>
+            <p><strong>25</strong> And the stars of heaven shall fall, and the powers that are in heaven shall be shaken.</p>
+            <p><strong>26</strong> And then shall they see the Son of man coming in the clouds with great power and glory.</p>
+            <p><strong>27</strong> And then shall he send his angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven.</p>
+            <p><strong>28</strong> Now learn a parable of the fig tree; When her branch is yet tender, and putteth forth leaves, ye know that summer is near:</p>
+            <p><strong>29</strong> So ye in like manner, when ye shall see these things come to pass, know that it is nigh, even at the doors.</p>
+            <p><strong>30</strong> Verily I say unto you, that this generation shall not pass, till all these things be done.</p>
+            <p><strong>31</strong> Heaven and earth shall pass away: but my words shall not pass away.</p>
+            <p><strong>32</strong> But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father.</p>
+            <p><strong>33</strong> Take ye heed, watch and pray: for ye know not when the time is.</p>
+            <p><strong>34</strong> For the Son of man is as a man taking a far journey, who left his house, and gave authority to his servants, and to every man his work, and commanded the porter to watch.</p>
+            <p><strong>35</strong> Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning:</p>
+            <p><strong>36</strong> Lest coming suddenly he find you sleeping.</p>
+            <p><strong>37</strong> And what I say unto you I say unto all, Watch.</p>
+            </div>
+            <div class="scripture-text" id="web-13-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 13 (ASV)</p>
+            <p><strong>1</strong> And as he went forth out of the temple, one of his disciples saith unto him, Teacher, behold, what manner of stones and what manner of buildings!</p>
+            <p><strong>2</strong> And Jesus said unto him, Seest thou these great buildings? there shall not be left here one stone upon another, which shall not be thrown down.</p>
+            <p><strong>3</strong> And as he sat on the mount of Olives over against the temple, Peter and James and John and Andrew asked him privately,</p>
+            <p><strong>4</strong> Tell us, when shall these things be? and what [shall be] the sign when these things are all about to be accomplished?</p>
+            <p><strong>5</strong> And Jesus began to say unto them, Take heed that no man lead you astray.</p>
+            <p><strong>6</strong> Many shall come in my name, saying, I am [he]; and shall lead many astray.</p>
+            <p><strong>7</strong> And when ye shall hear of wars and rumors of wars, be not troubled: [these things] must needs come to pass; but the end is not yet.</p>
+            <p><strong>8</strong> For nation shall rise against nation, and kingdom against kingdom; there shall be earthquakes in divers places; there shall be famines: these things are the beginning of travail.</p>
+            <p><strong>9</strong> But take ye heed to yourselves: for they shall deliver you up to councils; and in synagogues shall ye be beaten; and before governors and kings shall ye stand for my sake, for a testimony unto them.</p>
+            <p><strong>10</strong> And the gospel must first be preached unto all the nations.</p>
+            <p><strong>11</strong> And when they lead you [to judgment], and deliver you up, be not anxious beforehand what ye shall speak: but whatsoever shall be given you in that hour, that speak ye; for it is not ye that speak, but the Holy Spirit.</p>
+            <p><strong>12</strong> And brother shall deliver up brother to death, and the father his child; and children shall rise up against parents, and cause them to be put to death.</p>
+            <p><strong>13</strong> And ye shall be hated of all men for my name`s sake: but he that endureth to the end, the same shall be saved.</p>
+            <p><strong>14</strong> But when ye see the abomination of desolation standing where he ought not (let him that readeth understand), then let them that are in Judaea flee unto the mountains:</p>
+            <p><strong>15</strong> and let him that is on the housetop not go down, nor enter in, to take anything out his house:</p>
+            <p><strong>16</strong> and let him that is in the field not return back to take his cloak.</p>
+            <p><strong>17</strong> But woe unto them that are with child and to them that give suck in those days!</p>
+            <p><strong>18</strong> And pray ye that it be not in the winter.</p>
+            <p><strong>19</strong> For those days shall be tribulation, such as there hath not been the like from the beginning of the creation which God created until now, and never shall be.</p>
+            <p><strong>20</strong> And except the Lord had shortened the days, no flesh would have been saved; but for the elect`s sake, whom he chose, he shortened the days.</p>
+            <p><strong>21</strong> And then if any man shall say unto you, Lo, here is the Christ; or, Lo, there; believe [it] not:</p>
+            <p><strong>22</strong> for there shall arise false Christs and false prophets, and shall show signs and wonders, that they may lead astray, if possible, the elect.</p>
+            <p><strong>23</strong> But take ye heed: behold, I have told you all things beforehand.</p>
+            <p><strong>24</strong> But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light,</p>
+            <p><strong>25</strong> and the stars shall be falling from heaven, and the powers that are in the heavens shall be shaken.</p>
+            <p><strong>26</strong> And then shall they see the Son of man coming in clouds with great power and glory.</p>
+            <p><strong>27</strong> And then shall he send forth the angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven.</p>
+            <p><strong>28</strong> Now from the fig tree learn her parable: when her branch is now become tender, and putteth forth its leaves, ye know that the summer is nigh;</p>
+            <p><strong>29</strong> even so ye also, when ye see these things coming to pass, know ye that he is nigh, [even] at the doors.</p>
+            <p><strong>30</strong> Verily I say unto you, This generation shall not pass away, until all these things be accomplished.</p>
+            <p><strong>31</strong> Heaven and earth shall pass away: but my words shall not pass away.</p>
+            <p><strong>32</strong> But of that day or that hour knoweth no one, not even the angels in heaven, neither the Son, but the Father.</p>
+            <p><strong>33</strong> Take ye heed, watch and pray: for ye know not when the time is.</p>
+            <p><strong>34</strong> [It is] as [when] a man, sojourning in another country, having left his house, and given authority to his servants, to each one his work, commanded also the porter to watch.</p>
+            <p><strong>35</strong> Watch therefore: for ye know not when the lord of the house cometh, whether at even, or at midnight, or at cockcrowing, or in the morning;</p>
+            <p><strong>36</strong> lest coming suddenly he find you sleeping.</p>
+            <p><strong>37</strong> And what I say unto you I say unto all, Watch.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>As they leave the temple, a disciple marvels at its great stones, and Jesus foretells that not one will be left upon another. On the Mount of Olives, Peter, James, John, and Andrew ask when these things will be. Jesus warns them not to be led astray by false christs, wars, earthquakes, and famines, which are only the beginning of birth pains. His followers will be handed over and hated for his name, yet the gospel must first be preached to all nations, and the Holy Spirit will give them words. He speaks of great tribulation and warns against deceivers, then describes the Son of Man coming in clouds with great power and glory to gather his chosen ones. From the fig tree they are to learn that his coming is near, though no one knows the day or hour but the Father. Again and again he urges them to watch, for the master may return at any time and must not find them sleeping.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — He foretells the temple's fall, coming trials, and his glorious return, calling his followers to endure and stay watchful.</li>
+          <li><strong>Peter, James, John, and Andrew</strong> — The disciples who ask Jesus privately when these things will happen and what the sign will be.</li>
+          <li><strong>The Son of Man</strong> — Jesus' title for himself as the one who will come in clouds with power and glory to gather his elect.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 13:31 (WEB)</p>
+          <p class="verse__text">Heaven and earth will pass away, but my words will not pass away.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The most impressive human structures will pass away, but Jesus' words will never pass away.</li>
+          <li>Faithful followers should expect trials yet trust the Spirit to sustain and speak through them.</li>
+          <li>The gospel must be proclaimed to all nations before the end comes.</li>
+          <li>Because no one knows the day or hour, Jesus calls us to stay awake and ready for his return.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-13">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-13">
+            <ul class="lesson-list">
+            <li><strong>Jesus' words outlast everything else.</strong> He declares, 'Heaven and earth will pass away, but my words will not pass away' (Mark 13:31, WEB).</li>
+            <li><strong>Endurance marks the faithful through trials.</strong> Jesus says, 'He who endures to the end will be saved' (Mark 13:13, WEB), even amid hatred for his name.</li>
+            <li><strong>The gospel must reach all nations.</strong> Jesus says, 'The Good News must first be preached to all the nations' (Mark 13:10, WEB), before the end.</li>
+            <li><strong>The Son of Man will return in glory.</strong> They will see 'the Son of Man coming in clouds with great power and glory' to gather his chosen ones (Mark 13:26-27, WEB).</li>
+            <li><strong>We must stay awake, for the hour is unknown.</strong> Since no one knows the day or hour, Jesus commands, 'Watch, keep alert, and pray' (Mark 13:32-33, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-13">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-13">
+            <ol class="study-questions">
+            <li>What does Jesus foretell about the temple, and what question do the disciples ask in response?</li>
+            <li>What warnings does Jesus give his followers about deception and persecution?</li>
+            <li>What does Jesus say must happen among the nations before the end?</li>
+            <li>How does Jesus describe his return as the Son of Man, and what does he say about the timing?</li>
+            <li>Where in your own life do you need to stay spiritually awake and ready for the Lord?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-13">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-13">
+            <ol class="study-questions">
+            <li>Jesus says not one stone of the temple will be left on another (Mark 13:2). On the Mount of Olives the disciples ask when this will be and what sign will mark it (13:3-4), opening his teaching on the end.</li>
+            <li>He warns of false christs, wars, and disasters that are only the beginning of birth pains, and of being handed over and hated for his name (13:5-13). Yet the Spirit will give them words, and endurance leads to salvation.</li>
+            <li>Jesus says the gospel must first be preached to all the nations (13:10). God's saving purpose for the world advances even through trials and tribulation.</li>
+            <li>He describes the Son of Man coming in clouds with great power and glory to gather his elect (13:26-27), yet says no one knows the day or hour but the Father (13:32). So he calls them to watch.</li>
+            <li>This is a personal application question. Invite members to consider where they have grown drowsy in faith, and encourage watchful, hopeful living. As leader, welcome honest reflection and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="mark-12.html">← Mark 12</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-14.html">Mark 14 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

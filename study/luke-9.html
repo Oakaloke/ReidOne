@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 9: Who Do You Say I Am — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 9: Jesus sends out the Twelve, feeds a multitude, is revealed in glory, and calls would-be followers to take up the cross." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 9
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 9</span>
+        <h1>Luke 9: Who Do You Say I Am</h1>
+        <p class="lead">Jesus sends out the Twelve, feeds a multitude, is revealed in glory, and calls would-be followers to take up the cross.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-9">
+            <span>Scripture — Luke Chapter 9</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-9">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-9-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-9-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-9-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-9-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 9 (WEB)</p>
+            <p><strong>1</strong> He called the twelve together, and gave them power and authority over all demons, and to cure diseases.</p>
+            <p><strong>2</strong> He sent them out to preach God’s Kingdom and to heal the sick.</p>
+            <p><strong>3</strong> He said to them, “Take nothing for your journey—neither staffs, nor wallet, nor bread, nor money; neither have two coats each.</p>
+            <p><strong>4</strong> Into whatever house you enter, stay there, and depart from there.</p>
+            <p><strong>5</strong> As many as don’t receive you, when you depart from that city, shake off even the dust from your feet for a testimony against them.”</p>
+            <p><strong>6</strong> They departed, and went throughout the villages, preaching the Good News, and healing everywhere.</p>
+            <p><strong>7</strong> Now Herod the tetrarch heard of all that was done by him; and he was very perplexed, because it was said by some that John had risen from the dead,</p>
+            <p><strong>8</strong> and by some that Elijah had appeared, and by others that one of the old prophets had risen again.</p>
+            <p><strong>9</strong> Herod said, “John I beheaded, but who is this, about whom I hear such things?” He sought to see him.</p>
+            <p><strong>10</strong> The apostles, when they had returned, told him what things they had done. He took them, and withdrew apart to a desert region of a city called Bethsaida.</p>
+            <p><strong>11</strong> But the multitudes, perceiving it, followed him. He welcomed them, and spoke to them of God’s Kingdom, and he cured those who needed healing.</p>
+            <p><strong>12</strong> The day began to wear away; and the twelve came, and said to him, “Send the multitude away, that they may go into the surrounding villages and farms, and lodge, and get food, for we are here in a deserted place.”</p>
+            <p><strong>13</strong> But he said to them, “You give them something to eat.” They said, “We have no more than five loaves and two fish, unless we should go and buy food for all these people.”</p>
+            <p><strong>14</strong> For they were about five thousand men. He said to his disciples, “Make them sit down in groups of about fifty each.”</p>
+            <p><strong>15</strong> They did so, and made them all sit down.</p>
+            <p><strong>16</strong> He took the five loaves and the two fish, and looking up to the sky, he blessed them, and broke them, and gave them to the disciples to set before the multitude.</p>
+            <p><strong>17</strong> They ate, and were all filled. They gathered up twelve baskets of broken pieces that were left over.</p>
+            <p><strong>18</strong> As he was praying alone, the disciples were with him, and he asked them, “Who do the multitudes say that I am?”</p>
+            <p><strong>19</strong> They answered, “‘John the Baptizer,’ but others say, ‘Elijah,’ and others, that one of the old prophets is risen again.”</p>
+            <p><strong>20</strong> He said to them, “But who do you say that I am?” Peter answered, “The Christ of God.”</p>
+            <p><strong>21</strong> But he warned them, and commanded them to tell this to no one,</p>
+            <p><strong>22</strong> saying, “The Son of Man must suffer many things, and be rejected by the elders, chief priests, and scribes, and be killed, and the third day be raised up.”</p>
+            <p><strong>23</strong> He said to all, “If anyone desires to come after me, let him deny himself, take up his cross, and follow me.</p>
+            <p><strong>24</strong> For whoever desires to save his life will lose it, but whoever will lose his life for my sake, the same will save it.</p>
+            <p><strong>25</strong> For what does it profit a man if he gains the whole world, and loses or forfeits his own self?</p>
+            <p><strong>26</strong> For whoever will be ashamed of me and of my words, of him will the Son of Man be ashamed, when he comes in his glory, and the glory of the Father, and of the holy angels.</p>
+            <p><strong>27</strong> But I tell you the truth: There are some of those who stand here, who will in no way taste of death, until they see God’s Kingdom.”</p>
+            <p><strong>28</strong> About eight days after these sayings, he took with him Peter, John, and James, and went up onto the mountain to pray.</p>
+            <p><strong>29</strong> As he was praying, the appearance of his face was altered, and his clothing became white and dazzling.</p>
+            <p><strong>30</strong> Behold, two men were talking with him, who were Moses and Elijah,</p>
+            <p><strong>31</strong> who appeared in glory, and spoke of his departure, which he was about to accomplish at Jerusalem.</p>
+            <p><strong>32</strong> Now Peter and those who were with him were heavy with sleep, but when they were fully awake, they saw his glory, and the two men who stood with him.</p>
+            <p><strong>33</strong> As they were parting from him, Peter said to Jesus, “Master, it is good for us to be here. Let’s make three tents: one for you, and one for Moses, and one for Elijah,” not knowing what he said.</p>
+            <p><strong>34</strong> While he said these things, a cloud came and overshadowed them, and they were afraid as they entered into the cloud.</p>
+            <p><strong>35</strong> A voice came out of the cloud, saying, “This is my beloved Son. Listen to him!”</p>
+            <p><strong>36</strong> When the voice came, Jesus was found alone. They were silent, and told no one in those days any of the things which they had seen.</p>
+            <p><strong>37</strong> On the next day, when they had come down from the mountain, a great multitude met him.</p>
+            <p><strong>38</strong> Behold, a man from the crowd called out, saying, “Teacher, I beg you to look at my son, for he is my only child.</p>
+            <p><strong>39</strong> Behold, a spirit takes him, he suddenly cries out, and it convulses him so that he foams, and it hardly departs from him, bruising him severely.</p>
+            <p><strong>40</strong> I begged your disciples to cast it out, and they couldn’t.”</p>
+            <p><strong>41</strong> Jesus answered, “Faithless and perverse generation, how long shall I be with you and bear with you? Bring your son here.”</p>
+            <p><strong>42</strong> While he was still coming, the demon threw him down and convulsed him violently. But Jesus rebuked the unclean spirit, and healed the boy, and gave him back to his father.</p>
+            <p><strong>43</strong> They were all astonished at the majesty of God. But while all were marveling at all the things which Jesus did, he said to his disciples,</p>
+            <p><strong>44</strong> “Let these words sink into your ears, for the Son of Man will be delivered up into the hands of men.”</p>
+            <p><strong>45</strong> But they didn’t understand this saying. It was concealed from them, that they should not perceive it, and they were afraid to ask him about this saying.</p>
+            <p><strong>46</strong> There arose an argument among them about which of them was the greatest.</p>
+            <p><strong>47</strong> Jesus, perceiving the reasoning of their hearts, took a little child, and set him by his side,</p>
+            <p><strong>48</strong> and said to them, “Whoever receives this little child in my name receives me. Whoever receives me receives him who sent me. For whoever is least among you all, this one will be great.”</p>
+            <p><strong>49</strong> John answered, “Master, we saw someone casting out demons in your name, and we forbade him, because he doesn’t follow with us.”</p>
+            <p><strong>50</strong> Jesus said to him, “Don’t forbid him, for he who is not against us is for us.”</p>
+            <p><strong>51</strong> It came to pass, when the days were near that he should be taken up, he intently set his face to go to Jerusalem,</p>
+            <p><strong>52</strong> and sent messengers before his face. They went, and entered into a village of the Samaritans, so as to prepare for him.</p>
+            <p><strong>53</strong> They didn’t receive him, because he was traveling with his face set towards Jerusalem.</p>
+            <p><strong>54</strong> When his disciples, James and John, saw this, they said, “Lord, do you want us to command fire to come down from the sky, and destroy them, just as Elijah did?”</p>
+            <p><strong>55</strong> But he turned and rebuked them, “You don’t know of what kind of spirit you are.</p>
+            <p><strong>56</strong> For the Son of Man didn’t come to destroy men’s lives, but to save them.” They went to another village.</p>
+            <p><strong>57</strong> As they went on the way, a certain man said to him, “I want to follow you wherever you go, Lord.”</p>
+            <p><strong>58</strong> Jesus said to him, “The foxes have holes, and the birds of the sky have nests, but the Son of Man has no place to lay his head.”</p>
+            <p><strong>59</strong> He said to another, “Follow me!” But he said, “Lord, allow me first to go and bury my father.”</p>
+            <p><strong>60</strong> But Jesus said to him, “Leave the dead to bury their own dead, but you go and announce God’s Kingdom.”</p>
+            <p><strong>61</strong> Another also said, “I want to follow you, Lord, but first allow me to say good-bye to those who are at my house.”</p>
+            <p><strong>62</strong> But Jesus said to him, “No one, having put his hand to the plow, and looking back, is fit for God’s Kingdom.”</p>
+            </div>
+            <div class="scripture-text" id="web-9-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 9 (KJV)</p>
+            <p><strong>1</strong> Then he called his twelve disciples together, and gave them power and authority over all devils, and to cure diseases.</p>
+            <p><strong>2</strong> And he sent them to preach the kingdom of God, and to heal the sick.</p>
+            <p><strong>3</strong> And he said unto them, Take nothing for your journey, neither staves, nor scrip, neither bread, neither money; neither have two coats apiece.</p>
+            <p><strong>4</strong> And whatsoever house ye enter into, there abide, and thence depart.</p>
+            <p><strong>5</strong> And whosoever will not receive you, when ye go out of that city, shake off the very dust from your feet for a testimony against them.</p>
+            <p><strong>6</strong> And they departed, and went through the towns, preaching the gospel, and healing every where.</p>
+            <p><strong>7</strong> Now Herod the tetrarch heard of all that was done by him: and he was perplexed, because that it was said of some, that John was risen from the dead;</p>
+            <p><strong>8</strong> And of some, that Elias had appeared; and of others, that one of the old prophets was risen again.</p>
+            <p><strong>9</strong> And Herod said, John have I beheaded: but who is this, of whom I hear such things? And he desired to see him.</p>
+            <p><strong>10</strong> And the apostles, when they were returned, told him all that they had done. And he took them, and went aside privately into a desert place belonging to the city called Bethsaida.</p>
+            <p><strong>11</strong> And the people, when they knew it, followed him: and he received them, and spake unto them of the kingdom of God, and healed them that had need of healing.</p>
+            <p><strong>12</strong> And when the day began to wear away, then came the twelve, and said unto him, Send the multitude away, that they may go into the towns and country round about, and lodge, and get victuals: for we are here in a desert place.</p>
+            <p><strong>13</strong> But he said unto them, Give ye them to eat. And they said, We have no more but five loaves and two fishes; except we should go and buy meat for all this people.</p>
+            <p><strong>14</strong> For they were about five thousand men. And he said to his disciples, Make them sit down by fifties in a company.</p>
+            <p><strong>15</strong> And they did so, and made them all sit down.</p>
+            <p><strong>16</strong> Then he took the five loaves and the two fishes, and looking up to heaven, he blessed them, and brake, and gave to the disciples to set before the multitude.</p>
+            <p><strong>17</strong> And they did eat, and were all filled: and there was taken up of fragments that remained to them twelve baskets.</p>
+            <p><strong>18</strong> And it came to pass, as he was alone praying, his disciples were with him: and he asked them, saying, Whom say the people that I am?</p>
+            <p><strong>19</strong> They answering said, John the Baptist; but some say, Elias; and others say, that one of the old prophets is risen again.</p>
+            <p><strong>20</strong> He said unto them, But whom say ye that I am? Peter answering said, The Christ of God.</p>
+            <p><strong>21</strong> And he straitly charged them, and commanded them to tell no man that thing;</p>
+            <p><strong>22</strong> Saying, The Son of man must suffer many things, and be rejected of the elders and chief priests and scribes, and be slain, and be raised the third day.</p>
+            <p><strong>23</strong> And he said to them all, If any man will come after me, let him deny himself, and take up his cross daily, and follow me.</p>
+            <p><strong>24</strong> For whosoever will save his life shall lose it: but whosoever will lose his life for my sake, the same shall save it.</p>
+            <p><strong>25</strong> For what is a man advantaged, if he gain the whole world, and lose himself, or be cast away?</p>
+            <p><strong>26</strong> For whosoever shall be ashamed of me and of my words, of him shall the Son of man be ashamed, when he shall come in his own glory, and in his Father’s, and of the holy angels.</p>
+            <p><strong>27</strong> But I tell you of a truth, there be some standing here, which shall not taste of death, till they see the kingdom of God.</p>
+            <p><strong>28</strong> And it came to pass about an eight days after these sayings, he took Peter and John and James, and went up into a mountain to pray.</p>
+            <p><strong>29</strong> And as he prayed, the fashion of his countenance was altered, and his raiment was white and glistering.</p>
+            <p><strong>30</strong> And, behold, there talked with him two men, which were Moses and Elias:</p>
+            <p><strong>31</strong> Who appeared in glory, and spake of his decease which he should accomplish at Jerusalem.</p>
+            <p><strong>32</strong> But Peter and they that were with him were heavy with sleep: and when they were awake, they saw his glory, and the two men that stood with him.</p>
+            <p><strong>33</strong> And it came to pass, as they departed from him, Peter said unto Jesus, Master, it is good for us to be here: and let us make three tabernacles; one for thee, and one for Moses, and one for Elias: not knowing what he said.</p>
+            <p><strong>34</strong> While he thus spake, there came a cloud, and overshadowed them: and they feared as they entered into the cloud.</p>
+            <p><strong>35</strong> And there came a voice out of the cloud, saying, This is my beloved Son: hear him.</p>
+            <p><strong>36</strong> And when the voice was past, Jesus was found alone. And they kept it close, and told no man in those days any of those things which they had seen.</p>
+            <p><strong>37</strong> And it came to pass, that on the next day, when they were come down from the hill, much people met him.</p>
+            <p><strong>38</strong> And, behold, a man of the company cried out, saying, Master, I beseech thee, look upon my son: for he is mine only child.</p>
+            <p><strong>39</strong> And, lo, a spirit taketh him, and he suddenly crieth out; and it teareth him that he foameth again, and bruising him hardly departeth from him.</p>
+            <p><strong>40</strong> And I besought thy disciples to cast him out; and they could not.</p>
+            <p><strong>41</strong> And Jesus answering said, O faithless and perverse generation, how long shall I be with you, and suffer you? Bring thy son hither.</p>
+            <p><strong>42</strong> And as he was yet a coming, the devil threw him down, and tare him. And Jesus rebuked the unclean spirit, and healed the child, and delivered him again to his father.</p>
+            <p><strong>43</strong> And they were all amazed at the mighty power of God. But while they wondered every one at all things which Jesus did, he said unto his disciples,</p>
+            <p><strong>44</strong> Let these sayings sink down into your ears: for the Son of man shall be delivered into the hands of men.</p>
+            <p><strong>45</strong> But they understood not this saying, and it was hid from them, that they perceived it not: and they feared to ask him of that saying.</p>
+            <p><strong>46</strong> Then there arose a reasoning among them, which of them should be greatest.</p>
+            <p><strong>47</strong> And Jesus, perceiving the thought of their heart, took a child, and set him by him,</p>
+            <p><strong>48</strong> And said unto them, Whosoever shall receive this child in my name receiveth me: and whosoever shall receive me receiveth him that sent me: for he that is least among you all, the same shall be great.</p>
+            <p><strong>49</strong> And John answered and said, Master, we saw one casting out devils in thy name; and we forbad him, because he followeth not with us.</p>
+            <p><strong>50</strong> And Jesus said unto him, Forbid him not: for he that is not against us is for us.</p>
+            <p><strong>51</strong> And it came to pass, when the time was come that he should be received up, he stedfastly set his face to go to Jerusalem,</p>
+            <p><strong>52</strong> And sent messengers before his face: and they went, and entered into a village of the Samaritans, to make ready for him.</p>
+            <p><strong>53</strong> And they did not receive him, because his face was as though he would go to Jerusalem.</p>
+            <p><strong>54</strong> And when his disciples James and John saw this, they said, Lord, wilt thou that we command fire to come down from heaven, and consume them, even as Elias did?</p>
+            <p><strong>55</strong> But he turned, and rebuked them, and said, Ye know not what manner of spirit ye are of.</p>
+            <p><strong>56</strong> For the Son of man is not come to destroy men’s lives, but to save them. And they went to another village.</p>
+            <p><strong>57</strong> And it came to pass, that, as they went in the way, a certain man said unto him, Lord, I will follow thee whithersoever thou goest.</p>
+            <p><strong>58</strong> And Jesus said unto him, Foxes have holes, and birds of the air have nests; but the Son of man hath not where to lay his head.</p>
+            <p><strong>59</strong> And he said unto another, Follow me. But he said, Lord, suffer me first to go and bury my father.</p>
+            <p><strong>60</strong> Jesus said unto him, Let the dead bury their dead: but go thou and preach the kingdom of God.</p>
+            <p><strong>61</strong> And another also said, Lord, I will follow thee; but let me first go bid them farewell, which are at home at my house.</p>
+            <p><strong>62</strong> And Jesus said unto him, No man, having put his hand to the plough, and looking back, is fit for the kingdom of God.</p>
+            </div>
+            <div class="scripture-text" id="web-9-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 9 (ASV)</p>
+            <p><strong>1</strong> And he called the twelve together, and gave them power and authority over all demons, and to cure diseases.</p>
+            <p><strong>2</strong> And he sent them forth to preach the kingdom of God, and to heal the sick.</p>
+            <p><strong>3</strong> And he said unto them, Take nothing for your journey, neither staff, nor wallet, nor bread, nor money; neither have two coats.</p>
+            <p><strong>4</strong> And into whatsoever house ye enter, there abide, and thence depart.</p>
+            <p><strong>5</strong> And as many as receive you not, when ye depart from that city, shake off the dust from your feet for a testimony against them.</p>
+            <p><strong>6</strong> And they departed, and went throughout the villages, preaching the gospel, and healing everywhere.</p>
+            <p><strong>7</strong> Now Herod the tetrarch heard of all that was done: and he was much perplexed, because that it was said by some, that John was risen from the dead;</p>
+            <p><strong>8</strong> and by some, that Elijah had appeared; and by others, that one of the old prophets was risen again.</p>
+            <p><strong>9</strong> And Herod said, John I beheaded: but who is this, about whom I hear such things? And he sought to see him.</p>
+            <p><strong>10</strong> And the apostles, when they were returned, declared unto him what things they had done. And he took them, and withdrew apart to a city called Bethsaida.</p>
+            <p><strong>11</strong> But the multitudes perceiving it followed him: and he welcomed them, and spake to them of the kingdom of God, and them that had need of healing he cured.</p>
+            <p><strong>12</strong> And the day began to wear away; and the twelve came, and said unto him, Send the multitude away, that they may go into the villages and country round about, and lodge, and get provisions: for we are here in a desert place.</p>
+            <p><strong>13</strong> But he said unto them, Give ye them to eat. And they said, We have no more than five loaves and two fishes; except we should go and buy food for all this people.</p>
+            <p><strong>14</strong> For they were about five thousand men. And he said unto his disciples, Make them sit down in companies, about fifty each.</p>
+            <p><strong>15</strong> And they did so, and made them all sit down.</p>
+            <p><strong>16</strong> And he took the five loaves and the two fishes, and looking up to heaven, he blessed them, and brake; and gave to the disciples to set before the multitude.</p>
+            <p><strong>17</strong> And they ate, and were all filled: and there was taken up that which remained over to them of broken pieces, twelve baskets.</p>
+            <p><strong>18</strong> And it came to pass, as he was praying apart, the disciples were with him: and he asked them, saying, Who do the multitudes say that I am?</p>
+            <p><strong>19</strong> And they answering said, John the Baptist; but others [say], Elijah; and others, that one of the old prophets is risen again.</p>
+            <p><strong>20</strong> And he said unto them, But who say ye that I am? And Peter answering said, The Christ of God.</p>
+            <p><strong>21</strong> But he charged them, and commanded [them] to tell this to no man;</p>
+            <p><strong>22</strong> saying, The Son of man must suffer many things, and be rejected of the elders and chief priests and scribes, and be killed, and the third day be raised up.</p>
+            <p><strong>23</strong> And he said unto all, If any man would come after me, let him deny himself, and take up his cross daily, and follow me.</p>
+            <p><strong>24</strong> For whosoever would save his life shall lose it; but whosoever shall lose his life for my sake, the same shall save it.</p>
+            <p><strong>25</strong> For what is a man profited, if he gain the whole world, and lose or forfeit his own self?</p>
+            <p><strong>26</strong> For whosoever shall be ashamed of me and of my words, of him shall the Son of man be ashamed, when he cometh in his own glory, and [the glory] of the Father, and of the holy angels.</p>
+            <p><strong>27</strong> But I tell you of a truth, There are some of them that stand here, who shall in no wise taste of death, till they see the kingdom of God.</p>
+            <p><strong>28</strong> And it came to pass about eight days after these sayings, that he took with him Peter and John and James, and went up into the mountain to pray.</p>
+            <p><strong>29</strong> And as he was praying, the fashion of his countenance was altered, and his raiment [became] white [and] dazzling.</p>
+            <p><strong>30</strong> And behold, there talked with him two men, who were Moses and Elijah;</p>
+            <p><strong>31</strong> who appeared in glory, and spake of his decease which he was about to accomplish at Jerusalem.</p>
+            <p><strong>32</strong> Now Peter and they that were with him were heavy with sleep: but when they were fully awake, they saw his glory, and the two men that stood with him.</p>
+            <p><strong>33</strong> And it came to pass, as they were parting from him, Peter said unto Jesus, Master, it is good for us to be here: and let us make three tabernacles; one for thee, and one for Moses, and one for Elijah: not knowing what he said.</p>
+            <p><strong>34</strong> And while he said these things, there came a cloud, and overshadowed them: and they feared as they entered into the cloud.</p>
+            <p><strong>35</strong> And a voice came out of the cloud, saying, This is my Son, my chosen: hear ye him.</p>
+            <p><strong>36</strong> And when the voice came, Jesus was found alone. And they held their peace, and told no man in those days any of the things which they had seen.</p>
+            <p><strong>37</strong> And it came to pass, on the next day, when they were come down from the mountain, a great multitude met him.</p>
+            <p><strong>38</strong> And behold, a man from the multitude cried, saying, Teacher, I beseech thee to look upon my son; for he is mine only child:</p>
+            <p><strong>39</strong> and behold, a spirit taketh him, and he suddenly crieth out; and it teareth him that he foameth, and it hardly departeth from him, bruising him sorely.</p>
+            <p><strong>40</strong> And I besought thy disciples to cast it out; and they could not.</p>
+            <p><strong>41</strong> And Jesus answered and said, O faithless and perverse generation, how long shall I be with you, and bear with you? bring hither thy son.</p>
+            <p><strong>42</strong> And as he was yet a coming, the demon dashed him down, and tare [him] grievously. But Jesus rebuked the unclean spirit, and healed the boy, and gave him back to his father.</p>
+            <p><strong>43</strong> And they were all astonished at the majesty of God. But while all were marvelling at all the things which he did, he said unto his disciples,</p>
+            <p><strong>44</strong> Let these words sink into your ears: for the Son of man shall be delivered up into the hands of men.</p>
+            <p><strong>45</strong> But they understood not this saying, and it was concealed from them, that they should not perceive it; and they were afraid to ask him about this saying.</p>
+            <p><strong>46</strong> And there arose a reasoning among them, which of them was the greatest.</p>
+            <p><strong>47</strong> But when Jesus saw the reasoning of their heart, he took a little child, and set him by his side,</p>
+            <p><strong>48</strong> and said unto them, Whosoever shall receive this little child in my name receiveth me: and whosoever shall receive me receiveth him that sent me: for he that is least among you all, the same is great.</p>
+            <p><strong>49</strong> And John answered and said, Master, we saw one casting out demons in thy name; and we forbade him, because he followeth not with us.</p>
+            <p><strong>50</strong> But Jesus said unto him, Forbid [him] not: for he that is not against you is for you.</p>
+            <p><strong>51</strong> And it came to pass, when the days were well-nigh come that he should be received up, he stedfastly set his face to go to Jerusalem,</p>
+            <p><strong>52</strong> and sent messengers before his face: and they went, and entered into a village of the Samaritans, to make ready for him.</p>
+            <p><strong>53</strong> And they did not receive him, because his face was [as though he were] going to Jerusalem.</p>
+            <p><strong>54</strong> And when his disciples James and John saw [this], they said, Lord, wilt thou that we bid fire to come down from heaven, and consume them?</p>
+            <p><strong>55</strong> But he turned, and rebuked them.</p>
+            <p><strong>56</strong> And they went to another village.</p>
+            <p><strong>57</strong> And as they went on the way, a certain man said unto him, I will follow thee whithersoever thou goest.</p>
+            <p><strong>58</strong> And Jesus said unto him, The foxes have holes, and the birds of the heaven [have] nests; but the Son of man hath not where to lay his head.</p>
+            <p><strong>59</strong> And he said unto another, Follow me. But he said, Lord, suffer me first to go and bury my father.</p>
+            <p><strong>60</strong> But he said unto him, Leave the dead to bury their own dead; but go thou and publish abroad the kingdom of God.</p>
+            <p><strong>61</strong> And another also said, I will follow thee, Lord; but first suffer me to bid farewell to them that are at my house.</p>
+            <p><strong>62</strong> But Jesus said unto him, No man, having put his hand to the plow, and looking back, is fit for the kingdom of God.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus gives the twelve apostles power and authority over demons and disease, sending them out to preach the kingdom and heal. Herod hears of him and wonders who he is. When the apostles return, the crowds follow, and Jesus feeds about five thousand from five loaves and two fish, with twelve baskets left over. He then asks his disciples who the crowds say he is, and who they say he is; Peter answers, "The Christ of God." Jesus foretells his suffering and calls everyone to deny themselves and take up the cross daily. On a mountain he is transfigured before Peter, John, and James, and the Father's voice declares, "This is my beloved Son. Listen to him." Below, he heals a boy a demon had thrown down, teaches that the least is greatest, and sets his face toward the costly road of discipleship.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Sends the Twelve, feeds the multitude, is confessed as the Christ, and is transfigured in glory.</li>
+          <li><strong>Peter</strong> — Confesses Jesus as the Christ of God and witnesses the transfiguration on the mountain.</li>
+          <li><strong>Herod the tetrarch</strong> — Puzzled ruler who hears of Jesus' works and is anxious to see who he is.</li>
+          <li><strong>Moses and Elijah</strong> — Appear in glory with Jesus and speak of his coming departure at Jerusalem.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 9:20 (WEB)</p>
+          <p class="verse__text">He said to them, “But who do you say that I am?” Peter answered, “The Christ of God.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus shares his authority with ordinary followers and sends them to serve.</li>
+          <li>Knowing who Jesus is matters more than any crowd's opinion of him.</li>
+          <li>Following Christ means daily self-denial and taking up the cross.</li>
+          <li>The Father commands us to listen to his beloved Son above all other voices.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-9">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-9">
+            <ul class="lesson-list">
+            <li><strong>Jesus equips those he sends.</strong> He "gave them power and authority over all demons, and to cure diseases" and sent them to preach the kingdom (Luke 9:1-2, WEB).</li>
+            <li><strong>Christ provides abundantly for the hungry.</strong> From five loaves and two fish all the crowd "ate and were filled," with twelve baskets of broken pieces left over (Luke 9:16-17, WEB).</li>
+            <li><strong>The heart of faith is confessing who Jesus is.</strong> When Jesus asked who the disciples said he was, Peter answered, "The Christ of God" (Luke 9:20, WEB).</li>
+            <li><strong>Discipleship is a daily surrender.</strong> Jesus said, "If anyone desires to come after me, let him deny himself, take up his cross, and follow me" (Luke 9:23, WEB).</li>
+            <li><strong>The Father exalts the Son and bids us hear him.</strong> A voice from the cloud said, "This is my beloved Son. Listen to him" (Luke 9:35, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-9">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-9">
+            <ol class="study-questions">
+            <li>What did Jesus give the Twelve before sending them out, and what were they to do?</li>
+            <li>How did Jesus respond to the crowd's hunger, and what does the feeding reveal about him?</li>
+            <li>How did Peter answer Jesus' question about his identity, and why does that confession matter?</li>
+            <li>What happened at the transfiguration, and what did the Father's voice command?</li>
+            <li>Where in your own life is Jesus asking you to deny yourself and take up your cross today?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-9">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-9">
+            <ol class="study-questions">
+            <li>Jesus gave the Twelve power and authority over demons and diseases and sent them to preach the kingdom of God and to heal (Luke 9:1-2). He calls ordinary followers into his mission and supplies what they need to carry it out.</li>
+            <li>Jesus took five loaves and two fish, gave thanks, and fed about five thousand men until all were filled, with twelve baskets left over (Luke 9:13-17). His compassion and provision point to the One who satisfies every need.</li>
+            <li>Peter confessed, "The Christ of God" (Luke 9:20). This is the turning point of the chapter; recognizing Jesus as the promised Messiah is the foundation of true discipleship.</li>
+            <li>On the mountain Jesus' appearance was changed and his clothing shone; Moses and Elijah spoke with him, and the Father's voice said, "This is my beloved Son. Listen to him" (Luke 9:29-35). Glory and obedience belong together.</li>
+            <li>This is a personal application question. Invite members to share where Christ is calling them to daily surrender (Luke 9:23). Encourage honest reflection, point back to Jesus' own path, and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-8.html">← Luke 8</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-10.html">Luke 10 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

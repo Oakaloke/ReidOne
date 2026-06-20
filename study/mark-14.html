@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 14: Poured Out, Betrayed, and Faithful — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 14: A woman anoints Jesus for burial, he shares the Last Supper, prays in agony at Gethsemane, and is betrayed, arrested, and denied, yet remains faithful." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 14
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 14</span>
+        <h1>Mark 14: Poured Out, Betrayed, and Faithful</h1>
+        <p class="lead">A woman anoints Jesus for burial, he shares the Last Supper, prays in agony at Gethsemane, and is betrayed, arrested, and denied, yet remains faithful.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-14">
+            <span>Scripture — Mark Chapter 14</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-14">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-14-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-14-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-14-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-14-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 14 (WEB)</p>
+            <p><strong>1</strong> It was now two days before the feast of the Passover and the unleavened bread, and the chief priests and the scribes sought how they might seize him by deception, and kill him.</p>
+            <p><strong>2</strong> For they said, “Not during the feast, because there might be a riot among the people.”</p>
+            <p><strong>3</strong> While he was at Bethany, in the house of Simon the leper, as he sat at the table, a woman came having an alabaster jar of ointment of pure nard—very costly. She broke the jar, and poured it over his head.</p>
+            <p><strong>4</strong> But there were some who were indignant among themselves, saying, “Why has this ointment been wasted?</p>
+            <p><strong>5</strong> For this might have been sold for more than three hundred denarii, and given to the poor.” They grumbled against her.</p>
+            <p><strong>6</strong> But Jesus said, “Leave her alone. Why do you trouble her? She has done a good work for me.</p>
+            <p><strong>7</strong> For you always have the poor with you, and whenever you want to, you can do them good; but you will not always have me.</p>
+            <p><strong>8</strong> She has done what she could. She has anointed my body beforehand for the burying.</p>
+            <p><strong>9</strong> Most certainly I tell you, wherever this Good News may be preached throughout the whole world, that which this woman has done will also be spoken of for a memorial of her.”</p>
+            <p><strong>10</strong> Judas Iscariot, who was one of the twelve, went away to the chief priests, that he might deliver him to them.</p>
+            <p><strong>11</strong> They, when they heard it, were glad, and promised to give him money. He sought how he might conveniently deliver him.</p>
+            <p><strong>12</strong> On the first day of unleavened bread, when they sacrificed the Passover, his disciples asked him, “Where do you want us to go and prepare that you may eat the Passover?”</p>
+            <p><strong>13</strong> He sent two of his disciples, and said to them, “Go into the city, and there you will meet a man carrying a pitcher of water. Follow him,</p>
+            <p><strong>14</strong> and wherever he enters in, tell the master of the house, ‘The Teacher says, “Where is the guest room, where I may eat the Passover with my disciples?”’</p>
+            <p><strong>15</strong> He will himself show you a large upper room furnished and ready. Get ready for us there.”</p>
+            <p><strong>16</strong> His disciples went out, and came into the city, and found things as he had said to them, and they prepared the Passover.</p>
+            <p><strong>17</strong> When it was evening he came with the twelve.</p>
+            <p><strong>18</strong> As they sat and were eating, Jesus said, “Most certainly I tell you, one of you will betray me—he who eats with me.”</p>
+            <p><strong>19</strong> They began to be sorrowful, and to ask him one by one, “Surely not I?” And another said, “Surely not I?”</p>
+            <p><strong>20</strong> He answered them, “It is one of the twelve, he who dips with me in the dish.</p>
+            <p><strong>21</strong> For the Son of Man goes, even as it is written about him, but woe to that man by whom the Son of Man is betrayed! It would be better for that man if he had not been born.”</p>
+            <p><strong>22</strong> As they were eating, Jesus took bread, and when he had blessed, he broke it, and gave to them, and said, “Take, eat. This is my body.”</p>
+            <p><strong>23</strong> He took the cup, and when he had given thanks, he gave to them. They all drank of it.</p>
+            <p><strong>24</strong> He said to them, “This is my blood of the new covenant, which is poured out for many.</p>
+            <p><strong>25</strong> Most certainly I tell you, I will no more drink of the fruit of the vine, until that day when I drink it anew in God’s Kingdom.”</p>
+            <p><strong>26</strong> When they had sung a hymn, they went out to the Mount of Olives.</p>
+            <p><strong>27</strong> Jesus said to them, “All of you will be made to stumble because of me tonight, for it is written, ‘I will strike the shepherd, and the sheep will be scattered.’</p>
+            <p><strong>28</strong> However, after I am raised up, I will go before you into Galilee.”</p>
+            <p><strong>29</strong> But Peter said to him, “Although all will be offended, yet I will not.”</p>
+            <p><strong>30</strong> Jesus said to him, “Most certainly I tell you, that you today, even this night, before the rooster crows twice, you will deny me three times.”</p>
+            <p><strong>31</strong> But he spoke all the more, “If I must die with you, I will not deny you.” They all said the same thing.</p>
+            <p><strong>32</strong> They came to a place which was named Gethsemane. He said to his disciples, “Sit here, while I pray.”</p>
+            <p><strong>33</strong> He took with him Peter, James, and John, and began to be greatly troubled and distressed.</p>
+            <p><strong>34</strong> He said to them, “My soul is exceedingly sorrowful, even to death. Stay here, and watch.”</p>
+            <p><strong>35</strong> He went forward a little, and fell on the ground, and prayed that, if it were possible, the hour might pass away from him.</p>
+            <p><strong>36</strong> He said, “Abba, Father, all things are possible to you. Please remove this cup from me. However, not what I desire, but what you desire.”</p>
+            <p><strong>37</strong> He came and found them sleeping, and said to Peter, “Simon, are you sleeping? Couldn’t you watch one hour?</p>
+            <p><strong>38</strong> Watch and pray, that you may not enter into temptation. The spirit indeed is willing, but the flesh is weak.”</p>
+            <p><strong>39</strong> Again he went away, and prayed, saying the same words.</p>
+            <p><strong>40</strong> Again he returned, and found them sleeping, for their eyes were very heavy, and they didn’t know what to answer him.</p>
+            <p><strong>41</strong> He came the third time, and said to them, “Sleep on now, and take your rest. It is enough. The hour has come. Behold, the Son of Man is betrayed into the hands of sinners.</p>
+            <p><strong>42</strong> Arise, let us be going. Behold, he who betrays me is at hand.”</p>
+            <p><strong>43</strong> Immediately, while he was still speaking, Judas, one of the twelve, came—and with him a multitude with swords and clubs, from the chief priests, the scribes, and the elders.</p>
+            <p><strong>44</strong> Now he who betrayed him had given them a sign, saying, “Whomever I will kiss, that is he. Seize him, and lead him away safely.”</p>
+            <p><strong>45</strong> When he had come, immediately he came to him, and said, “Rabbi! Rabbi!” and kissed him.</p>
+            <p><strong>46</strong> They laid their hands on him, and seized him.</p>
+            <p><strong>47</strong> But a certain one of those who stood by drew his sword, and struck the servant of the high priest, and cut off his ear.</p>
+            <p><strong>48</strong> Jesus answered them, “Have you come out, as against a robber, with swords and clubs to seize me?</p>
+            <p><strong>49</strong> I was daily with you in the temple teaching, and you didn’t arrest me. But this is so that the Scriptures might be fulfilled.”</p>
+            <p><strong>50</strong> They all left him, and fled.</p>
+            <p><strong>51</strong> A certain young man followed him, having a linen cloth thrown around himself over his naked body. The young men grabbed him,</p>
+            <p><strong>52</strong> but he left the linen cloth, and fled from them naked.</p>
+            <p><strong>53</strong> They led Jesus away to the high priest. All the chief priests, the elders, and the scribes came together with him.</p>
+            <p><strong>54</strong> Peter had followed him from a distance, until he came into the court of the high priest. He was sitting with the officers, and warming himself in the light of the fire.</p>
+            <p><strong>55</strong> Now the chief priests and the whole council sought witnesses against Jesus to put him to death, and found none.</p>
+            <p><strong>56</strong> For many gave false testimony against him, and their testimony didn’t agree with each other.</p>
+            <p><strong>57</strong> Some stood up, and gave false testimony against him, saying,</p>
+            <p><strong>58</strong> “We heard him say, ‘I will destroy this temple that is made with hands, and in three days I will build another made without hands.’”</p>
+            <p><strong>59</strong> Even so, their testimony did not agree.</p>
+            <p><strong>60</strong> The high priest stood up in the middle, and asked Jesus, “Have you no answer? What is it which these testify against you?”</p>
+            <p><strong>61</strong> But he stayed quiet, and answered nothing. Again the high priest asked him, “Are you the Christ, the Son of the Blessed?”</p>
+            <p><strong>62</strong> Jesus said, “I am. You will see the Son of Man sitting at the right hand of Power, and coming with the clouds of the sky.”</p>
+            <p><strong>63</strong> The high priest tore his clothes, and said, “What further need have we of witnesses?</p>
+            <p><strong>64</strong> You have heard the blasphemy! What do you think?” They all condemned him to be worthy of death.</p>
+            <p><strong>65</strong> Some began to spit on him, and to cover his face, and to beat him with fists, and to tell him, “Prophesy!” The officers struck him with the palms of their hands.</p>
+            <p><strong>66</strong> As Peter was in the courtyard below, one of the maids of the high priest came,</p>
+            <p><strong>67</strong> and seeing Peter warming himself, she looked at him, and said, “You were also with the Nazarene, Jesus!”</p>
+            <p><strong>68</strong> But he denied it, saying, “I neither know, nor understand what you are saying.” He went out on the porch, and the rooster crowed.</p>
+            <p><strong>69</strong> The maid saw him, and began again to tell those who stood by, “This is one of them.”</p>
+            <p><strong>70</strong> But he again denied it. After a little while again those who stood by said to Peter, “You truly are one of them, for you are a Galilean, and your speech shows it.”</p>
+            <p><strong>71</strong> But he began to curse, and to swear, “I don’t know this man of whom you speak!”</p>
+            <p><strong>72</strong> The rooster crowed the second time. Peter remembered the word, how that Jesus said to him, “Before the rooster crows twice, you will deny me three times.” When he thought about that, he wept.</p>
+            </div>
+            <div class="scripture-text" id="web-14-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 14 (KJV)</p>
+            <p><strong>1</strong> After two days was the feast of the passover, and of unleavened bread: and the chief priests and the scribes sought how they might take him by craft, and put him to death.</p>
+            <p><strong>2</strong> But they said, Not on the feast day, lest there be an uproar of the people.</p>
+            <p><strong>3</strong> And being in Bethany in the house of Simon the leper, as he sat at meat, there came a woman having an alabaster box of ointment of spikenard very precious; and she brake the box, and poured it on his head.</p>
+            <p><strong>4</strong> And there were some that had indignation within themselves, and said, Why was this waste of the ointment made?</p>
+            <p><strong>5</strong> For it might have been sold for more than three hundred pence, and have been given to the poor. And they murmured against her.</p>
+            <p><strong>6</strong> And Jesus said, Let her alone; why trouble ye her? she hath wrought a good work on me.</p>
+            <p><strong>7</strong> For ye have the poor with you always, and whensoever ye will ye may do them good: but me ye have not always.</p>
+            <p><strong>8</strong> She hath done what she could: she is come aforehand to anoint my body to the burying.</p>
+            <p><strong>9</strong> Verily I say unto you, Wheresoever this gospel shall be preached throughout the whole world, this also that she hath done shall be spoken of for a memorial of her.</p>
+            <p><strong>10</strong> And Judas Iscariot, one of the twelve, went unto the chief priests, to betray him unto them.</p>
+            <p><strong>11</strong> And when they heard it, they were glad, and promised to give him money. And he sought how he might conveniently betray him.</p>
+            <p><strong>12</strong> And the first day of unleavened bread, when they killed the passover, his disciples said unto him, Where wilt thou that we go and prepare that thou mayest eat the passover?</p>
+            <p><strong>13</strong> And he sendeth forth two of his disciples, and saith unto them, Go ye into the city, and there shall meet you a man bearing a pitcher of water: follow him.</p>
+            <p><strong>14</strong> And wheresoever he shall go in, say ye to the goodman of the house, The Master saith, Where is the guestchamber, where I shall eat the passover with my disciples?</p>
+            <p><strong>15</strong> And he will shew you a large upper room furnished and prepared: there make ready for us.</p>
+            <p><strong>16</strong> And his disciples went forth, and came into the city, and found as he had said unto them: and they made ready the passover.</p>
+            <p><strong>17</strong> And in the evening he cometh with the twelve.</p>
+            <p><strong>18</strong> And as they sat and did eat, Jesus said, Verily I say unto you, One of you which eateth with me shall betray me.</p>
+            <p><strong>19</strong> And they began to be sorrowful, and to say unto him one by one, Is it I? and another said, Is it I?</p>
+            <p><strong>20</strong> And he answered and said unto them, It is one of the twelve, that dippeth with me in the dish.</p>
+            <p><strong>21</strong> The Son of man indeed goeth, as it is written of him: but woe to that man by whom the Son of man is betrayed! good were it for that man if he had never been born.</p>
+            <p><strong>22</strong> And as they did eat, Jesus took bread, and blessed, and brake it, and gave to them, and said, Take, eat: this is my body.</p>
+            <p><strong>23</strong> And he took the cup, and when he had given thanks, he gave it to them: and they all drank of it.</p>
+            <p><strong>24</strong> And he said unto them, This is my blood of the new testament, which is shed for many.</p>
+            <p><strong>25</strong> Verily I say unto you, I will drink no more of the fruit of the vine, until that day that I drink it new in the kingdom of God.</p>
+            <p><strong>26</strong> And when they had sung an hymn, they went out into the mount of Olives.</p>
+            <p><strong>27</strong> And Jesus saith unto them, All ye shall be offended because of me this night: for it is written, I will smite the shepherd, and the sheep shall be scattered.</p>
+            <p><strong>28</strong> But after that I am risen, I will go before you into Galilee.</p>
+            <p><strong>29</strong> But Peter said unto him, Although all shall be offended, yet will not I.</p>
+            <p><strong>30</strong> And Jesus saith unto him, Verily I say unto thee, That this day, even in this night, before the cock crow twice, thou shalt deny me thrice.</p>
+            <p><strong>31</strong> But he spake the more vehemently, If I should die with thee, I will not deny thee in any wise. Likewise also said they all.</p>
+            <p><strong>32</strong> And they came to a place which was named Gethsemane: and he saith to his disciples, Sit ye here, while I shall pray.</p>
+            <p><strong>33</strong> And he taketh with him Peter and James and John, and began to be sore amazed, and to be very heavy;</p>
+            <p><strong>34</strong> And saith unto them, My soul is exceeding sorrowful unto death: tarry ye here, and watch.</p>
+            <p><strong>35</strong> And he went forward a little, and fell on the ground, and prayed that, if it were possible, the hour might pass from him.</p>
+            <p><strong>36</strong> And he said, Abba, Father, all things are possible unto thee; take away this cup from me: nevertheless not what I will, but what thou wilt.</p>
+            <p><strong>37</strong> And he cometh, and findeth them sleeping, and saith unto Peter, Simon, sleepest thou? couldest not thou watch one hour?</p>
+            <p><strong>38</strong> Watch ye and pray, lest ye enter into temptation. The spirit truly is ready, but the flesh is weak.</p>
+            <p><strong>39</strong> And again he went away, and prayed, and spake the same words.</p>
+            <p><strong>40</strong> And when he returned, he found them asleep again, (for their eyes were heavy,) neither wist they what to answer him.</p>
+            <p><strong>41</strong> And he cometh the third time, and saith unto them, Sleep on now, and take your rest: it is enough, the hour is come; behold, the Son of man is betrayed into the hands of sinners.</p>
+            <p><strong>42</strong> Rise up, let us go; lo, he that betrayeth me is at hand.</p>
+            <p><strong>43</strong> And immediately, while he yet spake, cometh Judas, one of the twelve, and with him a great multitude with swords and staves, from the chief priest and the scribes and the elders.</p>
+            <p><strong>44</strong> And he that betrayed him had given them a token, saying, Whomsoever I shall kiss, that same is he; take him, and lead him away safely.</p>
+            <p><strong>45</strong> And as soon as he was come, he goeth straightway to him, and saith, Master, master; and kissed him.</p>
+            <p><strong>46</strong> And they laid their hands on him, and took him.</p>
+            <p><strong>47</strong> And one of them that stood by drew a sword, and smote a servant of the high priest, and cut off his ear.</p>
+            <p><strong>48</strong> And Jesus answered and said unto them, Are ye come out, as against a thief, with swords and with staves to take me?</p>
+            <p><strong>49</strong> I was daily with you in the temple teaching, and ye took me not: but the scriptures must be fulfilled.</p>
+            <p><strong>50</strong> And they all forsook him, and fled.</p>
+            <p><strong>51</strong> And there followed him a certain young man, having a linen cloth cast about his naked body; and the young men laid hold on him:</p>
+            <p><strong>52</strong> And he left the linen cloth, and fled from them naked.</p>
+            <p><strong>53</strong> And they led Jesus away to the high priest: and with him were assembled all the chief priests and the elders and the scribes.</p>
+            <p><strong>54</strong> And Peter followed him afar off, even into the palace of the high priest: and he sat with the servants, and warmed himself at the fire.</p>
+            <p><strong>55</strong> And the chief priests and all the council sought for witness against Jesus to put him to death; and found none.</p>
+            <p><strong>56</strong> For many bare false witness against him, but their witness agreed not together.</p>
+            <p><strong>57</strong> And there arose certain, and bare false witness against him, saying,</p>
+            <p><strong>58</strong> We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands.</p>
+            <p><strong>59</strong> But neither so did their witness agree together.</p>
+            <p><strong>60</strong> And the high priest stood up in the midst, and asked Jesus, saying, Answerest thou nothing? what is it which these witness against thee?</p>
+            <p><strong>61</strong> But he held his peace, and answered nothing. Again the high priest asked him, and said unto him, Art thou the Christ, the Son of the Blessed?</p>
+            <p><strong>62</strong> And Jesus said, I am: and ye shall see the Son of man sitting on the right hand of power, and coming in the clouds of heaven.</p>
+            <p><strong>63</strong> Then the high priest rent his clothes, and saith, What need we any further witnesses?</p>
+            <p><strong>64</strong> Ye have heard the blasphemy: what think ye? And they all condemned him to be guilty of death.</p>
+            <p><strong>65</strong> And some began to spit on him, and to cover his face, and to buffet him, and to say unto him, Prophesy: and the servants did strike him with the palms of their hands.</p>
+            <p><strong>66</strong> And as Peter was beneath in the palace, there cometh one of the maids of the high priest:</p>
+            <p><strong>67</strong> And when she saw Peter warming himself, she looked upon him, and said, And thou also wast with Jesus of Nazareth.</p>
+            <p><strong>68</strong> But he denied, saying, I know not, neither understand I what thou sayest. And he went out into the porch; and the cock crew.</p>
+            <p><strong>69</strong> And a maid saw him again, and began to say to them that stood by, This is one of them.</p>
+            <p><strong>70</strong> And he denied it again. And a little after, they that stood by said again to Peter, Surely thou art one of them: for thou art a Galilaean, and thy speech agreeth thereto.</p>
+            <p><strong>71</strong> But he began to curse and to swear, saying, I know not this man of whom ye speak.</p>
+            <p><strong>72</strong> And the second time the cock crew. And Peter called to mind the word that Jesus said unto him, Before the cock crow twice, thou shalt deny me thrice. And when he thought thereon, he wept.</p>
+            </div>
+            <div class="scripture-text" id="web-14-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 14 (ASV)</p>
+            <p><strong>1</strong> Now after two days was [the feast of] the passover and the unleavened bread: and the chief priests and the scribes sought how they might take him with subtlety, and kill him:</p>
+            <p><strong>2</strong> for they said, Not during the feast, lest haply there shall be a tumult of the people.</p>
+            <p><strong>3</strong> And while he was in Bethany in the house of Simon the leper, as he sat at meat, there came a woman having an alabaster cruse of ointment of pure nard very costly; [and] she brake the cruse, and poured it over his head.</p>
+            <p><strong>4</strong> But there were some that had indignation among themselves, [saying], To what purpose hath this waste of the ointment been made?</p>
+            <p><strong>5</strong> For this ointment might have been sold for above three hundred shillings, and given to the poor. And they murmured against her.</p>
+            <p><strong>6</strong> But Jesus said, Let her alone; why trouble ye her? she hath wrought a good work on me.</p>
+            <p><strong>7</strong> For ye have the poor always with you, and whensoever ye will ye can do them good: but me ye have not always.</p>
+            <p><strong>8</strong> She hath done what she could; she hath anointed my body beforehand for the burying.</p>
+            <p><strong>9</strong> And verily I say unto you, Wheresoever the gospel shall be preached throughout the whole world, that also which this woman hath done shall be spoken of for a memorial of her.</p>
+            <p><strong>10</strong> And Judas Iscariot, he that was one of the twelve, went away unto the chief priests, that he might deliver him unto them.</p>
+            <p><strong>11</strong> And they, when they heard it, were glad, and promised to give him money. And he sought how he might conveniently deliver him [unto them].</p>
+            <p><strong>12</strong> And on the first day of unleavened bread, when they sacrificed the passover, his disciples say unto him, Where wilt thou that we go and make ready that thou mayest eat the passover?</p>
+            <p><strong>13</strong> And he sendeth two of his disciples, and saith unto them, Go into the city, and there shall meet you a man bearing a pitcher of water: follow him;</p>
+            <p><strong>14</strong> and wheresoever he shall enter in, say to the master of the house, The Teacher saith, Where is my guest-chamber, where I shall eat the passover with my disciples?</p>
+            <p><strong>15</strong> And he will himself show you a large upper room furnished [and] ready: and there make ready for us.</p>
+            <p><strong>16</strong> And the disciples went forth, and came into the city, and found as he had said unto them: and they made ready the passover.</p>
+            <p><strong>17</strong> And when it was evening he cometh with the twelve.</p>
+            <p><strong>18</strong> And as they sat and were eating, Jesus said, Verily I say unto you, One of you shall betray me, [even] he that eateth with me.</p>
+            <p><strong>19</strong> They began to be sorrowful, and to say unto him one by one, Is it I?</p>
+            <p><strong>20</strong> And he said unto them, [It is] one of the twelve, he that dippeth with me in the dish.</p>
+            <p><strong>21</strong> For the Son of man goeth, even as it is written of him: but woe unto that man through whom the Son of man is betrayed! good were it for that man if he had not been born.</p>
+            <p><strong>22</strong> And as they were eating, he took bread, and when he had blessed, he brake it, and gave to them, and said, Take ye: this is my body.</p>
+            <p><strong>23</strong> And he took a cup, and when he had given thanks, he gave to them: and they all drank of it.</p>
+            <p><strong>24</strong> And he said unto them, This is my blood of the covenant, which is poured out for many.</p>
+            <p><strong>25</strong> Verily I say unto you, I shall no more drink of the fruit of the vine, until that day when I drink it new in the kingdom of God.</p>
+            <p><strong>26</strong> And when they had sung a hymn, they went out unto the mount of Olives.</p>
+            <p><strong>27</strong> And Jesus saith unto them, All ye shall be offended: for it is written, I will smite the shepherd, and the sheep shall be scattered abroad.</p>
+            <p><strong>28</strong> Howbeit, after I am raised up, I will go before you into Galilee.</p>
+            <p><strong>29</strong> But Peter said unto him, Although all shall be offended, yet will not I.</p>
+            <p><strong>30</strong> And Jesus saith unto him, Verily I say unto thee, that thou to-day, [even] this night, before the cock crow twice, shalt deny me thrice.</p>
+            <p><strong>31</strong> But he spake exceedingly vehemently, If I must die with thee, I will not deny thee. And in like manner also said they all.</p>
+            <p><strong>32</strong> And they come unto a place which was named Gethsemane: and he saith unto his disciples, Sit ye here, while I pray.</p>
+            <p><strong>33</strong> And he taketh with him Peter and James and John, and began to be greatly amazed, and sore troubled.</p>
+            <p><strong>34</strong> And he saith unto them, My soul is exceeding sorrowful even unto death: abide ye here, and watch.</p>
+            <p><strong>35</strong> And he went forward a little, and fell on the ground, and prayed that, if it were possible, the hour might pass away from him.</p>
+            <p><strong>36</strong> And he said, Abba, Father, all things are possible unto thee; remove this cup from me: howbeit not what I will, but what thou wilt.</p>
+            <p><strong>37</strong> And he cometh, and findeth them sleeping, and saith unto Peter, Simon, sleepest thou? couldest thou not watch one hour?</p>
+            <p><strong>38</strong> Watch and pray, that ye enter not into temptation: the spirit indeed is willing, but the flesh is weak.</p>
+            <p><strong>39</strong> And again he went away, and prayed, saying the same words.</p>
+            <p><strong>40</strong> And again he came, and found them sleeping, for their eyes were very heavy; and they knew not what to answer him.</p>
+            <p><strong>41</strong> And he cometh the third time, and saith unto them, Sleep on now, and take your rest: it is enough; the hour is come; behold, the Son of man is betrayed into the hands of sinners.</p>
+            <p><strong>42</strong> Arise, let us be going: behold, he that betrayeth me is at hand.</p>
+            <p><strong>43</strong> And straightway, while he yet spake, cometh Judas, one of the twelve, and with him a multitude with swords and staves, from the chief priests and the scribes and the elders.</p>
+            <p><strong>44</strong> Now he that betrayed him had given them a token, saying, Whomsoever I shall kiss, that is he; take him, and lead him away safely.</p>
+            <p><strong>45</strong> And when he was come, straightway he came to him, and saith, Rabbi; and kissed him.</p>
+            <p><strong>46</strong> And they laid hands on him, and took him.</p>
+            <p><strong>47</strong> But a certain one of them that stood by drew his sword, and smote the servant of the high priest, and struck off his ear.</p>
+            <p><strong>48</strong> And Jesus answered and said unto them, Are ye come out, as against a robber, with swords and staves to seize me?</p>
+            <p><strong>49</strong> I was daily with you in the temple teaching, and ye took me not: but [this is done] that the scriptures might be fulfilled.</p>
+            <p><strong>50</strong> And they all left him, and fled.</p>
+            <p><strong>51</strong> And a certain young man followed with him, having a linen cloth cast about him, over [his] naked [body]: and they lay hold on him;</p>
+            <p><strong>52</strong> but he left the linen cloth, and fled naked.</p>
+            <p><strong>53</strong> And they led Jesus away to the high priest: and there come together with him all the chief priests and the elders and the scribes.</p>
+            <p><strong>54</strong> And Peter had followed him afar off, even within, into the court of the high priest; and he was sitting with the officers, and warming himself in the light [of the fire].</p>
+            <p><strong>55</strong> Now the chief priests and the whole council sought witness against Jesus to put him to death; and found it not.</p>
+            <p><strong>56</strong> For many bare false witness against him, and their witness agreed not together.</p>
+            <p><strong>57</strong> And there stood up certain, and bare false witness against him, saying,</p>
+            <p><strong>58</strong> We heard him say, I will destroy this temple that is made with hands, and in three days I will build another made without hands.</p>
+            <p><strong>59</strong> And not even so did their witness agree together.</p>
+            <p><strong>60</strong> And the high priest stood up in the midst, and asked Jesus, saying, Answerest thou nothing? what is it which these witness against thee?</p>
+            <p><strong>61</strong> But he held his peace, and answered nothing. Again the high priest asked him, and saith unto him, Art thou the Christ, the Son of the Blessed?</p>
+            <p><strong>62</strong> And Jesus said, I am: and ye shall see the Son of man sitting at the right hand of Power, and coming with the clouds of heaven.</p>
+            <p><strong>63</strong> And the high priest rent his clothes, and saith, What further need have we of witnesses?</p>
+            <p><strong>64</strong> Ye have heard the blasphemy: what think ye? And they all condemned him to be worthy of death.</p>
+            <p><strong>65</strong> And some began to spit on him, and to cover his face, and to buffet him, and to say unto him, Prophesy: and the officers received him with blows of their hands.</p>
+            <p><strong>66</strong> And as Peter was beneath in the court, there cometh one of the maids of the high priest;</p>
+            <p><strong>67</strong> and seeing Peter warming himself, she looked upon him, and saith, Thou also wast with the Nazarene, [even] Jesus.</p>
+            <p><strong>68</strong> But he denied, saying, I neither know, nor understand what thou sayest: and he went out into the porch; and the cock crew.</p>
+            <p><strong>69</strong> And the maid saw him, and began again to say to them that stood by, This is [one] of them.</p>
+            <p><strong>70</strong> But he again denied it. And after a little while again they that stood by said to Peter, of a truth thou art [one] of them; for thou art a Galilaean.</p>
+            <p><strong>71</strong> But he began to curse, and to swear, I know not this man of whom ye speak.</p>
+            <p><strong>72</strong> And straightway the second time the cock crew. And Peter called to mind the word, how that Jesus said unto him, Before the cock crow twice, thou shalt deny me thrice. And when he thought thereon, he wept.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>As the chief priests plot to kill Jesus, a woman anoints him with costly perfume, and he honors her act as preparing him for burial. Judas agrees to betray him for money. At the Passover meal, Jesus foretells his betrayal, then takes bread and the cup, giving them as his body and his blood of the covenant poured out for many. They sing a hymn and go to the Mount of Olives, where Jesus predicts that all will fall away and Peter will deny him three times. In Gethsemane he prays in deep distress that the cup might pass, yet yields to the Father's will, while the disciples sleep. Judas arrives with a crowd and betrays him with a kiss; Jesus is arrested as the disciples flee. Before the council he is falsely accused and condemned for confessing he is the Christ. Outside, Peter denies him three times, and when the cock crows he breaks down and weeps.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — He institutes the Lord's Supper, prays in surrender at Gethsemane, and is betrayed, arrested, and condemned for confessing he is the Christ.</li>
+          <li><strong>The anointing woman</strong> — She pours costly perfume on Jesus, and he honors her for preparing him for burial.</li>
+          <li><strong>Judas Iscariot</strong> — One of the Twelve who agrees to betray Jesus and hands him over with a kiss.</li>
+          <li><strong>Peter</strong> — The disciple who vows loyalty, sleeps in the garden, and denies Jesus three times before weeping bitterly.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 14:36 (WEB)</p>
+          <p class="verse__text">He said, “Abba, Father, all things are possible to you. Please remove this cup from me. However, not what I desire, but what you desire.”</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Wholehearted love for Jesus may look extravagant to others but is beautiful to him.</li>
+          <li>At the supper Jesus gives himself, his body and blood poured out for many.</li>
+          <li>True surrender prays 'not what I will, but what you will,' trusting the Father even in anguish.</li>
+          <li>Even sincere disciples can fail, yet Jesus remains faithful through betrayal and denial.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-14">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-14">
+            <ul class="lesson-list">
+            <li><strong>Love for Jesus gives its best without counting the cost.</strong> Jesus defends the woman, saying, 'She has done what she could. She has anointed my body beforehand for the burying' (Mark 14:8, WEB).</li>
+            <li><strong>Jesus' blood is the blood of the covenant poured out for many.</strong> He says of the cup, 'This is my blood of the new covenant, which is poured out for many' (Mark 14:24, WEB).</li>
+            <li><strong>True prayer surrenders to the Father's will.</strong> In the garden Jesus prays, 'Not what I desire, but what you desire' (Mark 14:36, WEB), even as he asks that the cup pass.</li>
+            <li><strong>The spirit is willing, but the flesh is weak.</strong> Jesus urges, 'Watch and pray, that you not enter into temptation. The spirit indeed is willing, but the flesh is weak' (Mark 14:38, WEB).</li>
+            <li><strong>Jesus openly confesses that he is the Christ.</strong> When asked if he is the Christ, Jesus answers, 'I am' (Mark 14:62, WEB), accepting the cost of the truth.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-14">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-14">
+            <ol class="study-questions">
+            <li>How does Jesus respond to the woman who anoints him, and what does her act signify?</li>
+            <li>What does Jesus say as he gives the bread and the cup at the supper?</li>
+            <li>How does Jesus pray in Gethsemane, and what does his prayer reveal about surrender?</li>
+            <li>How do Judas and Peter each fail Jesus in this chapter?</li>
+            <li>Where in your own life do you sense the spirit willing but the flesh weak, needing to watch and pray?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-14">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-14">
+            <ol class="study-questions">
+            <li>Jesus defends the woman against those who call it waste, saying she has done a beautiful thing and anointed him beforehand for burial (Mark 14:6-8). Her costly devotion honors him and is told wherever the gospel is preached.</li>
+            <li>Jesus takes bread as his body and the cup as his blood of the covenant poured out for many (14:22-24). He gives himself to his disciples, pointing to the sacrifice he is about to make on the cross.</li>
+            <li>He prays in deep distress that the hour might pass, yet says, 'Not what I desire, but what you desire' (14:36). His surrender shows perfect trust in the Father even in the face of the cup of suffering.</li>
+            <li>Judas betrays Jesus with a kiss for money (14:10-11, 45), and Peter, after vowing loyalty, denies him three times and weeps (14:66-72). Both reveal human weakness, yet only one breaks down in grief.</li>
+            <li>This is a personal application question. Invite members to name where they feel willing yet weak, and encourage watchful prayer and reliance on Christ's grace. As leader, receive their honesty gently and do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="mark-13.html">← Mark 13</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-15.html">Mark 15 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

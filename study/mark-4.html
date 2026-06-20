@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mark 4: Parables and the Calmed Storm — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Mark 4: Jesus teaches the secrets of the kingdom in parables of seed and growth, then stills a storm that leaves his disciples wondering who he truly is." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-mark-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Mark, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="mark.html">← All Chapters</a>
+        <span class="study-meta">The Book of Mark · Chapter 4</span>
+        <h1>Mark 4: Parables and the Calmed Storm</h1>
+        <p class="lead">Jesus teaches the secrets of the kingdom in parables of seed and growth, then stills a storm that leaves his disciples wondering who he truly is.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — Mark Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Mark 4 (WEB)</p>
+            <p><strong>1</strong> Again he began to teach by the seaside. A great multitude was gathered to him, so that he entered into a boat in the sea, and sat down. All the multitude were on the land by the sea.</p>
+            <p><strong>2</strong> He taught them many things in parables, and told them in his teaching,</p>
+            <p><strong>3</strong> “Listen! Behold, the farmer went out to sow,</p>
+            <p><strong>4</strong> and as he sowed, some seed fell by the road, and the birds came and devoured it.</p>
+            <p><strong>5</strong> Others fell on the rocky ground, where it had little soil, and immediately it sprang up, because it had no depth of soil.</p>
+            <p><strong>6</strong> When the sun had risen, it was scorched; and because it had no root, it withered away.</p>
+            <p><strong>7</strong> Others fell among the thorns, and the thorns grew up, and choked it, and it yielded no fruit.</p>
+            <p><strong>8</strong> Others fell into the good ground, and yielded fruit, growing up and increasing. Some produced thirty times, some sixty times, and some one hundred times as much.”</p>
+            <p><strong>9</strong> He said, “Whoever has ears to hear, let him hear.”</p>
+            <p><strong>10</strong> When he was alone, those who were around him with the twelve asked him about the parables.</p>
+            <p><strong>11</strong> He said to them, “To you is given the mystery of God’s Kingdom, but to those who are outside, all things are done in parables,</p>
+            <p><strong>12</strong> that ‘seeing they may see, and not perceive; and hearing they may hear, and not understand; lest perhaps they should turn again, and their sins should be forgiven them.’”</p>
+            <p><strong>13</strong> He said to them, “Don’t you understand this parable? How will you understand all of the parables?</p>
+            <p><strong>14</strong> The farmer sows the word.</p>
+            <p><strong>15</strong> The ones by the road are the ones where the word is sown; and when they have heard, immediately Satan comes, and takes away the word which has been sown in them.</p>
+            <p><strong>16</strong> These in the same way are those who are sown on the rocky places, who, when they have heard the word, immediately receive it with joy.</p>
+            <p><strong>17</strong> They have no root in themselves, but are short-lived. When oppression or persecution arises because of the word, immediately they stumble.</p>
+            <p><strong>18</strong> Others are those who are sown among the thorns. These are those who have heard the word,</p>
+            <p><strong>19</strong> and the cares of this age, and the deceitfulness of riches, and the lusts of other things entering in choke the word, and it becomes unfruitful.</p>
+            <p><strong>20</strong> Those which were sown on the good ground are those who hear the word, and accept it, and bear fruit, some thirty times, some sixty times, and some one hundred times.”</p>
+            <p><strong>21</strong> He said to them, “Is the lamp brought to be put under a basket or under a bed? Isn’t it put on a stand?</p>
+            <p><strong>22</strong> For there is nothing hidden, except that it should be made known; neither was anything made secret, but that it should come to light.</p>
+            <p><strong>23</strong> If any man has ears to hear, let him hear.”</p>
+            <p><strong>24</strong> He said to them, “Take heed what you hear. With whatever measure you measure, it will be measured to you, and more will be given to you who hear.</p>
+            <p><strong>25</strong> For whoever has, to him will more be given, and he who doesn’t have, even that which he has will be taken away from him.”</p>
+            <p><strong>26</strong> He said, “God’s Kingdom is as if a man should cast seed on the earth,</p>
+            <p><strong>27</strong> and should sleep and rise night and day, and the seed should spring up and grow, though he doesn’t know how.</p>
+            <p><strong>28</strong> For the earth bears fruit: first the blade, then the ear, then the full grain in the ear.</p>
+            <p><strong>29</strong> But when the fruit is ripe, immediately he puts in the sickle, because the harvest has come.”</p>
+            <p><strong>30</strong> He said, “How will we liken God’s Kingdom? Or with what parable will we illustrate it?</p>
+            <p><strong>31</strong> It’s like a grain of mustard seed, which, when it is sown in the earth, though it is less than all the seeds that are on the earth,</p>
+            <p><strong>32</strong> yet when it is sown, grows up, and becomes greater than all the herbs, and puts out great branches, so that the birds of the sky can lodge under its shadow.”</p>
+            <p><strong>33</strong> With many such parables he spoke the word to them, as they were able to hear it.</p>
+            <p><strong>34</strong> Without a parable he didn’t speak to them; but privately to his own disciples he explained everything.</p>
+            <p><strong>35</strong> On that day, when evening had come, he said to them, “Let’s go over to the other side.”</p>
+            <p><strong>36</strong> Leaving the multitude, they took him with them, even as he was, in the boat. Other small boats were also with him.</p>
+            <p><strong>37</strong> A big wind storm arose, and the waves beat into the boat, so much that the boat was already filled.</p>
+            <p><strong>38</strong> He himself was in the stern, asleep on the cushion, and they woke him up, and told him, “Teacher, don’t you care that we are dying?”</p>
+            <p><strong>39</strong> He awoke, and rebuked the wind, and said to the sea, “Peace! Be still!” The wind ceased, and there was a great calm.</p>
+            <p><strong>40</strong> He said to them, “Why are you so afraid? How is it that you have no faith?”</p>
+            <p><strong>41</strong> They were greatly afraid, and said to one another, “Who then is this, that even the wind and the sea obey him?”</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Mark 4 (KJV)</p>
+            <p><strong>1</strong> And he began again to teach by the sea side: and there was gathered unto him a great multitude, so that he entered into a ship, and sat in the sea; and the whole multitude was by the sea on the land.</p>
+            <p><strong>2</strong> And he taught them many things by parables, and said unto them in his doctrine,</p>
+            <p><strong>3</strong> Hearken; Behold, there went out a sower to sow:</p>
+            <p><strong>4</strong> And it came to pass, as he sowed, some fell by the way side, and the fowls of the air came and devoured it up.</p>
+            <p><strong>5</strong> And some fell on stony ground, where it had not much earth; and immediately it sprang up, because it had no depth of earth:</p>
+            <p><strong>6</strong> But when the sun was up, it was scorched; and because it had no root, it withered away.</p>
+            <p><strong>7</strong> And some fell among thorns, and the thorns grew up, and choked it, and it yielded no fruit.</p>
+            <p><strong>8</strong> And other fell on good ground, and did yield fruit that sprang up and increased; and brought forth, some thirty, and some sixty, and some an hundred.</p>
+            <p><strong>9</strong> And he said unto them, He that hath ears to hear, let him hear.</p>
+            <p><strong>10</strong> And when he was alone, they that were about him with the twelve asked of him the parable.</p>
+            <p><strong>11</strong> And he said unto them, Unto you it is given to know the mystery of the kingdom of God: but unto them that are without, all these things are done in parables:</p>
+            <p><strong>12</strong> That seeing they may see, and not perceive; and hearing they may hear, and not understand; lest at any time they should be converted, and their sins should be forgiven them.</p>
+            <p><strong>13</strong> And he said unto them, Know ye not this parable? and how then will ye know all parables?</p>
+            <p><strong>14</strong> The sower soweth the word.</p>
+            <p><strong>15</strong> And these are they by the way side, where the word is sown; but when they have heard, Satan cometh immediately, and taketh away the word that was sown in their hearts.</p>
+            <p><strong>16</strong> And these are they likewise which are sown on stony ground; who, when they have heard the word, immediately receive it with gladness;</p>
+            <p><strong>17</strong> And have no root in themselves, and so endure but for a time: afterward, when affliction or persecution ariseth for the word’s sake, immediately they are offended.</p>
+            <p><strong>18</strong> And these are they which are sown among thorns; such as hear the word,</p>
+            <p><strong>19</strong> And the cares of this world, and the deceitfulness of riches, and the lusts of other things entering in, choke the word, and it becometh unfruitful.</p>
+            <p><strong>20</strong> And these are they which are sown on good ground; such as hear the word, and receive it, and bring forth fruit, some thirtyfold, some sixty, and some an hundred.</p>
+            <p><strong>21</strong> And he said unto them, Is a candle brought to be put under a bushel, or under a bed? and not to be set on a candlestick?</p>
+            <p><strong>22</strong> For there is nothing hid, which shall not be manifested; neither was any thing kept secret, but that it should come abroad.</p>
+            <p><strong>23</strong> If any man have ears to hear, let him hear.</p>
+            <p><strong>24</strong> And he said unto them, Take heed what ye hear: with what measure ye mete, it shall be measured to you: and unto you that hear shall more be given.</p>
+            <p><strong>25</strong> For he that hath, to him shall be given: and he that hath not, from him shall be taken even that which he hath.</p>
+            <p><strong>26</strong> And he said, So is the kingdom of God, as if a man should cast seed into the ground;</p>
+            <p><strong>27</strong> And should sleep, and rise night and day, and the seed should spring and grow up, he knoweth not how.</p>
+            <p><strong>28</strong> For the earth bringeth forth fruit of herself; first the blade, then the ear, after that the full corn in the ear.</p>
+            <p><strong>29</strong> But when the fruit is brought forth, immediately he putteth in the sickle, because the harvest is come.</p>
+            <p><strong>30</strong> And he said, Whereunto shall we liken the kingdom of God? or with what comparison shall we compare it?</p>
+            <p><strong>31</strong> It is like a grain of mustard seed, which, when it is sown in the earth, is less than all the seeds that be in the earth:</p>
+            <p><strong>32</strong> But when it is sown, it groweth up, and becometh greater than all herbs, and shooteth out great branches; so that the fowls of the air may lodge under the shadow of it.</p>
+            <p><strong>33</strong> And with many such parables spake he the word unto them, as they were able to hear it.</p>
+            <p><strong>34</strong> But without a parable spake he not unto them: and when they were alone, he expounded all things to his disciples.</p>
+            <p><strong>35</strong> And the same day, when the even was come, he saith unto them, Let us pass over unto the other side.</p>
+            <p><strong>36</strong> And when they had sent away the multitude, they took him even as he was in the ship. And there were also with him other little ships.</p>
+            <p><strong>37</strong> And there arose a great storm of wind, and the waves beat into the ship, so that it was now full.</p>
+            <p><strong>38</strong> And he was in the hinder part of the ship, asleep on a pillow: and they awake him, and say unto him, Master, carest thou not that we perish?</p>
+            <p><strong>39</strong> And he arose, and rebuked the wind, and said unto the sea, Peace, be still. And the wind ceased, and there was a great calm.</p>
+            <p><strong>40</strong> And he said unto them, Why are ye so fearful? how is it that ye have no faith?</p>
+            <p><strong>41</strong> And they feared exceedingly, and said one to another, What manner of man is this, that even the wind and the sea obey him?</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Mark 4 (ASV)</p>
+            <p><strong>1</strong> And again he began to teach by the sea side. And there is gathered unto him a very great multitude, so that he entered into a boat, and sat in the sea; and all the multitude were by the sea on the land.</p>
+            <p><strong>2</strong> And he taught them many things in parables, and said unto them in his teaching,</p>
+            <p><strong>3</strong> Hearken: Behold, the sower went forth to sow:</p>
+            <p><strong>4</strong> and it came to pass, as he sowed, some [seed] fell by the way side, and the birds came and devoured it.</p>
+            <p><strong>5</strong> And other fell on the rocky [ground], where it had not much earth; and straightway it sprang up, because it had no deepness of earth:</p>
+            <p><strong>6</strong> and when the sun was risen, it was scorched; and because it had no root, it withered away.</p>
+            <p><strong>7</strong> And other fell among the thorns, and the thorns grew up, and choked it, and it yielded no fruit.</p>
+            <p><strong>8</strong> And others fell into the good ground, and yielded fruit, growing up and increasing; and brought forth, thirtyfold, and sixtyfold, and a hundredfold.</p>
+            <p><strong>9</strong> And he said, Who hath ears to hear, let him hear.</p>
+            <p><strong>10</strong> And when he was alone, they that were about him with the twelve asked of him the parables.</p>
+            <p><strong>11</strong> And he said unto them, Unto you is given the mystery of the kingdom of God: but unto them that are without, all things are done in parables:</p>
+            <p><strong>12</strong> that seeing they may see, and not perceive; and hearing they may hear, and not understand; lest haply they should turn again, and it should be forgiven them.</p>
+            <p><strong>13</strong> And he saith unto them, Know ye not this parable? and how shall ye know all the parables?</p>
+            <p><strong>14</strong> The sower soweth the word.</p>
+            <p><strong>15</strong> And these are they by the way side, where the word is sown; and when they have heard, straightway cometh Satan, and taketh away the word which hath been sown in them.</p>
+            <p><strong>16</strong> And these in like manner are they that are sown upon the rocky [places], who, when they have heard the word, straightway receive it with joy;</p>
+            <p><strong>17</strong> and they have no root in themselves, but endure for a while; then, when tribulation or persecution ariseth because of the word, straightway they stumble.</p>
+            <p><strong>18</strong> And others are they that are sown among the thorns; these are they that have heard the word,</p>
+            <p><strong>19</strong> and the cares of the world, and the deceitfulness of riches, and the lusts of other things entering in, choke the word, and it becometh unfruitful.</p>
+            <p><strong>20</strong> And those are they that were sown upon the good ground; such as hear the word, and accept it, and bear fruit, thirtyfold, and sixtyfold, and a hundredfold.</p>
+            <p><strong>21</strong> And he said unto them, Is the lamp brought to be put under the bushel, or under the bed, [and] not to be put on the stand?</p>
+            <p><strong>22</strong> For there is nothing hid, save that it should be manifested; neither was [anything] made secret, but that it should come to light.</p>
+            <p><strong>23</strong> If any man hath ears to hear, let him hear.</p>
+            <p><strong>24</strong> And he said unto them, Take heed what ye hear: with what measure ye mete it shall be measured unto you; and more shall be given unto you.</p>
+            <p><strong>25</strong> For he that hath, to him shall be given: and he that hath not, from him shall be taken away even that which he hath.</p>
+            <p><strong>26</strong> And he said, So is the kingdom of God, as if a man should cast seed upon the earth;</p>
+            <p><strong>27</strong> and should sleep and rise night and day, and the seed should spring up and grow, he knoweth not how.</p>
+            <p><strong>28</strong> The earth beareth fruit of herself; first the blade, then the ear, then the full grain in the ear.</p>
+            <p><strong>29</strong> But when the fruit is ripe, straightway he putteth forth the sickle, because the harvest is come.</p>
+            <p><strong>30</strong> And he said, How shall we liken the kingdom of God? or in what parable shall we set it forth?</p>
+            <p><strong>31</strong> It is like a grain of mustard seed, which, when it is sown upon the earth, though it be less than all the seeds that are upon the earth,</p>
+            <p><strong>32</strong> yet when it is sown, groweth up, and becometh greater than all the herbs, and putteth out great branches; so that the birds of the heaven can lodge under the shadow thereof.</p>
+            <p><strong>33</strong> And with many such parables spake he the word unto them, as they were able to hear it;</p>
+            <p><strong>34</strong> and without a parable spake he not unto them: but privately to his own disciples he expounded all things.</p>
+            <p><strong>35</strong> And on that day, when even was come, he saith unto them, Let us go over unto the other side.</p>
+            <p><strong>36</strong> And leaving the multitude, they take him with them, even as he was, in the boat. And other boats were with him.</p>
+            <p><strong>37</strong> And there ariseth a great storm of wind, and the waves beat into the boat, insomuch that the boat was now filling.</p>
+            <p><strong>38</strong> And he himself was in the stern, asleep on the cushion: and they awake him, and say unto him, Teacher, carest thou not that we perish?</p>
+            <p><strong>39</strong> And he awoke, and rebuked the wind, and said unto the sea, Peace, be still. And the wind ceased, and there was a great calm.</p>
+            <p><strong>40</strong> And he said unto them, Why are ye fearful? have ye not yet faith?</p>
+            <p><strong>41</strong> And they feared exceedingly, and said one to another, Who then is this, that even the wind and the sea obey him?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Teaching from a boat to a crowd on the shore, Jesus tells the parable of the sower: seed falls on the path, on rocky ground, among thorns, and on good soil, yielding a great harvest. Privately he explains that the seed is the word, and the soils are the varied hearts that receive it. He adds that a lamp is meant to be set on a stand, that what is hidden will be revealed, and that the measure we use will be measured to us. He likens the kingdom to seed that grows secretly while the farmer sleeps, and to a tiny mustard seed that becomes the greatest of shrubs. That evening they cross the sea, and a fierce storm rises while Jesus sleeps. The terrified disciples wake him, and he rebukes the wind and waves into a great calm, then asks why they have no faith. They are filled with awe, asking who this is that even wind and sea obey him.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The teacher of kingdom parables who calms the storm with a word.</li>
+          <li><strong>The disciples</strong> — Those given the secret of the kingdom, yet still fearful in the storm.</li>
+          <li><strong>The crowds</strong> — The many who gather by the sea to hear Jesus teach in parables.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Mark 4:39 (WEB)</p>
+          <p class="verse__text">He awoke, and rebuked the wind, and said to the sea, “Peace! Be still!” The wind ceased, and there was a great calm.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The same word of God meets very different soils in human hearts.</li>
+          <li>God's kingdom grows quietly and unstoppably from small beginnings.</li>
+          <li>What Jesus teaches in private is meant to come into the light.</li>
+          <li>Jesus' power over wind and sea reveals who he truly is.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>Fruitfulness depends on the soil of the heart.</strong> The seed on good ground are those who 'hear the word, accept it, and bear fruit' thirty, sixty, and a hundredfold (Mark 4:20, WEB).</li>
+            <li><strong>Truth is meant to be revealed, not hidden.</strong> Jesus says a lamp is not put under a basket, 'For there is nothing hidden, except that it should be made known' (Mark 4:21-22, WEB).</li>
+            <li><strong>The kingdom grows by God's hidden power.</strong> The seed sprouts and grows while the farmer sleeps, 'he doesn't know how' (Mark 4:27, WEB).</li>
+            <li><strong>Small beginnings lead to great ends.</strong> The kingdom is like a mustard seed that, though smallest, 'becomes greater than all the herbs' (Mark 4:31-32, WEB).</li>
+            <li><strong>Jesus commands creation itself.</strong> He rebukes the wind and tells the sea, 'Peace! Be still!' and there is a great calm (Mark 4:39, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>What do the four soils in the parable of the sower represent, and how does Jesus explain each?</li>
+            <li>Why does Jesus teach in parables, and what does he say to those given the secret of the kingdom?</li>
+            <li>How do the mustard seed and the secretly growing seed describe the way God's kingdom advances?</li>
+            <li>What does the calming of the storm reveal about Jesus, and how do the disciples respond?</li>
+            <li>Where in your own life do you need Jesus' word of peace to quiet a storm of fear or worry?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>The path is the word snatched away, the rocky ground is shallow joy without root, the thorns are cares and riches that choke, and the good soil hears and bears fruit (Mark 4:15-20). The varied responses warn us to receive the word deeply.</li>
+            <li>Jesus teaches in parables so that the kingdom's truth is revealed to those who truly seek (Mark 4:11). To his disciples he explains plainly, urging them to take heed how they hear (Mark 4:24).</li>
+            <li>The mustard seed shows great growth from the smallest start, and the secretly growing seed shows that God brings the harvest while we cannot see how (Mark 4:27, 31-32). The kingdom advances by God's quiet, certain power.</li>
+            <li>Jesus stills the wind and sea with a word, then asks why they are so afraid and have no faith (Mark 4:39-40). The disciples are filled with awe, asking who this is, recognizing power that belongs to God alone.</li>
+            <li>This is a personal application question. Invite members to name a fear they need to bring to Jesus. As leader, encourage honest sharing and remind the group that Christ is present even when he seems asleep, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="mark-3.html">← Mark 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="mark.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="mark-5.html">Mark 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

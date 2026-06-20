@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 2: A Savior Is Born — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 2: The eternal Son enters the world in a manger, announced to shepherds and welcomed by the faithful, growing in wisdom as God&#x27;s promised salvation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 2</span>
+        <h1>Luke 2: A Savior Is Born</h1>
+        <p class="lead">The eternal Son enters the world in a manger, announced to shepherds and welcomed by the faithful, growing in wisdom as God's promised salvation.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Luke Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 2 (WEB)</p>
+            <p><strong>1</strong> Now in those days, a decree went out from Caesar Augustus that all the world should be enrolled.</p>
+            <p><strong>2</strong> This was the first enrollment made when Quirinius was governor of Syria.</p>
+            <p><strong>3</strong> All went to enroll themselves, everyone to his own city.</p>
+            <p><strong>4</strong> Joseph also went up from Galilee, out of the city of Nazareth, into Judea, to David’s city, which is called Bethlehem, because he was of the house and family of David;</p>
+            <p><strong>5</strong> to enroll himself with Mary, who was pledged to be married to him as wife, being pregnant.</p>
+            <p><strong>6</strong> While they were there, the day had come for her to give birth.</p>
+            <p><strong>7</strong> She gave birth to her firstborn son. She wrapped him in bands of cloth, and laid him in a feeding trough, because there was no room for them in the inn.</p>
+            <p><strong>8</strong> There were shepherds in the same country staying in the field, and keeping watch by night over their flock.</p>
+            <p><strong>9</strong> Behold, an angel of the Lord stood by them, and the glory of the Lord shone around them, and they were terrified.</p>
+            <p><strong>10</strong> The angel said to them, “Don’t be afraid, for behold, I bring you good news of great joy which will be to all the people.</p>
+            <p><strong>11</strong> For there is born to you today, in David’s city, a Savior, who is Christ the Lord.</p>
+            <p><strong>12</strong> This is the sign to you: you will find a baby wrapped in strips of cloth, lying in a feeding trough.”</p>
+            <p><strong>13</strong> Suddenly, there was with the angel a multitude of the heavenly army praising God, and saying,</p>
+            <p><strong>14</strong> “Glory to God in the highest, on earth peace, good will toward men.”</p>
+            <p><strong>15</strong> When the angels went away from them into the sky, the shepherds said to one another, “Let’s go to Bethlehem, now, and see this thing that has happened, which the Lord has made known to us.”</p>
+            <p><strong>16</strong> They came with haste, and found both Mary and Joseph, and the baby was lying in the feeding trough.</p>
+            <p><strong>17</strong> When they saw it, they publicized widely the saying which was spoken to them about this child.</p>
+            <p><strong>18</strong> All who heard it wondered at the things which were spoken to them by the shepherds.</p>
+            <p><strong>19</strong> But Mary kept all these sayings, pondering them in her heart.</p>
+            <p><strong>20</strong> The shepherds returned, glorifying and praising God for all the things that they had heard and seen, just as it was told them.</p>
+            <p><strong>21</strong> When eight days were fulfilled for the circumcision of the child, his name was called Jesus, which was given by the angel before he was conceived in the womb.</p>
+            <p><strong>22</strong> When the days of their purification according to the law of Moses were fulfilled, they brought him up to Jerusalem, to present him to the Lord</p>
+            <p><strong>23</strong> (as it is written in the law of the Lord, “Every male who opens the womb shall be called holy to the Lord”),</p>
+            <p><strong>24</strong> and to offer a sacrifice according to that which is said in the law of the Lord, “A pair of turtledoves, or two young pigeons.”</p>
+            <p><strong>25</strong> Behold, there was a man in Jerusalem whose name was Simeon. This man was righteous and devout, looking for the consolation of Israel, and the Holy Spirit was on him.</p>
+            <p><strong>26</strong> It had been revealed to him by the Holy Spirit that he should not see death before he had seen the Lord’s Christ.</p>
+            <p><strong>27</strong> He came in the Spirit into the temple. When the parents brought in the child, Jesus, that they might do concerning him according to the custom of the law,</p>
+            <p><strong>28</strong> then he received him into his arms, and blessed God, and said,</p>
+            <p><strong>29</strong> “Now you are releasing your servant, Master, according to your word, in peace;</p>
+            <p><strong>30</strong> for my eyes have seen your salvation,</p>
+            <p><strong>31</strong> which you have prepared before the face of all peoples;</p>
+            <p><strong>32</strong> a light for revelation to the nations, and the glory of your people Israel.”</p>
+            <p><strong>33</strong> Joseph and his mother were marveling at the things which were spoken concerning him,</p>
+            <p><strong>34</strong> and Simeon blessed them, and said to Mary, his mother, “Behold, this child is set for the falling and the rising of many in Israel, and for a sign which is spoken against.</p>
+            <p><strong>35</strong> Yes, a sword will pierce through your own soul, that the thoughts of many hearts may be revealed.”</p>
+            <p><strong>36</strong> There was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Asher (she was of a great age, having lived with a husband seven years from her virginity,</p>
+            <p><strong>37</strong> and she had been a widow for about eighty-four years), who didn’t depart from the temple, worshiping with fastings and petitions night and day.</p>
+            <p><strong>38</strong> Coming up at that very hour, she gave thanks to the Lord, and spoke of him to all those who were looking for redemption in Jerusalem.</p>
+            <p><strong>39</strong> When they had accomplished all things that were according to the law of the Lord, they returned into Galilee, to their own city, Nazareth.</p>
+            <p><strong>40</strong> The child was growing, and was becoming strong in spirit, being filled with wisdom, and the grace of God was upon him.</p>
+            <p><strong>41</strong> His parents went every year to Jerusalem at the feast of the Passover.</p>
+            <p><strong>42</strong> When he was twelve years old, they went up to Jerusalem according to the custom of the feast,</p>
+            <p><strong>43</strong> and when they had fulfilled the days, as they were returning, the boy Jesus stayed behind in Jerusalem. Joseph and his mother didn’t know it,</p>
+            <p><strong>44</strong> but supposing him to be in the company, they went a day’s journey, and they looked for him among their relatives and acquaintances.</p>
+            <p><strong>45</strong> When they didn’t find him, they returned to Jerusalem, looking for him.</p>
+            <p><strong>46</strong> After three days they found him in the temple, sitting in the middle of the teachers, both listening to them, and asking them questions.</p>
+            <p><strong>47</strong> All who heard him were amazed at his understanding and his answers.</p>
+            <p><strong>48</strong> When they saw him, they were astonished, and his mother said to him, “Son, why have you treated us this way? Behold, your father and I were anxiously looking for you.”</p>
+            <p><strong>49</strong> He said to them, “Why were you looking for me? Didn’t you know that I must be in my Father’s house?”</p>
+            <p><strong>50</strong> They didn’t understand the saying which he spoke to them.</p>
+            <p><strong>51</strong> And he went down with them, and came to Nazareth. He was subject to them, and his mother kept all these sayings in her heart.</p>
+            <p><strong>52</strong> And Jesus increased in wisdom and stature, and in favor with God and men.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 2 (KJV)</p>
+            <p><strong>1</strong> And it came to pass in those days, that there went out a decree from Caesar Augustus, that all the world should be taxed.</p>
+            <p><strong>2</strong> (And this taxing was first made when Cyrenius was governor of Syria.)</p>
+            <p><strong>3</strong> And all went to be taxed, every one into his own city.</p>
+            <p><strong>4</strong> And Joseph also went up from Galilee, out of the city of Nazareth, into Judaea, unto the city of David, which is called Bethlehem; (because he was of the house and lineage of David:)</p>
+            <p><strong>5</strong> To be taxed with Mary his espoused wife, being great with child.</p>
+            <p><strong>6</strong> And so it was, that, while they were there, the days were accomplished that she should be delivered.</p>
+            <p><strong>7</strong> And she brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn.</p>
+            <p><strong>8</strong> And there were in the same country shepherds abiding in the field, keeping watch over their flock by night.</p>
+            <p><strong>9</strong> And, lo, the angel of the Lord came upon them, and the glory of the Lord shone round about them: and they were sore afraid.</p>
+            <p><strong>10</strong> And the angel said unto them, Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people.</p>
+            <p><strong>11</strong> For unto you is born this day in the city of David a Saviour, which is Christ the Lord.</p>
+            <p><strong>12</strong> And this shall be a sign unto you; Ye shall find the babe wrapped in swaddling clothes, lying in a manger.</p>
+            <p><strong>13</strong> And suddenly there was with the angel a multitude of the heavenly host praising God, and saying,</p>
+            <p><strong>14</strong> Glory to God in the highest, and on earth peace, good will toward men.</p>
+            <p><strong>15</strong> And it came to pass, as the angels were gone away from them into heaven, the shepherds said one to another, Let us now go even unto Bethlehem, and see this thing which is come to pass, which the Lord hath made known unto us.</p>
+            <p><strong>16</strong> And they came with haste, and found Mary, and Joseph, and the babe lying in a manger.</p>
+            <p><strong>17</strong> And when they had seen it, they made known abroad the saying which was told them concerning this child.</p>
+            <p><strong>18</strong> And all they that heard it wondered at those things which were told them by the shepherds.</p>
+            <p><strong>19</strong> But Mary kept all these things, and pondered them in her heart.</p>
+            <p><strong>20</strong> And the shepherds returned, glorifying and praising God for all the things that they had heard and seen, as it was told unto them.</p>
+            <p><strong>21</strong> And when eight days were accomplished for the circumcising of the child, his name was called JESUS, which was so named of the angel before he was conceived in the womb.</p>
+            <p><strong>22</strong> And when the days of her purification according to the law of Moses were accomplished, they brought him to Jerusalem, to present him to the Lord;</p>
+            <p><strong>23</strong> (As it is written in the law of the Lord, Every male that openeth the womb shall be called holy to the Lord;)</p>
+            <p><strong>24</strong> And to offer a sacrifice according to that which is said in the law of the Lord, A pair of turtledoves, or two young pigeons.</p>
+            <p><strong>25</strong> And, behold, there was a man in Jerusalem, whose name was Simeon; and the same man was just and devout, waiting for the consolation of Israel: and the Holy Ghost was upon him.</p>
+            <p><strong>26</strong> And it was revealed unto him by the Holy Ghost, that he should not see death, before he had seen the Lord’s Christ.</p>
+            <p><strong>27</strong> And he came by the Spirit into the temple: and when the parents brought in the child Jesus, to do for him after the custom of the law,</p>
+            <p><strong>28</strong> Then took he him up in his arms, and blessed God, and said,</p>
+            <p><strong>29</strong> Lord, now lettest thou thy servant depart in peace, according to thy word:</p>
+            <p><strong>30</strong> For mine eyes have seen thy salvation,</p>
+            <p><strong>31</strong> Which thou hast prepared before the face of all people;</p>
+            <p><strong>32</strong> A light to lighten the Gentiles, and the glory of thy people Israel.</p>
+            <p><strong>33</strong> And Joseph and his mother marvelled at those things which were spoken of him.</p>
+            <p><strong>34</strong> And Simeon blessed them, and said unto Mary his mother, Behold, this child is set for the fall and rising again of many in Israel; and for a sign which shall be spoken against;</p>
+            <p><strong>35</strong> (Yea, a sword shall pierce through thy own soul also,) that the thoughts of many hearts may be revealed.</p>
+            <p><strong>36</strong> And there was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Aser: she was of a great age, and had lived with an husband seven years from her virginity;</p>
+            <p><strong>37</strong> And she was a widow of about fourscore and four years, which departed not from the temple, but served God with fastings and prayers night and day.</p>
+            <p><strong>38</strong> And she coming in that instant gave thanks likewise unto the Lord, and spake of him to all them that looked for redemption in Jerusalem.</p>
+            <p><strong>39</strong> And when they had performed all things according to the law of the Lord, they returned into Galilee, to their own city Nazareth.</p>
+            <p><strong>40</strong> And the child grew, and waxed strong in spirit, filled with wisdom: and the grace of God was upon him.</p>
+            <p><strong>41</strong> Now his parents went to Jerusalem every year at the feast of the passover.</p>
+            <p><strong>42</strong> And when he was twelve years old, they went up to Jerusalem after the custom of the feast.</p>
+            <p><strong>43</strong> And when they had fulfilled the days, as they returned, the child Jesus tarried behind in Jerusalem; and Joseph and his mother knew not of it.</p>
+            <p><strong>44</strong> But they, supposing him to have been in the company, went a day’s journey; and they sought him among their kinsfolk and acquaintance.</p>
+            <p><strong>45</strong> And when they found him not, they turned back again to Jerusalem, seeking him.</p>
+            <p><strong>46</strong> And it came to pass, that after three days they found him in the temple, sitting in the midst of the doctors, both hearing them, and asking them questions.</p>
+            <p><strong>47</strong> And all that heard him were astonished at his understanding and answers.</p>
+            <p><strong>48</strong> And when they saw him, they were amazed: and his mother said unto him, Son, why hast thou thus dealt with us? behold, thy father and I have sought thee sorrowing.</p>
+            <p><strong>49</strong> And he said unto them, How is it that ye sought me? wist ye not that I must be about my Father’s business?</p>
+            <p><strong>50</strong> And they understood not the saying which he spake unto them.</p>
+            <p><strong>51</strong> And he went down with them, and came to Nazareth, and was subject unto them: but his mother kept all these sayings in her heart.</p>
+            <p><strong>52</strong> And Jesus increased in wisdom and stature, and in favour with God and man.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 2 (ASV)</p>
+            <p><strong>1</strong> Now it came to pass in those days, there went out a decree from Caesar Augustus, that all the world should be enrolled.</p>
+            <p><strong>2</strong> This was the first enrolment made when Quirinius was governor of Syria.</p>
+            <p><strong>3</strong> And all went to enrol themselves, every one to his own city.</p>
+            <p><strong>4</strong> And Joseph also went up from Galilee, out of the city of Nazareth, into Judaea, to the city of David, which is called Bethlehem, because he was of the house and family of David;</p>
+            <p><strong>5</strong> to enrol himself with Mary, who was betrothed to him, being great with child.</p>
+            <p><strong>6</strong> And it came to pass, while they were there, the days were fulfilled that she should be delivered.</p>
+            <p><strong>7</strong> And she brought forth her firstborn son; and she wrapped him in swaddling clothes, and laid him in a manger, because there was no room for them in the inn.</p>
+            <p><strong>8</strong> And there were shepherds in the same country abiding in the field, and keeping watch by night over their flock.</p>
+            <p><strong>9</strong> And an angel of the Lord stood by them, and the glory of the Lord shone round about them: and they were sore afraid.</p>
+            <p><strong>10</strong> And the angel said unto them, Be not afraid; for behold, I bring you good tidings of great joy which shall be to all the people:</p>
+            <p><strong>11</strong> for there is born to you this day in the city of David a Saviour, who is Christ the Lord.</p>
+            <p><strong>12</strong> And this [is] the sign unto you: Ye shall find a babe wrapped in swaddling clothes, and lying in a manger.</p>
+            <p><strong>13</strong> And suddenly there was with the angel a multitude of the heavenly host praising God, and saying,</p>
+            <p><strong>14</strong> Glory to God in the highest, And on earth peace among men in whom he is well pleased.</p>
+            <p><strong>15</strong> And it came to pass, when the angels went away from them into heaven, the shepherds said one to another, Let us now go even unto Bethlehem, and see this thing that is come to pass, which the Lord hath made known unto us.</p>
+            <p><strong>16</strong> And they came with haste, and found both Mary and Joseph, and the babe lying in the manger.</p>
+            <p><strong>17</strong> And when they saw it, they made known concerning the saying which was spoken to them about this child.</p>
+            <p><strong>18</strong> And all that heard it wondered at the things which were spoken unto them by the shepherds.</p>
+            <p><strong>19</strong> But Mary kept all these sayings, pondering them in her heart.</p>
+            <p><strong>20</strong> And the shepherds returned, glorifying and praising God for all the things that they had heard and seen, even as it was spoken unto them.</p>
+            <p><strong>21</strong> And when eight days were fulfilled for circumcising him, his name was called JESUS, which was so called by the angel before he was conceived in the womb.</p>
+            <p><strong>22</strong> And when the days of their purification according to the law of Moses were fulfilled, they brought him up to Jerusalem, to present him to the Lord</p>
+            <p><strong>23</strong> (as it is written in the law of the Lord, Every male that openeth the womb shall be called holy to the Lord),</p>
+            <p><strong>24</strong> and to offer a sacrifice according to that which is said in the law of the Lord, A pair of turtledoves, or two young pigeons.</p>
+            <p><strong>25</strong> And behold, there was a man in Jerusalem whose name was Simeon; and this man was righteous and devout, looking for the consolation of Israel: and the Holy Spirit was upon him.</p>
+            <p><strong>26</strong> And it had been revealed unto him by the Holy Spirit, that he should not see death, before he had seen the Lord`s Christ.</p>
+            <p><strong>27</strong> And he came in the Spirit into the temple: and when the parents brought in the child Jesus, that they might do concerning him after the custom of the law,</p>
+            <p><strong>28</strong> then he received him into his arms, and blessed God, and said,</p>
+            <p><strong>29</strong> Now lettest thou thy servant depart, Lord, According to thy word, in peace;</p>
+            <p><strong>30</strong> For mine eyes have seen thy salvation,</p>
+            <p><strong>31</strong> Which thou hast prepared before the face of all peoples;</p>
+            <p><strong>32</strong> A light for revelation to the Gentiles, And the glory of thy people Israel.</p>
+            <p><strong>33</strong> And his father and his mother were marvelling at the things which were spoken concerning him;</p>
+            <p><strong>34</strong> and Simeon blessed them, and said unto Mary his mother, Behold, this [child] is set for the falling and the rising of many in Israel; and for a sign which is spoken against;</p>
+            <p><strong>35</strong> yea and a sword shall pierce through thine own soul; that thoughts out of many hearts may be revealed.</p>
+            <p><strong>36</strong> And there was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Asher (she was of a great age, having lived with a husband seven years from her virginity,</p>
+            <p><strong>37</strong> and she had been a widow even unto fourscore and four years), who departed not from the temple, worshipping with fastings and supplications night and day.</p>
+            <p><strong>38</strong> And coming up at that very hour she gave thanks unto God, and spake of him to all them that were looking for the redemption of Jerusalem.</p>
+            <p><strong>39</strong> And when they had accomplished all things that were according to the law of the Lord, they returned into Galilee, to their own city Nazareth.</p>
+            <p><strong>40</strong> And the child grew, and waxed strong, filled with wisdom: and the grace of God was upon him.</p>
+            <p><strong>41</strong> And his parents went every year to Jerusalem at the feast of the passover.</p>
+            <p><strong>42</strong> And when he was twelve years old, they went up after the custom of the feast;</p>
+            <p><strong>43</strong> and when they had fulfilled the days, as they were returning, the boy Jesus tarried behind in Jerusalem; and his parents knew it not;</p>
+            <p><strong>44</strong> but supposing him to be in the company, they went a day`s journey; and they sought for him among their kinsfolk and acquaintance:</p>
+            <p><strong>45</strong> and when they found him not, they returned to Jerusalem, seeking for him.</p>
+            <p><strong>46</strong> And it came to pass, after three days they found him in the temple, sitting in the midst of the teachers, both hearing them, and asking them questions:</p>
+            <p><strong>47</strong> and all that heard him were amazed at his understanding and his answers.</p>
+            <p><strong>48</strong> And when they saw him, they were astonished; and his mother said unto him, Son, why hast thou thus dealt with us? behold, thy father and I sought thee sorrowing.</p>
+            <p><strong>49</strong> And he said unto them, How is it that ye sought me? knew ye not that I must be in my Father`s house?</p>
+            <p><strong>50</strong> And they understood not the saying which he spake unto them.</p>
+            <p><strong>51</strong> And he went down with them, and came to Nazareth; and he was subject unto them: and his mother kept all [these] sayings in her heart.</p>
+            <p><strong>52</strong> And Jesus advanced in wisdom and stature, and in favor with God and men.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>A decree from Caesar Augustus sends Joseph and Mary to Bethlehem, where Mary gives birth to her firstborn son and lays him in a manger, for there is no room in the inn. Angels announce the birth to shepherds keeping watch, declaring good news of great joy: a Savior, Christ the Lord, has been born. The shepherds hurry to find the child and spread the word, glorifying God. On the eighth day he is named Jesus and later presented at the temple, where the devout Simeon takes him in his arms and blesses God, calling him a light to the nations, and the prophetess Anna gives thanks. The family returns to Nazareth, where Jesus grows. At twelve he stays behind in Jerusalem, found in the temple amazing the teachers, telling his parents he must be about his Father's business, then returns and grows in wisdom and favor.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The newborn Savior, Christ the Lord, who grows in wisdom and stature and favor.</li>
+          <li><strong>Mary</strong> — Jesus' mother who gives birth in Bethlehem and treasures these things in her heart.</li>
+          <li><strong>The shepherds</strong> — Watchmen who hear the angels' good news and go to find and proclaim the Christ.</li>
+          <li><strong>Simeon</strong> — A righteous, devout man who blesses God upon seeing the Lord's salvation in the child.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 2:11 (WEB)</p>
+          <p class="verse__text">For there is born to you today, in David’s city, a Savior, who is Christ the Lord.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God's salvation arrives in humility, born among the poor and lowly.</li>
+          <li>The good news of great joy is announced first to ordinary shepherds.</li>
+          <li>Jesus is both the comfort of Israel and a light for all the nations.</li>
+          <li>Even as a child, Jesus is devoted to his Father's purposes.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>The Savior enters the world in lowliness.</strong> Mary 'wrapped him in bands of cloth, and laid him in a feeding trough, because there was no room for them in the inn' (Luke 2:7, WEB).</li>
+            <li><strong>Christ's birth is good news of great joy for all people.</strong> The angel proclaims, 'there is born to you today, in David's city, a Savior, who is Christ the Lord' (Luke 2:11, WEB).</li>
+            <li><strong>Encountering Christ moves us to worship and proclaim.</strong> The shepherds return 'glorifying and praising God for all the things that they had heard and seen' (Luke 2:20, WEB).</li>
+            <li><strong>Jesus is salvation prepared for every nation.</strong> Simeon blesses God for 'a light for revelation to the nations, and the glory of your people Israel' (Luke 2:32, WEB).</li>
+            <li><strong>Jesus grew in true and full humanity.</strong> The boy Jesus 'advanced in wisdom and stature, and in favor with God and men' (Luke 2:52, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>What circumstances surround Jesus' birth, and how do they reflect God's humility?</li>
+            <li>How do the angels describe the newborn child to the shepherds, and how do the shepherds respond?</li>
+            <li>What does Simeon declare about the child Jesus when he takes him in his arms?</li>
+            <li>What does the twelve-year-old Jesus say in the temple, and what does it reveal about him?</li>
+            <li>Where in your own life do you need to slow down and treasure what God has done, as Mary did?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>Born during a census far from home, Jesus is laid in a manger because there is no room in the inn (Luke 2:6-7). The King of glory enters the world in poverty and obscurity, showing that God comes near to the humble.</li>
+            <li>The angel announces a Savior, Christ the Lord, with a sign of a baby in a manger, and a host praises God (Luke 2:10-14). The shepherds go with haste, find the child, and spread the word, glorifying God (Luke 2:16-20).</li>
+            <li>Simeon blesses God, saying his eyes have seen God's salvation, a light to the nations and glory to Israel, and warns Mary that this child is set for the rise and fall of many and that a sword will pierce her soul (Luke 2:29-35).</li>
+            <li>Found among the teachers, Jesus answers his parents, 'Didn't you know that I must be in my Father's house?' (Luke 2:49). Even as a boy he knows his unique relationship to God and his devotion to the Father's purposes.</li>
+            <li>This is a personal application question. Invite members to consider where life's hurry crowds out wonder at God's work. As leader, encourage the practice of treasuring and pondering as Mary did (Luke 2:19), but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-1.html">← Luke 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-3.html">Luke 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

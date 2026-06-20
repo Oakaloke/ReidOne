@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>John 11: I Am the Resurrection and the Life — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of John 11: When his friend Lazarus dies, Jesus declares himself the resurrection and the life, weeps with the grieving, and calls the dead man out of the tomb." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-john-progress" data-study-total="21">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of John, Chapter 11
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="john.html">← All Chapters</a>
+        <span class="study-meta">The Book of John · Chapter 11</span>
+        <h1>John 11: I Am the Resurrection and the Life</h1>
+        <p class="lead">When his friend Lazarus dies, Jesus declares himself the resurrection and the life, weeps with the grieving, and calls the dead man out of the tomb.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-11">
+            <span>Scripture — John Chapter 11</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-11">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-11-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-11-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-11-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-11-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">John 11 (WEB)</p>
+            <p><strong>1</strong> Now a certain man was sick, Lazarus from Bethany, of the village of Mary and her sister, Martha.</p>
+            <p><strong>2</strong> It was that Mary who had anointed the Lord with ointment, and wiped his feet with her hair, whose brother, Lazarus, was sick.</p>
+            <p><strong>3</strong> The sisters therefore sent to him, saying, “Lord, behold, he for whom you have great affection is sick.”</p>
+            <p><strong>4</strong> But when Jesus heard it, he said, “This sickness is not to death, but for the glory of God, that God’s Son may be glorified by it.”</p>
+            <p><strong>5</strong> Now Jesus loved Martha, and her sister, and Lazarus.</p>
+            <p><strong>6</strong> When therefore he heard that he was sick, he stayed two days in the place where he was.</p>
+            <p><strong>7</strong> Then after this he said to the disciples, “Let’s go into Judea again.”</p>
+            <p><strong>8</strong> The disciples told him, “Rabbi, the Jews were just trying to stone you, and are you going there again?”</p>
+            <p><strong>9</strong> Jesus answered, “Aren’t there twelve hours of daylight? If a man walks in the day, he doesn’t stumble, because he sees the light of this world.</p>
+            <p><strong>10</strong> But if a man walks in the night, he stumbles, because the light isn’t in him.”</p>
+            <p><strong>11</strong> He said these things, and after that, he said to them, “Our friend, Lazarus, has fallen asleep, but I am going so that I may awake him out of sleep.”</p>
+            <p><strong>12</strong> The disciples therefore said, “Lord, if he has fallen asleep, he will recover.”</p>
+            <p><strong>13</strong> Now Jesus had spoken of his death, but they thought that he spoke of taking rest in sleep.</p>
+            <p><strong>14</strong> So Jesus said to them plainly then, “Lazarus is dead.</p>
+            <p><strong>15</strong> I am glad for your sakes that I was not there, so that you may believe. Nevertheless, let’s go to him.”</p>
+            <p><strong>16</strong> Thomas therefore, who is called Didymus, said to his fellow disciples, “Let’s go also, that we may die with him.”</p>
+            <p><strong>17</strong> So when Jesus came, he found that he had been in the tomb four days already.</p>
+            <p><strong>18</strong> Now Bethany was near Jerusalem, about fifteen stadia away.</p>
+            <p><strong>19</strong> Many of the Jews had joined the women around Martha and Mary, to console them concerning their brother.</p>
+            <p><strong>20</strong> Then when Martha heard that Jesus was coming, she went and met him, but Mary stayed in the house.</p>
+            <p><strong>21</strong> Therefore Martha said to Jesus, “Lord, if you would have been here, my brother wouldn’t have died.</p>
+            <p><strong>22</strong> Even now I know that, whatever you ask of God, God will give you.”</p>
+            <p><strong>23</strong> Jesus said to her, “Your brother will rise again.”</p>
+            <p><strong>24</strong> Martha said to him, “I know that he will rise again in the resurrection at the last day.”</p>
+            <p><strong>25</strong> Jesus said to her, “I am the resurrection and the life. He who believes in me will still live, even if he dies.</p>
+            <p><strong>26</strong> Whoever lives and believes in me will never die. Do you believe this?”</p>
+            <p><strong>27</strong> She said to him, “Yes, Lord. I have come to believe that you are the Christ, God’s Son, he who comes into the world.”</p>
+            <p><strong>28</strong> When she had said this, she went away, and called Mary, her sister, secretly, saying, “The Teacher is here, and is calling you.”</p>
+            <p><strong>29</strong> When she heard this, she arose quickly, and went to him.</p>
+            <p><strong>30</strong> Now Jesus had not yet come into the village, but was in the place where Martha met him.</p>
+            <p><strong>31</strong> Then the Jews who were with her in the house, and were consoling her, when they saw Mary, that she rose up quickly and went out, followed her, saying, “She is going to the tomb to weep there.”</p>
+            <p><strong>32</strong> Therefore when Mary came to where Jesus was, and saw him, she fell down at his feet, saying to him, “Lord, if you would have been here, my brother wouldn’t have died.”</p>
+            <p><strong>33</strong> When Jesus therefore saw her weeping, and the Jews weeping who came with her, he groaned in the spirit, and was troubled,</p>
+            <p><strong>34</strong> and said, “Where have you laid him?” They told him, “Lord, come and see.”</p>
+            <p><strong>35</strong> Jesus wept.</p>
+            <p><strong>36</strong> The Jews therefore said, “See how much affection he had for him!”</p>
+            <p><strong>37</strong> Some of them said, “Couldn’t this man, who opened the eyes of him who was blind, have also kept this man from dying?”</p>
+            <p><strong>38</strong> Jesus therefore, again groaning in himself, came to the tomb. Now it was a cave, and a stone lay against it.</p>
+            <p><strong>39</strong> Jesus said, “Take away the stone.” Martha, the sister of him who was dead, said to him, “Lord, by this time there is a stench, for he has been dead four days.”</p>
+            <p><strong>40</strong> Jesus said to her, “Didn’t I tell you that if you believed, you would see God’s glory?”</p>
+            <p><strong>41</strong> So they took away the stone from the place where the dead man was lying. Jesus lifted up his eyes, and said, “Father, I thank you that you listened to me.</p>
+            <p><strong>42</strong> I know that you always listen to me, but because of the multitude standing around I said this, that they may believe that you sent me.”</p>
+            <p><strong>43</strong> When he had said this, he cried with a loud voice, “Lazarus, come out!”</p>
+            <p><strong>44</strong> He who was dead came out, bound hand and foot with wrappings, and his face was wrapped around with a cloth. Jesus said to them, “Free him, and let him go.”</p>
+            <p><strong>45</strong> Therefore many of the Jews, who came to Mary and saw what Jesus did, believed in him.</p>
+            <p><strong>46</strong> But some of them went away to the Pharisees, and told them the things which Jesus had done.</p>
+            <p><strong>47</strong> The chief priests therefore and the Pharisees gathered a council, and said, “What are we doing? For this man does many signs.</p>
+            <p><strong>48</strong> If we leave him alone like this, everyone will believe in him, and the Romans will come and take away both our place and our nation.”</p>
+            <p><strong>49</strong> But a certain one of them, Caiaphas, being high priest that year, said to them, “You know nothing at all,</p>
+            <p><strong>50</strong> nor do you consider that it is advantageous for us that one man should die for the people, and that the whole nation not perish.”</p>
+            <p><strong>51</strong> Now he didn’t say this of himself, but being high priest that year, he prophesied that Jesus would die for the nation,</p>
+            <p><strong>52</strong> and not for the nation only, but that he might also gather together into one the children of God who are scattered abroad.</p>
+            <p><strong>53</strong> So from that day forward they took counsel that they might put him to death.</p>
+            <p><strong>54</strong> Jesus therefore walked no more openly among the Jews, but departed from there into the country near the wilderness, to a city called Ephraim. He stayed there with his disciples.</p>
+            <p><strong>55</strong> Now the Passover of the Jews was at hand. Many went up from the country to Jerusalem before the Passover, to purify themselves.</p>
+            <p><strong>56</strong> Then they sought for Jesus and spoke one with another, as they stood in the temple, “What do you think—that he isn’t coming to the feast at all?”</p>
+            <p><strong>57</strong> Now the chief priests and the Pharisees had commanded that if anyone knew where he was, he should report it, that they might seize him.</p>
+            </div>
+            <div class="scripture-text" id="web-11-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">John 11 (KJV)</p>
+            <p><strong>1</strong> Now a certain man was sick, named Lazarus, of Bethany, the town of Mary and her sister Martha.</p>
+            <p><strong>2</strong> (It was that Mary which anointed the Lord with ointment, and wiped his feet with her hair, whose brother Lazarus was sick.)</p>
+            <p><strong>3</strong> Therefore his sisters sent unto him, saying, Lord, behold, he whom thou lovest is sick.</p>
+            <p><strong>4</strong> When Jesus heard that, he said, This sickness is not unto death, but for the glory of God, that the Son of God might be glorified thereby.</p>
+            <p><strong>5</strong> Now Jesus loved Martha, and her sister, and Lazarus.</p>
+            <p><strong>6</strong> When he had heard therefore that he was sick, he abode two days still in the same place where he was.</p>
+            <p><strong>7</strong> Then after that saith he to his disciples, Let us go into Judaea again.</p>
+            <p><strong>8</strong> His disciples say unto him, Master, the Jews of late sought to stone thee; and goest thou thither again?</p>
+            <p><strong>9</strong> Jesus answered, Are there not twelve hours in the day? If any man walk in the day, he stumbleth not, because he seeth the light of this world.</p>
+            <p><strong>10</strong> But if a man walk in the night, he stumbleth, because there is no light in him.</p>
+            <p><strong>11</strong> These things said he: and after that he saith unto them, Our friend Lazarus sleepeth; but I go, that I may awake him out of sleep.</p>
+            <p><strong>12</strong> Then said his disciples, Lord, if he sleep, he shall do well.</p>
+            <p><strong>13</strong> Howbeit Jesus spake of his death: but they thought that he had spoken of taking of rest in sleep.</p>
+            <p><strong>14</strong> Then said Jesus unto them plainly, Lazarus is dead.</p>
+            <p><strong>15</strong> And I am glad for your sakes that I was not there, to the intent ye may believe; nevertheless let us go unto him.</p>
+            <p><strong>16</strong> Then said Thomas, which is called Didymus, unto his fellowdisciples, Let us also go, that we may die with him.</p>
+            <p><strong>17</strong> Then when Jesus came, he found that he had lain in the grave four days already.</p>
+            <p><strong>18</strong> Now Bethany was nigh unto Jerusalem, about fifteen furlongs off:</p>
+            <p><strong>19</strong> And many of the Jews came to Martha and Mary, to comfort them concerning their brother.</p>
+            <p><strong>20</strong> Then Martha, as soon as she heard that Jesus was coming, went and met him: but Mary sat still in the house.</p>
+            <p><strong>21</strong> Then said Martha unto Jesus, Lord, if thou hadst been here, my brother had not died.</p>
+            <p><strong>22</strong> But I know, that even now, whatsoever thou wilt ask of God, God will give it thee.</p>
+            <p><strong>23</strong> Jesus saith unto her, Thy brother shall rise again.</p>
+            <p><strong>24</strong> Martha saith unto him, I know that he shall rise again in the resurrection at the last day.</p>
+            <p><strong>25</strong> Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live:</p>
+            <p><strong>26</strong> And whosoever liveth and believeth in me shall never die. Believest thou this?</p>
+            <p><strong>27</strong> She saith unto him, Yea, Lord: I believe that thou art the Christ, the Son of God, which should come into the world.</p>
+            <p><strong>28</strong> And when she had so said, she went her way, and called Mary her sister secretly, saying, The Master is come, and calleth for thee.</p>
+            <p><strong>29</strong> As soon as she heard that, she arose quickly, and came unto him.</p>
+            <p><strong>30</strong> Now Jesus was not yet come into the town, but was in that place where Martha met him.</p>
+            <p><strong>31</strong> The Jews then which were with her in the house, and comforted her, when they saw Mary, that she rose up hastily and went out, followed her, saying, She goeth unto the grave to weep there.</p>
+            <p><strong>32</strong> Then when Mary was come where Jesus was, and saw him, she fell down at his feet, saying unto him, Lord, if thou hadst been here, my brother had not died.</p>
+            <p><strong>33</strong> When Jesus therefore saw her weeping, and the Jews also weeping which came with her, he groaned in the spirit, and was troubled,</p>
+            <p><strong>34</strong> And said, Where have ye laid him? They said unto him, Lord, come and see.</p>
+            <p><strong>35</strong> Jesus wept.</p>
+            <p><strong>36</strong> Then said the Jews, Behold how he loved him!</p>
+            <p><strong>37</strong> And some of them said, Could not this man, which opened the eyes of the blind, have caused that even this man should not have died?</p>
+            <p><strong>38</strong> Jesus therefore again groaning in himself cometh to the grave. It was a cave, and a stone lay upon it.</p>
+            <p><strong>39</strong> Jesus said, Take ye away the stone. Martha, the sister of him that was dead, saith unto him, Lord, by this time he stinketh: for he hath been dead four days.</p>
+            <p><strong>40</strong> Jesus saith unto her, Said I not unto thee, that, if thou wouldest believe, thou shouldest see the glory of God?</p>
+            <p><strong>41</strong> Then they took away the stone from the place where the dead was laid. And Jesus lifted up his eyes, and said, Father, I thank thee that thou hast heard me.</p>
+            <p><strong>42</strong> And I knew that thou hearest me always: but because of the people which stand by I said it, that they may believe that thou hast sent me.</p>
+            <p><strong>43</strong> And when he thus had spoken, he cried with a loud voice, Lazarus, come forth.</p>
+            <p><strong>44</strong> And he that was dead came forth, bound hand and foot with graveclothes: and his face was bound about with a napkin. Jesus saith unto them, Loose him, and let him go.</p>
+            <p><strong>45</strong> Then many of the Jews which came to Mary, and had seen the things which Jesus did, believed on him.</p>
+            <p><strong>46</strong> But some of them went their ways to the Pharisees, and told them what things Jesus had done.</p>
+            <p><strong>47</strong> Then gathered the chief priests and the Pharisees a council, and said, What do we? for this man doeth many miracles.</p>
+            <p><strong>48</strong> If we let him thus alone, all men will believe on him: and the Romans shall come and take away both our place and nation.</p>
+            <p><strong>49</strong> And one of them, named Caiaphas, being the high priest that same year, said unto them, Ye know nothing at all,</p>
+            <p><strong>50</strong> Nor consider that it is expedient for us, that one man should die for the people, and that the whole nation perish not.</p>
+            <p><strong>51</strong> And this spake he not of himself: but being high priest that year, he prophesied that Jesus should die for that nation;</p>
+            <p><strong>52</strong> And not for that nation only, but that also he should gather together in one the children of God that were scattered abroad.</p>
+            <p><strong>53</strong> Then from that day forth they took counsel together for to put him to death.</p>
+            <p><strong>54</strong> Jesus therefore walked no more openly among the Jews; but went thence unto a country near to the wilderness, into a city called Ephraim, and there continued with his disciples.</p>
+            <p><strong>55</strong> And the Jews’ passover was nigh at hand: and many went out of the country up to Jerusalem before the passover, to purify themselves.</p>
+            <p><strong>56</strong> Then sought they for Jesus, and spake among themselves, as they stood in the temple, What think ye, that he will not come to the feast?</p>
+            <p><strong>57</strong> Now both the chief priests and the Pharisees had given a commandment, that, if any man knew where he were, he should shew it, that they might take him.</p>
+            </div>
+            <div class="scripture-text" id="web-11-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">John 11 (ASV)</p>
+            <p><strong>1</strong> Now a certain man was sick, Lazarus of Bethany, of the village of Mary and her sister Martha.</p>
+            <p><strong>2</strong> And it was that Mary who anointed the Lord with ointment, and wiped his feet with her hair, whose brother Lazarus was sick.</p>
+            <p><strong>3</strong> The sisters therefore sent unto him, saying, Lord, behold, he whom thou lovest is sick.</p>
+            <p><strong>4</strong> But when Jesus heard it, he said, This sickness is not unto death, but for the glory of God, that the Son of God may be glorified thereby.</p>
+            <p><strong>5</strong> Now Jesus loved Martha, and her sister, and Lazarus.</p>
+            <p><strong>6</strong> When therefore he heard that he was sick, he abode at that time two days in the place where he was.</p>
+            <p><strong>7</strong> Then after this he saith to the disciples, Let us go into Judaea again.</p>
+            <p><strong>8</strong> The disciples say unto him, Rabbi, the Jews were but now seeking to stone thee; and goest thou thither again?</p>
+            <p><strong>9</strong> Jesus answered, Are there not twelve hours in the day? If a man walk in the day, he stumbleth not, because he seeth the light of this world.</p>
+            <p><strong>10</strong> But if a man walk in the night, he stumbleth, because the light is not in him.</p>
+            <p><strong>11</strong> These things spake he: and after this he saith unto them, Our friend Lazarus is fallen asleep; but I go, that I may awake him out of sleep.</p>
+            <p><strong>12</strong> The disciples therefore said unto him, Lord, if he is fallen asleep, he will recover.</p>
+            <p><strong>13</strong> Now Jesus had spoken of his death: but they thought that he spake of taking rest in sleep.</p>
+            <p><strong>14</strong> Then Jesus therefore said unto them plainly, Lazarus is dead.</p>
+            <p><strong>15</strong> And I am glad for your sakes that I was not there, to the intent ye may believe; nevertheless let us go unto him.</p>
+            <p><strong>16</strong> Thomas therefore, who is called Didymus, said unto his fellow-disciples, Let us also go, that we may die with him.</p>
+            <p><strong>17</strong> So when Jesus came, he found that he had been in the tomb four days already.</p>
+            <p><strong>18</strong> Now Bethany was nigh unto Jerusalem, about fifteen furlongs off;</p>
+            <p><strong>19</strong> and many of the Jews had come to Martha and Mary, to console them concerning their brother.</p>
+            <p><strong>20</strong> Martha therefore, when she heard that Jesus was coming, went and met him: but Mary still sat in the house.</p>
+            <p><strong>21</strong> Martha therefore said unto Jesus, Lord, if thou hadst been here, my brother had not died.</p>
+            <p><strong>22</strong> And even now I know that, whatsoever thou shalt ask of God, God will give thee.</p>
+            <p><strong>23</strong> Jesus saith unto her, Thy brother shall rise again.</p>
+            <p><strong>24</strong> Martha saith unto him, I know that he shall rise again in the resurrection at the last day.</p>
+            <p><strong>25</strong> Jesus said unto her, I am the resurrection, and the life: he that believeth on me, though he die, yet shall he live;</p>
+            <p><strong>26</strong> and whosoever liveth and believeth on me shall never die. Believest thou this?</p>
+            <p><strong>27</strong> She saith unto him, Yea, Lord: I have believed that thou art the Christ, the Son of God, [even] he that cometh into the world.</p>
+            <p><strong>28</strong> And when she had said this, she went away, and called Mary her sister secretly, saying, The Teacher is her, and calleth thee.</p>
+            <p><strong>29</strong> And she, when she heard it, arose quickly, and went unto him.</p>
+            <p><strong>30</strong> (Now Jesus was not yet come into the village, but was still in the place where Martha met him.)</p>
+            <p><strong>31</strong> The Jews then who were with her in the house, and were consoling her, when they saw Mary, that she rose up quickly and went out, followed her, supposing that she was going unto the tomb to weep there.</p>
+            <p><strong>32</strong> Mary therefore, when she came where Jesus was, and saw him, fell down at his feet, saying unto him, Lord, if thou hadst been here, my brother had not died.</p>
+            <p><strong>33</strong> When Jesus therefore saw her weeping, and the Jews [also] weeping who came with her, he groaned in the spirit, and was troubled,</p>
+            <p><strong>34</strong> and said, Where have ye laid him? They say unto him, Lord, come and see.</p>
+            <p><strong>35</strong> Jesus wept.</p>
+            <p><strong>36</strong> The Jews therefore said, Behold how he loved him!</p>
+            <p><strong>37</strong> But some of them said, Could not this man, who opened the eyes of him that was blind, have caused that this man also should not die?</p>
+            <p><strong>38</strong> Jesus therefore again groaning in himself cometh to the tomb. Now it was a cave, and a stone lay against it.</p>
+            <p><strong>39</strong> Jesus saith, Take ye away the stone. Martha, the sister of him that was dead, saith unto him, Lord, by this time the body decayeth; for he hath been [dead] four days.</p>
+            <p><strong>40</strong> Jesus saith unto her, Said I not unto thee, that, if thou believedst, thou shouldest see the glory of God?</p>
+            <p><strong>41</strong> So they took away the stone. And Jesus lifted up his eyes, and said, Father, I thank thee that thou heardest me.</p>
+            <p><strong>42</strong> And I knew that thou hearest me always: but because of the multitude that standeth around I said it, that they may believe that thou didst send me.</p>
+            <p><strong>43</strong> And when he had thus spoken, he cried with a loud voice, Lazarus, come forth.</p>
+            <p><strong>44</strong> He that was dead came forth, bound hand and foot with grave-clothes; and his face was bound about with a napkin. Jesus saith unto them, Loose him, and let him go.</p>
+            <p><strong>45</strong> Many therefore of the Jews, who came to Mary and beheld that which he did, believed on him.</p>
+            <p><strong>46</strong> But some of them went away to the Pharisees, and told them the things which Jesus had done.</p>
+            <p><strong>47</strong> The chief priests therefore and the Pharisees gathered a council, and said, What do we? for this man doeth many signs.</p>
+            <p><strong>48</strong> If we let him thus alone, all men will believe on him: and the Romans will come and take away both our place and our nation.</p>
+            <p><strong>49</strong> But a certain one of them, Caiaphas, being high priest that year, said unto them, Ye know nothing at all,</p>
+            <p><strong>50</strong> nor do ye take account that it is expedient for you that one man should die for the people, and that the whole nation perish not.</p>
+            <p><strong>51</strong> Now this he said not of himself: but, being high priest that year, he prophesied that Jesus should die for the nation;</p>
+            <p><strong>52</strong> and not for the nation only, but that he might also gather together into one the children of God that are scattered abroad.</p>
+            <p><strong>53</strong> So from that day forth they took counsel that they might put him to death.</p>
+            <p><strong>54</strong> Jesus therefore walked no more openly among the Jews, but departed thence into the country near to the wilderness, into a city called Ephraim; and there he tarried with the disciples.</p>
+            <p><strong>55</strong> Now the passover of the Jews was at hand: and many went up to Jerusalem out of the country before the passover, to purify themselves.</p>
+            <p><strong>56</strong> They sought therefore for Jesus, and spake one with another, as they stood in the temple, What think ye? That he will not come to the feast?</p>
+            <p><strong>57</strong> Now the chief priests and the Pharisees had given commandment, that, if any man knew where he was, he should show it, that they might take him.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Lazarus, the brother of Mary and Martha, falls sick, and the sisters send word to Jesus. Jesus delays two days, saying the sickness is for God's glory, then tells his disciples that Lazarus has died and that he is glad for their sake so they may believe. Arriving in Bethany, he finds Lazarus four days in the tomb. Martha meets him in grief, and Jesus declares, I am the resurrection and the life, and she confesses him as the Christ. Deeply moved and weeping at the tomb, Jesus orders the stone removed, prays aloud, and cries, Lazarus, come out. The dead man comes out still bound in grave clothes, and Jesus tells them to loose him. Many believe, but the chief priests and Pharisees, fearing the crowds, plot to put Jesus to death, as Caiaphas says it is better for one to die for the people.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — Declares himself the resurrection and the life, weeps with the grieving, and raises Lazarus from death.</li>
+          <li><strong>Lazarus</strong> — The friend of Jesus who dies, is buried four days, and is called alive from the tomb.</li>
+          <li><strong>Martha</strong> — Lazarus's sister who meets Jesus in grief and confesses him as the Christ, the Son of God.</li>
+          <li><strong>Mary</strong> — Lazarus's sister who falls weeping at Jesus' feet, moving him to tears.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">John 11:25 (WEB)</p>
+          <p class="verse__text">Jesus said to her, “I am the resurrection and the life. He who believes in me will still live, even if he dies.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Jesus is himself the resurrection and the life, the hope of all who believe in him.</li>
+          <li>God's delays are never neglect; they may be working a greater glory than we can see.</li>
+          <li>Jesus enters our grief fully and weeps with those who mourn.</li>
+          <li>The power that called Lazarus from the tomb is the power that gives us eternal life in Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-11">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-11">
+            <ul class="lesson-list">
+            <li><strong>Jesus is the source of resurrection and life.</strong> He tells Martha, 'I am the resurrection and the life. He who believes in me will still live, even if he dies' (John 11:25, WEB).</li>
+            <li><strong>God's timing serves a deeper glory.</strong> Jesus says the sickness is 'for the glory of God, that God's Son may be glorified by it' (John 11:4, WEB), even as he waits two more days.</li>
+            <li><strong>Jesus shares fully in our sorrow.</strong> Seeing Mary and the others weeping, 'Jesus wept' (John 11:35, WEB), entering our grief with real human tears.</li>
+            <li><strong>Faith is the doorway to seeing God's glory.</strong> At the tomb Jesus says, 'Didn't I tell you that if you believed, you would see God's glory?' (John 11:40, WEB).</li>
+            <li><strong>Christ's word holds power over death itself.</strong> Jesus cries, 'Lazarus, come out!' and the dead man comes out bound in grave clothes (John 11:43-44, WEB).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-11">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-11">
+            <ol class="study-questions">
+            <li>Why does Jesus wait two days before going to Lazarus, and what reason does he give?</li>
+            <li>What does Jesus mean when he tells Martha, I am the resurrection and the life?</li>
+            <li>What do we learn about Jesus from the fact that he wept at the tomb of his friend?</li>
+            <li>How does the raising of Lazarus reveal both Jesus' power and the response of those who saw it?</li>
+            <li>Where in your own life do you need to trust Jesus as the resurrection and the life in the face of loss or fear?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-11">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-11">
+            <ol class="study-questions">
+            <li>Jesus stays two more days, saying the sickness is for God's glory so the Son may be glorified (John 11:4, 6). His delay is not indifference but purpose, allowing a greater miracle that would deepen the disciples' and sisters' faith (11:14-15).</li>
+            <li>Jesus claims to be life itself, not merely a giver of life. He says whoever believes in him will live even though he dies, and whoever lives and believes will never die (John 11:25-26). Martha responds by confessing him as the Christ (11:27).</li>
+            <li>Though he knew he would raise Lazarus, Jesus was deeply moved and wept with the mourners (John 11:33-35). This shows the tenderness of God in the flesh, who does not stand aloof from our pain but enters it with genuine compassion.</li>
+            <li>Jesus prays aloud and calls Lazarus out, and the four-days-dead man comes forth alive (John 11:41-44). Many who saw it believed in him, yet others reported to the Pharisees, who began plotting his death (11:45-53), showing how the same act draws faith or hardness.</li>
+            <li>This is a personal application question. Invite members to bring their griefs and fears honestly before the One who is the resurrection and the life (John 11:25). As leader, hold space gently for sorrow, point to Christ's tears and power, and never press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="john-10.html">← John 10</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="john-12.html">John 12 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

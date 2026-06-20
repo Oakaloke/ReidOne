@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Luke 6: The Way of the Kingdom — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Luke 6: Jesus is Lord of the Sabbath, chooses the twelve apostles, and teaches the radical love, mercy, and integrity that mark his disciples." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-luke-progress" data-study-total="24">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Luke, Chapter 6
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="luke.html">← All Chapters</a>
+        <span class="study-meta">The Book of Luke · Chapter 6</span>
+        <h1>Luke 6: The Way of the Kingdom</h1>
+        <p class="lead">Jesus is Lord of the Sabbath, chooses the twelve apostles, and teaches the radical love, mercy, and integrity that mark his disciples.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-6">
+            <span>Scripture — Luke Chapter 6</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-6">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-6-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-6-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-6-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-6-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Luke 6 (WEB)</p>
+            <p><strong>1</strong> Now on the second Sabbath after the first, he was going through the grain fields. His disciples plucked the heads of grain and ate, rubbing them in their hands.</p>
+            <p><strong>2</strong> But some of the Pharisees said to them, “Why do you do that which is not lawful to do on the Sabbath day?”</p>
+            <p><strong>3</strong> Jesus, answering them, said, “Haven’t you read what David did when he was hungry, he, and those who were with him;</p>
+            <p><strong>4</strong> how he entered into God’s house, and took and ate the show bread, and gave also to those who were with him, which is not lawful to eat except for the priests alone?”</p>
+            <p><strong>5</strong> He said to them, “The Son of Man is lord of the Sabbath.”</p>
+            <p><strong>6</strong> It also happened on another Sabbath that he entered into the synagogue and taught. There was a man there, and his right hand was withered.</p>
+            <p><strong>7</strong> The scribes and the Pharisees watched him, to see whether he would heal on the Sabbath, that they might find an accusation against him.</p>
+            <p><strong>8</strong> But he knew their thoughts; and he said to the man who had the withered hand, “Rise up, and stand in the middle.” He arose and stood.</p>
+            <p><strong>9</strong> Then Jesus said to them, “I will ask you something: Is it lawful on the Sabbath to do good, or to do harm? To save a life, or to kill?”</p>
+            <p><strong>10</strong> He looked around at them all, and said to the man, “Stretch out your hand.” He did, and his hand was restored as sound as the other.</p>
+            <p><strong>11</strong> But they were filled with rage, and talked with one another about what they might do to Jesus.</p>
+            <p><strong>12</strong> In these days, he went out to the mountain to pray, and he continued all night in prayer to God.</p>
+            <p><strong>13</strong> When it was day, he called his disciples, and from them he chose twelve, whom he also named apostles:</p>
+            <p><strong>14</strong> Simon, whom he also named Peter; Andrew, his brother; James; John; Philip; Bartholomew;</p>
+            <p><strong>15</strong> Matthew; Thomas; James, the son of Alphaeus; Simon, who was called the Zealot;</p>
+            <p><strong>16</strong> Judas the son of James; and Judas Iscariot, who also became a traitor.</p>
+            <p><strong>17</strong> He came down with them, and stood on a level place, with a crowd of his disciples, and a great number of the people from all Judea and Jerusalem, and the sea coast of Tyre and Sidon, who came to hear him and to be healed of their diseases;</p>
+            <p><strong>18</strong> as well as those who were troubled by unclean spirits, and they were being healed.</p>
+            <p><strong>19</strong> All the multitude sought to touch him, for power came out of him and healed them all.</p>
+            <p><strong>20</strong> He lifted up his eyes to his disciples, and said, “Blessed are you who are poor, God’s Kingdom is yours.</p>
+            <p><strong>21</strong> Blessed are you who hunger now, for you will be filled. Blessed are you who weep now, for you will laugh.</p>
+            <p><strong>22</strong> Blessed are you when men shall hate you, and when they shall exclude and mock you, and throw out your name as evil, for the Son of Man’s sake.</p>
+            <p><strong>23</strong> Rejoice in that day, and leap for joy, for behold, your reward is great in heaven, for their fathers did the same thing to the prophets.</p>
+            <p><strong>24</strong> “But woe to you who are rich! For you have received your consolation.</p>
+            <p><strong>25</strong> Woe to you, you who are full now, for you will be hungry. Woe to you who laugh now, for you will mourn and weep.</p>
+            <p><strong>26</strong> Woe, when men speak well of you, for their fathers did the same thing to the false prophets.</p>
+            <p><strong>27</strong> “But I tell you who hear: love your enemies, do good to those who hate you,</p>
+            <p><strong>28</strong> bless those who curse you, and pray for those who mistreat you.</p>
+            <p><strong>29</strong> To him who strikes you on the cheek, offer also the other; and from him who takes away your cloak, don’t withhold your coat also.</p>
+            <p><strong>30</strong> Give to everyone who asks you, and don’t ask him who takes away your goods to give them back again.</p>
+            <p><strong>31</strong> “As you would like people to do to you, do exactly so to them.</p>
+            <p><strong>32</strong> If you love those who love you, what credit is that to you? For even sinners love those who love them.</p>
+            <p><strong>33</strong> If you do good to those who do good to you, what credit is that to you? For even sinners do the same.</p>
+            <p><strong>34</strong> If you lend to those from whom you hope to receive, what credit is that to you? Even sinners lend to sinners, to receive back as much.</p>
+            <p><strong>35</strong> But love your enemies, and do good, and lend, expecting nothing back; and your reward will be great, and you will be children of the Most High; for he is kind toward the unthankful and evil.</p>
+            <p><strong>36</strong> “Therefore be merciful, even as your Father is also merciful.</p>
+            <p><strong>37</strong> Don’t judge, and you won’t be judged. Don’t condemn, and you won’t be condemned. Set free, and you will be set free.</p>
+            <p><strong>38</strong> “Give, and it will be given to you: good measure, pressed down, shaken together, and running over, will be given to you. For with the same measure you measure it will be measured back to you.”</p>
+            <p><strong>39</strong> He spoke a parable to them. “Can the blind guide the blind? Won’t they both fall into a pit?</p>
+            <p><strong>40</strong> A disciple is not above his teacher, but everyone when he is fully trained will be like his teacher.</p>
+            <p><strong>41</strong> Why do you see the speck of chaff that is in your brother’s eye, but don’t consider the beam that is in your own eye?</p>
+            <p><strong>42</strong> Or how can you tell your brother, ‘Brother, let me remove the speck of chaff that is in your eye,’ when you yourself don’t see the beam that is in your own eye? You hypocrite! First remove the beam from your own eye, and then you can see clearly to remove the speck of chaff that is in your brother’s eye.</p>
+            <p><strong>43</strong> For there is no good tree that produces rotten fruit; nor again a rotten tree that produces good fruit.</p>
+            <p><strong>44</strong> For each tree is known by its own fruit. For people don’t gather figs from thorns, nor do they gather grapes from a bramble bush.</p>
+            <p><strong>45</strong> The good man out of the good treasure of his heart brings out that which is good, and the evil man out of the evil treasure of his heart brings out that which is evil, for out of the abundance of the heart, his mouth speaks.</p>
+            <p><strong>46</strong> “Why do you call me, ‘Lord, Lord,’ and don’t do the things which I say?</p>
+            <p><strong>47</strong> Everyone who comes to me, and hears my words, and does them, I will show you who he is like.</p>
+            <p><strong>48</strong> He is like a man building a house, who dug and went deep, and laid a foundation on the rock. When a flood arose, the stream broke against that house, and could not shake it, because it was founded on the rock.</p>
+            <p><strong>49</strong> But he who hears, and doesn’t do, is like a man who built a house on the earth without a foundation, against which the stream broke, and immediately it fell, and the ruin of that house was great.”</p>
+            </div>
+            <div class="scripture-text" id="web-6-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Luke 6 (KJV)</p>
+            <p><strong>1</strong> And it came to pass on the second sabbath after the first, that he went through the corn fields; and his disciples plucked the ears of corn, and did eat, rubbing them in their hands.</p>
+            <p><strong>2</strong> And certain of the Pharisees said unto them, Why do ye that which is not lawful to do on the sabbath days?</p>
+            <p><strong>3</strong> And Jesus answering them said, Have ye not read so much as this, what David did, when himself was an hungred, and they which were with him;</p>
+            <p><strong>4</strong> How he went into the house of God, and did take and eat the shewbread, and gave also to them that were with him; which it is not lawful to eat but for the priests alone?</p>
+            <p><strong>5</strong> And he said unto them, That the Son of man is Lord also of the sabbath.</p>
+            <p><strong>6</strong> And it came to pass also on another sabbath, that he entered into the synagogue and taught: and there was a man whose right hand was withered.</p>
+            <p><strong>7</strong> And the scribes and Pharisees watched him, whether he would heal on the sabbath day; that they might find an accusation against him.</p>
+            <p><strong>8</strong> But he knew their thoughts, and said to the man which had the withered hand, Rise up, and stand forth in the midst. And he arose and stood forth.</p>
+            <p><strong>9</strong> Then said Jesus unto them, I will ask you one thing; Is it lawful on the sabbath days to do good, or to do evil? to save life, or to destroy it?</p>
+            <p><strong>10</strong> And looking round about upon them all, he said unto the man, Stretch forth thy hand. And he did so: and his hand was restored whole as the other.</p>
+            <p><strong>11</strong> And they were filled with madness; and communed one with another what they might do to Jesus.</p>
+            <p><strong>12</strong> And it came to pass in those days, that he went out into a mountain to pray, and continued all night in prayer to God.</p>
+            <p><strong>13</strong> And when it was day, he called unto him his disciples: and of them he chose twelve, whom also he named apostles;</p>
+            <p><strong>14</strong> Simon, (whom he also named Peter,) and Andrew his brother, James and John, Philip and Bartholomew,</p>
+            <p><strong>15</strong> Matthew and Thomas, James the son of Alphaeus, and Simon called Zelotes,</p>
+            <p><strong>16</strong> And Judas the brother of James, and Judas Iscariot, which also was the traitor.</p>
+            <p><strong>17</strong> And he came down with them, and stood in the plain, and the company of his disciples, and a great multitude of people out of all Judaea and Jerusalem, and from the sea coast of Tyre and Sidon, which came to hear him, and to be healed of their diseases;</p>
+            <p><strong>18</strong> And they that were vexed with unclean spirits: and they were healed.</p>
+            <p><strong>19</strong> And the whole multitude sought to touch him: for there went virtue out of him, and healed them all.</p>
+            <p><strong>20</strong> And he lifted up his eyes on his disciples, and said, Blessed be ye poor: for yours is the kingdom of God.</p>
+            <p><strong>21</strong> Blessed are ye that hunger now: for ye shall be filled. Blessed are ye that weep now: for ye shall laugh.</p>
+            <p><strong>22</strong> Blessed are ye, when men shall hate you, and when they shall separate you from their company, and shall reproach you, and cast out your name as evil, for the Son of man’s sake.</p>
+            <p><strong>23</strong> Rejoice ye in that day, and leap for joy: for, behold, your reward is great in heaven: for in the like manner did their fathers unto the prophets.</p>
+            <p><strong>24</strong> But woe unto you that are rich! for ye have received your consolation.</p>
+            <p><strong>25</strong> Woe unto you that are full! for ye shall hunger. Woe unto you that laugh now! for ye shall mourn and weep.</p>
+            <p><strong>26</strong> Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets.</p>
+            <p><strong>27</strong> But I say unto you which hear, Love your enemies, do good to them which hate you,</p>
+            <p><strong>28</strong> Bless them that curse you, and pray for them which despitefully use you.</p>
+            <p><strong>29</strong> And unto him that smiteth thee on the one cheek offer also the other; and him that taketh away thy cloke forbid not to take thy coat also.</p>
+            <p><strong>30</strong> Give to every man that asketh of thee; and of him that taketh away thy goods ask them not again.</p>
+            <p><strong>31</strong> And as ye would that men should do to you, do ye also to them likewise.</p>
+            <p><strong>32</strong> For if ye love them which love you, what thank have ye? for sinners also love those that love them.</p>
+            <p><strong>33</strong> And if ye do good to them which do good to you, what thank have ye? for sinners also do even the same.</p>
+            <p><strong>34</strong> And if ye lend to them of whom ye hope to receive, what thank have ye? for sinners also lend to sinners, to receive as much again.</p>
+            <p><strong>35</strong> But love ye your enemies, and do good, and lend, hoping for nothing again; and your reward shall be great, and ye shall be the children of the Highest: for he is kind unto the unthankful and to the evil.</p>
+            <p><strong>36</strong> Be ye therefore merciful, as your Father also is merciful.</p>
+            <p><strong>37</strong> Judge not, and ye shall not be judged: condemn not, and ye shall not be condemned: forgive, and ye shall be forgiven:</p>
+            <p><strong>38</strong> Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over, shall men give into your bosom. For with the same measure that ye mete withal it shall be measured to you again.</p>
+            <p><strong>39</strong> And he spake a parable unto them, Can the blind lead the blind? shall they not both fall into the ditch?</p>
+            <p><strong>40</strong> The disciple is not above his master: but every one that is perfect shall be as his master.</p>
+            <p><strong>41</strong> And why beholdest thou the mote that is in thy brother’s eye, but perceivest not the beam that is in thine own eye?</p>
+            <p><strong>42</strong> Either how canst thou say to thy brother, Brother, let me pull out the mote that is in thine eye, when thou thyself beholdest not the beam that is in thine own eye? Thou hypocrite, cast out first the beam out of thine own eye, and then shalt thou see clearly to pull out the mote that is in thy brother’s eye.</p>
+            <p><strong>43</strong> For a good tree bringeth not forth corrupt fruit; neither doth a corrupt tree bring forth good fruit.</p>
+            <p><strong>44</strong> For every tree is known by his own fruit. For of thorns men do not gather figs, nor of a bramble bush gather they grapes.</p>
+            <p><strong>45</strong> A good man out of the good treasure of his heart bringeth forth that which is good; and an evil man out of the evil treasure of his heart bringeth forth that which is evil: for of the abundance of the heart his mouth speaketh.</p>
+            <p><strong>46</strong> And why call ye me, Lord, Lord, and do not the things which I say?</p>
+            <p><strong>47</strong> Whosoever cometh to me, and heareth my sayings, and doeth them, I will shew you to whom he is like:</p>
+            <p><strong>48</strong> He is like a man which built an house, and digged deep, and laid the foundation on a rock: and when the flood arose, the stream beat vehemently upon that house, and could not shake it: for it was founded upon a rock.</p>
+            <p><strong>49</strong> But he that heareth, and doeth not, is like a man that without a foundation built an house upon the earth; against which the stream did beat vehemently, and immediately it fell; and the ruin of that house was great.</p>
+            </div>
+            <div class="scripture-text" id="web-6-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Luke 6 (ASV)</p>
+            <p><strong>1</strong> Now it came to pass on a sabbath, that he was going through the grainfields; and his disciples plucked the ears, and did eat, rubbing them in their hands.</p>
+            <p><strong>2</strong> But certain of the Pharisees said, Why do ye that which it is not lawful to do on the sabbath day?</p>
+            <p><strong>3</strong> And Jesus answering them said, Have ye not read even this, what David did, when he was hungry, he, and they that were with him;</p>
+            <p><strong>4</strong> how he entered into the house of God, and took and ate the showbread, and gave also to them that were with him; which it is not lawful to eat save for the priests alone?</p>
+            <p><strong>5</strong> And he said unto them, The Son of man is lord of the sabbath.</p>
+            <p><strong>6</strong> And it came to pass on another sabbath, that he entered into the synagogue and taught: and there was a man there, and his right hand was withered.</p>
+            <p><strong>7</strong> And the scribes and the Pharisees watched him, whether he would heal on the sabbath; that they might find how to accuse him.</p>
+            <p><strong>8</strong> But he knew their thoughts; and he said to the man that had his hand withered, Rise up, and stand forth in the midst. And he arose and stood forth.</p>
+            <p><strong>9</strong> And Jesus said unto them, I ask you, Is it lawful on the sabbath to do good, or to do harm? to save a life, or to destroy it?</p>
+            <p><strong>10</strong> And he looked round about on them all, and said unto him, Stretch forth thy hand. And he did [so]: and his hand was restored.</p>
+            <p><strong>11</strong> But they were filled with madness; and communed one with another what they might do to Jesus.</p>
+            <p><strong>12</strong> And it came to pass in these days, that he went out into the mountain to pray; and he continued all night in prayer to God.</p>
+            <p><strong>13</strong> And when it was day, he called his disciples; and he chose from them twelve, whom also he named apostles:</p>
+            <p><strong>14</strong> Simon, whom he also named Peter, and Andrew his brother, and James and John, and Philip and Bartholomew,</p>
+            <p><strong>15</strong> and Matthew and Thomas, and James [the son] of Alphaeus, and Simon who was called the Zealot,</p>
+            <p><strong>16</strong> and Judas [the son] of James, and Judas Iscariot, who became a traitor;</p>
+            <p><strong>17</strong> and he came down with them, and stood on a level place, and a great multitude of his disciples, and a great number of the people from all Judaea and Jerusalem, and the sea coast of Tyre and Sidon, who came to hear him, and to be healed of their diseases;</p>
+            <p><strong>18</strong> and they that were troubled with unclean spirits were healed.</p>
+            <p><strong>19</strong> And all the multitude sought to touch him; for power came forth from him, and healed [them] all.</p>
+            <p><strong>20</strong> And he lifted up his eyes on his disciples, and said, Blessed [are] ye poor: for yours is the kingdom of God.</p>
+            <p><strong>21</strong> Blessed [are] ye that hunger now: for ye shall be filled. Blessed [are] ye that weep now: for ye shall laugh.</p>
+            <p><strong>22</strong> Blessed are ye, when men shall hate you, and when they shall separate you [from their company], and reproach you, and cast out your name as evil, for the Son of man`s sake.</p>
+            <p><strong>23</strong> Rejoice in that day, and leap [for joy]: for behold, your reward is great in heaven; for in the same manner did their fathers unto the prophets.</p>
+            <p><strong>24</strong> But woe unto you that are rich! for ye have received your consolation.</p>
+            <p><strong>25</strong> Woe unto you, ye that are full now! for ye shall hunger. Woe [unto you], ye that laugh now! for ye shall mourn and weep.</p>
+            <p><strong>26</strong> Woe [unto you], when all men shall speak well of you! for in the same manner did their fathers to the false prophets.</p>
+            <p><strong>27</strong> But I say unto you that hear, Love your enemies, do good to them that hate you,</p>
+            <p><strong>28</strong> bless them that curse you, pray for them that despitefully use you.</p>
+            <p><strong>29</strong> To him that smiteth thee on the [one] cheek offer also the other; and from him that taketh away thy cloak withhold not thy coat also.</p>
+            <p><strong>30</strong> Give to every one that asketh thee; and of him that taketh away thy goods ask them not again.</p>
+            <p><strong>31</strong> And as ye would that men should do to you, do ye also to them likewise.</p>
+            <p><strong>32</strong> And if ye love them that love you, what thank have ye? for even sinners love those that love them.</p>
+            <p><strong>33</strong> And if ye do good to them that do good to you, what thank have ye? for even sinners do the same.</p>
+            <p><strong>34</strong> And if ye lend to them of whom ye hope to receive, what thank have ye? even sinners lend to sinners, to receive again as much.</p>
+            <p><strong>35</strong> But love your enemies, and do [them] good, and lend, never despairing; and your reward shall be great, and ye shall be sons of the Most High: for he is kind toward the unthankful and evil.</p>
+            <p><strong>36</strong> Be ye merciful, even as your Father is merciful.</p>
+            <p><strong>37</strong> And judge not, and ye shall not be judged: and condemn not, and ye shall not be condemned: release, and ye shall be released:</p>
+            <p><strong>38</strong> give, and it shall be given unto you; good measure, pressed down, shaken together, running over, shall they give into your bosom. For with what measure ye mete it shall be measured to you again.</p>
+            <p><strong>39</strong> And he spake also a parable unto them, Can the blind guide the blind? shall they not both fall into a pit?</p>
+            <p><strong>40</strong> The disciple is not above his teacher: but every one when he is perfected shall be as his teacher.</p>
+            <p><strong>41</strong> And why beholdest thou the mote that is in thy brother`s eye, but considerest not the beam that is in thine own eye?</p>
+            <p><strong>42</strong> Or how canst thou say to thy brother, Brother, let me cast out the mote that is in thine eye, when thou thyself beholdest not the beam that is in thine own eye? Thou hypocrite, cast out first the beam out of thine own eye, and then shalt thou see clearly to cast out the mote that is in thy brother`s eye.</p>
+            <p><strong>43</strong> For there is no good tree that bringeth forth corrupt fruit; nor again a corrupt tree that bringeth forth good fruit.</p>
+            <p><strong>44</strong> For each tree is known by its own fruit. For of thorns men do not gather figs, nor of a bramble bush gather they grapes.</p>
+            <p><strong>45</strong> The good man out of the good treasure of his heart bringeth forth that which is good; and the evil [man] out of the evil [treasure] bringeth forth that which is evil: for out of the abundance of the heart his mouth speaketh.</p>
+            <p><strong>46</strong> And why call ye me, Lord, Lord, and do not the things which I say?</p>
+            <p><strong>47</strong> Every one that cometh unto me, and heareth my words, and doeth them, I will show you to whom he is like:</p>
+            <p><strong>48</strong> he is like a man building a house, who digged and went deep, and laid a foundation upon the rock: and when a flood arose, the stream brake against that house, and could not shake it: because it had been well builded.</p>
+            <p><strong>49</strong> But he that heareth, and doeth not, is like a man that built a house upon the earth without a foundation; against which the stream brake, and straightway it fell in; and the ruin of that house was great.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus defends his disciples for plucking grain on the Sabbath and heals a man's withered hand, declaring himself Lord of the Sabbath and revealing that mercy honors God's day. The leaders are filled with fury. After a night of prayer, Jesus chooses twelve apostles. Then, on a level place, he teaches the gathered crowd. He pronounces blessings on the poor, hungry, weeping, and persecuted, and woes on the comfortable and well-regarded. He calls his followers to love their enemies, do good to those who hate them, give without expecting return, and be merciful as their Father is merciful. He warns against judging others while ignoring one's own faults, comparing it to seeing a speck while missing a beam. A tree is known by its fruit, and the mouth speaks from the heart's abundance. He ends by contrasting the wise builder who hears and obeys with the foolish builder whose house collapses.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord of the Sabbath who appoints the twelve and teaches the way of his kingdom.</li>
+          <li><strong>The twelve apostles</strong> — The disciples Jesus chooses after a night of prayer to be his closest followers.</li>
+          <li><strong>The Pharisees and scribes</strong> — Leaders who oppose Jesus over the Sabbath and are filled with rage.</li>
+          <li><strong>The man with the withered hand</strong> — A sufferer healed by Jesus on the Sabbath as a sign that doing good is lawful.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Luke 6:36 (WEB)</p>
+          <p class="verse__text">“Therefore be merciful, even as your Father is also merciful.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Mercy, not mere rule-keeping, is the heart of honoring God.</li>
+          <li>God's blessing rests on the humble, the hungry, and the persecuted.</li>
+          <li>Disciples are called to love even their enemies and give freely.</li>
+          <li>A genuine heart produces good fruit and builds life on obedience to Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-6">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-6">
+            <ul class="lesson-list">
+            <li><strong>Doing good is the true purpose of the Sabbath.</strong> Jesus asks whether it is lawful 'to do good, or to do harm' on the Sabbath, then heals the man's withered hand (Luke 6:9-10, WEB).</li>
+            <li><strong>God blesses the humble and hungry.</strong> Jesus says, 'Blessed are you who are poor, for yours is God's Kingdom' (Luke 6:20, WEB).</li>
+            <li><strong>Love must extend even to enemies.</strong> Jesus commands, 'love your enemies, and do good, and lend, expecting nothing back' (Luke 6:35, WEB).</li>
+            <li><strong>Mercy reflects the Father's own heart.</strong> Jesus says, 'be merciful, even as your Father is also merciful' (Luke 6:36, WEB).</li>
+            <li><strong>The heart reveals itself in fruit and action.</strong> Jesus teaches that 'out of the abundance of the heart, his mouth speaks' (Luke 6:45, WEB), and a tree is known by its fruit.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-6">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-6">
+            <ol class="study-questions">
+            <li>How does Jesus respond to the Sabbath controversies, and what does he claim about himself?</li>
+            <li>What does Jesus do before choosing the twelve, and what does that suggest about the decision?</li>
+            <li>What blessings and woes does Jesus pronounce, and what do they reveal about the kingdom's values?</li>
+            <li>How does Jesus describe love for enemies, and how is it rooted in the Father's character?</li>
+            <li>Where in your own life is God inviting you to show mercy or love to someone who is hard to love?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-6">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-6">
+            <ol class="study-questions">
+            <li>Jesus defends his hungry disciples by recalling David eating the showbread, and heals the withered hand, asking whether it is lawful to do good on the Sabbath (Luke 6:3-10). He declares himself Lord of the Sabbath (Luke 6:5), so mercy fulfills it.</li>
+            <li>Jesus spends the whole night in prayer to God before naming the twelve apostles (Luke 6:12-13). His prayerful dependence shows that even the choice of leaders flows from communion with the Father, not mere human judgment.</li>
+            <li>He blesses the poor, hungry, weeping, and persecuted, and pronounces woes on the rich, full, laughing, and well-spoken-of (Luke 6:20-26). The kingdom overturns worldly values, promising comfort to the lowly and warning the self-satisfied.</li>
+            <li>Jesus calls his followers to love enemies, bless those who curse them, and lend expecting nothing, so that they will be children of the Most High, for God is kind even to the ungrateful (Luke 6:27-35). Mercy mirrors the Father.</li>
+            <li>This is a personal application question. Invite members to think of someone difficult to love and one merciful step they might take. As leader, encourage honesty and reliance on the Father's mercy, but do not press anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="luke-5.html">← Luke 5</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="luke.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="luke-7.html">Luke 7 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
