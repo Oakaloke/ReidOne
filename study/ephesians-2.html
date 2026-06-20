@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ephesians 2: From Death to Life — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ephesians 2: God makes the spiritually dead alive by grace through faith, and Christ reconciles Jew and Gentile into one new humanity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ephesians-progress" data-study-total="6">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ephesians, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ephesians.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ephesians · Chapter 2</span>
+        <h1>Ephesians 2: From Death to Life</h1>
+        <p class="lead">Once dead in sin, we are made alive by grace through faith; Christ tears down the dividing wall to make Jew and Gentile one new humanity.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Ephesians Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ephesians 2 (WEB)</p>
+            <p><strong>1</strong> You were made alive when you were dead in transgressions and sins,</p>
+            <p><strong>2</strong> in which you once walked according to the course of this world, according to the prince of the power of the air, the spirit who now works in the children of disobedience;</p>
+            <p><strong>3</strong> among whom we also all once lived in the lust of our flesh, doing the desires of the flesh and of the mind, and were by nature children of wrath, even as the rest.</p>
+            <p><strong>4</strong> But God, being rich in mercy, for his great love with which he loved us,</p>
+            <p><strong>5</strong> even when we were dead through our trespasses, made us alive together with Christ (by grace you have been saved),</p>
+            <p><strong>6</strong> and raised us up with him, and made us to sit with him in the heavenly places in Christ Jesus,</p>
+            <p><strong>7</strong> that in the ages to come he might show the exceeding riches of his grace in kindness toward us in Christ Jesus;</p>
+            <p><strong>8</strong> for by grace you have been saved through faith, and that not of yourselves; it is the gift of God,</p>
+            <p><strong>9</strong> not of works, that no one would boast.</p>
+            <p><strong>10</strong> For we are his workmanship, created in Christ Jesus for good works, which God prepared before that we would walk in them.</p>
+            <p><strong>11</strong> Therefore remember that once you, the Gentiles in the flesh, who are called “uncircumcision” by that which is called “circumcision”, (in the flesh, made by hands);</p>
+            <p><strong>12</strong> that you were at that time separate from Christ, alienated from the commonwealth of Israel, and strangers from the covenants of the promise, having no hope and without God in the world.</p>
+            <p><strong>13</strong> But now in Christ Jesus you who once were far off are made near in the blood of Christ.</p>
+            <p><strong>14</strong> For he is our peace, who made both one, and broke down the middle wall of partition,</p>
+            <p><strong>15</strong> having abolished in the flesh the hostility, the law of commandments contained in ordinances, that he might create in himself one new man of the two, making peace;</p>
+            <p><strong>16</strong> and might reconcile them both in one body to God through the cross, having killed the hostility thereby.</p>
+            <p><strong>17</strong> He came and preached peace to you who were far off and to those who were near.</p>
+            <p><strong>18</strong> For through him we both have our access in one Spirit to the Father.</p>
+            <p><strong>19</strong> So then you are no longer strangers and foreigners, but you are fellow citizens with the saints, and of the household of God,</p>
+            <p><strong>20</strong> being built on the foundation of the apostles and prophets, Christ Jesus himself being the chief cornerstone;</p>
+            <p><strong>21</strong> in whom the whole building, fitted together, grows into a holy temple in the Lord;</p>
+            <p><strong>22</strong> in whom you also are built together for a habitation of God in the Spirit.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ephesians 2 (KJV)</p>
+            <p><strong>1</strong> And you hath he quickened, who were dead in trespasses and sins;</p>
+            <p><strong>2</strong> Wherein in time past ye walked according to the course of this world, according to the prince of the power of the air, the spirit that now worketh in the children of disobedience:</p>
+            <p><strong>3</strong> Among whom also we all had our conversation in times past in the lusts of our flesh, fulfilling the desires of the flesh and of the mind; and were by nature the children of wrath, even as others.</p>
+            <p><strong>4</strong> But God, who is rich in mercy, for his great love wherewith he loved us,</p>
+            <p><strong>5</strong> Even when we were dead in sins, hath quickened us together with Christ, (by grace ye are saved;)</p>
+            <p><strong>6</strong> And hath raised us up together, and made us sit together in heavenly places in Christ Jesus:</p>
+            <p><strong>7</strong> That in the ages to come he might shew the exceeding riches of his grace in his kindness toward us through Christ Jesus.</p>
+            <p><strong>8</strong> For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:</p>
+            <p><strong>9</strong> Not of works, lest any man should boast.</p>
+            <p><strong>10</strong> For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.</p>
+            <p><strong>11</strong> Wherefore remember, that ye being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands;</p>
+            <p><strong>12</strong> That at that time ye were without Christ, being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without God in the world:</p>
+            <p><strong>13</strong> But now in Christ Jesus ye who sometimes were far off are made nigh by the blood of Christ.</p>
+            <p><strong>14</strong> For he is our peace, who hath made both one, and hath broken down the middle wall of partition between us;</p>
+            <p><strong>15</strong> Having abolished in his flesh the enmity, even the law of commandments contained in ordinances; for to make in himself of twain one new man, so making peace;</p>
+            <p><strong>16</strong> And that he might reconcile both unto God in one body by the cross, having slain the enmity thereby:</p>
+            <p><strong>17</strong> And came and preached peace to you which were afar off, and to them that were nigh.</p>
+            <p><strong>18</strong> For through him we both have access by one Spirit unto the Father.</p>
+            <p><strong>19</strong> Now therefore ye are no more strangers and foreigners, but fellowcitizens with the saints, and of the household of God;</p>
+            <p><strong>20</strong> And are built upon the foundation of the apostles and prophets, Jesus Christ himself being the chief corner stone;</p>
+            <p><strong>21</strong> In whom all the building fitly framed together groweth unto an holy temple in the Lord:</p>
+            <p><strong>22</strong> In whom ye also are builded together for an habitation of God through the Spirit.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ephesians 2 (ASV)</p>
+            <p><strong>1</strong> And youdid he make alive, when ye were dead through your trespasses and sins,</p>
+            <p><strong>2</strong> wherein ye once walked according to the course of this world, according to the prince of the powers of the air, of the spirit that now worketh in the sons of disobedience;</p>
+            <p><strong>3</strong> among whom we also all once lived in the lusts of our flesh, doing the desires of the flesh and of the mind, and were by nature children of wrath, even as the rest:—</p>
+            <p><strong>4</strong> but God, being rich in mercy, for his great love wherewith he loved us,</p>
+            <p><strong>5</strong> even when we were dead through our trespasses, made us alive together with Christ (by grace have ye been saved),</p>
+            <p><strong>6</strong> and raised us up with him, and made us to sit with him in the heavenly places, in Christ Jesus:</p>
+            <p><strong>7</strong> that in the ages to come he might show the exceeding riches of his grace in kindness toward us in Christ Jesus:</p>
+            <p><strong>8</strong> for by grace have ye been saved through faith; and that not of yourselves, it is the gift of God;</p>
+            <p><strong>9</strong> not of works, that no man should glory.</p>
+            <p><strong>10</strong> For we are his workmanship, created in Christ Jesus for good works, which God afore prepared that we should walk in them.</p>
+            <p><strong>11</strong> Wherefore remember, that once ye, the Gentiles in the flesh, who are called Uncircumcision by that which is called Circumcision, in the flesh, made by hands;</p>
+            <p><strong>12</strong> that ye were at that time separate from Christ, alienated from the commonwealth of Israel, and strangers from the covenants of the promise, having no hope and without God in the world.</p>
+            <p><strong>13</strong> But now in Christ Jesus ye that once were far off are made nigh in the blood of Christ.</p>
+            <p><strong>14</strong> For he is our peace, who made both one, and brake down the middle wall of partition,</p>
+            <p><strong>15</strong> having abolished in his flesh the enmity, even the law of commandments contained in ordinances; that he might create in himself of the two one new man, so making peace;</p>
+            <p><strong>16</strong> and might reconcile them both in one body unto God through the cross, having slain the enmity thereby:</p>
+            <p><strong>17</strong> and he came and preached peace to you that were far off, and peace to them that were nigh:</p>
+            <p><strong>18</strong> for through him we both have our access in one Spirit unto the Father.</p>
+            <p><strong>19</strong> So then ye are no more strangers and sojourners, but ye are fellow-citizens with the saints, and of the household of God,</p>
+            <p><strong>20</strong> being built upon the foundation of the apostles and prophets, Christ Jesus himself being the chief corner stone;</p>
+            <p><strong>21</strong> in whom each several building, fitly framed together, groweth into a holy temple in the Lord;</p>
+            <p><strong>22</strong> in whom ye also are builded together for a habitation of God in the Spirit.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Paul describes our condition before grace in stark terms: we were dead in transgressions and sins, walking in step with the world, the devil, and the cravings of our flesh, by nature children of wrath. But two words change everything—“But God.” Being rich in mercy and moved by his great love, God made us alive together with Christ even while we were dead, raised us up, and seated us with him in the heavenly places. This is the heart of the chapter: by grace we have been saved through faith, and not by works, for we are God's own workmanship, created in Christ Jesus for good works he prepared beforehand. Paul then applies this grace to the great divide between Jew and Gentile. The Gentiles were once separated from Christ, alienated from Israel, strangers to the covenants, without hope and without God. But now in Christ those who were far off have been brought near by his blood. Christ himself is our peace, who made the two one and broke down the dividing wall of hostility, abolishing it in his flesh to create in himself one new humanity, reconciling both to God through the cross. So believers are no longer strangers but fellow citizens and members of God's household, built on the foundation of the apostles and prophets, with Christ as the cornerstone, growing into a holy temple, a dwelling place for God by the Spirit.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Paul</strong> — The apostle who unfolds the contrast between humanity's death in sin and God's rich mercy, and explains how Christ unites former enemies into one body.</li>
+          <li><strong>Christ Jesus</strong> — Our peace, who by his blood brings the far-off near, breaks down the dividing wall, creates one new humanity, and is the cornerstone of God's temple.</li>
+          <li><strong>God the Father</strong> — The One rich in mercy and great in love who makes the dead alive, saves by grace, and builds his people into a dwelling for himself.</li>
+          <li><strong>Jew and Gentile</strong> — The two divided peoples of the ancient world, formerly hostile and separated, now reconciled in one body and made fellow citizens of God's household.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ephesians 2:8 (WEB)</p>
+          <p class="verse__text">for by grace you have been saved through faith, and that not of yourselves; it is the gift of God,</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Apart from grace we are not merely sick but spiritually dead, unable to save ourselves.</li>
+          <li>The turning point of salvation is God's mercy and love—“But God”—not any merit of our own.</li>
+          <li>Saved people are God's workmanship, created in Christ for good works he planned in advance.</li>
+          <li>Christ's cross reconciles us not only to God but to one another, making former enemies one body.</li>
+          <li>The church is a living temple, a place where God himself dwells by his Spirit.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>We begin spiritually dead.</strong> “You were made alive when you were dead in transgressions and sins” (Ephesians 2:1, WEB). Salvation is resurrection, not self-improvement.</li>
+            <li><strong>Mercy is the great turning point.</strong> “But God, being rich in mercy, for his great love with which he loved us” (Ephesians 2:4, WEB) interrupts our hopeless condition with grace.</li>
+            <li><strong>Grace excludes boasting.</strong> “By grace you have been saved through faith… not of works, that no one would boast” (Ephesians 2:8-9, WEB). Salvation leaves us no room for pride, only gratitude.</li>
+            <li><strong>Christ is our peace.</strong> “He is our peace, who made both one, and broke down the middle wall of partition” (Ephesians 2:14, WEB). The cross heals vertical and horizontal division alike.</li>
+            <li><strong>The church is God's dwelling.</strong> Believers are “built together for a habitation of God in the Spirit” (Ephesians 2:22, WEB). God now lives among his reconciled people.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>How does Paul describe our condition before Christ in verses 1-3, and why does that diagnosis matter?</li>
+            <li>The phrase “But God” (2:4) marks the turning point of the chapter. Why is grace such good news only after we grasp our deadness?</li>
+            <li>If we are saved “not of works” yet created “for good works” (2:8-10), how do grace and good works fit together?</li>
+            <li>What was the “middle wall of partition” (2:14), and how does Christ's tearing it down speak to divisions in the church today?</li>
+            <li>Paul says we are being built into a temple where God dwells (2:21-22). How does this picture change the way you view the church and your part in it?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>Paul says we were dead, walking under the world, the devil, and the flesh, and “by nature children of wrath” (2:1-3). A dead person cannot revive himself; this honest diagnosis makes grace astonishing rather than expected. Resist softening it—only then does “But God” shine.</li>
+            <li>Until we see how hopeless our state was, grace looks optional. “But God, being rich in mercy” (2:4) interrupts a story headed for death. Encourage members to feel the weight of both halves: the depth of our need and the riches of God's mercy.</li>
+            <li>Works are not the root of salvation but its fruit; we are “his workmanship, created in Christ Jesus for good works” (2:10). God saves us freely and then equips us for the good works he prepared. Help the group hold these together without sliding into either pride or passivity.</li>
+            <li>The wall pictured the deep hostility between Jew and Gentile, which Christ abolished in his flesh (2:14-16). This is partly personal application; invite honest reflection on the walls we still maintain—cultural, racial, social—and how the gospel calls us to one reconciled body.</li>
+            <li>The church is not a building but a living temple where God dwells by his Spirit (2:21-22). This reframes membership as belonging to God's own household. As leader, encourage members to see their place in the body as a gift and a calling, fitted together with others into something holy.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ephesians-1.html">← Ephesians 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ephesians.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ephesians-3.html">Ephesians 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

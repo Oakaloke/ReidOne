@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Philemon: The Whole Story — ReidOne Bible Study</title>
+  <meta name="description" content="An overview of Philemon: Paul writes from prison to ask Philemon to receive his converted runaway slave Onesimus back not as a slave but as a beloved brother." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-philemon-progress" data-study-total="1">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Philemon, Whole-Book Overview
+  Teaching content prepared for this site. Key-verse text is from the
+  World English Bible (WEB), public domain. This overview is
+  intentionally NOT part of the chapter progress tracker.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <span class="study-meta">The Book of Philemon · Whole-Book Overview</span>
+        <h1>Philemon: The Whole Story</h1>
+        <p class="lead">A short, tender letter in which Paul asks a friend to welcome home a runaway slave as a beloved brother, picturing the gospel of grace.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Philemon is unlike most of Paul's letters. It is not addressed to a church wrestling with doctrine or division, but to an individual friend about a single, deeply personal matter. Paul writes from imprisonment to Philemon, a wealthy believer in whose house a congregation meets. The occasion is a man named Onesimus, Philemon's slave, who has apparently run away and somehow come into contact with Paul. Under Paul's ministry Onesimus has become a Christian, and now Paul is sending him back—not as a fugitive to be punished, but as a brother to be embraced.</p>
+          <p>The genius of the letter is in its tone. Paul has every right to command, yet for love's sake he appeals. He plays gently on Onesimus's name, which means "useful," noting that the once-useless slave is now useful to them both. He calls Onesimus his own child, born in his chains, and even his very heart. He asks Philemon to receive him as he would receive Paul himself, and offers to cover any debt or damage: "put that to my account." Woven through these tender lines is the logic of the cross, where one person's debt is carried by another so that fellowship can be restored.</p>
+          <p>Though brief, Philemon is weighty. It does not issue a sweeping decree against slavery, but it plants a seed that cannot help but grow: when two people are brothers in Christ, the old categories of master and slave can no longer remain the same. The letter shows the gospel working its quiet revolution in ordinary relationships—softening pride, forgiving wrongs, and binding enemies together as family. It leaves us asking whether we will let the grace we have received reshape how we treat those who have wronged us.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>The Big Movements</h2>
+          <ul class="char-list">
+          <li><strong>Greeting and Thanksgiving (vv 1-7)</strong> — Paul, a prisoner of Christ, greets Philemon, Apphia, Archippus, and the church in the house, and gives thanks for Philemon's love and faith, which have refreshed the hearts of the saints.</li>
+          <li><strong>The Appeal for Onesimus (vv 8-16)</strong> — Choosing to beg rather than command, Paul pleads for his child Onesimus, once useless but now useful, asking that he be received no longer as a slave but as a beloved brother.</li>
+          <li><strong>Paul Takes the Debt (vv 17-22)</strong> — Paul asks Philemon to receive Onesimus as he would receive Paul, offers in his own hand to repay any wrong, and expresses confidence that Philemon will do even more than asked.</li>
+          <li><strong>Final Greetings (vv 23-25)</strong> — Paul sends greetings from Epaphras and his fellow workers, and closes with a benediction of the grace of the Lord Jesus Christ upon Philemon's spirit.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Paul</strong> — The apostle, writing as "the aged" and a prisoner of Christ Jesus, who chooses appeal over command and offers to pay Onesimus's debt himself for the sake of reconciliation.</li>
+          <li><strong>Philemon</strong> — A beloved fellow worker and host of a house church, known for love and faith, whom Paul asks to forgive and welcome home his runaway slave as a brother.</li>
+          <li><strong>Onesimus</strong> — Philemon's slave who ran away and was converted under Paul in prison; once useless, now useful, sent back as Paul's own heart and a beloved brother.</li>
+          <li><strong>Christ Jesus</strong> — The Lord whose grace binds these believers together, in whom a slave becomes a brother, and whose gospel pattern of bearing another's debt underlies Paul's whole appeal.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Philemon 1:6 (WEB)</p>
+          <p class="verse__text">that the fellowship of your faith may become effective, in the knowledge of every good thing which is in us in Christ Jesus.</p>
+        </blockquote>
+          <p>Paul's prayer is that Philemon's faith would not remain private but become effective, working itself out in love—and the rest of the letter shows exactly what that looks like. A faith that truly knows "every good thing which is in us in Christ Jesus" cannot keep treating a forgiven brother as a fugitive slave. The fellowship of faith becomes effective when grace received becomes grace extended, even to one who has wronged us.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Big Lessons</h2>
+          <ul class="lesson-list">
+          <li>The gospel transforms our relationships, turning master and slave into beloved brothers in Christ (Philemon 1:16).</li>
+          <li>Love often chooses to appeal rather than command, even when it has the right to command (Philemon 1:8-9).</li>
+          <li>Christ takes our debt upon himself, and we are called to bear one another's burdens in the same way (Philemon 1:18).</li>
+          <li>No one is beyond usefulness in God's hands; the gospel makes the useless useful (Philemon 1:11).</li>
+          <li>Genuine faith becomes effective when it works itself out in forgiveness, generosity, and reconciliation (Philemon 1:6).</li>
+          <li>A heart refreshed by Christ longs to refresh the hearts of others (Philemon 1:7, 20).</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-overview">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-overview">
+            <ul class="lesson-list">
+            <li><strong>Faith is meant to become effective.</strong> Paul prays "that the fellowship of your faith may become effective" (Philemon 1:6, WEB). True faith does not stay hidden; it works itself out in love and reconciliation.</li>
+            <li><strong>Love appeals rather than coerces.</strong> Though Paul has "all boldness in Christ to command," he says, "for love's sake I rather beg" (Philemon 1:8-9, WEB). Grace persuades the heart instead of forcing the hand.</li>
+            <li><strong>The gospel makes the useless useful.</strong> Onesimus "once was useless to you, but now is useful" (Philemon 1:11, WEB). Christ redeems people the world has written off and gives their lives new worth.</li>
+            <li><strong>Christ takes the debt to his own account.</strong> Paul writes, "if he has wronged you at all, or owes you anything, put that to my account" (Philemon 1:18, WEB), picturing how Christ assumes our debt so we can be received.</li>
+            <li><strong>In Christ, status gives way to brotherhood.</strong> Paul asks that Onesimus be received "no longer as a slave, but more than a slave, a beloved brother" (Philemon 1:16, WEB). The gospel reorders every human relationship around love.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-overview">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-overview">
+            <ol class="study-questions">
+            <li>Paul could have commanded Philemon but chose instead to appeal for love's sake. What does this teach us about how grace works on the heart?</li>
+            <li>Onesimus is described as once useless but now useful. How does the gospel change a person's worth and usefulness?</li>
+            <li>When Paul offers to pay Onesimus's debt himself, how does this picture what Christ has done for us?</li>
+            <li>Paul asks Philemon to receive Onesimus "no longer as a slave, but more than a slave, a beloved brother." How should being brothers and sisters in Christ reshape our other relationships?</li>
+            <li>Why do you think this short, personal letter was preserved as Scripture for the whole church?</li>
+            <li>Is there someone who has wronged you whom God may be calling you to forgive and welcome as a brother or sister? What would a first step look like?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-overview">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-overview">
+            <ol class="study-questions">
+            <li>Paul deliberately sets aside his apostolic authority and pleads as a friend and "the aged" prisoner (1:8-9). He knows that forgiveness offered under compulsion is hollow; he wants Philemon's goodness to be "of free will" (1:14). Help the group see that the gospel persuades and frees rather than coerces.</li>
+            <li>The play on Onesimus's name (which means "useful") shows the gospel's power to redeem a life. A runaway slave the world might dismiss becomes useful to both Paul and Philemon and a beloved brother. Encourage the group to consider how Christ assigns new worth to those others overlook.</li>
+            <li>Paul's words "put that to my account" (1:18) are a small portrait of the cross: he stands in Onesimus's place, taking the debt so the relationship can be restored. Point the group to Christ, who bore our debt of sin so that we could be received by the Father.</li>
+            <li>Being brothers in Christ does not erase Onesimus's history, but it transforms it; the bond of family in the Lord now outweighs the old category of slave (1:16). Invite the group to name relationships—family, work, church—where this shared identity should change how they treat one another.</li>
+            <li>Though personal, the letter is a public model of how the gospel works in ordinary life. It shows reconciliation, forgiveness, and the dismantling of human hierarchies from the inside out. Help the group see that the way we handle private wrongs is itself a witness to the gospel.</li>
+            <li>This is a personal-application question with no single answer. As leader, invite members to name—quietly or aloud—someone they need to forgive, and to consider one concrete, gracious step. Close by resting in the mercy that received us when we were still useless, and avoid pressing anyone to share more than they wish.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a class="btn btn--outline" href="philemon.html">← Study Overview</a>
+          <a class="btn btn--ghost" href="philemon.html">All Chapters</a>
+          <a class="btn btn--accent" href="philemon-1.html">Start with Philemon 1 →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

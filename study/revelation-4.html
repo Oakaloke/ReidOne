@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 4: The Throne of Heaven — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 4: a door opens in heaven and John sees the throne of God, the twenty-four elders, and the four living creatures in worship." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 4</span>
+        <h1>Revelation 4: The Throne of Heaven</h1>
+        <p class="lead">A door opens in heaven, and John is shown the throne of God surrounded by ceaseless worship from elders and living creatures.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — Revelation Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 4 (WEB)</p>
+            <p><strong>1</strong> After these things I looked and saw a door opened in heaven, and the first voice that I heard, like a trumpet speaking with me, was one saying, “Come up here, and I will show you the things which must happen after this.”</p>
+            <p><strong>2</strong> Immediately I was in the Spirit. Behold, there was a throne set in heaven, and one sitting on the throne</p>
+            <p><strong>3</strong> that looked like a jasper stone and a sardius. There was a rainbow around the throne, like an emerald to look at.</p>
+            <p><strong>4</strong> Around the throne were twenty-four thrones. On the thrones were twenty-four elders sitting, dressed in white garments, with crowns of gold on their heads.</p>
+            <p><strong>5</strong> Out of the throne proceed lightnings, sounds, and thunders. There were seven lamps of fire burning before his throne, which are the seven Spirits of God.</p>
+            <p><strong>6</strong> Before the throne was something like a sea of glass, similar to crystal. In the midst of the throne, and around the throne were four living creatures full of eyes before and behind.</p>
+            <p><strong>7</strong> The first creature was like a lion, and the second creature like a calf, and the third creature had a face like a man, and the fourth was like a flying eagle.</p>
+            <p><strong>8</strong> The four living creatures, each one of them having six wings, are full of eyes around and within. They have no rest day and night, saying, “Holy, holy, holy is the Lord God, the Almighty, who was and who is and who is to come!”</p>
+            <p><strong>9</strong> When the living creatures give glory, honor, and thanks to him who sits on the throne, to him who lives forever and ever,</p>
+            <p><strong>10</strong> the twenty-four elders fall down before him who sits on the throne, and worship him who lives forever and ever, and throw their crowns before the throne, saying,</p>
+            <p><strong>11</strong> “Worthy are you, our Lord and God, the Holy One, to receive the glory, the honor, and the power, for you created all things, and because of your desire they existed, and were created!”</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 4 (KJV)</p>
+            <p><strong>1</strong> After this I looked, and, behold, a door was opened in heaven: and the first voice which I heard was as it were of a trumpet talking with me; which said, Come up hither, and I will shew thee things which must be hereafter.</p>
+            <p><strong>2</strong> And immediately I was in the spirit: and, behold, a throne was set in heaven, and one sat on the throne.</p>
+            <p><strong>3</strong> And he that sat was to look upon like a jasper and a sardine stone: and there was a rainbow round about the throne, in sight like unto an emerald.</p>
+            <p><strong>4</strong> And round about the throne were four and twenty seats: and upon the seats I saw four and twenty elders sitting, clothed in white raiment; and they had on their heads crowns of gold.</p>
+            <p><strong>5</strong> And out of the throne proceeded lightnings and thunderings and voices: and there were seven lamps of fire burning before the throne, which are the seven Spirits of God.</p>
+            <p><strong>6</strong> And before the throne there was a sea of glass like unto crystal: and in the midst of the throne, and round about the throne, were four beasts full of eyes before and behind.</p>
+            <p><strong>7</strong> And the first beast was like a lion, and the second beast like a calf, and the third beast had a face as a man, and the fourth beast was like a flying eagle.</p>
+            <p><strong>8</strong> And the four beasts had each of them six wings about him; and they were full of eyes within: and they rest not day and night, saying, Holy, holy, holy, Lord God Almighty, which was, and is, and is to come.</p>
+            <p><strong>9</strong> And when those beasts give glory and honour and thanks to him that sat on the throne, who liveth for ever and ever,</p>
+            <p><strong>10</strong> The four and twenty elders fall down before him that sat on the throne, and worship him that liveth for ever and ever, and cast their crowns before the throne, saying,</p>
+            <p><strong>11</strong> Thou art worthy, O Lord, to receive glory and honour and power: for thou hast created all things, and for thy pleasure they are and were created.</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 4 (ASV)</p>
+            <p><strong>1</strong> After these things I saw, and behold, a door opened in heaven, and the first voice that I heard, a voiceas of a trumpet speaking with me, one saying, Come up hither, and I will show thee the things which must come to pass hereafter.</p>
+            <p><strong>2</strong> Straightway I was in the Spirit: and behold, there was a throne set in heaven, and one sitting upon the throne;</p>
+            <p><strong>3</strong> and he that sat was to look upon like a jasper stone and a sardius: and there was a rainbow round about the throne, like an emerald to look upon.</p>
+            <p><strong>4</strong> And round about the throne were four and twenty thrones: and upon the thrones I saw four and twenty elders sitting, arrayed in white garments; and on their heads crowns of gold.</p>
+            <p><strong>5</strong> And out of the throne proceed lightnings and voices and thunders. And there were seven lamps of fire burning before the throne, which are the seven Spirits of God;</p>
+            <p><strong>6</strong> and before the throne, as it were a sea of glass like unto crystal; and in the midst of the throne, and round about the throne, four living creatures full of eyes before and behind.</p>
+            <p><strong>7</strong> And the first creature was like a lion, and the second creature like a calf, and the third creature had a face as of a man, and the fourth creature was like a flying eagle.</p>
+            <p><strong>8</strong> And the four living creatures, having each one of them six wings, are full of eyes round about and within: and they have no rest day and night, saying, Holy, holy, holy, isthe Lord God, the Almighty, who was and who is and who is to come.</p>
+            <p><strong>9</strong> And when the living creatures shall give glory and honor and thanks to him that sitteth on the throne, to him that liveth for ever and ever,</p>
+            <p><strong>10</strong> the four and twenty elders shall fall down before him that sitteth on the throne, and shall worship him that liveth for ever and ever, and shall cast their crowns before the throne, saying,</p>
+            <p><strong>11</strong> Worthy art thou, our Lord and our God, to receive the glory and the honor and the power: for thou didst create all things, and because of thy will they were, and were created.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>John sees a door standing open in heaven and is called to come up and be shown what must take place. At once he is in the Spirit, and before him stands a throne with One seated on it, gleaming like jasper and sardius, encircled by an emerald rainbow. Around the throne are twenty-four elders on thrones, clothed in white with golden crowns, while lightning, thunder, and the seven burning lamps of the sevenfold Spirit proceed from the throne. Before it stretches a sea of glass like crystal, and four living creatures—like a lion, an ox, a man, and an eagle—full of eyes and crowned with six wings, never cease their cry: holy, holy, holy is the Lord God Almighty, who was and is and is to come. Whenever the creatures give glory and honor and thanks to the One who lives forever, the twenty-four elders fall down, casting their crowns before the throne, and declare him worthy to receive glory, honor, and power because he created all things and by his will they exist. The chapter is pure worship, lifting John's gaze—and ours—from the troubled churches of earth to the unshakable throne that rules over all.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>God on the throne</strong> — The eternal Almighty, holy and radiant, seated on the central throne of heaven, worthy of worship because he created all things and sustains them by his will.</li>
+          <li><strong>The twenty-four elders</strong> — Crowned and robed figures around the throne who fall down, cast their crowns before God, and praise him as Creator and Lord.</li>
+          <li><strong>The four living creatures</strong> — Heavenly beings full of eyes, like a lion, ox, man, and eagle, who never cease declaring the holiness of the Lord God Almighty.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 4:8 (WEB)</p>
+          <p class="verse__text">Holy, holy, holy is the Lord God, the Almighty, who was and who is and who is to come!</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>At the center of all reality is a throne, and One who reigns over every circumstance.</li>
+          <li>Heaven's deepest activity is worship—ceaseless, joyful adoration of the holy God.</li>
+          <li>The elders cast their crowns down, showing that every honor we receive belongs to God.</li>
+          <li>Because God created and sustains all things, he is worthy of our complete trust and praise.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>God reigns over everything.</strong> John sees “a throne set in heaven, and one sitting on the throne” (Revelation 4:2, WEB). Whatever shakes the earth, the throne stands firm.</li>
+            <li><strong>Holiness defines God's character.</strong> The creatures cry, “Holy, holy, holy is the Lord God, the Almighty” (Revelation 4:8, WEB). His purity is the heart of heaven's praise.</li>
+            <li><strong>Worship surrenders our crowns.</strong> The elders “throw their crowns before the throne” (Revelation 4:10, WEB). True worship lays every honor at God's feet.</li>
+            <li><strong>God is worthy as Creator.</strong> “Worthy are you… for you created all things” (Revelation 4:11, WEB). His authorship of all things grounds his right to all glory.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>How does the vision of the throne reframe the struggles of the seven churches we have just read about?</li>
+            <li>What strikes you most about heaven's worship as John describes it?</li>
+            <li>Why do the elders cast their crowns before the throne, and what does this teach us about worship?</li>
+            <li>What does the threefold cry of “Holy, holy, holy” reveal about God's character?</li>
+            <li>How might lifting your eyes to God's throne change the way you face the pressures of this week?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>After hard letters to struggling churches, John is shown that above all the turmoil stands an unshaken throne. Help the group see that the answer to fear is not first an explanation but a vision of who reigns over history.</li>
+            <li>The scene overflows with color, sound, and ceaseless praise. Invite the group to notice that worship is not an interruption of heaven's life but its very center, and that we are made to join it.</li>
+            <li>The elders surrender their crowns because every honor they have is derived from God (4:10-11). Worship recognizes that all we are and have comes from him, and gladly returns the glory to its source.</li>
+            <li>The repeated “Holy” underscores that God is utterly set apart—pure, majestic, wholly good. His holiness is not cold distance but blazing perfection, the foundation of both his judgments and his love.</li>
+            <li>This is a personal-application question. Encourage members to begin their week by lifting their gaze to the throne, letting the reality of God's reign shrink their anxieties. As leader, model how worship can steady a troubled heart.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-3.html">← Revelation 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-5.html">Revelation 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

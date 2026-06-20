@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 John 5: That You May Know — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 John 5: the overcoming faith that conquers the world, the testimony of God concerning his Son, and the assurance of eternal life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-john-progress" data-study-total="5">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 John, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-john.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 John · Chapter 5</span>
+        <h1>1 John 5: That You May Know</h1>
+        <p class="lead">Faith in Jesus the Son of God overcomes the world, and the testimony stands sure: God has given us eternal life, and this life is in his Son.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — 1 John Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 John 5 (WEB)</p>
+            <p><strong>1</strong> Whoever believes that Jesus is the Christ has been born of God. Whoever loves the Father also loves the child who is born of him.</p>
+            <p><strong>2</strong> By this we know that we love the children of God, when we love God and keep his commandments.</p>
+            <p><strong>3</strong> For this is the love of God, that we keep his commandments. His commandments are not grievous.</p>
+            <p><strong>4</strong> For whatever is born of God overcomes the world. This is the victory that has overcome the world: your faith.</p>
+            <p><strong>5</strong> Who is he who overcomes the world, but he who believes that Jesus is the Son of God?</p>
+            <p><strong>6</strong> This is he who came by water and blood, Jesus Christ; not with the water only, but with the water and the blood. It is the Spirit who testifies, because the Spirit is the truth.</p>
+            <p><strong>7</strong> For there are three who testify:</p>
+            <p><strong>8</strong> the Spirit, the water, and the blood; and the three agree as one.</p>
+            <p><strong>9</strong> If we receive the witness of men, the witness of God is greater; for this is God’s testimony which he has testified concerning his Son.</p>
+            <p><strong>10</strong> He who believes in the Son of God has the testimony in himself. He who doesn’t believe God has made him a liar, because he has not believed in the testimony that God has given concerning his Son.</p>
+            <p><strong>11</strong> The testimony is this, that God gave to us eternal life, and this life is in his Son.</p>
+            <p><strong>12</strong> He who has the Son has the life. He who doesn’t have God’s Son doesn’t have the life.</p>
+            <p><strong>13</strong> These things I have written to you who believe in the name of the Son of God, that you may know that you have eternal life, and that you may continue to believe in the name of the Son of God.</p>
+            <p><strong>14</strong> This is the boldness which we have toward him, that, if we ask anything according to his will, he listens to us.</p>
+            <p><strong>15</strong> And if we know that he listens to us, whatever we ask, we know that we have the petitions which we have asked of him.</p>
+            <p><strong>16</strong> If anyone sees his brother sinning a sin not leading to death, he shall ask, and God will give him life for those who sin not leading to death. There is a sin leading to death. I don’t say that he should make a request concerning this.</p>
+            <p><strong>17</strong> All unrighteousness is sin, and there is a sin not leading to death.</p>
+            <p><strong>18</strong> We know that whoever is born of God doesn’t sin, but he who was born of God keeps himself, and the evil one doesn’t touch him.</p>
+            <p><strong>19</strong> We know that we are of God, and the whole world lies in the power of the evil one.</p>
+            <p><strong>20</strong> We know that the Son of God has come, and has given us an understanding, that we know him who is true, and we are in him who is true, in his Son Jesus Christ. This is the true God, and eternal life.</p>
+            <p><strong>21</strong> Little children, keep yourselves from idols.</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 John 5 (KJV)</p>
+            <p><strong>1</strong> Whosoever believeth that Jesus is the Christ is born of God: and every one that loveth him that begat loveth him also that is begotten of him.</p>
+            <p><strong>2</strong> By this we know that we love the children of God, when we love God, and keep his commandments.</p>
+            <p><strong>3</strong> For this is the love of God, that we keep his commandments: and his commandments are not grievous.</p>
+            <p><strong>4</strong> For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith.</p>
+            <p><strong>5</strong> Who is he that overcometh the world, but he that believeth that Jesus is the Son of God?</p>
+            <p><strong>6</strong> This is he that came by water and blood, even Jesus Christ; not by water only, but by water and blood. And it is the Spirit that beareth witness, because the Spirit is truth.</p>
+            <p><strong>7</strong> For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one.</p>
+            <p><strong>8</strong> And there are three that bear witness in earth, the spirit, and the water, and the blood: and these three agree in one.</p>
+            <p><strong>9</strong> If we receive the witness of men, the witness of God is greater: for this is the witness of God which he hath testified of his Son.</p>
+            <p><strong>10</strong> He that believeth on the Son of God hath the witness in himself: he that believeth not God hath made him a liar; because he believeth not the record that God gave of his Son.</p>
+            <p><strong>11</strong> And this is the record, that God hath given to us eternal life, and this life is in his Son.</p>
+            <p><strong>12</strong> He that hath the Son hath life; and he that hath not the Son of God hath not life.</p>
+            <p><strong>13</strong> These things have I written unto you that believe on the name of the Son of God; that ye may know that ye have eternal life, and that ye may believe on the name of the Son of God.</p>
+            <p><strong>14</strong> And this is the confidence that we have in him, that, if we ask any thing according to his will, he heareth us:</p>
+            <p><strong>15</strong> And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.</p>
+            <p><strong>16</strong> If any man see his brother sin a sin which is not unto death, he shall ask, and he shall give him life for them that sin not unto death. There is a sin unto death: I do not say that he shall pray for it.</p>
+            <p><strong>17</strong> All unrighteousness is sin: and there is a sin not unto death.</p>
+            <p><strong>18</strong> We know that whosoever is born of God sinneth not; but he that is begotten of God keepeth himself, and that wicked one toucheth him not.</p>
+            <p><strong>19</strong> And we know that we are of God, and the whole world lieth in wickedness.</p>
+            <p><strong>20</strong> And we know that the Son of God is come, and hath given us an understanding, that we may know him that is true, and we are in him that is true, even in his Son Jesus Christ. This is the true God, and eternal life.</p>
+            <p><strong>21</strong> Little children, keep yourselves from idols. Amen.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 John 5 (ASV)</p>
+            <p><strong>1</strong> Whosoever believeth that Jesus is the Christ is begotten of God: and whosoever loveth him that begat loveth him also that is begotten of him.</p>
+            <p><strong>2</strong> Hereby we know that we love the children of God, when we love God and do his commandments.</p>
+            <p><strong>3</strong> For this is the love of God, that we keep his commandments: and his commandments are not grievous.</p>
+            <p><strong>4</strong> For whatsoever is begotten of God overcometh the world: and this is the victory that hath overcome the world, even our faith.</p>
+            <p><strong>5</strong> And who is he that overcometh the world, but he that believeth that Jesus is the Son of God?</p>
+            <p><strong>6</strong> This is he that came by water and blood, even Jesus Christ; not with the water only, but with the water and with the blood.</p>
+            <p><strong>7</strong> And it is the Spirit that beareth witness, because the Spirit is the truth.</p>
+            <p><strong>8</strong> For there are three who bear witness, the Spirit, and the water, and the blood: and the three agree in one.</p>
+            <p><strong>9</strong> If we receive the witness of men, the witness of God is greater: for the witness of God is this, that he hath borne witness concerning his Son.</p>
+            <p><strong>10</strong> He that believeth on the Son of God hath the witness in him: he that believeth not God hath made him a liar; because he hath not believed in the witness that God hath borne concerning his Son.</p>
+            <p><strong>11</strong> And the witness is this, that God gave unto us eternal life, and this life is in his Son.</p>
+            <p><strong>12</strong> He that hath the Son hath the life; he that hath not the Son of God hath not the life.</p>
+            <p><strong>13</strong> These things have I written unto you, that ye may know that ye have eternal life, even unto you that believe on the name of the Son of God.</p>
+            <p><strong>14</strong> And this is the boldness which we have toward him, that, if we ask anything according to his will, he heareth us:</p>
+            <p><strong>15</strong> and if we know that he heareth us whatsoever we ask, we know that we have the petitions which we have asked of him.</p>
+            <p><strong>16</strong> If any man see his brother sinning a sin not unto death, he shall ask, and God will give him life for them that sin not unto death. There is a sin unto death: not concerning this do I say that he should make request.</p>
+            <p><strong>17</strong> All unrighteousness is sin: and there is a sin not unto death.</p>
+            <p><strong>18</strong> We know that whosoever is begotten of God sinneth not; but he that was begotten of God keepeth himself, and the evil one toucheth him not.</p>
+            <p><strong>19</strong> We know that we are of God, and the whole world lieth in the evil one.</p>
+            <p><strong>20</strong> And we know that the Son of God is come, and hath given us an understanding, that we know him that is true, and we are in him that is true, even in his Son Jesus Christ. This is the true God, and eternal life.</p>
+            <p><strong>21</strong> My little children, guard yourselves from idols.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>John gathers his themes into one: everyone who believes that Jesus is the Christ has been born of God, and to love the Father is to love his children. We know we love God's children when we love God and keep his commandments, and his commandments are not burdensome, for whatever is born of God overcomes the world—and the victory that overcomes the world is our faith. The one who overcomes is simply the one who believes that Jesus is the Son of God. John points to the threefold testimony to Jesus: the Spirit, the water, and the blood, which agree as one, for the witness of God is greater than any human witness, and God has testified concerning his Son. The one who believes in the Son has this testimony within; the one who does not believe makes God a liar. And here is the testimony: God gave us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son does not have life. John states his purpose plainly—he has written these things to those who believe in the name of the Son of God so that they may know they have eternal life and may keep on believing. From there flows confidence in prayer, the call to intercede for a sinning brother, and a final string of certainties: those born of God are kept by him so the evil one cannot touch them; we belong to God while the world lies in the power of the evil one; and the Son of God has come and given us understanding to know the true God, who is eternal life. The letter closes with a tender warning: little children, keep yourselves from idols.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>John</strong> — The apostle drawing his letter to a close by stating its purpose—that believers may know they have eternal life.</li>
+          <li><strong>Jesus Christ, the Son of God</strong> — The one who came by water and blood, in whom God has given us eternal life, and whom to have is to have life itself.</li>
+          <li><strong>The believers</strong> — Those who believe in the name of the Son of God, born of God, who overcome the world and are kept safe from the evil one.</li>
+          <li><strong>The Spirit</strong> — The one who testifies because the Spirit is the truth, agreeing with the water and the blood in witness to the Son.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 John 5:11 (WEB)</p>
+          <p class="verse__text">The testimony is this, that God gave to us eternal life, and this life is in his Son.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Faith that Jesus is the Son of God is the victory that overcomes the world.</li>
+          <li>God himself has testified concerning his Son, and his witness is greater than any human word.</li>
+          <li>Eternal life is God's gift, and it is found in the Son alone.</li>
+          <li>John wrote so that believers may know—not merely hope—that they have eternal life.</li>
+          <li>Those born of God are kept by him, secure against the evil one.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>Faith overcomes the world.</strong> “This is the victory that has overcome the world: your faith” (1 John 5:4, WEB). Trust in Christ, not our strength, wins the decisive battle.</li>
+            <li><strong>God's own testimony is our foundation.</strong> “If we receive the witness of men, the witness of God is greater” (1 John 5:9, WEB). Assurance rests on what God has said about his Son.</li>
+            <li><strong>Life is found only in the Son.</strong> “He who has the Son has the life. He who doesn’t have God’s Son doesn’t have the life” (1 John 5:12, WEB). Eternal life is not an abstraction but a Person.</li>
+            <li><strong>We are meant to know we have eternal life.</strong> “These things I have written… that you may know that you have eternal life” (1 John 5:13, WEB). Assurance is the very purpose of the letter.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>What does John mean that faith is “the victory that has overcome the world” (5:4-5)?</li>
+            <li>What is the testimony God has given concerning his Son, and why does it matter (5:9-11)?</li>
+            <li>Why is it so significant that “he who has the Son has the life” (5:12)?</li>
+            <li>John finally states his purpose in 5:13. How does knowing you have eternal life differ from merely hoping for it?</li>
+            <li>What fears or doubts keep you from resting in the assurance John offers, and what would change if you truly knew you have eternal life?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>The world here is everything set against God, and faith overcomes it not by our effort but by uniting us to the victorious Christ (5:4-5). Believing that Jesus is the Son of God is itself the conquering act. Encourage the group to see faith as resting on Christ's victory, not summoning their own.</li>
+            <li>God has borne witness to his Son through the Spirit, the water, and the blood (5:6-9), and that divine testimony outweighs any human opinion. Assurance is not self-generated confidence but trust in what God himself has declared about Jesus. Anchor doubts there.</li>
+            <li>Eternal life is not a thing we earn or a status we achieve but a Person we possess—Christ himself (5:11-12). To have the Son is to have life; to lack him is to lack it. This simplifies assurance: the question is whether we are trusting Jesus.</li>
+            <li>Hope can waver with our moods, but knowing rests on God's testimony and promise. John wants settled confidence, not anxious guessing (5:13). Help the group see assurance as the normal, intended Christian experience, grounded in Christ rather than feelings.</li>
+            <li>This is a personal-application question with no single answer. As leader, gently invite members to name what undermines their assurance, and return them to 5:11-13. Close by resting together in the promise that the life is in the Son, and whoever has the Son has the life.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-john-4.html">← 1 John 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

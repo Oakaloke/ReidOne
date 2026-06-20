@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Colossians 1: The Image of the Invisible God — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Colossians 1: Paul gives thanks for the Colossians, prays for their growth, and exalts Christ as the supreme image of God and reconciler of all things." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-colossians-progress" data-study-total="4">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Colossians, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="colossians.html">← All Chapters</a>
+        <span class="study-meta">The Book of Colossians · Chapter 1</span>
+        <h1>Colossians 1: The Image of the Invisible God</h1>
+        <p class="lead">Paul gives thanks and prays for the Colossians, then unveils the Son who is supreme over all creation and reconciles all things by his cross.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Colossians Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Colossians 1 (WEB)</p>
+            <p><strong>1</strong> Paul, an apostle of Christ Jesus through the will of God, and Timothy our brother,</p>
+            <p><strong>2</strong> to the saints and faithful brothers in Christ at Colossae: Grace to you and peace from God our Father, and the Lord Jesus Christ.</p>
+            <p><strong>3</strong> We give thanks to God the Father of our Lord Jesus Christ, praying always for you,</p>
+            <p><strong>4</strong> having heard of your faith in Christ Jesus, and of the love which you have toward all the saints,</p>
+            <p><strong>5</strong> because of the hope which is laid up for you in the heavens, of which you heard before in the word of the truth of the Good News,</p>
+            <p><strong>6</strong> which has come to you; even as it is in all the world and is bearing fruit and growing, as it does in you also, since the day you heard and knew the grace of God in truth;</p>
+            <p><strong>7</strong> even as you learned of Epaphras our beloved fellow servant, who is a faithful servant of Christ on our behalf,</p>
+            <p><strong>8</strong> who also declared to us your love in the Spirit.</p>
+            <p><strong>9</strong> For this cause, we also, since the day we heard this, don’t cease praying and making requests for you, that you may be filled with the knowledge of his will in all spiritual wisdom and understanding,</p>
+            <p><strong>10</strong> that you may walk worthily of the Lord, to please him in all respects, bearing fruit in every good work, and increasing in the knowledge of God;</p>
+            <p><strong>11</strong> strengthened with all power, according to the might of his glory, for all endurance and perseverance with joy;</p>
+            <p><strong>12</strong> giving thanks to the Father, who made us fit to be partakers of the inheritance of the saints in light;</p>
+            <p><strong>13</strong> who delivered us out of the power of darkness, and translated us into the Kingdom of the Son of his love;</p>
+            <p><strong>14</strong> in whom we have our redemption, the forgiveness of our sins;</p>
+            <p><strong>15</strong> who is the image of the invisible God, the firstborn of all creation.</p>
+            <p><strong>16</strong> For by him all things were created, in the heavens and on the earth, things visible and things invisible, whether thrones or dominions or principalities or powers; all things have been created through him, and for him.</p>
+            <p><strong>17</strong> He is before all things, and in him all things are held together.</p>
+            <p><strong>18</strong> He is the head of the body, the assembly, who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.</p>
+            <p><strong>19</strong> For all the fullness was pleased to dwell in him;</p>
+            <p><strong>20</strong> and through him to reconcile all things to himself, by him, whether things on the earth, or things in the heavens, having made peace through the blood of his cross.</p>
+            <p><strong>21</strong> You, being in past times alienated and enemies in your mind in your evil works,</p>
+            <p><strong>22</strong> yet now he has reconciled in the body of his flesh through death, to present you holy and without defect and blameless before him,</p>
+            <p><strong>23</strong> if it is so that you continue in the faith, grounded and steadfast, and not moved away from the hope of the Good News which you heard, which is being proclaimed in all creation under heaven; of which I, Paul, was made a servant.</p>
+            <p><strong>24</strong> Now I rejoice in my sufferings for your sake, and fill up on my part that which is lacking of the afflictions of Christ in my flesh for his body’s sake, which is the assembly;</p>
+            <p><strong>25</strong> of which I was made a servant, according to the stewardship of God which was given me toward you, to fulfill the word of God,</p>
+            <p><strong>26</strong> the mystery which has been hidden for ages and generations. But now it has been revealed to his saints,</p>
+            <p><strong>27</strong> to whom God was pleased to make known what are the riches of the glory of this mystery among the Gentiles, which is Christ in you, the hope of glory;</p>
+            <p><strong>28</strong> whom we proclaim, admonishing every man and teaching every man in all wisdom, that we may present every man perfect in Christ Jesus;</p>
+            <p><strong>29</strong> for which I also labor, striving according to his working, which works in me mightily.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Colossians 1 (KJV)</p>
+            <p><strong>1</strong> Paul, an apostle of Jesus Christ by the will of God, and Timotheus our brother,</p>
+            <p><strong>2</strong> To the saints and faithful brethren in Christ which are at Colosse: Grace be unto you, and peace, from God our Father and the Lord Jesus Christ.</p>
+            <p><strong>3</strong> We give thanks to God and the Father of our Lord Jesus Christ, praying always for you,</p>
+            <p><strong>4</strong> Since we heard of your faith in Christ Jesus, and of the love which ye have to all the saints,</p>
+            <p><strong>5</strong> For the hope which is laid up for you in heaven, whereof ye heard before in the word of the truth of the gospel;</p>
+            <p><strong>6</strong> Which is come unto you, as it is in all the world; and bringeth forth fruit, as it doth also in you, since the day ye heard of it, and knew the grace of God in truth:</p>
+            <p><strong>7</strong> As ye also learned of Epaphras our dear fellowservant, who is for you a faithful minister of Christ;</p>
+            <p><strong>8</strong> Who also declared unto us your love in the Spirit.</p>
+            <p><strong>9</strong> For this cause we also, since the day we heard it, do not cease to pray for you, and to desire that ye might be filled with the knowledge of his will in all wisdom and spiritual understanding;</p>
+            <p><strong>10</strong> That ye might walk worthy of the Lord unto all pleasing, being fruitful in every good work, and increasing in the knowledge of God;</p>
+            <p><strong>11</strong> Strengthened with all might, according to his glorious power, unto all patience and longsuffering with joyfulness;</p>
+            <p><strong>12</strong> Giving thanks unto the Father, which hath made us meet to be partakers of the inheritance of the saints in light:</p>
+            <p><strong>13</strong> Who hath delivered us from the power of darkness, and hath translated us into the kingdom of his dear Son:</p>
+            <p><strong>14</strong> In whom we have redemption through his blood, even the forgiveness of sins:</p>
+            <p><strong>15</strong> Who is the image of the invisible God, the firstborn of every creature:</p>
+            <p><strong>16</strong> For by him were all things created, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: all things were created by him, and for him:</p>
+            <p><strong>17</strong> And he is before all things, and by him all things consist.</p>
+            <p><strong>18</strong> And he is the head of the body, the church: who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.</p>
+            <p><strong>19</strong> For it pleased the Father that in him should all fulness dwell;</p>
+            <p><strong>20</strong> And, having made peace through the blood of his cross, by him to reconcile all things unto himself; by him, I say, whether they be things in earth, or things in heaven.</p>
+            <p><strong>21</strong> And you, that were sometime alienated and enemies in your mind by wicked works, yet now hath he reconciled</p>
+            <p><strong>22</strong> In the body of his flesh through death, to present you holy and unblameable and unreproveable in his sight:</p>
+            <p><strong>23</strong> If ye continue in the faith grounded and settled, and be not moved away from the hope of the gospel, which ye have heard, and which was preached to every creature which is under heaven; whereof I Paul am made a minister;</p>
+            <p><strong>24</strong> Who now rejoice in my sufferings for you, and fill up that which is behind of the afflictions of Christ in my flesh for his body’s sake, which is the church:</p>
+            <p><strong>25</strong> Whereof I am made a minister, according to the dispensation of God which is given to me for you, to fulfil the word of God;</p>
+            <p><strong>26</strong> Even the mystery which hath been hid from ages and from generations, but now is made manifest to his saints:</p>
+            <p><strong>27</strong> To whom God would make known what is the riches of the glory of this mystery among the Gentiles; which is Christ in you, the hope of glory:</p>
+            <p><strong>28</strong> Whom we preach, warning every man, and teaching every man in all wisdom; that we may present every man perfect in Christ Jesus:</p>
+            <p><strong>29</strong> Whereunto I also labour, striving according to his working, which worketh in me mightily.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Colossians 1 (ASV)</p>
+            <p><strong>1</strong> Paul, an apostle of Christ Jesus through the will of God, and Timothy our brother,</p>
+            <p><strong>2</strong> to the saints and faithful brethren in Christthat areat Colossæ: Grace to you and peace from God our Father.</p>
+            <p><strong>3</strong> We give thanks to God the Father of our Lord Jesus Christ, praying always for you,</p>
+            <p><strong>4</strong> having heard of your faith in Christ Jesus, and of the love which ye have toward all the saints,</p>
+            <p><strong>5</strong> because of the hope which is laid up for you in the heavens, whereof ye heard before in the word of the truth of the gospel,</p>
+            <p><strong>6</strong> which is come unto you; even as it is also in all the world bearing fruit and increasing, as it doth in you also, since the day ye heard and knew the grace of God in truth;</p>
+            <p><strong>7</strong> even as ye learned of Epaphras our beloved fellow-servant, who is a faithful minister of Christ on our behalf,</p>
+            <p><strong>8</strong> who also declared unto us your love in the Spirit.</p>
+            <p><strong>9</strong> For this cause we also, since the day we heard it, do not cease to pray and make request for you, that ye may be filled with the knowledge of his will in all spiritual wisdom and understanding,</p>
+            <p><strong>10</strong> to walk worthily of the Lord unto all pleasing, bearing fruit in every good work, and increasing in the knowledge of God;</p>
+            <p><strong>11</strong> strengthened with all power, according to the might of his glory, unto all patience and longsuffering with joy;</p>
+            <p><strong>12</strong> giving thanks unto the Father, who made us meet to be partakers of the inheritance of the saints in light;</p>
+            <p><strong>13</strong> who delivered us out of the power of darkness, and translated us into the kingdom of the Son of his love;</p>
+            <p><strong>14</strong> in whom we have our redemption, the forgiveness of our sins:</p>
+            <p><strong>15</strong> who is the image of the invisible God, the firstborn of all creation;</p>
+            <p><strong>16</strong> for in him were all things created, in the heavens and upon the earth, things visible and things invisible, whether thrones or dominions or principalities or powers; all things have been created through him, and unto him;</p>
+            <p><strong>17</strong> and he is before all things, and in him all things consist.</p>
+            <p><strong>18</strong> And he is the head of the body, the church: who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.</p>
+            <p><strong>19</strong> For it was the good pleasure of the Father that in him should all the fulness dwell;</p>
+            <p><strong>20</strong> and through him to reconcile all things unto himself, having made peace through the blood of his cross; through him, I say, whether things upon the earth, or things in the heavens.</p>
+            <p><strong>21</strong> And you, being in time past alienated and enemies in your mind in your evil works,</p>
+            <p><strong>22</strong> yet now hath he reconciled in the body of his flesh through death, to present you holy and without blemish and unreproveable before him:</p>
+            <p><strong>23</strong> if so be that ye continue in the faith, grounded and stedfast, and not moved away from the hope of the gospel which ye heard, which was preached in all creation under heaven; whereof I Paul was made a minister.</p>
+            <p><strong>24</strong> Now I rejoice in my sufferings for your sake, and fill up on my part that which is lacking of the afflictions of Christ in my flesh for his body’s sake, which is the church;</p>
+            <p><strong>25</strong> whereof I was made a minister, according to the dispensation of God which was given me to you-ward, to fulfil the word of God,</p>
+            <p><strong>26</strong> even the mystery which hath been hid for ages and generations: but now hath it been manifested to his saints,</p>
+            <p><strong>27</strong> to whom God was pleased to make known what is the riches of the glory of this mystery among the Gentiles, which is Christ in you, the hope of glory:</p>
+            <p><strong>28</strong> whom we proclaim, admonishing every man and teaching every man in all wisdom, that we may present every man perfect in Christ;</p>
+            <p><strong>29</strong> whereunto I labor also, striving according to his working, which worketh in me mightily.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Paul, with Timothy, greets the saints and faithful brothers and sisters at Colossae with grace and peace. He gives thanks for their faith in Christ, their love for all the saints, and their hope laid up in heaven, a hope they first heard in the gospel that is bearing fruit throughout the world. He recalls that they learned this good news from Epaphras and prays that they would be filled with the knowledge of God's will, walk worthy of the Lord, bear fruit in every good work, and be strengthened with all power for endurance with joy. He gives thanks to the Father, who delivered them from the power of darkness and brought them into the Kingdom of his beloved Son, in whom they have redemption and forgiveness. Then Paul soars into a great hymn to Christ: he is the image of the invisible God, the firstborn of all creation, the one through whom and for whom all things were made, before all things and holding all things together, the head of the church, the firstborn from the dead. In him all the fullness was pleased to dwell, and through his blood on the cross God reconciled all things to himself. Once alienated and hostile, the Colossians are now reconciled, presented holy and blameless, if they continue steadfast in the faith. Paul rejoices in his sufferings for the church and labors to make known the mystery now revealed: Christ in you, the hope of glory, that he may present everyone mature in Christ.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Paul</strong> — The apostle who gives thanks, prays for the church, and labors to proclaim Christ and present everyone mature in him.</li>
+          <li><strong>Christ Jesus</strong> — The image of the invisible God and firstborn of all creation, creator and sustainer of all things, head of the church, who reconciles all things by the blood of his cross.</li>
+          <li><strong>Epaphras</strong> — The beloved fellow servant from Colossae through whom the gospel reached the city and a faithful minister of Christ.</li>
+          <li><strong>Timothy</strong> — Paul's brother in the faith, joined with him in the letter's greeting.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Colossians 1:15 (WEB)</p>
+          <p class="verse__text">who is the image of the invisible God, the firstborn of all creation.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>True faith, love, and hope all spring from the gospel that is bearing fruit in the whole world.</li>
+          <li>Christ is supreme: through him and for him all things were made, and in him all things hold together.</li>
+          <li>Reconciliation with God is accomplished through the blood of Christ's cross, not by our own efforts.</li>
+          <li>The great mystery now revealed is Christ in us, the hope of glory, offered freely to all peoples.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>The gospel bears fruit everywhere.</strong> The good news is “bearing fruit and growing” in the Colossians as “in all the world” (Colossians 1:6, WEB). The same word that saved them is at work across the earth.</li>
+            <li><strong>Christ is supreme over creation.</strong> “For by him all things were created… all things have been created through him, and for him” (Colossians 1:16, WEB). Everything that exists owes its being and purpose to the Son.</li>
+            <li><strong>Christ holds all things together.</strong> “He is before all things, and in him all things are held together” (Colossians 1:17, WEB). The universe coheres in the One who sustains it moment by moment.</li>
+            <li><strong>Peace was made by the blood of the cross.</strong> God reconciled all things to himself, “having made peace through the blood of his cross” (Colossians 1:20, WEB). Our reconciliation rests entirely on what Christ has done.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>What three qualities does Paul give thanks for in the Colossians, and where does he say they come from?</li>
+            <li>What does Paul pray for the church, and what does his prayer tell us about a life worthy of the Lord?</li>
+            <li>Look closely at verses 15-20. How many things does Paul say about who Christ is and what he has done?</li>
+            <li>What is the “mystery” Paul says has now been revealed, and why is “Christ in you, the hope of glory” such good news?</li>
+            <li>Which truth about Christ in this chapter do you most need to take to heart this week, and why?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Paul thanks God for the Colossians' faith in Christ, their love for all the saints, and their hope laid up in heaven (1:4-5). He roots all three in the gospel they heard. Help the group see that faith, love, and hope are not self-generated but fruit of the good news.</li>
+            <li>Paul prays they would be filled with the knowledge of God's will and walk worthy of the Lord, bearing fruit, growing, and enduring with joy (1:9-11). A worthy walk flows from knowing God, not merely trying harder. Encourage the group to pray this way for one another.</li>
+            <li>The hymn piles up glories: image of God, firstborn of creation, creator of all things, before all things, sustainer of all, head of the church, firstborn from the dead, fullness of God, reconciler by the cross (1:15-20). Let members marvel at the sheer scope of Christ's supremacy.</li>
+            <li>The mystery hidden for ages is now revealed as “Christ in you, the hope of glory” (1:27). It means God dwells with his people by his Spirit and that glory is certain for those in Christ. Stress that this hope is offered to all peoples, not a privileged few.</li>
+            <li>This is a personal-application question. Invite each person to name one truth—Christ's supremacy, his sustaining power, his reconciling cross—and how it meets a present need or fear. As leader, keep the focus on Jesus himself, and let worship lead the way.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="colossians.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="colossians-2.html">Colossians 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 9: Woe Upon the Earth — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 9: the fifth and sixth trumpets release locusts from the abyss and a deadly army, yet the survivors refuse to repent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 9
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 9</span>
+        <h1>Revelation 9: Woe Upon the Earth</h1>
+        <p class="lead">The fifth and sixth trumpets release tormenting locusts from the abyss and a vast army, yet humanity still refuses to repent.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-9">
+            <span>Scripture — Revelation Chapter 9</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-9">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-9-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-9-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-9-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-9-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 9 (WEB)</p>
+            <p><strong>1</strong> The fifth angel sounded, and I saw a star from the sky which had fallen to the earth. The key to the pit of the abyss was given to him.</p>
+            <p><strong>2</strong> He opened the pit of the abyss, and smoke went up out of the pit, like the smoke from a burning furnace. The sun and the air were darkened because of the smoke from the pit.</p>
+            <p><strong>3</strong> Then out of the smoke came locusts on the earth, and power was given to them, as the scorpions of the earth have power.</p>
+            <p><strong>4</strong> They were told that they should not hurt the grass of the earth, neither any green thing, neither any tree, but only those people who don’t have God’s seal on their foreheads.</p>
+            <p><strong>5</strong> They were given power not to kill them, but to torment them for five months. Their torment was like the torment of a scorpion, when it strikes a person.</p>
+            <p><strong>6</strong> In those days people will seek death, and will in no way find it. They will desire to die, and death will flee from them.</p>
+            <p><strong>7</strong> The shapes of the locusts were like horses prepared for war. On their heads were something like golden crowns, and their faces were like people’s faces.</p>
+            <p><strong>8</strong> They had hair like women’s hair, and their teeth were like those of lions.</p>
+            <p><strong>9</strong> They had breastplates, like breastplates of iron. The sound of their wings was like the sound of chariots, or of many horses rushing to war.</p>
+            <p><strong>10</strong> They have tails like those of scorpions, and stings. In their tails they have power to harm men for five months.</p>
+            <p><strong>11</strong> They have over them as king the angel of the abyss. His name in Hebrew is “Abaddon”, but in Greek, he has the name “Apollyon”.</p>
+            <p><strong>12</strong> The first woe is past. Behold, there are still two woes coming after this.</p>
+            <p><strong>13</strong> The sixth angel sounded. I heard a voice from the horns of the golden altar which is before God,</p>
+            <p><strong>14</strong> saying to the sixth angel who had one trumpet, “Free the four angels who are bound at the great river Euphrates!”</p>
+            <p><strong>15</strong> The four angels were freed who had been prepared for that hour and day and month and year, so that they might kill one third of mankind.</p>
+            <p><strong>16</strong> The number of the armies of the horsemen was two hundred million. I heard the number of them.</p>
+            <p><strong>17</strong> Thus I saw the horses in the vision, and those who sat on them, having breastplates of fiery red, hyacinth blue, and sulfur yellow; and the heads of lions. Out of their mouths proceed fire, smoke, and sulfur.</p>
+            <p><strong>18</strong> By these three plagues were one third of mankind killed: by the fire, the smoke, and the sulfur, which proceeded out of their mouths.</p>
+            <p><strong>19</strong> For the power of the horses is in their mouths, and in their tails. For their tails are like serpents, and have heads, and with them they harm.</p>
+            <p><strong>20</strong> The rest of mankind, who were not killed with these plagues, didn’t repent of the works of their hands, that they wouldn’t worship demons, and the idols of gold, and of silver, and of brass, and of stone, and of wood; which can neither see, nor hear, nor walk.</p>
+            <p><strong>21</strong> They didn’t repent of their murders, nor of their sorceries, nor of their sexual immorality, nor of their thefts.</p>
+            </div>
+            <div class="scripture-text" id="web-9-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 9 (KJV)</p>
+            <p><strong>1</strong> And the fifth angel sounded, and I saw a star fall from heaven unto the earth: and to him was given the key of the bottomless pit.</p>
+            <p><strong>2</strong> And he opened the bottomless pit; and there arose a smoke out of the pit, as the smoke of a great furnace; and the sun and the air were darkened by reason of the smoke of the pit.</p>
+            <p><strong>3</strong> And there came out of the smoke locusts upon the earth: and unto them was given power, as the scorpions of the earth have power.</p>
+            <p><strong>4</strong> And it was commanded them that they should not hurt the grass of the earth, neither any green thing, neither any tree; but only those men which have not the seal of God in their foreheads.</p>
+            <p><strong>5</strong> And to them it was given that they should not kill them, but that they should be tormented five months: and their torment was as the torment of a scorpion, when he striketh a man.</p>
+            <p><strong>6</strong> And in those days shall men seek death, and shall not find it; and shall desire to die, and death shall flee from them.</p>
+            <p><strong>7</strong> And the shapes of the locusts were like unto horses prepared unto battle; and on their heads were as it were crowns like gold, and their faces were as the faces of men.</p>
+            <p><strong>8</strong> And they had hair as the hair of women, and their teeth were as the teeth of lions.</p>
+            <p><strong>9</strong> And they had breastplates, as it were breastplates of iron; and the sound of their wings was as the sound of chariots of many horses running to battle.</p>
+            <p><strong>10</strong> And they had tails like unto scorpions, and there were stings in their tails: and their power was to hurt men five months.</p>
+            <p><strong>11</strong> And they had a king over them, which is the angel of the bottomless pit, whose name in the Hebrew tongue is Abaddon, but in the Greek tongue hath his name Apollyon.</p>
+            <p><strong>12</strong> One woe is past; and, behold, there come two woes more hereafter.</p>
+            <p><strong>13</strong> And the sixth angel sounded, and I heard a voice from the four horns of the golden altar which is before God,</p>
+            <p><strong>14</strong> Saying to the sixth angel which had the trumpet, Loose the four angels which are bound in the great river Euphrates.</p>
+            <p><strong>15</strong> And the four angels were loosed, which were prepared for an hour, and a day, and a month, and a year, for to slay the third part of men.</p>
+            <p><strong>16</strong> And the number of the army of the horsemen were two hundred thousand thousand: and I heard the number of them.</p>
+            <p><strong>17</strong> And thus I saw the horses in the vision, and them that sat on them, having breastplates of fire, and of jacinth, and brimstone: and the heads of the horses were as the heads of lions; and out of their mouths issued fire and smoke and brimstone.</p>
+            <p><strong>18</strong> By these three was the third part of men killed, by the fire, and by the smoke, and by the brimstone, which issued out of their mouths.</p>
+            <p><strong>19</strong> For their power is in their mouth, and in their tails: for their tails were like unto serpents, and had heads, and with them they do hurt.</p>
+            <p><strong>20</strong> And the rest of the men which were not killed by these plagues yet repented not of the works of their hands, that they should not worship devils, and idols of gold, and silver, and brass, and stone, and of wood: which neither can see, nor hear, nor walk:</p>
+            <p><strong>21</strong> Neither repented they of their murders, nor of their sorceries, nor of their fornication, nor of their thefts.</p>
+            </div>
+            <div class="scripture-text" id="web-9-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 9 (ASV)</p>
+            <p><strong>1</strong> And the fifth angel sounded, and I saw a star from heaven fallen unto the earth: and there was given to him the key of the pit of the abyss.</p>
+            <p><strong>2</strong> And he opened the pit of the abyss; and there went up a smoke out of the pit, as the smoke of a great furnace; and the sun and the air were darkened by reason of the smoke of the pit.</p>
+            <p><strong>3</strong> And out of the smoke came forth locusts upon the earth; and power was given them, as the scorpions of the earth have power.</p>
+            <p><strong>4</strong> And it was said unto them that they should not hurt the grass of the earth, neither any green thing, neither any tree, but only such men as have not the seal of God on their foreheads.</p>
+            <p><strong>5</strong> And it was given them that they should not kill them, but that they should be tormented five months: and their torment was as the torment of a scorpion, when it striketh a man.</p>
+            <p><strong>6</strong> And in those days men shall seek death, and shall in no wise find it; and they shall desire to die, and death fleeth from them.</p>
+            <p><strong>7</strong> And the shapes of the locusts were like unto horses prepared for war; and upon their heads as it were crowns like unto gold, and their faces were as men’s faces.</p>
+            <p><strong>8</strong> And they had hair as the hair of women, and their teeth were as the teeth of lions.</p>
+            <p><strong>9</strong> And they had breastplates, as it were breastplates of iron; and the sound of their wings was as the sound of chariots, of many horses rushing to war.</p>
+            <p><strong>10</strong> And they have tails like unto scorpions, and stings; and in their tails is their power to hurt men five months.</p>
+            <p><strong>11</strong> They have over them as king the angel of the abyss: his name in Hebrew is Abaddon, and in the Greek tongue he hath the name Apollyon.</p>
+            <p><strong>12</strong> The first Woe is past: behold, there come yet two Woes hereafter.</p>
+            <p><strong>13</strong> And the sixth angel sounded, and I heard a voice from the horns of the golden altar which is before God,</p>
+            <p><strong>14</strong> one saying to the sixth angel that had the trumpet, Loose the four angels that are bound at the great river Euphrates.</p>
+            <p><strong>15</strong> And the four angels were loosed, that had been prepared for the hour and day and month and year, that they should kill the third part of men.</p>
+            <p><strong>16</strong> And the number of the armies of the horsemen was twice ten thousand times ten thousand: I heard the number of them.</p>
+            <p><strong>17</strong> And thus I saw the horses in the vision, and them that sat on them, having breastplates as of fire and of hyacinth and of brimstone: and the heads of the horses are as the heads of lions; and out of their mouths proceedeth fire and smoke and brimstone.</p>
+            <p><strong>18</strong> By these three plagues was the third part of men killed, by the fire and the smoke and the brimstone, which proceeded out of their mouths.</p>
+            <p><strong>19</strong> For the power of the horses is in their mouth, and in their tails: for their tails are like unto serpents, and have heads; and with them they hurt.</p>
+            <p><strong>20</strong> And the rest of mankind, who were not killed with these plagues, repented not of the works of their hands, that they should not worship demons, and the idols of gold, and of silver, and of brass, and of stone, and of wood; which can neither see, nor hear, nor walk:</p>
+            <p><strong>21</strong> and they repented not of their murders, nor of their sorceries, nor of their fornication, nor of their thefts.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The fifth trumpet sounds and a star fallen to earth is given the key to the abyss. From the smoke pour demonic locusts with power like scorpions, permitted to torment for five months only those who lack God's seal on their foreheads. The torment is so severe that people long to die and cannot. The locusts are described in terrifying detail, with a king over them named Abaddon, or Apollyon, the destroyer. This is the first woe. The sixth trumpet releases four angels bound at the Euphrates, prepared for this very hour to kill a third of mankind through a vast army of mounted troops whose horses breathe fire, smoke, and sulfur. By these plagues a third of humanity dies. Yet the most sobering note comes at the end: the rest of mankind, who survived these plagues, still did not repent of the works of their hands. They went on worshiping demons and idols of gold, silver, brass, stone, and wood that cannot see or hear or walk, and they refused to turn from their murders, sorceries, immorality, and thefts. The judgments expose not only humanity's danger but the stubborn hardness of the human heart that will not turn to God even under torment.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The demonic locusts and their king</strong> — Tormenting creatures released from the abyss, given limited power to afflict the unsealed, ruled by the angel of the abyss named Abaddon, or Apollyon, the destroyer.</li>
+          <li><strong>The four bound angels</strong> — Angels held at the great river Euphrates, released at the appointed hour to bring death upon a third of mankind through a vast army.</li>
+          <li><strong>Unrepentant mankind</strong> — Those who survive the plagues yet refuse to repent of their idolatry, murders, sorceries, immorality, and thefts.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 9:20 (WEB)</p>
+          <p class="verse__text">The rest of mankind, who were not killed with these plagues, didn’t repent of the works of their hands, that they wouldn’t worship demons, and the idols of gold, and of silver, and of brass, and of stone, and of wood; which can neither see, nor hear, nor walk.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Even the powers of the abyss operate only within the limits God permits.</li>
+          <li>Those sealed by God are protected even amid the most fearsome torments.</li>
+          <li>Judgment is meant to lead to repentance, not merely to punish.</li>
+          <li>The human heart can remain hard even under severe suffering, refusing to turn to God.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-9">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-9">
+            <ul class="lesson-list">
+            <li><strong>Evil is on a leash.</strong> The locusts are told to harm “only those people who don’t have God’s seal on their foreheads” (Revelation 9:4, WEB). Even demonic powers cannot exceed God's permission.</li>
+            <li><strong>God's seal protects.</strong> The torment falls on the unsealed, while God's marked servants are kept (Revelation 9:4, WEB). Belonging to God is real security amid judgment.</li>
+            <li><strong>Judgment calls for repentance.</strong> The plagues aim to turn people from sin, yet they “didn’t repent of the works of their hands” (Revelation 9:20, WEB). God's severity is meant to awaken, not merely to destroy.</li>
+            <li><strong>Idolatry hardens the heart.</strong> They keep worshiping idols that “can neither see, nor hear, nor walk” (Revelation 9:20, WEB). What we worship shapes whether we can repent.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-9">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-9">
+            <ol class="study-questions">
+            <li>What does it tell us that the demonic forces in this chapter can act only within limits God sets?</li>
+            <li>Why are those sealed by God spared the torment of the locusts?</li>
+            <li>What is the purpose of these judgments, and how does the response of humanity in verses 20-21 surprise or sober you?</li>
+            <li>How does this chapter portray the connection between idolatry and a hardened, unrepentant heart?</li>
+            <li>Where might God be using difficulty in your life as a call to turn to him, and how will you respond?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-9">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-9">
+            <ol class="study-questions">
+            <li>Though the imagery is terrifying, the demonic locusts are repeatedly granted, given, and permitted—they act only under God's authority. Help the group see that even the worst spiritual powers remain subject to the limits God imposes.</li>
+            <li>Those bearing God's seal are untouched by the locusts (9:4), showing that the protection promised in chapter 7 is real. Belonging to God does not always spare us hardship, but it secures us in his keeping.</li>
+            <li>The judgments are designed to bring people to repentance, which makes humanity's refusal so sobering: even under torment and death, they cling to idols and sin (9:20-21). Discuss how judgment alone cannot soften a heart set against God.</li>
+            <li>Worshiping lifeless idols deadens the worshiper, leaving people unable or unwilling to turn (9:20). What we treasure shapes us; idols promise life but harden the heart. Only the living God can give a heart that repents.</li>
+            <li>This is a personal-application question. Gently invite members to consider whether God is using a present difficulty to draw them back to himself, and to respond with repentance rather than resistance. Keep the tone hopeful, pointing to his mercy.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-8.html">← Revelation 8</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-10.html">Revelation 10 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

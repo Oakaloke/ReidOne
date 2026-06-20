@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Romans 1: The Gospel and God's Wrath — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Romans 1: Paul greets the church in Rome, declares his eagerness to preach the gospel, and reveals God's wrath against human ungodliness." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-romans-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Romans, Chapter 1
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="romans.html">← All Chapters</a>
+        <span class="study-meta">The Book of Romans · Chapter 1</span>
+        <h1>Romans 1: The Gospel and God's Wrath</h1>
+        <p class="lead">Paul introduces the gospel he is unashamed of, then shows how humanity suppresses the truth and is given up to the consequences of its rebellion.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-1">
+            <span>Scripture — Romans Chapter 1</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-1">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-1-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-1-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-1-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-1-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Romans 1 (WEB)</p>
+            <p><strong>1</strong> Paul, a servant of Jesus Christ, called to be an apostle, set apart for the Good News of God,</p>
+            <p><strong>2</strong> which he promised before through his prophets in the holy Scriptures,</p>
+            <p><strong>3</strong> concerning his Son, who was born of the seed of David according to the flesh,</p>
+            <p><strong>4</strong> who was declared to be the Son of God with power, according to the Spirit of holiness, by the resurrection from the dead, Jesus Christ our Lord,</p>
+            <p><strong>5</strong> through whom we received grace and apostleship, for obedience of faith among all the nations, for his name’s sake;</p>
+            <p><strong>6</strong> among whom you are also called to belong to Jesus Christ;</p>
+            <p><strong>7</strong> to all who are in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father and the Lord Jesus Christ.</p>
+            <p><strong>8</strong> First, I thank my God through Jesus Christ for all of you, that your faith is proclaimed throughout the whole world.</p>
+            <p><strong>9</strong> For God is my witness, whom I serve in my spirit in the Good News of his Son, how unceasingly I make mention of you always in my prayers,</p>
+            <p><strong>10</strong> requesting, if by any means now at last I may be prospered by the will of God to come to you.</p>
+            <p><strong>11</strong> For I long to see you, that I may impart to you some spiritual gift, to the end that you may be established;</p>
+            <p><strong>12</strong> that is, that I with you may be encouraged in you, each of us by the other’s faith, both yours and mine.</p>
+            <p><strong>13</strong> Now I don’t desire to have you unaware, brothers, that I often planned to come to you, and was hindered so far, that I might have some fruit among you also, even as among the rest of the Gentiles.</p>
+            <p><strong>14</strong> I am debtor both to Greeks and to foreigners, both to the wise and to the foolish.</p>
+            <p><strong>15</strong> So, as much as is in me, I am eager to preach the Good News to you also who are in Rome.</p>
+            <p><strong>16</strong> For I am not ashamed of the Good News of Christ, for it is the power of God for salvation for everyone who believes; for the Jew first, and also for the Greek.</p>
+            <p><strong>17</strong> For in it is revealed God’s righteousness from faith to faith. As it is written, “But the righteous shall live by faith.”</p>
+            <p><strong>18</strong> For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who suppress the truth in unrighteousness,</p>
+            <p><strong>19</strong> because that which is known of God is revealed in them, for God revealed it to them.</p>
+            <p><strong>20</strong> For the invisible things of him since the creation of the world are clearly seen, being perceived through the things that are made, even his everlasting power and divinity; that they may be without excuse.</p>
+            <p><strong>21</strong> Because, knowing God, they didn’t glorify him as God, neither gave thanks, but became vain in their reasoning, and their senseless heart was darkened.</p>
+            <p><strong>22</strong> Professing themselves to be wise, they became fools,</p>
+            <p><strong>23</strong> and traded the glory of the incorruptible God for the likeness of an image of corruptible man, and of birds, and four-footed animals, and creeping things.</p>
+            <p><strong>24</strong> Therefore God also gave them up in the lusts of their hearts to uncleanness, that their bodies should be dishonored among themselves,</p>
+            <p><strong>25</strong> who exchanged the truth of God for a lie, and worshiped and served the creature rather than the Creator, who is blessed forever. Amen.</p>
+            <p><strong>26</strong> For this reason, God gave them up to vile passions. For their women changed the natural function into that which is against nature.</p>
+            <p><strong>27</strong> Likewise also the men, leaving the natural function of the woman, burned in their lust toward one another, men doing what is inappropriate with men, and receiving in themselves the due penalty of their error.</p>
+            <p><strong>28</strong> Even as they refused to have God in their knowledge, God gave them up to a reprobate mind, to do those things which are not fitting;</p>
+            <p><strong>29</strong> being filled with all unrighteousness, sexual immorality, wickedness, covetousness, malice; full of envy, murder, strife, deceit, evil habits, secret slanderers,</p>
+            <p><strong>30</strong> backbiters, hateful to God, insolent, haughty, boastful, inventors of evil things, disobedient to parents,</p>
+            <p><strong>31</strong> without understanding, covenant breakers, without natural affection, unforgiving, unmerciful;</p>
+            <p><strong>32</strong> who, knowing the ordinance of God, that those who practice such things are worthy of death, not only do the same, but also approve of those who practice them.</p>
+            </div>
+            <div class="scripture-text" id="web-1-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Romans 1 (KJV)</p>
+            <p><strong>1</strong> Paul, a servant of Jesus Christ, called to be an apostle, separated unto the gospel of God,</p>
+            <p><strong>2</strong> (Which he had promised afore by his prophets in the holy scriptures,)</p>
+            <p><strong>3</strong> Concerning his Son Jesus Christ our Lord, which was made of the seed of David according to the flesh;</p>
+            <p><strong>4</strong> And declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead:</p>
+            <p><strong>5</strong> By whom we have received grace and apostleship, for obedience to the faith among all nations, for his name:</p>
+            <p><strong>6</strong> Among whom are ye also the called of Jesus Christ:</p>
+            <p><strong>7</strong> To all that be in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father, and the Lord Jesus Christ.</p>
+            <p><strong>8</strong> First, I thank my God through Jesus Christ for you all, that your faith is spoken of throughout the whole world.</p>
+            <p><strong>9</strong> For God is my witness, whom I serve with my spirit in the gospel of his Son, that without ceasing I make mention of you always in my prayers;</p>
+            <p><strong>10</strong> Making request, if by any means now at length I might have a prosperous journey by the will of God to come unto you.</p>
+            <p><strong>11</strong> For I long to see you, that I may impart unto you some spiritual gift, to the end ye may be established;</p>
+            <p><strong>12</strong> That is, that I may be comforted together with you by the mutual faith both of you and me.</p>
+            <p><strong>13</strong> Now I would not have you ignorant, brethren, that oftentimes I purposed to come unto you, (but was let hitherto,) that I might have some fruit among you also, even as among other Gentiles.</p>
+            <p><strong>14</strong> I am debtor both to the Greeks, and to the Barbarians; both to the wise, and to the unwise.</p>
+            <p><strong>15</strong> So, as much as in me is, I am ready to preach the gospel to you that are at Rome also.</p>
+            <p><strong>16</strong> For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek.</p>
+            <p><strong>17</strong> For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith.</p>
+            <p><strong>18</strong> For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who hold the truth in unrighteousness;</p>
+            <p><strong>19</strong> Because that which may be known of God is manifest in them; for God hath shewed it unto them.</p>
+            <p><strong>20</strong> For the invisible things of him from the creation of the world are clearly seen, being understood by the things that are made, even his eternal power and Godhead; so that they are without excuse:</p>
+            <p><strong>21</strong> Because that, when they knew God, they glorified him not as God, neither were thankful; but became vain in their imaginations, and their foolish heart was darkened.</p>
+            <p><strong>22</strong> Professing themselves to be wise, they became fools,</p>
+            <p><strong>23</strong> And changed the glory of the uncorruptible God into an image made like to corruptible man, and to birds, and fourfooted beasts, and creeping things.</p>
+            <p><strong>24</strong> Wherefore God also gave them up to uncleanness through the lusts of their own hearts, to dishonour their own bodies between themselves:</p>
+            <p><strong>25</strong> Who changed the truth of God into a lie, and worshipped and served the creature more than the Creator, who is blessed for ever. Amen.</p>
+            <p><strong>26</strong> For this cause God gave them up unto vile affections: for even their women did change the natural use into that which is against nature:</p>
+            <p><strong>27</strong> And likewise also the men, leaving the natural use of the woman, burned in their lust one toward another; men with men working that which is unseemly, and receiving in themselves that recompence of their error which was meet.</p>
+            <p><strong>28</strong> And even as they did not like to retain God in their knowledge, God gave them over to a reprobate mind, to do those things which are not convenient;</p>
+            <p><strong>29</strong> Being filled with all unrighteousness, fornication, wickedness, covetousness, maliciousness; full of envy, murder, debate, deceit, malignity; whisperers,</p>
+            <p><strong>30</strong> Backbiters, haters of God, despiteful, proud, boasters, inventors of evil things, disobedient to parents,</p>
+            <p><strong>31</strong> Without understanding, covenantbreakers, without natural affection, implacable, unmerciful:</p>
+            <p><strong>32</strong> Who knowing the judgment of God, that they which commit such things are worthy of death, not only do the same, but have pleasure in them that do them.</p>
+            </div>
+            <div class="scripture-text" id="web-1-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Romans 1 (ASV)</p>
+            <p><strong>1</strong> Paul, a servant of Jesus Christ, calledto bean apostle, separated unto the gospel of God,</p>
+            <p><strong>2</strong> which he promised afore through his prophets in the holy scriptures,</p>
+            <p><strong>3</strong> concerning his Son, who was born of the seed of David according to the flesh,</p>
+            <p><strong>4</strong> who was declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead; even Jesus Christ our Lord,</p>
+            <p><strong>5</strong> through whom we received grace and apostleship, unto obedience of faith among all the nations, for his name’s sake;</p>
+            <p><strong>6</strong> among whom are ye also, called to be Jesus Christ’s:</p>
+            <p><strong>7</strong> to all that are in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father and the Lord Jesus Christ.</p>
+            <p><strong>8</strong> First, I thank my God through Jesus Christ for you all, that your faith is proclaimed throughout the whole world.</p>
+            <p><strong>9</strong> For God is my witness, whom I serve in my spirit in the gospel of his Son, how unceasingly I make mention of you, always in my prayers</p>
+            <p><strong>10</strong> making request, if by any means now at length I may be prospered by the will of God to come unto you.</p>
+            <p><strong>11</strong> For I long to see you, that I may impart unto you some spiritual gift, to the end ye may be established;</p>
+            <p><strong>12</strong> that is, that I with you may be comforted in you, each of us by the other’s faith, both yours and mine.</p>
+            <p><strong>13</strong> And I would not have you ignorant, brethren, that oftentimes I purposed to come unto you (and was hindered hitherto), that I might have some fruit in you also, even as in the rest of the Gentiles.</p>
+            <p><strong>14</strong> I am debtor both to Greeks and to Barbarians, both to the wise and to the foolish.</p>
+            <p><strong>15</strong> So, as much as in me is, I am ready to preach the gospel to you also that are in Rome.</p>
+            <p><strong>16</strong> For I am not ashamed of the gospel: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek.</p>
+            <p><strong>17</strong> For therein is revealed a righteousness of God from faith unto faith: as it is written, But the righteous shall live by faith.</p>
+            <p><strong>18</strong> For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who hinder the truth in unrighteousness;</p>
+            <p><strong>19</strong> because that which is known of God is manifest in them; for God manifested it unto them.</p>
+            <p><strong>20</strong> For the invisible things of him since the creation of the world are clearly seen, being perceived through the things that are made, even his everlasting power and divinity; that they may be without excuse:</p>
+            <p><strong>21</strong> because that, knowing God, they glorified him not as God, neither gave thanks; but became vain in their reasonings, and their senseless heart was darkened.</p>
+            <p><strong>22</strong> Professing themselves to be wise, they became fools,</p>
+            <p><strong>23</strong> and changed the glory of the incorruptible God for the likeness of an image of corruptible man, and of birds, and four-footed beasts, and creeping things.</p>
+            <p><strong>24</strong> Wherefore God gave them up in the lusts of their hearts unto uncleanness, that their bodies should be dishonored among themselves:</p>
+            <p><strong>25</strong> for that they exchanged the truth of God for a lie, and worshipped and served the creature rather than the Creator, who is blessed for ever. Amen.</p>
+            <p><strong>26</strong> For this cause God gave them up unto vile passions: for their women changed the natural use into that which is against nature:</p>
+            <p><strong>27</strong> and likewise also the men, leaving the natural use of the woman, burned in their lust one toward another, men with men working unseemliness, and receiving in themselves that recompense of their error which was due.</p>
+            <p><strong>28</strong> And even as they refused to have God intheirknowledge, God gave them up unto a reprobate mind, to do those things which are not fitting;</p>
+            <p><strong>29</strong> being filled with all unrighteousness, wickedness, covetousness, maliciousness; full of envy, murder, strife, deceit, malignity; whisperers,</p>
+            <p><strong>30</strong> backbiters, hateful to God, insolent, haughty, boastful, inventors of evil things, disobedient to parents,</p>
+            <p><strong>31</strong> without understanding, covenant-breakers, without natural affection, unmerciful:</p>
+            <p><strong>32</strong> who, knowing the ordinance of God, that they that practise such things are worthy of death, not only do the same, but also consent with them that practise them.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Paul opens by introducing himself as a servant and apostle set apart for the Good News of God, the gospel concerning God's Son, who was descended from David and declared to be the Son of God by his resurrection. He greets the believers in Rome, beloved of God and called to be saints, and thanks God that their faith is proclaimed throughout the whole world. He longs to come to them to share a spiritual gift and to be mutually encouraged, for he is eager to preach the gospel even in Rome. He is not ashamed of this gospel, because it is the power of God for salvation to everyone who believes, Jew and Greek alike, for in it God's righteousness is revealed from faith to faith. Then the tone darkens: the wrath of God is revealed against all ungodliness, for people suppress the truth, refusing to honor the God plainly known through creation. They exchange God's glory for idols, and so God gives them up to their lusts, to dishonorable passions, and to a debased mind. The chapter closes with a long catalog of the wickedness that follows when people refuse to acknowledge God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Paul</strong> — Apostle set apart for the gospel of God, who introduces himself, expresses his longing to visit Rome, and declares he is not ashamed of the gospel's saving power.</li>
+          <li><strong>Christ Jesus</strong> — God's Son, descended from David according to the flesh and declared Son of God with power by his resurrection, the content and center of the Good News.</li>
+          <li><strong>The church in Rome</strong> — Believers beloved of God and called to be saints, whose faith is reported throughout the world and whom Paul longs to strengthen.</li>
+          <li><strong>Rebellious humanity</strong> — Those who suppress the truth about God known through creation, exchange his glory for idols, and are given up to the consequences of their sin.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Romans 1:16 (WEB)</p>
+          <p class="verse__text">For I am not ashamed of the Good News of Christ, for it is the power of God for salvation for everyone who believes; for the Jew first, and also for the Greek.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The gospel is the power of God for salvation, sufficient for everyone who believes.</li>
+          <li>God has made himself plainly known through creation, leaving no one with an excuse.</li>
+          <li>Refusing to honor God leads to a downward spiral of idolatry and moral confusion.</li>
+          <li>Human wickedness is not God's failure but the just outworking of a world that suppresses the truth.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-1">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-1">
+            <ul class="lesson-list">
+            <li><strong>Be unashamed of the gospel.</strong> Paul is "not ashamed of the Good News of Christ, for it is the power of God for salvation" (Romans 1:16, WEB). Confidence in the gospel frees us to share it boldly.</li>
+            <li><strong>Creation testifies to the Creator.</strong> God's "everlasting power and divinity" are "clearly seen, being perceived through the things that are made" (Romans 1:20, WEB), so that none can plead ignorance.</li>
+            <li><strong>Idolatry is exchanging God's glory.</strong> People "traded the glory of the incorruptible God for the likeness of an image" (Romans 1:23, WEB). Worship misdirected from the Creator to creatures corrupts everything.</li>
+            <li><strong>Sin carries its own judgment.</strong> Three times "God gave them up" to their desires (Romans 1:24, 26, 28, WEB). To be handed over to our chosen sins is itself a fearful expression of God's wrath.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-1">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-1">
+            <ol class="study-questions">
+            <li>How does Paul describe himself and his calling in the opening verses, and what does that reveal about his view of the gospel?</li>
+            <li>What reasons does Paul give for being "not ashamed" of the gospel (1:16-17)?</li>
+            <li>According to verses 18-23, how have people responded to what God has made plain about himself?</li>
+            <li>What does it mean that "God gave them up" (1:24, 26, 28), and why is that itself a form of judgment?</li>
+            <li>Where might you feel tempted to be ashamed of the gospel, and how does this chapter strengthen your confidence in its power?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-1">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-1">
+            <ol class="study-questions">
+            <li>Paul calls himself a servant and apostle "set apart for the Good News of God" (1:1), grounding his whole identity in the gospel rather than in his achievements. He sees himself as owned by Christ and commissioned for a message that is God's, not his own. This shapes the humility and confidence that run through the letter.</li>
+            <li>Paul is unashamed because the gospel is "the power of God for salvation for everyone who believes" and because in it "God's righteousness" is revealed (1:16-17). His confidence rests not in his eloquence but in God's power. Help the group locate their assurance in the message itself.</li>
+            <li>Though God's nature is clearly seen in creation, people suppress the truth, refuse to glorify or thank him, and exchange his glory for idols (1:18-23). The problem is not lack of evidence but unwillingness to honor God. Sin is fundamentally a worship problem before it is a behavior problem.</li>
+            <li>To be "given up" means God removes his restraint and lets people have the sin they insist on, with all its ruinous fruit (1:24-28). It is judgment because being handed over to our desires destroys us. This sobering pattern shows why we so desperately need the rescue the gospel offers.</li>
+            <li>This is a personal-application question. Invite members to name settings—work, family, friendships—where speaking of Christ feels costly. Remind them gently that the gospel's power does not depend on their confidence, and encourage one small step of unashamed witness.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="romans.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="romans-2.html">Romans 2 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

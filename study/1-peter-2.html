@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 Peter 2: Living Stones, Chosen People — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 Peter 2: a chosen race and royal priesthood, honorable conduct before the nations, submission, and Christ's example in suffering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-peter-progress" data-study-total="5">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 Peter, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-peter.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 Peter · Chapter 2</span>
+        <h1>1 Peter 2: Living Stones, Chosen People</h1>
+        <p class="lead">Believers come to Christ the living Stone, are built into a royal priesthood, and follow his example of suffering without retaliation.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — 1 Peter Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 Peter 2 (WEB)</p>
+            <p><strong>1</strong> Putting away therefore all wickedness, all deceit, hypocrisies, envies, and all evil speaking,</p>
+            <p><strong>2</strong> as newborn babies, long for the pure milk of the Word, that with it you may grow,</p>
+            <p><strong>3</strong> if indeed you have tasted that the Lord is gracious:</p>
+            <p><strong>4</strong> coming to him, a living stone, rejected indeed by men, but chosen by God, precious.</p>
+            <p><strong>5</strong> You also, as living stones, are built up as a spiritual house, to be a holy priesthood, to offer up spiritual sacrifices, acceptable to God through Jesus Christ.</p>
+            <p><strong>6</strong> Because it is contained in Scripture, “Behold, I lay in Zion a chief cornerstone, chosen, and precious: He who believes in him will not be disappointed.”</p>
+            <p><strong>7</strong> For you who believe therefore is the honor, but for those who are disobedient, “The stone which the builders rejected, has become the chief cornerstone,”</p>
+            <p><strong>8</strong> and, “a stone of stumbling, and a rock of offense.” For they stumble at the word, being disobedient, to which also they were appointed.</p>
+            <p><strong>9</strong> But you are a chosen race, a royal priesthood, a holy nation, a people for God’s own possession, that you may proclaim the excellence of him who called you out of darkness into his marvelous light:</p>
+            <p><strong>10</strong> who in time past were no people, but now are God’s people, who had not obtained mercy, but now have obtained mercy.</p>
+            <p><strong>11</strong> Beloved, I beg you as foreigners and pilgrims, to abstain from fleshly lusts, which war against the soul;</p>
+            <p><strong>12</strong> having good behavior among the nations, so in that of which they speak against you as evildoers, they may by your good works, which they see, glorify God in the day of visitation.</p>
+            <p><strong>13</strong> Therefore subject yourselves to every ordinance of man for the Lord’s sake: whether to the king, as supreme;</p>
+            <p><strong>14</strong> or to governors, as sent by him for vengeance on evildoers and for praise to those who do well.</p>
+            <p><strong>15</strong> For this is the will of God, that by well-doing you should put to silence the ignorance of foolish men:</p>
+            <p><strong>16</strong> as free, and not using your freedom for a cloak of wickedness, but as bondservants of God.</p>
+            <p><strong>17</strong> Honor all men. Love the brotherhood. Fear God. Honor the king.</p>
+            <p><strong>18</strong> Servants, be in subjection to your masters with all fear; not only to the good and gentle, but also to the wicked.</p>
+            <p><strong>19</strong> For it is commendable if someone endures pain, suffering unjustly, because of conscience toward God.</p>
+            <p><strong>20</strong> For what glory is it if, when you sin, you patiently endure beating? But if, when you do well, you patiently endure suffering, this is commendable with God.</p>
+            <p><strong>21</strong> For to this you were called, because Christ also suffered for us, leaving you an example, that you should follow his steps,</p>
+            <p><strong>22</strong> who did not sin, “neither was deceit found in his mouth.”</p>
+            <p><strong>23</strong> Who, when he was cursed, didn’t curse back. When he suffered, didn’t threaten, but committed himself to him who judges righteously;</p>
+            <p><strong>24</strong> who his own self bore our sins in his body on the tree, that we, having died to sins, might live to righteousness; by whose stripes you were healed.</p>
+            <p><strong>25</strong> For you were going astray like sheep; but now have returned to the Shepherd and Overseer of your souls.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 Peter 2 (KJV)</p>
+            <p><strong>1</strong> Wherefore laying aside all malice, and all guile, and hypocrisies, and envies, and all evil speakings,</p>
+            <p><strong>2</strong> As newborn babes, desire the sincere milk of the word, that ye may grow thereby:</p>
+            <p><strong>3</strong> If so be ye have tasted that the Lord is gracious.</p>
+            <p><strong>4</strong> To whom coming, as unto a living stone, disallowed indeed of men, but chosen of God, and precious,</p>
+            <p><strong>5</strong> Ye also, as lively stones, are built up a spiritual house, an holy priesthood, to offer up spiritual sacrifices, acceptable to God by Jesus Christ.</p>
+            <p><strong>6</strong> Wherefore also it is contained in the scripture, Behold, I lay in Sion a chief corner stone, elect, precious: and he that believeth on him shall not be confounded.</p>
+            <p><strong>7</strong> Unto you therefore which believe he is precious: but unto them which be disobedient, the stone which the builders disallowed, the same is made the head of the corner,</p>
+            <p><strong>8</strong> And a stone of stumbling, and a rock of offence, even to them which stumble at the word, being disobedient: whereunto also they were appointed.</p>
+            <p><strong>9</strong> But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light:</p>
+            <p><strong>10</strong> Which in time past were not a people, but are now the people of God: which had not obtained mercy, but now have obtained mercy.</p>
+            <p><strong>11</strong> Dearly beloved, I beseech you as strangers and pilgrims, abstain from fleshly lusts, which war against the soul;</p>
+            <p><strong>12</strong> Having your conversation honest among the Gentiles: that, whereas they speak against you as evildoers, they may by your good works, which they shall behold, glorify God in the day of visitation.</p>
+            <p><strong>13</strong> Submit yourselves to every ordinance of man for the Lord’s sake: whether it be to the king, as supreme;</p>
+            <p><strong>14</strong> Or unto governors, as unto them that are sent by him for the punishment of evildoers, and for the praise of them that do well.</p>
+            <p><strong>15</strong> For so is the will of God, that with well doing ye may put to silence the ignorance of foolish men:</p>
+            <p><strong>16</strong> As free, and not using your liberty for a cloke of maliciousness, but as the servants of God.</p>
+            <p><strong>17</strong> Honour all men. Love the brotherhood. Fear God. Honour the king.</p>
+            <p><strong>18</strong> Servants, be subject to your masters with all fear; not only to the good and gentle, but also to the froward.</p>
+            <p><strong>19</strong> For this is thankworthy, if a man for conscience toward God endure grief, suffering wrongfully.</p>
+            <p><strong>20</strong> For what glory is it, if, when ye be buffeted for your faults, ye shall take it patiently? but if, when ye do well, and suffer for it, ye take it patiently, this is acceptable with God.</p>
+            <p><strong>21</strong> For even hereunto were ye called: because Christ also suffered for us, leaving us an example, that ye should follow his steps:</p>
+            <p><strong>22</strong> Who did no sin, neither was guile found in his mouth:</p>
+            <p><strong>23</strong> Who, when he was reviled, reviled not again; when he suffered, he threatened not; but committed himself to him that judgeth righteously:</p>
+            <p><strong>24</strong> Who his own self bare our sins in his own body on the tree, that we, being dead to sins, should live unto righteousness: by whose stripes ye were healed.</p>
+            <p><strong>25</strong> For ye were as sheep going astray; but are now returned unto the Shepherd and Bishop of your souls.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 Peter 2 (ASV)</p>
+            <p><strong>1</strong> Putting away therefore all wickedness, and all guile, and hypocrisies, and envies, and all evil speakings,</p>
+            <p><strong>2</strong> as newborn babes, long for the spiritual milk which is without guile, that ye may grow thereby unto salvation;</p>
+            <p><strong>3</strong> if ye have tasted that the Lord is gracious:</p>
+            <p><strong>4</strong> unto whom coming, a living stone, rejected indeed of men, but with God elect, precious,</p>
+            <p><strong>5</strong> ye also, as living stones, are built up a spiritual house, to be a holy priesthood, to offer up spiritual sacrifices, acceptable to God through Jesus Christ.</p>
+            <p><strong>6</strong> Because it is contained in scripture, Behold, I lay in Zion a chief corner stone, elect, precious: And he that believeth on him shall not be put to shame.</p>
+            <p><strong>7</strong> For you therefore that believe is the preciousness: but for such as disbelieve, The stone which the builders rejected, The same was made the head of the corner;</p>
+            <p><strong>8</strong> and, A stone of stumbling, and a rock of offence; for they stumble at the word, being disobedient: whereunto also they were appointed.</p>
+            <p><strong>9</strong> But ye are an elect race, a royal priesthood, a holy nation, a people for God’s own possession, that ye may show forth the excellencies of him who called you out of darkness into his marvellous light:</p>
+            <p><strong>10</strong> who in time past were no people, but now are the people of God: who had not obtained mercy, but now have obtained mercy.</p>
+            <p><strong>11</strong> Beloved, I beseech you as sojourners and pilgrims, to abstain from fleshly lusts, which war against the soul;</p>
+            <p><strong>12</strong> having your behavior seemly among the Gentiles; that, wherein they speak against you as evil-doers, they may by your good works, which they behold, glorify God in the day of visitation.</p>
+            <p><strong>13</strong> Be subject to every ordinance of man for the Lord’s sake: whether to the king, as supreme;</p>
+            <p><strong>14</strong> or unto governors, as sent by him for vengeance on evil-doers and for praise to them that do well.</p>
+            <p><strong>15</strong> For so is the will of God, that by well-doing ye should put to silence the ignorance of foolish men:</p>
+            <p><strong>16</strong> as free, and not using your freedom for a cloak of wickedness, but as bondservants of God.</p>
+            <p><strong>17</strong> Honor all men. Love the brotherhood. Fear God. Honor the king.</p>
+            <p><strong>18</strong> Servants, bein subjection to your masters with all fear; not only to the good and gentle, but also to the froward.</p>
+            <p><strong>19</strong> For this is acceptable, if for conscience toward God a man endureth griefs, suffering wrongfully.</p>
+            <p><strong>20</strong> For what glory is it, if, when ye sin, and are buffeted for it, ye shall take it patiently? but if, when ye do well, and suffer for it, ye shall take it patiently, this is acceptable with God.</p>
+            <p><strong>21</strong> For hereunto were ye called: because Christ also suffered for you, leaving you an example, that ye should follow his steps:</p>
+            <p><strong>22</strong> who did no sin, neither was guile found in his mouth:</p>
+            <p><strong>23</strong> who, when he was reviled, reviled not again; when he suffered, threatened not; but committed himself to him that judgeth righteously:</p>
+            <p><strong>24</strong> who his own self bare our sins in his body upon the tree, that we, having died unto sins, might live unto righteousness; by whose stripes ye were healed.</p>
+            <p><strong>25</strong> For ye were going astray like sheep; but are now returned unto the Shepherd and Bishop of your souls.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Peter calls the reborn to put away malice, deceit, hypocrisy, envy, and slander, and like newborn babies to long for the pure milk of the word so they may grow up into salvation, having tasted that the Lord is good. Coming to Christ, the living stone rejected by people but chosen and precious to God, they themselves are built as living stones into a spiritual house, a holy priesthood offering spiritual sacrifices acceptable through Jesus Christ. Scripture confirms it: the stone the builders rejected has become the cornerstone, precious to those who believe but a stumbling stone to the disobedient. Then comes the great declaration of identity: they are a chosen race, a royal priesthood, a holy nation, a people for God's own possession, called out of darkness into marvelous light, once no people but now God's people who have received mercy. As foreigners and pilgrims, they are to abstain from fleshly lusts and keep their conduct honorable among the nations, so that those who slander them may see their good works and glorify God. Peter urges submission to governing authorities for the Lord's sake, to honor all, love the family of believers, fear God, and honor the king. Servants are to submit even to harsh masters, for enduring unjust suffering for conscience' sake is commendable before God. And here is the pattern: Christ suffered for us, leaving an example; he did not sin or revile in return but entrusted himself to God who judges justly, bearing our sins in his body on the tree so that we, dying to sin, might live to righteousness; by his wounds we are healed, returned now to the Shepherd and Overseer of our souls.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Christ the living Stone</strong> — The one rejected by people but chosen and precious to God, the cornerstone, who suffered without retaliation and bore our sins in his body on the tree.</li>
+          <li><strong>The chosen people (believers)</strong> — Living stones built into a spiritual house, a royal priesthood and holy nation, called to honorable conduct and patient endurance before a watching world.</li>
+          <li><strong>The watching nations and authorities</strong> — The outsiders who speak against believers as evildoers, the kings and governors to whom believers submit for the Lord's sake, and the masters whom servants are to honor.</li>
+          <li><strong>The Shepherd and Overseer</strong> — Christ named as the Shepherd and Overseer of souls, to whom those once straying like sheep have now returned.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 Peter 2:9 (WEB)</p>
+          <p class="verse__text">But you are a chosen race, a royal priesthood, a holy nation, a people for God’s own possession, that you may proclaim the excellence of him who called you out of darkness into his marvelous light:</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Christ is the cornerstone, precious to those who believe and a stumbling stone to those who reject him.</li>
+          <li>Believers together form a spiritual house and holy priesthood, with a high calling to proclaim God's excellencies.</li>
+          <li>Honorable conduct among outsiders can silence slander and lead even critics to glorify God.</li>
+          <li>Christ's patient endurance of unjust suffering is the believer's example, made possible because he first bore our sins.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Crave the word like a newborn craves milk.</strong> “As newborn babies, long for the pure milk of the Word, that with it you may grow” (1 Peter 2:2, WEB). Spiritual growth depends on hungering for God's word.</li>
+            <li><strong>We are built together, not alone.</strong> “You also, as living stones, are built up as a spiritual house, to be a holy priesthood” (1 Peter 2:5, WEB). God forms his people into one dwelling for himself.</li>
+            <li><strong>Good works answer slander.</strong> By good conduct among the nations, those who speak against believers “may by your good works, which they see, glorify God” (1 Peter 2:12, WEB). A holy life is a witness.</li>
+            <li><strong>Christ left us an example in suffering.</strong> He “suffered for us, leaving you an example, that you should follow his steps” (1 Peter 2:21, WEB). We learn to endure injustice by looking to him.</li>
+            <li><strong>His wounds heal and bring us home.</strong> “By whose stripes you were healed,” and we have “returned to the Shepherd and Overseer of your souls” (1 Peter 2:24-25, WEB). The cross both saves and restores us.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>What does it mean that Christ is rejected by people yet chosen and precious to God, and how do people respond differently to this same stone?</li>
+            <li>How does the identity Peter gives believers in verse 9 reshape the way a struggling, slandered community sees itself?</li>
+            <li>Why does Peter connect honorable conduct among outsiders with their glorifying God?</li>
+            <li>How does Christ's response to suffering in verses 21-23 set a pattern for how believers face injustice?</li>
+            <li>Where do you find it hardest to entrust yourself to “him who judges righteously” (2:23) rather than retaliating or defending yourself?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>To God, Christ is the chosen and precious cornerstone; to people, he was the rejected stone (2:4-7). The same Christ becomes either the foundation of life for those who believe or a stone of stumbling for the disobedient (2:8). Our response to him determines everything.</li>
+            <li>Peter tells a marginalized people they are a chosen race, royal priesthood, holy nation, and God's own possession, once no people but now his people (2:9-10). This identity dignifies the despised, gives purpose to proclaim God's praise, and roots their worth in God's mercy, not the world's verdict.</li>
+            <li>Living as foreigners with honorable conduct, believers let their good works speak where words are slandered, so that even accusers may glorify God in the day of visitation (2:11-12). A beautiful life lived under unjust suspicion becomes an argument the world cannot easily dismiss.</li>
+            <li>Christ did not sin or revile in return; when he suffered, he did not threaten but entrusted himself to God who judges justly (2:22-23). His example frees believers from the need to retaliate or vindicate themselves, placing their cause in the hands of a righteous Judge.</li>
+            <li>This is partly personal application. Self-defense and retaliation feel natural when we are wronged; Christ instead entrusted himself to the Father (2:23). Invite members to name situations where they grasp for control, and to consider what it would look like to commit them to God.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-peter-1.html">← 1 Peter 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-peter.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-peter-3.html">1 Peter 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

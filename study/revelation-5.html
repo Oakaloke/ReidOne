@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 5: Worthy Is the Lamb — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 5: the sealed scroll, John's weeping, and the slain Lamb who alone is found worthy to open it as heaven sings a new song." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 5</span>
+        <h1>Revelation 5: Worthy Is the Lamb</h1>
+        <p class="lead">No one can open the sealed scroll until the slain Lamb steps forward, and all of heaven erupts in worship of the Lamb.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — Revelation Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 5 (WEB)</p>
+            <p><strong>1</strong> I saw, in the right hand of him who sat on the throne, a book written inside and outside, sealed shut with seven seals.</p>
+            <p><strong>2</strong> I saw a mighty angel proclaiming with a loud voice, “Who is worthy to open the book, and to break its seals?”</p>
+            <p><strong>3</strong> No one in heaven above, or on the earth, or under the earth, was able to open the book, or to look in it.</p>
+            <p><strong>4</strong> And I wept much, because no one was found worthy to open the book, or to look in it.</p>
+            <p><strong>5</strong> One of the elders said to me, “Don’t weep. Behold, the Lion who is of the tribe of Judah, the Root of David, has overcome; he who opens the book and its seven seals.”</p>
+            <p><strong>6</strong> I saw in the midst of the throne and of the four living creatures, and in the midst of the elders, a Lamb standing, as though it had been slain, having seven horns, and seven eyes, which are the seven Spirits of God, sent out into all the earth.</p>
+            <p><strong>7</strong> Then he came, and he took it out of the right hand of him who sat on the throne.</p>
+            <p><strong>8</strong> Now when he had taken the book, the four living creatures and the twenty-four elders fell down before the Lamb, each one having a harp, and golden bowls full of incense, which are the prayers of the saints.</p>
+            <p><strong>9</strong> They sang a new song, saying, “You are worthy to take the book, and to open its seals: for you were killed, and bought us for God with your blood, out of every tribe, language, people, and nation,</p>
+            <p><strong>10</strong> and made us kings and priests to our God, and we will reign on earth.”</p>
+            <p><strong>11</strong> I saw, and I heard something like a voice of many angels around the throne, the living creatures, and the elders; and the number of them was ten thousands of ten thousands, and thousands of thousands;</p>
+            <p><strong>12</strong> saying with a loud voice, “Worthy is the Lamb who has been killed to receive the power, wealth, wisdom, strength, honor, glory, and blessing!”</p>
+            <p><strong>13</strong> I heard every created thing which is in heaven, on the earth, under the earth, on the sea, and everything in them, saying, “To him who sits on the throne, and to the Lamb be the blessing, the honor, the glory, and the dominion, forever and ever! Amen!”</p>
+            <p><strong>14</strong> The four living creatures said, “Amen!” The elders fell down and worshiped.</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 5 (KJV)</p>
+            <p><strong>1</strong> And I saw in the right hand of him that sat on the throne a book written within and on the backside, sealed with seven seals.</p>
+            <p><strong>2</strong> And I saw a strong angel proclaiming with a loud voice, Who is worthy to open the book, and to loose the seals thereof?</p>
+            <p><strong>3</strong> And no man in heaven, nor in earth, neither under the earth, was able to open the book, neither to look thereon.</p>
+            <p><strong>4</strong> And I wept much, because no man was found worthy to open and to read the book, neither to look thereon.</p>
+            <p><strong>5</strong> And one of the elders saith unto me, Weep not: behold, the Lion of the tribe of Juda, the Root of David, hath prevailed to open the book, and to loose the seven seals thereof.</p>
+            <p><strong>6</strong> And I beheld, and, lo, in the midst of the throne and of the four beasts, and in the midst of the elders, stood a Lamb as it had been slain, having seven horns and seven eyes, which are the seven Spirits of God sent forth into all the earth.</p>
+            <p><strong>7</strong> And he came and took the book out of the right hand of him that sat upon the throne.</p>
+            <p><strong>8</strong> And when he had taken the book, the four beasts and four and twenty elders fell down before the Lamb, having every one of them harps, and golden vials full of odours, which are the prayers of saints.</p>
+            <p><strong>9</strong> And they sung a new song, saying, Thou art worthy to take the book, and to open the seals thereof: for thou wast slain, and hast redeemed us to God by thy blood out of every kindred, and tongue, and people, and nation;</p>
+            <p><strong>10</strong> And hast made us unto our God kings and priests: and we shall reign on the earth.</p>
+            <p><strong>11</strong> And I beheld, and I heard the voice of many angels round about the throne and the beasts and the elders: and the number of them was ten thousand times ten thousand, and thousands of thousands;</p>
+            <p><strong>12</strong> Saying with a loud voice, Worthy is the Lamb that was slain to receive power, and riches, and wisdom, and strength, and honour, and glory, and blessing.</p>
+            <p><strong>13</strong> And every creature which is in heaven, and on the earth, and under the earth, and such as are in the sea, and all that are in them, heard I saying, Blessing, and honour, and glory, and power, be unto him that sitteth upon the throne, and unto the Lamb for ever and ever.</p>
+            <p><strong>14</strong> And the four beasts said, Amen. And the four and twenty elders fell down and worshipped him that liveth for ever and ever.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 5 (ASV)</p>
+            <p><strong>1</strong> And I saw in the right hand of him that sat on the throne a book written within and on the back, close sealed with seven seals.</p>
+            <p><strong>2</strong> And I saw a strong angel proclaiming with a great voice, Who is worthy to open the book, and to loose the seals thereof?</p>
+            <p><strong>3</strong> And no one in the heaven, or on the earth, or under the earth, was able to open the book, or to look thereon.</p>
+            <p><strong>4</strong> And I wept much, because no one was found worthy to open the book, or to look thereon:</p>
+            <p><strong>5</strong> and one of the elders saith unto me, Weep not; behold, the Lion that is of the tribe of Judah, the Root of David, hath overcome to open the book and the seven seals thereof.</p>
+            <p><strong>6</strong> And I saw in the midst of the throne and of the four living creatures, and in the midst of the elders, a Lamb standing, as though it had been slain, having seven horns, and seven eyes, which are the seven Spirits of God, sent forth into all the earth.</p>
+            <p><strong>7</strong> And he came, and he taketh it out of the right hand of him that sat on the throne.</p>
+            <p><strong>8</strong> And when he had taken the book, the four living creatures and the four and twenty elders fell down before the Lamb, having each one a harp, and golden bowls full of incense, which are the prayers of the saints.</p>
+            <p><strong>9</strong> And they sing a new song, saying, Worthy art thou to take the book, and to open the seals thereof: for thou wast slain, and didst purchase unto God with thy blood men of every tribe, and tongue, and people, and nation,</p>
+            <p><strong>10</strong> and madest them to be unto our God a kingdom and priests; and they reign upon the earth.</p>
+            <p><strong>11</strong> And I saw, and I heard a voice of many angels round about the throne and the living creatures and the elders; and the number of them was ten thousand times ten thousand, and thousands of thousands;</p>
+            <p><strong>12</strong> saying with a great voice, Worthy is the Lamb that hath been slain to receive the power, and riches, and wisdom, and might, and honor, and glory, and blessing.</p>
+            <p><strong>13</strong> And every created thing which is in the heaven, and on the earth, and under the earth, and on the sea, and all things that are in them, heard I saying, Unto him that sitteth on the throne, and unto the Lamb, be the blessing, and the honor, and the glory, and the dominion, for ever and ever.</p>
+            <p><strong>14</strong> And the four living creatures said, Amen. And the elders fell down and worshipped.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>In the right hand of the One on the throne is a scroll, written within and on the back and sealed with seven seals. A mighty angel asks who is worthy to open it, and when no one in heaven, on earth, or under the earth can be found, John weeps loudly. But an elder comforts him: the Lion of the tribe of Judah, the Root of David, has conquered and can open the scroll. Then John looks and sees not a lion but a Lamb, standing as though slain, with seven horns and seven eyes—the fullness of power and the sevenfold Spirit sent into all the earth. The Lamb takes the scroll from the hand on the throne, and at once the living creatures and elders fall before him with harps and golden bowls of incense, the prayers of the saints. They sing a new song: he is worthy, for he was slain and by his blood purchased people for God from every tribe and tongue, making them a kingdom of priests who will reign on earth. Then countless angels and finally every creature in heaven, earth, sea, and under the earth join the chorus, ascribing power, wealth, wisdom, and blessing to the Lamb who was killed. The Lion conquers as a slaughtered Lamb.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The Lamb</strong> — Jesus Christ, the Lion of Judah who appears as a slain yet standing Lamb, alone worthy to open the scroll because by his blood he redeemed people for God.</li>
+          <li><strong>God on the throne</strong> — The One who holds the sealed scroll and from whose hand the Lamb receives it, worshiped together with the Lamb by all creation.</li>
+          <li><strong>The worshiping host</strong> — The four living creatures, the twenty-four elders, myriads of angels, and every creature, who sing the worthiness of the Lamb.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 5:9 (WEB)</p>
+          <p class="verse__text">You are worthy to take the book, and to open its seals: for you were killed, and bought us for God with your blood, out of every tribe, language, people, and nation,</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Only the slain and risen Lamb is worthy to unfold the purposes of God in history.</li>
+          <li>Christ conquers not by force but by sacrifice—the Lion who wins as a slain Lamb.</li>
+          <li>The cross purchased a people for God from every tribe, language, and nation.</li>
+          <li>The redeemed are made a kingdom of priests, called to reign and serve with Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>Christ alone is worthy.</strong> When no one else could, the Lamb “came, and he took it out of the right hand of him who sat on the throne” (Revelation 5:7, WEB). He alone unfolds God's plan.</li>
+            <li><strong>Victory comes through sacrifice.</strong> John is told to see the Lion but sees “a Lamb standing, as though it had been slain” (Revelation 5:6, WEB). The cross is the throne's hidden power.</li>
+            <li><strong>The cross reaches every people.</strong> The Lamb “bought us for God with your blood, out of every tribe, language, people, and nation” (Revelation 5:9, WEB). Redemption is gloriously global.</li>
+            <li><strong>All creation will praise the Lamb.</strong> “To him who sits on the throne, and to the Lamb be the blessing, the honor, the glory, and the dominion” (Revelation 5:13, WEB). Every voice will one day join the song.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>Why does John weep so loudly when no one is found worthy to open the scroll?</li>
+            <li>What is the significance of John being told to look for a Lion but seeing a Lamb that was slain?</li>
+            <li>How does the new song in verses 9-10 summarize the gospel?</li>
+            <li>What does it mean that the Lamb has made the redeemed into a kingdom of priests?</li>
+            <li>How does the worship of the Lamb in this chapter stir your own heart to praise him?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>John weeps because if no one can open the scroll, God's purposes for history seem stalled and the cries of the saints unanswered. His tears show how much hangs on finding someone worthy. Then the Lamb steps forward, and weeping turns to song.</li>
+            <li>The pairing of Lion and Lamb is the heart of Revelation's vision of victory. Jesus conquers, but his conquest is achieved through being slain. Help the group see that God's power is most fully revealed in self-giving love at the cross.</li>
+            <li>The new song proclaims that the Lamb was slain and by his blood purchased people from every nation, making them a kingdom of priests (5:9-10). In a few lines it captures redemption accomplished and applied—the gospel set to music.</li>
+            <li>Being a kingdom of priests means the redeemed both belong to God's reign and have access to serve him directly. Discuss how this dignifies ordinary believers, who are called to worship, witness, and one day reign with Christ.</li>
+            <li>This is a personal-application question. Let the expanding circles of praise—creatures, elders, angels, all creation—draw the group into worship. As leader, invite members to add their own voice to the song, naming what makes the Lamb worthy to them.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-4.html">← Revelation 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-6.html">Revelation 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

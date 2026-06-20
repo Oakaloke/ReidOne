@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>1 John 4: God Is Love — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of 1 John 4: testing the spirits by their confession of Christ, the revelation that God is love, and the perfect love that casts out fear." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-1-john-progress" data-study-total="5">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of 1 John, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="1-john.html">← All Chapters</a>
+        <span class="study-meta">The Book of 1 John · Chapter 4</span>
+        <h1>1 John 4: God Is Love</h1>
+        <p class="lead">Test every spirit by its confession of Christ; because God is love and loved us first, we love one another, and perfect love drives out all fear.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — 1 John Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">1 John 4 (WEB)</p>
+            <p><strong>1</strong> Beloved, don’t believe every spirit, but test the spirits, whether they are of God, because many false prophets have gone out into the world.</p>
+            <p><strong>2</strong> By this you know the Spirit of God: every spirit who confesses that Jesus Christ has come in the flesh is of God,</p>
+            <p><strong>3</strong> and every spirit who doesn’t confess that Jesus Christ has come in the flesh is not of God, and this is the spirit of the Antichrist, of whom you have heard that it comes. Now it is in the world already.</p>
+            <p><strong>4</strong> You are of God, little children, and have overcome them; because greater is he who is in you than he who is in the world.</p>
+            <p><strong>5</strong> They are of the world. Therefore they speak of the world, and the world hears them.</p>
+            <p><strong>6</strong> We are of God. He who knows God listens to us. He who is not of God doesn’t listen to us. By this we know the spirit of truth, and the spirit of error.</p>
+            <p><strong>7</strong> Beloved, let us love one another, for love is of God; and everyone who loves has been born of God, and knows God.</p>
+            <p><strong>8</strong> He who doesn’t love doesn’t know God, for God is love.</p>
+            <p><strong>9</strong> By this God’s love was revealed in us, that God has sent his one and only Son into the world that we might live through him.</p>
+            <p><strong>10</strong> In this is love, not that we loved God, but that he loved us, and sent his Son as the atoning sacrifice for our sins.</p>
+            <p><strong>11</strong> Beloved, if God loved us in this way, we also ought to love one another.</p>
+            <p><strong>12</strong> No one has seen God at any time. If we love one another, God remains in us, and his love has been perfected in us.</p>
+            <p><strong>13</strong> By this we know that we remain in him and he in us, because he has given us of his Spirit.</p>
+            <p><strong>14</strong> We have seen and testify that the Father has sent the Son as the Savior of the world.</p>
+            <p><strong>15</strong> Whoever confesses that Jesus is the Son of God, God remains in him, and he in God.</p>
+            <p><strong>16</strong> We know and have believed the love which God has for us. God is love, and he who remains in love remains in God, and God remains in him.</p>
+            <p><strong>17</strong> In this love has been made perfect among us, that we may have boldness in the day of judgment, because as he is, even so are we in this world.</p>
+            <p><strong>18</strong> There is no fear in love; but perfect love casts out fear, because fear has punishment. He who fears is not made perfect in love.</p>
+            <p><strong>19</strong> We love him, because he first loved us.</p>
+            <p><strong>20</strong> If a man says, “I love God,” and hates his brother, he is a liar; for he who doesn’t love his brother whom he has seen, how can he love God whom he has not seen?</p>
+            <p><strong>21</strong> This commandment we have from him, that he who loves God should also love his brother.</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">1 John 4 (KJV)</p>
+            <p><strong>1</strong> Beloved, believe not every spirit, but try the spirits whether they are of God: because many false prophets are gone out into the world.</p>
+            <p><strong>2</strong> Hereby know ye the Spirit of God: Every spirit that confesseth that Jesus Christ is come in the flesh is of God:</p>
+            <p><strong>3</strong> And every spirit that confesseth not that Jesus Christ is come in the flesh is not of God: and this is that spirit of antichrist, whereof ye have heard that it should come; and even now already is it in the world.</p>
+            <p><strong>4</strong> Ye are of God, little children, and have overcome them: because greater is he that is in you, than he that is in the world.</p>
+            <p><strong>5</strong> They are of the world: therefore speak they of the world, and the world heareth them.</p>
+            <p><strong>6</strong> We are of God: he that knoweth God heareth us; he that is not of God heareth not us. Hereby know we the spirit of truth, and the spirit of error.</p>
+            <p><strong>7</strong> Beloved, let us love one another: for love is of God; and every one that loveth is born of God, and knoweth God.</p>
+            <p><strong>8</strong> He that loveth not knoweth not God; for God is love.</p>
+            <p><strong>9</strong> In this was manifested the love of God toward us, because that God sent his only begotten Son into the world, that we might live through him.</p>
+            <p><strong>10</strong> Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins.</p>
+            <p><strong>11</strong> Beloved, if God so loved us, we ought also to love one another.</p>
+            <p><strong>12</strong> No man hath seen God at any time. If we love one another, God dwelleth in us, and his love is perfected in us.</p>
+            <p><strong>13</strong> Hereby know we that we dwell in him, and he in us, because he hath given us of his Spirit.</p>
+            <p><strong>14</strong> And we have seen and do testify that the Father sent the Son to be the Saviour of the world.</p>
+            <p><strong>15</strong> Whosoever shall confess that Jesus is the Son of God, God dwelleth in him, and he in God.</p>
+            <p><strong>16</strong> And we have known and believed the love that God hath to us. God is love; and he that dwelleth in love dwelleth in God, and God in him.</p>
+            <p><strong>17</strong> Herein is our love made perfect, that we may have boldness in the day of judgment: because as he is, so are we in this world.</p>
+            <p><strong>18</strong> There is no fear in love; but perfect love casteth out fear: because fear hath torment. He that feareth is not made perfect in love.</p>
+            <p><strong>19</strong> We love him, because he first loved us.</p>
+            <p><strong>20</strong> If a man say, I love God, and hateth his brother, he is a liar: for he that loveth not his brother whom he hath seen, how can he love God whom he hath not seen?</p>
+            <p><strong>21</strong> And this commandment have we from him, That he who loveth God love his brother also.</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">1 John 4 (ASV)</p>
+            <p><strong>1</strong> Beloved, believe not every spirit, but prove the spirits, whether they are of God; because many false prophets are gone out into the world.</p>
+            <p><strong>2</strong> Hereby know ye the Spirit of God: every spirit that confesseth that Jesus Christ is come in the flesh is of God:</p>
+            <p><strong>3</strong> and every spirit that confesseth not Jesus is not of God: and this is the spirit of the antichrist, whereof ye have heard that it cometh; and now it is in the world already.</p>
+            <p><strong>4</strong> Ye are of God, my little children, and have overcome them: because greater is he that is in you than he that is in the world.</p>
+            <p><strong>5</strong> They are of the world: therefore speak they as of the world, and the world heareth them.</p>
+            <p><strong>6</strong> We are of God: he that knoweth God heareth us; he who is not of God heareth us not. By this we know the spirit of truth, and the spirit of error.</p>
+            <p><strong>7</strong> Beloved, let us love one another: for love is of God; and every one that loveth is begotten of God, and knoweth God.</p>
+            <p><strong>8</strong> He that loveth not knoweth not God; for God is love.</p>
+            <p><strong>9</strong> Herein was the love of God manifested in us, that God hath sent his only begotten Son into the world that we might live through him.</p>
+            <p><strong>10</strong> Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins.</p>
+            <p><strong>11</strong> Beloved, if God so loved us, we also ought to love one another.</p>
+            <p><strong>12</strong> No man hath beheld God at any time: if we love one another, God abideth in us, and his love is perfected in us:</p>
+            <p><strong>13</strong> hereby we know that we abide in him and he in us, because he hath given us of his Spirit.</p>
+            <p><strong>14</strong> And we have beheld and bear witness that the Father hath sent the Son to be the Saviour of the world.</p>
+            <p><strong>15</strong> Whosoever shall confess that Jesus is the Son of God, God abideth in him, and he in God.</p>
+            <p><strong>16</strong> And we know and have believed the love which God hath in us. God is love; and he that abideth in love abideth in God, and God abideth in him.</p>
+            <p><strong>17</strong> Herein is love made perfect with us, that we may have boldness in the day of judgment; because as he is, even so are we in this world.</p>
+            <p><strong>18</strong> There is no fear in love: but perfect love casteth out fear, because fear hath punishment; and he that feareth is not made perfect in love.</p>
+            <p><strong>19</strong> We love, because he first loved us.</p>
+            <p><strong>20</strong> If a man say, I love God, and hateth his brother, he is a liar: for he that loveth not his brother whom he hath seen, cannot love God whom he hath not seen.</p>
+            <p><strong>21</strong> And this commandment have we from him, that he who loveth God love his brother also.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>John urges his readers not to believe every spirit but to test the spirits to see whether they are from God, because many false prophets have gone out into the world. The test is the confession of Christ: every spirit that confesses Jesus Christ has come in the flesh is from God, and every spirit that denies it is not, but is the spirit of antichrist. His readers need not fear, for the One in them is greater than the one in the world, and they have already overcome. John then turns to the letter's deepest theme: love is from God, and everyone who loves has been born of God and knows God, for God is love. This love was revealed when God sent his one and only Son into the world that we might live through him—not that we loved God, but that he loved us and sent his Son as the atoning sacrifice for our sins. Since God loved us like this, we ought to love one another; though no one has ever seen God, his love is perfected in us when we love each other. John ties love and confession together: whoever confesses that Jesus is the Son of God abides in God, and God in him. We have come to know and believe the love God has for us, and abiding in love is abiding in God. Such love brings boldness for the day of judgment, for there is no fear in love—perfect love casts out fear. We love because he first loved us, and the one who claims to love God while hating his brother is a liar.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>John</strong> — The apostle warning against false spirits and unfolding the heart of the gospel, that God is love and has loved us first.</li>
+          <li><strong>God the Father</strong> — The God who is love and who revealed that love by sending his one and only Son into the world that we might live through him.</li>
+          <li><strong>Jesus Christ, the Son</strong> — The Son sent as the Savior of the world and the atoning sacrifice for our sins, whose coming in the flesh is the test of every spirit.</li>
+          <li><strong>The false prophets and spirits</strong> — The deceiving spirits and false prophets who refuse to confess that Jesus Christ has come in the flesh, bearing the spirit of antichrist.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">1 John 4:10 (WEB)</p>
+          <p class="verse__text">In this is love, not that we loved God, but that he loved us, and sent his Son as the atoning sacrifice for our sins.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Not every spiritual claim is from God; spirits must be tested by their confession of Christ come in the flesh.</li>
+          <li>God is love, and his love was supremely revealed in sending his Son for us.</li>
+          <li>Our love for one another is the response to and evidence of God's love living in us.</li>
+          <li>Perfect love casts out fear, giving us boldness for the day of judgment.</li>
+          <li>Love for God cannot be real if it is divorced from love for our brother.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>Discernment confesses Christ in the flesh.</strong> “Every spirit who confesses that Jesus Christ has come in the flesh is of God” (1 John 4:2, WEB). The acid test of any teaching is what it says about Jesus.</li>
+            <li><strong>God's love came first.</strong> “In this is love, not that we loved God, but that he loved us, and sent his Son” (1 John 4:10, WEB). We are recipients before we are givers of love.</li>
+            <li><strong>God's love is perfected in our love for one another.</strong> “If we love one another, God remains in us, and his love has been perfected in us” (1 John 4:12, WEB). The unseen God becomes visible through his loving people.</li>
+            <li><strong>Perfect love casts out fear.</strong> “There is no fear in love; but perfect love casts out fear” (1 John 4:18, WEB). Resting in God's love frees us from dread of judgment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>Why does John tell us to test the spirits, and what is the test he gives (4:1-3)?</li>
+            <li>What does it mean that “God is love,” and how was that love revealed (4:8-10)?</li>
+            <li>How does John connect God's love for us with our love for one another (4:11-12, 19-21)?</li>
+            <li>How does abiding in God's love give us boldness and cast out fear (4:17-18)?</li>
+            <li>Where does fear still rule a part of your life, and how might resting in God's love begin to drive it out?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>Because many false prophets are at work, John tells us not to be naive but to test claims by their confession of Christ come in the flesh (4:1-3). Discernment is an act of love, protecting the church from teaching that denies the incarnate Son. Truth and love go together.</li>
+            <li>“God is love” means love is essential to who God is, not just something he does. It was revealed most clearly when he sent his only Son as the atoning sacrifice for our sins (4:9-10). Help the group see the cross, not sentiment, as the definition of love.</li>
+            <li>Because God first loved us, we are both able and obligated to love one another (4:11, 19). Our love is the overflow of his, and it makes the invisible God visible (4:12). Loving the brother we can see is the test of loving the God we cannot (4:20).</li>
+            <li>As we rest in being loved by God, we gain confidence for the day of judgment, for we stand in Christ (4:17). Perfect love leaves no room for the torment of fear (4:18). Encourage members to let assurance of God's love quiet their anxieties.</li>
+            <li>This is a personal-application question. As leader, invite honest naming of fears—of failure, rejection, judgment, the future—and gently point to God's first, unchanging love as the antidote. Remind the group that we love, and live unafraid, because he first loved us.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="1-john-3.html">← 1 John 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="1-john.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="1-john-5.html">1 John 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

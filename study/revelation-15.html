@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 15: The Song Before the Plagues — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 15: the victors singing the song of Moses and the Lamb, and the seven angels with the seven last plagues." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 15
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 15</span>
+        <h1>Revelation 15: The Song Before the Plagues</h1>
+        <p class="lead">Those who conquered the beast sing the song of Moses and the Lamb as seven angels prepare the final bowls of God's wrath.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-15">
+            <span>Scripture — Revelation Chapter 15</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-15">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-15-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-15-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-15-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-15-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 15 (WEB)</p>
+            <p><strong>1</strong> I saw another great and marvelous sign in the sky: seven angels having the seven last plagues, for in them God’s wrath is finished.</p>
+            <p><strong>2</strong> I saw something like a sea of glass mixed with fire, and those who overcame the beast, his image, and the number of his name, standing on the sea of glass, having harps of God.</p>
+            <p><strong>3</strong> They sang the song of Moses, the servant of God, and the song of the Lamb, saying, “Great and marvelous are your works, Lord God, the Almighty! Righteous and true are your ways, you King of the nations.</p>
+            <p><strong>4</strong> Who wouldn’t fear you, Lord, and glorify your name? For you only are holy. For all the nations will come and worship before you. For your righteous acts have been revealed.”</p>
+            <p><strong>5</strong> After these things I looked, and the temple of the tabernacle of the testimony in heaven was opened.</p>
+            <p><strong>6</strong> The seven angels who had the seven plagues came out, clothed with pure, bright linen, and wearing golden sashes around their breasts.</p>
+            <p><strong>7</strong> One of the four living creatures gave to the seven angels seven golden bowls full of the wrath of God, who lives forever and ever.</p>
+            <p><strong>8</strong> The temple was filled with smoke from the glory of God, and from his power. No one was able to enter into the temple, until the seven plagues of the seven angels would be finished.</p>
+            </div>
+            <div class="scripture-text" id="web-15-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 15 (KJV)</p>
+            <p><strong>1</strong> And I saw another sign in heaven, great and marvellous, seven angels having the seven last plagues; for in them is filled up the wrath of God.</p>
+            <p><strong>2</strong> And I saw as it were a sea of glass mingled with fire: and them that had gotten the victory over the beast, and over his image, and over his mark, and over the number of his name, stand on the sea of glass, having the harps of God.</p>
+            <p><strong>3</strong> And they sing the song of Moses the servant of God, and the song of the Lamb, saying, Great and marvellous are thy works, Lord God Almighty; just and true are thy ways, thou King of saints.</p>
+            <p><strong>4</strong> Who shall not fear thee, O Lord, and glorify thy name? for thou only art holy: for all nations shall come and worship before thee; for thy judgments are made manifest.</p>
+            <p><strong>5</strong> And after that I looked, and, behold, the temple of the tabernacle of the testimony in heaven was opened:</p>
+            <p><strong>6</strong> And the seven angels came out of the temple, having the seven plagues, clothed in pure and white linen, and having their breasts girded with golden girdles.</p>
+            <p><strong>7</strong> And one of the four beasts gave unto the seven angels seven golden vials full of the wrath of God, who liveth for ever and ever.</p>
+            <p><strong>8</strong> And the temple was filled with smoke from the glory of God, and from his power; and no man was able to enter into the temple, till the seven plagues of the seven angels were fulfilled.</p>
+            </div>
+            <div class="scripture-text" id="web-15-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 15 (ASV)</p>
+            <p><strong>1</strong> And I saw another sign in heaven, great and marvellous, seven angels having seven plagues, which are the last, for in them is finished the wrath of God.</p>
+            <p><strong>2</strong> And I saw as it were a sea of glass mingled with fire; and them that come off victorious from the beast, and from his image, and from the number of his name, standing by the sea of glass, having harps of God.</p>
+            <p><strong>3</strong> And they sing the song of Moses the servant of God, and the song of the Lamb, saying, Great and marvellous are thy works, O Lord God, the Almighty; righteous and true are thy ways, thou King of the ages.</p>
+            <p><strong>4</strong> Who shall not fear, O Lord, and glorify thy name? for thou only art holy; for all the nations shall come and worship before thee; for thy righteous acts have been made manifest.</p>
+            <p><strong>5</strong> And after these things I saw, and the temple of the tabernacle of the testimony in heaven was opened:</p>
+            <p><strong>6</strong> and there came out from the temple the seven angels that had the seven plagues, arrayed withprecious stone, pure and bright, and girt about their breasts with golden girdles.</p>
+            <p><strong>7</strong> And one of the four living creatures gave unto the seven angels seven golden bowls full of the wrath of God, who liveth for ever and ever.</p>
+            <p><strong>8</strong> And the temple was filled with smoke from the glory of God, and from his power; and none was able to enter into the temple, till the seven plagues of the seven angels should be finished.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>John sees another great sign in heaven: seven angels with the seven last plagues, in which the wrath of God is brought to completion. Before they go forth, he sees a sea of glass mingled with fire, and standing beside it those who had conquered the beast, its image, and the number of its name, holding harps given by God. They sing the song of Moses, the servant of God, and the song of the Lamb—joining the old deliverance at the Red Sea to the new deliverance in Christ. Their song magnifies God's great and marvelous works, his righteous and true ways as King of the nations, declaring that all nations will come and worship before him because his righteous acts have been revealed. Then the heavenly temple of the tabernacle of testimony is opened, and the seven angels come out clothed in pure bright linen with golden sashes. One of the four living creatures gives them seven golden bowls full of the wrath of the eternal God, and the temple is filled with smoke from the glory and power of God, so that no one can enter until the seven plagues are finished. The chapter pairs the worship of the redeemed with the solemn preparation of God's final judgments.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The victors over the beast</strong> — Those who overcame the beast, its image, and its number, standing by the sea of glass with harps, singing the song of Moses and of the Lamb.</li>
+          <li><strong>The seven angels</strong> — Angels clothed in bright linen who carry the seven last plagues, in which the wrath of God is completed.</li>
+          <li><strong>God in his glory</strong> — The Almighty whose righteous and true ways are praised, whose glory fills the temple with smoke as the final judgments are prepared.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 15:3 (WEB)</p>
+          <p class="verse__text">Great and marvelous are your works, Lord God, the Almighty! Righteous and true are your ways, you King of the nations.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Those who overcome the beast are brought to victory and worship by God's grace.</li>
+          <li>The song of Moses and the Lamb unites God's saving acts across the whole of Scripture.</li>
+          <li>God's judgments are praised as great, marvelous, righteous, and true.</li>
+          <li>God's holiness and glory stand behind every act of his final judgment.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-15">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-15">
+            <ul class="lesson-list">
+            <li><strong>Victory ends in worship.</strong> Those who overcame the beast stand with “harps of God” (Revelation 15:2, WEB). The triumph of the saints overflows into praise.</li>
+            <li><strong>God's works are marvelous.</strong> “Great and marvelous are your works, Lord God, the Almighty!” (Revelation 15:3, WEB). His deeds, even in judgment, evoke wonder, not just fear.</li>
+            <li><strong>His ways are righteous and true.</strong> “Righteous and true are your ways, you King of the nations” (Revelation 15:3, WEB). God's judgments are never arbitrary or unjust.</li>
+            <li><strong>All nations will worship him.</strong> “All the nations will come and worship before you” (Revelation 15:4, WEB). God's righteous acts draw the peoples to himself.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-15">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-15">
+            <ol class="study-questions">
+            <li>Why do those who conquered the beast respond with singing rather than mere relief?</li>
+            <li>What does it mean that they sing both the song of Moses and the song of the Lamb?</li>
+            <li>How does this song describe God's character and his ways with the nations?</li>
+            <li>Why might heaven pause to worship just before the final plagues are poured out?</li>
+            <li>How can praising God's righteous and true ways shape the way you view his judgments?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-15">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-15">
+            <ol class="study-questions">
+            <li>The victors do not merely escape the beast; they are brought to a place of worship beside the sea of glass (15:2-3). Help the group see that the goal of salvation is not only deliverance but glad, grateful praise of God.</li>
+            <li>Joining the song of Moses to the song of the Lamb ties the exodus deliverance to the greater rescue in Christ (15:3). Discuss how the whole Bible tells one story of God redeeming his people and how we sing it together.</li>
+            <li>The song praises God as Almighty, righteous, true, and King of the nations whom all peoples will worship (15:3-4). It centers not on the saints' achievement but on God's character and the revelation of his righteous acts.</li>
+            <li>Heaven worships before the bowls are poured because God's judgments flow from his holiness and faithfulness, not cruelty. The pause assures us that even his severest acts are worthy of praise, grounded in his righteous and glorious nature.</li>
+            <li>This is a personal-application question. Invite members to wrestle honestly with God's judgment, then to anchor their thoughts in the conviction that his ways are righteous and true. As leader, encourage trust in God's justice even where it troubles us.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-14.html">← Revelation 14</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-16.html">Revelation 16 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

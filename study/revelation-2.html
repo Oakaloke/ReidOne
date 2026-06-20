@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 2: Letters to Four Churches — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 2: Jesus writes to the churches in Ephesus, Smyrna, Pergamum, and Thyatira with praise, warning, and promise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 2</span>
+        <h1>Revelation 2: Letters to Four Churches</h1>
+        <p class="lead">Christ writes to Ephesus, Smyrna, Pergamum, and Thyatira—commending, correcting, and calling each to overcome.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Revelation Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 2 (WEB)</p>
+            <p><strong>1</strong> “To the angel of the assembly in Ephesus write: “He who holds the seven stars in his right hand, he who walks among the seven golden lamp stands says these things:</p>
+            <p><strong>2</strong> “I know your works, and your toil and perseverance, and that you can’t tolerate evil men, and have tested those who call themselves apostles, and they are not, and found them false.</p>
+            <p><strong>3</strong> You have perseverance and have endured for my name’s sake, and have not grown weary.</p>
+            <p><strong>4</strong> But I have this against you, that you left your first love.</p>
+            <p><strong>5</strong> Remember therefore from where you have fallen, and repent and do the first works; or else I am coming to you swiftly, and will move your lamp stand out of its place, unless you repent.</p>
+            <p><strong>6</strong> But this you have, that you hate the works of the Nicolaitans, which I also hate.</p>
+            <p><strong>7</strong> He who has an ear, let him hear what the Spirit says to the assemblies. To him who overcomes I will give to eat of the tree of life, which is in the Paradise of my God.</p>
+            <p><strong>8</strong> “To the angel of the assembly in Smyrna write: “The first and the last, who was dead, and has come to life says these things:</p>
+            <p><strong>9</strong> “I know your works, oppression, and your poverty (but you are rich), and the blasphemy of those who say they are Jews, and they are not, but are a synagogue of Satan.</p>
+            <p><strong>10</strong> Don’t be afraid of the things which you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested; and you will have oppression for ten days. Be faithful to death, and I will give you the crown of life.</p>
+            <p><strong>11</strong> He who has an ear, let him hear what the Spirit says to the assemblies. He who overcomes won’t be harmed by the second death.</p>
+            <p><strong>12</strong> “To the angel of the assembly in Pergamum write: “He who has the sharp two-edged sword says these things:</p>
+            <p><strong>13</strong> “I know your works and where you dwell, where Satan’s throne is. You hold firmly to my name, and didn’t deny my faith in the days of Antipas my witness, my faithful one, who was killed among you, where Satan dwells.</p>
+            <p><strong>14</strong> But I have a few things against you, because you have there some who hold the teaching of Balaam, who taught Balak to throw a stumbling block before the children of Israel, to eat things sacrificed to idols, and to commit sexual immorality.</p>
+            <p><strong>15</strong> So you also have some who hold to the teaching of the Nicolaitans likewise.</p>
+            <p><strong>16</strong> Repent therefore, or else I am coming to you quickly, and I will make war against them with the sword of my mouth.</p>
+            <p><strong>17</strong> He who has an ear, let him hear what the Spirit says to the assemblies. To him who overcomes, to him I will give of the hidden manna, and I will give him a white stone, and on the stone a new name written, which no one knows but he who receives it.</p>
+            <p><strong>18</strong> “To the angel of the assembly in Thyatira write: “The Son of God, who has his eyes like a flame of fire, and his feet are like burnished brass, says these things:</p>
+            <p><strong>19</strong> “I know your works, your love, faith, service, patient endurance, and that your last works are more than the first.</p>
+            <p><strong>20</strong> But I have this against you, that you tolerate yourwoman, Jezebel, who calls herself a prophetess. She teaches and seduces my servants to commit sexual immorality, and to eat things sacrificed to idols.</p>
+            <p><strong>21</strong> I gave her time to repent, but she refuses to repent of her sexual immorality.</p>
+            <p><strong>22</strong> Behold, I will throw her into a bed, and those who commit adultery with her into great oppression, unless they repent of her works.</p>
+            <p><strong>23</strong> I will kill her children with Death, and all the assemblies will know that I am he who searches the minds and hearts. I will give to each one of you according to your deeds.</p>
+            <p><strong>24</strong> But to you I say, to the rest who are in Thyatira, as many as don’t have this teaching, who don’t know what some call ‘the deep things of Satan,’ to you I say, I am not putting any other burden on you.</p>
+            <p><strong>25</strong> Nevertheless, hold that which you have firmly until I come.</p>
+            <p><strong>26</strong> He who overcomes, and he who keeps my works to the end, to him I will give authority over the nations.</p>
+            <p><strong>27</strong> He will rule them with a rod of iron, shattering them like clay pots;as I also have received of my Father:</p>
+            <p><strong>28</strong> and I will give him the morning star.</p>
+            <p><strong>29</strong> He who has an ear, let him hear what the Spirit says to the assemblies.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 2 (KJV)</p>
+            <p><strong>1</strong> Unto the angel of the church of Ephesus write; These things saith he that holdeth the seven stars in his right hand, who walketh in the midst of the seven golden candlesticks;</p>
+            <p><strong>2</strong> I know thy works, and thy labour, and thy patience, and how thou canst not bear them which are evil: and thou hast tried them which say they are apostles, and are not, and hast found them liars:</p>
+            <p><strong>3</strong> And hast borne, and hast patience, and for my name’s sake hast laboured, and hast not fainted.</p>
+            <p><strong>4</strong> Nevertheless I have somewhat against thee, because thou hast left thy first love.</p>
+            <p><strong>5</strong> Remember therefore from whence thou art fallen, and repent, and do the first works; or else I will come unto thee quickly, and will remove thy candlestick out of his place, except thou repent.</p>
+            <p><strong>6</strong> But this thou hast, that thou hatest the deeds of the Nicolaitans, which I also hate.</p>
+            <p><strong>7</strong> He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the tree of life, which is in the midst of the paradise of God.</p>
+            <p><strong>8</strong> And unto the angel of the church in Smyrna write; These things saith the first and the last, which was dead, and is alive;</p>
+            <p><strong>9</strong> I know thy works, and tribulation, and poverty, (but thou art rich) and I know the blasphemy of them which say they are Jews, and are not, but are the synagogue of Satan.</p>
+            <p><strong>10</strong> Fear none of those things which thou shalt suffer: behold, the devil shall cast some of you into prison, that ye may be tried; and ye shall have tribulation ten days: be thou faithful unto death, and I will give thee a crown of life.</p>
+            <p><strong>11</strong> He that hath an ear, let him hear what the Spirit saith unto the churches; He that overcometh shall not be hurt of the second death.</p>
+            <p><strong>12</strong> And to the angel of the church in Pergamos write; These things saith he which hath the sharp sword with two edges;</p>
+            <p><strong>13</strong> I know thy works, and where thou dwellest, even where Satan’s seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth.</p>
+            <p><strong>14</strong> But I have a few things against thee, because thou hast there them that hold the doctrine of Balaam, who taught Balac to cast a stumblingblock before the children of Israel, to eat things sacrificed unto idols, and to commit fornication.</p>
+            <p><strong>15</strong> So hast thou also them that hold the doctrine of the Nicolaitans, which thing I hate.</p>
+            <p><strong>16</strong> Repent; or else I will come unto thee quickly, and will fight against them with the sword of my mouth.</p>
+            <p><strong>17</strong> He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the hidden manna, and will give him a white stone, and in the stone a new name written, which no man knoweth saving he that receiveth it.</p>
+            <p><strong>18</strong> And unto the angel of the church in Thyatira write; These things saith the Son of God, who hath his eyes like unto a flame of fire, and his feet are like fine brass;</p>
+            <p><strong>19</strong> I know thy works, and charity, and service, and faith, and thy patience, and thy works; and the last to be more than the first.</p>
+            <p><strong>20</strong> Notwithstanding I have a few things against thee, because thou sufferest that woman Jezebel, which calleth herself a prophetess, to teach and to seduce my servants to commit fornication, and to eat things sacrificed unto idols.</p>
+            <p><strong>21</strong> And I gave her space to repent of her fornication; and she repented not.</p>
+            <p><strong>22</strong> Behold, I will cast her into a bed, and them that commit adultery with her into great tribulation, except they repent of their deeds.</p>
+            <p><strong>23</strong> And I will kill her children with death; and all the churches shall know that I am he which searcheth the reins and hearts: and I will give unto every one of you according to your works.</p>
+            <p><strong>24</strong> But unto you I say, and unto the rest in Thyatira, as many as have not this doctrine, and which have not known the depths of Satan, as they speak; I will put upon you none other burden.</p>
+            <p><strong>25</strong> But that which ye have already hold fast till I come.</p>
+            <p><strong>26</strong> And he that overcometh, and keepeth my works unto the end, to him will I give power over the nations:</p>
+            <p><strong>27</strong> And he shall rule them with a rod of iron; as the vessels of a potter shall they be broken to shivers: even as I received of my Father.</p>
+            <p><strong>28</strong> And I will give him the morning star.</p>
+            <p><strong>29</strong> He that hath an ear, let him hear what the Spirit saith unto the churches.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 2 (ASV)</p>
+            <p><strong>1</strong> To the angel of the church in Ephesus write: These things saith he that holdeth the seven stars in his right hand, he that walketh in the midst of the seven golden candlesticks:</p>
+            <p><strong>2</strong> I know thy works, and thy toil and patience, and that thou canst not bear evil men, and didst try them that call themselves apostles, and they are not, and didst find them false;</p>
+            <p><strong>3</strong> and thou hast patience and didst bear for my name’s sake, and hast not grown weary.</p>
+            <p><strong>4</strong> But I have this against thee, that thou didst leave thy first love.</p>
+            <p><strong>5</strong> Remember therefore whence thou art fallen, and repent and do the first works; or else I come to thee, and will move thy candlestick out of its place, except thou repent.</p>
+            <p><strong>6</strong> But this thou hast, that thou hatest the works of the Nicolaitans, which I also hate.</p>
+            <p><strong>7</strong> He that hath an ear, let him hear what the Spirit saith to the churches. To him that overcometh, to him will I give to eat of the tree of life, which is in the Paradise of God.</p>
+            <p><strong>8</strong> And to the angel of the church in Smyrna write: These things saith the first and the last, who was dead, and lived again:</p>
+            <p><strong>9</strong> I know thy tribulation, and thy poverty (but thou art rich), and the blasphemy of them that say they are Jews, and they are not, but are a synagogue of Satan.</p>
+            <p><strong>10</strong> Fear not the things which thou art about to suffer: behold, the devil is about to cast some of you into prison, that ye may be tried; and ye shall have tribulation ten days. Be thou faithful unto death, and I will give thee the crown of life.</p>
+            <p><strong>11</strong> He that hath an ear, let him hear what the Spirit saith to the churches. He that overcometh shall not be hurt of the second death.</p>
+            <p><strong>12</strong> And to the angel of the church in Pergamum write: These things saith he that hath the sharp two-edged sword:</p>
+            <p><strong>13</strong> I know where thou dwellest, even where Satan’s throne is; and thou holdest fast my name, and didst not deny my faith, even in the days of Antipas my witness, my faithful one, who was killed among you, where Satan dwelleth.</p>
+            <p><strong>14</strong> But I have a few things against thee, because thou hast there some that hold the teaching of Balaam, who taught Balak to cast a stumblingblock before the children of Israel, to eat things sacrificed to idols, and to commit fornication.</p>
+            <p><strong>15</strong> So hast thou also some that hold the teaching of the Nicolaitans in like manner.</p>
+            <p><strong>16</strong> Repent therefore; or else I come to thee quickly, and I will make war against them with the sword of my mouth.</p>
+            <p><strong>17</strong> He that hath an ear, let him hear what the Spirit saith to the churches. To him that overcometh, to him will I give of the hidden manna, and I will give him a white stone, and upon the stone a new name written, which no one knoweth but he that receiveth it.</p>
+            <p><strong>18</strong> And to the angel of the church in Thyatira write: These things saith the Son of God, who hath his eyes like a flame of fire, and his feet are like unto burnished brass:</p>
+            <p><strong>19</strong> I know thy works, and thy love and faith and ministry and patience, and that thy last works are more than the first.</p>
+            <p><strong>20</strong> But I have this against thee, that thou sufferest the woman Jezebel, who calleth herself a prophetess; and she teacheth and seduceth my servants to commit fornication, and to eat things sacrificed to idols.</p>
+            <p><strong>21</strong> And I gave her time that she should repent; and she willeth not to repent of her fornication.</p>
+            <p><strong>22</strong> Behold, I cast her into a bed, and them that commit adultery with her into great tribulation, except they repent of her works.</p>
+            <p><strong>23</strong> And I will kill her children with death; and all the churches shall know that I am he that searcheth the reins and hearts: and I will give unto each one of you according to your works.</p>
+            <p><strong>24</strong> But to you I say, to the rest that are in Thyatira, as many as have not this teaching, who know not the deep things of Satan, as they are wont to say; I cast upon you none other burden.</p>
+            <p><strong>25</strong> Nevertheless that which ye have, hold fast till I come.</p>
+            <p><strong>26</strong> And he that overcometh, and he that keepeth my works unto the end, to him will I give authority over the nations:</p>
+            <p><strong>27</strong> and he shall rule them with a rod of iron, as the vessels of the potter are broken to shivers; as I also have received of my Father:</p>
+            <p><strong>28</strong> and I will give him the morning star.</p>
+            <p><strong>29</strong> He that hath an ear, let him hear what the Spirit saith to the churches.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus dictates letters to four of the seven churches, each beginning with a description of himself drawn from chapter one. To Ephesus, the church that holds the truth and hates evil, he commends their toil and discernment but warns that they have left their first love, calling them to repent and return to their first works. To suffering, impoverished Smyrna he offers no rebuke, only encouragement to be faithful even unto death, with the promise of the crown of life and freedom from the second death. To Pergamum, dwelling where Satan's throne is, he praises their loyalty under persecution but rebukes those who hold the corrupting teachings of Balaam and the Nicolaitans, urging repentance. To Thyatira he commends their growing love, faith, and service, yet condemns their tolerance of the false prophetess Jezebel, who seduces his servants into immorality and idolatry; he calls them to hold fast what they have until he comes. To each church the refrain sounds: let the one who has an ear hear what the Spirit says, and to the one who overcomes he promises the tree of life, escape from the second death, hidden manna and a new name, and authority with the morning star.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus Christ</strong> — The risen Lord who knows each church's works intimately, commending faithfulness, naming sin, and calling every congregation to repent and overcome.</li>
+          <li><strong>The four churches</strong> — Ephesus, Smyrna, Pergamum, and Thyatira—real congregations facing false teaching, persecution, and compromise, each addressed with praise and warning.</li>
+          <li><strong>False teachers</strong> — The Nicolaitans, the followers of Balaam's teaching, and the woman called Jezebel, who lead believers into idolatry and immorality.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 2:10 (WEB)</p>
+          <p class="verse__text">Don’t be afraid of the things which you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested; and you will have oppression for ten days. Be faithful to death, and I will give you the crown of life.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Christ knows each church intimately—its works, its love, and its compromises.</li>
+          <li>Right doctrine and hard work cannot replace love for Christ as our first love.</li>
+          <li>Faithfulness under persecution, even to death, is met with the crown of life.</li>
+          <li>Tolerating false teaching and immorality within the church invites Christ's correction.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Christ knows our works.</strong> To each church he says, “I know your works” (Revelation 2:2, WEB). Nothing in our service or our struggle escapes his notice.</li>
+            <li><strong>First love must not be lost.</strong> Ephesus is warned, “you left your first love” (Revelation 2:4, WEB). Activity and orthodoxy can mask a cooling heart toward Jesus.</li>
+            <li><strong>Faithfulness outlasts suffering.</strong> “Be faithful to death, and I will give you the crown of life” (Revelation 2:10, WEB). The cost of loyalty is real, but the reward is greater.</li>
+            <li><strong>Tolerated sin must be repented of.</strong> Christ rebukes Thyatira because “you tolerate your woman, Jezebel” (Revelation 2:20, WEB). Love does not mean indifference to corruption.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>What does it mean that Jesus opens each letter knowing the church's works so thoroughly?</li>
+            <li>How can a church be doctrinally sound and hardworking like Ephesus yet still lose its first love?</li>
+            <li>Smyrna receives no rebuke, only encouragement to endure. What does Christ's word to a suffering church offer us today?</li>
+            <li>Why is tolerating false teaching, as in Pergamum and Thyatira, treated so seriously by Jesus?</li>
+            <li>Which of these four letters speaks most directly to your own heart right now, and how is Christ calling you to respond?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>Jesus walks among the lampstands, so his knowledge of each church is personal and present. Help the group feel both the comfort and the searching of this: he sees our faithful labor and our hidden compromise, and he speaks as one who loves us.</li>
+            <li>Ephesus had endurance, discernment, and zeal against evil, yet had drifted from devotion to Christ himself (2:2-4). Discuss how service can become mechanical and how repentance means returning to “the first works” born of love.</li>
+            <li>To poor, persecuted Smyrna Jesus offers no correction—only the call to be faithful to death and the promise of the crown of life (2:9-10). For believers under pressure today, his words assure them that their suffering is seen and their reward is sure.</li>
+            <li>False teaching corrupts worship and life, leading God's people into idolatry and immorality (2:14-15, 20). Jesus loves the church too much to let poison spread. Tolerance of sin is not kindness but unfaithfulness; he calls for repentance.</li>
+            <li>This is a personal-application question. Invite members to identify with a particular church—its faithfulness or its failure—and to name one step of repentance or perseverance. As leader, end each letter's note of warning with its promise to the one who overcomes.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-1.html">← Revelation 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-3.html">Revelation 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

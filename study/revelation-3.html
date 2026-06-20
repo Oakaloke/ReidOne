@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 3: Letters to Three Churches — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 3: Jesus writes to the churches in Sardis, Philadelphia, and Laodicea with warning, encouragement, and a call to open the door." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 3</span>
+        <h1>Revelation 3: Letters to Three Churches</h1>
+        <p class="lead">Christ writes to Sardis, Philadelphia, and Laodicea—rousing the dying, strengthening the weak, and knocking at a closed door.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — Revelation Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 3 (WEB)</p>
+            <p><strong>1</strong> “And to the angel of the assembly in Sardis write: “He who has the seven Spirits of God, and the seven stars says these things: “I know your works, that you have a reputation of being alive, but you are dead.</p>
+            <p><strong>2</strong> Wake up, and keep the things that remain, which you were about to throw away, for I have found no works of yours perfected before my God.</p>
+            <p><strong>3</strong> Remember therefore how you have received and heard. Keep it, and repent. If therefore you won’t watch, I will come as a thief, and you won’t know what hour I will come upon you.</p>
+            <p><strong>4</strong> Nevertheless you have a few names in Sardis that did not defile their garments. They will walk with me in white, for they are worthy.</p>
+            <p><strong>5</strong> He who overcomes will be arrayed in white garments, and I will in no way blot his name out of the book of life, and I will confess his name before my Father, and before his angels.</p>
+            <p><strong>6</strong> He who has an ear, let him hear what the Spirit says to the assemblies.</p>
+            <p><strong>7</strong> “To the angel of the assembly in Philadelphia write: “He who is holy, he who is true, he who has the key of David, he who opens and no one can shut, and who shuts and no one opens, says these things:</p>
+            <p><strong>8</strong> “I know your works (behold, I have set before you an open door, which no one can shut), that you have a little power, and kept my word, and didn’t deny my name.</p>
+            <p><strong>9</strong> Behold, I give of the synagogue of Satan, of those who say they are Jews, and they are not, but lie. Behold, I will make them to come and worship before your feet, and to know that I have loved you.</p>
+            <p><strong>10</strong> Because you kept my command to endure, I also will keep you from the hour of testing, which is to come on the whole world, to test those who dwell on the earth.</p>
+            <p><strong>11</strong> I am coming quickly! Hold firmly that which you have, so that no one takes your crown.</p>
+            <p><strong>12</strong> He who overcomes, I will make him a pillar in the temple of my God, and he will go out from there no more. I will write on him the name of my God, and the name of the city of my God, the new Jerusalem, which comes down out of heaven from my God, and my own new name.</p>
+            <p><strong>13</strong> He who has an ear, let him hear what the Spirit says to the assemblies.</p>
+            <p><strong>14</strong> “To the angel of the assembly in Laodicea write: “The Amen, the Faithful and True Witness, the Head of God’s creation, says these things:</p>
+            <p><strong>15</strong> “I know your works, that you are neither cold nor hot. I wish you were cold or hot.</p>
+            <p><strong>16</strong> So, because you are lukewarm, and neither hot nor cold, I will vomit you out of my mouth.</p>
+            <p><strong>17</strong> Because you say, ‘I am rich, and have gotten riches, and have need of nothing;’ and don’t know that you are the wretched one, miserable, poor, blind, and naked;</p>
+            <p><strong>18</strong> I counsel you to buy from me gold refined by fire, that you may become rich; and white garments, that you may clothe yourself, and that the shame of your nakedness may not be revealed; and eye salve to anoint your eyes, that you may see.</p>
+            <p><strong>19</strong> As many as I love, I reprove and chasten. Be zealous therefore, and repent.</p>
+            <p><strong>20</strong> Behold, I stand at the door and knock. If anyone hears my voice and opens the door, then I will come in to him, and will dine with him, and he with me.</p>
+            <p><strong>21</strong> He who overcomes, I will give to him to sit down with me on my throne, as I also overcame, and sat down with my Father on his throne.</p>
+            <p><strong>22</strong> He who has an ear, let him hear what the Spirit says to the assemblies.”</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 3 (KJV)</p>
+            <p><strong>1</strong> And unto the angel of the church in Sardis write; These things saith he that hath the seven Spirits of God, and the seven stars; I know thy works, that thou hast a name that thou livest, and art dead.</p>
+            <p><strong>2</strong> Be watchful, and strengthen the things which remain, that are ready to die: for I have not found thy works perfect before God.</p>
+            <p><strong>3</strong> Remember therefore how thou hast received and heard, and hold fast, and repent. If therefore thou shalt not watch, I will come on thee as a thief, and thou shalt not know what hour I will come upon thee.</p>
+            <p><strong>4</strong> Thou hast a few names even in Sardis which have not defiled their garments; and they shall walk with me in white: for they are worthy.</p>
+            <p><strong>5</strong> He that overcometh, the same shall be clothed in white raiment; and I will not blot out his name out of the book of life, but I will confess his name before my Father, and before his angels.</p>
+            <p><strong>6</strong> He that hath an ear, let him hear what the Spirit saith unto the churches.</p>
+            <p><strong>7</strong> And to the angel of the church in Philadelphia write; These things saith he that is holy, he that is true, he that hath the key of David, he that openeth, and no man shutteth; and shutteth, and no man openeth;</p>
+            <p><strong>8</strong> I know thy works: behold, I have set before thee an open door, and no man can shut it: for thou hast a little strength, and hast kept my word, and hast not denied my name.</p>
+            <p><strong>9</strong> Behold, I will make them of the synagogue of Satan, which say they are Jews, and are not, but do lie; behold, I will make them to come and worship before thy feet, and to know that I have loved thee.</p>
+            <p><strong>10</strong> Because thou hast kept the word of my patience, I also will keep thee from the hour of temptation, which shall come upon all the world, to try them that dwell upon the earth.</p>
+            <p><strong>11</strong> Behold, I come quickly: hold that fast which thou hast, that no man take thy crown.</p>
+            <p><strong>12</strong> Him that overcometh will I make a pillar in the temple of my God, and he shall go no more out: and I will write upon him the name of my God, and the name of the city of my God, which is new Jerusalem, which cometh down out of heaven from my God: and I will write upon him my new name.</p>
+            <p><strong>13</strong> He that hath an ear, let him hear what the Spirit saith unto the churches.</p>
+            <p><strong>14</strong> And unto the angel of the church of the Laodiceans write; These things saith the Amen, the faithful and true witness, the beginning of the creation of God;</p>
+            <p><strong>15</strong> I know thy works, that thou art neither cold nor hot: I would thou wert cold or hot.</p>
+            <p><strong>16</strong> So then because thou art lukewarm, and neither cold nor hot, I will spue thee out of my mouth.</p>
+            <p><strong>17</strong> Because thou sayest, I am rich, and increased with goods, and have need of nothing; and knowest not that thou art wretched, and miserable, and poor, and blind, and naked:</p>
+            <p><strong>18</strong> I counsel thee to buy of me gold tried in the fire, that thou mayest be rich; and white raiment, that thou mayest be clothed, and that the shame of thy nakedness do not appear; and anoint thine eyes with eyesalve, that thou mayest see.</p>
+            <p><strong>19</strong> As many as I love, I rebuke and chasten: be zealous therefore, and repent.</p>
+            <p><strong>20</strong> Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.</p>
+            <p><strong>21</strong> To him that overcometh will I grant to sit with me in my throne, even as I also overcame, and am set down with my Father in his throne.</p>
+            <p><strong>22</strong> He that hath an ear, let him hear what the Spirit saith unto the churches.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 3 (ASV)</p>
+            <p><strong>1</strong> And to the angel of the church in Sardis write: These things saith he that hath the seven Spirits of God, and the seven stars: I know thy works, that thou hast a name that thou livest, and thou art dead.</p>
+            <p><strong>2</strong> Be thou watchful, and establish the things that remain, which were ready to die: for I have found no works of thine perfected before my God.</p>
+            <p><strong>3</strong> Remember therefore how thou hast received and didst hear; and keep it, and repent. If therefore thou shalt not watch, I will come as a thief, and thou shalt not know what hour I will come upon thee.</p>
+            <p><strong>4</strong> But thou hast a few names in Sardis that did not defile their garments: and they shall walk with me in white; for they are worthy.</p>
+            <p><strong>5</strong> He that overcometh shall thus be arrayed in white garments; and I will in no wise blot his name out of the book of life, and I will confess his name before my Father, and before his angels.</p>
+            <p><strong>6</strong> He that hath an ear, let him hear what the Spirit saith to the churches.</p>
+            <p><strong>7</strong> And to the angel of the church in Philadelphia write: These things saith he that is holy, he that is true, he that hath the key of David, he that openeth and none shall shut, and that shutteth and none openeth:</p>
+            <p><strong>8</strong> I know thy works (behold, I have set before thee a door opened, which none can shut), that thou hast a little power, and didst keep my word, and didst not deny my name.</p>
+            <p><strong>9</strong> Behold, I give of the synagogue of Satan, of them that say they are Jews, and they are not, but do lie; behold, I will make them to come and worship before thy feet, and to know that I have loved thee.</p>
+            <p><strong>10</strong> Because thou didst keep the word of my patience, I also will keep thee from the hour of trial, that hour which is to come upon the whole world, to try them that dwell upon the earth.</p>
+            <p><strong>11</strong> I come quickly: hold fast that which thou hast, that no one take thy crown.</p>
+            <p><strong>12</strong> He that overcometh, I will make him a pillar in the temple of my God, and he shall go out thence no more: and I will write upon him the name of my God, and the name of the city of my God, the new Jerusalem, which cometh down out of heaven from my God, and mine own new name.</p>
+            <p><strong>13</strong> He that hath an ear, let him hear what the Spirit saith to the churches.</p>
+            <p><strong>14</strong> And to the angel of the church in Laodicea write: These things saith the Amen, the faithful and true witness, the beginning of the creation of God:</p>
+            <p><strong>15</strong> I know thy works, that thou art neither cold nor hot: I would thou wert cold or hot.</p>
+            <p><strong>16</strong> So because thou art lukewarm, and neither hot nor cold, I will spew thee out of my mouth.</p>
+            <p><strong>17</strong> Because thou sayest, I am rich, and have gotten riches, and have need of nothing; and knowest not that thou art the wretched one and miserable and poor and blind and naked:</p>
+            <p><strong>18</strong> I counsel thee to buy of me gold refined by fire, that thou mayest become rich; and white garments, that thou mayest clothe thyself, and that the shame of thy nakedness be not made manifest; and eyesalve to anoint thine eyes, that thou mayest see.</p>
+            <p><strong>19</strong> As many as I love, I reprove and chasten: be zealous therefore, and repent.</p>
+            <p><strong>20</strong> Behold, I stand at the door and knock: if any man hear my voice and open the door, I will come in to him, and will sup with him, and he with me.</p>
+            <p><strong>21</strong> He that overcometh, I will give to him to sit down with me in my throne, as I also overcame, and sat down with my Father in his throne.</p>
+            <p><strong>22</strong> He that hath an ear, let him hear what the Spirit saith to the churches.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Jesus addresses the final three churches. To Sardis, which has a reputation for being alive but is dead, he calls for wakefulness and the strengthening of what remains, warning that he will come like a thief; yet a faithful few who have not soiled their garments will walk with him in white, their names secure in the book of life. To Philadelphia, a church of little strength that has kept his word and not denied his name, he gives only encouragement: he has set before them an open door no one can shut, will keep them through the hour of testing, and promises to make the overcomer a pillar in God's temple, inscribed with the name of God and the new Jerusalem. To Laodicea, neither hot nor cold but lukewarm, he speaks the sharpest words: their self-satisfied wealth blinds them to their spiritual poverty, and he counsels them to buy from him gold refined by fire, white garments, and salve to see. Yet even this rebuke is love—he reproves those he loves and calls them to be zealous and repent. The chapter ends with one of Scripture's tenderest invitations: Christ stands at the door and knocks, ready to come in and dine with anyone who opens.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jesus Christ</strong> — The holy and true one who holds the key of David, the Amen and faithful witness, who corrects, encourages, and stands knocking at the door of his church.</li>
+          <li><strong>The three churches</strong> — Sardis, outwardly alive but dead; Philadelphia, weak yet faithful; and Laodicea, wealthy yet lukewarm—each addressed according to its true condition.</li>
+          <li><strong>The faithful remnant in Sardis</strong> — A few who have not defiled their garments and are promised to walk with Christ in white, their names kept in the book of life.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 3:20 (WEB)</p>
+          <p class="verse__text">Behold, I stand at the door and knock. If anyone hears my voice and opens the door, then I will come in to him, and will dine with him, and he with me.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>A reputation for being alive is not the same as truly being alive before God.</li>
+          <li>Christ opens doors of opportunity that no one can shut for those who keep his word.</li>
+          <li>Spiritual self-sufficiency is a dangerous blindness that Jesus longs to heal.</li>
+          <li>Christ's rebukes flow from love, and he stands ready to come in to all who open the door.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>Appearances can deceive.</strong> Sardis has “a reputation of being alive, but you are dead” (Revelation 3:1, WEB). God sees beyond our image to our reality.</li>
+            <li><strong>Christ opens unshuttable doors.</strong> “I have set before you an open door, which no one can shut” (Revelation 3:8, WEB). Faithfulness with little strength is honored by him.</li>
+            <li><strong>Self-satisfaction blinds us.</strong> Laodicea says, “I am rich… and have need of nothing” yet is “poor, blind, and naked” (Revelation 3:17, WEB). Comfort can hide our deepest need.</li>
+            <li><strong>Christ's discipline is love.</strong> “As many as I love, I reprove and chasten” (Revelation 3:19, WEB). His sternest words to the church spring from affection, not rejection.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>How can a church or a believer have a reputation for life while being spiritually dead?</li>
+            <li>Philadelphia is weak yet faithful. What encouragement does Christ's promise of an open door offer to those who feel they have little strength?</li>
+            <li>Why is lukewarmness, rather than open opposition, so distasteful to Christ in the letter to Laodicea?</li>
+            <li>What does it tell us about Jesus that his harshest rebuke is paired with his tenderest invitation in verse 20?</li>
+            <li>In what area of your life is Christ knocking, waiting for you to open the door and welcome him in?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>Sardis looked vibrant but was inwardly lifeless, its works unfinished before God (3:1-2). Discuss how programs, history, or busyness can mask spiritual deadness, and how Christ calls for honest waking and strengthening of what remains.</li>
+            <li>Christ commends Philadelphia not for power but for keeping his word and not denying his name (3:8). The open door he sets before them is his gift, not their achievement. Encourage the weak that faithfulness, not strength, is what he honors.</li>
+            <li>Lukewarmness reflects complacency and self-reliance—a church that thinks it needs nothing (3:15-17). Cold or hot would at least be honest; tepid faith presumes on grace. Jesus longs to stir such a church to renewed dependence on him.</li>
+            <li>His sharpest letter ends with him standing at the door, knocking, longing to share a meal (3:19-20). This shows that his correction aims at restored fellowship. Help the group see discipline as the kindness of a Savior who wants to come in.</li>
+            <li>This is a personal-application question. Invite members to name a closed door—an area of pride, comfort, or fear—where Christ is patiently knocking, and to consider what opening to him would look like this week. Keep the tone warm and inviting.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-2.html">← Revelation 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-4.html">Revelation 4 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

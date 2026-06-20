@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Hebrews 11: The Great Hall of Faith — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Hebrews 11: the hall of faith, from Abel to the prophets, defining faith as assurance of things hoped for and proof of things unseen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-hebrews-progress" data-study-total="13">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Hebrews, Chapter 11
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="hebrews.html">← All Chapters</a>
+        <span class="study-meta">The Book of Hebrews · Chapter 11</span>
+        <h1>Hebrews 11: The Great Hall of Faith</h1>
+        <p class="lead">From Abel to the prophets, a long line of witnesses shows that faith is the assurance of things hoped for and the proof of things not seen.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-11">
+            <span>Scripture — Hebrews Chapter 11</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-11">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-11-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-11-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-11-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-11-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Hebrews 11 (WEB)</p>
+            <p><strong>1</strong> Now faith is assurance of things hoped for, proof of things not seen.</p>
+            <p><strong>2</strong> For by this, the elders obtained testimony.</p>
+            <p><strong>3</strong> By faith, we understand that the universe has been framed by the word of God, so that what is seen has not been made out of things which are visible.</p>
+            <p><strong>4</strong> By faith, Abel offered to God a more excellent sacrifice than Cain, through which he had testimony given to him that he was righteous, God testifying with respect to his gifts; and through it he, being dead, still speaks.</p>
+            <p><strong>5</strong> By faith, Enoch was taken away, so that he wouldn’t see death, and he was not found, because God translated him. For he has had testimony given to him that before his translation he had been well pleasing to God.</p>
+            <p><strong>6</strong> Without faith it is impossible to be well pleasing to him, for he who comes to God must believe that he exists, and that he is a rewarder of those who seek him.</p>
+            <p><strong>7</strong> By faith, Noah, being warned about things not yet seen, moved with godly fear, prepared a ship for the saving of his house, through which he condemned the world, and became heir of the righteousness which is according to faith.</p>
+            <p><strong>8</strong> By faith, Abraham, when he was called, obeyed to go out to the place which he was to receive for an inheritance. He went out, not knowing where he went.</p>
+            <p><strong>9</strong> By faith, he lived as an alien in the land of promise, as in a land not his own, dwelling in tents, with Isaac and Jacob, the heirs with him of the same promise.</p>
+            <p><strong>10</strong> For he looked for the city which has the foundations, whose builder and maker is God.</p>
+            <p><strong>11</strong> By faith, even Sarah herself received power to conceive, and she bore a child when she was past age, since she counted him faithful who had promised.</p>
+            <p><strong>12</strong> Therefore as many as the stars of the sky in multitude, and as innumerable as the sand which is by the sea shore, were fathered by one man, and him as good as dead.</p>
+            <p><strong>13</strong> These all died in faith, not having received the promises, but having seen them and embraced them from afar, and having confessed that they were strangers and pilgrims on the earth.</p>
+            <p><strong>14</strong> For those who say such things make it clear that they are seeking a country of their own.</p>
+            <p><strong>15</strong> If indeed they had been thinking of that country from which they went out, they would have had enough time to return.</p>
+            <p><strong>16</strong> But now they desire a better country, that is, a heavenly one. Therefore God is not ashamed of them, to be called their God, for he has prepared a city for them.</p>
+            <p><strong>17</strong> By faith, Abraham, being tested, offered up Isaac. Yes, he who had gladly received the promises was offering up his one and only son;</p>
+            <p><strong>18</strong> even he to whom it was said, “In Isaac will your seed be called”;</p>
+            <p><strong>19</strong> concluding that God is able to raise up even from the dead. Figuratively speaking, he also did receive him back from the dead.</p>
+            <p><strong>20</strong> By faith, Isaac blessed Jacob and Esau, even concerning things to come.</p>
+            <p><strong>21</strong> By faith, Jacob, when he was dying, blessed each of the sons of Joseph, and worshiped, leaning on the top of his staff.</p>
+            <p><strong>22</strong> By faith, Joseph, when his end was near, made mention of the departure of the children of Israel; and gave instructions concerning his bones.</p>
+            <p><strong>23</strong> By faith, Moses, when he was born, was hidden for three months by his parents, because they saw that he was a beautiful child, and they were not afraid of the king’s commandment.</p>
+            <p><strong>24</strong> By faith, Moses, when he had grown up, refused to be called the son of Pharaoh’s daughter,</p>
+            <p><strong>25</strong> choosing rather to share ill treatment with God’s people, than to enjoy the pleasures of sin for a time;</p>
+            <p><strong>26</strong> accounting the reproach of Christ greater riches than the treasures of Egypt; for he looked to the reward.</p>
+            <p><strong>27</strong> By faith, he left Egypt, not fearing the wrath of the king; for he endured, as seeing him who is invisible.</p>
+            <p><strong>28</strong> By faith, he kept the Passover, and the sprinkling of the blood, that the destroyer of the firstborn should not touch them.</p>
+            <p><strong>29</strong> By faith, they passed through the Red Sea as on dry land. When the Egyptians tried to do so, they were swallowed up.</p>
+            <p><strong>30</strong> By faith, the walls of Jericho fell down, after they had been encircled for seven days.</p>
+            <p><strong>31</strong> By faith, Rahab the prostitute, didn’t perish with those who were disobedient, having received the spies in peace.</p>
+            <p><strong>32</strong> What more shall I say? For the time would fail me if I told of Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets;</p>
+            <p><strong>33</strong> who, through faith subdued kingdoms, worked out righteousness, obtained promises, stopped the mouths of lions,</p>
+            <p><strong>34</strong> quenched the power of fire, escaped the edge of the sword, from weakness were made strong, grew mighty in war, and caused foreign armies to flee.</p>
+            <p><strong>35</strong> Women received their dead by resurrection. Others were tortured, not accepting their deliverance, that they might obtain a better resurrection.</p>
+            <p><strong>36</strong> Others were tried by mocking and scourging, yes, moreover by bonds and imprisonment.</p>
+            <p><strong>37</strong> They were stoned. They were sawn apart. They were tempted. They were slain with the sword. They went around in sheep skins and in goat skins; being destitute, afflicted, ill-treated</p>
+            <p><strong>38</strong> (of whom the world was not worthy), wandering in deserts, mountains, caves, and the holes of the earth.</p>
+            <p><strong>39</strong> These all, having had testimony given to them through their faith, didn’t receive the promise,</p>
+            <p><strong>40</strong> God having provided some better thing concerning us, so that apart from us they should not be made perfect.</p>
+            </div>
+            <div class="scripture-text" id="web-11-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Hebrews 11 (KJV)</p>
+            <p><strong>1</strong> Now faith is the substance of things hoped for, the evidence of things not seen.</p>
+            <p><strong>2</strong> For by it the elders obtained a good report.</p>
+            <p><strong>3</strong> Through faith we understand that the worlds were framed by the word of God, so that things which are seen were not made of things which do appear.</p>
+            <p><strong>4</strong> By faith Abel offered unto God a more excellent sacrifice than Cain, by which he obtained witness that he was righteous, God testifying of his gifts: and by it he being dead yet speaketh.</p>
+            <p><strong>5</strong> By faith Enoch was translated that he should not see death; and was not found, because God had translated him: for before his translation he had this testimony, that he pleased God.</p>
+            <p><strong>6</strong> But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.</p>
+            <p><strong>7</strong> By faith Noah, being warned of God of things not seen as yet, moved with fear, prepared an ark to the saving of his house; by the which he condemned the world, and became heir of the righteousness which is by faith.</p>
+            <p><strong>8</strong> By faith Abraham, when he was called to go out into a place which he should after receive for an inheritance, obeyed; and he went out, not knowing whither he went.</p>
+            <p><strong>9</strong> By faith he sojourned in the land of promise, as in a strange country, dwelling in tabernacles with Isaac and Jacob, the heirs with him of the same promise:</p>
+            <p><strong>10</strong> For he looked for a city which hath foundations, whose builder and maker is God.</p>
+            <p><strong>11</strong> Through faith also Sara herself received strength to conceive seed, and was delivered of a child when she was past age, because she judged him faithful who had promised.</p>
+            <p><strong>12</strong> Therefore sprang there even of one, and him as good as dead, so many as the stars of the sky in multitude, and as the sand which is by the sea shore innumerable.</p>
+            <p><strong>13</strong> These all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them, and confessed that they were strangers and pilgrims on the earth.</p>
+            <p><strong>14</strong> For they that say such things declare plainly that they seek a country.</p>
+            <p><strong>15</strong> And truly, if they had been mindful of that country from whence they came out, they might have had opportunity to have returned.</p>
+            <p><strong>16</strong> But now they desire a better country, that is, an heavenly: wherefore God is not ashamed to be called their God: for he hath prepared for them a city.</p>
+            <p><strong>17</strong> By faith Abraham, when he was tried, offered up Isaac: and he that had received the promises offered up his only begotten son,</p>
+            <p><strong>18</strong> Of whom it was said, That in Isaac shall thy seed be called:</p>
+            <p><strong>19</strong> Accounting that God was able to raise him up, even from the dead; from whence also he received him in a figure.</p>
+            <p><strong>20</strong> By faith Isaac blessed Jacob and Esau concerning things to come.</p>
+            <p><strong>21</strong> By faith Jacob, when he was a dying, blessed both the sons of Joseph; and worshipped, leaning upon the top of his staff.</p>
+            <p><strong>22</strong> By faith Joseph, when he died, made mention of the departing of the children of Israel; and gave commandment concerning his bones.</p>
+            <p><strong>23</strong> By faith Moses, when he was born, was hid three months of his parents, because they saw he was a proper child; and they were not afraid of the king’s commandment.</p>
+            <p><strong>24</strong> By faith Moses, when he was come to years, refused to be called the son of Pharaoh’s daughter;</p>
+            <p><strong>25</strong> Choosing rather to suffer affliction with the people of God, than to enjoy the pleasures of sin for a season;</p>
+            <p><strong>26</strong> Esteeming the reproach of Christ greater riches than the treasures in Egypt: for he had respect unto the recompence of the reward.</p>
+            <p><strong>27</strong> By faith he forsook Egypt, not fearing the wrath of the king: for he endured, as seeing him who is invisible.</p>
+            <p><strong>28</strong> Through faith he kept the passover, and the sprinkling of blood, lest he that destroyed the firstborn should touch them.</p>
+            <p><strong>29</strong> By faith they passed through the Red sea as by dry land: which the Egyptians assaying to do were drowned.</p>
+            <p><strong>30</strong> By faith the walls of Jericho fell down, after they were compassed about seven days.</p>
+            <p><strong>31</strong> By faith the harlot Rahab perished not with them that believed not, when she had received the spies with peace.</p>
+            <p><strong>32</strong> And what shall I more say? for the time would fail me to tell of Gedeon, and of Barak, and of Samson, and of Jephthae; of David also, and Samuel, and of the prophets:</p>
+            <p><strong>33</strong> Who through faith subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions,</p>
+            <p><strong>34</strong> Quenched the violence of fire, escaped the edge of the sword, out of weakness were made strong, waxed valiant in fight, turned to flight the armies of the aliens.</p>
+            <p><strong>35</strong> Women received their dead raised to life again: and others were tortured, not accepting deliverance; that they might obtain a better resurrection:</p>
+            <p><strong>36</strong> And others had trial of cruel mockings and scourgings, yea, moreover of bonds and imprisonment:</p>
+            <p><strong>37</strong> They were stoned, they were sawn asunder, were tempted, were slain with the sword: they wandered about in sheepskins and goatskins; being destitute, afflicted, tormented;</p>
+            <p><strong>38</strong> (Of whom the world was not worthy:) they wandered in deserts, and in mountains, and in dens and caves of the earth.</p>
+            <p><strong>39</strong> And these all, having obtained a good report through faith, received not the promise:</p>
+            <p><strong>40</strong> God having provided some better thing for us, that they without us should not be made perfect.</p>
+            </div>
+            <div class="scripture-text" id="web-11-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Hebrews 11 (ASV)</p>
+            <p><strong>1</strong> Now faith is assurance ofthingshoped for, a conviction of things not seen.</p>
+            <p><strong>2</strong> For therein the elders had witness borne to them.</p>
+            <p><strong>3</strong> By faith we understand that the worlds have been framed by the word of God, so that what is seen hath not been made out of things which appear.</p>
+            <p><strong>4</strong> By faith Abel offered unto God a more excellent sacrifice than Cain, through which he had witness borne to him that he was righteous, God bearing witness in respect of his gifts: and through it he being dead yet speaketh.</p>
+            <p><strong>5</strong> By faith Enoch was translated that he should not see death; and he was not found, because God translated him: for he hath had witness borne to him that before his translation he had been well-pleasing unto God:</p>
+            <p><strong>6</strong> and without faith it is impossible to be well-pleasing unto him; for he that cometh to God must believe that he is, and that he is a rewarder of them that seek after him.</p>
+            <p><strong>7</strong> By faith Noah, being warned of God concerning things not seen as yet, moved with godly fear, prepared an ark to the saving of his house; through which he condemned the world, and became heir of the righteousness which is according to faith.</p>
+            <p><strong>8</strong> By faith Abraham, when he was called, obeyed to go out unto a place which he was to receive for an inheritance; and he went out, not knowing whither he went.</p>
+            <p><strong>9</strong> By faith he became a sojourner in the land of promise, as in a land not his own, dwelling in tents, with Isaac and Jacob, the heirs with him of the same promise:</p>
+            <p><strong>10</strong> for he looked for the city which hath the foundations, whose builder and maker is God.</p>
+            <p><strong>11</strong> By faith even Sarah herself received power to conceive seed when she was past age, since she counted him faithful who had promised:</p>
+            <p><strong>12</strong> wherefore also there sprang of one, and him as good as dead, so many as the stars of heaven in multitude, and as the sand, which is by the sea-shore, innumerable.</p>
+            <p><strong>13</strong> These all died in faith, not having received the promises, but having seen them and greeted them from afar, and having confessed that they were strangers and pilgrims on the earth.</p>
+            <p><strong>14</strong> For they that say such things make it manifest that they are seeking after a country of their own.</p>
+            <p><strong>15</strong> And if indeed they had been mindful of that country from which they went out, they would have had opportunity to return.</p>
+            <p><strong>16</strong> But now they desire a better country, that is, a heavenly: wherefore God is not ashamed of them, to be called their God; for he hath prepared for them a city.</p>
+            <p><strong>17</strong> By faith Abraham, being tried, offered up Isaac: yea, he that had gladly received the promises was offering up his only begotten son;</p>
+            <p><strong>18</strong> even he to whom it was said, In Isaac shall thy seed be called:</p>
+            <p><strong>19</strong> accounting that God is able to raise up, even from the dead; from whence he did also in a figure receive him back.</p>
+            <p><strong>20</strong> By faith Isaac blessed Jacob and Esau, even concerning things to come.</p>
+            <p><strong>21</strong> By faith Jacob, when he was dying, blessed each of the sons of Joseph; and worshipped, leaning upon the top of his staff.</p>
+            <p><strong>22</strong> By faith Joseph, when his end was nigh, made mention of the departure of the children of Israel; and gave commandment concerning his bones.</p>
+            <p><strong>23</strong> By faith Moses, when he was born, was hid three months by his parents, because they saw he was a goodly child; and they were not afraid of the king’s commandment.</p>
+            <p><strong>24</strong> By faith Moses, when he was grown up, refused to be called the son of Pharaoh’s daughter;</p>
+            <p><strong>25</strong> choosing rather to share ill treatment with the people of God, than to enjoy the pleasures of sin for a season;</p>
+            <p><strong>26</strong> accounting the reproach of Christ greater riches than the treasures of Egypt: for he looked unto the recompense of reward.</p>
+            <p><strong>27</strong> By faith he forsook Egypt, not fearing the wrath of the king: for he endured, as seeing him who is invisible.</p>
+            <p><strong>28</strong> By faith he kept the passover, and the sprinkling of the blood, that the destroyer of the firstborn should not touch them.</p>
+            <p><strong>29</strong> By faith they passed through the Red sea as by dry land: which the Egyptians assaying to do were swallowed up.</p>
+            <p><strong>30</strong> By faith the walls of Jericho fell down, after they had been compassed about for seven days.</p>
+            <p><strong>31</strong> By faith Rahab the harlot perished not with them that were disobedient, having received the spies with peace.</p>
+            <p><strong>32</strong> And what shall I more say? for the time will fail me if I tell of Gideon, Barak, Samson, Jephthah; of David and Samuel and the prophets:</p>
+            <p><strong>33</strong> who through faith subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions,</p>
+            <p><strong>34</strong> quenched the power of fire, escaped the edge of the sword, from weakness were made strong, waxed mighty in war, turned to flight armies of aliens.</p>
+            <p><strong>35</strong> Women received their dead by a resurrection: and others were tortured, not accepting their deliverance; that they might obtain a better resurrection:</p>
+            <p><strong>36</strong> and others had trial of mockings and scourgings, yea, moreover of bonds and imprisonment:</p>
+            <p><strong>37</strong> they were stoned, they were sawn asunder, they were tempted, they were slain with the sword: they went about in sheepskins, in goatskins; being destitute, afflicted, ill-treated</p>
+            <p><strong>38</strong> (of whom the world was not worthy), wandering in deserts and mountains and caves, and the holes of the earth.</p>
+            <p><strong>39</strong> And these all, having had witness borne to them through their faith, received not the promise,</p>
+            <p><strong>40</strong> God having provided some better thing concerning us, that apart from us they should not be made perfect.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Faith, the writer declares, is the assurance of things hoped for and the conviction of things not seen, and by it the people of old received their commendation. By faith we understand that the universe was made by God's word, so that the visible came from the invisible. By faith Abel offered a better sacrifice than Cain, Enoch was taken up without seeing death, and Noah, warned about things not yet seen, built an ark and became heir of righteousness. By faith Abraham obeyed the call to go out to an unknown land, lived as a stranger in tents with Isaac and Jacob, and looked for the city with foundations whose builder is God; by faith Sarah received power to conceive, and from one as good as dead came descendants like the stars and sand. These all died in faith, not having received the promises but greeting them from afar, confessing they were strangers and pilgrims seeking a better, heavenly country, so that God is not ashamed to be called their God and has prepared a city for them. By faith Abraham offered up Isaac, trusting God could raise the dead; by faith Isaac, Jacob, and Joseph blessed and spoke of things to come. By faith Moses' parents hid him, and Moses himself refused Egypt's pleasures, choosing to suffer with God's people, regarding the reproach of Christ as greater wealth than Egypt's treasures, and keeping the Passover. By faith Israel crossed the Red Sea, the walls of Jericho fell, and Rahab welcomed the spies. Time would fail to tell of Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets, who conquered kingdoms, shut lions' mouths, quenched fire, and were made strong from weakness—while others were tortured, mocked, imprisoned, stoned, and killed, refusing release to gain a better resurrection, people of whom the world was not worthy. Yet all these, commended for their faith, did not receive what was promised, since God had planned something better for us, that they should not be made perfect apart from us.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Abraham</strong> — The patriarch who obeyed God's call to an unknown land, lived as a pilgrim looking for the city with foundations, and offered up Isaac in faith.</li>
+          <li><strong>Moses</strong> — The one who, by faith, refused Egypt's pleasures, chose to suffer with God's people, valued the reproach of Christ above Egypt's treasures, and kept the Passover.</li>
+          <li><strong>Abel, Enoch, and Noah</strong> — The earliest witnesses, who by faith offered a better sacrifice, walked with God and were taken up, and built an ark to save a household.</li>
+          <li><strong>The cloud of witnesses</strong> — From Sarah and Rahab to Gideon, David, Samuel, and the prophets, all commended for faith though they did not yet receive the promise.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Hebrews 11:1 (WEB)</p>
+          <p class="verse__text">Now faith is assurance of things hoped for, proof of things not seen.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Faith is confident assurance about what we hope for and cannot yet see.</li>
+          <li>Without faith it is impossible to please God, who rewards those who seek him.</li>
+          <li>The faithful lived as pilgrims, longing for a better, heavenly homeland.</li>
+          <li>Faith may lead to great victories or great suffering, but it always trusts God's promise.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-11">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-11">
+            <ul class="lesson-list">
+            <li><strong>Faith is sure even of the unseen.</strong> “Now faith is assurance of things hoped for, proof of things not seen” (Hebrews 11:1, WEB). It treats God's promises as more certain than what our eyes report.</li>
+            <li><strong>God is pleased by those who trust him.</strong> “Without faith it is impossible to be well pleasing to him” (Hebrews 11:6, WEB). The God who rewards seekers must first be believed.</li>
+            <li><strong>Faith makes us pilgrims.</strong> They “desire a better country, that is, a heavenly one” (Hebrews 11:16, WEB). Believing God reorients our hearts toward an enduring home.</li>
+            <li><strong>Faith endures even without seeing the promise.</strong> These all “didn't receive the promise” yet kept believing (Hebrews 11:39, WEB), confident that God's better plan included them and us together.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-11">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-11">
+            <ol class="study-questions">
+            <li>How does Hebrews 11:1 define faith, and how is that different from wishful thinking?</li>
+            <li>What do the examples of Abel, Enoch, and Noah have in common (11:4-7)?</li>
+            <li>Why does the writer emphasize that the faithful were “strangers and pilgrims” looking for a heavenly country (11:13-16)?</li>
+            <li>How can the same faith lead some to deliverance and others to suffering and death (11:32-38)?</li>
+            <li>Whose example of faith in this chapter most challenges you, and what step of trust is God inviting you to take?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-11">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-11">
+            <ol class="study-questions">
+            <li>Faith here is not vague optimism but firm assurance grounded in God's character and promises, treating the unseen as solidly real (11:1). It rests on who God is, not on our wishes. Help the group see that biblical faith is confident trust, not mere hope that things turn out well.</li>
+            <li>Each acted on God's word about things they could not yet see—Abel in worship, Enoch in walking with God, Noah in building before the flood (11:4-7). Their faith expressed itself in obedience that looked foolish to the world. Faith always responds to God's word with action.</li>
+            <li>Living as pilgrims kept their hearts fixed on the city God prepares rather than on present comforts (11:13-16). This loosened their grip on the temporary and steadied them through hardship. It also encourages the readers to endure as those whose true home is still ahead.</li>
+            <li>Faith does not guarantee earthly outcomes; it trusts God whether it brings rescue or martyrdom (11:32-38). Both the delivered and the slain were commended, because faith's measure is trust in God, not the comfort of the result. This guards us from a faith that only “works” when life goes well.</li>
+            <li>This is a personal-application question. Different members will be struck by different witnesses—Abraham's obedience, Moses' renunciation, the unnamed sufferers' endurance. As leader, invite each to name one concrete step of trust, and point out that their faith, too, is part of the same story God is completing.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="hebrews-10.html">← Hebrews 10</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="hebrews.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="hebrews-12.html">Hebrews 12 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

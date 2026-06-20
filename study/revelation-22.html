@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 22: Behold, I Come Quickly — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 22: the river and tree of life, the end of the curse, and Jesus' promise, Behold, I come quickly. Come, Lord Jesus." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 22
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 22</span>
+        <h1>Revelation 22: Behold, I Come Quickly</h1>
+        <p class="lead">The river and tree of life flow through the city, the curse is gone, and Jesus promises, Behold, I come quickly.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-22">
+            <span>Scripture — Revelation Chapter 22</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-22">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-22-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-22-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-22-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-22-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 22 (WEB)</p>
+            <p><strong>1</strong> He showed me a river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb,</p>
+            <p><strong>2</strong> in the middle of its street. On this side of the river and on that was the tree of life, bearing twelve kinds of fruits, yielding its fruit every month. The leaves of the tree were for the healing of the nations.</p>
+            <p><strong>3</strong> There will be no curse any more. The throne of God and of the Lamb will be in it, and his servants serve him.</p>
+            <p><strong>4</strong> They will see his face, and his name will be on their foreheads.</p>
+            <p><strong>5</strong> There will be no night, and they need no lamp light; for the Lord God will illuminate them. They will reign forever and ever.</p>
+            <p><strong>6</strong> He said to me, “These words are faithful and true. The Lord God of the spirits of the prophets sent his angel to show to his bondservants the things which must happen soon.”</p>
+            <p><strong>7</strong> “Behold, I come quickly. Blessed is he who keeps the words of the prophecy of this book.”</p>
+            <p><strong>8</strong> Now I, John, am the one who heard and saw these things. When I heard and saw, I fell down to worship before the feet of the angel who had shown me these things.</p>
+            <p><strong>9</strong> He said to me, “See you don’t do it! I am a fellow bondservant with you and with your brothers, the prophets, and with those who keep the words of this book. Worship God.”</p>
+            <p><strong>10</strong> He said to me, “Don’t seal up the words of the prophecy of this book, for the time is at hand.</p>
+            <p><strong>11</strong> He who acts unjustly, let him act unjustly still. He who is filthy, let him be filthy still. He who is righteous, let him do righteousness still. He who is holy, let him be holy still.”</p>
+            <p><strong>12</strong> “Behold, I come quickly. My reward is with me, to repay to each man according to his work.</p>
+            <p><strong>13</strong> I am the Alpha and the Omega, the First and the Last, the Beginning and the End.</p>
+            <p><strong>14</strong> Blessed are those who do his commandments,that they may have the right to the tree of life, and may enter in by the gates into the city.</p>
+            <p><strong>15</strong> Outside are the dogs, the sorcerers, the sexually immoral, the murderers, the idolaters, and everyone who loves and practices falsehood.</p>
+            <p><strong>16</strong> I, Jesus, have sent my angel to testify these things to you for the assemblies. I am the root and the offspring of David; the Bright and Morning Star.”</p>
+            <p><strong>17</strong> The Spirit and the bride say, “Come!” He who hears, let him say, “Come!” He who is thirsty, let him come. He who desires, let him take the water of life freely.</p>
+            <p><strong>18</strong> I testify to everyone who hears the words of the prophecy of this book, if anyone adds to them, may God add to him the plagues which are written in this book.</p>
+            <p><strong>19</strong> If anyone takes away from the words of the book of this prophecy, may God take away his part from the tree of life, and out of the holy city, which are written in this book.</p>
+            <p><strong>20</strong> He who testifies these things says, “Yes, I come quickly.” Amen! Yes, come, Lord Jesus.</p>
+            <p><strong>21</strong> The grace of the Lord Jesus Christ be with all the saints. Amen.</p>
+            </div>
+            <div class="scripture-text" id="web-22-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 22 (KJV)</p>
+            <p><strong>1</strong> And he shewed me a pure river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb.</p>
+            <p><strong>2</strong> In the midst of the street of it, and on either side of the river, was there the tree of life, which bare twelve manner of fruits, and yielded her fruit every month: and the leaves of the tree were for the healing of the nations.</p>
+            <p><strong>3</strong> And there shall be no more curse: but the throne of God and of the Lamb shall be in it; and his servants shall serve him:</p>
+            <p><strong>4</strong> And they shall see his face; and his name shall be in their foreheads.</p>
+            <p><strong>5</strong> And there shall be no night there; and they need no candle, neither light of the sun; for the Lord God giveth them light: and they shall reign for ever and ever.</p>
+            <p><strong>6</strong> And he said unto me, These sayings are faithful and true: and the Lord God of the holy prophets sent his angel to shew unto his servants the things which must shortly be done.</p>
+            <p><strong>7</strong> Behold, I come quickly: blessed is he that keepeth the sayings of the prophecy of this book.</p>
+            <p><strong>8</strong> And I John saw these things, and heard them. And when I had heard and seen, I fell down to worship before the feet of the angel which shewed me these things.</p>
+            <p><strong>9</strong> Then saith he unto me, See thou do it not: for I am thy fellowservant, and of thy brethren the prophets, and of them which keep the sayings of this book: worship God.</p>
+            <p><strong>10</strong> And he saith unto me, Seal not the sayings of the prophecy of this book: for the time is at hand.</p>
+            <p><strong>11</strong> He that is unjust, let him be unjust still: and he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still: and he that is holy, let him be holy still.</p>
+            <p><strong>12</strong> And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.</p>
+            <p><strong>13</strong> I am Alpha and Omega, the beginning and the end, the first and the last.</p>
+            <p><strong>14</strong> Blessed are they that do his commandments, that they may have right to the tree of life, and may enter in through the gates into the city.</p>
+            <p><strong>15</strong> For without are dogs, and sorcerers, and whoremongers, and murderers, and idolaters, and whosoever loveth and maketh a lie.</p>
+            <p><strong>16</strong> I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star.</p>
+            <p><strong>17</strong> And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And whosoever will, let him take the water of life freely.</p>
+            <p><strong>18</strong> For I testify unto every man that heareth the words of the prophecy of this book, If any man shall add unto these things, God shall add unto him the plagues that are written in this book:</p>
+            <p><strong>19</strong> And if any man shall take away from the words of the book of this prophecy, God shall take away his part out of the book of life, and out of the holy city, and from the things which are written in this book.</p>
+            <p><strong>20</strong> He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.</p>
+            <p><strong>21</strong> The grace of our Lord Jesus Christ be with you all. Amen.</p>
+            </div>
+            <div class="scripture-text" id="web-22-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 22 (ASV)</p>
+            <p><strong>1</strong> And he showed me a river of water of life, bright as crystal, proceeding out of the throne of God and of the Lamb,</p>
+            <p><strong>2</strong> in the midst of the street thereof. And on this side of the river and on that was the tree of life, bearing twelve manner of fruits, yielding its fruit every month: and the leaves of the tree were for the healing of the nations.</p>
+            <p><strong>3</strong> And there shall be no curse any more: and the throne of God and of the Lamb shall be therein: and his servants shall serve him;</p>
+            <p><strong>4</strong> and they shall see his face; and his name shall be on their foreheads.</p>
+            <p><strong>5</strong> And there shall be night no more; and they need no light of lamp, neither light of sun; for the Lord God shall give them light: and they shall reign for ever and ever.</p>
+            <p><strong>6</strong> And he said unto me, These words are faithful and true: and the Lord, the God of the spirits of the prophets, sent his angel to show unto his servants the things which must shortly come to pass.</p>
+            <p><strong>7</strong> And behold, I come quickly. Blessed is he that keepeth the words of the prophecy of this book.</p>
+            <p><strong>8</strong> And I John am he that heard and saw these things. And when I heard and saw, I fell down to worship before the feet of the angel that showed me these things.</p>
+            <p><strong>9</strong> And he saith unto me, See thou do it not: I am a fellow-servant with thee and with thy brethren the prophets, and with them that keep the words of this book: worship God.</p>
+            <p><strong>10</strong> And he saith unto me, Seal not up the words of the prophecy of this book; for the time is at hand.</p>
+            <p><strong>11</strong> He that is unrighteous, let him do unrighteousness still: and he that is filthy, let him be made filthy still: and he that is righteous, let him do righteousness still: and he that is holy, let him be made holy still.</p>
+            <p><strong>12</strong> Behold, I come quickly; and my reward is with me, to render to each man according as his work is.</p>
+            <p><strong>13</strong> I am the Alpha and the Omega, the first and the last, the beginning and the end.</p>
+            <p><strong>14</strong> Blessed are they that wash their robes, that they may have the right to come to the tree of life, and may enter in by the gates into the city.</p>
+            <p><strong>15</strong> Without are the dogs, and the sorcerers, and the fornicators, and the murderers, and the idolaters, and every one that loveth and maketh a lie.</p>
+            <p><strong>16</strong> I Jesus have sent mine angel to testify unto you these things for the churches. I am the root and the offspring of David, the bright, the morning star.</p>
+            <p><strong>17</strong> And the Spirit and the bride say, Come. And he that heareth, let him say, Come. And he that is athirst, let him come: he that will, let him take the water of life freely.</p>
+            <p><strong>18</strong> I testify unto every man that heareth the words of the prophecy of this book, If any man shall add unto them, God shall add unto him the plagues which are written in this book:</p>
+            <p><strong>19</strong> and if any man shall take away from the words of the book of this prophecy, God shall take away his part from the tree of life, and out of the holy city, which are written in this book.</p>
+            <p><strong>20</strong> He who testifieth these things saith, Yea: I come quickly. Amen: come, Lord Jesus.</p>
+            <p><strong>21</strong> The grace of the Lord Jesus be with the saints. Amen.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The angel shows John the river of the water of life, clear as crystal, flowing from the throne of God and of the Lamb down the middle of the city's street. On either side stands the tree of life, bearing fruit every month, its leaves for the healing of the nations. No longer will there be any curse; the throne of God and of the Lamb will be there, his servants will serve him and see his face, and his name will be on their foreheads. There will be no night, for the Lord God will be their light, and they will reign forever. The angel affirms that these words are faithful and true, and Jesus declares, Behold, I come quickly; blessed is the one who keeps the words of this book. When John again falls to worship the angel, he is told to worship God alone and not to seal up the prophecy, for the time is near. Jesus repeats his promise to come and to bring his reward, identifying himself as the Alpha and Omega, the Root and Offspring of David, the bright morning star. The Spirit and the Bride say, Come, inviting all who are thirsty to take the water of life freely. A solemn warning guards the words of the book, and the book closes with Jesus' final pledge, Yes, I come quickly, John's answering prayer, Amen, come, Lord Jesus, and a benediction of grace.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Jesus</strong> — The Lord who promises, Behold, I come quickly, names himself the Alpha and Omega and the bright morning star, and brings his reward with him.</li>
+          <li><strong>The Spirit and the Bride</strong> — The Holy Spirit and the church who together cry, Come, inviting the thirsty to take the water of life freely.</li>
+          <li><strong>John and the angel</strong> — John, who hears and sees these things and is told to worship God alone, and the angel who shows him the river and tree of life.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 22:20 (WEB)</p>
+          <p class="verse__text">He who testifies these things says, “Yes, I come quickly.”    Amen! Yes, come, Lord Jesus.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>In the renewed city the curse is gone and life flows freely from God's throne.</li>
+          <li>God's servants will see his face and reign with him forever.</li>
+          <li>Jesus promises to come quickly, and his people answer, Come, Lord Jesus.</li>
+          <li>The gospel ends with an open invitation to all who are thirsty to take the water of life freely.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-22">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-22">
+            <ul class="lesson-list">
+            <li><strong>The curse is undone.</strong> “There will be no curse any more” (Revelation 22:3, WEB). What sin brought into the world is fully and finally reversed.</li>
+            <li><strong>We will see God's face.</strong> “They will see his face, and his name will be on their foreheads” (Revelation 22:4, WEB). The deepest blessing is unhindered nearness to God.</li>
+            <li><strong>Jesus is coming.</strong> “Behold, I come quickly” (Revelation 22:7, WEB). His promised return shapes the church's watchfulness and hope.</li>
+            <li><strong>The invitation is open.</strong> “He who is thirsty, let him come… take the water of life freely” (Revelation 22:17, WEB). Grace is freely offered to all who will come.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-22">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-22">
+            <ol class="study-questions">
+            <li>How do the river and tree of life echo the garden of Eden and show what God has been restoring all along?</li>
+            <li>What does it mean that God's servants will see his face, and why is this such a profound promise?</li>
+            <li>Why do you think the book ends with the repeated promise, I come quickly?</li>
+            <li>How does the invitation, Come, take the water of life freely, summarize the heart of the gospel?</li>
+            <li>As you finish Revelation, how do you want to respond to Jesus' words, Behold, I come quickly?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-22">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-22">
+            <ol class="study-questions">
+            <li>The river and tree of life recall Eden, now restored and surpassed, with healing for the nations and no more curse (22:1-3). Help the group see that the Bible's story comes full circle: what was lost in the garden is gloriously regained in the city.</li>
+            <li>To see God's face is the fulfillment of humanity's deepest longing, once impossible because of sin (22:4). Discuss the wonder of this intimacy, the goal toward which all worship and faith have been straining throughout Scripture.</li>
+            <li>Three times in this chapter Jesus says he is coming quickly (22:7, 12, 20). The repeated promise leaves the church living in eager expectation, watchful and faithful, comforted that the wait, however long it feels, is not forever.</li>
+            <li>The Spirit and the Bride invite the thirsty to come and drink freely (22:17). This open call captures the gospel's generosity: salvation is not earned but received as a gift by all who come to Jesus in thirst and faith.</li>
+            <li>This is a personal-application question. As you close the study, invite members to answer Jesus' promise with John's prayer, Amen, come, Lord Jesus. As leader, encourage a response of longing, readiness, and hope as you commit the group to him.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-21.html">← Revelation 21</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

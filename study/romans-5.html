@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Romans 5: Peace With God — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Romans 5: Paul describes the peace, hope, and love of the justified, then contrasts Adam's sin with Christ's overflowing grace." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-romans-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Romans, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="romans.html">← All Chapters</a>
+        <span class="study-meta">The Book of Romans · Chapter 5</span>
+        <h1>Romans 5: Peace With God</h1>
+        <p class="lead">Justified by faith, believers have peace with God and rejoice in hope, secured by Christ whose obedience overcomes the ruin brought by Adam.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — Romans Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Romans 5 (WEB)</p>
+            <p><strong>1</strong> Being therefore justified by faith, we have peace with God through our Lord Jesus Christ;</p>
+            <p><strong>2</strong> through whom we also have our access by faith into this grace in which we stand. We rejoice in hope of the glory of God.</p>
+            <p><strong>3</strong> Not only this, but we also rejoice in our sufferings, knowing that suffering works perseverance;</p>
+            <p><strong>4</strong> and perseverance, proven character; and proven character, hope:</p>
+            <p><strong>5</strong> and hope doesn’t disappoint us, because God’s love has been poured out into our hearts through the Holy Spirit who was given to us.</p>
+            <p><strong>6</strong> For while we were yet weak, at the right time Christ died for the ungodly.</p>
+            <p><strong>7</strong> For one will hardly die for a righteous man. Yet perhaps for a righteous person someone would even dare to die.</p>
+            <p><strong>8</strong> But God commends his own love toward us, in that while we were yet sinners, Christ died for us.</p>
+            <p><strong>9</strong> Much more then, being now justified by his blood, we will be saved from God’s wrath through him.</p>
+            <p><strong>10</strong> For if, while we were enemies, we were reconciled to God through the death of his Son, much more, being reconciled, we will be saved by his life.</p>
+            <p><strong>11</strong> Not only so, but we also rejoice in God through our Lord Jesus Christ, through whom we have now received the reconciliation.</p>
+            <p><strong>12</strong> Therefore as sin entered into the world through one man, and death through sin; and so death passed to all men, because all sinned.</p>
+            <p><strong>13</strong> For until the law, sin was in the world; but sin is not charged when there is no law.</p>
+            <p><strong>14</strong> Nevertheless death reigned from Adam until Moses, even over those whose sins weren’t like Adam’s disobedience, who is a foreshadowing of him who was to come.</p>
+            <p><strong>15</strong> But the free gift isn’t like the trespass. For if by the trespass of the one the many died, much more did the grace of God, and the gift by the grace of the one man, Jesus Christ, abound to the many.</p>
+            <p><strong>16</strong> The gift is not as through one who sinned: for the judgment came by one to condemnation, but the free gift came of many trespasses to justification.</p>
+            <p><strong>17</strong> For if by the trespass of the one, death reigned through the one; so much more will those who receive the abundance of grace and of the gift of righteousness reign in life through the one, Jesus Christ.</p>
+            <p><strong>18</strong> So then as through one trespass, all men were condemned; even so through one act of righteousness, all men were justified to life.</p>
+            <p><strong>19</strong> For as through the one man’s disobedience many were made sinners, even so through the obedience of the one, many will be made righteous.</p>
+            <p><strong>20</strong> The law came in besides, that the trespass might abound; but where sin abounded, grace abounded more exceedingly;</p>
+            <p><strong>21</strong> that as sin reigned in death, even so grace might reign through righteousness to eternal life through Jesus Christ our Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Romans 5 (KJV)</p>
+            <p><strong>1</strong> Therefore being justified by faith, we have peace with God through our Lord Jesus Christ:</p>
+            <p><strong>2</strong> By whom also we have access by faith into this grace wherein we stand, and rejoice in hope of the glory of God.</p>
+            <p><strong>3</strong> And not only so, but we glory in tribulations also: knowing that tribulation worketh patience;</p>
+            <p><strong>4</strong> And patience, experience; and experience, hope:</p>
+            <p><strong>5</strong> And hope maketh not ashamed; because the love of God is shed abroad in our hearts by the Holy Ghost which is given unto us.</p>
+            <p><strong>6</strong> For when we were yet without strength, in due time Christ died for the ungodly.</p>
+            <p><strong>7</strong> For scarcely for a righteous man will one die: yet peradventure for a good man some would even dare to die.</p>
+            <p><strong>8</strong> But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.</p>
+            <p><strong>9</strong> Much more then, being now justified by his blood, we shall be saved from wrath through him.</p>
+            <p><strong>10</strong> For if, when we were enemies, we were reconciled to God by the death of his Son, much more, being reconciled, we shall be saved by his life.</p>
+            <p><strong>11</strong> And not only so, but we also joy in God through our Lord Jesus Christ, by whom we have now received the atonement.</p>
+            <p><strong>12</strong> Wherefore, as by one man sin entered into the world, and death by sin; and so death passed upon all men, for that all have sinned:</p>
+            <p><strong>13</strong> (For until the law sin was in the world: but sin is not imputed when there is no law.</p>
+            <p><strong>14</strong> Nevertheless death reigned from Adam to Moses, even over them that had not sinned after the similitude of Adam’s transgression, who is the figure of him that was to come.</p>
+            <p><strong>15</strong> But not as the offence, so also is the free gift. For if through the offence of one many be dead, much more the grace of God, and the gift by grace, which is by one man, Jesus Christ, hath abounded unto many.</p>
+            <p><strong>16</strong> And not as it was by one that sinned, so is the gift: for the judgment was by one to condemnation, but the free gift is of many offences unto justification.</p>
+            <p><strong>17</strong> For if by one man’s offence death reigned by one; much more they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ.)</p>
+            <p><strong>18</strong> Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the free gift came upon all men unto justification of life.</p>
+            <p><strong>19</strong> For as by one man’s disobedience many were made sinners, so by the obedience of one shall many be made righteous.</p>
+            <p><strong>20</strong> Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound:</p>
+            <p><strong>21</strong> That as sin hath reigned unto death, even so might grace reign through righteousness unto eternal life by Jesus Christ our Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Romans 5 (ASV)</p>
+            <p><strong>1</strong> Being therefore justified by faith, we have peace with God through our Lord Jesus Christ;</p>
+            <p><strong>2</strong> through whom also we have had our access by faith into this grace wherein we stand; and we rejoice in hope of the glory of God.</p>
+            <p><strong>3</strong> And not only so, but we also rejoice in our tribulations: knowing that tribulation worketh stedfastness;</p>
+            <p><strong>4</strong> and stedfastness, approvedness; and approvedness, hope:</p>
+            <p><strong>5</strong> and hope putteth not to shame; because the love of God hath been shed abroad in our hearts through the Holy Spirit which was given unto us.</p>
+            <p><strong>6</strong> For while we were yet weak, in due season Christ died for the ungodly.</p>
+            <p><strong>7</strong> For scarcely for a righteous man will one die: for peradventure for the good man some one would even dare to die.</p>
+            <p><strong>8</strong> But God commendeth his own love toward us, in that, while we were yet sinners, Christ died for us.</p>
+            <p><strong>9</strong> Much more then, being now justified by his blood, shall we be saved from the wrath of God through him.</p>
+            <p><strong>10</strong> For if, while we were enemies, we were reconciled to God through the death of his Son, much more, being reconciled, shall we be saved by his life;</p>
+            <p><strong>11</strong> and not only so, but we also rejoice in God through our Lord Jesus Christ, through whom we have now received the reconciliation.</p>
+            <p><strong>12</strong> Therefore, as through one man sin entered into the world, and death through sin; and so death passed unto all men, for that all sinned:—</p>
+            <p><strong>13</strong> for until the law sin was in the world; but sin is not imputed when there is no law.</p>
+            <p><strong>14</strong> Nevertheless death reigned from Adam until Moses, even over them that had not sinned after the likeness of Adam’s transgression, who is a figure of him that was to come.</p>
+            <p><strong>15</strong> But not as the trespass, so also is the free gift. For if by the trespass of the one the many died, much more did the grace of God, and the gift by the grace of the one man, Jesus Christ, abound unto the many.</p>
+            <p><strong>16</strong> And not as through one that sinned, so is the gift: for the judgment came of one unto condemnation, but the free gift came of many trespasses unto justification.</p>
+            <p><strong>17</strong> For if, by the trespass of the one, death reigned through the one; much more shall they that receive the abundance of grace and of the gift of righteousness reign in life through the one, even Jesus Christ.</p>
+            <p><strong>18</strong> So then as through one trespass the judgment came unto all men to condemnation; even so through one act of righteousness the free gift came unto all men to justification of life.</p>
+            <p><strong>19</strong> For as through the one man’s disobedience the many were made sinners, even so through the obedience of the one shall the many be made righteous.</p>
+            <p><strong>20</strong> And the law came in besides, that the trespass might abound; but where sin abounded, grace did abound more exceedingly:</p>
+            <p><strong>21</strong> that, as sin reigned in death, even so might grace reign through righteousness unto eternal life through Jesus Christ our Lord.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Having established justification by faith, Paul describes its fruit. Being justified by faith, we have peace with God through our Lord Jesus Christ, and access into the grace in which we stand, rejoicing in hope of God's glory. We even rejoice in sufferings, knowing that suffering produces perseverance, character, and hope, a hope that does not disappoint because God's love has been poured into our hearts through the Holy Spirit. Paul marvels at the manner of this love: while we were still weak, ungodly, sinners, and even enemies, Christ died for us, so that now, justified by his blood and reconciled through his death, we will surely be saved by his life. He then sets Adam and Christ side by side. Through one man, Adam, sin and death entered the world and spread to all; but the free gift is far greater than the trespass. Where Adam's one trespass brought condemnation and death's reign, Christ's one act of righteousness brings justification and the reign of life to all who receive the abundance of grace. The law came in to multiply the trespass, but where sin abounded, grace abounded all the more, so that grace might reign through righteousness to eternal life through Jesus Christ our Lord.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Paul</strong> — The apostle who unfolds the blessings of justification and contrasts the disaster of Adam with the superabundant grace that comes through Christ.</li>
+          <li><strong>Christ Jesus</strong> — The Lord through whom we have peace and reconciliation, who died for the ungodly and whose one act of obedience brings justification and life to many.</li>
+          <li><strong>Adam</strong> — The one man through whom sin and death entered the world and spread to all, a foreshadowing of the one who was to come.</li>
+          <li><strong>The Holy Spirit</strong> — The Spirit given to believers, through whom God's love is poured out into their hearts, anchoring a hope that does not disappoint.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Romans 5:1 (WEB)</p>
+          <p class="verse__text">Being therefore justified by faith, we have peace with God through our Lord Jesus Christ;</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Justification brings peace with God and secure standing in his grace.</li>
+          <li>Suffering, under grace, produces perseverance, character, and unshakable hope.</li>
+          <li>God proved his love by sending Christ to die for us while we were still sinners and enemies.</li>
+          <li>Christ's one act of obedience overturns Adam's ruin, so grace reigns over sin and death.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>Justification yields peace.</strong> "Justified by faith, we have peace with God through our Lord Jesus Christ" (Romans 5:1, WEB). The verdict of grace ends our war with God and gives settled peace.</li>
+            <li><strong>God proves his love at the cross.</strong> "While we were yet sinners, Christ died for us" (Romans 5:8, WEB). God's love is not a response to our worthiness but is poured out on the undeserving.</li>
+            <li><strong>Suffering can deepen hope.</strong> "Suffering works perseverance; and perseverance, proven character; and proven character, hope" (Romans 5:3-4, WEB). Under grace even hardship is woven into our good.</li>
+            <li><strong>Grace outweighs sin.</strong> "Where sin abounded, grace abounded more exceedingly" (Romans 5:20, WEB). However great the ruin Adam brought, Christ's grace overflows far beyond it.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>What blessings of justification does Paul list in verses 1-5?</li>
+            <li>How can believers "rejoice in our sufferings" (5:3), and what does suffering produce?</li>
+            <li>What is striking about the timing of Christ's death—"while we were yet sinners" (5:8)?</li>
+            <li>How does Paul contrast Adam and Christ, and why is the gift greater than the trespass (5:15-19)?</li>
+            <li>Where do you most need to experience the peace with God that this chapter describes?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>Paul lists peace with God, access into grace, a firm standing, and rejoicing in the hope of glory, along with love poured into our hearts by the Spirit (5:1-5). These are present possessions, not distant prospects. Justification is not a bare verdict but a doorway into a whole new relationship.</li>
+            <li>We rejoice in suffering not because pain is pleasant but because, under grace, God uses it to produce perseverance, character, and hope (5:3-4). Suffering is given purpose rather than left meaningless. Encourage the group to trust God's refining work even when they cannot yet see its fruit.</li>
+            <li>Christ died for us not after we cleaned ourselves up but while we were weak, ungodly, sinners, and enemies (5:6-10). This shows that God's love rests on his own initiative, not our merit. It also secures our future: if he loved us as enemies, he will surely keep us as his reconciled children.</li>
+            <li>Adam's one sin brought condemnation and death's reign to all, but Christ's one act of righteousness brings justification and the reign of life, and far more abundantly (5:15-19). The gift is greater because grace overflows beyond the damage. In Christ we gain more than we ever lost in Adam.</li>
+            <li>This is a personal-application question. Invite members to name where anxiety, guilt, or conflict robs them of peace, and to receive afresh the peace with God that Christ has already won. Keep the tone reassuring: this peace is a settled fact, not a feeling to manufacture.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="romans-4.html">← Romans 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="romans.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="romans-6.html">Romans 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

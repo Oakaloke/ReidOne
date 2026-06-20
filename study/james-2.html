@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>James 2: No Partiality, Living Faith — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of James 2: rejecting partiality toward the rich, keeping the royal law of love, and proving that faith without works is dead." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-james-progress" data-study-total="5">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of James, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="james.html">← All Chapters</a>
+        <span class="study-meta">The Book of James · Chapter 2</span>
+        <h1>James 2: No Partiality, Living Faith</h1>
+        <p class="lead">James forbids favoring the rich over the poor, upholds the royal law of love, and insists that genuine faith proves itself by works.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — James Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">James 2 (WEB)</p>
+            <p><strong>1</strong> My brothers, don’t hold the faith of our Lord Jesus Christ of glory with partiality.</p>
+            <p><strong>2</strong> For if a man with a gold ring, in fine clothing, comes into your synagogue, and a poor man in filthy clothing also comes in;</p>
+            <p><strong>3</strong> and you pay special attention to him who wears the fine clothing, and say, “Sit here in a good place”; and you tell the poor man, “Stand there,” or “Sit by my footstool”;</p>
+            <p><strong>4</strong> haven’t you shown partiality among yourselves, and become judges with evil thoughts?</p>
+            <p><strong>5</strong> Listen, my beloved brothers. Didn’t God choose those who are poor in this world to be rich in faith, and heirs of the Kingdom which he promised to those who love him?</p>
+            <p><strong>6</strong> But you have dishonored the poor man. Don’t the rich oppress you, and personally drag you before the courts?</p>
+            <p><strong>7</strong> Don’t they blaspheme the honorable name by which you are called?</p>
+            <p><strong>8</strong> However, if you fulfill the royal law, according to the Scripture, “You shall love your neighbor as yourself,” you do well.</p>
+            <p><strong>9</strong> But if you show partiality, you commit sin, being convicted by the law as transgressors.</p>
+            <p><strong>10</strong> For whoever keeps the whole law, and yet stumbles in one point, he has become guilty of all.</p>
+            <p><strong>11</strong> For he who said, “Do not commit adultery,” also said, “Do not commit murder.” Now if you do not commit adultery, but murder, you have become a transgressor of the law.</p>
+            <p><strong>12</strong> So speak, and so do, as men who are to be judged by a law of freedom.</p>
+            <p><strong>13</strong> For judgment is without mercy to him who has shown no mercy. Mercy triumphs over judgment.</p>
+            <p><strong>14</strong> What good is it, my brothers, if a man says he has faith, but has no works? Can faith save him?</p>
+            <p><strong>15</strong> And if a brother or sister is naked and in lack of daily food,</p>
+            <p><strong>16</strong> and one of you tells them, “Go in peace, be warmed and filled”; and yet you didn’t give them the things the body needs, what good is it?</p>
+            <p><strong>17</strong> Even so faith, if it has no works, is dead in itself.</p>
+            <p><strong>18</strong> Yes, a man will say, “You have faith, and I have works.” Show me your faith without works, and I by my works will show you my faith.</p>
+            <p><strong>19</strong> You believe that God is one. You do well. The demons also believe, and shudder.</p>
+            <p><strong>20</strong> But do you want to know, vain man, that faith apart from works is dead?</p>
+            <p><strong>21</strong> Wasn’t Abraham our father justified by works, in that he offered up Isaac his son on the altar?</p>
+            <p><strong>22</strong> You see that faith worked with his works, and by works faith was perfected;</p>
+            <p><strong>23</strong> and the Scripture was fulfilled which says, “Abraham believed God, and it was accounted to him as righteousness”; and he was called the friend of God.</p>
+            <p><strong>24</strong> You see then that by works, a man is justified, and not only by faith.</p>
+            <p><strong>25</strong> In the same way, wasn’t Rahab the prostitute also justified by works, in that she received the messengers, and sent them out another way?</p>
+            <p><strong>26</strong> For as the body apart from the spirit is dead, even so faith apart from works is dead.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">James 2 (KJV)</p>
+            <p><strong>1</strong> My brethren, have not the faith of our Lord Jesus Christ, the Lord of glory, with respect of persons.</p>
+            <p><strong>2</strong> For if there come unto your assembly a man with a gold ring, in goodly apparel, and there come in also a poor man in vile raiment;</p>
+            <p><strong>3</strong> And ye have respect to him that weareth the gay clothing, and say unto him, Sit thou here in a good place; and say to the poor, Stand thou there, or sit here under my footstool:</p>
+            <p><strong>4</strong> Are ye not then partial in yourselves, and are become judges of evil thoughts?</p>
+            <p><strong>5</strong> Hearken, my beloved brethren, Hath not God chosen the poor of this world rich in faith, and heirs of the kingdom which he hath promised to them that love him?</p>
+            <p><strong>6</strong> But ye have despised the poor. Do not rich men oppress you, and draw you before the judgment seats?</p>
+            <p><strong>7</strong> Do not they blaspheme that worthy name by the which ye are called?</p>
+            <p><strong>8</strong> If ye fulfil the royal law according to the scripture, Thou shalt love thy neighbour as thyself, ye do well:</p>
+            <p><strong>9</strong> But if ye have respect to persons, ye commit sin, and are convinced of the law as transgressors.</p>
+            <p><strong>10</strong> For whosoever shall keep the whole law, and yet offend in one point, he is guilty of all.</p>
+            <p><strong>11</strong> For he that said, Do not commit adultery, said also, Do not kill. Now if thou commit no adultery, yet if thou kill, thou art become a transgressor of the law.</p>
+            <p><strong>12</strong> So speak ye, and so do, as they that shall be judged by the law of liberty.</p>
+            <p><strong>13</strong> For he shall have judgment without mercy, that hath shewed no mercy; and mercy rejoiceth against judgment.</p>
+            <p><strong>14</strong> What doth it profit, my brethren, though a man say he hath faith, and have not works? can faith save him?</p>
+            <p><strong>15</strong> If a brother or sister be naked, and destitute of daily food,</p>
+            <p><strong>16</strong> And one of you say unto them, Depart in peace, be ye warmed and filled; notwithstanding ye give them not those things which are needful to the body; what doth it profit?</p>
+            <p><strong>17</strong> Even so faith, if it hath not works, is dead, being alone.</p>
+            <p><strong>18</strong> Yea, a man may say, Thou hast faith, and I have works: shew me thy faith without thy works, and I will shew thee my faith by my works.</p>
+            <p><strong>19</strong> Thou believest that there is one God; thou doest well: the devils also believe, and tremble.</p>
+            <p><strong>20</strong> But wilt thou know, O vain man, that faith without works is dead?</p>
+            <p><strong>21</strong> Was not Abraham our father justified by works, when he had offered Isaac his son upon the altar?</p>
+            <p><strong>22</strong> Seest thou how faith wrought with his works, and by works was faith made perfect?</p>
+            <p><strong>23</strong> And the scripture was fulfilled which saith, Abraham believed God, and it was imputed unto him for righteousness: and he was called the Friend of God.</p>
+            <p><strong>24</strong> Ye see then how that by works a man is justified, and not by faith only.</p>
+            <p><strong>25</strong> Likewise also was not Rahab the harlot justified by works, when she had received the messengers, and had sent them out another way?</p>
+            <p><strong>26</strong> For as the body without the spirit is dead, so faith without works is dead also.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">James 2 (ASV)</p>
+            <p><strong>1</strong> My brethren, hold not the faith of our Lord Jesus Christ, the Lordof glory, with respect of persons.</p>
+            <p><strong>2</strong> For if there come into your synagogue a man with a gold ring, in fine clothing, and there come in also a poor man in vile clothing;</p>
+            <p><strong>3</strong> and ye have regard to him that weareth the fine clothing, and say, Sit thou here in a good place; and ye say to the poor man, Stand thou there, or sit under my footstool;</p>
+            <p><strong>4</strong> do ye not make distinctions among yourselves, and become judges with evil thoughts?</p>
+            <p><strong>5</strong> Hearken, my beloved brethren; did not God choose them that are poor as to the world to be rich in faith, and heirs of the kingdom which he promised to them that love him?</p>
+            <p><strong>6</strong> But ye have dishonored the poor man. Do not the rich oppress you, and themselves drag you before the judgment-seats?</p>
+            <p><strong>7</strong> Do not they blaspheme the honorable name by which ye are called?</p>
+            <p><strong>8</strong> Howbeit if ye fulfil the royal law, according to the scripture, Thou shalt love thy neighbor as thyself, ye do well:</p>
+            <p><strong>9</strong> but if ye have respect of persons, ye commit sin, being convicted by the law as transgressors.</p>
+            <p><strong>10</strong> For whosoever shall keep the whole law, and yet stumble in one point, he is become guilty of all.</p>
+            <p><strong>11</strong> For he that said, Do not commit adultery, said also, Do not kill. Now if thou dost not commit adultery, but killest, thou art become a transgressor of the law.</p>
+            <p><strong>12</strong> So speak ye, and so do, as men that are to be judged by a law of liberty.</p>
+            <p><strong>13</strong> For judgment is without mercy to him that hath showed no mercy: mercy glorieth against judgment.</p>
+            <p><strong>14</strong> What doth it profit, my brethren, if a man say he hath faith, but have not works? can that faith save him?</p>
+            <p><strong>15</strong> If a brother or sister be naked and in lack of daily food,</p>
+            <p><strong>16</strong> and one of you say unto them, Go in peace, be ye warmed and filled; and yet ye give them not the things needful to the body; what doth it profit?</p>
+            <p><strong>17</strong> Even so faith, if it have not works, is dead in itself.</p>
+            <p><strong>18</strong> Yea, a man will say, Thou hast faith, and I have works: show me thy faith apart from thy works, and I by my works will show thee my faith.</p>
+            <p><strong>19</strong> Thou believest that God is one; thou doest well: the demons also believe, and shudder.</p>
+            <p><strong>20</strong> But wilt thou know, O vain man, that faith apart from works is barren?</p>
+            <p><strong>21</strong> Was not Abraham our father justified by works, in that he offered up Isaac his son upon the altar?</p>
+            <p><strong>22</strong> Thou seest that faith wrought with his works, and by works was faith made perfect;</p>
+            <p><strong>23</strong> and the scripture was fulfilled which saith, And Abraham believed God, and it was reckoned unto him for righteousness; and he was called the friend of God.</p>
+            <p><strong>24</strong> Ye see that by works a man is justified, and not only by faith.</p>
+            <p><strong>25</strong> And in like manner was not also Rahab the harlot justified by works, in that she received the messengers, and sent them out another way?</p>
+            <p><strong>26</strong> For as the body apart from the spirit is dead, even so faith apart from works is dead.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>James turns to how believers treat one another, warning that holding the faith of the glorious Lord Jesus Christ is incompatible with partiality. He paints a scene: a rich man in fine clothes and a poor man in rags both enter the assembly, and the congregation fawns over the wealthy while shaming the poor. This, James says, makes them judges with evil thoughts, for God has chosen the poor of this world to be rich in faith and heirs of the kingdom. To favor the rich, who often oppress them, is to dishonor the very people God exalts. If they fulfill the royal law, “You shall love your neighbor as yourself,” they do well, but partiality is sin, a transgression of the law, for whoever stumbles in one point is guilty of all. They are to speak and act as those who will be judged by the law of freedom, remembering that mercy triumphs over judgment. James then presses the heart of the letter: faith that has no works is useless and dead. A faith that says “be warmed and filled” to a needy brother but gives nothing is empty. Even the demons believe in one God and shudder. He offers Abraham, justified by works when he offered Isaac, and Rahab, justified when she sheltered the messengers, as proof that as the body without the spirit is dead, so faith without works is dead.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>James</strong> — The author, who confronts favoritism in the assembly and argues that authentic faith must be demonstrated by works of mercy and obedience.</li>
+          <li><strong>The Lord Jesus Christ of glory</strong> — The glorious Lord whose faith cannot be held alongside partiality, and whose people are called to honor the poor whom God has chosen.</li>
+          <li><strong>Abraham</strong> — The father of believers, called the friend of God, whose faith was perfected and shown to be real when he offered up Isaac on the altar.</li>
+          <li><strong>Rahab</strong> — The prostitute of Jericho, cited as justified by works when she received the messengers and sent them safely away, an unlikely example of faith proven by action.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">James 2:17 (WEB)</p>
+          <p class="verse__text">Even so faith, if it has no works, is dead in itself.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Favoritism toward the rich and contempt for the poor contradicts the faith of the Lord of glory.</li>
+          <li>God honors the poor of this world by making them rich in faith and heirs of his kingdom.</li>
+          <li>The royal law of love sums up our duty to one another, and mercy triumphs over judgment.</li>
+          <li>A faith that produces no works of love is not weak faith but dead faith.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Faith and favoritism cannot coexist.</strong> “Don’t hold the faith of our Lord Jesus Christ of glory with partiality” (James 2:1, WEB). Honoring the rich while shaming the poor makes us “judges with evil thoughts” (2:4).</li>
+            <li><strong>Love is the royal law.</strong> “You shall love your neighbor as yourself” (James 2:8, WEB) fulfills the law; partiality breaks it and convicts us as transgressors (2:9).</li>
+            <li><strong>Mercy triumphs over judgment.</strong> “Judgment is without mercy to him who has shown no mercy. Mercy triumphs over judgment” (James 2:13, WEB). The merciful reflect the God who has shown them mercy.</li>
+            <li><strong>True faith works.</strong> “Faith, if it has no works, is dead in itself” (James 2:17, WEB). Abraham and Rahab show that living faith is always faith that acts (2:21-25).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>How does the scene of the rich and poor man entering the assembly expose the sin of partiality?</li>
+            <li>Why does James say partiality is not a minor fault but a transgression of the whole law (2:9-11)?</li>
+            <li>What does James mean when he says faith without works is “dead in itself” (2:17)? How is this different from saying we are saved by works?</li>
+            <li>How do the examples of Abraham and Rahab illustrate the relationship between faith and works?</li>
+            <li>Where might you be tempted to favor the impressive over the lowly, and what is one act of mercy that would let your faith show itself?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>The believers “pay special attention” to the man in fine clothing and tell the poor man to stand or sit by their footstool (2:3). James names this as becoming “judges with evil thoughts” (2:4) and dishonoring the poor whom God has chosen (2:5-6). Help the group see how easily status, not Christ, can shape our welcome.</li>
+            <li>James explains that the law is a unity: “whoever keeps the whole law, and yet stumbles in one point, he has become guilty of all” (2:10). To break the law of love by partiality is to set ourselves against the Lawgiver, just as much as breaking any other command. Sin is never as small as it feels.</li>
+            <li>Dead faith is mere claim without fruit—telling a needy brother “be warmed and filled” while giving nothing (2:15-16). James is not pitting works against grace but insisting that real faith inevitably bears fruit. Works are the proof of faith, not its purchase price; clarify this gently for any who fear legalism.</li>
+            <li>Abraham's faith “worked with his works, and by works faith was perfected” when he offered Isaac (2:21-22), and Rahab was “justified by works” when she sheltered the spies (2:25). Both show faith made visible through obedient action. The point is that genuine belief moves the hands and feet.</li>
+            <li>This is a gentle personal-application question. Invite members to consider whom they instinctively elevate or overlook, and to name one concrete act of mercy. As leader, keep the tone hopeful—the goal is faith that breathes, not guilt, and mercy triumphs over judgment (2:13).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="james-1.html">← James 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="james.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="james-3.html">James 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

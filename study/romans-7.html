@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Romans 7: The Struggle With the Law — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Romans 7: Paul explains that believers are released from the law, that the law is good, and that only Christ delivers from sin's grip." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-romans-progress" data-study-total="16">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Romans, Chapter 7
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="romans.html">← All Chapters</a>
+        <span class="study-meta">The Book of Romans · Chapter 7</span>
+        <h1>Romans 7: The Struggle With the Law</h1>
+        <p class="lead">The law is holy and good but cannot free us from sin; it exposes our helplessness and drives us to cry out for deliverance through Christ.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-7">
+            <span>Scripture — Romans Chapter 7</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-7">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-7-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-7-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-7-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-7-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Romans 7 (WEB)</p>
+            <p><strong>1</strong> Or don’t you know, brothers (for I speak to men who know the law), that the law has dominion over a man for as long as he lives?</p>
+            <p><strong>2</strong> For the woman that has a husband is bound by law to the husband while he lives, but if the husband dies, she is discharged from the law of the husband.</p>
+            <p><strong>3</strong> So then if, while the husband lives, she is joined to another man, she would be called an adulteress. But if the husband dies, she is free from the law, so that she is no adulteress, though she is joined to another man.</p>
+            <p><strong>4</strong> Therefore, my brothers, you also were made dead to the law through the body of Christ, that you would be joined to another, to him who was raised from the dead, that we might produce fruit to God.</p>
+            <p><strong>5</strong> For when we were in the flesh, the sinful passions which were through the law, worked in our members to bring out fruit to death.</p>
+            <p><strong>6</strong> But now we have been discharged from the law, having died to that in which we were held; so that we serve in newness of the spirit, and not in oldness of the letter.</p>
+            <p><strong>7</strong> What shall we say then? Is the law sin? May it never be! However, I wouldn’t have known sin, except through the law. For I wouldn’t have known coveting, unless the law had said, “You shall not covet.”</p>
+            <p><strong>8</strong> But sin, finding occasion through the commandment, produced in me all kinds of coveting. For apart from the law, sin is dead.</p>
+            <p><strong>9</strong> I was alive apart from the law once, but when the commandment came, sin revived, and I died.</p>
+            <p><strong>10</strong> The commandment, which was for life, this I found to be for death;</p>
+            <p><strong>11</strong> for sin, finding occasion through the commandment, deceived me, and through it killed me.</p>
+            <p><strong>12</strong> Therefore the law indeed is holy, and the commandment holy, and righteous, and good.</p>
+            <p><strong>13</strong> Did then that which is good become death to me? May it never be! But sin, that it might be shown to be sin, by working death to me through that which is good; that through the commandment sin might become exceedingly sinful.</p>
+            <p><strong>14</strong> For we know that the law is spiritual, but I am fleshly, sold under sin.</p>
+            <p><strong>15</strong> For I don’t know what I am doing. For I don’t practice what I desire to do; but what I hate, that I do.</p>
+            <p><strong>16</strong> But if what I don’t desire, that I do, I consent to the law that it is good.</p>
+            <p><strong>17</strong> So now it is no more I that do it, but sin which dwells in me.</p>
+            <p><strong>18</strong> For I know that in me, that is, in my flesh, dwells no good thing. For desire is present with me, but I don’t find it doing that which is good.</p>
+            <p><strong>19</strong> For the good which I desire, I don’t do; but the evil which I don’t desire, that I practice.</p>
+            <p><strong>20</strong> But if what I don’t desire, that I do, it is no more I that do it, but sin which dwells in me.</p>
+            <p><strong>21</strong> I find then the law, that, to me, while I desire to do good, evil is present.</p>
+            <p><strong>22</strong> For I delight in God’s law after the inward man,</p>
+            <p><strong>23</strong> but I see a different law in my members, warring against the law of my mind, and bringing me into captivity under the law of sin which is in my members.</p>
+            <p><strong>24</strong> What a wretched man I am! Who will deliver me out of the body of this death?</p>
+            <p><strong>25</strong> I thank God through Jesus Christ, our Lord! So then with the mind, I myself serve God’s law, but with the flesh, the sin’s law.</p>
+            </div>
+            <div class="scripture-text" id="web-7-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Romans 7 (KJV)</p>
+            <p><strong>1</strong> Know ye not, brethren, (for I speak to them that know the law,) how that the law hath dominion over a man as long as he liveth?</p>
+            <p><strong>2</strong> For the woman which hath an husband is bound by the law to her husband so long as he liveth; but if the husband be dead, she is loosed from the law of her husband.</p>
+            <p><strong>3</strong> So then if, while her husband liveth, she be married to another man, she shall be called an adulteress: but if her husband be dead, she is free from that law; so that she is no adulteress, though she be married to another man.</p>
+            <p><strong>4</strong> Wherefore, my brethren, ye also are become dead to the law by the body of Christ; that ye should be married to another, even to him who is raised from the dead, that we should bring forth fruit unto God.</p>
+            <p><strong>5</strong> For when we were in the flesh, the motions of sins, which were by the law, did work in our members to bring forth fruit unto death.</p>
+            <p><strong>6</strong> But now we are delivered from the law, that being dead wherein we were held; that we should serve in newness of spirit, and not in the oldness of the letter.</p>
+            <p><strong>7</strong> What shall we say then? Is the law sin? God forbid. Nay, I had not known sin, but by the law: for I had not known lust, except the law had said, Thou shalt not covet.</p>
+            <p><strong>8</strong> But sin, taking occasion by the commandment, wrought in me all manner of concupiscence. For without the law sin was dead.</p>
+            <p><strong>9</strong> For I was alive without the law once: but when the commandment came, sin revived, and I died.</p>
+            <p><strong>10</strong> And the commandment, which was ordained to life, I found to be unto death.</p>
+            <p><strong>11</strong> For sin, taking occasion by the commandment, deceived me, and by it slew me.</p>
+            <p><strong>12</strong> Wherefore the law is holy, and the commandment holy, and just, and good.</p>
+            <p><strong>13</strong> Was then that which is good made death unto me? God forbid. But sin, that it might appear sin, working death in me by that which is good; that sin by the commandment might become exceeding sinful.</p>
+            <p><strong>14</strong> For we know that the law is spiritual: but I am carnal, sold under sin.</p>
+            <p><strong>15</strong> For that which I do I allow not: for what I would, that do I not; but what I hate, that do I.</p>
+            <p><strong>16</strong> If then I do that which I would not, I consent unto the law that it is good.</p>
+            <p><strong>17</strong> Now then it is no more I that do it, but sin that dwelleth in me.</p>
+            <p><strong>18</strong> For I know that in me (that is, in my flesh,) dwelleth no good thing: for to will is present with me; but how to perform that which is good I find not.</p>
+            <p><strong>19</strong> For the good that I would I do not: but the evil which I would not, that I do.</p>
+            <p><strong>20</strong> Now if I do that I would not, it is no more I that do it, but sin that dwelleth in me.</p>
+            <p><strong>21</strong> I find then a law, that, when I would do good, evil is present with me.</p>
+            <p><strong>22</strong> For I delight in the law of God after the inward man:</p>
+            <p><strong>23</strong> But I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members.</p>
+            <p><strong>24</strong> O wretched man that I am! who shall deliver me from the body of this death?</p>
+            <p><strong>25</strong> I thank God through Jesus Christ our Lord. So then with the mind I myself serve the law of God; but with the flesh the law of sin.</p>
+            </div>
+            <div class="scripture-text" id="web-7-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Romans 7 (ASV)</p>
+            <p><strong>1</strong> Or are ye ignorant, brethren (for I speak to men who know the law), that the law hath dominion over a man for so long time as he liveth?</p>
+            <p><strong>2</strong> For the woman that hath a husband is bound by law to the husband while he liveth; but if the husband die, she is discharged from the law of the husband.</p>
+            <p><strong>3</strong> So then if, while the husband liveth, she be joined to another man, she shall be called an adulteress: but if the husband die, she is free from the law, so that she is no adulteress, though she be joined to another man.</p>
+            <p><strong>4</strong> Wherefore, my brethren, ye also were made dead to the law through the body of Christ; that ye should be joined to another, even to him who was raised from the dead, that we might bring forth fruit unto God.</p>
+            <p><strong>5</strong> For when we were in the flesh, the sinful passions, which were through the law, wrought in our members to bring forth fruit unto death.</p>
+            <p><strong>6</strong> But now we have been discharged from the law, having died to that wherein we were held; so that we serve in newness of the spirit, and not in oldness of the letter.</p>
+            <p><strong>7</strong> What shall we say then? Is the law sin? God forbid. Howbeit, I had not known sin, except through the law: for I had not known coveting, except the law had said, Thou shalt not covet:</p>
+            <p><strong>8</strong> but sin, finding occasion, wrought in me through the commandment all manner of coveting: for apart from the law sin is dead.</p>
+            <p><strong>9</strong> And I was alive apart from the law once: but when the commandment came, sin revived, and I died;</p>
+            <p><strong>10</strong> and the commandment, which was unto life, this I found to be unto death:</p>
+            <p><strong>11</strong> for sin, finding occasion, through the commandment beguiled me, and through it slew me.</p>
+            <p><strong>12</strong> So that the law is holy, and the commandment holy, and righteous, and good.</p>
+            <p><strong>13</strong> Did then that which is good become death unto me? God forbid. But sin, that it might be shown to be sin, by working death to me through that which is good;—that through the commandment sin might become exceeding sinful.</p>
+            <p><strong>14</strong> For we know that the law is spiritual: but I am carnal, sold under sin.</p>
+            <p><strong>15</strong> For that which I do I know not: for not what I would, that do I practise; but what I hate, that I do.</p>
+            <p><strong>16</strong> But if what I would not, that I do, I consent unto the law that it is good.</p>
+            <p><strong>17</strong> So now it is no more I that do it, but sin which dwelleth in me.</p>
+            <p><strong>18</strong> For I know that in me, that is, in my flesh, dwelleth no good thing: for to will is present with me, but to do that which is good is not.</p>
+            <p><strong>19</strong> For the good which I would I do not: but the evil which I would not, that I practise.</p>
+            <p><strong>20</strong> But if what I would not, that I do, it is no more I that do it, but sin which dwelleth in me.</p>
+            <p><strong>21</strong> I find then the law, that, to me who would do good, evil is present.</p>
+            <p><strong>22</strong> For I delight in the law of God after the inward man:</p>
+            <p><strong>23</strong> but I see a different law in my members, warring against the law of my mind, and bringing me into captivity under the law of sin which is in my members.</p>
+            <p><strong>24</strong> Wretched man that I am! who shall deliver me out of the body of this death?</p>
+            <p><strong>25</strong> I thank God through Jesus Christ our Lord. So then I of myself with the mind, indeed, serve the law of God; but with the flesh the law of sin.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Paul explains the believer's new relationship to the law using marriage as an illustration: just as death ends a marriage bond, so believers have died to the law through the body of Christ, that they might belong to another, the risen Christ, and bear fruit for God. We now serve in the new way of the Spirit, not the old way of the written code. Paul then defends the law against misunderstanding: the law is not sin, but it reveals sin, for he would not have known coveting except that the law forbade it. Sin seized the opportunity in the commandment and produced every kind of covetousness, so that the commandment meant for life proved to bring death. The law itself is holy, righteous, and good; the problem lies in sin and in fallen human nature. Paul then voices the agonizing experience of one who knows the good but cannot do it: "For I don't practice what I desire to do; but what I hate, that I do." He delights in God's law in his inner being yet finds another law at war in his members, holding him captive. The cry bursts out: "What a wretched man I am! Who will deliver me out of the body of this death?" And then the answer: "I thank God through Jesus Christ, our Lord!"</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Paul</strong> — The apostle who defends the goodness of the law while exposing its inability to free us from sin, voicing the cry for deliverance through Christ.</li>
+          <li><strong>The law</strong> — God's holy, righteous, and good commandment, which reveals sin and stirs it up but cannot rescue from its power.</li>
+          <li><strong>Indwelling sin</strong> — The hostile power dwelling in fallen human nature that seizes the commandment, produces coveting, and wages war against the desire to do good.</li>
+          <li><strong>Christ Jesus</strong> — The Lord through whom thanks is given, the only deliverer from the body of death and the bondage of sin.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Romans 7:24 (WEB)</p>
+          <p class="verse__text">What a wretched man I am! Who will deliver me out of the body of this death?</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Believers have died to the law and now belong to the risen Christ to bear fruit for God.</li>
+          <li>The law is holy and good, but it reveals and even provokes sin rather than curing it.</li>
+          <li>Knowing the good is not the same as being able to do it apart from grace.</li>
+          <li>Our helplessness against sin drives us to cry out for deliverance, found only in Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-7">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-7">
+            <ul class="lesson-list">
+            <li><strong>We belong now to the risen Christ.</strong> We "were made dead to the law through the body of Christ, that you would be joined to another" (Romans 7:4, WEB). Released from the old bond, we bear fruit for God in a new union.</li>
+            <li><strong>The law is holy and good.</strong> "The law indeed is holy, and the commandment holy, and righteous, and good" (Romans 7:12, WEB). The problem is not God's law but our sin.</li>
+            <li><strong>Sin divides our will.</strong> "I don't practice what I desire to do; but what I hate, that I do" (Romans 7:15, WEB). Honest self-knowledge exposes how deep sin runs.</li>
+            <li><strong>Deliverance is found in Christ alone.</strong> To the cry, "Who will deliver me?" Paul answers, "I thank God through Jesus Christ, our Lord!" (Romans 7:24-25, WEB). Our rescue is a person, not a program.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-7">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-7">
+            <ol class="study-questions">
+            <li>How does Paul use marriage to explain the believer's release from the law (7:1-4)?</li>
+            <li>If the law is good, why does Paul say it brought death to him (7:7-13)?</li>
+            <li>How would you describe the inner conflict Paul portrays in verses 15-23?</li>
+            <li>Why is the cry of verse 24 followed immediately by thanksgiving in verse 25?</li>
+            <li>Where do you experience the gap between what you want to do and what you actually do, and where does this chapter point you?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-7">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-7">
+            <ol class="study-questions">
+            <li>As death frees a spouse from the marriage bond, so the believer has died to the law through Christ's body and now belongs to the risen Christ (7:1-4). The aim is fruitfulness for God in this new union. We are not lawless but joined to a living Lord.</li>
+            <li>The law itself is good, but sin used the commandment as a foothold, stirring up the very desires it forbade and exposing our guilt (7:7-13). The law diagnoses and even provokes sin without being able to cure it. This clears God's law of blame and locates the problem in us.</li>
+            <li>Paul describes a divided self that delights in God's law yet finds sin waging war in his members, doing the evil he hates (7:15-23). It is the painful experience of knowing the good but lacking the power to perform it. However we read its exact reference, it captures the frustration of fighting indwelling sin.</li>
+            <li>The cry of wretchedness and the shout of thanks belong together: facing our helplessness drives us to the only deliverer (7:24-25). Despair turns to gratitude the moment we look to Christ. Help the group bring their own struggles honestly to him rather than to self-effort.</li>
+            <li>This is a personal-application question. Invite members to name, gently, an area where desire outruns ability, and to bring it to Christ rather than to mere willpower. Lead into chapter 8 by reminding them that the answer to this struggle is life in the Spirit.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="romans-6.html">← Romans 6</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="romans.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="romans-8.html">Romans 8 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

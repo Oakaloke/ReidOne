@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Revelation 20: The Great White Throne — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Revelation 20: the binding of Satan, the reign of the saints, the final defeat of the devil, and the great white throne judgment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-revelation-progress" data-study-total="22">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Revelation, Chapter 20
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="revelation.html">← All Chapters</a>
+        <span class="study-meta">The Book of Revelation · Chapter 20</span>
+        <h1>Revelation 20: The Great White Throne</h1>
+        <p class="lead">Satan is bound, the saints reign, and after his final defeat the dead stand before the great white throne to be judged.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-20">
+            <span>Scripture — Revelation Chapter 20</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-20">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-20-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-20-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-20-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-20-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Revelation 20 (WEB)</p>
+            <p><strong>1</strong> I saw an angel coming down out of heaven, having the key of the abyss and a great chain in his hand.</p>
+            <p><strong>2</strong> He seized the dragon, the old serpent, which is the devil and Satan, who deceives the whole inhabited earth, and bound him for a thousand years,</p>
+            <p><strong>3</strong> and cast him into the abyss, and shut it, and sealed it over him, that he should deceive the nations no more, until the thousand years were finished. After this, he must be freed for a short time.</p>
+            <p><strong>4</strong> I saw thrones, and they sat on them, and judgment was given to them. I saw the souls of those who had been beheaded for the testimony of Jesus, and for the word of God, and such as didn’t worship the beast nor his image, and didn’t receive the mark on their forehead and on their hand. They lived, and reigned with Christ for a thousand years.</p>
+            <p><strong>5</strong> The rest of the dead didn’t live until the thousand years were finished. This is the first resurrection.</p>
+            <p><strong>6</strong> Blessed and holy is he who has part in the first resurrection. Over these, the second death has no power, but they will be priests of God and of Christ, and will reign with him one thousand years.</p>
+            <p><strong>7</strong> And after the thousand years, Satan will be released from his prison,</p>
+            <p><strong>8</strong> and he will come out to deceive the nations which are in the four corners of the earth, Gog and Magog, to gather them together to the war; the number of whom is as the sand of the sea.</p>
+            <p><strong>9</strong> They went up over the breadth of the earth, and surrounded the camp of the saints, and the beloved city. Fire came down out of heaven from God, and devoured them.</p>
+            <p><strong>10</strong> The devil who deceived them was thrown into the lake of fire and sulfur, where the beast and the false prophet are also. They will be tormented day and night forever and ever.</p>
+            <p><strong>11</strong> I saw a great white throne, and him who sat on it, from whose face the earth and the heaven fled away. There was found no place for them.</p>
+            <p><strong>12</strong> I saw the dead, the great and the small, standing before the throne, and they opened books. Another book was opened, which is the book of life. The dead were judged out of the things which were written in the books, according to their works.</p>
+            <p><strong>13</strong> The sea gave up the dead who were in it. Death and Hades gave up the dead who were in them. They were judged, each one according to his works.</p>
+            <p><strong>14</strong> Death and Hades were thrown into the lake of fire. This is the second death, the lake of fire.</p>
+            <p><strong>15</strong> If anyone was not found written in the book of life, he was cast into the lake of fire.</p>
+            </div>
+            <div class="scripture-text" id="web-20-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Revelation 20 (KJV)</p>
+            <p><strong>1</strong> And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand.</p>
+            <p><strong>2</strong> And he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years,</p>
+            <p><strong>3</strong> And cast him into the bottomless pit, and shut him up, and set a seal upon him, that he should deceive the nations no more, till the thousand years should be fulfilled: and after that he must be loosed a little season.</p>
+            <p><strong>4</strong> And I saw thrones, and they sat upon them, and judgment was given unto them: and I saw the souls of them that were beheaded for the witness of Jesus, and for the word of God, and which had not worshipped the beast, neither his image, neither had received his mark upon their foreheads, or in their hands; and they lived and reigned with Christ a thousand years.</p>
+            <p><strong>5</strong> But the rest of the dead lived not again until the thousand years were finished. This is the first resurrection.</p>
+            <p><strong>6</strong> Blessed and holy is he that hath part in the first resurrection: on such the second death hath no power, but they shall be priests of God and of Christ, and shall reign with him a thousand years.</p>
+            <p><strong>7</strong> And when the thousand years are expired, Satan shall be loosed out of his prison,</p>
+            <p><strong>8</strong> And shall go out to deceive the nations which are in the four quarters of the earth, Gog and Magog, to gather them together to battle: the number of whom is as the sand of the sea.</p>
+            <p><strong>9</strong> And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and fire came down from God out of heaven, and devoured them.</p>
+            <p><strong>10</strong> And the devil that deceived them was cast into the lake of fire and brimstone, where the beast and the false prophet are, and shall be tormented day and night for ever and ever.</p>
+            <p><strong>11</strong> And I saw a great white throne, and him that sat on it, from whose face the earth and the heaven fled away; and there was found no place for them.</p>
+            <p><strong>12</strong> And I saw the dead, small and great, stand before God; and the books were opened: and another book was opened, which is the book of life: and the dead were judged out of those things which were written in the books, according to their works.</p>
+            <p><strong>13</strong> And the sea gave up the dead which were in it; and death and hell delivered up the dead which were in them: and they were judged every man according to their works.</p>
+            <p><strong>14</strong> And death and hell were cast into the lake of fire. This is the second death.</p>
+            <p><strong>15</strong> And whosoever was not found written in the book of life was cast into the lake of fire.</p>
+            </div>
+            <div class="scripture-text" id="web-20-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Revelation 20 (ASV)</p>
+            <p><strong>1</strong> And I saw an angel coming down out of heaven, having the key of the abyss and a great chain in his hand.</p>
+            <p><strong>2</strong> And he laid hold on the dragon, the old serpent, which is the Devil and Satan, and bound him for a thousand years,</p>
+            <p><strong>3</strong> and cast him into the abyss, and shutit, and sealeditover him, that he should deceive the nations no more, until the thousand years should be finished: after this he must be loosed for a little time.</p>
+            <p><strong>4</strong> And I saw thrones, and they sat upon them, and judgment was given unto them: and I saw the souls of them that had been beheaded for the testimony of Jesus, and for the word of God, and such as worshipped not the beast, neither his image, and received not the mark upon their forehead and upon their hand; and they lived, and reigned with Christ a thousand years.</p>
+            <p><strong>5</strong> The rest of the dead lived not until the thousand years should be finished. This is the first resurrection.</p>
+            <p><strong>6</strong> Blessed and holy is he that hath part in the first resurrection: over these the second death hath no power; but they shall be priests of God and of Christ, and shall reign with him a thousand years.</p>
+            <p><strong>7</strong> And when the thousand years are finished, Satan shall be loosed out of his prison,</p>
+            <p><strong>8</strong> and shall come forth to deceive the nations which are in the four corners of the earth, Gog and Magog, to gather them together to the war: the number of whom is as the sand of the sea.</p>
+            <p><strong>9</strong> And they went up over the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and fire came down out of heaven, and devoured them.</p>
+            <p><strong>10</strong> And the devil that deceived them was cast into the lake of fire and brimstone, where are also the beast and the false prophet; and they shall be tormented day and night for ever and ever.</p>
+            <p><strong>11</strong> And I saw a great white throne, and him that sat upon it, from whose face the earth and the heaven fled away; and there was found no place for them.</p>
+            <p><strong>12</strong> And I saw the dead, the great and the small, standing before the throne; and books were opened: and another book was opened, which isthe bookof life: and the dead were judged out of the things which were written in the books, according to their works.</p>
+            <p><strong>13</strong> And the sea gave up the dead that were in it; and death and Hades gave up the dead that were in them: and they were judged every man according to their works.</p>
+            <p><strong>14</strong> And death and Hades were cast into the lake of fire. This is the second death, eventhe lake of fire.</p>
+            <p><strong>15</strong> And if any was not found written in the book of life, he was cast into the lake of fire.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>An angel descends with the key to the abyss and a great chain, seizes the dragon—the old serpent, the devil and Satan—and binds him for a thousand years so he can no longer deceive the nations, after which he must be released for a short time. John sees thrones and those given authority to judge, the souls of the martyrs who did not worship the beast; they come to life and reign with Christ for a thousand years in the first resurrection, over which the second death has no power. When the thousand years end, Satan is released and gathers the nations, Gog and Magog, to surround the camp of the saints and the beloved city, but fire comes down from heaven and devours them, and the devil is thrown into the lake of fire with the beast and false prophet to be tormented forever. Then John sees a great white throne and the One seated on it, from whose presence earth and sky flee. The dead, great and small, stand before the throne, and books are opened, including the book of life; they are judged according to their deeds. Death and Hades give up their dead and are themselves thrown into the lake of fire, the second death. Anyone whose name is not found written in the book of life is cast into the lake of fire. The final judgment is rendered.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>God on the great white throne</strong> — The Judge from whose presence earth and sky flee, before whom the dead are judged according to their deeds and the books are opened.</li>
+          <li><strong>Satan, the dragon</strong> — The old serpent who is bound for a thousand years, released, defeated when fire devours his armies, and finally cast into the lake of fire forever.</li>
+          <li><strong>The reigning saints</strong> — The souls of the martyrs and faithful who share in the first resurrection and reign with Christ, untouched by the second death.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Revelation 20:11 (WEB)</p>
+          <p class="verse__text">I saw a great white throne, and him who sat on it, from whose face the earth and the heaven fled away. There was found no place for them.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Satan's power is limited and his final defeat is certain and complete.</li>
+          <li>Those who belong to Christ share in the first resurrection and reign with him.</li>
+          <li>Every person will one day stand before God to be judged according to their deeds.</li>
+          <li>The book of life determines our eternal destiny; what matters is having our names written there.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-20">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-20">
+            <ul class="lesson-list">
+            <li><strong>Satan is decisively defeated.</strong> The devil is “thrown into the lake of fire and sulfur… tormented day and night forever” (Revelation 20:10, WEB). His end is sure and final.</li>
+            <li><strong>The faithful escape the second death.</strong> “Over these, the second death has no power” (Revelation 20:6, WEB). Those raised in Christ are forever beyond condemnation.</li>
+            <li><strong>All will be judged.</strong> “The dead were judged out of the things which were written in the books, according to their works” (Revelation 20:12, WEB). No one escapes God's just assessment.</li>
+            <li><strong>The book of life decides.</strong> “If anyone was not found written in the book of life, he was cast into the lake of fire” (Revelation 20:15, WEB). Our destiny rests on belonging to Christ.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-20">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-20">
+            <ol class="study-questions">
+            <li>What does the binding and final destruction of Satan reveal about the limits of his power?</li>
+            <li>What encouragement is there for the faithful in the promise of the first resurrection and reigning with Christ?</li>
+            <li>Why is the image of earth and sky fleeing from the One on the throne so striking?</li>
+            <li>What is the significance of the book of life in the final judgment?</li>
+            <li>How does the reality of standing before God one day shape the way you live now?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-20">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-20">
+            <ol class="study-questions">
+            <li>Satan is bound, released only briefly, and then cast forever into the lake of fire (20:2-3, 10). Help the group see that however fierce his present opposition, his defeat is certain and his time is bounded entirely by God's decree.</li>
+            <li>The first resurrection assures the faithful that they will live and reign with Christ, beyond the reach of the second death (20:4-6). For a persecuted church, this promises that death is not the end but the doorway to reigning with their Lord.</li>
+            <li>The fleeing of earth and sky underscores the overwhelming majesty and holiness of the Judge (20:11). Before him, the whole created order cannot stand; the image impresses on us the seriousness and finality of this judgment.</li>
+            <li>The book of life distinguishes those who belong to Christ from those who do not (20:12, 15). Discuss how final judgment is according to works yet rescue is by grace, with our names written in the Lamb's book the decisive reality.</li>
+            <li>This is a personal-application question. Gently invite members to live in light of the coming judgment, resting in Christ for the assurance of their names in the book of life. As leader, hold together sober reverence and the comfort of grace.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="revelation-19.html">← Revelation 19</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="revelation.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="revelation-21.html">Revelation 21 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
