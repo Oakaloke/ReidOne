@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Micah 5: The Ruler From Bethlehem — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Micah 5: a ruler comes from Bethlehem whose goings out are from of old, shepherds his flock in the LORD's strength, and is our peace." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-micah-progress" data-study-total="7">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Micah, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="micah.html">← All Chapters</a>
+        <span class="study-meta">The Book of Micah · Chapter 5</span>
+        <h1>Micah 5: The Ruler From Bethlehem</h1>
+        <p class="lead">From little Bethlehem comes the promised ruler whose origins are from of old; he shepherds in the LORD's strength, is our peace, and purges all idols.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — Micah Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Micah 5 (WEB)</p>
+            <p><strong>1</strong> Now you shall gather yourself in troops, daughter of troops. He has laid siege against us. They will strike the judge of Israel with a rod on the cheek.</p>
+            <p><strong>2</strong> But you, Bethlehem Ephrathah, being small among the clans of Judah, out of you one will come out to me that is to be ruler in Israel; whose goings out are from of old, from ancient times.</p>
+            <p><strong>3</strong> Therefore he will abandon them until the time that she who is in labor gives birth. Then the rest of his brothers will return to the children of Israel.</p>
+            <p><strong>4</strong> He shall stand, and shall shepherd in the strength of Yahweh, in the majesty of the name of Yahweh his God: and they will live, for then he will be great to the ends of the earth.</p>
+            <p><strong>5</strong> He will be our peace when Assyria invades our land, and when he marches through our fortresses, then we will raise against him seven shepherds, and eight leaders of men.</p>
+            <p><strong>6</strong> They will rule the land of Assyria with the sword, and the land of Nimrod in its gates. He will deliver us from the Assyrian, when he invades our land, and when he marches within our border.</p>
+            <p><strong>7</strong> The remnant of Jacob will be in the midst of many peoples, like dew from Yahweh, like showers on the grass, that don’t wait for man, nor wait for the sons of men.</p>
+            <p><strong>8</strong> The remnant of Jacob will be among the nations, in the midst of many peoples, like a lion among the animals of the forest, like a young lion among the flocks of sheep; who, if he goes through, treads down and tears in pieces, and there is no one to deliver.</p>
+            <p><strong>9</strong> Let your hand be lifted up above your adversaries, and let all of your enemies be cut off.</p>
+            <p><strong>10</strong> “It will happen in that day”, says Yahweh, “that I will cut off your horses out of your midst, and will destroy your chariots.</p>
+            <p><strong>11</strong> I will cut off the cities of your land, and will tear down all your strongholds.</p>
+            <p><strong>12</strong> I will destroy witchcraft from your hand; and you shall have no soothsayers.</p>
+            <p><strong>13</strong> I will cut off your engraved images and your pillars out of your midst; and you shall no more worship the work of your hands.</p>
+            <p><strong>14</strong> I will uproot your Asherah poles out of your midst; and I will destroy your cities.</p>
+            <p><strong>15</strong> I will execute vengeance in anger, and wrath on the nations that didn’t listen.”</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Micah 5 (KJV)</p>
+            <p><strong>1</strong> Now gather thyself in troops, O daughter of troops: he hath laid siege against us: they shall smite the judge of Israel with a rod upon the cheek.</p>
+            <p><strong>2</strong> But thou, Beth–lehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting.</p>
+            <p><strong>3</strong> Therefore will he give them up, until the time that she which travaileth hath brought forth: then the remnant of his brethren shall return unto the children of Israel.</p>
+            <p><strong>4</strong> And he shall stand and feed in the strength of the Lord, in the majesty of the name of the Lord his God; and they shall abide: for now shall he be great unto the ends of the earth.</p>
+            <p><strong>5</strong> And this man shall be the peace, when the Assyrian shall come into our land: and when he shall tread in our palaces, then shall we raise against him seven shepherds, and eight principal men.</p>
+            <p><strong>6</strong> And they shall waste the land of Assyria with the sword, and the land of Nimrod in the entrances thereof: thus shall he deliver us from the Assyrian, when he cometh into our land, and when he treadeth within our borders.</p>
+            <p><strong>7</strong> And the remnant of Jacob shall be in the midst of many people as a dew from the Lord, as the showers upon the grass, that tarrieth not for man, nor waiteth for the sons of men.</p>
+            <p><strong>8</strong> And the remnant of Jacob shall be among the Gentiles in the midst of many people as a lion among the beasts of the forest, as a young lion among the flocks of sheep: who, if he go through, both treadeth down, and teareth in pieces, and none can deliver.</p>
+            <p><strong>9</strong> Thine hand shall be lifted up upon thine adversaries, and all thine enemies shall be cut off.</p>
+            <p><strong>10</strong> And it shall come to pass in that day, saith the Lord, that I will cut off thy horses out of the midst of thee, and I will destroy thy chariots:</p>
+            <p><strong>11</strong> And I will cut off the cities of thy land, and throw down all thy strong holds:</p>
+            <p><strong>12</strong> And I will cut off witchcrafts out of thine hand; and thou shalt have no more soothsayers:</p>
+            <p><strong>13</strong> Thy graven images also will I cut off, and thy standing images out of the midst of thee; and thou shalt no more worship the work of thine hands.</p>
+            <p><strong>14</strong> And I will pluck up thy groves out of the midst of thee: so will I destroy thy cities.</p>
+            <p><strong>15</strong> And I will execute vengeance in anger and fury upon the heathen, such as they have not heard.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Micah 5 (ASV)</p>
+            <p><strong>1</strong> Now shalt thou gather thyself in troops, O daughter of troops: he hath laid siege against us; they shall smite the judge of Israel with a rod upon the cheek.</p>
+            <p><strong>2</strong> But thou, Beth-lehem Ephrathah, which art little to be among the thousands of Judah, out of thee shall one come forth unto me that is to be ruler in Israel; whose goings forth are from of old, from everlasting.</p>
+            <p><strong>3</strong> Therefore will he give them up, until the time that she who travaileth hath brought forth: then the residue of his brethren shall return unto the children of Israel.</p>
+            <p><strong>4</strong> And he shall stand, and shall feed his flock in the strength of Jehovah, in the majesty of the name of Jehovah his God: and they shall abide; for now shall he be great unto the ends of the earth.</p>
+            <p><strong>5</strong> And this man shall be our peace. When the Assyrian shall come into our land, and when he shall tread in our palaces, then shall we raise against him seven shepherds, and eight principal men.</p>
+            <p><strong>6</strong> And they shall waste the land of Assyria with the sword, and the land of Nimrod in the entrances thereof: and he shall deliver us from the Assyrian, when he cometh into our land, and when he treadeth within our border.</p>
+            <p><strong>7</strong> And the remnant of Jacob shall be in the midst of many peoples as dew from Jehovah, as showers upon the grass, that tarry not for man, nor wait for the sons of men.</p>
+            <p><strong>8</strong> And the remnant of Jacob shall be among the nations, in the midst of many peoples, as a lion among the beasts of the forest, as a young lion among the flocks of sheep; who, if he go through, treadeth down and teareth in pieces, and there is none to deliver.</p>
+            <p><strong>9</strong> Let thy hand be lifted up above thine adversaries, and let all thine enemies be cut off.</p>
+            <p><strong>10</strong> And it shall come to pass in that day, saith Jehovah, that I will cut off thy horses out of the midst of thee, and will destroy thy chariots:</p>
+            <p><strong>11</strong> and I will cut off the cities of thy land, and will throw down all thy strongholds.</p>
+            <p><strong>12</strong> And I will cut off witchcrafts out of thy hand; and thou shalt have no more soothsayers:</p>
+            <p><strong>13</strong> and I will cut off thy graven images and thy pillars out of the midst of thee; and thou shalt no more worship the work of thy hands;</p>
+            <p><strong>14</strong> and I will pluck up thine Asherim out of the midst of thee; and I will destroy thy cities.</p>
+            <p><strong>15</strong> And I will execute vengeance in anger and wrath upon the nations which hearkened not.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>From the heart of judgment Micah unveils the brightest promise in the book. Though the judge of Israel is struck on the cheek and the city besieged, out of Bethlehem Ephrathah, small among the clans of Judah, one will come forth to be ruler in Israel, whose goings out are from of old, from ancient times. He will stand and shepherd his flock in the strength of the LORD, in the majesty of the name of the LORD his God, and his people will dwell secure, for he will be great to the ends of the earth. He himself will be their peace. Micah then describes the remnant of Jacob scattered among many peoples—like dew and showers from the LORD that refresh without waiting on man, and like a lion among the flocks, strong and victorious over their enemies. In that day the LORD will cut off the trappings of false trust: horses and chariots, fortresses and witchcraft, carved images and sacred pillars and Asherah poles, so that his people will no longer bow to the work of their own hands. He will purge his people of idolatry and execute vengeance on the nations that would not listen.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The ruler from Bethlehem</strong> — The promised one to come from Bethlehem Ephrathah, whose goings out are from of old; he shepherds in the strength of the LORD and is our peace—fulfilled in Jesus Christ.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who raises up the Shepherd-Ruler and who in that day cuts off idols, fortresses, and witchcraft from his people, purging their false trusts.</li>
+          <li><strong>The remnant of Jacob</strong> — God's scattered people among the nations, who will be like refreshing dew from the LORD and like a strong lion, no longer bowing to the work of their hands.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Micah 5:2 (WEB)</p>
+          <p class="verse__text">But you, Bethlehem Ephrathah, being small among the clans of Judah, out of you one will come out to me that is to be ruler in Israel; whose goings out are from of old, from ancient times.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God brings his greatest gifts through small and unlikely places, like Bethlehem.</li>
+          <li>The promised ruler is no mere man; his origins are from ancient times.</li>
+          <li>Christ does not merely make peace; he himself is our peace.</li>
+          <li>True security comes when God removes our false trusts and we worship him alone.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>God works through the small.</strong> Bethlehem is “small among the clans of Judah,” yet from it the ruler comes (Micah 5:2, WEB). God delights to display his greatness through what the world overlooks.</li>
+            <li><strong>The Ruler is eternal.</strong> His “goings out are from of old, from ancient times” (Micah 5:2, WEB). This points beyond any earthly king to the eternal Son, born in time yet from of old.</li>
+            <li><strong>Christ is our peace.</strong> “He will be our peace” (Micah 5:5, WEB). The Shepherd-King does not merely arrange peace; he is, in his own person, the peace his people receive.</li>
+            <li><strong>God removes our idols.</strong> He cuts off carved images and pillars so “you shall no more worship the work of your hands” (Micah 5:13, WEB). Salvation includes being freed from false trusts.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>What is surprising about Bethlehem being the place the ruler comes from?</li>
+            <li>What do the phrases “goings out are from of old” and “he will be our peace” tell us about this ruler?</li>
+            <li>How does the New Testament identify the fulfillment of Micah 5:2 (see Matthew 2:1-6)?</li>
+            <li>Why does God cut off horses, fortresses, idols, and witchcraft in verses 10-15?</li>
+            <li>What false sources of security might God be inviting you to surrender so you can trust him alone?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>Bethlehem is a small, unremarkable town, yet from it comes the ruler of Israel (5:2). God repeatedly bypasses the great and chooses the lowly—David's village, a manger—so that the glory belongs to him and the humble are lifted up.</li>
+            <li>The ruler's goings out are from of old, from ancient times, marking him as no ordinary king but one whose origin reaches into eternity; and he will be our peace (5:2, 5). Together these point to a divine Shepherd-King who secures peace by who he is.</li>
+            <li>Matthew records that the chief priests cited Micah 5:2 to locate the Messiah's birth in Bethlehem, and that Jesus was indeed born there (Matthew 2:1-6). Micah's promise finds its direct fulfillment in Christ, the eternal Ruler and Shepherd of his people.</li>
+            <li>God removes the things his people trusted instead of him—military might, fortified cities, occult practices, and idols (5:10-14). He purges these false securities so they will worship him alone (5:13). His judgment on idolatry is also a mercy that restores true trust.</li>
+            <li>This is a personal-application question. Gently invite members to name modern “horses and fortresses”—money, status, control, achievement—that rival their trust in God. Encourage them to rest in the Shepherd-King who is their peace, and to let go of lesser refuges.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="micah-4.html">← Micah 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="micah.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="micah-6.html">Micah 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

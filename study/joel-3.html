@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Joel 3: The Valley of Decision — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Joel 3: God gathers the nations to the valley of Jehoshaphat for judgment, vindicates his scattered people, and promises a restored Jerusalem where he dwells forever." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-joel-progress" data-study-total="3">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Joel, Chapter 3
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="joel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Joel · Chapter 3</span>
+        <h1>Joel 3: The Valley of Decision</h1>
+        <p class="lead">God gathers the nations for judgment in the valley of decision, then promises a cleansed and secure Jerusalem where he dwells forever.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-3">
+            <span>Scripture — Joel Chapter 3</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-3">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-3-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-3-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-3-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-3-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Joel 3 (WEB)</p>
+            <p><strong>1</strong> “For, behold, in those days, and in that time, when I restore the fortunes of Judah and Jerusalem,</p>
+            <p><strong>2</strong> I will gather all nations, and will bring them down into the valley of Jehoshaphat; and I will execute judgment on them there for my people, and for my heritage, Israel, whom they have scattered among the nations. They have divided my land,</p>
+            <p><strong>3</strong> and have cast lots for my people, and have given a boy for a prostitute, and sold a girl for wine, that they may drink.</p>
+            <p><strong>4</strong> “Yes, and what are you to me, Tyre, and Sidon, and all the regions of Philistia? Will you repay me? And if you repay me, I will swiftly and speedily return your repayment on your own head.</p>
+            <p><strong>5</strong> Because you have taken my silver and my gold, and have carried my finest treasures into your temples,</p>
+            <p><strong>6</strong> and have sold the children of Judah and the children of Jerusalem to the sons of the Greeks, that you may remove them far from their border.</p>
+            <p><strong>7</strong> Behold, I will stir them up out of the place where you have sold them, and will return your repayment on your own head;</p>
+            <p><strong>8</strong> and I will sell your sons and your daughters into the hands of the children of Judah, and they will sell them to the men of Sheba, to a faraway nation, for Yahweh has spoken it.”</p>
+            <p><strong>9</strong> Proclaim this among the nations: “Prepare for war! Stir up the mighty men. Let all the warriors draw near. Let them come up.</p>
+            <p><strong>10</strong> Beat your plowshares into swords, and your pruning hooks into spears. Let the weak say, ‘I am strong.’</p>
+            <p><strong>11</strong> Hurry and come, all you surrounding nations, and gather yourselves together.” Cause your mighty ones to come down there, Yahweh.</p>
+            <p><strong>12</strong> “Let the nations arouse themselves, and come up to the valley of Jehoshaphat; for there will I sit to judge all the surrounding nations.</p>
+            <p><strong>13</strong> Put in the sickle; for the harvest is ripe. Come, tread, for the wine press is full, the vats overflow, for their wickedness is great.”</p>
+            <p><strong>14</strong> Multitudes, multitudes in the valley of decision! For the day of Yahweh is near, in the valley of decision.</p>
+            <p><strong>15</strong> The sun and the moon are darkened, and the stars withdraw their shining.</p>
+            <p><strong>16</strong> Yahweh will roar from Zion, and thunder from Jerusalem; and the heavens and the earth will shake; but Yahweh will be a refuge to his people, and a stronghold to the children of Israel.</p>
+            <p><strong>17</strong> “So you will know that I am Yahweh, your God, dwelling in Zion, my holy mountain. Then Jerusalem will be holy, and no strangers will pass through her any more.</p>
+            <p><strong>18</strong> It will happen in that day, that the mountains will drop down sweet wine, the hills will flow with milk, all the brooks of Judah will flow with waters, and a fountain will flow out from Yahweh’s house, and will water the valley of Shittim.</p>
+            <p><strong>19</strong> Egypt will be a desolation, and Edom will be a desolate wilderness, for the violence done to the children of Judah, because they have shed innocent blood in their land.</p>
+            <p><strong>20</strong> But Judah will be inhabited forever, and Jerusalem from generation to generation.</p>
+            <p><strong>21</strong> I will cleanse their blood, that I have not cleansed: for Yahweh dwells in Zion.”</p>
+            </div>
+            <div class="scripture-text" id="web-3-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Joel 3 (KJV)</p>
+            <p><strong>1</strong> For, behold, in those days, and in that time, when I shall bring again the captivity of Judah and Jerusalem,</p>
+            <p><strong>2</strong> I will also gather all nations, and will bring them down into the valley of Jehoshaphat, and will plead with them there for my people and for my heritage Israel, whom they have scattered among the nations, and parted my land.</p>
+            <p><strong>3</strong> And they have cast lots for my people; and have given a boy for an harlot, and sold a girl for wine, that they might drink.</p>
+            <p><strong>4</strong> Yea, and what have ye to do with me, O Tyre, and Zidon, and all the coasts of Palestine? will ye render me a recompence? and if ye recompense me, swiftly and speedily will I return your recompence upon your own head;</p>
+            <p><strong>5</strong> Because ye have taken my silver and my gold, and have carried into your temples my goodly pleasant things:</p>
+            <p><strong>6</strong> The children also of Judah and the children of Jerusalem have ye sold unto the Grecians, that ye might remove them far from their border.</p>
+            <p><strong>7</strong> Behold, I will raise them out of the place whither ye have sold them, and will return your recompence upon your own head:</p>
+            <p><strong>8</strong> And I will sell your sons and your daughters into the hand of the children of Judah, and they shall sell them to the Sabeans, to a people far off: for the Lord hath spoken it.</p>
+            <p><strong>9</strong> Proclaim ye this among the Gentiles; Prepare war, wake up the mighty men, let all the men of war draw near; let them come up:</p>
+            <p><strong>10</strong> Beat your plowshares into swords, and your pruninghooks into spears: let the weak say, I am strong.</p>
+            <p><strong>11</strong> Assemble yourselves, and come, all ye heathen, and gather yourselves together round about: thither cause thy mighty ones to come down, O Lord.</p>
+            <p><strong>12</strong> Let the heathen be wakened, and come up to the valley of Jehoshaphat: for there will I sit to judge all the heathen round about.</p>
+            <p><strong>13</strong> Put ye in the sickle, for the harvest is ripe: come, get you down; for the press is full, the fats overflow; for their wickedness is great.</p>
+            <p><strong>14</strong> Multitudes, multitudes in the valley of decision: for the day of the Lord is near in the valley of decision.</p>
+            <p><strong>15</strong> The sun and the moon shall be darkened, and the stars shall withdraw their shining.</p>
+            <p><strong>16</strong> The Lord also shall roar out of Zion, and utter his voice from Jerusalem; and the heavens and the earth shall shake: but the Lord will be the hope of his people, and the strength of the children of Israel.</p>
+            <p><strong>17</strong> So shall ye know that I am the Lord your God dwelling in Zion, my holy mountain: then shall Jerusalem be holy, and there shall no strangers pass through her any more.</p>
+            <p><strong>18</strong> And it shall come to pass in that day, that the mountains shall drop down new wine, and the hills shall flow with milk, and all the rivers of Judah shall flow with waters, and a fountain shall come forth of the house of the Lord, and shall water the valley of Shittim.</p>
+            <p><strong>19</strong> Egypt shall be a desolation, and Edom shall be a desolate wilderness, for the violence against the children of Judah, because they have shed innocent blood in their land.</p>
+            <p><strong>20</strong> But Judah shall dwell for ever, and Jerusalem from generation to generation.</p>
+            <p><strong>21</strong> For I will cleanse their blood that I have not cleansed: for the Lord dwelleth in Zion.</p>
+            </div>
+            <div class="scripture-text" id="web-3-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Joel 3 (ASV)</p>
+            <p><strong>1</strong> For, behold, in those days, and in that time, when I shall bring back the captivity of Judah and Jerusalem,</p>
+            <p><strong>2</strong> I will gather all nations, and will bring them down into the valley of Jehoshaphat; and I will execute judgment upon them there for my people and for my heritage Israel, whom they have scattered among the nations: and they have parted my land,</p>
+            <p><strong>3</strong> and have cast lots for my people, and have given a boy for a harlot, and sold a girl for wine, that they may drink.</p>
+            <p><strong>4</strong> Yea, and what are ye to me, O Tyre, and Sidon, and all the regions of Philistia? will ye render me a recompense? and if ye recompense me, swiftly and speedily will I return your recompense upon your own head.</p>
+            <p><strong>5</strong> Forasmuch as ye have taken my silver and my gold, and have carried into your temples my goodly precious things,</p>
+            <p><strong>6</strong> and have sold the children of Judah and the children of Jerusalem unto the sons of the Grecians, that ye may remove them far from their border;</p>
+            <p><strong>7</strong> behold, I will stir them up out of the place whither ye have sold them, and will return your recompense upon your own head;</p>
+            <p><strong>8</strong> and I will sell your sons and your daughters into the hand of the children of Judah, and they shall sell them to the men of Sheba, to a nation far off: for Jehovah hath spoken it.</p>
+            <p><strong>9</strong> Proclaim ye this among the nations; prepare war; stir up the mighty men; let all the men of war draw near, let them come up.</p>
+            <p><strong>10</strong> Beat your plowshares into swords, and your pruning-hooks into spears: let the weak say, I am strong.</p>
+            <p><strong>11</strong> Haste ye, and come, all ye nations round about, and gather yourselves together: thither cause thy mighty ones to come down, O Jehovah.</p>
+            <p><strong>12</strong> Let the nations bestir themselves, and come up to the valley of Jehoshaphat; for there will I sit to judge all the nations round about.</p>
+            <p><strong>13</strong> Put ye in the sickle; for the harvest is ripe: come, tread ye; for the winepress is full, the vats overflow; for their wickedness is great.</p>
+            <p><strong>14</strong> Multitudes, multitudes in the valley of decision! for the day of Jehovah is near in the valley of decision.</p>
+            <p><strong>15</strong> The sun and the moon are darkened, and the stars withdraw their shining.</p>
+            <p><strong>16</strong> And Jehovah will roar from Zion, and utter his voice from Jerusalem; and the heavens and the earth shall shake: but Jehovah will be a refuge unto his people, and a stronghold to the children of Israel.</p>
+            <p><strong>17</strong> So shall ye know that I am Jehovah your God, dwelling in Zion my holy mountain: then shall Jerusalem be holy, and there shall no strangers pass through her any more.</p>
+            <p><strong>18</strong> And it shall come to pass in that day, that the mountains shall drop down sweet wine, and the hills shall flow with milk, and all the brooks of Judah shall flow with waters; and a fountain shall come forth from the house of Jehovah, and shall water the valley of Shittim.</p>
+            <p><strong>19</strong> Egypt shall be a desolation, and Edom shall be a desolate wilderness, for the violence done to the children of Judah, because they have shed innocent blood in their land.</p>
+            <p><strong>20</strong> But Judah shall abide for ever, and Jerusalem from generation to generation.</p>
+            <p><strong>21</strong> And I will cleanse their blood, that I have not cleansed: for Jehovah dwelleth in Zion.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>In the day when God restores the fortunes of Judah and Jerusalem, he gathers all nations into the valley of Jehoshaphat to enter into judgment with them. He charges them with scattering his people, dividing his land, casting lots for his people, and trading children for prostitutes and wine. He confronts Tyre, Sidon, and Philistia for plundering his treasures and selling the people of Judah to far-off nations, promising to turn their deeds back on their own heads. The nations are summoned to prepare for war—to beat plowshares into swords—and to come up to the valley of decision, where the Lord himself will sit in judgment as the harvest is reaped and the winepress trodden. Multitudes gather in the valley of decision, for the Day of the Lord is near; the sun and moon are darkened, and the Lord roars from Zion. Yet for his people the Lord is a refuge and a stronghold. The book ends in glory: God dwells in Zion, his holy mountain; Jerusalem is made holy; the mountains drip sweet wine, the hills flow with milk, and a fountain flows from the house of the Lord. Judah is inhabited forever, and the Lord cleanses the bloodguilt of his people.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who restores Judah's fortunes, judges the nations in the valley of decision, roars from Zion as a refuge for his people, and dwells forever in his holy mountain.</li>
+          <li><strong>Judah and Jerusalem</strong> — God's heritage, scattered and sold by the nations, whom God vindicates, cleanses, and establishes forever in a secure and holy city.</li>
+          <li><strong>The nations</strong> — Tyre, Sidon, Philistia, Egypt, Edom, and all the surrounding peoples, gathered to the valley of Jehoshaphat to be judged for how they treated God's people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Joel 3:16 (WEB)</p>
+          <p class="verse__text">Yahweh will roar from Zion, and thunder from Jerusalem; and the heavens and the earth will shake; but Yahweh will be a refuge to his people, and a stronghold to the children of Israel.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God sees and remembers every wrong done to his people, and he will set it right.</li>
+          <li>The Day of the Lord is a valley of decision—a moment that calls for a response.</li>
+          <li>The same God who judges the nations is a refuge and stronghold for his own.</li>
+          <li>God's final word is restoration: a cleansed people and his abiding presence among them.</li>
+          <li>God's dwelling with his people in Zion points ahead to the new creation and the fountain of life in Christ.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-3">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-3">
+            <ul class="lesson-list">
+            <li><strong>God defends his people's cause.</strong> He gathers the nations “and will execute judgment on them there for my people” (Joel 3:2, WEB). Injustice against God's own does not go unanswered.</li>
+            <li><strong>The Day of the Lord demands a decision.</strong> “Multitudes, multitudes in the valley of decision!” (Joel 3:14, WEB). Before the roaring God of Zion, no one remains neutral.</li>
+            <li><strong>God is a refuge for his people.</strong> When the Lord roars from Zion, “Yahweh will be a refuge to his people, and a stronghold to the children of Israel” (Joel 3:16, WEB). The Judge of the nations shelters his own.</li>
+            <li><strong>God's presence is the final blessing.</strong> “So you will know that I am Yahweh, your God, dwelling in Zion, my holy mountain” (Joel 3:17, WEB). The goal of restoration is God himself dwelling with his people.</li>
+            <li><strong>God cleanses what we cannot.</strong> “I will cleanse their blood, that I have not cleansed: for Yahweh dwells in Zion” (Joel 3:21, WEB). The promise of a forgiven, holy people finds its fullness in Christ.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-3">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-3">
+            <ol class="study-questions">
+            <li>Why does God bring the nations into the valley of Jehoshaphat, and what charges does he bring against them (verses 2-6)?</li>
+            <li>What is meant by the “valley of decision” (3:14), and why is the Day of the Lord described that way?</li>
+            <li>How can the Lord be both a roaring Judge and a refuge in the same verse (3:16)?</li>
+            <li>What does the picture of Joel 3:17-18—God dwelling in Zion, mountains dripping wine, a fountain flowing from his house—tell us about the future God is preparing?</li>
+            <li>Joel ends with God cleansing his people and dwelling among them. Where do you long for God's cleansing and his nearness in your own life?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-3">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-3">
+            <ol class="study-questions">
+            <li>God gathers the nations to judge them for scattering his people, dividing his land, casting lots for them, and selling children (3:2-6). He holds the nations accountable for their cruelty and injustice toward his heritage. The judgment is the just response of a God who sees and remembers every wrong.</li>
+            <li>The “valley of decision” is where the nations are gathered for God's verdict (3:14); the harvest and winepress images (3:13) picture judgment ripe and ready. The Day of the Lord is decisive—it settles accounts and reveals where each person stands before God. There is no remaining undecided.</li>
+            <li>The same roar that shakes heaven and earth in judgment is shelter for God's people (3:16). To those who oppose him, God's power is terror; to those who are his, it is safety. The God before whom the nations tremble is the very stronghold his people run to.</li>
+            <li>It pictures a restored creation: God himself dwelling among a holy people, abundance overflowing, and a life-giving fountain flowing from his house (3:17-18). It points beyond Joel's day to the new creation, where the river of life flows from God's throne and he dwells with his people forever (Revelation 22:1-3).</li>
+            <li>This is a personal-application question. Joel's hope is a cleansed people enjoying God's presence (3:17, 21). As leader, invite members to bring areas needing cleansing to the Lord, and to rest in the promise that, in Christ, God forgives fully and draws near to dwell with those who are his.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="joel-2.html">← Joel 2</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="joel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

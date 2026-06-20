@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Amos 9: Judgment and David's Fallen Tent — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Amos 9: no one escapes God's judgment, yet the book ends with the promise to restore David's fallen tent and plant his people." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-amos-progress" data-study-total="9">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Amos, Chapter 9
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="amos.html">← All Chapters</a>
+        <span class="study-meta">The Book of Amos · Chapter 9</span>
+        <h1>Amos 9: Judgment and David's Fallen Tent</h1>
+        <p class="lead">No one can flee God's hand in judgment, yet the book ends with the promise to rebuild David's fallen tent and plant a restored people forever.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-9">
+            <span>Scripture — Amos Chapter 9</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-9">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-9-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-9-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-9-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-9-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Amos 9 (WEB)</p>
+            <p><strong>1</strong> I saw the Lord standing beside the altar, and he said, “Strike the tops of the pillars, that the thresholds may shake; and break them in pieces on the head of all of them; and I will kill the last of them with the sword: there shall not one of them flee away, and there shall not one of them escape.</p>
+            <p><strong>2</strong> Though they dig into Sheol, there my hand will take them; and though they climb up to heaven, there I will bring them down.</p>
+            <p><strong>3</strong> Though they hide themselves in the top of Carmel, I will search and take them out there; and though they be hidden from my sight in the bottom of the sea, there I will command the serpent, and it will bite them.</p>
+            <p><strong>4</strong> Though they go into captivity before their enemies, there I will command the sword, and it will kill them. I will set my eyes on them for evil, and not for good.</p>
+            <p><strong>5</strong> For the Lord, Yahweh of Armies, is he who touches the land and it melts, and all who dwell in it will mourn; and it will rise up wholly like the River, and will sink again, like the River of Egypt.</p>
+            <p><strong>6</strong> It is he who builds his rooms in the heavens, and has founded his vault on the earth; he who calls for the waters of the sea, and pours them out on the surface of the earth; Yahweh is his name.</p>
+            <p><strong>7</strong> Are you not like the children of the Ethiopians to me, children of Israel?” says Yahweh. “Haven’t I brought up Israel out of the land of Egypt, and the Philistines from Caphtor, and the Syrians from Kir?</p>
+            <p><strong>8</strong> Behold, the eyes of the Lord Yahweh are on the sinful kingdom, and I will destroy it from off the surface of the earth; except that I will not utterly destroy the house of Jacob,” says Yahweh.</p>
+            <p><strong>9</strong> “For, behold, I will command, and I will sift the house of Israel among all the nations, as grain is sifted in a sieve, yet not the least kernel will fall on the earth.</p>
+            <p><strong>10</strong> All the sinners of my people will die by the sword, who say, ‘Evil won’t overtake nor meet us.’</p>
+            <p><strong>11</strong> In that day I will raise up the tent of David who is fallen, and close up its breaches, and I will raise up its ruins, and I will build it as in the days of old;</p>
+            <p><strong>12</strong> that they may possess the remnant of Edom, and all the nations who are called by my name,” says Yahweh who does this.</p>
+            <p><strong>13</strong> “Behold, the days come,” says Yahweh, “that the plowman shall overtake the reaper, and the one treading grapes him who sows seed; and sweet wine will drip from the mountains, and flow from the hills.</p>
+            <p><strong>14</strong> I will bring my people Israel back from captivity, and they will rebuild the ruined cities, and inhabit them; and they will plant vineyards, and drink wine from them. They shall also make gardens, and eat their fruit.</p>
+            <p><strong>15</strong> I will plant them on their land, and they will no more be plucked up out of their land which I have given them,” says Yahweh your God.</p>
+            </div>
+            <div class="scripture-text" id="web-9-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Amos 9 (KJV)</p>
+            <p><strong>1</strong> I saw the Lord standing upon the altar: and he said, Smite the lintel of the door, that the posts may shake: and cut them in the head, all of them; and I will slay the last of them with the sword: he that fleeth of them shall not flee away, and he that escapeth of them shall not be delivered.</p>
+            <p><strong>2</strong> Though they dig into hell, thence shall mine hand take them; though they climb up to heaven, thence will I bring them down:</p>
+            <p><strong>3</strong> And though they hide themselves in the top of Carmel, I will search and take them out thence; and though they be hid from my sight in the bottom of the sea, thence will I command the serpent, and he shall bite them:</p>
+            <p><strong>4</strong> And though they go into captivity before their enemies, thence will I command the sword, and it shall slay them: and I will set mine eyes upon them for evil, and not for good.</p>
+            <p><strong>5</strong> And the Lord God of hosts is he that toucheth the land, and it shall melt, and all that dwell therein shall mourn: and it shall rise up wholly like a flood; and shall be drowned, as by the flood of Egypt.</p>
+            <p><strong>6</strong> It is he that buildeth his stories in the heaven, and hath founded his troop in the earth; he that calleth for the waters of the sea, and poureth them out upon the face of the earth: The Lord is his name.</p>
+            <p><strong>7</strong> Are ye not as children of the Ethiopians unto me, O children of Israel? saith the Lord. Have not I brought up Israel out of the land of Egypt? and the Philistines from Caphtor, and the Syrians from Kir?</p>
+            <p><strong>8</strong> Behold, the eyes of the Lord God are upon the sinful kingdom, and I will destroy it from off the face of the earth; saving that I will not utterly destroy the house of Jacob, saith the Lord.</p>
+            <p><strong>9</strong> For, lo, I will command, and I will sift the house of Israel among all nations, like as corn is sifted in a sieve, yet shall not the least grain fall upon the earth.</p>
+            <p><strong>10</strong> All the sinners of my people shall die by the sword, which say, The evil shall not overtake nor prevent us.</p>
+            <p><strong>11</strong> In that day will I raise up the tabernacle of David that is fallen, and close up the breaches thereof; and I will raise up his ruins, and I will build it as in the days of old:</p>
+            <p><strong>12</strong> That they may possess the remnant of Edom, and of all the heathen, which are called by my name, saith the Lord that doeth this.</p>
+            <p><strong>13</strong> Behold, the days come, saith the Lord, that the plowman shall overtake the reaper, and the treader of grapes him that soweth seed; and the mountains shall drop sweet wine, and all the hills shall melt.</p>
+            <p><strong>14</strong> And I will bring again the captivity of my people of Israel, and they shall build the waste cities, and inhabit them; and they shall plant vineyards, and drink the wine thereof; they shall also make gardens, and eat the fruit of them.</p>
+            <p><strong>15</strong> And I will plant them upon their land, and they shall no more be pulled up out of their land which I have given them, saith the Lord thy God.</p>
+            </div>
+            <div class="scripture-text" id="web-9-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Amos 9 (ASV)</p>
+            <p><strong>1</strong> I saw the Lord standing beside the altar: and he said, Smite the capitals, that the thresholds may shake; and break them in pieces on the head of all of them; and I will slay the last of them with the sword: there shall not one of them flee away, and there shall not one of them escape.</p>
+            <p><strong>2</strong> Though they dig into Sheol, thence shall my hand take them; and though they climb up to heaven, thence will I bring them down.</p>
+            <p><strong>3</strong> And though they hide themselves in the top of Carmel, I will search and take them out thence; and though they be hid from my sight in the bottom of the sea, thence will I command the serpent, and it shall bite them.</p>
+            <p><strong>4</strong> And though they go into captivity before their enemies, thence will I command the sword, and it shall slay them: and I will set mine eyes upon them for evil, and not for good.</p>
+            <p><strong>5</strong> For the Lord, Jehovah of hosts, ishe that toucheth the land and it melteth, and all that dwell therein shall mourn; and it shall rise up wholly like the River, and shall sink again, like the River of Egypt;</p>
+            <p><strong>6</strong> it is he that buildeth his chambers in the heavens, and hath founded his vault upon the earth; he that calleth for the waters of the sea, and poureth them out upon the face of the earth; Jehovah is his name.</p>
+            <p><strong>7</strong> Are ye not as the children of the Ethiopians unto me, O children of Israel? saith Jehovah. Have not I brought up Israel out of the land of Egypt, and the Philistines from Caphtor, and the Syrians from Kir?</p>
+            <p><strong>8</strong> Behold, the eyes of the Lord Jehovah are upon the sinful kingdom, and I will destroy it from off the face of the earth; save that I will not utterly destroy the house of Jacob, saith Jehovah.</p>
+            <p><strong>9</strong> For, lo, I will command, and I will sift the house of Israel among all the nations, like as grain is sifted in a sieve, yet shall not the least kernel fall upon the earth.</p>
+            <p><strong>10</strong> All the sinners of my people shall die by the sword, who say, The evil shall not overtake nor meet us.</p>
+            <p><strong>11</strong> In that day will I raise up the tabernacle of David that is fallen, and close up the breaches thereof; and I will raise up its ruins, and I will build it as in the days of old;</p>
+            <p><strong>12</strong> that they may possess the remnant of Edom, and all the nations that are called by my name, saith Jehovah that doeth this.</p>
+            <p><strong>13</strong> Behold, the days come, saith Jehovah, that the plowman shall overtake the reaper, and the treader of grapes him that soweth seed; and the mountains shall drop sweet wine, and all the hills shall melt.</p>
+            <p><strong>14</strong> And I will bring back the captivity of my people Israel, and they shall build the waste cities, and inhabit them; and they shall plant vineyards, and drink the wine thereof; they shall also make gardens, and eat the fruit of them.</p>
+            <p><strong>15</strong> And I will plant them upon their land, and they shall no more be plucked up out of their land which I have given them, saith Jehovah thy God.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Amos sees the Lord standing beside the altar, commanding it to be struck down on the heads of the worshipers; not one will escape. In soaring poetry God declares that no hiding place can shield the guilty—not Sheol below, not heaven above, not the heights of Carmel nor the depths of the sea. He is the Lord of Armies who touches the land and it melts, who builds his rooms in the heavens and pours out the waters of the sea. He reminds Israel that bringing them out of Egypt does not make them untouchable; he guides the movements of all nations. The sinful kingdom will be destroyed, yet God adds a crucial promise: he will not utterly destroy the house of Jacob. He will sift Israel among the nations like grain in a sieve, so that not one true kernel is lost. Then the tone turns wholly to hope. “In that day I will raise up the tent of David who is fallen,” God says, to repair its breaches, gather the remnant of Edom and all the nations called by his name, and bring lasting restoration: the plowman overtaking the reaper, sweet wine dripping from the mountains, ruined cities rebuilt, and a people planted on their land never to be uprooted again.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh of Armies (the LORD)</strong> — The God from whom none can flee, who judges the sinful kingdom yet promises to preserve a remnant, rebuild David's fallen tent, and plant his people forever.</li>
+          <li><strong>Amos</strong> — The prophet who sees the Lord standing beside the altar in judgment and delivers both the warning and the closing promise of restoration.</li>
+          <li><strong>The house of Jacob and the remnant</strong> — The sinful kingdom to be sifted among the nations, yet not utterly destroyed; the faithful kernel God will gather and restore.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Amos 9:11 (WEB)</p>
+          <p class="verse__text">In that day I will raise up the tent of David who is fallen, and close up its breaches, and I will raise up its ruins, and I will build it as in the days of old;</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>There is no hiding place from God; his reach extends from Sheol to the heavens.</li>
+          <li>God governs the movements of all nations, and his covenant people are not exempt from his justice.</li>
+          <li>In judgment God preserves a remnant; not one true kernel of his people is lost.</li>
+          <li>God's final word is restoration: the fallen tent of David rebuilt and the nations gathered to him.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-9">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-9">
+            <ul class="lesson-list">
+            <li><strong>No one can escape God's presence.</strong> “Though they dig into Sheol, there my hand will take them; and though they climb up to heaven, there I will bring them down” (Amos 9:2, WEB). God is inescapable in judgment and in grace.</li>
+            <li><strong>God preserves a faithful remnant.</strong> He will sift Israel among the nations, “yet not the least kernel will fall on the earth” (Amos 9:9, WEB). Even in judgment, God watches over his own.</li>
+            <li><strong>God rebuilds what sin has ruined.</strong> “In that day I will raise up the tent of David who is fallen” (Amos 9:11, WEB). The story does not end in rubble but in restoration through David's line.</li>
+            <li><strong>God's restored kingdom gathers the nations.</strong> He acts so that they may possess “all the nations who are called by my name” (Amos 9:12, WEB)—a promise the apostles saw fulfilled in the church (Acts 15:16-17).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-9">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-9">
+            <ol class="study-questions">
+            <li>What does the sweeping picture in verses 1-4 teach about the impossibility of escaping God?</li>
+            <li>Why does God remind Israel that he also brought up the Philistines and the Syrians (verse 7)?</li>
+            <li>What hope is contained in the image of sifting Israel so that “not the least kernel will fall” (verse 9)?</li>
+            <li>What does the promise to “raise up the tent of David who is fallen” (verse 11) mean, especially in light of Acts 15:16-17?</li>
+            <li>How does ending the book of Amos with restoration and hope change the way you have read its warnings of judgment?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-9">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-9">
+            <ol class="study-questions">
+            <li>From Sheol to heaven, from Carmel's heights to the sea's depths, there is nowhere to flee God's hand (9:1-4). The passage shows God's complete sovereignty; no guilty person can hide from him. The same truth that terrifies the unrepentant comforts the faithful, for the God we cannot escape also never loses us.</li>
+            <li>By saying he brought up not only Israel but also the Philistines and Syrians (9:7), God punctures Israel's presumption. The exodus was a gift, not a guarantee of immunity. God rules the histories of all peoples, and his covenant people are held accountable rather than exempt.</li>
+            <li>Sifting separates the worthless from the valuable, yet God promises that “not the least kernel will fall” (9:9). Even as he shakes the nation in judgment, he carefully preserves every true grain. This is a picture of grace within judgment: God will not lose a single one of his own.</li>
+            <li>The promise to rebuild David's fallen tent (9:11) looks beyond the ruined kingdom to a restored throne. The apostles, gathered at the Jerusalem Council, saw this fulfilled in Jesus, the Son of David, and in the gathering of the Gentiles into his kingdom (Acts 15:16-17). The hope of Amos lands in Christ and his church.</li>
+            <li>This is a personal-application question. Help the group see that the severe warnings of Amos are framed by mercy: God judges sin truly, yet his ultimate purpose is to restore. Invite them to read the whole book—and their own lives—in light of the risen Son of David, in whom every promise finds its yes.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="amos-8.html">← Amos 8</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="amos.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
