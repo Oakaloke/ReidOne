@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Daniel 4: The King Humbled Like a Beast — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Daniel 4: Nebuchadnezzar dreams of a felled tree, is humbled to live like a beast, and is restored when he praises the Most High." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-daniel-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Daniel, Chapter 4
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="daniel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Daniel · Chapter 4</span>
+        <h1>Daniel 4: The King Humbled Like a Beast</h1>
+        <p class="lead">Nebuchadnezzar dreams of a great tree cut down, is driven from men in madness, and is restored when he honors the King of heaven.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-4">
+            <span>Scripture — Daniel Chapter 4</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-4">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-4-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-4-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-4-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-4-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Daniel 4 (WEB)</p>
+            <p><strong>1</strong> Nebuchadnezzar the king, to all the peoples, nations, and languages, who dwell in all the earth: Peace be multiplied to you.</p>
+            <p><strong>2</strong> It has seemed good to me to show the signs and wonders that the Most High God has worked toward me.</p>
+            <p><strong>3</strong> How great are his signs! and how mighty are his wonders! his kingdom is an everlasting kingdom, and his dominion is from generation to generation.</p>
+            <p><strong>4</strong> I, Nebuchadnezzar, was at rest in my house, and flourishing in my palace.</p>
+            <p><strong>5</strong> I saw a dream which made me afraid; and the thoughts on my bed and the visions of my head troubled me.</p>
+            <p><strong>6</strong> Therefore made I a decree to bring in all the wise men of Babylon before me, that they might make known to me the interpretation of the dream.</p>
+            <p><strong>7</strong> Then came in the magicians, the enchanters, the Chaldeans, and the soothsayers; and I told the dream before them; but they did not make known to me its interpretation.</p>
+            <p><strong>8</strong> But at the last Daniel came in before me, whose name was Belteshazzar, according to the name of my god, and in whom is the spirit of the holy gods: and I told the dream before him, saying,</p>
+            <p><strong>9</strong> Belteshazzar, master of the magicians, because I know that the spirit of the holy gods is in you, and no secret troubles you, tell me the visions of my dream that I have seen, and its interpretation.</p>
+            <p><strong>10</strong> Thus were the visions of my head on my bed: I saw, and behold, a tree in the midst of the earth; and its height was great.</p>
+            <p><strong>11</strong> The tree grew, and was strong, and its height reached to the sky, and its sight to the end of all the earth.</p>
+            <p><strong>12</strong> The leaves of it were beautiful, and its fruit much, and in it was food for all: the animals of the field had shadow under it, and the birds of the sky lived in its branches, and all flesh was fed from it.</p>
+            <p><strong>13</strong> I saw in the visions of my head on my bed, and behold, a watcher and a holy one came down from the sky.</p>
+            <p><strong>14</strong> He cried aloud, and said thus, Cut down the tree, and cut off its branches, shake off its leaves, and scatter its fruit: let the animals get away from under it, and the fowls from its branches.</p>
+            <p><strong>15</strong> Nevertheless leave the stump of its roots in the earth, even with a band of iron and brass, in the tender grass of the field; and let it be wet with the dew of the sky: and let his portion be with the animals in the grass of the earth:</p>
+            <p><strong>16</strong> let his heart be changed from man’s, and let an animal’s heart be given to him; and let seven times pass over him.</p>
+            <p><strong>17</strong> The sentence is by the decree of the watchers, and the demand by the word of the holy ones; to the intent that the living may know that the Most High rules in the kingdom of men, and gives it to whomever he will, and sets up over it the lowest of men.</p>
+            <p><strong>18</strong> This dream I, king Nebuchadnezzar, have seen; and you, Belteshazzar, declare the interpretation, because all the wise men of my kingdom are not able to make known to me the interpretation; but you are able; for the spirit of the holy gods is in you.</p>
+            <p><strong>19</strong> Then Daniel, whose name was Belteshazzar, was stricken mute for a while, and his thoughts troubled him. The king answered, Belteshazzar, don’t let the dream, or the interpretation, trouble you. Belteshazzar answered, My lord, the dream be to those who hate you, and its interpretation to your adversaries.</p>
+            <p><strong>20</strong> The tree that you saw, which grew, and was strong, whose height reached to the sky, and its sight to all the earth;</p>
+            <p><strong>21</strong> whose leaves were beautiful, and its fruit much, and in it was food for all; under which the animals of the field lived, and on whose branches the birds of the sky had their habitation:</p>
+            <p><strong>22</strong> it is you, O king, that are grown and become strong; for your greatness is grown, and reaches to the sky, and your dominion to the end of the earth.</p>
+            <p><strong>23</strong> Whereas the king saw a watcher and a holy one coming down from the sky, and saying, Cut down the tree, and destroy it; nevertheless leave the stump of its roots in the earth, even with a band of iron and brass, in the tender grass of the field, and let it be wet with the dew of the sky: and let his portion be with the animals of the field, until seven times pass over him;</p>
+            <p><strong>24</strong> this is the interpretation, O king, and it is the decree of the Most High, which has come on my lord the king:</p>
+            <p><strong>25</strong> that you shall be driven from men, and your dwelling shall be with the animals of the field, and you shall be made to eat grass as oxen, and shall be wet with the dew of the sky, and seven times shall pass over you; until you know that the Most High rules in the kingdom of men, and gives it to whomever he will.</p>
+            <p><strong>26</strong> Whereas they commanded to leave the stump of the roots of the tree; your kingdom shall be sure to you, after that you shall have known that the heavens do rule.</p>
+            <p><strong>27</strong> Therefore, O king, let my counsel be acceptable to you, and break off your sins by righteousness, and your iniquities by showing mercy to the poor; if there may be a lengthening of your tranquility.</p>
+            <p><strong>28</strong> All this came on the king Nebuchadnezzar.</p>
+            <p><strong>29</strong> At the end of twelve months he was walking in the royal palace of Babylon.</p>
+            <p><strong>30</strong> The king spoke and said, Is not this great Babylon, which I have built for the royal dwelling place, by the might of my power and for the glory of my majesty?</p>
+            <p><strong>31</strong> While the word was in the king’s mouth, a voice came from the sky, saying, “O king Nebuchadnezzar, to you it is spoken: The kingdom has departed from you.</p>
+            <p><strong>32</strong> You shall be driven from men; and your dwelling shall be with the animals of the field. You shall be made to eat grass as oxen. Seven times shall pass over you, until you know that the Most High rules in the kingdom of men, and gives it to whomever he will.”</p>
+            <p><strong>33</strong> This was fulfilled the same hour on Nebuchadnezzar. He was driven from men, and ate grass as oxen, and his body was wet with the dew of the sky, until his hair had grown like eagles’ feathers, and his nails like birds’ claws.</p>
+            <p><strong>34</strong> At the end of the days I, Nebuchadnezzar, lifted up my eyes to heaven, and my understanding returned to me, and I blessed the Most High, and I praised and honored him who lives forever; for his dominion is an everlasting dominion, and his kingdom from generation to generation.</p>
+            <p><strong>35</strong> All the inhabitants of the earth are reputed as nothing; and he does according to his will in the army of heaven, and among the inhabitants of the earth; and no one can stay his hand, or ask him, What are you doing?</p>
+            <p><strong>36</strong> At the same time my understanding returned to me; and for the glory of my kingdom, my majesty and brightness returned to me; and my counselors and my lords sought to me; and I was established in my kingdom, and excellent greatness was added to me.</p>
+            <p><strong>37</strong> Now I, Nebuchadnezzar, praise and extol and honor the King of heaven; for all his works are truth, and his ways justice; and those who walk in pride he is able to abase.</p>
+            </div>
+            <div class="scripture-text" id="web-4-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Daniel 4 (KJV)</p>
+            <p><strong>1</strong> Nebuchadnezzar the king, unto all people, nations, and languages, that dwell in all the earth; Peace be multiplied unto you.</p>
+            <p><strong>2</strong> I thought it good to shew the signs and wonders that the high God hath wrought toward me.</p>
+            <p><strong>3</strong> How great are his signs! and how mighty are his wonders! his kingdom is an everlasting kingdom, and his dominion is from generation to generation.</p>
+            <p><strong>4</strong> I Nebuchadnezzar was at rest in mine house, and flourishing in my palace:</p>
+            <p><strong>5</strong> I saw a dream which made me afraid, and the thoughts upon my bed and the visions of my head troubled me.</p>
+            <p><strong>6</strong> Therefore made I a decree to bring in all the wise men of Babylon before me, that they might make known unto me the interpretation of the dream.</p>
+            <p><strong>7</strong> Then came in the magicians, the astrologers, the Chaldeans, and the soothsayers: and I told the dream before them; but they did not make known unto me the interpretation thereof.</p>
+            <p><strong>8</strong> But at the last Daniel came in before me, whose name was Belteshazzar, according to the name of my god, and in whom is the spirit of the holy gods: and before him I told the dream, saying,</p>
+            <p><strong>9</strong> O Belteshazzar, master of the magicians, because I know that the spirit of the holy gods is in thee, and no secret troubleth thee, tell me the visions of my dream that I have seen, and the interpretation thereof.</p>
+            <p><strong>10</strong> Thus were the visions of mine head in my bed; I saw, and behold a tree in the midst of the earth, and the height thereof was great.</p>
+            <p><strong>11</strong> The tree grew, and was strong, and the height thereof reached unto heaven, and the sight thereof to the end of all the earth:</p>
+            <p><strong>12</strong> The leaves thereof were fair, and the fruit thereof much, and in it was meat for all: the beasts of the field had shadow under it, and the fowls of the heaven dwelt in the boughs thereof, and all flesh was fed of it.</p>
+            <p><strong>13</strong> I saw in the visions of my head upon my bed, and, behold, a watcher and an holy one came down from heaven;</p>
+            <p><strong>14</strong> He cried aloud, and said thus, Hew down the tree, and cut off his branches, shake off his leaves, and scatter his fruit: let the beasts get away from under it, and the fowls from his branches:</p>
+            <p><strong>15</strong> Nevertheless leave the stump of his roots in the earth, even with a band of iron and brass, in the tender grass of the field; and let it be wet with the dew of heaven, and let his portion be with the beasts in the grass of the earth:</p>
+            <p><strong>16</strong> Let his heart be changed from man’s, and let a beast’s heart be given unto him; and let seven times pass over him.</p>
+            <p><strong>17</strong> This matter is by the decree of the watchers, and the demand by the word of the holy ones: to the intent that the living may know that the most High ruleth in the kingdom of men, and giveth it to whomsoever he will, and setteth up over it the basest of men.</p>
+            <p><strong>18</strong> This dream I king Nebuchadnezzar have seen. Now thou, O Belteshazzar, declare the interpretation thereof, forasmuch as all the wise men of my kingdom are not able to make known unto me the interpretation: but thou art able; for the spirit of the holy gods is in thee.</p>
+            <p><strong>19</strong> Then Daniel, whose name was Belteshazzar, was astonied for one hour, and his thoughts troubled him. The king spake, and said, Belteshazzar, let not the dream, or the interpretation thereof, trouble thee. Belteshazzar answered and said, My lord, the dream be to them that hate thee, and the interpretation thereof to thine enemies.</p>
+            <p><strong>20</strong> The tree that thou sawest, which grew, and was strong, whose height reached unto the heaven, and the sight thereof to all the earth;</p>
+            <p><strong>21</strong> Whose leaves were fair, and the fruit thereof much, and in it was meat for all; under which the beasts of the field dwelt, and upon whose branches the fowls of the heaven had their habitation:</p>
+            <p><strong>22</strong> It is thou, O king, that art grown and become strong: for thy greatness is grown, and reacheth unto heaven, and thy dominion to the end of the earth.</p>
+            <p><strong>23</strong> And whereas the king saw a watcher and an holy one coming down from heaven, and saying, Hew the tree down, and destroy it; yet leave the stump of the roots thereof in the earth, even with a band of iron and brass, in the tender grass of the field; and let it be wet with the dew of heaven, and let his portion be with the beasts of the field, till seven times pass over him;</p>
+            <p><strong>24</strong> This is the interpretation, O king, and this is the decree of the most High, which is come upon my lord the king:</p>
+            <p><strong>25</strong> That they shall drive thee from men, and thy dwelling shall be with the beasts of the field, and they shall make thee to eat grass as oxen, and they shall wet thee with the dew of heaven, and seven times shall pass over thee, till thou know that the most High ruleth in the kingdom of men, and giveth it to whomsoever he will.</p>
+            <p><strong>26</strong> And whereas they commanded to leave the stump of the tree roots; thy kingdom shall be sure unto thee, after that thou shalt have known that the heavens do rule.</p>
+            <p><strong>27</strong> Wherefore, O king, let my counsel be acceptable unto thee, and break off thy sins by righteousness, and thine iniquities by shewing mercy to the poor; if it may be a lengthening of thy tranquillity.</p>
+            <p><strong>28</strong> All this came upon the king Nebuchadnezzar.</p>
+            <p><strong>29</strong> At the end of twelve months he walked in the palace of the kingdom of Babylon.</p>
+            <p><strong>30</strong> The king spake, and said, Is not this great Babylon, that I have built for the house of the kingdom by the might of my power, and for the honour of my majesty?</p>
+            <p><strong>31</strong> While the word was in the king’s mouth, there fell a voice from heaven, saying, O king Nebuchadnezzar, to thee it is spoken; The kingdom is departed from thee.</p>
+            <p><strong>32</strong> And they shall drive thee from men, and thy dwelling shall be with the beasts of the field: they shall make thee to eat grass as oxen, and seven times shall pass over thee, until thou know that the most High ruleth in the kingdom of men, and giveth it to whomsoever he will.</p>
+            <p><strong>33</strong> The same hour was the thing fulfilled upon Nebuchadnezzar: and he was driven from men, and did eat grass as oxen, and his body was wet with the dew of heaven, till his hairs were grown like eagles’ feathers, and his nails like birds’ claws.</p>
+            <p><strong>34</strong> And at the end of the days I Nebuchadnezzar lifted up mine eyes unto heaven, and mine understanding returned unto me, and I blessed the most High, and I praised and honoured him that liveth for ever, whose dominion is an everlasting dominion, and his kingdom is from generation to generation:</p>
+            <p><strong>35</strong> And all the inhabitants of the earth are reputed as nothing: and he doeth according to his will in the army of heaven, and among the inhabitants of the earth: and none can stay his hand, or say unto him, What doest thou?</p>
+            <p><strong>36</strong> At the same time my reason returned unto me; and for the glory of my kingdom, mine honour and brightness returned unto me; and my counsellors and my lords sought unto me; and I was established in my kingdom, and excellent majesty was added unto me.</p>
+            <p><strong>37</strong> Now I Nebuchadnezzar praise and extol and honour the King of heaven, all whose works are truth, and his ways judgment: and those that walk in pride he is able to abase.</p>
+            </div>
+            <div class="scripture-text" id="web-4-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Daniel 4 (ASV)</p>
+            <p><strong>1</strong> Nebuchadnezzar the king, unto all the peoples, nations, and languages, that dwell in all the earth: Peace be multiplied unto you.</p>
+            <p><strong>2</strong> It hath seemed good unto me to show the signs and wonders that the Most High God hath wrought toward me.</p>
+            <p><strong>3</strong> How great are his signs! and how mighty are his wonders! his kingdom is an everlasting kingdom, and his dominion is from generation to generation.</p>
+            <p><strong>4</strong> I, Nebuchadnezzar, was at rest in my house, and flourishing in my palace.</p>
+            <p><strong>5</strong> I saw a dream which made me afraid; and the thoughts upon my bed and the visions of my head troubled me.</p>
+            <p><strong>6</strong> Therefore made I a decree to bring in all the wise men of Babylon before me, that they might make known unto me the interpretation of the dream.</p>
+            <p><strong>7</strong> Then came in the magicians, the enchanters, the Chaldeans, and the soothsayers; and I told the dream before them; but they did not make known unto me the interpretation thereof.</p>
+            <p><strong>8</strong> But at the last Daniel came in before me, whose name was Belteshazzar, according to the name of my god, and in whom is the spirit of the holy gods: and I told the dream before him, saying,</p>
+            <p><strong>9</strong> O Belteshazzar, master of the magicians, because I know that the spirit of the holy gods is in thee, and no secret troubleth thee, tell me the visions of my dream that I have seen, and the interpretation thereof.</p>
+            <p><strong>10</strong> Thus were the visions of my head upon my bed: I saw, and, behold, a tree in the midst of the earth; and the height thereof was great.</p>
+            <p><strong>11</strong> The tree grew, and was strong, and the height thereof reached unto heaven, and the sight thereof to the end of all the earth.</p>
+            <p><strong>12</strong> The leaves thereof were fair, and the fruit thereof much, and in it was food for all: the beasts of the field had shadow under it, and the birds of the heavens dwelt in the branches thereof, and all flesh was fed from it.</p>
+            <p><strong>13</strong> I saw in the visions of my head upon my bed, and, behold, a watcher and a holy one came down from heaven.</p>
+            <p><strong>14</strong> He cried aloud, and said thus, Hew down the tree, and cut off its branches, shake off its leaves, and scatter its fruit: let the beasts get away from under it, and the fowls from its branches.</p>
+            <p><strong>15</strong> Nevertheless leave the stump of its roots in the earth, even with a band of iron and brass, in the tender grass of the field; and let it be wet with the dew of heaven: and let his portion be with the beasts in the grass of the earth:</p>
+            <p><strong>16</strong> let his heart be changed from man’s, and let a beast’s heart be given unto him; and let seven times pass over him.</p>
+            <p><strong>17</strong> The sentence is by the decree of the watchers, and the demand by the word of the holy ones; to the intent that the living may know that the Most High ruleth in the kingdom of men, and giveth it to whomsoever he will, and setteth up over it the lowest of men.</p>
+            <p><strong>18</strong> This dream I, king Nebuchadnezzar, have seen; and thou, O Belteshazzar, declare the interpretation, forasmuch as all the wise men of my kingdom are not able to make known unto me the interpretation; but thou art able; for the spirit of the holy gods is in thee.</p>
+            <p><strong>19</strong> Then Daniel, whose name was Belteshazzar, was stricken dumb for a while, and his thoughts troubled him. The king answered and said, Belteshazzar, let not the dream, or the interpretation, trouble thee. Belteshazzar answered and said, My lord, the dream be to them that hate thee, and the interpretation thereof to thine adversaries.</p>
+            <p><strong>20</strong> The tree that thou sawest, which grew, and was strong, whose height reached unto heaven, and the sight thereof to all the earth;</p>
+            <p><strong>21</strong> whose leaves were fair, and the fruit thereof much, and in it was food for all; under which the beasts of the field dwelt, and upon whose branches the birds of the heavens had their habitation:</p>
+            <p><strong>22</strong> it is thou, O king, that art grown and become strong; for thy greatness is grown, and reacheth unto heaven, and thy dominion to the end of the earth.</p>
+            <p><strong>23</strong> And whereas the king saw a watcher and a holy one coming down from heaven, and saying, Hew down the tree, and destroy it; nevertheless leave the stump of the roots thereof in the earth, even with a band of iron and brass, in the tender grass of the field, and let it be wet with the dew of heaven: and let his portion be with the beasts of the field, till seven times pass over him;</p>
+            <p><strong>24</strong> this is the interpretation, O king, and it is the decree of the Most High, which is come upon my lord the king:</p>
+            <p><strong>25</strong> that thou shalt be driven from men, and thy dwelling shall be with the beasts of the field, and thou shalt be made to eat grass as oxen, and shalt be wet with the dew of heaven, and seven times shall pass over thee; till thou know that the Most High ruleth in the kingdom of men, and giveth it to whomsoever he will.</p>
+            <p><strong>26</strong> And whereas they commanded to leave the stump of the roots of the tree; thy kingdom shall be sure unto thee, after that thou shalt have known that the heavens do rule.</p>
+            <p><strong>27</strong> Wherefore, O king, let my counsel be acceptable unto thee, and break off thy sins by righteousness, and thine iniquities by showing mercy to the poor; if there may be a lengthening of thy tranquillity.</p>
+            <p><strong>28</strong> All this came upon the king Nebuchadnezzar.</p>
+            <p><strong>29</strong> At the end of twelve months he was walking in the royal palace of Babylon.</p>
+            <p><strong>30</strong> The king spake and said, Is not this great Babylon, which I have built for the royal dwelling-place, by the might of my power and for the glory of my majesty?</p>
+            <p><strong>31</strong> While the word was in the king’s mouth, there fell a voice from heaven, saying, O king Nebuchadnezzar, to thee it is spoken: The kingdom is departed from thee:</p>
+            <p><strong>32</strong> and thou shalt be driven from men; and thy dwelling shall be with the beasts of the field; thou shalt be made to eat grass as oxen; and seven times shall pass over thee; until thou know that the Most High ruleth in the kingdom of men, and giveth it to whomsoever he will.</p>
+            <p><strong>33</strong> The same hour was the thing fulfilled upon Nebuchadnezzar: and he was driven from men, and did eat grass as oxen, and his body was wet with the dew of heaven, till his hair was grown like eagles’ feathers, and his nails like birds’ claws.</p>
+            <p><strong>34</strong> And at the end of the days I, Nebuchadnezzar, lifted up mine eyes unto heaven, and mine understanding returned unto me, and I blessed the Most High, and I praised and honored him that liveth for ever; for his dominion is an everlasting dominion, and his kingdom from generation to generation;</p>
+            <p><strong>35</strong> and all the inhabitants of the earth are reputed as nothing; and he doeth according to his will in the army of heaven, and among the inhabitants of the earth; and none can stay his hand, or say unto him, What doest thou?</p>
+            <p><strong>36</strong> At the same time mine understanding returned unto me; and for the glory of my kingdom, my majesty and brightness returned unto me; and my counsellors and my lords sought unto me; and I was established in my kingdom, and excellent greatness was added unto me.</p>
+            <p><strong>37</strong> Now I, Nebuchadnezzar, praise and extol and honor the King of heaven; for all his works are truth, and his ways justice; and those that walk in pride he is able to abase.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Nebuchadnezzar himself tells this story, addressed to all the peoples of his realm, praising the Most High whose kingdom is everlasting. He recounts a terrifying dream that none of his wise men could interpret until Daniel came. He had seen a great tree, tall enough to be seen to the ends of the earth and feeding all flesh, suddenly ordered cut down by a watcher from heaven, its stump left bound until seven times passed over it. Daniel, troubled, tells the king the truth: he is the tree, and he will be driven from men to live like an animal, eating grass, until he learns that the Most High rules in the kingdom of men and gives it to whomever he will. Daniel urges him to break off his sins by righteousness. A year later, as the king boasts over the greatness of Babylon he has built, the word falls: his reason leaves him, and he lives among the beasts until his hair grows like eagles' feathers. At the end of the days he lifts his eyes to heaven, his understanding returns, and he blesses and honors the Most High whose dominion endures from generation to generation. His kingdom is restored, and he praises the King of heaven, who is able to abase those who walk in pride.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Nebuchadnezzar</strong> — The proud king who narrates his own humbling, is driven from men to live like a beast, and is restored when he lifts his eyes to heaven and honors the Most High.</li>
+          <li><strong>Daniel (Belteshazzar)</strong> — The interpreter who tells the king the troubling truth of his dream and counsels him to turn from sin and show mercy to the poor.</li>
+          <li><strong>The Most High God</strong> — The God whose kingdom is everlasting, who rules in the kingdom of men, humbles the proud, and restores the king who finally honors him.</li>
+          <li><strong>The watcher from heaven</strong> — The holy one who descends in the dream to decree the felling of the tree, declaring that the Most High gives the kingdom to whomever he will.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Daniel 4:25 (WEB)</p>
+          <p class="verse__text">that you shall be driven from men, and your dwelling shall be with the animals of the field, and you shall be made to eat grass as oxen, and shall be wet with the dew of the sky, and seven times shall pass over you; until you know that the Most High rules in the kingdom of men, and gives it to whomever he will.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Pride sets us up for a fall, but God humbles in order to restore.</li>
+          <li>All earthly greatness is held on loan from the Most High, who alone gives the kingdom.</li>
+          <li>God patiently warns before he judges, leaving room for repentance.</li>
+          <li>True restoration begins when we lift our eyes from ourselves to heaven.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-4">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-4">
+            <ul class="lesson-list">
+            <li><strong>God rules over every kingdom.</strong> “The Most High rules in the kingdom of men, and gives it to whomever he will” (Daniel 4:25, WEB). The mightiest monarch holds power only by God's permission.</li>
+            <li><strong>Pride invites God's discipline.</strong> The fall comes as the king boasts, “Is not this great Babylon, which I have built” (Daniel 4:30, WEB). Self-exaltation provokes the God who abases the proud.</li>
+            <li><strong>God warns in mercy.</strong> Daniel urges the king to “break off your sins by righteousness” (Daniel 4:27, WEB). Judgment is announced in advance to give space for repentance.</li>
+            <li><strong>Restored eyes look upward.</strong> When the king “lifted up my eyes to heaven,” his understanding returned (Daniel 4:34, WEB). Healing begins where pride ends and worship starts.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-4">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-4">
+            <ol class="study-questions">
+            <li>What does the image of the great tree reveal about Nebuchadnezzar's reign and its limits?</li>
+            <li>Why does Daniel counsel the king to turn from sin, and what does that show about God's heart?</li>
+            <li>What finally brings the king to his senses, and how does he describe God afterward?</li>
+            <li>How does this chapter expand the lesson that “the Most High rules in the kingdom of men”?</li>
+            <li>Where might pride be quietly at work in your own heart, and how does this story call you to humility?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-4">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-4">
+            <ol class="study-questions">
+            <li>The tree pictures the king's greatness, shading and feeding all—but a tree can be felled by a word from heaven (4:10-14, 22). His glory is real yet entirely dependent on God's permission. The vision warns that height without humility invites a fall.</li>
+            <li>Daniel pleads with the king to turn from sin and show mercy to the poor (4:27), revealing that God prefers repentance to ruin. The warning itself is an act of grace. God's heart is to restore, not merely to punish.</li>
+            <li>Only when the king lifts his eyes to heaven does his reason return, and he blesses the Most High whose dominion is everlasting (4:34-37). Humility, not cleverness, restores him. He ends praising the God who is able to abase the proud.</li>
+            <li>Here the lesson is driven home in the king's own experience: he must live it, not merely hear it. Sovereignty over kingdoms includes the power to humble and restore a king. The chapter personalizes the book's central theme.</li>
+            <li>This is a personal-application question. Invite members to consider where they take credit that belongs to God or trust their own “great Babylon.” As leader, frame humility as freedom, and point to the God who lifts up the lowly.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="daniel-3.html">← Daniel 3</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="daniel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="daniel-5.html">Daniel 5 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

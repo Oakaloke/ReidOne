@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 35: The Mountain of Vengeance — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 35: the Lord sets his face against Mount Seir, that is Edom, for its perpetual hatred and greed toward the land of Israel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 35
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 35</span>
+        <h1>Ezekiel 35: The Mountain of Vengeance</h1>
+        <p class="lead">Mount Seir, that is Edom, nursed perpetual hatred against Israel and coveted its land, so the Lord turns its violence back upon itself.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-35">
+            <span>Scripture — Ezekiel Chapter 35</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-35">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-35-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-35-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-35-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-35-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 35 (WEB)</p>
+            <p><strong>1</strong> Moreover Yahweh’s word came to me, saying,</p>
+            <p><strong>2</strong> Son of man, set your face against Mount Seir, and prophesy against it,</p>
+            <p><strong>3</strong> and tell it, Thus says the Lord Yahweh: Behold, I am against you, Mount Seir, and I will stretch out my hand against you, and I will make you a desolation and an astonishment.</p>
+            <p><strong>4</strong> I will lay your cities waste, and you shall be desolate; and you shall know that I am Yahweh.</p>
+            <p><strong>5</strong> Because you have had a perpetual hostility, and have given over the children of Israel to the power of the sword in the time of their calamity, in the time of the iniquity of the end;</p>
+            <p><strong>6</strong> therefore, as I live, says the Lord Yahweh, I will prepare you for blood, and blood shall pursue you: since you have not hated blood, therefore blood shall pursue you.</p>
+            <p><strong>7</strong> Thus will I make Mount Seir an astonishment and a desolation; and I will cut off from it him who passes through and him who returns.</p>
+            <p><strong>8</strong> I will fill its mountains with its slain: in your hills and in your valleys and in all your watercourses shall they fall who are slain with the sword.</p>
+            <p><strong>9</strong> I will make you a perpetual desolation, and your cities shall not be inhabited; and you shall know that I am Yahweh.</p>
+            <p><strong>10</strong> Because you have said, These two nations and these two countries shall be mine, and we will possess it; whereas Yahweh was there:</p>
+            <p><strong>11</strong> therefore, as I live, says the Lord Yahweh, I will do according to your anger, and according to your envy which you have shown out of your hatred against them; and I will make myself known among them, when I shall judge you.</p>
+            <p><strong>12</strong> You shall know that I, Yahweh, have heard all your insults which you have spoken against the mountains of Israel, saying, They are laid desolate, they have been given us to devour.</p>
+            <p><strong>13</strong> You have magnified yourselves against me with your mouth, and have multiplied your words against me: I have heard it.</p>
+            <p><strong>14</strong> Thus says the Lord Yahweh: When the whole earth rejoices, I will make you desolate.</p>
+            <p><strong>15</strong> As you rejoiced over the inheritance of the house of Israel, because it was desolate, so will I do to you: you shall be desolate, Mount Seir, and all Edom, even all of it; and they shall know that I am Yahweh.</p>
+            </div>
+            <div class="scripture-text" id="web-35-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 35 (KJV)</p>
+            <p><strong>1</strong> Moreover the word of the Lord came unto me, saying,</p>
+            <p><strong>2</strong> Son of man, set thy face against mount Seir, and prophesy against it,</p>
+            <p><strong>3</strong> And say unto it, Thus saith the Lord God; Behold, O mount Seir, I am against thee, and I will stretch out mine hand against thee, and I will make thee most desolate.</p>
+            <p><strong>4</strong> I will lay thy cities waste, and thou shalt be desolate, and thou shalt know that I am the Lord.</p>
+            <p><strong>5</strong> Because thou hast had a perpetual hatred, and hast shed the blood of the children of Israel by the force of the sword in the time of their calamity, in the time that their iniquity had an end:</p>
+            <p><strong>6</strong> Therefore, as I live, saith the Lord God, I will prepare thee unto blood, and blood shall pursue thee: sith thou hast not hated blood, even blood shall pursue thee.</p>
+            <p><strong>7</strong> Thus will I make mount Seir most desolate, and cut off from it him that passeth out and him that returneth.</p>
+            <p><strong>8</strong> And I will fill his mountains with his slain men: in thy hills, and in thy valleys, and in all thy rivers, shall they fall that are slain with the sword.</p>
+            <p><strong>9</strong> I will make thee perpetual desolations, and thy cities shall not return: and ye shall know that I am the Lord.</p>
+            <p><strong>10</strong> Because thou hast said, These two nations and these two countries shall be mine, and we will possess it; whereas the Lord was there:</p>
+            <p><strong>11</strong> Therefore, as I live, saith the Lord God, I will even do according to thine anger, and according to thine envy which thou hast used out of thy hatred against them; and I will make myself known among them, when I have judged thee.</p>
+            <p><strong>12</strong> And thou shalt know that I am the Lord, and that I have heard all thy blasphemies which thou hast spoken against the mountains of Israel, saying, They are laid desolate, they are given us to consume.</p>
+            <p><strong>13</strong> Thus with your mouth ye have boasted against me, and have multiplied your words against me: I have heard them.</p>
+            <p><strong>14</strong> Thus saith the Lord God; When the whole earth rejoiceth, I will make thee desolate.</p>
+            <p><strong>15</strong> As thou didst rejoice at the inheritance of the house of Israel, because it was desolate, so will I do unto thee: thou shalt be desolate, O mount Seir, and all Idumea, even all of it: and they shall know that I am the Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-35-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 35 (ASV)</p>
+            <p><strong>1</strong> Moreover the word of Jehovah came unto me, saying,</p>
+            <p><strong>2</strong> Son of man, set thy face against mount Seir, and prophesy against it,</p>
+            <p><strong>3</strong> and say unto it, Thus saith the Lord Jehovah: Behold, I am against thee, O mount Seir, and I will stretch out my hand against thee, and I will make thee a desolation and an astonishment.</p>
+            <p><strong>4</strong> I will lay thy cities waste, and thou shalt be desolate; and thou shalt know that I am Jehovah.</p>
+            <p><strong>5</strong> Because thou hast had a perpetual enmity, and hast given over the children of Israel to the power of the sword in the time of their calamity, in the time of the iniquity of the end;</p>
+            <p><strong>6</strong> therefore, as I live, saith the Lord Jehovah, I will prepare thee unto blood, and blood shall pursue thee: since thou hast not hated blood, therefore blood shall pursue thee.</p>
+            <p><strong>7</strong> Thus will I make mount Seir an astonishment and a desolation; and I will cut off from it him that passeth through and him that returneth.</p>
+            <p><strong>8</strong> And I will fill its mountains with its slain: in thy hills and in thy valleys and in all thy watercourses shall they fall that are slain with the sword.</p>
+            <p><strong>9</strong> I will make thee a perpetual desolation, and thy cities shall not be inhabited; and ye shall know that I am Jehovah.</p>
+            <p><strong>10</strong> Because thou hast said, These two nations and these two countries shall be mine, and we will possess it; whereas Jehovah was there:</p>
+            <p><strong>11</strong> therefore, as I live, saith the Lord Jehovah, I will do according to thine anger, and according to thine envy which thou hast showed out of thy hatred against them; and I will make myself known among them, when I shall judge thee.</p>
+            <p><strong>12</strong> And thou shalt know that I, Jehovah, have heard all thy revilings which thou hast spoken against the mountains of Israel, saying, They are laid desolate, they are given us to devour.</p>
+            <p><strong>13</strong> And ye have magnified yourselves against me with your mouth, and have multiplied your words against me: I have heard it.</p>
+            <p><strong>14</strong> Thus saith the Lord Jehovah: When the whole earth rejoiceth, I will make thee desolate.</p>
+            <p><strong>15</strong> As thou didst rejoice over the inheritance of the house of Israel, because it was desolate, so will I do unto thee: thou shalt be desolate, O mount Seir, and all Edom, even all of it; and they shall know that I am Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The Lord tells Ezekiel to set his face against Mount Seir, the mountain land of Edom, and prophesy against it. Edom is charged with a perpetual hostility toward Israel, handing God's people over to the sword in the time of their calamity. Because Edom did not shrink from bloodshed, blood will pursue it; the Lord will make Mount Seir a desolation and an astonishment, cutting off all who pass through. A further charge follows: Edom said, “These two nations and these two countries shall be mine, and we will possess it,” greedily eyeing Israel and Judah for the taking—and this in spite of the fact that “Yahweh was there.” Edom magnified itself with proud words against God and against the mountains of Israel, gloating that the land was given over to be devoured, and the Lord declares that he heard every insult. So while the whole earth rejoices, God will make Edom desolate, repaying its envy and hatred. Just as Edom rejoiced over the desolation of Israel's inheritance, so it will be made desolate, and all Edom with it will know that he is the Lord. The chapter sets the dark backdrop against which the bright restoration of Israel's mountains will shine in the next.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who sets his face against Mount Seir, who heard every proud insult against Israel, and who turns Edom's bloodshed and greed back on itself.</li>
+          <li><strong>Mount Seir / Edom</strong> — The neighboring nation, descended from Esau, that nursed perpetual hatred against Israel, coveted its land, and gloated over its calamity.</li>
+          <li><strong>The mountains of Israel</strong> — The land Edom insulted and longed to seize, which the Lord defends because he himself was there among his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 35:10 (WEB)</p>
+          <p class="verse__text">Because you have said, These two nations and these two countries shall be mine, and we will possess it; whereas Yahweh was there:</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Long-held, nursed hatred is a grievous sin in the eyes of God.</li>
+          <li>God hears the proud and spiteful words we imagine go unnoticed.</li>
+          <li>Coveting what belongs to others, especially God's people, invites his judgment.</li>
+          <li>The measure we use against others can become the measure used against us.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-35">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-35">
+            <ul class="lesson-list">
+            <li><strong>Perpetual hatred provokes God's judgment.</strong> Edom is condemned for its “perpetual hostility” and for giving Israel over to the sword (Ezekiel 35:5, WEB). Cherished bitterness hardens into guilt before God.</li>
+            <li><strong>God hears our words against others.</strong> “I, Yahweh, have heard all your insults which you have spoken” (Ezekiel 35:12, WEB). Nothing we say in pride or spite escapes the Lord's notice.</li>
+            <li><strong>Greed forgets that the Lord is present.</strong> Edom plotted to possess the land “whereas Yahweh was there” (Ezekiel 35:10, WEB). To covet what God protects is to ignore his very presence.</li>
+            <li><strong>God repays in kind.</strong> “As you rejoiced over the inheritance of the house of Israel… so will I do to you” (Ezekiel 35:15, WEB). The judgment fits the crime; spiteful joy returns on the spiteful.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-35">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-35">
+            <ol class="study-questions">
+            <li>What is Edom (Mount Seir) charged with in this chapter?</li>
+            <li>What does it mean that Edom plotted to seize the land “whereas Yahweh was there” (35:10)?</li>
+            <li>Why does God emphasize that he heard Edom's insults and proud words?</li>
+            <li>How does the principle of God repaying Edom “as you rejoiced” work itself out?</li>
+            <li>Is there a long-held grudge or bitterness in your heart that God is calling you to release?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-35">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-35">
+            <ol class="study-questions">
+            <li>Edom is charged with perpetual hostility, handing Israel over to the sword in its calamity, coveting Israel and Judah's land, and magnifying itself with proud, gloating words against God's people (35:5-13). Its sin is not a single act but a settled, long-nursed hatred and greed.</li>
+            <li>Edom imagined it could simply take Israel and Judah for itself, ignoring that the Lord himself dwelt among his people and laid claim to the land (35:10). To covet what God guards is the height of arrogance; it treats the living God as if he were absent and irrelevant.</li>
+            <li>God stresses that he “heard all your insults” (35:12-13) to expose the folly of speaking spitefully as if no one is listening. Help the group see that our words—even those muttered in pride or malice—are never hidden from God, who weighs the heart behind them.</li>
+            <li>Edom rejoiced over Israel's desolation, so God will make Edom desolate (35:15). The judgment mirrors the sin: the spiteful gladness Edom felt at another's ruin returns on its own head. It is a sober reminder that the attitudes we harbor toward others shape what comes back to us.</li>
+            <li>This is a gentle personal-application question. Invite members to examine quietly whether they nurse any long-standing resentment, and to consider releasing it to God, who judges justly. Point to the freedom of forgiveness and to Christ, who absorbed our enmity to make peace.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-34.html">← Ezekiel 34</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-36.html">Ezekiel 36 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

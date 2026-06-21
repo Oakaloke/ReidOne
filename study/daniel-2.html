@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Daniel 2: The Dream of the Great Image — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Daniel 2: Nebuchadnezzar demands the recovery of a forgotten dream, and God reveals to Daniel a great image and an everlasting kingdom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-daniel-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Daniel, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="daniel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Daniel · Chapter 2</span>
+        <h1>Daniel 2: The Dream of the Great Image</h1>
+        <p class="lead">When no one can recover the king's forgotten dream, God reveals it to Daniel and shows a kingdom that will never be destroyed.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Daniel Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Daniel 2 (WEB)</p>
+            <p><strong>1</strong> In the second year of the reign of Nebuchadnezzar, Nebuchadnezzar dreamed dreams; and his spirit was troubled, and his sleep went from him.</p>
+            <p><strong>2</strong> Then the king commanded to call the magicians, and the enchanters, and the sorcerers, and the Chaldeans, to tell the king his dreams. So they came in and stood before the king.</p>
+            <p><strong>3</strong> The king said to them, I have dreamed a dream, and my spirit is troubled to know the dream.</p>
+            <p><strong>4</strong> Then spoke the Chaldeans to the king in the Syrian language, O king, live forever: tell your servants the dream, and we will show the interpretation.</p>
+            <p><strong>5</strong> The king answered the Chaldeans, The thing is gone from me: if you don’t make known to me the dream and its interpretation, you shall be cut in pieces, and your houses shall be made a dunghill.</p>
+            <p><strong>6</strong> But if you show the dream and its interpretation, you shall receive of me gifts and rewards and great honor: therefore show me the dream and its interpretation.</p>
+            <p><strong>7</strong> They answered the second time and said, Let the king tell his servants the dream, and we will show the interpretation.</p>
+            <p><strong>8</strong> The king answered, I know of a certainty that you would gain time, because you see the thing is gone from me.</p>
+            <p><strong>9</strong> But if you don’t make known to me the dream, there is but one law for you; for you have prepared lying and corrupt words to speak before me, until the time be changed: therefore tell me the dream, and I shall know that you can show me its interpretation.</p>
+            <p><strong>10</strong> The Chaldeans answered before the king, and said, There is not a man on the earth who can show the king’s matter, because no king, lord, or ruler, has asked such a thing of any magician, or enchanter, or Chaldean.</p>
+            <p><strong>11</strong> It is a rare thing that the king requires, and there is no other who can show it before the king, except the gods, whose dwelling is not with flesh.</p>
+            <p><strong>12</strong> For this cause the king was angry and very furious, and commanded to destroy all the wise men of Babylon.</p>
+            <p><strong>13</strong> So the decree went out, and the wise men were to be slain; and they sought Daniel and his companions to be slain.</p>
+            <p><strong>14</strong> Then Daniel returned answer with counsel and prudence to Arioch the captain of the king’s guard, who was gone out to kill the wise men of Babylon;</p>
+            <p><strong>15</strong> he answered Arioch the king’s captain, Why is the decree so urgent from the king? Then Arioch made the thing known to Daniel.</p>
+            <p><strong>16</strong> Daniel went in, and desired of the king that he would appoint him a time, and he would show the king the interpretation.</p>
+            <p><strong>17</strong> Then Daniel went to his house, and made the thing known to Hananiah, Mishael, and Azariah, his companions:</p>
+            <p><strong>18</strong> that they would desire mercies of the God of heaven concerning this secret; that Daniel and his companions should not perish with the rest of the wise men of Babylon.</p>
+            <p><strong>19</strong> Then was the secret revealed to Daniel in a vision of the night. Then Daniel blessed the God of heaven.</p>
+            <p><strong>20</strong> Daniel answered, Blessed be the name of God forever and ever; for wisdom and might are his.</p>
+            <p><strong>21</strong> He changes the times and the seasons; he removes kings, and sets up kings; he gives wisdom to the wise, and knowledge to those who have understanding;</p>
+            <p><strong>22</strong> he reveals the deep and secret things; he knows what is in the darkness, and the light dwells with him.</p>
+            <p><strong>23</strong> I thank you, and praise you, you God of my fathers, who have given me wisdom and might, and have now made known to me what we desired of you; for you have made known to us the king’s matter.</p>
+            <p><strong>24</strong> Therefore Daniel went in to Arioch, whom the king had appointed to destroy the wise men of Babylon; he went and said thus to him: Don’t destroy the wise men of Babylon; bring me in before the king, and I will show to the king the interpretation.</p>
+            <p><strong>25</strong> Then Arioch brought in Daniel before the king in haste, and said thus to him, I have found a man of the children of the captivity of Judah, who will make known to the king the interpretation.</p>
+            <p><strong>26</strong> The king answered Daniel, whose name was Belteshazzar, Are you able to make known to me the dream which I have seen, and its interpretation?</p>
+            <p><strong>27</strong> Daniel answered before the king, and said, The secret which the king has demanded can neither wise men, enchanters, magicians, nor soothsayers, show to the king;</p>
+            <p><strong>28</strong> but there is a God in heaven who reveals secrets, and he has made known to the king Nebuchadnezzar what shall be in the latter days. Your dream, and the visions of your head on your bed, are these:</p>
+            <p><strong>29</strong> as for you, O king, your thoughts came on your bed, what should happen hereafter; and he who reveals secrets has made known to you what shall happen.</p>
+            <p><strong>30</strong> But as for me, this secret is not revealed to me for any wisdom that I have more than any living, but to the intent that the interpretation may be made known to the king, and that you may know the thoughts of your heart.</p>
+            <p><strong>31</strong> You, O king, saw, and behold, a great image. This image, which was mighty, and whose brightness was excellent, stood before you; and its aspect was awesome.</p>
+            <p><strong>32</strong> As for this image, its head was of fine gold, its breast and its arms of silver, its belly and its thighs of brass,</p>
+            <p><strong>33</strong> its legs of iron, its feet part of iron, and part of clay.</p>
+            <p><strong>34</strong> You saw until a stone was cut out without hands, which struck the image on its feet that were of iron and clay, and broke them in pieces.</p>
+            <p><strong>35</strong> Then was the iron, the clay, the brass, the silver, and the gold, broken in pieces together, and became like the chaff of the summer threshing floors; and the wind carried them away, so that no place was found for them: and the stone that struck the image became a great mountain, and filled the whole earth.</p>
+            <p><strong>36</strong> This is the dream; and we will tell its interpretation before the king.</p>
+            <p><strong>37</strong> You, O king, are king of kings, to whom the God of heaven has given the kingdom, the power, and the strength, and the glory;</p>
+            <p><strong>38</strong> and wherever the children of men dwell, the animals of the field and the birds of the sky has he given into your hand, and has made you to rule over them all: you are the head of gold.</p>
+            <p><strong>39</strong> After you shall arise another kingdom inferior to you; and another third kingdom of brass, which shall bear rule over all the earth.</p>
+            <p><strong>40</strong> The fourth kingdom shall be strong as iron, because iron breaks in pieces and subdues all things; and as iron that crushes all these, shall it break in pieces and crush.</p>
+            <p><strong>41</strong> Whereas you saw the feet and toes, part of potters’ clay, and part of iron, it shall be a divided kingdom; but there shall be in it of the strength of the iron, because you saw the iron mixed with miry clay.</p>
+            <p><strong>42</strong> As the toes of the feet were part of iron, and part of clay, so the kingdom shall be partly strong, and partly broken.</p>
+            <p><strong>43</strong> Whereas you saw the iron mixed with miry clay, they shall mingle themselves with the seed of men; but they shall not cling to one another, even as iron does not mingle with clay.</p>
+            <p><strong>44</strong> In the days of those kings shall the God of heaven set up a kingdom which shall never be destroyed, nor shall its sovereignty be left to another people; but it shall break in pieces and consume all these kingdoms, and it shall stand forever.</p>
+            <p><strong>45</strong> Because you saw that a stone was cut out of the mountain without hands, and that it broke in pieces the iron, the brass, the clay, the silver, and the gold; the great God has made known to the king what shall happen hereafter: and the dream is certain, and its interpretation sure.</p>
+            <p><strong>46</strong> Then the king Nebuchadnezzar fell on his face, and worshiped Daniel, and commanded that they should offer an offering and sweet odors to him.</p>
+            <p><strong>47</strong> The king answered to Daniel, and said, Of a truth your God is the God of gods, and the Lord of kings, and a revealer of secrets, since you have been able to reveal this secret.</p>
+            <p><strong>48</strong> Then the king made Daniel great, and gave him many great gifts, and made him to rule over the whole province of Babylon, and to be chief governor over all the wise men of Babylon.</p>
+            <p><strong>49</strong> Daniel requested of the king, and he appointed Shadrach, Meshach, and Abednego, over the affairs of the province of Babylon: but Daniel was in the gate of the king.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Daniel 2 (KJV)</p>
+            <p><strong>1</strong> And in the second year of the reign of Nebuchadnezzar Nebuchadnezzar dreamed dreams, wherewith his spirit was troubled, and his sleep brake from him.</p>
+            <p><strong>2</strong> Then the king commanded to call the magicians, and the astrologers, and the sorcerers, and the Chaldeans, for to shew the king his dreams. So they came and stood before the king.</p>
+            <p><strong>3</strong> And the king said unto them, I have dreamed a dream, and my spirit was troubled to know the dream.</p>
+            <p><strong>4</strong> Then spake the Chaldeans to the king in Syriack, O king, live for ever: tell thy servants the dream, and we will shew the interpretation.</p>
+            <p><strong>5</strong> The king answered and said to the Chaldeans, The thing is gone from me: if ye will not make known unto me the dream, with the interpretation thereof, ye shall be cut in pieces, and your houses shall be made a dunghill.</p>
+            <p><strong>6</strong> But if ye shew the dream, and the interpretation thereof, ye shall receive of me gifts and rewards and great honour: therefore shew me the dream, and the interpretation thereof.</p>
+            <p><strong>7</strong> They answered again and said, Let the king tell his servants the dream, and we will shew the interpretation of it.</p>
+            <p><strong>8</strong> The king answered and said, I know of certainty that ye would gain the time, because ye see the thing is gone from me.</p>
+            <p><strong>9</strong> But if ye will not make known unto me the dream, there is but one decree for you: for ye have prepared lying and corrupt words to speak before me, till the time be changed: therefore tell me the dream, and I shall know that ye can shew me the interpretation thereof.</p>
+            <p><strong>10</strong> The Chaldeans answered before the king, and said, There is not a man upon the earth that can shew the king’s matter: therefore there is no king, lord, nor ruler, that asked such things at any magician, or astrologer, or Chaldean.</p>
+            <p><strong>11</strong> And it is a rare thing that the king requireth, and there is none other that can shew it before the king, except the gods, whose dwelling is not with flesh.</p>
+            <p><strong>12</strong> For this cause the king was angry and very furious, and commanded to destroy all the wise men of Babylon.</p>
+            <p><strong>13</strong> And the decree went forth that the wise men should be slain; and they sought Daniel and his fellows to be slain.</p>
+            <p><strong>14</strong> Then Daniel answered with counsel and wisdom to Arioch the captain of the king’s guard, which was gone forth to slay the wise men of Babylon:</p>
+            <p><strong>15</strong> He answered and said to Arioch the king’s captain, Why is the decree so hasty from the king? Then Arioch made the thing known to Daniel.</p>
+            <p><strong>16</strong> Then Daniel went in, and desired of the king that he would give him time, and that he would shew the king the interpretation.</p>
+            <p><strong>17</strong> Then Daniel went to his house, and made the thing known to Hananiah, Mishael, and Azariah, his companions:</p>
+            <p><strong>18</strong> That they would desire mercies of the God of heaven concerning this secret; that Daniel and his fellows should not perish with the rest of the wise men of Babylon.</p>
+            <p><strong>19</strong> Then was the secret revealed unto Daniel in a night vision. Then Daniel blessed the God of heaven.</p>
+            <p><strong>20</strong> Daniel answered and said, Blessed be the name of God for ever and ever: for wisdom and might are his:</p>
+            <p><strong>21</strong> And he changeth the times and the seasons: he removeth kings, and setteth up kings: he giveth wisdom unto the wise, and knowledge to them that know understanding:</p>
+            <p><strong>22</strong> He revealeth the deep and secret things: he knoweth what is in the darkness, and the light dwelleth with him.</p>
+            <p><strong>23</strong> I thank thee, and praise thee, O thou God of my fathers, who hast given me wisdom and might, and hast made known unto me now what we desired of thee: for thou hast now made known unto us the king’s matter.</p>
+            <p><strong>24</strong> Therefore Daniel went in unto Arioch, whom the king had ordained to destroy the wise men of Babylon: he went and said thus unto him; Destroy not the wise men of Babylon: bring me in before the king, and I will shew unto the king the interpretation.</p>
+            <p><strong>25</strong> Then Arioch brought in Daniel before the king in haste, and said thus unto him, I have found a man of the captives of Judah, that will make known unto the king the interpretation.</p>
+            <p><strong>26</strong> The king answered and said to Daniel, whose name was Belteshazzar, Art thou able to make known unto me the dream which I have seen, and the interpretation thereof?</p>
+            <p><strong>27</strong> Daniel answered in the presence of the king, and said, The secret which the king hath demanded cannot the wise men, the astrologers, the magicians, the soothsayers, shew unto the king;</p>
+            <p><strong>28</strong> But there is a God in heaven that revealeth secrets, and maketh known to the king Nebuchadnezzar what shall be in the latter days. Thy dream, and the visions of thy head upon thy bed, are these;</p>
+            <p><strong>29</strong> As for thee, O king, thy thoughts came into thy mind upon thy bed, what should come to pass hereafter: and he that revealeth secrets maketh known to thee what shall come to pass.</p>
+            <p><strong>30</strong> But as for me, this secret is not revealed to me for any wisdom that I have more than any living, but for their sakes that shall make known the interpretation to the king, and that thou mightest know the thoughts of thy heart.</p>
+            <p><strong>31</strong> Thou, O king, sawest, and behold a great image. This great image, whose brightness was excellent, stood before thee; and the form thereof was terrible.</p>
+            <p><strong>32</strong> This image’s head was of fine gold, his breast and his arms of silver, his belly and his thighs of brass,</p>
+            <p><strong>33</strong> His legs of iron, his feet part of iron and part of clay.</p>
+            <p><strong>34</strong> Thou sawest till that a stone was cut out without hands, which smote the image upon his feet that were of iron and clay, and brake them to pieces.</p>
+            <p><strong>35</strong> Then was the iron, the clay, the brass, the silver, and the gold, broken to pieces together, and became like the chaff of the summer threshingfloors; and the wind carried them away, that no place was found for them: and the stone that smote the image became a great mountain, and filled the whole earth.</p>
+            <p><strong>36</strong> This is the dream; and we will tell the interpretation thereof before the king.</p>
+            <p><strong>37</strong> Thou, O king, art a king of kings: for the God of heaven hath given thee a kingdom, power, and strength, and glory.</p>
+            <p><strong>38</strong> And wheresoever the children of men dwell, the beasts of the field and the fowls of the heaven hath he given into thine hand, and hath made thee ruler over them all. Thou art this head of gold.</p>
+            <p><strong>39</strong> And after thee shall arise another kingdom inferior to thee, and another third kingdom of brass, which shall bear rule over all the earth.</p>
+            <p><strong>40</strong> And the fourth kingdom shall be strong as iron: forasmuch as iron breaketh in pieces and subdueth all things: and as iron that breaketh all these, shall it break in pieces and bruise.</p>
+            <p><strong>41</strong> And whereas thou sawest the feet and toes, part of potters’ clay, and part of iron, the kingdom shall be divided; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay.</p>
+            <p><strong>42</strong> And as the toes of the feet were part of iron, and part of clay, so the kingdom shall be partly strong, and partly broken.</p>
+            <p><strong>43</strong> And whereas thou sawest iron mixed with miry clay, they shall mingle themselves with the seed of men: but they shall not cleave one to another, even as iron is not mixed with clay.</p>
+            <p><strong>44</strong> And in the days of these kings shall the God of heaven set up a kingdom, which shall never be destroyed: and the kingdom shall not be left to other people, but it shall break in pieces and consume all these kingdoms, and it shall stand for ever.</p>
+            <p><strong>45</strong> Forasmuch as thou sawest that the stone was cut out of the mountain without hands, and that it brake in pieces the iron, the brass, the clay, the silver, and the gold; the great God hath made known to the king what shall come to pass hereafter: and the dream is certain, and the interpretation thereof sure.</p>
+            <p><strong>46</strong> Then the king Nebuchadnezzar fell upon his face, and worshipped Daniel, and commanded that they should offer an oblation and sweet odours unto him.</p>
+            <p><strong>47</strong> The king answered unto Daniel, and said, Of a truth it is, that your God is a God of gods, and a Lord of kings, and a revealer of secrets, seeing thou couldest reveal this secret.</p>
+            <p><strong>48</strong> Then the king made Daniel a great man, and gave him many great gifts, and made him ruler over the whole province of Babylon, and chief of the governors over all the wise men of Babylon.</p>
+            <p><strong>49</strong> Then Daniel requested of the king, and he set Shadrach, Meshach, and Abed–nego, over the affairs of the province of Babylon: but Daniel sat in the gate of the king.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Daniel 2 (ASV)</p>
+            <p><strong>1</strong> And in the second year of the reign of Nebuchadnezzar, Nebuchadnezzar dreamed dreams; and his spirit was troubled, and his sleep went from him.</p>
+            <p><strong>2</strong> Then the king commanded to call the magicians, and the enchanters, and the sorcerers, and the Chaldeans, to tell the king his dreams. So they came in and stood before the king.</p>
+            <p><strong>3</strong> And the king said unto them, I have dreamed a dream, and my spirit is troubled to know the dream.</p>
+            <p><strong>4</strong> Then spake the Chaldeans to the king in the Syrian language, O king, live for ever: tell thy servants the dream, and we will show the interpretation.</p>
+            <p><strong>5</strong> The king answered and said to the Chaldeans, The thing is gone from me: if ye make not known unto me the dream and the interpretation thereof, ye shall be cut in pieces, and your houses shall be made a dunghill.</p>
+            <p><strong>6</strong> But if ye show the dream and the interpretation thereof, ye shall receive of me gifts and rewards and great honor: therefore show me the dream and the interpretation thereof.</p>
+            <p><strong>7</strong> They answered the second time and said, Let the king tell his servants the dream, and we will show the interpretation.</p>
+            <p><strong>8</strong> The king answered and said, I know of a certainty that ye would gain time, because ye see the thing is gone from me.</p>
+            <p><strong>9</strong> But if ye make not known unto me the dream, there is but one law for you; for ye have prepared lying and corrupt words to speak before me, till the time be changed: therefore tell me the dream, and I shall know that ye can show me the interpretation thereof.</p>
+            <p><strong>10</strong> The Chaldeans answered before the king, and said, There is not a man upon the earth that can show the king’s matter, forasmuch as no king, lord, or ruler, hath asked such a thing of any magician, or enchanter, or Chaldean.</p>
+            <p><strong>11</strong> And it is a rare thing that the king requireth, and there is no other that can show it before the king, except the gods, whose dwelling is not with flesh.</p>
+            <p><strong>12</strong> For this cause the king was angry and very furious, and commanded to destroy all the wise men of Babylon.</p>
+            <p><strong>13</strong> So the decree went forth, and the wise men were to be slain; and they sought Daniel and his companions to be slain.</p>
+            <p><strong>14</strong> Then Daniel returned answer with counsel and prudence to Arioch the captain of the king’s guard, who was gone forth to slay the wise men of Babylon;</p>
+            <p><strong>15</strong> he answered and said to Arioch the king’s captain, Wherefore is the decree so urgent from the king? Then Arioch made the thing known to Daniel.</p>
+            <p><strong>16</strong> And Daniel went in, and desired of the king that he would appoint him a time, and he would show the king the interpretation.</p>
+            <p><strong>17</strong> Then Daniel went to his house, and made the thing known to Hananiah, Mishael, and Azariah, his companions:</p>
+            <p><strong>18</strong> that they would desire mercies of the God of heaven concerning this secret; that Daniel and his companions should not perish with the rest of the wise men of Babylon.</p>
+            <p><strong>19</strong> Then was the secret revealed unto Daniel in a vision of the night. Then Daniel blessed the God of heaven.</p>
+            <p><strong>20</strong> Daniel answered and said, Blessed be the name of God for ever and ever; for wisdom and might are his.</p>
+            <p><strong>21</strong> And he changeth the times and the seasons; he removeth kings, and setteth up kings; he giveth wisdom unto the wise, and knowledge to them that have understanding;</p>
+            <p><strong>22</strong> he revealeth the deep and secret things; he knoweth what is in the darkness, and the light dwelleth with him.</p>
+            <p><strong>23</strong> I thank thee, and praise thee, O thou God of my fathers, who hast given me wisdom and might, and hast now made known unto me what we desired of thee; for thou hast made known unto us the king’s matter.</p>
+            <p><strong>24</strong> Therefore Daniel went in unto Arioch, whom the king had appointed to destroy the wise men of Babylon; he went and said thus unto him: Destroy not the wise men of Babylon; bring me in before the king, and I will show unto the king the interpretation.</p>
+            <p><strong>25</strong> Then Arioch brought in Daniel before the king in haste, and said thus unto him, I have found a man of the children of the captivity of Judah, that will make known unto the king the interpretation.</p>
+            <p><strong>26</strong> The king answered and said to Daniel, whose name was Belteshazzar, Art thou able to make known unto me the dream which I have seen, and the interpretation thereof?</p>
+            <p><strong>27</strong> Daniel answered before the king, and said, The secret which the king hath demanded can neither wise men, enchanters, magicians, nor soothsayers, show unto the king;</p>
+            <p><strong>28</strong> but there is a God in heaven that revealeth secrets, and he hath made known to the king Nebuchadnezzar what shall be in the latter days. Thy dream, and the visions of thy head upon thy bed, are these:</p>
+            <p><strong>29</strong> as for thee, O king, thy thoughts came into thy mind upon thy bed, what should come to pass hereafter; and he that revealeth secrets hath made known to thee what shall come to pass.</p>
+            <p><strong>30</strong> But as for me, this secret is not revealed to me for any wisdom that I have more than any living, but to the intent that the interpretation may be made known to the king, and that thou mayest know the thoughts of thy heart.</p>
+            <p><strong>31</strong> Thou, O king, sawest, and, behold, a great image. This image, which was mighty, and whose brightness was excellent, stood before thee; and the aspect thereof was terrible.</p>
+            <p><strong>32</strong> As for this image, its head was of fine gold, its breast and its arms of silver, its belly and its thighs of brass,</p>
+            <p><strong>33</strong> its legs of iron, its feet part of iron, and part of clay.</p>
+            <p><strong>34</strong> Thou sawest till that a stone was cut out without hands, which smote the image upon its feet that were of iron and clay, and brake them in pieces.</p>
+            <p><strong>35</strong> Then was the iron, the clay, the brass, the silver, and the gold, broken in pieces together, and became like the chaff of the summer threshing-floors; and the wind carried them away, so that no place was found for them: and the stone that smote the image became a great mountain, and filled the whole earth.</p>
+            <p><strong>36</strong> This is the dream; and we will tell the interpretation thereof before the king.</p>
+            <p><strong>37</strong> Thou, O king, art king of kings, unto whom the God of heaven hath given the kingdom, the power, and the strength, and the glory;</p>
+            <p><strong>38</strong> and wheresoever the children of men dwell, the beasts of the field and the birds of the heavens hath he given into thy hand, and hath made thee to rule over them all: thou art the head of gold.</p>
+            <p><strong>39</strong> And after thee shall arise another kingdom inferior to thee; and another third kingdom of brass, which shall bear rule over all the earth.</p>
+            <p><strong>40</strong> And the fourth kingdom shall be strong as iron, forasmuch as iron breaketh in pieces and subdueth all things; and as iron that crusheth all these, shall it break in pieces and crush.</p>
+            <p><strong>41</strong> And whereas thou sawest the feet and toes, part of potters’ clay, and part of iron, it shall be a divided kingdom; but there shall be in it of the strength of the iron, forasmuch as thou sawest the iron mixed with miry clay.</p>
+            <p><strong>42</strong> And as the toes of the feet were part of iron, and part of clay, so the kingdom shall be partly strong, and partly broken.</p>
+            <p><strong>43</strong> And whereas thou sawest the iron mixed with miry clay, they shall mingle themselves with the seed of men; but they shall not cleave one to another, even as iron doth not mingle with clay.</p>
+            <p><strong>44</strong> And in the days of those kings shall the God of heaven set up a kingdom which shall never be destroyed, nor shall the sovereignty thereof be left to another people; but it shall break in pieces and consume all these kingdoms, and it shall stand for ever.</p>
+            <p><strong>45</strong> Forasmuch as thou sawest that a stone was cut out of the mountain without hands, and that it brake in pieces the iron, the brass, the clay, the silver, and the gold; the great God hath made known to the king what shall come to pass hereafter: and the dream is certain, and the interpretation thereof sure.</p>
+            <p><strong>46</strong> Then the king Nebuchadnezzar fell upon his face, and worshipped Daniel, and commanded that they should offer an oblation and sweet odors unto him.</p>
+            <p><strong>47</strong> The king answered unto Daniel, and said, Of a truth your God is the God of gods, and the Lord of kings, and a revealer of secrets, seeing thou hast been able to reveal this secret.</p>
+            <p><strong>48</strong> Then the king made Daniel great, and gave him many great gifts, and made him to rule over the whole province of Babylon, and to be chief governor over all the wise men of Babylon.</p>
+            <p><strong>49</strong> And Daniel requested of the king, and he appointed Shadrach, Meshach, and Abed-nego, over the affairs of the province of Babylon: but Daniel was in the gate of the king.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Nebuchadnezzar is troubled by a dream and demands that his wise men both tell him the dream and interpret it, on pain of death. When they protest that no one on earth can do this, the king orders all the wise men of Babylon killed, including Daniel and his friends. Daniel asks for time, and he and his companions seek mercy from the God of heaven, who reveals the secret to Daniel in a night vision. Daniel blesses God, who changes times and seasons and removes and sets up kings, then goes before the king. He refuses any credit for himself: there is a God in heaven who reveals secrets. He describes a towering image with a head of gold, breast and arms of silver, belly and thighs of brass, legs of iron, and feet of iron and clay. A stone cut out without hands strikes the feet, shatters the whole image, and grows into a mountain that fills the earth. Daniel explains that the metals are successive kingdoms, but in the days of the last God will set up a kingdom that shall never be destroyed and shall stand forever. Astonished, the king falls before Daniel, confesses that Daniel's God is God of gods and Lord of kings, and exalts Daniel and his friends to high office.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Daniel</strong> — The exile who, after seeking God's mercy, receives the secret of the dream and interprets it, refusing all credit and pointing to the God who reveals secrets.</li>
+          <li><strong>Nebuchadnezzar</strong> — The troubled king who demands the impossible from his wise men and ends by worshiping Daniel's God as the God of gods and Lord of kings.</li>
+          <li><strong>The God of heaven</strong> — The God who reveals secrets, changes times and seasons, removes and sets up kings, and will establish a kingdom that shall stand forever.</li>
+          <li><strong>The wise men of Babylon</strong> — The magicians, enchanters, and Chaldeans who cannot recover the dream and confess that only the gods could, exposing the limits of human wisdom.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Daniel 2:44 (WEB)</p>
+          <p class="verse__text">In the days of those kings shall the God of heaven set up a kingdom which shall never be destroyed, nor shall its sovereignty be left to another people; but it shall break in pieces and consume all these kingdoms, and it shall stand forever.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Human wisdom reaches its limit where God's revelation begins.</li>
+          <li>Prayer that seeks God's mercy is the right response to impossible situations.</li>
+          <li>God alone changes times and seasons and removes and sets up kings.</li>
+          <li>Every earthly empire is passing, but God's kingdom will stand forever.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>Seek God's mercy in crisis.</strong> Daniel and his friends “desire mercies of the God of heaven concerning this secret” (Daniel 2:18, WEB). The faithful turn first to prayer when the impossible is demanded.</li>
+            <li><strong>God rules over history.</strong> “He changes the times and the seasons; he removes kings, and sets up kings” (Daniel 2:21, WEB). The rise and fall of empires is under his hand.</li>
+            <li><strong>Give God the glory.</strong> Daniel insists the secret comes not from his own wisdom but because “there is a God in heaven who reveals secrets” (Daniel 2:28, WEB). The wise deflect praise to the Lord.</li>
+            <li><strong>God's kingdom is unbreakable.</strong> The stone cut without hands sets up a kingdom “which shall never be destroyed” (Daniel 2:44, WEB). It alone outlasts gold, silver, brass, and iron.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>Why does God reveal the dream to Daniel rather than to Babylon's wise men?</li>
+            <li>How does Daniel's prayer and praise in verses 19-23 model the way to face an impossible demand?</li>
+            <li>What does the succession of metals—and the stone—teach about earthly power and God's kingdom?</li>
+            <li>Daniel takes no credit for the interpretation. Why does that matter, and how can we imitate it?</li>
+            <li>Where do you need to trust that God's kingdom, not the powers around you, will have the final word?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>God answers the prayer of his humble servants rather than the demand of a tyrant, showing that revelation is a gift of grace, not a feat of human skill (2:18-19). The contrast exposes the emptiness of Babylon's wisdom and the sufficiency of God.</li>
+            <li>Daniel first blesses God, naming his sovereignty over times, seasons, and kings, before he ever speaks to the king (2:19-23). Worship reframes the crisis around God's power. Encourage members to begin with praise when facing the impossible.</li>
+            <li>The gleaming metals are a series of mighty kingdoms, but the unhewn stone that shatters them all is God's kingdom (2:44-45). Human empire is impressive yet temporary; God's reign is humble in origin yet permanent and all-filling.</li>
+            <li>By saying the secret comes from God, not his own wisdom (2:28-30), Daniel keeps God at the center and guards himself from pride. We imitate him by attributing every gift and success to the Lord, especially in public.</li>
+            <li>This is a personal-application question. Invite members to name a power or pressure that feels final—an institution, a fear, a trend—and to set it beside the promise of an everlasting kingdom. As leader, point to the lasting reign of Christ.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="daniel-1.html">← Daniel 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="daniel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="daniel-3.html">Daniel 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

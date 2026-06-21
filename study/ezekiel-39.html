@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 39: The Fall of Gog — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 39: God defeats Gog on the mountains of Israel, the land is cleansed, and God pours out his Spirit on his restored people." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 39
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 39</span>
+        <h1>Ezekiel 39: The Fall of Gog</h1>
+        <p class="lead">God strikes down the great northern army on the mountains of Israel, cleanses the land, and pours out his Spirit so all will know the Holy One.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-39">
+            <span>Scripture — Ezekiel Chapter 39</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-39">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-39-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-39-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-39-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-39-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 39 (WEB)</p>
+            <p><strong>1</strong> You, son of man, prophesy against Gog, and say, Thus says the Lord Yahweh: Behold, I am against you, Gog, prince of Rosh, Meshech, and Tubal:</p>
+            <p><strong>2</strong> and I will turn you around, and will lead you on, and will cause you to come up from the uttermost parts of the north; and I will bring you on the mountains of Israel;</p>
+            <p><strong>3</strong> and I will strike your bow out of your left hand, and will cause your arrows to fall out of your right hand.</p>
+            <p><strong>4</strong> You shall fall on the mountains of Israel, you, and all your hordes, and the peoples who are with you: I will give you to the ravenous birds of every sort, and to the animals of the field to be devoured.</p>
+            <p><strong>5</strong> You shall fall on the open field; for I have spoken it, says the Lord Yahweh.</p>
+            <p><strong>6</strong> I will send a fire on Magog, and on those who dwell securely in the islands; and they shall know that I am Yahweh.</p>
+            <p><strong>7</strong> My holy name will I make known in the midst of my people Israel; neither will I allow my holy name to be profaned any more: and the nations shall know that I am Yahweh, the Holy One in Israel.</p>
+            <p><strong>8</strong> Behold, it comes, and it shall be done, says the Lord Yahweh; this is the day about which I have spoken.</p>
+            <p><strong>9</strong> Those who dwell in the cities of Israel shall go out, and shall make fires of the weapons and burn them, both the shields and the bucklers, the bows and the arrows, and the war clubs, and the spears, and they shall make fires of them seven years;</p>
+            <p><strong>10</strong> so that they shall take no wood out of the field, neither cut down any out of the forests; for they shall make fires of the weapons; and they shall plunder those who plundered them, and rob those who robbed them, says the Lord Yahweh.</p>
+            <p><strong>11</strong> It shall happen in that day, that I will give to Gog a place for burial in Israel, the valley of those who pass through on the east of the sea; and it shall stop those who pass through: and there shall they bury Gog and all his multitude; and they shall call it The valley of Hamon Gog.</p>
+            <p><strong>12</strong> Seven months shall the house of Israel be burying them, that they may cleanse the land.</p>
+            <p><strong>13</strong> Yes, all the people of the land shall bury them; and it shall be to them a renown in the day that I shall be glorified, says the Lord Yahweh.</p>
+            <p><strong>14</strong> They shall set apart men of continual employment, who shall pass through the land, and, with those who pass through, those who bury those who remain on the surface of the land, to cleanse it: after the end of seven months shall they search.</p>
+            <p><strong>15</strong> Those who pass through the land shall pass through; and when any sees a man’s bone, then shall he set up a sign by it, until the undertakers have buried it in the valley of Hamon Gog.</p>
+            <p><strong>16</strong> Hamonah shall also be the name of a city. Thus shall they cleanse the land.</p>
+            <p><strong>17</strong> You, son of man, thus says the Lord Yahweh: Speak to the birds of every sort, and to every animal of the field, Assemble yourselves, and come; gather yourselves on every side to my sacrifice that I do sacrifice for you, even a great sacrifice on the mountains of Israel, that you may eat flesh and drink blood.</p>
+            <p><strong>18</strong> You shall eat the flesh of the mighty, and drink the blood of the princes of the earth, of rams, of lambs, and of goats, of bulls, all of them fatlings of Bashan.</p>
+            <p><strong>19</strong> You shall eat fat until you be full, and drink blood until you are drunk, of my sacrifice which I have sacrificed for you.</p>
+            <p><strong>20</strong> You shall be filled at my table with horses and chariots, with mighty men, and with all men of war, says the Lord Yahweh.</p>
+            <p><strong>21</strong> I will set my glory among the nations; and all the nations shall see my judgment that I have executed, and my hand that I have laid on them.</p>
+            <p><strong>22</strong> So the house of Israel shall know that I am Yahweh their God, from that day and forward.</p>
+            <p><strong>23</strong> The nations shall know that the house of Israel went into captivity for their iniquity; because they trespassed against me, and I hid my face from them: so I gave them into the hand of their adversaries, and they fell all of them by the sword.</p>
+            <p><strong>24</strong> According to their uncleanness and according to their transgressions did I to them; and I hid my face from them.</p>
+            <p><strong>25</strong> Therefore thus says the Lord Yahweh: Now will I bring back the captivity of Jacob, and have mercy on the whole house of Israel; and I will be jealous for my holy name.</p>
+            <p><strong>26</strong> They shall bear their shame, and all their trespasses by which they have trespassed against me, when they shall dwell securely in their land, and no one shall make them afraid;</p>
+            <p><strong>27</strong> when I have brought them back from the peoples, and gathered them out of their enemies’ lands, and am sanctified in them in the sight of many nations.</p>
+            <p><strong>28</strong> They shall know that I am Yahweh their God, in that I caused them to go into captivity among the nations, and have gathered them to their own land; and I will leave none of them any more there;</p>
+            <p><strong>29</strong> neither will I hide my face any more from them; for I have poured out my Spirit on the house of Israel, says the Lord Yahweh.</p>
+            </div>
+            <div class="scripture-text" id="web-39-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 39 (KJV)</p>
+            <p><strong>1</strong> Therefore, thou son of man, prophesy against Gog, and say, Thus saith the Lord God; Behold, I am against thee, O Gog, the chief prince of Meshech and Tubal:</p>
+            <p><strong>2</strong> And I will turn thee back, and leave but the sixth part of thee, and will cause thee to come up from the north parts, and will bring thee upon the mountains of Israel:</p>
+            <p><strong>3</strong> And I will smite thy bow out of thy left hand, and will cause thine arrows to fall out of thy right hand.</p>
+            <p><strong>4</strong> Thou shalt fall upon the mountains of Israel, thou, and all thy bands, and the people that is with thee: I will give thee unto the ravenous birds of every sort, and to the beasts of the field to be devoured.</p>
+            <p><strong>5</strong> Thou shalt fall upon the open field: for I have spoken it, saith the Lord God.</p>
+            <p><strong>6</strong> And I will send a fire on Magog, and among them that dwell carelessly in the isles: and they shall know that I am the Lord.</p>
+            <p><strong>7</strong> So will I make my holy name known in the midst of my people Israel; and I will not let them pollute my holy name any more: and the heathen shall know that I am the Lord, the Holy One in Israel.</p>
+            <p><strong>8</strong> Behold, it is come, and it is done, saith the Lord God; this is the day whereof I have spoken.</p>
+            <p><strong>9</strong> And they that dwell in the cities of Israel shall go forth, and shall set on fire and burn the weapons, both the shields and the bucklers, the bows and the arrows, and the handstaves, and the spears, and they shall burn them with fire seven years:</p>
+            <p><strong>10</strong> So that they shall take no wood out of the field, neither cut down any out of the forests; for they shall burn the weapons with fire: and they shall spoil those that spoiled them, and rob those that robbed them, saith the Lord God.</p>
+            <p><strong>11</strong> And it shall come to pass in that day, that I will give unto Gog a place there of graves in Israel, the valley of the passengers on the east of the sea: and it shall stop the noses of the passengers: and there shall they bury Gog and all his multitude: and they shall call it The valley of Hamon–gog.</p>
+            <p><strong>12</strong> And seven months shall the house of Israel be burying of them, that they may cleanse the land.</p>
+            <p><strong>13</strong> Yea, all the people of the land shall bury them; and it shall be to them a renown the day that I shall be glorified, saith the Lord God.</p>
+            <p><strong>14</strong> And they shall sever out men of continual employment, passing through the land to bury with the passengers those that remain upon the face of the earth, to cleanse it: after the end of seven months shall they search.</p>
+            <p><strong>15</strong> And the passengers that pass through the land, when any seeth a man’s bone, then shall he set up a sign by it, till the buriers have buried it in the valley of Hamon–gog.</p>
+            <p><strong>16</strong> And also the name of the city shall be Hamonah. Thus shall they cleanse the land.</p>
+            <p><strong>17</strong> And, thou son of man, thus saith the Lord God; Speak unto every feathered fowl, and to every beast of the field, Assemble yourselves, and come; gather yourselves on every side to my sacrifice that I do sacrifice for you, even a great sacrifice upon the mountains of Israel, that ye may eat flesh, and drink blood.</p>
+            <p><strong>18</strong> Ye shall eat the flesh of the mighty, and drink the blood of the princes of the earth, of rams, of lambs, and of goats, of bullocks, all of them fatlings of Bashan.</p>
+            <p><strong>19</strong> And ye shall eat fat till ye be full, and drink blood till ye be drunken, of my sacrifice which I have sacrificed for you.</p>
+            <p><strong>20</strong> Thus ye shall be filled at my table with horses and chariots, with mighty men, and with all men of war, saith the Lord God.</p>
+            <p><strong>21</strong> And I will set my glory among the heathen, and all the heathen shall see my judgment that I have executed, and my hand that I have laid upon them.</p>
+            <p><strong>22</strong> So the house of Israel shall know that I am the Lord their God from that day and forward.</p>
+            <p><strong>23</strong> And the heathen shall know that the house of Israel went into captivity for their iniquity: because they trespassed against me, therefore hid I my face from them, and gave them into the hand of their enemies: so fell they all by the sword.</p>
+            <p><strong>24</strong> According to their uncleanness and according to their transgressions have I done unto them, and hid my face from them.</p>
+            <p><strong>25</strong> Therefore thus saith the Lord God; Now will I bring again the captivity of Jacob, and have mercy upon the whole house of Israel, and will be jealous for my holy name;</p>
+            <p><strong>26</strong> After that they have borne their shame, and all their trespasses whereby they have trespassed against me, when they dwelt safely in their land, and none made them afraid.</p>
+            <p><strong>27</strong> When I have brought them again from the people, and gathered them out of their enemies’ lands, and am sanctified in them in the sight of many nations;</p>
+            <p><strong>28</strong> Then shall they know that I am the Lord their God, which caused them to be led into captivity among the heathen: but I have gathered them unto their own land, and have left none of them any more there.</p>
+            <p><strong>29</strong> Neither will I hide my face any more from them: for I have poured out my spirit upon the house of Israel, saith the Lord God.</p>
+            </div>
+            <div class="scripture-text" id="web-39-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 39 (ASV)</p>
+            <p><strong>1</strong> And thou, son of man, prophesy against Gog, and say, Thus saith the Lord Jehovah: Behold, I am against thee, O Gog, prince of Rosh, Meshech, and Tubal:</p>
+            <p><strong>2</strong> and I will turn thee about, and will lead thee on, and will cause thee to come up from the uttermost parts of the north; and I will bring thee upon the mountains of Israel;</p>
+            <p><strong>3</strong> and I will smite thy bow out of thy left hand, and will cause thine arrows to fall out of thy right hand.</p>
+            <p><strong>4</strong> Thou shalt fall upon the mountains of Israel, thou, and all thy hordes, and the peoples that are with thee: I will give thee unto the ravenous birds of every sort, and to the beasts of the field to be devoured.</p>
+            <p><strong>5</strong> Thou shalt fall upon the open field; for I have spoken it, saith the Lord Jehovah.</p>
+            <p><strong>6</strong> And I will send a fire on Magog, and on them that dwell securely in the isles; and they shall know that I am Jehovah.</p>
+            <p><strong>7</strong> And my holy name will I make known in the midst of my people Israel; neither will I suffer my holy name to be profaned any more: and the nations shall know that I am Jehovah, the Holy One in Israel.</p>
+            <p><strong>8</strong> Behold, it cometh, and it shall be done, saith the Lord Jehovah; this is the day whereof I have spoken.</p>
+            <p><strong>9</strong> And they that dwell in the cities of Israel shall go forth, and shall make fires of the weapons and burn them, both the shields and the bucklers, the bows and the arrows, and the handstaves, and the spears, and they shall make fires of them seven years;</p>
+            <p><strong>10</strong> so that they shall take no wood out of the field, neither cut down any out of the forests; for they shall make fires of the weapons; and they shall plunder those that plundered them, and rob those that robbed them, saith the Lord Jehovah.</p>
+            <p><strong>11</strong> And it shall come to pass in that day, that I will give unto Gog a place for burial in Israel, the valley of them that pass through on the east of the sea; and it shall stop them that pass through: and there shall they bury Gog and all his multitude; and they shall call it The valley of Hamon-gog.</p>
+            <p><strong>12</strong> And seven months shall the house of Israel be burying them, that they may cleanse the land.</p>
+            <p><strong>13</strong> Yea, all the people of the land shall bury them; and it shall be to them a renown in the day that I shall be glorified, saith the Lord Jehovah.</p>
+            <p><strong>14</strong> And they shall set apart men of continual employment, that shall pass through the land, and, with them that pass through, those that bury them that remain upon the face of the land, to cleanse it: after the end of seven months shall they search.</p>
+            <p><strong>15</strong> And they that pass through the land shall pass through; and when any seeth a man’s bone, then shall he set up a sign by it, till the buriers have buried it in the valley of Hamon-gog.</p>
+            <p><strong>16</strong> And Hamonah shall also be the name of a city. Thus shall they cleanse the land.</p>
+            <p><strong>17</strong> And thou, son of man, thus saith the Lord Jehovah: Speak unto the birds of every sort, and to every beast of the field, Assemble yourselves, and come; gather yourselves on every side to my sacrifice that I do sacrifice for you, even a great sacrifice upon the mountains of Israel, that ye may eat flesh and drink blood.</p>
+            <p><strong>18</strong> Ye shall eat the flesh of the mighty, and drink the blood of the princes of the earth, of rams, of lambs, and of goats, of bullocks, all of them fatlings of Bashan.</p>
+            <p><strong>19</strong> And ye shall eat fat till ye be full, and drink blood till ye be drunken, of my sacrifice which I have sacrificed for you.</p>
+            <p><strong>20</strong> And ye shall be filled at my table with horses and chariots, with mighty men, and with all men of war, saith the Lord Jehovah.</p>
+            <p><strong>21</strong> And I will set my glory among the nations; and all the nations shall see my judgment that I have executed, and my hand that I have laid upon them.</p>
+            <p><strong>22</strong> So the house of Israel shall know that I am Jehovah their God, from that day and forward.</p>
+            <p><strong>23</strong> And the nations shall know that the house of Israel went into captivity for their iniquity; because they trespassed against me, and I hid my face from them: so I gave them into the hand of their adversaries, and they fell all of them by the sword.</p>
+            <p><strong>24</strong> According to their uncleanness and according to their transgressions did I unto them; and I hid my face from them.</p>
+            <p><strong>25</strong> Therefore thus saith the Lord Jehovah: Now will I bring back the captivity of Jacob, and have mercy upon the whole house of Israel; and I will be jealous for my holy name.</p>
+            <p><strong>26</strong> And they shall bear their shame, and all their trespasses whereby they have trespassed against me, when they shall dwell securely in their land, and none shall make them afraid;</p>
+            <p><strong>27</strong> when I have brought them back from the peoples, and gathered them out of their enemies’ lands, and am sanctified in them in the sight of many nations.</p>
+            <p><strong>28</strong> And they shall know that I am Jehovah their God, in that I caused them to go into captivity among the nations, and have gathered them unto their own land; and I will leave none of them any more there;</p>
+            <p><strong>29</strong> neither will I hide my face any more from them; for I have poured out my Spirit upon the house of Israel, saith the Lord Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God renews his word against Gog, declaring again that he is against him and will turn him around and lead him up from the far north onto the mountains of Israel. There he will strike the bow from Gog's hand and the arrows from his grip, and Gog and all his hordes will fall on the open field, given as food to the birds and the beasts. Fire falls on Magog and on those who dwell securely in the coastlands, so that they know he is Yahweh, the Holy One in Israel. The land is so glutted with the slain that Israel burns the weapons for fuel for seven years and buries the dead for seven months, even naming a valley and a city for the multitude of Gog. God summons the birds and beasts to a great sacrificial feast on the flesh of the mighty. Through this judgment God sets his glory among the nations, who learn that Israel went into exile for sin, not for God's weakness. Then the tone turns to mercy: God will restore the fortunes of Jacob, have compassion on the whole house of Israel, and be jealous for his holy name. He will gather them home, hide his face no more, and pour out his Spirit on the house of Israel. Judgment on the enemy gives way to the outpoured Spirit and the abiding presence of God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The Holy One in Israel who defeats Gog, vindicates his holy name, restores his people, and pours out his Spirit so they know him as their God.</li>
+          <li><strong>Gog and his hordes</strong> — The northern invader and his armies struck down on the mountains and open field, buried in a valley named for their multitude.</li>
+          <li><strong>The house of Israel</strong> — God’s people who bury the slain and burn the weapons, learning that exile came for their sin, then are gathered home and given the Spirit.</li>
+          <li><strong>The birds and beasts</strong> — Summoned to a great sacrificial feast on the flesh of the fallen, a vivid sign of God’s complete judgment on his enemies.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 39:29 (WEB)</p>
+          <p class="verse__text">neither will I hide my face any more from them; for I have poured out my Spirit on the house of Israel, says the Lord Yahweh.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God fights for his people and decisively defeats the most overwhelming foe.</li>
+          <li>God acts to clear his name, showing the nations that exile came for sin, not for any weakness in him.</li>
+          <li>Judgment on God's enemies opens into mercy and restoration for his people.</li>
+          <li>The crown of God's promises is the outpouring of his Spirit and the unhidden face of God toward his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-39">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-39">
+            <ul class="lesson-list">
+            <li><strong>God disarms his enemies.</strong> “I will strike your bow out of your left hand, and will cause your arrows to fall out of your right hand” (Ezekiel 39:3, WEB); no weapon prospers against the Lord.</li>
+            <li><strong>God is jealous for his holy name.</strong> He will not let his name be profaned but acts so the nations “shall know that I am Yahweh, the Holy One in Israel” (Ezekiel 39:7, WEB).</li>
+            <li><strong>Mercy follows judgment for God’s people.</strong> “Now will I bring back the captivity of Jacob, and have mercy on the whole house of Israel” (Ezekiel 39:25, WEB), restoring those he had disciplined.</li>
+            <li><strong>God’s Spirit and presence are the great gift.</strong> “I have poured out my Spirit on the house of Israel” (Ezekiel 39:29, WEB); his unhidden face and indwelling Spirit are the goal of redemption, fulfilled at Pentecost.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-39">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-39">
+            <ol class="study-questions">
+            <li>God says he will strike the weapons from Gog's hands (39:3). What does this picture about the outcome of any war against the Lord?</li>
+            <li>Why does God want the nations to understand that Israel's exile came because of sin rather than God's inability to protect them (39:23)?</li>
+            <li>The chapter turns from judgment to compassion on “the whole house of Israel” (39:25). What does this reveal about God's heart toward his disciplined people?</li>
+            <li>How does the promise to pour out God's Spirit (39:29) point forward to Pentecost and the gift of the Spirit to the church (Acts 2)?</li>
+            <li>God promises never again to hide his face from his people. What would it mean for you to live in the assurance of God's unhidden presence?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-39">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-39">
+            <ol class="study-questions">
+            <li>Stripped of bow and arrows, Gog is utterly helpless before God. Help the group see that opposition to God is finally self-defeating; the question is never whether God will prevail but whether we are on his side.</li>
+            <li>God's reputation among the nations was at stake; he wants it clear that Israel's fall came from their covenant unfaithfulness, not from a weak or defeated God. His holiness, not his power, was the issue.</li>
+            <li>After the severity of judgment, God's tenderness shines: he restores fortunes, shows mercy, and gathers his people home. Encourage the group that God's discipline always aims at restoration for his own.</li>
+            <li>The outpoured Spirit anticipates Pentecost, when the risen Christ poured out the promised Spirit on the church (Acts 2:17-18, 33). Ezekiel's hope finds its fulfillment in the Spirit who now indwells God's people.</li>
+            <li>This is a personal-application question. Invite members to consider areas where they feel God has hidden his face, and to receive the promise of his abiding presence through the Spirit. Keep the tone reassuring and Christ-centered.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-38.html">← Ezekiel 38</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-40.html">Ezekiel 40 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

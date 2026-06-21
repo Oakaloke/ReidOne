@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Daniel 11: Kings of the North and South — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Daniel 11: a detailed prophecy of warring kings of north and south culminates in a defiant ruler who meets his appointed end." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-daniel-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Daniel, Chapter 11
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="daniel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Daniel · Chapter 11</span>
+        <h1>Daniel 11: Kings of the North and South</h1>
+        <p class="lead">A sweeping prophecy of warring kings climbs toward a defiant ruler who exalts himself, until he comes to his appointed end.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-11">
+            <span>Scripture — Daniel Chapter 11</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-11">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-11-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-11-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-11-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-11-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Daniel 11 (WEB)</p>
+            <p><strong>1</strong> “As for me, in the first year of Darius the Mede, I stood up to confirm and strengthen him.</p>
+            <p><strong>2</strong> Now will I show you the truth. Behold, there shall stand up yet three kings in Persia; and the fourth shall be far richer than they all: and when he has grown strong through his riches, he shall stir up all against the realm of Greece.</p>
+            <p><strong>3</strong> A mighty king shall stand up, who shall rule with great dominion, and do according to his will.</p>
+            <p><strong>4</strong> When he shall stand up, his kingdom shall be broken, and shall be divided toward the four winds of the sky, but not to his posterity, nor according to his dominion with which he ruled; for his kingdom shall be plucked up, even for others besides these.</p>
+            <p><strong>5</strong> The king of the south shall be strong, and one of his princes; and he shall be strong above him, and have dominion; his dominion shall be a great dominion.</p>
+            <p><strong>6</strong> At the end of years they shall join themselves together; and the daughter of the king of the south shall come to the king of the north to make an agreement: but she shall not retain the strength of her arm; neither shall he stand, nor his arm; but she shall be given up, and those who brought her, and he who became the father of her, and he who strengthened her in those times.</p>
+            <p><strong>7</strong> But out of a shoot from her roots shall one stand up in his place, who shall come to the army, and shall enter into the fortress of the king of the north, and shall deal against them, and shall prevail.</p>
+            <p><strong>8</strong> Also their gods, with their molten images, and with their goodly vessels of silver and of gold, shall he carry captive into Egypt; and he shall refrain some years from the king of the north.</p>
+            <p><strong>9</strong> He shall come into the realm of the king of the south, but he shall return into his own land.</p>
+            <p><strong>10</strong> His sons shall war, and shall assemble a multitude of great forces, which shall come on, and overflow, and pass through; and they shall return and war, even to his fortress.</p>
+            <p><strong>11</strong> The king of the south shall be moved with anger, and shall come out and fight with him, even with the king of the north; and he shall send out a great multitude, and the multitude shall be given into his hand.</p>
+            <p><strong>12</strong> The multitude shall be lifted up, and his heart shall be exalted; and he shall cast down tens of thousands, but he shall not prevail.</p>
+            <p><strong>13</strong> The king of the north shall return, and shall send out a multitude greater than the former; and he shall come on at the end of the times, even of years, with a great army and with much substance.</p>
+            <p><strong>14</strong> In those times there shall many stand up against the king of the south: also the children of the violent among your people shall lift themselves up to establish the vision; but they shall fall.</p>
+            <p><strong>15</strong> So the king of the north shall come, and cast up a mound, and take a well-fortified city: and the forces of the south shall not stand, neither his chosen people, neither shall there be any strength to stand.</p>
+            <p><strong>16</strong> But he who comes against him shall do according to his own will, and no one shall stand before him; and he shall stand in the glorious land, and in his hand shall be destruction.</p>
+            <p><strong>17</strong> He shall set his face to come with the strength of his whole kingdom, and with him equitable conditions; and he shall perform them: and he shall give him the daughter of women, to corrupt her; but she shall not stand, neither be for him.</p>
+            <p><strong>18</strong> After this shall he turn his face to the islands, and shall take many: but a prince shall cause the reproach offered by him to cease; yes, moreover, he shall cause his reproach to turn on him.</p>
+            <p><strong>19</strong> Then he shall turn his face toward the fortresses of his own land; but he shall stumble and fall, and shall not be found.</p>
+            <p><strong>20</strong> Then shall stand up in his place one who shall cause a tax collector to pass through the kingdom to maintain its glory; but within few days he shall be destroyed, neither in anger, nor in battle.</p>
+            <p><strong>21</strong> In his place shall stand up a contemptible person, to whom they had not given the honor of the kingdom: but he shall come in time of security, and shall obtain the kingdom by flatteries.</p>
+            <p><strong>22</strong> The overwhelming forces shall be overwhelmed from before him, and shall be broken; yes, also the prince of the covenant.</p>
+            <p><strong>23</strong> After the treaty made with him he shall work deceitfully; for he shall come up, and shall become strong, with a small people.</p>
+            <p><strong>24</strong> In time of security shall he come even on the fattest places of the province; and he shall do that which his fathers have not done, nor his fathers’ fathers; he shall scatter among them prey, and plunder, and substance: yes, he shall devise his devices against the strongholds, even for a time.</p>
+            <p><strong>25</strong> He shall stir up his power and his courage against the king of the south with a great army; and the king of the south shall war in battle with an exceeding great and mighty army; but he shall not stand; for they shall devise devices against him.</p>
+            <p><strong>26</strong> Yes, they who eat of his dainties shall destroy him, and his army shall overflow; and many shall fall down slain.</p>
+            <p><strong>27</strong> As for both these kings, their hearts shall be to do mischief, and they shall speak lies at one table: but it shall not prosper; for yet the end shall be at the time appointed.</p>
+            <p><strong>28</strong> Then he will return into his land with great substance; and his heart will be against the holy covenant; and he will take action, and return to his own land.</p>
+            <p><strong>29</strong> At the time appointed he shall return, and come into the south; but it shall not be in the latter time as it was in the former.</p>
+            <p><strong>30</strong> For ships of Kittim shall come against him; therefore he shall be grieved, and shall return, and have indignation against the holy covenant, and shall take action: he shall even return, and have regard to those who forsake the holy covenant.</p>
+            <p><strong>31</strong> Forces shall stand on his part, and they shall profane the sanctuary, even the fortress, and shall take away the continual burnt offering, and they shall set up the abomination that makes desolate.</p>
+            <p><strong>32</strong> Such as do wickedly against the covenant shall he pervert by flatteries; but the people who know their God shall be strong, and take action.</p>
+            <p><strong>33</strong> Those who are wise among the people shall instruct many; yet they shall fall by the sword and by flame, by captivity and by plunder, many days.</p>
+            <p><strong>34</strong> Now when they shall fall, they shall be helped with a little help; but many shall join themselves to them with flatteries.</p>
+            <p><strong>35</strong> Some of those who are wise shall fall, to refine them, and to purify, and to make them white, even to the time of the end; because it is yet for the time appointed.</p>
+            <p><strong>36</strong> The king shall do according to his will; and he shall exalt himself, and magnify himself above every god, and shall speak marvelous things against the God of gods; and he shall prosper until the indignation be accomplished; for that which is determined shall be done.</p>
+            <p><strong>37</strong> Neither shall he regard the gods of his fathers, nor the desire of women, nor regard any god; for he shall magnify himself above all.</p>
+            <p><strong>38</strong> But in his place shall he honor the god of fortresses; and a god whom his fathers didn’t know shall he honor with gold, and silver, and with precious stones, and pleasant things.</p>
+            <p><strong>39</strong> He shall deal with the strongest fortresses by the help of a foreign god: whoever acknowledges him he will increase with glory; and he shall cause them to rule over many, and shall divide the land for a price.</p>
+            <p><strong>40</strong> At the time of the end shall the king of the south contend with him; and the king of the north shall come against him like a whirlwind, with chariots, and with horsemen, and with many ships; and he shall enter into the countries, and shall overflow and pass through.</p>
+            <p><strong>41</strong> He shall enter also into the glorious land, and many countries shall be overthrown; but these shall be delivered out of his hand: Edom, and Moab, and the chief of the children of Ammon.</p>
+            <p><strong>42</strong> He shall stretch out his hand also on the countries; and the land of Egypt shall not escape.</p>
+            <p><strong>43</strong> But he shall have power over the treasures of gold and of silver, and over all the precious things of Egypt; and the Libyans and the Ethiopians shall be at his steps.</p>
+            <p><strong>44</strong> But news out of the east and out of the north shall trouble him; and he shall go out with great fury to destroy and utterly to sweep away many.</p>
+            <p><strong>45</strong> He shall plant the tents of his palace between the sea and the glorious holy mountain; yet he shall come to his end, and no one shall help him.</p>
+            </div>
+            <div class="scripture-text" id="web-11-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Daniel 11 (KJV)</p>
+            <p><strong>1</strong> Also I in the first year of Darius the Mede, even I, stood to confirm and to strengthen him.</p>
+            <p><strong>2</strong> And now will I shew thee the truth. Behold, there shall stand up yet three kings in Persia; and the fourth shall be far richer than they all: and by his strength through his riches he shall stir up all against the realm of Grecia.</p>
+            <p><strong>3</strong> And a mighty king shall stand up, that shall rule with great dominion, and do according to his will.</p>
+            <p><strong>4</strong> And when he shall stand up, his kingdom shall be broken, and shall be divided toward the four winds of heaven; and not to his posterity, nor according to his dominion which he ruled: for his kingdom shall be plucked up, even for others beside those.</p>
+            <p><strong>5</strong> And the king of the south shall be strong, and one of his princes; and he shall be strong above him, and have dominion; his dominion shall be a great dominion.</p>
+            <p><strong>6</strong> And in the end of years they shall join themselves together; for the king’s daughter of the south shall come to the king of the north to make an agreement: but she shall not retain the power of the arm; neither shall he stand, nor his arm: but she shall be given up, and they that brought her, and he that begat her, and he that strengthened her in these times.</p>
+            <p><strong>7</strong> But out of a branch of her roots shall one stand up in his estate, which shall come with an army, and shall enter into the fortress of the king of the north, and shall deal against them, and shall prevail:</p>
+            <p><strong>8</strong> And shall also carry captives into Egypt their gods, with their princes, and with their precious vessels of silver and of gold; and he shall continue more years than the king of the north.</p>
+            <p><strong>9</strong> So the king of the south shall come into his kingdom, and shall return into his own land.</p>
+            <p><strong>10</strong> But his sons shall be stirred up, and shall assemble a multitude of great forces: and one shall certainly come, and overflow, and pass through: then shall he return, and be stirred up, even to his fortress.</p>
+            <p><strong>11</strong> And the king of the south shall be moved with choler, and shall come forth and fight with him, even with the king of the north: and he shall set forth a great multitude; but the multitude shall be given into his hand.</p>
+            <p><strong>12</strong> And when he hath taken away the multitude, his heart shall be lifted up; and he shall cast down many ten thousands: but he shall not be strengthened by it.</p>
+            <p><strong>13</strong> For the king of the north shall return, and shall set forth a multitude greater than the former, and shall certainly come after certain years with a great army and with much riches.</p>
+            <p><strong>14</strong> And in those times there shall many stand up against the king of the south: also the robbers of thy people shall exalt themselves to establish the vision; but they shall fall.</p>
+            <p><strong>15</strong> So the king of the north shall come, and cast up a mount, and take the most fenced cities: and the arms of the south shall not withstand, neither his chosen people, neither shall there be any strength to withstand.</p>
+            <p><strong>16</strong> But he that cometh against him shall do according to his own will, and none shall stand before him: and he shall stand in the glorious land, which by his hand shall be consumed.</p>
+            <p><strong>17</strong> He shall also set his face to enter with the strength of his whole kingdom, and upright ones with him; thus shall he do: and he shall give him the daughter of women, corrupting her: but she shall not stand on his side, neither be for him.</p>
+            <p><strong>18</strong> After this shall he turn his face unto the isles, and shall take many: but a prince for his own behalf shall cause the reproach offered by him to cease; without his own reproach he shall cause it to turn upon him.</p>
+            <p><strong>19</strong> Then he shall turn his face toward the fort of his own land: but he shall stumble and fall, and not be found.</p>
+            <p><strong>20</strong> Then shall stand up in his estate a raiser of taxes in the glory of the kingdom: but within few days he shall be destroyed, neither in anger, nor in battle.</p>
+            <p><strong>21</strong> And in his estate shall stand up a vile person, to whom they shall not give the honour of the kingdom: but he shall come in peaceably, and obtain the kingdom by flatteries.</p>
+            <p><strong>22</strong> And with the arms of a flood shall they be overflown from before him, and shall be broken; yea, also the prince of the covenant.</p>
+            <p><strong>23</strong> And after the league made with him he shall work deceitfully: for he shall come up, and shall become strong with a small people.</p>
+            <p><strong>24</strong> He shall enter peaceably even upon the fattest places of the province; and he shall do that which his fathers have not done, nor his fathers’ fathers; he shall scatter among them the prey, and spoil, and riches: yea, and he shall forecast his devices against the strong holds, even for a time.</p>
+            <p><strong>25</strong> And he shall stir up his power and his courage against the king of the south with a great army; and the king of the south shall be stirred up to battle with a very great and mighty army; but he shall not stand: for they shall forecast devices against him.</p>
+            <p><strong>26</strong> Yea, they that feed of the portion of his meat shall destroy him, and his army shall overflow: and many shall fall down slain.</p>
+            <p><strong>27</strong> And both these kings’ hearts shall be to do mischief, and they shall speak lies at one table; but it shall not prosper: for yet the end shall be at the time appointed.</p>
+            <p><strong>28</strong> Then shall he return into his land with great riches; and his heart shall be against the holy covenant; and he shall do exploits, and return to his own land.</p>
+            <p><strong>29</strong> At the time appointed he shall return, and come toward the south; but it shall not be as the former, or as the latter.</p>
+            <p><strong>30</strong> For the ships of Chittim shall come against him: therefore he shall be grieved, and return, and have indignation against the holy covenant: so shall he do; he shall even return, and have intelligence with them that forsake the holy covenant.</p>
+            <p><strong>31</strong> And arms shall stand on his part, and they shall pollute the sanctuary of strength, and shall take away the daily sacrifice, and they shall place the abomination that maketh desolate.</p>
+            <p><strong>32</strong> And such as do wickedly against the covenant shall he corrupt by flatteries: but the people that do know their God shall be strong, and do exploits.</p>
+            <p><strong>33</strong> And they that understand among the people shall instruct many: yet they shall fall by the sword, and by flame, by captivity, and by spoil, many days.</p>
+            <p><strong>34</strong> Now when they shall fall, they shall be holpen with a little help: but many shall cleave to them with flatteries.</p>
+            <p><strong>35</strong> And some of them of understanding shall fall, to try them, and to purge, and to make them white, even to the time of the end: because it is yet for a time appointed.</p>
+            <p><strong>36</strong> And the king shall do according to his will; and he shall exalt himself, and magnify himself above every god, and shall speak marvellous things against the God of gods, and shall prosper till the indignation be accomplished: for that that is determined shall be done.</p>
+            <p><strong>37</strong> Neither shall he regard the God of his fathers, nor the desire of women, nor regard any god: for he shall magnify himself above all.</p>
+            <p><strong>38</strong> But in his estate shall he honour the God of forces: and a god whom his fathers knew not shall he honour with gold, and silver, and with precious stones, and pleasant things.</p>
+            <p><strong>39</strong> Thus shall he do in the most strong holds with a strange god, whom he shall acknowledge and increase with glory: and he shall cause them to rule over many, and shall divide the land for gain.</p>
+            <p><strong>40</strong> And at the time of the end shall the king of the south push at him: and the king of the north shall come against him like a whirlwind, with chariots, and with horsemen, and with many ships; and he shall enter into the countries, and shall overflow and pass over.</p>
+            <p><strong>41</strong> He shall enter also into the glorious land, and many countries shall be overthrown: but these shall escape out of his hand, even Edom, and Moab, and the chief of the children of Ammon.</p>
+            <p><strong>42</strong> He shall stretch forth his hand also upon the countries: and the land of Egypt shall not escape.</p>
+            <p><strong>43</strong> But he shall have power over the treasures of gold and of silver, and over all the precious things of Egypt: and the Libyans and the Ethiopians shall be at his steps.</p>
+            <p><strong>44</strong> But tidings out of the east and out of the north shall trouble him: therefore he shall go forth with great fury to destroy, and utterly to make away many.</p>
+            <p><strong>45</strong> And he shall plant the tabernacles of his palace between the seas in the glorious holy mountain; yet he shall come to his end, and none shall help him.</p>
+            </div>
+            <div class="scripture-text" id="web-11-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Daniel 11 (ASV)</p>
+            <p><strong>1</strong> And as for me, in the first year of Darius the Mede, I stood up to confirm and strengthen him.</p>
+            <p><strong>2</strong> And now will I show thee the truth. Behold, there shall stand up yet three kings in Persia; and the fourth shall be far richer than they all: and when he is waxed strong through his riches, he shall stir up all against the realm of Greece.</p>
+            <p><strong>3</strong> And a mighty king shall stand up, that shall rule with great dominion, and do according to his will.</p>
+            <p><strong>4</strong> And when he shall stand up, his kingdom shall be broken, and shall be divided toward the four winds of heaven, but not to his posterity, nor according to his dominion wherewith he ruled; for his kingdom shall be plucked up, even for others besides these.</p>
+            <p><strong>5</strong> And the king of the south shall be strong, andoneof his princes; and he shall be strong above him, and have dominion; his dominion shall be a great dominion.</p>
+            <p><strong>6</strong> And at the end of years they shall join themselves together; and the daughter of the king of the south shall come to the king of the north to make an agreement: but she shall not retain the strength of her arm; neither shall he stand, nor his arm; but she shall be given up, and they that brought her, and he that begat her, and he that strengthened her in those times.</p>
+            <p><strong>7</strong> But out of a shoot from her roots shall one stand up in his place, who shall come unto the army, and shall enter into the fortress of the king of the north, and shall deal against them, and shall prevail.</p>
+            <p><strong>8</strong> And also their gods, with their molten images, and with their goodly vessels of silver and of gold, shall he carry captive into Egypt; and he shall refrain some years from the king of the north.</p>
+            <p><strong>9</strong> And he shall come into the realm of the king of the south, but he shall return into his own land.</p>
+            <p><strong>10</strong> And his sons shall war, and shall assemble a multitude of great forces, which shall come on, and overflow, and pass through; and they shall return and war, even to his fortress.</p>
+            <p><strong>11</strong> And the king of the south shall be moved with anger, and shall come forth and fight with him, even with the king of the north; and he shall set forth a great multitude, and the multitude shall be given into his hand.</p>
+            <p><strong>12</strong> And the multitude shall be lifted up, and his heart shall be exalted; and he shall cast down tens of thousands, but he shall not prevail.</p>
+            <p><strong>13</strong> And the king of the north shall return, and shall set forth a multitude greater than the former; and he shall come on at the end of the times, even of years, with a great army and with much substance.</p>
+            <p><strong>14</strong> And in those times there shall many stand up against the king of the south: also the children of the violent among thy people shall lift themselves up to establish the vision; but they shall fall.</p>
+            <p><strong>15</strong> So the king of the north shall come, and cast up a mound, and take a well-fortified city: and the forces of the south shall not stand, neither his chosen people, neither shall there be any strength to stand.</p>
+            <p><strong>16</strong> But he that cometh against him shall do according to his own will, and none shall stand before him; and he shall stand in the glorious land, and in his hand shall be destruction.</p>
+            <p><strong>17</strong> And he shall set his face to come with the strength of his whole kingdom, and with him equitable conditions; and he shall perform them: and he shall give him the daughter of women, to corrupt her; but she shall not stand, neither be for him.</p>
+            <p><strong>18</strong> After this shall he turn his face unto the isles, and shall take many: but a prince shall cause the reproach offered by him to cease; yea, moreover, he shall cause his reproach to turn upon him.</p>
+            <p><strong>19</strong> Then he shall turn his face toward the fortresses of his own land; but he shall stumble and fall, and shall not be found.</p>
+            <p><strong>20</strong> Then shall stand up in his place one that shall cause an exactor to pass through the glory of the kingdom; but within few days he shall be destroyed, neither in anger, nor in battle.</p>
+            <p><strong>21</strong> And in his place shall stand up a contemptible person, to whom they had not given the honor of the kingdom: but he shall come in time of security, and shall obtain the kingdom by flatteries.</p>
+            <p><strong>22</strong> And the overwhelming forces shall be overwhelmed from before him, and shall be broken; yea, also the prince of the covenant.</p>
+            <p><strong>23</strong> And after the league made with him he shall work deceitfully; for he shall come up, and shall become strong, with a small people.</p>
+            <p><strong>24</strong> In time of security shall he come even upon the fattest places of the province; and he shall do that which his fathers have not done, nor his fathers’ fathers; he shall scatter among them prey, and spoil, and substance: yea, he shall devise his devices against the strongholds, even for a time.</p>
+            <p><strong>25</strong> And he shall stir up his power and his courage against the king of the south with a great army; and the king of the south shall war in battle with an exceeding great and mighty army; but he shall not stand; for they shall devise devices against him.</p>
+            <p><strong>26</strong> Yea, they that eat of his dainties shall destroy him, and his army shall overflow; and many shall fall down slain.</p>
+            <p><strong>27</strong> And as for both these kings, their hearts shall be to do mischief, and they shall speak lies at one table: but it shall not prosper; for yet the end shall be at the time appointed.</p>
+            <p><strong>28</strong> Then shall he return into his land with great substance; and his heart shall be against the holy covenant; and he shall do his pleasure, and return to his own land.</p>
+            <p><strong>29</strong> At the time appointed he shall return, and come into the south; but it shall not be in the latter time as it was in the former.</p>
+            <p><strong>30</strong> For ships of Kittim shall come against him; therefore he shall be grieved, and shall return, and have indignation against the holy covenant, and shall do his pleasure: he shall even return, and have regard unto them that forsake the holy covenant.</p>
+            <p><strong>31</strong> And forces shall stand on his part, and they shall profane the sanctuary, even the fortress, and shall take away the continual burnt-offering, and they shall set up the abomination that maketh desolate.</p>
+            <p><strong>32</strong> And such as do wickedly against the covenant shall he pervert by flatteries; but the people that know their God shall be strong, and do exploits.</p>
+            <p><strong>33</strong> And they that are wise among the people shall instruct many; yet they shall fall by the sword and by flame, by captivity and by spoil, many days.</p>
+            <p><strong>34</strong> Now when they shall fall, they shall be helped with a little help; but many shall join themselves unto them with flatteries.</p>
+            <p><strong>35</strong> And some of them that are wise shall fall, to refine them, and to purify, and to make them white, even to the time of the end; because it is yet for the time appointed.</p>
+            <p><strong>36</strong> And the king shall do according to his will; and he shall exalt himself, and magnify himself above every god, and shall speak marvellous things against the God of gods; and he shall prosper till the indignation be accomplished; for that which is determined shall be done.</p>
+            <p><strong>37</strong> Neither shall he regard the gods of his fathers, nor the desire of women, nor regard any god; for he shall magnify himself above all.</p>
+            <p><strong>38</strong> But in his place shall he honor the god of fortresses; and a god whom his fathers knew not shall he honor with gold, and silver, and with precious stones and pleasant things.</p>
+            <p><strong>39</strong> And he shall deal with the strongest fortresses by the help of a foreign god: whosoever acknowledgeth him he will increase with glory; and he shall cause them to rule over many, and shall divide the land for a price.</p>
+            <p><strong>40</strong> And at the time of the end shall the king of the south contend with him; and the king of the north shall come against him like a whirlwind, with chariots, and with horsemen, and with many ships; and he shall enter into the countries, and shall overflow and pass through.</p>
+            <p><strong>41</strong> He shall enter also into the glorious land, and many countries shall be overthrown; but these shall be delivered out of his hand: Edom, and Moab, and the chief of the children of Ammon.</p>
+            <p><strong>42</strong> He shall stretch forth his hand also upon the countries; and the land of Egypt shall not escape.</p>
+            <p><strong>43</strong> But he shall have power over the treasures of gold and of silver, and over all the precious things of Egypt; and the Libyans and the Ethiopians shall be at his steps.</p>
+            <p><strong>44</strong> But tidings out of the east and out of the north shall trouble him; and he shall go forth with great fury to destroy and utterly to sweep away many.</p>
+            <p><strong>45</strong> And he shall plant the tents of his palace between the sea and the glorious holy mountain; yet he shall come to his end, and none shall help him.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The messenger now unfolds a remarkably detailed prophecy of the kings to come. After several kings of Persia, a mighty king of Greece will arise, only for his kingdom to be broken and divided to the four winds rather than to his descendants. From the fragments come the king of the south and the king of the north, whose dynasties clash through marriage alliances, betrayals, and campaigns back and forth across the glorious land. The prophecy traces wars, treacheries, and shifting fortunes in striking detail, including a contemptible ruler who seizes power by flattery, profanes the sanctuary, sets up the abomination that makes desolate, and seduces those who abandon the covenant. Yet the people who know their God are strong and take action; some of the wise fall, refined and purified, until the time of the end. At last a king exalts himself above every god, speaks marvelous things against the God of gods, and prospers until the indignation is complete. He plants his royal tents between the sea and the glorious holy mountain, but he comes to his end with no one to help him. Through all the turmoil, the message holds: history runs to a time appointed, and the proud who defy God will fall.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>The kings of the north and south</strong> — Rival dynasties whose wars, marriages, and betrayals fill the prophecy, all moving within the bounds of God's appointed times.</li>
+          <li><strong>The contemptible, self-exalting king</strong> — A ruler who seizes power by flattery, profanes the sanctuary, magnifies himself above every god, and comes to his end with no one to help.</li>
+          <li><strong>The people who know their God</strong> — The faithful who stand strong and take action amid the turmoil, even as some of the wise fall and are refined.</li>
+          <li><strong>The heavenly messenger</strong> — The one who continues to reveal to Daniel the truth inscribed in the writing of truth, tracing kings and conflicts to the time of the end.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Daniel 11:32 (WEB)</p>
+          <p class="verse__text">Such as do wickedly against the covenant shall he pervert by flatteries; but the people who know their God shall be strong, and take action.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God knows the tangled course of history before it ever unfolds.</li>
+          <li>Those who know their God can stand firm and act, even amid upheaval and deceit.</li>
+          <li>The suffering and refining of the wise is part of God's purifying purpose.</li>
+          <li>Every defiant power that exalts itself against God moves toward its appointed end.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-11">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-11">
+            <ul class="lesson-list">
+            <li><strong>Knowing God produces courage.</strong> “The people who know their God shall be strong, and take action” (Daniel 11:32, WEB). Deep acquaintance with God steadies the faithful when the world is in turmoil.</li>
+            <li><strong>The wise are refined through trial.</strong> Some of the wise fall “to refine them, and to purify” (Daniel 11:35, WEB). Suffering is not random but used by God to make his people white.</li>
+            <li><strong>Self-exaltation runs to ruin.</strong> The king “shall exalt himself, and magnify himself above every god” (Daniel 11:36, WEB), yet only until the indignation is complete. Defiance has a deadline.</li>
+            <li><strong>History runs to an appointed end.</strong> Events unfold “for that which is determined shall be done” (Daniel 11:36, WEB). The chaos of kings is bounded by God's fixed purpose.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-11">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-11">
+            <ol class="study-questions">
+            <li>Why might God reveal such detailed prophecy of wars and kings to Daniel?</li>
+            <li>What does it mean that “the people who know their God shall be strong, and take action” amid the turmoil?</li>
+            <li>How does the refining of the wise reframe the suffering of God's faithful?</li>
+            <li>What is the recurring fate of rulers who exalt themselves against God?</li>
+            <li>How does knowing that history runs to an appointed end help you face uncertain times?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-11">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-11">
+            <ol class="study-questions">
+            <li>The detail shows that no twist of history—no marriage, betrayal, or war—lies outside God's foreknowledge and rule (11:2-4). It assures the faithful that even chaotic events follow a script God has read. Confidence in God's sovereignty is the point, not predicting names.</li>
+            <li>Those who truly know God are not paralyzed by fear but stand firm and act faithfully (11:32). Knowledge of God yields courage and resolve. Encourage members to deepen their knowledge of God as the root of steadfastness.</li>
+            <li>The falling of the wise is described as refining, purifying, and making white (11:35), not as defeat. God uses even their suffering for sanctifying ends. This gives meaning to the trials of the faithful.</li>
+            <li>Again and again the proud rulers prosper for a time and then come to their end (11:36, 45). Self-exaltation against God is always temporary. The pattern reassures that arrogance never has the last word.</li>
+            <li>This is a personal-application question. Invite members to set present anxieties about the world beside the truth that history moves to God's appointed end. As leader, encourage steadfast, courageous faith grounded in knowing God.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="daniel-10.html">← Daniel 10</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="daniel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="daniel-12.html">Daniel 12 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

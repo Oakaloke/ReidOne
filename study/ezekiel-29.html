@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 29: The Monster of the Nile — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 29: the Lord confronts Pharaoh, the great monster of the Nile who claims the river as his own, and announces judgment on proud Egypt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 29
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 29</span>
+        <h1>Ezekiel 29: The Monster of the Nile</h1>
+        <p class="lead">Pharaoh boasts that the Nile is his own creation, so the Lord, who made the river, declares he will draw the great monster out and humble proud Egypt.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-29">
+            <span>Scripture — Ezekiel Chapter 29</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-29">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-29-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-29-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-29-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-29-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 29 (WEB)</p>
+            <p><strong>1</strong> In the tenth year, in the tenth month, on the twelfth day of the month, Yahweh’s word came to me, saying,</p>
+            <p><strong>2</strong> “Son of man, set your face against Pharaoh king of Egypt, and prophesy against him and against all Egypt.</p>
+            <p><strong>3</strong> Speak and say, ‘Thus says the Lord Yahweh: “Behold, I am against you, Pharaoh king of Egypt, the great monster that lies in the midst of his rivers, that has said, ‘My river is my own, and I have made it for myself.’</p>
+            <p><strong>4</strong> I will put hooks in your jaws, and I will make the fish of your rivers stick to your scales; and I will bring you up out of the midst of your rivers, with all the fish of your rivers which stick to your scales.</p>
+            <p><strong>5</strong> I’ll cast you out into the wilderness, you and all the fish of your rivers. You’ll fall on the open field. You won’t be brought together, nor gathered. I have given you for food to the animals of the earth and to the birds of the sky.</p>
+            <p><strong>6</strong> All the inhabitants of Egypt will know that I am Yahweh, because they have been a staff of reed to the house of Israel.</p>
+            <p><strong>7</strong> When they took hold of you by your hand, you broke, and tore all their shoulders; and when they leaned on you, you broke, and paralyzed all of their thighs.”</p>
+            <p><strong>8</strong> Therefore thus says the Lord Yahweh: “Behold, I will bring a sword on you, and will cut off man and animal from you.</p>
+            <p><strong>9</strong> The land of Egypt shall be a desolation and a waste; and they shall know that I am Yahweh. Because he has said, ‘The river is mine, and I have made it;’</p>
+            <p><strong>10</strong> therefore, behold, I am against you, and against your rivers, and I will make the land of Egypt an utter waste and desolation, from the tower of Seveneh even to the border of Ethiopia.</p>
+            <p><strong>11</strong> No foot of man shall pass through it, nor foot of animal shall pass through it, neither shall it be inhabited forty years.</p>
+            <p><strong>12</strong> I will make the land of Egypt a desolation in the midst of the countries that are desolate; and her cities among the cities that are laid waste shall be a desolation forty years; and I will scatter the Egyptians among the nations, and will disperse them through the countries.”</p>
+            <p><strong>13</strong> For thus says the Lord Yahweh: “At the end of forty years will I gather the Egyptians from the peoples where they were scattered;</p>
+            <p><strong>14</strong> and I will bring back the captivity of Egypt, and will cause them to return into the land of Pathros, into the land of their birth; and they shall be there a base kingdom.</p>
+            <p><strong>15</strong> It shall be the base of the kingdoms; neither shall it any more lift itself up above the nations: and I will diminish them, that they shall no more rule over the nations.</p>
+            <p><strong>16</strong> It shall be no more the confidence of the house of Israel, bringing iniquity to memory, when they turn to look after them: and they shall know that I am the Lord Yahweh.”’”</p>
+            <p><strong>17</strong> It came to pass in the seven and twentieth year, in the first month, in the first day of the month, Yahweh’s word came to me, saying,</p>
+            <p><strong>18</strong> Son of man, Nebuchadnezzar king of Babylon caused his army to serve a great service against Tyre: every head was made bald, and every shoulder was worn; yet had he no wages, nor his army, from Tyre, for the service that he had served against it.</p>
+            <p><strong>19</strong> Therefore thus says the Lord Yahweh: Behold, I will give the land of Egypt to Nebuchadnezzar king of Babylon; and he shall carry off her multitude, and take her plunder, and take her prey; and it shall be the wages for his army.</p>
+            <p><strong>20</strong> I have given him the land of Egypt as his recompense for which he served, because they worked for me, says the Lord Yahweh.</p>
+            <p><strong>21</strong> In that day will I cause a horn to sprout for the house of Israel, and I will give you the opening of the mouth in their midst; and they shall know that I am Yahweh.</p>
+            </div>
+            <div class="scripture-text" id="web-29-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 29 (KJV)</p>
+            <p><strong>1</strong> In the tenth year, in the tenth month, in the twelfth day of the month, the word of the Lord came unto me, saying,</p>
+            <p><strong>2</strong> Son of man, set thy face against Pharaoh king of Egypt, and prophesy against him, and against all Egypt:</p>
+            <p><strong>3</strong> Speak, and say, Thus saith the Lord God; Behold, I am against thee, Pharaoh king of Egypt, the great dragon that lieth in the midst of his rivers, which hath said, My river is mine own, and I have made it for myself.</p>
+            <p><strong>4</strong> But I will put hooks in thy jaws, and I will cause the fish of thy rivers to stick unto thy scales, and I will bring thee up out of the midst of thy rivers, and all the fish of thy rivers shall stick unto thy scales.</p>
+            <p><strong>5</strong> And I will leave thee thrown into the wilderness, thee and all the fish of thy rivers: thou shalt fall upon the open fields; thou shalt not be brought together, nor gathered: I have given thee for meat to the beasts of the field and to the fowls of the heaven.</p>
+            <p><strong>6</strong> And all the inhabitants of Egypt shall know that I am the Lord, because they have been a staff of reed to the house of Israel.</p>
+            <p><strong>7</strong> When they took hold of thee by thy hand, thou didst break, and rend all their shoulder: and when they leaned upon thee, thou brakest, and madest all their loins to be at a stand.</p>
+            <p><strong>8</strong> Therefore thus saith the Lord God; Behold, I will bring a sword upon thee, and cut off man and beast out of thee.</p>
+            <p><strong>9</strong> And the land of Egypt shall be desolate and waste; and they shall know that I am the Lord: because he hath said, The river is mine, and I have made it.</p>
+            <p><strong>10</strong> Behold, therefore I am against thee, and against thy rivers, and I will make the land of Egypt utterly waste and desolate, from the tower of Syene even unto the border of Ethiopia.</p>
+            <p><strong>11</strong> No foot of man shall pass through it, nor foot of beast shall pass through it, neither shall it be inhabited forty years.</p>
+            <p><strong>12</strong> And I will make the land of Egypt desolate in the midst of the countries that are desolate, and her cities among the cities that are laid waste shall be desolate forty years: and I will scatter the Egyptians among the nations, and will disperse them through the countries.</p>
+            <p><strong>13</strong> Yet thus saith the Lord God; At the end of forty years will I gather the Egyptians from the people whither they were scattered:</p>
+            <p><strong>14</strong> And I will bring again the captivity of Egypt, and will cause them to return into the land of Pathros, into the land of their habitation; and they shall be there a base kingdom.</p>
+            <p><strong>15</strong> It shall be the basest of the kingdoms; neither shall it exalt itself any more above the nations: for I will diminish them, that they shall no more rule over the nations.</p>
+            <p><strong>16</strong> And it shall be no more the confidence of the house of Israel, which bringeth their iniquity to remembrance, when they shall look after them: but they shall know that I am the Lord God.</p>
+            <p><strong>17</strong> And it came to pass in the seven and twentieth year, in the first month, in the first day of the month, the word of the Lord came unto me, saying,</p>
+            <p><strong>18</strong> Son of man, Nebuchadrezzar king of Babylon caused his army to serve a great service against Tyrus: every head was made bald, and every shoulder was peeled: yet had he no wages, nor his army, for Tyrus, for the service that he had served against it:</p>
+            <p><strong>19</strong> Therefore thus saith the Lord God; Behold, I will give the land of Egypt unto Nebuchadrezzar king of Babylon; and he shall take her multitude, and take her spoil, and take her prey; and it shall be the wages for his army.</p>
+            <p><strong>20</strong> I have given him the land of Egypt for his labour wherewith he served against it, because they wrought for me, saith the Lord God.</p>
+            <p><strong>21</strong> In that day will I cause the horn of the house of Israel to bud forth, and I will give thee the opening of the mouth in the midst of them; and they shall know that I am the Lord.</p>
+            </div>
+            <div class="scripture-text" id="web-29-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 29 (ASV)</p>
+            <p><strong>1</strong> In the tenth year, in the tenthmonth, in the twelfth day of the month, the word of Jehovah came unto me, saying,</p>
+            <p><strong>2</strong> Son of man, set thy face against Pharaoh king of Egypt, and prophesy against him, and against all Egypt;</p>
+            <p><strong>3</strong> speak, and say, Thus saith the Lord Jehovah: Behold, I am against thee, Pharaoh king of Egypt, the great monster that lieth in the midst of his rivers, that hath said, My river is mine own, and I have made it for myself.</p>
+            <p><strong>4</strong> And I will put hooks in thy jaws, and I will cause the fish of thy rivers to stick unto thy scales; and I will bring thee up out of the midst of thy rivers, with all the fish of thy rivers which stick unto thy scales.</p>
+            <p><strong>5</strong> And I will cast thee forth into the wilderness, thee and all the fish of thy rivers: thou shalt fall upon the open field; thou shalt not be brought together, nor gathered; I have given thee for food to the beasts of the earth and to the birds of the heavens.</p>
+            <p><strong>6</strong> And all the inhabitants of Egypt shall know that I am Jehovah, because they have been a staff of reed to the house of Israel.</p>
+            <p><strong>7</strong> When they took hold of thee by thy hand, thou didst break, and didst rend all their shoulders; and when they leaned upon thee, thou brakest, and madest all their loins to be at a stand.</p>
+            <p><strong>8</strong> Therefore thus saith the Lord Jehovah: Behold, I will bring a sword upon thee, and will cut off from thee man and beast.</p>
+            <p><strong>9</strong> And the land of Egypt shall be a desolation and a waste; and they shall know that I am Jehovah. Because he hath said, The river is mine, and I have made it;</p>
+            <p><strong>10</strong> therefore, behold, I am against thee, and against thy rivers, and I will make the land of Egypt an utter waste and desolation, from the tower of Seveneh even unto the border of Ethiopia.</p>
+            <p><strong>11</strong> No foot of man shall pass through it, nor foot of beast shall pass through it, neither shall it be inhabited forty years.</p>
+            <p><strong>12</strong> And I will make the land of Egypt a desolation in the midst of the countries that are desolate; and her cities among the cities that are laid waste shall be a desolation forty years; and I will scatter the Egyptians among the nations, and will disperse them through the countries.</p>
+            <p><strong>13</strong> For thus saith the Lord Jehovah: At the end of forty years will I gather the Egyptians from the peoples whither they were scattered;</p>
+            <p><strong>14</strong> and I will bring back the captivity of Egypt, and will cause them to return into the land of Pathros, into the land of their birth; and they shall be there a base kingdom.</p>
+            <p><strong>15</strong> It shall be the basest of the kingdoms; neither shall it any more lift itself up above the nations: and I will diminish them, that they shall no more rule over the nations.</p>
+            <p><strong>16</strong> And it shall be no more the confidence of the house of Israel, bringing iniquity to remembrance, when they turn to look after them: and they shall know that I am the Lord Jehovah.</p>
+            <p><strong>17</strong> And it came to pass in the seven and twentieth year, in the firstmonth, in the firstdayof the month, the word of Jehovah came unto me, saying,</p>
+            <p><strong>18</strong> Son of man, Nebuchadrezzar king of Babylon caused his army to serve a great service against Tyre: every head was made bald, and every shoulder was worn; yet had he no wages, nor his army, from Tyre, for the service that he had served against it.</p>
+            <p><strong>19</strong> Therefore thus saith the Lord Jehovah: Behold, I will give the land of Egypt unto Nebuchadrezzar king of Babylon; and he shall carry off her multitude, and take her spoil, and take her prey; and it shall be the wages for his army.</p>
+            <p><strong>20</strong> I have given him the land of Egypt as his recompense for which he served, because they wrought for me, saith the Lord Jehovah.</p>
+            <p><strong>21</strong> In that day will I cause a horn to bud forth unto the house of Israel, and I will give thee the opening of the mouth in the midst of them; and they shall know that I am Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The prophet now turns to Egypt, and the Lord sets his face against Pharaoh king of Egypt. Pharaoh is pictured as the great monster lying in the midst of his rivers, boasting, “My river is my own, and I have made it for myself.” It is the ultimate claim of self-sufficiency: the king credits himself with the very source of Egypt's life. So the Lord declares that he will put hooks in the monster's jaws, drag him up out of his rivers, and cast him into the wilderness as food for the beasts and birds. Egypt had been a “staff of reed” to Israel—a support that splintered and pierced the hand of any who leaned on it—so it too will be humbled. The land will lie desolate forty years and its people scattered, but afterward God will gather them again into a lowly kingdom that will never again exalt itself over the nations or tempt Israel to trust in it. A later word adds that, because Nebuchadnezzar's army labored hard against Tyre without reward, God will give him the land of Egypt as his wages. The chapter ends with a hopeful note: in that day God will cause a horn to sprout for the house of Israel.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who made the Nile that Pharaoh claims, who draws the monster from his rivers and humbles Egypt so all will know he is Lord.</li>
+          <li><strong>Pharaoh</strong> — The king of Egypt, pictured as the great monster of the Nile, who boasts “My river is my own” and is dragged out and cast down for his pride.</li>
+          <li><strong>Egypt</strong> — The proud nation and unreliable ally, a “staff of reed” that pierced Israel's hand, to be made desolate and then reduced to a lowly kingdom.</li>
+          <li><strong>Nebuchadnezzar</strong> — The king of Babylon, given the land of Egypt as wages for the hard, unrewarded service his army rendered against Tyre.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 29:3 (WEB)</p>
+          <p class="verse__text">Speak and say, ‘Thus says the Lord Yahweh: “Behold, I am against you, Pharaoh king of Egypt, the great monster that lies in the midst of his rivers, that has said, ‘My river is my own, and I have made it for myself.’</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Claiming credit for what God has given us is the height of pride.</li>
+          <li>Powers that promise to support us can splinter like a reed when we lean on them.</li>
+          <li>God humbles the self-sufficient so they will know he alone is Lord.</li>
+          <li>Even in judgment, God leaves room for restoration and a lowly new beginning.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-29">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-29">
+            <ul class="lesson-list">
+            <li><strong>Self-made boasting provokes God.</strong> Pharaoh says, “My river is my own, and I have made it for myself” (Ezekiel 29:3, WEB). To claim as self-made what God supplies is to set ourselves against him.</li>
+            <li><strong>False supports betray us.</strong> Egypt was “a staff of reed to the house of Israel” that broke and tore the hand that leaned on it (Ezekiel 29:6-7, WEB). What we trust in place of God will fail us in the test.</li>
+            <li><strong>God topples the proud monster.</strong> “I will put hooks in your jaws… and I will bring you up out of the midst of your rivers” (Ezekiel 29:4, WEB). No power is too great for the Lord to draw out and humble.</li>
+            <li><strong>Humbling can precede mercy.</strong> After judgment God will “bring back the captivity of Egypt” as “a base kingdom” (Ezekiel 29:13-14, WEB). His discipline aims to lower pride, not only to destroy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-29">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-29">
+            <ol class="study-questions">
+            <li>What is the meaning of Pharaoh's boast, “My river is my own, and I have made it for myself” (29:3)?</li>
+            <li>Why does God picture Pharaoh as a great monster being dragged out with hooks?</li>
+            <li>What does it mean that Egypt was a “staff of reed” to Israel, and how does that warn us about misplaced trust?</li>
+            <li>How does the promise of a restored but lowly Egypt reveal something of God's purposes in judgment?</li>
+            <li>Where are you tempted to take credit for blessings that are really gifts from God?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-29">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-29">
+            <ol class="study-questions">
+            <li>Pharaoh credits himself with the Nile, the very lifeblood of Egypt—an absurd, godlike claim of total self-sufficiency. It is the same lie as Tyre's: forgetting that every good thing is given by God. The boast names the heart attitude that the whole oracle sets out to humble.</li>
+            <li>The crocodile-like monster sprawling in its rivers seems untouchable in its own element, yet God will hook its jaws and haul it onto dry land to perish (29:4-5). The image insists that even the most powerful, self-assured ruler is helpless once the Lord moves against him.</li>
+            <li>A reed staff looks like support but splinters under weight and wounds the hand. Israel leaned on Egypt for political rescue, and it failed them (29:6-7). Help the group see how alliances, money, or human power can seem dependable yet pierce us when we trust them instead of God.</li>
+            <li>God does not merely annihilate Egypt; he announces it will return as a lowly kingdom that no longer exalts itself or tempts Israel to trust it (29:13-16). Even his judgments are measured, aimed at curing the pride and false trust that caused the trouble in the first place.</li>
+            <li>This is a gentle personal-application question. Invite members to reflect on areas of life—talents, success, security—where they instinctively say “I made this,” and to practice gratitude to the God who is the true source of every gift (James 1:17).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-28.html">← Ezekiel 28</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-30.html">Ezekiel 30 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 28: The Pride of a Fallen King — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 28: the prince of Tyre claims to be a god, and a lament over the king of Tyre exposes the pride that casts the fallen one down." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 28
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 28</span>
+        <h1>Ezekiel 28: The Pride of a Fallen King</h1>
+        <p class="lead">The prince of Tyre claims to be a god, and in a lament over the king the Lord exposes the deep root of pride that casts the anointed cherub down.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-28">
+            <span>Scripture — Ezekiel Chapter 28</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-28">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-28-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-28-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-28-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-28-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 28 (WEB)</p>
+            <p><strong>1</strong> Yahweh’s word came again to me, saying,</p>
+            <p><strong>2</strong> Son of man, tell the prince of Tyre, Thus says the Lord Yahweh: Because your heart is lifted up, and you have said, I am a god, I sit in the seat of God, in the midst of the seas; yet you are man, and not God, though you set your heart as the heart of God—</p>
+            <p><strong>3</strong> behold, you are wiser than Daniel; there is no secret that is hidden from you;</p>
+            <p><strong>4</strong> by your wisdom and by your understanding you have gotten yourself riches, and have gotten gold and silver into your treasures;</p>
+            <p><strong>5</strong> by your great wisdom and by your traffic you have increased your riches, and your heart is lifted up because of your riches—</p>
+            <p><strong>6</strong> therefore thus says the Lord Yahweh: Because you have set your heart as the heart of God,</p>
+            <p><strong>7</strong> therefore, behold, I will bring strangers on you, the terrible of the nations; and they shall draw their swords against the beauty of your wisdom, and they shall defile your brightness.</p>
+            <p><strong>8</strong> They shall bring you down to the pit; and you shall die the death of those who are slain, in the heart of the seas.</p>
+            <p><strong>9</strong> Will you yet say before him who kills you, I am God? but you are man, and not God, in the hand of him who wounds you.</p>
+            <p><strong>10</strong> You shall die the death of the uncircumcised by the hand of strangers: for I have spoken it, says the Lord Yahweh.</p>
+            <p><strong>11</strong> Moreover Yahweh’s word came to me, saying,</p>
+            <p><strong>12</strong> Son of man, take up a lamentation over the king of Tyre, and tell him, Thus says the Lord Yahweh: You seal up the sum, full of wisdom, and perfect in beauty.</p>
+            <p><strong>13</strong> You were in Eden, the garden of God; every precious stone adorned you: ruby, topaz, emerald, chrysolite, onyx, jasper, sapphire, turquoise, and beryl. Gold work of tambourines and of pipes was in you. In the day that you were created they were prepared.</p>
+            <p><strong>14</strong> You were the anointed cherub who covers: and I set you, so that you were on the holy mountain of God; you have walked up and down in the midst of the stones of fire.</p>
+            <p><strong>15</strong> You were perfect in your ways from the day that you were created, until unrighteousness was found in you.</p>
+            <p><strong>16</strong> By the abundance of your traffic they filled your midst with violence, and you have sinned: therefore I have cast you as profane out of the mountain of God; and I have destroyed you, covering cherub, from the midst of the stones of fire.</p>
+            <p><strong>17</strong> Your heart was lifted up because of your beauty; you have corrupted your wisdom by reason of your brightness: I have cast you to the ground; I have laid you before kings, that they may see you.</p>
+            <p><strong>18</strong> By the multitude of your iniquities, in the unrighteousness of your traffic, you have profaned your sanctuaries; therefore have I brought out a fire from your midst; it has devoured you, and I have turned you to ashes on the earth in the sight of all those who see you.</p>
+            <p><strong>19</strong> All those who know you among the peoples shall be astonished at you: you have become a terror, and you shall nevermore have any being.</p>
+            <p><strong>20</strong> Yahweh’s word came to me, saying,</p>
+            <p><strong>21</strong> Son of man, set your face toward Sidon, and prophesy against it,</p>
+            <p><strong>22</strong> and say, Thus says the Lord Yahweh: Behold, I am against you, Sidon; and I will be glorified in your midst; and they shall know that I am Yahweh, when I shall have executed judgments in her, and shall be sanctified in her.</p>
+            <p><strong>23</strong> For I will send pestilence into her, and blood into her streets; and the wounded shall fall in the midst of her, with the sword on her on every side; and they shall know that I am Yahweh.</p>
+            <p><strong>24</strong> There shall be no more a pricking brier to the house of Israel, nor a hurting thorn of any that are around them, that scorned them; and they shall know that I am the Lord Yahweh.</p>
+            <p><strong>25</strong> Thus says the Lord Yahweh: When I shall have gathered the house of Israel from the peoples among whom they are scattered, and shall be sanctified in them in the sight of the nations, then shall they dwell in their own land which I gave to my servant Jacob.</p>
+            <p><strong>26</strong> They shall dwell securely therein; yes, they shall build houses, and plant vineyards, and shall dwell securely, when I have executed judgments on all those who do them despite all around them; and they shall know that I am Yahweh their God.</p>
+            </div>
+            <div class="scripture-text" id="web-28-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 28 (KJV)</p>
+            <p><strong>1</strong> The word of the Lord came again unto me, saying,</p>
+            <p><strong>2</strong> Son of man, say unto the prince of Tyrus, Thus saith the Lord God; Because thine heart is lifted up, and thou hast said, I am a God, I sit in the seat of God, in the midst of the seas; yet thou art a man, and not God, though thou set thine heart as the heart of God:</p>
+            <p><strong>3</strong> Behold, thou art wiser than Daniel; there is no secret that they can hide from thee:</p>
+            <p><strong>4</strong> With thy wisdom and with thine understanding thou hast gotten thee riches, and hast gotten gold and silver into thy treasures:</p>
+            <p><strong>5</strong> By thy great wisdom and by thy traffick hast thou increased thy riches, and thine heart is lifted up because of thy riches:</p>
+            <p><strong>6</strong> Therefore thus saith the Lord God; Because thou hast set thine heart as the heart of God;</p>
+            <p><strong>7</strong> Behold, therefore I will bring strangers upon thee, the terrible of the nations: and they shall draw their swords against the beauty of thy wisdom, and they shall defile thy brightness.</p>
+            <p><strong>8</strong> They shall bring thee down to the pit, and thou shalt die the deaths of them that are slain in the midst of the seas.</p>
+            <p><strong>9</strong> Wilt thou yet say before him that slayeth thee, I am God? but thou shalt be a man, and no God, in the hand of him that slayeth thee.</p>
+            <p><strong>10</strong> Thou shalt die the deaths of the uncircumcised by the hand of strangers: for I have spoken it, saith the Lord God.</p>
+            <p><strong>11</strong> Moreover the word of the Lord came unto me, saying,</p>
+            <p><strong>12</strong> Son of man, take up a lamentation upon the king of Tyrus, and say unto him, Thus saith the Lord God; Thou sealest up the sum, full of wisdom, and perfect in beauty.</p>
+            <p><strong>13</strong> Thou hast been in Eden the garden of God; every precious stone was thy covering, the sardius, topaz, and the diamond, the beryl, the onyx, and the jasper, the sapphire, the emerald, and the carbuncle, and gold: the workmanship of thy tabrets and of thy pipes was prepared in thee in the day that thou wast created.</p>
+            <p><strong>14</strong> Thou art the anointed cherub that covereth; and I have set thee so: thou wast upon the holy mountain of God; thou hast walked up and down in the midst of the stones of fire.</p>
+            <p><strong>15</strong> Thou wast perfect in thy ways from the day that thou wast created, till iniquity was found in thee.</p>
+            <p><strong>16</strong> By the multitude of thy merchandise they have filled the midst of thee with violence, and thou hast sinned: therefore I will cast thee as profane out of the mountain of God: and I will destroy thee, O covering cherub, from the midst of the stones of fire.</p>
+            <p><strong>17</strong> Thine heart was lifted up because of thy beauty, thou hast corrupted thy wisdom by reason of thy brightness: I will cast thee to the ground, I will lay thee before kings, that they may behold thee.</p>
+            <p><strong>18</strong> Thou hast defiled thy sanctuaries by the multitude of thine iniquities, by the iniquity of thy traffick; therefore will I bring forth a fire from the midst of thee, it shall devour thee, and I will bring thee to ashes upon the earth in the sight of all them that behold thee.</p>
+            <p><strong>19</strong> All they that know thee among the people shall be astonished at thee: thou shalt be a terror, and never shalt thou be any more.</p>
+            <p><strong>20</strong> Again the word of the Lord came unto me, saying,</p>
+            <p><strong>21</strong> Son of man, set thy face against Zidon, and prophesy against it,</p>
+            <p><strong>22</strong> And say, Thus saith the Lord God; Behold, I am against thee, O Zidon; and I will be glorified in the midst of thee: and they shall know that I am the Lord, when I shall have executed judgments in her, and shall be sanctified in her.</p>
+            <p><strong>23</strong> For I will send into her pestilence, and blood into her streets; and the wounded shall be judged in the midst of her by the sword upon her on every side; and they shall know that I am the Lord.</p>
+            <p><strong>24</strong> And there shall be no more a pricking brier unto the house of Israel, nor any grieving thorn of all that are round about them, that despised them; and they shall know that I am the Lord God.</p>
+            <p><strong>25</strong> Thus saith the Lord God; When I shall have gathered the house of Israel from the people among whom they are scattered, and shall be sanctified in them in the sight of the heathen, then shall they dwell in their land that I have given to my servant Jacob.</p>
+            <p><strong>26</strong> And they shall dwell safely therein, and shall build houses, and plant vineyards; yea, they shall dwell with confidence, when I have executed judgments upon all those that despise them round about them; and they shall know that I am the Lord their God.</p>
+            </div>
+            <div class="scripture-text" id="web-28-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 28 (ASV)</p>
+            <p><strong>1</strong> The word of Jehovah came again unto me, saying,</p>
+            <p><strong>2</strong> Son of man, say unto the prince of Tyre, Thus saith the Lord Jehovah: Because thy heart is lifted up, and thou hast said, I am a god, I sit in the seat of God, in the midst of the seas; yet thou art man, and not God, though thou didst set thy heart as the heart of God;—</p>
+            <p><strong>3</strong> behold, thou art wiser than Daniel; there is no secret that is hidden from thee;</p>
+            <p><strong>4</strong> by thy wisdom and by thine understanding thou hast gotten thee riches, and hast gotten gold and silver into thy treasures;</p>
+            <p><strong>5</strong> by thy great wisdom and by thy traffic hast thou increased thy riches, and thy heart is lifted up because of thy riches;—</p>
+            <p><strong>6</strong> therefore thus saith the Lord Jehovah: Because thou hast set thy heart as the heart of God,</p>
+            <p><strong>7</strong> therefore, behold, I will bring strangers upon thee, the terrible of the nations; and they shall draw their swords against the beauty of thy wisdom, and they shall defile thy brightness.</p>
+            <p><strong>8</strong> They shall bring thee down to the pit; and thou shalt die the death of them that are slain, in the heart of the seas.</p>
+            <p><strong>9</strong> Wilt thou yet say before him that slayeth thee, I am God? but thou art man, and not God, in the hand of him that woundeth thee.</p>
+            <p><strong>10</strong> Thou shalt die the death of the uncircumcised by the hand of strangers: for I have spoken it, saith the Lord Jehovah.</p>
+            <p><strong>11</strong> Moreover the word of Jehovah came unto me, saying,</p>
+            <p><strong>12</strong> Son of man, take up a lamentation over the king of Tyre, and say unto him, Thus saith the Lord Jehovah: Thou sealest up the sum, full of wisdom, and perfect in beauty.</p>
+            <p><strong>13</strong> Thou wast in Eden, the garden of God; every precious stone was thy covering, the sardius, the topaz, and the diamond, the beryl, the onyx, and the jasper, the sapphire, the emerald, and the carbuncle, and gold: the workmanship of thy tabrets and of thy pipes was in thee; in the day that thou wast created they were prepared.</p>
+            <p><strong>14</strong> Thou wast the anointed cherub that covereth: and I set thee, so that thou wast upon the holy mountain of God; thou hast walked up and down in the midst of the stones of fire.</p>
+            <p><strong>15</strong> Thou wast perfect in thy ways from the day that thou wast created, till unrighteousness was found in thee.</p>
+            <p><strong>16</strong> By the abundance of thy traffic they filled the midst of thee with violence, and thou hast sinned: therefore have I cast thee as profane out of the mountain of God; and I have destroyed thee, O covering cherub, from the midst of the stones of fire.</p>
+            <p><strong>17</strong> Thy heart was lifted up because of thy beauty; thou hast corrupted thy wisdom by reason of thy brightness: I have cast thee to the ground; I have laid thee before kings, that they may behold thee.</p>
+            <p><strong>18</strong> By the multitude of thine iniquities, in the unrighteousness of thy traffic, thou hast profaned thy sanctuaries; therefore have I brought forth a fire from the midst of thee; it hath devoured thee, and I have turned thee to ashes upon the earth in the sight of all them that behold thee.</p>
+            <p><strong>19</strong> All they that know thee among the peoples shall be astonished at thee: thou art become a terror, and thou shalt nevermore have any being.</p>
+            <p><strong>20</strong> And the word of Jehovah came unto me, saying,</p>
+            <p><strong>21</strong> Son of man, set thy face toward Sidon, and prophesy against it,</p>
+            <p><strong>22</strong> and say, Thus saith the Lord Jehovah: Behold, I am against thee, O Sidon; and I will be glorified in the midst of thee; and they shall know that I am Jehovah, when I shall have executed judgments in her, and shall be sanctified in her.</p>
+            <p><strong>23</strong> For I will send pestilence into her, and blood into her streets; and the wounded shall fall in the midst of her, with the sword upon her on every side; and they shall know that I am Jehovah.</p>
+            <p><strong>24</strong> And there shall be no more a pricking brier unto the house of Israel, nor a hurting thorn of any that are round about them, that did despite unto them; and they shall know that I am the Lord Jehovah.</p>
+            <p><strong>25</strong> Thus saith the Lord Jehovah: When I shall have gathered the house of Israel from the peoples among whom they are scattered, and shall be sanctified in them in the sight of the nations, then shall they dwell in their own land which I gave to my servant Jacob.</p>
+            <p><strong>26</strong> And they shall dwell securely therein; yea, they shall build houses, and plant vineyards, and shall dwell securely, when I have executed judgments upon all those that do them despite round about them; and they shall know that I am Jehovah their God.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>The oracle against Tyre reaches its climax in two parts. First the Lord addresses the prince of Tyre, whose heart is lifted up so that he says, “I am a god, I sit in the seat of God, in the midst of the seas.” By great wisdom and trade he has amassed riches and grown proud, yet he is a man and not God. Therefore the Lord will bring ruthless foreigners against him, and he will die the death of the slain in the heart of the seas, unable to claim divinity before those who kill him. Then comes a haunting lament over the king of Tyre, depicted in language that soars beyond any earthly ruler: he was the seal of perfection, full of wisdom and perfect in beauty, in Eden the garden of God, adorned with every precious stone, the anointed cherub who covers, blameless from the day he was created until unrighteousness was found in him. Pride in his beauty and the violence of his trade corrupted him, and God cast him down to the ground. The chapter closes with a short oracle against Sidon and a tender promise that, once the scornful neighbors are judged, the gathered house of Israel will dwell securely in their own land and know that the Lord is their God.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The God who confronts the prince's claim to deity, laments the fall of the king, and promises to gather and settle his own people securely.</li>
+          <li><strong>The prince of Tyre</strong> — The ruler whose proud heart said “I am a god,” trusting his wisdom and wealth, yet shown to be only a man under the hand of those who wound him.</li>
+          <li><strong>The king of Tyre</strong> — The figure of the lament, once perfect in beauty in Eden, the anointed cherub, cast down when pride and violent trade corrupted him.</li>
+          <li><strong>The house of Israel</strong> — God's scattered people, promised that once their scornful neighbors are judged they will dwell securely in their own land and know the Lord.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 28:2 (WEB)</p>
+          <p class="verse__text">Son of man, tell the prince of Tyre, Thus says the Lord Yahweh: Because your heart is lifted up, and you have said, I am a god, I sit in the seat of God, in the midst of the seas; yet you are man, and not God, though you set your heart as the heart of God—</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>The root of every fall is a heart lifted up to take the place of God.</li>
+          <li>Wisdom and wealth become deadly when they feed our claim to be like God.</li>
+          <li>We are creatures, not the Creator; forgetting this is the oldest and most ruinous lie.</li>
+          <li>God's judgment of the proud clears the way for the security and blessing of his people.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-28">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-28">
+            <ul class="lesson-list">
+            <li><strong>Pride reaches for the place of God.</strong> The prince says, “I am a god, I sit in the seat of God” (Ezekiel 28:2, WEB), yet “you are man, and not God.” The essence of sin is grasping at deity that is not ours.</li>
+            <li><strong>Gifts can become snares.</strong> “By your wisdom and by your understanding you have gotten yourself riches… and your heart is lifted up” (Ezekiel 28:4-5, WEB). What God gives can puff us up when we forget the Giver.</li>
+            <li><strong>God brings the exalted low.</strong> “Your heart was lifted up because of your beauty… I have cast you to the ground” (Ezekiel 28:17, WEB). The Lord humbles all who exalt themselves against him.</li>
+            <li><strong>Judgment makes room for grace.</strong> Once the scornful neighbors are judged, Israel “shall dwell securely” in the land God gave “to my servant Jacob” (Ezekiel 28:25-26, WEB). God removes thorns to plant his people in peace.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-28">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-28">
+            <ol class="study-questions">
+            <li>What exactly is the prince of Tyre's sin, according to verses 2-5?</li>
+            <li>How does the lament over the king of Tyre use the imagery of Eden and the anointed cherub?</li>
+            <li>What does this chapter teach about how good gifts—wisdom, beauty, wealth—can lead to a fall?</li>
+            <li>How does the closing promise to Israel (28:25-26) bring hope after so many words of judgment?</li>
+            <li>Where do you see the subtle temptation to “sit in the seat of God” in your own heart?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-28">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-28">
+            <ol class="study-questions">
+            <li>The prince's sin is pride that grasps at deity: his heart is lifted up and he claims, “I am a god, I sit in the seat of God” (28:2). His wisdom and wealth have convinced him he is more than a man. God's reply is simple and devastating: “yet you are man, and not God.”</li>
+            <li>The lament describes the king as the seal of perfection in Eden, adorned with precious stones, the anointed cherub on the holy mountain, blameless until unrighteousness was found in him (28:12-16). The exalted, almost otherworldly language exposes the cosmic dimension of pride and its terrible fall—many readers hear an echo of the original rebellion behind all human arrogance.</li>
+            <li>Wisdom, beauty, and wealth were genuine gifts, but the king let them lift up his heart until he corrupted his wisdom and trusted his splendor (28:5, 17). Help the group see that the danger is not in the gifts themselves but in forgetting that they are gifts, which breeds the pride that comes before a fall.</li>
+            <li>After chapter upon chapter against Tyre and the nations, God turns to comfort: he will gather scattered Israel and settle them securely in their own land (28:25-26). The judgment of arrogant neighbors is not God's last word; his goal is a people dwelling in peace under his care, knowing he is their God.</li>
+            <li>This is a gentle personal-application question. Invite members to consider quiet ways they try to be in control, to be self-sufficient, or to be admired as more than they are. Encourage honest reflection, and point to Christ, who, being in very nature God, humbled himself rather than grasping (Philippians 2:6-8).</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-27.html">← Ezekiel 27</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-29.html">Ezekiel 29 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

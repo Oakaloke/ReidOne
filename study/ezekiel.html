@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Bible Study: The Book of Ezekiel — ReidOne</title>
+  <meta name="description" content="An interactive study of Ezekiel: visions of God's glory among the exiles, judgment on Jerusalem and the nations, dry bones raised to life, a new heart, and the glory returning to a renewed temple." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ReidOne Bible Study — Ezekiel landing / index page.
+  Teaching content prepared for this site; scripture is public domain (WEB/KJV/ASV).
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Bible Study · Major Prophets</span>
+        <h1>The Book of Ezekiel</h1>
+        <p class="lead study-intro mx-auto">Ezekiel is a book of staggering visions and pointed sign-acts, written for people who had lost almost everything. A priest deported to Babylon and settled by the Chebar canal, Ezekiel sees the heavens open and beholds the overwhelming glory of God in a place no one expected to find it. Through him God indicts a stubborn nation, watches the glory withdraw from a defiled temple, and announces judgment on Jerusalem and the surrounding nations. Yet the same book that thunders judgment also breathes resurrection: a watchman pleads with each soul to turn and live, a true Shepherd promises to gather scattered sheep, a valley of dry bones stands up as an army, God pledges to give a new heart and a new spirit, and the glory returns to a temple from which a river of life flows out to heal the world. Again and again the refrain sounds out: "Then they will know that I am Yahweh."</p>
+        <p style="margin-top:1rem"><a class="btn btn--ghost" href="../bible.html">← All 66 Books</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="study-progress study-progress--soon">
+          <div class="study-progress__head">
+            <strong>Progress tracking <span class="coming-soon-tag">Coming soon</span></strong>
+            <button class="btn btn--ghost" type="button" disabled aria-disabled="true">Reset progress</button>
+          </div>
+          <div class="study-progress__bar">
+            <span class="study-progress__fill" style="width:0%"></span>
+          </div>
+          <p class="study-progress__note">Marking chapters complete and saving your progress across visits will arrive with member sign-in.</p>
+        </div>
+
+        <div class="study-grid">
+          <a class="study-card study-card--overview" href="ezekiel-overview.html">
+            <span class="study-card__num">Start Here</span>
+            <h3 class="study-card__title">Whole-Book Overview</h3>
+            <p class="study-card__summary">Among the exiles in Babylon, Ezekiel sees God's glory depart a doomed Jerusalem and then return to a renewed temple, promising his people a new heart, raised-up life, and a faithful Shepherd-King.</p>
+            <span class="study-card__cta">Open overview →</span>
+          </a>
+          <a class="study-card" href="ezekiel-1.html" data-chapter-card="1">
+            <span class="study-card__num">Chapter 1</span>
+            <h3 class="study-card__title">The Glory by the River</h3>
+            <p class="study-card__summary">Far from the temple, by an exile's canal, the heavens open and Ezekiel sees the storm, the living creatures, the wheels, and the likeness of God enthroned in glory.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-2.html" data-chapter-card="2">
+            <span class="study-card__num">Chapter 2</span>
+            <h3 class="study-card__title">Sent to a Rebellious House</h3>
+            <p class="study-card__summary">God raises the fallen prophet to his feet, names Israel a nation of rebels, and hands him a scroll of lamentation, mourning, and woe to speak whether they listen or not.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-3.html" data-chapter-card="3">
+            <span class="study-card__num">Chapter 3</span>
+            <h3 class="study-card__title">The Watchman's Charge</h3>
+            <p class="study-card__summary">Ezekiel eats the scroll and finds it sweet, is sent to a hard-hearted people, and is appointed watchman, accountable to warn the wicked and the righteous alike.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-4.html" data-chapter-card="4">
+            <span class="study-card__num">Chapter 4</span>
+            <h3 class="study-card__title">A City Drawn in Clay</h3>
+            <p class="study-card__summary">God turns Ezekiel into a living sign, sketching Jerusalem on a brick, laying siege against it, lying bound on his side, and eating measured bread to enact the coming judgment.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-5.html" data-chapter-card="5">
+            <span class="study-card__num">Chapter 5</span>
+            <h3 class="study-card__title">The Razor and the Hair</h3>
+            <p class="study-card__summary">Ezekiel shaves his head and beard, divides the hair, and burns, strikes, and scatters it to portray the threefold judgment soon to fall on rebellious Jerusalem.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-6.html" data-chapter-card="6">
+            <span class="study-card__num">Chapter 6</span>
+            <h3 class="study-card__title">Against the High Places</h3>
+            <p class="study-card__summary">Ezekiel prophesies to the very mountains of Israel, where idol altars stand, declaring that the high places will be ruined yet a remnant will remember and loathe their sins.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-7.html" data-chapter-card="7">
+            <span class="study-card__num">Chapter 7</span>
+            <h3 class="study-card__title">The End Has Come</h3>
+            <p class="study-card__summary">In a relentless lament, God announces that the end has come upon the land of Israel, that the day of wrath is near, and that wealth and idols will not save anyone.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-8.html" data-chapter-card="8">
+            <span class="study-card__num">Chapter 8</span>
+            <h3 class="study-card__title">Abominations in the Temple</h3>
+            <p class="study-card__summary">Carried in vision to Jerusalem, Ezekiel is shown chamber after chamber of secret idolatry in God's own house, even as the worshipers say the LORD does not see.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-9.html" data-chapter-card="9">
+            <span class="study-card__num">Chapter 9</span>
+            <h3 class="study-card__title">The Mark and the Slaughter</h3>
+            <p class="study-card__summary">A man clothed in linen marks the foreheads of those who grieve over the city's sins, while executioners pass through Jerusalem beginning at the sanctuary itself.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-10.html" data-chapter-card="10">
+            <span class="study-card__num">Chapter 10</span>
+            <h3 class="study-card__title">The Glory Begins to Leave</h3>
+            <p class="study-card__summary">The glory of the LORD rises from the cherubim to the threshold and then to the east gate, as coals of fire are scattered over the doomed city.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-11.html" data-chapter-card="11">
+            <span class="study-card__num">Chapter 11</span>
+            <h3 class="study-card__title">A New Heart Promised</h3>
+            <p class="study-card__summary">The glory leaves the city for the eastern mountain, yet God promises the scattered exiles that he himself will be their sanctuary and give them one heart and a new spirit.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-12.html" data-chapter-card="12">
+            <span class="study-card__num">Chapter 12</span>
+            <h3 class="study-card__title">Baggage for Exile</h3>
+            <p class="study-card__summary">Ezekiel packs an exile's bag and digs through the wall before the people's eyes, a living sign that Jerusalem will fall and that God's word will not be delayed.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-13.html" data-chapter-card="13">
+            <span class="study-card__num">Chapter 13</span>
+            <h3 class="study-card__title">The Whitewashed Wall</h3>
+            <p class="study-card__summary">God turns against prophets who speak from their own hearts, crying peace where there is no peace and plastering a flimsy wall with whitewash.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-14.html" data-chapter-card="14">
+            <span class="study-card__num">Chapter 14</span>
+            <h3 class="study-card__title">Idols of the Heart</h3>
+            <p class="study-card__summary">Elders come to inquire of God while clinging to idols in their hearts, and the LORD reveals that even the most righteous can save only their own souls.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-15.html" data-chapter-card="15">
+            <span class="study-card__num">Chapter 15</span>
+            <h3 class="study-card__title">The Useless Vine</h3>
+            <p class="study-card__summary">Israel is likened to the wood of a vine, good for fruit but worthless for building, and now charred at both ends and fit only for the fire.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-16.html" data-chapter-card="16">
+            <span class="study-card__num">Chapter 16</span>
+            <h3 class="study-card__title">The Rescued Bride</h3>
+            <p class="study-card__summary">God finds Jerusalem as an abandoned newborn, raises her into a beautiful bride, and grieves her unfaithfulness, yet vows an everlasting covenant of grace.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-17.html" data-chapter-card="17">
+            <span class="study-card__num">Chapter 17</span>
+            <h3 class="study-card__title">Two Eagles and a Sprig</h3>
+            <p class="study-card__summary">A riddle of two great eagles and a vine exposes Judah's broken oath, and ends with God planting a tender sprig on a high mountain.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-18.html" data-chapter-card="18">
+            <span class="study-card__num">Chapter 18</span>
+            <h3 class="study-card__title">Turn, and Live</h3>
+            <p class="study-card__summary">God overturns a fatalistic proverb to declare that each soul is responsible before him, and that he takes no pleasure in death but calls the sinner to turn and live.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-19.html" data-chapter-card="19">
+            <span class="study-card__num">Chapter 19</span>
+            <h3 class="study-card__title">A Lament for the Princes</h3>
+            <p class="study-card__summary">Ezekiel sings a funeral dirge over Israel's royal house, a lioness whose cubs are caged and a vine uprooted and burned.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-20.html" data-chapter-card="20">
+            <span class="study-card__num">Chapter 20</span>
+            <h3 class="study-card__title">A History of Rebellion</h3>
+            <p class="study-card__summary">When elders come to inquire, God recounts Israel's long story of rebellion, his patience for his name's sake, and his vow to gather, judge, and restore.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-21.html" data-chapter-card="21">
+            <span class="study-card__num">Chapter 21</span>
+            <h3 class="study-card__title">The Sword of the LORD</h3>
+            <p class="study-card__summary">God draws his polished sword against Jerusalem and her king, until the crown is removed and the kingdom waits for the one whose right it is.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-22.html" data-chapter-card="22">
+            <span class="study-card__num">Chapter 22</span>
+            <h3 class="study-card__title">The City of Bloodshed</h3>
+            <p class="study-card__summary">God indicts Jerusalem as a bloody, idolatrous city, finds no one to stand in the gap, and pours out his refining and consuming wrath.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-23.html" data-chapter-card="23">
+            <span class="study-card__num">Chapter 23</span>
+            <h3 class="study-card__title">Two Unfaithful Sisters</h3>
+            <p class="study-card__summary">God exposes Samaria and Jerusalem as two sisters, Oholah and Oholibah, who chased foreign lovers and must drink the cup of their betrayal.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-24.html" data-chapter-card="24">
+            <span class="study-card__num">Chapter 24</span>
+            <h3 class="study-card__title">The Boiling Pot and the Sign</h3>
+            <p class="study-card__summary">On the day Babylon besieges Jerusalem, God gives the parable of the rusted pot and takes the prophet's wife as a wordless sign of coming loss.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-25.html" data-chapter-card="25">
+            <span class="study-card__num">Chapter 25</span>
+            <h3 class="study-card__title">The Gloating Neighbors</h3>
+            <p class="study-card__summary">Ammon, Moab, Edom, and Philistia rejoiced over Judah's fall, and the Lord answers each with judgment so that all will know he is Yahweh.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-26.html" data-chapter-card="26">
+            <span class="study-card__num">Chapter 26</span>
+            <h3 class="study-card__title">The Fall of a Great City</h3>
+            <p class="study-card__summary">Tyre rejoiced at Jerusalem's ruin as a business opportunity, so the Lord declares the proud sea-city will be scraped bare like the top of a rock.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-27.html" data-chapter-card="27">
+            <span class="study-card__num">Chapter 27</span>
+            <h3 class="study-card__title">The Shipwreck of Splendor</h3>
+            <p class="study-card__summary">In a haunting lament, Tyre is pictured as a magnificent merchant ship that sinks in the heart of the seas, taking all her glory down with her.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-28.html" data-chapter-card="28">
+            <span class="study-card__num">Chapter 28</span>
+            <h3 class="study-card__title">The Pride of a Fallen King</h3>
+            <p class="study-card__summary">The prince of Tyre claims to be a god, and in a lament over the king the Lord exposes the deep root of pride that casts the anointed cherub down.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-29.html" data-chapter-card="29">
+            <span class="study-card__num">Chapter 29</span>
+            <h3 class="study-card__title">The Monster of the Nile</h3>
+            <p class="study-card__summary">Pharaoh boasts that the Nile is his own creation, so the Lord, who made the river, declares he will draw the great monster out and humble proud Egypt.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-30.html" data-chapter-card="30">
+            <span class="study-card__num">Chapter 30</span>
+            <h3 class="study-card__title">The Day of Egypt</h3>
+            <p class="study-card__summary">The Lord announces a day of clouds against Egypt and her allies, breaking Pharaoh's arms so that the sword falls from his hand.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-31.html" data-chapter-card="31">
+            <span class="study-card__num">Chapter 31</span>
+            <h3 class="study-card__title">The Cedar That Fell</h3>
+            <p class="study-card__summary">Egypt is warned by the parable of Assyria, a towering cedar whose height lifted up its heart, until God cut it down to the pit.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-32.html" data-chapter-card="32">
+            <span class="study-card__num">Chapter 32</span>
+            <h3 class="study-card__title">Down to the Pit</h3>
+            <p class="study-card__summary">In a final lament, Pharaoh the sea-monster is netted, the heavens darken over him, and Egypt is laid in the grave among the fallen nations.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-33.html" data-chapter-card="33">
+            <span class="study-card__num">Chapter 33</span>
+            <h3 class="study-card__title">Watchman, Sound the Trumpet</h3>
+            <p class="study-card__summary">Recommissioned as Israel's watchman, Ezekiel hears God's heart: he takes no pleasure in death but pleads, “Turn back, why will you die?”</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-34.html" data-chapter-card="34">
+            <span class="study-card__num">Chapter 34</span>
+            <h3 class="study-card__title">The Shepherd Who Seeks His Sheep</h3>
+            <p class="study-card__summary">Against shepherds who fed only themselves, the Lord vows to seek his scattered flock himself and to set over them one shepherd, his servant David.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-35.html" data-chapter-card="35">
+            <span class="study-card__num">Chapter 35</span>
+            <h3 class="study-card__title">The Mountain of Vengeance</h3>
+            <p class="study-card__summary">Mount Seir, that is Edom, nursed perpetual hatred against Israel and coveted its land, so the Lord turns its violence back upon itself.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-36.html" data-chapter-card="36">
+            <span class="study-card__num">Chapter 36</span>
+            <h3 class="study-card__title">A New Heart and a New Spirit</h3>
+            <p class="study-card__summary">The Lord will restore the mountains of Israel and renew his people from within, cleansing them and giving a new heart and his own Spirit.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-37.html" data-chapter-card="37">
+            <span class="study-card__num">Chapter 37</span>
+            <h3 class="study-card__title">Dry Bones and One King</h3>
+            <p class="study-card__summary">In a valley of dead bones God breathes resurrection life into Israel and joins two divided sticks under one shepherd-king forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-38.html" data-chapter-card="38">
+            <span class="study-card__num">Chapter 38</span>
+            <h3 class="study-card__title">The Coming of Gog</h3>
+            <p class="study-card__summary">God summons Gog of Magog and his vast army against a peaceful Israel, only to magnify himself and make his holiness known to the nations.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-39.html" data-chapter-card="39">
+            <span class="study-card__num">Chapter 39</span>
+            <h3 class="study-card__title">The Fall of Gog</h3>
+            <p class="study-card__summary">God strikes down the great northern army on the mountains of Israel, cleanses the land, and pours out his Spirit so all will know the Holy One.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-40.html" data-chapter-card="40">
+            <span class="study-card__num">Chapter 40</span>
+            <h3 class="study-card__title">The Temple Measured</h3>
+            <p class="study-card__summary">Carried in a vision to a high mountain, Ezekiel watches a shining man measure the gates and courts of a glorious new temple.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-41.html" data-chapter-card="41">
+            <span class="study-card__num">Chapter 41</span>
+            <h3 class="study-card__title">The Most Holy Place</h3>
+            <p class="study-card__summary">The guide measures the temple itself, its sanctuary and inner room, adorned with cherubim and palm trees, where God will dwell.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-42.html" data-chapter-card="42">
+            <span class="study-card__num">Chapter 42</span>
+            <h3 class="study-card__title">Holy and Common Apart</h3>
+            <p class="study-card__summary">The guide measures the priests' chambers and walls all around the temple, separating the holy from the common on every side.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-43.html" data-chapter-card="43">
+            <span class="study-card__num">Chapter 43</span>
+            <h3 class="study-card__title">The Glory Returns</h3>
+            <p class="study-card__summary">The glory of the LORD comes from the east and fills the temple, and God declares this the place of his throne where he will dwell forever.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-44.html" data-chapter-card="44">
+            <span class="study-card__num">Chapter 44</span>
+            <h3 class="study-card__title">The Shut Gate and the Priests</h3>
+            <p class="study-card__summary">The east gate is shut because the LORD entered by it, and God gives charge for the prince, the faithful priests, and holy service.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-45.html" data-chapter-card="45">
+            <span class="study-card__num">Chapter 45</span>
+            <h3 class="study-card__title">The Holy Portion and the Prince</h3>
+            <p class="study-card__summary">God sets apart a holy portion of land for sanctuary, priests, and city, and calls the prince to justice, just weights, and faithful offerings.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-46.html" data-chapter-card="46">
+            <span class="study-card__num">Chapter 46</span>
+            <h3 class="study-card__title">Worship at the Open Gate</h3>
+            <p class="study-card__summary">God appoints the prince's offerings and the people's worship at the Sabbath and new moon, with continual offerings and rules for inheritance.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-47.html" data-chapter-card="47">
+            <span class="study-card__num">Chapter 47</span>
+            <h3 class="study-card__title">The River of Life</h3>
+            <p class="study-card__summary">A river flows from the temple, deepening as it goes, healing the dead sea and giving life and fruit wherever it runs, and the land is bounded.</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+          <a class="study-card" href="ezekiel-48.html" data-chapter-card="48">
+            <span class="study-card__num">Chapter 48</span>
+            <h3 class="study-card__title">The LORD Is There</h3>
+            <p class="study-card__summary">The tribes receive their portions around the holy offering, and the city is given its everlasting name: “Yahweh is there.”</p>
+            <span class="study-card__status" aria-hidden="true">✓ Completed</span>
+            <span class="study-card__cta">Open study →</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container">
+        <h2>Study together</h2>
+        <p>Gather a group, work through a chapter at a time, and journey through Ezekiel together. Invite a friend to join you.</p>
+        <div class="btn-group">
+          <a class="btn btn--light" href="ezekiel-1.html">Start with Ezekiel 1</a>
+          <a class="btn btn--outline" href="../connect.html" style="color:#fff;border-color:rgba(255,255,255,.6)">Get Connected</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), which is in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

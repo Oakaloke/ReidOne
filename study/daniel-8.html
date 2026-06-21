@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Daniel 8: The Ram, the Goat, and the Horn — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Daniel 8: Daniel sees a ram and a goat, a little horn that attacks the sanctuary, and Gabriel interprets the coming kingdoms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-daniel-progress" data-study-total="12">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Daniel, Chapter 8
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="daniel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Daniel · Chapter 8</span>
+        <h1>Daniel 8: The Ram, the Goat, and the Horn</h1>
+        <p class="lead">Daniel sees a ram overpowered by a goat, a little horn that defies heaven, and Gabriel explains the kings still to come.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-8">
+            <span>Scripture — Daniel Chapter 8</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-8">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-8-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-8-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-8-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-8-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Daniel 8 (WEB)</p>
+            <p><strong>1</strong> In the third year of the reign of king Belshazzar a vision appeared to me, even to me, Daniel, after that which appeared to me at the first.</p>
+            <p><strong>2</strong> I saw in the vision; now it was so, that when I saw, I was in the citadel of Susa, which is in the province of Elam; and I saw in the vision, and I was by the river Ulai.</p>
+            <p><strong>3</strong> Then I lifted up my eyes, and saw, and behold, there stood before the river a ram which had two horns: and the two horns were high; but one was higher than the other, and the higher came up last.</p>
+            <p><strong>4</strong> I saw the ram pushing westward, and northward, and southward; and no animals could stand before him, neither was there any who could deliver out of his hand; but he did according to his will, and magnified himself.</p>
+            <p><strong>5</strong> As I was considering, behold, a male goat came from the west over the surface of the whole earth, and didn’t touch the ground: and the goat had a notable horn between his eyes.</p>
+            <p><strong>6</strong> He came to the ram that had the two horns, which I saw standing before the river, and ran on him in the fury of his power.</p>
+            <p><strong>7</strong> I saw him come close to the ram, and he was moved with anger against him, and struck the ram, and broke his two horns; and there was no power in the ram to stand before him; but he cast him down to the ground, and trampled on him; and there was no one who could deliver the ram out of his hand.</p>
+            <p><strong>8</strong> The male goat magnified himself exceedingly: and when he was strong, the great horn was broken; and instead of it there came up four notable horns toward the four winds of the sky.</p>
+            <p><strong>9</strong> Out of one of them came out a little horn, which grew exceeding great, toward the south, and toward the east, and toward the glorious land.</p>
+            <p><strong>10</strong> It grew great, even to the army of the sky; and some of the army and of the stars it cast down to the ground, and trampled on them.</p>
+            <p><strong>11</strong> Yes, it magnified itself, even to the prince of the army; and it took away from him the continual burnt offering, and the place of his sanctuary was cast down.</p>
+            <p><strong>12</strong> The army was given over to it together with the continual burnt offering through disobedience; and it cast down truth to the ground, and it did its pleasure and prospered.</p>
+            <p><strong>13</strong> Then I heard a holy one speaking; and another holy one said to that certain one who spoke, How long shall be the vision about the continual burnt offering, and the disobedience that makes desolate, to give both the sanctuary and the army to be trodden under foot?</p>
+            <p><strong>14</strong> He said to me, To two thousand and three hundred evenings and mornings; then shall the sanctuary be cleansed.</p>
+            <p><strong>15</strong> When I, even I Daniel, had seen the vision, I sought to understand it; and behold, there stood before me as the appearance of a man.</p>
+            <p><strong>16</strong> I heard a man’s voice between the banks of the Ulai, which called, and said, Gabriel, make this man to understand the vision.</p>
+            <p><strong>17</strong> So he came near where I stood; and when he came, I was frightened, and fell on my face: but he said to me, Understand, son of man; for the vision belongs to the time of the end.</p>
+            <p><strong>18</strong> Now as he was speaking with me, I fell into a deep sleep with my face toward the ground; but he touched me, and set me upright.</p>
+            <p><strong>19</strong> He said, Behold, I will make you know what shall be in the latter time of the indignation; for it belongs to the appointed time of the end.</p>
+            <p><strong>20</strong> The ram which you saw, that had the two horns, they are the kings of Media and Persia.</p>
+            <p><strong>21</strong> The rough male goat is the king of Greece: and the great horn that is between his eyes is the first king.</p>
+            <p><strong>22</strong> As for that which was broken, in the place where four stood up, four kingdoms shall stand up out of the nation, but not with his power.</p>
+            <p><strong>23</strong> In the latter time of their kingdom, when the transgressors have come to the full, a king of fierce face, and understanding dark sentences, shall stand up.</p>
+            <p><strong>24</strong> His power shall be mighty, but not by his own power; and he shall destroy wonderfully, and shall prosper in what he does; and he shall destroy the mighty ones and the holy people.</p>
+            <p><strong>25</strong> Through his policy he shall cause craft to prosper in his hand; and he shall magnify himself in his heart, and he shall destroy many in their security. He shall also stand up against the prince of princes; but he shall be broken without hand.</p>
+            <p><strong>26</strong> The vision of the evenings and mornings which has been told is true: but seal up the vision; for it belongs to many days to come.</p>
+            <p><strong>27</strong> I, Daniel, fainted, and was sick certain days; then I rose up, and did the king’s business: and I wondered at the vision, but no one understood it.</p>
+            </div>
+            <div class="scripture-text" id="web-8-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Daniel 8 (KJV)</p>
+            <p><strong>1</strong> In the third year of the reign of king Belshazzar a vision appeared unto me, even unto me Daniel, after that which appeared unto me at the first.</p>
+            <p><strong>2</strong> And I saw in a vision; and it came to pass, when I saw, that I was at Shushan in the palace, which is in the province of Elam; and I saw in a vision, and I was by the river of Ulai.</p>
+            <p><strong>3</strong> Then I lifted up mine eyes, and saw, and, behold, there stood before the river a ram which had two horns: and the two horns were high; but one was higher than the other, and the higher came up last.</p>
+            <p><strong>4</strong> I saw the ram pushing westward, and northward, and southward; so that no beasts might stand before him, neither was there any that could deliver out of his hand; but he did according to his will, and became great.</p>
+            <p><strong>5</strong> And as I was considering, behold, an he goat came from the west on the face of the whole earth, and touched not the ground: and the goat had a notable horn between his eyes.</p>
+            <p><strong>6</strong> And he came to the ram that had two horns, which I had seen standing before the river, and ran unto him in the fury of his power.</p>
+            <p><strong>7</strong> And I saw him come close unto the ram, and he was moved with choler against him, and smote the ram, and brake his two horns: and there was no power in the ram to stand before him, but he cast him down to the ground, and stamped upon him: and there was none that could deliver the ram out of his hand.</p>
+            <p><strong>8</strong> Therefore the he goat waxed very great: and when he was strong, the great horn was broken; and for it came up four notable ones toward the four winds of heaven.</p>
+            <p><strong>9</strong> And out of one of them came forth a little horn, which waxed exceeding great, toward the south, and toward the east, and toward the pleasant land.</p>
+            <p><strong>10</strong> And it waxed great, even to the host of heaven; and it cast down some of the host and of the stars to the ground, and stamped upon them.</p>
+            <p><strong>11</strong> Yea, he magnified himself even to the prince of the host, and by him the daily sacrifice was taken away, and the place of his sanctuary was cast down.</p>
+            <p><strong>12</strong> And an host was given him against the daily sacrifice by reason of transgression, and it cast down the truth to the ground; and it practised, and prospered.</p>
+            <p><strong>13</strong> Then I heard one saint speaking, and another saint said unto that certain saint which spake, How long shall be the vision concerning the daily sacrifice, and the transgression of desolation, to give both the sanctuary and the host to be trodden under foot?</p>
+            <p><strong>14</strong> And he said unto me, Unto two thousand and three hundred days; then shall the sanctuary be cleansed.</p>
+            <p><strong>15</strong> And it came to pass, when I, even I Daniel, had seen the vision, and sought for the meaning, then, behold, there stood before me as the appearance of a man.</p>
+            <p><strong>16</strong> And I heard a man’s voice between the banks of Ulai, which called, and said, Gabriel, make this man to understand the vision.</p>
+            <p><strong>17</strong> So he came near where I stood: and when he came, I was afraid, and fell upon my face: but he said unto me, Understand, O son of man: for at the time of the end shall be the vision.</p>
+            <p><strong>18</strong> Now as he was speaking with me, I was in a deep sleep on my face toward the ground: but he touched me, and set me upright.</p>
+            <p><strong>19</strong> And he said, Behold, I will make thee know what shall be in the last end of the indignation: for at the time appointed the end shall be.</p>
+            <p><strong>20</strong> The ram which thou sawest having two horns are the kings of Media and Persia.</p>
+            <p><strong>21</strong> And the rough goat is the king of Grecia: and the great horn that is between his eyes is the first king.</p>
+            <p><strong>22</strong> Now that being broken, whereas four stood up for it, four kingdoms shall stand up out of the nation, but not in his power.</p>
+            <p><strong>23</strong> And in the latter time of their kingdom, when the transgressors are come to the full, a king of fierce countenance, and understanding dark sentences, shall stand up.</p>
+            <p><strong>24</strong> And his power shall be mighty, but not by his own power: and he shall destroy wonderfully, and shall prosper, and practise, and shall destroy the mighty and the holy people.</p>
+            <p><strong>25</strong> And through his policy also he shall cause craft to prosper in his hand; and he shall magnify himself in his heart, and by peace shall destroy many: he shall also stand up against the Prince of princes; but he shall be broken without hand.</p>
+            <p><strong>26</strong> And the vision of the evening and the morning which was told is true: wherefore shut thou up the vision; for it shall be for many days.</p>
+            <p><strong>27</strong> And I Daniel fainted, and was sick certain days; afterward I rose up, and did the king’s business; and I was astonished at the vision, but none understood it.</p>
+            </div>
+            <div class="scripture-text" id="web-8-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Daniel 8 (ASV)</p>
+            <p><strong>1</strong> In the third year of the reign of king Belshazzar a vision appeared unto me, even unto me, Daniel, after that which appeared unto me at the first.</p>
+            <p><strong>2</strong> And I saw in the vision; now it was so, that when I saw, I was in Shushan the palace, which is in the province of Elam; and I saw in the vision, and I was by the river Ulai.</p>
+            <p><strong>3</strong> Then I lifted up mine eyes, and saw, and, behold, there stood before the river a ram which had two horns: and the two horns were high; but one was higher than the other, and the higher came up last.</p>
+            <p><strong>4</strong> I saw the ram pushing westward, and northward, and southward; and no beasts could stand before him, neither was there any that could deliver out of his hand; but he did according to his will, and magnified himself.</p>
+            <p><strong>5</strong> And as I was considering, behold, a he-goat came from the west over the face of the whole earth, and touched not the ground: and the goat had a notable horn between his eyes.</p>
+            <p><strong>6</strong> And he came to the ram that had the two horns, which I saw standing before the river, and ran upon him in the fury of his power.</p>
+            <p><strong>7</strong> And I saw him come close unto the ram, and he was moved with anger against him, and smote the ram, and brake his two horns; and there was no power in the ram to stand before him; but he cast him down to the ground, and trampled upon him; and there was none that could deliver the ram out of his hand.</p>
+            <p><strong>8</strong> And the he-goat magnified himself exceedingly: and when he was strong, the great horn was broken; and instead of it there came up four notable horns toward the four winds of heaven.</p>
+            <p><strong>9</strong> And out of one of them came forth a little horn, which waxed exceeding great, toward the south, and toward the east, and toward the glorious land.</p>
+            <p><strong>10</strong> And it waxed great, even to the host of heaven; and some of the host and of the stars it cast down to the ground, and trampled upon them.</p>
+            <p><strong>11</strong> Yea, it magnified itself, even to the prince of the host; and it took away from him the continual burnt-offering, and the place of his sanctuary was cast down.</p>
+            <p><strong>12</strong> And the host was given over to it together with the continual burnt-offering through transgression; and it cast down truth to the ground, and it did its pleasure and prospered.</p>
+            <p><strong>13</strong> Then I heard a holy one speaking; and another holy one said unto that certain one who spake, How long shall be the vision concerning the continual burnt-offering, and the transgression that maketh desolate, to give both the sanctuary and the host to be trodden under foot?</p>
+            <p><strong>14</strong> And he said unto me, Unto two thousand and three hundred evenings and mornings; then shall the sanctuary be cleansed.</p>
+            <p><strong>15</strong> And it came to pass, when I, even I Daniel, had seen the vision, that I sought to understand it; and, behold, there stood before me as the appearance of a man.</p>
+            <p><strong>16</strong> And I heard a man’s voice betweenthe banks ofthe Ulai, which called, and said, Gabriel, make this man to understand the vision.</p>
+            <p><strong>17</strong> So he came near where I stood; and when he came, I was affrighted, and fell upon my face: but he said unto me, Understand, O son of man; for the vision belongeth to the time of the end.</p>
+            <p><strong>18</strong> Now as he was speaking with me, I fell into a deep sleep with my face toward the ground; but he touched me, and set me upright.</p>
+            <p><strong>19</strong> And he said, Behold, I will make thee know what shall be in the latter time of the indignation; for it belongeth to the appointed time of the end.</p>
+            <p><strong>20</strong> The ram which thou sawest, that had the two horns, they are the kings of Media and Persia.</p>
+            <p><strong>21</strong> And the rough he-goat is the king of Greece: and the great horn that is between his eyes is the first king.</p>
+            <p><strong>22</strong> And as for that which was broken, in the place whereof four stood up, four kingdoms shall stand up out of the nation, but not with his power.</p>
+            <p><strong>23</strong> And in the latter time of their kingdom, when the transgressors are come to the full, a king of fierce countenance, and understanding dark sentences, shall stand up.</p>
+            <p><strong>24</strong> And his power shall be mighty, but not by his own power; and he shall destroy wonderfully, and shall prosper and do his pleasure; and he shall destroy the mighty ones and the holy people.</p>
+            <p><strong>25</strong> And through his policy he shall cause craft to prosper in his hand; and he shall magnify himself in his heart, and in their security shall he destroy many: he shall also stand up against the prince of princes; but he shall be broken without hand.</p>
+            <p><strong>26</strong> And the vision of the evenings and mornings which hath been told is true: but shut thou up the vision; for it belongeth to many days to come.</p>
+            <p><strong>27</strong> And I, Daniel, fainted, and was sick certain days; then I rose up, and did the king’s business: and I wondered at the vision, but none understood it.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>In another vision Daniel finds himself at the citadel of Susa by the river Ulai. He sees a ram with two unequal horns charging westward, northward, and southward, unstoppable, until a male goat with a notable horn rushes from the west and tramples it. At the height of its power the goat's great horn breaks, and four horns rise toward the four winds. From one of them comes a little horn that grows great toward the glorious land, exalts itself against the host of heaven and the Prince of the host, takes away the continual offering, and casts truth to the ground. Daniel hears holy ones ask how long the sanctuary will be trampled, and the answer is given in evenings and mornings until it is cleansed. Daniel seeks understanding, and Gabriel is sent to explain: the ram is the kings of Media and Persia, the goat the king of Greece, and the four horns the kingdoms that follow. In the latter time a fierce king will arise who destroys the holy people and stands against the Prince of princes, but he will be broken without human hand. Daniel is left exhausted and astonished, for the vision is for days yet to come.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Daniel</strong> — The seer by the river Ulai who watches the ram and goat, hears the question of the holy ones, and is left faint and astonished by the vision.</li>
+          <li><strong>The ram and the goat</strong> — Symbols, Gabriel explains, of the kings of Media and Persia and the king of Greece, whose rise and fall play out before the end.</li>
+          <li><strong>The little horn</strong> — A fierce king who exalts himself against the host of heaven, takes away the offering, and stands against the Prince of princes before he is broken without hand.</li>
+          <li><strong>Gabriel</strong> — The angelic interpreter sent to make Daniel understand the vision, which belongs to the appointed time of the end.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Daniel 8:25 (WEB)</p>
+          <p class="verse__text">Through his policy he shall cause craft to prosper in his hand; and he shall magnify himself in his heart, and he shall destroy many in their security. He shall also stand up against the prince of princes; but he shall be broken without hand.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God knows and discloses the course of empires long before they rise.</li>
+          <li>Those who exalt themselves against heaven will finally be broken by God, not by human power.</li>
+          <li>Attacks on God's worship and people are serious, but they have a fixed limit.</li>
+          <li>Understanding God's purposes is itself a gift, given through his messengers.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-8">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-8">
+            <ul class="lesson-list">
+            <li><strong>Empires rise and fall on God's timetable.</strong> Gabriel names the ram as Media-Persia and the goat as Greece (Daniel 8:20-21, WEB). What looks like raw conquest unfolds within God's foreknowledge.</li>
+            <li><strong>Self-exaltation is doomed.</strong> The fierce king magnifies himself and stands against the Prince of princes, “but he shall be broken without hand” (Daniel 8:25, WEB). Pride against God ends in God's own undoing of it.</li>
+            <li><strong>God limits the desolation.</strong> The sanctuary will be trampled only until it “be cleansed” (Daniel 8:14, WEB). Even the worst assault has a divinely set boundary.</li>
+            <li><strong>Understanding comes as a gift.</strong> God sends Gabriel: “make this man to understand the vision” (Daniel 8:16, WEB). We grasp God's purposes only as he graciously reveals them.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-8">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-8">
+            <ol class="study-questions">
+            <li>What does it mean that the rise and fall of the ram and goat are foretold before they happen?</li>
+            <li>How does the little horn's self-exaltation against heaven compare with the kings in earlier chapters?</li>
+            <li>Why is it significant that the fierce king is “broken without hand”?</li>
+            <li>What does it tell us that Daniel needs Gabriel to interpret the vision?</li>
+            <li>When the future feels uncertain or threatening, how can it help to know that God already knows the end?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-8">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-8">
+            <ol class="study-questions">
+            <li>Naming Media-Persia and Greece before they conquer shows that God governs the sweep of history, not blind chance (8:20-22). Even the mightiest empires move within his plan. This grounds confidence that nothing escapes his rule.</li>
+            <li>Like Nebuchadnezzar and Belshazzar, the horn lifts itself against God—but it goes further, attacking the host of heaven and the Prince of princes (8:10-11, 25). Self-exaltation reaches its most blasphemous form here. The pattern of pride and judgment intensifies.</li>
+            <li>“Broken without hand” means God himself, not human armies, brings the proud king down (8:25). The deliverance of God's people is finally his own work. It echoes the stone “cut out without hands” in chapter 2.</li>
+            <li>Daniel, for all his wisdom, cannot interpret the vision until Gabriel is sent (8:15-16). Insight into God's purposes is revelation, not human achievement. It keeps us humble and dependent on God's word.</li>
+            <li>This is a personal-application question. Invite members to bring a present uncertainty into the light of God's foreknowledge of history's end. As leader, encourage trust that the God who foretold these kingdoms holds our future too.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="daniel-7.html">← Daniel 7</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="daniel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="daniel-9.html">Daniel 9 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

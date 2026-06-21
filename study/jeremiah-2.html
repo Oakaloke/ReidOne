@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Jeremiah 2: Two Evils, Broken Cisterns — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Jeremiah 2: God recalls the love of Israel's youth, indicts her for two evils, and laments that she traded the fountain of living waters for broken cisterns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-jeremiah-progress" data-study-total="52">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Jeremiah, Chapter 2
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="jeremiah.html">← All Chapters</a>
+        <span class="study-meta">The Book of Jeremiah · Chapter 2</span>
+        <h1>Jeremiah 2: Two Evils, Broken Cisterns</h1>
+        <p class="lead">God grieves that his people have forsaken him, the spring of living waters, and dug for themselves cracked cisterns that can hold no water.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-2">
+            <span>Scripture — Jeremiah Chapter 2</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-2">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-2-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-2-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-2-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-2-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Jeremiah 2 (WEB)</p>
+            <p><strong>1</strong> Yahweh’s word came to me, saying,</p>
+            <p><strong>2</strong> “Go, and cry in the ears of Jerusalem, saying, ‘Thus says Yahweh, “I remember for you the kindness of your youth, the love of your weddings; how you went after me in the wilderness, in a land that was not sown.</p>
+            <p><strong>3</strong> Israel was holiness to Yahweh, the first fruits of his increase. All who devour him shall be held guilty. Evil shall come on them,”’ says Yahweh.”</p>
+            <p><strong>4</strong> Hear Yahweh’s word, O house of Jacob, and all the families of the house of Israel!</p>
+            <p><strong>5</strong> Thus says Yahweh, “What unrighteousness have your fathers found in me, that they have gone far from me, and have walked after vanity, and are become vain?</p>
+            <p><strong>6</strong> Neither did they say, ‘Where is Yahweh who brought us up out of the land of Egypt, who led us through the wilderness, through a land of deserts and of pits, through a land of drought and of the shadow of death, through a land that no one passed through, and where no man lived?’</p>
+            <p><strong>7</strong> I brought you into a plentiful land, to eat its fruit and its goodness; but when you entered, you defiled my land, and made my heritage an abomination.</p>
+            <p><strong>8</strong> The priests didn’t say, ‘Where is Yahweh?’ and those who handle the law didn’t know me. The rulers also transgressed against me, and the prophets prophesied by Baal, and walked after things that do not profit.</p>
+            <p><strong>9</strong> “Therefore I will yet contend with you,” says Yahweh, “and I will contend with your children’s children.</p>
+            <p><strong>10</strong> For pass over to the islands of Kittim, and see; and send to Kedar, and consider diligently; and see if there has been such a thing.</p>
+            <p><strong>11</strong> Has a nation changed its gods, which really are no gods? But my people have changed their glory for that which does not profit.</p>
+            <p><strong>12</strong> “Be astonished, you heavens, at this, and be horribly afraid. Be very desolate,” says Yahweh.</p>
+            <p><strong>13</strong> “For my people have committed two evils: they have forsaken me, the spring of living waters, and cut them out cisterns, broken cisterns, that can hold no water.</p>
+            <p><strong>14</strong> Is Israel a servant? Is he a native-born slave? Why has he become a captive?</p>
+            <p><strong>15</strong> The young lions have roared at him, and yelled. They have made his land waste. His cities are burned up, without inhabitant.</p>
+            <p><strong>16</strong> The children also of Memphis and Tahpanhes have broken the crown of your head.</p>
+            <p><strong>17</strong> “Haven’t you procured this to yourself, in that you have forsaken Yahweh your God, when he led you by the way?</p>
+            <p><strong>18</strong> Now what have you to do in the way to Egypt, to drink the waters of the Shihor? Or what have you to do in the way to Assyria, to drink the waters of the River?</p>
+            <p><strong>19</strong> “Your own wickedness shall correct you, and your backsliding shall reprove you. Know therefore and see that it is an evil thing and a bitter, that you have forsaken Yahweh your God, and that my fear is not in you,” says the Lord, Yahweh of Armies.</p>
+            <p><strong>20</strong> “For of old time I have broken your yoke, and burst your bonds; and you said, ‘I will not serve;’ for on every high hill and under every green tree you bowed yourself, playing the prostitute.</p>
+            <p><strong>21</strong> Yet I had planted you a noble vine, wholly a right seed. How then have you turned into the degenerate branches of a foreign vine to me?</p>
+            <p><strong>22</strong> For though you wash yourself with lye, and use much soap, yet your iniquity is marked before me,” says the Lord Yahweh.</p>
+            <p><strong>23</strong> “How can you say, ‘I am not defiled. I have not gone after the Baals’? See your way in the valley. Know what you have done. You are a swift dromedary traversing her ways;</p>
+            <p><strong>24</strong> a wild donkey used to the wilderness, that snuffs up the wind in her desire. When she is in heat, who can turn her away? All those who seek her will not weary themselves. In her month, they will find her.</p>
+            <p><strong>25</strong> “Withhold your foot from being unshod, and your throat from thirst. But you said, ‘It is in vain. No, for I have loved strangers, and I will go after them.’</p>
+            <p><strong>26</strong> As the thief is ashamed when he is found, so is the house of Israel ashamed; they, their kings, their princes, and their priests, and their prophets;</p>
+            <p><strong>27</strong> who tell wood, ‘You are my father;’ and a stone, ‘You have brought me out:’ for they have turned their back to me, and not their face; but in the time of their trouble they will say, ‘Arise, and save us.’</p>
+            <p><strong>28</strong> “But where are your gods that you have made for yourselves? Let them arise, if they can save you in the time of your trouble: for according to the number of your cities are your gods, Judah.</p>
+            <p><strong>29</strong> “Why will you contend with me? You all have transgressed against me,” says Yahweh.</p>
+            <p><strong>30</strong> “I have struck your children in vain. They received no correction. Your own sword has devoured your prophets, like a destroying lion.</p>
+            <p><strong>31</strong> Generation, consider Yahweh’s word. Have I been a wilderness to Israel? Or a land of thick darkness? Why do my people say, ‘We have broken loose. We will come to you no more?’</p>
+            <p><strong>32</strong> “Can a virgin forget her ornaments, or a bride her attire? Yet my people have forgotten me for days without number.</p>
+            <p><strong>33</strong> How well you prepare your way to seek love! Therefore you have taught even the wicked women your ways.</p>
+            <p><strong>34</strong> Also the blood of the souls of the innocent poor is found in your skirts. You did not find them breaking in; but it is because of all these things.</p>
+            <p><strong>35</strong> “Yet you said, ‘I am innocent. Surely his anger has turned away from me.’ “Behold, I will judge you, because you say, ‘I have not sinned.’</p>
+            <p><strong>36</strong> Why do you go about so much to change your way? You will be ashamed of Egypt also, as you were ashamed of Assyria.</p>
+            <p><strong>37</strong> From there also you shall go out, with your hands on your head; for Yahweh has rejected those in whom you trust, and you shall not prosper with them.</p>
+            </div>
+            <div class="scripture-text" id="web-2-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Jeremiah 2 (KJV)</p>
+            <p><strong>1</strong> Moreover the word of the Lord came to me, saying,</p>
+            <p><strong>2</strong> Go and cry in the ears of Jerusalem, saying, Thus saith the Lord; I remember thee, the kindness of thy youth, the love of thine espousals, when thou wentest after me in the wilderness, in a land that was not sown.</p>
+            <p><strong>3</strong> Israel was holiness unto the Lord, and the firstfruits of his increase: all that devour him shall offend; evil shall come upon them, saith the Lord.</p>
+            <p><strong>4</strong> Hear ye the word of the Lord, O house of Jacob, and all the families of the house of Israel:</p>
+            <p><strong>5</strong> Thus saith the Lord, What iniquity have your fathers found in me, that they are gone far from me, and have walked after vanity, and are become vain?</p>
+            <p><strong>6</strong> Neither said they, Where is the Lord that brought us up out of the land of Egypt, that led us through the wilderness, through a land of deserts and of pits, through a land of drought, and of the shadow of death, through a land that no man passed through, and where no man dwelt?</p>
+            <p><strong>7</strong> And I brought you into a plentiful country, to eat the fruit thereof and the goodness thereof; but when ye entered, ye defiled my land, and made mine heritage an abomination.</p>
+            <p><strong>8</strong> The priests said not, Where is the Lord? and they that handle the law knew me not: the pastors also transgressed against me, and the prophets prophesied by Baal, and walked after things that do not profit.</p>
+            <p><strong>9</strong> Wherefore I will yet plead with you, saith the Lord, and with your children’s children will I plead.</p>
+            <p><strong>10</strong> For pass over the isles of Chittim, and see; and send unto Kedar, and consider diligently, and see if there be such a thing.</p>
+            <p><strong>11</strong> Hath a nation changed their gods, which are yet no gods? but my people have changed their glory for that which doth not profit.</p>
+            <p><strong>12</strong> Be astonished, O ye heavens, at this, and be horribly afraid, be ye very desolate, saith the Lord.</p>
+            <p><strong>13</strong> For my people have committed two evils; they have forsaken me the fountain of living waters, and hewed them out cisterns, broken cisterns, that can hold no water.</p>
+            <p><strong>14</strong> Is Israel a servant? is he a homeborn slave? why is he spoiled?</p>
+            <p><strong>15</strong> The young lions roared upon him, and yelled, and they made his land waste: his cities are burned without inhabitant.</p>
+            <p><strong>16</strong> Also the children of Noph and Tahapanes have broken the crown of thy head.</p>
+            <p><strong>17</strong> Hast thou not procured this unto thyself, in that thou hast forsaken the Lord thy God, when he led thee by the way?</p>
+            <p><strong>18</strong> And now what hast thou to do in the way of Egypt, to drink the waters of Sihor? or what hast thou to do in the way of Assyria, to drink the waters of the river?</p>
+            <p><strong>19</strong> Thine own wickedness shall correct thee, and thy backslidings shall reprove thee: know therefore and see that it is an evil thing and bitter, that thou hast forsaken the Lord thy God, and that my fear is not in thee, saith the Lord God of hosts.</p>
+            <p><strong>20</strong> For of old time I have broken thy yoke, and burst thy bands; and thou saidst, I will not transgress; when upon every high hill and under every green tree thou wanderest, playing the harlot.</p>
+            <p><strong>21</strong> Yet I had planted thee a noble vine, wholly a right seed: how then art thou turned into the degenerate plant of a strange vine unto me?</p>
+            <p><strong>22</strong> For though thou wash thee with nitre, and take thee much soap, yet thine iniquity is marked before me, saith the Lord God.</p>
+            <p><strong>23</strong> How canst thou say, I am not polluted, I have not gone after Baalim? see thy way in the valley, know what thou hast done: thou art a swift dromedary traversing her ways;</p>
+            <p><strong>24</strong> A wild ass used to the wilderness, that snuffeth up the wind at her pleasure; in her occasion who can turn her away? all they that seek her will not weary themselves; in her month they shall find her.</p>
+            <p><strong>25</strong> Withhold thy foot from being unshod, and thy throat from thirst: but thou saidst, There is no hope: no; for I have loved strangers, and after them will I go.</p>
+            <p><strong>26</strong> As the thief is ashamed when he is found, so is the house of Israel ashamed; they, their kings, their princes, and their priests, and their prophets,</p>
+            <p><strong>27</strong> Saying to a stock, Thou art my father; and to a stone, Thou hast brought me forth: for they have turned their back unto me, and not their face: but in the time of their trouble they will say, Arise, and save us.</p>
+            <p><strong>28</strong> But where are thy gods that thou hast made thee? let them arise, if they can save thee in the time of thy trouble: for according to the number of thy cities are thy gods, O Judah.</p>
+            <p><strong>29</strong> Wherefore will ye plead with me? ye all have transgressed against me, saith the Lord.</p>
+            <p><strong>30</strong> In vain have I smitten your children; they received no correction: your own sword hath devoured your prophets, like a destroying lion.</p>
+            <p><strong>31</strong> O generation, see ye the word of the Lord. Have I been a wilderness unto Israel? a land of darkness? wherefore say my people, We are lords; we will come no more unto thee?</p>
+            <p><strong>32</strong> Can a maid forget her ornaments, or a bride her attire? yet my people have forgotten me days without number.</p>
+            <p><strong>33</strong> Why trimmest thou thy way to seek love? therefore hast thou also taught the wicked ones thy ways.</p>
+            <p><strong>34</strong> Also in thy skirts is found the blood of the souls of the poor innocents: I have not found it by secret search, but upon all these.</p>
+            <p><strong>35</strong> Yet thou sayest, Because I am innocent, surely his anger shall turn from me. Behold, I will plead with thee, because thou sayest, I have not sinned.</p>
+            <p><strong>36</strong> Why gaddest thou about so much to change thy way? thou also shalt be ashamed of Egypt, as thou wast ashamed of Assyria.</p>
+            <p><strong>37</strong> Yea, thou shalt go forth from him, and thine hands upon thine head: for the Lord hath rejected thy confidences, and thou shalt not prosper in them.</p>
+            </div>
+            <div class="scripture-text" id="web-2-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Jeremiah 2 (ASV)</p>
+            <p><strong>1</strong> And the word of Jehovah came to me, saying,</p>
+            <p><strong>2</strong> Go, and cry in the ears of Jerusalem, saying, Thus saith Jehovah, I remember for thee the kindness of thy youth, the love of thine espousals; how thou wentest after me in the wilderness, in a land that was not sown.</p>
+            <p><strong>3</strong> Israel was holiness unto Jehovah, the first-fruits of his increase: all that devour him shall be held guilty; evil shall come upon them, saith Jehovah.</p>
+            <p><strong>4</strong> Hear ye the word of Jehovah, O house of Jacob, and all the families of the house of Israel:</p>
+            <p><strong>5</strong> Thus saith Jehovah, What unrighteousness have your fathers found in me, that they are gone far from me, and have walked after vanity, and are become vain?</p>
+            <p><strong>6</strong> Neither said they, Where is Jehovah that brought us up out of the land of Egypt, that led us through the wilderness, through a land of deserts and of pits, through a land of drought and of the shadow of death, through a land that none passed through, and where no man dwelt?</p>
+            <p><strong>7</strong> And I brought you into a plentiful land, to eat the fruit thereof and the goodness thereof; but when ye entered, ye defiled my land, and made my heritage an abomination.</p>
+            <p><strong>8</strong> The priests said not, Where is Jehovah? and they that handle the law knew me not: the rulers also transgressed against me, and the prophets prophesied by Baal, and walked after things that do not profit.</p>
+            <p><strong>9</strong> Wherefore I will yet contend with you, saith Jehovah, and with your children’s children will I contend.</p>
+            <p><strong>10</strong> For pass over to the isles of Kittim, and see; and send unto Kedar, and consider diligently; and see if there hath been such a thing.</p>
+            <p><strong>11</strong> Hath a nation changed its gods, which yet are no gods? but my people have changed their glory for that which doth not profit.</p>
+            <p><strong>12</strong> Be astonished, O ye heavens, at this, and be horribly afraid, be ye very desolate, saith Jehovah.</p>
+            <p><strong>13</strong> For my people have committed two evils: they have forsaken me, the fountain of living waters, and hewed them out cisterns, broken cisterns, that can hold no water.</p>
+            <p><strong>14</strong> Is Israel a servant? is he a home-born slave? why is he become a prey?</p>
+            <p><strong>15</strong> The young lions have roared upon him, and yelled; and they have made his land waste: his cities are burned up, without inhabitant.</p>
+            <p><strong>16</strong> The children also of Memphis and Tahpanhes have broken the crown of thy head.</p>
+            <p><strong>17</strong> Hast thou not procured this unto thyself, in that thou hast forsaken Jehovah thy God, when he led thee by the way?</p>
+            <p><strong>18</strong> And now what hast thou to do in the way to Egypt, to drink the waters of the Shihor? or what hast thou to do in the way to Assyria, to drink the waters of the River?</p>
+            <p><strong>19</strong> Thine own wickedness shall correct thee, and thy backslidings shall reprove thee: know therefore and see that it is an evil thing and a bitter, that thou hast forsaken Jehovah thy God, and that my fear is not in thee, saith the Lord, Jehovah of hosts.</p>
+            <p><strong>20</strong> For of old time I have broken thy yoke, and burst thy bonds; and thou saidst, I will not serve; for upon every high hill and under every green tree thou didst bow thyself, playing the harlot.</p>
+            <p><strong>21</strong> Yet I had planted thee a noble vine, wholly a right seed: how then art thou turned into the degenerate branches of a foreign vine unto me?</p>
+            <p><strong>22</strong> For though thou wash thee with lye, and take thee much soap, yet thine iniquity is marked before me, saith the Lord Jehovah.</p>
+            <p><strong>23</strong> How canst thou say, I am not defiled, I have not gone after the Baalim? see thy way in the valley, know what thou hast done: thou art a swift dromedary traversing her ways;</p>
+            <p><strong>24</strong> a wild ass used to the wilderness, that snuffeth up the wind in her desire; in her occasion who can turn her away? all they that seek her will not weary themselves; in her month they shall find her.</p>
+            <p><strong>25</strong> Withhold thy foot from being unshod, and thy throat from thirst. But thou saidst, It is in vain; no, for I have loved strangers, and after them will I go.</p>
+            <p><strong>26</strong> As the thief is ashamed when he is found, so is the house of Israel ashamed; they, their kings, their princes, and their priests, and their prophets;</p>
+            <p><strong>27</strong> who say to a stock, Thou art my father; and to a stone, Thou hast brought me forth: for they have turned their back unto me, and not their face; but in the time of their trouble they will say, Arise, and save us.</p>
+            <p><strong>28</strong> But where are thy gods that thou hast made thee? let them arise, if they can save thee in the time of thy trouble: for according to the number of thy cities are thy gods, O Judah.</p>
+            <p><strong>29</strong> Wherefore will ye contend with me? ye all have transgressed against me, saith Jehovah.</p>
+            <p><strong>30</strong> In vain have I smitten your children; they received no correction: your own sword hath devoured your prophets, like a destroying lion.</p>
+            <p><strong>31</strong> O generation, see ye the word of Jehovah. Have I been a wilderness unto Israel? or a land of thick darkness? wherefore say my people, We are broken loose; we will come no more unto thee?</p>
+            <p><strong>32</strong> Can a virgin forget her ornaments, or a bride her attire? yet my people have forgotten me days without number.</p>
+            <p><strong>33</strong> How trimmest thou thy way to seek love! therefore even the wicked women hast thou taught thy ways.</p>
+            <p><strong>34</strong> Also in thy skirts is found the blood of the souls of the innocent poor: thou didst not find them breaking in; but it is because of all these things.</p>
+            <p><strong>35</strong> Yet thou saidst, I am innocent; surely his anger is turned away from me. Behold, I will enter into judgment with thee, because thou sayest, I have not sinned.</p>
+            <p><strong>36</strong> Why gaddest thou about so much to change thy way? thou shalt be ashamed of Egypt also, as thou wast ashamed of Assyria.</p>
+            <p><strong>37</strong> From thence also shalt thou go forth, with thy hands upon thy head: for Jehovah hath rejected those in whom thou trustest, and thou shalt not prosper with them.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>Yahweh sends Jeremiah to cry in the ears of Jerusalem, remembering the kindness of her youth, the love of her wedding days, when Israel followed him through the wilderness as his holy first fruits. But the people have walked far from him, asking neither where the God who led them from Egypt has gone, nor seeking him at all. Priests did not ask where Yahweh was, those who handled the law did not know him, rulers transgressed, and prophets prophesied by Baal. God marvels that no nation ever changed its gods, yet his people have exchanged their glory for what cannot profit. He names two evils at the heart of it: they have forsaken him, the spring of living waters, and hewn out for themselves cisterns, broken cisterns that can hold no water. So Israel has become a captive, her cities burned, her own wickedness correcting her. Though once planted as a noble vine, she has turned into a wild, foreign vine, staining herself so deeply that no soap can cleanse her. She has run after foreign lovers, called wood her father and stone her mother, yet still protests her innocence. God exposes the futility of trusting Egypt and Assyria, for he has rejected those in whom she trusts, and she will go out shamed, hands on her head.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Voices</h2>
+          <ul class="char-list">
+          <li><strong>Yahweh (the LORD)</strong> — The spurned husband and spring of living waters who recalls Israel's early devotion, exposes her two evils, and pleads through grief and rebuke for her to see what she has lost.</li>
+          <li><strong>Israel</strong> — The bride of the wilderness now turned faithless, who has forsaken the fountain to dig broken cisterns and chase gods that cannot profit or save.</li>
+          <li><strong>The priests, rulers, and prophets</strong> — The leaders who failed to seek Yahweh, handled the law without knowing him, transgressed, and prophesied by Baal, leading the people away from their God.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Jeremiah 2:13 (WEB)</p>
+          <p class="verse__text">“For my people have committed two evils: they have forsaken me, the spring of living waters, and cut them out cisterns, broken cisterns, that can hold no water.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Sin is first a forsaking of God himself, and only then a turning to lesser things.</li>
+          <li>Idols are broken cisterns: they promise satisfaction but cannot hold the water of life.</li>
+          <li>God remembers the love of our early devotion even when we have wandered far.</li>
+          <li>Trusting in human powers and false gods leaves us ashamed and unsaved in the day of trouble.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-2">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-2">
+            <ul class="lesson-list">
+            <li><strong>The root of sin is forsaking God.</strong> “They have forsaken me, the spring of living waters” (Jeremiah 2:13, WEB). Before idolatry is a wrong attachment, it is the abandonment of the only true source of life.</li>
+            <li><strong>Idols cannot deliver what they promise.</strong> The people dug “broken cisterns, that can hold no water” (Jeremiah 2:13, WEB). Whatever we substitute for God will leave us thirsty.</li>
+            <li><strong>God grieves over misplaced trust.</strong> He marvels that a people would change “their glory for that which does not profit” (Jeremiah 2:11, WEB). Our wandering is not only foolish but heartbreaking to him.</li>
+            <li><strong>False refuges end in shame.</strong> “Yahweh has rejected those in whom you trust, and you shall not prosper with them” (Jeremiah 2:37, WEB). Trust placed anywhere but God collapses in the day of need.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-2">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-2">
+            <ol class="study-questions">
+            <li>How does God describe the relationship of Israel's youth, and why does he begin there?</li>
+            <li>What are the two evils God names, and how are they connected?</li>
+            <li>What is the difference between a spring of living water and a cracked cistern, and what do they picture spiritually?</li>
+            <li>How does the chapter expose the futility of trusting Egypt and Assyria?</li>
+            <li>What broken cisterns have you been tempted to dig for yourself instead of drinking from God?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-2">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-2">
+            <ol class="study-questions">
+            <li>God recalls the kindness of Israel's youth and her wilderness devotion (2:2). He begins with love remembered so the indictment lands not as cold accusation but as the grief of a faithful husband over a bride who has wandered.</li>
+            <li>The first evil is forsaking God, the fountain; the second is digging broken cisterns that hold no water (2:13). They are linked because turning from the true source always sends us scrambling after substitutes that fail us.</li>
+            <li>A spring gives fresh, living, self-renewing water; a cracked cistern can at best store stagnant water and in fact leaks it all away. The image teaches that God alone satisfies, while idols promise and cannot deliver. Christ later offers himself as that living water (John 4:14).</li>
+            <li>God shows that running to Egypt or Assyria for security only multiplies shame, for he has rejected those in whom they trust (2:18, 36-37). The lesson is that political and worldly alliances cannot substitute for trusting the living God.</li>
+            <li>This is a personal-application question. Invite members to name, even silently, the substitutes they reach for, and to return to the fountain. As leader, keep the focus on God's grieving love and his open invitation, not on shame.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="jeremiah-1.html">← Jeremiah 1</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="jeremiah.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="jeremiah-3.html">Jeremiah 3 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

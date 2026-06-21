@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 5: The Razor and the Hair — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 5: Ezekiel shaves and divides his hair into thirds to portray Jerusalem's coming judgment by plague, sword, and scattering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 5
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 5</span>
+        <h1>Ezekiel 5: The Razor and the Hair</h1>
+        <p class="lead">Ezekiel shaves his head and beard, divides the hair, and burns, strikes, and scatters it to portray the threefold judgment soon to fall on rebellious Jerusalem.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-5">
+            <span>Scripture — Ezekiel Chapter 5</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-5">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-5-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-5-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-5-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-5-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 5 (WEB)</p>
+            <p><strong>1</strong> You, son of man, take a sharp sword; You shall take it as a barber’s razor to you, and shall cause it to pass on your head and on your beard: then take balances to weigh, and divide the hair.</p>
+            <p><strong>2</strong> A third part you shall burn in the fire in the midst of the city, when the days of the siege are fulfilled; and you shall take a third part, and strike with the sword around it; and a third part you shall scatter to the wind, and I will draw out a sword after them.</p>
+            <p><strong>3</strong> You shall take of it a few in number, and bind them in your skirts.</p>
+            <p><strong>4</strong> Of these again you shall take, and cast them into the midst of the fire, and burn them in the fire; from it shall a fire come out into all the house of Israel.</p>
+            <p><strong>5</strong> Thus says the Lord Yahweh: This is Jerusalem; I have set her in the midst of the nations, and countries are around her.</p>
+            <p><strong>6</strong> She has rebelled against my ordinances in doing wickedness more than the nations, and against my statutes more than the countries that are around her; for they have rejected my ordinances, and as for my statutes, they have not walked in them.</p>
+            <p><strong>7</strong> Therefore thus says the Lord Yahweh: Because you are turbulent more than the nations that are around you, and have not walked in my statutes, neither have kept my ordinances, neither have done after the ordinances of the nations that are around you;</p>
+            <p><strong>8</strong> therefore thus says the Lord Yahweh: Behold, I, even I, am against you; and I will execute judgments in your midst in the sight of the nations.</p>
+            <p><strong>9</strong> I will do in you that which I have not done, and which I will not do any more the like, because of all your abominations.</p>
+            <p><strong>10</strong> Therefore the fathers shall eat the sons in your midst, and the sons shall eat their fathers; and I will execute judgments on you; and the whole remnant of you will I scatter to all the winds.</p>
+            <p><strong>11</strong> Therefore as I live, says the Lord Yahweh, surely, because you have defiled my sanctuary with all your detestable things, and with all your abominations, therefore will I also diminish you; neither shall my eye spare, and I also will have no pity.</p>
+            <p><strong>12</strong> A third part of you shall die with the pestilence, and with famine shall they be consumed in your midst; and a third part shall fall by the sword around you; and a third part I will scatter to all the winds, and will draw out a sword after them.</p>
+            <p><strong>13</strong> Thus shall my anger be accomplished, and I will cause my wrath toward them to rest, and I shall be comforted; and they shall know that I, Yahweh, have spoken in my zeal, when I have accomplished my wrath on them.</p>
+            <p><strong>14</strong> Moreover I will make you a desolation and a reproach among the nations that are around you, in the sight of all that pass by.</p>
+            <p><strong>15</strong> So it shall be a reproach and a taunt, an instruction and an astonishment, to the nations that are around you, when I shall execute judgments on you in anger and in wrath, and in wrathful rebukes; (I, Yahweh, have spoken it;)</p>
+            <p><strong>16</strong> when I shall send on them the evil arrows of famine, that are for destruction, which I will send to destroy you: and I will increase the famine on you, and will break your staff of bread;</p>
+            <p><strong>17</strong> and I will send on you famine and evil animals, and they shall bereave you; and pestilence and blood shall pass through you; and I will bring the sword on you: I, Yahweh, have spoken it.</p>
+            </div>
+            <div class="scripture-text" id="web-5-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 5 (KJV)</p>
+            <p><strong>1</strong> And thou, son of man, take thee a sharp knife, take thee a barber’s razor, and cause it to pass upon thine head and upon thy beard: then take thee balances to weigh, and divide the hair.</p>
+            <p><strong>2</strong> Thou shalt burn with fire a third part in the midst of the city, when the days of the siege are fulfilled: and thou shalt take a third part, and smite about it with a knife: and a third part thou shalt scatter in the wind; and I will draw out a sword after them.</p>
+            <p><strong>3</strong> Thou shalt also take thereof a few in number, and bind them in thy skirts.</p>
+            <p><strong>4</strong> Then take of them again, and cast them into the midst of the fire, and burn them in the fire; for thereof shall a fire come forth into all the house of Israel.</p>
+            <p><strong>5</strong> Thus saith the Lord God; This is Jerusalem: I have set it in the midst of the nations and countries that are round about her.</p>
+            <p><strong>6</strong> And she hath changed my judgments into wickedness more than the nations, and my statutes more than the countries that are round about her: for they have refused my judgments and my statutes, they have not walked in them.</p>
+            <p><strong>7</strong> Therefore thus saith the Lord God; Because ye multiplied more than the nations that are round about you, and have not walked in my statutes, neither have kept my judgments, neither have done according to the judgments of the nations that are round about you;</p>
+            <p><strong>8</strong> Therefore thus saith the Lord God; Behold, I, even I, am against thee, and will execute judgments in the midst of thee in the sight of the nations.</p>
+            <p><strong>9</strong> And I will do in thee that which I have not done, and whereunto I will not do any more the like, because of all thine abominations.</p>
+            <p><strong>10</strong> Therefore the fathers shall eat the sons in the midst of thee, and the sons shall eat their fathers; and I will execute judgments in thee, and the whole remnant of thee will I scatter into all the winds.</p>
+            <p><strong>11</strong> Wherefore, as I live, saith the Lord God; Surely, because thou hast defiled my sanctuary with all thy detestable things, and with all thine abominations, therefore will I also diminish thee; neither shall mine eye spare, neither will I have any pity.</p>
+            <p><strong>12</strong> A third part of thee shall die with the pestilence, and with famine shall they be consumed in the midst of thee: and a third part shall fall by the sword round about thee; and I will scatter a third part into all the winds, and I will draw out a sword after them.</p>
+            <p><strong>13</strong> Thus shall mine anger be accomplished, and I will cause my fury to rest upon them, and I will be comforted: and they shall know that I the Lord have spoken it in my zeal, when I have accomplished my fury in them.</p>
+            <p><strong>14</strong> Moreover I will make thee waste, and a reproach among the nations that are round about thee, in the sight of all that pass by.</p>
+            <p><strong>15</strong> So it shall be a reproach and a taunt, an instruction and an astonishment unto the nations that are round about thee, when I shall execute judgments in thee in anger and in fury and in furious rebukes. I the Lord have spoken it.</p>
+            <p><strong>16</strong> When I shall send upon them the evil arrows of famine, which shall be for their destruction, and which I will send to destroy you: and I will increase the famine upon you, and will break your staff of bread:</p>
+            <p><strong>17</strong> So will I send upon you famine and evil beasts, and they shall bereave thee; and pestilence and blood shall pass through thee; and I will bring the sword upon thee. I the Lord have spoken it.</p>
+            </div>
+            <div class="scripture-text" id="web-5-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 5 (ASV)</p>
+            <p><strong>1</strong> And thou, son of man, take thee a sharp sword; as a barber’s razor shalt thou take it unto thee, and shalt cause it to pass upon thy head and upon thy beard: then take thee balances to weigh, and divide the hair.</p>
+            <p><strong>2</strong> A third part shalt thou burn in the fire in the midst of the city, when the days of the siege are fulfilled; and thou shalt take a third part, and smite with the sword round about it; and a third part thou shalt scatter to the wind, and I will draw out a sword after them.</p>
+            <p><strong>3</strong> And thou shalt take thereof a few in number, and bind them in thy skirts.</p>
+            <p><strong>4</strong> And of these again shalt thou take, and cast them into the midst of the fire, and burn them in the fire; therefrom shall a fire come forth into all the house of Israel.</p>
+            <p><strong>5</strong> Thus saith the Lord Jehovah: This is Jerusalem; I have set her in the midst of the nations, and countries are round about her.</p>
+            <p><strong>6</strong> And she hath rebelled against mine ordinances in doing wickedness more than the nations, and against my statutes more than the countries that are round about her; for they have rejected mine ordinances, and as for my statutes, they have not walked in them.</p>
+            <p><strong>7</strong> Therefore thus saith the Lord Jehovah: Because ye are turbulent more than the nations that are round about you, and have not walked in my statutes, neither have kept mine ordinances, neither have done after the ordinances of the nations that are round about you;</p>
+            <p><strong>8</strong> therefore thus saith the Lord Jehovah: Behold, I, even I, am against thee; and I will execute judgments in the midst of thee in the sight of the nations.</p>
+            <p><strong>9</strong> And I will do in thee that which I have not done, and whereunto I will not do any more the like, because of all thine abominations.</p>
+            <p><strong>10</strong> Therefore the fathers shall eat the sons in the midst of thee, and the sons shall eat their fathers; and I will execute judgments on thee; and the whole remnant of thee will I scatter unto all the winds.</p>
+            <p><strong>11</strong> Wherefore, as I live, saith the Lord Jehovah, surely, because thou hast defiled my sanctuary with all thy detestable things, and with all thine abominations, therefore will I also diminish thee; neither shall mine eye spare, and I also will have no pity.</p>
+            <p><strong>12</strong> A third part of thee shall die with the pestilence, and with famine shall they be consumed in the midst of thee; and a third part shall fall by the sword round about thee; and a third part I will scatter unto all the winds, and will draw out a sword after them.</p>
+            <p><strong>13</strong> Thus shall mine anger be accomplished, and I will cause my wrath toward them to rest, and I shall be comforted: and they shall know that I, Jehovah, have spoken in my zeal, when I have accomplished my wrath upon them.</p>
+            <p><strong>14</strong> Moreover I will make thee a desolation and a reproach among the nations that are round about thee, in the sight of all that pass by.</p>
+            <p><strong>15</strong> So it shall be a reproach and a taunt, an instruction and an astonishment, unto the nations that are round about thee, when I shall execute judgments on thee in anger and in wrath, and in wrathful rebukes (I, Jehovah, have spoken it);</p>
+            <p><strong>16</strong> when I shall send upon them the evil arrows of famine, that are for destruction, which I will send to destroy you. And I will increase the famine upon you, and will break your staff of bread;</p>
+            <p><strong>17</strong> and I will send upon you famine and evil beasts, and they shall bereave thee; and pestilence and blood shall pass through thee; and I will bring the sword upon thee: I, Jehovah, have spoken it.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God commands Ezekiel to take a sharp sword as a barber's razor and shave his head and beard, then to weigh and divide the hair into three parts. One third he is to burn in the fire inside the model city when the siege days are over, one third he is to strike with the sword around the city, and one third he is to scatter to the wind, with the Lord drawing a sword after them. A few hairs he binds in the hem of his garment, and even some of those are cast into the fire. The Lord interprets the sign: this is Jerusalem, set in the midst of the nations, which has rebelled against his ordinances more wickedly than the peoples around her. Because she has defiled his sanctuary with detestable things and abominations, God himself declares, “I, even I, am against you,” and will execute judgments in the sight of the nations such as he has never done before and will never do again. A third will die by plague and famine, a third by the sword, and a third he will scatter to the winds. Jerusalem will become a desolation, a reproach, and a warning to the surrounding nations, all so that they will know that the Lord has spoken in his zeal. The chapter is a sobering portrait of holy judgment against persistent covenant betrayal.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Ezekiel (the sign-bearer)</strong> — The prophet who shaves and divides his hair to dramatize the threefold fate of Jerusalem's people under God's judgment.</li>
+          <li><strong>The Lord Yahweh</strong> — The holy God who declares himself against Jerusalem, executing unprecedented judgment because she has defiled his sanctuary and rebelled beyond the nations.</li>
+          <li><strong>Jerusalem</strong> — The city set in the midst of the nations to display God's ways, who instead rebelled more wickedly than the peoples around her and now faces desolation.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 5:8 (WEB)</p>
+          <p class="verse__text">therefore thus says the Lord Yahweh: Behold, I, even I, am against you; and I will execute judgments in your midst in the sight of the nations.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Greater privilege brings greater accountability; Jerusalem was judged more severely because she had received more light.</li>
+          <li>God takes the defiling of his worship and sanctuary with the utmost seriousness.</li>
+          <li>The most fearful words in Scripture are when God says he is against a people who persist in rebellion.</li>
+          <li>Even in judgment, God remembers a remnant—a few hairs bound in the hem—pointing to mercy beyond wrath.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-5">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-5">
+            <ul class="lesson-list">
+            <li><strong>Privilege increases responsibility.</strong> Jerusalem “has rebelled against my ordinances… more than the nations” (Ezekiel 5:6, WEB). To whom much is given, much is required.</li>
+            <li><strong>God will not be mocked in his worship.</strong> “You have defiled my sanctuary with all your detestable things” (Ezekiel 5:11, WEB). Corrupted worship provokes the holy God's judgment.</li>
+            <li><strong>It is fearful when God is against us.</strong> “Behold, I, even I, am against you” (Ezekiel 5:8, WEB). The same God who is our refuge becomes our adversary when we cling to sin.</li>
+            <li><strong>A remnant is preserved.</strong> Ezekiel binds “a few in number… in your skirts” (Ezekiel 5:3, WEB). Even amid sweeping judgment, God keeps a remnant for himself.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-5">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-5">
+            <ol class="study-questions">
+            <li>What do the three portions of hair—burned, struck, and scattered—represent for Jerusalem?</li>
+            <li>Why does God judge Jerusalem more severely than the surrounding nations?</li>
+            <li>How should we understand the gravity of God declaring, “I, even I, am against you” (5:8)?</li>
+            <li>What hope, if any, can you find in the few hairs bound in Ezekiel's garment?</li>
+            <li>Where might you be presuming on God's patience, treating his grace as license rather than a call to faithfulness?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-5">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-5">
+            <ol class="study-questions">
+            <li>The thirds picture three fates: death by plague and famine within the besieged city, death by the sword around it, and being scattered among the nations with the sword still pursuing (5:2, 12). The vivid division shows that judgment will be thorough and that flight will not be escape.</li>
+            <li>Jerusalem was set “in the midst of the nations” (5:5) to display God's character, yet she outdid the pagans in wickedness and defiled his sanctuary. Greater revelation means greater accountability; her sin was a betrayal of unique privilege, and so her judgment is unprecedented.</li>
+            <li>These are among the most sobering words in Scripture. The God who longs to be our refuge becomes our adversary when we persistently refuse him. It is a warning, not a final verdict—meant to drive the hearer to repentance while there is still time.</li>
+            <li>The few hairs bound in the hem, though even some are burned, hint that God always preserves a remnant (5:3-4). Judgment is never God's last word for his people; mercy survives wrath, and the remnant becomes the seed of future restoration.</li>
+            <li>This is a personal-application question. Gently invite members to examine where they may be taking God's patience for granted. As leader, hold together the seriousness of sin and the hope of the remnant, and steer the group toward repentance rather than despair.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-4.html">← Ezekiel 4</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-6.html">Ezekiel 6 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

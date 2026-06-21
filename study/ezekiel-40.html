@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 40: The Temple Measured — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 40: in a vision a man with a measuring reed leads Ezekiel through the gates and courts of a new temple, measuring every part." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 40
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 40</span>
+        <h1>Ezekiel 40: The Temple Measured</h1>
+        <p class="lead">Carried in a vision to a high mountain, Ezekiel watches a shining man measure the gates and courts of a glorious new temple.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-40">
+            <span>Scripture — Ezekiel Chapter 40</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-40">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-40-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-40-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-40-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-40-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 40 (WEB)</p>
+            <p><strong>1</strong> In the twenty-fifth year of our captivity, in the beginning of the year, in the tenth day of the month, in the fourteenth year after that the city was struck, in the same day, the hand of Yahweh was on me, and he brought me there.</p>
+            <p><strong>2</strong> In the visions of God brought he me into the land of Israel, and set me down on a very high mountain, whereon was as it were the frame of a city on the south.</p>
+            <p><strong>3</strong> He brought me there; and, behold, there was a man, whose appearance was like the appearance of brass, with a line of flax in his hand, and a measuring reed; and he stood in the gate.</p>
+            <p><strong>4</strong> The man said to me, Son of man, see with your eyes, and hear with your ears, and set your heart on all that I shall show you; for, to the intent that I may show them to you, you are brought here: declare all that you see to the house of Israel.</p>
+            <p><strong>5</strong> Behold, a wall on the outside of the house all around, and in the man’s hand a measuring reed six cubits long, of a cubit and a hand breadth each: so he measured the thickness of the building, one reed; and the height, one reed.</p>
+            <p><strong>6</strong> Then came he to the gate which looks toward the east, and went up its steps: and he measured the threshold of the gate, one reed broad; and the other threshold, one reed broad.</p>
+            <p><strong>7</strong> Every lodge was one reed long, and one reed broad; and between the lodges was five cubits; and the threshold of the gate by the porch of the gate toward the house was one reed.</p>
+            <p><strong>8</strong> He measured also the porch of the gate toward the house, one reed.</p>
+            <p><strong>9</strong> Then measured he the porch of the gate, eight cubits; and its posts, two cubits; and the porch of the gate was toward the house.</p>
+            <p><strong>10</strong> The lodges of the gate eastward were three on this side, and three on that side; they three were of one measure: and the posts had one measure on this side and on that side.</p>
+            <p><strong>11</strong> He measured the breadth of the opening of the gate, ten cubits; and the length of the gate, thirteen cubits;</p>
+            <p><strong>12</strong> and a border before the lodges, one cubit on this side, and a border, one cubit on that side; and the lodges, six cubits on this side, and six cubits on that side.</p>
+            <p><strong>13</strong> He measured the gate from the roof of the one lodge to the roof of the other, a breadth of twenty-five cubits; door against door.</p>
+            <p><strong>14</strong> He made also posts, sixty cubits; and the court reached to the posts, around the gate.</p>
+            <p><strong>15</strong> From the forefront of the gate at the entrance to the forefront of the inner porch of the gate were fifty cubits.</p>
+            <p><strong>16</strong> There were closed windows to the lodges, and to their posts within the gate all around, and likewise to the arches; and windows were around inward; and on each post were palm trees.</p>
+            <p><strong>17</strong> Then brought he me into the outer court; and behold, there were rooms and a pavement, made for the court all around: thirty rooms were on the pavement.</p>
+            <p><strong>18</strong> The pavement was by the side of the gates, answerable to the length of the gates, even the lower pavement.</p>
+            <p><strong>19</strong> Then he measured the breadth from the forefront of the lower gate to the forefront of the inner court outside, one hundred cubits, both on the east and on the north.</p>
+            <p><strong>20</strong> The gate of the outer court whose prospect is toward the north, he measured its length and its breadth.</p>
+            <p><strong>21</strong> The lodges of it were three on this side and three on that side; and its posts and its arches were after the measure of the first gate: its length was fifty cubits, and the breadth twenty-five cubits.</p>
+            <p><strong>22</strong> The windows of it, and its arches, and the palm trees of it, were after the measure of the gate whose prospect is toward the east; and they went up to it by seven steps; and its arches were before them.</p>
+            <p><strong>23</strong> There was a gate to the inner court facing the other gate, on the north and on the east; and he measured from gate to gate one hundred cubits.</p>
+            <p><strong>24</strong> He led me toward the south; and behold, a gate toward the south: and he measured its posts and its arches according to these measures.</p>
+            <p><strong>25</strong> There were windows in it and in its arches all around, like those windows: the length was fifty cubits, and the breadth twenty-five cubits.</p>
+            <p><strong>26</strong> There were seven steps to go up to it, and its arches were before them; and it had palm trees, one on this side, and another on that side, on its posts.</p>
+            <p><strong>27</strong> There was a gate to the inner court toward the south: and he measured from gate to gate toward the south a hundred cubits.</p>
+            <p><strong>28</strong> Then he brought me to the inner court by the south gate: and he measured the south gate according to these measures;</p>
+            <p><strong>29</strong> and its lodges, and its posts, and its arches, according to these measures: and there were windows in it and in its arches all around; it was fifty cubits long, and twenty-five cubits broad.</p>
+            <p><strong>30</strong> There were arches all around, twenty-five cubits long, and five cubits broad.</p>
+            <p><strong>31</strong> The arches of it were toward the outer court; and palm trees were on its posts: and the ascent to it had eight steps.</p>
+            <p><strong>32</strong> He brought me into the inner court toward the east: and he measured the gate according to these measures;</p>
+            <p><strong>33</strong> and its lodges, and its posts, and its arches, according to these measures: and there were windows therein and in its arches all around; it was fifty cubits long, and twenty-five cubits broad.</p>
+            <p><strong>34</strong> The arches of it were toward the outer court; and palm trees were on its posts, on this side, and on that side: and the ascent to it had eight steps.</p>
+            <p><strong>35</strong> He brought me to the north gate: and he measured it according to these measures;</p>
+            <p><strong>36</strong> its lodges, its posts, and its arches: and there were windows therein all around; the length was fifty cubits, and the breadth twenty-five cubits.</p>
+            <p><strong>37</strong> The posts of it were toward the outer court; and palm trees were on its posts, on this side, and on that side: and the ascent to it had eight steps.</p>
+            <p><strong>38</strong> A room with its door was by the posts at the gates; there they washed the burnt offering.</p>
+            <p><strong>39</strong> In the porch of the gate were two tables on this side, and two tables on that side, on which to kill the burnt offering, the sin offering, and the trespass offering.</p>
+            <p><strong>40</strong> On the one side outside, as one goes up to the entry of the gate toward the north, were two tables; and on the other side, which belonged to the porch of the gate, were two tables.</p>
+            <p><strong>41</strong> Four tables were on this side, and four tables on that side, by the side of the gate; eight tables, whereupon they killed the sacrifices.</p>
+            <p><strong>42</strong> There were four tables for the burnt offering, of cut stone, a cubit and a half long, and a cubit and a half broad, and one cubit high; whereupon they laid the instruments with which they killed the burnt offering and the sacrifice.</p>
+            <p><strong>43</strong> The hooks, a hand breadth long, were fastened within all around: and on the tables was the flesh of the offering.</p>
+            <p><strong>44</strong> Outside of the inner gate were rooms for the singers in the inner court, which was at the side of the north gate; and their prospect was toward the south; one at the side of the east gate having the prospect toward the north.</p>
+            <p><strong>45</strong> He said to me, This room, whose prospect is toward the south, is for the priests, the keepers of the duty of the house;</p>
+            <p><strong>46</strong> and the room whose prospect is toward the north is for the priests, the keepers of the duty of the altar: these are the sons of Zadok, who from among the sons of Levi come near to Yahweh to minister to him.</p>
+            <p><strong>47</strong> He measured the court, one hundred cubits long, and a hundred cubits broad, square; and the altar was before the house.</p>
+            <p><strong>48</strong> Then he brought me to the porch of the house, and measured each post of the porch, five cubits on this side, and five cubits on that side: and the breadth of the gate was three cubits on this side, and three cubits on that side.</p>
+            <p><strong>49</strong> The length of the porch was twenty cubits, and the breadth eleven cubits; even by the steps by which they went up to it: and there were pillars by the posts, one on this side, and another on that side.</p>
+            </div>
+            <div class="scripture-text" id="web-40-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 40 (KJV)</p>
+            <p><strong>1</strong> In the five and twentieth year of our captivity, in the beginning of the year, in the tenth day of the month, in the fourteenth year after that the city was smitten, in the selfsame day the hand of the Lord was upon me, and brought me thither.</p>
+            <p><strong>2</strong> In the visions of God brought he me into the land of Israel, and set me upon a very high mountain, by which was as the frame of a city on the south.</p>
+            <p><strong>3</strong> And he brought me thither, and, behold, there was a man, whose appearance was like the appearance of brass, with a line of flax in his hand, and a measuring reed; and he stood in the gate.</p>
+            <p><strong>4</strong> And the man said unto me, Son of man, behold with thine eyes, and hear with thine ears, and set thine heart upon all that I shall shew thee; for to the intent that I might shew them unto thee art thou brought hither: declare all that thou seest to the house of Israel.</p>
+            <p><strong>5</strong> And behold a wall on the outside of the house round about, and in the man’s hand a measuring reed of six cubits long by the cubit and an hand breadth: so he measured the breadth of the building, one reed; and the height, one reed.</p>
+            <p><strong>6</strong> Then came he unto the gate which looketh toward the east, and went up the stairs thereof, and measured the threshold of the gate, which was one reed broad; and the other threshold of the gate, which was one reed broad.</p>
+            <p><strong>7</strong> And every little chamber was one reed long, and one reed broad; and between the little chambers were five cubits; and the threshold of the gate by the porch of the gate within was one reed.</p>
+            <p><strong>8</strong> He measured also the porch of the gate within, one reed.</p>
+            <p><strong>9</strong> Then measured he the porch of the gate, eight cubits; and the posts thereof, two cubits; and the porch of the gate was inward.</p>
+            <p><strong>10</strong> And the little chambers of the gate eastward were three on this side, and three on that side; they three were of one measure: and the posts had one measure on this side and on that side.</p>
+            <p><strong>11</strong> And he measured the breadth of the entry of the gate, ten cubits; and the length of the gate, thirteen cubits.</p>
+            <p><strong>12</strong> The space also before the little chambers was one cubit on this side, and the space was one cubit on that side: and the little chambers were six cubits on this side, and six cubits on that side.</p>
+            <p><strong>13</strong> He measured then the gate from the roof of one little chamber to the roof of another: the breadth was five and twenty cubits, door against door.</p>
+            <p><strong>14</strong> He made also posts of threescore cubits, even unto the post of the court round about the gate.</p>
+            <p><strong>15</strong> And from the face of the gate of the entrance unto the face of the porch of the inner gate were fifty cubits.</p>
+            <p><strong>16</strong> And there were narrow windows to the little chambers, and to their posts within the gate round about, and likewise to the arches: and windows were round about inward: and upon each post were palm trees.</p>
+            <p><strong>17</strong> Then brought he me into the outward court, and, lo, there were chambers, and a pavement made for the court round about: thirty chambers were upon the pavement.</p>
+            <p><strong>18</strong> And the pavement by the side of the gates over against the length of the gates was the lower pavement.</p>
+            <p><strong>19</strong> Then he measured the breadth from the forefront of the lower gate unto the forefront of the inner court without, an hundred cubits eastward and northward.</p>
+            <p><strong>20</strong> And the gate of the outward court that looked toward the north, he measured the length thereof, and the breadth thereof.</p>
+            <p><strong>21</strong> And the little chambers thereof were three on this side and three on that side; and the posts thereof and the arches thereof were after the measure of the first gate: the length thereof was fifty cubits, and the breadth five and twenty cubits.</p>
+            <p><strong>22</strong> And their windows, and their arches, and their palm trees, were after the measure of the gate that looketh toward the east; and they went up unto it by seven steps; and the arches thereof were before them.</p>
+            <p><strong>23</strong> And the gate of the inner court was over against the gate toward the north, and toward the east; and he measured from gate to gate an hundred cubits.</p>
+            <p><strong>24</strong> After that he brought me toward the south, and behold a gate toward the south: and he measured the posts thereof and the arches thereof according to these measures.</p>
+            <p><strong>25</strong> And there were windows in it and in the arches thereof round about, like those windows: the length was fifty cubits, and the breadth five and twenty cubits.</p>
+            <p><strong>26</strong> And there were seven steps to go up to it, and the arches thereof were before them: and it had palm trees, one on this side, and another on that side, upon the posts thereof.</p>
+            <p><strong>27</strong> And there was a gate in the inner court toward the south: and he measured from gate to gate toward the south an hundred cubits.</p>
+            <p><strong>28</strong> And he brought me to the inner court by the south gate: and he measured the south gate according to these measures;</p>
+            <p><strong>29</strong> And the little chambers thereof, and the posts thereof, and the arches thereof, according to these measures: and there were windows in it and in the arches thereof round about: it was fifty cubits long, and five and twenty cubits broad.</p>
+            <p><strong>30</strong> And the arches round about were five and twenty cubits long, and five cubits broad.</p>
+            <p><strong>31</strong> And the arches thereof were toward the utter court; and palm trees were upon the posts thereof: and the going up to it had eight steps.</p>
+            <p><strong>32</strong> And he brought me into the inner court toward the east: and he measured the gate according to these measures.</p>
+            <p><strong>33</strong> And the little chambers thereof, and the posts thereof, and the arches thereof, were according to these measures: and there were windows therein and in the arches thereof round about: it was fifty cubits long, and five and twenty cubits broad.</p>
+            <p><strong>34</strong> And the arches thereof were toward the outward court; and palm trees were upon the posts thereof, on this side, and on that side: and the going up to it had eight steps.</p>
+            <p><strong>35</strong> And he brought me to the north gate, and measured it according to these measures;</p>
+            <p><strong>36</strong> The little chambers thereof, the posts thereof, and the arches thereof, and the windows to it round about: the length was fifty cubits, and the breadth five and twenty cubits.</p>
+            <p><strong>37</strong> And the posts thereof were toward the utter court; and palm trees were upon the posts thereof, on this side, and on that side: and the going up to it had eight steps.</p>
+            <p><strong>38</strong> And the chambers and the entries thereof were by the posts of the gates, where they washed the burnt offering.</p>
+            <p><strong>39</strong> And in the porch of the gate were two tables on this side, and two tables on that side, to slay thereon the burnt offering and the sin offering and the trespass offering.</p>
+            <p><strong>40</strong> And at the side without, as one goeth up to the entry of the north gate, were two tables; and on the other side, which was at the porch of the gate, were two tables.</p>
+            <p><strong>41</strong> Four tables were on this side, and four tables on that side, by the side of the gate; eight tables, whereupon they slew their sacrifices.</p>
+            <p><strong>42</strong> And the four tables were of hewn stone for the burnt offering, of a cubit and an half long, and a cubit and an half broad, and one cubit high: whereupon also they laid the instruments wherewith they slew the burnt offering and the sacrifice.</p>
+            <p><strong>43</strong> And within were hooks, an hand broad, fastened round about: and upon the tables was the flesh of the offering.</p>
+            <p><strong>44</strong> And without the inner gate were the chambers of the singers in the inner court, which was at the side of the north gate; and their prospect was toward the south: one at the side of the east gate having the prospect toward the north.</p>
+            <p><strong>45</strong> And he said unto me, This chamber, whose prospect is toward the south, is for the priests, the keepers of the charge of the house.</p>
+            <p><strong>46</strong> And the chamber whose prospect is toward the north is for the priests, the keepers of the charge of the altar: these are the sons of Zadok among the sons of Levi, which come near to the Lord to minister unto him.</p>
+            <p><strong>47</strong> So he measured the court, an hundred cubits long, and an hundred cubits broad, foursquare; and the altar that was before the house.</p>
+            <p><strong>48</strong> And he brought me to the porch of the house, and measured each post of the porch, five cubits on this side, and five cubits on that side: and the breadth of the gate was three cubits on this side, and three cubits on that side.</p>
+            <p><strong>49</strong> The length of the porch was twenty cubits, and the breadth eleven cubits; and he brought me by the steps whereby they went up to it: and there were pillars by the posts, one on this side, and another on that side.</p>
+            </div>
+            <div class="scripture-text" id="web-40-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 40 (ASV)</p>
+            <p><strong>1</strong> In the five and twentieth year of our captivity, in the beginning of the year, in the tenth day of the month, in the fourteenth year after that the city was smitten, in the selfsame day, the hand of Jehovah was upon me, and he brought me thither.</p>
+            <p><strong>2</strong> In the visions of God brought he me into the land of Israel, and set me down upon a very high mountain, whereon was as it were the frame of a city on the south.</p>
+            <p><strong>3</strong> And he brought me thither; and, behold, there was a man, whose appearance was like the appearance of brass, with a line of flax in his hand, and a measuring reed; and he stood in the gate.</p>
+            <p><strong>4</strong> And the man said unto me, Son of man, behold with thine eyes, and hear with thine ears, and set thy heart upon all that I shall show thee; for, to the intent that I may show them unto thee, art thou brought hither: declare all that thou seest to the house of Israel.</p>
+            <p><strong>5</strong> And, behold, a wall on the outside of the house round about, and in the man’s hand a measuring reed six cubits long, of a cubit and a handbreadth each: so he measured the thickness of the building, one reed; and the height, one reed.</p>
+            <p><strong>6</strong> Then came he unto the gate which looketh toward the east, and went up the steps thereof: and he measured the threshold of the gate, one reed broad; and the other threshold, one reed broad.</p>
+            <p><strong>7</strong> And every lodge was one reed long, and one reed broad; and the space between the lodges was five cubits; and the threshold of the gate by the porch of the gate toward the house was one reed.</p>
+            <p><strong>8</strong> He measured also the porch of the gate toward the house, one reed.</p>
+            <p><strong>9</strong> Then measured he the porch of the gate, eight cubits; and the posts thereof, two cubits; and the porch of the gate was toward the house.</p>
+            <p><strong>10</strong> And the lodges of the gate eastward were three on this side, and three on that side; they three were of one measure: and the posts had one measure on this side and on that side.</p>
+            <p><strong>11</strong> And he measured the breadth of the opening of the gate, ten cubits; and the length of the gate, thirteen cubits;</p>
+            <p><strong>12</strong> and a border before the lodges, one cubit on this side, and a border, one cubit on that side; and the lodges, six cubits on this side, and six cubits on that side.</p>
+            <p><strong>13</strong> And he measured the gate from the roof of the one lodge to the roof of the other, a breadth of five and twenty cubits; door against door.</p>
+            <p><strong>14</strong> He made also posts, threescore cubits; and the court reached unto the posts, round about the gate.</p>
+            <p><strong>15</strong> And from the forefront of the gate at the entrance unto the forefront of the inner porch of the gate were fifty cubits.</p>
+            <p><strong>16</strong> And there were closed windows to the lodges, and to their posts within the gate round about, and likewise to the arches; and windows were round about inward; and upon each post were palm-trees.</p>
+            <p><strong>17</strong> Then brought he me into the outer court; and, lo, there were chambers and a pavement, made for the court round about: thirty chambers were upon the pavement.</p>
+            <p><strong>18</strong> And the pavement was by the side of the gates, answerable unto the length of the gates, even the lower pavement.</p>
+            <p><strong>19</strong> Then he measured the breadth from the forefront of the lower gate unto the forefront of the inner court without, a hundred cubits, both on the east and on the north.</p>
+            <p><strong>20</strong> And the gate of the outer court whose prospect is toward the north, he measured the length thereof and the breadth thereof.</p>
+            <p><strong>21</strong> And the lodges thereof were three on this side and three on that side; and the posts thereof and the arches thereof were after the measure of the first gate: the length thereof was fifty cubits, and the breadth five and twenty cubits.</p>
+            <p><strong>22</strong> And the windows thereof, and the arches thereof, and the palm-trees thereof, were after the measure of the gate whose prospect is toward the east; and they went up unto it by seven steps; and the arches thereof were before them.</p>
+            <p><strong>23</strong> And there was a gate to the inner court over against the other gate, both on the north and on the east; and he measured from gate to gate a hundred cubits.</p>
+            <p><strong>24</strong> And he led me toward the south; and, behold, a gate toward the south: and he measured the posts thereof and the arches thereof according to these measures.</p>
+            <p><strong>25</strong> And there were windows in it and in the arches thereof round about, like those windows: the length was fifty cubits, and the breadth five and twenty cubits.</p>
+            <p><strong>26</strong> And there were seven steps to go up to it, and the arches thereof were before them; and it had palm-trees, one on this side, and another on that side, upon the posts thereof.</p>
+            <p><strong>27</strong> And there was a gate to the inner court toward the south: and he measured from gate to gate toward the south a hundred cubits.</p>
+            <p><strong>28</strong> Then he brought me to the inner court by the south gate: and he measured the south gate according to these measures;</p>
+            <p><strong>29</strong> and the lodges thereof, and the posts thereof, and the arches thereof, according to these measures: and there were windows in it and in the arches thereof round about; it was fifty cubits long, and five and twenty cubits broad.</p>
+            <p><strong>30</strong> And there were arches round about, five and twenty cubits long, and five cubits broad.</p>
+            <p><strong>31</strong> And the arches thereof were toward the outer court; and palm-trees were upon the posts thereof: and the ascent to it had eight steps.</p>
+            <p><strong>32</strong> And he brought me into the inner court toward the east: and he measured the gate according to these measures;</p>
+            <p><strong>33</strong> and the lodges thereof, and the posts thereof, and the arches thereof, according to these measures: and there were windows therein and in the arches thereof round about; it was fifty cubits long, and five and twenty cubits broad.</p>
+            <p><strong>34</strong> And the arches thereof were toward the outer court; and palm-trees were upon the posts thereof, on this side, and on that side: and the ascent to it had eight steps.</p>
+            <p><strong>35</strong> And he brought me to the north gate: and he measureditaccording to these measures;</p>
+            <p><strong>36</strong> the lodges thereof, the posts thereof, and the arches thereof: and there were windows therein round about; the length was fifty cubits, and the breadth five and twenty cubits.</p>
+            <p><strong>37</strong> And the posts thereof were toward the outer court; and palm-trees were upon the posts thereof, on this side, and on that side: and the ascent to it had eight steps.</p>
+            <p><strong>38</strong> And a chamber with the door thereof was by the posts at the gates; there they washed the burnt-offering.</p>
+            <p><strong>39</strong> And in the porch of the gate were two tables on this side, and two tables on that side, to slay thereon the burnt-offering and the sin-offering and the trespass-offering.</p>
+            <p><strong>40</strong> And on the one side without, as one goeth up to the entry of the gate toward the north, were two tables; and on the other side, which belonged to the porch of the gate, were two tables.</p>
+            <p><strong>41</strong> Four tables were on this side, and four tables on that side, by the side of the gate; eight tables, whereupon they slew the sacrifices.</p>
+            <p><strong>42</strong> And there were four tables for the burnt-offering, of hewn stone, a cubit and a half long, and a cubit and a half broad, and one cubit high; whereupon they laid the instruments wherewith they slew the burnt-offering and the sacrifice.</p>
+            <p><strong>43</strong> And the hooks, a handbreadth long, were fastened within round about: and upon the tables was the flesh of the oblation.</p>
+            <p><strong>44</strong> And without the inner gate were chambers for the singers in the inner court, which was at the side of the north gate; and their prospect was toward the south; one at the side of the east gate having the prospect toward the north.</p>
+            <p><strong>45</strong> And he said unto me, This chamber, whose prospect is toward the south, is for the priests, the keepers of the charge of the house;</p>
+            <p><strong>46</strong> and the chamber whose prospect is toward the north is for the priests, the keepers of the charge of the altar: these are the sons of Zadok, who from among the sons of Levi come near to Jehovah to minister unto him.</p>
+            <p><strong>47</strong> And he measured the court, a hundred cubits long, and a hundred cubits broad, foursquare; and the altar was before the house.</p>
+            <p><strong>48</strong> Then he brought me to the porch of the house, and measured each post of the porch, five cubits on this side, and five cubits on that side: and the breadth of the gate was three cubits on this side, and three cubits on that side.</p>
+            <p><strong>49</strong> The length of the porch was twenty cubits, and the breadth eleven cubits; even by the steps whereby they went up to it: and there were pillars by the posts, one on this side, and another on that side.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>In the twenty-fifth year of the exile, fourteen years after Jerusalem fell, the hand of Yahweh brings Ezekiel in visions of God to the land of Israel and sets him on a very high mountain, where he sees something like the structure of a city. There he meets a man whose appearance is like bronze, holding a line of flax and a measuring reed, standing in the gateway. The man tells Ezekiel to look closely, listen carefully, and set his heart on all he is shown, so that he can declare it to the house of Israel. Together they measure the outer wall and then the eastern gate, with its threshold, guardrooms, posts, and porch. They cross into the outer court with its pavement and thirty chambers, then measure the north and south gates by the same pattern, and the inner court with its gates approached by steps. Ezekiel sees tables where the burnt offering and sin offering are slaughtered, and chambers for the singers and for the priests, the sons of Zadok who draw near to minister. Finally they come to the vestibule of the temple itself, with its pillars and posts measured precisely. The chapter is filled with careful measurements, showing a holy order in which everything is purposeful, set apart, and arranged for the worship of God. The exiles who lost their temple are shown a future house built to exact divine specification.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Figures</h2>
+          <ul class="char-list">
+          <li><strong>Ezekiel</strong> — The prophet carried in visions to a high mountain, told to look, listen, and set his heart on the temple so he can declare it to Israel.</li>
+          <li><strong>The man like bronze</strong> — A heavenly guide with a flax line and measuring reed who leads Ezekiel through the temple, measuring its gates, courts, and chambers.</li>
+          <li><strong>The measuring reed</strong> — The tool of exact measurement that runs through the vision, showing the holy precision and order of God’s appointed dwelling.</li>
+          <li><strong>The sons of Zadok</strong> — The faithful priests for whom chambers are set apart, who draw near to Yahweh to minister to him in the inner court.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 40:4 (WEB)</p>
+          <p class="verse__text">The man said to me, Son of man, see with your eyes, and hear with your ears, and set your heart on all that I shall show you; for, to the intent that I may show them to you, you are brought here: declare all that you see to the house of Israel.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>God gives a detailed vision of a restored house of worship to exiles who had lost everything, renewing their hope.</li>
+          <li>The careful measuring shows that worship is to be ordered and holy, nothing left to careless improvisation.</li>
+          <li>God invites his people to look, listen, and set their hearts on what he reveals, then to tell others.</li>
+          <li>Even in exile, God's purpose to dwell with his people in a holy place is not abandoned but advanced.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-40">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-40">
+            <ul class="lesson-list">
+            <li><strong>God renews hope with a vision of his house.</strong> Years after the temple fell, God brings Ezekiel “in the visions of God…into the land of Israel” (Ezekiel 40:2, WEB) to show a future dwelling place.</li>
+            <li><strong>Worship is ordered and holy.</strong> The man measures with “a measuring reed six cubits long” (Ezekiel 40:5, WEB); every gate and court is precise, for God’s presence demands holy order.</li>
+            <li><strong>We are to attend carefully to God’s revelation.</strong> “See with your eyes, and hear with your ears, and set your heart on all that I shall show you” (Ezekiel 40:4, WEB) is the posture for receiving God’s word.</li>
+            <li><strong>What we receive from God is meant to be shared.</strong> Ezekiel is to “declare all that you see to the house of Israel” (Ezekiel 40:4, WEB); revelation is given to be passed on for the good of God’s people.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-40">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-40">
+            <ol class="study-questions">
+            <li>The vision comes fourteen years after Jerusalem fell. Why would God show a glorious temple to people who had lost theirs?</li>
+            <li>Ezekiel is told to see, hear, and set his heart on all he is shown (40:4). How do those three actions describe the way we should receive God's word?</li>
+            <li>Why do you think the chapter records so many exact measurements rather than just a general impression of the temple?</li>
+            <li>The chambers are set apart for the priests who “come near to Yahweh to minister” (40:46). What does the careful provision for worship teach about approaching God?</li>
+            <li>When have you found that paying close attention to the details of Scripture deepened your sense of God's holiness and order?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-40">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-40">
+            <ol class="study-questions">
+            <li>To exiles whose temple lay in ruins, this vision was sheer hope: God still intended to dwell among his people in a holy house. Help the group feel the comfort of a God who plans restoration even after devastating loss.</li>
+            <li>Seeing, hearing, and setting the heart describe attentive, whole-person reception of revelation, not casual reading. Encourage the group to approach Scripture with this same focused, heart-engaged attention.</li>
+            <li>The measurements stress that God's dwelling is no haphazard place but is ordered down to the cubit. Holiness has shape and structure; the detail itself preaches the carefulness with which we are to approach God.</li>
+            <li>The provision underscores that drawing near to God is a serious privilege, surrounded by holy order and mediated by appointed ministers. It prepares us to value the access we now have through our great High Priest.</li>
+            <li>This is a personal-application question. Invite members to share times when slowing down over Scripture's details opened up worship. As leader, model delight in the precision of God's word rather than impatience with it.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-39.html">← Ezekiel 39</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-41.html">Ezekiel 41 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>

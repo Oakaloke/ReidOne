@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Ezekiel 16: The Rescued Bride — ReidOne Bible Study</title>
+  <meta name="description" content="An interactive study of Ezekiel 16: the LORD recounts how he rescued Jerusalem as a castaway infant, made her his bride, and promises to remember his covenant despite her betrayal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reading-theme.css" />
+<script>
+(function(){
+  var KEY="reidone-reading";
+  var THEMES={
+    light:{label:"Light",bg:"#FBF8F3",text:"#2A2521",accent:"#9A4527"},
+    sepia:{label:"Sepia",bg:"#F3E9D2",text:"#43361F",accent:"#8A5A22"},
+    dark:{label:"Dark",bg:"#1E2024",text:"#E7E4DF",accent:"#E0A56B"},
+    night:{label:"Night",bg:"#121419",text:"#D6DAE2",accent:"#7FB0E0"},
+    sky:{label:"Sky",bg:"#E7F1FB",text:"#17293A",accent:"#205C97"},
+    forest:{label:"Forest",bg:"#102017",text:"#DBE7DC",accent:"#74C08E"},
+    ocean:{label:"Ocean",bg:"#0C1B2A",text:"#D3E3F1",accent:"#5BA6D8"},
+    sunset:{label:"Sunset",bg:"#241627",text:"#F2DFD8",accent:"#F0975C"},
+    lavender:{label:"Lavender",bg:"#F1ECFA",text:"#2B2440",accent:"#5E45A8"},
+    rose:{label:"Rose",bg:"#FCEDF0",text:"#3C2129",accent:"#B0405C"},
+    parchment:{label:"Parchment",bg:"#E9DEC3",text:"#3A2D18",accent:"#7A5826"},
+    midnight:{label:"Midnight Blue",bg:"#0A1330",text:"#D4DBF0",accent:"#8AA0E8"},
+    contrast:{label:"High contrast",bg:"#000000",text:"#FFFFFF",accent:"#FFD400"}
+  };
+  var PRESETS=["light","sepia","dark","night","sky"];
+  var SKINS=["forest","ocean","sunset","lavender","rose","parchment","midnight","contrast"];
+  var SIZES={s:"15px",m:"17px",l:"19px",xl:"21px"};
+  var LEADINGS={normal:"1.65",relaxed:"1.85",loose:"2.05"};
+  var FONTS={sans:"'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",serif:"'Fraunces', Georgia, 'Times New Roman', serif"};
+  function sysTheme(){ try{ return (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }catch(e){ return "light"; } }
+  function defaults(){ return {theme:sysTheme(),size:"m",leading:"normal",font:"sans",custom:{}}; }
+  function get(){ try{ var s=JSON.parse(localStorage.getItem(KEY)); if(s&&typeof s==="object"){ s.custom=s.custom||{}; if(!s.size)s.size="m"; if(!s.leading)s.leading="normal"; if(!s.font)s.font="sans"; if(!s.theme)s.theme=sysTheme(); return s; } }catch(e){} return defaults(); }
+  function save(s){ try{ localStorage.setItem(KEY,JSON.stringify(s)); }catch(e){} }
+  function apply(s){
+    var st=document.documentElement.style, t=THEMES[s.theme]?s.theme:"light", b=THEMES[t];
+    document.documentElement.setAttribute("data-rs-theme",t);
+    var c=s.custom||{};
+    st.setProperty("--rs-bg", c.bg||b.bg);
+    st.setProperty("--rs-text", c.text||b.text);
+    st.setProperty("--rs-accent", c.accent||b.accent);
+    st.setProperty("--rs-heading", c.accent||b.text);
+    st.setProperty("--rs-fontsize", SIZES[s.size]||SIZES.m);
+    st.setProperty("--rs-leading", LEADINGS[s.leading]||LEADINGS.normal);
+    st.setProperty("--rs-font", FONTS[s.font]||FONTS.sans);
+  }
+  apply(get());
+  window.ReidReading={KEY:KEY,THEMES:THEMES,PRESETS:PRESETS,SKINS:SKINS,SIZES:SIZES,LEADINGS:LEADINGS,FONTS:FONTS,get:get,save:save,apply:apply,defaults:defaults};
+})();
+</script>
+</head>
+<body class="study-page" data-study-key="reidone-ezekiel-progress" data-study-total="48">
+<!--
+  ============================================================
+  ReidOne Bible Study — The Book of Ezekiel, Chapter 16
+  Teaching content (summary, characters, lessons, questions) is
+  study material prepared for this site. Scripture text is from the
+  World English Bible (WEB), King James Version (KJV), and American
+  Standard Version (ASV), all public domain.
+  ============================================================
+-->
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../home.html">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <span class="brand__tag">Journey Together</span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="../watch.html">Watch</a></li>
+          <li><a href="../listen.html">Listen</a></li>
+          <li><a href="../read.html">Read</a></li>
+          <li><a href="../bible.html">Bible Study</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../connect.html">Connect</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="../connect.html#give">Donate</a></li>
+          <li class="nav__dedication"><a href="../dedication.html" title="A dedication for Jennifer"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero chapter-head">
+      <div class="container">
+        <a class="chapter-back" href="ezekiel.html">← All Chapters</a>
+        <span class="study-meta">The Book of Ezekiel · Chapter 16</span>
+        <h1>Ezekiel 16: The Rescued Bride</h1>
+        <p class="lead">God finds Jerusalem as an abandoned newborn, raises her into a beautiful bride, and grieves her unfaithfulness, yet vows an everlasting covenant of grace.</p>
+        <div class="study-complete-wrap">
+          <button class="study-complete" type="button" disabled aria-disabled="true" title="Chapter progress tracking is coming soon">
+            <span class="study-complete__check" aria-hidden="true">✓</span>
+            <span>Mark chapter complete</span>
+          </button>
+          <span class="coming-soon-tag">Coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container study-body">
+
+        <!-- Full scripture text (WEB / KJV / ASV) — public domain. -->
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="web-16">
+            <span>Scripture — Ezekiel Chapter 16</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="web-16">
+            <div class="scripture-tabs" role="tablist" aria-label="Bible translation">
+              <button class="scripture-tab is-active" type="button" role="tab" aria-selected="true" data-trans-tab="web" aria-controls="web-16-web">WEB</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="kjv" aria-controls="web-16-kjv">KJV</button>
+              <button class="scripture-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-trans-tab="asv" aria-controls="web-16-asv">ASV</button>
+            </div>
+            <div class="scripture-text" id="web-16-web" data-trans-panel="web" role="tabpanel" aria-label="World English Bible">
+            <p class="verse__ref">Ezekiel 16 (WEB)</p>
+            <p><strong>1</strong> Again Yahweh’s word came to me, saying,</p>
+            <p><strong>2</strong> Son of man, cause Jerusalem to know her abominations;</p>
+            <p><strong>3</strong> and say, Thus says the Lord Yahweh to Jerusalem: Your birth and your birth is of the land of the Canaanite; the Amorite was your father, and your mother was a Hittite.</p>
+            <p><strong>4</strong> As for your birth, in the day you were born your navel was not cut, neither were you washed in water to cleanse you; you weren’t salted at all, nor swaddled at all.</p>
+            <p><strong>5</strong> No eye pitied you, to do any of these things to you, to have compassion on you; but you were cast out in the open field, for that your person was abhorred, in the day that you were born.</p>
+            <p><strong>6</strong> When I passed by you, and saw you wallowing in your blood, I said to you, Though you are in your blood, live; yes, I said to you, Though you are in your blood, live.</p>
+            <p><strong>7</strong> I caused you to multiply as that which grows in the field, and you increased and grew great, and you attained to excellent ornament; your breasts were fashioned, and your hair was grown; yet you were naked and bare.</p>
+            <p><strong>8</strong> Now when I passed by you, and looked at you, behold, your time was the time of love; and I spread my skirt over you, and covered your nakedness: yes, I swore to you, and entered into a covenant with you, says the Lord Yahweh, and you became mine.</p>
+            <p><strong>9</strong> Then washed I you with water; yes, I thoroughly washed away your blood from you, and I anointed you with oil.</p>
+            <p><strong>10</strong> I clothed you also with embroidered work, and shod you with sealskin, and I dressed you about with fine linen, and covered you with silk.</p>
+            <p><strong>11</strong> I decked you with ornaments, and I put bracelets on your hands, and a chain on your neck.</p>
+            <p><strong>12</strong> I put a ring on your nose, and earrings in your ears, and a beautiful crown on your head.</p>
+            <p><strong>13</strong> Thus you were decked with gold and silver; and your clothing was of fine linen, and silk, and embroidered work; you ate fine flour, and honey, and oil; and you were exceeding beautiful, and you prospered to royal estate.</p>
+            <p><strong>14</strong> Your renown went out among the nations for your beauty; for it was perfect, through my majesty which I had put on you, says the Lord Yahweh.</p>
+            <p><strong>15</strong> But you trusted in your beauty, and played the prostitute because of your renown, and poured out your prostitution on everyone who passed by; his it was.</p>
+            <p><strong>16</strong> You took of your garments, and made for yourselves high places decked with various colors, and played the prostitute on them. This shall not come, neither shall it be.</p>
+            <p><strong>17</strong> You also took your beautiful jewels of my gold and of my silver, which I had given you, and made for yourself images of men, and played the prostitute with them;</p>
+            <p><strong>18</strong> and you took your embroidered garments, and covered them, and set my oil and my incense before them.</p>
+            <p><strong>19</strong> My bread also which I gave you, fine flour, and oil, and honey, with which I fed you, you even set it before them for a pleasant aroma; and so it was, says the Lord Yahweh.</p>
+            <p><strong>20</strong> Moreover you have taken your sons and your daughters, whom you have borne to me, and you have sacrificed these to them to be devoured. Was your prostitution a small matter,</p>
+            <p><strong>21</strong> that you have slain my children, and delivered them up, in causing them to pass through the fire to them?</p>
+            <p><strong>22</strong> In all your abominations and your prostitution you have not remembered the days of your youth, when you were naked and bare, and were wallowing in your blood.</p>
+            <p><strong>23</strong> It has happened after all your wickedness, (woe, woe to you! says the Lord Yahweh),</p>
+            <p><strong>24</strong> that you have built for yourselves a vaulted place, and have made yourselves a lofty place in every street.</p>
+            <p><strong>25</strong> You have built your lofty place at the head of every way, and have made your beauty an abomination, and have opened your feet to everyone who passed by, and multiplied your prostitution.</p>
+            <p><strong>26</strong> You have also committed sexual immorality with the Egyptians, your neighbors, great of flesh; and have multiplied your prostitution, to provoke me to anger.</p>
+            <p><strong>27</strong> See therefore, I have stretched out my hand over you, and have diminished your portion, and delivered you to the will of those who hate you, the daughters of the Philistines, who are ashamed of your lewd way.</p>
+            <p><strong>28</strong> You have played the prostitute also with the Assyrians, because you were insatiable; yes, you have played the prostitute with them, and yet you weren’t satisfied.</p>
+            <p><strong>29</strong> You have moreover multiplied your prostitution to the land of merchants, to Chaldea; and yet you weren’t satisfied with this.</p>
+            <p><strong>30</strong> How weak is your heart, says the Lord Yahweh, since you do all these things, the work of an impudent prostitute;</p>
+            <p><strong>31</strong> in that you build your vaulted place at the head of every way, and make your lofty place in every street, and have not been as a prostitute, in that you scorn pay.</p>
+            <p><strong>32</strong> A wife who commits adultery! who takes strangers instead of her husband!</p>
+            <p><strong>33</strong> They give gifts to all prostitutes; but you give your gifts to all your lovers, and bribe them, that they may come to you on every side for your prostitution.</p>
+            <p><strong>34</strong> You are different from other women in your prostitution, in that no one follows you to play the prostitute; and whereas you give hire, and no hire is given to you, therefore you are different.</p>
+            <p><strong>35</strong> Therefore, prostitute, hear Yahweh’s word:</p>
+            <p><strong>36</strong> Thus says the Lord Yahweh, Because your filthiness was poured out, and your nakedness uncovered through your prostitution with your lovers; and because of all the idols of your abominations, and for the blood of your children, that you gave to them;</p>
+            <p><strong>37</strong> therefore see, I will gather all your lovers, with whom you have taken pleasure, and all those who you have loved, with all those who you have hated; I will even gather them against you on every side, and will uncover your nakedness to them, that they may see all your nakedness.</p>
+            <p><strong>38</strong> I will judge you, as women who break wedlock and shed blood are judged; and I will bring on you the blood of wrath and jealousy.</p>
+            <p><strong>39</strong> I will also give you into their hand, and they shall throw down your vaulted place, and break down your lofty places; and they shall strip you of your clothes, and take your beautiful jewels; and they shall leave you naked and bare.</p>
+            <p><strong>40</strong> They shall also bring up a company against you, and they shall stone you with stones, and thrust you through with their swords.</p>
+            <p><strong>41</strong> They shall burn your houses with fire, and execute judgments on you in the sight of many women; and I will cause you to cease from playing the prostitute, and you shall also give no hire any more.</p>
+            <p><strong>42</strong> So will I cause my wrath toward you to rest, and my jealousy shall depart from you, and I will be quiet, and will be no more angry.</p>
+            <p><strong>43</strong> Because you have not remembered the days of your youth, but have raged against me in all these things; therefore, behold, I also will bring your way on your head, says the Lord Yahweh: and you shall not commit this lewdness with all your abominations.</p>
+            <p><strong>44</strong> Behold, everyone who uses proverbs shall use this proverb against you, saying, As is the mother, so is her daughter.</p>
+            <p><strong>45</strong> You are the daughter of your mother, who loathes her husband and her children; and you are the sister of your sisters, who loathed their husbands and their children: your mother was a Hittite, and your father an Amorite.</p>
+            <p><strong>46</strong> Your elder sister is Samaria, who dwells at your left hand, she and her daughters; and your younger sister, who dwells at your right hand, is Sodom and her daughters.</p>
+            <p><strong>47</strong> Yet you have not walked in their ways, nor done after their abominations; but, soon you were more corrupt than they in all your ways.</p>
+            <p><strong>48</strong> As I live, says the Lord Yahweh, Sodom your sister has not done, she nor her daughters, as you have done, you and your daughters.</p>
+            <p><strong>49</strong> Behold, this was the iniquity of your sister Sodom: pride, fullness of bread, and prosperous ease was in her and in her daughters; neither did she strengthen the hand of the poor and needy.</p>
+            <p><strong>50</strong> They were haughty, and committed abomination before me: therefore I took them away when I saw it.</p>
+            <p><strong>51</strong> Neither has Samaria committed half of your sins; but you have multiplied your abominations more than they, and have justified your sisters by all your abominations which you have done.</p>
+            <p><strong>52</strong> You also, bear you your own shame, in that you have given judgment for your sisters; through your sins that you have committed more abominable than they, they are more righteous that you: yes, be also confounded, and bear your shame, in that you have justified your sisters.</p>
+            <p><strong>53</strong> I will turn again their captivity, the captivity of Sodom and her daughters, and the captivity of Samaria and her daughters, and the captivity of your captives in their midst;</p>
+            <p><strong>54</strong> that you may bear your own shame, and may be ashamed because of all that you have done, in that you are a comfort to them.</p>
+            <p><strong>55</strong> Your sisters, Sodom and her daughters, shall return to their former estate; and Samaria and her daughters shall return to their former estate; and you and your daughters shall return to your former estate.</p>
+            <p><strong>56</strong> For your sister Sodom was not mentioned by your mouth in the day of your pride,</p>
+            <p><strong>57</strong> before your wickedness was uncovered, as at the time of the reproach of the daughters of Syria, and of all who are around her, the daughters of the Philistines, who do despite to you all around.</p>
+            <p><strong>58</strong> You have borne your lewdness and your abominations, says Yahweh.</p>
+            <p><strong>59</strong> For thus says the Lord Yahweh: I will also deal with you as you have done, who have despised the oath in breaking the covenant.</p>
+            <p><strong>60</strong> Nevertheless I will remember my covenant with you in the days of your youth, and I will establish to you an everlasting covenant.</p>
+            <p><strong>61</strong> Then you shall remember your ways, and be ashamed, when you shall receive your sisters, your elder sisters and your younger; and I will give them to you for daughters, but not by your covenant.</p>
+            <p><strong>62</strong> I will establish my covenant with you; and you shall know that I am Yahweh;</p>
+            <p><strong>63</strong> that you may remember, and be confounded, and never open your mouth any more, because of your shame, when I have forgiven you all that you have done, says the Lord Yahweh.</p>
+            </div>
+            <div class="scripture-text" id="web-16-kjv" data-trans-panel="kjv" role="tabpanel" aria-label="King James Version" hidden>
+            <p class="verse__ref">Ezekiel 16 (KJV)</p>
+            <p><strong>1</strong> Again the word of the Lord came unto me, saying,</p>
+            <p><strong>2</strong> Son of man, cause Jerusalem to know her abominations,</p>
+            <p><strong>3</strong> And say, Thus saith the Lord God unto Jerusalem; Thy birth and thy nativity is of the land of Canaan; thy father was an Amorite, and thy mother an Hittite.</p>
+            <p><strong>4</strong> And as for thy nativity, in the day thou wast born thy navel was not cut, neither wast thou washed in water to supple thee; thou wast not salted at all, nor swaddled at all.</p>
+            <p><strong>5</strong> None eye pitied thee, to do any of these unto thee, to have compassion upon thee; but thou wast cast out in the open field, to the lothing of thy person, in the day that thou wast born.</p>
+            <p><strong>6</strong> And when I passed by thee, and saw thee polluted in thine own blood, I said unto thee when thou wast in thy blood, Live; yea, I said unto thee when thou wast in thy blood, Live.</p>
+            <p><strong>7</strong> I have caused thee to multiply as the bud of the field, and thou hast increased and waxen great, and thou art come to excellent ornaments: thy breasts are fashioned, and thine hair is grown, whereas thou wast naked and bare.</p>
+            <p><strong>8</strong> Now when I passed by thee, and looked upon thee, behold, thy time was the time of love; and I spread my skirt over thee, and covered thy nakedness: yea, I sware unto thee, and entered into a covenant with thee, saith the Lord God, and thou becamest mine.</p>
+            <p><strong>9</strong> Then washed I thee with water; yea, I throughly washed away thy blood from thee, and I anointed thee with oil.</p>
+            <p><strong>10</strong> I clothed thee also with broidered work, and shod thee with badgers’ skin, and I girded thee about with fine linen, and I covered thee with silk.</p>
+            <p><strong>11</strong> I decked thee also with ornaments, and I put bracelets upon thy hands, and a chain on thy neck.</p>
+            <p><strong>12</strong> And I put a jewel on thy forehead, and earrings in thine ears, and a beautiful crown upon thine head.</p>
+            <p><strong>13</strong> Thus wast thou decked with gold and silver; and thy raiment was of fine linen, and silk, and broidered work; thou didst eat fine flour, and honey, and oil: and thou wast exceeding beautiful, and thou didst prosper into a kingdom.</p>
+            <p><strong>14</strong> And thy renown went forth among the heathen for thy beauty: for it was perfect through my comeliness, which I had put upon thee, saith the Lord God.</p>
+            <p><strong>15</strong> But thou didst trust in thine own beauty, and playedst the harlot because of thy renown, and pouredst out thy fornications on every one that passed by; his it was.</p>
+            <p><strong>16</strong> And of thy garments thou didst take, and deckedst thy high places with divers colours, and playedst the harlot thereupon: the like things shall not come, neither shall it be so.</p>
+            <p><strong>17</strong> Thou hast also taken thy fair jewels of my gold and of my silver, which I had given thee, and madest to thyself images of men, and didst commit whoredom with them,</p>
+            <p><strong>18</strong> And tookest thy broidered garments, and coveredst them: and thou hast set mine oil and mine incense before them.</p>
+            <p><strong>19</strong> My meat also which I gave thee, fine flour, and oil, and honey, wherewith I fed thee, thou hast even set it before them for a sweet savour: and thus it was, saith the Lord God.</p>
+            <p><strong>20</strong> Moreover thou hast taken thy sons and thy daughters, whom thou hast borne unto me, and these hast thou sacrificed unto them to be devoured. Is this of thy whoredoms a small matter,</p>
+            <p><strong>21</strong> That thou hast slain my children, and delivered them to cause them to pass through the fire for them?</p>
+            <p><strong>22</strong> And in all thine abominations and thy whoredoms thou hast not remembered the days of thy youth, when thou wast naked and bare, and wast polluted in thy blood.</p>
+            <p><strong>23</strong> And it came to pass after all thy wickedness, (woe, woe unto thee! saith the Lord God;)</p>
+            <p><strong>24</strong> That thou hast also built unto thee an eminent place, and hast made thee an high place in every street.</p>
+            <p><strong>25</strong> Thou hast built thy high place at every head of the way, and hast made thy beauty to be abhorred, and hast opened thy feet to every one that passed by, and multiplied thy whoredoms.</p>
+            <p><strong>26</strong> Thou hast also committed fornication with the Egyptians thy neighbours, great of flesh; and hast increased thy whoredoms, to provoke me to anger.</p>
+            <p><strong>27</strong> Behold, therefore I have stretched out my hand over thee, and have diminished thine ordinary food, and delivered thee unto the will of them that hate thee, the daughters of the Philistines, which are ashamed of thy lewd way.</p>
+            <p><strong>28</strong> Thou hast played the whore also with the Assyrians, because thou wast unsatiable; yea, thou hast played the harlot with them, and yet couldest not be satisfied.</p>
+            <p><strong>29</strong> Thou hast moreover multiplied thy fornication in the land of Canaan unto Chaldea; and yet thou wast not satisfied herewith.</p>
+            <p><strong>30</strong> How weak is thine heart, saith the Lord God, seeing thou doest all these things, the work of an imperious whorish woman;</p>
+            <p><strong>31</strong> In that thou buildest thine eminent place in the head of every way, and makest thine high place in every street; and hast not been as an harlot, in that thou scornest hire;</p>
+            <p><strong>32</strong> But as a wife that committeth adultery, which taketh strangers instead of her husband!</p>
+            <p><strong>33</strong> They give gifts to all whores: but thou givest thy gifts to all thy lovers, and hirest them, that they may come unto thee on every side for thy whoredom.</p>
+            <p><strong>34</strong> And the contrary is in thee from other women in thy whoredoms, whereas none followeth thee to commit whoredoms: and in that thou givest a reward, and no reward is given unto thee, therefore thou art contrary.</p>
+            <p><strong>35</strong> Wherefore, O harlot, hear the word of the Lord:</p>
+            <p><strong>36</strong> Thus saith the Lord God; Because thy filthiness was poured out, and thy nakedness discovered through thy whoredoms with thy lovers, and with all the idols of thy abominations, and by the blood of thy children, which thou didst give unto them;</p>
+            <p><strong>37</strong> Behold, therefore I will gather all thy lovers, with whom thou hast taken pleasure, and all them that thou hast loved, with all them that thou hast hated; I will even gather them round about against thee, and will discover thy nakedness unto them, that they may see all thy nakedness.</p>
+            <p><strong>38</strong> And I will judge thee, as women that break wedlock and shed blood are judged; and I will give thee blood in fury and jealousy.</p>
+            <p><strong>39</strong> And I will also give thee into their hand, and they shall throw down thine eminent place, and shall break down thy high places: they shall strip thee also of thy clothes, and shall take thy fair jewels, and leave thee naked and bare.</p>
+            <p><strong>40</strong> They shall also bring up a company against thee, and they shall stone thee with stones, and thrust thee through with their swords.</p>
+            <p><strong>41</strong> And they shall burn thine houses with fire, and execute judgments upon thee in the sight of many women: and I will cause thee to cease from playing the harlot, and thou also shalt give no hire any more.</p>
+            <p><strong>42</strong> So will I make my fury toward thee to rest, and my jealousy shall depart from thee, and I will be quiet, and will be no more angry.</p>
+            <p><strong>43</strong> Because thou hast not remembered the days of thy youth, but hast fretted me in all these things; behold, therefore I also will recompense thy way upon thine head, saith the Lord God: and thou shalt not commit this lewdness above all thine abominations.</p>
+            <p><strong>44</strong> Behold, every one that useth proverbs shall use this proverb against thee, saying, As is the mother, so is her daughter.</p>
+            <p><strong>45</strong> Thou art thy mother’s daughter, that lotheth her husband and her children; and thou art the sister of thy sisters, which lothed their husbands and their children: your mother was an Hittite, and your father an Amorite.</p>
+            <p><strong>46</strong> And thine elder sister is Samaria, she and her daughters that dwell at thy left hand: and thy younger sister, that dwelleth at thy right hand, is Sodom and her daughters.</p>
+            <p><strong>47</strong> Yet hast thou not walked after their ways, nor done after their abominations: but, as if that were a very little thing, thou wast corrupted more than they in all thy ways.</p>
+            <p><strong>48</strong> As I live, saith the Lord God, Sodom thy sister hath not done, she nor her daughters, as thou hast done, thou and thy daughters.</p>
+            <p><strong>49</strong> Behold, this was the iniquity of thy sister Sodom, pride, fulness of bread, and abundance of idleness was in her and in her daughters, neither did she strengthen the hand of the poor and needy.</p>
+            <p><strong>50</strong> And they were haughty, and committed abomination before me: therefore I took them away as I saw good.</p>
+            <p><strong>51</strong> Neither hath Samaria committed half of thy sins; but thou hast multiplied thine abominations more than they, and hast justified thy sisters in all thine abominations which thou hast done.</p>
+            <p><strong>52</strong> Thou also, which hast judged thy sisters, bear thine own shame for thy sins that thou hast committed more abominable than they: they are more righteous than thou: yea, be thou confounded also, and bear thy shame, in that thou hast justified thy sisters.</p>
+            <p><strong>53</strong> When I shall bring again their captivity, the captivity of Sodom and her daughters, and the captivity of Samaria and her daughters, then will I bring again the captivity of thy captives in the midst of them:</p>
+            <p><strong>54</strong> That thou mayest bear thine own shame, and mayest be confounded in all that thou hast done, in that thou art a comfort unto them.</p>
+            <p><strong>55</strong> When thy sisters, Sodom and her daughters, shall return to their former estate, and Samaria and her daughters shall return to their former estate, then thou and thy daughters shall return to your former estate.</p>
+            <p><strong>56</strong> For thy sister Sodom was not mentioned by thy mouth in the day of thy pride,</p>
+            <p><strong>57</strong> Before thy wickedness was discovered, as at the time of thy reproach of the daughters of Syria, and all that are round about her, the daughters of the Philistines, which despise thee round about.</p>
+            <p><strong>58</strong> Thou hast borne thy lewdness and thine abominations, saith the Lord.</p>
+            <p><strong>59</strong> For thus saith the Lord God; I will even deal with thee as thou hast done, which hast despised the oath in breaking the covenant.</p>
+            <p><strong>60</strong> Nevertheless I will remember my covenant with thee in the days of thy youth, and I will establish unto thee an everlasting covenant.</p>
+            <p><strong>61</strong> Then thou shalt remember thy ways, and be ashamed, when thou shalt receive thy sisters, thine elder and thy younger: and I will give them unto thee for daughters, but not by thy covenant.</p>
+            <p><strong>62</strong> And I will establish my covenant with thee; and thou shalt know that I am the Lord:</p>
+            <p><strong>63</strong> That thou mayest remember, and be confounded, and never open thy mouth any more because of thy shame, when I am pacified toward thee for all that thou hast done, saith the Lord God.</p>
+            </div>
+            <div class="scripture-text" id="web-16-asv" data-trans-panel="asv" role="tabpanel" aria-label="American Standard Version" hidden>
+            <p class="verse__ref">Ezekiel 16 (ASV)</p>
+            <p><strong>1</strong> Again the word of Jehovah came unto me, saying,</p>
+            <p><strong>2</strong> Son of man, cause Jerusalem to know her abominations;</p>
+            <p><strong>3</strong> and say, Thus saith the Lord Jehovah unto Jerusalem: Thy birth and thy nativity is of the land of the Canaanite; the Amorite was thy father, and thy mother was a Hittite.</p>
+            <p><strong>4</strong> And as for thy nativity, in the day thou wast born thy navel was not cut, neither wast thou washed in water to cleanse thee; thou wast not salted at all, nor swaddled at all.</p>
+            <p><strong>5</strong> No eye pitied thee, to do any of these things unto thee, to have compassion upon thee; but thou wast cast out in the open field, for that thy person was abhorred, in the day that thou wast born.</p>
+            <p><strong>6</strong> And when I passed by thee, and saw thee weltering in thy blood, I said unto thee, Though thou art in thy blood, live; yea, I said unto thee, Though thou art in thy blood, live.</p>
+            <p><strong>7</strong> I caused thee to multiply as that which groweth in the field, and thou didst increase and wax great, and thou attainedst to excellent ornament; thy breasts were fashioned, and thy hair was grown; yet thou wast naked and bare.</p>
+            <p><strong>8</strong> Now when I passed by thee, and looked upon thee, behold, thy time was the time of love; and I spread my skirt over thee, and covered thy nakedness: yea, I sware unto thee, and entered into a covenant with thee, saith the Lord Jehovah, and thou becamest mine.</p>
+            <p><strong>9</strong> Then washed I thee with water; yea, I thoroughly washed away thy blood from thee, and I anointed thee with oil.</p>
+            <p><strong>10</strong> I clothed thee also with broidered work, and shod thee with sealskin, and I girded thee about with fine linen, and covered thee with silk.</p>
+            <p><strong>11</strong> And I decked thee with ornaments, and I put bracelets upon thy hands, and a chain on thy neck.</p>
+            <p><strong>12</strong> And I put a ring upon thy nose, and ear-rings in thine ears, and a beautiful crown upon thy head.</p>
+            <p><strong>13</strong> Thus wast thou decked with gold and silver; and thy raiment was of fine linen, and silk, and broidered work; thou didst eat fine flour, and honey, and oil; and thou wast exceeding beautiful, and thou didst prosper unto royal estate.</p>
+            <p><strong>14</strong> And thy renown went forth among the nations for thy beauty; for it was perfect, through my majesty which I had put upon thee, saith the Lord Jehovah.</p>
+            <p><strong>15</strong> But thou didst trust in thy beauty, and playedst the harlot because of thy renown, and pouredst out thy whoredoms on every one that passed by; his it was.</p>
+            <p><strong>16</strong> And thou didst take of thy garments, and madest for thee high places decked with divers colors, and playedst the harlot upon them: the like things shall not come, neither shall it be so.</p>
+            <p><strong>17</strong> Thou didst also take thy fair jewels of my gold and of my silver, which I had given thee, and madest for thee images of men, and didst play the harlot with them;</p>
+            <p><strong>18</strong> and thou tookest thy broidered garments, and coveredst them, and didst set mine oil and mine incense before them.</p>
+            <p><strong>19</strong> My bread also which I gave thee, fine flour, and oil, and honey, wherewith I fed thee, thou didst even set it before them for a sweet savor; and thus it was, saith the Lord Jehovah.</p>
+            <p><strong>20</strong> Moreover thou hast taken thy sons and thy daughters, whom thou hast borne unto me, and these hast thou sacrificed unto them to be devoured. Were thy whoredoms a small matter,</p>
+            <p><strong>21</strong> that thou hast slain my children, and delivered them up, in causing them to pass through the fire unto them?</p>
+            <p><strong>22</strong> And in all thine abominations and thy whoredoms thou hast not remembered the days of thy youth, when thou wast naked and bare, and wast weltering in thy blood.</p>
+            <p><strong>23</strong> And it is come to pass after all thy wickedness (woe, woe unto thee! saith the Lord Jehovah),</p>
+            <p><strong>24</strong> that thou hast built unto thee a vaulted place, and hast made thee a lofty place in every street.</p>
+            <p><strong>25</strong> Thou hast built thy lofty place at the head of every way, and hast made thy beauty an abomination, and hast opened thy feet to every one that passed by, and multiplied thy whoredom.</p>
+            <p><strong>26</strong> Thou hast also committed fornication with the Egyptians, thy neighbors, great of flesh; and hast multiplied thy whoredom, to provoke me to anger.</p>
+            <p><strong>27</strong> Behold therefore, I have stretched out my hand over thee, and have diminished thine ordinary food, and delivered thee unto the will of them that hate thee, the daughters of the Philistines, that are ashamed of thy lewd way.</p>
+            <p><strong>28</strong> Thou hast played the harlot also with the Assyrians, because thou wast insatiable; yea, thou hast played the harlot with them, and yet thou wast not satisfied.</p>
+            <p><strong>29</strong> Thou hast moreover multiplied thy whoredom unto the land of traffic, unto Chaldea; and yet thou wast not satisfied herewith.</p>
+            <p><strong>30</strong> How weak is thy heart, saith the Lord Jehovah, seeing thou doest all these things, the work of an impudent harlot;</p>
+            <p><strong>31</strong> in that thou buildest thy vaulted place at the head of every way, and makest thy lofty place in every street, and hast not been as a harlot, in that thou scornest hire.</p>
+            <p><strong>32</strong> A wife that committeth adultery! that taketh strangers instead of her husband!</p>
+            <p><strong>33</strong> They give gifts to all harlots; but thou givest thy gifts to all thy lovers, and bribest them, that they may come unto thee on every side for thy whoredoms.</p>
+            <p><strong>34</strong> And thou art different from other women in thy whoredoms, in that none followeth thee to play the harlot; and whereas thou givest hire, and no hire is given unto thee, therefore thou art different.</p>
+            <p><strong>35</strong> Wherefore, O harlot, hear the word of Jehovah:</p>
+            <p><strong>36</strong> Thus saith the Lord Jehovah, Because thy filthiness was poured out, and thy nakedness uncovered through thy whoredoms with thy lovers; and because of all the idols of thy abominations, and for the blood of thy children, that thou didst give unto them;</p>
+            <p><strong>37</strong> therefore behold, I will gather all thy lovers, with whom thou hast taken pleasure, and all them that thou hast loved, with all them that thou hast hated; I will even gather them against thee on every side, and will uncover thy nakedness unto them, that they may see all thy nakedness.</p>
+            <p><strong>38</strong> And I will judge thee, as women that break wedlock and shed blood are judged; and I will bring upon thee the blood of wrath and jealousy.</p>
+            <p><strong>39</strong> I will also give thee into their hand, and they shall throw down thy vaulted place, and break down thy lofty places; and they shall strip thee of thy clothes, and take thy fair jewels; and they shall leave thee naked and bare.</p>
+            <p><strong>40</strong> They shall also bring up a company against thee, and they shall stone thee with stones, and thrust thee through with their swords.</p>
+            <p><strong>41</strong> And they shall burn thy houses with fire, and execute judgments upon thee in the sight of many women; and I will cause thee to cease from playing the harlot, and thou shalt also give no hire any more.</p>
+            <p><strong>42</strong> So will I cause my wrath toward thee to rest, and my jealousy shall depart from thee, and I will be quiet, and will be no more angry.</p>
+            <p><strong>43</strong> Because thou hast not remembered the days of thy youth, but hast raged against me in all these things; therefore, behold, I also will bring thy way upon thy head, saith the Lord Jehovah: and thou shalt not commit this lewdness with all thine abominations.</p>
+            <p><strong>44</strong> Behold, every one that useth proverbs shall use this proverb against thee, saying, As is the mother, so is her daughter.</p>
+            <p><strong>45</strong> Thou art the daughter of thy mother, that loatheth her husband and her children; and thou art the sister of thy sisters, who loathed their husbands and their children: your mother was a Hittite, and your father an Amorite.</p>
+            <p><strong>46</strong> And thine elder sister is Samaria, that dwelleth at thy left hand, she and her daughters; and thy younger sister, that dwelleth at thy right hand, is Sodom and her daughters.</p>
+            <p><strong>47</strong> Yet hast thou not walked in their ways, nor done after their abominations; but, as if that were a very little thing, thou wast more corrupt than they in all thy ways.</p>
+            <p><strong>48</strong> As I live, saith the Lord Jehovah, Sodom thy sister hath not done, she nor her daughters, as thou hast done, thou and thy daughters.</p>
+            <p><strong>49</strong> Behold, this was the iniquity of thy sister Sodom: pride, fulness of bread, and prosperous ease was in her and in her daughters; neither did she strengthen the hand of the poor and needy.</p>
+            <p><strong>50</strong> And they were haughty, and committed abomination before me: therefore I took them away as I saw good.</p>
+            <p><strong>51</strong> Neither hath Samaria committed half of thy sins; but thou hast multiplied thine abominations more than they, and hast justified thy sisters by all thine abominations which thou hast done.</p>
+            <p><strong>52</strong> Thou also, bear thou thine own shame, in that thou hast given judgment for thy sisters; through thy sins that thou hast committed more abominable than they, they are more righteous than thou: yea, be thou also confounded, and bear thy shame, in that thou hast justified thy sisters.</p>
+            <p><strong>53</strong> And I will turn again their captivity, the captivity of Sodom and her daughters, and the captivity of Samaria and her daughters, and the captivity of thy captives in the midst of them;</p>
+            <p><strong>54</strong> that thou mayest bear thine own shame, and mayest be ashamed because of all that thou hast done, in that thou art a comfort unto them.</p>
+            <p><strong>55</strong> And thy sisters, Sodom and her daughters, shall return to their former estate; and Samaria and her daughters shall return to their former estate; and thou and thy daughters shall return to your former estate.</p>
+            <p><strong>56</strong> For thy sister Sodom was not mentioned by thy mouth in the day of thy pride,</p>
+            <p><strong>57</strong> before thy wickedness was uncovered, as at the time of the reproach of the daughters of Syria, and of all that are round about her, the daughters of the Philistines, that do despite unto thee round about.</p>
+            <p><strong>58</strong> Thou hast borne thy lewdness and thine abominations, saith Jehovah.</p>
+            <p><strong>59</strong> For thus saith the Lord Jehovah: I will also deal with thee as thou hast done, who hast despised the oath in breaking the covenant.</p>
+            <p><strong>60</strong> Nevertheless I will remember my covenant with thee in the days of thy youth, and I will establish unto thee an everlasting covenant.</p>
+            <p><strong>61</strong> Then shalt thou remember thy ways, and be ashamed, when thou shalt receive thy sisters, thine elder sisters and thy younger; and I will give them unto thee for daughters, but not by thy covenant.</p>
+            <p><strong>62</strong> And I will establish my covenant with thee; and thou shalt know that I am Jehovah;</p>
+            <p><strong>63</strong> that thou mayest remember, and be confounded, and never open thy mouth any more, because of thy shame, when I have forgiven thee all that thou hast done, saith the Lord Jehovah.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="study-section">
+          <h2>Summary</h2>
+          <p>God commands Ezekiel to confront Jerusalem with her abominations through an extended allegory of grace and betrayal. She began as an unwanted newborn, cast out in an open field on the day of her birth, unwashed and uncared for, with no eye to pity her. When the LORD passed by and saw her wallowing in her blood, he said to her, "Live," and caused her to flourish. In time he passed by again, spread his garment over her, entered into covenant with her, and she became his; he washed her, clothed her in fine linen and silk, adorned her with jewels and a crown, and made her beauty famous among the nations through the splendor he had given. But she trusted in her beauty and played the harlot, lavishing his gifts on idols and foreign alliances, even sacrificing her children in the fire. God exposes her as more corrupt than her sisters Samaria and Sodom, and announces a just judgment at the hands of the very lovers she pursued. Yet the chapter does not end in wrath: God promises to remember the covenant of her youth and to establish an everlasting covenant with her. He will atone for all she has done, so that she will remember, be ashamed, and never again open her mouth in pride, knowing that he is the LORD who forgives.</p>
+        </div>
+
+        <div class="study-section">
+          <h2>Main Characters</h2>
+          <ul class="char-list">
+          <li><strong>Jerusalem</strong> — Pictured as a castaway infant whom God rescues and weds, who then betrays his love with idols and foreign lovers.</li>
+          <li><strong>Yahweh (the LORD)</strong> — The God who says "Live" to the dying, lavishes beauty on his bride, judges her betrayal, and yet vows an everlasting covenant.</li>
+          <li><strong>Samaria and Sodom</strong> — Jerusalem's elder and younger sisters, named as a measure of sin, yet promised restoration alongside her.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <h2>Key Verse</h2>
+        <blockquote class="verse">
+          <p class="verse__ref">Ezekiel 16:6 (WEB)</p>
+          <p class="verse__text">When I passed by you, and saw you wallowing in your blood, I said to you, Though you are in your blood, live; yes, I said to you, Though you are in your blood, live.</p>
+        </blockquote>
+        </div>
+
+        <div class="study-section">
+          <h2>Lessons Learned</h2>
+          <ul class="lesson-list">
+          <li>Every good thing God's people possess is sheer gift; we have nothing that he did not first give.</li>
+          <li>Spiritual unfaithfulness is the betrayal of love, turning a Giver's gifts back against him.</li>
+          <li>God's judgment on idolatry is just, yet his covenant love proves deeper than our betrayal.</li>
+          <li>True restoration produces a humbled, grateful memory, not pride, when we grasp how freely we have been forgiven.</li>
+          </ul>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="principles-16">
+            <span>Principles Learned</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="principles-16">
+            <ul class="lesson-list">
+            <li><strong>God speaks life to the helpless.</strong> Over an abandoned, dying infant he says, "Though you are in your blood, live" (Ezekiel 16:6, WEB). Our existence as his people begins entirely with his merciful word.</li>
+            <li><strong>God's gifts are not to be turned into idols.</strong> She "trusted in your beauty, and played the prostitute" (Ezekiel 16:15, WEB), lavishing on idols the gold and garments God had given. Misused gifts become instruments of betrayal.</li>
+            <li><strong>Covenant love outlasts our unfaithfulness.</strong> "I will remember my covenant with you in the days of your youth, and I will establish to you an everlasting covenant" (Ezekiel 16:60, WEB). God's commitment is not finally defeated by ours.</li>
+            <li><strong>Forgiveness humbles rather than puffs up.</strong> He forgives "all that you have done" so that she may "remember, and be confounded, and never open your mouth any more" (Ezekiel 16:63, WEB). Grace silences pride and stirs grateful awe.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="questions-16">
+            <span>Discussion Questions</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="questions-16">
+            <ol class="study-questions">
+            <li>Trace Jerusalem's story from the open field to royal estate (16:4-14). What does her origin reveal about God's grace?</li>
+            <li>How does the chapter define spiritual unfaithfulness, and why is it pictured as marital betrayal?</li>
+            <li>Why does God compare Jerusalem to Samaria and Sodom, and what is surprising about the comparison (16:46-52)?</li>
+            <li>How does the promise of an everlasting covenant (16:60-63) reframe the whole chapter?</li>
+            <li>Where have you, like the bride, used God's gifts for yourself rather than for him, and how does his covenant love draw you back?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="study-section">
+          <button class="collapse-toggle" type="button" data-collapse-toggle aria-expanded="true" aria-controls="responses-16">
+            <span>Discussion Question Responses</span>
+            <span class="collapse-toggle__icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="collapse-panel" id="responses-16">
+            <ol class="study-questions">
+            <li>She was a castaway newborn, abandoned and dying, with nothing to commend her, until God said "Live" and lifted her to royal splendor (16:4-14). Everything she became flowed from his unearned compassion, leaving her no ground for self-trust.</li>
+            <li>Unfaithfulness is taking the love and gifts of one's covenant Lord and giving them to others, idols and foreign nations (16:15-19). It is pictured as adultery because the bond God formed was a marriage of devoted love, so betrayal wounds a relationship, not just a rule.</li>
+            <li>God says Jerusalem out-sinned even Samaria and Sodom, who are usually bywords for wickedness (16:48-51). The shock is meant to break her pride; the privileged bride had become more corrupt than the nations she despised.</li>
+            <li>After pages of well-deserved judgment, God turns to grace he is in no way obligated to give, promising to remember and establish an everlasting covenant (16:60). It reveals that the deepest word over his people is not their betrayal but his faithful, forgiving love.</li>
+            <li>This is a gentle personal-application question. Encourage members to reflect without shame on misused gifts and divided affections, and to rest in the God who atones for all we have done (16:63) and binds himself to us in an everlasting covenant fulfilled in Christ.</li>
+            </ol>
+          </div>
+        </div>
+
+        <nav class="chapter-pager" aria-label="Chapter navigation">
+          <span class="chapter-pager__cell chapter-pager__prev"><a href="ezekiel-15.html">← Ezekiel 15</a></span>
+          <span class="chapter-pager__cell chapter-pager__all"><a href="ezekiel.html">All Chapters</a></span>
+          <span class="chapter-pager__cell chapter-pager__next"><a href="ezekiel-17.html">Ezekiel 17 →</a></span>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="section" style="padding-block:2.5rem">
+  <div class="container">
+    <p class="study-attribution">
+      Scripture quotations are from the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV), all of which are in the public domain.
+    </p>
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__mark">Reid<b>One</b></span>
+          <p>Journey Together — sharing the hope of the gospel through everyday teaching, encouragement, and community.</p>
+          <div class="socials">
+            <a href="#" aria-label="ReidOne on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="ReidOne on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 1.62a3.84 3.84 0 100 7.68 3.84 3.84 0 000-7.68zm5.66-2.91a1.28 1.28 0 110 2.56 1.28 1.28 0 010-2.56z"/></svg></a>
+            <a href="#" aria-label="ReidOne on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+            <a href="#" aria-label="ReidOne on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L.9 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 3.9H5.6L16.5 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="../watch.html">Watch</a></li>
+            <li><a href="../listen.html">Listen</a></li>
+            <li><a href="../read.html">Read</a></li>
+            <li><a href="../bible.html">Bible Study</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ministry</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../connect.html">Connect</a></li>
+            <li><a href="../connect.html#give">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ReidOne — Journey Together. All rights reserved.</span>
+        <span><a class="footer-dedication" href="../dedication.html"><span class="heart" aria-hidden="true">&#9829;</span> For Jennifer</a> &middot; <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/reading-settings.js"></script>
+</body>
+</html>
