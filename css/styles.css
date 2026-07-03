@@ -973,6 +973,20 @@ p { margin: 0 0 1rem; }
 .dedication-sign { line-height: 1.25; margin-top: 1.6rem; }
 
 /* Bible-study hub: testament dividers + sub-section headings between book grids */
+/* Testament quick-jump nav */
+.testament-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+}
+.testament-nav .btn { min-width: 168px; justify-content: center; }
+@media (max-width: 480px) {
+  .testament-nav { gap: 0.6rem; }
+  .testament-nav .btn { flex: 1 1 42%; min-width: 0; padding-inline: 1rem; }
+}
+
 .hub-testament {
   font-family: var(--font-serif);
   font-weight: 600;
@@ -983,6 +997,7 @@ p { margin: 0 0 1rem; }
   margin: 3rem 0 0.4rem;
   padding-bottom: 0.7rem;
   position: relative;
+  scroll-margin-top: 90px;
 }
 .hub-testament::after {
   content: "";
