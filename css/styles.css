@@ -973,18 +973,76 @@ p { margin: 0 0 1rem; }
 .dedication-sign { line-height: 1.25; margin-top: 1.6rem; }
 
 /* Bible-study hub: testament dividers + sub-section headings between book grids */
-/* Testament quick-jump nav */
-.testament-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.7rem;
-  margin-top: 1.6rem;
+/* Testament selector cards */
+.testament-select {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  max-width: 720px;
+  margin: 2rem auto 0;
 }
-.testament-nav .btn { min-width: 168px; justify-content: center; }
-@media (max-width: 480px) {
-  .testament-nav { gap: 0.6rem; }
-  .testament-nav .btn { flex: 1 1 42%; min-width: 0; padding-inline: 1rem; }
+.testament-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem 1.35rem;
+  color: var(--ink);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
+}
+.testament-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform var(--ease);
+}
+.testament-card:hover,
+.testament-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-soft);
+  text-decoration: none;
+}
+.testament-card:hover::before,
+.testament-card:focus-visible::before { transform: scaleY(1); }
+.testament-card:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-lg), 0 0 0 3px var(--accent-soft);
+}
+.testament-card__eyebrow {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent-dark);
+}
+.testament-card__title {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: clamp(1.35rem, 3.5vw, 1.7rem); color: var(--ink);
+  line-height: 1.15;
+}
+.testament-card__desc { color: var(--muted); font-size: 0.95rem; }
+.testament-card__cta {
+  margin-top: 0.7rem; font-weight: 600; font-size: 0.9rem; color: var(--accent-dark);
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.testament-card__cta span { transition: transform var(--ease); }
+.testament-card:hover .testament-card__cta span,
+.testament-card:focus-visible .testament-card__cta span { transform: translateX(4px); }
+
+@media (max-width: 560px) {
+  .testament-select { grid-template-columns: 1fr; gap: 0.9rem; max-width: 440px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .testament-card, .testament-card::before, .testament-card__cta span { transition: none; }
+  .testament-card:hover, .testament-card:focus-visible { transform: none; }
 }
 
 .hub-testament {
