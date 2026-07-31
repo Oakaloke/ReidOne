@@ -8,9 +8,9 @@ directly on **GitHub Pages**.
 
 ```
 index.html        Home
-watch.html        Sermons & video
-listen.html       Audio sermons & radio
-read.html         Daily devotions & articles
+read.html         Article hub (renders cards from articles/articles.json)
+articles/         Topical article pages + articles.json data + TEMPLATE.html (see articles/README.md)
+bible.html        Bible study hub (books of the Bible)
 about.html        Mission, leadership, what we do
 connect.html      Contact / give / prayer / subscribe
 css/styles.css    Single shared stylesheet

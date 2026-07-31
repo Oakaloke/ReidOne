@@ -4,11 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Read — ReidOne</title>
-  <meta name="description" content="Daily devotions and articles from ReidOne to encourage your faith." />
+  <meta name="description" content="Short studies and articles on Scripture from ReidOne — one topic at a time." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Read hub — article cards (reuses site tokens; no new fonts/frameworks) */
+    .article-card { display: flex; }
+    .article-card .card__body { padding: 1.3rem 1.4rem 1.5rem; }
+    .article-card__cat {
+      align-self: flex-start;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+    }
+    .article-card__verse {
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--accent-dark);
+      font-size: 0.98rem;
+      margin: 0;
+    }
+    .article-card .card__title { margin: 0.1rem 0 0; }
+    .article-card .card__title a { color: var(--ink); }
+    .article-card .card__title a:hover { color: var(--accent-dark); text-decoration: none; }
+    .articles-empty {
+      text-align: center;
+      max-width: 46ch;
+      margin: 0 auto;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 2.5rem 1.5rem;
+      box-shadow: var(--shadow);
+    }
+  </style>
 </head>
 <body>
 
@@ -23,8 +60,6 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav__menu" id="nav-menu">
-          <li><a href="watch.html">Watch</a></li>
-          <li><a href="listen.html">Listen</a></li>
           <li><a href="read.html">Read</a></li>
           <li><a href="bible.html">Bible Study</a></li>
           <li><a href="about.html">About</a></li>
@@ -38,146 +73,17 @@
     <section class="page-hero">
       <div class="container">
         <span class="eyebrow">Read</span>
-        <h1>Daily Devotions &amp; Articles</h1>
-        <p class="lead">A daily word for your journey, plus articles to encourage, challenge, and strengthen your faith.</p>
+        <h1>Read</h1>
+        <p class="lead">Short studies and articles on Scripture, one topic at a time.</p>
       </div>
     </section>
 
-    <!-- Today's Devotion feature -->
     <section class="section">
       <div class="container">
-        <div class="split">
-          <div class="split__media">
-            <img src="https://placehold.co/720x540/BD5B36/FFFFFF?text=Today%27s+Devotion" alt="Today's devotion" />
-          </div>
-          <div>
-            <span class="eyebrow">Today's Devotion · Tuesday, June 9, 2026</span>
-            <h2>Be Still and Know</h2>
-            <p>“Be still, and know that I am God.” — Psalm 46:10</p>
-            <p>In a world that never slows down, God invites us into rest. Stillness isn't emptiness; it's the space where we remember who holds tomorrow. Today, let go of the hurry. Trust that the One who began a good work in you is faithful to complete it.</p>
-            <p class="muted">Reflect: Where do you most need to “be still” and trust God today?</p>
-            <a class="btn btn--accent mt-2" href="#">Read the full devotion</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recent devotions -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Recent Devotions</h2>
-          <p class="muted">A new devotion every morning.</p>
-        </div>
-        <div class="devo-list">
-          <article class="devo-item">
-            <img src="https://placehold.co/300x200/C99A3F/FFFFFF?text=Devotion" alt="" />
-            <div class="devo-item__body">
-              <span class="devo-item__date">June 8, 2026</span>
-              <h3>The God Who Goes Before You</h3>
-              <p>Whatever you're facing today, you don't face it alone — God has already gone ahead of you.</p>
-            </div>
-          </article>
-          <article class="devo-item">
-            <img src="https://placehold.co/300x200/9A4527/FFFFFF?text=Devotion" alt="" />
-            <div class="devo-item__body">
-              <span class="devo-item__date">June 7, 2026</span>
-              <h3>Grace for the Weary</h3>
-              <p>Rest is not a reward for the strong; it's a gift for the tired. Come and find rest for your soul.</p>
-            </div>
-          </article>
-          <article class="devo-item">
-            <img src="https://placehold.co/300x200/6F665B/FFFFFF?text=Devotion" alt="" />
-            <div class="devo-item__body">
-              <span class="devo-item__date">June 6, 2026</span>
-              <h3>One Step at a Time</h3>
-              <p>God rarely shows us the whole road. He gives us light enough for the next faithful step.</p>
-            </div>
-          </article>
-          <article class="devo-item">
-            <img src="https://placehold.co/300x200/BD5B36/FFFFFF?text=Devotion" alt="" />
-            <div class="devo-item__body">
-              <span class="devo-item__date">June 5, 2026</span>
-              <h3>A Heart of Gratitude</h3>
-              <p>Thankfulness reframes everything. Today, name three gifts and let them turn your heart to praise.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Articles -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Articles</span>
-          <h2>Featured Articles</h2>
-          <p class="lead mx-auto maxw-prose">Longer reads on faith, family, prayer, and following Jesus today.</p>
-        </div>
-        <div class="grid grid--4">
-          <article class="card">
-            <a class="card__media" href="#" aria-label="Read article">
-              <img src="https://placehold.co/600x338/BD5B36/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Devotional</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">June 8, 2026</p>
-              <h3 class="card__title">Finding Peace in the Storm</h3>
-              <p class="card__text">Three truths to hold onto when life feels overwhelming.</p>
-              <a class="btn btn--ghost" href="#">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="#" aria-label="Read article">
-              <img src="https://placehold.co/600x338/C99A3F/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Family</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">June 5, 2026</p>
-              <h3 class="card__title">Raising Faith at Home</h3>
-              <p class="card__text">Simple, grace-filled rhythms for households of every season.</p>
-              <a class="btn btn--ghost" href="#">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="#" aria-label="Read article">
-              <img src="https://placehold.co/600x338/9A4527/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Prayer</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">June 2, 2026</p>
-              <h3 class="card__title">Learning to Pray Boldly</h3>
-              <p class="card__text">How honest, expectant prayer reshapes the way we see God.</p>
-              <a class="btn btn--ghost" href="#">Read more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <a class="card__media" href="#" aria-label="Read article">
-              <img src="https://placehold.co/600x338/6F665B/FFFFFF?text=Article" alt="" />
-              <span class="card__tag">Discipleship</span>
-            </a>
-            <div class="card__body">
-              <p class="card__meta">May 28, 2026</p>
-              <h3 class="card__title">The Next Faithful Step</h3>
-              <p class="card__text">Why growth in faith is less about leaps and more about steps.</p>
-              <a class="btn btn--ghost" href="#">Read more →</a>
-            </div>
-          </article>
-        </div>
-        <div class="center mt-3">
-          <a class="btn btn--outline" href="#">View all articles</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Subscribe band -->
-    <section class="section cta-band">
-      <div class="container">
-        <h2>Get the daily devotion in your inbox</h2>
-        <p>A short word of encouragement to start each day. Free, and you can unsubscribe anytime.</p>
-        <div class="btn-group">
-          <a class="btn btn--light" href="connect.html#subscribe">Subscribe Free</a>
-        </div>
+        <!-- Article grid is rendered from articles/articles.json by the script below.
+             To publish a new article: add one HTML file in /articles/ and one entry
+             to articles/articles.json. No build step. See articles/README.md. -->
+        <div class="grid grid--3" id="article-grid" aria-live="polite"></div>
       </div>
     </section>
   </main>
@@ -198,8 +104,6 @@
         <div>
           <h4>Explore</h4>
           <ul class="footer-nav">
-            <li><a href="watch.html">Watch</a></li>
-            <li><a href="listen.html">Listen</a></li>
             <li><a href="read.html">Read</a></li>
             <li><a href="bible.html">Bible Study</a></li>
           </ul>
@@ -220,5 +124,76 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    /* ---- Read hub: render article cards from articles/articles.json ----
+       Vanilla JS, no build step. Newest article (by date) first.
+       Add an article = add one HTML file in /articles/ + one JSON entry. */
+    (function () {
+      var grid = document.getElementById("article-grid");
+      if (!grid) return;
+
+      function el(tag, cls, text) {
+        var n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      }
+
+      function formatDate(iso) {
+        var d = new Date(iso + "T00:00:00");
+        if (isNaN(d)) return iso;
+        return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+      }
+
+      function showEmpty(msg) {
+        grid.className = "";
+        var box = el("div", "articles-empty");
+        box.appendChild(el("h3", null, "No articles yet"));
+        box.appendChild(el("p", null, msg || "The first study is on its way — check back soon."));
+        grid.appendChild(box);
+      }
+
+      function renderCard(a) {
+        var card = el("article", "card article-card");
+        var body = el("div", "card__body");
+
+        if (a.category) body.appendChild(el("span", "article-card__cat", a.category));
+
+        var title = el("h3", "card__title");
+        var link = el("a", null, a.title || "Untitled");
+        link.href = a.file;
+        title.appendChild(link);
+        body.appendChild(title);
+
+        if (a.verse) body.appendChild(el("p", "article-card__verse", a.verse));
+        if (a.date) body.appendChild(el("p", "card__meta", formatDate(a.date)));
+        if (a.summary) body.appendChild(el("p", "card__text", a.summary));
+
+        var cta = el("a", "btn btn--ghost", "Read →");
+        cta.href = a.file;
+        body.appendChild(cta);
+
+        card.appendChild(body);
+        return card;
+      }
+
+      fetch("articles/articles.json", { cache: "no-cache" })
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (list) {
+          if (!Array.isArray(list) || list.length === 0) { showEmpty(); return; }
+          list.slice().sort(function (a, b) {
+            return String(b.date || "").localeCompare(String(a.date || ""));
+          }).forEach(function (a) {
+            grid.appendChild(renderCard(a));
+          });
+        })
+        .catch(function () {
+          showEmpty("Articles couldn't be loaded right now. Please try again shortly.");
+        });
+    })();
+  </script>
 </body>
 </html>
